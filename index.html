@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<!--
+  Continual Improvement Academy — Academy Hub
+  © 2026 Modather Salama — Continual Improvement Academy. All rights reserved.
+  To publish a new module: change its "status" to "live" and add its "url" in the MODULES data below.
+  Request forms: recipients in RQ_TO; set FORM_ENDPOINT to deliver requests automatically once hosted on your own domain.
+-->
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Continual Improvement Academy — Academy Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F7FB; --surface:#FFFFFF; --ink:#1B2A4A; --ink-soft:#4B5874; --muted:#6F7B93; --line:#DCE4EE;
+  --gold:#B8901E; --gold-ink:#7A5E10; --gold-tint:#FBF4DF; --navy:#1B2A4A; --on-navy:#FFFFFF;
+  --c-iso:#1E8C93; --c-grc:#7B5BB8; --c-pmo:#3563C9; --c-exc:#B8901E; --c-str:#3C9A5F; --c-aud:#C9821A; --c-ai:#C2410C;
+  --live:#2F8A55; --dev:#B7791F; --plan:#7A869E;
+  --radius-lg:24px; --radius:14px; --radius-sm:9px;
+  --display:"Fraunces",Georgia,serif; --body:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html[lang="ar"]{--display:"Noto Kufi Arabic","IBM Plex Sans Arabic",Tahoma,sans-serif;--body:"IBM Plex Sans Arabic",Tahoma,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1729; --surface:#15213A; --ink:#E7ECF4; --ink-soft:#B6C0D2; --muted:#8C98AE; --line:#2A3A58;
+    --gold:#D6B04A; --gold-ink:#E7CB7A; --gold-tint:#2A2717; --navy:#0A1222; --on-navy:#FFFFFF;
+    --c-iso:#3DB5BC; --c-grc:#A58BE0; --c-pmo:#6F95EA; --c-exc:#D6B04A; --c-str:#5DBE80; --c-aud:#E3A043; --c-ai:#EC6A3A;
+    --live:#5DBE80; --dev:#E3A043; --plan:#8C98AE;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1729; --surface:#15213A; --ink:#E7ECF4; --ink-soft:#B6C0D2; --muted:#8C98AE; --line:#2A3A58;
+  --gold:#D6B04A; --gold-ink:#E7CB7A; --gold-tint:#2A2717; --navy:#0A1222; --on-navy:#FFFFFF;
+  --c-iso:#3DB5BC; --c-grc:#A58BE0; --c-pmo:#6F95EA; --c-exc:#D6B04A; --c-str:#5DBE80; --c-aud:#E3A043; --c-ai:#EC6A3A;
+  --live:#5DBE80; --dev:#E3A043; --plan:#8C98AE;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+html[lang="ar"] body{font-size:16.5px;line-height:1.85}
+img,svg{max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:22px}
+.ltr{direction:ltr;unicode-bidi:isolate}
+
+/* top bar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:0}
+.brand img{width:40px;height:40px;border-radius:50%;flex:none;background:#fff}
+.brand b{font-family:var(--display);font-size:15px;line-height:1.25;display:block;white-space:nowrap}
+.brand span{font-size:12.5px;color:var(--muted);display:block;white-space:nowrap}
+.nav{display:flex;gap:2px}
+.nav a{color:var(--ink-soft);text-decoration:none;font-size:14px;padding:7px 12px;border-radius:999px;white-space:nowrap}
+.nav a:hover{background:var(--bg);color:var(--ink)}
+.bar-right{display:flex;align-items:center;gap:8px}
+.lang{display:inline-flex;align-items:center;gap:8px;border:0;background:var(--navy);color:var(--on-navy);border-radius:999px;padding:8px 15px;font-size:14px;font-weight:600;cursor:pointer}
+.lang:hover{filter:brightness(1.18)}
+@media (max-width:1020px){.nav{display:none}}
+@media (max-width:460px){.brand span{display:none}.brand b{font-size:14px}}
+
+/* hero */
+.hero{padding-block:46px 30px}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:34px;align-items:center}
+.hero-grid>*{min-width:0}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.kicker{display:inline-flex;align-items:center;gap:9px;background:var(--gold-tint);color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--gold) 35%,transparent);padding:6px 14px;border-radius:999px;font-size:14px;font-weight:600}
+.kicker i{width:8px;height:8px;border-radius:50%;background:var(--live);box-shadow:0 0 0 4px color-mix(in srgb,var(--live) 22%,transparent)}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,5.4vw,62px);line-height:1.08;letter-spacing:-.02em;margin:18px 0 16px}
+html[lang="ar"] .hero h1{font-weight:800;letter-spacing:0;line-height:1.35;font-size:clamp(30px,4.6vw,54px)}
+.hero .lede{font-size:18px;color:var(--ink-soft);max-width:54ch;margin:0}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:9px;border-radius:12px;padding:12px 18px;font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
+.btn:hover{border-color:var(--ink-soft)}
+.btn.primary{background:var(--navy);border-color:var(--navy);color:var(--on-navy)}
+.btn.primary:hover{filter:brightness(1.18)}
+.btn svg{flex:none}
+html[dir="rtl"] .flip{transform:scaleX(-1)}
+.facts{display:flex;flex-wrap:wrap;gap:22px;margin-top:30px;padding-top:20px;border-top:1px solid var(--line)}
+.fact b{font-family:var(--display);font-size:26px;display:block;line-height:1.1}
+.fact span{font-size:13.5px;color:var(--muted)}
+.author{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:14.5px;color:var(--muted)}
+.author strong{color:var(--ink);font-family:var(--display);font-size:17px}
+
+/* orbit */
+.orbit-wrap{position:relative}
+#orbit{display:block;width:100%;height:auto;max-width:600px;margin-inline:auto;overflow:visible}
+#orbit .node{cursor:pointer}
+#orbit .node:focus{outline:none}
+#orbit .node:focus-visible .ring{stroke:var(--gold);stroke-width:4}
+#orbit .node:hover .disc{filter:drop-shadow(0 8px 14px rgba(20,30,60,.22))}
+#orbit text{font-family:var(--body);pointer-events:none}
+#orbit .spoke{stroke:var(--line);stroke-width:1.5}
+#orbit .loop{fill:none;stroke:var(--gold);stroke-width:1.6;stroke-dasharray:3 9;stroke-linecap:round;opacity:.9}
+.orbit-in .node{opacity:0;transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.2,.8,.2,1.2) forwards}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+.orbit-cap{text-align:center;font-size:13.5px;color:var(--muted);margin-top:4px}
+#orbit .node .disc{transition:transform .35s,stroke-width .25s;transform-box:fill-box;transform-origin:center}
+#orbit .node.sel .disc{transform:scale(1.14);stroke:var(--gold);stroke-width:5}
+#orbit .spoke.sel{stroke:var(--gold);stroke-width:3}
+#orbit .pulse{fill:none;stroke:var(--gold);stroke-width:2;opacity:.55}
+.orb-panel{margin:14px auto 0;max-width:600px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--c,var(--gold));border-radius:var(--radius);padding:14px 16px;box-shadow:0 10px 26px rgba(20,30,60,.08)}
+.orb-h{display:flex;align-items:center;gap:10px}
+.orb-h h3{margin:0;font-family:var(--display);font-size:18px;line-height:1.35;flex:1}
+.orb-h small{color:var(--muted);font-weight:600}
+.orb-nav{border:1px solid var(--line);background:var(--surface);color:var(--ink);width:34px;height:34px;border-radius:50%;cursor:pointer;display:grid;place-items:center;font-size:16px;flex:none}
+.orb-nav:hover{border-color:var(--ink-soft)}
+.orb-sub{margin:6px 0 10px;font-size:14px;color:var(--ink-soft)}
+.orb-list{display:grid;gap:6px;margin:0;padding:0;list-style:none}
+.orb-list li{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:7px 10px;font-size:14px}
+.orb-list li b{display:block;font-weight:700}.orb-list li span.n{font-size:12.5px;color:var(--muted)}
+.orb-list li .grow{flex:1;min-width:0}
+.orb-list .dot{width:10px;height:10px;border-radius:50%;flex:none}
+.orb-list a.go{background:var(--c,var(--navy));color:#fff;border-radius:999px;padding:5px 12px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap}
+.orb-list em{font-style:normal;font-size:12.5px;color:var(--muted);white-space:nowrap}
+.orb-f{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:10px;font-size:13.5px}
+.orb-f button,.orb-f a{background:none;border:0;color:var(--ink-soft);font:inherit;font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0}
+
+/* sections */
+section{padding:50px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:24px}
+.sec-head h2{font-family:var(--display);font-size:clamp(26px,3.2vw,36px);line-height:1.2;margin:0}
+html[lang="ar"] .sec-head h2{line-height:1.5}
+.sec-head p{margin:8px 0 0;color:var(--ink-soft);max-width:62ch}
+.band{background:var(--surface);border-block:1px solid var(--line)}
+
+/* live toolkits */
+.tk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:1200px){.tk-grid{grid-template-columns:repeat(3,1fr)}}@media (max-width:860px){.tk-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.tk-grid{grid-template-columns:1fr}}
+.tk{--c:var(--c-iso);position:relative;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px 20px 20px;overflow:hidden}
+.tk::before{content:"";position:absolute;inset-inline:0;top:0;height:5px;background:var(--c)}
+.tk .code{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:40px;line-height:1;letter-spacing:-1px;direction:ltr;text-align:start;color:var(--ink)}
+html[dir="rtl"] .tk .code{text-align:right}
+.tk .code small{display:block;font-size:14px;letter-spacing:0;font-weight:400;color:var(--c);margin-top:8px;font-family:var(--body)}
+.tk .code .pre{font-size:15px;letter-spacing:.5px;font-weight:600;color:var(--muted);display:block;margin-bottom:4px}
+.tk h3{font-family:var(--display);font-size:17px;line-height:1.4;margin:14px 0 10px}
+.tk ul{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:6px;font-size:14px;color:var(--ink-soft)}
+.tk li{display:flex;gap:8px;align-items:flex-start}
+.tk li::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--c);flex:none;margin-top:.7em}
+.tk .btn{margin-top:auto;justify-content:center;background:color-mix(in srgb,var(--c) 10%,var(--surface));border-color:color-mix(in srgb,var(--c) 45%,transparent);color:var(--ink)}
+.tk .btn:hover{background:var(--c);border-color:var(--c);color:#fff}
+.tk .live-tag{position:absolute;top:16px;inset-inline-end:16px;font-size:12px;font-weight:600;color:var(--live);display:flex;align-items:center;gap:6px}
+.tk .live-tag i{width:7px;height:7px;border-radius:50%;background:var(--live)}
+
+/* systems */
+.filters{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:var(--on-navy)}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;display:inline-block}
+.dot.live{background:var(--live)} .dot.dev{background:var(--dev)} .dot.plan{background:transparent;border:1.5px solid var(--plan)}
+.sys-list{display:grid;gap:12px}
+.sys{--c:var(--c-iso);display:grid;grid-template-columns:260px 1fr;gap:22px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 22px;border-inline-start:6px solid var(--c);transition:box-shadow .3s,border-color .3s}
+.sys.flash{box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 30%,transparent)}
+@media (max-width:820px){.sys{grid-template-columns:1fr;gap:12px}}
+.sys h3{font-family:var(--display);font-size:19px;line-height:1.35;margin:0 0 6px}
+.sys .sys-sub{font-size:14px;color:var(--ink-soft);margin:0}
+.sys .notify{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:13.5px;font-weight:600;color:var(--c);text-decoration:none}
+.sys .notify:hover{text-decoration:underline}
+.mods{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start}
+.mod{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:14px;background:var(--bg);text-decoration:none;color:var(--ink);transition:opacity .2s}
+.mod small{color:var(--muted);font-size:12.5px}
+a.mod{border-color:color-mix(in srgb,var(--live) 45%,transparent);background:color-mix(in srgb,var(--live) 9%,var(--surface));font-weight:600}
+a.mod:hover{border-color:var(--live)}
+.mod.dim{opacity:.28}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:13.5px;color:var(--muted);margin-top:16px}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+
+/* journey */
+.journey{display:grid;grid-template-columns:repeat(6,1fr);gap:0;counter-reset:st;position:relative}
+@media (max-width:900px){.journey{grid-template-columns:repeat(3,1fr);row-gap:22px}}
+@media (max-width:520px){.journey{grid-template-columns:repeat(2,1fr)}}
+.st{position:relative;padding-inline-end:14px}
+.st .n{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-family:Georgia,serif;font-weight:700;background:var(--surface);border:2px solid var(--gold);color:var(--ink);position:relative;z-index:1}
+.st:last-child .n{background:var(--gold);color:#fff}
+.st::after{content:"";position:absolute;top:19px;inset-inline-start:38px;inset-inline-end:0;height:2px;background:var(--line)}
+.st:last-child::after{display:none}
+@media (max-width:900px){.st:nth-child(3n)::after{display:none}}
+@media (max-width:520px){.st::after{display:none}}
+.st b{display:block;font-family:var(--display);font-size:16.5px;margin-top:12px;line-height:1.35}
+.st span{font-size:13.5px;color:var(--ink-soft);display:block;margin-top:4px;line-height:1.55}
+.loop-note{margin-top:22px;font-size:14px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.inside{margin-top:40px;background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:22px}
+.inside h3{font-family:var(--display);font-size:19px;margin:0 0 4px}
+.inside p{margin:0 0 16px;color:var(--ink-soft);font-size:14.5px}
+.tabs-demo{display:flex;flex-wrap:wrap;gap:8px}
+.tabs-demo span{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:14px}
+.tabs-demo span i{font-style:normal;font-family:Georgia,serif;font-weight:700;color:var(--gold);font-size:13px}
+
+/* IMS matrix */
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
+table{width:100%;border-collapse:collapse;min-width:1060px;font-size:14.5px}
+th,td{padding:11px 14px;text-align:start;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:color-mix(in srgb,var(--navy) 6%,var(--surface));font-size:13.5px;color:var(--ink-soft);font-weight:600;position:sticky;top:0}
+thead th.std{text-align:center;direction:ltr;width:140px}
+td.proc{min-width:210px;font-weight:500}
+td.chk{text-align:center;color:var(--live);font-weight:700}
+td.cl{direction:ltr;text-align:start;color:var(--muted);font-family:Georgia,serif;white-space:nowrap}
+html[dir="rtl"] td.cl{text-align:right}
+td.out{color:var(--ink-soft);min-width:210px}
+tr.grp th{background:var(--gold-tint);color:var(--gold-ink);font-size:13.5px}
+td.spec{font-size:13.5px;color:var(--ink-soft);text-align:start}
+tbody tr:last-child td{border-bottom:0}
+.ims-foot{display:flex;gap:14px;align-items:flex-start;margin-top:18px;background:var(--gold-tint);border:1px solid color-mix(in srgb,var(--gold) 35%,transparent);border-radius:14px;padding:14px 16px;font-size:14.5px;color:var(--gold-ink)}
+
+/* roadmap */
+.road{position:relative;display:grid;gap:0}
+.wave{display:grid;grid-template-columns:64px 1fr;gap:16px;position:relative;padding-bottom:22px}
+.wave::before{content:"";position:absolute;top:44px;bottom:0;inset-inline-start:31px;width:2px;background:var(--line)}
+.wave:last-child::before{display:none}
+.wave .wn{width:64px;height:44px;border-radius:12px;display:grid;place-items:center;font-family:Georgia,serif;font-weight:700;font-size:15px;border:1.5px solid var(--line);background:var(--surface);color:var(--muted);position:relative;z-index:1}
+.wave.done .wn{background:var(--live);border-color:var(--live);color:#fff}
+.wave.dev .wn{border-color:var(--dev);color:var(--dev);background:color-mix(in srgb,var(--dev) 10%,var(--surface))}
+.wave .wb{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
+.wave.done .wb{border-color:color-mix(in srgb,var(--live) 40%,transparent)}
+.wave.dev .wb{border-color:color-mix(in srgb,var(--dev) 50%,transparent)}
+.wave .wt{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.wave h3{font-family:var(--display);font-size:17px;margin:0;line-height:1.4}
+.wave p{margin:4px 0 0;font-size:14px;color:var(--ink-soft)}
+.st-tag{font-size:12.5px;font-weight:600;border-radius:999px;padding:3px 10px;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.st-tag.live{background:color-mix(in srgb,var(--live) 14%,var(--surface));color:var(--live)}
+.st-tag.dev{background:color-mix(in srgb,var(--dev) 14%,var(--surface));color:var(--dev)}
+.st-tag.plan{background:var(--bg);color:var(--muted)}
+.milestone{margin:4px 0 26px;margin-inline-start:80px;border:1.5px dashed var(--gold);border-radius:14px;padding:12px 16px;font-size:14px;color:var(--gold-ink);background:var(--gold-tint)}
+@media (max-width:560px){.wave{grid-template-columns:52px 1fr;gap:12px}.wave .wn{width:52px;font-size:13px}.wave::before{inset-inline-start:25px}.milestone{margin-inline-start:0}}
+
+/* knowledge */
+.kpath{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;counter-reset:k}
+@media (max-width:900px){.kpath{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.kpath{grid-template-columns:1fr}}
+details.k{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:0}
+details.k summary{list-style:none;cursor:pointer;padding:15px 16px;display:flex;align-items:center;gap:12px;font-family:var(--display);font-size:16.5px;font-weight:600}
+details.k summary::-webkit-details-marker{display:none}
+details.k summary .kn{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-family:Georgia,serif;font-size:13px;font-weight:700;background:var(--gold-tint);color:var(--gold-ink);flex:none}
+details.k summary .chev{margin-inline-start:auto;transition:transform .2s;color:var(--muted);flex:none}
+details.k[open] summary .chev{transform:rotate(180deg)}
+details.k .kb{padding:0 16px 16px;font-size:14.5px;color:var(--ink-soft)}
+details.k .kb p{margin:0}
+details.k .kb .rel{margin-top:10px;font-size:13px;color:var(--muted)}
+
+/* about */
+.about{display:grid;grid-template-columns:180px 1fr;gap:30px;align-items:center;background:var(--navy);color:#E9EEF7;border-radius:var(--radius-lg);padding:30px}
+@media (max-width:700px){.about{grid-template-columns:1fr;text-align:center}.about img{margin-inline:auto}}
+.about img{width:180px;height:180px;border-radius:50%;background:#fff;display:block}
+.about h2{font-family:var(--display);font-size:clamp(24px,3vw,32px);margin:0 0 6px;color:#fff}
+.about .role{color:#E2C46B;font-weight:600;margin:0 0 12px}
+.about p{margin:0 0 10px;color:#C9D3E4;max-width:66ch}
+@media (max-width:700px){.about p{margin-inline:auto}}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+@media (max-width:700px){.contact{justify-content:center}}
+.contact .btn{background:transparent;border-color:rgba(255,255,255,.3);color:#fff}
+.contact .btn:hover{border-color:#fff}
+.contact .btn.gold{background:#D6B04A;border-color:#D6B04A;color:#1B2A4A}
+
+footer{padding:34px 0 40px;font-size:13px;color:var(--muted)}
+footer .wrap{display:grid;gap:8px}
+footer strong{color:var(--ink)}
+
+.toast{position:fixed;inset-inline:0;bottom:calc(env(safe-area-inset-bottom,0px) + 22px);margin-inline:auto;width:max-content;max-width:90vw;background:var(--navy);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;opacity:0;transform:translateY(10px);transition:.25s;pointer-events:none;z-index:50}
+.toast.on{opacity:1;transform:none}
+
+/* request forms */
+.rq-grid[hidden],.rq-done[hidden],.rq-err-top[hidden]{display:none!important}
+.rq-switch{display:inline-flex;gap:6px;padding:5px;border-radius:14px;background:var(--bg);border:1px solid var(--line);margin-bottom:18px;flex-wrap:wrap}
+.rq-switch button{display:inline-flex;align-items:center;gap:8px;border:0;background:transparent;color:var(--ink-soft);font:inherit;font-weight:700;font-size:15px;padding:10px 16px;border-radius:10px;cursor:pointer}
+.rq-switch button[aria-selected="true"]{background:var(--navy);color:#fff}
+.rq-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px;align-items:start}
+@media (max-width:900px){.rq-grid{grid-template-columns:1fr}}
+.rq-form{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:24px}
+.rq-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 16px;align-items:start}
+@media (max-width:620px){.rq-fields{grid-template-columns:1fr}}
+.rq-f{display:grid;align-content:start;gap:6px;font-size:14px;font-weight:600;color:var(--ink);margin:0;border:0;padding:0;min-width:0}
+.rq-f.full{grid-column:1/-1}
+.rq-f legend{padding:0;margin-bottom:6px}
+.rq-f input,.rq-f select,.rq-f textarea{width:100%;font:inherit;font-weight:500;font-size:15px;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:11px;padding:11px 12px;outline:none}
+.rq-f textarea{resize:vertical;min-height:110px}
+.rq-f input:focus,.rq-f select:focus,.rq-f textarea:focus{border-color:var(--gold);background:var(--surface);box-shadow:0 0 0 3px color-mix(in srgb,var(--gold) 22%,transparent)}
+.rq-f.bad input,.rq-f.bad select,.rq-f.bad textarea{border-color:#C2410C}
+.rq-msg{color:#C2410C;font-weight:600;font-size:12.5px;min-height:0}
+.rq-msg:empty{display:none}
+.rq-star{color:var(--gold);font-weight:800}
+.rq-chips{display:flex;flex-wrap:wrap;gap:7px}
+.rq-chip{border:1.5px solid var(--line);background:var(--surface);color:var(--ink-soft);border-radius:999px;padding:7px 13px;font:inherit;font-size:13.5px;font-weight:600;cursor:pointer}
+.rq-chip:hover{border-color:var(--ink-soft)}
+.rq-chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.rq-f.bad .rq-chips{outline:1.5px dashed #C2410C;outline-offset:4px;border-radius:12px}
+.rq-consent{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;margin-top:18px;font-size:14px;color:var(--ink-soft)}
+.rq-consent input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--navy)}
+.rq-consent .rq-msg{grid-column:2}
+.rq-consent.bad span{color:#C2410C}
+.rq-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:20px}
+.rq-actions .btn[disabled]{opacity:.6;cursor:wait}
+.rq-note{font-size:13px;color:var(--muted)}
+.rq-err-top{background:#FDECE3;color:#9A3412;border-radius:11px;padding:10px 14px;font-weight:600;margin-bottom:14px}
+.rq-side{background:var(--navy);color:#E9EEF7;border-radius:var(--radius-lg);padding:22px;position:sticky;top:90px}
+.rq-side h3{font-family:var(--display);margin:0 0 14px;color:#fff;font-size:19px}
+.rq-side ol{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.rq-side li{display:grid;grid-template-columns:32px 1fr;gap:10px}
+.rq-side li i{font-style:normal;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#D6B04A;color:#1B2A4A;font-weight:800}
+.rq-side li b{display:block;color:#fff}.rq-side li span{font-size:13.5px;color:#C9D3E4;line-height:1.55;display:block}
+.rq-to{margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.15);display:grid;gap:6px;font-size:13px}
+.rq-to span{color:#E2C46B;font-weight:700}.rq-to code{font-size:13px;color:#fff;background:rgba(255,255,255,.08);padding:5px 8px;border-radius:8px;word-break:break-all}
+.rq-done{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:26px}
+.rq-done-in{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}
+@media (max-width:620px){.rq-done-in{grid-template-columns:1fr}}
+.rq-ok{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#E5F4EA;color:#2F8A55}
+.rq-done h3{font-family:var(--display);font-size:24px;margin:0 0 6px}
+.rq-done p{margin:0 0 10px;color:var(--ink-soft)}
+.rq-ref b{font-family:Georgia,serif;color:var(--ink);font-size:17px}
+.rq-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.rq-btns.sub .btn{padding:9px 14px;font-size:14px}
+.rq-prev{margin-top:14px;font-size:13.5px}
+.rq-prev summary{cursor:pointer;color:var(--ink-soft);font-weight:600}
+.rq-prev pre{white-space:pre-wrap;background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:14px;font:inherit;font-size:13.5px;margin:10px 0 0;max-height:320px;overflow:auto}
+.about .contact{flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Continual Improvement Academy">
+      <img src="data:image/webp;base64,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" alt="">
+      <div><b id="bName"></b><span id="bSub"></span></div>
+    </a>
+    <div class="bar-right">
+      <nav class="nav" id="nav" aria-label="Sections"></nav>
+      <button class="lang" id="langBtn" type="button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg>
+        <span id="langLabel"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker"><i></i><span id="kicker"></span></span>
+        <h1 id="h1"></h1>
+        <p class="lede" id="lede"></p>
+        <div class="cta-row">
+          <a class="btn primary" href="#tools"><span id="cta1"></span>
+            <svg class="flip" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn" href="#roadmap" id="cta2"></a>
+          <a class="btn gold" href="#request" data-rq="consult" id="cta3"></a>
+        </div>
+        <div class="facts" id="facts"></div>
+        <div class="author"><span id="byLbl"></span><strong id="byName"></strong></div>
+      </div>
+      <div class="orbit-wrap">
+        <svg id="orbit" viewBox="0 0 640 640" role="group" aria-labelledby="orbitCap"></svg>
+        <div class="orbit-cap" id="orbitCap"></div>
+        <div class="orb-panel" id="orbPanel" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="tools" class="band">
+    <div class="wrap">
+      <div class="sec-head"><div><h2 id="tTitle"></h2><p id="tSub"></p></div></div>
+      <div class="tk-grid" id="tkGrid"></div>
+    </div>
+  </section>
+
+  <section id="systems">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><h2 id="sTitle"></h2><p id="sSub"></p></div>
+        <div class="filters" id="filters" role="group"></div>
+      </div>
+      <div class="sys-list" id="sysList"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+  </section>
+
+  <section id="journey" class="band">
+    <div class="wrap">
+      <div class="sec-head"><div><h2 id="jTitle"></h2><p id="jSub"></p></div></div>
+      <div class="journey" id="jSteps"></div>
+      <div class="loop-note"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg><span id="jLoop"></span></div>
+      <div class="inside">
+        <h3 id="iTitle"></h3>
+        <p id="iSub"></p>
+        <div class="tabs-demo" id="iTabs"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ims">
+    <div class="wrap">
+      <div class="sec-head"><div><h2 id="mTitle"></h2><p id="mSub"></p></div></div>
+      <div class="table-scroll"><table id="imsTable"></table></div>
+      <div class="ims-foot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex:none;margin-top:2px" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg><span id="mFoot"></span></div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="band">
+    <div class="wrap">
+      <div class="sec-head"><div><h2 id="rTitle"></h2><p id="rSub"></p></div></div>
+      <div class="road" id="road"></div>
+    </div>
+  </section>
+
+  <section id="learn">
+    <div class="wrap">
+      <div class="sec-head"><div><h2 id="kTitle"></h2><p id="kSub"></p></div></div>
+      <div class="kpath" id="kpath"></div>
+    </div>
+  </section>
+
+  <section id="request" class="band">
+    <div class="wrap">
+      <div class="sec-head"><div><h2 id="qTitle"></h2><p id="qSub"></p></div></div>
+      <div class="rq-switch" role="tablist" id="rqSwitch"></div>
+      <div class="rq-grid"><form class="rq-form" id="rqForm" novalidate></form><aside class="rq-side" id="rqSide"></aside></div>
+      <div class="rq-done" id="rqDone" role="status" aria-live="polite" hidden></div>
+    </div>
+  </section>
+
+  <section id="about" style="padding-top:10px">
+    <div class="wrap">
+      <div class="about">
+        <img src="data:image/webp;base64,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" alt="Continual Improvement Academy logo">
+        <div>
+          <h2 id="aName"></h2>
+          <p class="role" id="aRole"></p>
+          <p id="aBio"></p>
+          <p id="aMission"></p>
+          <div class="contact">
+            <a class="btn gold" id="mailBtn" href="#" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span id="mailLbl"></span></a>
+            <a class="btn" href="#request" data-rq="consult" id="aRqC"></a><a class="btn" href="#request" data-rq="training" id="aRqT"></a>
+            <button class="btn" type="button" id="copyBtn"><span class="ltr" id="emailTxt"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong id="fRights"></strong></div>
+    <div id="fNote"></div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ===================== CONFIG ===================== */
+const EMAIL = "moddathersalama.eng@gmail.com";
+/* Live on GitHub Pages: relative paths, same origin as every module. */
+const URLS = {
+  iso9001:  "./modules/iso9001.html",
+  iso14001: "./modules/iso14001.html",
+  iso45001: "./modules/iso45001.html",
+  iso27001: "./modules/iso27001.html",
+  iso22301: "./modules/iso22301.html",
+  iso37301: "./modules/iso37301.html",
+  iso37001: "./modules/iso37001.html",
+  iso31000: "./modules/iso31000-risk-studio.html",
+  iso37000: "./modules/iso37000-governance.html",
+  ims:      "./modules/ims-builder.html",
+  pmo:      "./modules/pmo-maturity.html",
+  exc:      "./modules/excellence-efqm.html",
+  ccc:      "./modules/compliance-anti-bribery.html",
+  aud:      "./modules/smart-audit-improvement.html",
+  str:      "./modules/strategy-performance.html",
+  oec:      "./modules/operations-excellence.html",
+  w8:       "./modules/executive-cockpit-workspace.html"
+};
+
+/* ===================== DATA ===================== */
+/* status: live | dev | plan  — change a module to "live" + give it a url and every section updates. */
+const SYSTEMS = [
+  { id:"iso", color:"--c-iso",
+    name:{en:"ISO Management Systems", ar:"أنظمة الإدارة ISO"},
+    short:{en:["ISO & IMS"], ar:["الأيزو","والأنظمة"]},
+    sub:{en:"Certifiable management system standards and the integrated system that combines them.",
+         ar:"مواصفات أنظمة الإدارة القابلة للإشهاد، والنظام المتكامل الذي يجمعها."},
+    mods:[
+      {k:"iso9001", status:"live", name:{en:"ISO 9001:2026", ar:"ISO 9001:2026"}, note:{en:"Quality", ar:"الجودة"}},
+      {k:"iso14001",status:"live", name:{en:"ISO 14001:2026",ar:"ISO 14001:2026"}, note:{en:"Environment", ar:"البيئة"}},
+      {k:"iso45001",status:"live", name:{en:"ISO 45001:2018",ar:"ISO 45001:2018"}, note:{en:"OH&S", ar:"السلامة والصحة المهنية"}},
+      {k:"iso27001",status:"live", name:{en:"ISO/IEC 27001:2022",ar:"ISO/IEC 27001:2022"}, note:{en:"Information security", ar:"أمن المعلومات"}},
+      {k:"iso22301",status:"live", name:{en:"ISO 22301:2019",ar:"ISO 22301:2019"}, note:{en:"Business continuity", ar:"استمرارية الأعمال"}},
+      {k:"iso37301",status:"live", name:{en:"ISO 37301:2021",ar:"ISO 37301:2021"}, note:{en:"Compliance", ar:"الامتثال"}},
+      {k:"iso37001",status:"live", name:{en:"ISO 37001:2025",ar:"ISO 37001:2025"}, note:{en:"Anti-bribery", ar:"مكافحة الرشوة"}},
+      {k:"ims",status:"live", name:{en:"IMS Builder",ar:"منشئ النظام المتكامل"}, note:{en:"Integrated system · wave 4", ar:"دمج الأنظمة · الموجة 4"}}
+    ]},
+  { id:"grc", color:"--c-grc",
+    name:{en:"Governance, Risk & Compliance", ar:"الحوكمة والمخاطر والامتثال"},
+    short:{en:["Governance","& Risk"], ar:["الحوكمة","والمخاطر"]},
+    sub:{en:"Governance maturity, enterprise risk and compliance obligations in one connected workspace.",
+         ar:"نضج الحوكمة والمخاطر المؤسسية والتزامات الامتثال في مساحة عمل واحدة مترابطة."},
+    mods:[
+      {k:"iso31000",status:"live", name:{en:"Enterprise Risk Studio",ar:"استوديو المخاطر المؤسسية"}, note:{en:"ISO 31000:2018", ar:"ISO 31000:2018"}},
+      {k:"iso37000",status:"live", name:{en:"Governance Maturity",ar:"نضج الحوكمة المؤسسية"}, note:{en:"ISO 37000:2021", ar:"ISO 37000:2021"}},
+      {k:"ccc",status:"live", name:{en:"Compliance & Anti-Bribery Center",ar:"مركز الامتثال ومكافحة الرشوة"}, note:{en:"Registers · speak-up · investigations · breaches", ar:"السجلات · البلاغات · التحقيقات · المخالفات"}}
+    ]},
+  { id:"pmo", color:"--c-pmo",
+    name:{en:"PMO & Project Excellence", ar:"مكتب إدارة المشاريع وتميّز المشاريع"},
+    short:{en:["PMO"], ar:["مكتب","المشاريع"]},
+    sub:{en:"Evidence-based PMO maturity across ten domains, with current vs target and a transformation roadmap.",
+         ar:"تقييم نضج مكتب المشاريع بالأدلة عبر عشرة محاور، مع الوضع الحالي والمستهدف وخارطة تحوّل."},
+    mods:[
+      {k:"pmo",status:"live", name:{en:"PMO Maturity Assessment",ar:"تقييم نضج مكتب المشاريع"}, note:{en:"Self, evidence & validated · wave 5", ar:"ذاتي، بالأدلة، ومعتمد · الموجة 5"}},
+      {k:"pmo",status:"live", name:{en:"PMO Transformation Roadmap",ar:"خارطة تحوّل مكتب المشاريع"}, note:{en:"0–12 months + Gantt", ar:"من 0 إلى 12 شهرًا + Gantt"}},
+      {k:"pmo",status:"live", name:{en:"PMO Studio",ar:"استوديو مكتب المشاريع"}, note:{en:"Portfolio RAG, gates, benefits, capacity", ar:"المحفظة RAG، البوابات، المنافع، السعة"}}
+    ]},
+  { id:"exc", color:"--c-exc",
+    name:{en:"Organizational Excellence", ar:"التميّز المؤسسي"},
+    short:{en:["Excellence"], ar:["التميّز"]},
+    sub:{en:"From quick self-assessment to evidence-based review, with strengths, improvement areas and year-on-year comparison.",
+         ar:"من التقييم الذاتي السريع إلى المراجعة المبنية على الأدلة، مع نقاط القوة وفرص التحسين والمقارنة السنوية."},
+    mods:[
+      {k:"exc",status:"live", name:{en:"Excellence Assessment Center",ar:"مركز تقييم التميّز"}, note:{en:"EFQM Model 2025 · quick scan & full self-assessment · wave 6", ar:"نموذج EFQM 2025 · مسح سريع وتقييم ذاتي شامل · الموجة 6"}},
+      {k:"exc",status:"live", name:{en:"Assessor RADAR review",ar:"مراجعة المقيّم RADAR"}, note:{en:"2025 attributes, evidence checklist, consensus", ar:"سمات 2025، قائمة أدلة، ورشة إجماع"}},
+      {k:"exc",status:"live", name:{en:"Excellence studio & improvement plan",ar:"استوديو التميز وخطة التحسين"}, note:{en:"1000-point results, year-on-year, 0–12 month plan", ar:"نتائج من 1000، مقارنة سنوية، خطة 0–12 شهراً"}}
+    ]},
+  { id:"str", color:"--c-str",
+    name:{en:"Strategy & Performance", ar:"الاستراتيجية والأداء"},
+    short:{en:["Strategy","& KPI"], ar:["الاستراتيجية","والأداء"]},
+    sub:{en:"Link every objective to a KPI, a target, an initiative and an owner.",
+         ar:"اربط كل هدف بمؤشر أداء ومستهدف ومبادرة ومسؤول."},
+    mods:[
+      {k:"str",status:"live", name:{en:"Strategy & Performance Studio",ar:"استوديو الاستراتيجية والأداء"}, note:{en:"SWOT/PESTLE/TOWS, BSC objectives & strategy map · KPI dictionary with automatic RAG & cascade · initiatives with RAID and budget · wave 7B", ar:"SWOT/PESTLE/TOWS وأهداف البطاقة وخريطة الاستراتيجية · قاموس مؤشرات بحالة RAG تلقائية وتتالٍ · مبادرات بسجل RAID وميزانية · الموجة 7B"}}
+    ]},
+  { id:"aud", color:"--c-aud",
+    name:{en:"Audit & Improvement", ar:"التدقيق والتحسين"},
+    short:{en:["Audit &","Improve"], ar:["التدقيق","والتحسين"]},
+    sub:{en:"The operational layer: audits, findings and CAPA, processes, competence and suppliers.",
+         ar:"الطبقة التشغيلية: التدقيق والملاحظات والإجراءات التصحيحية، والعمليات، والكفاءات، والموردون."},
+    mods:[
+      {k:"aud",status:"live", name:{en:"Smart Audit & Improvement Center",ar:"مركز التدقيق والتحسين الذكي"}, note:{en:"Programme, execution, CAPA and dashboard · improvement toolbox (5 Whys, fishbone, Pareto, FMEA, A3) · ISO 19011:2026 · wave 7A", ar:"البرنامج والتنفيذ والإجراءات التصحيحية واللوحة · صندوق أدوات التحسين (لماذا الخمس، عظمة السمكة، باريتو، FMEA، A3) · ISO 19011:2026 · الموجة 7A"}},
+      {k:"oec",status:"live", name:{en:"Operations Excellence Center",ar:"مركز التميّز التشغيلي"}, note:{en:"Process excellence · competency & training · vendor & contractor qualification · wave 7C", ar:"تميّز العمليات · الكفاءات والتدريب · تأهيل الموردين والمقاولين · الموجة 7C"}}
+    ]},
+  { id:"ai", color:"--c-ai",
+    name:{en:"AI Advisory Center", ar:"مركز الاستشارات الذكية"},
+    short:{en:["AI","Advisory"], ar:["المستشار","الذكي"]},
+    sub:{en:"Reads your assessments, risks, audits and KPIs together to find systemic issues, tracks one Organizational Health Index, and gives every module a shared organization profile.",
+         ar:"يقرأ تقييماتك ومخاطرك وتدقيقاتك ومؤشراتك معًا ويحدد المشكلات الجذرية المشتركة، ويتابع مؤشر صحة منشأة واحداً، ويمنح كل وحدة ملف منشأة مشتركاً."},
+    mods:[
+      {k:"w8", status:"live", name:{en:"Executive Cockpit & Organization Workspace",ar:"منصة القيادة ومساحة عمل المنشأة"}, note:{en:"CIA AI Consultant · Organizational Health Index · module registry & backup · wave 8", ar:"مستشار CIA الذكي · مؤشر صحة المنشأة · سجل الوحدات والنسخ الاحتياطي · الموجة 8"}}
+    ]}
+];
+
+const TOOLKITS = [
+  {k:"iso9001", color:"--c-iso", pre:"ISO", code:"9001", ed:{en:"2026 edition", ar:"إصدار 2026"},
+   title:{en:"Quality management systems", ar:"أنظمة إدارة الجودة"},
+   extra:{en:"Transition timeline to the 2026 edition", ar:"الجدول الزمني للانتقال إلى إصدار 2026"}},
+  {k:"iso14001", color:"--c-str", pre:"ISO", code:"14001", ed:{en:"2026 edition", ar:"إصدار 2026"},
+   title:{en:"Environmental management systems", ar:"أنظمة الإدارة البيئية"},
+   extra:{en:"Aspects, impacts and compliance obligations", ar:"الجوانب والتأثيرات البيئية والتزامات الامتثال"}},
+  {k:"iso45001", color:"--c-aud", pre:"ISO", code:"45001", ed:{en:"2018 edition", ar:"إصدار 2018"},
+   title:{en:"Occupational health & safety management systems", ar:"أنظمة إدارة السلامة والصحة المهنية"},
+   extra:{en:"Hazards, risks and worker participation", ar:"المخاطر والأخطار ومشاركة العاملين"}},
+  {k:"iso27001", color:"--c-pmo", pre:"ISO/IEC", code:"27001", ed:{en:"2022 edition", ar:"إصدار 2022"},
+   title:{en:"Information security management systems", ar:"أنظمة إدارة أمن المعلومات"},
+   extra:{en:"All 93 Annex A controls and the Statement of Applicability", ar:"ضوابط الملحق A الـ93 كاملة وبيان قابلية التطبيق"}},
+  {k:"iso22301", color:"--c-grc", pre:"ISO", code:"22301", ed:{en:"2019 edition", ar:"إصدار 2019"},
+   title:{en:"Business continuity management systems", ar:"أنظمة إدارة استمرارية الأعمال"},
+   extra:{en:"BIA tools: MTPD, RTO checks and scenario coverage", ar:"أدوات تحليل الأثر: MTPD وفحص RTO وتغطية السيناريوهات"}},
+  {k:"iso37301", color:"--c-str", pre:"ISO", code:"37301", ed:{en:"2021 edition", ar:"إصدار 2021"},
+   title:{en:"Compliance management systems", ar:"أنظمة إدارة الامتثال"},
+   extra:{en:"Obligations register, compliance risk heatmaps and gap list", ar:"سجل الالتزامات وخرائط حرارة مخاطر الامتثال وقائمة الفجوات"}},
+  {k:"iso37001", color:"--c-grc", pre:"ISO", code:"37001", ed:{en:"2025 edition", ar:"إصدار 2025"},
+   title:{en:"Anti-bribery management systems", ar:"أنظمة إدارة مكافحة الرشوة"},
+   extra:{en:"Bribery risk studio, due diligence and transition to 2025", ar:"استوديو مخاطر الرشوة والعناية الواجبة والانتقال من 2016 إلى 2025"}},
+  {k:"iso31000", color:"--c-grc", pre:"ISO", code:"31000", ed:{en:"2018 edition", ar:"إصدار 2018"},
+   title:{en:"Enterprise risk management — guidelines", ar:"إدارة المخاطر المؤسسية — إرشادات"},
+   feat:{en:["Risk management maturity assessment","Maturity report and improvement roadmap","Principles, framework and process explained","ISO 31000 alignment review checklist","12 templates: criteria, appetite, treatment, KRIs"], ar:["تقييم نضج إدارة المخاطر","تقرير النضج وخارطة التحسين","شرح المبادئ والإطار والعملية","قائمة مراجعة التوافق مع ISO 31000","12 نموذجاً: المعايير، الرغبة، المعالجة، المؤشرات"]},
+   extra:{en:"Enterprise risk studio: register, appetite, heat maps, bow-tie, KRIs and board report", ar:"استوديو المخاطر: السجل والرغبة وخرائط الحرارة وربطة العنق والمؤشرات وتقرير المجلس"}},
+  {k:"iso37000", color:"--c-grc", pre:"ISO", code:"37000", ed:{en:"2021 edition · guidance", ar:"إصدار 2021 · إرشادية"},
+   title:{en:"Governance of organizations — guidance", ar:"حوكمة المنظمات — إرشادات"},
+   feat:{en:["The eleven principles on an interactive diagram","Five-level governance maturity assessment with radar","Improvement roadmap and related standards (31000, 37301, 37001, 37002, 22301)","Governance review checklist","12 templates: board charter, delegation matrix, board evaluation, stakeholder plan","Not certifiable — maturity and board-effectiveness review"], ar:["المبادئ الإحدى عشرة برسم تفاعلي","تقييم نضج الحوكمة بخمسة مستويات مع رادار","خارطة تحسين وتوصيات بالمواصفات المرتبطة (31000، 37301، 37001، 37002، 22301)","قائمة مراجعة الحوكمة","12 نموذجاً: ميثاق المجلس، مصفوفة الصلاحيات، تقييم المجلس، خطة إشراك الأطراف","غير قابلة للإشهاد — تقييم نضج ومراجعة فعالية المجلس"]},
+   extra:{en:"Governance studio: board and committee evaluation, delegation matrix, conflict register, risk oversight linked to 31000 appetite, board PDF", ar:"استوديو الحوكمة: تقييم المجلس ولجانه، مصفوفة الصلاحيات، سجل تعارض المصالح، إشراف المجلس على المخاطر المربوط برغبة 31000، وتقرير المجلس PDF"}},
+  {k:"ims", color:"--c-aud", pre:"IMS", code:"Builder", ed:{en:"Wave 4 · 7 standards + 2 overlays", ar:"الموجة 4 · 7 مواصفات + طبقتان"},
+   title:{en:"Integrated management system builder", ar:"منشئ نظام الإدارة المتكامل"},
+   feat:{en:["Pick any mix: 9001:2026, 14001:2026, 45001, 27001, 22301, 37301, 37001:2025 (+31000, 37000)","Integrated requirements matrix, clauses 4–10, with 2026 changes flagged","Integrated gap assessment: per-standard maturity, radar, heatmap, Gantt roadmap","11 shared documents tagged by clause, with a Saudi worked example","Combined audits under IAF MD 11 — certificates stay per standard"], ar:["اختر أي تركيبة: 9001:2026 و14001:2026 و45001 و27001 و22301 و37301 و37001:2025 (+31000 و37000)","مصفوفة متطلبات متكاملة للبنود 4–10 مع تعليم تغييرات 2026","تقييم فجوات متكامل: نضج لكل مواصفة، رادار، خريطة حرارة، وخارطة Gantt","11 وثيقة موحدة موسومة بالبنود بمثال سعودي","تدقيق مدمج وفق IAF MD 11 — والشهادة تبقى لكل مواصفة"]},
+   extra:{en:"IMS studio: combined audit programme (ISO 19011:2026), management review pack, one CAPA register, certification readiness per standard", ar:"استوديو النظام: برنامج تدقيق مدمج (ISO 19011:2026)، وحزمة مراجعة الإدارة، وسجل CAPA واحد، وجاهزية الإشهاد لكل مواصفة"}},
+  {k:"pmo", color:"--c-pmo", pre:"PMO", code:"Maturity", ed:{en:"Wave 5 · P3M3®-style · ISO 21500 series", ar:"الموجة 5 · على غرار P3M3® · سلسلة ISO 21500"},
+   title:{en:"PMO maturity & transformation", ar:"نضج مكتب إدارة المشاريع وتحوّله"},
+   feat:{en:["Ten PMO domains on five maturity levels (awareness → optimized)","Three scores per question: self, evidence ladder and assessor-validated — validated drives results","Current vs target per domain, radar, gap heatmap and executive narrative","0–12 month transformation roadmap: quick wins, build, embed, with Gantt, owners, KPIs and dependencies","8 editable templates with a Saudi worked example: PMO & project charters, RACI, risk log, change request, lessons, status report, benefits plan","P3M3® is an AXELOS model — an assessment, not an ISO certification"], ar:["عشرة محاور لمكتب المشاريع على خمسة مستويات نضج (من الوعي إلى التحسين)","ثلاث درجات لكل سؤال: ذاتي، وسُلّم أدلة، ومعتمد من المقيّم — والمعتمد يقود النتائج","الحالي مقابل المستهدف لكل محور، رادار، خريطة فجوات حرارية، وسرد تنفيذي","خارطة تحوّل 0–12 شهراً: مكاسب سريعة، بناء، ترسيخ، مع Gantt ومالكين ومؤشرات واعتماديات","8 نماذج قابلة للتعديل بمثال سعودي: ميثاق المكتب والمشروع، RACI، سجل المخاطر، طلب التغيير، الدروس، تقرير الحالة، خطة المنافع","P3M3® نموذج من AXELOS — تقييم وليس شهادة ISO"]},
+   extra:{en:"PMO studio: portfolio register with calculated RAG (SPI/CPI), stage-gate checklists G0–G5, benefits register, capacity heatmap and a monthly executive dashboard PDF", ar:"استوديو المكتب: سجل المحفظة بحالة RAG محسوبة (SPI/CPI)، قوائم بوابات G0–G5، سجل المنافع، خريطة السعة، ولوحة تنفيذية شهرية PDF"}},
+  {k:"exc", color:"--c-exc", pre:"EFQM", code:"2025", ed:{en:"Wave 6 · EFQM Model 2025 · RADAR", ar:"الموجة 6 · نموذج EFQM 2025 · RADAR"},
+   title:{en:"Excellence assessment center", ar:"مركز تقييم التميّز"},
+   feat:{en:["Three depths: 20-question quick scan, full self-assessment of all 29 parts, assessor RADAR review","2025 RADAR attributes with master rules and an evidence checklist per part — the assessor score drives results","Points out of 1000 with verified weights, radar, heatmap, strengths and areas for improvement","Indicative recognition level and year-on-year comparison (up to 3 years)","0–12 month improvement plan: impact × effort matrix, owners, KPIs, dependencies, Gantt","EFQM is a trademark of EFQM — a self-assessment is not EFQM recognition"], ar:["ثلاثة مستويات: مسح سريع 20 سؤالاً، تقييم ذاتي شامل للأجزاء الـ29، ومراجعة مقيّم RADAR","سمات RADAR 2025 مع القواعد الحاكمة وقائمة أدلة لكل جزء — ودرجة المقيّم تقود النتائج","النقاط من 1000 بالأوزان المحققة، رادار، خريطة حرارية، نقاط القوة وفرص التحسين","مستوى اعتراف استرشادي ومقارنة سنوية (حتى 3 سنوات)","خطة تحسين 0–12 شهراً: مصفوفة الأثر × الجهد، مالكون، مؤشرات، اعتماديات، Gantt","EFQM علامة تجارية لمؤسسة EFQM — والتقييم الذاتي ليس اعترافاً منها"]},
+   extra:{en:"Excellence studio: consensus sheet, RADAR worksheet, results trend register, perception survey planner, submission builder with word/page counter, site-visit checklist; mapping to King Abdulaziz and Egypt Government Excellence awards", ar:"استوديو التميز: ورقة الإجماع، ورقة RADAR، سجل اتجاهات النتائج، تخطيط مسوح المعنيين، منشئ وثيقة التقديم بعدّاد الكلمات والصفحات، قائمة الزيارة؛ وربط بجائزتي الملك عبدالعزيز ومصر للتميز الحكومي"}}
+];
+
+const WAVES = [
+  {n:"0", s:"live", t:{en:"ISO 9001 · 14001 · 45001 · 27001", ar:"ISO 9001 و14001 و45001 و27001"}, d:{en:"Four interactive toolkits, each released on its own.", ar:"أربع أدوات تفاعلية، أُطلقت كل واحدة منها مستقلة."}},
+  {n:"1", s:"live", t:{en:"Academy Hub", ar:"بوابة الأكاديمية"}, d:{en:"This page: one front door for every tool, today and to come.", ar:"هذه الصفحة: مدخل واحد لكل الأدوات، الحالية والقادمة."}},
+  {n:"2", s:"live", t:{en:"ISO 22301 ✓ → ISO 37301 ✓ → ISO 37001 ✓", ar:"ISO 22301 ✓ ← ISO 37301 ✓ ← ISO 37001 ✓"}, d:{en:"Business continuity, compliance and anti-bribery toolkits are all live.", ar:"أدوات استمرارية الأعمال والامتثال ومكافحة الرشوة متاحة كلها."}},
+  {n:"3", s:"live", t:{en:"Enterprise Risk Studio ✓ → Governance Maturity ✓", ar:"استوديو المخاطر المؤسسية ✓ ← نضج الحوكمة ✓"}, d:{en:"Wave complete: the ISO 31000 risk studio and the ISO 37000 governance maturity toolkit are live, linked through one risk appetite scale.", ar:"اكتملت الموجة: استوديو ISO 31000 للمخاطر وأداة نضج الحوكمة ISO 37000 متاحان، ومربوطان بمقياس رغبة واحد في المخاطر."}},
+  {n:"4", s:"live", t:{en:"IMS Builder ✓", ar:"منشئ النظام المتكامل ✓"}, d:{en:"Live: pick any mix of seven standards and get one requirements matrix, one gap assessment with roadmap, one document set and an IMS studio for audits, management review, CAPA and certification readiness.", ar:"متاح: اختر أي تركيبة من سبع مواصفات واحصل على مصفوفة متطلبات واحدة، وتقييم فجوات بخارطة طريق، ومنظومة وثائق موحدة، واستوديو للتدقيق ومراجعة الإدارة وCAPA وجاهزية الإشهاد."}},
+  {n:"5", s:"live", t:{en:"PMO Maturity & Transformation ✓", ar:"نضج مكتب المشاريع وتحوّله ✓"}, d:{en:"Live: ten domains, three scores per question (self, evidence, validated), current vs target, a 0–12 month roadmap with Gantt, a PMO studio and eight templates with a Saudi example.", ar:"متاح: عشرة محاور، وثلاث درجات لكل سؤال (ذاتي، بالأدلة، معتمد)، والحالي مقابل المستهدف، وخارطة تحوّل 0–12 شهراً بمخطط Gantt، واستوديو لمكتب المشاريع، وثمانية نماذج بمثال سعودي."}},
+  {n:"6", s:"live", t:{en:"Excellence Assessment Center ✓", ar:"مركز تقييم التميّز ✓"}, d:{en:"Live: EFQM Model 2025 with a quick scan, full self-assessment and assessor RADAR review, results out of 1000, year-on-year comparison, a 0–12 month improvement plan, an excellence studio and eight templates with a Saudi example.", ar:"متاح: نموذج EFQM 2025 بمسح سريع وتقييم ذاتي شامل ومراجعة مقيّم بمنطق RADAR، ونتائج من 1000، ومقارنة سنوية، وخطة تحسين 0–12 شهراً، واستوديو للتميز، وثمانية نماذج بمثال سعودي."}},
+  {n:"6B", s:"live", t:{en:"Compliance & Anti-Bribery Center ✓ — GRC complete", ar:"مركز الامتثال ومكافحة الرشوة ✓ — اكتمال منظومة الحوكمة والمخاطر والامتثال"}, d:{en:"Live: obligations, risk, third-party, gifts and conflict registers; speak-up and investigation case management; breaches; control testing and training; a board dashboard with a 3-year comparison; a maturity check with a 0–12 month plan; and twelve templates with a Saudi example.", ar:"متاح: سجلات الالتزامات والمخاطر والأطراف الثالثة والهدايا وتعارض المصالح، وإدارة البلاغات والتحقيقات، والمخالفات، واختبار الضوابط والتدريب، ولوحة للمجلس بمقارنة 3 سنوات، وفحص نضج بخطة 0–12 شهراً، واثنا عشر نموذجاً بمثال سعودي."}},
+  {n:"7A", s:"live", t:{en:"Audit & Improvement ✓", ar:"التدقيق والتحسين ✓"}, d:{en:"Live: the Smart Audit & Improvement Center — a risk-based ISO 19011:2026 programme for seven standards, a 12-month calendar, auditor competence and impartiality checks, audit plans and clause-based checklists, evidence and findings, a CAPA register with ageing and recurrence, the improvement toolbox (5 Whys, fishbone, Pareto, FMEA, A3) and a one-page management review report.", ar:"متاح: مركز التدقيق والتحسين — برنامج تدقيق مبني على المخاطر وفق ISO 19011:2026 لسبع مواصفات، وتقويم 12 شهراً، وفحص كفاءة المدققين وحيادهم، وخطط تدقيق وقوائم فحص حسب البند، وسجل الأدلة والملاحظات، وسجل إجراءات تصحيحية بالأعمار والتكرار، وصندوق أدوات التحسين (لماذا الخمس، عظمة السمكة، باريتو، FMEA، A3)، وتقرير مراجعة الإدارة في صفحة واحدة."}},
+  {n:"7B", s:"live", t:{en:"Strategy & Performance ✓", ar:"الاستراتيجية والأداء ✓"}, d:{en:"Live: the Strategy & Performance Studio — an organization profile with mission, vision, values and scorecard perspectives; SWOT, PESTLE and a TOWS matrix; objectives across the four balanced-scorecard perspectives, each checked against ISO 9001:2026 clause 6.2; a strategy map; a KPI dictionary with automatic RAG, quarterly trends and a corporate-to-department cascade; initiatives with milestones, budget against actual, a timeline and a RAID log; a dashboard with a KPI heatmap and portfolio view; a one-page quarterly business review; and ten templates with a Saudi example.", ar:"متاح: استوديو الاستراتيجية والأداء — ملف منشأة بالرسالة والرؤية والقيم ومناظير البطاقة، وتحليل SWOT وPESTLE ومصفوفة TOWS، وأهداف على مناظير بطاقة الأداء المتوازن الأربعة مع فحص كل هدف مقابل البند 6.2 من ISO 9001:2026، وخريطة استراتيجية، وقاموس مؤشرات بحالة RAG تلقائية واتجاهات ربع سنوية وتتالٍ من المؤسسة إلى الإدارات، ومبادرات بمعالمها وميزانيتها مقابل الفعلي وجدولها الزمني وسجل RAID، ولوحة بخريطة حرارة للمؤشرات ومحفظة المبادرات، ومراجعة ربع سنوية في صفحة واحدة، وعشرة نماذج بمثال سعودي."}},
+  {n:"7C", s:"live", t:{en:"Operations Excellence ✓ — operational suite complete", ar:"التميّز التشغيلي ✓ — اكتمال الحزمة التشغيلية"}, d:{en:"Live: the Operations Excellence Center — a process architecture on three levels with a process-house map coloured by maturity, SIPOC per process, a RACI matrix that checks for exactly one accountable and at least one responsible, process KPIs with a nine-point check against ISO 9001:2026 clause 4.4.1, and five-dimension process maturity with a radar; a competence matrix with a gap heatmap, needs analysis generated from the gaps, an annual training plan with costs, certificate and licence expiry alerts at 30, 60 and 90 days, and Kirkpatrick four-level effectiveness, linked to clause 7.2 of ISO 9001 and ISO 45001; weighted vendor prequalification with a pass mark and knock-outs, an approved vendor list with risk tiers and re-evaluation dates, Aramco and SEC-style contractor HSE qualification with LTIFR and TRIR, periodic performance grading A to D, and supplier corrective action requests, linked to clause 8.4; a dashboard, a one-page operations review and eleven templates with a Saudi example.", ar:"متاح: مركز التميّز التشغيلي — بنية عمليات على ثلاثة مستويات مع خريطة البيت التشغيلي ملوّنة بالنضج، وSIPOC لكل عملية، ومصفوفة RACI تفحص وجود صاحب مساءلة واحد ومنفذ واحد على الأقل، ومؤشرات العمليات مع فحص من تسعة بنود مقابل البند 4.4.1 من ISO 9001:2026، ونضج العمليات على خمسة محاور مع رادار؛ ومصفوفة كفاءات بخريطة فجوات، وتحليل احتياجات يُولَّد من الفجوات، وخطة تدريب سنوية بتكلفتها، وتنبيهات انتهاء الشهادات والرخص عند 30 و60 و90 يوماً، وفاعلية التدريب بمستويات كيركباتريك الأربعة، مربوطة بالبند 7.2 من ISO 9001 وISO 45001؛ وتأهيل مسبق موزون للموردين بنسبة نجاح ومعايير استبعاد، وقائمة موردين معتمدين بدرجات الخطورة ومواعيد إعادة التقييم، وتأهيل سلامة للمقاولين على نمط أرامكو والعقد الموحد مع LTIFR وTRIR، وتقييم أداء دوري بدرجات A إلى D، وطلبات إجراء تصحيحي للموردين، مربوطة بالبند 8.4؛ ولوحة ومراجعة تشغيلية في صفحة واحدة، وأحد عشر نموذجاً بمثال سعودي."}},
+  {n:"8", s:"live", t:{en:"Executive Cockpit & Organization Workspace ✓ — platform complete", ar:"منصة القيادة ومساحة عمل المنشأة ✓ — اكتمال المنصة"}, d:{en:"Live: one organization profile — sites, departments and module owners — feeding a module registry that detects every connected toolkit automatically on the same origin, with data-health checks and a full backup and restore; a weighted Organizational Health Index across eight pillars (compliance, risk, governance, strategy, operations, audit & CAPA, excellence, PMO) with a radar chart, quarterly snapshots and trend, a site-by-pillar heatmap, a top-ten risk register and a one-page board pack; a CIA AI Consultant with an offline rule engine that finds recurring patterns across modules with evidence and root-cause themes, optional Claude-assisted synthesis, and a 0–12 month integrated improvement plan; and seven templates with a Saudi example. This completes the platform.", ar:"متاح: ملف منشأة واحد — المواقع والإدارات وملاك الوحدات — يُغذّي سجل وحدات يكتشف كل أداة متصلة تلقائياً على النطاق نفسه، مع فحوصات صحة البيانات ونسخ احتياطي كامل واستعادة؛ ومؤشر صحة منشأة مرجّح على ثماني ركائز (الامتثال، المخاطر، الحوكمة، الاستراتيجية، العمليات، التدقيق والإجراءات التصحيحية، التميّز، PMO) مع رادار ولقطات فصلية واتجاه، وخريطة حرارة للمواقع مقابل الركائز، وسجل أعلى عشر مخاطر، وتقرير مجلس إدارة في صفحة واحدة؛ ومستشار CIA الذكي بمحرك قواعد يعمل دون اتصال يكتشف الأنماط المتكررة عبر الوحدات بأدلتها وأسبابها الجذرية، وتحليل اختياري بمساعدة كلود، وخطة تحسين متكاملة من صفر إلى 12 شهراً؛ وسبعة نماذج بمثال سعودي. وبهذا تكتمل المنصة."}},
+  {milestone:true}
+];
+
+const IMS_ROWS = [
+  {cl:"4.1–4.2", en:"Context & interested parties", ar:"السياق والأطراف المعنية", out:{en:"One context and stakeholder register", ar:"سجل موحد للسياق والأطراف المعنية"}},
+  {cl:"4.3–4.4", en:"Scope & the system itself", ar:"النطاق والنظام", out:{en:"One scope statement and process map", ar:"بيان نطاق وخريطة عمليات واحدة"}},
+  {cl:"5.1–5.3", en:"Leadership, policy & roles", ar:"القيادة والسياسة والأدوار", out:{en:"Integrated policy and responsibility matrix", ar:"سياسة متكاملة ومصفوفة مسؤوليات"}},
+  {cl:"6.1–6.2", en:"Risks, opportunities & objectives", ar:"المخاطر والفرص والأهداف", out:{en:"One risk methodology, objectives per discipline", ar:"منهجية مخاطر واحدة، وأهداف لكل مجال"}},
+  {cl:"7.2–7.4", en:"Competence, awareness & communication", ar:"الكفاءة والتوعية والاتصال", out:{en:"One training matrix and communication plan", ar:"مصفوفة تدريب وخطة اتصال واحدة"}},
+  {cl:"7.5", en:"Documented information", ar:"المعلومات الموثقة", out:{en:"One document control procedure", ar:"إجراء واحد لضبط الوثائق"}},
+  {cl:"8.1", en:"Operational planning & control", ar:"التخطيط والضبط التشغيلي", out:{en:"Shared planning; discipline-specific controls", ar:"تخطيط مشترك وضوابط خاصة بكل مجال"}},
+  {cl:"9.1", en:"Monitoring & measurement", ar:"الرصد والقياس", out:{en:"One KPI framework", ar:"إطار مؤشرات أداء واحد"}},
+  {cl:"9.2", en:"Internal audit", ar:"التدقيق الداخلي", out:{en:"One risk-based audit programme", ar:"برنامج تدقيق واحد مبني على المخاطر"}},
+  {cl:"9.3", en:"Management review", ar:"مراجعة الإدارة", out:{en:"One integrated review meeting", ar:"اجتماع مراجعة متكامل واحد"}},
+  {cl:"10", en:"Nonconformity, corrective action & improvement", ar:"عدم المطابقة والإجراء التصحيحي والتحسين", out:{en:"One CAPA register", ar:"سجل موحد للإجراءات التصحيحية"}}
+];
+const IMS_SPEC = [
+  {en:"Customer and product/service requirements", ar:"متطلبات العملاء والمنتجات والخدمات"},
+  {en:"Environmental aspects and compliance obligations", ar:"الجوانب البيئية والتزامات الامتثال"},
+  {en:"Hazard identification, worker consultation and participation", ar:"تحديد المخاطر، وتشاور العاملين ومشاركتهم"},
+  {en:"Information security risk treatment, Annex A and SoA", ar:"معالجة مخاطر أمن المعلومات والملحق A وبيان قابلية التطبيق"}
+];
+
+const KNOW = [
+  {en:["ISO standards","Internationally agreed standards developed through ISO's national member bodies. Management system standards set out what an organization must achieve, not how to do it, so each organization designs its own way of meeting them."],
+   ar:["مواصفات الأيزو","مواصفات دولية متفق عليها تُعدّ عبر الهيئات الوطنية الأعضاء في ISO. مواصفات أنظمة الإدارة تحدد ما يجب على المنشأة تحقيقه لا طريقة تحقيقه، فتصمم كل منشأة أسلوبها الخاص في الوفاء بها."], rel:"ISO 9001 · 14001 · 45001 · 27001"},
+  {en:["Management systems","The policies, objectives, processes and roles an organization uses to achieve intended results. ISO management system standards share one Harmonized Structure (clauses 4 to 10), which is what makes integration practical."],
+   ar:["أنظمة الإدارة","السياسات والأهداف والعمليات والأدوار التي تستخدمها المنشأة لتحقيق النتائج المرجوة. تشترك مواصفات أنظمة الإدارة في هيكل موحّد (البنود من 4 إلى 10)، وهذا ما يجعل دمجها عمليًا."], rel:"IMS"},
+  {en:["Certification","An independent certification body audits the system in two stages, issues a certificate for three years, and returns for annual surveillance audits. Accreditation confirms that the certification body itself is competent."],
+   ar:["الإشهاد (المنح)","تقوم جهة منح مستقلة بتدقيق النظام على مرحلتين، وتصدر شهادة لمدة ثلاث سنوات، ثم تجري تدقيقات مراقبة سنوية. أما الاعتماد فيؤكد كفاءة جهة المنح نفسها."], rel:"ISO/IEC 17021-1"},
+  {en:["Auditing","ISO 19011 gives guidance on managing audit programmes and conducting audits. Internal audits are first-party, supplier audits are second-party, and certification audits are third-party."],
+   ar:["التدقيق","تقدم ISO 19011 إرشادات لإدارة برامج التدقيق وتنفيذها. التدقيق الداخلي طرف أول، وتدقيق الموردين طرف ثانٍ، وتدقيق الإشهاد طرف ثالث."], rel:"ISO 19011"},
+  {en:["Governance","ISO 37000 is guidance on how governing bodies direct, oversee and hold the organization accountable for its purpose and value. Because it is guidance rather than requirements, it is assessed by maturity, not certified."],
+   ar:["الحوكمة","ISO 37000 إرشادات حول كيفية توجيه مجالس الإدارة للمنشأة والإشراف عليها ومساءلتها عن غايتها والقيمة التي تحققها. ولأنها إرشادية لا تتضمن متطلبات، فإنها تُقيَّم بالنضج ولا تُمنح عليها شهادة."], rel:"ISO 37000"},
+  {en:["Risk management","ISO 31000 provides principles, a framework and a process for managing risk at every level. It underpins the risk-based thinking required by every management system standard."],
+   ar:["إدارة المخاطر","تقدم ISO 31000 مبادئ وإطارًا وعملية لإدارة المخاطر على جميع المستويات، وهي الأساس للتفكير القائم على المخاطر الذي تتطلبه كل مواصفات أنظمة الإدارة."], rel:"ISO 31000"},
+  {en:["Organizational excellence","Excellence models look beyond compliance at how an organization sets direction, executes and achieves results. The EFQM Model uses the RADAR logic to judge approaches, deployment and results."],
+   ar:["التميّز المؤسسي","تنظر نماذج التميّز إلى ما بعد الامتثال: كيف تحدد المنشأة توجهها وتنفذ وتحقق النتائج. ويستخدم نموذج EFQM منطق RADAR للحكم على المنهجيات والتطبيق والنتائج."], rel:"EFQM Model 2025"},
+  {en:["PMO & project maturity","A project management office sets methodology, governance and reporting for projects and portfolios. Maturity models such as P3M3 grade capability on five levels, from awareness to optimized."],
+   ar:["مكتب المشاريع ونضج إدارة المشاريع","يضع مكتب إدارة المشاريع المنهجية والحوكمة والتقارير للمشاريع والمحافظ. وتصنّف نماذج النضج مثل P3M3 القدرة على خمسة مستويات، من الوعي إلى التحسين المستمر."], rel:"P3M3"},
+  {en:["Continual improvement","Plan–Do–Check–Act ties every system together: assess, fix root causes, verify, and reassess. Common tools include 5 Whys, fishbone, Pareto, FMEA, A3 and CAPA."],
+   ar:["التحسين المستمر","دورة خطط–نفّذ–افحص–صحّح تربط الأنظمة كلها: قيّم، وعالج الأسباب الجذرية، وتحقق، ثم أعد التقييم. ومن أدواتها: لماذا الخمس، وعظمة السمكة، وباريتو، وFMEA، وA3، والإجراءات التصحيحية."], rel:"PDCA"}
+];
+
+const UI = {
+  en:{
+    lang:"العربية", brand:"Continual Improvement Academy", brandSub:"From compliance to performance",
+    nav:[["tools","Tools"],["systems","Systems"],["journey","How it works"],["ims","IMS"],["roadmap","Roadmap"],["learn","Learn"],["request","Request a service"],["about","About"]],
+    kicker:"", h1:"From compliance to performance",
+    lede:"Interactive toolkits for management systems, governance, risk and organizational excellence. Learn a standard, assess your readiness and leave with an action plan. New modules are released one at a time.",
+    cta1:"Open the ISO toolkits", cta2:"See the roadmap",
+    facts:[["—","live tools"],["—","connected systems"],["—","modules live on the roadmap"],["AR · EN","every tool, both languages"]],
+    by:"Prepared by", name:"Modather Salama",
+    orbitCap:"Seven systems around one organization profile. The wheel moves through them; tap any system to stop and pick a module.",
+    orb:{mods:"modules",open:"Open",soon:"Coming soon",more:"See full section",prev:"Previous system",next:"Next system",play:"Resume the tour",pause:"Pause the tour"},
+    center:["Your","organization"], liveN:n=>n+" live", devW:"In build", planW:"Planned",
+    tTitle:"Live toolkits", tSub:"Each toolkit covers the full standard: learn it, assess against it, and build what you need to implement it.",
+    tkFeat:["Readiness self-assessment","Readiness report and action plan","Every clause explained","Audit checklist","Templates with worked examples"],
+    open:"Open toolkit", liveTag:"Live",
+    sTitle:"The seven systems", sSub:"Every module works on its own today and will share one organization profile, one evidence base and one improvement plan once the platform goes online.",
+    filters:[["all","All"],["live","Live"],["dev","In development"],["plan","Planned"]],
+    legend:[["live","Live — opens the toolkit"],["dev","In development"],["plan","Planned"]],
+    notify:"Tell me when it launches", notifySubj:s=>"CIA — notify me: "+s,
+    jTitle:"How every tool works", jSub:"The same six-step cycle runs through every module, so moving from one system to another feels familiar.",
+    steps:[["Profile","Describe your organization, scope and context."],["Assess","Answer evidence-based questions, clause by clause."],["Analyze","See gaps, scores and priorities."],["Improve","Get an action plan with owners and dates."],["Monitor","Track actions, KPIs and closure."],["Reassess","Measure again and compare progress."]],
+    jLoop:"Reassess feeds the next profile: the cycle is continual, not a one-off test.",
+    iTitle:"Inside each toolkit", iSub:"Every module follows the same structure and the same design, so the tools can merge into one platform without a redesign.",
+    iTabs:["Learn","Assess","Tools","Documents","Audit","Dashboard","Report","AI assistant"],
+    mTitle:"One system, not four", mSub:"ISO 9001, 14001, 45001 and 27001 share the same core structure. Integrate the common processes once, then add what each standard requires on top.",
+    mHead:["Clause","Common process","Integrated output"], mSpec:"Standard-specific requirements",
+    mFoot:"The IMS Builder (wave 4, now live) generates this matrix for any combination of seven standards, followed by one integrated gap assessment, roadmap and document set.",
+    rTitle:"Roadmap", rSub:"Build, test, release, market, collect feedback, improve. Each wave is released as it is finished.",
+    st:{live:"Live",dev:"In development",plan:"Planned"}, wave:"Wave",
+    milestone:"Every ISO toolkit, the GRC suite and the audit-and-improvement suite are live, and now the Executive Cockpit, the CIA AI Consultant and the Organization Workspace complete the platform: one organization profile, one Organizational Health Index, and one AI advisor reading across every module.",
+    kTitle:"Knowledge center", kSub:"Nine topics, in the order they build on each other. Open any topic for a short explanation.",
+    aRole:"Consultant — Trainer — Governance Expert",
+    aBio:"HSEQ and integrated management systems consultant with 16+ years in the field, lead auditor across 11 ISO standards, 35+ organizations qualified for certification and 500+ professionals trained across the region.",
+    aMission:"The Academy turns that consulting practice into tools any organization can use: clear explanations, honest self-assessment and a plan you can act on.",
+    mail:"Email me", copied:"Email address copied",
+    rights:"© 2026 Modather Salama — Continual Improvement Academy. All rights reserved.",
+    note:"The toolkits explain standards for understanding and training; they do not reproduce or replace the official texts. ISO standards are copyright of ISO. EFQM and P3M3 are trademarks of their respective owners. Academy self-assessments are not certification or formal recognition."
+  },
+  ar:{
+    lang:"English", brand:"أكاديمية التحسين المستمر", brandSub:"من الامتثال إلى الأداء",
+    nav:[["tools","الأدوات"],["systems","المنظومات"],["journey","آلية العمل"],["ims","النظام المتكامل"],["roadmap","خارطة الطريق"],["learn","المعرفة"],["request","اطلب خدمة"],["about","من نحن"]],
+    kicker:"", h1:"من الامتثال إلى الأداء",
+    lede:"أدوات تفاعلية لأنظمة الإدارة والحوكمة والمخاطر والتميّز المؤسسي. تعلّم المواصفة، وقيّم جاهزيتك، واخرج بخطة عمل واضحة. تُطلق الوحدات الجديدة واحدة تلو الأخرى.",
+    cta1:"افتح أدوات الأيزو", cta2:"اطّلع على خارطة الطريق",
+    facts:[["—","أداة متاحة"],["—","منظومات مترابطة"],["—","وحدة متاحة في خارطة الطريق"],["عربي · English","كل أداة باللغتين"]],
+    by:"إعداد", name:"مدثر سلامه",
+    orbitCap:"سبع منظومات حول ملف منشأة واحد. الدائرة تتنقل بينها تلقائياً، واضغط أي منظومة لتتوقف عندها وتختار الوحدة.",
+    orb:{mods:"وحدات",open:"افتح",soon:"قريباً",more:"عرض القسم كاملاً",prev:"المنظومة السابقة",next:"المنظومة التالية",play:"استئناف التنقل",pause:"إيقاف التنقل"},
+    center:["منشأتك",""], liveN:n=>n+" متاحة", devW:"قيد التطوير", planW:"مخطط",
+    tTitle:"الأدوات المتاحة", tSub:"تغطي كل أداة المواصفة كاملة: تعلّمها، وقيّم نفسك وفقها، وابنِ ما تحتاجه لتطبيقها.",
+    tkFeat:["تقييم ذاتي للجاهزية","تقرير الجاهزية وخطة العمل","شرح كل بند","قائمة تدقيق","نماذج مع أمثلة تطبيقية"],
+    open:"افتح الأداة", liveTag:"متاحة",
+    sTitle:"المنظومات السبع", sSub:"تعمل كل وحدة اليوم بشكل مستقل، وستشترك جميعها في ملف منشأة واحد وقاعدة أدلة واحدة وخطة تحسين واحدة عند انتقال المنصة إلى الإنترنت.",
+    filters:[["all","الكل"],["live","متاحة"],["dev","قيد التطوير"],["plan","مخطط"]],
+    legend:[["live","متاحة — تفتح الأداة"],["dev","قيد التطوير"],["plan","مخطط"]],
+    notify:"أبلغني عند الإطلاق", notifySubj:s=>"CIA — أبلغني عند إطلاق: "+s,
+    jTitle:"كيف تعمل كل أداة", jSub:"الدورة نفسها من ست خطوات تسري في كل الوحدات، فيصبح الانتقال من منظومة إلى أخرى مألوفًا.",
+    steps:[["الملف التعريفي","صف منشأتك ونطاقها وسياقها."],["التقييم","أجب عن أسئلة مبنية على الأدلة، بندًا بندًا."],["التحليل","اطّلع على الفجوات والدرجات والأولويات."],["التحسين","احصل على خطة عمل بمسؤولين ومواعيد."],["المتابعة","تابع الإجراءات والمؤشرات والإغلاق."],["إعادة التقييم","قِس مجددًا وقارن التقدم."]],
+    jLoop:"إعادة التقييم تغذي الملف التعريفي التالي: الدورة مستمرة، وليست اختبارًا لمرة واحدة.",
+    iTitle:"داخل كل أداة", iSub:"تتبع كل وحدة الهيكل نفسه والتصميم نفسه، لتندمج الأدوات في منصة واحدة دون إعادة تصميم.",
+    iTabs:["تعلّم","قيّم","الأدوات","الوثائق","التدقيق","لوحة المؤشرات","التقرير","المساعد الذكي"],
+    mTitle:"نظام واحد لا أربعة", mSub:"تشترك ISO 9001 و14001 و45001 و27001 في البنية الأساسية نفسها. ادمج العمليات المشتركة مرة واحدة، ثم أضف ما تتطلبه كل مواصفة.",
+    mHead:["البند","العملية المشتركة","المخرج المتكامل"], mSpec:"متطلبات خاصة بكل مواصفة",
+    mFoot:"يُنشئ «منشئ النظام المتكامل» (الموجة 4، متاح الآن) هذه المصفوفة لأي تركيبة من سبع مواصفات، يليها تقييم فجوات متكامل وخارطة طريق ومنظومة وثائق موحدة.",
+    rTitle:"خارطة الطريق", rSub:"بناء، اختبار، إطلاق، تسويق، جمع الملاحظات، تحسين. تُطلق كل موجة فور اكتمالها.",
+    st:{live:"متاحة",dev:"قيد التطوير",plan:"مخطط"}, wave:"الموجة",
+    milestone:"كل أدوات الأيزو، ومنظومة الحوكمة والمخاطر والامتثال، والتدقيق والتحسين متاحة، والآن تكتمل المنصة بلوحة القيادة التنفيذية ومستشار CIA الذكي ومساحة عمل المنشأة: ملف منشأة واحد، ومؤشر صحة مؤسسية واحد، ومستشار ذكاء اصطناعي يقرأ عبر كل الوحدات.",
+    kTitle:"مركز المعرفة", kSub:"تسعة موضوعات مرتبة بحسب تسلسل بنائها. افتح أي موضوع لقراءة شرح مختصر.",
+    aRole:"استشاري — مدرب — خبير حوكمة",
+    aBio:"استشاري في أنظمة الجودة والصحة والسلامة والبيئة والأنظمة المتكاملة بخبرة تتجاوز 16 عامًا، ومدقق رئيسي معتمد في 11 مواصفة أيزو، أهّل أكثر من 35 منشأة للحصول على الشهادات ودرّب أكثر من 500 متخصص في المنطقة.",
+    aMission:"تحوّل الأكاديمية هذه الخبرة الاستشارية إلى أدوات تستطيع أي منشأة استخدامها: شرح واضح، وتقييم ذاتي صادق، وخطة قابلة للتنفيذ.",
+    mail:"راسلني", copied:"تم نسخ البريد الإلكتروني",
+    rights:"© 2026 مدثر سلامه — أكاديمية التحسين المستمر. جميع الحقوق محفوظة.",
+    note:"تشرح الأدوات المواصفات لأغراض الفهم والتدريب، ولا تنقل نصوصها الرسمية ولا تغني عنها. حقوق مواصفات الأيزو محفوظة لمنظمة ISO. EFQM وP3M3 علامات مملوكة لأصحابها. التقييمات الذاتية في الأكاديمية ليست إشهادًا ولا اعترافًا رسميًا."
+  }
+};
+
+/* ===================== RENDER ===================== */
+let L = "en", filter = "all", orbitDrawn = false;
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const cssv = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const toArDigits = s => L==="ar" ? String(s) : String(s);
+const mailto = (subj, body="") => `mailto:${EMAIL}?subject=${encodeURIComponent(subj)}${body?`&body=${encodeURIComponent(body)}`:""}`;
+const ARROW = `<svg class="flip" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
+const EXT = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>`;
+const CHEV = `<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>`;
+
+function countLive(sys){ return sys.mods.filter(m=>m.status==="live").length; }
+function sysStatus(sys){ if(countLive(sys)) return "live"; if(sys.mods.some(m=>m.status==="dev")) return "dev"; return "plan"; }
+
+function renderText(){
+  const u = UI[L];
+  document.documentElement.lang = L; document.documentElement.dir = L==="ar"?"rtl":"ltr";
+  document.title = (L==="ar"?"أكاديمية التحسين المستمر — البوابة":"Continual Improvement Academy — Academy Hub");
+  const set=(id,v)=>{const e=$(id); if(e) e.textContent=v;};
+  set("bName",u.brand); set("bSub",u.brandSub); set("langLabel",u.lang);
+  $("langBtn").setAttribute("aria-label", L==="ar"?"Switch to English":"التبديل إلى العربية");
+  $("nav").innerHTML = u.nav.map(([h,t])=>`<a href="#${h}">${esc(t)}</a>`).join("");
+  const live = new Set(SYSTEMS.flatMap(s=>s.mods.filter(m=>m.status==="live").map(m=>URLS[m.k]||m.url||m.name.en))).size; /* unique live toolkits */
+  set("kicker", L==="ar" ? `${live} أدوات متاحة الآن` : `${live} toolkits live`);
+  set("h1",u.h1); set("lede",u.lede); set("cta1",u.cta1); set("cta2",u.cta2);
+  const total = SYSTEMS.reduce((a,s)=>a+s.mods.length,0);
+  const liveMods = SYSTEMS.reduce((a,s)=>a+s.mods.filter(m=>m.status==="live").length,0);
+  const f = u.facts.map((x,i)=> i===0?[String(live),x[1]] : i===1?[String(SYSTEMS.length),x[1]] : i===2?[`${liveMods} / ${total}`,x[1]] : x);
+  $("facts").innerHTML = f.map(([b,s])=>`<div class="fact"><b>${esc(b)}</b><span>${esc(s)}</span></div>`).join("");
+  set("byLbl",u.by); set("byName",u.name); set("orbitCap",u.orbitCap);
+  set("tTitle",u.tTitle); set("tSub",u.tSub); set("sTitle",u.sTitle); set("sSub",u.sSub);
+  set("jTitle",u.jTitle); set("jSub",u.jSub); set("jLoop",u.jLoop); set("iTitle",u.iTitle); set("iSub",u.iSub);
+  set("mTitle",u.mTitle); set("mSub",u.mSub); set("mFoot",u.mFoot);
+  set("rTitle",u.rTitle); set("rSub",u.rSub); set("kTitle",u.kTitle); set("kSub",u.kSub);
+  set("aName",u.name); set("aRole",u.aRole); set("aBio",u.aBio); set("aMission",u.aMission);
+  set("mailLbl",u.mail); set("emailTxt",EMAIL); $("mailBtn").href = mailto(L==="ar"?"أكاديمية التحسين المستمر — استفسار":"Continual Improvement Academy — enquiry");
+  set("fRights",u.rights); set("fNote",u.note);
+  set("cta3",RQ[L].quick.consult); set("aRqC",RQ[L].quick.consult); set("aRqT",RQ[L].quick.training);
+  document.querySelectorAll("[data-rq]").forEach(a=>a.onclick=e=>{e.preventDefault(); rqOpen(a.dataset.rq);});
+}
+
+function renderToolkits(){
+  const u = UI[L];
+  $("tkGrid").innerHTML = TOOLKITS.map(t=>`
+    <article class="tk" style="--c:var(${t.color})">
+      <span class="live-tag"><i></i>${esc(u.liveTag)}</span>
+      <div class="code"><span class="pre">${t.pre}</span>${t.code}<small>${esc(t.ed[L])}</small></div>
+      <h3>${esc(t.title[L])}</h3>
+      <ul>${(t.feat?t.feat[L]:u.tkFeat).map(x=>`<li>${esc(x)}</li>`).join("")}<li>${esc(t.extra[L])}</li></ul>
+      <a class="btn" href="${URLS[t.k]}" target="_blank" rel="noopener">${esc(u.open)} ${EXT}</a>
+    </article>`).join("");
+}
+
+function renderSystems(){
+  const u = UI[L];
+  $("filters").setAttribute("aria-label", L==="ar"?"تصفية حسب الحالة":"Filter by status");
+  $("filters").innerHTML = u.filters.map(([k,t])=>`<button type="button" class="chip" data-f="${k}" aria-pressed="${filter===k}">${k!=="all"?`<span class="dot ${k}"></span>`:""}${esc(t)}</button>`).join("");
+  $("filters").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{filter=b.dataset.f; renderSystems();});
+  $("sysList").innerHTML = SYSTEMS.map(s=>{
+    const allLive = s.mods.every(m=>m.status==="live");
+    return `<article class="sys" id="sys-${s.id}" style="--c:var(${s.color})">
+      <div><h3>${esc(s.name[L])}</h3><p class="sys-sub">${esc(s.sub[L])}</p>
+        ${allLive?"":`<a class="notify" href="${mailto(u.notifySubj(s.name.en))}" target="_blank" rel="noopener">${esc(u.notify)} ${ARROW}</a>`}
+      </div>
+      <div class="mods">${s.mods.map(m=>{
+        const dim = filter!=="all" && m.status!==filter ? " dim":"";
+        const inner = `<span class="dot ${m.status}"></span><span><span class="ltr-ok">${esc(m.name[L])}</span> <small>${esc(m.note[L])}</small></span>`;
+        return m.status==="live" && (URLS[m.k]||m.url)
+          ? `<a class="mod${dim}" href="${URLS[m.k]||m.url}" target="_blank" rel="noopener">${inner}</a>`
+          : `<span class="mod${dim}">${inner}</span>`;
+      }).join("")}</div></article>`;
+  }).join("");
+  $("legend").innerHTML = u.legend.map(([k,t])=>`<span><span class="dot ${k}"></span>${esc(t)}</span>`).join("");
+}
+
+function renderJourney(){
+  const u = UI[L];
+  $("jSteps").innerHTML = u.steps.map((s,i)=>`<div class="st"><div class="n">${i+1}</div><b>${esc(s[0])}</b><span>${esc(s[1])}</span></div>`).join("");
+  $("iTabs").innerHTML = u.iTabs.map((t,i)=>`<span><i>${i+1}</i>${esc(t)}</span>`).join("");
+}
+
+function renderIMS(){
+  const u = UI[L];
+  const stds = ["9001","14001","45001","27001"];
+  let h = `<thead><tr><th>${esc(u.mHead[0])}</th><th>${esc(u.mHead[1])}</th>${stds.map(s=>`<th class="std">${s}</th>`).join("")}<th>${esc(u.mHead[2])}</th></tr></thead><tbody>`;
+  h += IMS_ROWS.map(r=>`<tr><td class="cl">${r.cl}</td><td class="proc">${esc(r[L])}</td>${stds.map(()=>`<td class="chk" aria-label="${L==="ar"?"مشترك":"shared"}">✓</td>`).join("")}<td class="out">${esc(r.out[L])}</td></tr>`).join("");
+  h += `<tr class="grp"><th colspan="7">${esc(u.mSpec)}</th></tr>`;
+  h += `<tr><td class="cl">—</td><td></td>${IMS_SPEC.map(s=>`<td class="spec">${esc(s[L])}</td>`).join("")}<td class="out"></td></tr>`;
+  $("imsTable").innerHTML = h + "</tbody>";
+}
+
+function renderRoad(){
+  const u = UI[L];
+  $("road").innerHTML = WAVES.map(w=>{
+    if(w.milestone) return `<div class="milestone">${esc(u.milestone)}</div>`;
+    const cls = w.s==="live"?"done":w.s;
+    return `<div class="wave ${cls}"><div class="wn" aria-label="${esc(u.wave)} ${w.n}">${w.n}</div>
+      <div class="wb"><div class="wt"><h3>${esc(w.t[L])}</h3><span class="st-tag ${w.s}"><span class="dot ${w.s}"></span>${esc(u.st[w.s])}</span></div><p>${esc(w.d[L])}</p></div></div>`;
+  }).join("");
+}
+
+function renderKnow(){
+  $("kpath").innerHTML = KNOW.map((k,i)=>`<details class="k"><summary><span class="kn">${i+1}</span><span>${esc(k[L][0])}</span>${CHEV}</summary>
+    <div class="kb"><p>${esc(k[L][1])}</p><div class="rel ltr">${esc(k.rel)}</div></div></details>`).join("");
+}
+
+/* orbit */
+function renderOrbit(animate){
+  const u = UI[L], svg = $("orbit");
+  const C = 320, R = 222, NR = 60;
+  let out = `<circle class="loop" cx="${C}" cy="${C}" r="${R}"/>`;
+  const pts = SYSTEMS.map((s,i)=>{ const a = -Math.PI/2 + i*2*Math.PI/SYSTEMS.length; const dir = L==="ar"?-1:1;
+    return [C + R*Math.cos(a)*dir, C + R*Math.sin(a)]; });
+  out += pts.map(([x,y])=>`<line class="spoke" x1="${C}" y1="${C}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/>`).join("");
+  // center
+  const surf = cssv("--surface"), navy = cssv("--navy"), gold = cssv("--gold"), ink = cssv("--ink"), muted = cssv("--muted");
+  out += `<circle cx="${C}" cy="${C}" r="92" fill="${navy}" stroke="${gold}" stroke-width="3"/>`;
+  out += `<circle cx="${C}" cy="${C}" r="80" fill="none" stroke="${gold}" stroke-opacity=".35" stroke-width="1"/>`;
+  const cl = u.center.filter(Boolean);
+  out += cl.map((t,i)=>`<text x="${C}" y="${C + (i - (cl.length-1)/2)*26 + 8}" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">${esc(t)}</text>`).join("");
+  out += `<text x="${C}" y="${C + (cl.length>1?54:40)}" text-anchor="middle" font-size="13" fill="${gold}" style="direction:ltr">CIA</text>`;
+  // nodes
+  out += SYSTEMS.map((s,i)=>{
+    const [x,y] = pts[i]; const col = cssv(s.color); const st = sysStatus(s);
+    const live = st==="live";
+    const lines = s.short[L]; const lc = live? "#fff" : ink;
+    const statusTxt = live ? u.liveN(countLive(s)) : (st==="dev"?u.devW:u.planW);
+    const ty0 = y - (lines.length-1)*10 - 6;
+    return `<g class="node" tabindex="0" role="button" data-id="${s.id}" aria-label="${esc(s.name[L])} — ${esc(statusTxt)}" style="animation-delay:${animate? (120+i*90):0}ms">
+      <circle class="disc ring" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${NR}" fill="${live?col:surf}" stroke="${col}" stroke-width="${live?0:2.5}" ${st==="plan"?'stroke-dasharray="5 5"':""}/>
+      ${lines.map((t,j)=>`<text x="${x.toFixed(1)}" y="${(ty0 + j*20).toFixed(1)}" text-anchor="middle" font-size="16" font-weight="700" fill="${lc}">${esc(t)}</text>`).join("")}
+      <text x="${x.toFixed(1)}" y="${(ty0 + lines.length*20 + 4).toFixed(1)}" text-anchor="middle" font-size="12.5" font-weight="600" fill="${live?"#fff":(st==="dev"?cssv("--dev"):muted)}">${esc(statusTxt)}</text>
+    </g>`;
+  }).join("");
+  svg.innerHTML = out;
+  svg.classList.toggle("orbit-in", !!animate);
+  svg.querySelectorAll(".node").forEach(g=>{
+    const pick = ()=>{ orbStop(); orbSelect(SYSTEMS.findIndex(x=>x.id===g.dataset.id)); };
+    g.addEventListener("click",pick);
+    g.addEventListener("keydown",e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); pick(); } });
+  });
+  const wrap = svg.closest(".orbit-wrap");
+  if(wrap && !wrap.dataset.hov){ wrap.dataset.hov="1"; wrap.addEventListener("mouseenter",()=>{orbHover=true;}); wrap.addEventListener("mouseleave",()=>{orbHover=false;}); }
+  orbSelect(orbSel, true);
+  orbStart();
+}
+/* interactive orbit: auto tour + pick a system and its modules */
+let orbSel = 0, orbTimer = null, orbHover = false, orbUser = false;
+const orbReduced = ()=>matchMedia("(prefers-reduced-motion:reduce)").matches;
+function orbStart(){ clearInterval(orbTimer); if(orbUser || orbReduced()) return; orbTimer = setInterval(()=>{ if(orbHover || document.hidden) return; orbSelect((orbSel+1)%SYSTEMS.length, true); }, 3800); }
+function orbStop(){ orbUser = true; clearInterval(orbTimer); orbTimer = null; }
+function orbSelect(i, auto){
+  if(i<0) i=0; orbSel = i; const s = SYSTEMS[i], svg = $("orbit"); if(!s||!svg) return;
+  const u = UI[L], o = u.orb, col = cssv(s.color);
+  svg.querySelectorAll(".node").forEach(g=>g.classList.toggle("sel", g.dataset.id===s.id));
+  svg.querySelectorAll(".spoke").forEach((l,k)=>l.classList.toggle("sel", k===i));
+  const liveN = countLive(s), st = sysStatus(s);
+  const items = s.mods.map(m=>{ const url = m.status==="live" ? (URLS[m.k]||m.url) : null; const dc = m.status==="live"?"var(--live)":m.status==="dev"?"var(--dev)":"var(--plan)";
+    return `<li><span class="dot" style="background:${dc}"></span><span class="grow"><b>${esc(m.name[L])}</b><span class="n">${esc(m.note[L])}</span></span>${url?`<a class="go" href="${url}" target="_blank" rel="noopener">${esc(o.open)} ${EXT}</a>`:`<em>${esc(m.status==="dev"?u.devW:o.soon)}</em>`}</li>`; }).join("");
+  const p = $("orbPanel"); if(!p) return; p.style.setProperty("--c", col);
+  p.innerHTML = `<div class="orb-h"><button type="button" class="orb-nav" data-d="-1" aria-label="${esc(o.prev)}">${L==="ar"?"›":"‹"}</button><h3>${esc(s.name[L])} <small>· ${s.mods.length} ${esc(o.mods)} · ${esc(st==="live"?u.liveN(liveN):st==="dev"?u.devW:u.planW)}</small></h3><button type="button" class="orb-nav" data-d="1" aria-label="${esc(o.next)}">${L==="ar"?"‹":"›"}</button></div>
+    <p class="orb-sub">${esc(s.sub[L])}</p><ul class="orb-list">${items}</ul>
+    <div class="orb-f"><button type="button" id="orbTour">${esc(orbUser?o.play:o.pause)}</button><a href="#sys-${s.id}" id="orbMore">${esc(o.more)}</a></div>`;
+  p.querySelectorAll(".orb-nav").forEach(b=>b.onclick=()=>{ orbStop(); orbSelect((orbSel + (+b.dataset.d) + SYSTEMS.length) % SYSTEMS.length); });
+  $("orbTour").onclick=()=>{ if(orbUser){ orbUser=false; orbStart(); } else orbStop(); orbSelect(orbSel, true); };
+  $("orbMore").onclick=e=>{ e.preventDefault(); orbStop(); const el=$("sys-"+s.id); if(!el) return; el.scrollIntoView({behavior: orbReduced()?"auto":"smooth", block:"center"}); el.classList.add("flash"); setTimeout(()=>el.classList.remove("flash"),1600); };
+}
+
+
+/* ===================== REQUEST FORMS (consultation + training) ===================== */
+/* Recipients of every request. */
+const RQ_TO = ["moddathersalama.eng@gmail.com", "ciacademy.egy@gmail.com"];
+/* Optional: when the hub moves to its own domain, paste a form-to-email endpoint here
+   (e.g. https://formsubmit.co/ajax/moddathersalama.eng@gmail.com or a Formspree URL).
+   Requests are then delivered automatically, with the second address in CC.
+   Left empty on claude.ai, where pages cannot contact other websites. */
+const FORM_ENDPOINT = "";
+
+const O2=(k,en,ar)=>[k,{en,ar}];
+const RQ_COUNTRIES=[O2("sa","Saudi Arabia","السعودية"),O2("eg","Egypt","مصر"),O2("ae","UAE","الإمارات"),O2("qa","Qatar","قطر"),O2("kw","Kuwait","الكويت"),O2("bh","Bahrain","البحرين"),O2("om","Oman","عُمان"),O2("jo","Jordan","الأردن"),O2("ot","Other","أخرى")];
+const RQ_SECTORS=[O2("ene","Energy, utilities & power","الطاقة والمرافق والكهرباء"),O2("og","Oil, gas & petrochemicals","النفط والغاز والبتروكيماويات"),O2("con","Construction, EPC & contracting","الإنشاءات والمقاولات"),O2("man","Manufacturing","التصنيع"),O2("gov","Government & public sector","الجهات الحكومية والقطاع العام"),O2("hlth","Healthcare","الرعاية الصحية"),O2("it","IT & telecom","تقنية المعلومات والاتصالات"),O2("fin","Financial services","الخدمات المالية"),O2("log","Logistics & transport","اللوجستيات والنقل"),O2("edu","Education & training","التعليم والتدريب"),O2("food","Food & hospitality","الأغذية والضيافة"),O2("svc","Services & consulting","الخدمات والاستشارات"),O2("ot","Other","أخرى")];
+const RQ_SIZES=[O2("s","Under 50 employees","أقل من 50 موظفاً"),O2("m","50 – 250 employees","50 – 250 موظفاً"),O2("l","250 – 1,000 employees","250 – 1000 موظف"),O2("xl","Over 1,000 employees","أكثر من 1000 موظف")];
+const RQ_LANGS=[O2("ar","Arabic","العربية"),O2("en","English","الإنجليزية"),O2("both","Both","كلاهما")];
+const RQ_CONTACT=[O2("email","Email","البريد الإلكتروني"),O2("phone","Phone call","اتصال هاتفي"),O2("wa","WhatsApp","واتساب")];
+
+const RQ_FORMS={
+ consult:{code:"C", fields:[
+  {k:"name",t:"text",req:1,l:{en:"Full name",ar:"الاسم الكامل"},ac:"name"},
+  {k:"org",t:"text",req:1,l:{en:"Organization",ar:"المنشأة"},ac:"organization"},
+  {k:"role",t:"text",l:{en:"Job title",ar:"المسمى الوظيفي"},ac:"organization-title"},
+  {k:"email",t:"email",req:1,l:{en:"Email",ar:"البريد الإلكتروني"},ac:"email"},
+  {k:"phone",t:"tel",req:1,l:{en:"Phone / WhatsApp",ar:"الجوال / واتساب"},ac:"tel",ph:"+966 5x xxx xxxx"},
+  {k:"country",t:"select",l:{en:"Country",ar:"الدولة"},opts:RQ_COUNTRIES},
+  {k:"city",t:"text",l:{en:"City",ar:"المدينة"}},
+  {k:"sector",t:"select",l:{en:"Sector",ar:"القطاع"},opts:RQ_SECTORS},
+  {k:"size",t:"select",l:{en:"Organization size",ar:"حجم المنشأة"},opts:RQ_SIZES},
+  {k:"services",t:"chips",req:1,full:1,l:{en:"Services needed",ar:"الخدمات المطلوبة"},opts:[
+    O2("cert","ISO certification readiness","التأهيل لشهادات الأيزو"),O2("ims","Integrated management system (IMS)","النظام المتكامل IMS"),O2("gap","Gap analysis / internal audit","تحليل الفجوات / التدقيق الداخلي"),O2("iac","Internal audit / CAPA","التدقيق الداخلي / الإجراءات التصحيحية"),
+    O2("erm","Enterprise risk management (ISO 31000)","إدارة المخاطر المؤسسية ISO 31000"),O2("gov","ISO 37000 governance (board effectiveness & governance maturity)","حوكمة ISO 37000 (فعالية المجلس ونضج الحوكمة)"),O2("imsb","IMS Builder / integration support","منشئ النظام المتكامل / دعم الدمج"),O2("grc","Compliance & anti-bribery (ISO 37301 / 37001)","الامتثال ومكافحة الرشوة (ISO 37301 / 37001)"),O2("cci","Compliance center / investigations / speak-up","مركز الامتثال / التحقيقات / البلاغات"),O2("bcm","Business continuity","استمرارية الأعمال"),
+    O2("pq","Aramco / SEC Unified Contract prequalification","تأهيل أرامكو / العقد الموحد للشركة السعودية للكهرباء"),O2("hseq","HSE / HSEQ advisory","استشارات السلامة والجودة HSEQ"),O2("exc","EFQM / excellence assessment (EFQM Model 2025, awards)","EFQM / تقييم التميز المؤسسي (نموذج 2025 والجوائز)"),
+    O2("pmo","PMO maturity / transformation (P3M3, ISO 21500)","نضج مكتب المشاريع / التحوّل (P3M3، ISO 21500)"),O2("kpi","Strategy & KPI management (balanced scorecard, OKR)","إدارة الاستراتيجية ومؤشرات الأداء (بطاقة الأداء المتوازن، OKR)"),O2("prc","Process excellence (architecture, SIPOC, RACI, maturity)","تميّز العمليات (البنية، SIPOC، RACI، النضج)"),O2("cmp","Competency & training (competence matrix, TNA, training plan)","الكفاءات والتدريب (مصفوفة الكفاءات، الاحتياجات، خطة التدريب)"),O2("vnd","Vendor / contractor qualification (prequalification, evaluation)","تأهيل الموردين / المقاولين (التأهيل المسبق، التقييم)"),O2("cockpit","Executive cockpit / OHI (organizational health index, board pack)","لوحة القيادة التنفيذية / مؤشر صحة المنشأة (المؤشر المرجّح، تقرير مجلس الإدارة)"),O2("wksp","Workspace & data consolidation (module registry, single organization profile)","مساحة العمل وتوحيد البيانات (سجل الوحدات، ملف منشأة واحد)"),O2("oth","Other","أخرى")]},
+  {k:"stds",t:"chips",full:1,l:{en:"Standards of interest",ar:"المواصفات المعنية"},opts:["ISO 9001","ISO 14001","ISO 45001","ISO/IEC 27001","ISO 22301","ISO 31000","ISO 37001","ISO 37301","ISO 37000","ISO 50001","P3M3 / ISO 21500","EFQM"].map(x=>[x,{en:x,ar:x}])},
+  {k:"status",t:"select",l:{en:"Current status",ar:"الوضع الحالي"},opts:[O2("new","Starting from scratch","نبدأ من الصفر"),O2("some","Some practices in place","لدينا ممارسات جزئية"),O2("certd","Certified, need improvement or transition","حاصلون على شهادة ونحتاج تحسيناً أو انتقالاً"),O2("aud","Preparing for an upcoming audit","نستعد لتدقيق قريب")]},
+  {k:"when",t:"select",l:{en:"Target timeline",ar:"الإطار الزمني المستهدف"},opts:[O2("now","Urgent (within 1 month)","عاجل (خلال شهر)"),O2("q","Within 3 months","خلال 3 أشهر"),O2("h","Within 6 months","خلال 6 أشهر"),O2("x","Flexible / exploring","مرن / استكشاف")]},
+  {k:"via",t:"select",l:{en:"Preferred contact",ar:"وسيلة التواصل المفضلة"},opts:RQ_CONTACT},
+  {k:"lang",t:"select",l:{en:"Preferred language",ar:"اللغة المفضلة"},opts:RQ_LANGS},
+  {k:"msg",t:"textarea",req:1,full:1,l:{en:"Describe your need",ar:"صف احتياجك"},ph:{en:"Scope, sites, current challenges, deadlines, client requirements…",ar:"النطاق، المواقع، التحديات الحالية، المواعيد، متطلبات العملاء…"}}]},
+ training:{code:"T", fields:[
+  {k:"name",t:"text",req:1,l:{en:"Full name",ar:"الاسم الكامل"},ac:"name"},
+  {k:"org",t:"text",l:{en:"Organization (if corporate)",ar:"المنشأة (للتدريب المؤسسي)"},ac:"organization"},
+  {k:"email",t:"email",req:1,l:{en:"Email",ar:"البريد الإلكتروني"},ac:"email"},
+  {k:"phone",t:"tel",req:1,l:{en:"Phone / WhatsApp",ar:"الجوال / واتساب"},ac:"tel",ph:"+966 5x xxx xxxx"},
+  {k:"country",t:"select",l:{en:"Country",ar:"الدولة"},opts:RQ_COUNTRIES},
+  {k:"city",t:"text",l:{en:"City",ar:"المدينة"}},
+  {k:"ttype",t:"select",req:1,l:{en:"Training type",ar:"نوع التدريب"},opts:[O2("ind","Individual registration","تسجيل فردي"),O2("corp","Corporate in-house programme","برنامج مؤسسي داخلي"),O2("pub","Public course (open enrolment)","دورة عامة (تسجيل مفتوح)")]},
+  {k:"course",t:"select",req:1,full:1,l:{en:"Course / programme",ar:"الدورة / البرنامج"},opts:[
+    O2("q9a","ISO 9001 awareness & implementation","ISO 9001 التوعية والتطبيق"),O2("q9i","ISO 9001 internal auditor","مدقق داخلي ISO 9001"),O2("e14","ISO 14001 internal auditor","مدقق داخلي ISO 14001"),O2("s45","ISO 45001 internal auditor","مدقق داخلي ISO 45001"),
+    O2("ims","Integrated management system (9001/14001/45001) internal auditor","مدقق داخلي للنظام المتكامل 9001/14001/45001"),O2("27k","ISO/IEC 27001 awareness & implementation","ISO/IEC 27001 التوعية والتطبيق"),O2("bcm","ISO 22301 business continuity","ISO 22301 استمرارية الأعمال"),
+    O2("erm","ISO 31000 enterprise risk management","ISO 31000 إدارة المخاطر المؤسسية"),O2("gov","ISO 37000 governance of organizations (boards & executives)","حوكمة ISO 37000 للمنظمات (المجالس والإدارة العليا)"),O2("imsb","IMS Builder / integration (multi-standard IMS design & combined audits)","منشئ النظام المتكامل / الدمج (تصميم نظام متعدد المواصفات والتدقيق المدمج)"),O2("grc","ISO 37001 / 37301 anti-bribery & compliance","ISO 37001 / 37301 مكافحة الرشوة والامتثال"),O2("cci","Compliance center / investigations / speak-up: whistleblowing (ISO 37002) & internal investigations (ISO/TS 37008)","مركز الامتثال / التحقيقات / البلاغات: الإبلاغ (ISO 37002) والتحقيقات الداخلية (ISO/TS 37008)"),O2("aud","ISO 19011 auditing management systems","ISO 19011 تدقيق أنظمة الإدارة"),
+    O2("iac","Internal audit / CAPA (ISO 19011:2026)","التدقيق الداخلي / الإجراءات التصحيحية (ISO 19011:2026)"),O2("rca","Root cause analysis & corrective action","تحليل الأسباب الجذرية والإجراءات التصحيحية"),O2("rbt","Risk-based thinking & risk assessment","التفكير القائم على المخاطر وتقييمها"),O2("efqm","EFQM / excellence assessment: Model 2025, RADAR scoring & assessor skills","EFQM / تقييم التميز: نموذج 2025 وتسجيل RADAR ومهارات المقيّم"),
+    O2("pmo","PMO maturity / transformation (P3M3)","نضج مكتب المشاريع / التحوّل (P3M3)"),O2("kpi","Strategy & KPI management (balanced scorecard, KPI design)","إدارة الاستراتيجية ومؤشرات الأداء (بطاقة الأداء المتوازن وتصميم المؤشرات)"),O2("prc","Process excellence: process mapping, SIPOC & RACI","تميّز العمليات: رسم العمليات وSIPOC وRACI"),O2("cmp","Competency & training: competence matrices, TNA & Kirkpatrick evaluation","الكفاءات والتدريب: مصفوفات الكفاءات وتحليل الاحتياجات وتقييم كيركباتريك"),O2("vnd","Vendor / contractor qualification (Aramco, SEC Unified Contract style)","تأهيل الموردين / المقاولين (على نمط أرامكو والعقد الموحد)"),O2("cockpit","Executive cockpit / OHI design & interpretation","تصميم وتفسير لوحة القيادة التنفيذية / مؤشر صحة المنشأة"),O2("wksp","Workspace & data consolidation across modules","مساحة العمل وتوحيد البيانات عبر الوحدات"),O2("cus","Custom programme","برنامج مخصص")]},
+  {k:"n",t:"number",l:{en:"Number of participants",ar:"عدد المشاركين"},min:1},
+  {k:"mode",t:"select",req:1,l:{en:"Delivery mode",ar:"طريقة التقديم"},opts:[O2("in","In person","حضوري"),O2("on","Online live","عن بُعد مباشر"),O2("hy","Hybrid","مدمج")]},
+  {k:"level",t:"select",l:{en:"Level",ar:"المستوى"},opts:[O2("aw","Awareness","توعوي"),O2("pr","Practitioner","تطبيقي"),O2("ad","Advanced","متقدم")]},
+  {k:"date",t:"month",l:{en:"Preferred month",ar:"الشهر المفضل"}},
+  {k:"dur",t:"select",l:{en:"Preferred duration",ar:"المدة المفضلة"},opts:[O2("1","1 day","يوم واحد"),O2("23","2 – 3 days","2 – 3 أيام"),O2("45","4 – 5 days","4 – 5 أيام"),O2("fx","Flexible","مرنة")]},
+  {k:"lang",t:"select",l:{en:"Training language",ar:"لغة التدريب"},opts:RQ_LANGS},
+  {k:"certf",t:"select",l:{en:"Certificate of attendance",ar:"شهادة حضور"},opts:[O2("y","Required","مطلوبة"),O2("n","Not required","غير مطلوبة")]},
+  {k:"msg",t:"textarea",full:1,l:{en:"Notes",ar:"ملاحظات"},ph:{en:"Objectives, participant roles, preferred dates, venue…",ar:"الأهداف، أدوار المشاركين، التواريخ المفضلة، المكان…"}}]}
+};
+
+const RQ={
+ en:{nav:"Request a service",title:"Request a consultation or training",sub:"Tell us what you need. Your request is addressed to Modather Salama and the Continual Improvement Academy mailbox at the same time.",
+  tabs:{consult:"Consultation request",training:"Training request"},req:"Required",consent:"I agree to be contacted about this request, and I understand my details are sent by email only.",
+  submit:{consult:"Submit consultation request",training:"Submit training request"},sending:"Sending…",
+  err:{req:"Please complete this field.",email:"Enter a valid email address.",phone:"Enter a valid phone number.",chips:"Choose at least one option.",consent:"Please confirm to continue.",top:"Some fields need your attention."},
+  sideT:"What happens next",side:[["1","Submit","Your request gets a reference number and is addressed to both CIA mailboxes."],["2","Send","Your email app or Gmail opens with the request ready; press Send."],["3","Reply","Modather Salama reviews it and replies personally by your preferred channel."]],
+  to:"Delivered to",
+  doneT:"Your request is ready",doneP:"Your email app should now be open with the request addressed to both mailboxes. Press Send to complete it. If nothing opened, use one of the options below.",
+  sentT:"Request sent",sentP:"Thank you. Your request has been delivered to both mailboxes; you will receive a reply by your preferred channel.",
+  mailApp:"Open in email app",gmail:"Send with Gmail",outlook:"Send with Outlook",copy:"Copy request text",copied:"Request copied",again:"New request",edit:"Edit request",ref:"Reference",
+  subj:{consult:"Consultation request",training:"Training request"},hello:"Hello Modather,",intro:{consult:"I would like to request a consultation. Details:",training:"I would like to request training. Details:"},
+  foot:"Sent from the Continual Improvement Academy hub",quick:{consult:"Request consultation",training:"Request training"}},
+ ar:{nav:"اطلب خدمة",title:"اطلب استشارة أو تدريباً",sub:"أخبرنا بما تحتاجه. يصل طلبك إلى مدثر سلامه وإلى بريد أكاديمية التحسين المستمر في الوقت نفسه.",
+  tabs:{consult:"طلب استشارة",training:"طلب تدريب"},req:"مطلوب",consent:"أوافق على التواصل معي بخصوص هذا الطلب، وأعلم أن بياناتي تُرسل بالبريد الإلكتروني فقط.",
+  submit:{consult:"إرسال طلب الاستشارة",training:"إرسال طلب التدريب"},sending:"جارٍ الإرسال…",
+  err:{req:"يرجى إكمال هذا الحقل.",email:"أدخل بريداً إلكترونياً صحيحاً.",phone:"أدخل رقم جوال صحيحاً.",chips:"اختر خياراً واحداً على الأقل.",consent:"يرجى التأكيد للمتابعة.",top:"بعض الحقول تحتاج إلى مراجعة."},
+  sideT:"ماذا يحدث بعد ذلك",side:[["1","الإرسال","يحصل طلبك على رقم مرجعي ويُوجَّه إلى بريدي الأكاديمية معاً."],["2","التأكيد","يفتح تطبيق البريد أو Gmail والطلب جاهز؛ اضغط «إرسال»."],["3","الرد","يراجع مدثر سلامه طلبك ويرد عليك شخصياً بالوسيلة التي تفضلها."]],
+  to:"يُرسل إلى",
+  doneT:"طلبك جاهز",doneP:"يُفترض أن تطبيق البريد فُتح الآن والطلب موجّه إلى البريدين. اضغط «إرسال» لإتمامه. إذا لم يُفتح شيء فاستخدم أحد الخيارات أدناه.",
+  sentT:"تم إرسال الطلب",sentP:"شكراً لك. وصل طلبك إلى البريدين، وسيصلك الرد بالوسيلة التي تفضلها.",
+  mailApp:"فتح في تطبيق البريد",gmail:"الإرسال عبر Gmail",outlook:"الإرسال عبر Outlook",copy:"نسخ نص الطلب",copied:"تم نسخ الطلب",again:"طلب جديد",edit:"تعديل الطلب",ref:"الرقم المرجعي",
+  subj:{consult:"طلب استشارة",training:"طلب تدريب"},hello:"مرحباً أستاذ مدثر،",intro:{consult:"أرغب في طلب استشارة. التفاصيل:",training:"أرغب في طلب تدريب. التفاصيل:"},
+  foot:"أُرسل من بوابة أكاديمية التحسين المستمر",quick:{consult:"اطلب استشارة",training:"اطلب تدريباً"}}
+};
+
+let rqKind="consult", rqData={consult:{},training:{}}, rqLast=null;
+try{ const c=JSON.parse(localStorage.getItem("cia-rq-contact")||"{}"); ["consult","training"].forEach(k=>Object.assign(rqData[k],c)); }catch(e){}
+const rqOptLabel=(f,v)=>{const o=(f.opts||[]).find(x=>x[0]===v); return o?o[1][L]:v;};
+
+function renderRequest(){
+  const u=RQ[L], box=$("rqForm"); if(!box) return;
+  $("qTitle").textContent=u.title; $("qSub").textContent=u.sub;
+  $("rqSwitch").innerHTML=["consult","training"].map(k=>`<button type="button" role="tab" aria-selected="${rqKind===k}" data-k="${k}">${k==="consult"?ICO_C:ICO_T}<span>${esc(u.tabs[k])}</span></button>`).join("");
+  $("rqSwitch").querySelectorAll("button").forEach(b=>b.onclick=()=>{rqCollect(); rqKind=b.dataset.k; rqLast=null; $("rqDone").hidden=true; document.querySelector(".rq-grid").hidden=false; renderRequest();});
+  const F=RQ_FORMS[rqKind], d=rqData[rqKind];
+  const lab=f=>`${esc(f.l[L])}${f.req?` <b class="rq-star" aria-hidden="true">*</b>`:""}`;
+  let h=`<div class="rq-err-top" id="rqErrTop" role="alert" hidden></div><div class="rq-fields">`;
+  F.fields.forEach(f=>{ const id="rq-"+rqKind+"-"+f.k, v=d[f.k];
+    const cls=`rq-f${f.full||f.t==="textarea"?" full":""}`;
+    if(f.t==="chips"){ const sel=Array.isArray(v)?v:[];
+      h+=`<fieldset class="${cls}" data-f="${f.k}"><legend>${lab(f)}</legend><div class="rq-chips">${f.opts.map(o=>`<button type="button" class="rq-chip" aria-pressed="${sel.includes(o[0])}" data-v="${esc(o[0])}">${esc(o[1][L])}</button>`).join("")}</div><small class="rq-msg"></small></fieldset>`; return; }
+    h+=`<label class="${cls}" data-f="${f.k}"><span>${lab(f)}</span>`;
+    if(f.t==="select") h+=`<select id="${id}" name="${f.k}" ${f.req?"required":""}><option value="">—</option>${f.opts.map(o=>`<option value="${esc(o[0])}" ${v===o[0]?"selected":""}>${esc(o[1][L])}</option>`).join("")}</select>`;
+    else if(f.t==="textarea") h+=`<textarea id="${id}" name="${f.k}" rows="4" ${f.req?"required":""} placeholder="${esc(f.ph?f.ph[L]:"")}">${esc(v||"")}</textarea>`;
+    else h+=`<input id="${id}" name="${f.k}" type="${f.t}" ${f.t==="email"||f.t==="tel"||f.t==="number"||f.t==="month"?'dir="ltr"':""} ${f.min?`min="${f.min}"`:""} ${f.ac?`autocomplete="${f.ac}"`:""} ${f.req?"required":""} value="${esc(v||"")}" placeholder="${esc(typeof f.ph==="string"?f.ph:(f.ph?f.ph[L]:""))}">`;
+    h+=`<small class="rq-msg"></small></label>`; });
+  h+=`</div><label class="rq-consent" data-f="consent"><input type="checkbox" id="rqConsent" ${d.consent?"checked":""}><span>${esc(u.consent)} <b class="rq-star">*</b></span><small class="rq-msg"></small></label>
+   <div class="rq-actions"><button class="btn primary" type="submit" id="rqSubmit">${esc(u.submit[rqKind])} ${ARROW}</button><span class="rq-note">* ${esc(u.req)}</span></div>`;
+  box.innerHTML=h;
+  box.querySelectorAll(".rq-chip").forEach(b=>b.onclick=()=>{b.setAttribute("aria-pressed",b.getAttribute("aria-pressed")!=="true"); rqCollect(); rqClear(b.closest("[data-f]"));});
+  box.querySelectorAll("input,select,textarea").forEach(el=>el.addEventListener("input",()=>{rqCollect(); rqClear(el.closest("[data-f]"));}));
+  box.onsubmit=e=>{e.preventDefault(); rqSubmit();};
+  $("rqSide").innerHTML=`<h3>${esc(u.sideT)}</h3><ol>${u.side.map(s=>`<li><i>${s[0]}</i><div><b>${esc(s[1])}</b><span>${esc(s[2])}</span></div></li>`).join("")}</ol><div class="rq-to"><span>${esc(u.to)}</span>${RQ_TO.map(e=>`<code class="ltr">${esc(e)}</code>`).join("")}</div>`;
+  if(rqLast && !$("rqDone").hidden) rqShowDone(rqLast);
+}
+function rqCollect(){
+  const F=RQ_FORMS[rqKind], d=rqData[rqKind], box=$("rqForm"); if(!box) return;
+  F.fields.forEach(f=>{ const w=box.querySelector(`[data-f="${f.k}"]`); if(!w) return;
+    if(f.t==="chips") d[f.k]=[...w.querySelectorAll('.rq-chip[aria-pressed="true"]')].map(b=>b.dataset.v);
+    else { const el=w.querySelector("input,select,textarea"); d[f.k]=el?el.value.trim():""; } });
+  const c=$("rqConsent"); d.consent=c?c.checked:false;
+}
+function rqClear(w){ if(!w) return; w.classList.remove("bad"); const m=w.querySelector(".rq-msg"); if(m) m.textContent=""; }
+function rqValidate(){
+  const u=RQ[L], F=RQ_FORMS[rqKind], d=rqData[rqKind], box=$("rqForm"); let first=null;
+  const bad=(k,msg)=>{const w=box.querySelector(`[data-f="${k}"]`); if(!w) return; w.classList.add("bad"); const m=w.querySelector(".rq-msg"); if(m) m.textContent=msg; if(!first) first=w;};
+  F.fields.forEach(f=>{ const v=d[f.k];
+    if(f.req && (f.t==="chips"?!(v&&v.length):!v)) return bad(f.k,f.t==="chips"?u.err.chips:u.err.req);
+    if(f.t==="email"&&v&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) return bad(f.k,u.err.email);
+    if(f.t==="tel"&&v&&String(v).replace(/\D/g,"").length<7) return bad(f.k,u.err.phone); });
+  if(!d.consent) bad("consent",u.err.consent);
+  const top=$("rqErrTop"); if(first){ top.hidden=false; top.textContent=u.err.top; first.scrollIntoView({behavior:"smooth",block:"center"}); const el=first.querySelector("input,select,textarea,button"); if(el) setTimeout(()=>el.focus({preventScroll:true}),350); return false; }
+  top.hidden=true; return true;
+}
+function rqRef(){ const d=new Date(), p=n=>String(n).padStart(2,"0"); return `CIA-${RQ_FORMS[rqKind].code}-${String(d.getFullYear()).slice(2)}${p(d.getMonth()+1)}${p(d.getDate())}-${Math.random().toString(36).slice(2,6).toUpperCase()}`; }
+function rqCompose(ref){
+  const u=RQ[L], F=RQ_FORMS[rqKind], d=rqData[rqKind];
+  const val=f=>{const v=d[f.k]; if(f.t==="chips") return (v||[]).map(x=>rqOptLabel(f,x)).join(", "); if(f.t==="select") return v?rqOptLabel(f,v):""; return v||"";};
+  const subject=`[CIA] ${u.subj[rqKind]} — ${d.org||d.name} — ${ref}`;
+  let body=`${u.hello}\n\n${u.intro[rqKind]}\n\n${u.ref}: ${ref}\n`;
+  F.fields.forEach(f=>{ const v=val(f); if(!v) return; body+= f.t==="textarea"?`\n${f.l[L]}:\n${v}\n`:`${f.l[L]}: ${v}\n`; });
+  body+=`\n—\n${u.foot} · ${new Date().toISOString().slice(0,16).replace("T"," ")}`;
+  const to=RQ_TO.join(",");
+  return {ref,subject,body,
+    mailto:`mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+    gmail:`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+    outlook:`https://outlook.office.com/mail/deeplink/compose?to=${encodeURIComponent(to)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`};
+}
+async function rqSubmit(){
+  rqCollect(); if(!rqValidate()) return;
+  const u=RQ[L], d=rqData[rqKind];
+  try{ localStorage.setItem("cia-rq-contact",JSON.stringify({name:d.name,org:d.org,email:d.email,phone:d.phone,country:d.country,city:d.city})); }catch(e){}
+  const m=rqCompose(rqRef()); rqLast={...m,kind:rqKind,sent:false};
+  if(FORM_ENDPOINT){
+    const btn=$("rqSubmit"); btn.disabled=true; btn.textContent=u.sending;
+    try{
+      const F=RQ_FORMS[rqKind], payload={_subject:m.subject,_cc:RQ_TO.slice(1).join(","),_template:"table",_captcha:"false",reference:m.ref,type:u.subj[rqKind]};
+      F.fields.forEach(f=>{ const v=d[f.k]; payload[f.l.en]=Array.isArray(v)?v.map(x=>rqOptLabel(f,x)).join(", "):(f.t==="select"&&v?rqOptLabel(f,v):(v||"")); });
+      const r=await fetch(FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(payload)});
+      if(r.ok){ rqLast.sent=true; rqShowDone(rqLast); return; }
+    }catch(e){}
+  }
+  rqShowDone(rqLast);
+  const a=$("rqDone").querySelector("[data-mailapp]"); if(a) a.click();
+}
+function rqShowDone(m){
+  const u=RQ[L], box=$("rqDone");
+  box.innerHTML=`<div class="rq-done-in"><span class="rq-ok" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5 9-10"/></svg></span>
+   <div><h3>${esc(m.sent?u.sentT:u.doneT)}</h3><p>${esc(m.sent?u.sentP:u.doneP)}</p><p class="rq-ref">${esc(u.ref)}: <b class="ltr">${esc(m.ref)}</b></p>
+   ${m.sent?"":`<div class="rq-btns"><a class="btn primary" data-mailapp href="${m.mailto}" target="_blank" rel="noopener">${ICO_M}${esc(u.mailApp)}</a><a class="btn gold" href="${m.gmail}" target="_blank" rel="noopener">${esc(u.gmail)} ${EXT}</a><a class="btn" href="${m.outlook}" target="_blank" rel="noopener">${esc(u.outlook)} ${EXT}</a><button class="btn" type="button" data-copy>${esc(u.copy)}</button></div>`}
+   <div class="rq-btns sub"><button class="btn" type="button" data-edit>${esc(u.edit)}</button><button class="btn" type="button" data-new>${esc(u.again)}</button></div>
+   <details class="rq-prev"><summary>${esc(m.subject)}</summary><pre>${esc(m.body)}</pre></details></div></div>`;
+  box.hidden=false; document.querySelector(".rq-grid").hidden=true;
+  const cp=box.querySelector("[data-copy]"); if(cp) cp.onclick=async()=>{ const t=`To: ${RQ_TO.join(", ")}\nSubject: ${m.subject}\n\n${m.body}`; try{ await navigator.clipboard.writeText(t); toast(u.copied);}catch(e){ const r=document.createRange(); r.selectNodeContents(box.querySelector("pre")); const s=getSelection(); s.removeAllRanges(); s.addRange(r);} };
+  box.querySelector("[data-edit]").onclick=()=>{ box.hidden=true; document.querySelector(".rq-grid").hidden=false; rqLast=null; };
+  box.querySelector("[data-new]").onclick=()=>{ const keep=rqData[rqKind]; rqData[rqKind]={name:keep.name,org:keep.org,email:keep.email,phone:keep.phone,country:keep.country,city:keep.city}; rqLast=null; box.hidden=true; document.querySelector(".rq-grid").hidden=false; renderRequest(); };
+  box.scrollIntoView({behavior:"smooth",block:"center"});
+}
+function rqOpen(kind){ rqCollect(); rqKind=kind; rqLast=null; $("rqDone").hidden=true; document.querySelector(".rq-grid").hidden=false; renderRequest(); $("request").scrollIntoView({behavior:"smooth"}); }
+const ICO_C=`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>`;
+const ICO_T=`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg>`;
+const ICO_M=`<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>`;
+
+function renderAll(animate){ rqCollect(); renderText(); renderRequest(); renderToolkits(); renderSystems(); renderJourney(); renderIMS(); renderRoad(); renderKnow(); renderOrbit(animate); }
+
+/* events */
+$("langBtn").onclick = ()=>{ L = L==="en"?"ar":"en"; try{localStorage.setItem("cia-lang",L);}catch(e){} renderAll(false); };
+let toastT; function toast(m){ const t=$("toast"); t.textContent=m; t.classList.add("on"); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove("on"),1800); }
+$("copyBtn").onclick = async ()=>{ try{ await navigator.clipboard.writeText(EMAIL); toast(UI[L].copied); }catch(e){ const r=document.createRange(); r.selectNodeContents($("emailTxt")); const s=getSelection(); s.removeAllRanges(); s.addRange(r); } };
+matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",()=>renderOrbit(false));
+
+/* init */
+(function(){
+  const q = new URLSearchParams(location.search).get("lang");
+  let saved = null; try{ saved = localStorage.getItem("cia-lang"); }catch(e){}
+  if(q==="ar"||q==="en") L=q; else if(saved==="ar"||saved==="en") L=saved;
+  renderAll(true);
+})();
+</script>
+</body>
+</html>
