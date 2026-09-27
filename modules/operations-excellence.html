@@ -1857,7 +1857,7 @@ const LIC={ar:{rights:"© 2026 مدثر سلامه — أكاديمية التح
 
 /* ================= CORE ================= */
 const STORE="ops-excellence:v1", LKEY="ops-excellence:lang";
-let L=(()=>{try{return localStorage.getItem(LKEY)||"ar";}catch(e){return "ar";}})();
+let L=(()=>{try{return (localStorage.getItem("cia-lang")||localStorage.getItem(LKEY))||"ar";}catch(e){return "ar";}})();
 const U=()=>UI[L];
 const REGKEYS=["site","dept","own","proc","sipoc","pkpi","pmat","cmx","tna","tplan","cert","eff","avl","pqc","hse","perf","scar"];
 const WDEF={q:30,d:25,h:20,c:15,r:10};
@@ -2685,7 +2685,7 @@ function applyLang(){
   set("footName",u.footName); set("footTxt",u.foot);
   applyLogo(); buildSide();
   try{ buildContact(); cbLang(); buildLicence(); }catch(e){ console.error(e); }
-  try{ localStorage.setItem(LKEY,L); }catch(e){}
+  try{ localStorage.setItem(LKEY,L);try{localStorage.setItem("cia-lang",L)}catch(e){}; }catch(e){}
   document.getElementById("termsBox").innerHTML="";
   renderTab(curTab);
 }

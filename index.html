@@ -321,6 +321,19 @@ footer strong{color:var(--ink)}
 .rq-prev summary{cursor:pointer;color:var(--ink-soft);font-weight:600}
 .rq-prev pre{white-space:pre-wrap;background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:14px;font:inherit;font-size:13.5px;margin:10px 0 0;max-height:320px;overflow:auto}
 .about .contact{flex-wrap:wrap}
+/* ===== module overlay (same-page navigation) ===== */
+.modOverlay{position:fixed;inset:0;z-index:500;background:var(--bg);display:none;flex-direction:column}
+.modOverlay.on{display:flex}
+.modBar{flex:0 0 auto;display:flex;align-items:center;gap:12px;padding:10px 16px;padding-top:calc(10px + env(safe-area-inset-top,0px));background:var(--navy);color:var(--on-navy);box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.modBack{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;border-radius:999px;padding:8px 14px;font:inherit;font-weight:700;font-size:13.5px;cursor:pointer}
+.modBack:hover{background:rgba(255,255,255,.18)}
+.modBack svg{display:block}
+[dir="rtl"] .modBack svg{transform:scaleX(-1)}
+.modName{font-family:var(--display);font-size:15.5px;font-weight:600;opacity:.92;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.modFrame{flex:1 1 auto;width:100%;border:0;background:var(--bg)}
+.trainBtn{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:700;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;text-decoration:none}
+.trainBtn:hover{border-color:var(--gold)}
+.trainBtn .soon{font-size:11px;font-weight:700;color:var(--gold-ink);background:var(--gold-tint);border-radius:999px;padding:2px 8px}
 </style>
 </head>
 <body>
@@ -332,6 +345,11 @@ footer strong{color:var(--ink)}
     </a>
     <div class="bar-right">
       <nav class="nav" id="nav" aria-label="Sections"></nav>
+      <a class="trainBtn" id="trainBtn" href="#" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg>
+        <span id="trainLabel"></span>
+        <span class="soon" id="trainSoon"></span>
+      </a>
       <button class="lang" id="langBtn" type="button">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg>
         <span id="langLabel"></span>
@@ -339,6 +357,17 @@ footer strong{color:var(--ink)}
     </div>
   </div>
 </header>
+
+<div class="modOverlay" id="modOverlay" role="dialog" aria-modal="true">
+  <div class="modBar">
+    <button class="modBack" id="modBack" type="button">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      <span id="modBackLabel"></span>
+    </button>
+    <span class="modName" id="modName"></span>
+  </div>
+  <iframe class="modFrame" id="modFrame" title="module" name="modFrame"></iframe>
+</div>
 
 <main id="top">
   <div class="wrap hero">
@@ -458,6 +487,8 @@ footer strong{color:var(--ink)}
 <script>
 /* ===================== CONFIG ===================== */
 const EMAIL = "moddathersalama.eng@gmail.com";
+/* Set this once the training platform has a URL; the header button activates automatically. */
+const TRAINING_URL = "";
 /* Live on GitHub Pages: relative paths, same origin as every module. */
 const URLS = {
   iso9001:  "./modules/iso9001.html",
@@ -690,6 +721,7 @@ const UI = {
     aBio:"HSEQ and integrated management systems consultant with 16+ years in the field, lead auditor across 11 ISO standards, 35+ organizations qualified for certification and 500+ professionals trained across the region.",
     aMission:"The Academy turns that consulting practice into tools any organization can use: clear explanations, honest self-assessment and a plan you can act on.",
     mail:"Email me", copied:"Email address copied",
+    backHub:"Back to Hub", training:"Training Platform", trainingSoon:"Coming soon",
     rights:"© 2026 Modather Salama — Continual Improvement Academy. All rights reserved.",
     note:"The toolkits explain standards for understanding and training; they do not reproduce or replace the official texts. ISO standards are copyright of ISO. EFQM and P3M3 are trademarks of their respective owners. Academy self-assessments are not certification or formal recognition."
   },
@@ -727,6 +759,7 @@ const UI = {
     aBio:"استشاري في أنظمة الجودة والصحة والسلامة والبيئة والأنظمة المتكاملة بخبرة تتجاوز 16 عامًا، ومدقق رئيسي معتمد في 11 مواصفة أيزو، أهّل أكثر من 35 منشأة للحصول على الشهادات ودرّب أكثر من 500 متخصص في المنطقة.",
     aMission:"تحوّل الأكاديمية هذه الخبرة الاستشارية إلى أدوات تستطيع أي منشأة استخدامها: شرح واضح، وتقييم ذاتي صادق، وخطة قابلة للتنفيذ.",
     mail:"راسلني", copied:"تم نسخ البريد الإلكتروني",
+    backHub:"الرجوع للمنصة", training:"منصة التدريب", trainingSoon:"قريباً",
     rights:"© 2026 مدثر سلامه — أكاديمية التحسين المستمر. جميع الحقوق محفوظة.",
     note:"تشرح الأدوات المواصفات لأغراض الفهم والتدريب، ولا تنقل نصوصها الرسمية ولا تغني عنها. حقوق مواصفات الأيزو محفوظة لمنظمة ISO. EFQM وP3M3 علامات مملوكة لأصحابها. التقييمات الذاتية في الأكاديمية ليست إشهادًا ولا اعترافًا رسميًا."
   }
@@ -771,6 +804,11 @@ function renderText(){
   set("fRights",u.rights); set("fNote",u.note);
   set("cta3",RQ[L].quick.consult); set("aRqC",RQ[L].quick.consult); set("aRqT",RQ[L].quick.training);
   document.querySelectorAll("[data-rq]").forEach(a=>a.onclick=e=>{e.preventDefault(); rqOpen(a.dataset.rq);});
+  set("modBackLabel",u.backHub);
+  set("trainLabel",u.training);
+  const tb=$("trainBtn"), ts=$("trainSoon");
+  if(TRAINING_URL){ tb.href=TRAINING_URL; tb.target="_blank"; tb.removeAttribute("aria-disabled"); ts.style.display="none"; }
+  else { tb.href="#"; tb.removeAttribute("target"); tb.setAttribute("aria-disabled","true"); ts.textContent=u.trainingSoon; ts.style.display=""; }
 }
 
 function renderToolkits(){
@@ -781,7 +819,7 @@ function renderToolkits(){
       <div class="code"><span class="pre">${t.pre}</span>${t.code}<small>${esc(t.ed[L])}</small></div>
       <h3>${esc(t.title[L])}</h3>
       <ul>${(t.feat?t.feat[L]:u.tkFeat).map(x=>`<li>${esc(x)}</li>`).join("")}<li>${esc(t.extra[L])}</li></ul>
-      <a class="btn" href="${URLS[t.k]}" target="_blank" rel="noopener">${esc(u.open)} ${EXT}</a>
+      <a class="btn" href="${URLS[t.k]}" data-mod="${t.k}" data-modname="${esc(t.title[L])}">${esc(u.open)} ${EXT}</a>
     </article>`).join("");
 }
 
@@ -800,7 +838,7 @@ function renderSystems(){
         const dim = filter!=="all" && m.status!==filter ? " dim":"";
         const inner = `<span class="dot ${m.status}"></span><span><span class="ltr-ok">${esc(m.name[L])}</span> <small>${esc(m.note[L])}</small></span>`;
         return m.status==="live" && (URLS[m.k]||m.url)
-          ? `<a class="mod${dim}" href="${URLS[m.k]||m.url}" target="_blank" rel="noopener">${inner}</a>`
+          ? `<a class="mod${dim}" href="${URLS[m.k]||m.url}" data-mod="${m.k}" data-modname="${esc(m.name[L])}">${inner}</a>`
           : `<span class="mod${dim}">${inner}</span>`;
       }).join("")}</div></article>`;
   }).join("");
@@ -890,7 +928,7 @@ function orbSelect(i, auto){
   svg.querySelectorAll(".spoke").forEach((l,k)=>l.classList.toggle("sel", k===i));
   const liveN = countLive(s), st = sysStatus(s);
   const items = s.mods.map(m=>{ const url = m.status==="live" ? (URLS[m.k]||m.url) : null; const dc = m.status==="live"?"var(--live)":m.status==="dev"?"var(--dev)":"var(--plan)";
-    return `<li><span class="dot" style="background:${dc}"></span><span class="grow"><b>${esc(m.name[L])}</b><span class="n">${esc(m.note[L])}</span></span>${url?`<a class="go" href="${url}" target="_blank" rel="noopener">${esc(o.open)} ${EXT}</a>`:`<em>${esc(m.status==="dev"?u.devW:o.soon)}</em>`}</li>`; }).join("");
+    return `<li><span class="dot" style="background:${dc}"></span><span class="grow"><b>${esc(m.name[L])}</b><span class="n">${esc(m.note[L])}</span></span>${url?`<a class="go" href="${url}" data-mod="${m.k}" data-modname="${esc(m.name[L])}">${esc(o.open)} ${EXT}</a>`:`<em>${esc(m.status==="dev"?u.devW:o.soon)}</em>`}</li>`; }).join("");
   const p = $("orbPanel"); if(!p) return; p.style.setProperty("--c", col);
   p.innerHTML = `<div class="orb-h"><button type="button" class="orb-nav" data-d="-1" aria-label="${esc(o.prev)}">${L==="ar"?"›":"‹"}</button><h3>${esc(s.name[L])} <small>· ${s.mods.length} ${esc(o.mods)} · ${esc(st==="live"?u.liveN(liveN):st==="dev"?u.devW:u.planW)}</small></h3><button type="button" class="orb-nav" data-d="1" aria-label="${esc(o.next)}">${L==="ar"?"‹":"›"}</button></div>
     <p class="orb-sub">${esc(s.sub[L])}</p><ul class="orb-list">${items}</ul>
@@ -1094,12 +1132,46 @@ let toastT; function toast(m){ const t=$("toast"); t.textContent=m; t.classList.
 $("copyBtn").onclick = async ()=>{ try{ await navigator.clipboard.writeText(EMAIL); toast(UI[L].copied); }catch(e){ const r=document.createRange(); r.selectNodeContents($("emailTxt")); const s=getSelection(); s.removeAllRanges(); s.addRange(r); } };
 matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",()=>renderOrbit(false));
 
+/* ===== in-page module navigation: modules open inside this page, not a new tab ===== */
+function modLabel(key){
+  for(const s of SYSTEMS){ const m=s.mods.find(x=>x.k===key); if(m) return m.name[L]; }
+  const t=TOOLKITS.find(x=>x.k===key); if(t) return t.title[L];
+  return key;
+}
+function openModule(key, push){
+  const url = URLS[key]; if(!url) return;
+  const frame=$("modFrame"), ov=$("modOverlay");
+  if(frame.dataset.k!==key){ frame.src=url; frame.dataset.k=key; }
+  $("modName").textContent = modLabel(key);
+  ov.classList.add("on"); document.body.style.overflow="hidden";
+  if(push!==false) history.pushState({mod:key}, "", "#m="+key);
+}
+function closeModule(push){
+  $("modOverlay").classList.remove("on"); document.body.style.overflow="";
+  if(push!==false && /^#m=/.test(location.hash)) history.pushState({}, "", location.pathname+location.search+"#top");
+  let saved=null; try{ saved=localStorage.getItem("cia-lang"); }catch(e){}
+  if((saved==="ar"||saved==="en") && saved!==L){ L=saved; renderAll(false); }
+}
+document.addEventListener("click", e=>{
+  const a = e.target.closest("a[data-mod]"); if(!a) return;
+  if(e.button!==0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  e.preventDefault(); openModule(a.dataset.mod);
+});
+$("modBack").onclick = ()=>closeModule();
+window.addEventListener("popstate", ()=>{
+  const m = location.hash.match(/^#m=([\w-]+)/);
+  if(m && URLS[m[1]]) openModule(m[1], false); else closeModule(false);
+});
+$("trainBtn").addEventListener("click", e=>{ if(!TRAINING_URL) e.preventDefault(); });
+
 /* init */
 (function(){
   const q = new URLSearchParams(location.search).get("lang");
   let saved = null; try{ saved = localStorage.getItem("cia-lang"); }catch(e){}
   if(q==="ar"||q==="en") L=q; else if(saved==="ar"||saved==="en") L=saved;
   renderAll(true);
+  const m = location.hash.match(/^#m=([\w-]+)/);
+  if(m && URLS[m[1]]) openModule(m[1], false);
 })();
 </script>
 </body>

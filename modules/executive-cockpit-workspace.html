@@ -1256,7 +1256,7 @@ const B=(ar,en)=>({ar,en});
 const HUB="./index.html";
 const CONTACT_EMAIL="moddathersalama.eng@gmail.com";
 const STORE="cia-workspace:v1", LKEY="cia-workspace:lang";
-let L=(()=>{try{return localStorage.getItem(LKEY)||"ar";}catch(e){return "ar";}})();
+let L=(()=>{try{return (localStorage.getItem("cia-lang")||localStorage.getItem(LKEY))||"ar";}catch(e){return "ar";}})();
 const TKV=v=>v==null?"":(typeof v==="object"&&!Array.isArray(v)?(v[L]??""):String(v));
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const today=()=>new Date().toISOString().slice(0,10);
@@ -2221,7 +2221,7 @@ function applyLang(){
   set("footName",u.footName); set("footTxt",u.foot);
   applyLogo(); buildSide();
   try{ buildContact(); cbLang(); buildLicence(); }catch(e){ console.error(e); }
-  try{ localStorage.setItem(LKEY,L); }catch(e){}
+  try{ localStorage.setItem(LKEY,L);try{localStorage.setItem("cia-lang",L)}catch(e){}; }catch(e){}
   renderTab(curTab);
 }
 function switchLang(){ L=L==="ar"?"en":"ar"; applyLang(); }

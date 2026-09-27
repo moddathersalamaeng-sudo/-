@@ -1586,7 +1586,7 @@ const LIC={ar:{rights:"© 2026 مدثر سلامه — أكاديمية التح
 
 /* ================= CORE ================= */
 const STORE="pmomaturity:v1", LKEY="pmomaturity:lang";
-let L=(()=>{try{return localStorage.getItem(LKEY)||"ar";}catch(e){return "ar";}})();
+let L=(()=>{try{return (localStorage.getItem("cia-lang")||localStorage.getItem(LKEY))||"ar";}catch(e){return "ar";}})();
 const U=()=>UI[L];
 const TKV=v=>v==null?"":(typeof v==="object"&&!Array.isArray(v)?(v[L]??""):String(v));
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -2350,7 +2350,7 @@ function applyLang(){
   set("footName",u.footName); set("footTxt",u.foot);
   applyLogo(); buildSide();
   try{ buildContact(); cbLang(); buildLicence(); }catch(e){ console.error(e); }
-  try{ localStorage.setItem(LKEY,L); }catch(e){}
+  try{ localStorage.setItem(LKEY,L);try{localStorage.setItem("cia-lang",L)}catch(e){}; }catch(e){}
   document.getElementById("termsBox").innerHTML="";
   renderTab(curTab);
 }
