@@ -1,0 +1,36 @@
+Step 1 (hub home page + Tool Advisor) — files changed and added against the uploaded cia-platform.zip (SHA-256 of the new file)
+
+changed  511b6b94c9a618f032d6f7b518f0c3781eda1a613b3d84f29f4fb530ffc47e2a  index.html
+changed  9e31cfdc6cb69bd002532af7df8c5edf50c078a88398323af470355c018985fb  tests/platform/t_regress.py
+added    36fc66d235e3e9e8bff5da8f070a64ec657f0fcaf2e743217c799df06e8c996b  assets/og-home.jpg
+added    cf71659da39d921f73a2d34df12ea241c381017435fbd2b05332dc3fb5077899  assets/shots/aud-dashboard-ar.webp
+added    197077e656d2709f381906ec15c6835382072cb7833bc5e933b71affc0dfa0ca  assets/shots/aud-dashboard-en.webp
+added    59601698eecad70e32318529c364ebde0ca5c2908b6ec574ff07c469dcdca849  assets/shots/exc-results-ar.webp
+added    6d96ece91aaa7a6112eed55f30da683d47a3b9c3b1a02caf345be3ead63f9af4  assets/shots/exc-results-en.webp
+added    dcd51776142b168bf7915ffefa9c8a3e608a20ede604623149291bb9ab016651  assets/shots/ims-matrix-ar.webp
+added    0bded7d267171cb79bb4b533697ee6080e14ccd9549fd73d678986d9681b49c8  assets/shots/ims-matrix-en.webp
+added    9e98e64a68f71c34b1ed2446daaba023663db010f9083512d0e7df1222fdf168  assets/shots/iso27001-soa-ar.webp
+added    f16d5f5fdd06e446d28bdd2c05f13f1f93d6e4b2c3960133db31a08041e78c9f  assets/shots/iso27001-soa-en.webp
+added    b981832109188b3c973a9781052ab8a3b7d107638e1babe3b402e44dc7399601  assets/shots/iso31000-heatmap-ar.webp
+added    8905ac19ff72b70c7f273d7903ac9fe354b3ccd475914d68dcddc042be894e94  assets/shots/iso31000-heatmap-en.webp
+added    220b2ceea137a3113de79a948da59673e63c7966e3aacbae66467b7f29c5b690  assets/shots/iso37000-radar-ar.webp
+added    08f14b41a790d087ca1a35f5c75422e0a8069b1dbd4f49aa6262b47a5b06bf22  assets/shots/iso37000-radar-en.webp
+added    619b8475007de492b952d2ebbc78e3ea24b42907fb72dab79f07066d96f15503  assets/shots/iso42001-results-ar.webp
+added    075f9a30ce947f26940dd3b1610063538d99e44b8104bbdcac4d2fcb0694505f  assets/shots/iso42001-results-en.webp
+added    70b903c42eb1299218fda5d51c840fcf9845ed008feddddcc4bc73f030d68a1e  assets/shots/iso9001-report-ar.webp
+added    1d63b4071c6efbc6801e18b96884c14b4429b9cdce5694bcba1a1e4fa387e4fd  assets/shots/iso9001-report-en.webp
+added    5f31814cf885c8efe5f1a6f5c64bfbd6633702607bcc047505f44a7b1168e6a2  assets/shots/kaqa-verdict-ar.webp
+added    06c8c94a115045fa714382dc4f7fa7a8eb67b16cfd43115a893e972d44803b4e  assets/shots/kaqa-verdict-en.webp
+added    a6ae90ed329f0158ba56607808ee2dda8ca28b8f08ee15209023d6a98754ff15  assets/shots/oec-processmap-ar.webp
+added    b66e0802c13331f77ba8b5162388b6005ed934af73655fcb01f7dbe8fb3e12d6  assets/shots/oec-processmap-en.webp
+added    9bfcbe7b9dd30aa3d38aab1171498449f28b903eb8e3da8d8971e31ad2b32718  assets/shots/pdca-dashboard-ar.webp
+added    023957d3ead3632dceb3066332526a7e631d8858b9c97f91fbb83a5084e1bf70  assets/shots/pdca-dashboard-en.webp
+added    96f1a4b88f79216fde4909ba612649520b2ab77622e54503f5edefc78dd117c1  assets/shots/pmoexc-index-ar.webp
+added    5f92192f0a0e7da31ef26a06ae8e51d8baedd94d486f8660d054c89a9a086c41  assets/shots/pmoexc-index-en.webp
+added    00ab327f6215036e168f36569a15ead4ad7eb119c527f8aefa0cac345100c7a7  assets/shots/str-map-ar.webp
+added    2dcd7770d63185dc8f6aef2510ec8fa9cef0e661df5e8076346fbba94a851663  assets/shots/str-map-en.webp
+added    e485ab56f10d8fe6c5dac8950f40ddce4ff0feebb333d0f0e4b3b729e03392d9  assets/shots/w8-ohi-ar.webp
+added    bdc123790c3f3d5e2cf53b1a55d4c1914363de46e6dc28ffb7e59d9b32a4222d  assets/shots/w8-ohi-en.webp
+added    d7cb38400b38420997316e0a125037a81ec3a2d60eb413231ad6c31fc0972fed  tests/hub/test_home_advisor.py
+
+unchanged: 44 files; removed: 0

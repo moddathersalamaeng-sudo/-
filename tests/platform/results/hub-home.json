@@ -1,0 +1,2673 @@
+{
+ "name": "hub-home",
+ "checks": 520,
+ "failed": 0,
+ "seconds": 136.5,
+ "rows": [
+  {
+   "label": "screenshots: 10–14 screens in Arabic and English",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "screenshots: each image at most 120 KB",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "screenshots: all images together at most 2.5 MB",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "no logo files added (new assets are screenshots and the share image only)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "module files: only the ones this step may change differ (checksum list)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "unchanged: templates/explain-kit-template.html",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "unchanged: assets/cia-share.jpg",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "unchanged: assets/icon-192.png",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "unchanged: assets/favicon-32.png",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "unchanged: assets/apple-touch-icon.png",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "TOOLINFO complete for every tool in both languages (brief, why, gain, who, time, start)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "TOOLINFO has an entry for every live tool and nothing else",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso9001: question count matches the tool's data (40)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso9001: template count matches the tool's data (14)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso14001: question count matches the tool's data (40)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso14001: template count matches the tool's data (16)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso45001: question count matches the tool's data (40)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso45001: template count matches the tool's data (16)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso27001: question count matches the tool's data (40)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso27001: template count matches the tool's data (15)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso22301: question count matches the tool's data (40)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso22301: template count matches the tool's data (16)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso37301: question count matches the tool's data (40)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso37301: template count matches the tool's data (16)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso37001: question count matches the tool's data (40)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso37001: template count matches the tool's data (16)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso31000: question count matches the tool's data (40)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso31000: template count matches the tool's data (12)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso37000: question count matches the tool's data (40)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso37000: template count matches the tool's data (12)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ims: question count matches the tool's data (52)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ims: template count matches the tool's data (11)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "exc: question count matches the tool's data (49)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "p3o: question count matches the tool's data (42)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "p3o: template count matches the tool's data (8)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso21500: question count matches the tool's data (58)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso21500: template count matches the tool's data (8)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ccc: question count matches the tool's data (28)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso42001: question count matches the tool's data (61)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso42001: template count matches the tool's data (8)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "iso27701: question count matches the tool's data (99)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "pmoexc: question count matches the tool's data (42)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "pmoexc: template count matches the tool's data (8)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "pmo: question count matches the tool's data (84)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "kaqa: template count matches the tool's data (8)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "counter tools = 26 (computed from the data)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "counter systems = 7 (computed from the data)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "counter q = 963 (computed from the data)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "counter tpl = 274 (computed from the data)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "counter std = 22 (computed from the data)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "counter tools equals the number of linked tools",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "request forms unchanged (fields, options, recipients, texts)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 home: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 home: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 home: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 home: every section revealed after scrolling",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 advisor: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 advisor: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 advisor: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 start: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 start: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 start: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 dash: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 dash: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 dash: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 tools: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 tools: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 tools: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 systems: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 systems: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 systems: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 learn: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 learn: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 learn: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 faq: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 faq: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 faq: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 request: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 request: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 request: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 about: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 about: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280 about: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280: no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 1280: header items fit without scrolling",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 home: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 home: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 home: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 home: every section revealed after scrolling",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 advisor: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 advisor: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 advisor: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 start: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 start: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 start: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 dash: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 dash: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 dash: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 tools: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 tools: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 tools: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 systems: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 systems: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 systems: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 learn: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 learn: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 learn: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 faq: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 faq: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 faq: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 request: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 request: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 request: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 about: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 about: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390 about: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390: no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390: sticky compact header",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ar 390: hero frames not loaded on phones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 home: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 home: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 home: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 home: every section revealed after scrolling",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 advisor: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 advisor: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 advisor: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 start: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 start: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 start: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 dash: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 dash: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 dash: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 tools: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 tools: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 tools: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 systems: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 systems: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 systems: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 learn: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 learn: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 learn: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 faq: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 faq: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 faq: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 request: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 request: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 request: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 about: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 about: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280 about: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280: no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 1280: header items fit without scrolling",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 home: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 home: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 home: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 home: every section revealed after scrolling",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 advisor: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 advisor: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 advisor: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 start: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 start: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 start: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 dash: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 dash: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 dash: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 tools: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 tools: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 tools: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 systems: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 systems: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 systems: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 learn: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 learn: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 learn: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 faq: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 faq: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 faq: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 request: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 request: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 request: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 about: shows",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 about: no undefined/NaN/[object Object]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390 about: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390: no console errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390: sticky compact header",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "en 390: hero frames not loaded on phones",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "tools at a glance: one card per live tool",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "tools at a glance: grouped by the seven systems",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "tools at a glance: tools being added shown as 'قيد الإضافة'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 1: opens iso9001#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 1: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 2: opens iso14001#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 2: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 3: opens iso45001#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 3: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 4: opens iso27001#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 4: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 5: opens iso22301#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 5: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 6: opens iso37301#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 6: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 7: opens iso37001#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 7: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 8: opens iso27701#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 8: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 9: opens iso42001#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 9: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 10: opens iso42005#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 10: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 11: opens ims#picker in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 11: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 12: opens iso31000#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 12: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 13: opens iso37000#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 13: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 14: opens ccc#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 14: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 15: opens aireg#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 15: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 16: opens pmo#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 16: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 17: opens iso21500#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 17: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 18: opens p3o#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 18: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 19: opens pmoexc#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 19: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 20: opens exc#quick in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 20: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 21: opens kaqa#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 21: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 22: opens str#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 22: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 23: opens aud#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 23: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 24: opens oec#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 24: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 25: opens pdca#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 25: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 26: opens w8#modreg in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card 26: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "card expands in place for the full brief",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "every 'Official source' line links to a reference card that exists",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "role chip 'ceo' filters the cards",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "role chip 'qhse' filters the cards",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "role chip 'grc' filters the cards",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "role chip 'pmo' filters the cards",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "role chip 'exc' filters the cards",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "role chip 'aud' filters the cards",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "role chip 'it' filters the cards",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 1: opens iso9001#report in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 1: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 2: opens iso27001#annexa in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 2: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 3: opens iso31000#annexa in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 3: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 4: opens iso37000#report in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 4: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 5: opens ims#matrix in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 5: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 6: opens pmoexc#results in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 6: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 7: opens exc#results in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 7: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 8: opens kaqa#results in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 8: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 9: opens aud#dash in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 9: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 10: opens str#map in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 10: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 11: opens oec#pmap in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 11: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 12: opens w8#cockpit in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 12: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 13: opens iso42001#results in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 13: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 14: opens pdca#dash in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "slide 14: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 1: lists its 11 tools",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 1: tools, questions and templates added up from the data",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.1: opens iso9001#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.1: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.2: opens iso14001#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.2: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.3: opens iso45001#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.3: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.4: opens iso27001#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.4: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.5: opens iso22301#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.5: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.6: opens iso37301#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.6: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.7: opens iso37001#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.7: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.8: opens iso27701#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.8: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.9: opens iso42001#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.9: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.10: opens iso42005#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.10: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.11: opens ims#picker in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 1.11: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 2: lists its 4 tools",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 2: tools, questions and templates added up from the data",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 2.1: opens iso31000#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 2.1: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 2.2: opens iso37000#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 2.2: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 2.3: opens ccc#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 2.3: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 2.4: opens aireg#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 2.4: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 3: lists its 4 tools",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 3: tools, questions and templates added up from the data",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 3.1: opens pmo#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 3.1: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 3.2: opens iso21500#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 3.2: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 3.3: opens p3o#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 3.3: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 3.4: opens pmoexc#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 3.4: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 4: lists its 2 tools",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 4: tools, questions and templates added up from the data",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 4.1: opens exc#quick in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 4.1: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 4.2: opens kaqa#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 4.2: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 5: lists its 1 tools",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 5: tools, questions and templates added up from the data",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 5.1: opens str#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 5.1: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 6: lists its 3 tools",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 6: tools, questions and templates added up from the data",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 6.1: opens aud#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 6.1: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 6.2: opens oec#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 6.2: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 6.3: opens pdca#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 6.3: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 7: lists its 1 tools",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel panel system 7: tools, questions and templates added up from the data",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 7.1: opens w8#modreg in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "panel 7.1: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "clicking a wheel segment selects that system in the panel",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "'Details and your scores' opens the system drawer",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "wheel counts: sum of segments = linked tools",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "journey step 1: opens w8#orgprofile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "journey step 1: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "journey step 2: opens ims#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "journey step 2: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "journey step 3: opens iso31000#annexa in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "journey step 3: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "journey step 4: opens pdca#tools in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "journey step 4: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "journey step 5: opens str#dash in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "journey step 5: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "journey step 6: opens aud#prog in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "journey step 6: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "new on the platform 1: opens pdca in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "new on the platform 1: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "new on the platform 2: opens iso27001 in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "new on the platform 2: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "new on the platform 3: opens iso45001 in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "new on the platform 3: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "new on the platform 4: opens kaqa in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "new on the platform 4: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "new on the platform 5: opens iso27701 in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "new on the platform 5: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "tool of the week: opens iso21500#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "tool of the week: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "official references: one card per body (REFS)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-iso: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-iec: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-saso: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-efqm: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-kaqa: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-pcp3m3: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-pcp3o: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-sdaia: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-ndmo: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-pdpl: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-euai: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-gaci: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-saac: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "ref-egac: opens the official site in a new tab with rel=noopener, no logo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "official references: the five groups are shown",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "header has 'المراجع الرسمية'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "header link scrolls to the references and highlights it",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Ctrl+K opens the command search",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "command search finds a tool by number",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Enter opens the tool in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "command search covers knowledge topics and references",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Escape closes the command search",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "back-to-top button appears after scrolling",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "back-to-top returns to the top",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "no errors on the home page interactions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: images not loaded before it comes into view",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: lazy — only the current and next screens load",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: screens follow the page language",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: 'Illustrative example data' label",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: alt text on every screen",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: autoplay advances every 5 seconds",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: pauses on hover",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: pauses on focus",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: keyboard ArrowRight shows the next screen",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: keyboard goes back",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: swipe shows the next screen",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: pauses on touch",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: dots jump to a screen",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: pause button stops the slideshow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel en: no errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: images not loaded before it comes into view",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: lazy — only the current and next screens load",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: screens follow the page language",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: 'Illustrative example data' label",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: alt text on every screen",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: autoplay advances every 5 seconds",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: pauses on hover",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: pauses on focus",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: keyboard ArrowLeft shows the next screen",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: keyboard goes back",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: swipe shows the next screen",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: pauses on touch",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: dots jump to a screen",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: pause button stops the slideshow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "carousel ar: no errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "reduced motion: no autoplay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "reduced motion: no drift in the hero",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "reduced motion: counters show their values at once",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "reduced motion: no wheel auto-tour",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "reduced motion: no errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hero button opens the Advisor view",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Advisor has a header item 'المرشد'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Advisor: 12–15 questions",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Advisor: the note says it is general guidance",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Advisor: progress bar and question counter",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 1: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 1: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 1: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 2: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 2: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 2: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 3: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 3: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 3: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 4: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 4: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 4: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Back returns to the previous question with its answer",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 5: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 5: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 5: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 6: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 6: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 6: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 7: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 7: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 7: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "answers persist after reload (cia-advisor:v1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 8: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 8: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 8: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 9: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 9: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 9: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 10: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 10: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 10: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 11: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 11: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 11: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 12: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 12: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 12: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 13: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 13: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 13: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 14: Next disabled until answered",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 14: shows its options",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "question 14: answer is selected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "finishing shows the results",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Start again clears the answers",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "profile 'contractor preparing for Aramco/SEC': sensible top tools ['iso9001', 'oec', 'aud', 'iso45001', 'iso14001']",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "profile 'contractor preparing for Aramco/SEC': every tool shows its fit score and reasons",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "profile 'contractor preparing for Aramco/SEC': plan with start, three stages, outputs and people",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "profile 'government entity targeting KAQA': sensible top tools ['kaqa', 'w8', 'str', 'iso37000', 'exc']",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "profile 'government entity targeting KAQA': every tool shows its fit score and reasons",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "profile 'government entity targeting KAQA': plan with start, three stages, outputs and people",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "profile 'tech company using AI with personal data': sensible top tools ['iso27701', 'iso42001', 'aireg', 'iso42005', 'iso27001']",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "profile 'tech company using AI with personal data': every tool shows its fit score and reasons",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "profile 'tech company using AI with personal data': plan with start, three stages, outputs and people",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "the three profiles give different results",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "scores are the sum of the rule rows (transparent)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "all scoring rules are listed on the page",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "plan 'Open' (where to start): opens iso27701#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "plan 'Open' (where to start): the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "recommended tool 1: opens iso27701#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "recommended tool 1: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "recommended tool 2: opens iso42001#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "recommended tool 2: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "recommended tool 3: opens aireg#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "recommended tool 3: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "recommended tool 4: opens iso42005#profile in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "recommended tool 4: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "recommended tool 5: opens iso27001#assess in the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "recommended tool 5: the tool's home button closes the overlay",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Print uses the print view (padv) and restores the page",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Copy summary puts the recommendations and the plan on the clipboard",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Request a consultation opens the consultation form",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "consultation form pre-filled with the recommendations",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Advisor: no errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Advisor results switch to English",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Advisor results on a phone: no horizontal overflow",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "Advisor results on a phone: KAQA first",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "guided tour runs through every step, starting at the Advisor button",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "performance dashboard still renders",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "tour and dashboard: no errors",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "first screen readable within about 2 s (slow 4G, 4x CPU): hero text on screen at 560 ms (first paint 416 ms, largest paint 604 ms)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "phone first screen loads no screenshot (images: [])",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "weight": {
+  "index_html_bytes": 610916,
+  "index_html_gzip_bytes": 183840,
+  "screenshots_total_bytes": 1172680,
+  "screenshots": {
+   "aud-dashboard-ar.webp": 50274,
+   "aud-dashboard-en.webp": 58940,
+   "exc-results-ar.webp": 39144,
+   "exc-results-en.webp": 47512,
+   "ims-matrix-ar.webp": 48196,
+   "ims-matrix-en.webp": 61958,
+   "iso27001-soa-ar.webp": 43762,
+   "iso27001-soa-en.webp": 59610,
+   "iso31000-heatmap-ar.webp": 30084,
+   "iso31000-heatmap-en.webp": 34434,
+   "iso37000-radar-ar.webp": 32998,
+   "iso37000-radar-en.webp": 45272,
+   "iso42001-results-ar.webp": 50396,
+   "iso42001-results-en.webp": 64100,
+   "iso9001-report-ar.webp": 30560,
+   "iso9001-report-en.webp": 41062,
+   "kaqa-verdict-ar.webp": 42944,
+   "kaqa-verdict-en.webp": 47268,
+   "oec-processmap-ar.webp": 43032,
+   "oec-processmap-en.webp": 52858,
+   "pdca-dashboard-ar.webp": 20576,
+   "pdca-dashboard-en.webp": 26096,
+   "pmoexc-index-ar.webp": 38102,
+   "pmoexc-index-en.webp": 51464,
+   "str-map-ar.webp": 29108,
+   "str-map-en.webp": 37968,
+   "w8-ohi-ar.webp": 21182,
+   "w8-ohi-en.webp": 23780
+  },
+  "og_home_jpg_bytes": 77902,
+  "phone_first_paint_ms": 416,
+  "phone_hero_text_ms": 560,
+  "phone_largest_paint_ms": 604,
+  "phone_load_ms": 2161,
+  "phone_document_transfer_bytes": 185298
+ },
+ "profiles": {
+  "contractor preparing for Aramco/SEC": [
+   "iso9001",
+   "oec",
+   "aud",
+   "iso45001",
+   "iso14001"
+  ],
+  "government entity targeting KAQA": [
+   "kaqa",
+   "w8",
+   "str",
+   "iso37000",
+   "exc"
+  ],
+  "tech company using AI with personal data": [
+   "iso27701",
+   "iso42001",
+   "aireg",
+   "iso42005",
+   "iso27001"
+  ]
+ },
+ "references": "links checked by web search on 2026-10-11; status per link in REFS[].chk in index.html"
+}

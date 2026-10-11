@@ -1,0 +1,25 @@
+CIA platform — test results, 2026-10-10 (final package)
+Chromium 1194 from /opt/pw-browsers, served over http.
+
+On the final package (this run):
+static        136/136   kit blocks byte-identical to the template (26 modules), node --check of 209 inline scripts, checksum diff
+sweep        9464/9464  1,560 tab views (26 tools x AR/EN x 1280/390): no errors, no undefined/NaN/[object Object], no empty pane, no overflow; slowest switch 339 ms
+regress-hub    27/27    the hub reads the same snapshot from the same data in the old and new package; only PDCA is new
+pdca suite     73/73 | 73/73 | 73/73   three runs in a row
+
+Same code, run separately after the last module change:
+hub           337/337   9 views x AR/EN x 1280/390, 26 tools in the overlay, home button, back/forward, language both ways, 26 guide links, wheel 3 / 26
+kit           406/406   every section and item in 26 kits, every "Assess this" (landed or "outside the assessment" note), every "Explain" back-link, AR->EN->AR re-render
+tour          364/364   full tour in 26 tools x AR/EN, every tab, no empty title
+example       241/241   example loaded in 25 tools (the cockpit has none by design), every tab AR/EN with data, the hub dashboard reads every tool
+regress       117/117   stored state identical old vs new (on load, after the example, after every tab), Date and Math.random frozen; unchanged files show identical text
+
+Total: 11,311 checks, 0 failures.
+
+Text differences against the previous package (every other tool: identical text on every tab, AR and EN):
+iso27001, iso45001   home: 2 new tiles (method guide, clause guide); assessment: "Explain" links; 2 new tabs (explain-std, explain-cl)
+iso22301, iso31000, iso37001, iso37301   assessment: "Explain" links only
+pdca                 home: new hero, launch tiles and related-tools strip (no line removed; the author line moved into the hero); records: example-data box
+kaqa                 import preview shows the organisation name instead of "[object Object]" (visible only when strategy-studio data exists)
+ims-builder          style only: on screens under 560 px the clause chips take their own line
+No existing line of text was removed in any tool.

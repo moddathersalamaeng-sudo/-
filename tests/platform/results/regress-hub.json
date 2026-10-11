@@ -1,0 +1,148 @@
+{
+ "name": "regress-hub",
+ "checks": 28,
+ "failed": 0,
+ "seconds": 43.3,
+ "rows": [
+  {
+   "label": "same stored data in both releases before reading",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso9001",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso14001",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso45001",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso27001",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso27701",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso22301",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso37301",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso37001",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso42001",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso42005",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for ims",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso31000",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso37000",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for ccc",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for aireg",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for pmo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for iso21500",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for p3o",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for pmoexc",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for exc",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for kaqa",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for str",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for aud",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for oec",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for pdca",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "hub reads the same snapshot for w8",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "label": "new hub adds exactly: no tool",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}

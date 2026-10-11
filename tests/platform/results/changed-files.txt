@@ -1,0 +1,31 @@
+Changed and added files against cia-platform-pdca-fixed.zip (SHA-256 of the new file)
+
+changed  3ee4872a6c291ee9f4f44bfc4a778c271bbb394b2013d52dacfd5efc3a7ca6d8  index.html
+changed  f50850f1a8838b42e2f00c0c95cb7cb85d4ef9355493b0892d01504d4edbb9ef  modules/compliance-anti-bribery.html
+changed  3e34b2006d0120c76090fc42f13ecd95fd8f0c3abc93cb196480d566b6d2c543  modules/executive-cockpit-workspace.html
+changed  a8b5fd1f683e4f25a4028efd5954c1621d25bf0fb38ae110b59727e410fb7774  modules/ims-builder.html
+changed  ed4350aadfed1dc1dc91e008d24af1c933ccf559f47997499b3bbbf0a56baf60  modules/iso22301.html
+changed  e919f54e7fffc50d77da1502e3a7921d658ce907f44b80b3146899f84c11675d  modules/iso27001.html
+changed  4980fdd8c45b0224718f2c2adcfaacf458da03e64cee0f8dad2c645651b9aa9c  modules/iso31000-risk-studio.html
+changed  78f4b52618f3afb69121bbc0f844e6c49f0e8d11bf58b50245fd0b2499338097  modules/iso37001.html
+changed  047abbd5e3a469b5659401284f4c9caa3b290601b5c57676c362cda979a0821e  modules/iso37301.html
+changed  9e7a0f60e037bf6b107c9fcc5b9cb3239941cc132d1c4a56269c40f5d557ce69  modules/iso45001.html
+changed  d88b71f6b5a3808235e543c559776717ed65534e66b509149f519860f7b0f2b0  modules/kaqa.html
+changed  a131bf2d084e752a455bb8fc13531319cdcd7d900451904cfab3e2fba0ed959d  modules/operations-excellence.html
+changed  61b602bce225698910e7c226cd9127a9aea8bbb3534ebf0cab7e785ac8eaf084  modules/pdca.html
+changed  054517ebe8a985e27967a546f823681e6b15e9d527274a8ef685cb392566b5a8  modules/strategy-performance.html
+changed  076bc666d028d2448ea4c2f2718aba45d9f11635d0958feff73cdb9bd4e95ee9  tests/pdca/test_pdca.py
+added    ccdd52477eafd8c26b216adaca76b45e76a8dfbea0f96ddec1c4fd1aca7c0aa0  tests/platform/common.py
+added    cb6a9abeda3a9217ca29f9110ed91ca2734f93213b32ff700564179ae9a176bb  tests/platform/pdca_seed.json
+added    cd00bc70049d2dd16c07d4f1715011f73a9d578215f48f647e26aaf2b24fb5a0  tests/platform/results/summary.txt
+added    e2ffd065abb0ec1d71184874aec507042f6dfe0eae803064dae443518cc92c90  tests/platform/run_all.sh
+added    8eb16a041a270d8efde1badab9f046b9a9555849d3df8b7fe3515301a2cb553a  tests/platform/summary.py
+added    9766aaf0a3edec50c777689aece59176717e353270f3f5845bff3181d2e5537e  tests/platform/t_example.py
+added    da970b6ed04eb625de05fe230d11524a565a42de94c6fd94c5ffa88df72187be  tests/platform/t_hub.py
+added    20be8e9c1ea8c2dc6c2b92da3cea638cdb60ed4e9265f3e673cf37715de7035a  tests/platform/t_kit.py
+added    298f4d4a709e9e68325289509e2d076764235e125c1ee31fc201a03a70d4589a  tests/platform/t_regress.py
+added    d1ce97a52f70c4cd162d2403e3b611c7080bf0ee51e29ffa01f3a4cab6880177  tests/platform/t_static.py
+added    5d998bb026812a79d375660c3370b3e68b972bae98d4c7bedd9be475f9ecd36e  tests/platform/t_sweep.py
+added    73be87bc4f55cd655f2f32e9ac76632a182c4bc6e0601bce6c5dc2e973b0e038  tests/platform/t_tour.py
+
+unchanged: 20 files; removed: 0
