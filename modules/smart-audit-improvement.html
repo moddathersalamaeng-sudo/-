@@ -3452,7 +3452,7 @@ function cellHTML(c,r){
 }
 function regRows(key){ const def=REG[key]; return [def.cols.map(c=>TKV(c.l)),...R(key).map(r=>def.cols.map(c=>c.t==="calc"?c.f(r).t:c.t==="sel"?optTxt(O(c.o),r[c.k]):c.t==="chk"?(r[c.k]?"1":"0"):TKV(r[c.k])))]; }
 function regTableHTML(key,opts){ const def=REG[key], u=U(), rows=R(key); opts=opts||{};
-  return `<div class="tp-tbl"><table class="${def.tcls||""}"><thead><tr>${def.cols.map(c=>`<th>${esc(TKV(c.l))}</th>`).join("")}${def.open?"<th></th>":""}<th></th></tr></thead><tbody>${rows.map((r,i)=>`<tr data-i="${i}" class="${opts.sel===r.id?"sel":""}">${def.cols.map(c=>cellHTML(c,r)).join("")}${def.open?`<td><button class="tk-btn sm" data-open="${i}">${u.open}</button></td>`:""}<td><button class="del" data-del="${i}" aria-label="${u.del}">✕</button></td></tr>`).join("")}</tbody></table></div>`; }
+  return `<div class="tp-tbl"><table class="${def.tcls||""}"><thead><tr>${def.cols.map(c=>`<th>${esc(TKV(c.l))}</th>`).join("")}${def.open?"<th></th>":""}${key==="capa"?"<th></th>":""}<th></th></tr></thead><tbody>${rows.map((r,i)=>`<tr data-i="${i}" class="${opts.sel===r.id?"sel":""}">${def.cols.map(c=>cellHTML(c,r)).join("")}${def.open?`<td><button class="tk-btn sm" data-open="${i}">${u.open}</button></td>`:""}${key==="capa"?capaToolTD(r):""}<td><button class="del" data-del="${i}" aria-label="${u.del}">✕</button></td></tr>`).join("")}</tbody></table></div>`; }
 function regToolbar(key,extra){ const u=U(); return `<div class="tk-row rg-bar" style="margin-bottom:10px;flex-wrap:wrap"><button class="tk-btn sm pri" data-act="add">${key==="speak"?u.newCase:u.add}</button><button class="tk-btn sm gold" data-act="pdf">${u.pdf}</button><button class="tk-btn sm" data-act="csv">${u.csv}</button><label class="tk-btn sm" style="cursor:pointer">${u.imp}<input type="file" accept=".csv,text/csv" data-act="imp" hidden></label><button class="tk-btn sm" data-act="ex">${u.restoreEx}</button><button class="tk-btn sm" data-act="clear">${u.clearT}</button>${extra||""}</div>`; }
 function wireReg(key,host,rerender,onOpen){
   const u=U(), def=REG[key], rows=R(key);
@@ -3759,6 +3759,14 @@ function buildCapa(){
   const box=document.getElementById("capaBox"); box.innerHTML=h; wireReg("capa",box,buildCapa);
 }
 
+
+/* link from each CAPA row to the CAPA tool (added 2026-10-11). It only opens the tool: the CAPA tool reads this
+   center's data with a preview and never writes to it. In the hub it opens in the overlay, outside it in a new tab. */
+function capaToolTD(r){ const l=B("افتح أداة CAPA","Open the CAPA tool")[L]; return `<td><a class="tk-btn sm" href="./capa.html#docs" data-capa-tool="${esc(String(TKV(r.id)))}" title="${l}" aria-label="${l} · ${esc(String(TKV(r.id)))}">CAPA ↗</a></td>`; }
+document.addEventListener("click",e=>{ const a=e.target.closest&&e.target.closest("a[data-capa-tool]"); if(!a||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey) return;
+  e.preventDefault(); let hub=false; try{ hub=window.self!==window.top&&typeof window.parent.ciaOpenFile==="function"; }catch(x){}
+  if(hub){ try{ if(window.parent.ciaOpenFile("capa.html")) return; }catch(x){} }
+  window.open(a.getAttribute("href"),"_blank","noopener"); });
 
 /* ================= IMPROVEMENT TOOLBOX ================= */
 let tlSub="why";

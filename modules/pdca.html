@@ -2733,6 +2733,57 @@ CIAEX.setup(function(){
 </script>
 <script>
 /* ===== PDCA tool — host logic. Records and assessment are stored in this browser only (localStorage, wrapped in try/catch). ===== */
+/* CIA toolbox engine v1 — start */
+/* Shared by the Continual Improvement Toolbox tools (PDCA, CAPA). This block is identical in every tool that carries it;
+   tests/capa/test_capa.py compares the copies. It holds only generic parts: the store, assessment scoring, the record
+   audit runner, dashboard pieces, CSV and the HTML report frame. Wording, questions and rules stay in each tool.
+   Storage: one JSON object per tool key, in this browser only, every access wrapped in try/catch. read() is for other
+   tools' keys and never writes. */
+var TBX=(function(){
+ "use strict";
+ function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+ function today(){ return new Date().toISOString().slice(0,10); }
+ function txt(v){ return String(v||"").trim(); }
+ /* ---- store ---- */
+ function load(key,norm,empty){ try{ var v=JSON.parse(localStorage.getItem(key)||"null"); if(!v||typeof v!=="object") v={}; return norm(v); }catch(e){ return empty(); } }
+ function save(key,obj){ try{ localStorage.setItem(key, JSON.stringify(obj)); return true; }catch(e){ return false; } }
+ function drop(key){ try{ localStorage.removeItem(key); }catch(e){} }
+ function read(key){ try{ var v=JSON.parse(localStorage.getItem(key)||"null"); return (v&&typeof v==="object")?v:null; }catch(e){ return null; } }
+ /* ---- assessment: questions are [code, {ar,en}], answers 0..2; keep(q) limits the score to a group ---- */
+ function score(Q,ans,keep){ var sum=0,n=0; Q.forEach(function(q){ if(keep && !keep(q)) return; n++; var v=ans[q[0]]; if(v!==undefined) sum+=Number(v); }); return n?Math.round(sum/(2*n)*100):0; }
+ function answered(Q,ans){ return Q.filter(function(q){ return ans[q[0]]!==undefined; }).length; }
+ function band(p,names){ return p<50?names[0]:(p<80?names[1]:names[2]); }
+ /* ---- record audit runner: fn(record) returns {check: true | false | null}; null means "does not apply yet" ---- */
+ function audit(recs,fn,checks){
+  var out={rows:[],pass:0,applic:0,failRec:0};
+  recs.forEach(function(r){ var res=fn(r), f=0; checks.forEach(function(k){ var v=res[k]; if(v===null) return; out.applic++; if(v) out.pass++; else f++; }); if(f) out.failRec++; out.rows.push({r:r,res:res,fails:f}); });
+  out.rate=out.applic?Math.round(out.pass/out.applic*100):null; return out;
+ }
+ function cells(res,checks){ return checks.map(function(k){ var v=res[k]; if(v===null) return '<td class="c pd-na">—</td>'; return '<td class="c '+(v?'pd-pass':'pd-fail')+'">'+(v?'✓':'✗')+'</td>'; }).join(""); }
+ /* ---- dashboard pieces ---- */
+ function kpi(v,l){ return '<div class="pd-kpi"><b>'+esc(v)+'</b><span>'+esc(l)+'</span></div>'; }
+ function bar(label,v,pct,col){
+  return '<div class="pd-bar" style="--fc:'+col+'"><span class="lbl">'+esc(label)+'</span><div class="track" role="img" aria-label="'+esc(label+": "+pct+"%")+'"><div class="fill" style="width:'+pct+'%"></div></div><span class="v">'+esc(v)+'</span></div>';
+ }
+ function dist(keys,n,count,label,col){ return keys.map(function(k){ var c=count(k), p=Math.round(c/n*100); return bar(label(k),c,p,col(k)); }).join(""); }
+ /* ---- CSV: UTF-8 with a byte-order mark so spreadsheet tools read Arabic ---- */
+ function csvCell(v){ var s=String(v==null?"":v); return '"'+s.replace(/"/g,'""')+'"'; }
+ function csv(head,rows){ return "﻿"+head.join(",")+"\n"+rows.map(function(r){ return r.map(csvCell).join(","); }).join("\n")+"\n"; }
+ function download(name,type,content){
+  var blob=new Blob([content],{type:type});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement("a"); a.href=url; a.download=name; document.body.appendChild(a); a.click();
+  setTimeout(function(){ URL.revokeObjectURL(url); a.remove(); },0);
+ }
+ /* ---- HTML report frame (same look for every toolbox report) ---- */
+ var REPORT_CSS='body{font-family:"IBM Plex Sans Arabic","IBM Plex Sans",Calibri,Tahoma,sans-serif;color:#1B2A4A;max-width:1000px;margin:auto;padding:28px;line-height:1.7;background:#fff}h1{font-family:Georgia,serif;border-bottom:4px solid #B8901E;padding-bottom:8px;margin-bottom:4px}h2{font-family:Georgia,serif;margin-top:28px;color:#1B2A4A}.meta{color:#4B5874;font-size:14px}table{border-collapse:collapse;width:100%;font-size:13.5px;margin-top:8px}th{background:#1B2A4A;color:#fff;text-align:start;padding:8px}td{border-bottom:1px solid #DCE4EE;padding:7px 8px;vertical-align:top}.k{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}.k div{background:#F3F7FB;border-radius:10px;padding:10px 14px;min-width:120px}.k b{font-size:22px;font-family:Georgia,serif;display:block}footer{margin-top:30px;color:#7A869E;font-size:12.5px;border-top:1px solid #DCE4EE;padding-top:10px}';
+ function reportDoc(lang,title,body,extraCss){
+  return '<!DOCTYPE html><html lang="'+lang+'" dir="'+(lang==="ar"?"rtl":"ltr")+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+title+'</title><style>'+REPORT_CSS+(extraCss||"")+'</style></head><body>'+body+'</body></html>';
+ }
+ return {version:"1",esc:esc,today:today,txt:txt,load:load,save:save,drop:drop,read:read,score:score,answered:answered,band:band,
+  audit:audit,cells:cells,kpi:kpi,bar:bar,dist:dist,csvCell:csvCell,csv:csv,download:download,REPORT_CSS:REPORT_CSS,reportDoc:reportDoc};
+})();
+/* CIA toolbox engine v1 — end */
 var LKEY="cia-lang", STORE="cia-pdca:v1";
 var L=(function(){ try{ return localStorage.getItem(LKEY)||"ar"; }catch(e){ return "ar"; } })();
 var TABS=["home","explain-std","explain-cl","assess","tools","docs","audit","dash","report","ai"];
@@ -2823,12 +2874,12 @@ en:{brand:"Continual Improvement Academy · مدثر سلامه",toolName:"PDCA 
 };
 
 function t(k,v){ var d=UI[L]||UI.ar; var s=(d[k]!==undefined)?d[k]:(UI.ar[k]!==undefined?UI.ar[k]:k); if(v){ for(var x in v){ s=s.replace("{"+x+"}",v[x]); } } return s; }
-function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
-function today(){ return new Date().toISOString().slice(0,10); }
-function load(){ try{ var v=JSON.parse(localStorage.getItem(STORE)||"null"); if(!v||typeof v!=="object") v={}; if(!Array.isArray(v.records)) v.records=[]; v.records=v.records.filter(function(r){ return r&&typeof r==="object"; }); v.records.forEach(fixRec); if(!v.assess||typeof v.assess!=="object") v.assess={}; return v; }catch(e){ return {records:[],assess:{}}; } }
+function esc(s){ return TBX.esc(s); }
+function today(){ return TBX.today(); }
+function load(){ return TBX.load(STORE,function(v){ if(!Array.isArray(v.records)) v.records=[]; v.records=v.records.filter(function(r){ return r&&typeof r==="object"; }); v.records.forEach(fixRec); if(!v.assess||typeof v.assess!=="object") v.assess={}; return v; },function(){ return {records:[],assess:{}}; }); }
 /* a record saved without one of its stage objects (plan, do, check, act) gets an empty one, so rendering never throws */
 function fixRec(r){ ["plan","do","check","act"].forEach(function(s){ if(!r[s]||typeof r[s]!=="object"||Array.isArray(r[s])) r[s]={}; }); return r; }
-function persist(){ try{ localStorage.setItem(STORE, JSON.stringify(DB)); return true; }catch(e){ return false; } }
+function persist(){ return TBX.save(STORE,DB); }
 function blank(){ return {id:"",title:"",linkType:"process",linkRef:"",owner:"",start:"",due:"",plan:{problem:"",objective:"",baseline:"",target:"",causes:"",actions:"",risks:""},do:{done:"",evidence:"",deviations:""},check:{result:"",targetMet:"",effect:""},act:{decision:"",standard:"",lessons:""},created:"",updated:""}; }
 function stageOf(r){
  if(r.act && r.act.decision==="close") return "closed";
@@ -2839,7 +2890,7 @@ function stageOf(r){
 }
 function stageName(s){ return t({plan:"stPlan",do:"stDo",check:"stCheck",act:"stAct",closed:"stClosed"}[s]); }
 function isOverdue(r){ return !!r.due && r.due<today() && stageOf(r)!=="closed"; }
-function txt(v){ return String(v||"").trim(); }
+function txt(v){ return TBX.txt(v); }
 
 /* ---------- Language and tabs ---------- */
 function applyLang(){
@@ -2993,13 +3044,9 @@ var AQ=[
  ["AC3",{ar:"هل نشارك الدروس المستفادة مع العمليات الأخرى؟",en:"Do we share lessons learned with other processes?"}]
 ];
 var AS_STAGE={PL:"plan",DO:"do",CK:"check",AC:"act"};
-function assessScore(filter){
- var sum=0,n=0;
- AQ.forEach(function(q){ if(filter && AS_STAGE[q[0].slice(0,2)]!==filter) return; n++; var v=DB.assess[q[0]]; if(v!==undefined) sum+=Number(v); });
- return n?Math.round(sum/(2*n)*100):0;
-}
-function assessAnswered(){ return AQ.filter(function(q){ return DB.assess[q[0]]!==undefined; }).length; }
-function bandOf(p){ return p<50?t("band0"):(p<80?t("band1"):t("band2")); }
+function assessScore(filter){ return TBX.score(AQ,DB.assess,filter?function(q){ return AS_STAGE[q[0].slice(0,2)]===filter; }:null); }
+function assessAnswered(){ return TBX.answered(AQ,DB.assess); }
+function bandOf(p){ return TBX.band(p,[t("band0"),t("band1"),t("band2")]); }
 function renderAssess(){
  var list=document.getElementById("asList"); if(!list) return;
  list.innerHTML=AQ.map(function(q){
@@ -3061,30 +3108,18 @@ function renderAudit(){
  var box=document.getElementById("auBox"); if(!box) return;
  var kp=document.getElementById("auKpis");
  if(!DB.records.length){ box.innerHTML='<div class="pd-empty">'+t("auEmpty")+'</div>'; kp.innerHTML=""; return; }
- var pass=0,applic=0,failRec=0,over=0;
- var rows=DB.records.map(function(r){
-  var res=auditRecord(r), fails=0;
-  var cells=CHECKS.map(function(k){
-   var v=res[k];
-   if(v===null) return '<td class="c pd-na">—</td>';
-   applic++; if(v) pass++; else fails++;
-   return '<td class="c '+(v?'pd-pass':'pd-fail')+'">'+(v?'✓':'✗')+'</td>';
-  }).join("");
-  if(fails) failRec++;
-  if(res.time===false) over++;
-  return '<tr><td>'+esc(r.title)+'<br><small dir="ltr">'+esc(r.linkRef)+'</small></td>'+cells+'</tr>';
+ var A=TBX.audit(DB.records,auditRecord,CHECKS), pass=A.pass, applic=A.applic, failRec=A.failRec, over=0;
+ var rows=A.rows.map(function(x){
+  if(x.res.time===false) over++;
+  return '<tr><td>'+esc(x.r.title)+'<br><small dir="ltr">'+esc(x.r.linkRef)+'</small></td>'+TBX.cells(x.res,CHECKS)+'</tr>';
  }).join("");
  var head='<th>'+t("colT")+'</th>'+CHECKS.map(function(k){ return '<th>'+t("c_"+k)+'</th>'; }).join("");
  box.innerHTML='<table class="pd-tbl"><thead><tr>'+head+'</tr></thead><tbody>'+rows+'</tbody></table>';
  var pct=applic?Math.round(pass/applic*100)+"%":"—";
  kp.innerHTML=kpi(DB.records.length,t("auRec"))+kpi(pct,t("auPass"))+kpi(failRec,t("auFail"))+kpi(over,t("auOver"));
 }
-function kpi(v,l){ return '<div class="pd-kpi"><b>'+esc(v)+'</b><span>'+esc(l)+'</span></div>'; }
-function auditSummary(){
- var pass=0,applic=0;
- DB.records.forEach(function(r){ var res=auditRecord(r); CHECKS.forEach(function(k){ if(res[k]===null) return; applic++; if(res[k]) pass++; }); });
- return {pass:pass,applic:applic,rate:applic?Math.round(pass/applic*100):null};
-}
+function kpi(v,l){ return TBX.kpi(v,l); }
+function auditSummary(){ var A=TBX.audit(DB.records,auditRecord,CHECKS); return {pass:A.pass,applic:A.applic,rate:A.rate}; }
 function renderDash(){
  var box=document.getElementById("dKpis"); if(!box) return;
  var n=DB.records.length, closed=DB.records.filter(function(r){ return stageOf(r)==="closed"; }).length;
@@ -3096,30 +3131,26 @@ function renderDash(){
  box.innerHTML=kpi(n,t("kTotal"))+kpi(closed,t("kClosed"))+kpi(n-closed,t("kOpen"))+kpi(over,t("kOver"))+kpi(ev,t("kEv"))+kpi(au.rate===null?"—":au.rate+"%",t("kAud"))+kpi(as+"%",t("kAs"));
  var sb=document.getElementById("dStage");
  if(!n){ sb.innerHTML='<p class="pd-sub" style="color:var(--ink-soft)">'+t("noData")+'</p>'; }
- else sb.innerHTML=STAGES.map(function(s){ var c=DB.records.filter(function(r){ return stageOf(r)===s; }).length; var p=Math.round(c/n*100); return bar(stageName(s),c,p,SCOL[s]); }).join("");
+ else sb.innerHTML=TBX.dist(STAGES,n,function(s){ return DB.records.filter(function(r){ return stageOf(r)===s; }).length; },stageName,function(s){ return SCOL[s]; });
  var lb=document.getElementById("dLink");
  if(!n){ lb.innerHTML='<p class="pd-sub" style="color:var(--ink-soft)">'+t("noData")+'</p>'; }
- else lb.innerHTML=["project","process","audit","ncr","other"].map(function(k){ var c=DB.records.filter(function(r){ return r.linkType===k; }).length; var p=Math.round(c/n*100); return bar(t("lt_"+k),c,p,"#3563C9"); }).join("");
+ else lb.innerHTML=TBX.dist(["project","process","audit","ncr","other"],n,function(k){ return DB.records.filter(function(r){ return r.linkType===k; }).length; },function(k){ return t("lt_"+k); },function(){ return "#3563C9"; });
  document.getElementById("dAssess").innerHTML=["plan","do","check","act"].map(function(s){ var p=assessScore(s); return bar(stageName(s),p+"%",p,SCOL[s]); }).join("")+'<p class="pd-sub" style="font-size:12.5px;color:var(--muted);margin:10px 0 0">'+esc(t("bandNote"))+'</p>';
 }
-function bar(label,v,pct,col){
- return '<div class="pd-bar" style="--fc:'+col+'"><span class="lbl">'+esc(label)+'</span><div class="track" role="img" aria-label="'+esc(label+": "+pct+"%")+'"><div class="fill" style="width:'+pct+'%"></div></div><span class="v">'+esc(v)+'</span></div>';
-}
+function bar(label,v,pct,col){ return TBX.bar(label,v,pct,col); }
 
 /* ---------- Report and CSV ---------- */
-function csvCell(v){ var s=String(v==null?"":v); return '"'+s.replace(/"/g,'""')+'"'; }
+function csvCell(v){ return TBX.csvCell(v); }
 function buildCSV(){
  var head=["id","title","linkType","linkRef","owner","start","due","stage","baseline","target","result","targetMet","decision","evidence","lessons"];
- var rows=DB.records.map(function(r){ return [r.id,r.title,r.linkType,r.linkRef,r.owner,r.start,r.due,stageOf(r),r.plan.baseline,r.plan.target,r.check.result,r.check.targetMet,r.act.decision,r.do.evidence,r.act.lessons].map(csvCell).join(","); });
- return "﻿"+head.join(",")+"\n"+rows.join("\n")+"\n";
+ return TBX.csv(head,DB.records.map(function(r){ return [r.id,r.title,r.linkType,r.linkRef,r.owner,r.start,r.due,stageOf(r),r.plan.baseline,r.plan.target,r.check.result,r.check.targetMet,r.act.decision,r.do.evidence,r.act.lessons]; }));
 }
 function buildReportHTML(){
  var n=DB.records.length, closed=DB.records.filter(function(r){ return stageOf(r)==="closed"; }).length;
  var au=auditSummary(), as=assessScore(), d=today();
  var stageRows=["plan","do","check","act"].map(function(s){ return '<tr><td>'+esc(stageName(s))+' — '+esc(s.toUpperCase())+'</td><td>'+assessScore(s)+'%</td></tr>'; }).join("");
  var recRows=DB.records.map(function(r){ return '<tr><td>'+esc(r.id)+'</td><td>'+esc(r.title)+'</td><td dir="ltr">'+esc(r.linkRef)+' ('+esc(t("lt_"+r.linkType))+')</td><td>'+esc(r.owner)+'</td><td>'+esc(stageName(stageOf(r)))+'</td><td dir="ltr">'+esc(r.due||"—")+'</td><td>'+esc(r.check.result)+'</td><td>'+esc(r.act.lessons)+'</td></tr>'; }).join("");
- var css='body{font-family:"IBM Plex Sans Arabic","IBM Plex Sans",Calibri,Tahoma,sans-serif;color:#1B2A4A;max-width:1000px;margin:auto;padding:28px;line-height:1.7;background:#fff}h1{font-family:Georgia,serif;border-bottom:4px solid #B8901E;padding-bottom:8px;margin-bottom:4px}h2{font-family:Georgia,serif;margin-top:28px;color:#1B2A4A}.meta{color:#4B5874;font-size:14px}table{border-collapse:collapse;width:100%;font-size:13.5px;margin-top:8px}th{background:#1B2A4A;color:#fff;text-align:start;padding:8px}td{border-bottom:1px solid #DCE4EE;padding:7px 8px;vertical-align:top}.k{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}.k div{background:#F3F7FB;border-radius:10px;padding:10px 14px;min-width:120px}.k b{font-size:22px;font-family:Georgia,serif;display:block}footer{margin-top:30px;color:#7A869E;font-size:12.5px;border-top:1px solid #DCE4EE;padding-top:10px}';
- return '<!DOCTYPE html><html lang="'+L+'" dir="'+(L==="ar"?"rtl":"ltr")+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PDCA Report — مدثر سلامه</title><style>'+css+'</style></head><body>'+
+ return TBX.reportDoc(L,'PDCA Report — مدثر سلامه',
  '<h1>PDCA — Plan-Do-Check-Act / تقرير دورة التحسين المستمر</h1>'+
  '<p class="meta">'+esc(t("prep"))+': <strong>مدثر سلامه</strong> · '+esc(d)+' · Continual Improvement Academy</p>'+
  '<h2>Summary / الملخص</h2><div class="k">'+
@@ -3128,14 +3159,9 @@ function buildReportHTML(){
  '<p class="meta">'+esc(t("bandNote"))+'</p>'+
  '<h2>Cycle records / سجلات الدورات</h2>'+(n?'<table><thead><tr><th>ID</th><th>Title / العنوان</th><th>Reference / المرجع</th><th>Owner / المسؤول</th><th>Stage / المرحلة</th><th>Due / الاستحقاق</th><th>Result / النتيجة</th><th>Lessons / الدروس</th></tr></thead><tbody>'+recRows+'</tbody></table>':'<p class="meta">'+esc(t("rpEmpty"))+'</p>')+
  '<h2>Audit / التدقيق</h2><p>'+esc(t("auPass"))+': '+(au.rate===null?"—":au.rate+"% ("+au.pass+"/"+au.applic+")")+'</p>'+
- '<footer>Prepared by / أعدّه: مدثر سلامه · Source / المرجع: ISO 9001:2026 clauses 0.3.2 and 10.2 (paraphrased) · Examples are illustrative.</footer></body></html>';
+ '<footer>Prepared by / أعدّه: مدثر سلامه · Source / المرجع: ISO 9001:2026 clauses 0.3.2 and 10.2 (paraphrased) · Examples are illustrative.</footer>');
 }
-function download(name,type,content){
- var blob=new Blob([content],{type:type});
- var url=URL.createObjectURL(blob);
- var a=document.createElement("a"); a.href=url; a.download=name; document.body.appendChild(a); a.click();
- setTimeout(function(){ URL.revokeObjectURL(url); a.remove(); },0);
-}
+function download(name,type,content){ TBX.download(name,type,content); }
 function stamp(){ return today(); }
 function renderReport(){
  var prev=document.getElementById("rpPrev"); if(!prev) return;
@@ -3252,7 +3278,7 @@ function loadExample(){
 }
 function clearAll(){
  DB={records:[],assess:{}}; pendingDelete=null;
- try{ localStorage.removeItem(STORE); }catch(e){}
+ TBX.drop(STORE);
  clearForm(); renderAll();
  var m=document.getElementById("exMsg"); if(m) m.textContent=t("exCleared");
  var a=document.getElementById("asMsg"); if(a) a.textContent="";
