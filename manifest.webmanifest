@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "أكاديمية التحسين المستمر — من الامتثال إلى الأداء",
+  "short_name": "CIA",
+  "description": "أدوات تفاعلية لأنظمة إدارة ISO والحوكمة والمخاطر وإدارة المشاريع والتميّز المؤسسي: تعلّم المتطلب، وقِس جاهزيتك، واخرج بخطة عمل. بالعربية والإنجليزية، وبياناتك تبقى على جهازك.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./?source=pwa#home",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "theme_color": "#1B2A4A",
+  "background_color": "#FFFFFF",
+  "categories": ["business", "education", "productivity"],
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "المرشد: اعثر على أدواتك", "short_name": "المرشد", "url": "./?source=pwa#advisor", "icons": [{ "src": "assets/icon-192.png", "sizes": "192x192" }] },
+    { "name": "لوحة الأداء", "short_name": "لوحة الأداء", "url": "./?source=pwa#dash", "icons": [{ "src": "assets/icon-192.png", "sizes": "192x192" }] },
+    { "name": "ISO 9001:2026", "short_name": "ISO 9001", "url": "./?source=pwa#m=iso9001", "icons": [{ "src": "assets/icon-192.png", "sizes": "192x192" }] },
+    { "name": "شاركنا رأيك", "short_name": "رأيك", "url": "./?source=pwa#feedback", "icons": [{ "src": "assets/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
