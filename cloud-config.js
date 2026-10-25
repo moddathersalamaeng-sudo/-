@@ -9,7 +9,7 @@
 window.CIA_CLOUD = {
   url: "https://lafjjoqgzfvrnvgyyzgb.supabase.co",
   key: "sb_publishable_01Ki_UZn_M_cwU_GS-VcTg_ncvHBsOn",
-  code: false,
+  code: true,
   gate: true,
   free: ["iso9001"]
 };
