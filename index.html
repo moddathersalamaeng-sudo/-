@@ -6680,7 +6680,10 @@ function cloudDialog(view, arg, tool){
         const {error} = await SB.auth.signInWithOtp({email:em, options:{emailRedirectTo:location.origin + location.pathname, shouldCreateUser:true}});
         if(error) throw error;
         cloudSent = em; cloudDialog("sent", em);
-      }catch(x){ btn.disabled = false; btn.textContent = u.send; bad(u.eSend); }
+      }catch(x){ btn.disabled = false; btn.textContent = u.send;
+        /* the server's own reason (e.g. an SMTP or rate-limit message) is shown under the general text, to fix it quickly */
+        const why = x && (x.message || x.msg || x.error_description) ? ` (${String(x.message || x.msg || x.error_description).slice(0, 200)}${x.status ? " · " + x.status : ""})` : "";
+        bad(u.eSend + why); }
     };
     setTimeout(() => $("acctEmail").focus(), 60);
   }
