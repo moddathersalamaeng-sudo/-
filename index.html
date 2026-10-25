@@ -6385,7 +6385,11 @@ const CC = window.CIA_CLOUD || {};
 const cloudOn = !!(CC.url && CC.key && /^(https:\/\/[^/]+|http:\/\/localhost(:\d+)?)$/.test(String(CC.url).replace(/\/+$/, "")));
 const CLOUD_URL = String(CC.url || "").replace(/\/+$/, "");
 const CLOUD_LIB = "assets/vendor/supabase-2.117.2.js";
-const CLOUD_AUTH = "cia-cloud-auth", CLOUD_META = "cia-cloud:meta";
+const CLOUD_AUTH = "cia-cloud-auth", CLOUD_META = "cia-cloud:meta", CLOUD_OPEN = "cia-cloud:open";
+/* gate: true opens only the free tools without an account (default ISO 9001); the others ask for a free sign-in */
+const cloudGateOn = cloudOn && CC.gate === true;
+const cloudFree = () => Array.isArray(CC.free) ? CC.free : ["iso9001"];
+const cloudFreeNames = lang => cloudFree().map(k => { for(const sy of SYSTEMS){ const m = sy.mods.find(x => x.k === k); if(m) return m.name[lang]; } return k; }).join(lang === "ar" ? "، " : ", ");
 const cloudSkip = k => !k || k.startsWith("cia-cloud") || k.startsWith("sb-");
 const cloudMeaningful = k => !cloudSkip(k) && !/^cia-lang$|:lang$|^cia-tour|^cia-rq-contact$/.test(k);
 const LSP = Storage.prototype, lsSet = LSP.setItem, lsDel = LSP.removeItem;
@@ -6407,6 +6411,7 @@ const CT = {
    del:"احذف بياناتي من الحساب", delQ:"سيُحذف كل ما في حسابك من بيانات الأدوات، وتبقى نسخة هذا الجهاز. تأكيد الحذف؟", delYes:"نعم، احذفها", delNo:"إلغاء", deleted:"حُذفت بياناتك من الحساب وسُجّل خروجك.",
    mergeT:"عندك بيانات على هذا الجهاز وفي حسابك", mergeP:n=>`${n} من بيانات الأدوات مختلفة بين هذا الجهاز وحسابك. البيانات الموجودة في مكان واحد فقط تُحفظ في الحالتين. أي نسخة نعتمد عند الاختلاف؟`,
    keepAcc:"اعتمد بيانات حسابي", keepDev:"اعتمد بيانات هذا الجهاز", backup:"نزّل نسخة من بيانات هذا الجهاز أولاً",
+   gateT:n=>`سجّل دخولك المجاني لفتح «${n}»`, gateP:()=>`الحساب مجاني وتُحفظ فيه أعمالك. ${cloudFreeNames("ar")} متاحة للتجربة دون حساب.`,
    remote:"وصلت تحديثات من جهاز آخر. أعد فتح الأداة لتراها.", remoteR:"حدّثنا الصفحة بتغييرات من جهاز آخر.", welcome:"تم تسجيل الدخول. عملك يُحفظ في حسابك.", loaded:"نزّلنا عملك من حسابك.", out:"تم تسجيل الخروج.", close:"إغلاق", err:"تعذّر الحفظ. سنحاول مرة أخرى تلقائياً."},
  en:{signin:"Sign in", account:"My account", title:"Sign in to save your work", why:["Your work in every tool is saved to your account automatically.","Open it on any device: computer, phone or tablet.","It is not lost when the browser data is cleared."],
    free:"An account is optional. Without one, your data stays in this browser only, as it does now.",
@@ -6419,6 +6424,7 @@ const CT = {
    del:"Delete my data from the account", delQ:"All tool data in your account will be deleted; this device's copy stays. Delete it?", delYes:"Yes, delete it", delNo:"Cancel", deleted:"Your data was deleted from the account and you are signed out.",
    mergeT:"You have data on this device and in your account", mergeP:n=>`${n} tool data items differ between this device and your account. Data found in only one place is kept either way. Which copy should win where they differ?`,
    keepAcc:"Keep my account's data", keepDev:"Keep this device's data", backup:"Download a copy of this device's data first",
+   gateT:n=>`Sign in for free to open “${n}”`, gateP:()=>`The account is free and keeps your work. ${cloudFreeNames("en")} is open to try without an account.`,
    remote:"Changes arrived from another device. Reopen the tool to see them.", remoteR:"The page was refreshed with changes from another device.", welcome:"Signed in. Your work is saved to your account.", loaded:"Your work was loaded from your account.", out:"Signed out.", close:"Close", err:"Saving failed. It will be retried automatically."}
 };
 
@@ -6429,6 +6435,9 @@ if(cloudOn){
     UI.en.faq[0][1] = "In your browser on your device. If you sign in, a copy is saved to your account, so you can open it on any device and it is not lost when the browser is cleared; you can delete it from your account at any time. Without an account it stays in this browser only, so keep a backup.";
     const v = (o, i, t) => { const a = o && o.vals; if(a && a[i]) a[i] = [a[i][0], t]; };
     v(H2.ar, 4, "تبقى في متصفحك، ولا تُحفظ في حسابك إلا إذا سجّلت الدخول."); v(H2.en, 4, "It stays in your browser, and goes to your account only if you sign in.");
+    if(cloudGateOn){ const c = (o, t, d) => { const a = o && o.vals; if(a && a[5]) a[5] = [t, d]; };
+      c(H2.ar, "جرّبها مجاناً", `${cloudFreeNames("ar")} دون تسجيل، وكل الأدوات بحساب مجاني.`);
+      c(H2.en, "Try it free", `${cloudFreeNames("en")} without signing up, and every tool with a free account.`); }
     PFU.ar.note = "يُحفظ الملف في متصفحك، وفي حسابك أيضاً إذا سجّلت الدخول."; PFU.en.note = "The profile is saved in your browser, and in your account too if you sign in.";
     Object.assign(RQ.ar, {sentPF:"وصل رأيك إلى الأكاديمية. شكراً لأنك تساعدنا على تطوير المنصة.", sideF:[["1","الإرسال","يصل رأيك مباشرة بضغطة واحدة."],["2","القراءة","يقرأ مدثر سلامه كل ملاحظة بنفسه."],["3","التطوير","تدخل الطلبات المتكررة في التحديثات القادمة للمنصة."]]});
     Object.assign(RQ.en, {sentPF:"Your feedback has reached the Academy. Thank you for helping us improve the platform.", sideF:[["1","Send","Your feedback arrives directly with one click."],["2","Read","مدثر سلامه reads every note personally."],["3","Build","Recurring requests go into the next updates of the platform."]]});
@@ -6456,6 +6465,27 @@ if(cloudOn){
   const flush = () => { if(cloudDirty.size) cloudPush(); };
   addEventListener("pagehide", flush);
   document.addEventListener("visibilitychange", () => { if(document.visibilityState === "hidden") flush(); else cloudRefresh(); });
+}
+
+/* ---------- the gate: locked tools ask for a sign-in, then open by themselves ---------- */
+function cloudLocked(key){ return cloudGateOn && !cloudFree().includes(key) && !cloudUser && !localStorage.getItem(CLOUD_AUTH); }
+if(cloudGateOn && typeof openModule === "function"){
+  const open0 = openModule;
+  openModule = function(key, push, anchor){
+    if(cloudLocked(key)){
+      try{ cloudRawSet(CLOUD_OPEN, JSON.stringify({key, anchor:anchor || "", at:Date.now()})); }catch(e){}
+      if(/^#m=/.test(location.hash)) try{ history.replaceState(null, "", location.pathname + location.search + "#home"); }catch(e){}
+      cloudDialog("signin", "", key);
+      return;
+    }
+    return open0(key, push, anchor);
+  };
+}
+function cloudOpenPending(){
+  let p = null; try{ p = JSON.parse(localStorage.getItem(CLOUD_OPEN) || "null"); }catch(e){}
+  if(!p) return;
+  cloudRawDel(CLOUD_OPEN);
+  if(Date.now() - p.at < 36e5 && URLS[p.key]) setTimeout(() => openModule(p.key, undefined, p.anchor || undefined), 300);
 }
 
 /* ---------- the library loads only for people who sign in ---------- */
@@ -6499,7 +6529,7 @@ async function cloudSignedIn(user){
     rows.forEach(r => { if(localStorage.getItem(r.key) !== r.value && !dirty.has(r.key)){ cloudRawSet(r.key, r.value); applied++; } });
     cloudKeys().forEach(k => { if(!cloudSynced.has(k)) dirty.add(k); });
     cloudDirty = dirty; await cloudPush();
-    if(applied) cloudReload("loaded");
+    if(applied) cloudReload("loaded"); else cloudOpenPending();
     return;
   }
   const differ = cloudKeys().filter(cloudMeaningful).filter(k => cloudSynced.has(k) && cloudSynced.get(k) !== localStorage.getItem(k));
@@ -6512,7 +6542,7 @@ async function cloudMerge(winner){
   cloudDirty = new Set(cloudKeys().filter(k => localStorage.getItem(k) !== cloudSynced.get(k)));
   cloudMetaSave({uid:cloudUser.id, dirty:[...cloudDirty]});
   await cloudPush();
-  if(applied) cloudReload("loaded"); else { toast(CT[L].welcome); cloudText(); }
+  if(applied) cloudReload("loaded"); else { toast(CT[L].welcome); cloudText(); cloudOpenPending(); }
 }
 /* back on the page: take what another device saved meanwhile (updates only; a deletion elsewhere never empties this device) */
 let cloudRefreshAt = 0;
@@ -6601,18 +6631,19 @@ function cloudText(){
   b.title = t; b.setAttribute("aria-label", t);
   const dlg = $("acctDlg"); if(dlg && dlg.open && dlg.dataset.view === "acct") cloudDialog("acct");
 }
-function cloudDialog(view, arg){
+function cloudDialog(view, arg, tool){
   const u = CT[L], dlg = $("acctDlg"); dlg.dataset.view = view;
   const head = t => `<div class="ddlg-h" style="--c:var(--gold)"><h3 id="acctDlgT">${esc(t)}</h3><button type="button" class="ddlg-x" data-x aria-label="${esc(u.close)}">×</button></div>`;
   let body = "";
   if(view === "signin"){
-    body = `${head(u.title)}<form class="ddlg-b acct" id="acctForm" novalidate>
+    body = `${head(tool ? u.gateT(modLabel(tool)) : u.title)}<form class="ddlg-b acct" id="acctForm" novalidate>
+      ${tool ? `<p class="acct-ok">${esc(u.gateP())}</p>` : ""}
       <ul class="acct-why">${u.why.map(x => `<li>${esc(x)}</li>`).join("")}</ul>
       <label class="acct-f"><span>${esc(u.email)}</span><input id="acctEmail" type="email" dir="ltr" autocomplete="email" required value="${esc(arg || "")}"></label>
       <label class="acct-c"><input type="checkbox" id="acctOk"><span>${esc(u.consent)}</span></label>
       <p class="acct-err" id="acctErr" role="alert" hidden></p>
       <div class="acct-row"><button class="btn primary" type="submit" id="acctSend">${esc(u.send)}</button></div>
-      <p class="acct-note">${esc(u.free)}</p></form>`;
+      ${tool ? "" : `<p class="acct-note">${esc(cloudGateOn ? u.gateP() : u.free)}</p>`}</form>`;
   } else if(view === "sent"){
     body = `${head(u.title)}<form class="ddlg-b acct" id="acctCodeForm" novalidate><p class="acct-ok">${esc(u.sent(arg))}</p>
       ${CC.code ? `<p class="acct-note">${esc(u.code)}</p>
