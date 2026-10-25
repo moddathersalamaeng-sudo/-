@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>لوحة الإدارة — أكاديمية التحسين المستمر</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700&display=swap" rel="stylesheet">
+<script src="cloud-config.js"></script>
+<style>
+:root{--bg:#F3F5F9;--surface:#fff;--ink:#1B2A4A;--text:#2A3550;--muted:#5E6880;--line:#DCE1EA;--gold:#B8901E;--gold-tint:#FBF4DF;--navy:#1B2A4A;--ok:#1E7A4F;--bad:#B3261E;
+  --display:"Noto Kufi Arabic","IBM Plex Sans Arabic",Tahoma,sans-serif;--body:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0C1322;--surface:#131C30;--ink:#E9EDF6;--text:#D5DBE8;--muted:#97A1B6;--line:#26314A;--gold:#D6B04A;--gold-tint:#2A2717;--navy:#22355E;--ok:#6BCB98;--bad:#F2A49C;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:15px;line-height:1.7}
+header{background:var(--navy);color:#fff;padding:14px max(16px,env(safe-area-inset-left,0px))}
+header .in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+header h1{font-family:var(--display);font-size:18px;margin:0;flex:1}
+header small{opacity:.8}
+main{max-width:1180px;margin:0 auto;padding:22px max(16px,env(safe-area-inset-left,0px)) 60px;display:grid;gap:18px}
+h2{font-family:var(--display);color:var(--ink);font-size:18px;margin:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:12px;min-width:0}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 16px;font:inherit;font-weight:700;font-size:14px;cursor:pointer}
+.btn.primary{background:var(--navy);border-color:var(--navy);color:#fff}
+header .btn{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3);color:#fff}
+.btn:disabled{opacity:.6;cursor:default}
+input,select{font:inherit;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);min-width:0}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.err{color:var(--bad);font-weight:600;margin:0}.muted{color:var(--muted)}
+.ltr{direction:ltr;unicode-bidi:isolate}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.kpi b{display:block;font-family:var(--display);font-size:26px;color:var(--ink);font-variant-numeric:tabular-nums}
+.kpi span{color:var(--muted);font-size:13.5px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 16px;font:inherit;font-weight:700;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:760px}
+th,td{text-align:start;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-size:12.5px;font-weight:700;white-space:nowrap}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.stars{color:var(--gold);letter-spacing:1px;white-space:nowrap}
+.bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden;min-width:80px}.bar i{display:block;height:100%;background:var(--gold)}
+details summary{cursor:pointer;color:var(--ink);font-weight:600}
+pre{white-space:pre-wrap;margin:6px 0 0;font:inherit;font-size:13.5px;color:var(--text)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header><div class="in"><h1>لوحة الإدارة <small>· أكاديمية التحسين المستمر</small></h1><span id="who" class="ltr"></span><button class="btn" id="outBtn" type="button" hidden>تسجيل الخروج</button></div></header>
+<main>
+  <section class="card" id="off" hidden><h2>الحسابات غير مفعّلة</h2><p>املأ الرابط والمفتاح في ملف <span class="ltr">cloud-config.js</span> كما في دليل الإعداد، ثم أعد فتح هذه الصفحة.</p></section>
+
+  <section class="card" id="signin" hidden>
+    <h2>دخول المشرف</h2>
+    <form class="row" id="sForm" novalidate><input id="sEmail" type="email" dir="ltr" placeholder="you@example.com" autocomplete="email" required><button class="btn primary" id="sBtn">أرسل رابط الدخول</button></form>
+    <form class="row" id="cForm" hidden novalidate><input id="cCode" inputmode="numeric" autocomplete="one-time-code" dir="ltr" placeholder="رمز من 6 أرقام"><button class="btn primary" id="cBtn">دخول</button></form>
+    <p class="muted" id="sMsg"></p><p class="err" id="sErr" hidden></p>
+  </section>
+
+  <section class="card" id="notAdmin" hidden>
+    <h2>هذا الحساب ليس مشرفاً</h2>
+    <p>لإضافته: افتح Supabase ← SQL Editor، وشغّل السطر التالي مرة واحدة، ثم حدّث هذه الصفحة.</p>
+    <pre class="ltr" id="adminSql"></pre>
+  </section>
+
+  <div id="app" hidden>
+    <div class="kpis" id="kpis"></div>
+    <div class="tabs" role="tablist" id="tabs">
+      <button role="tab" data-t="fb" aria-selected="true">الآراء</button>
+      <button role="tab" data-t="tools" aria-selected="false">تقييم الأدوات</button>
+      <button role="tab" data-t="rq" aria-selected="false">طلبات الاستشارة والتدريب</button>
+      <button role="tab" data-t="users" aria-selected="false">المستخدمون</button>
+    </div>
+    <section class="card" data-p="fb"><div class="row"><h2 style="flex:1">الآراء</h2><select id="fbTool" aria-label="الأداة"></select><button class="btn" id="fbCsv" type="button">تصدير CSV</button></div><div class="tw" id="fbT"></div></section>
+    <section class="card" data-p="tools" hidden><h2>تقييم كل أداة</h2><div class="tw" id="toolsT"></div></section>
+    <section class="card" data-p="rq" hidden><div class="row"><h2 style="flex:1">طلبات الاستشارة والتدريب</h2><button class="btn" id="rqCsv" type="button">تصدير CSV</button></div><p class="muted">نسخة من كل طلب. الطلب نفسه يصلك أيضاً بالبريد عندما يضغط صاحبه «إرسال».</p><div class="tw" id="rqT"></div></section>
+    <section class="card" data-p="users" hidden><h2>المستخدمون</h2><div class="tw" id="usersT"></div></section>
+  </div>
+</main>
+<script src="assets/vendor/supabase-2.117.2.js"></script>
+<script>
+const C = window.CIA_CLOUD || {}, $ = id => document.getElementById(id);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const day = d => d ? new Date(d).toLocaleString("ar-EG-u-nu-latn", {dateStyle:"medium", timeStyle:"short"}) : "—";
+const REC = {y:"نعم", m:"ربما", n:"لا"}, KIND = {consult:"استشارة", training:"تدريب"};
+let SB, FB = [], RQ = [], US = [], NAMES = {hub:"المنصة بشكل عام"};
+const show = id => ["off","signin","notAdmin","app"].forEach(x => $(x).hidden = x !== id);
+
+/* tool names, read from the hub itself so new tools appear without editing this page */
+fetch("index.html").then(r => r.text()).then(t => {
+  for(const m of t.matchAll(/\{k:"([\w-]+)",\s*status:"live",\s*name:\{en:"[^"]*",\s*ar:"([^"]*)"\}/g)) NAMES[m[1]] = m[2];
+  if(FB.length) render();
+}).catch(() => {});
+
+function csv(rows, cols){
+  const q = v => `"${String(v == null ? "" : v).replace(/"/g, '""')}"`;
+  return "﻿" + [cols.map(c => q(c[1])).join(","), ...rows.map(r => cols.map(c => q(typeof c[0] === "function" ? c[0](r) : r[c[0]])).join(","))].join("\r\n");
+}
+function download(name, text){
+  const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], {type:"text/csv;charset=utf-8"})); a.download = name;
+  document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 800);
+}
+const stars = n => n ? "★".repeat(n) + "☆".repeat(5 - n) : "—";
+const avg = a => a.length ? a.reduce((s, x) => s + x, 0) / a.length : null;
+
+function render(){
+  const rated = FB.filter(f => f.rating), recs = FB.filter(f => f.recommend);
+  const a = avg(rated.map(f => f.rating)), yes = recs.length ? Math.round(recs.filter(f => f.recommend === "y").length / recs.length * 100) : null;
+  $("kpis").innerHTML = [[US.length, "حساب مسجّل"], [US.filter(u => u.last_saved).length, "حساب حفظ عملاً"], [FB.length, "رأي"], [a ? a.toFixed(1) + " / 5" : "—", "متوسط التقييم"],
+    [yes == null ? "—" : yes + "%", "ينصحون بها زميلاً"], [RQ.length, "طلب استشارة أو تدريب"]].map(k => `<div class="kpi"><b>${esc(k[0])}</b><span>${esc(k[1])}</span></div>`).join("");
+  const tools = [...new Set(FB.map(f => f.tool))];
+  const sel = $("fbTool"), cur = sel.value;
+  sel.innerHTML = `<option value="">كل الأدوات (${FB.length})</option>` + tools.map(t => `<option value="${esc(t)}">${esc(NAMES[t] || t)} (${FB.filter(f => f.tool === t).length})</option>`).join("");
+  sel.value = tools.includes(cur) ? cur : "";
+  const list = FB.filter(f => !sel.value || f.tool === sel.value);
+  $("fbT").innerHTML = list.length ? `<table><thead><tr><th>التاريخ</th><th>الأداة</th><th>التقييم</th><th>ينصح</th><th>ما ينقصها</th><th>ما أفاده</th><th>المرسل</th></tr></thead><tbody>${list.map(f =>
+    `<tr><td class="num">${esc(day(f.created_at))}</td><td>${esc(NAMES[f.tool] || f.tool)}</td><td class="stars" title="${f.rating || ""}">${stars(f.rating)}</td><td>${esc(REC[f.recommend] || "—")}</td><td>${esc(f.improve)}</td><td>${esc(f.useful || "")}</td><td>${esc([f.name, f.email].filter(Boolean).join(" · ") || "—")}</td></tr>`).join("")}</tbody></table>` : `<p class="muted">لا توجد آراء بعد.</p>`;
+  const per = tools.map(t => { const r = FB.filter(f => f.tool === t); const rr = r.filter(f => f.rating); return {t, n:r.length, a:avg(rr.map(f => f.rating))}; }).sort((x, y) => (x.a ?? 9) - (y.a ?? 9));
+  $("toolsT").innerHTML = per.length ? `<table><thead><tr><th>الأداة</th><th>عدد الآراء</th><th>متوسط التقييم</th><th></th></tr></thead><tbody>${per.map(p =>
+    `<tr><td>${esc(NAMES[p.t] || p.t)}</td><td class="num">${p.n}</td><td class="num">${p.a ? p.a.toFixed(1) : "—"}</td><td><div class="bar"><i style="width:${p.a ? p.a / 5 * 100 : 0}%"></i></div></td></tr>`).join("")}</tbody></table><p class="muted">مرتبة من الأقل تقييماً، لتبدأ التطوير منها.</p>` : `<p class="muted">لا توجد آراء بعد.</p>`;
+  $("rqT").innerHTML = RQ.length ? `<table><thead><tr><th>التاريخ</th><th>النوع</th><th>الرقم المرجعي</th><th>الاسم والمنشأة</th><th>التواصل</th><th>التفاصيل</th></tr></thead><tbody>${RQ.map(r => { const p = r.payload || {};
+    return `<tr><td class="num">${esc(day(r.created_at))}</td><td>${esc(KIND[r.kind] || r.kind)}</td><td class="ltr">${esc(r.ref || "")}</td><td>${esc([p.name, p.org].filter(Boolean).join(" · "))}</td><td class="ltr">${esc([p.email, p.phone].filter(Boolean).join(" · "))}</td><td><details><summary>عرض</summary><pre>${esc(Object.entries(p).map(([k, v]) => `${k}: ${v}`).join("\n"))}</pre></details></td></tr>`; }).join("")}</tbody></table>` : `<p class="muted">لا توجد طلبات بعد.</p>`;
+  $("usersT").innerHTML = US.length ? `<table><thead><tr><th>البريد</th><th>التسجيل</th><th>آخر دخول</th><th>بيانات محفوظة</th><th>آخر حفظ</th></tr></thead><tbody>${US.map(u =>
+    `<tr><td class="ltr">${esc(u.email)}</td><td class="num">${esc(day(u.created_at))}</td><td class="num">${esc(day(u.last_seen))}</td><td class="num">${u.keys}</td><td class="num">${esc(day(u.last_saved))}</td></tr>`).join("")}</tbody></table>` : `<p class="muted">لا توجد حسابات بعد.</p>`;
+}
+
+async function load(user){
+  $("who").textContent = user.email; $("outBtn").hidden = false;
+  const {data:isAdmin} = await SB.rpc("is_admin");
+  if(!isAdmin){ $("adminSql").textContent = `insert into public.admins (user_id) values ('${user.id}');`; show("notAdmin"); return; }
+  show("app");
+  const [f, r, u] = await Promise.all([
+    SB.from("feedback").select("*").order("created_at", {ascending:false}).limit(5000),
+    SB.from("service_requests").select("*").order("created_at", {ascending:false}).limit(5000),
+    SB.rpc("admin_users")]);
+  FB = f.data || []; RQ = r.data || []; US = u.data || [];
+  render();
+}
+
+$("tabs").onclick = e => { const b = e.target.closest("button[data-t]"); if(!b) return;
+  document.querySelectorAll("#tabs button").forEach(x => x.setAttribute("aria-selected", x === b));
+  document.querySelectorAll("[data-p]").forEach(p => p.hidden = p.dataset.p !== b.dataset.t); };
+$("fbTool").onchange = render;
+$("fbCsv").onclick = () => download(`cia-feedback-${new Date().toISOString().slice(0,10)}.csv`, csv(FB, [["created_at","التاريخ"],[f => NAMES[f.tool] || f.tool,"الأداة"],["rating","التقييم"],[f => REC[f.recommend] || "","ينصح"],["role","الدور"],["improve","ما ينقصها"],["useful","ما أفاده"],["name","الاسم"],["email","البريد"],["ref","الرقم المرجعي"],["lang","اللغة"]]));
+$("rqCsv").onclick = () => download(`cia-requests-${new Date().toISOString().slice(0,10)}.csv`, csv(RQ, [["created_at","التاريخ"],[r => KIND[r.kind] || r.kind,"النوع"],["ref","الرقم المرجعي"],[r => (r.payload || {}).name,"الاسم"],[r => (r.payload || {}).org,"المنشأة"],[r => (r.payload || {}).email,"البريد"],[r => (r.payload || {}).phone,"الجوال"],[r => JSON.stringify(r.payload || {}),"كل التفاصيل"]]));
+$("outBtn").onclick = async () => { await SB.auth.signOut(); location.reload(); };
+
+if(!(C.url && C.key) || !window.supabase){ show("off"); }
+else {
+  SB = window.supabase.createClient(String(C.url).replace(/\/+$/, ""), C.key, {auth:{storageKey:"cia-cloud-auth", persistSession:true, detectSessionInUrl:true, flowType:"implicit"}});
+  let email = "";
+  $("sForm").onsubmit = async e => { e.preventDefault(); email = $("sEmail").value.trim(); $("sErr").hidden = true; $("sBtn").disabled = true;
+    const {error} = await SB.auth.signInWithOtp({email, options:{emailRedirectTo:location.origin + location.pathname, shouldCreateUser:false}});
+    $("sBtn").disabled = false;
+    if(error){ $("sErr").textContent = "تعذّر الإرسال. هل سجّلت بهذا البريد في المنصة من قبل؟"; $("sErr").hidden = false; return; }
+    $("sMsg").textContent = C.code ? `أرسلنا رابط الدخول إلى ${email}. افتحه، أو اكتب الرمز من الرسالة هنا.` : `أرسلنا رابط الدخول إلى ${email}. افتحه من بريدك.`; $("cForm").hidden = !C.code; };
+  $("cForm").onsubmit = async e => { e.preventDefault(); const {data, error} = await SB.auth.verifyOtp({email, token:$("cCode").value.replace(/\D/g, ""), type:"email"});
+    if(error){ $("sErr").textContent = "الرمز غير صحيح أو انتهت صلاحيته."; $("sErr").hidden = false; return; } load(data.user); };
+  SB.auth.getSession().then(({data}) => { if(data.session) load(data.session.user); else show("signin"); });
+}
+</script>
+</body>
+</html>
