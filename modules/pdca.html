@@ -11,7 +11,7 @@
 <style>
 :root{
   color-scheme: light;
-  --bg:#F3F7FB; --surface:#FFFFFF; --ink:#1B2A4A; --ink-soft:#4B5874; --muted:#7A869E; --line:#DCE4EE;
+  --bg:#F3F7FB; --surface:#FFFFFF; --ink:#1B2A4A; --ink-soft:#4B5874; --muted:#5B677F; --line:#DCE4EE;
   --gold:#B8901E; --gold-tint:#FBF4DF;
   --plan:#1E8C93; --plan-t:#E3F4F4; --do:#3563C9; --do-t:#E7EEFB; --check:#C9821A; --check-t:#FCF1DE;
   --act:#3C9A5F; --act-t:#E5F4EA; --lead:#1B2A4A; --lead-t:#E6EAF2; --ctx:#7B5BB8; --ctx-t:#EFEAF8;
@@ -1120,6 +1120,18 @@ html[dir="rtl"] .ex-drawer{transform:translateX(104%)}
  .ex-mtx-lvs{grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}
 }
 </style>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="أكاديمية التحسين المستمر — Continual Improvement Academy">
+<meta property="og:title" content="PDCA | Continual Improvement Academy — مدثر سلامه">
+<meta property="og:description" content="دورة التحسين المستمر PDCA — PDCA continual improvement. أداة تفاعلية ثنائية اللغة من أكاديمية التحسين المستمر، إعداد مدثر سلامه.">
+<meta property="og:image" content="../assets/cia-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="دورة التحسين المستمر PDCA — PDCA continual improvement">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="cia-version" content="1.0.0 · 2026-10-22">
 </head>
 <body>
 <header class="topbar">
@@ -1139,20 +1151,20 @@ html[dir="rtl"] .ex-drawer{transform:translateX(104%)}
 </header>
 
 <div class="app">
-<aside class="side" id="side" aria-label="Tabs">
+<aside class="side" id="side" aria-label="Tabs" role="tablist" aria-orientation="vertical">
   <div class="sg" data-i="sgLearn"></div>
-  <button type="button" data-go="home" data-t="home" aria-selected="true"><span class="ic" style="background:#1B2A4A18;color:#1B2A4A" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/></svg></span><span class="tl" data-i="nHome"></span></button>
-  <button type="button" data-go="explain-std" data-t="explain-std"><span class="ic" style="background:#1E8C9318;color:#1E8C93" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h11l5 5v11H4z"/><path d="M15 4v5h5M8 13h8M8 17h5"/></svg></span><span class="tl" data-i="nStd"></span></button>
-  <button type="button" data-go="explain-cl" data-t="explain-cl"><span class="ic" style="background:#1E8C9318;color:#1E8C93" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5h4M8 21h8"/></svg></span><span class="tl" data-i="nCl"></span></button>
+  <button type="button" role="tab" data-go="home" data-t="home" aria-selected="true"><span class="ic" style="background:#1B2A4A18;color:#1B2A4A" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/></svg></span><span class="tl" data-i="nHome"></span></button>
+  <button type="button" role="tab" data-go="explain-std" data-t="explain-std"><span class="ic" style="background:#1E8C9318;color:#1E8C93" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h11l5 5v11H4z"/><path d="M15 4v5h5M8 13h8M8 17h5"/></svg></span><span class="tl" data-i="nStd"></span></button>
+  <button type="button" role="tab" data-go="explain-cl" data-t="explain-cl"><span class="ic" style="background:#1E8C9318;color:#1E8C93" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5h4M8 21h8"/></svg></span><span class="tl" data-i="nCl"></span></button>
   <div class="sg" data-i="sgWork"></div>
-  <button type="button" data-go="assess" data-t="assess"><span class="ic" style="background:#C9821A18;color:#C9821A" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7v5l3 3"/></svg></span><span class="tl" data-i="nAssess"></span></button>
-  <button type="button" data-go="tools" data-t="tools"><span class="ic" style="background:#3563C918;color:#3563C9" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.6-4.5"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.6 4.5"/><path d="M20 20v-4h-4"/></svg></span><span class="tl" data-i="nTools"></span></button>
-  <button type="button" data-go="docs" data-t="docs"><span class="ic" style="background:#7B5BB818;color:#7B5BB8" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10"/></svg></span><span class="tl" data-i="nDocs"></span><span class="bd" id="cntDocs"></span></button>
-  <button type="button" data-go="audit" data-t="audit"><span class="ic" style="background:#C2410C18;color:#C2410C" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h6l1 2h3v15H5V6h3z"/><path d="m9 13 2 2 4-4"/></svg></span><span class="tl" data-i="nAudit"></span></button>
+  <button type="button" role="tab" data-go="assess" data-t="assess"><span class="ic" style="background:#C9821A18;color:#C9821A" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7v5l3 3"/></svg></span><span class="tl" data-i="nAssess"></span></button>
+  <button type="button" role="tab" data-go="tools" data-t="tools"><span class="ic" style="background:#3563C918;color:#3563C9" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.6-4.5"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.6 4.5"/><path d="M20 20v-4h-4"/></svg></span><span class="tl" data-i="nTools"></span></button>
+  <button type="button" role="tab" data-go="docs" data-t="docs"><span class="ic" style="background:#7B5BB818;color:#7B5BB8" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10"/></svg></span><span class="tl" data-i="nDocs"></span><span class="bd" id="cntDocs"></span></button>
+  <button type="button" role="tab" data-go="audit" data-t="audit"><span class="ic" style="background:#C2410C18;color:#C2410C" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h6l1 2h3v15H5V6h3z"/><path d="m9 13 2 2 4-4"/></svg></span><span class="tl" data-i="nAudit"></span></button>
   <div class="sg" data-i="sgOut"></div>
-  <button type="button" data-go="dash" data-t="dash"><span class="ic" style="background:#3C9A5F18;color:#3C9A5F" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><span class="tl" data-i="nDash"></span></button>
-  <button type="button" data-go="report" data-t="report"><span class="ic" style="background:#B8901E18;color:#B8901E" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M12 10v7M9 14l3 3 3-3"/></svg></span><span class="tl" data-i="nReport"></span></button>
-  <button type="button" data-go="ai" data-t="ai"><span class="ic" style="background:#7A869E18;color:#7A869E" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.7 4.7 1.8-4.7 1.8L12 16l-1.8-4.7-4.7-1.8 4.7-1.8z"/><path d="M19 15l.7 1.8 1.8.7-1.8.7L19 20l-.7-1.8-1.8-.7 1.8-.7z"/></svg></span><span class="tl" data-i="nAi"></span><span class="bd" data-i="soon"></span></button>
+  <button type="button" role="tab" data-go="dash" data-t="dash"><span class="ic" style="background:#3C9A5F18;color:#3C9A5F" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><span class="tl" data-i="nDash"></span></button>
+  <button type="button" role="tab" data-go="report" data-t="report"><span class="ic" style="background:#B8901E18;color:#B8901E" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M12 10v7M9 14l3 3 3-3"/></svg></span><span class="tl" data-i="nReport"></span></button>
+  <button type="button" role="tab" data-go="ai" data-t="ai"><span class="ic" style="background:#7A869E18;color:#7A869E" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.7 4.7 1.8-4.7 1.8L12 16l-1.8-4.7-4.7-1.8 4.7-1.8z"/><path d="M19 15l.7 1.8 1.8.7-1.8.7L19 20l-.7-1.8-1.8-.7 1.8-.7z"/></svg></span><span class="tl" data-i="nAi"></span><span class="bd" data-i="soon"></span></button>
 </aside>
 
 <main id="main">
@@ -1912,8 +1924,8 @@ const EXPLAIN_PDCA={
    "en": "Each step with its requirement, examples and the evidence an auditor asks for. Examples are illustrative, not real data."
   },
   "note": {
-   "ar": "الفرق بين التعريف والإرشاد: ما يلي في «المتطلب» تعريف مأخوذ من المنهجية، وما في «كيف تطبقه» و«الفجوات» إرشاد تطبيقي من خبرة الكاتب وليس نصاً معيارياً.",
-   "en": "Definition vs guidance: the “requirement” text describes the method; “how to implement” and “common gaps” are practical guidance from the author's experience, not normative text."
+   "ar": "الفرق بين التعريف والإرشاد: ما يلي في «المتطلب» تعريف مأخوذ من المنهجية، وما في «كيف تطبقه» و«الفجوات» إرشاد تطبيقي من خبرة الكاتب وليس نصاً معيارياً. وتشرح ISO 10009:2024 دورة PDCA في البند 15.6؛ والشرح الكامل في دليل ISO 10009 على المنصة.",
+   "en": "Definition vs guidance: the “requirement” text describes the method; “how to implement” and “common gaps” are practical guidance from the author's experience, not normative text. ISO 10009:2024 reviews the PDCA cycle in 15.6. The full guide is the ISO 10009 tool on the platform."
   },
   "chgT": {
    "ar": "ما الذي تغيّر",
@@ -3886,6 +3898,136 @@ setTimeout(showInvite,1400);
 window.ciaTour={version:"1.0",start:start,end:end,next:next,prev:prev,
   state:function(){ return {active:!!T,seq:seq,i:T?T.i:-1,n:T?T.steps.length:0,mode:T?T.mode:"",ph:T&&T.cur?T.cur.s.ph:"",title:T&&ui?txt(ui.card.querySelector("h3")):""}; }};
 }catch(err){ try{ console.warn("CIA tour disabled:",err); }catch(e){} }
+})();
+</script>
+<style id="cia-org-css">
+/* CIA organization profile kit v1 — the fill bar shown above a tool's organization fields, and the print cover */
+.cia-org-bar{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;margin:0 0 12px;padding:10px 12px;border:1px solid #E6CF8A;border-inline-start:4px solid #B8901E;border-radius:12px;background:#FBF4DF;color:#1B2A4A;font-size:14px;line-height:1.5}
+.cia-org-bar img{width:28px;height:28px;object-fit:contain;border-radius:6px;background:#fff;flex:none}
+.cia-org-bar i{font-style:normal;flex:none}
+.cia-org-bar span{flex:1 1 220px;min-width:0}
+.cia-org-bar button{font:inherit;font-size:13.5px;border-radius:999px;cursor:pointer}
+.cia-org-bar .cia-org-go{background:#1B2A4A;color:#fff;border:0;padding:6px 14px;font-weight:700}
+.cia-org-bar .cia-org-go:focus-visible,.cia-org-bar .cia-org-x:focus-visible{outline:3px solid #B8901E;outline-offset:2px}
+.cia-org-bar .cia-org-x{background:transparent;border:1px solid #D9C27A;color:#5A4A12;width:30px;height:30px;padding:0}
+@media (prefers-color-scheme:dark){.cia-org-bar{background:#2A2614;border-color:#6B5A22;color:#F2E9CC}.cia-org-bar .cia-org-go{background:#E6CF8A;color:#1B2A4A}.cia-org-bar .cia-org-x{color:#E6CF8A;border-color:#6B5A22}}
+.cia-org-print{display:none}
+@media print{.cia-org-print{display:block}.cia-org-bar{display:none!important}}
+</style>
+<script id="cia-org-js">
+/* CIA organization profile kit v1 (step 15, 2026-10-22) — carried byte-identical by the hub and every tool; checked by tests/platform/t_static.py.
+   One shared key, cia-org:v1, written only by the hub (#profile) — tools read it. The schema below is the schema of the future server profile.
+   {v:1, updated:ISO date-time,
+    name:{ar,en}, legal, cr, sector, size, country, city,
+    sites:[{name, city, act}], depts:[name], top, qhse, prepFor, prepBy, email, phone,
+    scope:{ar,en}, held:[standard], target:[standard], fy:"01".."12", lang:"ar"|"en", logo:data-URL (PNG/JPEG/WebP/SVG, ≤ 300 KB), brand:"#rrggbb"}
+   API: CIAORG.get() (repaired copy, never throws) · has() · logo() · name(lang) · coverHTML(lang, withAcademy[, profile]) · on(fn) (storage event) · KEY
+   In a tool it also: puts the organization's logo and name on the cover of every HTML/PDF report (when a profile exists; without one the
+   report is unchanged), offers to fill the empty organization fields of the open form from the profile, and turns site, department and
+   person fields into suggestions from the profile. It never changes saved records or example data and never writes another tool's key. */
+var CIAORG=(function(){
+ "use strict";
+ var KEY="cia-org:v1", W=window, D=document;
+ var LOGO_RX=/^data:image\/(png|jpeg|webp|svg\+xml);base64,[A-Za-z0-9+\/=]+$/;
+ function s(v,n){ v=v==null?"":String(v); v=v.replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g,"").trim(); return n?v.slice(0,n):v; }
+ function bi(v,n){ v=(v&&typeof v==="object"&&!Array.isArray(v))?v:{ar:v,en:""}; return {ar:s(v.ar,n),en:s(v.en,n)}; }
+ function list(v,f,max){ return (Array.isArray(v)?v:[]).map(f).filter(function(x){ return x!=null&&x!==""; }).slice(0,max||200); }
+ function repair(o){
+  o=(o&&typeof o==="object"&&!Array.isArray(o))?o:{};
+  var logo=s(o.logo); if(!LOGO_RX.test(logo)||logo.length>420000) logo="";
+  var brand=s(o.brand); if(!/^#[0-9a-fA-F]{6}$/.test(brand)) brand="";
+  var lang=o.lang==="en"?"en":"ar", fy=/^(0[1-9]|1[0-2])$/.test(s(o.fy))?s(o.fy):"01";
+  return {v:1, updated:s(o.updated,40), name:bi(o.name,160), legal:s(o.legal,200), cr:s(o.cr,40), sector:s(o.sector,20), size:s(o.size,20),
+   country:s(o.country,20), city:s(o.city,80),
+   sites:list(o.sites,function(x){ x=(x&&typeof x==="object")?x:{name:x}; var n=s(x.name,120); return n?{name:n,city:s(x.city,80),act:s(x.act,160)}:null; },100),
+   depts:list(o.depts,function(x){ return s(x,120)||null; },200),
+   top:s(o.top,120), qhse:s(o.qhse,120), prepFor:s(o.prepFor,160), prepBy:s(o.prepBy,160), email:s(o.email,160), phone:s(o.phone,40),
+   scope:bi(o.scope,1200), held:list(o.held,function(x){ return s(x,40)||null; },40), target:list(o.target,function(x){ return s(x,40)||null; },40),
+   fy:fy, lang:lang, logo:logo, brand:brand};
+ }
+ function raw(){ try{ var t=localStorage.getItem(KEY); return t?JSON.parse(t):null; }catch(e){ return null; } }
+ function get(){ try{ return repair(raw()); }catch(e){ return repair(null); } }
+ function has(){ var p=get(); return !!(p.name.ar||p.name.en); }
+ function name(lang){ var p=get(); return lang==="en"?(p.name.en||p.name.ar):(p.name.ar||p.name.en); }
+ function txt(v,lang){ return v&&typeof v==="object"?(lang==="en"?(v.en||v.ar):(v.ar||v.en))||"":s(v); }
+ function esc(v){ return String(v==null?"":v).replace(/[&<>"']/g,function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+ function academyLogo(){ try{ if(typeof LOGO==="string"&&/^data:image\//.test(LOGO)) return LOGO; }catch(e){} try{ var i=D.querySelector("img[data-logo],.home-logo img,.brand img,header img"); if(i&&/^data:image\//.test(i.getAttribute("src")||"")) return i.getAttribute("src"); }catch(e){} return ""; }
+ var T={ar:{pf:"أُعدّ لـ",pb:"أعدّه",cr:"السجل التجاري",scope:"النطاق",acad:"أكاديمية التحسين المستمر"},en:{pf:"Prepared for",pb:"Prepared by",cr:"CR no.",scope:"Scope",acad:"Continual Improvement Academy"}};
+ /* the cover block: organization logo and name next to the academy logo, with "prepared for … · prepared by …" (inline styles: it travels into downloaded reports) */
+ function coverHTML(lang,withAcademy,p0){
+  var p=p0?repair(p0):get(); if(!(p.name.ar||p.name.en)) return "";
+  lang=lang==="en"?"en":"ar"; var t=T[lang], col=p.brand||"#B8901E", nm=lang==="en"?(p.name.en||p.name.ar):(p.name.ar||p.name.en), ac=withAcademy?academyLogo():"";
+  var sub=[p.legal&&p.legal!==nm?esc(p.legal):"", p.cr?esc(t.cr)+' <span dir="ltr">'+esc(p.cr)+"</span>":""].filter(Boolean).join(" · ");
+  var sc=txt(p.scope,lang), who=[p.prepFor?esc(t.pf)+": <b>"+esc(p.prepFor)+"</b>":"", p.prepBy?esc(t.pb)+": <b>"+esc(p.prepBy)+"</b>":""].filter(Boolean).join(" · ");
+  return '<div class="cia-org-cover" dir="'+(lang==="ar"?"rtl":"ltr")+'" style="display:flex;align-items:center;gap:14px;border:1px solid #DCE4EE;border-inline-start:5px solid '+col+';border-radius:12px;padding:12px 16px;margin:0 0 18px;background:#F7F9FC;color:#1B2A4A;break-inside:avoid;page-break-inside:avoid">'+
+   (p.logo?'<img src="'+esc(p.logo)+'" alt="'+esc(nm)+'" style="width:72px;height:72px;object-fit:contain;flex:none;border-radius:8px;background:#fff">':'')+
+   '<div style="display:grid;gap:2px;min-width:0;flex:1"><b style="font-size:18px;line-height:1.35">'+esc(nm)+'</b>'+(sub?'<span style="font-size:12.5px;color:#4B5874">'+sub+'</span>':'')+
+   (sc?'<span style="font-size:12.5px;color:#4B5874">'+esc(t.scope)+": "+esc(sc.length>220?sc.slice(0,219)+"…":sc)+'</span>':'')+(who?'<span style="font-size:12.5px;color:#4B5874">'+who+'</span>':'')+'</div>'+
+   (ac?'<img src="'+esc(ac)+'" alt="'+esc(t.acad)+'" style="width:56px;height:56px;border-radius:50%;flex:none">':'')+'</div>';
+ }
+ var subs=[];
+ function on(fn){ if(typeof fn==="function") subs.push(fn); }
+ try{ W.addEventListener("storage",function(e){ if(e.key===KEY||e.key===null){ subs.forEach(function(f){ try{ f(get()); }catch(_){} }); } }); }catch(e){}
+ var API={KEY:KEY,get:get,has:has,name:name,logo:function(){ return get().logo; },coverHTML:coverHTML,on:on,repair:repair,esc:esc,txt:txt};
+
+ /* ---------------- inside a tool (not the hub) ---------------- */
+ var HUB=!!D.getElementById("modOverlay");
+ function lang(){ var l=""; try{ l=localStorage.getItem("cia-lang")||""; }catch(e){} var h=D.documentElement.lang; return (h==="en"||h==="ar")?h:(l==="en"?"en":"ar"); }
+ function hookReports(){
+  /* the ISO toolkits and the kit-based centres brand every report through brandHeaderHTML(); the toolbox tools through TBX.reportDoc() */
+  try{ if(typeof W.brandHeaderHTML==="function"&&!W.brandHeaderHTML.ciaOrg){ var ob=W.brandHeaderHTML;
+    var nb=function(){ var h=ob.apply(this,arguments); return has()?h+coverHTML(lang(),false):h; }; nb.ciaOrg=1; W.brandHeaderHTML=nb; } }catch(e){}
+  try{ if(typeof W.TBX==="object"&&W.TBX&&typeof W.TBX.reportDoc==="function"&&!W.TBX.reportDoc.ciaOrg){ var od=W.TBX.reportDoc;
+    var nd=function(lg,title,body,css){ return od.call(this,lg,title,has()?coverHTML(lg,true)+body:body,css); }; nd.ciaOrg=1; W.TBX.reportDoc=nd; } }catch(e){}
+ }
+ /* print view of the tool itself: the cover on top of the printed page */
+ function printCover(on){ var x=D.getElementById("cia-org-print"); if(x) x.remove(); if(on&&has()){ var d=D.createElement("div"); d.id="cia-org-print"; d.className="cia-org-print"; d.innerHTML=coverHTML(lang(),true); D.body.insertBefore(d,D.body.firstChild); } }
+ /* organization fields a tool may have (read from the page, no tool code involved); see tests/build/org_map.json */
+ var FILL=[['[data-p="org"]',"name"],['[data-m="org"]',"name"],['[data-ok="name"]',"name"],['[data-p="scope"]',"scope"],['[data-m="scope"]',"scope"],['[data-p="sites"]',"sites"]];
+ var SUGG=[["#f-area","area"],["#f-site","sites"],["#fsite","sites"],["#f-owner","people"],["#h-owner","people"],['[data-p="owner"]',"people"],['[data-ok="owner"]',"people"],['input[data-k="site"]',"sites"],['input[data-k="dept"]',"depts"],['input[data-k="owner"]',"people"]];
+ var U={ar:{fill:"املأ الحقول الفارغة من ملف المنشأة",have:"بيانات منشأتك محفوظة في ملف المنشأة.",done:"تمت تعبئة بيانات المنشأة من الملف — عدّلها إن لزم",x:"إغلاق"},
+        en:{fill:"Fill the empty fields from the organization profile",have:"Your organization's details are saved in the organization profile.",done:"Organization details filled from the profile — edit them if needed",x:"Close"}};
+ function val(f,lg){ var p=get(); if(f==="name") return name(lg); if(f==="scope") return txt(p.scope,lg); if(f==="sites") return p.sites.map(function(x){ return x.name; }).join(lg==="ar"?"، ":", "); return ""; }
+ function vis(e){ return !!(e&&(e.offsetParent||e.getClientRects().length)); }
+ function empty(e){ return e.isContentEditable?!String(e.innerText||"").trim():!String(e.value||"").trim(); }
+ function fillables(){ var out=[]; FILL.forEach(function(m){ [].forEach.call(D.querySelectorAll(m[0]),function(e){ if(vis(e)&&!e.disabled&&!e.readOnly&&empty(e)&&val(m[1],lang())) out.push([e,m[1]]); }); }); return out; }
+ var dismissed=false, bar=null, doneT=null;
+ function banner(){
+  if(HUB) return; var F=has()&&!dismissed?fillables():[];
+  if(!F.length){ if(bar&&!bar.dataset.done){ bar.remove(); bar=null; } return; }
+  var host=F[0][0].closest(".tk-panel,.pd-stage,.panel,.card,fieldset,form,section")||F[0][0].parentElement;
+  if(bar&&bar.isConnected&&bar.nextElementSibling===host&&!bar.dataset.done) return;
+  if(bar) bar.remove(); var u=U[lang()];
+  bar=D.createElement("div"); bar.className="cia-org-bar"; bar.setAttribute("role","note");
+  bar.innerHTML=(get().logo?'<img src="'+esc(get().logo)+'" alt="">':'<i aria-hidden="true">🏢</i>')+'<span>'+esc(u.have)+'</span><button type="button" class="cia-org-go">'+esc(u.fill)+'</button><button type="button" class="cia-org-x" aria-label="'+esc(u.x)+'">✕</button>';
+  host.parentNode.insertBefore(bar,host);
+  bar.querySelector(".cia-org-go").onclick=function(){ var lg=lang(), n=0;
+   fillables().forEach(function(m){ var e=m[0], v=val(m[1],lg); if(!v) return; if(e.isContentEditable) e.innerText=v; else e.value=v; n++;
+    e.dispatchEvent(new Event("input",{bubbles:true})); e.dispatchEvent(new Event("change",{bubbles:true})); });
+   bar.dataset.done="1"; bar.innerHTML='<i aria-hidden="true">✓</i><span>'+esc(U[lg].done)+'</span>'; clearTimeout(doneT); doneT=setTimeout(function(){ if(bar){ bar.remove(); bar=null; } },6000); };
+  bar.querySelector(".cia-org-x").onclick=function(){ dismissed=true; bar.remove(); bar=null; };
+ }
+ function dl(id,vals){ var d=D.getElementById(id); if(!vals.length){ if(d) d.remove(); return null; } if(!d){ d=D.createElement("datalist"); d.id=id; D.body.appendChild(d); }
+  var h=vals.map(function(v){ return '<option value="'+esc(v)+'">'; }).join(""); if(d.innerHTML!==h) d.innerHTML=h; return id; }
+ function suggest(){
+  if(HUB) return; var on=has(), p=get();
+  var lists=on?{sites:dl("cia-org-sites",p.sites.map(function(x){ return x.name; })), depts:dl("cia-org-depts",p.depts),
+    area:dl("cia-org-area",p.sites.map(function(x){ return x.name; }).concat(p.depts)), people:dl("cia-org-people",[p.top,p.qhse,p.prepFor].filter(Boolean).concat(p.depts))}:{};
+  SUGG.forEach(function(m){ [].forEach.call(D.querySelectorAll(m[0]),function(e){ if(e.tagName!=="INPUT") return; var id=lists[m[1]];
+   if(on&&id){ if(!e.getAttribute("list")){ e.setAttribute("list",id); e.dataset.ciaList="1"; } } else if(e.dataset.ciaList){ e.removeAttribute("list"); delete e.dataset.ciaList; } }); });
+ }
+ var tick=0;
+ function sweep(){ if(tick) return; tick=setTimeout(function(){ tick=0; try{ banner(); suggest(); }catch(e){} },120); }
+ function boot(){
+  hookReports();
+  if(HUB) return;
+  try{ W.addEventListener("beforeprint",function(){ printCover(true); }); W.addEventListener("afterprint",function(){ printCover(false); }); }catch(e){}
+  var HAS=has(); on(function(){ HAS=has(); });
+  try{ new MutationObserver(function(){ if(HAS||bar) sweep(); }).observe(D.body,{childList:true,subtree:true}); }catch(e){}
+  W.addEventListener("hashchange",sweep); on(function(){ dismissed=false; sweep(); }); sweep();
+ }
+ if(D.readyState==="loading") D.addEventListener("DOMContentLoaded",boot); else boot();
+ return API;
 })();
 </script>
 </body>
