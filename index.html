@@ -1381,7 +1381,70 @@ html[dir="rtl"] .ac-t tr.late td:first-child{box-shadow:inset -4px 0 0 #B42318}
 .ref-g+.ref-g{margin-top:30px}
 .ui-chips{font:inherit;font-size:11.5px;font-weight:700;color:#E2C46B;background:transparent;border:1px dashed rgba(226,196,107,.6);border-radius:99px;padding:2px 10px;cursor:pointer}
 .ui-chips:hover{background:rgba(226,196,107,.12)}
-/* cia-ui:end */</style>
+/* cia-ui:end *//* cia-certs:start */
+/* certification finder (#certs) and its band on the home page; the question cards reuse the Advisor's styles */
+#certs{padding-top:34px}
+#ctBand{padding:26px 0 0}
+.ct-band{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:linear-gradient(135deg,var(--navy),#22355E);color:#fff;border-radius:20px;padding:18px 22px;box-shadow:0 14px 34px rgba(16,28,51,.12)}
+.ct-band>div{flex:1 1 280px}
+.ct-band b{font-family:var(--display);font-size:19px}
+.ct-band p{margin:2px 0 0;color:#C9D3E4;font-size:15px}
+.ct-bi{width:52px;height:52px;border-radius:16px;background:rgba(214,176,74,.18);color:#E2C46B;display:grid;place-items:center;flex:none}
+.ct-bi svg{width:28px;height:28px}
+.ct-intro{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px;align-items:center}
+.ct-intro h3{font-family:var(--display);font-size:22px;margin:0 0 10px}
+.ct-intro ul{margin:0;padding-inline-start:20px;display:grid;gap:6px;color:var(--ink-soft)}
+.ct-introacts{display:flex;flex-direction:column;gap:10px}
+@media (max-width:700px){.ct-intro{grid-template-columns:1fr}.ct-introacts{flex-direction:row;flex-wrap:wrap}}
+.ct-grp{display:inline-block;font-size:12.5px;font-weight:700;color:var(--gold-ink);background:var(--gold-tint);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+.adv-opts.ct-grid{grid-template-columns:repeat(auto-fill,minmax(205px,1fr))}
+.ct-res{display:grid;gap:22px}
+.ct-sum{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;justify-content:space-between}
+.ct-sum h3{font-family:var(--display);font-size:clamp(22px,2.6vw,28px);margin:0;line-height:1.35}
+.ct-sum p{margin:4px 0 0;color:var(--muted)}
+.ct-acts{display:flex;flex-wrap:wrap;gap:8px}
+.ct-base{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:16px;align-items:center;background:var(--navy);color:#fff;border-radius:18px;padding:18px 20px}
+.ct-base h4{margin:0 0 4px;font-family:var(--display);font-size:19px;color:#fff;line-height:1.45}
+.ct-base p{margin:0;color:#C9D3E4;font-size:14.5px}
+.ct-base .cd{font-family:Georgia,serif;color:#E2C46B;direction:ltr;unicode-bidi:isolate;margin-inline-start:6px;font-size:15px}
+.ct-badge{background:#D6B04A;color:#14203A;font-weight:800;border-radius:12px;padding:8px 12px;font-size:13px;white-space:nowrap}
+.ct-base .btn{background:#fff;color:#14203A;border-color:#fff}
+.ct-base .ct-out{color:#C9D3E4}
+.ct-base.have{background:color-mix(in srgb,var(--live) 10%,var(--surface));color:var(--ink);border:1px solid color-mix(in srgb,var(--live) 35%,var(--line))}
+.ct-base.have h4{color:var(--ink)}.ct-base.have p{color:var(--ink-soft)}
+.ct-base.have .ct-badge{background:var(--live);color:#fff}
+.ct-base.have .btn{background:var(--surface);color:var(--ink);border-color:var(--line)}
+@media (max-width:640px){.ct-base{grid-template-columns:1fr}}
+.ct-sec h3{font-family:var(--display);font-size:20px;margin:0 0 10px}
+.ct-secp{margin:-4px 0 12px;color:var(--muted);font-size:14px}
+.ct-kind{display:inline-block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.ct-ar .fit b{font-family:var(--body);font-size:13.5px;font-weight:800;direction:inherit}
+.ct-pr.high{color:var(--gold-ink)}.ct-pr.rec{color:var(--ink-soft)}
+.ct-note{display:block;margin-top:4px;font-size:13px;color:var(--gold-ink)}
+.ct-out{font-size:13px;color:var(--muted);align-self:center}
+.ct-chips{display:flex;flex-wrap:wrap;gap:8px}
+.ct-chips span{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:6px 13px;font-size:13.5px}
+.ct-chips b{font-family:Georgia,serif;direction:ltr;unicode-bidi:isolate;margin-inline-end:4px}
+.ct-guides{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.ct-guides article{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:16px;padding:16px 18px;display:grid;gap:6px;align-content:start}
+.ct-guides h4{margin:0;font-family:var(--display);font-size:16px;line-height:1.45}
+.ct-guides .cd{font-family:Georgia,serif;direction:ltr;unicode-bidi:isolate;color:var(--muted);font-size:13.5px;margin-inline-start:4px}
+.ct-guides p{margin:0;font-size:14px;color:var(--ink-soft)}
+.ct-guides a{font-size:13.5px;font-weight:700;color:var(--gold-ink);text-decoration:none}
+.ct-est{margin:10px 0 0;font-size:13px;color:var(--muted)}
+.ct-road .adv-stage li b{font-family:Georgia,serif}
+@media print{
+  html.pct body{background:#fff}
+  html.pct main>*:not(#certs),html.pct footer{display:none!important}
+  html.pct #certs{padding:0}
+  html.pct .ct-acts,html.pct .ct-ar .acts,html.pct .ct-guides a,html.pct .ct-base .btn,html.pct .adv-start .btn,html.pct #certs .sec-head{display:none!important}
+  html.pct #certs,html.pct #certs *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  html.pct .wrap{max-width:none;padding-inline:0}
+  html.pct .ct-printh{display:block;border-bottom:2px solid #B8901E;padding-bottom:8px;font-weight:700;color:#1B2A4A}
+  html.pct .ar,html.pct .adv-stage,html.pct .ct-guides article{break-inside:avoid}
+}
+.ct-road .adv-stage .d{direction:inherit;unicode-bidi:normal}
+/* cia-certs:end */</style>
 </head>
 <body>
 <header class="topbar">
@@ -1450,7 +1513,8 @@ html[dir="rtl"] .ac-t tr.late td:first-child{box-shadow:inset -4px 0 0 #B42318}
     </div>
   </section>
 
-  <section id="value" data-view="home" aria-labelledby="valT">
+  <!-- cia-certs:start --><section id="ctBand" data-view="home" aria-label="Certification finder"></section>
+  <!-- cia-certs:end --><section id="value" data-view="home" aria-labelledby="valT">
     <div class="wrap">
       <div class="sec-head rv"><div><span class="sec-k" id="valK"></span><h2 id="valT"></h2></div></div>
       <div class="vals rv" id="vals"></div>
@@ -1524,7 +1588,9 @@ html[dir="rtl"] .ac-t tr.late td:first-child{box-shadow:inset -4px 0 0 #B42318}
     </div>
   </section>
 
-  <section id="start" class="band" data-view="start" hidden>
+  <!-- cia-certs:start --><section id="certs" data-view="certs" hidden aria-labelledby="ctTitle"><div class="wrap"><div class="sec-head"><div><span class="sec-k" id="ctK"></span><h2 id="ctTitle"></h2><p id="ctSub"></p></div></div><div id="ctBody"></div></div></section>
+
+  <!-- cia-certs:end --><section id="start" class="band" data-view="start" hidden>
     <div class="wrap">
       <div class="sec-head"><div><h2 id="stTitle"></h2><p id="stSub"></p></div>
         <div class="st-acts"><button type="button" class="btn" id="tourBtn"></button><a class="btn primary" href="./modules/iso9001.html" data-mod="iso9001" data-modname="ISO 9001" id="stFirst"></a></div></div>
@@ -6418,12 +6484,13 @@ function orgView(v){
 /* cia-ui:start */
 /* ---------- the menu: every section in three groups, with an icon each (sections added later land in the last group) ---------- */
 const UI_GROUPS = {
-  ar:[["ابدأ", ["home","advisor","start"]], ["اعمل على منشأتك", ["dash","tools","guides","map","actions","systems"]], ["تعلّم وتواصل", ["learn","refs","faq","request","about"]]],
-  en:[["Start", ["home","advisor","start"]], ["Work on your organization", ["dash","tools","guides","map","actions","systems"]], ["Learn and contact", ["learn","refs","faq","request","about"]]]
+  ar:[["ابدأ", ["home","advisor","certs","start"]], ["اعمل على منشأتك", ["dash","tools","guides","map","actions","systems"]], ["تعلّم وتواصل", ["learn","refs","faq","request","about"]]],
+  en:[["Start", ["home","advisor","certs","start"]], ["Work on your organization", ["dash","tools","guides","map","actions","systems"]], ["Learn and contact", ["learn","refs","faq","request","about"]]]
 };
 const UI_ICONS = {
   home:'<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>',
   advisor:'<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>',
+  certs:'<circle cx="12" cy="9" r="6"/><path d="m9 14.5-1.5 7L12 19l4.5 2.5-1.5-7"/>',
   start:'<path d="M5 21V4h11l-2 4 2 4H5"/>',
   dash:'<path d="M4 19v-7M10 19V5M16 19v-5M3 21h18"/>',
   tools:'<rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/>',
@@ -6504,7 +6571,523 @@ showView = function(){ uiShowView0.apply(this, arguments); uiClipHome(); };
 document.addEventListener("click", e => { const a = e.target.closest('a[href^="#ref-"]'); if(a) uiOpenRef(a.getAttribute("href").slice(1)); }, true);
 addEventListener("hashchange", () => { if(location.hash.startsWith("#ref-")) uiOpenRef(location.hash.slice(1)); });
 let uiRz = 0; addEventListener("resize", () => { cancelAnimationFrame(uiRz); uiRz = requestAnimationFrame(uiClipHome); });
-/* cia-ui:end *//* cia-cloud:start */
+/* cia-ui:end *//* cia-certs:start */
+/* ===================== CERTIFICATION FINDER — the standards and the questionnaire =====================
+   kind: cert = management system certificate · scheme = sector certification scheme · accr = accreditation (not a certificate)
+         verify = third-party verification · guide = guidance standard (not certified on its own) · support = supporting standard
+   tool: the platform tool that covers it, when there is one (a key of URLS). */
+const CT_STDS = [
+  /* ---- management system certificates ---- */
+  {k:"iso9001", code:"ISO 9001", kind:"cert", tool:"iso9001", n:{ar:"نظام إدارة الجودة", en:"Quality management system"},
+   d:{ar:"الأساس لأي منشأة: عمليات واضحة، ورضا العملاء، وتحسين مستمر. ومعظم المناقصات والعملاء الكبار يطلبونها.", en:"The foundation for any organization: clear processes, customer satisfaction and continual improvement. Most tenders and large customers ask for it."}},
+  {k:"iso14001", code:"ISO 14001", kind:"cert", tool:"iso14001", n:{ar:"نظام الإدارة البيئية", en:"Environmental management system"},
+   d:{ar:"يضبط الأثر البيئي: الانبعاثات والنفايات والمواد الخطرة والالتزامات البيئية.", en:"Controls environmental impact: emissions, waste, hazardous materials and environmental obligations."}},
+  {k:"iso45001", code:"ISO 45001", kind:"cert", tool:"iso45001", n:{ar:"نظام إدارة السلامة والصحة المهنية", en:"Occupational health and safety management system"},
+   d:{ar:"يحمي العاملين: تحديد المخاطر، والضوابط، والحوادث، ومشاركة العاملين.", en:"Protects workers: hazard identification, controls, incidents and worker participation."}},
+  {k:"iso50001", code:"ISO 50001", kind:"cert", n:{ar:"نظام إدارة الطاقة", en:"Energy management system"},
+   d:{ar:"يخفض استهلاك الطاقة وتكلفتها بخط أساس ومؤشرات أداء طاقة قابلة للقياس.", en:"Cuts energy use and cost with a baseline and measurable energy performance indicators."}},
+  {k:"iso27001", code:"ISO/IEC 27001", kind:"cert", tool:"iso27001", n:{ar:"نظام إدارة أمن المعلومات", en:"Information security management system"},
+   d:{ar:"يحمي سرية المعلومات وسلامتها وتوافرها بتقييم المخاطر وضوابط الملحق A.", en:"Protects the confidentiality, integrity and availability of information through risk assessment and Annex A controls."}},
+  {k:"iso27701", code:"ISO/IEC 27701", kind:"cert", tool:"iso27701", n:{ar:"نظام إدارة معلومات الخصوصية", en:"Privacy information management system"},
+   d:{ar:"يدير البيانات الشخصية بما يدعم أنظمة حماية البيانات الشخصية.", en:"Manages personal data in a way that supports personal data protection laws."}},
+  {k:"iso20000", code:"ISO/IEC 20000-1", kind:"cert", n:{ar:"نظام إدارة خدمات تقنية المعلومات", en:"IT service management system"},
+   d:{ar:"لمقدمي خدمات التقنية: مستويات الخدمة، والحوادث، والتغيير، والقدرة.", en:"For IT service providers: service levels, incidents, change and capacity."}},
+  {k:"iso22301", code:"ISO 22301", kind:"cert", tool:"iso22301", n:{ar:"نظام إدارة استمرارية الأعمال", en:"Business continuity management system"},
+   d:{ar:"يُبقي الخدمات الحرجة تعمل عند الأزمات: تحليل الأثر، والخطط، والتمارين.", en:"Keeps critical services running in a crisis: impact analysis, plans and exercises."}},
+  {k:"iso37001", code:"ISO 37001", kind:"cert", tool:"iso37001", n:{ar:"نظام إدارة مكافحة الرشوة", en:"Anti-bribery management system"},
+   d:{ar:"يمنع الرشوة ويكشفها: العناية الواجبة، والهدايا، والوكلاء، والإبلاغ.", en:"Prevents and detects bribery: due diligence, gifts, agents and reporting."}},
+  {k:"iso37301", code:"ISO 37301", kind:"cert", tool:"iso37301", n:{ar:"نظام إدارة الامتثال", en:"Compliance management system"},
+   d:{ar:"يضبط الالتزامات النظامية والتعاقدية في سجل واحد بضوابط ورقابة.", en:"Keeps regulatory and contractual obligations in one register with controls and monitoring."}},
+  {k:"iso42001", code:"ISO/IEC 42001", kind:"cert", tool:"iso42001", n:{ar:"نظام إدارة الذكاء الاصطناعي", en:"Artificial intelligence management system"},
+   d:{ar:"حوكمة مسؤولة لأنظمة الذكاء الاصطناعي التي تطوّرها المنشأة أو تستخدمها.", en:"Responsible governance of the AI systems an organization builds or uses."}},
+  {k:"iso22000", code:"ISO 22000", kind:"cert", n:{ar:"نظام إدارة سلامة الغذاء", en:"Food safety management system"},
+   d:{ar:"لكل حلقات سلسلة الغذاء: تحليل المخاطر ونقاط التحكم الحرجة والبرامج الأساسية.", en:"For every link of the food chain: hazard analysis, critical control points and prerequisite programmes."}},
+  {k:"iso13485", code:"ISO 13485", kind:"cert", n:{ar:"نظام إدارة الجودة للأجهزة الطبية", en:"Quality management for medical devices"},
+   d:{ar:"المتطلب الأساسي عالمياً لمصنعي الأجهزة والمستلزمات الطبية وموزعيها.", en:"The core requirement worldwide for makers and distributors of medical devices."}},
+  {k:"iso22716", code:"ISO 22716", kind:"cert", n:{ar:"ممارسات التصنيع الجيدة لمستحضرات التجميل", en:"Good manufacturing practices for cosmetics"},
+   d:{ar:"ممارسات التصنيع الجيدة لمستحضرات التجميل، وتطلبها أسواق كثيرة.", en:"Good manufacturing practice for cosmetics, required by many markets."},
+   note:{ar:"مكتوبة بصيغة إرشادات، لكن جهات إشهاد كثيرة تمنح شهادة مطابقة لها.", en:"Written as guidelines, but many certification bodies certify against it."}},
+  {k:"iso15378", code:"ISO 15378", kind:"cert", n:{ar:"مواد التعبئة الأولية للمنتجات الدوائية", en:"Primary packaging materials for medicinal products"},
+   d:{ar:"متطلبات ISO 9001 مع ممارسات التصنيع الجيدة لمصنعي عبوات الأدوية.", en:"ISO 9001 requirements plus good manufacturing practice for makers of medicine packaging."}},
+  {k:"iso21001", code:"ISO 21001", kind:"cert", n:{ar:"نظام إدارة المؤسسات التعليمية", en:"Management systems for educational organizations"},
+   d:{ar:"للمدارس والجامعات ومراكز التعليم: رضا المتعلمين وجودة العملية التعليمية.", en:"For schools, universities and learning centres: learner satisfaction and quality of education."}},
+  {k:"iso29993", code:"ISO 29993", kind:"cert", n:{ar:"خدمات التعلّم خارج التعليم النظامي", en:"Learning services outside formal education"},
+   d:{ar:"لمراكز التدريب والدورات المهنية والتدريب المؤسسي.", en:"For training centres, professional courses and corporate training."}},
+  {k:"iso29001", code:"ISO 29001", kind:"cert", n:{ar:"إدارة الجودة لقطاع النفط والغاز والبتروكيماويات", en:"Quality management for petroleum, petrochemical and natural gas industries"},
+   d:{ar:"متطلبات جودة قطاعية لموردي النفط والغاز فوق ISO 9001.", en:"Sector quality requirements for oil and gas suppliers, on top of ISO 9001."}},
+  {k:"iso3834", code:"ISO 3834", kind:"cert", n:{ar:"متطلبات الجودة للحام بالانصهار", en:"Quality requirements for fusion welding"},
+   d:{ar:"لورش التصنيع المعدني واللحام: تأهيل اللحامين والإجراءات والفحص.", en:"For fabrication and welding shops: welder qualification, procedures and inspection."}},
+  {k:"iso39001", code:"ISO 39001", kind:"cert", n:{ar:"نظام إدارة السلامة المرورية", en:"Road traffic safety management system"},
+   d:{ar:"لمن يشغّل أسطول مركبات: تقليل الحوادث المرورية والوفيات والإصابات.", en:"For organizations running vehicle fleets: fewer road crashes, deaths and injuries."}},
+  {k:"iso41001", code:"ISO 41001", kind:"cert", n:{ar:"نظام إدارة المرافق", en:"Facility management system"},
+   d:{ar:"لإدارة المباني والمرافق وخدماتها بمستويات خدمة واضحة.", en:"For managing buildings, facilities and their services with clear service levels."}},
+  {k:"iso55001", code:"ISO 55001", kind:"cert", n:{ar:"نظام إدارة الأصول", en:"Asset management system"},
+   d:{ar:"لتعظيم قيمة الأصول المادية طوال عمرها: الصيانة، والمخاطر، والاستبدال.", en:"Gets the most value from physical assets over their life: maintenance, risk and renewal."}},
+  {k:"iso28000", code:"ISO 28000", kind:"cert", n:{ar:"نظام إدارة الأمن (سلاسل الإمداد)", en:"Security management system (supply chain)"},
+   d:{ar:"يؤمّن سلسلة الإمداد والشحن والتخزين من السرقة والتهريب والتعطيل.", en:"Secures the supply chain, shipping and storage against theft, smuggling and disruption."}},
+  {k:"iso18788", code:"ISO 18788", kind:"cert", n:{ar:"نظام إدارة عمليات الأمن الخاصة", en:"Management system for private security operations"},
+   d:{ar:"لشركات الحراسة والأمن: احترام حقوق الإنسان والسلامة والجودة.", en:"For guarding and security companies: human rights, safety and quality."}},
+  {k:"iso20121", code:"ISO 20121", kind:"cert", n:{ar:"نظام إدارة استدامة الفعاليات", en:"Event sustainability management system"},
+   d:{ar:"لتنظيم فعاليات ومعارض مستدامة بيئياً واجتماعياً واقتصادياً.", en:"For running events and exhibitions sustainably: environment, people and cost."}},
+  {k:"iso46001", code:"ISO 46001", kind:"cert", n:{ar:"نظام إدارة كفاءة استخدام المياه", en:"Water efficiency management system"},
+   d:{ar:"يقيس استهلاك المياه ويخفضه بأهداف ومؤشرات.", en:"Measures and reduces water use with targets and indicators."}},
+  {k:"iso7101", code:"ISO 7101", kind:"cert", n:{ar:"إدارة الجودة في مؤسسات الرعاية الصحية", en:"Quality management in healthcare organizations"},
+   d:{ar:"أول مواصفة إدارة دولية خاصة بجودة الرعاية الصحية وسلامة المرضى.", en:"The first international management standard dedicated to healthcare quality and patient safety."}},
+  {k:"iso30401", code:"ISO 30401", kind:"cert", n:{ar:"نظام إدارة المعرفة", en:"Knowledge management system"},
+   d:{ar:"يحفظ المعرفة ويشاركها حتى لا تضيع بخروج الخبراء.", en:"Keeps and shares knowledge so it does not leave with the experts."}},
+  {k:"iso56001", code:"ISO 56001", kind:"cert", n:{ar:"نظام إدارة الابتكار", en:"Innovation management system"},
+   d:{ar:"يحوّل الأفكار إلى قيمة بعملية ابتكار منظمة وقابلة للقياس.", en:"Turns ideas into value with a structured, measurable innovation process."}},
+  {k:"iso44001", code:"ISO 44001", kind:"cert", n:{ar:"نظام إدارة علاقات العمل التعاونية", en:"Collaborative business relationship management"},
+   d:{ar:"لإدارة الشراكات والتحالفات والعقود المشتركة الكبيرة.", en:"For managing partnerships, alliances and large joint contracts."}},
+  {k:"iso19650", code:"ISO 19650", kind:"cert", n:{ar:"إدارة المعلومات بنمذجة معلومات البناء (BIM)", en:"Information management using building information modelling (BIM)"},
+   d:{ar:"لإدارة معلومات المشاريع الإنشائية بنمذجة BIM عبر دورة حياة الأصل.", en:"For managing construction project information with BIM across the asset life cycle."},
+   note:{ar:"الشهادة تمنحها جهات إشهاد ضمن مخططاتها الخاصة بالمواصفة.", en:"Certificates are issued by certification bodies under their own schemes for the standard."}},
+  /* ---- sector certification schemes (built on ISO, run by industry bodies) ---- */
+  {k:"iatf16949", code:"IATF 16949", kind:"scheme", n:{ar:"إدارة الجودة لقطاع السيارات", en:"Automotive quality management"},
+   d:{ar:"يطلبها مصنعو السيارات من موردي قطع الإنتاج والخدمة، وتُبنى على ISO 9001.", en:"Required by car makers from production and service parts suppliers; built on ISO 9001."},
+   note:{ar:"مخطط تديره IATF، ولا تمنحه إلا جهات إشهاد معترف بها منها.", en:"A scheme run by IATF; only IATF-recognized certification bodies issue it."}},
+  {k:"as9100", code:"AS/EN 9100", kind:"scheme", n:{ar:"إدارة الجودة للطيران والفضاء والدفاع", en:"Quality management for aviation, space and defence"},
+   d:{ar:"لموردي قطع وخدمات الطيران والدفاع، وتُبنى على ISO 9001.", en:"For aviation and defence parts and service suppliers; built on ISO 9001."},
+   note:{ar:"مخطط المجموعة الدولية لجودة الطيران والفضاء (IAQG).", en:"A scheme of the International Aerospace Quality Group (IAQG)."}},
+  {k:"fssc22000", code:"FSSC 22000", kind:"scheme", n:{ar:"مخطط شهادة سلامة الغذاء", en:"Food safety certification scheme"},
+   d:{ar:"ISO 22000 مع البرامج الأساسية القطاعية، ومعترف به من مبادرة سلامة الغذاء العالمية GFSI.", en:"ISO 22000 plus sector prerequisite programmes, recognized by the Global Food Safety Initiative (GFSI)."},
+   note:{ar:"تطلبه سلاسل التجزئة الكبرى والمصدّرون عادةً بدل ISO 22000 وحدها.", en:"Large retailers and export markets usually ask for it instead of ISO 22000 alone."}},
+  {k:"haccp", code:"HACCP", kind:"scheme", n:{ar:"تحليل المخاطر ونقاط التحكم الحرجة", en:"Hazard analysis and critical control points"},
+   d:{ar:"نظام سلامة غذاء وفق مبادئ هيئة الدستور الغذائي (Codex)، وخطوة أولى مناسبة للمطاعم والمنشآت الصغيرة.", en:"Food safety system following Codex principles; a good first step for restaurants and small food businesses."}},
+  {k:"globalgap", code:"GLOBALG.A.P.", kind:"scheme", n:{ar:"الممارسات الزراعية الجيدة", en:"Good agricultural practice"},
+   d:{ar:"للمزارع ومنتجي الخضار والفاكهة والثروة الحيوانية، وتطلبها أسواق التصدير.", en:"For farms and producers of fruit, vegetables and livestock; asked for by export markets."}},
+  /* ---- third-party verification ---- */
+  {k:"iso14064", code:"ISO 14064-1", kind:"verify", n:{ar:"قياس انبعاثات غازات الاحتباس الحراري والتحقق منها", en:"Greenhouse gas inventory and verification"},
+   d:{ar:"جرد الانبعاثات والتحقق منه من طرف ثالث، ويطلبه العملاء الدوليون وتقارير الاستدامة.", en:"A greenhouse gas inventory verified by a third party, asked for by international customers and sustainability reporting."},
+   note:{ar:"تحقق (Verification) وليست شهادة نظام إدارة.", en:"A verification, not a management system certificate."}},
+  /* ---- accreditation (granted by the national accreditation body, not a certificate) ---- */
+  {k:"iso17025", code:"ISO/IEC 17025", kind:"accr", n:{ar:"كفاءة مختبرات الاختبار والمعايرة", en:"Competence of testing and calibration laboratories"},
+   d:{ar:"يثبت أن نتائج المختبر موثوقة وقابلة للمقارنة دولياً.", en:"Shows the laboratory's results are reliable and internationally comparable."}},
+  {k:"iso15189", code:"ISO 15189", kind:"accr", n:{ar:"المختبرات الطبية: الجودة والكفاءة", en:"Medical laboratories: quality and competence"},
+   d:{ar:"اعتماد مختبرات التحاليل الطبية في المستشفيات والمراكز.", en:"Accreditation for medical testing laboratories in hospitals and centres."}},
+  {k:"iso17020", code:"ISO/IEC 17020", kind:"accr", n:{ar:"جهات التفتيش", en:"Inspection bodies"},
+   d:{ar:"لجهات الفحص والتفتيش الفني على المعدات والمنشآت والمنتجات.", en:"For bodies that inspect equipment, installations and products."}},
+  /* ---- guidance and supporting standards ---- */
+  {k:"iso9004", code:"ISO 9004", kind:"guide", n:{ar:"إرشادات تحقيق النجاح المستدام", en:"Guidance to achieve sustained success"},
+   d:{ar:"الخطوة بعد ISO 9001: تقييم ذاتي للنضج وتوجيه نحو الأداء المتميز.", en:"The step after ISO 9001: a maturity self-assessment and guidance towards excellence."}},
+  {k:"iso19011", code:"ISO 19011", kind:"guide", tool:"aud", n:{ar:"إرشادات تدقيق أنظمة الإدارة", en:"Guidelines for auditing management systems"},
+   d:{ar:"كيف تخطط برنامج التدقيق الداخلي وتنفذه وتؤهل المدققين.", en:"How to plan and run the internal audit programme and qualify auditors."}},
+  {k:"iso31000", code:"ISO 31000", kind:"guide", tool:"iso31000", n:{ar:"إدارة المخاطر — إرشادات", en:"Risk management — guidelines"},
+   d:{ar:"إطار موحّد لإدارة المخاطر يخدم كل أنظمة الإدارة.", en:"One risk management framework that serves every management system."}},
+  {k:"iso10002", code:"ISO 10002", kind:"guide", n:{ar:"إرشادات معالجة الشكاوى", en:"Guidelines for complaints handling"},
+   d:{ar:"نظام عادل وسريع لاستقبال شكاوى العملاء ومعالجتها والتعلم منها.", en:"A fair, fast way to receive, handle and learn from customer complaints."}},
+  {k:"iso10004", code:"ISO 10004", kind:"guide", n:{ar:"إرشادات قياس رضا العملاء", en:"Guidelines for monitoring customer satisfaction"},
+   d:{ar:"كيف تقيس رضا العملاء وتحلله وتحوّله إلى تحسينات.", en:"How to measure and analyse customer satisfaction and turn it into improvements."}},
+  {k:"iso10015", code:"ISO 10015", kind:"guide", n:{ar:"إرشادات إدارة الكفاءات وتنمية الأفراد", en:"Guidelines for competence management and people development"},
+   d:{ar:"ربط التدريب وتنمية الكفاءات بأهداف المنشأة.", en:"Links training and competence development to the organization's goals."}},
+  {k:"iso26000", code:"ISO 26000", kind:"guide", n:{ar:"إرشادات المسؤولية المجتمعية", en:"Guidance on social responsibility"},
+   d:{ar:"إطار للمسؤولية المجتمعية والاستدامة يدعم السمعة والتصدير.", en:"A framework for social responsibility and sustainability that supports reputation and exports."}},
+  {k:"iso37000", code:"ISO 37000", kind:"guide", tool:"iso37000", n:{ar:"إرشادات حوكمة المنظمات", en:"Guidance for the governance of organizations"},
+   d:{ar:"مبادئ الحوكمة الرشيدة لمجلس الإدارة والإدارة العليا.", en:"Principles of good governance for the board and top management."}},
+  {k:"iso37002", code:"ISO 37002", kind:"guide", n:{ar:"إرشادات أنظمة الإبلاغ عن المخالفات", en:"Whistleblowing management systems — guidelines"},
+   d:{ar:"قناة آمنة للإبلاغ عن المخالفات وحماية المبلّغين.", en:"A safe channel to report wrongdoing and protect whistleblowers."}},
+  {k:"iso22313", code:"ISO 22313", kind:"guide", n:{ar:"إرشادات تطبيق استمرارية الأعمال", en:"Guidance on business continuity management systems"},
+   d:{ar:"دليل تطبيقي لمتطلبات ISO 22301.", en:"A practical guide to the ISO 22301 requirements."}},
+  {k:"iso27002", code:"ISO/IEC 27002", kind:"guide", n:{ar:"ضوابط أمن المعلومات", en:"Information security controls"},
+   d:{ar:"شرح تفصيلي لكل ضابط أمني وكيف يُطبّق.", en:"Detailed guidance on each security control and how to apply it."}},
+  {k:"iso27017", code:"ISO/IEC 27017", kind:"guide", n:{ar:"ضوابط أمن الخدمات السحابية", en:"Security controls for cloud services"},
+   d:{ar:"ضوابط إضافية لمقدمي الخدمات السحابية ومستخدميها، وتُدقق عادةً مع ISO/IEC 27001.", en:"Extra controls for cloud providers and customers, usually audited with ISO/IEC 27001."}},
+  {k:"iso42005", code:"ISO/IEC 42005", kind:"guide", tool:"iso42005", n:{ar:"تقييم أثر أنظمة الذكاء الاصطناعي", en:"AI system impact assessment"},
+   d:{ar:"كيف تقيّم أثر نظام الذكاء الاصطناعي على الأفراد والمجتمع قبل إطلاقه.", en:"How to assess an AI system's impact on people and society before release."}},
+  {k:"iso45003", code:"ISO 45003", kind:"guide", n:{ar:"إرشادات الصحة النفسية والسلامة في العمل", en:"Psychological health and safety at work"},
+   d:{ar:"إدارة المخاطر النفسية والاجتماعية: ضغط العمل والتنمر والإرهاق.", en:"Managing psychosocial risks: workload, bullying and burnout."}},
+  {k:"iso50004", code:"ISO 50004", kind:"guide", n:{ar:"إرشادات تطبيق نظام إدارة الطاقة", en:"Guidance for implementing an energy management system"},
+   d:{ar:"خطوات عملية لتطبيق ISO 50001 وصيانته وتحسينه.", en:"Practical steps to implement, maintain and improve ISO 50001."}},
+  {k:"iso14005", code:"ISO 14005", kind:"guide", n:{ar:"التطبيق المرحلي لنظام الإدارة البيئية", en:"Phased implementation of an environmental management system"},
+   d:{ar:"مناسبة للمنشآت الصغيرة والمتوسطة: تطبيق ISO 14001 على مراحل.", en:"Suited to small and medium organizations: implementing ISO 14001 in phases."}},
+  {k:"iso21502", code:"ISO 21502", kind:"guide", tool:"iso21500", n:{ar:"إرشادات إدارة المشاريع", en:"Guidance on project management"},
+   d:{ar:"ممارسات إدارة المشاريع من البدء إلى الإغلاق.", en:"Project management practice from start to close."}},
+  {k:"iso18091", code:"ISO 18091", kind:"guide", n:{ar:"تطبيق ISO 9001 في الحكومات المحلية", en:"Applying ISO 9001 in local government"},
+   d:{ar:"دليل الجهات الحكومية والبلديات لتطبيق إدارة الجودة على خدماتها.", en:"A guide for government bodies and municipalities to apply quality management to their services."}},
+  {k:"iso14971", code:"ISO 14971", kind:"support", n:{ar:"تطبيق إدارة المخاطر على الأجهزة الطبية", en:"Application of risk management to medical devices"},
+   d:{ar:"مواصفة داعمة لا غنى عنها مع ISO 13485 والتسجيل لدى الجهات الرقابية.", en:"An essential supporting standard alongside ISO 13485 and regulatory registration."}},
+  {k:"iso22002", code:"ISO/TS 22002-1", kind:"support", n:{ar:"البرامج الأساسية لسلامة الغذاء في التصنيع", en:"Prerequisite programmes on food safety — food manufacturing"},
+   d:{ar:"النظافة والصيانة ومكافحة الآفات وتصميم المصنع، وتُستخدم مع ISO 22000.", en:"Hygiene, maintenance, pest control and plant design, used with ISO 22000."}},
+  {k:"iso15489", code:"ISO 15489", kind:"guide", n:{ar:"إدارة الوثائق والسجلات", en:"Records management"},
+   d:{ar:"تنظيم الوثائق والسجلات وحفظها واسترجاعها والتخلص منها.", en:"Organizing, keeping, retrieving and disposing of documents and records."}},
+  {k:"iso20700", code:"ISO 20700", kind:"guide", n:{ar:"إرشادات خدمات الاستشارات الإدارية", en:"Guidelines for management consultancy services"},
+   d:{ar:"جودة الخدمة الاستشارية: نطاق واضح، ومخرجات، وأخلاقيات.", en:"Quality of consulting work: clear scope, deliverables and ethics."}},
+  {k:"iso22316", code:"ISO 22316", kind:"guide", n:{ar:"إرشادات المرونة المؤسسية", en:"Organizational resilience — guidelines"},
+   d:{ar:"صفات المنشأة القادرة على التكيّف مع التغيير والصدمات.", en:"The attributes of an organization that adapts to change and shocks."}},
+  {k:"iso30414", code:"ISO 30414", kind:"guide", n:{ar:"إرشادات تقارير رأس المال البشري", en:"Human capital reporting guidelines"},
+   d:{ar:"مؤشرات قياسية للإفصاح عن رأس المال البشري.", en:"Standard metrics for reporting on human capital."}}
+];
+
+/* sectors: the code is also used by the questions below */
+const CT_SECTORS = [
+  ["man",{ar:"التصنيع العام",en:"General manufacturing"}], ["food",{ar:"الأغذية والمشروبات",en:"Food and beverages"}],
+  ["agri",{ar:"الزراعة والثروة الحيوانية",en:"Agriculture and livestock"}], ["chem",{ar:"الكيماويات والبلاستيك",en:"Chemicals and plastics"}],
+  ["auto",{ar:"السيارات وقطع الغيار",en:"Automotive and parts"}], ["aero",{ar:"الطيران والدفاع",en:"Aviation and defence"}],
+  ["med",{ar:"الأجهزة والمستلزمات الطبية",en:"Medical devices and supplies"}], ["pharma",{ar:"الأدوية ومستحضرات التجميل",en:"Pharmaceuticals and cosmetics"}],
+  ["hlth",{ar:"المستشفيات والرعاية الصحية",en:"Hospitals and healthcare"}], ["lab",{ar:"المختبرات والفحص والمعايرة",en:"Laboratories, testing and inspection"}],
+  ["con",{ar:"المقاولات والإنشاءات",en:"Construction and contracting"}], ["eng",{ar:"الاستشارات الهندسية والتصميم",en:"Engineering consultancy and design"}],
+  ["og",{ar:"النفط والغاز والبتروكيماويات",en:"Oil, gas and petrochemicals"}], ["ene",{ar:"الطاقة والمرافق والمياه",en:"Energy, utilities and water"}],
+  ["mine",{ar:"التعدين والمحاجر",en:"Mining and quarrying"}], ["env",{ar:"إدارة النفايات والخدمات البيئية",en:"Waste management and environmental services"}],
+  ["log",{ar:"النقل والخدمات اللوجستية",en:"Transport and logistics"}], ["it",{ar:"تقنية المعلومات والاتصالات",en:"IT and telecom"}],
+  ["fin",{ar:"البنوك والتمويل والتأمين",en:"Banking, finance and insurance"}], ["gov",{ar:"الجهات الحكومية والبلديات",en:"Government and municipalities"}],
+  ["edu",{ar:"التعليم (مدارس وجامعات)",en:"Education (schools and universities)"}], ["trn",{ar:"التدريب والاستشارات الإدارية",en:"Training and management consulting"}],
+  ["hosp",{ar:"الفنادق والمطاعم والسياحة",en:"Hotels, restaurants and tourism"}], ["evt",{ar:"تنظيم الفعاليات والمعارض",en:"Events and exhibitions"}],
+  ["retail",{ar:"التجارة والتجزئة والتجارة الإلكترونية",en:"Trade, retail and e-commerce"}], ["fm",{ar:"إدارة المرافق والعقارات",en:"Facility management and real estate"}],
+  ["sec",{ar:"الأمن والحراسة",en:"Security services"}], ["ot",{ar:"قطاع آخر",en:"Another sector"}]
+];
+
+/* points each sector gives each standard */
+const CT_SECTOR_PTS = {
+  man:{iso14001:3,iso45001:3,iso50001:2,iso3834:1,iso55001:1,iso14064:1.5,iso9004:.5,iso31000:.5},
+  food:{iso22000:3,fssc22000:3,haccp:2.5,iso14001:2,iso45001:2,iso50001:1.5,iso46001:1.5,iso22002:3,iso10002:1},
+  agri:{globalgap:3,iso22000:2,haccp:1.5,iso14001:2,iso45001:2,iso46001:2},
+  chem:{iso14001:3,iso45001:3,iso50001:2.5,iso14064:2,iso55001:1,iso28000:1},
+  auto:{iatf16949:2,iso14001:2,iso45001:2,iso50001:1.5},
+  aero:{as9100:3,iso14001:2,iso45001:2,iso27001:1.5},
+  med:{iso13485:3,iso14971:3,iso14001:1.5,iso45001:1.5,iso37001:1.5,iso37301:1.5},
+  pharma:{iso22716:2,iso15378:1.5,iso14001:2,iso45001:2,iso37301:2,iso37001:1.5},
+  hlth:{iso7101:4.5,iso45001:2,iso27001:2,iso27701:2.5,iso22301:2,iso14001:1.5,iso41001:1,iso10002:2,iso15489:1,iso45003:1},
+  lab:{iso17025:3,iso17020:1.5,iso45001:1.5,iso27001:1},
+  con:{iso45001:3,iso14001:3,iso37001:2.5,iso19650:2.5,iso55001:1,iso44001:1.5,iso39001:1.5,iso3834:1.5,iso21502:2,iso31000:1},
+  eng:{iso19650:3,iso37001:2,iso45001:1.5,iso14001:1.5,iso27001:1,iso30401:1.5,iso44001:1,iso21502:2},
+  og:{iso29001:3,iso45001:3,iso14001:3,iso50001:2,iso55001:2,iso37001:2.5,iso37301:1.5,iso14064:2,iso22301:1.5,iso39001:1.5,iso44001:1.5,iso3834:1.5,iso31000:1},
+  ene:{iso50001:3,iso55001:3,iso14001:3,iso45001:3,iso22301:2,iso14064:2,iso46001:1.5,iso37001:1.5,iso37301:1.5,iso31000:1},
+  mine:{iso45001:3,iso14001:3,iso50001:2,iso55001:2,iso14064:1.5,iso37001:2,iso46001:1.5},
+  env:{iso14001:3,iso45001:3,iso39001:2,iso14064:1.5,iso55001:1},
+  log:{iso39001:3,iso28000:3,iso45001:2.5,iso14001:2,iso22301:2,iso14064:1.5,iso37001:1.5,iso55001:1.5,iso31000:1},
+  it:{iso27001:3,iso20000:3,iso22301:2.5,iso27701:2,iso42001:1,iso50001:1,iso27002:1,iso27017:1.5,iso56001:1.5,iso30401:1,iso45003:1},
+  fin:{iso27001:3,iso22301:3,iso37301:3,iso37001:2,iso27701:2,iso20000:1,iso31000:2,iso37000:1.5,iso37002:1,iso10002:1.5,iso15489:1,iso30414:1,iso45003:1},
+  gov:{iso37001:2.5,iso37301:2,iso27001:2,iso22301:2,iso27701:1.5,iso14001:1.5,iso45001:1,iso41001:1,iso55001:1.5,iso18091:3,iso37000:1.5,iso15489:1.5,iso10002:1.5,iso30401:1},
+  edu:{iso21001:3,iso27701:1.5,iso27001:1.5,iso45001:1,iso41001:1,iso10002:1.5,iso10015:1.5},
+  trn:{iso29993:3,iso21001:1.5,iso30401:1.5,iso27001:1,iso10015:2,iso20700:2,iso56001:1},
+  hosp:{iso22000:2.5,haccp:2.5,iso14001:1.5,iso45001:1.5,iso50001:1.5,iso46001:1.5,iso41001:1.5,iso20121:1,iso10002:2.5,iso10004:1.5},
+  evt:{iso20121:3,iso45001:1.5,iso14001:1,iso22301:1,iso10002:1},
+  retail:{iso27001:1.5,iso27701:1.5,iso14001:1,iso28000:1,iso22301:1,iso10002:2.5,iso10004:2},
+  fm:{iso41001:3,iso55001:2,iso45001:2.5,iso14001:2,iso50001:2,iso46001:1.5},
+  sec:{iso18788:3,iso28000:1.5,iso45001:2.5,iso37001:1},
+  ot:{}
+};
+
+/* the questions: q = id, t = single | multi; each option's pts are added to the standards' scores */
+const CT_QS = [
+  {q:"sector", t:"single", grp:"org", grid:1, l:{ar:"ما مجال عمل منشأتك؟", en:"What is your organization's field of work?"}, h:{ar:"اختر الأقرب إلى نشاطك الرئيسي.", en:"Choose the closest to your main activity."}, opts:CT_SECTORS.map(([v,l])=>({v,l}))},
+  {q:"size", t:"single", grp:"org", l:{ar:"كم عدد العاملين في منشأتك؟", en:"How many people work in your organization?"}, opts:[
+    {v:"xs",l:{ar:"1 – 9",en:"1 – 9"}}, {v:"s",l:{ar:"10 – 49",en:"10 – 49"}}, {v:"m",l:{ar:"50 – 249",en:"50 – 249"}}, {v:"l",l:{ar:"250 – 999",en:"250 – 999"}}, {v:"xl",l:{ar:"1000 فأكثر",en:"1,000 or more"}}]},
+  {q:"held", t:"multi", grp:"org", none:"none", l:{ar:"ما الشهادات الحاصلة عليها منشأتك الآن؟", en:"Which certificates does your organization hold now?"}, h:{ar:"لن نرشّح ما لديك، وسنبني عليه.", en:"We will not recommend what you already have; we will build on it."}, opts:[
+    {v:"iso9001",l:{ar:"ISO 9001",en:"ISO 9001"}}, {v:"iso14001",l:{ar:"ISO 14001",en:"ISO 14001"}}, {v:"iso45001",l:{ar:"ISO 45001",en:"ISO 45001"}}, {v:"iso27001",l:{ar:"ISO/IEC 27001",en:"ISO/IEC 27001"}},
+    {v:"iso22000",l:{ar:"ISO 22000 / FSSC 22000",en:"ISO 22000 / FSSC 22000"}}, {v:"iso13485",l:{ar:"ISO 13485",en:"ISO 13485"}}, {v:"iatf16949",l:{ar:"IATF 16949",en:"IATF 16949"}},
+    {v:"iso50001",l:{ar:"ISO 50001",en:"ISO 50001"}}, {v:"iso22301",l:{ar:"ISO 22301",en:"ISO 22301"}}, {v:"none",l:{ar:"لا توجد شهادات بعد",en:"No certificates yet"}}]},
+  {q:"cust", t:"multi", grp:"biz", none:"none", l:{ar:"من أهم عملائك؟", en:"Who are your main customers?"}, h:{ar:"اختر كل ما ينطبق.", en:"Choose all that apply."}, opts:[
+    {v:"gov",l:{ar:"جهات حكومية ومناقصات",en:"Government and tenders"},pts:{iso45001:1,iso14001:1,iso37001:1.5,iso27001:.5,iso37301:.5}},
+    {v:"corp",l:{ar:"شركات كبرى وسلاسل إمداد",en:"Large companies and supply chains"},pts:{iso14001:1,iso45001:1,iso27001:1,iso37001:.5,iso14064:.5,iso22301:.5}},
+    {v:"intl",l:{ar:"عملاء دوليون وتصدير",en:"International customers and export"},pts:{iso14001:1.5,iso14064:2,iso26000:2,iso50001:.5,iso37001:1,iso27001:.5}},
+    {v:"cons",l:{ar:"مستهلكون أفراد",en:"Individual consumers"},pts:{iso10002:2.5,iso10004:2,iso27701:1}},
+    {v:"none",l:{ar:"خليط أو غير محدد",en:"A mix or not sure"}}]},
+  {q:"goal", t:"single", grp:"biz", l:{ar:"ما الهدف الأول من الشهادة؟", en:"What is the main goal of certification?"}, opts:[
+    {v:"tender",l:{ar:"التأهل للمناقصات",en:"Qualifying for tenders"},pts:{iso45001:1,iso14001:1,iso37001:1}},
+    {v:"cust",l:{ar:"طلب من عميل محدد",en:"A specific customer asked"},pts:{}},
+    {v:"export",l:{ar:"التصدير والأسواق الدولية",en:"Export and international markets"},pts:{iso14001:1,iso14064:1.5,iso26000:1.5}},
+    {v:"perf",l:{ar:"تحسين الأداء وخفض التكاليف",en:"Better performance and lower costs"},pts:{iso50001:1.5,iso55001:1,iso9004:1.5,iso31000:1,iso56001:1}},
+    {v:"rep",l:{ar:"السمعة والثقة",en:"Reputation and trust"},pts:{iso14001:1,iso26000:1.5,iso10002:1,iso37001:.5}},
+    {v:"reg",l:{ar:"متطلب نظامي أو رقابي",en:"A legal or regulatory requirement"},pts:{iso37301:1.5,iso27701:.5}}]},
+  {q:"prod", t:"multi", grp:"biz", none:"none", l:{ar:"هل يشمل عملك أياً مما يلي؟", en:"Does your work include any of the following?"}, h:{ar:"هذه الأنشطة لها شهادات أو اعتمادات خاصة بها.", en:"These activities have certificates or accreditations of their own."}, opts:[
+    {v:"food",l:{ar:"أغذية أو مواد ملامسة للغذاء",en:"Food or food-contact materials"},pts:{iso22000:4.5,fssc22000:3.5,haccp:2,iso22002:1.5}},
+    {v:"med",l:{ar:"أجهزة أو مستلزمات طبية",en:"Medical devices or supplies"},pts:{iso13485:4,iso14971:3}},
+    {v:"cos",l:{ar:"مستحضرات تجميل",en:"Cosmetics"},pts:{iso22716:4}},
+    {v:"pack",l:{ar:"عبوات أولية للأدوية",en:"Primary packaging for medicines"},pts:{iso15378:4}},
+    {v:"auto",l:{ar:"قطع أو خدمات لمصنعي السيارات",en:"Parts or services for car makers"},pts:{iatf16949:6}},
+    {v:"aero",l:{ar:"قطع أو خدمات للطيران أو الدفاع",en:"Parts or services for aviation or defence"},pts:{as9100:4}},
+    {v:"weld",l:{ar:"لحام وتصنيع معدني",en:"Welding and metal fabrication"},pts:{iso3834:4}},
+    {v:"sw",l:{ar:"برمجيات أو خدمات تقنية أو سحابية",en:"Software, IT or cloud services"},pts:{iso27001:2,iso20000:2.5,iso27017:2,iso22301:1}},
+    {v:"lab",l:{ar:"اختبار أو معايرة في مختبر",en:"Laboratory testing or calibration"},pts:{iso17025:4}},
+    {v:"mlab",l:{ar:"تحاليل طبية",en:"Medical laboratory testing"},pts:{iso15189:4}},
+    {v:"insp",l:{ar:"فحص وتفتيش فني",en:"Technical inspection"},pts:{iso17020:4}},
+    {v:"learn",l:{ar:"تعليم أو تدريب",en:"Education or training"},pts:{iso29993:2.5,iso21001:2,iso10015:1}},
+    {v:"evt",l:{ar:"تنظيم فعاليات",en:"Organizing events"},pts:{iso20121:3}},
+    {v:"guard",l:{ar:"حراسة وخدمات أمنية",en:"Guarding and security services"},pts:{iso18788:4}},
+    {v:"bim",l:{ar:"تصميم أو تنفيذ بنمذجة BIM",en:"Design or construction with BIM"},pts:{iso19650:3}},
+    {v:"none",l:{ar:"لا شيء مما سبق",en:"None of these"}}]},
+  {q:"data", t:"single", grp:"risk", l:{ar:"إلى أي حد تتعامل مع بيانات حساسة أو شخصية؟", en:"How much sensitive or personal data do you handle?"}, opts:[
+    {v:"high",l:{ar:"كثيراً (بيانات عملاء أو مرضى أو مالية)",en:"A lot (customer, patient or financial data)"},pts:{iso27001:3,iso27701:3,iso27002:2.5}},
+    {v:"some",l:{ar:"بقدر متوسط",en:"A moderate amount"},pts:{iso27001:1.5,iso27701:1,iso27002:1}},
+    {v:"low",l:{ar:"قليلاً",en:"Little"},pts:{}}]},
+  {q:"ai", t:"single", grp:"risk", l:{ar:"ما علاقة منشأتك بالذكاء الاصطناعي؟", en:"How does your organization relate to artificial intelligence?"}, opts:[
+    {v:"dev",l:{ar:"نطوّر أنظمة ذكاء اصطناعي أو نقدّمها للعملاء",en:"We build AI systems or provide them to customers"},pts:{iso42001:4,iso42005:3}},
+    {v:"use",l:{ar:"نستخدمه في قرارات أو خدمات مهمة",en:"We use it in important decisions or services"},pts:{iso42001:2,iso42005:2}},
+    {v:"no",l:{ar:"لا نستخدمه أو استخدامه محدود",en:"We do not use it, or only a little"},pts:{}}]},
+  {q:"ohs", t:"single", grp:"risk", l:{ar:"ما مستوى مخاطر السلامة على العاملين؟", en:"How high are the safety risks for your workers?"}, h:{ar:"مثل العمل الميداني والمعدات الثقيلة والمواد الكيميائية والمرتفعات.", en:"Such as field work, heavy equipment, chemicals and work at height."}, opts:[
+    {v:"high",l:{ar:"عالية",en:"High"},pts:{iso45001:3,iso45003:.5}}, {v:"med",l:{ar:"متوسطة",en:"Medium"},pts:{iso45001:1.5,iso45003:1}}, {v:"low",l:{ar:"منخفضة (عمل مكتبي غالباً)",en:"Low (mostly office work)"},pts:{iso45003:1}}]},
+  {q:"env", t:"single", grp:"risk", l:{ar:"ما حجم أثركم البيئي؟", en:"How large is your environmental impact?"}, h:{ar:"انبعاثات، ونفايات، ومواد خطرة، وصرف.", en:"Emissions, waste, hazardous materials and discharges."}, opts:[
+    {v:"high",l:{ar:"كبير",en:"Large"},pts:{iso14001:3,iso14064:1}}, {v:"med",l:{ar:"متوسط",en:"Medium"},pts:{iso14001:1.5,iso14005:1}}, {v:"low",l:{ar:"محدود",en:"Limited"},pts:{}}]},
+  {q:"energy", t:"single", grp:"risk", l:{ar:"هل الطاقة بند كبير من تكاليفكم؟", en:"Is energy a large part of your costs?"}, opts:[
+    {v:"high",l:{ar:"نعم، تشغيلنا كثيف الاستهلاك",en:"Yes, our operations use a lot of energy"},pts:{iso50001:3.5,iso50004:2.5,iso14064:.5}},
+    {v:"med",l:{ar:"بقدر متوسط",en:"A moderate part"},pts:{iso50001:1.5,iso50004:1}}, {v:"low",l:{ar:"لا",en:"No"},pts:{}}]},
+  {q:"bc", t:"single", grp:"risk", l:{ar:"ماذا يحدث لو توقفت خدماتكم يوماً واحداً؟", en:"What happens if your services stop for one day?"}, opts:[
+    {v:"high",l:{ar:"خسائر كبيرة أو مخالفة عقود ومستويات خدمة",en:"Large losses or breached contracts and service levels"},pts:{iso22301:3,iso22313:2,iso22316:1}},
+    {v:"med",l:{ar:"إزعاج يمكن تداركه",en:"Disruption we can recover from"},pts:{iso22301:1,iso22316:.5}},
+    {v:"low",l:{ar:"أثر بسيط",en:"Little effect"},pts:{}}]},
+  {q:"comp", t:"single", grp:"risk", l:{ar:"ما مستوى مخاطر الرشوة والامتثال لديكم؟", en:"How high are your bribery and compliance risks?"}, h:{ar:"مثل عقود حكومية، ووكلاء ووسطاء، وتراخيص، والعمل في أكثر من دولة.", en:"Such as government contracts, agents and intermediaries, licences, and work in several countries."}, opts:[
+    {v:"high",l:{ar:"عالية",en:"High"},pts:{iso37001:3,iso37301:2.5,iso37002:2.5,iso31000:1}}, {v:"med",l:{ar:"متوسطة",en:"Medium"},pts:{iso37001:1.5,iso37301:1,iso37002:1}}, {v:"low",l:{ar:"منخفضة",en:"Low"},pts:{}}]},
+  {q:"assets", t:"multi", grp:"risk", none:"none", l:{ar:"هل لديكم أي مما يلي؟", en:"Do you have any of the following?"}, opts:[
+    {v:"plant",l:{ar:"أصول مادية كبيرة (مصانع، شبكات، معدات)",en:"Large physical assets (plants, networks, equipment)"},pts:{iso55001:3}},
+    {v:"fm",l:{ar:"نقدّم خدمات إدارة مرافق أو مبانٍ",en:"We provide facility or building management"},pts:{iso41001:3}},
+    {v:"fleet",l:{ar:"أسطول مركبات على الطرق",en:"A vehicle fleet on public roads"},pts:{iso39001:3}},
+    {v:"supply",l:{ar:"تخزين وشحن وسلاسل إمداد",en:"Storage, shipping and supply chains"},pts:{iso28000:2.5}},
+    {v:"water",l:{ar:"استهلاك كبير للمياه",en:"High water use"},pts:{iso46001:3}},
+    {v:"partner",l:{ar:"شراكات وتحالفات وعقود مشتركة كبيرة",en:"Large partnerships, alliances or joint contracts"},pts:{iso44001:3}},
+    {v:"none",l:{ar:"لا شيء مما سبق",en:"None of these"}}]},
+  {q:"mat", t:"single", grp:"ready", l:{ar:"أين أنتم اليوم من أنظمة الإدارة؟", en:"Where are you today with management systems?"}, opts:[
+    {v:"none",l:{ar:"نبدأ من الصفر",en:"Starting from scratch"},pts:{iso19011:.5}},
+    {v:"part",l:{ar:"لدينا إجراءات وممارسات جزئية",en:"We have some procedures and practices"},pts:{iso19011:1}},
+    {v:"mature",l:{ar:"نظام موثّق ومطبّق ونريد التوسع",en:"A documented, working system we want to extend"},pts:{iso9004:3,iso19011:1.5,iso30401:1,iso56001:1}}]}
+];
+
+const CT_GROUPS = {org:{ar:"عن منشأتك",en:"About your organization"}, biz:{ar:"عملاؤك وأعمالك",en:"Your customers and work"}, risk:{ar:"المخاطر والتأثيرات",en:"Risks and impacts"}, ready:{ar:"الجاهزية",en:"Readiness"}};
+
+/* a standard is only suggested when its activity is present (otherwise sector points alone could suggest, e.g., IATF to a garage) */
+const CT_NEED = {
+  iatf16949:A=>A.prod.includes("auto"), as9100:A=>A.prod.includes("aero")||A.sector==="aero", iso13485:A=>A.prod.includes("med")||A.sector==="med",
+  iso14971:A=>A.prod.includes("med")||A.sector==="med", iso22716:A=>A.prod.includes("cos"), iso15378:A=>A.prod.includes("pack"),
+  iso17025:A=>A.prod.includes("lab")||A.sector==="lab", iso15189:A=>A.prod.includes("mlab"), iso17020:A=>A.prod.includes("insp"),
+  iso29001:A=>A.sector==="og", iso3834:A=>A.prod.includes("weld"), iso18788:A=>A.prod.includes("guard")||A.sector==="sec",
+  iso20121:A=>A.prod.includes("evt")||A.sector==="evt", iso21001:A=>A.sector==="edu"||(A.prod.includes("learn")&&A.sector!=="trn"),
+  iso29993:A=>A.prod.includes("learn")||A.sector==="trn", globalgap:A=>A.sector==="agri",
+  fssc22000:A=>A.prod.includes("food")&&["food","chem","man","agri"].includes(A.sector), haccp:A=>A.prod.includes("food")||["food","hosp","agri"].includes(A.sector),
+  iso22000:A=>A.prod.includes("food")||["food","hosp","agri"].includes(A.sector), iso22002:A=>A.prod.includes("food")&&["food","man","chem"].includes(A.sector),
+  iso19650:A=>A.prod.includes("bim")||["con","eng"].includes(A.sector), iso42001:A=>A.ai!=="no", iso42005:A=>A.ai!=="no",
+  iso20000:A=>A.prod.includes("sw")||A.sector==="it", iso27017:A=>A.prod.includes("sw")||A.sector==="it", iso7101:A=>A.sector==="hlth",
+  iso18091:A=>A.sector==="gov", iso20700:A=>A.sector==="trn"
+};
+/* size: small organizations get fewer heavy systems; large ones get governance and continuity higher */
+const CT_SIZE_PTS = {
+  xs:{iso14001:-.5,iso45001:-.5,iso37301:-1.5,iso30401:-1.5,iso56001:-1.5,iso44001:-1.5,iso55001:-1,iso22301:-.5,iso37000:-1.5,iso30414:-2,iso14005:1},
+  s:{iso37301:-.5,iso30401:-1,iso56001:-.5,iso44001:-1,iso37000:-1,iso30414:-1.5,iso14005:1},
+  m:{}, l:{iso37301:.5,iso22301:.5,iso37000:.5,iso10015:.5,iso45003:.5},
+  xl:{iso37301:1,iso22301:1,iso37001:.5,iso55001:.5,iso30401:.5,iso37000:2,iso26000:1,iso30414:1.5,iso10015:1,iso45003:1}
+};
+/* ===================== CERTIFICATION FINDER — questionnaire, scoring and results (view #certs) =====================
+   Uses the hub's helpers ($, esc, L, route, toast, rqOpen, rqData, RQ_FORMS, renderRequest, URLS). Answers stay in this
+   browser (cia-certs:v1) and follow the account when cloud save is on. */
+const CT_KEY = "cia-certs:v1";
+const CT_T = {
+  ar:{k:"مرشد الشهادات", t:"ما شهادات الأيزو التي تناسب منشأتك؟", s:"أجب عن 15 سؤالاً عن مجالك وحجمك وأعمالك، فنرشّح لك الشهادات المناسبة، ومواصفات إرشادية تدعمها، وخارطة طريق للبدء.",
+    introT:"اعرف شهاداتك في 3 دقائق", intro:["يشمل أكثر من 40 شهادة واعتماداً، منها ما ليس في المنصة: الطاقة والتعليم والسيارات والغذاء والأجهزة الطبية وغيرها.","يرشّح ISO 9001 أساساً، ومعها مواصفات إرشادية للتدعيم.","يحفظ إجاباتك في هذا المتصفح، ويمكنك تعديلها في أي وقت."],
+    start:"ابدأ الاستبيان", resume:"أكمل من حيث توقفت", restart:"ابدأ من جديد", back:"السابق", next:"التالي", show:"اعرض الترشيحات", of:(i,n)=>`${i} / ${n}`, multi:"اختر كل ما ينطبق",
+    resT:"الشهادات المرشحة لمنشأتك", base:"الأساس", baseHave:"لديكم ISO 9001", baseHaveP:"ابنوا عليها: ادمجوها مع الأنظمة التالية في نظام متكامل واحد بدل أنظمة منفصلة.",
+    certs:"شهادات نرشّحها لكم", later:"قد تهمكم لاحقاً", accr:"اعتمادات (Accreditation)", accrP:"تمنحها هيئة الاعتماد الوطنية، وليست شهادة من جهة إشهاد.",
+    guides:"مواصفات إرشادية للتدعيم", guidesP:"لا تُمنح عليها شهادة وحدها، لكنها ترفع جودة التطبيق وتسهّل التدقيق.", have:"لديكم",
+    why:"لماذا؟", high:"أولوية عالية", rec:"مرشّحة", fit:"الملاءمة", inPlat:"افتح الأداة في المنصة", outPlat:"خارج المنصة حالياً: يمكننا مساعدتك فيها",
+    kind:{cert:"شهادة نظام إدارة",scheme:"مخطط إشهاد قطاعي",verify:"تحقق من طرف ثالث",accr:"اعتماد",guide:"مواصفة إرشادية",support:"مواصفة داعمة"},
+    road:"خارطة طريق مقترحة", p1:"التأسيس", p2:"التكامل والتوسّع", p3:"التدعيم والتميّز", est:"مدد تقديرية، وتختلف بحسب جاهزيتكم وعدد المواقع.",
+    ims:"ادمج هذه الأنظمة في نظام متكامل واحد (IMS) لتوفير الوقت والتكلفة.", imsGo:"منشئ النظام المتكامل",
+    dur:{xs:["3–4 أشهر","3–6 أشهر"],s:["3–5 أشهر","4–6 أشهر"],m:["4–6 أشهر","5–8 أشهر"],l:["6–9 أشهر","6–10 أشهر"],xl:["8–12 شهراً","8–12 شهراً"]}, year2:"السنة الثانية",
+    acts:{print:"طباعة / PDF", copy:"نسخ الملخص", rq:"اطلب استشارة لهذه الشهادات", edit:"عدّل إجاباتك", again:"ابدأ من جديد"},
+    copied:"تم نسخ الملخص", disc:"ترشيحات إرشادية مبنية على إجاباتك، وليست قراراً نهائياً. تأكد من متطلبات عميلك أو المناقصة، واختر جهة إشهاد معتمدة من هيئة الاعتماد في بلدك.",
+    sumH:"ملخص ترشيحات الشهادات — أكاديمية التحسين المستمر", rqMsg:"نتيجة مرشد الشهادات:", none:"لا شيء", reset:"هل تريد مسح الإجابات والبدء من جديد؟",
+    band:"تحتاج شهادة أيزو؟", bandP:"اعرف أي الشهادات تناسب منشأتك في 15 سؤالاً، مع خارطة طريق للبدء.", bandGo:"ابدأ مرشد الشهادات",
+    qs:{sector:"المجال",size:"الحجم",cust:"العملاء",goal:"الهدف",prod:"النشاط",data:"البيانات",ai:"الذكاء الاصطناعي",ohs:"السلامة",env:"البيئة",energy:"الطاقة",bc:"الاستمرارية",comp:"الامتثال",assets:"الأصول",mat:"الجاهزية",held:"شهاداتكم"}},
+  en:{k:"Certification finder", t:"Which ISO certificates fit your organization?", s:"Answer 15 questions about your field, size and work, and get the certificates that fit, guidance standards that support them, and a roadmap to start.",
+    introT:"Find your certificates in 3 minutes", intro:["Covers more than 40 certificates and accreditations, including ones not on the platform: energy, education, automotive, food, medical devices and more.","Always proposes ISO 9001 as the base, with guidance standards to support it.","Keeps your answers in this browser; you can change them at any time."],
+    start:"Start the questionnaire", resume:"Continue where you stopped", restart:"Start again", back:"Back", next:"Next", show:"Show the recommendations", of:(i,n)=>`${i} / ${n}`, multi:"Choose all that apply",
+    resT:"Certificates recommended for your organization", base:"The base", baseHave:"You hold ISO 9001", baseHaveP:"Build on it: integrate it with the next systems into one integrated system instead of separate ones.",
+    certs:"Certificates we recommend", later:"Worth a look later", accr:"Accreditations", accrP:"Granted by the national accreditation body, not a certificate from a certification body.",
+    guides:"Supporting guidance standards", guidesP:"Not certified on their own, but they raise the quality of implementation and make audits easier.", have:"You hold",
+    why:"Why?", high:"High priority", rec:"Recommended", fit:"Fit", inPlat:"Open the tool on the platform", outPlat:"Not on the platform yet: we can help you with it",
+    kind:{cert:"Management system certificate",scheme:"Sector certification scheme",verify:"Third-party verification",accr:"Accreditation",guide:"Guidance standard",support:"Supporting standard"},
+    road:"Suggested roadmap", p1:"Foundation", p2:"Integrate and extend", p3:"Strengthen and excel", est:"Estimated durations; they vary with your readiness and number of sites.",
+    ims:"Integrate these systems into one integrated management system (IMS) to save time and cost.", imsGo:"IMS Builder",
+    dur:{xs:["3–4 months","3–6 months"],s:["3–5 months","4–6 months"],m:["4–6 months","5–8 months"],l:["6–9 months","6–10 months"],xl:["8–12 months","8–12 months"]}, year2:"Second year",
+    acts:{print:"Print / PDF", copy:"Copy the summary", rq:"Request a consultation for these", edit:"Change my answers", again:"Start again"},
+    copied:"Summary copied", disc:"Guidance recommendations based on your answers, not a final decision. Check your customer's or tender's requirements, and choose a certification body accredited by your country's accreditation body.",
+    sumH:"Certification recommendations — Continual Improvement Academy", rqMsg:"Certification finder result:", none:"None", reset:"Clear your answers and start again?",
+    band:"Need an ISO certificate?", bandP:"Find which certificates fit your organization in 15 questions, with a roadmap to start.", bandGo:"Start the certification finder",
+    qs:{sector:"Field",size:"Size",cust:"Customers",goal:"Goal",prod:"Activity",data:"Data",ai:"AI",ohs:"Safety",env:"Environment",energy:"Energy",bc:"Continuity",comp:"Compliance",assets:"Assets",mat:"Readiness",held:"Your certificates"}}
+};
+const ctStd = k => CT_STDS.find(s => s.k === k);
+const ctBlank = () => ({sector:"", size:"", held:[], cust:[], goal:"", prod:[], data:"", ai:"", ohs:"", env:"", energy:"", bc:"", comp:"", assets:[], mat:""});
+let CTS = {A:ctBlank(), step:-1, done:false};
+try{ const s = JSON.parse(localStorage.getItem(CT_KEY) || "null"); if(s && s.A) CTS = {A:Object.assign(ctBlank(), s.A), step:typeof s.step === "number" ? s.step : -1, done:!!s.done}; }catch(e){}
+const ctSave = () => { try{ localStorage.setItem(CT_KEY, JSON.stringify(CTS)); }catch(e){} };
+const ctAnswered = q => { const v = CTS.A[q.q]; return q.t === "multi" ? Array.isArray(v) && v.length > 0 : !!v; };
+const ctOpt = (q, v) => (CT_QS.find(x => x.q === q) || {opts:[]}).opts.find(o => o.v === v);
+const ctLbl = (q, v) => { const o = ctOpt(q, v); return o ? o.l[L] : v; };
+
+/* ---------- scoring ---------- */
+function ctScore(A){
+  const S = {}, R = {};
+  const add = (k, p, q, v) => { if(!p) return; S[k] = (S[k] || 0) + p; if(p > 0) (R[k] = R[k] || []).push([p, q, v]); };
+  Object.entries(CT_SECTOR_PTS[A.sector] || {}).forEach(([k, p]) => add(k, p, "sector", A.sector));
+  CT_QS.forEach(q => {
+    if(q.q === "sector" || q.q === "size" || q.q === "held") return;
+    const vals = q.t === "multi" ? (A[q.q] || []) : [A[q.q]];
+    vals.forEach(v => { const o = q.opts.find(x => x.v === v); if(o && o.pts) Object.entries(o.pts).forEach(([k, p]) => add(k, p, q.q, v)); });
+  });
+  Object.entries(CT_SIZE_PTS[A.size] || {}).forEach(([k, p]) => add(k, p, "size", A.size));
+  if(A.held.includes("iso9001")) add("iso9004", 2, "held", "iso9001");
+  if(A.held.filter(h => h !== "none").length) add("iso19011", 1, "held", A.held[0]);
+  return {S, R};
+}
+const CT_COVERS = {iso22000:["iso22000","fssc22000","haccp"]};
+function ctResult(A){
+  const {S, R} = ctScore(A), held = new Set(A.held.filter(h => h !== "none").flatMap(h => CT_COVERS[h] || [h]));
+  const ok = s => !CT_NEED[s.k] || CT_NEED[s.k](A);
+  const rows = CT_STDS.filter(s => s.k !== "iso9001" && ok(s)).map(s => ({s, sc:Math.round((S[s.k] || 0) * 10) / 10, why:(R[s.k] || []).sort((a, b) => b[0] - a[0])}));
+  const certRows = rows.filter(r => ["cert","scheme","verify"].includes(r.s.kind) && !held.has(r.s.k)).sort((a, b) => b.sc - a.sc);
+  const certs = certRows.filter(r => r.sc >= 3).slice(0, 6);
+  const later = certRows.filter(r => r.sc >= 1.5 && !certs.includes(r)).slice(0, 4);
+  const accr = rows.filter(r => r.s.kind === "accr" && r.sc >= 3 && !held.has(r.s.k)).sort((a, b) => b.sc - a.sc);
+  let guides = rows.filter(r => ["guide","support"].includes(r.s.kind) && r.sc >= 1).sort((a, b) => b.sc - a.sc).slice(0, 3);
+  if(guides.length === 3 && guides[2].sc < 1.5) guides = guides.slice(0, 2);
+  ["iso19011","iso31000"].forEach(k => { if(guides.length < 2 && !guides.some(g => g.s.k === k)) guides.push(rows.find(r => r.s.k === k)); });
+  return {S, held, certs, later, accr, guides:guides.filter(Boolean), base:held.has("iso9001") ? "have" : "need"};
+}
+
+/* ---------- view ---------- */
+function ctRender(){
+  const box = $("ctBody"); if(!box) return;
+  const t = CT_T[L];
+  $("ctK").textContent = t.k; $("ctTitle").textContent = t.t; $("ctSub").textContent = t.s;
+  ctBand();
+  if(CTS.done && CT_QS.every(ctAnswered)) return ctResults(box);
+  if(CTS.step < 0) return ctIntro(box);
+  ctQuestion(box);
+}
+function ctIntro(box){
+  const t = CT_T[L], begun = CT_QS.some(ctAnswered);
+  box.innerHTML = `<div class="adv-card ct-intro"><div><h3>${esc(t.introT)}</h3><ul>${t.intro.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>
+    <div class="ct-introacts"><button type="button" class="btn primary" id="ctGo">${esc(begun ? t.resume : t.start)} ${ARROW}</button>${begun ? `<button type="button" class="btn" id="ctNew">${esc(t.restart)}</button>` : ""}</div></div>`;
+  $("ctGo").onclick = () => { CTS.step = begun ? Math.max(0, CT_QS.findIndex(q => !ctAnswered(q))) : 0; if(CTS.step < 0) CTS.step = 0; ctSave(); ctRender(); ctFocus(); };
+  if(begun) $("ctNew").onclick = ctReset;
+}
+function ctQuestion(box){
+  const t = CT_T[L], n = CT_QS.length, i = Math.min(CTS.step, n - 1), q = CT_QS[i], v = CTS.A[q.q];
+  const sel = o => q.t === "multi" ? (v || []).includes(o.v) : v === o.v;
+  box.innerHTML = `<div class="adv-card ct-q">
+    <div class="adv-prog"><div class="bar"><i style="width:${Math.round((i / n) * 100)}%"></i></div><span>${esc(t.of(i + 1, n))}</span></div>
+    <div class="adv-q"><span class="ct-grp">${esc(CT_GROUPS[q.grp][L])}</span><h3 id="ctQh" tabindex="-1">${esc(q.l[L])}</h3>${q.h || q.t === "multi" ? `<p class="hint">${esc([q.h ? q.h[L] : "", q.t === "multi" ? t.multi : ""].filter(Boolean).join(" · "))}</p>` : ""}
+      <div class="adv-opts${q.grid ? " ct-grid" : ""}" role="group" aria-labelledby="ctQh">${q.opts.map(o => `<button type="button" class="adv-opt${q.t === "multi" ? " multi" : ""}" aria-pressed="${sel(o)}" data-v="${esc(o.v)}"><span class="mk" aria-hidden="true"></span><span>${esc(o.l[L])}</span></button>`).join("")}</div></div>
+    <div class="adv-nav"><button type="button" class="btn" id="ctBack">${esc(t.back)}</button><span class="sp"></span><button type="button" class="btn primary" id="ctNext" ${ctAnswered(q) ? "" : "disabled"}>${esc(i === n - 1 ? t.show : t.next)} ${ARROW}</button></div></div>`;
+  box.querySelectorAll(".adv-opt").forEach(b => b.onclick = () => {
+    const val = b.dataset.v;
+    if(q.t === "multi"){
+      let a = (CTS.A[q.q] || []).slice();
+      if(val === q.none) a = a.includes(val) ? [] : [val];
+      else { a = a.filter(x => x !== q.none); a = a.includes(val) ? a.filter(x => x !== val) : [...a, val]; }
+      CTS.A[q.q] = a; ctSave(); ctRender();
+      const again = box.querySelector(`.adv-opt[data-v="${CSS.escape(val)}"]`); if(again) again.focus();
+    } else {
+      CTS.A[q.q] = val; ctSave(); ctRender();
+      setTimeout(() => { if(CTS.step === i && CT_QS[i] === q) ctNext(); }, REDUCED() ? 0 : 220);
+    }
+  });
+  $("ctBack").onclick = () => { CTS.step = i - 1; ctSave(); ctRender(); ctFocus(); };
+  $("ctNext").onclick = ctNext;
+}
+function ctNext(){
+  const n = CT_QS.length, i = Math.min(CTS.step, n - 1);
+  if(!ctAnswered(CT_QS[i])) return;
+  if(i === n - 1){ CTS.done = true; CTS.step = n - 1; } else CTS.step = i + 1;
+  ctSave(); ctRender(); ctFocus();
+}
+function ctFocus(){ const h = $("ctQh") || $("ctResH") || $("ctGo"); if(h) h.focus({preventScroll:true}); const s = $("certs"); if(s) s.scrollIntoView({block:"start", behavior:REDUCED() ? "auto" : "smooth"}); }
+function ctReset(){ if(!confirm(CT_T[L].reset)) return; CTS = {A:ctBlank(), step:0, done:false}; ctSave(); ctRender(); ctFocus(); }
+
+function ctWhy(r){
+  const t = CT_T[L], seen = new Set();
+  return r.why.filter(([, q, v]) => { const k = q + v; if(seen.has(k)) return false; seen.add(k); return true; }).slice(0, 3)
+    .map(([, q, v]) => `<li>${esc(t.qs[q] || q)}: ${esc(q === "held" ? (ctStd(v) || {code:v}).code : ctLbl(q, v))}</li>`).join("");
+}
+function ctToolLink(s){
+  const t = CT_T[L];
+  return s.tool && URLS[s.tool] ? `<a class="btn" href="${URLS[s.tool]}" data-mod="${s.tool}" data-modname="${esc(s.code)}">${esc(t.inPlat)}</a>` : `<span class="ct-out">${esc(t.outPlat)}</span>`;
+}
+function ctCard(r, i){
+  const t = CT_T[L], s = r.s, pr = r.sc >= 5.5 ? "high" : "rec";
+  return `<article class="ar ct-ar" style="--c:${pr === "high" ? "var(--gold)" : "var(--c-iso)"}"><span class="rk">${i + 1}</span>
+    <div><h4>${esc(s.n[L])} <span class="cd">${esc(s.code)}</span></h4><span class="ct-kind">${esc(t.kind[s.kind])}</span></div>
+    <div class="fit"><b class="ct-pr ${pr}">${esc(pr === "high" ? t.high : t.rec)}</b><i aria-hidden="true"><em style="width:${Math.min(100, Math.round(r.sc / 8 * 100))}%"></em></i><small>${esc(t.fit)}</small></div>
+    <p class="why">${esc(s.d[L])}${s.note ? ` <span class="ct-note">${esc(s.note[L])}</span>` : ""}</p>
+    ${r.why.length ? `<ul aria-label="${esc(t.why)}">${ctWhy(r)}</ul>` : ""}
+    <div class="acts">${ctToolLink(s)}</div></article>`;
+}
+function ctResults(box){
+  const t = CT_T[L], A = CTS.A, res = ctResult(A), s9 = ctStd("iso9001");
+  const heldList = A.held.filter(h => h !== "none");
+  const head = `<div class="ct-sum"><div><h3 id="ctResH" tabindex="-1">${esc(t.resT)}</h3><p>${esc(ctLbl("sector", A.sector))} · ${esc(t.qs.size)}: ${esc(ctLbl("size", A.size))}${heldList.length ? ` · ${esc(t.have)}: ${esc(heldList.map(h => (ctStd(h) || {code:h}).code).join("، "))}` : ""}</p></div>
+    <div class="d-acts ct-acts"><button type="button" class="btn" id="ctPrint">${esc(t.acts.print)}</button><button type="button" class="btn" id="ctCopy">${esc(t.acts.copy)}</button><button type="button" class="btn gold" id="ctRq">${esc(t.acts.rq)}</button></div></div>`;
+  const base = res.base === "have"
+    ? `<div class="ct-base have"><span class="ct-badge">${esc(t.base)}</span><div><h4>${esc(t.baseHave)} ✓</h4><p>${esc(t.baseHaveP)}</p></div><a class="btn" href="${URLS.ims}" data-mod="ims" data-modname="${esc(t.imsGo)}">${esc(t.imsGo)}</a></div>`
+    : `<div class="ct-base"><span class="ct-badge">${esc(t.base)}</span><div><h4>${esc(s9.n[L])} <span class="cd">${esc(s9.code)}</span></h4><p>${esc(s9.d[L])}</p></div>${ctToolLink(s9)}</div>`;
+  const sec = (title, sub, body) => body ? `<section class="ct-sec"><h3>${esc(title)}</h3>${sub ? `<p class="ct-secp">${esc(sub)}</p>` : ""}${body}</section>` : "";
+  const certs = res.certs.length ? `<div class="adv-top">${res.certs.map(ctCard).join("")}</div>` : "";
+  const later = res.later.length ? `<div class="ct-chips">${res.later.map(r => `<span title="${esc(r.s.d[L])}"><b>${esc(r.s.code)}</b> ${esc(r.s.n[L])}</span>`).join("")}</div>` : "";
+  const accr = res.accr.length ? `<div class="adv-top">${res.accr.map(ctCard).join("")}</div>` : "";
+  const guides = `<div class="ct-guides">${res.guides.map(r => `<article><span class="ct-kind">${esc(t.kind[r.s.kind])}</span><h4>${esc(r.s.n[L])} <span class="cd">${esc(r.s.code)}</span></h4><p>${esc(r.s.d[L])}</p>${r.s.tool && URLS[r.s.tool] ? `<a href="${URLS[r.s.tool]}" data-mod="${r.s.tool}" data-modname="${esc(r.s.code)}">${esc(t.inPlat)} ${ARROW}</a>` : ""}</article>`).join("")}</div>`;
+  box.innerHTML = `<div class="ct-res"><div class="adv-print-h ct-printh" aria-hidden="true">${esc(t.sumH)} · ${esc(new Date().toLocaleDateString(L === "ar" ? "ar-EG-u-nu-latn" : "en-GB"))}</div>${head}${base}
+    ${sec(t.certs, "", certs)}${sec(t.accr, t.accrP, accr)}${sec(t.later, "", later)}${sec(t.guides, t.guidesP, guides)}${ctRoad(res)}
+    <p class="adv-note">${esc(t.disc)}</p>
+    <div class="adv-nav ct-acts"><button type="button" class="btn" id="ctEdit">${esc(t.acts.edit)}</button><span class="sp"></span><button type="button" class="btn" id="ctAgain">${esc(t.acts.again)}</button></div></div>`;
+  $("ctPrint").onclick = () => {
+    const root = document.documentElement, prev = root.getAttribute("data-theme");
+    root.classList.add("pct"); root.setAttribute("data-theme", "light");
+    const done = () => { root.classList.remove("pct"); if(prev == null) root.removeAttribute("data-theme"); else root.setAttribute("data-theme", prev); removeEventListener("afterprint", done); };
+    addEventListener("afterprint", done); window.print();
+  };
+  $("ctCopy").onclick = async () => { const txt = ctSummary(res); try{ await navigator.clipboard.writeText(txt); toast(t.copied); }catch(e){ prompt("", txt); } };
+  $("ctRq").onclick = () => ctRequest(res);
+  $("ctEdit").onclick = () => { CTS.done = false; CTS.step = 0; ctSave(); ctRender(); ctFocus(); };
+  $("ctAgain").onclick = ctReset;
+}
+function ctRoad(res){
+  const t = CT_T[L], A = CTS.A, d = t.dur[A.size] || t.dur.m;
+  const QMS_BASED = ["iatf16949","as9100","iso13485","iso29001","iso15378","iso22716","iso22000","fssc22000","haccp","iso7101","iso21001"];
+  const p1 = res.base === "need" ? ["iso9001"] : [], p2 = [], p3 = [];
+  res.certs.forEach(r => { if(QMS_BASED.includes(r.s.k) && r.sc >= 5 && p1.length < 3) p1.push(r.s.k); else if(r.sc >= 4.5 && p2.length < 3) p2.push(r.s.k); else p3.push(r.s.k); });
+  if(!p1.length && p2.length) p1.push(p2.shift());
+  res.accr.forEach(r => p2.length < 4 ? p2.push(r.s.k) : p3.push(r.s.k));
+  res.guides.forEach(r => p3.push(r.s.k));
+  const trio = ["iso9001","iso14001","iso45001"].filter(k => !res.held.has(k) && (k === "iso9001" ? res.base === "need" : res.certs.some(r => r.s.k === k)));
+  const imsN = trio.length + ["iso9001","iso14001","iso45001"].filter(k => res.held.has(k)).length;
+  const li = k => { const s = ctStd(k); return `<li><b dir="ltr">${esc(s.code)}</b> — ${esc(s.n[L])}</li>`; };
+  const stage = (no, title, dur, ks) => ks.length ? `<div class="adv-stage"><span class="d">${esc(dur)}</span><h4>${no}. ${esc(title)}</h4><ul>${ks.map(li).join("")}</ul></div>` : "";
+  return `<section class="adv-plan ct-road"><h3>${esc(t.road)}</h3>
+    ${imsN >= 2 ? `<div class="adv-start"><b>IMS</b><span>${esc(t.ims)}</span><a class="btn" href="${URLS.ims}" data-mod="ims" data-modname="${esc(t.imsGo)}">${esc(t.imsGo)}</a></div>` : ""}
+    <div class="adv-stages">${stage(1, t.p1, d[0], p1)}${stage(2, t.p2, d[1], p2)}${stage(3, t.p3, t.year2, p3)}</div><p class="ct-est">${esc(t.est)}</p></section>`;
+}
+function ctSummary(res){
+  const t = CT_T[L], A = CTS.A, line = r => `- ${r.s.code} — ${r.s.n[L]}`;
+  return [t.sumH, `${t.qs.sector}: ${ctLbl("sector", A.sector)} · ${t.qs.size}: ${ctLbl("size", A.size)}`, "",
+    `${t.base}: ${res.base === "have" ? t.baseHave : "ISO 9001 — " + ctStd("iso9001").n[L]}`,
+    res.certs.length ? `${t.certs}:\n${res.certs.map(line).join("\n")}` : "", res.accr.length ? `${t.accr}:\n${res.accr.map(line).join("\n")}` : "",
+    res.later.length ? `${t.later}:\n${res.later.map(line).join("\n")}` : "", `${t.guides}:\n${res.guides.map(line).join("\n")}`, "", t.disc].filter(x => x !== "").join("\n");
+}
+/* the consultation request opens pre-filled: service, standards, sector, size, status and the summary */
+const CT_RQ_SECTOR = {ene:"ene",og:"og",con:"con",eng:"con",man:"man",chem:"man",auto:"man",aero:"man",med:"man",pharma:"man",mine:"og",food:"food",hosp:"food",agri:"food",gov:"gov",hlth:"hlth",lab:"hlth",it:"it",fin:"fin",log:"log",edu:"edu",trn:"edu"};
+const CT_RQ_SIZE = {xs:"s",s:"s",m:"m",l:"l",xl:"xl"};
+function ctRequest(res){
+  rqOpen("consult");
+  const d = rqData.consult, A = CTS.A, F = RQ_FORMS.consult.fields, optsOf = k => ((F.find(f => f.k === k) || {}).opts || []).map(o => o[0]);
+  const codes = [res.base === "need" ? "ISO 9001" : null, ...res.certs.map(r => r.s.code), ...res.accr.map(r => r.s.code)].filter(Boolean);
+  if(optsOf("services").includes("cert")) d.services = [...new Set([...(d.services || []), "cert"])];
+  const so = optsOf("stds"); d.stds = [...new Set([...(d.stds || []), ...codes.filter(c => so.includes(c))])];
+  if(!d.sector) d.sector = CT_RQ_SECTOR[A.sector] || (optsOf("sector").includes("svc") ? "svc" : "ot");
+  if(!d.size) d.size = CT_RQ_SIZE[A.size] || "";
+  if(!d.status) d.status = A.held.some(h => h !== "none") ? "certd" : A.mat === "none" ? "new" : "some";
+  const t = CT_T[L];
+  if(!d.msg || d.msg.startsWith(t.rqMsg)) d.msg = `${t.rqMsg}\n${ctSummary(res)}`;
+  renderRequest();
+}
+/* the band on the home page that leads here */
+function ctBand(){
+  const b = $("ctBand"); if(!b) return; const t = CT_T[L];
+  b.innerHTML = `<div class="wrap"><div class="ct-band"><span class="ct-bi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m9 14.5-1.5 7L12 19l4.5 2.5-1.5-7"/><path d="m9.5 9 1.8 1.8L15 7.5"/></svg></span>
+    <div><b>${esc(t.band)}</b><p>${esc(t.bandP)}</p></div><a class="btn gold" href="#certs">${esc(t.bandGo)} ${ARROW}</a></div></div>`;
+}
+/* the menu entry, right after the Advisor, and a re-render with the rest of the page */
+[UI.ar, UI.en].forEach((u, i) => { if(!u.nav.some(([h]) => h === "certs")){ const at = u.nav.findIndex(([h]) => h === "advisor"); u.nav.splice(at + 1, 0, ["certs", i ? "Certification finder" : "مرشد الشهادات"]); } });
+const ctRenderAll0 = renderAll;
+renderAll = function(){ ctRenderAll0.apply(this, arguments); try{ ctRender(); }catch(e){ console.error(e); } };
+/* cia-certs:end *//* cia-cloud:start */
 /* ===================== ACCOUNTS & CLOUD SAVE (optional) =====================
    Off while cloud-config.js is empty: the platform then works exactly as before, everything in this browser.
    On: anyone can still use every tool without an account. A signed-in user's tool data (the browser storage keys the
