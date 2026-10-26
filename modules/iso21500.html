@@ -1461,7 +1461,89 @@ html[dir="rtl"] .ex-drawer{transform:translateX(104%)}
   [dir="rtl"] .hero .std-code{text-align:right}
   [dir="ltr"] .hero .std-code{text-align:left}
 }
-</style><!-- cia-ui:end --></head>
+
+/* ===================== the shared design layer (every word stays; only spacing, depth and consistency change) ===================== */
+:root{
+  --ui-field:#A3ADBD;                                   /* field borders: clearer than the card line */
+  --ui-shadow:0 1px 2px rgba(27,42,74,.05),0 10px 26px -14px rgba(27,42,74,.16);
+  --ui-shadow-h:0 2px 4px rgba(27,42,74,.06),0 16px 34px -14px rgba(27,42,74,.24);
+}
+/* page header: the title, then its description underneath it (not squeezed beside it) */
+.sec-title{flex-direction:column;align-items:flex-start;gap:6px;margin-bottom:24px}
+.sec-title p{font-size:15.5px;line-height:1.85;max-width:84ch}
+/* cards: soft depth and a little more room inside */
+.tk-panel,.pd-card,.ex-card,.term,.ex-role,.ex-rel,.comp,.rule-c,.change,.lk-th,.ex-path,.ex-chg-c,.ex-stage,.pd-stage,.aq{box-shadow:var(--ui-shadow)}
+.tk-panel{padding:22px 24px}
+.pd-card{padding:22px 24px;margin-bottom:18px}
+.pd-card h2{font-size:21px;margin-bottom:8px;line-height:1.45}
+.pd-card>p.pd-sub{font-size:15px;line-height:1.85;max-width:88ch;margin-bottom:16px}
+.ex-card p,.term p{line-height:1.85}
+/* cards that are links lift slightly on hover */
+.launch a,a.nx-c{transition:box-shadow .2s,border-color .2s,transform .2s}
+.launch a:hover,a.nx-c:hover{box-shadow:var(--ui-shadow-h);transform:translateY(-1px)}
+@media (prefers-reduced-motion:reduce){.launch a:hover,a.nx-c:hover{transform:none}}
+/* fields: a clearer edge, labels that read as labels, and one comfortable height in forms */
+input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]):not([type=file]),select,textarea{border-color:var(--ui-field)}
+.tk-field{gap:6px;font-weight:600;color:var(--ink)}
+.tk-field input,.tk-field select,.tk-field textarea{font-weight:400}
+.tk-field input:not([type=checkbox]):not([type=radio]):not([type=range]),.tk-field select{min-height:44px}
+input::placeholder,textarea::placeholder{color:#7A8599}
+/* buttons and chips: easier to hit */
+.tk-btn{min-height:38px}
+.tk-btn.sm{min-height:32px;padding-inline:13px}
+.chip{padding:4px 12px}
+.pchip{min-height:32px}
+.ex-qx{min-height:30px}
+button:focus-visible,a:focus-visible,[role="tab"]:focus-visible{outline:3px solid color-mix(in srgb,var(--gold) 75%,transparent);outline-offset:2px}
+/* empty states: clearly "nothing here yet", not a blank box */
+.empty{border:1px dashed var(--ui-field);background:color-mix(in srgb,var(--bg) 55%,#fff);color:var(--muted);text-align:center;padding:16px 18px}
+.empty-plan{border:1px dashed var(--ui-field)}
+/* the section header: its icon beside the title and description */
+.ui-ic{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;flex:none}
+.ui-ic svg{width:25px;height:25px}
+.sec-title.ui-has-ic{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:16px;row-gap:4px;align-items:center}
+.sec-title.ui-has-ic>.ui-ic{grid-row:1/span 4;align-self:start;margin-top:2px}
+.sec-title.ui-has-ic>:not(.ui-ic){grid-column:2}
+.pd-card>.ui-ic{float:inline-start;margin-inline-end:14px;margin-top:2px;width:44px;height:44px;border-radius:13px}
+.pd-card>.ui-ic svg{width:22px;height:22px}
+@media (max-width:600px){.ui-ic{width:40px;height:40px;border-radius:12px}.ui-ic svg{width:20px;height:20px}.sec-title.ui-has-ic{column-gap:12px}}
+.sec-title{padding-bottom:18px;border-bottom:1px solid var(--line)}
+</style><script>
+/* each section's title gets the section's own icon from the side menu, so every screen opens on a clear header */
+(function(){
+  var raf = 0;
+  function deco(){
+    raf = 0;
+    var side = document.getElementById("side"), pane = document.querySelector(".tabpane.on");
+    if(!side || !pane) return;
+    var btn = side.querySelector('button[aria-selected="true"]');
+    if(!btn || btn.dataset.t === "home") return;
+    var ic = btn.querySelector(".ic"); if(!ic) return;
+    /* the page title: the section header, or else the card titled like the section (the first card otherwise) */
+    var head = pane.querySelector(".sec-title"), h2 = head && head.querySelector("h2");
+    if(!head){
+      var name = ((btn.querySelector(".tl") || btn).textContent || "").trim(), cards = pane.querySelectorAll(".pd-card > h2");
+      h2 = cards[0] || null;
+      for(var i = 0; i < cards.length; i++) if(cards[i].textContent.trim() === name){ h2 = cards[i]; break; }
+    }
+    if(!h2) return;
+    var host = head || h2.parentNode, cur = host.querySelector(":scope > .ui-ic");
+    if(cur && cur.dataset.t === btn.dataset.t) return;
+    if(cur) cur.remove();
+    var t = document.createElement("span");
+    t.className = "ui-ic"; t.dataset.t = btn.dataset.t; t.setAttribute("aria-hidden", "true");
+    t.innerHTML = ic.innerHTML; t.setAttribute("style", ic.getAttribute("style") || "");
+    host.insertBefore(t, head ? head.firstChild : h2);
+    host.classList.add("ui-has-ic");
+  }
+  function soon(){ if(!raf) raf = requestAnimationFrame(deco); }
+  function start(){
+    deco();
+    new MutationObserver(soon).observe(document.body, {subtree:true, childList:true, attributes:true, attributeFilter:["class", "aria-selected"]});
+  }
+  if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
+})();
+</script><!-- cia-ui:end --></head>
 <body>
 <header class="topbar">
   <div class="wrap">
