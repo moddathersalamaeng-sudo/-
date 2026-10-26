@@ -78,7 +78,7 @@ pre{white-space:pre-wrap;margin:6px 0 0;font:inherit;font-size:13.5px;color:var(
     <section class="card" data-p="fb"><div class="row"><h2 style="flex:1">الآراء</h2><select id="fbTool" aria-label="الأداة"></select><button class="btn" id="fbCsv" type="button">تصدير CSV</button></div><div class="tw" id="fbT"></div></section>
     <section class="card" data-p="tools" hidden><h2>تقييم كل أداة</h2><div class="tw" id="toolsT"></div></section>
     <section class="card" data-p="rq" hidden><div class="row"><h2 style="flex:1">طلبات الاستشارة والتدريب</h2><button class="btn" id="rqCsv" type="button">تصدير CSV</button></div><p class="muted">نسخة من كل طلب. الطلب نفسه يصلك أيضاً بالبريد عندما يضغط صاحبه «إرسال».</p><div class="tw" id="rqT"></div></section>
-    <section class="card" data-p="users" hidden><h2>المستخدمون</h2><div class="tw" id="usersT"></div></section>
+    <section class="card" data-p="users" hidden><div class="row"><h2 style="flex:1">المستخدمون</h2><button class="btn" id="usCsv" type="button">تصدير الكل CSV</button><button class="btn" id="usMktCsv" type="button">تصدير من يقبلون الأخبار</button></div><p class="muted" id="usNote"></p><div class="tw" id="usersT"></div></section>
   </div>
 </main>
 <script src="assets/vendor/supabase-2.117.2.js"></script>
@@ -110,7 +110,8 @@ const avg = a => a.length ? a.reduce((s, x) => s + x, 0) / a.length : null;
 function render(){
   const rated = FB.filter(f => f.rating), recs = FB.filter(f => f.recommend);
   const a = avg(rated.map(f => f.rating)), yes = recs.length ? Math.round(recs.filter(f => f.recommend === "y").length / recs.length * 100) : null;
-  $("kpis").innerHTML = [[US.length, "حساب مسجّل"], [US.filter(u => u.last_saved).length, "حساب حفظ عملاً"], [FB.length, "رأي"], [a ? a.toFixed(1) + " / 5" : "—", "متوسط التقييم"],
+  const hasMkt = US.some(u => typeof u.marketing === "boolean");
+  $("kpis").innerHTML = [[US.length, "حساب مسجّل"], [US.filter(u => u.last_saved).length, "حساب حفظ عملاً"], ...(hasMkt ? [[US.filter(u => u.marketing).length, "يقبلون الأخبار"]] : []), [FB.length, "رأي"], [a ? a.toFixed(1) + " / 5" : "—", "متوسط التقييم"],
     [yes == null ? "—" : yes + "%", "ينصحون بها زميلاً"], [RQ.length, "طلب استشارة أو تدريب"]].map(k => `<div class="kpi"><b>${esc(k[0])}</b><span>${esc(k[1])}</span></div>`).join("");
   const tools = [...new Set(FB.map(f => f.tool))];
   const sel = $("fbTool"), cur = sel.value;
@@ -124,8 +125,11 @@ function render(){
     `<tr><td>${esc(NAMES[p.t] || p.t)}</td><td class="num">${p.n}</td><td class="num">${p.a ? p.a.toFixed(1) : "—"}</td><td><div class="bar"><i style="width:${p.a ? p.a / 5 * 100 : 0}%"></i></div></td></tr>`).join("")}</tbody></table><p class="muted">مرتبة من الأقل تقييماً، لتبدأ التطوير منها.</p>` : `<p class="muted">لا توجد آراء بعد.</p>`;
   $("rqT").innerHTML = RQ.length ? `<table><thead><tr><th>التاريخ</th><th>النوع</th><th>الرقم المرجعي</th><th>الاسم والمنشأة</th><th>التواصل</th><th>التفاصيل</th></tr></thead><tbody>${RQ.map(r => { const p = r.payload || {};
     return `<tr><td class="num">${esc(day(r.created_at))}</td><td>${esc(KIND[r.kind] || r.kind)}</td><td class="ltr">${esc(r.ref || "")}</td><td>${esc([p.name, p.org].filter(Boolean).join(" · "))}</td><td class="ltr">${esc([p.email, p.phone].filter(Boolean).join(" · "))}</td><td><details><summary>عرض</summary><pre>${esc(Object.entries(p).map(([k, v]) => `${k}: ${v}`).join("\n"))}</pre></details></td></tr>`; }).join("")}</tbody></table>` : `<p class="muted">لا توجد طلبات بعد.</p>`;
-  $("usersT").innerHTML = US.length ? `<table><thead><tr><th>البريد</th><th>التسجيل</th><th>آخر دخول</th><th>بيانات محفوظة</th><th>آخر حفظ</th></tr></thead><tbody>${US.map(u =>
-    `<tr><td class="ltr">${esc(u.email)}</td><td class="num">${esc(day(u.created_at))}</td><td class="num">${esc(day(u.last_seen))}</td><td class="num">${u.keys}</td><td class="num">${esc(day(u.last_saved))}</td></tr>`).join("")}</tbody></table>` : `<p class="muted">لا توجد حسابات بعد.</p>`;
+  $("usersT").innerHTML = US.length ? `<table><thead><tr><th>البريد</th><th>التسجيل</th><th>آخر دخول</th><th>بيانات محفوظة</th><th>آخر حفظ</th>${hasMkt ? "<th>يقبل الأخبار</th>" : ""}</tr></thead><tbody>${US.map(u =>
+    `<tr><td class="ltr">${esc(u.email)}</td><td class="num">${esc(day(u.created_at))}</td><td class="num">${esc(day(u.last_seen))}</td><td class="num">${u.keys}</td><td class="num">${esc(day(u.last_saved))}</td>${hasMkt ? `<td>${u.marketing ? "نعم" : "—"}</td>` : ""}</tr>`).join("")}</tbody></table>` : `<p class="muted">لا توجد حسابات بعد.</p>`;
+  $("usMktCsv").hidden = !hasMkt;
+  $("usNote").textContent = hasMkt ? "أرسل الأخبار والعروض لمن وافقوا فقط. الباقون وافقوا على حفظ بياناتهم لتقديم الخدمة، لا على الرسائل التسويقية."
+    : "لإظهار الموافقة على الأخبار شغّل الملف supabase/002_marketing.sql مرة واحدة في SQL Editor.";
 }
 
 async function load(user){
@@ -147,6 +151,9 @@ $("tabs").onclick = e => { const b = e.target.closest("button[data-t]"); if(!b) 
 $("fbTool").onchange = render;
 $("fbCsv").onclick = () => download(`cia-feedback-${new Date().toISOString().slice(0,10)}.csv`, csv(FB, [["created_at","التاريخ"],[f => NAMES[f.tool] || f.tool,"الأداة"],["rating","التقييم"],[f => REC[f.recommend] || "","ينصح"],["role","الدور"],["improve","ما ينقصها"],["useful","ما أفاده"],["name","الاسم"],["email","البريد"],["ref","الرقم المرجعي"],["lang","اللغة"]]));
 $("rqCsv").onclick = () => download(`cia-requests-${new Date().toISOString().slice(0,10)}.csv`, csv(RQ, [["created_at","التاريخ"],[r => KIND[r.kind] || r.kind,"النوع"],["ref","الرقم المرجعي"],[r => (r.payload || {}).name,"الاسم"],[r => (r.payload || {}).org,"المنشأة"],[r => (r.payload || {}).email,"البريد"],[r => (r.payload || {}).phone,"الجوال"],[r => JSON.stringify(r.payload || {}),"كل التفاصيل"]]));
+const usCols = [["email","البريد"],["created_at","التسجيل"],["last_seen","آخر دخول"],["keys","بيانات محفوظة"],["last_saved","آخر حفظ"],[u => u.marketing ? "نعم" : "لا","يقبل الأخبار"],["marketing_at","تاريخ الموافقة"]];
+$("usCsv").onclick = () => download(`cia-users-${new Date().toISOString().slice(0,10)}.csv`, csv(US, usCols));
+$("usMktCsv").onclick = () => download(`cia-users-news-${new Date().toISOString().slice(0,10)}.csv`, csv(US.filter(u => u.marketing), [["email","البريد"],["marketing_at","تاريخ الموافقة"],["created_at","التسجيل"]]));
 $("outBtn").onclick = async () => { await SB.auth.signOut(); location.reload(); };
 
 if(!(C.url && C.key) || !window.supabase){ show("off"); }
