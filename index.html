@@ -542,7 +542,6 @@ html[dir="rtl"] .appUpd{padding:10px 18px 10px 12px}
 .acctBtn.on{background:var(--navy);border-color:var(--navy);color:#fff}
 .acctBtn.on.warn{box-shadow:0 0 0 2px var(--gold) inset}
 @media (max-width:640px){.acctBtn span{display:none}.acctBtn{padding:8px 10px}}
-@media (min-width:1021px) and (max-width:1599px){.acctBtn{width:38px;height:38px;padding:0;justify-content:center}.acctBtn span{display:none}}
 @media (max-width:460px){.topbar:has(#acctBtn:not([hidden])) .brand>div{display:none}}
 .acct{gap:14px}
 .acct-why{margin:0;padding-inline-start:20px;display:grid;gap:6px}
@@ -1339,7 +1338,50 @@ html[dir="rtl"] .ac-t tr.late td:first-child{box-shadow:inset -4px 0 0 #B42318}
  .ac-t{min-width:0}.ac-t thead{display:none}.ac-t tr{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;padding:10px 12px;border-bottom:1px solid var(--line)}
  .ac-t td{border:0;padding:0}.ac-t td:nth-child(1){grid-column:1/-1}.ac-t td:nth-child(3){grid-column:1/-1}.ac-t td:nth-child(2),.ac-t td:nth-child(4),.ac-t td:nth-child(5),.ac-t td:nth-child(6),.ac-t td:nth-child(8){font-size:12.5px;color:var(--ink-soft)}}
 .ac-t td[dir="ltr"]{white-space:nowrap}
-</style>
+/* cia-ui:start */
+/* ---------- one menu button for every screen: all sections in a grouped list ---------- */
+.nav{display:none!important}
+.menuBtn{display:inline-flex!important;order:99;gap:8px;font:inherit;font-weight:700;font-size:14px}
+@media (min-width:641px){
+  .menuBtn{width:auto;height:40px;padding:0 16px 0 13px;border-radius:999px}
+  .menuBtn .sr{position:static!important;width:auto;height:auto;overflow:visible;clip:auto;clip-path:none}
+}
+.menuBtn[aria-expanded="true"]{background:var(--navy);border-color:var(--navy);color:var(--on-navy)}
+.topbar .mNav:not([hidden]){display:grid!important}
+.topbar .mNav{position:absolute;top:calc(100% + 8px);inset-inline-end:max(12px,calc((100vw - 1180px)/2 + 22px));
+  width:min(780px,calc(100vw - 24px));grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 20px;padding:18px 18px 14px;
+  background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:0 22px 60px rgba(15,23,42,.2);
+  max-height:calc(100vh - 96px);overflow:auto;animation:uiMenuIn .16s ease-out}
+@keyframes uiMenuIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.topbar .mNav{animation:none}}
+.mg{display:grid;gap:2px;align-content:start;min-width:0}
+.mg-t{margin:2px 10px 6px;font-size:12px;font-weight:700;color:var(--gold-ink);letter-spacing:.02em}
+.topbar .mNav a{display:flex;align-items:center;gap:11px;padding:9px 10px;border-radius:11px;font-size:14.5px;line-height:1.4}
+.mNav a svg{flex:none;width:18px;height:18px;color:var(--ink-soft)}
+.mNav a[aria-current="page"] svg{color:currentColor}
+@media (max-width:760px){
+  .topbar .mNav{grid-template-columns:minmax(0,1fr);inset-inline:10px;width:auto;gap:12px;padding:14px 12px 10px}
+  .mg{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mg-t{grid-column:1/-1;margin-bottom:2px}
+}
+@media (max-width:360px){.mg{grid-template-columns:minmax(0,1fr)}}
+/* the bar has room again: the search shows its label */
+@media (min-width:1021px){.srchBtn{width:auto!important;padding:0 12px!important;justify-content:flex-start!important}.srchBtn .t{display:inline!important}.srchBtn kbd{display:inline-block!important}}
+/* ---------- home: long lists show one row, with a button for the rest ---------- */
+.ui-x{display:none!important}
+.ui-more{display:flex;align-items:center;justify-content:center;gap:8px;margin:12px auto 0;min-height:42px;padding:0 20px;border-radius:999px;
+  border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-weight:700;font-size:14px;cursor:pointer}
+.ui-more:hover{border-color:var(--gold)}
+.ui-more svg{width:16px;height:16px;transition:transform .2s}
+.ui-more[aria-expanded="true"] svg{transform:rotate(180deg)}
+.refs2 .ui-more{background:rgba(255,255,255,.06);border-color:rgba(226,196,107,.45);color:#fff}
+.refs2 .ui-more:hover{background:rgba(255,255,255,.12)}
+/* more air between the home sections and between the tool groups */
+.gl-grp+.gl-grp{margin-top:34px}
+.ref-g+.ref-g{margin-top:30px}
+.ui-chips{font:inherit;font-size:11.5px;font-weight:700;color:#E2C46B;background:transparent;border:1px dashed rgba(226,196,107,.6);border-radius:99px;padding:2px 10px;cursor:pointer}
+.ui-chips:hover{background:rgba(226,196,107,.12)}
+/* cia-ui:end */</style>
 </head>
 <body>
 <header class="topbar">
@@ -3431,7 +3473,7 @@ $("menuBtn").onclick = e=>{ e.stopPropagation(); const m=$("mNav"), open=m.hidde
 $("mNav").addEventListener("click", e=>{ if(e.target.closest("a")) closeMenu(); });
 document.addEventListener("click", e=>{ if(!e.target.closest(".topbar")) closeMenu(); });
 document.addEventListener("keydown", e=>{ if(e.key==="Escape") closeMenu(); });
-window.addEventListener("resize", ()=>{ if(innerWidth>1020) closeMenu(); });
+window.addEventListener("resize", ()=>{ /* cia-ui:start */if(false)/* cia-ui:end */if(innerWidth>1020) closeMenu(); });
 /* tools search */
 $("tkQ").addEventListener("input", e=>{ tkQ = e.target.value; tkGridRender(); });
 $("tkQ").addEventListener("keydown", e=>{ if(e.key==="Escape" && tkQ){ e.preventDefault(); tkQ=""; e.target.value=""; tkGridRender(); } });
@@ -6373,7 +6415,96 @@ function orgView(v){
   else if(v==="actions" && typeof renderActions==="function"){ renderActions(); CIAR.loadLabels("assets/cia-labels.json").then(()=>{ if(curView==="actions") renderActions(); }); }
 }
 
-/* cia-cloud:start */
+/* cia-ui:start */
+/* ---------- the menu: every section in three groups, with an icon each (sections added later land in the last group) ---------- */
+const UI_GROUPS = {
+  ar:[["ابدأ", ["home","advisor","start"]], ["اعمل على منشأتك", ["dash","tools","guides","map","actions","systems"]], ["تعلّم وتواصل", ["learn","refs","faq","request","about"]]],
+  en:[["Start", ["home","advisor","start"]], ["Work on your organization", ["dash","tools","guides","map","actions","systems"]], ["Learn and contact", ["learn","refs","faq","request","about"]]]
+};
+const UI_ICONS = {
+  home:'<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>',
+  advisor:'<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>',
+  start:'<path d="M5 21V4h11l-2 4 2 4H5"/>',
+  dash:'<path d="M4 19v-7M10 19V5M16 19v-5M3 21h18"/>',
+  tools:'<rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/>',
+  guides:'<path d="M4 19V5a2 2 0 0 1 2-2h14v14H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h14"/>',
+  map:'<circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7.5l3 8M16 7.5l-3 8M8.5 6h7"/>',
+  actions:'<path d="M10 6h10M10 12h10M10 18h10M4 6l1.2 1.2L7.5 5M4 12l1.2 1.2 2.3-2.2M4 18l1.2 1.2 2.3-2.2"/>',
+  systems:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/>',
+  learn:'<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/>',
+  refs:'<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
+  faq:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.2a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.5v.5M12 17h.01"/>',
+  request:'<path d="M4 5h16v11H9l-5 4z"/>',
+  about:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+  _:'<circle cx="12" cy="12" r="3"/>'
+};
+function uiMenu(){
+  const m = $("mNav"); if(!m) return;
+  const nav = UI[L].nav, names = new Map(nav);
+  const groups = UI_GROUPS[L].map(([t, ks]) => [t, ks.filter(k => names.has(k))]);
+  const rest = nav.map(([h]) => h).filter(h => !groups.some(g => g[1].includes(h)));
+  groups[groups.length - 1][1].push(...rest);
+  m.innerHTML = groups.filter(g => g[1].length).map(([t, ks]) => `<div class="mg" role="group" aria-label="${esc(t)}"><p class="mg-t" aria-hidden="true">${esc(t)}</p>${ks.map(k =>
+    `<a href="#${k}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${UI_ICONS[k] || UI_ICONS._}</svg><span>${esc(names.get(k))}</span></a>`).join("")}</div>`).join("");
+  markNav();
+}
+const uiRenderText0 = renderText;
+renderText = function(){ uiRenderText0.apply(this, arguments); uiMenu(); };
+
+/* ---------- home: each tool group and each group of references shows its first row; the rest opens on request ---------- */
+const UI_T = {ar:{all:n=>`عرض الكل (${n})`, less:"عرض أقل"}, en:{all:n=>`Show all (${n})`, less:"Show less"}};
+const uiOpenRows = new Set();
+function uiClipGroups(root, gridSel, kind){
+  if(!root) return;
+  [...root.children].forEach((g, i) => {
+    const grid = g.querySelector(gridSel); if(!grid) return;
+    const key = kind + i, cards = [...grid.children].filter(c => !c.hidden);
+    let btn = g.querySelector(":scope > .ui-more");
+    const cols = grid.offsetWidth ? getComputedStyle(grid).gridTemplateColumns.split(" ").filter(Boolean).length : 0;
+    /* the phone layout of the tool cards is already a single swipeable row, and a filtered list is short */
+    const free = !cols || getComputedStyle(grid).gridAutoFlow.startsWith("column") || (kind === "gl" && glRole !== "all");
+    const open = uiOpenRows.has(key);
+    cards.forEach((c, j) => c.classList.toggle("ui-x", !free && !open && j >= cols));
+    if(free || cards.length <= cols){ if(btn) btn.remove(); return; }
+    if(!btn){ btn = document.createElement("button"); btn.type = "button"; btn.className = "ui-more"; g.appendChild(btn); }
+    btn.setAttribute("aria-expanded", String(open));
+    btn.innerHTML = `<span>${esc(open ? UI_T[L].less : UI_T[L].all(cards.length))}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>`;
+    btn.onclick = () => {
+      if(open) uiOpenRows.delete(key); else uiOpenRows.add(key);
+      uiClipHome();
+      if(open) g.scrollIntoView({block:"nearest", behavior:REDUCED() ? "auto" : "smooth"});
+    };
+  });
+}
+/* a reference used by many tools lists six of them, then "+N" opens the rest */
+const UI_CHIPS = 6;
+function uiClipChips(){
+  document.querySelectorAll("#refGroups .rc .used").forEach(u => {
+    const links = [...u.querySelectorAll(":scope > a")], extra = links.length - UI_CHIPS;
+    if(extra <= 0 || u.dataset.open) return;
+    links.forEach((a, j) => a.classList.toggle("ui-x", j >= UI_CHIPS));
+    let b = u.querySelector(":scope > .ui-chips");
+    if(!b){ b = document.createElement("button"); b.type = "button"; b.className = "ui-chips"; u.appendChild(b); }
+    b.textContent = "+" + extra; b.dir = "ltr"; b.setAttribute("aria-label", UI_T[L].all(links.length));
+    b.onclick = () => { u.dataset.open = "1"; links.forEach(a => a.classList.remove("ui-x")); b.remove(); };
+  });
+}
+function uiClipHome(){ uiClipChips(); uiClipGroups($("glGroups"), ".gl-cards", "gl"); uiClipGroups($("refGroups"), ".ref-cards", "rf"); }
+function uiOpenRef(id){
+  const c = document.getElementById(id), g = c && c.closest("#refGroups > *"); if(!g) return;
+  const i = [...g.parentNode.children].indexOf(g); if(!uiOpenRows.has("rf" + i)){ uiOpenRows.add("rf" + i); uiClipHome(); }
+}
+const uiRenderGlance0 = renderGlance;
+renderGlance = function(){ uiRenderGlance0.apply(this, arguments); uiClipHome(); };
+const uiRenderHowRefs0 = renderHowRefs;
+renderHowRefs = function(){ uiRenderHowRefs0.apply(this, arguments); uiClipHome(); };
+const uiShowView0 = showView;
+showView = function(){ uiShowView0.apply(this, arguments); uiClipHome(); };
+/* a "source" link on a tool card, or an address ending in #ref-…, opens that card's group first so it can be reached */
+document.addEventListener("click", e => { const a = e.target.closest('a[href^="#ref-"]'); if(a) uiOpenRef(a.getAttribute("href").slice(1)); }, true);
+addEventListener("hashchange", () => { if(location.hash.startsWith("#ref-")) uiOpenRef(location.hash.slice(1)); });
+let uiRz = 0; addEventListener("resize", () => { cancelAnimationFrame(uiRz); uiRz = requestAnimationFrame(uiClipHome); });
+/* cia-ui:end *//* cia-cloud:start */
 /* ===================== ACCOUNTS & CLOUD SAVE (optional) =====================
    Off while cloud-config.js is empty: the platform then works exactly as before, everything in this browser.
    On: anyone can still use every tool without an account. A signed-in user's tool data (the browser storage keys the
