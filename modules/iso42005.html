@@ -1644,7 +1644,34 @@ html[dir="rtl"] .ex-drawer{transform:translateX(104%)}
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="cia-version" content="1.0.0 · 2026-10-22">
-</head>
+<!-- cia-ui:start --><style>
+/* the tool's opening card: on wide screens the logo sits beside the title, so the sections start higher up */
+.hero{padding:22px 0 14px}
+.hero-grid{gap:6px}
+.hero-logo{width:80px!important;height:80px!important;margin:0 auto 4px!important;box-shadow:0 6px 18px rgba(27,42,74,.14)!important}
+.hero h1{margin:6px 0 2px!important}
+.hero .edition-tag{margin-top:8px!important}
+.hero .author{margin-top:6px!important}
+@media (min-width:900px){
+  .hero-grid{grid-template-columns:auto minmax(0,1fr);column-gap:28px;row-gap:4px;text-align:start;align-items:start;
+    background:linear-gradient(135deg,var(--surface),color-mix(in srgb,var(--gold) 7%,var(--surface)));border:1px solid var(--line);border-radius:22px;padding:26px 30px 24px}
+  .hero-grid>*{grid-column:2;min-width:0}
+  .hero-grid>.hero-logo{grid-column:1;grid-row:1/span 9;margin:6px 0 0!important;width:104px!important;height:104px!important}
+  .hero .std-code{font-size:clamp(38px,4.6vw,58px)}
+  .hero .lede{margin:2px 0 0!important;max-width:74ch}
+  .hero .edition-tag{margin-inline:0!important}
+  .hero-grid>div:has(>.edition-tag){display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .hero-grid>.pd-note,.hero-grid>.cert-note{margin-inline:0!important;max-width:none}
+}
+/* the section tiles under it: a little more air and an even height */
+.launch{padding:14px 0 6px}
+.launch-grid{gap:14px}
+.launch a{height:100%;box-sizing:border-box}
+@media (min-width:900px){
+  [dir="rtl"] .hero .std-code{text-align:right}
+  [dir="ltr"] .hero .std-code{text-align:left}
+}
+</style><!-- cia-ui:end --></head>
 <body>
 <header class="topbar">
   <div class="wrap">
