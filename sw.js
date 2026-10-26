@@ -2,7 +2,7 @@
    The installed app opens from the device: every page and tool already opened is served from the cache at once
    and refreshed from the network in the background, so the next launch shows the latest copy.
    Offline, everything opened before keeps working. User data never passes through here (it stays in localStorage). */
-const VERSION = "1.0.0-2026-10-22-8220b909";
+const VERSION = "1.0.0-2026-10-22-29d3e230";
 const CACHE = "cia-" + VERSION;
 const FONTS = "cia-fonts";
 const PREV = "cia-prev";   /* pages kept from the previous release: used only when the network is unavailable */
