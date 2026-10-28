@@ -1,0 +1,1092 @@
+{
+  "stages": [
+    {
+      "id": "opening",
+      "room": "meeting",
+      "title": {
+        "ar": "اجتماع البداية",
+        "en": "Opening meeting"
+      },
+      "speaker": {
+        "ar": "رئيس المنشأة",
+        "en": "Organization director"
+      },
+      "speech": {
+        "ar": "أهلًا بالفريق. عندنا شغل كتير النهارده، خلّونا نبدأ الجولة فورًا ونخلص بسرعة.",
+        "en": "Welcome. We have a busy day; let us go straight to the tour and finish quickly."
+      },
+      "task": {
+        "ar": "إزاي تبدأ التكليف بشكل واضح؟",
+        "en": "How will you establish a clear assignment?"
+      },
+      "options": [
+        {
+          "text": {
+            "ar": "أوضح الهدف والنطاق والمعايير والخطة، وأتفق على التواصل والسرية والسلامة وطريقة عرض النتائج وأتأكد من فهم الحاضرين.",
+            "en": "Confirm objectives, scope, criteria and plan; agree communication, confidentiality, safety and how findings will be presented, and check understanding."
+          },
+          "points": 25,
+          "why": {
+            "ar": "البداية الواضحة تمنع سوء الفهم. اتفق أيضًا على الموارد والمرافقين وأي تغييرات في الخطة.",
+            "en": "A clear start prevents misunderstandings. Also confirm resources, guides and changes to the plan."
+          },
+          "id": "0"
+        },
+        {
+          "text": {
+            "ar": "أقرأ أرقام البنود كلها ثم أبدأ الجولة، من غير أسئلة للحاضرين.",
+            "en": "Read every clause number, then begin without inviting questions."
+          },
+          "points": 8,
+          "why": {
+            "ar": "سرد البنود وحده لا يؤكد فهم النطاق والترتيبات.",
+            "en": "Listing clauses does not confirm shared understanding of scope and arrangements."
+          },
+          "id": "1"
+        },
+        {
+          "text": {
+            "ar": "أوافق على الجولة مباشرة لأن وقت الإدارة محدود.",
+            "en": "Start the tour immediately because management time is limited."
+          },
+          "points": 0,
+          "why": {
+            "ar": "لم يتم تثبيت أساس التكليف أو ترتيباته.",
+            "en": "The assignment basis and practical arrangements remain unconfirmed."
+          },
+          "id": "2"
+        },
+        {
+          "text": {
+            "ar": "أوضح النطاق والخطة فقط، وأؤجل السرية والتواصل للنهاية.",
+            "en": "Confirm scope and plan only; leave confidentiality and communication until the end."
+          },
+          "points": 15,
+          "why": {
+            "ar": "بداية مفيدة لكنها تترك ترتيبات مهمة غير متفق عليها.",
+            "en": "A useful start, but important arrangements remain unagreed."
+          },
+          "id": "3"
+        }
+      ],
+      "clause": "9.2 / audit process",
+      "docs": []
+    },
+    {
+      "id": "plan",
+      "room": "meeting",
+      "kind": "plan",
+      "title": {
+        "ar": "صمم خطة الجولة",
+        "en": "Build the audit route"
+      },
+      "speaker": {
+        "ar": "قائد الفريق",
+        "en": "Team leader"
+      },
+      "speech": {
+        "ar": "معاك ٩٠ دقيقة للجولات. شكوى العميل تخص الإفراج عن طلبات قبل اعتمادها. عاوزين نتتبع الطلب من التنفيذ للقياس، وبعدها نراجع المتابعة مع الإدارة.",
+        "en": "You have 90 minutes for fieldwork. A customer complaint concerns orders released before approval. Trace execution and measurement, then review follow-up with management."
+      },
+      "task": {
+        "ar": "اختار وقت كل مسار، وترتيب الزيارة. المجموع لازم يكون ٩٠ دقيقة. دي خطة هذه الحالة وليست مددًا إلزامية للتدقيق.",
+        "en": "Allocate time and choose the visit order. Total must be 90 minutes. These are case-specific planning constraints, not mandatory audit durations."
+      },
+      "clause": "6.1 · 8.1 · 9.2",
+      "docs": [
+        "brief"
+      ]
+    },
+    {
+      "id": "approval",
+      "room": "operations",
+      "title": {
+        "ar": "طلب على خط التنفيذ",
+        "en": "An order in progress"
+      },
+      "speaker": {
+        "ar": "مسؤول التشغيل",
+        "en": "Operations supervisor"
+      },
+      "speech": {
+        "ar": "الطلب R-217 اتسلم للعميل. إجراء العمل عندنا بيشترط اعتماد المدير وتوقيعه قبل الإفراج. النماذج على المكتب لو حابب تراجعها.",
+        "en": "Order R-217 has reached the customer. Our procedure requires the manager’s approval and signature before release. The records are on the desk."
+      },
+      "task": {
+        "ar": "افحص الطلب والإجراء وسجل الإرسال قبل اختيار تصرفك.",
+        "en": "Inspect the order, procedure and dispatch log before deciding."
+      },
+      "options": [
+        {
+          "text": {
+            "ar": "أحدد ما يظهر في العينة، وأطلب أي اعتماد بديل مسموح به وأتتبع وقت الإفراج قبل استنتاج النتيجة.",
+            "en": "Describe the sampled evidence, ask for any permitted alternative approval and trace release timing before concluding."
+          },
+          "points": 25,
+          "why": {
+            "ar": "النموذج لا يعرض توقيع المدير، والسجل يوضح الإفراج. تحقق من أي مسار اعتماد بديل يجيزه الإجراء؛ لا تفترض التزوير أو تعمم على كل الطلبات.",
+            "en": "The form does not show a manager’s signature and the log shows release. Check any alternative authorized approval; do not infer forgery or generalize to every order."
+          },
+          "id": "0"
+        },
+        {
+          "text": {
+            "ar": "أعتبر كل طلبات المنشأة غير مطابقة بمجرد رؤية العينة.",
+            "en": "Treat all organization orders as nonconforming after this sample."
+          },
+          "points": 0,
+          "why": {
+            "ar": "العينة تسند استنتاجًا محددًا، ولا تبرر تعميمًا بلا دليل.",
+            "en": "A sample supports a bounded conclusion, not unsupported generalization."
+          },
+          "id": "1"
+        },
+        {
+          "text": {
+            "ar": "أطلب توقيع الطلب الآن وأعتبر أن اعتماد وقت الإفراج ثبت.",
+            "en": "Ask for a signature now and treat release-time approval as established."
+          },
+          "points": 0,
+          "why": {
+            "ar": "التوقيع اللاحق لا يثبت وجود الاعتماد وقت الإفراج. يجب حفظ تسلسل الوقائع.",
+            "en": "A later signature does not establish approval at release. Preserve the sequence of events."
+          },
+          "id": "2"
+        },
+        {
+          "text": {
+            "ar": "أكتفي بقول المسؤول إن المدير وافق شفهيًا دون مراجعة الإجراء.",
+            "en": "Accept the supervisor’s statement that the manager agreed verbally without checking the procedure."
+          },
+          "points": 7,
+          "why": {
+            "ar": "الإفادة بداية للتتبع؛ يجب اختبارها مقابل قواعد الاعتماد والأدلة المتاحة.",
+            "en": "Testimony starts a trail; test it against approval rules and available evidence."
+          },
+          "id": "3"
+        }
+      ],
+      "clause": "8.6 · 7.5",
+      "docs": [
+        "order",
+        "procedure",
+        "dispatch"
+      ]
+    },
+    {
+      "id": "difficult",
+      "room": "operations",
+      "title": {
+        "ar": "الحوار بدأ يسخن",
+        "en": "A tense conversation"
+      },
+      "speaker": {
+        "ar": "مدير الجودة",
+        "en": "Quality manager"
+      },
+      "speech": {
+        "ar": "إنتوا مش فاهمين طبيعة شغلنا. مش هطلع سجلات تانية، والموظفين عندهم شغل أهم. وبصراحة أنا شايف إن الناس اللي أفكارها مختلفة عني ماينفعش تقيمنا.",
+        "en": "You do not understand our work. I will not provide more records; staff have more important things to do. Frankly, people whose views differ from mine should not assess us."
+      },
+      "task": {
+        "ar": "تتعامل إزاي مع عدم التعاون والكلام الشخصي؟",
+        "en": "How will you handle obstruction and personal remarks?"
+      },
+      "options": [
+        {
+          "text": {
+            "ar": "أعيد الحوار للهدف والدليل باحترام، أوضح الطلب وأثر غياب السجلات، وأصعّد عبر قائد الفريق والمسار المتفق عليه لو استمر العائق.",
+            "en": "Respectfully return to objectives and evidence, clarify the request and effect of missing records, and escalate through the team leader and agreed route if obstruction continues."
+          },
+          "points": 25,
+          "why": {
+            "ar": "احمِ الموضوعية والكرامة، وسجل العائق الواقعي وحدود الاستنتاج. الآراء الشخصية أو السياسية ليست معايير تدقيق.",
+            "en": "Protect objectivity and dignity, record factual access limits and bound the conclusion. Personal or political opinions are not audit criteria."
+          },
+          "id": "0"
+        },
+        {
+          "text": {
+            "ar": "أدخل في نقاش سياسي لإثبات أن وجهة نظري صحيحة.",
+            "en": "Enter a political argument to prove my views correct."
+          },
+          "points": 0,
+          "why": {
+            "ar": "الجدال غير المرتبط بالمهمة يضر الحياد ولا ينتج دليلًا.",
+            "en": "Unrelated argument undermines impartiality and produces no evidence."
+          },
+          "id": "1"
+        },
+        {
+          "text": {
+            "ar": "أهدده بسحب الشهادة فورًا حتى يتعاون.",
+            "en": "Threaten immediate certificate withdrawal to force cooperation."
+          },
+          "points": 0,
+          "why": {
+            "ar": "التخويف وتجاوز الصلاحيات لا يصلحان عائق الوصول للأدلة.",
+            "en": "Intimidation and overstepping authority do not resolve access problems."
+          },
+          "id": "2"
+        },
+        {
+          "text": {
+            "ar": "أترك النقطة تمامًا ولا أذكر نقص الأدلة في التقرير.",
+            "en": "Drop the issue and omit the missing evidence from the report."
+          },
+          "points": 4,
+          "why": {
+            "ar": "إخفاء العائق يجعل التقرير يوحي بتغطية لم تحدث.",
+            "en": "Hiding an obstacle falsely implies coverage that did not occur."
+          },
+          "id": "3"
+        }
+      ],
+      "clause": "9.2 / professional conduct",
+      "docs": [
+        "request"
+      ]
+    },
+    {
+      "id": "measurement",
+      "room": "records",
+      "title": {
+        "ar": "رقم مقنع.. ودليل يحتاج فحص",
+        "en": "A convincing number—check its basis"
+      },
+      "speaker": {
+        "ar": "مسؤول القياس",
+        "en": "Measurement coordinator"
+      },
+      "speech": {
+        "ar": "النتيجة ممتازة: ٩٨٪. الجهاز M-14 هو اللي اتعمل عليه فحص الطلب. شهادة الجهاز وسجل القياس قدامك. تاريخ الاستخدام ٢٤ أكتوبر ٢٠٢٦.",
+        "en": "The result is excellent: 98%. Device M-14 was used to inspect the order. Its certificate and measurement record are available. The use date is 24 October 2026."
+      },
+      "task": {
+        "ar": "افحص صلاحية مورد القياس وأثره، مش الرقم وحده.",
+        "en": "Examine measurement-resource validity and its impact, beyond the headline number."
+      },
+      "options": [
+        {
+          "text": {
+            "ar": "أقارن الهوية والتواريخ ومتطلبات المنشأة، وأطلب تقييم أثر استخدام الجهاز على النتائج والطلبات المتأثرة.",
+            "en": "Compare identity, dates and internal requirements, and request evaluation of the device’s use on affected results and orders."
+          },
+          "points": 25,
+          "why": {
+            "ar": "موعد الاستحقاق في السجل يسبق تاريخ الاستخدام. يلزم التحقق من الحالة الفعلية وأثرها؛ لا يثبت ذلك وحده أن كل منتج معيب.",
+            "en": "The recorded due date precedes use. Verify actual status and impact; this alone does not prove every product defective."
+          },
+          "id": "0"
+        },
+        {
+          "text": {
+            "ar": "أقبل ٩٨٪ لأنها تتجاوز الهدف وأغلق الموضوع.",
+            "en": "Accept 98% because it exceeds the target and close the issue."
+          },
+          "points": 0,
+          "why": {
+            "ar": "الرقم يحتاج أساس قياس صالحًا وموثوقًا.",
+            "en": "A result needs a valid and reliable measurement basis."
+          },
+          "id": "1"
+        },
+        {
+          "text": {
+            "ar": "أعلن أن كل المنتجات المرسلة غير آمنة دون تحقيق.",
+            "en": "Declare every dispatched product unsafe without investigation."
+          },
+          "points": 0,
+          "why": {
+            "ar": "لا يتجاوز الاستنتاج حدود ما يدعمه الدليل.",
+            "en": "Conclusions must remain within the evidence."
+          },
+          "id": "2"
+        },
+        {
+          "text": {
+            "ar": "أراجع التواريخ وأسجل الملاحظة فقط من غير تتبع الأثر.",
+            "en": "Review dates and record an issue without tracing impact."
+          },
+          "points": 14,
+          "why": {
+            "ar": "اكتشاف الحالة خطوة جيدة؛ المتابعة تحتاج أثر النتائج السابقة والتصرف المناسب.",
+            "en": "Identifying status is useful; follow-up also needs prior-result impact and appropriate action."
+          },
+          "id": "3"
+        }
+      ],
+      "clause": "7.1.5 · 8.6 · 9.1",
+      "docs": [
+        "calibration",
+        "measurement"
+      ]
+    },
+    {
+      "id": "aggressive",
+      "room": "meeting",
+      "title": {
+        "ar": "مدقق يتجاوز الحدود",
+        "en": "An auditor crosses the line"
+      },
+      "speaker": {
+        "ar": "أحد أعضاء فريق التدقيق",
+        "en": "An audit-team member"
+      },
+      "speech": {
+        "ar": "الموظف ده واضح إنه مش كفء! جاوب فورًا وإلا هكتب عليك ملاحظة. أنا مش محتاج أشوف دليل.",
+        "en": "This employee is clearly incompetent! Answer immediately or I will raise a finding. I do not need evidence."
+      },
+      "task": {
+        "ar": "إيه التصرف المهني في الموقف ده؟",
+        "en": "What is a professional response?"
+      },
+      "options": [
+        {
+          "text": {
+            "ar": "أوقف الأسلوب الشخصي بهدوء، وأطلب سؤالًا واضحًا مرتبطًا بالمعيار والدليل. لو استمر التجاوز أرجع لقائد الفريق ومسار الشكوى المتفق عليه.",
+            "en": "Calmly stop the personal approach and request a clear question linked to criteria and evidence. If it persists, use the team leader and agreed complaint route."
+          },
+          "points": 25,
+          "why": {
+            "ar": "الحزم لا يعني الإهانة. تقييم الكفاءة يعتمد على دليل مناسب، والملاحظة تربط معيارًا بوقائع.",
+            "en": "Firmness is compatible with respect. Competence assessment needs suitable evidence; a finding links criteria and facts."
+          },
+          "id": "0"
+        },
+        {
+          "text": {
+            "ar": "أهاجم المدقق بنفس الأسلوب أمام الجميع.",
+            "en": "Attack the auditor in the same manner in front of everyone."
+          },
+          "points": 0,
+          "why": {
+            "ar": "التصعيد الشخصي يضر الموظف والمهمة.",
+            "en": "Personal escalation harms both the employee and the assignment."
+          },
+          "id": "1"
+        },
+        {
+          "text": {
+            "ar": "أطلب من الموظف الاعتراف بعدم كفاءته لتوفير الوقت.",
+            "en": "Ask the employee to admit incompetence to save time."
+          },
+          "points": 0,
+          "why": {
+            "ar": "الضغط لانتزاع اعتراف لا ينتج دليلًا موثوقًا.",
+            "en": "Coercing an admission does not produce reliable evidence."
+          },
+          "id": "2"
+        },
+        {
+          "text": {
+            "ar": "أسكت أثناء المقابلة وأرفع الأمر بعد الانتهاء فقط.",
+            "en": "Stay silent during the interview and raise it only afterwards."
+          },
+          "points": 12,
+          "why": {
+            "ar": "الإبلاغ مهم، لكن حماية المقابلة والموظف تحتاج تدخلًا مناسبًا وقت الموقف.",
+            "en": "Reporting matters, but a timely intervention is needed to protect the interview and employee."
+          },
+          "id": "3"
+        }
+      ],
+      "clause": "7.2 · 9.2 / professional conduct",
+      "docs": []
+    },
+    {
+      "id": "gift",
+      "room": "meeting",
+      "title": {
+        "ar": "ظرف بعد المقابلة",
+        "en": "An envelope after the interview"
+      },
+      "speaker": {
+        "ar": "مندوب المنشأة",
+        "en": "Organization representative"
+      },
+      "speech": {
+        "ar": "دي هدية شخصية تقديرًا لتعبك، جواها بطاقة شراء بقيمة كبيرة. ولو موضوع الطلب ما دخلش التقرير هتكون ريّحتنا جدًا. محدش محتاج يعرف.",
+        "en": "This is a personal gift for your effort: a high-value shopping voucher. If the order issue stays out of the report, that would help us. Nobody needs to know."
+      },
+      "task": {
+        "ar": "اختار تصرفًا يحمي نزاهة المهمة.",
+        "en": "Choose an action that protects integrity."
+      },
+      "options": [
+        {
+          "text": {
+            "ar": "أرفض العرض بوضوح ومن غير اتهام أو مساومة، وأحفظ الوقائع وأبلغ عبر مسار النزاهة وقائد الفريق وفق السياسة.",
+            "en": "Decline clearly without accusation or bargaining, preserve the facts and report through the integrity route and team leader according to policy."
+          },
+          "points": 25,
+          "why": {
+            "ar": "ربط المنفعة بإخفاء نتيجة يهدد النزاهة. حافظ على سرية البلاغ، واتبع قواعد جهة التكليف والإجراءات المنطبقة؛ لا تحقق خارج صلاحيتك.",
+            "en": "Linking a benefit to suppressing a finding threatens integrity. Protect reporting confidentiality and follow the commissioning body’s rules and applicable procedures; do not investigate beyond your authority."
+          },
+          "id": "0"
+        },
+        {
+          "text": {
+            "ar": "أقبل البطاقة لكن أعد نفسي ألا يتأثر تقريري.",
+            "en": "Accept the voucher but promise myself the report will stay independent."
+          },
+          "points": 0,
+          "why": {
+            "ar": "قبول المنفعة يخلق تهديدًا للحياد حتى لو لم يتغير التقرير.",
+            "en": "Accepting the benefit threatens impartiality even if the report does not change."
+          },
+          "id": "1"
+        },
+        {
+          "text": {
+            "ar": "أرفضها وأحذف الملاحظة للحفاظ على العلاقة.",
+            "en": "Decline it but remove the finding to preserve the relationship."
+          },
+          "points": 0,
+          "why": {
+            "ar": "إخفاء نتيجة صحيحة يفرغ المهمة من قيمتها.",
+            "en": "Suppressing a supported finding defeats the assignment."
+          },
+          "id": "2"
+        },
+        {
+          "text": {
+            "ar": "أرفض العرض فقط وأكمل دون تسجيله أو إبلاغ أحد.",
+            "en": "Decline and continue without documenting or reporting it."
+          },
+          "points": 12,
+          "why": {
+            "ar": "الرفض صحيح، لكن الواقعة تحتاج المسار المقرر للإبلاغ وإدارة التهديد.",
+            "en": "Declining is appropriate; the incident still needs the prescribed reporting and threat-management route."
+          },
+          "id": "3"
+        }
+      ],
+      "clause": "Governance / impartiality",
+      "docs": [
+        "integrity"
+      ]
+    },
+    {
+      "id": "pressure",
+      "room": "records",
+      "title": {
+        "ar": "هدف أخضر.. وشكاوى معلقة",
+        "en": "A green target—and unresolved complaints"
+      },
+      "speaker": {
+        "ar": "مسؤول الأداء",
+        "en": "Performance lead"
+      },
+      "speech": {
+        "ar": "نسبة الإغلاق ممتازة. بنقفل الشكوى بمجرد إرسال رسالة للعميل، حتى لو المشكلة لسه موجودة. المدير طلب كل المؤشرات تبقى خضراء قبل الاجتماع.",
+        "en": "Our closure rate is excellent. We close complaints when a message is sent, even if the issue remains. The director wants all indicators green before the meeting."
+      },
+      "task": {
+        "ar": "اربط القياس بالقيمة والحوكمة.",
+        "en": "Connect measurement to value and governance."
+      },
+      "options": [
+        {
+          "text": {
+            "ar": "أراجع تعريف المؤشر والعينات والنتيجة للعميل، وأعرض الفجوة بوضوح مع مسؤولية التصحيح والتحسين ومتابعة الفاعلية.",
+            "en": "Review the indicator definition, samples and customer outcome; transparently present the gap with ownership of correction, improvement and effectiveness follow-up."
+          },
+          "points": 25,
+          "why": {
+            "ar": "المؤشر لا يغني عن تحقق النتيجة. التميز يركز على القيمة، والحوكمة على صدق العرض والمساءلة.",
+            "en": "A metric does not replace outcome verification. Excellence focuses on value; governance on honest reporting and accountability."
+          },
+          "id": "0"
+        },
+        {
+          "text": {
+            "ar": "أغير الهدف حتى تبقى كل القيم خضراء.",
+            "en": "Change the target so every result stays green."
+          },
+          "points": 0,
+          "why": {
+            "ar": "تغيير الهدف لإخفاء الأداء لا يعالج المشكلة.",
+            "en": "Changing targets to hide performance does not solve the problem."
+          },
+          "id": "1"
+        },
+        {
+          "text": {
+            "ar": "أعتمد الإغلاق لأن رسالة العميل موجودة.",
+            "en": "Accept closure because a customer message exists."
+          },
+          "points": 5,
+          "why": {
+            "ar": "وجود الرسالة لا يثبت معالجة سبب الشكوى أو تحقق النتيجة.",
+            "en": "A message does not establish resolution or the intended outcome."
+          },
+          "id": "2"
+        },
+        {
+          "text": {
+            "ar": "أطلب تحسين طريقة العرض البصري فقط.",
+            "en": "Request a better visual dashboard only."
+          },
+          "points": 0,
+          "why": {
+            "ar": "تحسين الشكل لا يصحح تعريف القياس أو أثر الخدمة.",
+            "en": "A visual redesign does not fix measurement definitions or service impact."
+          },
+          "id": "3"
+        }
+      ],
+      "clause": "6.2 · 9.1 · 9.3 · 10.2",
+      "docs": [
+        "dashboard"
+      ]
+    },
+    {
+      "id": "finding",
+      "kind": "finding",
+      "room": "records",
+      "title": {
+        "ar": "اكتب نتيجة يمكن الدفاع عنها",
+        "en": "Write a defensible finding"
+      },
+      "speaker": {
+        "ar": "قائد الفريق",
+        "en": "Team leader"
+      },
+      "speech": {
+        "ar": "راجعنا الإجراء PR-06: لا يوجد مسار اعتماد شفهي أو بديل. المدير أكد أن الطلب R-217 أُرسل قبل اعتماده. سجّل استنتاجك للعينة دي فقط.",
+        "en": "PR-06 permits no verbal or alternative approval. The manager confirmed that R-217 was dispatched before approval. Record a conclusion limited to this sample."
+      },
+      "task": {
+        "ar": "اختار المعيار، واربطه بالأدلة، ثم اكتب صياغتك. الكتابة تحفظ للمراجعة الذاتية؛ اللعبة لا تدعي تقييمها لغويًا أو مهنيًا بالذكاء الاصطناعي.",
+        "en": "Select criteria, link evidence and write your finding. Free text is retained for self-review; the game does not claim AI or professional assessment of the writing."
+      },
+      "clause": "8.6 · 7.5",
+      "docs": [
+        "procedure",
+        "order",
+        "dispatch"
+      ]
+    },
+    {
+      "id": "closing",
+      "room": "meeting",
+      "title": {
+        "ar": "الاجتماع الختامي",
+        "en": "Closing meeting"
+      },
+      "speaker": {
+        "ar": "مدير المنشأة",
+        "en": "Organization director"
+      },
+      "speech": {
+        "ar": "مش موافق على الصياغة. اكتبوا مجرد اقتراح تحسين، واحنا نوقع الطلب دلوقتي ونعتبر الموضوع اتقفل.",
+        "en": "I disagree with the wording. Call it an improvement suggestion; we will sign the order now and consider the matter closed."
+      },
+      "task": {
+        "ar": "إزاي تعرض النتيجة وتدير الاختلاف؟",
+        "en": "How will you present findings and handle disagreement?"
+      },
+      "options": [
+        {
+          "text": {
+            "ar": "أشرح المعيار والواقعة والعينة وحدودها، أسمع أي دليل جديد، وأسجل الخلاف غير المحسوم ومسار المتابعة والمواعيد والمسؤوليات.",
+            "en": "Explain criteria, facts, sample and limits; consider new evidence and record unresolved disagreement, follow-up, deadlines and responsibilities."
+          },
+          "points": 25,
+          "why": {
+            "ar": "تغيير التصنيف يحتاج دليلًا ومبررًا، لا ضغطًا. التوقيع اللاحق تصرف جديد لا يغير واقعة الإفراج السابقة؛ الفاعلية تحتاج متابعة.",
+            "en": "Classification changes need evidence and justification, not pressure. A later signature does not change the prior release; effectiveness needs follow-up."
+          },
+          "id": "0"
+        },
+        {
+          "text": {
+            "ar": "أخفض النتيجة بمجرد اعتراض المدير.",
+            "en": "Downgrade the finding simply because the director objects."
+          },
+          "points": 0,
+          "why": {
+            "ar": "الاتفاق الاجتماعي ليس بديلًا عن المعيار والدليل.",
+            "en": "Social agreement does not replace criteria and evidence."
+          },
+          "id": "1"
+        },
+        {
+          "text": {
+            "ar": "أرفض الاستماع لأي دليل جديد لأننا في نهاية اليوم.",
+            "en": "Refuse any new evidence because the day is ending."
+          },
+          "points": 5,
+          "why": {
+            "ar": "الحياد يتطلب النظر في المعلومات ذات الصلة والتحقق منها.",
+            "en": "Objectivity requires considering and verifying relevant new information."
+          },
+          "id": "2"
+        },
+        {
+          "text": {
+            "ar": "أعرض النتيجة بالدليل لكن أؤجل مسؤوليات المتابعة دون تحديدها.",
+            "en": "Present the evidence but leave follow-up responsibilities unspecified."
+          },
+          "points": 16,
+          "why": {
+            "ar": "العرض واضح، لكن المتابعة تحتاج توقعات ومسؤوليات وترتيبات محددة.",
+            "en": "The presentation is clear; follow-up still needs defined expectations, owners and arrangements."
+          },
+          "id": "3"
+        }
+      ],
+      "clause": "9.2 · 10.2",
+      "docs": []
+    },
+    {
+      "id": "followup",
+      "room": "records",
+      "title": {
+        "ar": "اتصلح الطلب.. هل اتصلح النظام؟",
+        "en": "Order fixed—has the system improved?"
+      },
+      "speaker": {
+        "ar": "مسؤول التحسين",
+        "en": "Improvement owner"
+      },
+      "speech": {
+        "ar": "وقعنا الطلب، ودربنا الموظف، وعاوزين نقفل الإجراء فورًا. عندنا خطة لتعديل نقطة السماح بالإفراج، بس لسه ماطبقناهاش.",
+        "en": "We signed the order and trained the employee. We want immediate closure. A release-control change is planned but not yet implemented."
+      },
+      "task": {
+        "ar": "ما الذي يثبت معالجة السبب والفاعلية؟",
+        "en": "What establishes cause treatment and effectiveness?"
+      },
+      "options": [
+        {
+          "text": {
+            "ar": "أفصل التصحيح عن الإجراء التصحيحي، وأراجع تحليل السبب والتنفيذ ثم عينات لاحقة مناسبة للتحقق من منع التكرار.",
+            "en": "Distinguish correction from corrective action; review cause analysis and implementation, then suitable subsequent samples to verify prevention of recurrence."
+          },
+          "points": 25,
+          "why": {
+            "ar": "التوقيع يعالج حالة، والتدريب وحده قد لا يعالج السبب. فاعلية الإجراء تحتاج دليلًا متناسبًا ومتابعة في توقيت مناسب.",
+            "en": "A signature addresses a case; training alone may not address the cause. Effectiveness needs proportionate evidence and follow-up at a suitable time."
+          },
+          "id": "0"
+        },
+        {
+          "text": {
+            "ar": "أغلقه لأن خطة التعديل مكتوبة.",
+            "en": "Close because the change plan is written."
+          },
+          "points": 0,
+          "why": {
+            "ar": "الخطة لا تثبت التنفيذ أو الفاعلية.",
+            "en": "A plan does not establish implementation or effectiveness."
+          },
+          "id": "1"
+        },
+        {
+          "text": {
+            "ar": "أطلب تعيين موظف جديد تلقائيًا.",
+            "en": "Automatically require hiring a new employee."
+          },
+          "points": 0,
+          "why": {
+            "ar": "الحل لا يفرض قبل فهم السبب وحدود الصلاحية.",
+            "en": "Do not prescribe a solution without understanding cause and authority."
+          },
+          "id": "2"
+        },
+        {
+          "text": {
+            "ar": "أراجع التنفيذ وأغلق فورًا دون انتظار بيانات مناسبة.",
+            "en": "Review implementation and close immediately without suitable outcome data."
+          },
+          "points": 15,
+          "why": {
+            "ar": "التنفيذ مهم، لكن تحقق الفاعلية يحتاج دليلًا كافيًا حسب طبيعة الإجراء.",
+            "en": "Implementation matters; effectiveness still needs sufficient evidence appropriate to the action."
+          },
+          "id": "3"
+        }
+      ],
+      "clause": "10.2 · 9.1",
+      "docs": []
+    },
+    {
+      "id": "independent",
+      "room": "meeting",
+      "title": {
+        "ar": "الملف وصل للمراجعة المستقلة",
+        "en": "The file reaches independent review"
+      },
+      "speaker": {
+        "ar": "منسق الملف",
+        "en": "File coordinator"
+      },
+      "speech": {
+        "ar": "فريق التدقيق أوصى باستمرار الشهادة. الملف فيه نتيجة جوهرية، لكن معلومات الإجراء والتصنيف المطلوبة لقرارنا غير مكتملة. ممكن نعتبر توصية الفريق كفاية؟",
+        "en": "The audit team recommended continuation. The file contains a material issue, but information about classification and action needed for our decision is incomplete. Is the team recommendation enough?"
+      },
+      "task": {
+        "ar": "اختار الخطوة المناسبة داخل صلاحية دورك.",
+        "en": "Choose an action within your role authority."
+      },
+      "options": [
+        {
+          "text": {
+            "ar": "أطلب استكمال المعلومات اللازمة عبر المسار المحدد، وأفصل توصية الفريق عن قرار مستقل مستند لملف كافٍ ومتطلبات الجهة.",
+            "en": "Request necessary information through the defined route and distinguish the team recommendation from an independent decision based on a sufficient file and applicable body requirements."
+          },
+          "points": 25,
+          "why": {
+            "ar": "القرار يحتاج كفاية الملف والمتطلبات المنطبقة ونوع النتيجة. لا توجد قاعدة تعليمية هنا تقول إن كل نتيجة تستلزم الإغلاق الكامل قبل كل قرار.",
+            "en": "The decision depends on file sufficiency, applicable requirements and finding type. This game does not assert that every finding must be fully closed before every decision."
+          },
+          "id": "0"
+        },
+        {
+          "text": {
+            "ar": "أصدر قرار المنح بنفسي لمجرد إكمال الجولة.",
+            "en": "Issue a certification decision myself simply because the tour is complete."
+          },
+          "points": 0,
+          "why": {
+            "ar": "إتمام الجولة لا يمنح صلاحية قرار المنح ولا يثبت كفاية الملف.",
+            "en": "Completing fieldwork gives neither certification authority nor a sufficient decision file."
+          },
+          "id": "1"
+        },
+        {
+          "text": {
+            "ar": "أوافق لأن قائد الفريق أوصى بالموافقة.",
+            "en": "Approve because the team leader recommended it."
+          },
+          "points": 0,
+          "why": {
+            "ar": "توصية الفريق مدخل؛ ليست بديلًا عن المراجعة المستقلة المطلوبة.",
+            "en": "A team recommendation is input, not a substitute for the required independent review."
+          },
+          "id": "2"
+        },
+        {
+          "text": {
+            "ar": "أطلب إغلاق كل نقطة مهما كان نوعها أو متطلبات القرار.",
+            "en": "Require closure of every item regardless of finding type or decision requirements."
+          },
+          "points": 8,
+          "why": {
+            "ar": "يجب تطبيق متطلبات الجهة ونوع القرار، لا اختراع شرط عام.",
+            "en": "Apply the body’s requirements and decision type rather than inventing a blanket rule."
+          },
+          "id": "3"
+        }
+      ],
+      "clause": "Certification process / independent review",
+      "docs": []
+    }
+  ],
+  "sectors": {
+    "manufacturing": {
+      "ar": "مصنع النور للمكونات",
+      "en": "Al Noor Components"
+    },
+    "healthcare": {
+      "ar": "مركز حياة للخدمات الطبية",
+      "en": "Hayat Medical Services"
+    },
+    "construction": {
+      "ar": "شركة أفق للمشروعات",
+      "en": "Horizon Projects"
+    },
+    "financial": {
+      "ar": "شركة ميزان للخدمات المالية",
+      "en": "Mizan Financial Services"
+    }
+  },
+  "operations": {
+    "manufacturing": {
+      "ar": "صالة الإنتاج",
+      "en": "Production floor"
+    },
+    "healthcare": {
+      "ar": "وحدة الخدمات",
+      "en": "Service unit"
+    },
+    "construction": {
+      "ar": "موقع المشروع",
+      "en": "Project site"
+    },
+    "financial": {
+      "ar": "صالة العمليات",
+      "en": "Operations floor"
+    }
+  },
+  "release": {
+    "manufacturing": {
+      "ar": "أمر تصنيع وتسليم",
+      "en": "Production and delivery order"
+    },
+    "healthcare": {
+      "ar": "طلب خدمة إدارية",
+      "en": "Administrative service request"
+    },
+    "construction": {
+      "ar": "طلب تسليم أعمال",
+      "en": "Work handover request"
+    },
+    "financial": {
+      "ar": "طلب تنفيذ خدمة",
+      "en": "Service execution request"
+    }
+  },
+  "device": {
+    "manufacturing": {
+      "ar": "جهاز قياس أبعاد",
+      "en": "Dimensional measuring device"
+    },
+    "healthcare": {
+      "ar": "جهاز قياس حرارة ثلاجة مواد الخدمة",
+      "en": "Service-material refrigerator thermometer"
+    },
+    "construction": {
+      "ar": "جهاز قياس أبعاد الموقع",
+      "en": "Site dimensional measuring device"
+    },
+    "financial": {
+      "ar": "جهاز قياس زمن معالجة الخدمة",
+      "en": "Service-processing time measurement device"
+    }
+  },
+  "version": "2.0-audit-day",
+  "sectorStories": {
+    "manufacturing": {
+      "opening": {
+        "title": {
+          "ar": "افتتاحي في مصنع المكونات",
+          "en": "Opening at the components factory"
+        },
+        "speaker": {
+          "ar": "مدير المصنع",
+          "en": "Factory director"
+        },
+        "speech": {
+          "ar": "أهلًا بالفريق. عندنا شحنة مكونات لازم تخرج النهارده وخط الإنتاج شغال. خلونا نروح الخط فورًا ونختصر الاجتماع.",
+          "en": "Welcome. A components shipment is due today and the production line is running. Let us go straight to the line and shorten the meeting."
+        }
+      },
+      "approval": {
+        "title": {
+          "ar": "دفعة مكونات خرجت للعميل",
+          "en": "A component batch reached the customer"
+        },
+        "speaker": {
+          "ar": "مشرف الإنتاج",
+          "en": "Production supervisor"
+        },
+        "speech": {
+          "ar": "دفعة المكونات المرتبطة بالطلب R-217 اتشحنت. إجراء PR-06 بيشترط اعتماد مدير الإنتاج وتوقيعه قبل الإفراج. ملف الطلب وسجل الشحن موجودين للفحص.",
+          "en": "The component batch for R-217 was shipped. PR-06 requires the production manager’s approval and signature before release. Inspect the order and dispatch records."
+        }
+      },
+      "measurement": {
+        "title": {
+          "ar": "هل قياس أبعاد الدفعة موثوق؟",
+          "en": "Can we trust the batch measurements?"
+        },
+        "speech": {
+          "ar": "جهاز قياس الأبعاد M-14 اتستخدم في فحص دفعة R-217 يوم ٢٤ أكتوبر ٢٠٢٦. نسبة المطابقة المعلنة ٩٨٪. راجع سجل الجهاز ونتيجة الفحص قبل ما تعتمد الرقم.",
+          "en": "Dimensional device M-14 inspected batch R-217 on 24 October 2026. The reported conformance rate is 98%. Check its register and inspection results before relying on the figure."
+        }
+      },
+      "pressure": {
+        "title": {
+          "ar": "لوحة المصنع تخفي شكاوى التركيب",
+          "en": "The factory dashboard hides assembly complaints"
+        },
+        "speech": {
+          "ar": "العملاء بيشتكوا من صعوبة تركيب بعض المكونات. بنقفل الشكوى بمجرد إرسال رد، حتى لو عيب التركيب لسه متحلش. المدير عاوز اللوحة خضراء قبل مراجعة الإدارة.",
+          "en": "Customers report assembly difficulty. We close a complaint when a reply is sent, even if the fit problem remains. The director wants a green dashboard before management review."
+        }
+      },
+      "caseSubject": {
+        "ar": "دفعة مكونات معدنية للتركيب",
+        "en": "Metal component batch for assembly"
+      }
+    },
+    "healthcare": {
+      "opening": {
+        "title": {
+          "ar": "افتتاحي في المركز الطبي",
+          "en": "Opening at the medical center"
+        },
+        "speaker": {
+          "ar": "مدير المركز الطبي",
+          "en": "Medical center director"
+        },
+        "speech": {
+          "ar": "أهلًا بيكم. المواعيد مزدحمة وشركة متعاقدة بتشتكي من تأخر تقارير الخدمة الإدارية. خلونا نبدأ من الاستقبال بسرعة، من غير ما نعطل تقديم الخدمة.",
+          "en": "Welcome. Appointments are busy and a corporate client complains about delayed administrative service reports. Let us start at reception quickly without disrupting care."
+        }
+      },
+      "approval": {
+        "title": {
+          "ar": "تقرير خدمة أُرسل قبل اعتماده",
+          "en": "A service report sent before approval"
+        },
+        "speaker": {
+          "ar": "مسؤولة تنسيق الخدمات",
+          "en": "Service coordination lead"
+        },
+        "speech": {
+          "ar": "تقرير الخدمة الإداري للطلب R-217 اتبعت للشركة المتعاقدة. الإجراء PR-06 بيشترط اعتماد مدير الخدمات وتوقيعه قبل الإرسال. دي سجلات تدريبية خيالية، من غير بيانات مرضى.",
+          "en": "The administrative service report for R-217 was sent to the corporate client. PR-06 requires the service manager’s approval and signature before sending. These are fictional training records without patient data."
+        }
+      },
+      "measurement": {
+        "title": {
+          "ar": "قراءة ثلاجة مواد الخدمة",
+          "en": "Service-material refrigerator reading"
+        },
+        "speaker": {
+          "ar": "مسؤولة تجهيزات الخدمة",
+          "en": "Service-equipment coordinator"
+        },
+        "speech": {
+          "ar": "جهاز الحرارة M-14 اتستخدم لمتابعة ثلاجة مواد الخدمة يوم ٢٤ أكتوبر ٢٠٢٦. اللوحة بتعرض ٩٨٪ قراءات داخل الحدود. راجع صلاحية القياس وأثره على سجلات هذه الخدمة؛ الحالة لا تخص قرارًا علاجيًا.",
+          "en": "Thermometer M-14 monitored the service-material refrigerator on 24 October 2026. The dashboard reports 98% in-range readings. Examine measurement validity and its service-record impact; this case involves no treatment decision."
+        }
+      },
+      "pressure": {
+        "title": {
+          "ar": "رسالة للمستفيد.. والخدمة مازالت متأخرة",
+          "en": "A reply sent—but the service is still delayed"
+        },
+        "speech": {
+          "ar": "المستفيد اشتكى من تأخر تقرير إداري. بنقفل الشكوى بعد رسالة الاعتذار حتى لو التقرير لسه ماوصلش. قبل مراجعة الإدارة بنعرض نسبة الإغلاق، من غير قياس تحقق التسليم.",
+          "en": "A recipient complained about a delayed administrative report. We close the complaint after an apology message even if the report has not arrived. Management sees closure rates without verified delivery outcomes."
+        }
+      },
+      "caseSubject": {
+        "ar": "تقرير خدمة إداري لشركة متعاقدة — بلا بيانات مرضى",
+        "en": "Administrative service report for a corporate client — no patient data"
+      }
+    },
+    "construction": {
+      "opening": {
+        "title": {
+          "ar": "افتتاحي في موقع المشروع",
+          "en": "Opening at the project site"
+        },
+        "speaker": {
+          "ar": "مدير المشروع",
+          "en": "Project director"
+        },
+        "speech": {
+          "ar": "عندنا تسليم أعمال للعميل، والمقاول مستعجل يقفل المرحلة. لازم نتفق على مسارات الحركة ومعدات الوقاية ومرافقة الموقع قبل الجولة. والوقت المتاح محدود.",
+          "en": "A work handover is due and the contractor wants to close the phase. Agree site routes, protective equipment and escorts before fieldwork. Time is limited."
+        }
+      },
+      "approval": {
+        "title": {
+          "ar": "محضر تسليم أعمال قبل الاعتماد",
+          "en": "Work handover before authorization"
+        },
+        "speaker": {
+          "ar": "مهندس التنفيذ",
+          "en": "Site engineer"
+        },
+        "speech": {
+          "ar": "محضر تسليم أعمال المرحلة R-217 اتبعت للعميل. PR-06 بيشترط اعتماد مدير المشروع وتوقيعه قبل الإفراج عن محضر التسليم. افحص المحضر والإجراء وسجل الإرسال.",
+          "en": "Phase handover record R-217 was sent to the client. PR-06 requires the project manager’s approval and signature before the handover record is released. Inspect the record, procedure and dispatch log."
+        }
+      },
+      "measurement": {
+        "title": {
+          "ar": "جهاز الموقع وسجل الأبعاد",
+          "en": "Site instrument and dimensional record"
+        },
+        "speaker": {
+          "ar": "مهندس ضبط الجودة",
+          "en": "Quality-control engineer"
+        },
+        "speech": {
+          "ar": "جهاز الأبعاد M-14 اتستخدم في فحص أعمال المرحلة يوم ٢٤ أكتوبر ٢٠٢٦. السجل بيقول النتائج داخل الحدود. افحص حالة الجهاز وتأثيرها قبل الحكم على قبول الأعمال.",
+          "en": "Site dimensional device M-14 inspected phase work on 24 October 2026. Results are recorded as within limits. Check instrument status and its impact before drawing acceptance conclusions."
+        }
+      },
+      "pressure": {
+        "title": {
+          "ar": "ملاحظات تسليم أغلقت على اللوحة فقط",
+          "en": "Handover issues closed only on the dashboard"
+        },
+        "speech": {
+          "ar": "العميل لسه منتظر إصلاح ملاحظة تسليم. إحنا بنقفل الشكوى بمجرد إرسال خطاب رد للمقاول، حتى لو العمل لم يتصحح. نسبة الإغلاق طالعة ممتازة.",
+          "en": "The client is still awaiting a handover defect correction. We close complaints when a response letter goes to the contractor, even when work is not corrected. The closure rate looks excellent."
+        }
+      },
+      "caseSubject": {
+        "ar": "محضر تسليم مرحلة أعمال مشروع",
+        "en": "Project-phase work handover record"
+      }
+    },
+    "financial": {
+      "opening": {
+        "title": {
+          "ar": "افتتاحي في مركز العمليات المالية",
+          "en": "Opening at financial operations"
+        },
+        "speaker": {
+          "ar": "مدير العمليات",
+          "en": "Operations director"
+        },
+        "speech": {
+          "ar": "عندنا ضغط طلبات في نهاية الشهر وشكوى من تنفيذ خدمة قبل اعتمادها. هنحتاج نحافظ على سرية سجلات العملاء وصلاحيات الوصول أثناء الجولة.",
+          "en": "Month-end requests are heavy and a complaint concerns a service performed before authorization. Protect customer-record confidentiality and access permissions throughout fieldwork."
+        }
+      },
+      "approval": {
+        "title": {
+          "ar": "طلب خدمة نُفذ قبل التصريح",
+          "en": "A service request processed before authorization"
+        },
+        "speaker": {
+          "ar": "مشرف تنفيذ الخدمات",
+          "en": "Service-processing supervisor"
+        },
+        "speech": {
+          "ar": "طلب الخدمة R-217 اتنفذ واترسل تأكيده للعميل. إجراء PR-06 بيشترط اعتماد مدير العمليات وتوقيعه قبل السماح بالتنفيذ والإرسال. الحالة تخص جودة العملية، من غير نصيحة مالية أو بيانات حسابات حقيقية.",
+          "en": "Service request R-217 was processed and its confirmation sent to the client. PR-06 requires the operations manager’s approval and signature before execution and sending. This concerns process quality, with no financial advice or real account data."
+        }
+      },
+      "measurement": {
+        "title": {
+          "ar": "هل زمن الخدمة المقاس دقيق؟",
+          "en": "Is the measured service time accurate?"
+        },
+        "speaker": {
+          "ar": "مسؤول قياس زمن الخدمة",
+          "en": "Service-time measurement lead"
+        },
+        "speech": {
+          "ar": "أداة قياس الزمن M-14 سجلت معالجة طلبات الخدمة يوم ٢٤ أكتوبر ٢٠٢٦. ٩٨٪ من النتائج داخل الحدود. سياسة المنشأة بتحدد تحقق دقة دوري؛ افحص الاستحقاق وأثره على نتائج قياس زمن الخدمة.",
+          "en": "Timing tool M-14 measured service processing on 24 October 2026. 98% of results are within limits. Internal policy sets periodic accuracy verification; check its due date and impact on service-time results."
+        }
+      },
+      "pressure": {
+        "title": {
+          "ar": "إغلاق شكوى لا يساوي تنفيذ الخدمة",
+          "en": "Complaint closure is not service completion"
+        },
+        "speech": {
+          "ar": "العميل لسه منتظر تنفيذ طلبه. بنقفل الشكوى بمجرد إرسال رسالة إن الطلب قيد المراجعة. الإدارة بتشوف نسبة إغلاق عالية، لكننا مش بنعرض مدة الانتظار الفعلية.",
+          "en": "The client is still waiting for processing. We close complaints after sending an under-review message. Management sees high closure rates but not actual waiting times."
+        }
+      },
+      "caseSubject": {
+        "ar": "طلب تنفيذ خدمة تشغيلية لعميل افتراضي",
+        "en": "Operational service request for a fictional client"
+      }
+    }
+  }
+}
