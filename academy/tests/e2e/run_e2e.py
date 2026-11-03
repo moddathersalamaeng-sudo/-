@@ -299,14 +299,14 @@ if base.exists():
         h, f = line.split(maxsplit=1)
         cur = hashlib.sha256((PLATFORM / f).read_bytes()).hexdigest()
         if cur != h: changed.append(f)
-    # Owner-approved hub changes: index.html (D-08, one line) and sw.js (D-19, network-first for /academy/). Each must match its patch exactly.
+    # Owner-approved hub changes: index.html (D-08, one line) and sw.js (D-22, network-first for /academy/). Each must match its patch exactly.
     patched = {}
     for f, patch in (('index.html', 'hub-training-url.patch'), ('sw.js', 'sw-academy-network-first.patch')):
         if f in changed:
             r = subprocess.run(['patch', '-R', '--dry-run', '-p1', '-s', '-i', str(PLATFORM.parent / 'patches' / patch)], cwd=PLATFORM, capture_output=True, text=True)
             patched[f] = r.returncode == 0
     others = [f for f in changed if f not in ('index.html', 'sw.js')]
-    record(f'integrity: all {sum(1 for _ in base.read_text().splitlines()) - 2} other baseline toolkit/asset files byte-identical; hub changes are exactly the D-08 and D-19 patches',
+    record(f'integrity: all {sum(1 for _ in base.read_text().splitlines()) - 2} other baseline toolkit/asset files byte-identical; hub changes are exactly the D-08 and D-22 patches',
            not others and set(changed) == {'index.html', 'sw.js'} and all(patched.values()), f'changed={changed} patch_ok={patched}')
 
 passed = sum(r['ok'] for r in results)
