@@ -1,0 +1,2686 @@
+{
+  "schema": 1,
+  "items": [
+    {
+      "id": "KA-001",
+      "slug": "what-is-iso",
+      "kind": "explainer",
+      "title": {
+        "en": "What ISO is and how standards are developed",
+        "ar": "ما هي ISO وكيف تُطوّر المواصفات"
+      },
+      "ecosystem": "iso",
+      "domain": null,
+      "topic": "topic-iso",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "ISO is an international standards organization. Its standards are developed through structured consensus processes; ISO itself does not certify organizations.",
+            "ar": "ISO منظمة دولية للمواصفات، وتُطوّر المواصفات عبر عمليات توافق منظمة؛ ولا تقوم ISO نفسها بمنح شهادات للمنظمات."
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-002",
+      "slug": "certification-terms",
+      "kind": "explainer",
+      "title": {
+        "en": "Certification, accreditation and related terms",
+        "ar": "الشهادة والاعتماد والمصطلحات المرتبطة"
+      },
+      "ecosystem": "iso",
+      "domain": null,
+      "topic": "topic-iso",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Certification, accreditation, registration, training certificates and personnel certification describe different assurance or recognition mechanisms.",
+            "ar": "الشهادة والاعتماد والتسجيل وشهادات التدريب وشهادات الأفراد آليات مختلفة للتحقق أو الاعتراف."
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-003",
+      "slug": "conformity-assessment",
+      "kind": "explainer",
+      "title": {
+        "en": "First, second and third-party assessment",
+        "ar": "تقييم الطرف الأول والثاني والثالث"
+      },
+      "ecosystem": "iso",
+      "domain": null,
+      "topic": "topic-iso",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Conformity assessment may be performed by the organization itself, an interested external party, or an independent third party.",
+            "ar": "قد ينفذ تقييم المطابقة الطرف الأول أو طرف خارجي ذي مصلحة أو طرف ثالث مستقل."
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-004",
+      "slug": "roles-in-assurance",
+      "kind": "explainer",
+      "title": {
+        "en": "Consultants, auditors and certification bodies",
+        "ar": "الاستشاريون والمدققون وجهات المنح"
+      },
+      "ecosystem": "iso",
+      "domain": null,
+      "topic": "topic-iso",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Consulting, auditing and certification are distinct roles with different independence expectations.",
+            "ar": "الاستشارة والتدقيق ومنح الشهادات أدوار مختلفة ولها متطلبات استقلال مختلفة."
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-005",
+      "slug": "read-a-standard",
+      "kind": "explainer",
+      "title": {
+        "en": "How to read a management-system standard",
+        "ar": "كيف تقرأ مواصفة نظام إدارة"
+      },
+      "ecosystem": "iso",
+      "domain": null,
+      "topic": "topic-iso",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Read scope, references, terms, requirements, notes and annexes as a connected architecture rather than isolated clauses.",
+            "ar": "اقرأ النطاق والمراجع والمصطلحات والمتطلبات والملاحظات والملاحق كمنظومة مترابطة لا كبنود منفصلة."
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-006",
+      "slug": "modal-verbs",
+      "kind": "explainer",
+      "title": {
+        "en": "Shall, should, may and can",
+        "ar": "Shall وShould وMay وCan"
+      },
+      "ecosystem": "iso",
+      "domain": null,
+      "topic": "topic-iso",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Modal verbs signal different levels of obligation, recommendation, permission and possibility.",
+            "ar": "توضح الأفعال الاصطلاحية درجات مختلفة من الإلزام والتوصية والإذن والإمكانية."
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-007",
+      "slug": "requirement-to-evidence",
+      "kind": "explainer",
+      "title": {
+        "en": "Requirement to objective evidence",
+        "ar": "من المتطلب إلى الدليل الموضوعي"
+      },
+      "ecosystem": "iso",
+      "domain": null,
+      "topic": "topic-iso",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "A disciplined chain moves from requirement through interpretation and application to evidence and audit questions.",
+            "ar": "تنتقل السلسلة المنضبطة من المتطلب إلى التفسير والتطبيق ثم الدليل وأسئلة التدقيق."
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-008",
+      "slug": "harmonized-structure",
+      "kind": "explainer",
+      "title": {
+        "en": "Harmonized structure overview",
+        "ar": "نظرة عامة على الهيكل الموحد"
+      },
+      "ecosystem": "iso",
+      "domain": null,
+      "topic": "topic-iso",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Many ISO management-system standards use a harmonized high-level structure to improve compatibility.",
+            "ar": "تستخدم العديد من مواصفات نظم الإدارة هيكلاً موحداً عالي المستوى لتحسين التوافق."
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-009",
+      "slug": "pdca-risk-thinking",
+      "kind": "explainer",
+      "title": {
+        "en": "PDCA and risk-based thinking",
+        "ar": "PDCA والتفكير المبني على المخاطر"
+      },
+      "ecosystem": "iso",
+      "domain": null,
+      "topic": "topic-iso",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "PDCA supports controlled learning cycles while risk-based thinking helps prioritize uncertainty and opportunity.",
+            "ar": "يدعم PDCA دورات تعلم منضبطة بينما يساعد التفكير المبني على المخاطر على ترتيب عدم اليقين والفرص."
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-010",
+      "slug": "audit-findings",
+      "kind": "explainer",
+      "title": {
+        "en": "Audit and finding basics",
+        "ar": "أساسيات التدقيق والنتائج"
+      },
+      "ecosystem": "iso",
+      "domain": null,
+      "topic": "topic-iso",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "A defensible nonconformity connects a requirement, objective evidence and a clear statement of the gap.",
+            "ar": "تربط حالة عدم المطابقة القابلة للدفاع بين المتطلب والدليل الموضوعي وبيان واضح للفجوة."
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-011",
+      "slug": "project-program-portfolio",
+      "kind": "explainer",
+      "title": {
+        "en": "Project vs programme vs portfolio",
+        "ar": "المشروع مقابل البرنامج والمحفظة"
+      },
+      "ecosystem": "pmi",
+      "domain": null,
+      "topic": "topic-pmi",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Projects create defined outputs; programmes coordinate related work; portfolios align investments with strategy.",
+            "ar": "شرح مهني للمفهوم: المشروع مقابل البرنامج والمحفظة"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "PM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-012",
+      "slug": "pmo-types",
+      "kind": "explainer",
+      "title": {
+        "en": "PMO types",
+        "ar": "أنواع مكاتب إدارة المشاريع"
+      },
+      "ecosystem": "pmi",
+      "domain": null,
+      "topic": "topic-pmi",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "PMOs vary in mandate, from support and standards to control and enterprise-level integration.",
+            "ar": "شرح مهني للمفهوم: أنواع مكاتب إدارة المشاريع"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "PM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-013",
+      "slug": "delivery-approaches",
+      "kind": "explainer",
+      "title": {
+        "en": "Predictive, agile and hybrid",
+        "ar": "التنبؤي والرشيق والهجين"
+      },
+      "ecosystem": "pmi",
+      "domain": null,
+      "topic": "topic-pmi",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Delivery approaches differ in how they handle uncertainty, planning cadence, feedback and change.",
+            "ar": "شرح مهني للمفهوم: التنبؤي والرشيق والهجين"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "PM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-014",
+      "slug": "value-benefits",
+      "kind": "explainer",
+      "title": {
+        "en": "Value delivery and benefits",
+        "ar": "تسليم القيمة والمنافع"
+      },
+      "ecosystem": "pmi",
+      "domain": null,
+      "topic": "topic-pmi",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Successful delivery considers outcomes, benefits and value, not only scope, schedule and cost.",
+            "ar": "شرح مهني للمفهوم: تسليم القيمة والمنافع"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "PM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-015",
+      "slug": "quality-qa-qc",
+      "kind": "explainer",
+      "title": {
+        "en": "Quality vs QA vs QC",
+        "ar": "الجودة مقابل ضمان الجودة وضبط الجودة"
+      },
+      "ecosystem": "quality",
+      "domain": null,
+      "topic": "topic-quality",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Quality is the broader ability to fulfil requirements; assurance builds confidence in processes, while control verifies outputs.",
+            "ar": "شرح مهني للمفهوم: الجودة مقابل ضمان الجودة وضبط الجودة"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-CIA"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-016",
+      "slug": "seven-quality-tools",
+      "kind": "explainer",
+      "title": {
+        "en": "Seven basic quality tools overview",
+        "ar": "نظرة عامة على أدوات الجودة السبع"
+      },
+      "ecosystem": "quality",
+      "domain": null,
+      "topic": "topic-quality",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Basic quality tools help teams visualize variation, prioritize causes and make evidence-based decisions.",
+            "ar": "شرح مهني للمفهوم: نظرة عامة على أدوات الجودة السبع"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-CIA"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-017",
+      "slug": "cost-of-quality",
+      "kind": "explainer",
+      "title": {
+        "en": "Cost of quality",
+        "ar": "تكلفة الجودة"
+      },
+      "ecosystem": "quality",
+      "domain": null,
+      "topic": "topic-quality",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Cost of quality groups prevention, appraisal and failure costs to make trade-offs visible.",
+            "ar": "شرح مهني للمفهوم: تكلفة الجودة"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-CIA"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-018",
+      "slug": "correction-corrective-action",
+      "kind": "explainer",
+      "title": {
+        "en": "Correction vs corrective action",
+        "ar": "التصحيح مقابل الإجراء التصحيحي"
+      },
+      "ecosystem": "quality",
+      "domain": null,
+      "topic": "topic-quality",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Correction addresses a detected problem; corrective action addresses its cause to prevent recurrence.",
+            "ar": "شرح مهني للمفهوم: التصحيح مقابل الإجراء التصحيحي"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "QM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-CIA"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-019",
+      "slug": "excellence-quality",
+      "kind": "explainer",
+      "title": {
+        "en": "Excellence vs quality",
+        "ar": "التميز مقابل الجودة"
+      },
+      "ecosystem": "efqm",
+      "domain": null,
+      "topic": "topic-efqm",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Organizational excellence broadens the lens from conformance to sustained stakeholder value and organizational capability.",
+            "ar": "شرح مهني للمفهوم: التميز مقابل الجودة"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "LDR-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-CIA"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-020",
+      "slug": "direction-execution-results",
+      "kind": "explainer",
+      "title": {
+        "en": "Direction, execution and results logic",
+        "ar": "منطق التوجه والتنفيذ والنتائج"
+      },
+      "ecosystem": "efqm",
+      "domain": null,
+      "topic": "topic-efqm",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "An excellence system connects where the organization is going, how it executes, and what results it creates.",
+            "ar": "شرح مهني للمفهوم: منطق التوجه والتنفيذ والنتائج"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "LDR-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-CIA"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-021",
+      "slug": "radar-concept",
+      "kind": "explainer",
+      "title": {
+        "en": "RADAR as a management concept",
+        "ar": "RADAR كمفهوم إداري"
+      },
+      "ecosystem": "efqm",
+      "domain": null,
+      "topic": "topic-efqm",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "RADAR can be understood as a disciplined cycle for defining results, selecting approaches, deploying them, and learning from assessment.",
+            "ar": "شرح مهني للمفهوم: RADAR كمفهوم إداري"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "LDR-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-CIA"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-022",
+      "slug": "p3o-overview",
+      "kind": "explainer",
+      "title": {
+        "en": "P3O model overview",
+        "ar": "نظرة عامة على نموذج P3O"
+      },
+      "ecosystem": "p3o",
+      "domain": null,
+      "topic": "topic-p3o",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "P3O describes coordinated portfolio, programme and project office structures that support decision-making and delivery.",
+            "ar": "شرح مهني للمفهوم: نظرة عامة على نموذج P3O"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "PM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-023",
+      "slug": "office-levels",
+      "kind": "explainer",
+      "title": {
+        "en": "Portfolio, programme and project offices",
+        "ar": "مكاتب المحافظ والبرامج والمشاريع"
+      },
+      "ecosystem": "p3o",
+      "domain": null,
+      "topic": "topic-p3o",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "Office structures can operate at portfolio, programme or project level with distinct governance and support responsibilities.",
+            "ar": "شرح مهني للمفهوم: مكاتب المحافظ والبرامج والمشاريع"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "PM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "KA-024",
+      "slug": "cia-p3o-preparation",
+      "kind": "explainer",
+      "title": {
+        "en": "CIA preparation and official status",
+        "ar": "تحضير CIA والوضع الرسمي"
+      },
+      "ecosystem": "p3o",
+      "domain": null,
+      "topic": "topic-p3o",
+      "level": 2,
+      "estimated_minutes": 7,
+      "learning_objectives": [
+        {
+          "en": "Explain the concept in professional practice",
+          "ar": "شرح المفهوم في الممارسة المهنية"
+        }
+      ],
+      "content": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Core concept",
+            "ar": "المفهوم الأساسي"
+          },
+          "text": {
+            "en": "CIA learning resources are educational preparation and do not represent official PeopleCert accreditation or certification status.",
+            "ar": "شرح مهني للمفهوم: تحضير CIA والوضع الرسمي"
+          }
+        },
+        {
+          "type": "explanation",
+          "title": {
+            "en": "Why it matters",
+            "ar": "لماذا يهم"
+          },
+          "text": {
+            "en": "Use this concept to separate terminology, responsibilities and evidence before selecting a method or tool.",
+            "ar": "استخدم هذا المفهوم للفصل بين المصطلحات والمسؤوليات والأدلة قبل اختيار المنهج أو الأداة."
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Practical example",
+            "ar": "مثال عملي"
+          },
+          "text": {
+            "en": "A team maps the concept to its process, accountable owner, documented information and objective evidence.",
+            "ar": "يربط الفريق المفهوم بالعملية والمسؤول والمعلومات الموثقة والدليل الموضوعي."
+          }
+        },
+        {
+          "type": "professional_scenario",
+          "title": {
+            "en": "Professional scenario",
+            "ar": "سيناريو مهني"
+          },
+          "text": {
+            "en": "During a management review, leaders use the distinction to decide what evidence is sufficient and what follow-up is required.",
+            "ar": "أثناء مراجعة الإدارة يستخدم القادة هذا التمييز لتحديد كفاية الأدلة وما يلزم من متابعة."
+          }
+        },
+        {
+          "type": "key_takeaways",
+          "title": {
+            "en": "Key takeaways",
+            "ar": "أهم النقاط"
+          },
+          "items": {
+            "en": [
+              "Define before applying",
+              "Connect concepts to evidence",
+              "Keep roles explicit"
+            ],
+            "ar": [
+              "عرّف قبل التطبيق",
+              "اربط المفاهيم بالأدلة",
+              "اجعل الأدوار واضحة"
+            ]
+          }
+        }
+      ],
+      "glossary_terms": [],
+      "related": [
+        {
+          "type": "develops_competency",
+          "target_type": "competency",
+          "target_id": "PM-01"
+        },
+        {
+          "type": "uses_resource",
+          "target_type": "library_item",
+          "target_id": "LIB-T01"
+        }
+      ],
+      "sources": [
+        "SRC-ISO",
+        "SRC-PMI"
+      ],
+      "version": "1.0.0",
+      "last_reviewed": "2026-09-28",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    }
+  ]
+}

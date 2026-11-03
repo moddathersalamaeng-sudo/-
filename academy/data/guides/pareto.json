@@ -1,0 +1,1172 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-PARETO",
+  "slug": "pareto",
+  "kind": "method",
+  "module": "pareto",
+  "title": {
+   "en": "Pareto — Vital few analysis",
+   "ar": "باريتو — تحليل القلة الحيوية"
+  },
+  "subtitle": {
+   "en": "Method tool serving ISO 9001:2026 clauses 9.1.3 and 10.2.1 b)",
+   "ar": "أداة منهجية تخدم ISO 9001:2026 البندين 9.1.3 و10.2.1 ب)"
+  },
+  "lede": {
+   "en": "To answer one question with data: which categories make up most of the problem? Analysis and action then go to the vital few instead of being spread over everything, and the effect is measured on the same basis after the action.",
+   "ar": "أن تجيب عن سؤال واحد بالبيانات: أي الفئات تصنع معظم المشكلة؟ فيذهب جهد التحليل والإجراء إلى القلة الحيوية بدل توزيعه على كل شيء، ثم يُقاس الأثر على الأساس نفسه بعد الإجراء."
+  },
+  "author": "مدثر سلامه",
+  "note": {
+   "en": "Pareto analysis (the Pareto chart and the 80/20 rule) is a way of ranking categories by how much they contribute, not a standard or a requirement. The requirements it serves are analysing and evaluating data in ISO 9001:2026 clause 9.1.3 and choosing where to determine the causes of nonconformities within 10.2.1 b) 2), all audited as part of the quality management system.",
+   "ar": "تحليل باريتو (مخطط باريتو وقاعدة 80/20) طريقة لترتيب الفئات بحسب حجم إسهامها، وليس مواصفة ولا متطلباً. المتطلبات التي يخدمها هي تحليل البيانات وتقييمها في البند 9.1.3 من ISO 9001:2026، واختيار المكان الذي تُحدَّد فيه أسباب عدم المطابقة ضمن 10.2.1 ب) 2)، ويُدقَّق عليها ضمن نظام إدارة الجودة."
+  },
+  "who": {
+   "en": "Quality, HSE and environment managers, quality engineers, process owners, project managers, internal auditors, whoever prepares management review inputs, and anyone who holds a log of nonconformities, complaints, incidents or findings.",
+   "ar": "مديرو الجودة والسلامة والبيئة، ومهندسو الجودة، ومالكو العمليات، ومديرو المشاريع، والمدققون الداخليون، ومن يعدّ مدخلات مراجعة الإدارة، وكل من يملك سجلاً لعدم المطابقة أو الشكاوى أو الحوادث أو الملاحظات."
+  },
+  "roles": [
+   {
+    "name": {
+     "en": "Data owner",
+     "ar": "مالك البيانات"
+    },
+    "text": {
+     "en": "Owns the log the data comes from, and knows what is and is not recorded in it and the period it covers.",
+     "ar": "يملك السجل الذي تأتي منه البيانات، ويعرف ما يُسجَّل فيه وما لا يُسجَّل والفترة التي يغطيها."
+    }
+   },
+   {
+    "name": {
+     "en": "Classifier",
+     "ar": "من يصنّف"
+    },
+    "text": {
+     "en": "Puts each item in its category by the written definition; if they hesitate, the definition needs fixing.",
+     "ar": "يضع كل بند في فئته بحسب التعريف المكتوب؛ وإذا تردد فالتعريف يحتاج تعديلاً."
+    }
+   },
+   {
+    "name": {
+     "en": "Facilitator",
+     "ar": "الميسّر"
+    },
+    "text": {
+     "en": "Writes the question before the data, chooses the unit with the team, and leads the confirmation of the vital few by judgement, not by the line alone.",
+     "ar": "يكتب السؤال قبل البيانات، ويختار الوحدة مع الفريق، ويقود تأكيد القلة الحيوية بالحكم لا بالخط وحده."
+    }
+   },
+   {
+    "name": {
+     "en": "Process owner",
+     "ar": "مالك العملية"
+    },
+    "text": {
+     "en": "Takes the vital-few category to cause analysis or a CAPA record, and owns the action afterwards.",
+     "ar": "يأخذ الفئة الحيوية إلى تحليل السبب أو إلى سجل CAPA، ويملك الإجراء بعد ذلك."
+    }
+   },
+   {
+    "name": {
+     "en": "Reviewer",
+     "ar": "المراجِع"
+    },
+    "text": {
+     "en": "Someone outside the team who checks that before and after are on the same basis and that the verdict matches the figures.",
+     "ar": "شخص من خارج الفريق يتأكد أن قبل وبعد على الأساس نفسه، وأن الحكم يطابق الأرقام."
+    }
+   },
+   {
+    "name": {
+     "en": "Top management",
+     "ar": "الإدارة العليا"
+    },
+    "text": {
+     "en": "Sees the chart in management review as a trend, and decides where improvement effort goes.",
+     "ar": "ترى المخطط في مراجعة الإدارة اتجاهاً، وتقرر أين يذهب جهد التحسين."
+    }
+   }
+  ],
+  "steps": [
+   {
+    "no": "1",
+    "title": {
+     "en": "Write the question before the data",
+     "ar": "اكتب السؤال قبل البيانات"
+    },
+    "text": {
+     "en": "What, where, which period and which unit.",
+     "ar": "ماذا، وأين، وأي فترة، وأي وحدة."
+    },
+    "ref": "9.1.3"
+   },
+   {
+    "no": "2",
+    "title": {
+     "en": "Define each category in one line",
+     "ar": "عرّف كل فئة في سطر"
+    },
+    "text": {
+     "en": "So that two people classify the same item the same way.",
+     "ar": "بحيث يصنّف شخصان البند نفسه في الفئة نفسها."
+    },
+    "ref": "GD-1"
+   },
+   {
+    "no": "3",
+    "title": {
+     "en": "Choose the period and the amount of data",
+     "ar": "اختر الفترة وكمية البيانات"
+    },
+    "text": {
+     "en": "A period that represents the work, not one bad week.",
+     "ar": "فترة تمثّل العمل، لا أسبوعاً سيئاً واحداً."
+    },
+    "ref": "GD-2"
+   },
+   {
+    "no": "4",
+    "title": {
+     "en": "Choose the unit",
+     "ar": "اختر الوحدة"
+    },
+    "text": {
+     "en": "Count, cost, time or severity; the order may change.",
+     "ar": "العدد، أو التكلفة، أو الوقت، أو الخطورة؛ والترتيب قد يتغير."
+    },
+    "ref": "GD-3"
+   },
+   {
+    "no": "5",
+    "title": {
+     "en": "Keep “Other” small",
+     "ar": "أبقِ «أخرى» صغيرة"
+    },
+    "text": {
+     "en": "Smaller than the smallest named category, or split it.",
+     "ar": "أصغر من أصغر فئة مسماة، وإلا فقسّمها."
+    },
+    "ref": "GD-4"
+   },
+   {
+    "no": "6",
+    "title": {
+     "en": "Read the chart and the cut-off line",
+     "ar": "اقرأ المخطط وخط القطع"
+    },
+    "text": {
+     "en": "80/20 is a rule of thumb; the team confirms the vital few with judgement.",
+     "ar": "80/20 قاعدة تقريبية، والفريق يؤكد القلة الحيوية بحكمه."
+    },
+    "ref": "GD-6"
+   },
+   {
+    "no": "7",
+    "title": {
+     "en": "Split a mixed category",
+     "ar": "قسّم الفئة المختلطة"
+    },
+    "text": {
+     "en": "By site, shift, supplier or product.",
+     "ar": "بحسب الموقع أو الوردية أو المورد أو المنتج."
+    },
+    "ref": "GD-5"
+   },
+   {
+    "no": "8",
+    "title": {
+     "en": "Move each vital-few category to cause analysis",
+     "ar": "انقل كل فئة حيوية إلى تحليل السبب"
+    },
+    "text": {
+     "en": "Fishbone, 5 Whys, data or a CAPA record; the category is where to dig, not a cause.",
+     "ar": "عظمة السمكة أو لماذا الخمس أو البيانات أو سجل CAPA؛ الفئة مكان تحفر فيه، وليست سبباً."
+    },
+    "ref": "10.2.1 b 2"
+   },
+   {
+    "no": "9",
+    "title": {
+     "en": "Check the effect before and after",
+     "ar": "تحقق من الأثر قبل وبعد"
+    },
+    "text": {
+     "en": "Same categories, same unit, a period of the same length.",
+     "ar": "الفئات نفسها، والوحدة نفسها، وفترة بالطول نفسه."
+    },
+    "ref": "10.1"
+   },
+   {
+    "no": "10",
+    "title": {
+     "en": "Show the chart in management review",
+     "ar": "اعرض المخطط في مراجعة الإدارة"
+    },
+    "text": {
+     "en": "The trend of nonconformities and findings, not a single number.",
+     "ar": "اتجاه عدم المطابقة والملاحظات، لا رقماً واحداً."
+    },
+    "ref": "9.3.2 d"
+   }
+  ],
+  "related": [
+   {
+    "code": "CAPA",
+    "name": {
+     "en": "Corrective action",
+     "ar": "الإجراءات التصحيحية"
+    },
+    "text": {
+     "en": "CAPA records are counted here by source, grade, process or analysis method, and a vital-few category is linked to a CAPA record; both directions read only, with no writing into the other tool's data.",
+     "ar": "سجلات CAPA تُعدّ هنا بحسب المصدر أو الدرجة أو العملية أو طريقة التحليل، والفئة الحيوية تُربط بسجل CAPA؛ والقراءة في الاتجاهين دون كتابة في بيانات الأداة الأخرى."
+    }
+   },
+   {
+    "code": "Fishbone",
+    "name": {
+     "en": "Fishbone — cause and effect analysis",
+     "ar": "عظمة السمكة — تحليل السبب والنتيجة"
+    },
+    "text": {
+     "en": "A vital-few category opens a Fishbone analysis with the effect filled in from it; Fishbone causes can be counted here by bone or by votes.",
+     "ar": "الفئة الحيوية تفتح تحليل عظمة سمكة والأثر معبأ منها؛ وأسباب عظمة السمكة يمكن عدّها هنا بحسب العظمة أو الأصوات."
+    }
+   },
+   {
+    "code": "5 Whys",
+    "name": {
+     "en": "5 Whys — root cause analysis",
+     "ar": "لماذا الخمس — تحليل السبب الجذري"
+    },
+    "text": {
+     "en": "When a category has one clear path, a 5 Whys chain is enough, and its id is written here.",
+     "ar": "عندما يكون للفئة مسار واحد واضح، تكفيها سلسلة لماذا الخمس، ويُسجَّل رقم التحليل هنا."
+    }
+   },
+   {
+    "code": "AUDIT",
+    "name": {
+     "en": "Smart audit & improvement center",
+     "ar": "مركز التدقيق والتحسين الذكي"
+    },
+    "text": {
+     "en": "Audit findings are counted here by clause or department, so you see where findings repeat.",
+     "ar": "ملاحظات التدقيق تُعدّ هنا بحسب البند أو الإدارة، فيظهر أين تتكرر الملاحظات."
+    }
+   }
+  ],
+  "serves": [
+   {
+    "code": "ISO 9001:2026 §9.1.3",
+    "name": {
+     "en": "Analysis and evaluation",
+     "ar": "التحليل والتقييم"
+    },
+    "text": {
+     "en": "The requirement the method serves: analysing and evaluating monitoring and measurement data; the note says analysis methods can include statistical techniques.",
+     "ar": "المتطلب الذي تخدمه الطريقة: تحليل بيانات الرصد والقياس وتقييمها؛ وتذكر الملاحظة أن طرق التحليل قد تشمل الأساليب الإحصائية."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 §10.2.1 b)",
+    "name": {
+     "en": "Determining the causes of nonconformities",
+     "ar": "تحديد أسباب عدم المطابقة"
+    },
+    "text": {
+     "en": "Pareto chooses where to start determining causes; Annex A.10.2 leaves the extent of investigation to the organization.",
+     "ar": "باريتو يختار أين تبدأ تحديد الأسباب؛ ويترك الملحق A.10.2 مدى التحقيق للمنشأة."
+    }
+   },
+   {
+    "code": "ISO 9000:2026 §3.8.2",
+    "name": {
+     "en": "Dashboard",
+     "ar": "لوحة المؤشرات"
+    },
+    "text": {
+     "en": "The term's example names Pareto charts among the ways of displaying performance and trends of results.",
+     "ar": "يذكر مثال المصطلح مخططات باريتو بين طرق عرض الأداء واتجاهات النتائج."
+    }
+   },
+   {
+    "code": "ISO 9000:2026 §3.8.3 · §4.2.7",
+    "name": {
+     "en": "Statistical technique and evidence-based decision-making",
+     "ar": "الأسلوب الإحصائي واتخاذ القرار المبني على الدليل"
+    },
+    "text": {
+     "en": "A statistical technique analyses quantitative data associated with variation, and principle 4.2.7 ties good decisions to analysing and evaluating data with suitable methods.",
+     "ar": "الأسلوب الإحصائي يحلل بيانات كمية مرتبطة بالتباين، والمبدأ 4.2.7 يربط القرار الجيد بتحليل البيانات وتقييمها بطرق مناسبة."
+    }
+   },
+   {
+    "code": "ISO 10009:2024 §13.7 · ISO 10017",
+    "name": {
+     "en": "Quality tools (checked) and statistical techniques (not verified)",
+     "ar": "أدوات الجودة (متحقق منها) والأساليب الإحصائية (غير متحقق منها)"
+    },
+    "text": {
+     "en": "Notes 3 and 4 of Annex A.9.1 in ISO 9001:2026 point to these two guides. They are not uploaded to the project, so their content is “not verified” here.",
+     "ar": "تشير ملاحظتا الملحق A.9.1 في ISO 9001:2026 إلى هذين الدليلين. لم يُرفعا إلى المشروع، فمحتواهما «غير متحقق منه» هنا."
+    }
+   }
+  ],
+  "clauses": [
+   {
+    "id": "9.1.3",
+    "phase": "data",
+    "title": {
+     "en": "Clause 9.1.3 Analysis and evaluation",
+     "ar": "البند 9.1.3 التحليل والتقييم"
+    },
+    "short": {
+     "en": "9.1.3 · Analysis",
+     "ar": "9.1.3 · التحليل"
+    },
+    "intro": {
+     "en": "This is where Pareto works: clause 9.1.3 asks for data from monitoring and measurement to be analysed and evaluated and the results used, and its note names statistical techniques. The method's rules (GD) are guidance on building a chart that really answers the question.",
+     "ar": "هنا يعمل باريتو: البند 9.1.3 يطلب تحليل البيانات الناتجة عن الرصد والقياس وتقييمها واستخدام النتائج، وتذكر ملاحظته الأساليب الإحصائية. وقواعد الطريقة (GD) إرشاد لبناء مخطط يجيب فعلاً عن السؤال."
+    },
+    "items": [
+     {
+      "ref": "s1-1",
+      "clause": "9.1.3",
+      "title": {
+       "en": "Analyse and evaluate monitoring and measurement data: start with a question",
+       "ar": "حلّل بيانات الرصد والقياس وقيّمها: ابدأ بسؤال"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization analyses and evaluates data and information from monitoring and measurement, and uses the results to evaluate, among other things, product and service conformity, customer satisfaction, system performance and effectiveness, external provider performance and the need for improvement. The clause's note says analysis methods can include statistical techniques. The Pareto chart is one of them, and it starts with a question that sets what is being evaluated.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحلل المنشأة البيانات والمعلومات الناتجة عن الرصد والقياس وتقيّمها، وتستخدم النتائج لتقييم أمور منها مطابقة المنتجات والخدمات، ورضا العملاء، وأداء النظام وفعاليته، وأداء الموردين، والحاجة إلى التحسين. وتذكر الملاحظة في البند أن طرق التحليل قد تشمل الأساليب الإحصائية. ومخطط باريتو أحد هذه الطرق، ويبدأ بسؤال يحدد ما يُقيَّم."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “Which nonconformity categories make up most of the NCRs on the company's projects from January to September 2026?” instead of “let's see what is in the NCR log”.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «أي فئات عدم المطابقة تصنع معظم تقارير NCR في مشاريع الشركة من يناير إلى سبتمبر 2026؟» بدل «لنرَ ما في سجل NCR»."
+      },
+      "how": [
+       {
+        "en": "Write the question in one line: what, where, which period, which unit",
+        "ar": "اكتب السؤال في سطر: ماذا، وأين، وأي فترة، وأي وحدة"
+       },
+       {
+        "en": "One question per chart; two questions need two charts",
+        "ar": "سؤال واحد لكل مخطط؛ سؤالان يحتاجان مخططين"
+       },
+       {
+        "en": "Write the data source and its owner",
+        "ar": "اكتب مصدر البيانات ومالكها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The question written above the chart",
+        "ar": "السؤال مكتوباً فوق المخطط"
+       },
+       {
+        "en": "The data source and the period",
+        "ar": "مصدر البيانات والفترة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A chart with no question, shown because the data was there",
+        "ar": "مخطط بلا سؤال يُعرض لأن البيانات متاحة"
+       },
+       {
+        "en": "Bars nobody can say what they count",
+        "ar": "أعمدة لا يعرف أحد ماذا تعدّ"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "Share of charts with a written question",
+       "ar": "نسبة المخططات التي يسبقها سؤال مكتوب"
+      }
+     },
+     {
+      "ref": "s1-2",
+      "clause": "GD-1",
+      "title": {
+       "en": "Define each category in one line",
+       "ar": "عرّف كل فئة في سطر"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: a chart is only as good as its category definitions. Write one line for each category so that two people would put the same item in the same category, and do not let two categories overlap. If the person classifying hesitates over an item, fix the definition, not the item.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: المخطط لا يكون أفضل من تعريفات فئاته. اكتب لكل فئة سطراً يجعل شخصين يضعان البند نفسه في الفئة نفسها، ولا تترك فئتين تتداخلان. وإذا تردد من يصنّف في بند، فالتعريف يحتاج تعديلاً لا البند."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “Ready-mix concrete rejected at delivery: a load rejected at the receiving point because slump, temperature or time since batching was out of limits”; concrete rejected after the pour is not counted here.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «خرسانة جاهزة مرفوضة عند الاستلام: شحنة رُفضت عند نقطة الاستلام لخروج الهبوط أو الحرارة أو زمن الخلط عن الحدود»؛ فلا تُحسب هنا خرسانة رُفضت بعد الصب."
+      },
+      "how": [
+       {
+        "en": "Write the definition before classifying",
+        "ar": "اكتب التعريف قبل التصنيف"
+       },
+       {
+        "en": "Try the definition on ten items with two people",
+        "ar": "جرّب التعريف على عشرة بنود مع شخصين"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A written definition for every category",
+        "ar": "تعريف مكتوب لكل فئة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Categories with general names such as “quality” or “miscellaneous”",
+        "ar": "فئات بأسماء عامة مثل «جودة» أو «أخرى»"
+       },
+       {
+        "en": "Two overlapping categories, so an item is counted twice",
+        "ar": "فئتان تتداخلان فيُحسب البند مرتين"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Classifier",
+       "ar": "من يصنّف"
+      },
+      "kpi": {
+       "en": "Share of categories with a definition",
+       "ar": "نسبة الفئات المعرّفة"
+      }
+     },
+     {
+      "ref": "s1-3",
+      "clause": "GD-2",
+      "title": {
+       "en": "Choose a representative period and enough data",
+       "ar": "اختر فترة تمثّل العمل وبيانات كافية"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: a short period or one bad week draws a chart that changes the following week. Choose a period that covers the work cycle (a season, a project phase or a full quarter), and write it on the chart. When there are very few items, read the order with care.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: فترة قصيرة أو أسبوع سيئ واحد يرسم مخططاً يتغير في الأسبوع التالي. اختر فترة تغطي دورة العمل (موسم، أو مرحلة مشروع، أو ربعاً كاملاً)، واكتبها على المخطط. وعندما تكون البنود قليلة جداً، فاقرأ الترتيب بحذر."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: nine months of the NCR log (71 reports) instead of one month in which a single large concrete incident happened.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: تسعة أشهر من سجل NCR (71 تقريراً) بدل شهر واحد كان فيه حادث خرسانة واحد كبير."
+      },
+      "how": [
+       {
+        "en": "Write the start and end of the period",
+        "ar": "اكتب بداية الفترة ونهايتها"
+       },
+       {
+        "en": "Compare with an earlier period of the same length",
+        "ar": "قارن بفترة سابقة بالطول نفسه"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The period on the chart and the number of items",
+        "ar": "الفترة على المخطط وعدد البنود"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A one-week chart used for a yearly decision",
+        "ar": "مخطط لأسبوع واحد يُبنى عليه قرار سنوي"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Data owner",
+       "ar": "مالك البيانات"
+      },
+      "kpi": {
+       "en": "Average number of items per chart",
+       "ar": "متوسط عدد البنود في كل مخطط"
+      }
+     },
+     {
+      "ref": "s1-4",
+      "clause": "GD-3",
+      "title": {
+       "en": "Choose the unit that fits the question",
+       "ar": "اختر الوحدة التي تناسب السؤال"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: count is not always the right measure. Count shows where the failure repeats, cost or time lost shows where it hurts, and a severity-weighted score shows where the risk is. The order may change with the unit, so pick the unit from the question, and write the severity weights if you use them.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: العدد ليس دائماً المقياس الصحيح. العدد يبيّن أين يتكرر الخلل، والتكلفة أو الوقت المفقود يبيّن أين يوجع، ودرجة الخطورة المرجّحة تبيّن أين الخطر. الترتيب قد يتغير بتغير الوحدة؛ فاختر الوحدة من السؤال، واكتب أوزان الخطورة إن استخدمتها."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: by count “materials without certificates” leads (24 reports); by cost it drops to fifth place, and rejected concrete (SAR 386,500) and rework lead.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بالعدد تتصدر «المواد دون شهادات» (24 تقريراً)، وبالتكلفة تتراجع إلى المرتبة الخامسة وتتقدم الخرسانة المرفوضة (386,500 ريال) والإعادة في التنفيذ."
+      },
+      "how": [
+       {
+        "en": "Ask: is the question about frequency or about impact?",
+        "ar": "اسأل: هل السؤال عن التكرار أم عن الأثر؟"
+       },
+       {
+        "en": "Draw the chart in two units when the order differs",
+        "ar": "ارسم المخطط بوحدتين عندما يختلف الترتيب"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The unit and how it was calculated",
+        "ar": "الوحدة وأساس حسابها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A spending decision based on a count chart",
+        "ar": "قرار إنفاق مبني على مخطط بالعدد"
+       },
+       {
+        "en": "Severity weights that are not written down",
+        "ar": "أوزان خطورة غير مكتوبة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator and data owner",
+       "ar": "الميسّر ومالك البيانات"
+      },
+      "kpi": {
+       "en": "Share of charts with the unit and its basis stated",
+       "ar": "نسبة المخططات التي ذُكرت وحدتها وأساسها"
+      }
+     },
+     {
+      "ref": "s1-5",
+      "clause": "GD-4",
+      "title": {
+       "en": "Keep “Other” small",
+       "ar": "أبقِ «أخرى» صغيرة"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: “Other” is one line drawn last whatever its size, and it never joins the vital few. It must stay smaller than the smallest named category; if it grows it hides a category not yet defined, and if it becomes the largest the chart does not answer the question.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: «أخرى» سطر واحد يُرسم آخراً مهما كان حجمه، ولا يدخل القلة الحيوية. يجب أن يبقى أصغر من أصغر فئة مسماة؛ فإذا كبر فهو يخفي فئة لم تُعرَّف بعد، وإذا صار الأكبر فالمخطط لا يجيب عن السؤال."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the concrete rejections “Other” stayed at one load (visible segregation), the same size as the smallest named category, not larger.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في رفض الخرسانة بقيت «أخرى» شحنة واحدة (انفصال حبيبات ظاهر)، أي بحجم أصغر فئة مسماة لا أكبر منها."
+      },
+      "how": [
+       {
+        "en": "Open “Other” when it nears the smallest category",
+        "ar": "افتح «أخرى» عندما تقترب من أصغر فئة"
+       },
+       {
+        "en": "Write what goes into it",
+        "ar": "اكتب ما يدخل فيها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "What “Other” contains, written down",
+        "ar": "محتوى «أخرى» مكتوباً"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "“Other” as the largest bar on the chart",
+        "ar": "«أخرى» أكبر عمود في المخطط"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Classifier",
+       "ar": "من يصنّف"
+      },
+      "kpi": {
+       "en": "Share of charts where “Other” is smaller than the smallest category",
+       "ar": "نسبة المخططات التي «أخرى» فيها أصغر من أصغر فئة"
+      }
+     },
+     {
+      "ref": "s1-6",
+      "clause": "GD-5",
+      "title": {
+       "en": "Stratify a category that hides several problems",
+       "ar": "قسّم الفئة التي تخفي عدة مشكلات"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: a large category can be a mix of different problems: two different suppliers, two shifts or two products. Split it by site, shift, supplier or product and chart it on its own; the real category that deserves analysis then shows.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: فئة كبيرة قد تكون خليطاً من مشكلات مختلفة: موردان مختلفان، أو ورديتان، أو منتجان. قسّمها بحسب الموقع أو الوردية أو المورد أو المنتج، وارسم مخططاً لها وحدها؛ فتظهر الفئة الحقيقية التي تستحق التحليل."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “materials without certificates” was split by supplier: two suppliers made 17 of the 24 reports, so the action went to them, not to every supplier.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «مواد دون شهادات» قُسّمت بحسب المورد: موردان يصنعان 17 من 24 تقريراً، فذهب الإجراء إليهما لا إلى كل الموردين."
+      },
+      "how": [
+       {
+        "en": "Ask of every large category: is it one problem?",
+        "ar": "اسأل عن كل فئة كبيرة: هل هي مشكلة واحدة؟"
+       },
+       {
+        "en": "Record the dimension used for the split",
+        "ar": "سجّل البعد الذي قُسّمت به"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The stratification note and the sub-chart",
+        "ar": "ملاحظة التقسيم والمخطط الفرعي"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A general action on a mixed category",
+        "ar": "إجراء عام على فئة مختلطة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality engineer",
+       "ar": "مهندس الجودة"
+      },
+      "kpi": {
+       "en": "Categories stratified before analysis",
+       "ar": "عدد الفئات التي قُسّمت قبل التحليل"
+      }
+     },
+     {
+      "ref": "s1-7",
+      "clause": "GD-6",
+      "title": {
+       "en": "80/20 is a rule of thumb: confirm the vital few with judgement",
+       "ar": "80/20 قاعدة تقريبية: أكّد القلة الحيوية بالحكم"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the 80/20 rule is not a law: two categories may make only 60%, and one may make 90%. The cut-off line suggests the vital few, and the team confirms them with judgement: it adds a smaller category that is critical for safety, the customer or the law, or drops one already covered by an action, and writes the reason. Principle 4.2.7 of ISO 9000:2026 ties decisions to evidence, balanced with experience.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: قاعدة 80/20 ليست قانوناً: قد تصنع فئتان 60% فقط، وقد تصنع فئة واحدة 90%. خط القطع يقترح القلة الحيوية، والفريق يؤكدها بحكمه: يضيف فئة أصغر لكنها حرجة للسلامة أو للعميل أو للقانون، أو يستبعد فئة يعالجها إجراء قائم، ويكتب السبب. ويربط المبدأ 4.2.7 في ISO 9000:2026 القرار بالدليل مع موازنته بالخبرة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the line suggested three categories, and the team added “measuring devices past their calibration date” (only 4 reports) because every test result taken with an overdue device is in doubt.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: الخط اقترح ثلاث فئات، وأضاف الفريق «أجهزة قياس تجاوزت موعد المعايرة» (4 تقارير فقط) لأن كل نتيجة فحص أُخذت بجهاز متأخر موضع شك."
+      },
+      "how": [
+       {
+        "en": "Read the line, then ask about each category's impact, not only its size",
+        "ar": "اقرأ الخط، ثم اسأل عن أثر كل فئة لا عن حجمها فقط"
+       },
+       {
+        "en": "Write the reason for every addition or removal",
+        "ar": "اكتب سبب كل إضافة أو استبعاد"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The confirmed vital few and the reasons for changes",
+        "ar": "القلة الحيوية المؤكدة وأسباب التغيير"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Vital few = whatever is above 80%, with no discussion",
+        "ar": "القلة الحيوية = ما فوق 80% دون نقاش"
+       },
+       {
+        "en": "A category added with no written reason",
+        "ar": "إضافة فئة دون سبب مكتوب"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator and team",
+       "ar": "الميسّر والفريق"
+      },
+      "kpi": {
+       "en": "Share of analyses with confirmed vital few",
+       "ar": "نسبة التحليلات التي أُكدت قلتها الحيوية"
+      }
+     },
+     {
+      "ref": "s1-8",
+      "clause": "A.9.1",
+      "title": {
+       "en": "Quality tools and statistical techniques",
+       "ar": "أدوات الجودة والأساليب الإحصائية"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: Annex A.9.1 explains that monitoring and measurement provide data and information used for analysis and evaluation. Its notes 3 and 4 point to ISO 10009 for guidance on quality tools and their application, and to ISO 10017 for guidance on statistical techniques. ISO 10009:2024 reviews the Pareto chart in 13.7 (the vital few and the 80:20 rule) and lists it among the Check tools of Tables A.1 and A.3; the full guide is the ISO 10009 tool on the platform. ISO 10017 is not uploaded: “not verified”.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يوضح الملحق A.9.1 أن الرصد والقياس يقدمان بيانات ومعلومات تُستخدم في التحليل والتقييم. وتشير ملاحظتاه 3 و4 إلى ISO 10009 للإرشاد في أدوات الجودة وتطبيقها، وإلى ISO 10017 للإرشاد في الأساليب الإحصائية. وتشرح ISO 10009:2024 مخطط باريتو في البند 13.7 (القلة الحيوية وقاعدة 80:20)، وتضعه ضمن أدوات مرحلة التحقق في الجدولين A.1 وA.3؛ والشرح الكامل في دليل ISO 10009 على المنصة. أما ISO 10017 فغير مرفوعة: «غير متحقق منها»."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the NCR log is ranked with a Pareto chart every quarter because it is the simplest of the quality tools, and control charts are used for continuous measurement data.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: يُرتَّب سجل NCR بمخطط باريتو كل ربع سنة لأنه أبسط أدوات الجودة، وتُستخدم مخططات الضبط لبيانات القياس المستمرة."
+      },
+      "how": [
+       {
+        "en": "Put Pareto in your list of approved analysis tools",
+        "ar": "ضع باريتو في قائمة أدوات التحليل المعتمدة لديكم"
+       },
+       {
+        "en": "Train those who prepare reports in the basic tools",
+        "ar": "درّب من يعدّ التقارير على الأدوات الأساسية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The list of analysis tools and the training record",
+        "ar": "قائمة أدوات التحليل وسجل التدريب عليها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An analysis with a tool nobody in the team knows",
+        "ar": "تحليل بأداة لا يعرفها أحد في الفريق"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "People trained in the basic quality tools",
+       "ar": "عدد من دُرّبوا على أدوات الجودة الأساسية"
+      }
+     }
+    ]
+   },
+   {
+    "id": "10.2",
+    "phase": "act",
+    "title": {
+     "en": "Clause 10.2 Nonconformity and corrective action",
+     "ar": "البند 10.2 عدم المطابقة والإجراء التصحيحي"
+    },
+    "short": {
+     "en": "10.2 · Causes",
+     "ar": "10.2 · الأسباب"
+    },
+    "intro": {
+     "en": "A vital-few category is where to dig, not a cause. Clause 10.2.1 b) asks for the causes to be determined and similar cases checked, and Annex A.10.2 leaves the extent of investigation to the organization.",
+     "ar": "الفئة الحيوية مكان تحفر فيه، وليست سبباً. البند 10.2.1 ب) يطلب تحديد الأسباب والتحقق من الحالات المشابهة، ويترك الملحق A.10.2 مدى التحقيق للمنشأة."
+    },
+    "items": [
+     {
+      "ref": "s2-1",
+      "clause": "10.2.1 b 2",
+      "title": {
+       "en": "Take each vital-few category to determining causes",
+       "ar": "انقل كل فئة حيوية إلى تحديد الأسباب"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: one step in evaluating the need for action on the cause is determining the causes of the nonconformity. The clause names no method; Pareto chooses where to start: the vital-few category moves to a Fishbone or 5 Whys analysis or a check with data, or to a CAPA record that carries it.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: من خطوات تقييم الحاجة إلى إجراء يزيل السبب أن تُحدَّد أسباب عدم المطابقة. لا يسمّي البند طريقة، وباريتو يختار أين تبدأ: الفئة الحيوية تنتقل إلى تحليل عظمة سمكة أو لماذا الخمس أو تحقق بالبيانات، أو إلى سجل CAPA يحمل ذلك."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “concrete temperature above the limit” moved to Fishbone analysis FB-EX-02, “slump out of range” to 5 Whys W5-EX-03, and “time since batching” to record CA-EX-04.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «حرارة الخرسانة فوق الحد» انتقلت إلى تحليل عظمة السمكة FB-EX-02، و«الهبوط خارج الحدود» إلى لماذا الخمس W5-EX-03، و«زمن الخلط» إلى سجل CA-EX-04."
+      },
+      "how": [
+       {
+        "en": "At least one step with a recorded id for each vital-few category",
+        "ar": "لكل فئة حيوية خطوة واحدة على الأقل برقم مسجل"
+       },
+       {
+        "en": "Do not write the category name as a root cause",
+        "ar": "لا تكتب اسم الفئة سبباً جذرياً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The category linked to the analysis or record id",
+        "ar": "ربط الفئة برقم التحليل أو السجل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "“Root cause: concrete” after a Pareto chart",
+        "ar": "«السبب الجذري: الخرسانة» بعد مخطط باريتو"
+       },
+       {
+        "en": "A vital-few category with no step",
+        "ar": "فئة حيوية بلا أي خطوة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of vital-few categories linked to a step",
+       "ar": "نسبة الفئات الحيوية المربوطة بخطوة"
+      }
+     },
+     {
+      "ref": "s2-2",
+      "clause": "10.2.1 b 3",
+      "title": {
+       "en": "Look for similar cases by stratifying",
+       "ar": "ابحث عن الحالات المشابهة بالتقسيم"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: part of the evaluation is also determining whether similar nonconformities exist or could potentially occur. Splitting the category by site or supplier shows where the same case exists and where it has not shown yet.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: من خطوات التقييم أيضاً تحديد ما إذا كانت حالات مشابهة موجودة أو قد تحدث. وتقسيم الفئة بحسب الموقع أو المورد يبيّن أين توجد الحالة نفسها وأين لم تظهر بعد."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: splitting concrete rejections by project showed the two other projects had not started summer pours yet, so the hot-weather rule was added to them before the season.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: تقسيم رفض الخرسانة بحسب المشروع أظهر أن المشروعين الآخرين لم يبدآ الصب الصيفي بعد، فأُضيفت قاعدة الطقس الحار إليهما قبل الموسم."
+      },
+      "how": [
+       {
+        "en": "Split the vital-few category by site or supplier",
+        "ar": "قسّم الفئة الحيوية بحسب الموقع أو المورد"
+       },
+       {
+        "en": "Record where the case exists and where it could occur",
+        "ar": "سجّل أين وُجدت الحالة وأين قد تحدث"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The stratified chart and the result of the check",
+        "ar": "مخطط التقسيم ونتيجة الفحص"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An action on one site while the same category sits on two others",
+        "ar": "إجراء في موقع واحد والفئة نفسها في موقعين آخرين"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality officer",
+       "ar": "مسؤول الجودة"
+      },
+      "kpi": {
+       "en": "Share of vital-few categories checked for similar cases",
+       "ar": "نسبة الفئات الحيوية التي فُحصت حالاتها المشابهة"
+      }
+     },
+     {
+      "ref": "s2-3",
+      "clause": "A.10.2",
+      "title": {
+       "en": "Choose the extent of investigation by risk and impact",
+       "ar": "اختر مدى التحقيق بحسب الخطر والأثر"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: Annex A.10.2 explains that the organization decides how to address nonconformities, including the extent of investigation and the methods used, based on its context and needs, considering the risk of recurrence, the actual or potential impact and the requirements of customers and other interested parties. Pareto helps with that decision: the vital few deserve deeper investigation.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يوضح الملحق A.10.2 أن المنشأة تحدد طريقة التعامل مع عدم المطابقة، ومنها مدى التحقيق والطرق المستخدمة، بحسب سياقها واحتياجاتها، مع مراعاة خطر التكرار والأثر الفعلي أو المحتمل ومتطلبات العملاء والأطراف المعنية. وباريتو يساعد على هذا القرار: الفئات الحيوية تستحق تحقيقاً أعمق."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the vital-few categories each got a cause analysis, while “damage in storage” (3 reports) needed only correction and follow-up in the log.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: فئات القلة الحيوية فُتح لها تحليل سبب، أما «تلف أثناء التخزين» (3 تقارير) فكفاه التصحيح ومتابعته في السجل."
+      },
+      "how": [
+       {
+        "en": "Set a rule: vital few get cause analysis, the rest correction and follow-up",
+        "ar": "ضع قاعدة: الفئات الحيوية تحليل سبب، والباقي تصحيح ومتابعة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The rule for choosing the extent of investigation",
+        "ar": "قاعدة اختيار مدى التحقيق"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A full analysis for every category however small",
+        "ar": "تحليل كامل لكل فئة مهما صغرت"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Share of vital-few categories analysed",
+       "ar": "نسبة الفئات الحيوية التي حُللت"
+      }
+     }
+    ]
+   },
+   {
+    "id": "10.1",
+    "phase": "learn",
+    "title": {
+     "en": "Clause 10.1 Continual improvement",
+     "ar": "البند 10.1 التحسين المستمر"
+    },
+    "short": {
+     "en": "10.1 · Improvement",
+     "ar": "10.1 · التحسين"
+    },
+    "intro": {
+     "en": "A second chart after the action, on the same basis, shows whether anything really improved, and turns the results of analysis into an input to improvement opportunities.",
+     "ar": "مخطط ثانٍ بعد الإجراء على الأساس نفسه يبيّن هل تحسن شيء فعلاً، ويجعل نتائج التحليل مدخلاً لفرص التحسين."
+    },
+    "items": [
+     {
+      "ref": "s3-1",
+      "clause": "10.1",
+      "title": {
+       "en": "Check the effect with a second chart on the same basis",
+       "ar": "تحقق من الأثر بمخطط ثانٍ على الأساس نفسه"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization continually improves the suitability, adequacy and effectiveness of its quality system, and considers the results of monitoring, measurement, analysis and evaluation and of management review to determine opportunities. Improvement actions include correcting, preventing or reducing undesired effects; a chart after the action shows whether they really fell.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحسّن المنشأة باستمرار ملاءمة نظام الجودة وكفايته وفعاليته، وتنظر في نتائج الرصد والقياس والتحليل والتقييم ونتائج مراجعة الإدارة لتحديد الفرص. ومن إجراءات التحسين تصحيح الآثار غير المرغوبة أو منعها أو تقليلها؛ ومخطط بعد الإجراء يبيّن هل قلّت فعلاً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: rejected concrete loads: 35 in April and May and 20 in July and August (61 days against 62), with the same categories and unit. Verdict “improved”, but temperature is still the largest reason.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: شحنات الخرسانة المرفوضة: 35 في أبريل ومايو، و20 في يوليو وأغسطس (61 يوماً مقابل 62)، بالفئات والوحدة نفسها. الحكم «تحسّن»، لكن الحرارة ما زالت أكبر سبب."
+      },
+      "how": [
+       {
+        "en": "Same categories, same unit, a period of the same length",
+        "ar": "الفئات نفسها، والوحدة نفسها، وفترة بالطول نفسه"
+       },
+       {
+        "en": "Read the vital few and the total together",
+        "ar": "اقرأ القلة الحيوية والمجموع معاً"
+       },
+       {
+        "en": "The team gives the verdict; the figures suggest",
+        "ar": "الحكم للفريق، والأرقام تقترح"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The before/after chart and the confirmed verdict",
+        "ar": "مخطط قبل وبعد والحكم المؤكد"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "One month compared with three",
+        "ar": "مقارنة شهر بثلاثة أشهر"
+       },
+       {
+        "en": "Category definitions changed between the two charts",
+        "ar": "تغيير تعريف الفئات بين المخططين"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner and reviewer",
+       "ar": "مالك العملية والمراجِع"
+      },
+      "kpi": {
+       "en": "Share of analyses whose effect was checked",
+       "ar": "نسبة التحليلات التي تُحقق من أثرها"
+      }
+     }
+    ]
+   },
+   {
+    "id": "9.3",
+    "phase": "review",
+    "title": {
+     "en": "Clause 9.3 Management review",
+     "ar": "البند 9.3 مراجعة الإدارة"
+    },
+    "short": {
+     "en": "9.3 · Review",
+     "ar": "9.3 · المراجعة"
+    },
+    "intro": {
+     "en": "Management review needs trends, not lists. A Pareto chart of nonconformities or audit findings, compared with the previous period, makes the trend clear on one page.",
+     "ar": "مراجعة الإدارة تحتاج اتجاهات لا قوائم. مخطط باريتو لعدم المطابقة أو ملاحظات التدقيق، مقارنةً بالفترة السابقة، يجعل الاتجاه واضحاً في صفحة."
+    },
+    "items": [
+     {
+      "ref": "s4-1",
+      "clause": "9.3.2 d",
+      "title": {
+       "en": "Show the chart in management review as a trend",
+       "ar": "اعرض المخطط في مراجعة الإدارة اتجاهاً"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: management review inputs include information on quality system performance, including trends in nonconformities and corrective actions, monitoring and measurement results and audit results. Decisions on continual improvement opportunities are built on the review. A two-period Pareto chart shows these trends clearly.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: من مدخلات مراجعة الإدارة معلومات عن أداء نظام الجودة، ومنها الاتجاهات في عدم المطابقة والإجراءات التصحيحية، ونتائج الرصد والقياس، ونتائج التدقيق. وتُبنى على المراجعة قرارات فرص التحسين المستمر. ومخطط باريتو بفترتين يعرض هذه الاتجاهات بوضوح."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: management review was shown the nine-month nonconformity chart by count and by cost, and decided to prioritise summer concrete and construction rework.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: عُرض في مراجعة الإدارة مخطط عدم المطابقة لتسعة أشهر بالعدد وبالتكلفة، فقررت الإدارة أولوية الخرسانة صيفاً والإعادة في التنفيذ."
+      },
+      "how": [
+       {
+        "en": "Put the nonconformity and findings chart in every review",
+        "ar": "ضع مخطط عدم المطابقة والملاحظات في كل مراجعة"
+       },
+       {
+        "en": "Compare with the previous period of the same length",
+        "ar": "قارن بالفترة السابقة بالطول نفسه"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The review minutes, the attached chart and the decision",
+        "ar": "محضر المراجعة والمخطط المرفق والقرار"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A list of every NCR instead of the trend",
+        "ar": "قائمة بكل تقارير NCR بدل الاتجاه"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Top management",
+       "ar": "الإدارة العليا"
+      },
+      "kpi": {
+       "en": "Reviews in which a Pareto chart was shown",
+       "ar": "عدد المراجعات التي عُرض فيها مخطط باريتو"
+      }
+     }
+    ]
+   },
+   {
+    "id": "7.1.6",
+    "phase": "learn",
+    "title": {
+     "en": "Clause 7.1.6 Organizational knowledge",
+     "ar": "البند 7.1.6 المعرفة التنظيمية"
+    },
+    "short": {
+     "en": "7.1.6 · Knowledge",
+     "ar": "7.1.6 · المعرفة"
+    },
+    "intro": {
+     "en": "Tested category definitions and earlier charts are ready knowledge: they make the next chart faster and more honest, if they are kept and shared.",
+     "ar": "تعريفات الفئات المجرّبة ومخططات الفترات السابقة معرفة جاهزة: تجعل المخطط التالي أسرع وأصدق، إذا حُفظت وشوركت."
+    },
+    "items": [
+     {
+      "ref": "s5-1",
+      "clause": "7.1.6",
+      "title": {
+       "en": "Keep and share the category definitions and the charts",
+       "ar": "احفظ تعريفات الفئات والمخططات وشاركها"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization determines the knowledge needed to operate its processes and achieve quality system results, and retains, applies and shares it to the extent necessary. Its forms include knowledge built into methods and processes and knowledge held in documented information.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحدد المنشأة المعرفة اللازمة لتشغيل عملياتها وتحقيق نتائج نظام الجودة، وتحتفظ بها وتطبقها وتشاركها بالقدر اللازم. ومن أشكالها المعرفة المضمّنة في الطرق والعمليات والمعرفة الممثّلة في المعلومات الموثقة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the six nonconformity category definitions became a fixed list in the NCR log, so classification now happens at recording, not at analysis.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: أصبحت تعريفات فئات عدم المطابقة الست قائمة ثابتة في سجل NCR، فصار التصنيف عند التسجيل لا عند التحليل."
+      },
+      "how": [
+       {
+        "en": "Put the category definitions in the recording form itself",
+        "ar": "ضع تعريفات الفئات في نموذج التسجيل نفسه"
+       },
+       {
+        "en": "Keep the report of each chart with its data source",
+        "ar": "احفظ تقرير كل مخطط مع مصدر بياناته"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The approved category list and the filed reports",
+        "ar": "قائمة الفئات المعتمدة والتقارير المحفوظة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Definitions that change with whoever prepares the chart",
+        "ar": "تعريفات تتغير مع كل من يعدّ المخطط"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Share of records classified when recorded",
+       "ar": "نسبة السجلات المصنفة عند التسجيل"
+      }
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "id": "8020",
+    "q": {
+     "en": "Is it always 80/20?",
+     "ar": "هل هي دائماً 80/20؟"
+    },
+    "a": {
+     "en": "No. **80/20 is a rule of thumb, not a law.** Two categories may make only 60% of the problem, and one may make 90%. That is why the tool suggests the vital few with a cut-off line you can move between 60% and 90%, and then **the team confirms** with its judgement: it adds a small category that is critical for safety or the customer, or drops one, and writes the reason. If the chart comes out flat with no stand-out categories, the categories are usually defined in a way that does not separate the problem: redefine them or try another unit. Details in the [[tab:explain-std]].",
+     "ar": "لا. **80/20 قاعدة تقريبية، وليست قانوناً.** قد تصنع فئتان 60% فقط من المشكلة، وقد تصنع فئة واحدة 90%. لذلك تقترح الأداة القلة الحيوية بخط قطع تستطيع تغييره بين 60% و90%، ثم **يؤكد الفريق** بحكمه: يضيف فئة صغيرة لكنها حرجة للسلامة أو للعميل، أو يستبعد فئة، ويكتب السبب. وإذا جاء المخطط مستوياً بلا فئات بارزة، فالفئات غالباً معرّفة بطريقة لا تفصل المشكلة: أعد تعريفها أو جرّب وحدة أخرى. التفاصيل في [[tab:explain-std]]."
+    }
+   },
+   {
+    "id": "pf",
+    "q": {
+     "en": "Pareto or Fishbone first?",
+     "ar": "باريتو أم عظمة السمكة أولاً؟"
+    },
+    "a": {
+     "en": "Usually **Pareto first**. Pareto chooses **where to dig**: the category that makes up most of the problem. **Fishbone** then searches for the causes of that category, and **5 Whys** or data confirm the cause. From a vital-few category in the [[tab:tools]], “Start a Fishbone analysis for this category” opens Fishbone with the effect filled in from the category. The reverse also works: after a fishbone session you can count the causes by bone or by votes from “Build the categories from data in this browser”.",
+     "ar": "عادةً **باريتو أولاً**. باريتو يختار **أين تحفر**: الفئة التي تصنع معظم المشكلة. ثم تبحث **عظمة السمكة** في أسباب تلك الفئة، و**لماذا الخمس** أو البيانات تؤكد السبب. ومن الفئة الحيوية في [[tab:tools]] يفتح زر «ابدأ تحليل عظمة سمكة لهذه الفئة» أداة عظمة السمكة والأثر معبأ من الفئة. ويجوز العكس: بعد جلسة عظمة سمكة يمكنك عدّ الأسباب بحسب العظمة أو مجموع الأصوات من «ابنِ الفئات من بيانات هذا المتصفح»."
+    }
+   },
+   {
+    "id": "unit",
+    "q": {
+     "en": "Should I rank by count or by cost?",
+     "ar": "هل أرتّب بالعدد أم بالتكلفة؟"
+    },
+    "a": {
+     "en": "It depends on **the question**. Count shows where the failure repeats, cost or time lost shows where it hurts, and a severity score shows where the risk is. The order changes: in the example, the most frequent nonconformities are materials without certificates, but rejected concrete and rework lead by cost. If you use a severity score, write the weights in the “Unit note”, or the check “Period and unit stated” fails in the [[tab:audit]].",
+     "ar": "بحسب **السؤال**. العدد يبيّن أين يتكرر الخلل، والتكلفة أو الوقت المفقود يبيّن أين يوجع، ودرجة الخطورة تبيّن أين الخطر. والترتيب يتغير: في المثال، أكثر عدم المطابقة عدداً هي المواد دون شهادات، لكن الخرسانة المرفوضة والإعادة في التنفيذ تتصدران بالتكلفة. إذا استخدمت درجة الخطورة فاكتب الأوزان في «ملاحظة الوحدة»، وإلا فشل فحص «الفترة والوحدة محددتان» في [[tab:audit]]."
+    }
+   },
+   {
+    "id": "other",
+    "q": {
+     "en": "What do I do with “Other”?",
+     "ar": "ماذا أفعل بـ«أخرى»؟"
+    },
+    "a": {
+     "en": "“Other” is one line at the end; it is drawn as the last bar whatever its size, and it never joins the vital few. It must stay **smaller than the smallest named category**. When it grows the tool warns you, and when it becomes the largest the check “Other not the largest” fails: open it up and take a new, clearly defined category out of it.",
+     "ar": "«أخرى» سطر واحد في النهاية، ويُرسم آخر عمود مهما كان حجمه، ولا يدخل القلة الحيوية. يجب أن يبقى **أصغر من أصغر فئة مسماة**. إذا كبر فالأداة تنبّه، وإذا صار الأكبر يفشل فحص «أخرى ليست الأكبر»: افتح ما بداخله، وأخرج منه فئة جديدة بتعريف واضح."
+    }
+   },
+   {
+    "id": "strat",
+    "q": {
+     "en": "When do I stratify a category?",
+     "ar": "متى أقسّم الفئة تقسيماً طبقياً؟"
+    },
+    "a": {
+     "en": "When a large category is **a mix** of different problems, such as “materials without certificates” coming from several suppliers, or concrete rejected on the afternoon shift only. Split it by site, shift, supplier or product, draw a new chart for that category alone, and note it in the “Stratification note”. The split category is a clearer place for analysis.",
+     "ar": "عندما تكون الفئة الكبيرة **خليطاً** من مشكلات مختلفة، مثل «مواد دون شهادات» تأتي من موردين مختلفين، أو رفض خرسانة في وردية الظهر فقط. قسّم بحسب الموقع أو الوردية أو المورد أو المنتج، وارسم مخططاً جديداً للفئة وحدها، واكتب ذلك في «ملاحظة التقسيم الطبقي». الفئة بعد التقسيم أوضح مكاناً للتحليل."
+    }
+   },
+   {
+    "id": "ba",
+    "q": {
+     "en": "How do I check the effect after the action?",
+     "ar": "كيف أتحقق من الأثر بعد الإجراء؟"
+    },
+    "a": {
+     "en": "Collect the data again **for the same categories, in the same unit, over a period of the same length** after the action, and enter it in “Before/after check”. The tool works out the change for each category, the total and the vital few, draws the two side by side and suggests a verdict, but **the verdict is the team's**. If the two periods differ in length the tool warns you and the check “Before/after on the same basis” fails.",
+     "ar": "اجمع البيانات مرة ثانية **للفئات نفسها، بالوحدة نفسها، ولفترة بالطول نفسه** بعد الإجراء، وأدخلها في «التحقق قبل وبعد». تحسب الأداة الفرق لكل فئة وللمجموع وللقلة الحيوية، وترسم المخططين جنباً إلى جنب، وتقترح حكماً، لكن **الحكم للفريق**. إذا اختلف طول الفترتين تنبّه الأداة ويفشل فحص «قبل وبعد على الأساس نفسه»."
+    }
+   }
+  ],
+  "competencies": [
+   "QM-02",
+   "OE-02"
+  ],
+  "ecosystem": "quality"
+ }
+}

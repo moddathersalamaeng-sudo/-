@@ -1,0 +1,37 @@
+{
+  "schema": "cia.seed.v1",
+  "collection": "dimensions",
+  "phase": 2,
+  "generated": "2026-09-28",
+  "author": "مدثر سلامه",
+  "items": [
+    {
+      "code": "K",
+      "name": {
+        "ar": "معرفة",
+        "en": "Knowledge"
+      }
+    },
+    {
+      "code": "S",
+      "name": {
+        "ar": "مهارة",
+        "en": "Skill"
+      }
+    },
+    {
+      "code": "A",
+      "name": {
+        "ar": "تطبيق",
+        "en": "Application"
+      }
+    },
+    {
+      "code": "E",
+      "name": {
+        "ar": "خبرة",
+        "en": "Experience"
+      }
+    }
+  ]
+}

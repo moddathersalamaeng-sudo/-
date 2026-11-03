@@ -1,0 +1,514 @@
+{
+  "schema": "cia.iso-standard.v1",
+  "items": [
+    {
+      "id": "STD-9001",
+      "slug": "9001",
+      "name": {
+        "en": "ISO 9001:2026",
+        "ar": "ISO 9001:2026"
+      },
+      "theme": {
+        "en": "Quality management",
+        "ar": "إدارة الجودة"
+      },
+      "purpose": {
+        "en": "Helps an organization manage processes to deliver products and services consistently and improve customer satisfaction.",
+        "ar": "يساعد المنظمة على ضبط عملياتها لتقديم منتجات وخدمات متسقة وتحسين رضا العملاء."
+      },
+      "example": {
+        "en": "A contractor tracks design changes, inspection results and customer complaints in one improvement loop.",
+        "ar": "يتابع المقاول تغييرات التصميم ونتائج الفحص وشكاوى العميل ضمن دورة تحسين واحدة."
+      },
+      "mistake": {
+        "en": "Treating a certificate as evidence that each project process works.",
+        "ar": "اعتبار الشهادة دليلًا كافيًا على فاعلية كل عملية في المشروع."
+      },
+      "evidence": {
+        "en": "Approved process controls, sample records, performance trends and corrective actions.",
+        "ar": "ضوابط العمليات المعتمدة وعينات السجلات واتجاهات الأداء والإجراءات التصحيحية."
+      },
+      "toolkit_id": "iso9001",
+      "official_url": "https://www.iso.org/standard/9001",
+      "foundation_course_id": "CRS-ISO-9001-F",
+      "assessment_id": "ASM-ISO-9001-DIAG",
+      "knowledge_ids": [
+        "KA-001",
+        "KA-002",
+        "KA-005",
+        "KA-006",
+        "KA-007",
+        "KA-008",
+        "KA-009",
+        "KA-010"
+      ],
+      "competencies": [
+        "ISO-01",
+        "ISO-02",
+        "QM-01",
+        "QM-04",
+        "AUD-02"
+      ],
+      "source_ids": [
+        "SRC-ISO-9001-NEWS",
+        "SRC-LRQA-9001-TRANSITION",
+        "SRC-ISO-9001"
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.8.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "fc663c5401d0f75d218136ff260dbdc302718536d1ee7624649556f40b26c137"
+      },
+      "edition": {
+        "label": "ISO 9001:2026",
+        "status": {
+          "en": "Published 16 September 2026.",
+          "ar": "نُشرت في 16 سبتمبر 2026."
+        },
+        "transition": {
+          "en": "Certification bodies announce a three-year transition from ISO 9001:2015 (LRQA: until 30 September 2029). Confirm the exact dates with your certification body.",
+          "ar": "تعلن جهات منح الشهادات فترة انتقالية مدتها ثلاث سنوات من ISO 9001:2015 (وفق LRQA: حتى 30 سبتمبر 2029). تأكد من المواعيد الدقيقة مع جهة منح الشهادة."
+        },
+        "verified_date": "2026-10-25",
+        "source_ids": [
+          "SRC-ISO-9001-NEWS",
+          "SRC-LRQA-9001-TRANSITION",
+          "SRC-ISO-9001"
+        ]
+      },
+      "audience": [
+        {
+          "en": "Any organization that wants consistent products and services and satisfied customers",
+          "ar": "أي منظمة تريد منتجات وخدمات متسقة وعملاء راضين"
+        },
+        {
+          "en": "Contractors and suppliers to utilities, energy and government",
+          "ar": "المقاولون والموردون للمرافق والطاقة والجهات الحكومية"
+        }
+      ],
+      "themes": [
+        {
+          "en": "Customer focus and requirements",
+          "ar": "التركيز على العميل والمتطلبات"
+        },
+        {
+          "en": "Process approach and operational control",
+          "ar": "نهج العمليات والضبط التشغيلي"
+        },
+        {
+          "en": "Leadership and quality culture",
+          "ar": "القيادة وثقافة الجودة"
+        },
+        {
+          "en": "Risks and opportunities",
+          "ar": "المخاطر والفرص"
+        },
+        {
+          "en": "Measurement, audit and improvement",
+          "ar": "القياس والتدقيق والتحسين"
+        }
+      ],
+      "implementer_course_id": "CRS-ISO-9001-IMP",
+      "auditor_course_id": "CRS-ISO-9001-AUD",
+      "related_toolkits": [
+        "aud",
+        "capa",
+        "pdca",
+        "iso10009"
+      ],
+      "route_ids": [
+        "ROUTE-AWARE",
+        "ROUTE-IA",
+        "ROUTE-IMPL",
+        "ROUTE-IMS",
+        "ROUTE-LA",
+        "ROUTE-MR"
+      ]
+    },
+    {
+      "id": "STD-14001",
+      "slug": "14001",
+      "name": {
+        "en": "ISO 14001:2026",
+        "ar": "ISO 14001:2026"
+      },
+      "theme": {
+        "en": "Environmental management",
+        "ar": "الإدارة البيئية"
+      },
+      "purpose": {
+        "en": "Helps an organization identify environmental impacts, manage obligations and improve environmental performance.",
+        "ar": "يساعد المنظمة على تحديد آثارها البيئية وإدارة التزاماتها وتحسين أدائها البيئي."
+      },
+      "example": {
+        "en": "A site identifies waste streams and spill risks, assigns controls, then checks disposal and incident records.",
+        "ar": "يحدد الموقع أنواع النفايات ومخاطر التسرب، ويضع الضوابط، ثم يراجع سجلات التخلص والحوادث."
+      },
+      "mistake": {
+        "en": "Listing environmental aspects without linking them to actual controls and monitoring.",
+        "ar": "سرد الجوانب البيئية دون ربطها بضوابط فعلية ومراقبة."
+      },
+      "evidence": {
+        "en": "Aspect evaluation, applicable obligations, waste manifests, monitoring and response records.",
+        "ar": "تقييم الجوانب والالتزامات المنطبقة وسجلات النفايات والرصد والاستجابة."
+      },
+      "toolkit_id": "iso14001",
+      "official_url": "https://www.iso.org/standard/14001",
+      "foundation_course_id": "CRS-ISO-14001-F",
+      "assessment_id": "ASM-ISO-14001-DIAG",
+      "knowledge_ids": [
+        "KA-001",
+        "KA-002",
+        "KA-005",
+        "KA-006",
+        "KA-007",
+        "KA-008",
+        "KA-009",
+        "KA-010"
+      ],
+      "competencies": [
+        "ISO-01",
+        "ISO-02",
+        "CMP-01",
+        "RSK-01",
+        "AUD-02"
+      ],
+      "source_ids": [
+        "SRC-ISO-14001",
+        "SRC-DNV-14001-2026"
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.8.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "82c1e9af8f16bae30ee6bdbde46c93a29d70d466b2a68f8ba2358168e3ac37ad"
+      },
+      "edition": {
+        "label": "ISO 14001:2026",
+        "status": {
+          "en": "Edition 4, published 15 April 2026.",
+          "ar": "الإصدار الرابع، نُشر في 15 أبريل 2026."
+        },
+        "transition": {
+          "en": "Certification bodies run a three-year transition; DNV states that ISO 14001:2015 certificates must move to the 2026 edition before May 2029. Confirm the dates with your certification body.",
+          "ar": "تطبق جهات منح الشهادات فترة انتقالية مدتها ثلاث سنوات؛ وتذكر DNV أن شهادات ISO 14001:2015 يجب أن تنتقل إلى إصدار 2026 قبل مايو 2029. تأكد من المواعيد مع جهة منح الشهادة."
+        },
+        "verified_date": "2026-10-25",
+        "source_ids": [
+          "SRC-ISO-14001",
+          "SRC-DNV-14001-2026"
+        ]
+      },
+      "audience": [
+        {
+          "en": "Sites with fuel, chemicals, waste, emissions or discharges",
+          "ar": "المواقع التي تتعامل مع الوقود والكيماويات والنفايات والانبعاثات أو التصريفات"
+        },
+        {
+          "en": "Contractors required by clients to manage environmental obligations",
+          "ar": "المقاولون الذين يطلب منهم العملاء إدارة الالتزامات البيئية"
+        }
+      ],
+      "themes": [
+        {
+          "en": "Environmental aspects and impacts",
+          "ar": "الجوانب والآثار البيئية"
+        },
+        {
+          "en": "Compliance obligations",
+          "ar": "الالتزامات الواجبة"
+        },
+        {
+          "en": "Life-cycle perspective",
+          "ar": "منظور دورة الحياة"
+        },
+        {
+          "en": "Operational control and emergencies",
+          "ar": "الضبط التشغيلي والطوارئ"
+        },
+        {
+          "en": "Environmental performance",
+          "ar": "الأداء البيئي"
+        }
+      ],
+      "implementer_course_id": null,
+      "auditor_course_id": "CRS-ISO-14001-AUD",
+      "related_toolkits": [
+        "ims"
+      ],
+      "route_ids": [
+        "ROUTE-AWARE",
+        "ROUTE-IA",
+        "ROUTE-IMPL",
+        "ROUTE-IMS",
+        "ROUTE-LA",
+        "ROUTE-MR"
+      ]
+    },
+    {
+      "id": "STD-45001",
+      "slug": "45001",
+      "name": {
+        "en": "ISO 45001:2018 + Amd 1:2024",
+        "ar": "ISO 45001:2018 + Amd 1:2024"
+      },
+      "theme": {
+        "en": "Occupational health and safety",
+        "ar": "الصحة والسلامة المهنية"
+      },
+      "purpose": {
+        "en": "Provides a framework to prevent work-related injury and ill health through hazard controls and worker participation.",
+        "ar": "يوفر إطارًا للوقاية من الإصابات والأمراض المرتبطة بالعمل عبر التحكم بالمخاطر ومشاركة العاملين."
+      },
+      "example": {
+        "en": "Before work at height, the team verifies access, competence, rescue arrangements and the permit at the work face.",
+        "ar": "قبل العمل على ارتفاع، يتحقق الفريق من الوصول والكفاءة وخطة الإنقاذ والتصريح في موقع التنفيذ."
+      },
+      "mistake": {
+        "en": "Assuming a signed permit proves the controls were used in the field.",
+        "ar": "الافتراض أن التصريح الموقع يثبت تنفيذ الضوابط في الموقع."
+      },
+      "evidence": {
+        "en": "Risk assessment, consultation records, competency evidence, field observations and corrective actions.",
+        "ar": "تقييم المخاطر وسجلات المشاركة وأدلة الكفاءة وملاحظات الموقع والإجراءات التصحيحية."
+      },
+      "toolkit_id": "iso45001",
+      "official_url": "https://www.iso.org/standard/45001",
+      "foundation_course_id": "CRS-ISO-45001-F",
+      "assessment_id": "ASM-ISO-45001-DIAG",
+      "knowledge_ids": [
+        "KA-001",
+        "KA-002",
+        "KA-005",
+        "KA-006",
+        "KA-007",
+        "KA-008",
+        "KA-009",
+        "KA-010"
+      ],
+      "competencies": [
+        "ISO-01",
+        "RSK-01",
+        "RSK-02",
+        "LDR-01",
+        "AUD-02"
+      ],
+      "source_ids": [
+        "SRC-ISO-45001",
+        "SRC-ISO-45001-REV"
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.8.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "f3e0f764f7035a6eea596adecd1e629d5afc2ad71d6666af0034ed42ca69d1a2"
+      },
+      "edition": {
+        "label": "ISO 45001:2018 + Amd 1:2024",
+        "status": {
+          "en": "Current edition 2018 with Amendment 1:2024. A revision (ISO/DIS 45001) closed its ballot on 9 September 2026 and is intended to replace the 2018 edition in the first half of 2027.",
+          "ar": "الإصدار الحالي 2018 مع التعديل 1:2024. وأُغلق التصويت على مراجعة (ISO/DIS 45001) في 9 سبتمبر 2026، ويُعتزم أن تحل محل إصدار 2018 في النصف الأول من 2027."
+        },
+        "transition": {
+          "en": "No transition is running yet. Recheck this page when the new edition is published.",
+          "ar": "لا توجد فترة انتقالية جارية بعد. أعد التحقق من هذه الصفحة عند نشر الإصدار الجديد."
+        },
+        "verified_date": "2026-10-25",
+        "source_ids": [
+          "SRC-ISO-45001",
+          "SRC-ISO-45001-REV"
+        ]
+      },
+      "audience": [
+        {
+          "en": "Organizations with construction, maintenance, operations or other high-risk work",
+          "ar": "المنظمات التي لديها أعمال إنشاء أو صيانة أو تشغيل أو أعمال أخرى عالية الخطورة"
+        },
+        {
+          "en": "Principal contractors managing subcontractors",
+          "ar": "المقاولون الرئيسيون الذين يديرون مقاولين من الباطن"
+        }
+      ],
+      "themes": [
+        {
+          "en": "Worker consultation and participation",
+          "ar": "التشاور مع العاملين ومشاركتهم"
+        },
+        {
+          "en": "Hazard identification and OH&S risk",
+          "ar": "تحديد المخاطر ومخاطر السلامة"
+        },
+        {
+          "en": "Hierarchy of controls",
+          "ar": "التسلسل الهرمي للضوابط"
+        },
+        {
+          "en": "Management of change and contractors",
+          "ar": "إدارة التغيير والمقاولون"
+        },
+        {
+          "en": "Incidents and learning",
+          "ar": "الحوادث والتعلم"
+        }
+      ],
+      "implementer_course_id": null,
+      "auditor_course_id": "CRS-ISO-45001-AUD",
+      "related_toolkits": [
+        "ims",
+        "rca"
+      ],
+      "route_ids": [
+        "ROUTE-AWARE",
+        "ROUTE-IA",
+        "ROUTE-IMPL",
+        "ROUTE-IMS",
+        "ROUTE-LA",
+        "ROUTE-MR"
+      ]
+    },
+    {
+      "id": "STD-27001",
+      "slug": "27001",
+      "name": {
+        "en": "ISO/IEC 27001:2022 + Amd 1:2024",
+        "ar": "ISO/IEC 27001:2022 + Amd 1:2024"
+      },
+      "theme": {
+        "en": "Information security",
+        "ar": "أمن المعلومات"
+      },
+      "purpose": {
+        "en": "Sets requirements for an information security management system using risk assessment and treatment.",
+        "ar": "يحدد متطلبات نظام إدارة أمن المعلومات بالاستناد إلى تقييم المخاطر ومعالجتها."
+      },
+      "example": {
+        "en": "A team inventories project information, evaluates access risks, assigns treatment and tests whether access is removed on exit.",
+        "ar": "يحصر الفريق معلومات المشروع، ويقيّم مخاطر الوصول، ويحدد المعالجة، ثم يتحقق من إلغاء الصلاحيات عند المغادرة."
+      },
+      "mistake": {
+        "en": "Buying a security tool without defining information risks and responsibilities.",
+        "ar": "شراء أداة أمنية دون تحديد مخاطر المعلومات والمسؤوليات."
+      },
+      "evidence": {
+        "en": "Scope, risk assessment and treatment records, control rationale, access reviews and incident learning.",
+        "ar": "النطاق وسجلات تقييم المخاطر ومعالجتها ومبررات الضوابط ومراجعات الوصول والتعلم من الحوادث."
+      },
+      "toolkit_id": "iso27001",
+      "official_url": "https://www.iso.org/standard/27001",
+      "foundation_course_id": "CRS-ISO-27001-F",
+      "assessment_id": "ASM-ISO-27001-DIAG",
+      "knowledge_ids": [
+        "KA-001",
+        "KA-002",
+        "KA-005",
+        "KA-006",
+        "KA-007",
+        "KA-008",
+        "KA-009",
+        "KA-010"
+      ],
+      "competencies": [
+        "ISA-01",
+        "ISA-02",
+        "ISO-02",
+        "RSK-01",
+        "AUD-02"
+      ],
+      "source_ids": [
+        "SRC-ISO-27001",
+        "SRC-ISO-27001-AMD1",
+        "SRC-AMTIVO-27001"
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.8.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e99d8c271477e7067c28e4c0bc780b0ef6c156d376ba81b779275ebc40cbee53"
+      },
+      "edition": {
+        "label": "ISO/IEC 27001:2022 + Amd 1:2024",
+        "status": {
+          "en": "Current edition 2022 with Amendment 1:2024 (climate action changes). Annex A lists 93 controls in four themes.",
+          "ar": "الإصدار الحالي 2022 مع التعديل 1:2024 (تغييرات العمل المناخي). ويسرد الملحق (أ) 93 ضابطًا في أربعة محاور."
+        },
+        "transition": {
+          "en": "The transition from the 2013 edition ended on 31 October 2025.",
+          "ar": "انتهت الفترة الانتقالية من إصدار 2013 في 31 أكتوبر 2025."
+        },
+        "verified_date": "2026-10-25",
+        "source_ids": [
+          "SRC-ISO-27001",
+          "SRC-ISO-27001-AMD1",
+          "SRC-AMTIVO-27001"
+        ]
+      },
+      "audience": [
+        {
+          "en": "Organizations that hold client, personal, financial or operational data",
+          "ar": "المنظمات التي تحتفظ ببيانات العملاء أو البيانات الشخصية أو المالية أو التشغيلية"
+        },
+        {
+          "en": "IT service providers and suppliers with access to client systems",
+          "ar": "مزودو خدمات تقنية المعلومات والموردون الذين يصلون إلى أنظمة العملاء"
+        }
+      ],
+      "themes": [
+        {
+          "en": "Confidentiality, integrity and availability",
+          "ar": "السرية والسلامة والإتاحة"
+        },
+        {
+          "en": "Scope, assets and owners",
+          "ar": "النطاق والأصول والملاك"
+        },
+        {
+          "en": "Risk assessment and treatment",
+          "ar": "تقييم المخاطر ومعالجتها"
+        },
+        {
+          "en": "Statement of Applicability",
+          "ar": "بيان قابلية التطبيق"
+        },
+        {
+          "en": "Incidents, monitoring and improvement",
+          "ar": "الحوادث والرصد والتحسين"
+        }
+      ],
+      "implementer_course_id": null,
+      "auditor_course_id": "CRS-ISO-27001-AUD",
+      "related_toolkits": [
+        "iso27701",
+        "ims"
+      ],
+      "route_ids": [
+        "ROUTE-AWARE",
+        "ROUTE-IA",
+        "ROUTE-IMPL",
+        "ROUTE-IMS",
+        "ROUTE-LA",
+        "ROUTE-MR"
+      ]
+    }
+  ]
+}

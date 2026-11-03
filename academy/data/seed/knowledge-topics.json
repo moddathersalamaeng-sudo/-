@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "items": [
+    {
+      "id": "topic-iso",
+      "ecosystem": "iso",
+      "order": 1,
+      "title": {
+        "en": "ISO Foundations",
+        "ar": "أساسيات الأيزو"
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "topic-pmi",
+      "ecosystem": "pmi",
+      "order": 2,
+      "title": {
+        "en": "Project Management",
+        "ar": "إدارة المشاريع"
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "topic-quality",
+      "ecosystem": "quality",
+      "order": 3,
+      "title": {
+        "en": "Quality Foundations",
+        "ar": "أساسيات الجودة"
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "topic-efqm",
+      "ecosystem": "efqm",
+      "order": 4,
+      "title": {
+        "en": "Organizational Excellence",
+        "ar": "التميز المؤسسي"
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "topic-p3o",
+      "ecosystem": "p3o",
+      "order": 5,
+      "title": {
+        "en": "P3O & PMO",
+        "ar": "P3O ومكاتب إدارة المشاريع"
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    }
+  ]
+}

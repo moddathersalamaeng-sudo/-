@@ -1,0 +1,4381 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-14001",
+  "slug": "iso-14001",
+  "kind": "standard",
+  "module": "iso14001",
+  "standard_id": "STD-14001",
+  "title": {
+   "en": "ISO 14001:2026 Interactive Guide",
+   "ar": "دليل ISO 14001:2026 التفاعلي"
+  },
+  "subtitle": {
+   "en": "Environmental management systems — Requirements with guidance for use",
+   "ar": "Environmental management systems — Requirements with guidance for use"
+  },
+  "lede": {
+   "en": "Every clause from 4 to 10 explained in plain language, with a worked example from an electrical contractor, the steps to apply it, and the evidence an auditor will ask for.",
+   "ar": "كل بند من البنود 4 إلى 10 مشروح بلغة بسيطة، مع مثال تطبيقي من شركة مقاولات كهربائية، وخطوات التطبيق، والأدلة التي يطلبها المدقق."
+  },
+  "author": "مدثر سلامه",
+  "clauses": [
+   {
+    "id": "4",
+    "phase": "ctx",
+    "title": {
+     "en": "Context of the organization",
+     "ar": "سياق المنظمة"
+    },
+    "intro": {
+     "en": "Before building the environmental system, understand your surroundings: the issues that affect you, the environmental conditions you affect or are affected by (climate, biodiversity, pollution, resources), the interested parties and their requirements, and the system's boundaries.",
+     "ar": "قبل بناء النظام البيئي افهم ما حولك: القضايا التي تؤثر عليك، والظروف البيئية التي تؤثر فيها أو تتأثر بها (المناخ، التنوع الحيوي، التلوث، الموارد)، والأطراف المعنية والتزاماتها، وحدود النظام."
+    },
+    "items": [
+     {
+      "ref": "4.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Understanding the organization and its context",
+       "ar": "فهم المنظمة وسياقها"
+      },
+      "req": {
+       "en": "Determine the internal and external issues relevant to your purpose that affect your ability to achieve the intended outcomes of the EMS. This includes environmental conditions that affect or are affected by the organization, which the 2026 edition names more explicitly: climate change, pollution levels, availability of natural resources, and biodiversity and ecosystem health. Decide explicitly whether climate change is a relevant issue.",
+       "ar": "حدِّد القضايا الداخلية والخارجية المرتبطة بغرض المنظمة والمؤثرة على قدرتها على تحقيق النتائج المقصودة للنظام البيئي. ويشمل ذلك الظروف البيئية التي تؤثر في المنظمة أو تتأثر بها، وقد أصبح إصدار 2026 أكثر صراحة في ذكرها: تغيّر المناخ، ومستويات التلوث، وتوافر الموارد الطبيعية، والتنوع الحيوي وصحة النظم البيئية. وقرِّر صراحة هل تغيّر المناخ قضية ذات صلة."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical identified external issues such as water scarcity in the central region, heat waves and dust storms, requirements of the National Center for Environmental Compliance, and overhead lines crossing bird migration routes; and internal issues such as the use of SF6 gas in gas-insulated substations and many temporary sites. It concluded that climate change is relevant.",
+       "ar": "حددت شركة الأفق قضايا خارجية مثل: ندرة المياه في المنطقة الوسطى، موجات الحر والغبار، اشتراطات المركز الوطني للرقابة على الالتزام البيئي، ومرور خطوط النقل الهوائية بمسارات هجرة الطيور. وقضايا داخلية مثل: استخدام غاز SF6 في المحطات المعزولة بالغاز، وتعدد المواقع المؤقتة. وقررت أن تغيّر المناخ قضية ذات صلة."
+      },
+      "how": [
+       {
+        "en": "Run an environmental PESTLE workshop with top management and project managers.",
+        "ar": "ورشة PESTLE بيئية مع الإدارة العليا ومديري المشاريع."
+       },
+       {
+        "en": "Record an assessment of each environmental condition (climate, biodiversity, pollution, resources), with reasons even when the answer is 'not significant'.",
+        "ar": "تقييم موثق لكل ظرف بيئي: المناخ، التنوع الحيوي، التلوث، الموارد، حتى لو كانت النتيجة «غير مؤثر» مع المبرر."
+       },
+       {
+        "en": "Link every significant issue to an aspect, a risk or an opportunity in 6.1.",
+        "ar": "ربط كل قضية مهمة بجانب بيئي أو خطر أو فرصة في البند 6.1."
+       },
+       {
+        "en": "Review the analysis at management review and after any major change.",
+        "ar": "مراجعة التحليل في مراجعة الإدارة وعند أي تغيير كبير."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Current environmental context analysis",
+        "ar": "تحليل السياق البيئي المحدَّث"
+       },
+       {
+        "en": "Climate change decision and rationale",
+        "ar": "قرار تغيّر المناخ ومبرراته"
+       },
+       {
+        "en": "Assessment of biodiversity, pollution and resources",
+        "ar": "تقييم التنوع الحيوي والتلوث والموارد"
+       }
+      ],
+      "tip": {
+       "en": "Auditors will ask for evidence that biodiversity and resource availability were assessed, not only climate. A documented assessment is expected even when it concludes the effect is not significant.",
+       "ar": "المدقق سيطلب دليلاً على تقييم التنوع الحيوي وتوافر الموارد، وليس المناخ فقط. التقييم الموثق مطلوب حتى لو خلص إلى أن الأثر غير جوهري."
+      },
+      "checks": [
+       {
+        "ar": "كيف حُددت القضايا الداخلية والخارجية؟ ومتى رُوجع التحليل آخر مرة؟",
+        "en": "How were internal and external issues determined, and when was the analysis last reviewed?"
+       },
+       {
+        "ar": "أين التقييم الموثق للظروف البيئية: المناخ، التنوع الحيوي، التلوث، توافر الموارد؟",
+        "en": "Where is the documented assessment of environmental conditions: climate, biodiversity, pollution, resource availability?"
+       },
+       {
+        "ar": "ما القرار الموثق بشأن صلة تغيّر المناخ؟ وكيف انتقلت القضايا المهمة إلى 6.1؟",
+        "en": "What is the documented climate change decision, and how did significant issues flow into 6.1?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.3",
+         "why": {
+          "ar": "القضايا والظروف البيئية تُراعى عند تحديد النطاق.",
+          "en": "Issues and environmental conditions are considered when setting the scope."
+         }
+        },
+        {
+         "ref": "6.1.4",
+         "why": {
+          "ar": "القضايا والظروف البيئية مدخل لتحديد المخاطر والفرص.",
+          "en": "Issues and environmental conditions feed the risks and opportunities."
+         }
+        },
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "الظروف البيئية تكشف جوانب قد تُغفل.",
+          "en": "Environmental conditions reveal aspects that could be missed."
+         }
+        },
+        {
+         "ref": "5.2",
+         "why": {
+          "ar": "السياسة مناسبة للسياق وآثار المنظمة.",
+          "en": "The policy fits the context and the organization's impacts."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Understanding the needs and expectations of interested parties",
+       "ar": "فهم احتياجات وتوقعات الأطراف المعنية"
+      },
+      "req": {
+       "en": "Determine the interested parties relevant to the EMS and their relevant needs and expectations (requirements), then decide which of them will become compliance obligations. Some requirements may relate to climate change and other environmental conditions.",
+       "ar": "حدِّد الأطراف المعنية ذات الصلة بالنظام البيئي، واحتياجاتها وتوقعاتها ذات الصلة (متطلباتها)، ثم قرِّر أيها سيصبح التزاماً امتثالياً تلتزم به المنظمة. بعض المتطلبات قد يرتبط بتغيّر المناخ والظروف البيئية الأخرى."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's parties: the utility client (requires a project environmental management plan), regulators (environmental permits, waste management), municipalities, residents near sites (dust and noise), and employees. The company adopted the client's request to cut site water use as a voluntary compliance obligation.",
+       "ar": "الأطراف لدى شركة الأفق: شركة الكهرباء (تشترط خطة إدارة بيئية للمشروع)، الجهات التنظيمية (تصاريح بيئية، إدارة النفايات)، البلديات، السكان المجاورون للمواقع (غبار وضوضاء)، الموظفون. قررت الشركة تبني متطلب العميل بخفض استهلاك المياه في المواقع كالتزام امتثالي طوعي."
+      },
+      "how": [
+       {
+        "en": "List the parties: clients, regulators, local community, suppliers, subcontractors, employees, owners, lenders.",
+        "ar": "حصر الأطراف: العملاء، الجهات التنظيمية، المجتمع المحلي، الموردون، المقاولون الباطن، الموظفون، الملاك، الممولون."
+       },
+       {
+        "en": "Capture each party's requirements and their source (law, permit, contract, voluntary commitment).",
+        "ar": "تحديد متطلبات كل طرف ومصدرها (قانون، تصريح، عقد، التزام طوعي)."
+       },
+       {
+        "en": "Decide which become compliance obligations and carry them into the register (6.1.3).",
+        "ar": "تحديد ما سيصبح التزاماً امتثالياً ونقله إلى سجل الالتزامات (6.1.3)."
+       },
+       {
+        "en": "Update the register with every new contract or regulation.",
+        "ar": "تحديث السجل عند كل عقد أو نظام جديد."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Interested parties register with requirements",
+        "ar": "سجل الأطراف المعنية ومتطلباتها"
+       },
+       {
+        "en": "Which requirements were adopted as compliance obligations",
+        "ar": "ما قُرر اعتباره التزاماً امتثالياً"
+       },
+       {
+        "en": "Evidence of updates",
+        "ar": "دليل التحديث"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما الأطراف المعنية ذات الصلة ومتطلباتها؟",
+        "en": "Which interested parties are relevant, and what are their requirements?"
+       },
+       {
+        "ar": "أي المتطلبات أصبحت التزامات امتثالية؟ وما مبرر ذلك؟",
+        "en": "Which requirements became compliance obligations, and why?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.3",
+         "why": {
+          "ar": "الالتزامات الامتثالية تُراعى في النطاق.",
+          "en": "Compliance obligations are considered in the scope."
+         }
+        },
+        {
+         "ref": "6.1.3",
+         "why": {
+          "ar": "متطلبات الأطراف المتبناة تصبح التزامات امتثالية.",
+          "en": "Adopted interested-party requirements become compliance obligations."
+         }
+        },
+        {
+         "ref": "6.1.4",
+         "why": {
+          "ar": "متطلبات الأطراف تولد مخاطر وفرصاً.",
+          "en": "Interested-party requirements generate risks and opportunities."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Determining the scope of the environmental management system",
+       "ar": "تحديد نطاق نظام الإدارة البيئية"
+      },
+      "req": {
+       "en": "Define the boundaries and applicability of the system, considering the issues (4.1), compliance obligations, organizational units, functions and physical boundaries, activities, products and services, and the organization's authority and ability to exercise control and influence. All activities within the scope are included in the EMS. The scope is documented information available to interested parties.",
+       "ar": "حدِّد حدود النظام ومجال تطبيقه مع مراعاة: القضايا (4.1)، والالتزامات الامتثالية، والوحدات والوظائف والحدود المادية، والأنشطة والمنتجات والخدمات، وسلطة المنظمة وقدرتها على التحكم والتأثير. كل الأنشطة داخل النطاق تُشمل في النظام. والنطاق معلومات موثقة ومتاحة للأطراف المعنية."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's scope: design, supply and construction of substations and overhead transmission lines, covering the Riyadh head office, the central warehouse and project sites. The warehouse cannot be left out because oils and hazardous waste are stored there.",
+       "ar": "نطاق شركة الأفق: تصميم وتوريد وتنفيذ محطات التحويل وخطوط النقل الهوائية، في المكتب الرئيسي بالرياض والمستودع المركزي ومواقع المشاريع. لا يجوز استبعاد المستودع لأنه موقع تخزين الزيوت والنفايات الخطرة."
+      },
+      "how": [
+       {
+        "en": "Define the sites, activities and products covered.",
+        "ar": "تحديد المواقع والأنشطة والمنتجات المشمولة."
+       },
+       {
+        "en": "Check that no activity with significant aspects is excluded to make the scope look better.",
+        "ar": "التحقق من عدم استبعاد أنشطة ذات جوانب بيئية مهمة لتجميل النطاق."
+       },
+       {
+        "en": "Approve the scope statement and make it available to interested parties.",
+        "ar": "اعتماد وثيقة النطاق ونشرها للأطراف المعنية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Approved scope statement",
+        "ar": "وثيقة النطاق المعتمدة"
+       },
+       {
+        "en": "List of sites covered",
+        "ar": "قائمة المواقع المشمولة"
+       },
+       {
+        "en": "Justification of boundaries",
+        "ar": "مبررات أي حدود"
+       }
+      ],
+      "tip": {
+       "en": "Excluding an activity or site with major environmental impact damages the credibility of the system, and the auditor will challenge it.",
+       "ar": "استبعاد نشاط أو موقع ذي أثر بيئي كبير من النطاق يضر بمصداقية النظام، وسيسأل عنه المدقق."
+      },
+      "checks": [
+       {
+        "ar": "هل يشمل النطاق كل المواقع والأنشطة ذات الجوانب المهمة؟",
+        "en": "Does the scope include every site and activity with significant aspects?"
+       },
+       {
+        "ar": "هل النطاق متاح للأطراف المعنية؟",
+        "en": "Is the scope available to interested parties?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "الجوانب تُحدد ضمن النطاق.",
+          "en": "Aspects are determined within the scope."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.1",
+         "why": {
+          "ar": "القضايا والظروف البيئية تُراعى عند تحديد النطاق.",
+          "en": "Issues and environmental conditions are considered when setting the scope."
+         }
+        },
+        {
+         "ref": "4.2",
+         "why": {
+          "ar": "الالتزامات الامتثالية تُراعى في النطاق.",
+          "en": "Compliance obligations are considered in the scope."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "4.4",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Environmental management system",
+       "ar": "نظام الإدارة البيئية"
+      },
+      "req": {
+       "en": "Establish, implement, maintain and continually improve the EMS, including the processes needed and their interactions, to achieve the intended outcomes, including enhanced environmental performance. Consider the knowledge gained in 4.1 and 4.2 when doing so.",
+       "ar": "أنشئ النظام البيئي بما فيه العمليات اللازمة وتفاعلاتها، ونفّذه وحافظ عليه وحسّنه باستمرار، لتحقيق النتائج المقصودة ومنها تعزيز الأداء البيئي. وراعِ المعرفة المكتسبة من 4.1 و4.2 عند ذلك."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical integrated the EMS with its quality and safety systems in one integrated manual and defined environmental processes such as aspect identification, waste management, emergency response and compliance evaluation.",
+       "ar": "دمجت شركة الأفق النظام البيئي مع نظامي الجودة والسلامة في دليل متكامل واحد، وحددت عمليات بيئية مثل: تحديد الجوانب، إدارة النفايات، الاستجابة للطوارئ، تقييم الامتثال."
+      },
+      "how": [
+       {
+        "en": "Draw a process map showing where environmental controls sit.",
+        "ar": "خريطة عمليات توضح أين تظهر الضوابط البيئية."
+       },
+       {
+        "en": "Give each environmental process an owner and an indicator.",
+        "ar": "مالك ومؤشر لكل عملية بيئية."
+       },
+       {
+        "en": "Integrate with other systems on the harmonized structure.",
+        "ar": "الدمج مع الأنظمة الأخرى على الهيكل الموحد."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Process map",
+        "ar": "خريطة العمليات"
+       },
+       {
+        "en": "Process sheets",
+        "ar": "بطاقات العمليات"
+       },
+       {
+        "en": "Integrated manual (if used)",
+        "ar": "دليل النظام المتكامل (إن وجد)"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "أرني العمليات البيئية وكيف تتفاعل مع عمليات الأعمال.",
+        "en": "Show me the environmental processes and how they interact with business processes."
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "5",
+    "phase": "lead",
+    "title": {
+     "en": "Leadership",
+     "ar": "القيادة"
+    },
+    "intro": {
+     "en": "Top management is accountable for the effectiveness of the EMS. The 2026 edition broadens expectations: supporting all relevant roles, building the environment into business decisions, and a policy with commitments to protect the environment.",
+     "ar": "الإدارة العليا تحمل المساءلة عن فعالية النظام البيئي. إصدار 2026 يوسّع التوقعات: دعم كل الأدوار ذات الصلة، ودمج البيئة في قرارات الأعمال، وسياسة بالتزامات حماية البيئة."
+    },
+    "items": [
+     {
+      "ref": "5.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Leadership and commitment",
+       "ar": "القيادة والالتزام"
+      },
+      "req": {
+       "en": "Top management demonstrates leadership by: taking accountability for the effectiveness of the EMS, ensuring the policy and objectives are compatible with the strategic direction and context, integrating EMS requirements into business processes, providing resources, communicating the importance of effective environmental management, ensuring intended outcomes are achieved, directing and supporting people, promoting continual improvement, and supporting other relevant roles to demonstrate leadership in their areas.",
+       "ar": "تُثبت الإدارة العليا قيادتها عبر: تحمّل المساءلة عن فعالية النظام، وسياسة وأهداف متوافقة مع الاتجاه الاستراتيجي والسياق، ودمج متطلبات النظام في عمليات الأعمال، وتوفير الموارد، والتواصل حول أهمية الإدارة البيئية الفعالة، وضمان تحقيق النتائج المقصودة، وتوجيه الأفراد ودعمهم، وتعزيز التحسين المستمر، ودعم الأدوار الأخرى ذات الصلة لإظهار قيادتها في مجالاتها."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's CEO reviews environmental KPIs monthly, tied project managers' incentives to waste recycling rate and zero spills, and rejected a cheaper supplier with no permit to transport hazardous waste.",
+       "ar": "الرئيس التنفيذي لشركة الأفق يراجع مؤشرات البيئة شهرياً، وربط حافز مديري المشاريع بنسبة إعادة تدوير المخلفات وصفر انسكابات، ورفض عرض مورد أرخص لا يملك تصريحاً لنقل النفايات الخطرة."
+      },
+      "how": [
+       {
+        "en": "Build the environment into the strategic plan and investment decisions.",
+        "ar": "إدراج البيئة في الخطة الاستراتيجية وقرارات الاستثمار."
+       },
+       {
+        "en": "Hold site visits and record decisions from top management.",
+        "ar": "زيارات ميدانية وقرارات موثقة من الإدارة العليا."
+       },
+       {
+        "en": "Give site supervisors and storekeepers clear environmental authority and support.",
+        "ar": "تمكين مشرفي المواقع وأمناء المستودعات بصلاحيات بيئية واضحة ودعمهم."
+       },
+       {
+        "en": "Present environmental performance at routine management meetings.",
+        "ar": "عرض الأداء البيئي في اجتماعات الإدارة الدورية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Top management interview",
+        "ar": "مقابلة الإدارة العليا"
+       },
+       {
+        "en": "Documented decisions and messages",
+        "ar": "قرارات ورسائل موثقة"
+       },
+       {
+        "en": "Environment tied to strategy and budget",
+        "ar": "ربط البيئة بالاستراتيجية والميزانية"
+       }
+      ],
+      "tip": {
+       "en": "Auditors will not settle for a signed policy and attendance at review; they look for real decisions and for top management's support of non-management roles too.",
+       "ar": "المدقق لن يكتفي بتوقيع السياسة وحضور المراجعة؛ سيبحث عن قرارات فعلية وعن دعم الإدارة للأدوار غير الإدارية أيضاً."
+      },
+      "checks": [
+       {
+        "ar": "أعطني مثالاً على قرار أعمال تأثر باعتبارات بيئية.",
+        "en": "Give me an example of a business decision shaped by environmental considerations."
+       },
+       {
+        "ar": "كيف تدعم الإدارة العليا الأدوار الأخرى، بما فيها غير الإدارية، في النظام؟",
+        "en": "How does top management support other roles, including non-management roles, in the EMS?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "5.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Environmental policy",
+       "ar": "السياسة البيئية"
+      },
+      "req": {
+       "en": "Top management establishes an environmental policy that is appropriate to the organization's purpose and context, including the nature, scale and environmental impacts of its activities; provides a framework for objectives; includes a commitment to protect the environment (including prevention of pollution and other commitments relevant to the context, such as sustainable resource use, climate change mitigation and adaptation, and protection of biodiversity); a commitment to fulfil compliance obligations; and a commitment to continual improvement to enhance environmental performance. It is documented, communicated and available to interested parties.",
+       "ar": "تضع الإدارة العليا سياسة بيئية: مناسبة لغرض المنظمة وسياقها بما فيه طبيعة أنشطتها وحجمها وآثارها البيئية، وتشكل إطاراً للأهداف، وتتضمن التزاماً بحماية البيئة (ومنه منع التلوث والتزامات أخرى ذات صلة بالسياق مثل الاستخدام المستدام للموارد والتخفيف من تغيّر المناخ والتكيف معه وحماية التنوع الحيوي)، والتزاماً بالوفاء بالالتزامات الامتثالية، والتزاماً بالتحسين المستمر لتعزيز الأداء البيئي. وتكون موثقة ومبلَّغة ومتاحة للأطراف المعنية."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's policy commits to preventing pollution from oils and fuels, reducing SF6 leakage, using water efficiently, protecting birds along line routes, complying with the Environment Law and its regulations, and continual improvement.",
+       "ar": "سياسة شركة الأفق تلتزم بـ: منع التلوث من الزيوت والوقود، وخفض تسربات SF6، واستخدام المياه بكفاءة، وحماية الطيور على مسارات الخطوط، والامتثال لنظام البيئة ولوائحه، والتحسين المستمر."
+      },
+      "how": [
+       {
+        "en": "Check the three commitments are present: protecting the environment, compliance, improvement.",
+        "ar": "التحقق من وجود الالتزامات الثلاثة: حماية البيئة، الامتثال، التحسين."
+       },
+       {
+        "en": "Add specific commitments that reflect your real significant aspects.",
+        "ar": "إضافة التزامات محددة تعكس الجوانب المهمة الفعلية."
+       },
+       {
+        "en": "Publish it on sites and on the website.",
+        "ar": "نشرها في المواقع وعلى الموقع الإلكتروني."
+       },
+       {
+        "en": "Review it at management review.",
+        "ar": "مراجعتها في مراجعة الإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Approved, dated policy",
+        "ar": "سياسة معتمدة ومؤرخة"
+       },
+       {
+        "en": "Availability to interested parties",
+        "ar": "إتاحتها للأطراف المعنية"
+       },
+       {
+        "en": "Interviews confirming understanding",
+        "ar": "مقابلات تؤكد فهمها"
+       }
+      ],
+      "tip": {
+       "en": "A generic policy copied from another organization is easy to spot: it must reflect your real environmental impacts.",
+       "ar": "السياسة العامة المنسوخة من منظمة أخرى تُكشف بسهولة: يجب أن تعكس آثارك البيئية الحقيقية."
+      },
+      "checks": [
+       {
+        "ar": "هل تتضمن السياسة التزامات حماية البيئة ومنع التلوث والامتثال والتحسين؟",
+        "en": "Does the policy include commitments to protect the environment, prevent pollution, comply and improve?"
+       },
+       {
+        "ar": "هل تعكس السياسة الآثار البيئية الفعلية للمنظمة؟ وكيف أُتيحت للأطراف؟",
+        "en": "Does the policy reflect the organization's real impacts, and how is it made available?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.2.1",
+         "why": {
+          "ar": "الأهداف متسقة مع السياسة.",
+          "en": "Objectives are consistent with the policy."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.1",
+         "why": {
+          "ar": "السياسة مناسبة للسياق وآثار المنظمة.",
+          "en": "The policy fits the context and the organization's impacts."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "5.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Roles, responsibilities and authorities",
+       "ar": "الأدوار والمسؤوليات والصلاحيات"
+      },
+      "req": {
+       "en": "Top management ensures responsibilities and authorities for relevant roles are assigned and communicated, specifically for ensuring the EMS conforms to the standard and for reporting on the performance of the EMS, including environmental performance, to top management.",
+       "ar": "تتأكد الإدارة العليا من تعيين المسؤوليات والصلاحيات للأدوار ذات الصلة وإبلاغها، وتحديداً: ضمان مطابقة النظام للمواصفة، ورفع تقارير أداء النظام بما فيه الأداء البيئي إلى الإدارة العليا."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical appointed an environmental manager for the system, an environmental officer on each major project, and gave supervisors authority to stop work after a spill or an environmental breach.",
+       "ar": "عيّنت شركة الأفق مدير البيئة مسؤولاً عن النظام، وضابط بيئة لكل مشروع كبير، وأعطت المشرف صلاحية إيقاف العمل عند انسكاب أو مخالفة بيئية."
+      },
+      "how": [
+       {
+        "en": "Org chart and job descriptions with environmental duties.",
+        "ar": "هيكل تنظيمي وأوصاف وظيفية بمسؤوليات بيئية."
+       },
+       {
+        "en": "Written appointment of the system owner.",
+        "ar": "قرار تعيين مسؤول النظام."
+       },
+       {
+        "en": "RACI matrix for environmental processes.",
+        "ar": "مصفوفة RACI للعمليات البيئية."
+       },
+       {
+        "en": "Documented, well-known stop-work authority.",
+        "ar": "صلاحية إيقاف العمل موثقة ومعروفة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Org chart",
+        "ar": "الهيكل التنظيمي"
+       },
+       {
+        "en": "Job descriptions",
+        "ar": "الأوصاف الوظيفية"
+       },
+       {
+        "en": "Appointment letters",
+        "ar": "قرارات التعيين"
+       },
+       {
+        "en": "Performance reports to management",
+        "ar": "تقارير الأداء للإدارة"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "من المسؤول عن مطابقة النظام وعن إبلاغ الأداء البيئي للإدارة؟",
+        "en": "Who is responsible for EMS conformity and for reporting environmental performance to management?"
+       },
+       {
+        "ar": "هل صلاحيات إيقاف العمل عند الحوادث البيئية معروفة؟",
+        "en": "Is the authority to stop work after environmental incidents known?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.3.2",
+         "why": {
+          "ar": "تقارير الأداء للإدارة تغذي المراجعة.",
+          "en": "Performance reports to management feed the review."
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "6",
+    "phase": "plan",
+    "title": {
+     "en": "Planning",
+     "ar": "التخطيط"
+    },
+    "intro": {
+     "en": "This is where context becomes a plan: significant environmental aspects from a life cycle perspective, compliance obligations, then risks and opportunities in a new standalone clause (6.1.4), planning action (6.1.5), objectives, and planning of changes (new 6.3).",
+     "ar": "هنا يتحول السياق إلى خطة: الجوانب البيئية المهمة بمنظور دورة الحياة، والالتزامات الامتثالية، ثم المخاطر والفرص في بند مستقل جديد (6.1.4)، وتخطيط الإجراءات (6.1.5)، والأهداف، وتخطيط التغييرات (6.3 جديد)."
+    },
+    "items": [
+     {
+      "ref": "6.1.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Actions to address risks and opportunities: general",
+       "ar": "الإجراءات لمعالجة المخاطر والفرص: عام"
+      },
+      "req": {
+       "en": "Establish and maintain the processes needed to meet 6.1.1 to 6.1.5. Within the scope, determine potential emergency situations, including those that can have an environmental impact. Keep documented information on the risks and opportunities to be addressed and on the processes, to the extent needed for confidence they are carried out as planned. In 2026 most of the former content of this clause moved to the new 6.1.4.",
+       "ar": "أنشئ العمليات اللازمة لتلبية متطلبات 6.1.1 إلى 6.1.5 وحافظ عليها. ضمن النطاق، حدِّد حالات الطوارئ المحتملة ومنها ما قد يكون له أثر بيئي. واحتفظ بمعلومات موثقة عن المخاطر والفرص المطلوب معالجتها وعن العمليات بالقدر الذي يعطي الثقة بتنفيذها كما خُطط. في 2026 نُقل معظم محتوى هذا البند إلى 6.1.4 الجديد."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical wrote an 'environmental planning' procedure linking context analysis → aspects register → obligations register → risk and opportunity register → action plan, with a list of potential emergencies (transformer oil spill, warehouse fire, SF6 leak).",
+       "ar": "أعدت شركة الأفق إجراء «التخطيط البيئي» يربط: تحليل السياق ← سجل الجوانب ← سجل الالتزامات ← سجل المخاطر والفرص ← خطة الإجراءات، مع قائمة بحالات الطوارئ المحتملة (انسكاب زيت محول، حريق مستودع، تسرب SF6)."
+      },
+      "how": [
+       {
+        "en": "Map the planning route from 4.1 to 6.1.5.",
+        "ar": "رسم مسار التخطيط من 4.1 حتى 6.1.5."
+       },
+       {
+        "en": "List potential emergencies for each site.",
+        "ar": "قائمة حالات الطوارئ المحتملة لكل موقع."
+       },
+       {
+        "en": "Assign an owner and review frequency for each register.",
+        "ar": "تحديد مالك وتكرار مراجعة لكل سجل."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Environmental planning procedure",
+        "ar": "إجراء التخطيط البيئي"
+       },
+       {
+        "en": "List of potential emergencies",
+        "ar": "قائمة حالات الطوارئ المحتملة"
+       },
+       {
+        "en": "Traceability between registers",
+        "ar": "ترابط السجلات"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "أرني مسار التخطيط من السياق إلى خطة الإجراءات.",
+        "en": "Show me the planning route from context to the action plan."
+       },
+       {
+        "ar": "ما حالات الطوارئ المحتملة المحددة ضمن النطاق؟",
+        "en": "Which potential emergency situations were determined within the scope?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.2",
+         "why": {
+          "ar": "حالات الطوارئ المحتملة تُحدد في التخطيط وتُستعد لها في التشغيل.",
+          "en": "Potential emergencies are determined in planning and prepared for in operation."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "6.1.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Environmental aspects",
+       "ar": "الجوانب البيئية"
+      },
+      "req": {
+       "en": "Within the scope, determine the environmental aspects of your activities, products and services that you can control and those you can influence, and their associated impacts, considering a life cycle perspective. Take into account change (planned or new developments, new or modified activities), abnormal conditions and reasonably foreseeable emergency situations. Determine significant aspects using established criteria, communicate them internally, and document the aspects and impacts, the criteria and the significant aspects. The 2026 edition strengthens the explanation of life cycle perspective and separates abnormal conditions from emergencies more clearly.",
+       "ar": "ضمن النطاق، حدِّد الجوانب البيئية لأنشطتك ومنتجاتك وخدماتك التي تستطيع التحكم فيها أو التأثير عليها، وآثارها المرتبطة، مع مراعاة منظور دورة الحياة. وراعِ التغيير (التطويرات المخططة والأنشطة الجديدة أو المعدلة)، والظروف غير الاعتيادية، وحالات الطوارئ المتوقعة بشكل معقول. حدِّد الجوانب المهمة بمعايير محددة وأبلغها داخلياً، ووثّق الجوانب والآثار والمعايير والجوانب المهمة. إصدار 2026 يعزز شرح منظور دورة الحياة ويفصل بوضوح بين الظروف غير الاعتيادية وحالات الطوارئ."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's aspects register covers life cycle stages: purchasing (cables, transformers), transport, construction (dust, waste, diesel use), commissioning (SF6) and end of life (wooden drums, used oil). The aspect 'transformer oil spill during filling' scored likelihood 3 × severity 5 = 15 (significant).",
+       "ar": "سجل الجوانب لدى شركة الأفق يغطي مراحل دورة الحياة: شراء المواد (كابلات، محولات)، النقل، التنفيذ (غبار، مخلفات، استهلاك ديزل)، التشغيل التجريبي (SF6)، ونهاية العمر (بكرات خشبية، زيوت مستعملة). جانب «انسكاب زيت محول أثناء التعبئة» قُيِّم: احتمال 3 × شدة 5 = 15 (مهم)."
+      },
+      "how": [
+       {
+        "en": "Break activities down by site and stage.",
+        "ar": "تقسيم الأنشطة لكل موقع ومرحلة."
+       },
+       {
+        "en": "Identify aspect and impact for each activity under normal, abnormal and emergency conditions.",
+        "ar": "تحديد الجانب والأثر لكل نشاط في الظروف العادية وغير الاعتيادية والطوارئ."
+       },
+       {
+        "en": "Consider upstream and downstream: design, purchasing, transport, use, end of life.",
+        "ar": "مراعاة ما قبل وما بعد المنظمة: التصميم، الشراء، النقل، الاستخدام، نهاية العمر."
+       },
+       {
+        "en": "Apply significance criteria (severity, likelihood, legal, stakeholder concern).",
+        "ar": "تطبيق معايير الأهمية (الشدة، الاحتمال، الامتثال، اهتمام الأطراف)."
+       },
+       {
+        "en": "Update the register on every change.",
+        "ar": "تحديث السجل عند أي تغيير."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Aspects and impacts register",
+        "ar": "سجل الجوانب والآثار"
+       },
+       {
+        "en": "Significance criteria",
+        "ar": "معايير تحديد الأهمية"
+       },
+       {
+        "en": "List of significant aspects",
+        "ar": "قائمة الجوانب المهمة"
+       },
+       {
+        "en": "Evidence they were communicated",
+        "ar": "دليل إبلاغها للمعنيين"
+       }
+      ],
+      "tip": {
+       "en": "A life cycle perspective does not mean a full LCA study; it means thinking about the stages you control or can influence.",
+       "ar": "منظور دورة الحياة لا يعني إجراء دراسة LCA كاملة؛ المطلوب التفكير في المراحل التي تتحكم فيها أو تؤثر عليها."
+      },
+      "checks": [
+       {
+        "ar": "أرني سجل الجوانب: هل يغطي الظروف العادية وغير الاعتيادية والطوارئ؟",
+        "en": "Show me the aspects register: does it cover normal, abnormal and emergency conditions?"
+       },
+       {
+        "ar": "كيف رُوعي منظور دورة الحياة (الشراء، النقل، الاستخدام، نهاية العمر)؟",
+        "en": "How was the life cycle perspective considered (purchasing, transport, use, end of life)?"
+       },
+       {
+        "ar": "ما معايير الأهمية؟ وكيف أُبلغت الجوانب المهمة؟",
+        "en": "What are the significance criteria, and how were significant aspects communicated?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.1.4",
+         "why": {
+          "ar": "الجوانب المهمة مصدر للمخاطر والفرص.",
+          "en": "Significant aspects are a source of risks and opportunities."
+         }
+        },
+        {
+         "ref": "6.1.5",
+         "why": {
+          "ar": "الجوانب المهمة تحتاج إجراءات مخططة.",
+          "en": "Significant aspects need planned actions."
+         }
+        },
+        {
+         "ref": "8.2",
+         "why": {
+          "ar": "الجوانب في ظروف الطوارئ تحدد السيناريوهات.",
+          "en": "Aspects under emergency conditions define the scenarios."
+         }
+        },
+        {
+         "ref": "6.2.1",
+         "why": {
+          "ar": "الأهداف تراعي الجوانب المهمة.",
+          "en": "Objectives take significant aspects into account."
+         }
+        },
+        {
+         "ref": "7.2",
+         "why": {
+          "ar": "الأدوار المرتبطة بالجوانب المهمة تحتاج كفاءة.",
+          "en": "Roles tied to significant aspects need competence."
+         }
+        },
+        {
+         "ref": "7.3",
+         "why": {
+          "ar": "العاملون يعرفون الجوانب المهمة في عملهم.",
+          "en": "People know the significant aspects of their work."
+         }
+        },
+        {
+         "ref": "9.1.1",
+         "why": {
+          "ar": "الجوانب المهمة تُرصد وتُقاس.",
+          "en": "Significant aspects are monitored and measured."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.1",
+         "why": {
+          "ar": "الظروف البيئية تكشف جوانب قد تُغفل.",
+          "en": "Environmental conditions reveal aspects that could be missed."
+         }
+        },
+        {
+         "ref": "4.3",
+         "why": {
+          "ar": "الجوانب تُحدد ضمن النطاق.",
+          "en": "Aspects are determined within the scope."
+         }
+        },
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "التغيير يُحدث جوانب جديدة يجب تحديدها.",
+          "en": "Change creates new aspects to identify."
+         }
+        },
+        {
+         "ref": "10.2",
+         "why": {
+          "ar": "الحادث قد يكشف جانباً جديداً.",
+          "en": "An incident may reveal a new aspect."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.1.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Compliance obligations",
+       "ar": "الالتزامات الامتثالية"
+      },
+      "req": {
+       "en": "Determine and have access to the compliance obligations related to your environmental aspects, determine how they apply to the organization, take them into account when establishing, implementing and improving the EMS, and document them. They include mandatory legal requirements and other requirements the organization chooses to adopt.",
+       "ar": "حدِّد الالتزامات الامتثالية المتعلقة بجوانبك البيئية ووفّر الوصول إليها، وحدِّد كيف تنطبق على المنظمة، وراعِها عند إنشاء النظام وتطبيقه وتحسينه، ووثّقها. تشمل المتطلبات القانونية الإلزامية والمتطلبات الأخرى التي تلتزم بها المنظمة طوعاً."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's obligations register includes the Environment Law and its implementing regulations, hazardous waste rules, site environmental permits, the client's project environmental management plan clauses, and fluorinated-gas handling requirements passed down by the manufacturer.",
+       "ar": "سجل الالتزامات لدى شركة الأفق يضم: نظام البيئة ولائحته التنفيذية، اشتراطات إدارة النفايات الخطرة، تصاريح المواقع البيئية، اشتراطات العميل في خطة الإدارة البيئية للمشروع، ومتطلبات الاتفاقيات الدولية المتعلقة بالغازات المفلورة كالتزام من المصنّع."
+      },
+      "how": [
+       {
+        "en": "Set sources for tracking legislation (official gazette, regulator websites, a specialist service).",
+        "ar": "مصادر رصد التشريعات (الجريدة الرسمية، مواقع الجهات، اشتراك متخصص)."
+       },
+       {
+        "en": "Link each obligation to the aspect, the site and the owner.",
+        "ar": "ربط كل التزام بالجانب البيئي والموقع والمسؤول."
+       },
+       {
+        "en": "Turn each obligation into an operational control or a measurement.",
+        "ar": "ترجمة كل التزام إلى ضابط تشغيلي أو قياس."
+       },
+       {
+        "en": "Review regularly for updates.",
+        "ar": "مراجعة دورية للتحديثات."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Compliance obligations register",
+        "ar": "سجل الالتزامات الامتثالية"
+       },
+       {
+        "en": "Valid permits and licences",
+        "ar": "التصاريح والرخص سارية"
+       },
+       {
+        "en": "Method for tracking updates",
+        "ar": "آلية رصد التحديثات"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "أرني سجل الالتزامات: كيف يُحدَّث ويُربط بالجوانب؟",
+        "en": "Show me the obligations register: how is it updated and linked to aspects?"
+       },
+       {
+        "ar": "كيف تعرفون كيف ينطبق كل التزام على مواقعكم؟",
+        "en": "How do you know how each obligation applies to your sites?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.1.4",
+         "why": {
+          "ar": "الالتزامات مصدر للمخاطر والفرص.",
+          "en": "Obligations are a source of risks and opportunities."
+         }
+        },
+        {
+         "ref": "6.1.5",
+         "why": {
+          "ar": "الالتزامات تحتاج إجراءات مخططة.",
+          "en": "Obligations need planned actions."
+         }
+        },
+        {
+         "ref": "6.2.1",
+         "why": {
+          "ar": "الأهداف تراعي الالتزامات.",
+          "en": "Objectives take obligations into account."
+         }
+        },
+        {
+         "ref": "7.4.1",
+         "why": {
+          "ar": "الالتزامات تحدد ما يُبلَّغ خارجياً.",
+          "en": "Obligations define what is communicated externally."
+         }
+        },
+        {
+         "ref": "9.1.2",
+         "why": {
+          "ar": "الالتزامات تُقيَّم دورياً.",
+          "en": "Obligations are evaluated periodically."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.2",
+         "why": {
+          "ar": "متطلبات الأطراف المتبناة تصبح التزامات امتثالية.",
+          "en": "Adopted interested-party requirements become compliance obligations."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.1.4",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Risks and opportunities",
+       "ar": "المخاطر والفرص"
+      },
+      "req": {
+       "en": "New in 2026: determine the risks and opportunities related to your environmental aspects, compliance obligations and the other issues and requirements from 4.1 and 4.2 that need to be addressed to: give assurance the EMS can achieve its intended outcomes, prevent or reduce undesired effects (including the potential for external environmental conditions to affect the organization), and achieve continual improvement. An issue from the context does not automatically become a risk; it is evaluated first.",
+       "ar": "بند جديد في 2026: حدِّد المخاطر والفرص المرتبطة بجوانبك البيئية، والتزاماتك الامتثالية، والقضايا والمتطلبات الأخرى في 4.1 و4.2، التي يلزم معالجتها من أجل: الثقة في تحقيق النتائج المقصودة، ومنع الآثار غير المرغوبة أو تقليلها بما فيها احتمال تأثير الظروف البيئية الخارجية على المنظمة، وتحقيق التحسين المستمر. القضية المحددة في السياق لا تتحول تلقائياً إلى خطر؛ تُقيَّم أولاً."
+      },
+      "ex": {
+       "en": "A risk at Al-Ufuq Electrical: a late renewal of a site environmental permit could stop work (likelihood 3 × impact 5). An opportunity: using treated wastewater instead of fresh water for dust suppression cuts cost and meets the client's water target.",
+       "ar": "خطر لدى شركة الأفق: تأخر تجديد تصريح بيئي لموقع قد يوقف الأعمال (احتمال 3 × أثر 5). فرصة: استخدام مياه الصرف المعالجة لرش الطرق بدلاً من المياه العذبة يخفض التكلفة ويحقق هدف المياه لدى العميل."
+      },
+      "how": [
+       {
+        "en": "Pull inputs from context, interested parties, significant aspects and obligations.",
+        "ar": "سحب المدخلات من السياق والأطراف والجوانب المهمة والالتزامات."
+       },
+       {
+        "en": "Evaluate each: does it create a risk or an opportunity for the system?",
+        "ar": "تقييم كل مدخل: هل يولّد خطراً أو فرصة للنظام؟"
+       },
+       {
+        "en": "Record risks and opportunities with a score (likelihood × impact, benefit × feasibility).",
+        "ar": "تسجيل المخاطر والفرص بدرجة (احتمال × أثر، منفعة × جدوى)."
+       },
+       {
+        "en": "Consider how climate and external conditions affect the organization itself.",
+        "ar": "مراعاة أثر المناخ والظروف الخارجية على المنظمة نفسها."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Risk and opportunity register",
+        "ar": "سجل المخاطر والفرص"
+       },
+       {
+        "en": "Evaluation method",
+        "ar": "منهجية التقييم"
+       },
+       {
+        "en": "Traceability to context and aspects",
+        "ar": "الربط مع السياق والجوانب"
+       }
+      ],
+      "tip": {
+       "en": "The key distinction: an environmental aspect is the organization's effect on the environment; risks and opportunities here are the effect of all this on the system and the business.",
+       "ar": "الفرق الجوهري: الجانب البيئي أثر المنظمة على البيئة، أما المخاطر والفرص هنا فهي أثر كل ذلك على قدرة النظام وأعمال المنظمة."
+      },
+      "checks": [
+       {
+        "ar": "أرني سجل المخاطر والفرص الذي بُني من الجوانب والالتزامات والسياق.",
+        "en": "Show me the risk and opportunity register built from aspects, obligations and context."
+       },
+       {
+        "ar": "كيف قُيّم أثر الظروف البيئية الخارجية على المنظمة نفسها؟",
+        "en": "How was the effect of external environmental conditions on the organization assessed?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.1.5",
+         "why": {
+          "ar": "المخاطر والفرص تُعالج بإجراءات مخططة.",
+          "en": "Risks and opportunities are addressed by planned actions."
+         }
+        },
+        {
+         "ref": "9.3.2",
+         "why": {
+          "ar": "تغيرات المخاطر والفرص مدخل للمراجعة.",
+          "en": "Changes in risks and opportunities are a review input."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.1",
+         "why": {
+          "ar": "القضايا والظروف البيئية مدخل لتحديد المخاطر والفرص.",
+          "en": "Issues and environmental conditions feed the risks and opportunities."
+         }
+        },
+        {
+         "ref": "4.2",
+         "why": {
+          "ar": "متطلبات الأطراف تولد مخاطر وفرصاً.",
+          "en": "Interested-party requirements generate risks and opportunities."
+         }
+        },
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "الجوانب المهمة مصدر للمخاطر والفرص.",
+          "en": "Significant aspects are a source of risks and opportunities."
+         }
+        },
+        {
+         "ref": "6.1.3",
+         "why": {
+          "ar": "الالتزامات مصدر للمخاطر والفرص.",
+          "en": "Obligations are a source of risks and opportunities."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.1.5",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Planning action",
+       "ar": "تخطيط الإجراءات"
+      },
+      "req": {
+       "en": "Plan actions to address significant environmental aspects, compliance obligations, and the risks and opportunities (6.1.4); plan how to integrate and implement them in EMS and other business processes, and how to evaluate their effectiveness. Consider technological options and financial, operational and business requirements. (This was 6.1.4 in the 2015 edition.)",
+       "ar": "خطِّط الإجراءات لمعالجة: الجوانب البيئية المهمة، والالتزامات الامتثالية، والمخاطر والفرص (6.1.4)، وخطِّط كيف تدمجها وتنفذها في عمليات النظام وعمليات الأعمال الأخرى، وكيف تقيّم فعاليتها. وراعِ الخيارات التقنية والمتطلبات المالية والتشغيلية والتجارية. (كان البند 6.1.4 في إصدار 2015)."
+      },
+      "ex": {
+       "en": "For the oil spill aspect: portable bunds, a filling procedure, training and spill kits on every site; effectiveness: zero spills reaching soil over six months. For the treated water opportunity: an agreement with a treatment plant and a replacement-ratio indicator.",
+       "ar": "لجانب انسكاب الزيت: أحواض احتواء متنقلة، إجراء تعبئة، تدريب، أطقم انسكاب في كل موقع. التقييم: صفر انسكابات تصل للتربة خلال ستة أشهر. ولفرصة المياه المعالجة: اتفاق مع محطة معالجة، ومؤشر نسبة الاستبدال."
+      },
+      "how": [
+       {
+        "en": "An action plan for each significant aspect, obligation, risk and opportunity.",
+        "ar": "خطة إجراء لكل جانب مهم والتزام وخطر وفرصة."
+       },
+       {
+        "en": "Decide the action type: operational control, objective, training, emergency plan, investment.",
+        "ar": "تحديد نوع الإجراء: ضابط تشغيلي، هدف، تدريب، طوارئ، استثمار."
+       },
+       {
+        "en": "An effectiveness indicator for each action.",
+        "ar": "مؤشر فعالية لكل إجراء."
+       },
+       {
+        "en": "Build the actions into procedures and budgets.",
+        "ar": "دمج الإجراءات في إجراءات العمل والميزانية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Action plan",
+        "ar": "خطة الإجراءات"
+       },
+       {
+        "en": "Effectiveness indicators",
+        "ar": "مؤشرات الفعالية"
+       },
+       {
+        "en": "Links to processes",
+        "ar": "الربط بالعمليات"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "لكل جانب مهم أو خطر أو فرصة: ما الإجراء المخطط؟ وكيف ستُقيَّم فعاليته؟",
+        "en": "For each significant aspect, risk or opportunity: what action is planned and how will its effectiveness be evaluated?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.1",
+         "why": {
+          "ar": "الإجراءات تُنفذ عبر الضوابط التشغيلية.",
+          "en": "Actions are implemented through operational controls."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "الجوانب المهمة تحتاج إجراءات مخططة.",
+          "en": "Significant aspects need planned actions."
+         }
+        },
+        {
+         "ref": "6.1.3",
+         "why": {
+          "ar": "الالتزامات تحتاج إجراءات مخططة.",
+          "en": "Obligations need planned actions."
+         }
+        },
+        {
+         "ref": "6.1.4",
+         "why": {
+          "ar": "المخاطر والفرص تُعالج بإجراءات مخططة.",
+          "en": "Risks and opportunities are addressed by planned actions."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.2.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Environmental objectives",
+       "ar": "الأهداف البيئية"
+      },
+      "req": {
+       "en": "Establish environmental objectives at relevant functions and levels, taking into account significant aspects, compliance obligations and risks and opportunities. They must be consistent with the policy, measurable where practicable, monitored, communicated, updated as appropriate, and documented.",
+       "ar": "ضع أهدافاً بيئية على الوظائف والمستويات ذات الصلة، مع مراعاة الجوانب المهمة والالتزامات الامتثالية والمخاطر والفرص. يجب أن تكون: متسقة مع السياسة، قابلة للقياس إن أمكن، مرصودة، مبلَّغة، محدَّثة، وموثقة."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's 2027 objectives: cut fresh water use on sites by 30%, raise recycling of non-hazardous waste to 70%, and keep SF6 losses below 0.5% a year.",
+       "ar": "أهداف شركة الأفق لعام 2027: خفض استهلاك المياه العذبة في المواقع 30%، رفع إعادة تدوير المخلفات غير الخطرة إلى 70%، خفض فقد SF6 إلى أقل من 0.5% سنوياً."
+      },
+      "how": [
+       {
+        "en": "Derive objectives from significant aspects, risks and opportunities.",
+        "ar": "اشتقاق الأهداف من الجوانب المهمة والمخاطر والفرص."
+       },
+       {
+        "en": "Set a baseline, a target and a date.",
+        "ar": "قيمة حالية ومستهدفة وتاريخ."
+       },
+       {
+        "en": "Cascade them to projects and departments.",
+        "ar": "توزيعها على المشاريع والإدارات."
+       },
+       {
+        "en": "Track them monthly.",
+        "ar": "متابعتها شهرياً."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Objectives register",
+        "ar": "سجل الأهداف"
+       },
+       {
+        "en": "Baseline and target values",
+        "ar": "القيم الحالية والمستهدفة"
+       },
+       {
+        "en": "Progress reports",
+        "ar": "تقارير المتابعة"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "هل الأهداف قابلة للقياس ومرتبطة بالجوانب المهمة والالتزامات؟",
+        "en": "Are objectives measurable and linked to significant aspects and obligations?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.2.2",
+         "why": {
+          "ar": "كل هدف يحتاج برنامجاً.",
+          "en": "Each objective needs a programme."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.2",
+         "why": {
+          "ar": "الأهداف متسقة مع السياسة.",
+          "en": "Objectives are consistent with the policy."
+         }
+        },
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "الأهداف تراعي الجوانب المهمة.",
+          "en": "Objectives take significant aspects into account."
+         }
+        },
+        {
+         "ref": "6.1.3",
+         "why": {
+          "ar": "الأهداف تراعي الالتزامات.",
+          "en": "Objectives take obligations into account."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.2.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Planning actions to achieve objectives",
+       "ar": "تخطيط الإجراءات لتحقيق الأهداف"
+      },
+      "req": {
+       "en": "For each objective determine what will be done, what resources are required, who is responsible, when it will be completed, and how results will be evaluated, including indicators for monitoring progress. Determine how the actions will be integrated into business processes.",
+       "ar": "لكل هدف حدِّد: ماذا سيُنفذ، والموارد، والمسؤول، وموعد الإنجاز، وكيف تُقيَّم النتائج بما فيها المؤشرات لرصد التقدم. وحدِّد كيف تُدمج هذه الإجراءات في عمليات الأعمال."
+      },
+      "ex": {
+       "en": "For the water objective: a treated-water agreement and meters on spray tankers (resources), the environmental manager (owner), Q2 2027 (date), and m³ per km of line (indicator).",
+       "ar": "لهدف المياه: اتفاق مياه معالجة، وعدادات على صهاريج الرش (الموارد)، مدير البيئة (المسؤول)، الربع الثاني 2027 (الموعد)، مؤشر م³ لكل كم من الخط (التقييم)."
+      },
+      "how": [
+       {
+        "en": "A programme table per objective covering the five elements.",
+        "ar": "جدول برنامج لكل هدف بالعناصر الخمسة."
+       },
+       {
+        "en": "A clear environmental performance indicator per objective.",
+        "ar": "مؤشر أداء بيئي واضح لكل هدف."
+       },
+       {
+        "en": "Tie the resources to the budget.",
+        "ar": "ربط الموارد بالميزانية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Environmental management programme",
+        "ar": "برنامج الإدارة البيئية"
+       },
+       {
+        "en": "Progress indicators",
+        "ar": "مؤشرات التقدم"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "لكل هدف: ماذا ومن ومتى وبأي موارد وبأي مؤشر؟",
+        "en": "For each objective: what, who, when, with what resources and which indicator?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.1",
+         "why": {
+          "ar": "برامج الأهداف تُنفذ في العمليات.",
+          "en": "Objective programmes run through the processes."
+         }
+        },
+        {
+         "ref": "9.1.1",
+         "why": {
+          "ar": "المؤشرات ترصد تقدم الأهداف.",
+          "en": "Indicators track objective progress."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.2.1",
+         "why": {
+          "ar": "كل هدف يحتاج برنامجاً.",
+          "en": "Each objective needs a programme."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.3",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Planning of changes",
+       "ar": "تخطيط التغييرات"
+      },
+      "req": {
+       "en": "A new standalone clause in 2026: when the organization determines the need for changes to the EMS, the changes are carried out in a planned manner. Good practice is for the plan to consider the purpose and potential consequences of the change (including environmental impacts), the integrity of the system, resources, responsibilities, communication, and updating aspects, obligations and controls.",
+       "ar": "بند مستقل جديد في 2026: عندما تحدد المنظمة الحاجة إلى تغييرات في النظام البيئي، تُنفَّذ بطريقة مخططة. الممارسة الجيدة أن تراعي الخطة: غرض التغيير وعواقبه المحتملة ومنها الآثار البيئية، والأثر على سلامة النظام، والموارد، والمسؤوليات، والتواصل، وتحديث الجوانب والالتزامات والضوابط."
+      },
+      "ex": {
+       "en": "When its warehouse was converted to store battery energy storage units, Al-Ufuq Electrical prepared a change plan covering new aspects (lithium battery fire), new obligations (civil defence and waste rules), an updated emergency plan and storekeeper training before receipt.",
+       "ar": "عند تحويل مستودع الشركة لتخزين بطاريات أنظمة التخزين، أعدت شركة الأفق خطة تغيير شملت: جوانب جديدة (حريق بطاريات ليثيوم)، التزامات جديدة (اشتراطات الدفاع المدني والنفايات)، تحديث خطة الطوارئ، وتدريب أمناء المستودع قبل الاستلام."
+      },
+      "how": [
+       {
+        "en": "Define what counts as a significant change (new site, product, key supplier, process, structure).",
+        "ar": "تعريف ما يُعد تغييراً مهماً (موقع جديد، منتج، مورد رئيسي، عملية، هيكل)."
+       },
+       {
+        "en": "Use a change request form that includes environmental impact assessment.",
+        "ar": "نموذج طلب تغيير يتضمن تقييم الأثر البيئي."
+       },
+       {
+        "en": "Approve before implementation and update the registers.",
+        "ar": "اعتماد قبل التنفيذ وتحديث السجلات."
+       },
+       {
+        "en": "Review after implementation.",
+        "ar": "مراجعة بعد التنفيذ."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Change management procedure",
+        "ar": "إجراء إدارة التغيير"
+       },
+       {
+        "en": "Change request and plan forms",
+        "ar": "نماذج طلب وخطة التغيير"
+       },
+       {
+        "en": "Aspects register updated after the change",
+        "ar": "تحديث سجل الجوانب بعد التغيير"
+       }
+      ],
+      "tip": {
+       "en": "This is one of the main focus areas of transition audits: pick a recent change and show it was planned.",
+       "ar": "هذا من أكثر ما سيركز عليه تدقيق الانتقال: اختر تغييراً حديثاً وأثبت أنه خُطط له."
+      },
+      "checks": [
+       {
+        "ar": "اختر تغييراً حديثاً في النظام: أرني خطته.",
+        "en": "Pick a recent change to the EMS and show me its plan."
+       },
+       {
+        "ar": "هل قُيّم الأثر البيئي للتغيير وحُدّثت الجوانب والالتزامات؟",
+        "en": "Was the environmental impact of the change assessed and were aspects and obligations updated?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "التغيير يُحدث جوانب جديدة يجب تحديدها.",
+          "en": "Change creates new aspects to identify."
+         }
+        },
+        {
+         "ref": "8.1",
+         "why": {
+          "ar": "التغييرات المخططة تُضبط تشغيلياً.",
+          "en": "Planned changes are controlled operationally."
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "7",
+    "phase": "do",
+    "title": {
+     "en": "Support",
+     "ar": "الدعم"
+    },
+    "intro": {
+     "en": "Resources, competence, awareness, communication and documented information. In 2026 the wording is that documented information 'shall be available', and internal communication must enable people to contribute to improvement.",
+     "ar": "الموارد والكفاءة والوعي والتواصل والمعلومات الموثقة. في 2026 أصبحت الصياغة أن المعلومات الموثقة «تكون متاحة»، ويُطلب أن يمكّن التواصل الداخلي العاملين من الإسهام في التحسين."
+    },
+    "items": [
+     {
+      "ref": "7.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Resources",
+       "ar": "الموارد"
+      },
+      "req": {
+       "en": "Determine and provide the resources needed to establish, implement, maintain and continually improve the EMS: people, infrastructure, technology and finance.",
+       "ar": "حدِّد الموارد اللازمة لإنشاء النظام البيئي وتطبيقه والحفاظ عليه وتحسينه، ووفّرها: أفراد، بنية تحتية، تقنية، موارد مالية."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical budgeted for bunds and spill kits, a full-time environmental officer on every project above SAR 100 million, and a digital waste-tracking system.",
+       "ar": "خصصت شركة الأفق ميزانية لأحواض الاحتواء وأطقم الانسكاب، وضابط بيئة بدوام كامل لكل مشروع يزيد على 100 مليون ريال، ونظاماً رقمياً لتتبع النفايات."
+      },
+      "how": [
+       {
+        "en": "Estimate environmental resources in the annual and project budgets.",
+        "ar": "تقدير الموارد البيئية في الميزانية السنوية وميزانية كل مشروع."
+       },
+       {
+        "en": "Review their adequacy at management review.",
+        "ar": "مراجعة كفايتها في مراجعة الإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Environmental budget",
+        "ar": "الميزانية البيئية"
+       },
+       {
+        "en": "Project resource plans",
+        "ar": "خطط الموارد للمشاريع"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "هل الموارد البيئية مخصصة في الميزانية؟",
+        "en": "Are environmental resources provided in the budget?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "7.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Competence",
+       "ar": "الكفاءة"
+      },
+      "req": {
+       "en": "Determine the competence needed by people working under your control whose work affects environmental performance or the ability to fulfil compliance obligations; ensure they are competent through education, training or experience; determine training needs associated with the environmental aspects and the EMS; take action to close gaps and evaluate its effectiveness; keep documented evidence.",
+       "ar": "حدِّد الكفاءة اللازمة لمن يعملون تحت سيطرتك ويؤثر عملهم على الأداء البيئي أو على الوفاء بالالتزامات الامتثالية، وتأكد من كفاءتهم بالتعليم أو التدريب أو الخبرة، وحدِّد الاحتياجات التدريبية المرتبطة بالجوانب البيئية والنظام، واتخذ إجراءات لسد الفجوات وقيّم فعاليتها، مع دليل موثق."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's SF6 technicians hold a recognised fluorinated-gas handling certificate, and storekeepers are trained in classifying and storing hazardous waste.",
+       "ar": "فنيو التعامل مع SF6 لدى شركة الأفق يحملون شهادة معتمدة في مناولة الغازات المفلورة، وأمناء المستودعات مدربون على تصنيف النفايات الخطرة وتخزينها."
+      },
+      "how": [
+       {
+        "en": "A competence matrix for roles with environmental impact.",
+        "ar": "مصفوفة كفاءة للأدوار ذات الأثر البيئي."
+       },
+       {
+        "en": "Training and practical assessment.",
+        "ar": "تدريب وتقييم عملي."
+       },
+       {
+        "en": "Field evaluation of training effectiveness.",
+        "ar": "تقييم فعالية التدريب ميدانياً."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Competence matrix",
+        "ar": "مصفوفة الكفاءات"
+       },
+       {
+        "en": "Training records and certificates",
+        "ar": "سجلات التدريب والشهادات"
+       },
+       {
+        "en": "Effectiveness evaluation",
+        "ar": "تقييم الفعالية"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما الكفاءات المطلوبة لمن يؤثر عملهم على الأداء البيئي؟ وأين الدليل؟",
+        "en": "What competence is required of people whose work affects environmental performance, and where is the evidence?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "الأدوار المرتبطة بالجوانب المهمة تحتاج كفاءة.",
+          "en": "Roles tied to significant aspects need competence."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "7.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Awareness",
+       "ar": "الوعي"
+      },
+      "req": {
+       "en": "Ensure people are aware of the environmental policy, the significant aspects and actual or potential impacts related to their work, their contribution to the effectiveness of the EMS and the benefits of enhanced environmental performance, and the implications of not conforming, including not fulfilling compliance obligations.",
+       "ar": "تأكد أن الأفراد يدركون: السياسة البيئية، والجوانب المهمة والآثار الفعلية والمحتملة المرتبطة بعملهم، وإسهامهم في فعالية النظام وفوائد تحسين الأداء البيئي، وعواقب عدم المطابقة بما فيها عدم الوفاء بالالتزامات الامتثالية."
+      },
+      "ex": {
+       "en": "In the morning toolbox talk at Al-Ufuq Electrical's site, supervisors show what one litre of spilled oil does to soil and groundwater, the clean-up cost, and where the spill kit is.",
+       "ar": "في لقاء التوعية الصباحي بموقع شركة الأفق يُعرض أثر انسكاب لتر زيت على التربة والمياه الجوفية، وتكلفة المعالجة، وموقع طقم الانسكاب."
+      },
+      "how": [
+       {
+        "en": "Induction for employees and subcontractors.",
+        "ar": "توعية تعريفية للموظفين والمقاولين الباطن."
+       },
+       {
+        "en": "Regular field talks in the workforce's languages.",
+        "ar": "لقاءات توعية ميدانية دورية بلغات العاملين."
+       },
+       {
+        "en": "Signs showing significant aspects at work areas.",
+        "ar": "لوحات للجوانب المهمة في مواقع العمل."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Awareness records",
+        "ar": "سجلات التوعية"
+       },
+       {
+        "en": "Field interviews",
+        "ar": "مقابلات ميدانية"
+       }
+      ],
+      "tip": {
+       "en": "A question any site worker should expect: what is the significant environmental aspect of your job, and what do you do if there is a spill?",
+       "ar": "سؤال متوقع من المدقق لعامل في الموقع: ما الجانب البيئي المهم في عملك؟ وماذا تفعل عند انسكاب؟"
+      },
+      "checks": [
+       {
+        "ar": "اسأل عاملاً: ما الجانب المهم في عملك؟ وماذا تفعل عند انسكاب؟",
+        "en": "Ask a worker: what is the significant aspect of your job, and what do you do if there is a spill?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "العاملون يعرفون الجوانب المهمة في عملهم.",
+          "en": "People know the significant aspects of their work."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "7.4.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Communication: general",
+       "ar": "التواصل: عام"
+      },
+      "req": {
+       "en": "Establish processes for internal and external communication relevant to the EMS: what, when, with whom and how. Take compliance obligations into account, ensure environmental information communicated is consistent and reliable, respond to relevant communications, and keep documented evidence.",
+       "ar": "أنشئ عمليات التواصل الداخلي والخارجي ذات الصلة بالنظام: ماذا، ومتى، ومع من، وكيف. وراعِ الالتزامات الامتثالية، وتأكد أن المعلومات البيئية المبلَّغة متسقة وموثوقة، واستجب للاتصالات ذات الصلة، واحتفظ بدليل موثق."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's communication matrix: a monthly environmental report to the client, notification of environmental incidents to the regulator within the legal deadline, and a log of residents' complaints and replies.",
+       "ar": "مصفوفة التواصل لدى شركة الأفق: تقرير بيئي شهري للعميل، إبلاغ الجهة التنظيمية عن الحوادث البيئية خلال المدة النظامية، وسجل لشكاوى السكان والرد عليها."
+      },
+      "how": [
+       {
+        "en": "A communication matrix around the four questions.",
+        "ar": "مصفوفة اتصال بالأسئلة الأربعة."
+       },
+       {
+        "en": "Check data accuracy before publishing.",
+        "ar": "مراجعة دقة البيانات قبل نشرها."
+       },
+       {
+        "en": "A log of incoming communications and responses.",
+        "ar": "سجل الاتصالات الواردة والردود."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Communication matrix",
+        "ar": "مصفوفة التواصل"
+       },
+       {
+        "en": "Complaints and responses log",
+        "ar": "سجل الشكاوى والردود"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "أرني مصفوفة التواصل وكيف تُراعى الالتزامات في الإبلاغ.",
+        "en": "Show me the communication matrix and how obligations are reflected in reporting."
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "7.4.3",
+         "why": {
+          "ar": "عمليات التواصل تحدد التواصل الخارجي.",
+          "en": "Communication processes define external communication."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1.3",
+         "why": {
+          "ar": "الالتزامات تحدد ما يُبلَّغ خارجياً.",
+          "en": "Obligations define what is communicated externally."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "7.4.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Internal communication",
+       "ar": "التواصل الداخلي"
+      },
+      "req": {
+       "en": "Communicate information relevant to the EMS internally among levels and functions, including changes to the EMS, and ensure the communication processes enable people to contribute to continual improvement.",
+       "ar": "أبلغ المعلومات ذات الصلة بالنظام داخلياً بين المستويات والوظائف، بما فيها التغييرات في النظام، وتأكد أن عمليات التواصل تمكّن العاملين من الإسهام في التحسين المستمر."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical has an 'environmental observation' card any worker can submit; the best one each month is rewarded, and one led to reusing wooden cable drums.",
+       "ar": "لدى شركة الأفق بطاقة «ملاحظة بيئية» يقدمها أي عامل، وتُكافأ أفضل ملاحظة شهرياً، وأدت إحداها إلى إعادة استخدام بكرات الكابلات الخشبية."
+      },
+      "how": [
+       {
+        "en": "Two-way internal channels.",
+        "ar": "قنوات داخلية ثنائية الاتجاه."
+       },
+       {
+        "en": "A way to receive and follow up worker suggestions.",
+        "ar": "آلية لاستقبال اقتراحات العاملين ومتابعتها."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Circulars and minutes",
+        "ar": "التعاميم والمحاضر"
+       },
+       {
+        "en": "Suggestions log",
+        "ar": "سجل الاقتراحات"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "كيف يستطيع العاملون تقديم اقتراحات بيئية؟ وما مثال على اقتراح نُفذ؟",
+        "en": "How can workers make environmental suggestions, and what is an example that was implemented?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "10.1",
+         "why": {
+          "ar": "التواصل الداخلي يمكّن العاملين من الإسهام في التحسين.",
+          "en": "Internal communication enables people to contribute to improvement."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "7.4.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "External communication",
+       "ar": "التواصل الخارجي"
+      },
+      "req": {
+       "en": "Communicate information relevant to the EMS externally, as established by the communication processes and as required by compliance obligations.",
+       "ar": "أبلغ المعلومات ذات الصلة بالنظام خارجياً كما حددته عمليات التواصل وكما تشترطه الالتزامات الامتثالية."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical submits hazardous waste transfer data to the competent authority and publishes an environmental performance summary in its annual sustainability report.",
+       "ar": "ترسل شركة الأفق بيانات النفايات الخطرة المنقولة للجهة المختصة، وتنشر ملخص أدائها البيئي في تقرير الاستدامة السنوي."
+      },
+      "how": [
+       {
+        "en": "Identify mandatory reports and their deadlines.",
+        "ar": "تحديد التقارير الإلزامية ومواعيدها."
+       },
+       {
+        "en": "Approve anything published externally beforehand.",
+        "ar": "اعتماد ما يُنشر خارجياً قبل النشر."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Reports submitted to authorities",
+        "ar": "التقارير المرسلة للجهات"
+       },
+       {
+        "en": "Approved external publications",
+        "ar": "المنشورات الخارجية المعتمدة"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما التقارير البيئية الإلزامية المرسلة للجهات؟ وكيف تُدار شكاوى الجيران؟",
+        "en": "Which mandatory environmental reports go to authorities, and how are neighbours' complaints handled?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "7.4.1",
+         "why": {
+          "ar": "عمليات التواصل تحدد التواصل الخارجي.",
+          "en": "Communication processes define external communication."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "7.5.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Documented information: general",
+       "ar": "المعلومات الموثقة: عام"
+      },
+      "req": {
+       "en": "The EMS includes the documented information required by the standard and what the organization determines is necessary for its effectiveness. In 2026 the harmonized wording is that documented information 'shall be available', replacing 'maintain' and 'retain'.",
+       "ar": "يتضمن النظام المعلومات الموثقة التي تطلبها المواصفة، وما تراه المنظمة لازماً لفعاليته. في 2026 أصبحت الصياغة الموحدة أن المعلومات الموثقة «تكون متاحة» بدلاً من «يُحتفظ بها» أو «يُحافظ عليها»."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's master list covers scope, policy, aspects register, obligations register, risks and opportunities, objectives, emergency plans, monitoring records, compliance evaluation, audits and reviews.",
+       "ar": "قائمة شركة الأفق الرئيسية تضم: النطاق، السياسة، سجل الجوانب، سجل الالتزامات، المخاطر والفرص، الأهداف، خطط الطوارئ، سجلات الرصد، تقييم الامتثال، التدقيق، المراجعة."
+      },
+      "how": [
+       {
+        "en": "List what the standard explicitly requires.",
+        "ar": "قائمة بما تطلبه المواصفة صراحة."
+       },
+       {
+        "en": "Add only what the processes genuinely need.",
+        "ar": "إضافة ما تحتاجه العمليات فعلاً فقط."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Master document list",
+        "ar": "القائمة الرئيسية للوثائق"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "هل المعلومات الموثقة المطلوبة متاحة؟",
+        "en": "Is the required documented information available?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "7.5.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Creating and updating documented information",
+       "ar": "إنشاء المعلومات الموثقة وتحديثها"
+      },
+      "req": {
+       "en": "When creating and updating, ensure appropriate identification and description (title, date, author, reference), suitable format and media, and review and approval.",
+       "ar": "عند الإنشاء والتحديث: تعريف مناسب (عنوان، تاريخ، معد، رقم)، وتنسيق ووسيط مناسبان، ومراجعة واعتماد."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical codes environmental documents such as EP-WST-02 Rev.1, with author and approver.",
+       "ar": "ترميز وثائق البيئة لدى شركة الأفق مثل EP-WST-02 Rev.1 مع المعد والمعتمد."
+      },
+      "how": [
+       {
+        "en": "One coding system shared with other systems.",
+        "ar": "نظام ترميز موحد مع الأنظمة الأخرى."
+       },
+       {
+        "en": "A review and approval route.",
+        "ar": "مسار مراجعة واعتماد."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Document headers",
+        "ar": "ترويسة الوثائق"
+       },
+       {
+        "en": "Approval records",
+        "ar": "سجل الاعتمادات"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "هل الوثائق معرّفة ومراجعة ومعتمدة؟",
+        "en": "Are documents identified, reviewed and approved?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "7.5.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Control of documented information",
+       "ar": "ضبط المعلومات الموثقة"
+      },
+      "req": {
+       "en": "Control documented information so it is available where and when needed and protected: distribution and access, storage and preservation, change control, retention and disposition. Also control relevant external documents such as permits and legislation.",
+       "ar": "اضبط المعلومات الموثقة لتكون متاحة عند الحاجة ومحمية: التوزيع والوصول، الحفظ، ضبط التغييرات، الاحتفاظ والإتلاف. واضبط الوثائق الخارجية المهمة كالتصاريح والتشريعات."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical keeps hazardous waste transfer records for the period set by the rules, and tracks permit validity electronically with an alert 90 days before expiry.",
+       "ar": "تحفظ شركة الأفق بيانات نقل النفايات الخطرة لمدة تحددها الاشتراطات، وتتابع صلاحية التصاريح إلكترونياً مع تنبيه قبل انتهائها بتسعين يوماً."
+      },
+      "how": [
+       {
+        "en": "Role-based access.",
+        "ar": "صلاحيات وصول حسب الدور."
+       },
+       {
+        "en": "A register of external documents and permits with expiry dates.",
+        "ar": "سجل الوثائق الخارجية والتصاريح بتواريخ انتهائها."
+       },
+       {
+        "en": "A retention schedule.",
+        "ar": "جدول الاحتفاظ."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Document management system",
+        "ar": "نظام إدارة الوثائق"
+       },
+       {
+        "en": "Permit register",
+        "ar": "سجل التصاريح"
+       },
+       {
+        "en": "Retention schedule",
+        "ar": "جدول الاحتفاظ"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "كيف تُتابع صلاحية التصاريح والرخص البيئية؟",
+        "en": "How is the validity of environmental permits and licences tracked?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "8",
+    "phase": "do",
+    "title": {
+     "en": "Operation",
+     "ar": "التشغيل"
+    },
+    "intro": {
+     "en": "Operational controls from a life cycle perspective, control of externally provided processes, products and services (broadened in 2026), and emergency preparedness and response.",
+     "ar": "الضوابط التشغيلية بمنظور دورة الحياة، وضبط ما يُورَّد خارجياً من عمليات ومنتجات وخدمات (توسيع في 2026)، والاستعداد للطوارئ والاستجابة لها."
+    },
+    "items": [
+     {
+      "ref": "8.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Operational planning and control",
+       "ar": "التخطيط والضبط التشغيلي"
+      },
+      "req": {
+       "en": "Establish, implement and control the processes needed to meet EMS requirements and implement the actions in 6.1 and 6.2, using operating criteria. Control planned changes and review the consequences of unintended ones. In 2026 the requirement widens from 'outsourced processes' to 'externally provided processes, products and services': ensure they are controlled or influenced. From a life cycle perspective: address environmental requirements in design and development, set them for procurement, communicate them to providers and contractors, and consider the need to provide information on significant impacts in transport, use and end of life.",
+       "ar": "أنشئ العمليات اللازمة لتلبية متطلبات النظام وتنفيذ إجراءات 6.1 و6.2، واضبطها بمعايير تشغيل. اضبط التغييرات المخططة وراجع عواقب غير المقصودة. وفي 2026 توسّع المتطلب من «العمليات المسندة» إلى «العمليات والمنتجات والخدمات المقدمة خارجياً»: تأكد من ضبطها أو التأثير عليها. وبمنظور دورة الحياة: راعِ المتطلبات البيئية في التصميم والتطوير، وحدِّدها في الشراء، وأبلغها للموردين والمقاولين، وقدّر الحاجة لتقديم معلومات عن الآثار المهمة في النقل والاستخدام ونهاية العمر."
+      },
+      "ex": {
+       "en": "At Al-Ufuq Electrical: oil filling instructions, a waste management plan, environmental clauses in subcontracts (fuel storage, housekeeping), an SF6 take-back requirement for the manufacturer, and bird diverters specified in line designs.",
+       "ar": "لدى شركة الأفق: تعليمات تعبئة الزيت، خطة إدارة النفايات، اشتراطات بيئية في عقود المقاولين الباطن (تخزين الوقود، النظافة)، اشتراط لاسترجاع SF6 من المصنّع، وتحديد عناصر تحويل مسار الطيور في مواصفات الخطوط."
+      },
+      "how": [
+       {
+        "en": "Operating criteria for each significant aspect (procedures, limits, checklists).",
+        "ar": "معايير تشغيل لكل جانب مهم (إجراءات، حدود، قوائم تحقق)."
+       },
+       {
+        "en": "Environmental requirements in purchase orders and contracts.",
+        "ar": "متطلبات بيئية في أوامر الشراء والعقود."
+       },
+       {
+        "en": "Environmental evaluation and monitoring of providers and contractors.",
+        "ar": "تقييم ومتابعة الموردين والمقاولين بيئياً."
+       },
+       {
+        "en": "Environment in design (materials, efficiency, end of life).",
+        "ar": "مراعاة البيئة في التصميم (مواد، كفاءة، نهاية العمر)."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Operational control procedures",
+        "ar": "إجراءات الضبط التشغيلي"
+       },
+       {
+        "en": "Contracts and purchase orders",
+        "ar": "العقود وأوامر الشراء"
+       },
+       {
+        "en": "Site inspections",
+        "ar": "تفتيش المواقع"
+       },
+       {
+        "en": "Supplier evaluations",
+        "ar": "تقييم الموردين"
+       }
+      ],
+      "tip": {
+       "en": "A subcontractor who dumps waste makes the breach yours: control of providers and contractors is part of your system.",
+       "ar": "المقاول الباطن الذي يرمي مخلفاته عشوائياً يجعل المخالفة مخالفتك: ضبط الموردين والمقاولين جزء من نظامك."
+      },
+      "checks": [
+       {
+        "ar": "أرني الضوابط التشغيلية لأهم جانبين مهمين، وتحقق منها في الموقع.",
+        "en": "Show me the operational controls for the two most significant aspects, and verify them on site."
+       },
+       {
+        "ar": "كيف تُضبط العمليات والمنتجات والخدمات المقدمة خارجياً بيئياً؟",
+        "en": "How are externally provided processes, products and services controlled environmentally?"
+       },
+       {
+        "ar": "كيف رُوعيت المتطلبات البيئية في التصميم والشراء ومعلومات نهاية العمر؟",
+        "en": "How were environmental requirements addressed in design, purchasing and end-of-life information?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.1.1",
+         "why": {
+          "ar": "الضوابط التشغيلية تُرصد فعاليتها.",
+          "en": "Operational controls are monitored for effectiveness."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1.5",
+         "why": {
+          "ar": "الإجراءات تُنفذ عبر الضوابط التشغيلية.",
+          "en": "Actions are implemented through operational controls."
+         }
+        },
+        {
+         "ref": "6.2.2",
+         "why": {
+          "ar": "برامج الأهداف تُنفذ في العمليات.",
+          "en": "Objective programmes run through the processes."
+         }
+        },
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "التغييرات المخططة تُضبط تشغيلياً.",
+          "en": "Planned changes are controlled operationally."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Emergency preparedness and response",
+       "ar": "الاستعداد للطوارئ والاستجابة لها"
+      },
+      "req": {
+       "en": "Prepare for and respond to potential emergency situations: plan actions to prevent or mitigate adverse environmental impacts, respond to actual emergencies in proportion to their magnitude, test the planned actions periodically where practicable, review them after emergencies or tests, provide information and training to relevant people including those working under your control, and document this. The 2026 edition clarifies the difference between emergencies and abnormal operating conditions.",
+       "ar": "استعد لحالات الطوارئ المحتملة واستجب لها: خطِّط إجراءات لمنع الآثار البيئية السلبية أو تخفيفها، واستجب للطوارئ الفعلية بما يتناسب مع حجمها، واختبر الإجراءات دورياً حيث أمكن، وراجعها بعد كل طارئ أو اختبار، ووفّر المعلومات والتدريب للمعنيين بمن فيهم من يعملون تحت سيطرتك، ووثّق ذلك. إصدار 2026 يوضح الفرق بين حالات الطوارئ والظروف التشغيلية غير الاعتيادية."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's plan covers a transformer oil spill, a warehouse fire, an SF6 leak and flash floods on an excavation site. Spill drills run on every site every six months; after a drill showed slow response, a second spill kit was placed near the filling area.",
+       "ar": "خطة شركة الأفق: سيناريوهات انسكاب زيت محول، وحريق مستودع، وتسرب SF6، وسيول تغمر موقع حفر. نُفذ تمرين انسكاب في كل موقع كل ستة أشهر، وبعد تمرين أظهر بطء الاستجابة أُضيف طقم انسكاب ثانٍ قرب منطقة التعبئة."
+      },
+      "how": [
+       {
+        "en": "List scenarios from the aspects register.",
+        "ar": "قائمة سيناريوهات من سجل الجوانب."
+       },
+       {
+        "en": "A response plan for each scenario with roles and equipment.",
+        "ar": "خطة استجابة لكل سيناريو بالمسؤوليات والمعدات."
+       },
+       {
+        "en": "Periodic drills and their evaluation.",
+        "ar": "تمارين دورية وتقييمها."
+       },
+       {
+        "en": "Review the plan after every drill or incident.",
+        "ar": "مراجعة الخطة بعد كل تمرين أو حادث."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Emergency plans",
+        "ar": "خطط الطوارئ"
+       },
+       {
+        "en": "Drill records and evaluations",
+        "ar": "سجلات التمارين وتقييمها"
+       },
+       {
+        "en": "Response equipment and its checks",
+        "ar": "معدات الاستجابة وفحصها"
+       },
+       {
+        "en": "Environmental incident reports",
+        "ar": "تقارير الحوادث البيئية"
+       }
+      ],
+      "tip": {
+       "en": "An abnormal condition (such as running a standby generator during an outage) belongs in the aspects register; an emergency (a major spill) needs a response plan.",
+       "ar": "الظرف غير الاعتيادي (مثل تشغيل مولد احتياطي أثناء انقطاع) يُعالج في سجل الجوانب، أما الطارئ (انسكاب كبير) فيحتاج خطة استجابة."
+      },
+      "checks": [
+       {
+        "ar": "ما سيناريوهات الطوارئ؟ أرني آخر تمرين وتقييمه.",
+        "en": "What are the emergency scenarios? Show me the last drill and its evaluation."
+       },
+       {
+        "ar": "هل معدات الاستجابة متوفرة ومفحوصة؟ وهل رُوجعت الخطة بعد آخر حادث؟",
+        "en": "Is response equipment available and checked, and was the plan reviewed after the last incident?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "10.2",
+         "why": {
+          "ar": "الحوادث الفعلية تُعالج بتخفيف الأثر وإجراء تصحيحي.",
+          "en": "Actual incidents are handled with mitigation and corrective action."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1.1",
+         "why": {
+          "ar": "حالات الطوارئ المحتملة تُحدد في التخطيط وتُستعد لها في التشغيل.",
+          "en": "Potential emergencies are determined in planning and prepared for in operation."
+         }
+        },
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "الجوانب في ظروف الطوارئ تحدد السيناريوهات.",
+          "en": "Aspects under emergency conditions define the scenarios."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "9",
+    "phase": "check",
+    "title": {
+     "en": "Performance evaluation",
+     "ar": "تقييم الأداء"
+    },
+    "intro": {
+     "en": "Monitoring, measurement, analysis and evaluation of environmental performance, evaluation of compliance, internal audit with defined objectives for each audit, and management review with new sub-clauses in 2026.",
+     "ar": "الرصد والقياس والتحليل وتقييم الأداء البيئي، وتقييم الامتثال، والتدقيق الداخلي بأهداف محددة لكل تدقيق، ومراجعة الإدارة ببنود فرعية جديدة في 2026."
+    },
+    "items": [
+     {
+      "ref": "9.1.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Monitoring, measurement, analysis and evaluation: general",
+       "ar": "الرصد والقياس والتحليل والتقييم: عام"
+      },
+      "req": {
+       "en": "Determine what to monitor and measure, the methods that ensure valid results, the criteria and indicators for evaluating environmental performance, when to monitor and when to analyse the results. Use calibrated or verified equipment, evaluate environmental performance and EMS effectiveness, communicate relevant information internally and externally, and keep the results.",
+       "ar": "حدِّد: ما يُرصد ويُقاس، وطرق ضمان صحة النتائج، والمعايير والمؤشرات لتقييم الأداء البيئي، ومتى يُرصد، ومتى تُحلل النتائج. استخدم أجهزة معايرة أو محققة، وقيّم الأداء البيئي وفعالية النظام، وأبلغ المعلومات ذات الصلة داخلياً وخارجياً، ووثّق النتائج."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's monthly dashboard: m³ of water per km, recycling rate, kg of SF6 lost, litres of diesel per equipment hour, number of spills, and dust and noise readings near homes using calibrated instruments.",
+       "ar": "لوحة مؤشرات شهرية لدى شركة الأفق: م³ مياه لكل كم، نسبة إعادة التدوير، كيلوجرام SF6 مفقود، لتر ديزل لكل ساعة معدة، عدد الانسكابات، وقياسات الغبار والضوضاء قرب المساكن بأجهزة معايرة."
+      },
+      "how": [
+       {
+        "en": "A monitoring plan for every significant aspect, obligation and objective.",
+        "ar": "خطة رصد لكل جانب مهم والتزام وهدف."
+       },
+       {
+        "en": "Calibrate environmental measuring instruments.",
+        "ar": "معايرة أجهزة القياس البيئي."
+       },
+       {
+        "en": "Analyse trends monthly.",
+        "ar": "تحليل الاتجاهات شهرياً."
+       },
+       {
+        "en": "Present results at review.",
+        "ar": "عرض النتائج في المراجعة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Monitoring and measurement plan",
+        "ar": "خطة الرصد والقياس"
+       },
+       {
+        "en": "Calibration certificates",
+        "ar": "شهادات المعايرة"
+       },
+       {
+        "en": "KPI dashboard and trend analysis",
+        "ar": "لوحة المؤشرات وتحليل الاتجاهات"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما المؤشرات البيئية؟ وما اتجاهاتها خلال 12 شهراً؟",
+        "en": "What are the environmental indicators, and their trends over 12 months?"
+       },
+       {
+        "ar": "هل أجهزة القياس البيئي معايرة؟",
+        "en": "Are environmental measuring instruments calibrated?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.3.2",
+         "why": {
+          "ar": "الأداء البيئي واتجاهاته مدخل للمراجعة.",
+          "en": "Environmental performance and trends are review inputs."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "الجوانب المهمة تُرصد وتُقاس.",
+          "en": "Significant aspects are monitored and measured."
+         }
+        },
+        {
+         "ref": "6.2.2",
+         "why": {
+          "ar": "المؤشرات ترصد تقدم الأهداف.",
+          "en": "Indicators track objective progress."
+         }
+        },
+        {
+         "ref": "8.1",
+         "why": {
+          "ar": "الضوابط التشغيلية تُرصد فعاليتها.",
+          "en": "Operational controls are monitored for effectiveness."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "9.1.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Evaluation of compliance",
+       "ar": "تقييم الامتثال"
+      },
+      "req": {
+       "en": "Establish processes to evaluate fulfilment of compliance obligations: set the frequency, evaluate compliance, take action if needed, maintain knowledge and understanding of compliance status, and keep documented results.",
+       "ar": "أنشئ عمليات لتقييم الوفاء بالالتزامات الامتثالية: حدِّد تكرار التقييم، وقيّم الامتثال، واتخذ الإجراء عند الحاجة، وحافظ على معرفة وفهم حالة الامتثال، ووثّق النتائج."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical evaluates compliance quarterly for each site against the obligations register. It found a site's fuel storage permit had not been renewed and suspended refuelling until it was issued.",
+       "ar": "تقيّم شركة الأفق الامتثال كل ربع سنة لكل موقع مقابل سجل الالتزامات. اكتُشف أن تصريح تخزين الوقود لأحد المواقع لم يُجدد، فأوقفت التزود حتى صدوره."
+      },
+      "how": [
+       {
+        "en": "A schedule based on the criticality of each obligation.",
+        "ar": "جدول تقييم حسب خطورة الالتزام."
+       },
+       {
+        "en": "A checklist derived from the obligations register.",
+        "ar": "قائمة تحقق مشتقة من سجل الالتزامات."
+       },
+       {
+        "en": "Corrective action for every non-compliance.",
+        "ar": "إجراء تصحيحي لكل عدم امتثال."
+       },
+       {
+        "en": "A compliance status summary for management.",
+        "ar": "ملخص حالة الامتثال للإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Compliance evaluation reports",
+        "ar": "تقارير تقييم الامتثال"
+       },
+       {
+        "en": "Permits and test results",
+        "ar": "التصاريح ونتائج الفحوص"
+       },
+       {
+        "en": "Actions taken",
+        "ar": "الإجراءات المتخذة"
+       }
+      ],
+      "tip": {
+       "en": "Compliance evaluation is not the internal audit: it is a regular check of every obligation and can use several methods.",
+       "ar": "تقييم الامتثال ليس التدقيق الداخلي: هو تحقق منتظم من كل التزام، وقد يُنفذ بطرق متعددة."
+      },
+      "checks": [
+       {
+        "ar": "أرني آخر تقييم امتثال لكل موقع والإجراءات الناتجة.",
+        "en": "Show me the latest compliance evaluation for each site and the resulting actions."
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.3.2",
+         "why": {
+          "ar": "حالة الامتثال مدخل للمراجعة.",
+          "en": "Compliance status is a review input."
+         }
+        },
+        {
+         "ref": "10.2",
+         "why": {
+          "ar": "عدم الامتثال يعالج كعدم مطابقة.",
+          "en": "Non-compliance is handled as a nonconformity."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1.3",
+         "why": {
+          "ar": "الالتزامات تُقيَّم دورياً.",
+          "en": "Obligations are evaluated periodically."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "9.2.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Internal audit: general",
+       "ar": "التدقيق الداخلي: عام"
+      },
+      "req": {
+       "en": "Conduct internal audits at planned intervals to confirm the EMS conforms to the organization's own requirements and to the standard, and is effectively implemented and maintained.",
+       "ar": "نفّذ تدقيقات داخلية على فترات مخططة للتحقق من مطابقة النظام لمتطلبات المنظمة ولمتطلبات المواصفة، ومن تطبيقه بفعالية."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical audits every site and process at least once a year, and sites with significant aspects every six months.",
+       "ar": "تدقق شركة الأفق كل المواقع والعمليات مرة سنوياً على الأقل، والمواقع ذات الجوانب المهمة كل ستة أشهر."
+      },
+      "how": [
+       {
+        "en": "A comprehensive annual audit plan.",
+        "ar": "خطة تدقيق سنوية شاملة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Annual audit plan",
+        "ar": "خطة التدقيق السنوية"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "هل غطت التدقيقات كل النطاق خلال الدورة؟",
+        "en": "Did audits cover the whole scope within the cycle?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "9.2.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Internal audit programme",
+       "ar": "برنامج التدقيق الداخلي"
+      },
+      "req": {
+       "en": "Establish an audit programme covering frequency, methods, responsibilities, planning and reporting, taking into account the environmental importance of processes, changes and previous audit results. In 2026 the objectives of each audit must be defined alongside its criteria and scope. Select auditors who ensure objectivity, report results to relevant management, and keep evidence of implementation and results.",
+       "ar": "أنشئ برنامج تدقيق يشمل التكرار والطرق والمسؤوليات والتخطيط والتقارير، مع مراعاة الأهمية البيئية للعمليات والتغييرات ونتائج التدقيقات السابقة. في 2026 يلزم تحديد أهداف كل تدقيق إلى جانب معاييره ونطاقه. اختر مدققين يضمنون الموضوعية، وأبلغ النتائج للإدارة المعنية، ووثّق التنفيذ والنتائج."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's warehouse audit plan: objective 'verify that hazardous waste storage controls are effective after the extension'; criteria 'clause 8.1, procedure EP-WST-02 and waste regulations'; scope 'central warehouse'.",
+       "ar": "خطة تدقيق مستودع شركة الأفق: الهدف «التحقق من فعالية ضوابط تخزين النفايات الخطرة بعد التوسعة»، المعايير «البند 8.1 وإجراء EP-WST-02 واشتراطات النفايات»، النطاق «المستودع المركزي»."
+      },
+      "how": [
+       {
+        "en": "A programme based on environmental importance and changes.",
+        "ar": "برنامج مبني على الأهمية البيئية والتغييرات."
+       },
+       {
+        "en": "Written objectives, criteria and scope for every audit.",
+        "ar": "هدف ومعايير ونطاق مكتوب لكل تدقيق."
+       },
+       {
+        "en": "Auditor competence per ISO 19011.",
+        "ar": "تأهيل المدققين وفق ISO 19011."
+       },
+       {
+        "en": "Follow findings to closure.",
+        "ar": "متابعة الملاحظات حتى الإغلاق."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Audit programme",
+        "ar": "برنامج التدقيق"
+       },
+       {
+        "en": "Audit plans with objectives",
+        "ar": "خطط التدقيق بأهدافها"
+       },
+       {
+        "en": "Reports",
+        "ar": "التقارير"
+       },
+       {
+        "en": "Auditor qualifications",
+        "ar": "مؤهلات المدققين"
+       }
+      ],
+      "tip": {
+       "en": "An audit plan without a written objective will be a new nonconformity in 2026.",
+       "ar": "خطة تدقيق بلا هدف مكتوب ستكون عدم مطابقة جديدة في 2026."
+      },
+      "checks": [
+       {
+        "ar": "هل لكل تدقيق أهداف مكتوبة إلى جانب المعايير والنطاق؟",
+        "en": "Does each audit have written objectives alongside criteria and scope?"
+       },
+       {
+        "ar": "كيف رُوعيت الأهمية البيئية والتغييرات في البرنامج؟",
+        "en": "How were environmental importance and changes reflected in the programme?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.3.2",
+         "why": {
+          "ar": "نتائج التدقيق مدخل للمراجعة.",
+          "en": "Audit results are a review input."
+         }
+        },
+        {
+         "ref": "10.2",
+         "why": {
+          "ar": "نتائج التدقيق تولد إجراءات تصحيحية.",
+          "en": "Audit findings generate corrective actions."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "9.3.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Management review: general",
+       "ar": "مراجعة الإدارة: عام"
+      },
+      "req": {
+       "en": "Top management reviews the EMS at planned intervals to ensure its continuing suitability, adequacy and effectiveness. In 2026 clause 9.3 is split into sub-clauses (general, inputs, results) under the harmonized structure.",
+       "ar": "تراجع الإدارة العليا النظام البيئي على فترات مخططة للتأكد من استمرار ملاءمته وكفايته وفعاليته. في 2026 قُسم البند 9.3 إلى بنود فرعية (عام، المدخلات، النتائج) وفق الهيكل الموحد."
+      },
+      "ex": {
+       "en": "A half-yearly review at Al-Ufuq Electrical chaired by the CEO, combined with the quality and safety review but with a dedicated environmental item.",
+       "ar": "مراجعة نصف سنوية لدى شركة الأفق يرأسها الرئيس التنفيذي، ومدمجة مع مراجعة الجودة والسلامة مع بند مستقل للبيئة."
+      },
+      "how": [
+       {
+        "en": "An annual review schedule.",
+        "ar": "جدول مراجعات سنوي."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Meeting schedule",
+        "ar": "جدول الاجتماعات"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "متى عُقدت آخر مراجعة إدارة؟",
+        "en": "When was the last management review held?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "9.3.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Management review inputs",
+       "ar": "مدخلات مراجعة الإدارة"
+      },
+      "req": {
+       "en": "Inputs include the status of actions from previous reviews; changes in external and internal issues, in interested parties' needs including compliance obligations, in significant aspects and in risks and opportunities; the extent objectives were achieved; environmental performance information and trends (nonconformities and corrective actions, monitoring results, fulfilment of compliance obligations, audit results); adequacy of resources; relevant communications from interested parties including complaints; and opportunities for improvement.",
+       "ar": "تشمل: حالة إجراءات المراجعات السابقة؛ التغيرات في القضايا الخارجية والداخلية، واحتياجات الأطراف المعنية ومنها الالتزامات الامتثالية، والجوانب المهمة، والمخاطر والفرص؛ مدى تحقيق الأهداف؛ معلومات الأداء البيئي واتجاهاته (عدم المطابقة والإجراءات التصحيحية، نتائج الرصد، الوفاء بالالتزامات، نتائج التدقيق)؛ كفاية الموارد؛ الاتصالات ذات الصلة من الأطراف بما فيها الشكاوى؛ وفرص التحسين."
+      },
+      "ex": {
+       "en": "Al-Ufuq Electrical's review agenda follows the full input list, with a compliance status by site and the climate and biodiversity assessment.",
+       "ar": "جدول أعمال مراجعة شركة الأفق يتبع قائمة المدخلات كاملة، مع عرض لحالة الامتثال لكل موقع وتقييم تغيّر المناخ والتنوع الحيوي."
+      },
+      "how": [
+       {
+        "en": "An agenda template covering every input.",
+        "ar": "قالب جدول أعمال بكل المدخلات."
+       },
+       {
+        "en": "Prepare the presentations in advance.",
+        "ar": "إعداد العروض مسبقاً."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Agenda",
+        "ar": "جدول الأعمال"
+       },
+       {
+        "en": "Supporting presentations",
+        "ar": "العروض المرفقة"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "هل غطت المراجعة كل المدخلات بما فيها حالة الامتثال والجوانب والمخاطر والفرص؟",
+        "en": "Did the review cover all inputs, including compliance status, aspects, risks and opportunities?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "9.1.2",
+         "why": {
+          "ar": "حالة الامتثال مدخل للمراجعة.",
+          "en": "Compliance status is a review input."
+         }
+        },
+        {
+         "ref": "9.1.1",
+         "why": {
+          "ar": "الأداء البيئي واتجاهاته مدخل للمراجعة.",
+          "en": "Environmental performance and trends are review inputs."
+         }
+        },
+        {
+         "ref": "9.2.2",
+         "why": {
+          "ar": "نتائج التدقيق مدخل للمراجعة.",
+          "en": "Audit results are a review input."
+         }
+        },
+        {
+         "ref": "6.1.4",
+         "why": {
+          "ar": "تغيرات المخاطر والفرص مدخل للمراجعة.",
+          "en": "Changes in risks and opportunities are a review input."
+         }
+        },
+        {
+         "ref": "5.3",
+         "why": {
+          "ar": "تقارير الأداء للإدارة تغذي المراجعة.",
+          "en": "Performance reports to management feed the review."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "9.3.3",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Management review results",
+       "ar": "نتائج مراجعة الإدارة"
+      },
+      "req": {
+       "en": "Results include conclusions on the suitability, adequacy and effectiveness of the EMS; decisions on continual improvement; any changes to the EMS including resources; actions when objectives are not achieved; opportunities to improve integration with business processes; and implications for strategic direction. They are documented.",
+       "ar": "تتضمن النتائج: استنتاجات حول ملاءمة النظام وكفايته وفعاليته، وقرارات التحسين المستمر، وأي تغييرات في النظام بما فيها الموارد، والإجراءات عند عدم تحقيق الأهداف، وفرص تحسين دمج النظام مع عمليات الأعمال، والآثار على الاتجاه الاستراتيجي. وتوثَّق."
+      },
+      "ex": {
+       "en": "Decisions from Al-Ufuq Electrical's review: buy a second SF6 recovery unit, approve a new water objective, and add an environmental criterion to tender evaluation.",
+       "ar": "قرارات مراجعة شركة الأفق: شراء جهاز استرجاع SF6 ثانٍ، واعتماد هدف جديد للمياه، وإدراج معيار بيئي في تقييم المناقصات."
+      },
+      "how": [
+       {
+        "en": "Minutes with decisions, owners and dates.",
+        "ar": "محضر بالقرارات والمسؤولين والمواعيد."
+       },
+       {
+        "en": "Track implementation at the next review.",
+        "ar": "متابعة التنفيذ في المراجعة التالية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Management review minutes",
+        "ar": "محضر مراجعة الإدارة"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما القرارات المتخذة؟ وهل شملت فرص الدمج مع عمليات الأعمال؟",
+        "en": "What decisions were made, and did they include integration with business processes?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "10.1",
+         "why": {
+          "ar": "قرارات المراجعة تقود التحسين.",
+          "en": "Review decisions drive improvement."
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "10",
+    "phase": "act",
+    "title": {
+     "en": "Improvement",
+     "ar": "التحسين"
+    },
+    "intro": {
+     "en": "The improvement clauses were consolidated and renumbered in 2026: continual improvement to enhance environmental performance, then nonconformity and corrective action including mitigating environmental impacts.",
+     "ar": "دُمجت بنود التحسين وأُعيد ترقيمها في 2026: التحسين المستمر لتعزيز الأداء البيئي، ثم عدم المطابقة والإجراء التصحيحي مع تخفيف الآثار البيئية."
+    },
+    "items": [
+     {
+      "ref": "10.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Continual improvement",
+       "ar": "التحسين المستمر"
+      },
+      "req": {
+       "en": "Continually improve the suitability, adequacy and effectiveness of the EMS to enhance environmental performance, using the results of analysis, evaluation, audit and management review.",
+       "ar": "حسّن ملاءمة النظام البيئي وكفايته وفعاليته باستمرار لتعزيز الأداء البيئي، مستفيداً من نتائج التحليل والتقييم والتدقيق ومراجعة الإدارة."
+      },
+      "ex": {
+       "en": "An improvement project at Al-Ufuq Electrical replaced diesel generators at temporary site offices with hybrid solar units, cutting diesel use by 40%.",
+       "ar": "مشروع تحسين لدى شركة الأفق استبدل مولدات الديزل في المكاتب المؤقتة بوحدات شمسية هجينة، فانخفض استهلاك الديزل 40%."
+      },
+      "how": [
+       {
+        "en": "A register of environmental improvement projects.",
+        "ar": "سجل مشاريع التحسين البيئي."
+       },
+       {
+        "en": "Measure before and after.",
+        "ar": "قياس قبل وبعد."
+       },
+       {
+        "en": "Share results with other sites.",
+        "ar": "مشاركة النتائج مع المواقع الأخرى."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Improvement register",
+        "ar": "سجل مشاريع التحسين"
+       },
+       {
+        "en": "Indicator trends",
+        "ar": "اتجاهات المؤشرات"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما الدليل على تحسن الأداء البيئي؟",
+        "en": "What evidence shows environmental performance improved?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "7.4.2",
+         "why": {
+          "ar": "التواصل الداخلي يمكّن العاملين من الإسهام في التحسين.",
+          "en": "Internal communication enables people to contribute to improvement."
+         }
+        },
+        {
+         "ref": "9.3.3",
+         "why": {
+          "ar": "قرارات المراجعة تقود التحسين.",
+          "en": "Review decisions drive improvement."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "10.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Nonconformity and corrective action",
+       "ar": "عدم المطابقة والإجراء التصحيحي"
+      },
+      "req": {
+       "en": "When a nonconformity occurs: react to it (control and correct it, and deal with the consequences, including mitigating adverse environmental impacts), evaluate the need to eliminate its causes by reviewing it, determining its causes and checking for similar cases, implement the action, review its effectiveness, and change the EMS if needed. Actions are proportionate to the significance of the effects, including environmental impacts. Keep documented evidence.",
+       "ar": "عند حدوث عدم مطابقة: تفاعل معها (اضبطها وصححها، وعالج عواقبها بما فيها تخفيف الآثار البيئية السلبية)، وقيّم الحاجة لإزالة أسبابها بالمراجعة وتحليل السبب والبحث عن حالات مشابهة، ونفّذ الإجراء، وراجع فعاليته، وعدّل النظام عند الحاجة. الإجراء يتناسب مع أهمية آثار عدم المطابقة بما فيها الآثار البيئية. ووثّق ذلك."
+      },
+      "ex": {
+       "en": "Diesel leaked from a subcontractor's tank at Al-Ufuq Electrical: it was contained with absorbents and the contaminated soil removed as hazardous waste (correction). Analysis: the tank had no bund and the contract clause was vague. Action: revise the contract template and inspect all subcontractor tanks; verify after three months.",
+       "ar": "انسكب ديزل من خزان مقاول باطن لدى شركة الأفق: احتُوي بالتربة الماصة ونُقلت التربة الملوثة كنفايات خطرة (تصحيح). التحليل: الخزان بلا حوض احتواء واشتراط العقد غير واضح. الإجراء: تعديل نموذج العقد وتفتيش كل خزانات المقاولين، والتحقق بعد ثلاثة أشهر."
+      },
+      "how": [
+       {
+        "en": "Contain and mitigate immediately.",
+        "ar": "احتواء وتخفيف فوري للأثر."
+       },
+       {
+        "en": "Root cause analysis.",
+        "ar": "تحليل السبب الجذري."
+       },
+       {
+        "en": "Look for similar cases on other sites.",
+        "ar": "البحث عن حالات مشابهة في المواقع الأخرى."
+       },
+       {
+        "en": "Verify effectiveness and update aspects and risks.",
+        "ar": "التحقق من الفعالية وتحديث الجوانب والمخاطر."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Nonconformity and corrective action log",
+        "ar": "سجل عدم المطابقة والإجراءات التصحيحية"
+       },
+       {
+        "en": "Root cause analysis",
+        "ar": "تحليل السبب الجذري"
+       },
+       {
+        "en": "Evidence of effectiveness",
+        "ar": "دليل الفعالية"
+       }
+      ],
+      "tip": {
+       "en": "Correction deals with the effect (cleaning the spill); corrective action removes the cause (a bund and a contract requirement).",
+       "ar": "التصحيح يعالج الأثر (تنظيف الانسكاب)، والإجراء التصحيحي يزيل السبب (حوض احتواء واشتراط تعاقدي)."
+      },
+      "checks": [
+       {
+        "ar": "اختر حادثاً بيئياً: كيف خُفف أثره؟ وما السبب الجذري؟ وهل تحققتم من الفعالية؟",
+        "en": "Pick an environmental incident: how was its impact mitigated, what was the root cause, and was effectiveness verified?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "الحادث قد يكشف جانباً جديداً.",
+          "en": "An incident may reveal a new aspect."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "9.2.2",
+         "why": {
+          "ar": "نتائج التدقيق تولد إجراءات تصحيحية.",
+          "en": "Audit findings generate corrective actions."
+         }
+        },
+        {
+         "ref": "9.1.2",
+         "why": {
+          "ar": "عدم الامتثال يعالج كعدم مطابقة.",
+          "en": "Non-compliance is handled as a nonconformity."
+         }
+        },
+        {
+         "ref": "8.2",
+         "why": {
+          "ar": "الحوادث الفعلية تُعالج بتخفيف الأثر وإجراء تصحيحي.",
+          "en": "Actual incidents are handled with mitigation and corrective action."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "changes": [
+   {
+    "title": {
+     "en": "Climate, biodiversity and environmental conditions in context",
+     "ar": "المناخ والتنوع الحيوي والظروف البيئية في السياق"
+    },
+    "text": {
+     "en": "The 2024 climate amendment is built in, and biodiversity, ecosystem health, pollution levels and natural resource availability are now named.",
+     "ar": "دمج تعديل المناخ 2024، وإضافة صريحة للتنوع الحيوي وصحة النظم البيئية ومستويات التلوث وتوافر الموارد الطبيعية."
+    },
+    "refs": [
+     "4.1",
+     "4.2"
+    ]
+   },
+   {
+    "title": {
+     "en": "Risks and opportunities restructured",
+     "ar": "إعادة هيكلة المخاطر والفرص"
+    },
+    "text": {
+     "en": "A new 6.1.4 determines risks and opportunities separately from aspects, and planning action is now 6.1.5.",
+     "ar": "بند جديد 6.1.4 لتحديد المخاطر والفرص بشكل مستقل عن الجوانب، وتخطيط الإجراءات أصبح 6.1.5."
+    },
+    "refs": [
+     "6.1.1",
+     "6.1.4",
+     "6.1.5"
+    ]
+   },
+   {
+    "title": {
+     "en": "Planning of changes: a standalone clause",
+     "ar": "تخطيط التغييرات: بند مستقل"
+    },
+    "text": {
+     "en": "The new 6.3 requires changes to the EMS to be carried out in a planned way; it is the most visible new item in transition audits.",
+     "ar": "البند 6.3 الجديد يطلب تنفيذ تغييرات النظام بطريقة مخططة، وهو التغيير الجديد الأبرز في تدقيق الانتقال."
+    },
+    "refs": [
+     "6.3",
+     "8.1"
+    ]
+   },
+   {
+    "title": {
+     "en": "A clearer life cycle perspective",
+     "ar": "منظور دورة الحياة أوضح"
+    },
+    "text": {
+     "en": "Stronger explanation of considering life cycle stages when determining aspects and in operational controls, without requiring an LCA study.",
+     "ar": "توضيح أقوى لمراعاة مراحل دورة الحياة عند تحديد الجوانب وفي الضوابط التشغيلية، دون اشتراط دراسة LCA."
+    },
+    "refs": [
+     "6.1.2",
+     "8.1"
+    ]
+   },
+   {
+    "title": {
+     "en": "Externally provided processes, products and services",
+     "ar": "ما يُقدَّم خارجياً"
+    },
+    "text": {
+     "en": "From 'outsourced processes' to 'externally provided processes, products and services': wider control of the supply chain.",
+     "ar": "من «العمليات المسندة» إلى «العمليات والمنتجات والخدمات المقدمة خارجياً»، أي ضبط أوسع لسلسلة الإمداد."
+    },
+    "refs": [
+     "8.1"
+    ]
+   },
+   {
+    "title": {
+     "en": "Broader leadership",
+     "ar": "قيادة أوسع"
+    },
+    "text": {
+     "en": "Top management support for all relevant roles, and deeper integration of the environment into business processes.",
+     "ar": "دعم الإدارة العليا لكل الأدوار ذات الصلة، ودمج أعمق للبيئة في عمليات الأعمال."
+    },
+    "refs": [
+     "5.1"
+    ]
+   },
+   {
+    "title": {
+     "en": "Audit objectives and a split management review",
+     "ar": "أهداف التدقيق ومراجعة إدارة مقسمة"
+    },
+    "text": {
+     "en": "Each internal audit defines its objectives, and management review is now three sub-clauses.",
+     "ar": "كل تدقيق داخلي يحدد أهدافه، ومراجعة الإدارة أصبحت ثلاثة بنود فرعية."
+    },
+    "refs": [
+     "9.2.2",
+     "9.3.1",
+     "9.3.2",
+     "9.3.3"
+    ]
+   },
+   {
+    "title": {
+     "en": "Harmonized terms and an expanded Annex A",
+     "ar": "مصطلحات موحدة وملحق A موسّع"
+    },
+    "text": {
+     "en": "Terms aligned with the harmonized structure, the wording 'documented information shall be available', and expanded guidance in Annex A.",
+     "ar": "مواءمة المصطلحات مع الهيكل الموحد، وصياغة «المعلومات الموثقة تكون متاحة»، وإرشادات موسعة في الملحق A."
+    },
+    "refs": [
+     "3",
+     "7.5.1",
+     "A"
+    ]
+   }
+  ],
+  "terms": [
+   {
+    "no": "§3",
+    "en": "Organization",
+    "ar": "المنظمة",
+    "def": {
+     "ar": "أي كيان له وظائفه ومسؤولياته يسعى لتحقيق أهدافه، من فرد إلى شركة كبرى أو جزء منها.",
+     "en": "Any entity with its own functions and responsibilities pursuing its objectives, from a sole trader to a corporation or part of one."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Interested party",
+    "ar": "الطرف المعني",
+    "def": {
+     "ar": "من يؤثر في قرارات المنظمة أو يتأثر بها أو يرى أنه متأثر: الجيران، الجهات التنظيمية، العملاء، المنظمات البيئية.",
+     "en": "Anyone who affects, is affected by, or perceives themselves affected by the organization's decisions: neighbours, regulators, customers, environmental groups."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Top management",
+    "ar": "الإدارة العليا",
+    "def": {
+     "ar": "من يوجّه المنظمة ويتحكم فيها على أعلى مستوى ضمن نطاق النظام.",
+     "en": "The person or group who directs and controls the organization at the highest level within the system's scope."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Environmental management system",
+    "ar": "نظام الإدارة البيئية",
+    "def": {
+     "ar": "جزء من نظام الإدارة يُستخدم لإدارة الجوانب البيئية والوفاء بالالتزامات الامتثالية ومعالجة المخاطر والفرص.",
+     "en": "The part of the management system used to manage environmental aspects, fulfil compliance obligations and address risks and opportunities."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Environmental policy",
+    "ar": "السياسة البيئية",
+    "def": {
+     "ar": "توجّهات المنظمة المتعلقة بالأداء البيئي كما تعلنها الإدارة العليا رسمياً.",
+     "en": "The organization's intentions and direction on environmental performance as formally expressed by top management."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Environment",
+    "ar": "البيئة",
+    "def": {
+     "ar": "المحيط الذي تعمل فيه المنظمة: الهواء والماء والأرض والموارد الطبيعية والنباتات والحيوانات والبشر وعلاقاتها، ويمتد من الموقع إلى النظام العالمي.",
+     "en": "The surroundings in which the organization operates: air, water, land, natural resources, flora, fauna, humans and their interrelationships, from the site to the global system."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Environmental aspect",
+    "ar": "الجانب البيئي",
+    "def": {
+     "ar": "عنصر من أنشطة المنظمة أو منتجاتها أو خدماتها يتفاعل أو يمكن أن يتفاعل مع البيئة، مثل استهلاك الديزل أو توليد النفايات.",
+     "en": "An element of the organization's activities, products or services that interacts or can interact with the environment, such as diesel use or waste generation."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Environmental impact",
+    "ar": "الأثر البيئي",
+    "def": {
+     "ar": "تغيير في البيئة، سلبي أو إيجابي، ناتج كلياً أو جزئياً عن الجوانب البيئية، مثل تلوث التربة.",
+     "en": "A change to the environment, adverse or beneficial, wholly or partly resulting from environmental aspects, such as soil contamination."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Significant environmental aspect",
+    "ar": "الجانب البيئي المهم",
+    "def": {
+     "ar": "جانب له أو قد يكون له أثر بيئي مهم وفق معايير تضعها المنظمة.",
+     "en": "An aspect that has or can have a significant environmental impact, determined using criteria the organization sets."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Environmental condition",
+    "ar": "الظرف البيئي",
+    "def": {
+     "ar": "حالة أو خاصية للبيئة في وقت معين، مثل ارتفاع الحرارة أو شح المياه أو تدهور التنوع الحيوي.",
+     "en": "The state or characteristic of the environment at a point in time, such as high temperatures, water scarcity or biodiversity decline."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Compliance obligations",
+    "ar": "الالتزامات الامتثالية",
+    "def": {
+     "ar": "المتطلبات القانونية التي يجب الوفاء بها، والمتطلبات الأخرى التي تختار المنظمة الالتزام بها.",
+     "en": "Legal requirements the organization must comply with, and other requirements it chooses to comply with."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Prevention of pollution",
+    "ar": "منع التلوث",
+    "def": {
+     "ar": "استخدام العمليات والممارسات والمواد والمنتجات لتجنب إطلاق الملوثات أو النفايات أو تقليله أو ضبطه للحد من الآثار السلبية.",
+     "en": "Using processes, practices, materials or products to avoid, reduce or control the release of pollutants or waste in order to reduce adverse impacts."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Life cycle",
+    "ar": "دورة الحياة",
+    "def": {
+     "ar": "المراحل المتتالية والمترابطة لمنتج أو خدمة: من الحصول على المواد الخام إلى التصميم والإنتاج والنقل والاستخدام ونهاية العمر.",
+     "en": "The consecutive, interlinked stages of a product or service: from raw material acquisition to design, production, transport, use and end of life."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Environmental objective",
+    "ar": "الهدف البيئي",
+    "def": {
+     "ar": "هدف تضعه المنظمة متسقاً مع سياستها البيئية.",
+     "en": "An objective set by the organization consistent with its environmental policy."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Environmental performance",
+    "ar": "الأداء البيئي",
+    "def": {
+     "ar": "الأداء المرتبط بإدارة الجوانب البيئية، ويُقاس بمؤشرات.",
+     "en": "Performance related to the management of environmental aspects, measured with indicators."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Indicator",
+    "ar": "المؤشر",
+    "def": {
+     "ar": "تمثيل قابل للقياس لحالة العمليات أو الإدارة أو الظروف، مثل م³ مياه لكل كم خط.",
+     "en": "A measurable representation of the condition of operations, management or conditions, such as m³ of water per km of line."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Risks and opportunities",
+    "ar": "المخاطر والفرص",
+    "def": {
+     "ar": "الآثار السلبية المحتملة (التهديدات) والإيجابية المحتملة (الفرص).",
+     "en": "Potential adverse effects (threats) and potential beneficial effects (opportunities)."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Risk",
+    "ar": "المخاطر",
+    "def": {
+     "ar": "أثر عدم اليقين: انحراف عن المتوقع قد يكون إيجابياً أو سلبياً.",
+     "en": "The effect of uncertainty: a deviation from the expected, positive or negative."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Externally provided",
+    "ar": "المقدَّم خارجياً",
+    "def": {
+     "ar": "عملية أو منتج أو خدمة يقدمها طرف خارجي، بما فيها ما كان يسمى الإسناد.",
+     "en": "A process, product or service provided by an external party, including what used to be called outsourcing."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Competence",
+    "ar": "الكفاءة",
+    "def": {
+     "ar": "القدرة على تطبيق المعرفة والمهارات لتحقيق النتائج المقصودة.",
+     "en": "The ability to apply knowledge and skills to achieve intended results."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Documented information",
+    "ar": "المعلومات الموثقة",
+    "def": {
+     "ar": "معلومات يلزم ضبطها بأي وسيط، وتشمل ما كان يسمى وثائق وسجلات.",
+     "en": "Information that must be controlled, in any medium; it covers what used to be called documents and records."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Process",
+    "ar": "العملية",
+    "def": {
+     "ar": "أنشطة مترابطة تستخدم المدخلات أو تحولها لتحقيق نتيجة.",
+     "en": "Interrelated activities that use or transform inputs to deliver a result."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Continual improvement",
+    "ar": "التحسين المستمر",
+    "def": {
+     "ar": "نشاط متكرر لتعزيز الأداء، وفي هذه المواصفة تعزيز الأداء البيئي.",
+     "en": "A recurring activity to enhance performance; in this standard, environmental performance."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Effectiveness",
+    "ar": "الفعالية",
+    "def": {
+     "ar": "مدى تنفيذ ما خُطط له وتحقيق النتائج المخططة.",
+     "en": "The extent to which planned activities are realized and planned results achieved."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Nonconformity",
+    "ar": "عدم المطابقة",
+    "def": {
+     "ar": "عدم استيفاء متطلب، سواء من المواصفة أو من متطلبات المنظمة نفسها.",
+     "en": "Non-fulfilment of a requirement, whether of the standard or of the organization's own."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Corrective action",
+    "ar": "الإجراء التصحيحي",
+    "def": {
+     "ar": "إجراء لإزالة سبب عدم المطابقة ومنع تكرارها.",
+     "en": "Action to eliminate the cause of a nonconformity and prevent recurrence."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Audit",
+    "ar": "التدقيق",
+    "def": {
+     "ar": "عملية منهجية ومستقلة وموثقة للحصول على أدلة وتقييمها بموضوعية لتحديد مدى استيفاء معايير التدقيق.",
+     "en": "A systematic, independent and documented process for obtaining evidence and evaluating it objectively to determine the extent to which audit criteria are fulfilled."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Monitoring",
+    "ar": "الرصد",
+    "def": {
+     "ar": "تحديد حالة نظام أو عملية أو نشاط.",
+     "en": "Determining the status of a system, process or activity."
+    }
+   },
+   {
+    "no": "§3",
+    "en": "Measurement",
+    "ar": "القياس",
+    "def": {
+     "ar": "عملية لتحديد قيمة.",
+     "en": "A process to determine a value."
+    }
+   }
+  ],
+  "pairs": [
+   {
+    "title": {
+     "en": "Aspect or impact?",
+     "ar": "الجانب أم الأثر؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الجانب البيئي",
+       "en": "Environmental aspect"
+      },
+      "meaning": {
+       "ar": "السبب: ما تفعله المنظمة ويتفاعل مع البيئة (استهلاك مياه، انبعاثات، نفايات).",
+       "en": "The cause: what the organization does that interacts with the environment (water use, emissions, waste)."
+      }
+     },
+     {
+      "term": {
+       "ar": "الأثر البيئي",
+       "en": "Environmental impact"
+      },
+      "meaning": {
+       "ar": "النتيجة: التغيير الذي يحدث في البيئة (استنزاف الموارد، تلوث الهواء، تلوث التربة).",
+       "en": "The effect: the change that occurs in the environment (resource depletion, air pollution, soil contamination)."
+      }
+     },
+     {
+      "term": {
+       "ar": "الظرف البيئي",
+       "en": "Environmental condition"
+      },
+      "meaning": {
+       "ar": "حالة البيئة المحيطة التي قد تؤثر في المنظمة أو تتأثر بها، وتُحلل في السياق 4.1.",
+       "en": "The state of the surrounding environment that may affect or be affected by the organization, analysed in the context (4.1)."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Control or influence?",
+     "ar": "التحكم أم التأثير؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "تستطيع التحكم",
+       "en": "Can control"
+      },
+      "meaning": {
+       "ar": "جوانب أنشطتك المباشرة التي تديرها بقراراتك وإجراءاتك.",
+       "en": "Aspects of your direct activities that you manage through your own decisions and procedures."
+      }
+     },
+     {
+      "term": {
+       "ar": "تستطيع التأثير",
+       "en": "Can influence"
+      },
+      "meaning": {
+       "ar": "جوانب لدى الموردين والمقاولين والعملاء تؤثر عليها بالعقود والمواصفات والمعلومات، وهنا يظهر منظور دورة الحياة.",
+       "en": "Aspects at suppliers, contractors and customers that you influence through contracts, specifications and information; this is where life cycle perspective shows."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Abnormal or emergency?",
+     "ar": "غير اعتيادي أم طارئ؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "ظرف غير اعتيادي",
+       "en": "Abnormal condition"
+      },
+      "meaning": {
+       "ar": "خروج مخطط أو متوقع عن التشغيل العادي، مثل التشغيل الأولي أو الصيانة أو التشغيل الاحتياطي، ويُعالج في سجل الجوانب.",
+       "en": "A planned or foreseeable departure from normal operation, such as start-up, maintenance or standby operation; handled in the aspects register."
+      }
+     },
+     {
+      "term": {
+       "ar": "حالة طوارئ",
+       "en": "Emergency situation"
+      },
+      "meaning": {
+       "ar": "حدث غير مخطط قد يسبب أثراً بيئياً كبيراً، مثل انسكاب أو حريق، ويحتاج خطة استجابة واختباراً (8.2).",
+       "en": "An unplanned event that may cause a major environmental impact, such as a spill or fire, needing a response plan and testing (8.2)."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Life cycle perspective or LCA?",
+     "ar": "منظور دورة الحياة أم تقييم دورة الحياة؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "منظور دورة الحياة",
+       "en": "Life cycle perspective"
+      },
+      "meaning": {
+       "ar": "مطلوب: التفكير في مراحل دورة الحياة التي تتحكم فيها أو تؤثر عليها عند تحديد الجوانب والضوابط.",
+       "en": "Required: thinking about the life cycle stages you control or influence when determining aspects and controls."
+      }
+     },
+     {
+      "term": {
+       "ar": "تقييم دورة الحياة",
+       "en": "Life cycle assessment (LCA)"
+      },
+      "meaning": {
+       "ar": "غير مطلوب: دراسة كمية مفصلة وفق ISO 14040/14044، وقد تُستخدم اختيارياً.",
+       "en": "Not required: a detailed quantitative study to ISO 14040/14044, which may be used optionally."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Compliance obligations",
+     "ar": "الالتزامات الامتثالية"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "متطلب قانوني",
+       "en": "Legal requirement"
+      },
+      "meaning": {
+       "ar": "إلزامي: الأنظمة واللوائح والتصاريح والرخص وأحكام الجهات المختصة.",
+       "en": "Mandatory: laws, regulations, permits, licences and orders from competent authorities."
+      }
+     },
+     {
+      "term": {
+       "ar": "متطلب آخر",
+       "en": "Other requirement"
+      },
+      "meaning": {
+       "ar": "تختار المنظمة الالتزام به: متطلبات العملاء، معايير الصناعة، الاتفاقيات مع المجتمع، الالتزامات الطوعية. بعد تبنيه يصبح ملزماً للمنظمة.",
+       "en": "Adopted by choice: customer requirements, industry codes, community agreements, voluntary commitments. Once adopted it becomes binding on the organization."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Other wording",
+     "ar": "كلمات أخرى"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "يراعي",
+       "en": "Take into account"
+      },
+      "meaning": {
+       "ar": "التفكير في الموضوع وإدراجه فعلاً في القرار.",
+       "en": "Think about the topic and actually include it in the decision."
+      }
+     },
+     {
+      "term": {
+       "ar": "يأخذ في الاعتبار",
+       "en": "Consider"
+      },
+      "meaning": {
+       "ar": "التفكير في الموضوع لتقرير إدراجه أو عدمه.",
+       "en": "Think about the topic to decide whether to include it."
+      }
+     },
+     {
+      "term": {
+       "ar": "متاح كمعلومات موثقة",
+       "en": "Available as documented information"
+      },
+      "meaning": {
+       "ar": "الصياغة الموحدة في 2026 للوثائق والسجلات معاً.",
+       "en": "The harmonized 2026 wording covering both documents and records."
+      }
+     },
+     {
+      "term": {
+       "ar": "مستمر على فترات",
+       "en": "Continual"
+      },
+      "meaning": {
+       "ar": "استمرار مع فترات توقف، وهو المقصود في التحسين.",
+       "en": "Duration with intervals of interruption: the meaning used for improvement."
+      }
+     }
+    ]
+   }
+  ],
+  "timeline": [
+   {
+    "date": {
+     "ar": "15 أبريل 2026",
+     "en": "15 April 2026"
+    },
+    "text": {
+     "ar": "نشر ISO 14001:2026 ليحل محل إصدار 2015 وتعديله لعام 2024.",
+     "en": "ISO 14001:2026 is published, replacing the 2015 edition and its 2024 amendment."
+    }
+   },
+   {
+    "date": {
+     "ar": "31 أكتوبر 2026",
+     "en": "31 October 2026"
+    },
+    "text": {
+     "ar": "جاهزية هيئات الاعتماد لتقييم الإصدار الجديد.",
+     "en": "Accreditation bodies ready to assess the new edition."
+    }
+   },
+   {
+    "date": {
+     "ar": "31 أكتوبر 2027",
+     "en": "31 October 2027"
+    },
+    "text": {
+     "ar": "الشهادات الجديدة والأولية وفق 2026 فقط.",
+     "en": "New and initial certifications to the 2026 edition only."
+    }
+   },
+   {
+    "date": {
+     "ar": "30 أبريل 2029",
+     "en": "30 April 2029"
+    },
+    "text": {
+     "ar": "نهاية فترة الانتقال وانتهاء صلاحية شهادات 2015.",
+     "en": "End of transition; 2015 certificates cease to be valid."
+    }
+   }
+  ],
+  "threads": [
+   {
+    "id": "ctx",
+    "chain": [
+     "4.1",
+     "4.2",
+     "4.3",
+     "6.1.2",
+     "6.1.3"
+    ],
+    "title": {
+     "en": "From context to aspects and obligations",
+     "ar": "من السياق إلى الجوانب والالتزامات"
+    },
+    "text": {
+     "en": "Environmental conditions and parties set the scope, within which aspects and obligations are determined.",
+     "ar": "الظروف البيئية والأطراف تحدد النطاق، وداخله تُحدد الجوانب والالتزامات."
+    }
+   },
+   {
+    "id": "plan",
+    "chain": [
+     "6.1.2",
+     "6.1.3",
+     "6.1.4",
+     "6.1.5",
+     "8.1",
+     "9.1.1"
+    ],
+    "title": {
+     "en": "The new planning thread",
+     "ar": "مسار التخطيط الجديد"
+    },
+    "text": {
+     "en": "Aspects, obligations and context generate risks and opportunities (6.1.4), then planned actions (6.1.5) implemented through controls and monitored.",
+     "ar": "الجوانب والالتزامات والسياق تولد المخاطر والفرص (6.1.4)، ثم إجراءات مخططة (6.1.5) تُنفذ بالضوابط وتُرصد."
+    }
+   },
+   {
+    "id": "comp",
+    "chain": [
+     "4.2",
+     "6.1.3",
+     "7.4.3",
+     "9.1.2",
+     "9.3.2",
+     "10.2"
+    ],
+    "title": {
+     "en": "The compliance thread",
+     "ar": "مسار الامتثال"
+    },
+    "text": {
+     "en": "From interested-party requirements to obligations, reporting, compliance evaluation, review and correction.",
+     "ar": "من متطلبات الأطراف إلى الالتزامات، والإبلاغ، وتقييم الامتثال، والمراجعة، والتصحيح."
+    }
+   },
+   {
+    "id": "emg",
+    "chain": [
+     "6.1.1",
+     "6.1.2",
+     "8.2",
+     "10.2"
+    ],
+    "title": {
+     "en": "The emergency thread",
+     "ar": "مسار الطوارئ"
+    },
+    "text": {
+     "en": "Potential emergencies are determined, prepared for and tested; actual incidents are mitigated and corrected.",
+     "ar": "تُحدد الطوارئ المحتملة، ويُستعد لها وتُختبر، والحوادث الفعلية تُخفف وتُصحح."
+    }
+   },
+   {
+    "id": "chg",
+    "chain": [
+     "6.3",
+     "6.1.2",
+     "8.1"
+    ],
+    "title": {
+     "en": "The change thread",
+     "ar": "مسار التغيير"
+    },
+    "text": {
+     "en": "Every planned change updates the aspects and is controlled operationally.",
+     "ar": "كل تغيير مخطط يحدّث الجوانب ويُضبط تشغيلياً."
+    }
+   },
+   {
+    "id": "imp",
+    "chain": [
+     "9.1.1",
+     "9.2.2",
+     "9.3.2",
+     "9.3.3",
+     "10.1"
+    ],
+    "title": {
+     "en": "The improvement thread",
+     "ar": "مسار التحسين"
+    },
+    "text": {
+     "en": "Monitoring and audit feed the review, whose decisions drive better environmental performance.",
+     "ar": "الرصد والتدقيق يغذيان المراجعة، وقراراتها تقود تحسين الأداء البيئي."
+    }
+   }
+  ],
+  "scale": [
+   {
+    "level": 0,
+    "meaning": {
+     "en": "The requirement does not exist at all: no practice, no document, no owner.",
+     "ar": "المتطلب غير موجود إطلاقاً: لا ممارسة ولا وثيقة ولا مسؤول."
+    },
+    "look": {
+     "en": "\"We haven't thought about it yet\", and nobody knows who is responsible.",
+     "ar": "\"لم نفكر في ذلك بعد\"، ولا يعرف أحد من المسؤول عنه."
+    },
+    "evidence": {
+     "en": "Nothing.",
+     "ar": "لا شيء."
+    }
+   },
+   {
+    "level": 1,
+    "meaning": {
+     "en": "There is awareness and the practice happens sometimes, but it is informal, undocumented and depends on particular people.",
+     "ar": "الوعي موجود والممارسة تحدث أحياناً، لكنها غير رسمية وغير موثقة وتعتمد على أشخاص بعينهم."
+    },
+    "look": {
+     "en": "One manager knows it, it happens only when needed, and it stops if that person is away.",
+     "ar": "يعرفه مدير واحد، ويُنفذ عند الحاجة فقط، ويتوقف إذا غاب الشخص."
+    },
+    "evidence": {
+     "en": "Emails, scattered notes, individual effort.",
+     "ar": "رسائل بريد، ملاحظات متفرقة، اجتهادات فردية."
+    }
+   },
+   {
+    "level": 2,
+    "meaning": {
+     "en": "Partly in place: documented or approved but not applied across the whole scope, or applied without enough records, or missing an important element of the requirement.",
+     "ar": "موجود جزئياً: موثق أو معتمد لكن غير مطبق في كل النطاق، أو مطبق دون سجلات كافية، أو ينقصه عنصر مهم من المتطلب."
+    },
+    "look": {
+     "en": "The procedure or form exists, but use is patchy or in one department only.",
+     "ar": "الإجراء أو النموذج موجود، لكن التطبيق متقطع أو في إدارة دون أخرى."
+    },
+    "evidence": {
+     "en": "An approved procedure or form, with few or irregular records.",
+     "ar": "إجراء أو نموذج معتمد، وسجلات قليلة أو غير منتظمة."
+    }
+   },
+   {
+    "level": 3,
+    "meaning": {
+     "en": "Documented as needed and applied consistently across the scope, with clear responsibilities and records proving it over a reasonable period.",
+     "ar": "موثق بالقدر اللازم ومطبق بانتظام في كل النطاق، والمسؤوليات واضحة، وتوجد سجلات تثبت التطبيق لفترة معقولة."
+    },
+    "look": {
+     "en": "People apply it and can explain it at interview; records run without gaps.",
+     "ar": "العاملون يطبقونه ويشرحونه في المقابلة، والسجلات متتالية دون فجوات."
+    },
+    "evidence": {
+     "en": "Consecutive records for at least three months, and interviews confirming practice.",
+     "ar": "سجلات متتالية لثلاثة أشهر على الأقل، ومقابلات تؤكد التطبيق."
+    }
+   },
+   {
+    "level": 4,
+    "meaning": {
+     "en": "In place and achieving its intended result: it has indicators that are monitored and analysed, its effectiveness is reviewed, and it is improved from the results.",
+     "ar": "مطبق ويحقق نتيجته المقصودة: له مؤشرات تُرصد وتُحلل، وتُراجع فعاليته، ويُحسَّن بناءً على النتائج."
+    },
+    "look": {
+     "en": "You can prove it works: indicators improve and management review uses its results in decisions.",
+     "ar": "تستطيع إثبات أنه يعمل: المؤشرات تتحسن، والمراجعة تستخدم نتائجه في قرارات."
+    },
+    "evidence": {
+     "en": "Indicator trends, closed improvement actions, review minutes that rely on its results.",
+     "ar": "اتجاهات مؤشرات، إجراءات تحسين مغلقة، محاضر مراجعة إدارة تعتمد على نتائجه."
+    }
+   }
+  ],
+  "faq": [
+   {
+    "id": "whatis",
+    "q": {
+     "en": "What is ISO 14001:2026?",
+     "ar": "ما هي ISO 14001:2026؟"
+    },
+    "a": {
+     "en": "ISO 14001:2026 sets the requirements for environmental management systems with guidance for use. It was published on **15 April 2026**, replacing the 2015 edition and its 2024 climate amendment.\n\n- The structure is unchanged: clauses 4 to 10 on the PDCA cycle.\n- It is an evolutionary revision: clarifications in several areas and one genuinely new clause (6.3).\n- Intended outcomes: enhanced environmental performance, fulfilment of compliance obligations and achievement of environmental objectives.\n\nSee [[tab:changes]], or start with the [[tab:assess]].",
+     "ar": "ISO 14001:2026 هي متطلبات أنظمة الإدارة البيئية مع إرشادات الاستخدام، نُشرت في **15 أبريل 2026** وحلت محل إصدار 2015 وتعديل المناخ لعام 2024.\n\n- الهيكل كما هو: البنود من 4 إلى 10 على دورة PDCA.\n- المراجعة تطويرية: توضيحات في عدة محاور وبند جديد فعلياً (6.3).\n- النتائج المقصودة: تعزيز الأداء البيئي، والوفاء بالالتزامات الامتثالية، وتحقيق الأهداف البيئية.\n\nاطلع على [[tab:changes]]، أو ابدأ بـ [[tab:assess]]."
+    }
+   },
+   {
+    "id": "changes",
+    "q": {
+     "en": "What are the key changes in 2026?",
+     "ar": "ما أهم التغييرات في إصدار 2026؟"
+    },
+    "a": {
+     "en": "The main areas:\n\n- **Environmental conditions in context:** climate, biodiversity, pollution and resources (4.1, 4.2).\n- **Planning restructured:** a new 6.1.4 for risks and opportunities, and planning action is now 6.1.5.\n- **Planning of changes** as a new standalone clause (6.3).\n- **A clearer life cycle perspective** (6.1.2, 8.1).\n- **Externally provided** processes, products and services, not just 'outsourced' (8.1).\n- **Broader leadership** supporting all relevant roles (5.1).\n- **Objectives for each audit** (9.2.2) and a **management review** split into sub-clauses (9.3.1 to 9.3.3).\n- **Improvement** consolidated and renumbered (10.1, 10.2).\n\nTo check readiness on the new items only, filter \"new and updated\" in the [[tab:checklist]].",
+     "ar": "أبرز المحاور:\n\n- **الظروف البيئية في السياق:** المناخ والتنوع الحيوي والتلوث والموارد (4.1 و4.2).\n- **إعادة هيكلة التخطيط:** بند جديد 6.1.4 للمخاطر والفرص، وتخطيط الإجراءات أصبح 6.1.5.\n- **تخطيط التغييرات** بند مستقل جديد (6.3).\n- **منظور دورة الحياة** أوضح (6.1.2 و8.1).\n- **ما يُقدَّم خارجياً** بدلاً من «المسند» فقط (8.1).\n- **قيادة أوسع** تدعم كل الأدوار ذات الصلة (5.1).\n- **أهداف لكل تدقيق** (9.2.2) و**مراجعة إدارة** ببنود فرعية (9.3.1 إلى 9.3.3).\n- **تحسين** مدمج ومعاد ترقيمه (10.1 و10.2).\n\nللتحقق من جاهزيتك على الجديد فقط: فلتر \"الجديد والمحدث\" في [[tab:checklist]]."
+    }
+   },
+   {
+    "id": "newreq",
+    "q": {
+     "en": "What will the transition auditor focus on?",
+     "ar": "ما الذي سيركز عليه مدقق الانتقال؟"
+    },
+    "a": {
+     "en": "Expect focus on:\n\n- Documented assessment of **biodiversity, pollution and resources** as well as climate (4.1).\n- A **risk and opportunity** register built from aspects, obligations and context (6.1.4), with an action plan and effectiveness indicators (6.1.5).\n- A **recent change** planned per 6.3.\n- An **aspects register** reflecting the life cycle (6.1.2).\n- Control of **suppliers, contractors and waste carriers** (8.1).\n- **Written objectives** for each internal audit (9.2.2).\n- Real leadership, not just a signature (5.1).",
+     "ar": "توقع التركيز على:\n\n- دليل موثق على تقييم **التنوع الحيوي والتلوث والموارد** مع المناخ (4.1).\n- سجل **مخاطر وفرص** مبني من الجوانب والالتزامات والسياق (6.1.4) وخطة إجراءات بمؤشرات فعالية (6.1.5).\n- **تغيير حديث** خُطط له وفق 6.3.\n- **سجل جوانب** يعكس دورة الحياة (6.1.2).\n- ضبط **الموردين والمقاولين وناقلي النفايات** (8.1).\n- **أهداف مكتوبة** لكل تدقيق داخلي (9.2.2).\n- قيادة فعلية لا توقيع فقط (5.1)."
+    }
+   },
+   {
+    "id": "riskopp",
+    "q": {
+     "en": "How do environmental aspects (6.1.2) differ from risks and opportunities (6.1.4)?",
+     "ar": "ما الفرق بين الجوانب البيئية (6.1.2) والمخاطر والفرص (6.1.4)؟"
+    },
+    "a": {
+     "en": "- **Environmental aspect (6.1.2):** the organization's effect on the environment, such as an oil spill contaminating soil. Rated with significance criteria.\n- **Risks and opportunities (6.1.4):** the effect on the system and the business, drawn from aspects, obligations and context, including external conditions affecting the organization (such as floods stopping a site).\n- Then **6.1.5** plans actions for all of them and measures effectiveness.\n\nAn issue in the context does not automatically become a risk; it is evaluated first. Templates: [[tpl:aspects]], [[tpl:risks]] and [[tpl:opps]].",
+     "ar": "- **الجانب البيئي (6.1.2):** أثر المنظمة على البيئة، مثل انسكاب زيت يلوث التربة. يُقيَّم بمعايير أهمية.\n- **المخاطر والفرص (6.1.4):** الأثر على قدرة النظام والأعمال، وتُستخرج من الجوانب والالتزامات والسياق، ومنها أثر الظروف الخارجية على المنظمة (مثل سيول توقف موقعاً).\n- ثم **6.1.5** يخطط الإجراءات للجميع ويقيس فعاليتها.\n\nقضية في السياق لا تتحول تلقائياً إلى خطر؛ تُقيَّم أولاً. النماذج: [[tpl:aspects]] و[[tpl:risks]] و[[tpl:opps]]."
+    }
+   },
+   {
+    "id": "climate",
+    "q": {
+     "en": "What does assessing climate, biodiversity and environmental conditions in 4.1 mean?",
+     "ar": "ماذا يعني تقييم المناخ والتنوع الحيوي والظروف البيئية في 4.1؟"
+    },
+    "a": {
+     "en": "Assess each condition both ways: its effect on the organization (heat, floods, water scarcity) and the organization's effect on it (emissions, birds on lines). Record the decision and reasons even when it concludes 'not significant', and carry what is relevant into aspects, risks and opportunities or objectives. Template: [[tpl:conditions]].",
+     "ar": "قيّم كل ظرف في اتجاهين: أثره على المنظمة (حرارة، سيول، شح مياه) وأثر المنظمة عليه (انبعاثات، طيور على الخطوط). وثّق القرار ومبرراته حتى لو خلص إلى «غير مؤثر»، وانقل ما هو ذو صلة إلى الجوانب أو المخاطر والفرص أو الأهداف. النموذج: [[tpl:conditions]]."
+    }
+   },
+   {
+    "id": "lifecycle",
+    "q": {
+     "en": "Does life cycle perspective mean an LCA study?",
+     "ar": "هل منظور دورة الحياة يعني دراسة LCA؟"
+    },
+    "a": {
+     "en": "No. What is required is **thinking** about the life cycle stages you control or influence (purchasing, transport, execution, use, end of life) when determining aspects (6.1.2) and setting controls (8.1). An LCA to ISO 14040/14044 is optional.",
+     "ar": "لا. المطلوب **التفكير** في مراحل دورة الحياة التي تتحكم فيها أو تؤثر عليها: الشراء، النقل، التنفيذ، الاستخدام، نهاية العمر، عند تحديد الجوانب (6.1.2) ووضع الضوابط (8.1). دراسة LCA وفق ISO 14040/14044 اختيارية."
+    }
+   },
+   {
+    "id": "aspects",
+    "q": {
+     "en": "How do I identify environmental aspects and rate significance?",
+     "ar": "كيف أحدد الجوانب البيئية وأقيّم أهميتها؟"
+    },
+    "a": {
+     "en": "1. Break activities down by site and stage.\n2. For each: the aspect and impact under normal, abnormal and emergency conditions.\n3. Apply significance criteria (for example likelihood × severity, treating any aspect tied to a legal obligation as significant).\n4. Communicate significant aspects and carry them into controls, objectives and emergency plans.\n\nWorked template: [[tpl:aspects]].",
+     "ar": "1. قسّم الأنشطة لكل موقع ومرحلة.\n2. لكل نشاط: الجانب والأثر في الظروف العادية وغير الاعتيادية والطوارئ.\n3. طبّق معايير أهمية (مثل الاحتمال × الشدة، مع اعتبار أي جانب مرتبط بالتزام قانوني مهماً).\n4. أبلغ الجوانب المهمة وانقلها إلى الضوابط والأهداف والطوارئ.\n\nالنموذج مع مثال محسوب: [[tpl:aspects]]."
+    }
+   },
+   {
+    "id": "legal",
+    "q": {
+     "en": "How do I build the compliance obligations register?",
+     "ar": "كيف أبني سجل الالتزامات الامتثالية؟"
+    },
+    "a": {
+     "en": "- Include legal requirements (laws, regulations, permits) and voluntary ones you adopt (clients, community).\n- Link each obligation to the aspect, site and owner.\n- Set sources for tracking updates.\n- Turn each obligation into a control or a measurement, then evaluate compliance periodically (9.1.2).\n\nTemplate: [[tpl:legal]].",
+     "ar": "- اشمل المتطلبات القانونية (الأنظمة، اللوائح، التصاريح) والمتطلبات الطوعية التي تتبناها (العملاء، المجتمع).\n- اربط كل التزام بالجانب والموقع والمسؤول.\n- حدد مصادر رصد التحديثات.\n- ترجم كل التزام إلى ضابط أو قياس، ثم قيّم الامتثال دورياً (9.1.2).\n\nالنموذج: [[tpl:legal]]."
+    }
+   },
+   {
+    "id": "compeval",
+    "q": {
+     "en": "How does compliance evaluation differ from internal audit?",
+     "ar": "ما الفرق بين تقييم الامتثال والتدقيق الداخلي؟"
+    },
+    "a": {
+     "en": "- **Compliance evaluation (9.1.2):** a regular check of every obligation at a frequency set by its criticality, using several methods (inspections, measurements, permit reviews).\n- **Internal audit (9.2):** assesses conformity and effectiveness of the whole system, including whether compliance evaluation itself works.",
+     "ar": "- **تقييم الامتثال (9.1.2):** تحقق منتظم من كل التزام بتكرار حسب خطورته، بطرق متعددة (فحوص، قياسات، مراجعة تصاريح).\n- **التدقيق الداخلي (9.2):** تقييم مطابقة النظام كله وفعاليته، ويتحقق أيضاً من أن تقييم الامتثال نفسه يعمل."
+    }
+   },
+   {
+    "id": "emergency",
+    "q": {
+     "en": "What is the difference between an abnormal condition and an emergency?",
+     "ar": "ما الفرق بين الظرف غير الاعتيادي وحالة الطوارئ؟"
+    },
+    "a": {
+     "en": "- **Abnormal:** a foreseeable departure from normal operation (start-up, maintenance, standby generator), handled in the aspects register.\n- **Emergency:** an unplanned event with major impact (spill, fire, gas leak), needing a response plan, drills and review afterwards (8.2).\n\nTemplate: [[tpl:emergency]].",
+     "ar": "- **غير اعتيادي:** خروج متوقع عن التشغيل العادي (تشغيل أولي، صيانة، مولد احتياطي)، يُعالج في سجل الجوانب.\n- **طارئ:** حدث غير مخطط بأثر كبير (انسكاب، حريق، تسرب غاز)، يحتاج خطة استجابة وتمارين ومراجعة بعدها (8.2).\n\nالنموذج: [[tpl:emergency]]."
+    }
+   },
+   {
+    "id": "change",
+    "q": {
+     "en": "What does 6.3 planning of changes require?",
+     "ar": "ماذا يتطلب البند 6.3 تخطيط التغييرات؟"
+    },
+    "a": {
+     "en": "When the EMS needs to change, the change is carried out in a planned way. In practice: define a significant change (site, product, key supplier, process, structure), use a form that assesses environmental impact and new aspects and obligations, approve before implementation and review afterwards. Auditors will ask for a recent change and its plan.\n\nTemplate: [[tpl:change]].",
+     "ar": "عندما تحتاج تغييراً في النظام يُنفذ بطريقة مخططة. عملياً: عرّف التغيير المهم (موقع، منتج، مورد رئيسي، عملية، هيكل)، واستخدم نموذجاً يقيّم الأثر البيئي والجوانب والالتزامات الجديدة، واعتمد قبل التنفيذ، وراجع بعده. المدقق سيطلب تغييراً حديثاً وخطته.\n\nالنموذج: [[tpl:change]]."
+    }
+   },
+   {
+    "id": "suppliers",
+    "q": {
+     "en": "How do I control suppliers and contractors environmentally?",
+     "ar": "كيف أضبط الموردين والمقاولين بيئياً؟"
+    },
+    "a": {
+     "en": "Since 2026, 8.1 covers all **externally provided processes, products and services**: environmental clauses in contracts and POs, environmental supplier evaluation, verifying waste carriers' licences, inspecting contractors on site, and take-back and end-of-life clauses.\n\nTemplate: [[tpl:suppliers]].",
+     "ar": "منذ 2026 يشمل 8.1 كل **العمليات والمنتجات والخدمات المقدمة خارجياً**: اشتراطات بيئية في العقود وأوامر الشراء، وتقييم بيئي للموردين، والتحقق من رخص ناقلي النفايات، وتفتيش المقاولين في الموقع، وبنود استرجاع ونهاية عمر.\n\nالنموذج: [[tpl:suppliers]]."
+    }
+   },
+   {
+    "id": "docs",
+    "q": {
+     "en": "What documented information is required?",
+     "ar": "ما المعلومات الموثقة المطلوبة؟"
+    },
+    "a": {
+     "en": "The main items: scope, policy, risks and opportunities and processes, aspects and impacts with criteria and significant aspects, compliance obligations, objectives, competence evidence, communication evidence, operational controls as needed, emergency plans, monitoring and compliance evaluation results, audit programme and results, management review results, nonconformities and corrective actions. The 2026 wording: 'shall be available'.",
+     "ar": "أهمها: النطاق، السياسة، المخاطر والفرص والعمليات، الجوانب والآثار ومعايير الأهمية والجوانب المهمة، الالتزامات الامتثالية، الأهداف، أدلة الكفاءة، أدلة التواصل، الضوابط التشغيلية بالقدر اللازم، خطط الطوارئ، نتائج الرصد وتقييم الامتثال، برنامج التدقيق ونتائجه، نتائج مراجعة الإدارة، عدم المطابقة والإجراءات التصحيحية. الصياغة في 2026: «تكون متاحة»."
+    }
+   },
+   {
+    "id": "scope",
+    "q": {
+     "en": "Can I exclude a site or activity from the scope?",
+     "ar": "هل يمكنني استبعاد موقع أو نشاط من النطاق؟"
+    },
+    "a": {
+     "en": "You may set logical boundaries, but you cannot exclude an activity or site with significant aspects to make the scope look better, and everything inside the scope is included in the EMS. The scope is available to interested parties (4.3).",
+     "ar": "يمكن تحديد حدود منطقية، لكن لا يجوز استبعاد نشاط أو موقع ذي جوانب مهمة لتجميل النطاق، وكل ما داخل النطاق يُشمل في النظام. النطاق متاح للأطراف المعنية (4.3)."
+    }
+   },
+   {
+    "id": "policy",
+    "q": {
+     "en": "What must the environmental policy include?",
+     "ar": "ما الذي يجب أن تتضمنه السياسة البيئية؟"
+    },
+    "a": {
+     "en": "Appropriate to the context and nature of impacts, a framework for objectives, and three commitments: **protect the environment** (including pollution prevention and other relevant commitments), **fulfil compliance obligations**, and **continual improvement** to enhance environmental performance. Documented, communicated and available to interested parties (5.2).",
+     "ar": "مناسبة للسياق وطبيعة الآثار، وإطار للأهداف، وثلاثة التزامات: **حماية البيئة** (ومنها منع التلوث والتزامات أخرى ذات صلة)، و**الوفاء بالالتزامات الامتثالية**، و**التحسين المستمر** لتعزيز الأداء البيئي. موثقة ومبلغة ومتاحة للأطراف (5.2)."
+    }
+   },
+   {
+    "id": "objectives",
+    "q": {
+     "en": "How do I set good environmental objectives?",
+     "ar": "كيف أضع أهدافاً بيئية جيدة؟"
+    },
+    "a": {
+     "en": "Derive them from significant aspects, obligations, risks and opportunities; make them measurable with baseline, target and date; and give each a programme: what, who, when, resources, indicator (6.2). Template: [[tpl:objectives]].",
+     "ar": "اشتقها من الجوانب المهمة والالتزامات والمخاطر والفرص، واجعلها قابلة للقياس بقيمة حالية ومستهدفة وتاريخ، ولكل هدف برنامج: ماذا، من، متى، موارد، مؤشر (6.2). النموذج: [[tpl:objectives]]."
+    }
+   },
+   {
+    "id": "audit",
+    "q": {
+     "en": "What is new in internal audit?",
+     "ar": "ما الجديد في التدقيق الداخلي؟"
+    },
+    "a": {
+     "en": "In 2026 each audit must define its **objectives** alongside criteria and scope (9.2.2). The programme reflects environmental importance, changes and previous results. Template: [[tpl:audit]].",
+     "ar": "في 2026 يجب تحديد **أهداف** كل تدقيق إلى جانب المعايير والنطاق (9.2.2). والبرنامج يراعي الأهمية البيئية والتغييرات ونتائج التدقيقات السابقة. النموذج: [[tpl:audit]]."
+    }
+   },
+   {
+    "id": "mr",
+    "q": {
+     "en": "What are the management review inputs and results?",
+     "ar": "ما مدخلات ونتائج مراجعة الإدارة؟"
+    },
+    "a": {
+     "en": "Now three sub-clauses: 9.3.1 general, 9.3.2 inputs (previous actions; changes in issues, parties, obligations, aspects, risks and opportunities; objectives; environmental performance, compliance and audits; resources; complaints; improvement opportunities), 9.3.3 results (conclusions, decisions, changes, integration with business, strategic direction). Template: [[tpl:review]].",
+     "ar": "أصبحت ثلاثة بنود: 9.3.1 عام، 9.3.2 المدخلات (الإجراءات السابقة، التغيرات في القضايا والأطراف والالتزامات والجوانب والمخاطر والفرص، الأهداف، الأداء البيئي والامتثال والتدقيق، الموارد، الشكاوى، فرص التحسين)، 9.3.3 النتائج (الاستنتاجات، القرارات، التغييرات، الدمج مع الأعمال، الاتجاه الاستراتيجي). النموذج: [[tpl:review]]."
+    }
+   },
+   {
+    "id": "correction",
+    "q": {
+     "en": "Correction or corrective action?",
+     "ar": "ما الفرق بين التصحيح والإجراء التصحيحي؟"
+    },
+    "a": {
+     "en": "**Correction** deals with the effect immediately; in the environment it includes **mitigating the impact** (containing the spill, removing soil). **Corrective action** removes the cause (a bund and a contract clause) and is verified for effectiveness (10.2). Template: [[tpl:ncr]].",
+     "ar": "**التصحيح** يعالج الأثر فوراً، وفي البيئة يشمل **تخفيف الأثر البيئي** (احتواء الانسكاب ونقل التربة). **الإجراء التصحيحي** يزيل السبب (حوض احتواء واشتراط تعاقدي) ويُتحقق من فعاليته (10.2). النموذج: [[tpl:ncr]]."
+    }
+   },
+   {
+    "id": "certsteps",
+    "q": {
+     "en": "What are the steps to certification?",
+     "ar": "ما خطوات الحصول على الشهادة؟"
+    },
+    "a": {
+     "en": "1. Implement the system and collect records (at least 3 months).\n2. A full internal audit and a management review.\n3. Choose a certification body **accredited for the 2026 edition**.\n4. Stage 1: review of documents, readiness, aspects and obligations.\n5. Stage 2: assessment of implementation and effectiveness on site.\n6. Close nonconformities, then certification and annual surveillance.\n\nAfter 31 October 2027 new certificates are to 2026 only.",
+     "ar": "1. تطبيق النظام وجمع السجلات (3 أشهر على الأقل).\n2. تدقيق داخلي كامل ومراجعة إدارة.\n3. اختيار جهة منح **معتمدة على إصدار 2026**.\n4. المرحلة الأولى: مراجعة الوثائق والجاهزية والجوانب والالتزامات.\n5. المرحلة الثانية: تقييم التطبيق والفعالية في المواقع.\n6. إغلاق عدم المطابقات ثم إصدار الشهادة، فتدقيقات مراقبة سنوية.\n\nبعد 31 أكتوبر 2027 تكون الشهادات الجديدة وفق 2026 فقط."
+    }
+   },
+   {
+    "id": "ims",
+    "q": {
+     "en": "How do I integrate ISO 14001 with ISO 9001 and ISO 45001?",
+     "ar": "كيف أدمج ISO 14001 مع ISO 9001 وISO 45001؟"
+    },
+    "a": {
+     "en": "All share the harmonized structure, so combine: one context, one interested parties register, one risk and opportunity method, an integrated policy, combined internal audits and one management review. Keep the environment-specific items clear: aspects register, obligations, compliance evaluation and environmental emergencies.",
+     "ar": "كلها على الهيكل الموحد، فادمج: سياقاً واحداً، وسجل أطراف واحداً، ومنهجية مخاطر وفرص واحدة، وسياسة متكاملة، وتدقيقاً داخلياً مدمجاً، ومراجعة إدارة واحدة. أبقِ ما هو خاص بالبيئة واضحاً: سجل الجوانب، والالتزامات، وتقييم الامتثال، والطوارئ البيئية."
+    }
+   },
+   {
+    "id": "start",
+    "q": {
+     "en": "Where do I start implementing an EMS?",
+     "ar": "من أين أبدأ تطبيق النظام البيئي؟"
+    },
+    "a": {
+     "en": "A practical order:\n\n1. **Management decision**, a sponsor, a lead and a draft scope (5.1, 4.3).\n2. **Context and environmental conditions**, interested parties (4.1, 4.2).\n3. **Aspects register** with a life cycle perspective and the **obligations register** (6.1.2, 6.1.3).\n4. **Risks and opportunities** and the action plan (6.1.4, 6.1.5).\n5. **Policy and objectives** (5.2, 6.2).\n6. **Operational controls, emergencies** and providers (8.1, 8.2).\n7. **Competence, awareness, communication, documents** (7).\n8. **Monitoring and compliance evaluation**, then internal audit, management review and certification.\n\nStart with the [[tab:assess]] for a tailored plan in the [[tab:report]].",
+     "ar": "ترتيب عملي:\n\n1. **قرار الإدارة** وراعٍ ومسؤول ونطاق أولي (5.1 و4.3).\n2. **السياق والظروف البيئية** والأطراف المعنية (4.1 و4.2).\n3. **سجل الجوانب** بمنظور دورة الحياة و**سجل الالتزامات** (6.1.2 و6.1.3).\n4. **المخاطر والفرص** وخطة الإجراءات (6.1.4 و6.1.5).\n5. **السياسة والأهداف** (5.2 و6.2).\n6. **الضوابط التشغيلية والطوارئ** والموردون (8.1 و8.2).\n7. **الكفاءة والتوعية والتواصل والوثائق** (7).\n8. **الرصد وتقييم الامتثال**، ثم تدقيق داخلي ومراجعة إدارة والشهادة.\n\nابدأ بـ [[tab:assess]] لتحصل على خطة مخصصة في [[tab:report]]."
+    }
+   },
+   {
+    "id": "howuse",
+    "q": {
+     "en": "How do I use this toolkit?",
+     "ar": "كيف أستخدم هذه الأداة؟"
+    },
+    "a": {
+     "en": "Suggested path:\n\n1. [[tab:assess]]: answer 40 questions and choose your sector and business drivers.\n2. [[tab:report]]: readiness score, an action plan with a timeline, recommended standards, risks and opportunities.\n3. [[tab:templates]]: 16 editable templates with worked examples.\n4. [[tab:checklist]]: questions and evidence for every sub-clause, plus an audit report.\n5. For reference: [[tab:clauses]], [[tab:changes]], [[tab:terms]] and [[tab:transition]].\n\nAnd ask me here about any clause or step.",
+     "ar": "المسار المقترح:\n\n1. [[tab:assess]]: أجب عن 40 سؤالاً، واختر القطاع ودوافع الأعمال.\n2. [[tab:report]]: نسبة الجاهزية، وخطة عمل بجدول زمني، وتوصيات بمواصفات أخرى، ومخاطر وفرص.\n3. [[tab:templates]]: 16 نموذجاً قابلاً للتعديل بأمثلة جاهزة.\n4. [[tab:checklist]]: أسئلة وأدلة لكل بند فرعي، وتقرير تدقيق.\n5. للمرجع: [[tab:clauses]] و[[tab:changes]] و[[tab:terms]] و[[tab:transition]].\n\nواسألني هنا عن أي بند أو خطوة."
+    }
+   },
+   {
+    "id": "data",
+    "q": {
+     "en": "Where is my data saved?",
+     "ar": "أين تُحفظ بياناتي؟"
+    },
+    "a": {
+     "en": "- Your answers and templates are saved **in this browser only**, on your device, and are not sent to any server.\n- Another device or browser starts empty, and clearing browser data erases them.\n- To keep a copy, download the reports and CSV files from the tabs.",
+     "ar": "- إجاباتك ونماذجك تُحفظ **في هذا المتصفح فقط** على جهازك، ولا تُرسل إلى أي خادم.\n- على جهاز أو متصفح آخر تبدأ ببيانات فارغة، ومسح بيانات المتصفح يحذفها.\n- للاحتفاظ بنسخة: نزّل التقارير وملفات CSV من التبويبات."
+    }
+   },
+   {
+    "id": "export",
+    "q": {
+     "en": "How do I download reports and templates?",
+     "ar": "كيف أنزّل التقارير والنماذج؟"
+    },
+    "a": {
+     "en": "- [[tab:report]]: readiness report (HTML), action plan (CSV), and recommendations, risks and opportunities (CSV).\n- [[tab:checklist]]: audit report (HTML) and findings (CSV).\n- [[tab:templates]]: each template as a CSV that opens in Excel.",
+     "ar": "- [[tab:report]]: تقرير الجاهزية (HTML)، وخطة العمل (CSV)، والتوصيات والمخاطر والفرص (CSV).\n- [[tab:checklist]]: تقرير التدقيق (HTML) والنتائج (CSV).\n- [[tab:templates]]: كل نموذج كملف CSV يُفتح في Excel."
+    }
+   },
+   {
+    "id": "official",
+    "q": {
+     "en": "Does the toolkit contain the official text of the standard?",
+     "ar": "هل الأداة تحتوي النص الرسمي للمواصفة؟"
+    },
+    "a": {
+     "en": "No. The toolkit is an **explanatory commentary** in its own words, not a translation of the standard and not a substitute for it. The official text is ISO's copyright and is bought from ISO or your national body, such as SASO in Saudi Arabia or EOS in Egypt.\n\nStructure and official sources are in [[tab:standard]].",
+     "ar": "لا. الأداة **شرح تفسيري** بصياغة مختلفة، وليست ترجمة للمواصفة ولا بديلاً عنها. النص الرسمي حقوقه محفوظة لـ ISO، ويُشترى من ISO أو من الجهة الوطنية مثل SASO في السعودية وEOS في مصر.\n\nهيكل المواصفة ومصادر النسخة الرسمية في [[tab:standard]]."
+    }
+   },
+   {
+    "id": "contact",
+    "q": {
+     "en": "How do I contact مدثر سلامه for advice?",
+     "ar": "كيف أتواصل مع مدثر سلامه للاستشارة؟"
+    },
+    "a": {
+     "en": "Email **مدثر سلامه** at: moddathersalama.eng@gmail.com\n\nServices: gap analysis, ISO 14001:2026 and integrated system implementation, transition from 2015, internal audits, training and certification readiness.\n\nThe \"Email me\" button on the home tab attaches your readiness summary automatically.",
+     "ar": "راسل **مدثر سلامه** على: moddathersalama.eng@gmail.com\n\nالخدمات: تحليل الفجوات، وتطبيق ISO 14001:2026 والأنظمة المتكاملة البيئية، والانتقال من 2015، والتدقيق الداخلي، والتدريب، والتجهيز للشهادة.\n\nزر \"راسلني بالبريد\" في الصفحة الرئيسية يرفق ملخص نتيجة تقييمك تلقائياً."
+    }
+   }
+  ],
+  "templates": [
+   {
+    "id": "context",
+    "ref": "4.1",
+    "title": {
+     "en": "Environmental context analysis (PESTLE)",
+     "ar": "تحليل السياق البيئي (PESTLE)"
+    },
+    "purpose": {
+     "en": "Sorts the external and internal issues that affect the EMS's ability to achieve its outcomes, feeding the aspects register and the risk and opportunity register.",
+     "ar": "يرتب القضايا الخارجية والداخلية المؤثرة على قدرة النظام البيئي على تحقيق نتائجه، ويغذي سجل الجوانب وسجل المخاطر والفرص."
+    },
+    "tips": [
+     {
+      "en": "Run it as a workshop with top management and project managers.",
+      "ar": "اعقده كورشة مع الإدارة العليا ومديري المشاريع."
+     },
+     {
+      "en": "Write each issue as a specific fact and state its effect on the organization, or the organization's effect on it.",
+      "ar": "اكتب كل قضية كحقيقة محددة، واذكر أثرها على المنظمة أو أثر المنظمة عليها."
+     },
+     {
+      "en": "Link every significant issue to a reference in the aspects or risk register.",
+      "ar": "اربط كل قضية مهمة برمز في سجل الجوانب أو المخاطر."
+     }
+    ]
+   },
+   {
+    "id": "conditions",
+    "ref": "4.1",
+    "title": {
+     "en": "Environmental conditions and climate decision",
+     "ar": "تقييم الظروف البيئية وقرار المناخ"
+    },
+    "purpose": {
+     "en": "The 2026 edition names climate change, biodiversity and ecosystem health, pollution levels and natural resource availability. Assess each in both directions and record the decision.",
+     "ar": "إصدار 2026 يسمي صراحة: تغيّر المناخ، التنوع الحيوي وصحة النظم البيئية، مستويات التلوث، توافر الموارد الطبيعية. قيّم كل ظرف في الاتجاهين ووثّق القرار."
+    },
+    "tips": [
+     {
+      "en": "Assess the condition's effect on you (heat on work) and your effect on it (lines on birds).",
+      "ar": "قيّم أثر الظرف على المنظمة (مثل الحرارة على العمل) وأثر المنظمة عليه (مثل الخطوط على الطيور)."
+     },
+     {
+      "en": "Record the decision with a date, an approver and reasons, even when 'not significant'.",
+      "ar": "وثّق القرار بتاريخ ومعتمِد ومبررات، حتى لو كان «غير مؤثر»."
+     },
+     {
+      "en": "Carry what is relevant into aspects, risks and opportunities, or objectives.",
+      "ar": "انقل ما هو ذو صلة إلى الجوانب أو المخاطر والفرص أو الأهداف."
+     }
+    ]
+   },
+   {
+    "id": "parties",
+    "ref": "4.2",
+    "title": {
+     "en": "Interested parties and obligations register",
+     "ar": "سجل الأطراف المعنية والتزاماتها"
+    },
+    "purpose": {
+     "en": "Identifies relevant parties, their requirements and which became compliance obligations.",
+     "ar": "يحدد الأطراف ذات الصلة ومتطلباتها وأيها أصبح التزاماً امتثالياً."
+    },
+    "tips": [
+     {
+      "en": "Include regulators, the local community and contractors.",
+      "ar": "اشمل الجهات التنظيمية والمجتمع المحلي والمقاولين."
+     },
+     {
+      "en": "State the source of each requirement.",
+      "ar": "اذكر مصدر كل متطلب."
+     },
+     {
+      "en": "Whatever becomes an obligation moves into the obligations register.",
+      "ar": "ما يصبح التزاماً يُنقل إلى سجل الالتزامات."
+     }
+    ]
+   },
+   {
+    "id": "aspects",
+    "ref": "6.1.2",
+    "title": {
+     "en": "Environmental aspects and impacts register",
+     "ar": "سجل الجوانب والآثار البيئية"
+    },
+    "purpose": {
+     "en": "Identifies aspects for each activity and life cycle stage under normal, abnormal and emergency conditions, and rates significance as likelihood × severity.",
+     "ar": "يحدد الجوانب لكل نشاط ومرحلة من دورة الحياة، في الظروف العادية وغير الاعتيادية والطوارئ، ويقيّم أهميتها بالاحتمال × الشدة."
+    },
+    "tips": [
+     {
+      "en": "A score of 15 or more = significant, needing a control, objective or emergency plan; any aspect tied to a legal obligation is treated as significant.",
+      "ar": "الدرجة 15 فأكثر = جانب مهم يحتاج ضابطاً أو هدفاً أو خطة طوارئ؛ وأي جانب مرتبط بالتزام قانوني يُعد مهماً."
+     },
+     {
+      "en": "State the life cycle stage and the condition (normal, abnormal, emergency).",
+      "ar": "اذكر مرحلة دورة الحياة والظرف (عادي، غير اعتيادي، طارئ)."
+     },
+     {
+      "en": "Update the register on every change (6.3).",
+      "ar": "حدّث السجل عند كل تغيير (6.3)."
+     }
+    ]
+   },
+   {
+    "id": "legal",
+    "ref": "6.1.3 / 9.1.2",
+    "title": {
+     "en": "Compliance obligations register and evaluation",
+     "ar": "سجل الالتزامات الامتثالية وتقييم الامتثال"
+    },
+    "purpose": {
+     "en": "Links each legal or voluntary obligation to the aspect, site and owner, and records the latest compliance evaluation.",
+     "ar": "يربط كل التزام قانوني أو طوعي بالجانب والموقع والمسؤول، ويسجل نتيجة آخر تقييم امتثال."
+    },
+    "tips": [
+     {
+      "en": "Include permits, licences and voluntary customer requirements.",
+      "ar": "اشمل التصاريح والرخص ومتطلبات العملاء الطوعية."
+     },
+     {
+      "en": "Set evaluation frequency by the obligation's criticality.",
+      "ar": "حدّد تكرار التقييم حسب خطورة الالتزام."
+     },
+     {
+      "en": "Any 'non-compliant' opens a corrective action immediately.",
+      "ar": "أي «غير ممتثل» يفتح إجراءً تصحيحياً فوراً."
+     }
+    ]
+   },
+   {
+    "id": "risks",
+    "ref": "6.1.4",
+    "title": {
+     "en": "Risk register (6.1.4)",
+     "ar": "سجل المخاطر (6.1.4)"
+    },
+    "purpose": {
+     "en": "Risks to the system's intended outcomes, drawn from context, interested parties, aspects and obligations, including external conditions affecting the organization.",
+     "ar": "المخاطر التي تهدد قدرة النظام على تحقيق نتائجه، مستخرجة من السياق والأطراف والجوانب والالتزامات، ومنها أثر الظروف الخارجية على المنظمة."
+    },
+    "tips": [
+     {
+      "en": "A score of 15 or more is high and needs an action in 6.1.5.",
+      "ar": "الدرجة 15 فأكثر = مرتفع ويحتاج إجراءً في 6.1.5."
+     },
+     {
+      "en": "Do not duplicate the aspects register: focus on the effect on the system and the business.",
+      "ar": "لا تكرر سجل الجوانب هنا: ركز على الأثر على النظام والأعمال."
+     },
+     {
+      "en": "Evaluate effectiveness after the action.",
+      "ar": "قيّم الفعالية بعد تنفيذ الإجراء."
+     }
+    ]
+   },
+   {
+    "id": "opps",
+    "ref": "6.1.4",
+    "title": {
+     "en": "Opportunity register (6.1.4)",
+     "ar": "سجل الفرص (6.1.4)"
+    },
+    "purpose": {
+     "en": "Environmental opportunities that enhance outcomes: lower cost, new markets, competitive edge.",
+     "ar": "الفرص البيئية التي تعزز النتائج: خفض تكلفة، أسواق جديدة، ميزة تنافسية."
+    },
+    "tips": [
+     {
+      "en": "Rate benefit × feasibility; 15 or more = pursue.",
+      "ar": "قيّم بالمنفعة × الجدوى؛ 15 فأكثر = انطلق."
+     },
+     {
+      "en": "Every approved opportunity needs a plan and an effectiveness indicator.",
+      "ar": "كل فرصة معتمدة تحتاج خطة ومؤشر فعالية."
+     },
+     {
+      "en": "Review opportunities at management review.",
+      "ar": "راجع الفرص في مراجعة الإدارة."
+     }
+    ]
+   },
+   {
+    "id": "objectives",
+    "ref": "6.2",
+    "title": {
+     "en": "Environmental objectives and programmes",
+     "ar": "الأهداف البيئية وبرامجها"
+    },
+    "purpose": {
+     "en": "For each objective: baseline and target, actions, resources, owner, date and indicator.",
+     "ar": "لكل هدف: القيمة الحالية والمستهدفة، والإجراءات، والموارد، والمسؤول، والموعد، والمؤشر."
+    },
+    "tips": [
+     {
+      "en": "Derive objectives from significant aspects, risks and opportunities.",
+      "ar": "اشتق الأهداف من الجوانب المهمة والمخاطر والفرص."
+     },
+     {
+      "en": "The indicator must be measurable and tracked monthly.",
+      "ar": "المؤشر يجب أن يكون قابلاً للقياس ويُتابع شهرياً."
+     },
+     {
+      "en": "Update the status at every review.",
+      "ar": "حدّث الحالة في كل مراجعة."
+     }
+    ]
+   },
+   {
+    "id": "change",
+    "ref": "6.3",
+    "title": {
+     "en": "Change plan (6.3)",
+     "ar": "خطة تغيير (6.3)"
+    },
+    "purpose": {
+     "en": "Ensures EMS changes are carried out in a planned way, with environmental impact assessed and registers updated.",
+     "ar": "تضمن تنفيذ تغييرات النظام بطريقة مخططة مع تقييم أثرها البيئي وتحديث السجلات."
+    },
+    "tips": [
+     {
+      "en": "Define a significant change: site, product, key supplier, process, structure.",
+      "ar": "عرّف ما يُعد تغييراً مهماً: موقع، منتج، مورد رئيسي، عملية، هيكل."
+     },
+     {
+      "en": "Assess new aspects and obligations before approval.",
+      "ar": "قيّم الجوانب والالتزامات الجديدة قبل الاعتماد."
+     },
+     {
+      "en": "Review results after implementation.",
+      "ar": "راجع النتائج بعد التنفيذ."
+     }
+    ]
+   },
+   {
+    "id": "competence",
+    "ref": "7.2 / 7.3",
+    "title": {
+     "en": "Competence and awareness matrix",
+     "ar": "مصفوفة الكفاءة والوعي البيئي"
+    },
+    "purpose": {
+     "en": "Defines competence needed for roles with environmental impact, the gap, the action and effectiveness.",
+     "ar": "تحدد الكفاءة المطلوبة للأدوار ذات الأثر البيئي، والفجوة، والإجراء، وتقييم الفعالية."
+    },
+    "tips": [
+     {
+      "en": "Start with roles linked to significant aspects.",
+      "ar": "ابدأ بالأدوار المرتبطة بالجوانب المهمة."
+     },
+     {
+      "en": "A certificate alone is not proof: add a practical assessment.",
+      "ar": "الشهادة وحدها ليست دليل كفاءة: أضف تقييماً عملياً."
+     },
+     {
+      "en": "Include subcontractors.",
+      "ar": "اشمل المقاولين الباطن."
+     }
+    ]
+   },
+   {
+    "id": "suppliers",
+    "ref": "8.1",
+    "title": {
+     "en": "Environmental evaluation of external providers",
+     "ar": "التقييم البيئي لما يُقدَّم خارجياً"
+    },
+    "purpose": {
+     "en": "Rates suppliers, contractors and waste carriers environmentally, reflecting 8.1's widening to all externally provided processes, products and services.",
+     "ar": "يقيّم الموردين والمقاولين وناقلي النفايات بيئياً، في ضوء توسيع 8.1 إلى كل العمليات والمنتجات والخدمات المقدمة خارجياً."
+    },
+    "tips": [
+     {
+      "en": "Weights: compliance 35%, environmental performance 25%, product/life cycle 15%, on-site controls 15%, responsiveness 10%.",
+      "ar": "الأوزان: الامتثال 35%، الأداء البيئي 25%، المنتج/دورة الحياة 15%، الضوابط في الموقع 15%، الاستجابة 10%."
+     },
+     {
+      "en": "80% or more = approved, 60–79 = conditional, below 60 = not approved.",
+      "ar": "80% فأكثر = معتمد، 60–79 = مشروط، أقل من 60 = غير معتمد."
+     },
+     {
+      "en": "Waste carriers: verify the licence before any scoring.",
+      "ar": "ناقلو النفايات: تحقق من الرخصة قبل أي تقييم."
+     }
+    ]
+   },
+   {
+    "id": "emergency",
+    "ref": "8.2",
+    "title": {
+     "en": "Environmental emergency plan and drill log",
+     "ar": "خطة الطوارئ البيئية وسجل التمارين"
+    },
+    "purpose": {
+     "en": "For each scenario: prevention and response actions, equipment, owner, and the last drill with its result.",
+     "ar": "لكل سيناريو: إجراءات المنع والاستجابة، والمعدات، والمسؤول، وآخر تمرين ونتيجته."
+    },
+    "tips": [
+     {
+      "en": "Take scenarios from the aspects register (condition: emergency).",
+      "ar": "استخرج السيناريوهات من سجل الجوانب (الظرف: طارئ)."
+     },
+     {
+      "en": "Test the plan regularly and record lessons.",
+      "ar": "اختبر الخطة دورياً وسجل الدروس."
+     },
+     {
+      "en": "Review the plan after every incident or drill.",
+      "ar": "راجع الخطة بعد كل حادث أو تمرين."
+     }
+    ]
+   },
+   {
+    "id": "monitoring",
+    "ref": "9.1.1",
+    "title": {
+     "en": "Environmental monitoring and measurement plan",
+     "ar": "خطة الرصد والقياس البيئي"
+    },
+    "purpose": {
+     "en": "What is monitored, method, frequency, criterion, owner and latest result.",
+     "ar": "ما يُرصد، والطريقة، والتكرار، والمعيار، والمسؤول، وآخر نتيجة."
+    },
+    "tips": [
+     {
+      "en": "Cover significant aspects, obligations and objectives.",
+      "ar": "غطِّ الجوانب المهمة والالتزامات والأهداف."
+     },
+     {
+      "en": "Use calibrated or verified instruments.",
+      "ar": "استخدم أجهزة معايرة أو محققة."
+     },
+     {
+      "en": "Analyse the trend monthly, not just the value.",
+      "ar": "حلل الاتجاه شهرياً وليس القيمة فقط."
+     }
+    ]
+   },
+   {
+    "id": "ncr",
+    "ref": "10.2",
+    "title": {
+     "en": "Nonconformity and corrective action",
+     "ar": "عدم المطابقة والإجراء التصحيحي"
+    },
+    "purpose": {
+     "en": "Records the incident or nonconformity, correction and impact mitigation, root cause, action and verification.",
+     "ar": "يسجل الحادث أو عدم المطابقة، والتصحيح وتخفيف الأثر، والسبب الجذري، والإجراء، والتحقق من الفعالية."
+    },
+    "tips": [
+     {
+      "en": "Mitigate the environmental impact immediately, before analysis.",
+      "ar": "خفف الأثر البيئي فوراً قبل التحليل."
+     },
+     {
+      "en": "Look for similar cases on other sites.",
+      "ar": "ابحث عن حالات مشابهة في المواقع الأخرى."
+     },
+     {
+      "en": "Do not close without evidence of effectiveness.",
+      "ar": "لا تغلق دون دليل فعالية."
+     }
+    ]
+   },
+   {
+    "id": "audit",
+    "ref": "9.2",
+    "title": {
+     "en": "Internal audit programme and plans",
+     "ar": "برنامج التدقيق الداخلي وخططه"
+    },
+    "purpose": {
+     "en": "For each audit: objective (new in 2026), criteria, scope, date and auditor.",
+     "ar": "لكل تدقيق: الهدف (متطلب جديد في 2026)، والمعايير، والنطاق، والموعد، والمدقق."
+    },
+    "tips": [
+     {
+      "en": "Write the objective so it can be verified.",
+      "ar": "اكتب الهدف بصيغة قابلة للتحقق."
+     },
+     {
+      "en": "Focus frequency on sites with significant aspects and changes.",
+      "ar": "ركّز التكرار على المواقع ذات الجوانب المهمة والتغييرات."
+     },
+     {
+      "en": "Auditors do not audit their own work.",
+      "ar": "المدقق لا يدقق عمله."
+     }
+    ]
+   },
+   {
+    "id": "review",
+    "ref": "9.3",
+    "title": {
+     "en": "Management review: inputs and results",
+     "ar": "مراجعة الإدارة: المدخلات والنتائج"
+    },
+    "purpose": {
+     "en": "A template covering 9.3.2 inputs and 9.3.3 results with decisions and owners.",
+     "ar": "قالب يغطي مدخلات 9.3.2 ونتائج 9.3.3 مع القرارات والمسؤولين."
+    },
+    "tips": [
+     {
+      "en": "Prepare a presentation for each input in advance.",
+      "ar": "أعد العروض مسبقاً لكل مدخل."
+     },
+     {
+      "en": "Give every decision an owner and a date.",
+      "ar": "اربط كل قرار بمسؤول وموعد."
+     },
+     {
+      "en": "Start with actions from the previous review.",
+      "ar": "تابع قرارات المراجعة السابقة أولاً."
+     }
+    ]
+   }
+  ],
+  "official": [
+   {
+    "url": "https://www.iso.org/iso-14001-environmental-management.html",
+    "name": {
+     "ar": "المنظمة الدولية للتقييس ISO",
+     "en": "ISO — International Organization for Standardization"
+    },
+    "note": {
+     "ar": "صفحة عائلة ISO 14001 ومتجر شراء النسخة الرسمية",
+     "en": "The ISO 14001 family page and the store for the official copy"
+    }
+   },
+   {
+    "url": "https://www.saso.gov.sa",
+    "name": {
+     "ar": "الهيئة السعودية للمواصفات والمقاييس والجودة",
+     "en": "Saudi Standards, Metrology and Quality Org. (SASO)"
+    },
+    "note": {
+     "ar": "النسخة الوطنية المعتمدة في المملكة العربية السعودية",
+     "en": "The national adoption in Saudi Arabia"
+    }
+   },
+   {
+    "url": "https://www.eos.org.eg",
+    "name": {
+     "ar": "الهيئة المصرية العامة للمواصفات والجودة",
+     "en": "Egyptian Organization for Standardization (EOS)"
+    },
+    "note": {
+     "ar": "النسخة الوطنية المعتمدة في مصر",
+     "en": "The national adoption in Egypt"
+    }
+   },
+   {
+    "url": "https://global-aci.org",
+    "name": {
+     "ar": "مؤسسة التعاون العالمي للاعتماد Global ACI (سابقاً IAF وILAC)",
+     "en": "Global Accreditation Cooperation (Global ACI) — formerly IAF and ILAC"
+    },
+    "note": {
+     "ar": "أصدرت متطلبات الانتقال الرسمية لـ ISO 14001:2026",
+     "en": "Issued the official transition requirements for ISO 14001:2026"
+    }
+   }
+  ],
+  "readiness_questions": 40,
+  "competencies": [
+   "ISO-01",
+   "ISO-02",
+   "CMP-01",
+   "AUD-02"
+  ],
+  "ecosystem": "iso"
+ }
+}

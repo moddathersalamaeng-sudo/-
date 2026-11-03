@@ -1,0 +1,1669 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-FMEA",
+  "slug": "fmea",
+  "kind": "method",
+  "module": "fmea",
+  "title": {
+   "en": "Failure Mode and Effects Analysis (FMEA)",
+   "ar": "تحليل أنماط الفشل وآثارها (FMEA)"
+  },
+  "subtitle": {
+   "en": "Method tool: a structured team look at failure modes before they happen",
+   "ar": "أداة منهجية: نظرة فريق منظمة إلى أنماط الفشل قبل وقوعها"
+  },
+  "lede": {
+   "en": "For a team to look at the process (or the design) step by step and ask: how could it fail? What would the customer see if it did? What could cause it? What prevents or detects it today? Then to act on the most severe first, with owned and dated actions, rate again with evidence, and keep the study alive.",
+   "ar": "أن ينظر فريق إلى العملية (أو التصميم) خطوة خطوة ويسأل: كيف يمكن أن تفشل؟ وماذا يرى العميل إن فشلت؟ وما الذي قد يسبب ذلك؟ وما الذي يمنعه أو يكشفه الآن؟ ثم يعالج الأخطر أولاً بإجراءات بمالك وتاريخ، ويقيّم من جديد بالدليل، ويُبقي الدراسة حية."
+  },
+  "author": "مدثر سلامه",
+  "note": {
+   "en": "FMEA is a method, not a standard or a requirement. ISO 10009:2024 reviews it in subclause 7.3 (guidance, not requirements) and names it as an input to the control plan in 6.3. ISO 9001:2026 asks the organization to determine, analyse and evaluate risks and to plan actions to address them (6.1.2) without imposing a method, and Annex A.6.1.2 explains that risk-based thinking does not imply formal risk management. The requirements the method serves: addressing risks (6.1), controlling processes (8.1 and 8.5.1, including preventing human error), control of changes (8.5.6), evaluating the effectiveness of actions on risks (9.1.3), corrective action (10.2.1) and continual improvement (10.1).",
+   "ar": "FMEA منهج، وليس مواصفة ولا متطلباً. تراجعه ISO 10009:2024 في البند 7.3 (إرشادات لا متطلبات)، وتذكره مدخلاً لخطة الضبط في البند 6.3. وتطلب ISO 9001:2026 تحديد المخاطر وتحليلها وتقييمها والتخطيط لمعالجتها (6.1.2) دون أن تفرض طريقة، وتوضح في الملحق A.6.1.2 أن التفكير القائم على المخاطر لا يعني بالضرورة إدارة مخاطر رسمية. والمتطلبات التي يخدمها المنهج: معالجة المخاطر (6.1)، وضبط العمليات (8.1 و8.5.1 بما فيه منع الخطأ البشري)، وضبط التغييرات (8.5.6)، وتقييم فعالية إجراءات المخاطر (9.1.3)، والإجراء التصحيحي (10.2.1)، والتحسين المستمر (10.1)."
+  },
+  "who": {
+   "en": "Quality and process engineers, process owners, HSE leads, design and development teams, anyone planning a new process or a change, and anyone who wants to stop a failure from happening again.",
+   "ar": "مهندسو الجودة والعمليات، ومالكو العمليات، ومسؤولو الصحة والسلامة، وفرق التصميم والتطوير، ومن يخطط لعملية جديدة أو تغيير، ومن يريد منع تكرار فشل وقع."
+  },
+  "roles": [
+   {
+    "name": {
+     "en": "Facilitator",
+     "ar": "الميسر"
+    },
+    "text": {
+     "en": "Prepares the structure and the scales, runs the discussion, and stops hurried ratings and compound wording.",
+     "ar": "يحضّر البنية والمقاييس، ويدير النقاش، ويمنع التقييم المتعجل والصياغات المركبة."
+    }
+   },
+   {
+    "name": {
+     "en": "Process owner",
+     "ar": "مالك العملية"
+    },
+    "text": {
+     "en": "Owns the actions after the study and asks for a review at each change or new failure.",
+     "ar": "يملك الإجراءات بعد الدراسة، ويطلب مراجعتها عند كل تغيير أو فشل جديد."
+    }
+   },
+   {
+    "name": {
+     "en": "The people who do the work",
+     "ar": "من يؤدي العمل"
+    },
+    "text": {
+     "en": "They know how the step really fails, and which controls exist in practice, not only on paper.",
+     "ar": "يعرفون كيف تفشل الخطوة فعلاً، وما الضوابط الموجودة حقاً لا على الورق."
+    }
+   },
+   {
+    "name": {
+     "en": "Quality or HSE",
+     "ar": "الجودة أو السلامة"
+    },
+    "text": {
+     "en": "Bring the occurrence data and past failures, and check the severity rule.",
+     "ar": "يقدمون بيانات الحدوث والأعطال السابقة، ويتحققون من قاعدة الخطورة."
+    }
+   },
+   {
+    "name": {
+     "en": "The customer or the next step",
+     "ar": "العميل أو الخطوة التالية"
+    },
+    "text": {
+     "en": "Describes the effect as seen from their side, so severity is rated on the real effect.",
+     "ar": "يصف الأثر كما يُرى من جهته، فتُقيَّم الخطورة على الأثر الحقيقي."
+    }
+   }
+  ],
+  "steps": [
+   {
+    "no": "1",
+    "title": {
+     "en": "Scope and team",
+     "ar": "النطاق والفريق"
+    },
+    "text": {
+     "en": "Where the process starts and stops, and who sits at the table.",
+     "ar": "أين تبدأ العملية وأين تنتهي، ومن يجلس حول الطاولة."
+    },
+    "ref": "7.3"
+   },
+   {
+    "no": "2",
+    "title": {
+     "en": "Written scales",
+     "ar": "المقاييس المكتوبة"
+    },
+    "text": {
+     "en": "A meaning for each level, before the first rating.",
+     "ar": "معنى لكل درجة، قبل أول تقييم."
+    },
+    "ref": "GD-2"
+   },
+   {
+    "no": "3",
+    "title": {
+     "en": "Process structure",
+     "ar": "بنية العملية"
+    },
+    "text": {
+     "en": "The steps in order, before the failure modes.",
+     "ar": "الخطوات بالترتيب قبل أنماط الفشل."
+    },
+    "ref": "GD-1"
+   },
+   {
+    "no": "4",
+    "title": {
+     "en": "Mode, effect, cause",
+     "ar": "النمط والأثر والسبب"
+    },
+    "text": {
+     "en": "A single mode, an effect from the customer's side.",
+     "ar": "نمط منفرد، وأثر من جهة العميل."
+    },
+    "ref": "GD-3"
+   },
+   {
+    "no": "5",
+    "title": {
+     "en": "Prevention and detection controls",
+     "ar": "ضوابط المنع والكشف"
+    },
+    "text": {
+     "en": "What lowers occurrence and what finds it before the customer.",
+     "ar": "ما يخفض الحدوث وما يكشف قبل العميل."
+    },
+    "ref": "8.5.1 c"
+   },
+   {
+    "no": "6",
+    "title": {
+     "en": "Severity first",
+     "ar": "الخطورة أولاً"
+    },
+    "text": {
+     "en": "Action priority by a rule, not by the priority number alone.",
+     "ar": "أولوية الإجراء بقاعدة، لا برقم الأولوية وحده."
+    },
+    "ref": "GD-5"
+   },
+   {
+    "no": "7",
+    "title": {
+     "en": "Actions",
+     "ar": "الإجراءات"
+    },
+    "text": {
+     "en": "An owner and a due date for every action.",
+     "ar": "مالك وموعد لكل إجراء."
+    },
+    "ref": "6.1.2"
+   },
+   {
+    "no": "8",
+    "title": {
+     "en": "Re-rating with evidence",
+     "ar": "إعادة التقييم بالدليل"
+    },
+    "text": {
+     "en": "The ratings again after the action.",
+     "ar": "الدرجات من جديد بعد التنفيذ."
+    },
+    "ref": "9.1.3"
+   },
+   {
+    "no": "9",
+    "title": {
+     "en": "A living document",
+     "ar": "وثيقة حية"
+    },
+    "text": {
+     "en": "Reviewed after a change, a failure or an audit.",
+     "ar": "مراجعة بعد التغيير والفشل والتدقيق."
+    },
+    "ref": "8.5.6"
+   },
+   {
+    "no": "10",
+    "title": {
+     "en": "Into the control plan",
+     "ar": "إلى خطة الضبط"
+    },
+    "text": {
+     "en": "The results feed the control plans and procedures.",
+     "ar": "النتائج تدخل خطط الضبط والإجراءات."
+    },
+    "ref": "6.3"
+   }
+  ],
+  "related": [
+   {
+    "code": "DMAIC",
+    "name": {
+     "en": "DMAIC improvement project",
+     "ar": "مشروع التحسين بمنهج DMAIC"
+    },
+    "text": {
+     "en": "A study starts from a project's SIPOC steps and proved causes (read-only), and the project lists the studies that name it; an action that needs a project goes to DMAIC.",
+     "ar": "تبدأ الدراسة من خطوات SIPOC المشروع وأسبابه المثبتة (قراءة فقط)، ويعرض المشروع الدراسات التي تذكره؛ والإجراء الذي يحتاج مشروعاً يذهب إلى DMAIC."
+    }
+   },
+   {
+    "code": "RCA",
+    "name": {
+     "en": "Root cause analysis — investigation",
+     "ar": "تحليل السبب الجذري — التحقيق"
+    },
+    "text": {
+     "en": "A failure that has already happened: it becomes a mode in the study, its root causes the causes.",
+     "ar": "الفشل الذي وقع فعلاً: يصبح نمطاً في الدراسة، وأسبابه الجذرية أسباباً."
+    }
+   },
+   {
+    "code": "Pareto",
+    "name": {
+     "en": "Pareto — vital few analysis",
+     "ar": "باريتو — تحليل القلة الحيوية"
+    },
+    "text": {
+     "en": "The failures that recurred: a vital-few category becomes a failure mode with its occurrence evidence.",
+     "ar": "الأعطال التي تكررت: الفئة الحيوية نمط فشل بدليل حدوثه."
+    }
+   },
+   {
+    "code": "Fishbone",
+    "name": {
+     "en": "Fishbone",
+     "ar": "عظمة السمكة"
+    },
+    "text": {
+     "en": "Maps the candidate causes of a failure mode; its cause is taken by analysis id.",
+     "ar": "ترسم الأسباب المحتملة لنمط فشل؛ يُؤخذ سببها برقم التحليل."
+    }
+   },
+   {
+    "code": "5 Whys",
+    "name": {
+     "en": "5 Whys",
+     "ar": "لماذا الخمس"
+    },
+    "text": {
+     "en": "Digs from the failure mode down to a cause that can be acted on.",
+     "ar": "تحفر من نمط الفشل إلى سبب يمكن العمل عليه."
+    }
+   },
+   {
+    "code": "A3",
+    "name": {
+     "en": "A3 problem solving",
+     "ar": "حل المشكلات بأسلوب A3"
+    },
+    "text": {
+     "en": "For an action that needs a one-page story owned by one person.",
+     "ar": "للإجراء الذي يحتاج قصة على صفحة واحدة يملكها شخص."
+    }
+   },
+   {
+    "code": "CAPA",
+    "name": {
+     "en": "Corrective action",
+     "ar": "الإجراءات التصحيحية"
+    },
+    "text": {
+     "en": "When a nonconformity is the source of the study, the corrective action stays in the CAPA record the study names.",
+     "ar": "عندما يكون مصدر الدراسة حالة عدم مطابقة، يبقى الإجراء التصحيحي في سجل CAPA الذي تذكره الدراسة."
+    }
+   },
+   {
+    "code": "PDCA",
+    "name": {
+     "en": "PDCA cycle",
+     "ar": "دورة PDCA"
+    },
+    "text": {
+     "en": "The follow-up of the actions and controls after the study runs in a PDCA cycle named by its id.",
+     "ar": "متابعة الإجراءات والضوابط بعد الدراسة في دورة PDCA تُذكر برقمها."
+    }
+   },
+   {
+    "code": "ISO 10009",
+    "name": {
+     "en": "ISO 10009 quality tools guide",
+     "ar": "دليل أدوات الجودة ISO 10009"
+    },
+    "text": {
+     "en": "Explains subclause 7.3 with the other risk tools (SWIFT 7.1, the risk register 7.2), and a 7.3 storyboard step links an FMEA study by its id.",
+     "ar": "يشرح البند 7.3 مع أدوات المخاطر الأخرى (SWIFT 7.1 وسجل المخاطر 7.2)، وتربط خطوة 7.3 في لوحة القصة دراسة FMEA برقمها."
+    }
+   }
+  ],
+  "serves": [
+   {
+    "code": "ISO 10009:2024 §7.3 · §6.3 · §7.1",
+    "name": {
+     "en": "FMEA, the control plan and SWIFT",
+     "ar": "FMEA وخطة الضبط وSWIFT"
+    },
+    "text": {
+     "en": "Guidance, not requirements: FMEA is a risk-based method with a team, clear scales and a living document; it feeds the control plan; SWIFT can come first. Table C.1: risk assessment, team, medium data, capability •••, difficult.",
+     "ar": "إرشادات لا متطلبات: FMEA منهجية قائمة على المخاطر بفريق ومقاييس واضحة ووثيقة حية؛ وهي مدخل لخطة الضبط؛ وقد يسبقها SWIFT مرحلة أولى. الجدول C.1: تقييم مخاطر، فريق، بيانات متوسطة، قدرة •••، جهد صعب."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 §6.1.2 · A.6.1.2",
+    "name": {
+     "en": "Actions to address risks",
+     "ar": "معالجة المخاطر"
+    },
+    "text": {
+     "en": "Determine, analyse and evaluate risks, plan proportionate actions and evaluate their effectiveness; no formal risk management approach is required.",
+     "ar": "تحديد المخاطر وتحليلها وتقييمها، والتخطيط لإجراءات متناسبة وتقييم فعاليتها؛ ولا يُشترط نهج رسمي لإدارة المخاطر."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 §8.5.1 · §8.5.6 · §10.2.1",
+    "name": {
+     "en": "Controlled conditions, preventing human error, control of changes, corrective action",
+     "ar": "الضبط ومنع الخطأ البشري وضبط التغييرات والإجراء التصحيحي"
+    },
+    "text": {
+     "en": "Monitoring at the right stages and actions to prevent human error, reviewing changes, and finding whether similar nonconformities could occur and updating the risks.",
+     "ar": "رصد في المراحل المناسبة وإجراءات لمنع الخطأ البشري، ومراجعة التغييرات، وتحديد ما إذا كانت حالات مماثلة قد تحدث وتحديث المخاطر."
+    }
+   },
+   {
+    "code": "IEC 60812 · AIAG-VDA FMEA · ISO 31010",
+    "name": {
+     "en": "FMEA handbooks and risk techniques (not verified)",
+     "ar": "أدلة FMEA وتقنيات المخاطر (غير متحقق منه)"
+    },
+    "text": {
+     "en": "None is uploaded to the project, and ISO 10009 does not say which edition to follow. So the default scales and the action priority rule in the tool are its own wording, not copied from a published handbook.",
+     "ar": "لا يوجد منها شيء مرفوع إلى المشروع، ولا يذكر ISO 10009 أي إصدار يُتبع. فالمقاييس الافتراضية وقاعدة أولوية الإجراء في الأداة صياغتها هي، وليست منقولة من دليل منشور."
+    }
+   }
+  ],
+  "clauses": [
+   {
+    "id": "7.3",
+    "phase": "frame",
+    "title": {
+     "en": "ISO 10009:2024 subclause 7.3 Failure mode and effects analysis (FMEA)",
+     "ar": "ISO 10009:2024 البند 7.3 تحليل أنماط الفشل وآثارها"
+    },
+    "short": {
+     "en": "7.3 · FMEA",
+     "ar": "7.3 · FMEA"
+    },
+    "intro": {
+     "en": "FMEA is a structured, team-based look ahead: scope and structure first, then the failure modes, their effects, causes and controls, then the most severe first.",
+     "ar": "FMEA نظرة منظمة إلى الأمام يقوم بها فريق: النطاق والبنية أولاً، ثم أنماط الفشل وآثارها وأسبابها وضوابطها، ثم الأخطر أولاً."
+    },
+    "items": [
+     {
+      "ref": "s1-1",
+      "clause": "7.3",
+      "title": {
+       "en": "FMEA in ISO 10009: a team activity with a facilitator",
+       "ar": "FMEA في ISO 10009: نشاط فريق بميسر"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 10009:2024 reviews FMEA in subclause 7.3 as a risk-based method to identify, analyse and rank potential problems during product or process development, then during production or service delivery. Variants include design, process, design review based on failure mode, tooling, software, service design and delivery, and monitoring systems. It is a team activity representing the functions involved and can include the customer; it needs preparation, flow charts, a competent facilitator and time, and covers single, not compound, failure modes. The standard is guidance, and FMEA is not a requirement of any standard.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يراجع ISO 10009:2024 منهج FMEA في البند 7.3 منهجيةً قائمة على المخاطر لتحديد المشكلات المحتملة وتحليلها وترتيبها أثناء تطوير المنتج أو العملية، ثم أثناء الإنتاج أو تقديم الخدمة. ومن أنواعها: التصميم، والعملية، ومراجعة التصميم المبنية على نمط الفشل، والعِدد، والبرمجيات، وتصميم الخدمة وتقديمها، وأنظمة الرصد. وهي نشاط فريق يمثل الوظائف المعنية وقد يضم العميل، وتحتاج تحضيراً ومخططات تدفق وميسراً كفؤاً ووقتاً، وتتناول أنماط الفشل المنفردة لا المركبة. والمواصفة إرشادات، وFMEA ليس متطلباً في أي مواصفة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the concrete receiving study the quality engineer facilitated, with the pour supervisor, the supplier QA representative, the laboratory technician and the procurement officer: five roles from three parties.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في دراسة استلام الخرسانة جلس حول الطاولة مهندس الجودة ميسراً، ومشرف الصب، وممثل جودة المورد، وفني المختبر، ومسؤول المشتريات؛ خمسة أدوار من ثلاث جهات."
+      },
+      "how": [
+       {
+        "en": "Pick the team from every function that touches the process",
+        "ar": "اختر الفريق من كل وظيفة تلمس العملية"
+       },
+       {
+        "en": "Appoint a facilitator trained in the method",
+        "ar": "عيّن ميسراً تدرب على المنهج"
+       },
+       {
+        "en": "Choose the type: process or design",
+        "ar": "اختر نوع الدراسة: عملية أو تصميم"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The team list with its roles",
+        "ar": "قائمة الفريق بأدواره"
+       },
+       {
+        "en": "The facilitator's name",
+        "ar": "اسم الميسر"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A study filled in by one person at a desk",
+        "ar": "دراسة يملؤها شخص واحد على مكتبه"
+       },
+       {
+        "en": "Compound modes in one line",
+        "ar": "أنماط مركبة في سطر واحد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسر"
+      },
+      "kpi": {
+       "en": "Share of studies with a team of at least three roles",
+       "ar": "نسبة الدراسات بفريق من ثلاثة أدوار على الأقل"
+      }
+     },
+     {
+      "ref": "s1-2",
+      "clause": "GD-1",
+      "title": {
+       "en": "Scope and structure before the failure modes",
+       "ar": "النطاق والبنية قبل أنماط الفشل"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: write where the process starts and stops and what is outside it, then map its steps in order (3 to 15) from a DMAIC SIPOC or a flow chart, before writing any failure mode. The structure stops the team from jumping to the known failures only, and shows the steps where nothing was analysed. A large process starts with the structured what-if technique (SWIFT) to find the riskiest steps, then FMEA goes into detail.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: اكتب أين تبدأ العملية وأين تنتهي وما خارجها، ثم ارسم خطواتها بالترتيب (3 إلى 15) من SIPOC مشروع DMAIC أو مخطط التدفق، قبل كتابة أي نمط فشل. فالبنية تمنع القفز إلى الأعطال المعروفة وحدها، وتكشف الخطوات التي لم يُحلَّل فيها شيء. والعملية الكبيرة تبدأ بأسلوب «ماذا لو» المنظم (SWIFT) لتحديد الخطوات الأخطر، ثم تُفصَّل بـ FMEA."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the seven steps of the concrete study were taken from the SIPOC of project DM-EX-01; the structure showed that \"order\" and \"transport\" had no row before the second meeting.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: أُخذت خطوات دراسة الخرسانة السبع من SIPOC المشروع DM-EX-01؛ وكشفت البنية أن خطوتي «الطلب» و«النقل» لم يكن فيهما صف قبل الاجتماع الثاني."
+      },
+      "how": [
+       {
+        "en": "Start with the scope in writing",
+        "ar": "ابدأ بالنطاق مكتوباً"
+       },
+       {
+        "en": "Map the steps in order before the failures",
+        "ar": "ارسم الخطوات بالترتيب قبل الأعطال"
+       },
+       {
+        "en": "Check that every step has at least one row",
+        "ar": "تأكد أن لكل خطوة صفاً على الأقل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The scope and the step structure",
+        "ar": "النطاق وبنية الخطوات"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A study that starts from a list of known failures",
+        "ar": "دراسة تبدأ من قائمة أعطال معروفة"
+       },
+       {
+        "en": "Steps with no analysis",
+        "ar": "خطوات بلا تحليل"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسر"
+      },
+      "kpi": {
+       "en": "Share of studies with every step analysed",
+       "ar": "نسبة الدراسات التي حُلّلت فيها كل خطوة"
+      }
+     },
+     {
+      "ref": "s1-3",
+      "clause": "7.1",
+      "title": {
+       "en": "SWIFT before FMEA for large processes",
+       "ar": "SWIFT قبل FMEA في العمليات الكبيرة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 10009:2024 subclause 7.1 describes the structured what-if technique (SWIFT) as a flexible, high-level way to identify risks, used alone or as a first stage before detailed methods such as FMEA; the team goes through the process steps with guided \"what if?\" prompts. Subclause 7.2 describes the risk register, which FMEA can feed.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يصف ISO 10009:2024 في البند 7.1 أسلوب «ماذا لو» المنظم (SWIFT) طريقةً مرنة عالية المستوى لتحديد المخاطر، تُستخدم وحدها أو مرحلة أولى قبل طرق تفصيلية مثل FMEA؛ يمر الفريق على خطوات العملية بأسئلة «ماذا لو؟» موجهة. ويذكر البند 7.2 سجل المخاطر الذي قد تكون FMEA من مدخلاته."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: before summer Al-Waha's team went through the pour steps asking \"what if the truck is late? what if the chiller fails?\", then took the worst ones into the FMEA.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: قبل موسم الصيف مر فريق الواحة على خطوات الصب بأسئلة «ماذا لو تأخرت الشاحنة؟ ماذا لو تعطل المبرد؟»، ثم أخذ الأخطر منها إلى دراسة FMEA."
+      },
+      "how": [
+       {
+        "en": "Use SWIFT when the process has more than 15 steps",
+        "ar": "استخدم SWIFT عندما تكون العملية أكثر من 15 خطوة"
+       },
+       {
+        "en": "Carry the FMEA results into the risk register",
+        "ar": "انقل نتائج FMEA إلى سجل المخاطر"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The what-if prompts and their results",
+        "ar": "أسئلة «ماذا لو» ونتائجها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A detailed FMEA of a process never screened first",
+        "ar": "FMEA تفصيلية لعملية لم تُفرز أولاً"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسر"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s1-4",
+      "clause": "C.1",
+      "title": {
+       "en": "FMEA in Table C.1 and Annex A",
+       "ar": "FMEA في الجدول C.1 والملحق A"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: Table C.1 of ISO 10009:2024 classifies FMEA: area risk assessment, product and service, team, minimum data medium, level of capability ••• (a longer course and experience before applying), effort difficult. Table A.3 places it in the Do phase of continual improvement. Subclause 7.5 names FMECA (with criticality) and FMEA for monitoring and system response among the other relevant tools.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يصنف الجدول C.1 من ISO 10009:2024 منهج FMEA: مجاله تقييم المخاطر، للمنتج والخدمة، بفريق، والحد الأدنى من البيانات متوسط، ومستوى القدرة ••• (دورة أطول وخبرة قبل التطبيق)، والجهد صعب. ويضعه الجدول A.3 في مرحلة التنفيذ (Do) من دورة التحسين المستمر. ويذكر البند 7.5 بين الأدوات الأخرى ذات الصلة FMECA (مع الحرجية) وFMEA للرصد واستجابة النظام."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the quality manager put FMEA in the competence matrix (ISO 9001:2026 clause 7.2) as a ••• tool, so only someone who took the course and joined two studies facilitates.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: وضع مدير الجودة FMEA في مصفوفة الكفاءة (البند 7.2 من ISO 9001:2026) أداةً بمستوى •••، فلا ييسر الدراسة إلا من حضر الدورة وشارك في دراستين."
+      },
+      "how": [
+       {
+        "en": "Put FMEA in the competence matrix",
+        "ar": "ضع FMEA في مصفوفة الكفاءة"
+       },
+       {
+        "en": "Plan enough time for the study",
+        "ar": "خطط وقتاً كافياً للدراسة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The facilitators' training record",
+        "ar": "سجل تدريب الميسرين"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An untrained facilitator",
+        "ar": "ميسر بلا تدريب"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Share of qualified facilitators",
+       "ar": "نسبة الميسرين المؤهلين"
+      }
+     }
+    ]
+   },
+   {
+    "id": "6.1",
+    "phase": "plan",
+    "title": {
+     "en": "Clause 6.1 Actions to address risks and opportunities",
+     "ar": "البند 6.1 الإجراءات لمعالجة المخاطر والفرص"
+    },
+    "short": {
+     "en": "6.1 · Risks",
+     "ar": "6.1 · المخاطر"
+    },
+    "intro": {
+     "en": "The standard asks to determine, analyse, evaluate and address risks without imposing a method. FMEA is a structured way to do it at process level, with scales written before the rating.",
+     "ar": "تطلب المواصفة تحديد المخاطر وتحليلها وتقييمها ومعالجتها دون أن تفرض طريقة. وFMEA طريقة منظمة لذلك على مستوى العملية، بمقاييس مكتوبة قبل التقييم."
+    },
+    "items": [
+     {
+      "ref": "s2-1",
+      "clause": "6.1.2",
+      "title": {
+       "en": "Owned, dated actions in proportion to the risk",
+       "ar": "إجراءات بمالك وموعد ومتناسبة مع الخطر"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 6.1.2 asks to determine, analyse and evaluate the risks that can affect the ability to provide conforming products and services, to plan actions to address them, how to integrate them into the processes and how to evaluate their effectiveness, with actions proportionate to the potential impact. Note 2 lists ways to address risks, including eliminating the risk source and changing the likelihood or consequences.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 6.1.2 تحديد المخاطر التي قد تؤثر سلباً في القدرة على تقديم منتجات وخدمات مطابقة وتحليلها وتقييمها، والتخطيط لإجراءات معالجتها وكيفية دمجها في العمليات وتقييم فعاليتها، وأن تكون الإجراءات متناسبة مع الأثر المحتمل. وتذكر الملاحظة 2 طرقاً للمعالجة منها إزالة مصدر الخطر وتغيير الاحتمال أو العواقب."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the crane study every high-priority row has an action with an owner and a due date; \"tag lines\" went to the lifting supervisor, due 20 September, done on 18 September.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في دراسة الرافعة: كل صف عالي الأولوية له إجراء بمالك وموعد؛ «حبال الدليل» لمشرف الرفع بموعد 20 سبتمبر، ونُفذ في 18 سبتمبر."
+      },
+      "how": [
+       {
+        "en": "Give every action an owner and a due date",
+        "ar": "اكتب لكل إجراء مالكاً وموعداً"
+       },
+       {
+        "en": "Choose the type: change, prevention or detection",
+        "ar": "اختر نوع الإجراء: تغيير أو منع أو كشف"
+       },
+       {
+        "en": "Follow it until it is done",
+        "ar": "تابع حتى التنفيذ"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The action table with owners, dates and status",
+        "ar": "جدول الإجراءات بمالكيها ومواعيدها وحالتها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An action with no owner",
+        "ar": "إجراء بلا مالك"
+       },
+       {
+        "en": "High rows with no action",
+        "ar": "صفوف عالية بلا إجراء"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of high-priority rows with an action",
+       "ar": "نسبة الصفوف عالية الأولوية التي لها إجراء"
+      }
+     },
+     {
+      "ref": "s2-2",
+      "clause": "A.6.1.2",
+      "title": {
+       "en": "Risk-based thinking does not impose FMEA",
+       "ar": "التفكير القائم على المخاطر لا يفرض FMEA"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 Annex A.6.1.2 explains that applying risk-based thinking does not imply a formal risk management approach or a documented risk management process, and that the organization can adopt a more extensive approach through other guidance or standards. So FMEA is a choice, suited to processes whose failure is severe or costly.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يوضح الملحق A.6.1.2 من ISO 9001:2026 أن تطبيق التفكير القائم على المخاطر لا يعني استخدام نهج رسمي لإدارة المخاطر ولا عملية موثقة لها، وأن للمؤسسة أن تتبنى نهجاً أوسع بإرشادات أو مواصفات أخرى. فـ FMEA اختيار، يناسب العمليات التي يكون فشلها خطيراً أو مكلفاً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: Al-Waha chose FMEA for pouring, lifting and calibration because their failure is severe or touches test results, and kept the risk register for the other processes.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: اختارت الواحة FMEA لعمليات الصب والرفع والمعايرة لأن فشلها خطير أو يمس نتائج الاختبارات، واكتفت بسجل المخاطر لبقية العمليات."
+      },
+      "how": [
+       {
+        "en": "Pick the processes that deserve an FMEA",
+        "ar": "اختر العمليات التي تستحق FMEA"
+       },
+       {
+        "en": "Write down why",
+        "ar": "اكتب سبب الاختيار"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The list of chosen processes and why",
+        "ar": "قائمة العمليات المختارة وسببها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An FMEA for everything without distinction",
+        "ar": "FMEA لكل شيء بلا تمييز"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s2-3",
+      "clause": "GD-2",
+      "title": {
+       "en": "Scales written before the rating",
+       "ar": "المقاييس المكتوبة قبل التقييم"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: each level from 1 to 10 of severity, occurrence and detection has a written meaning, agreed on a date before the first rating and kept the same across the study. ISO 10009 subclause 7.3 asks for clear criteria for each point and for nobody to gain by scoring low to avoid action. Severity is rated on the effect, occurrence on the cause with the current prevention controls, and detection on how well the current controls find it before the customer. The tool's default scales are its own wording, to be edited with the team.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: لكل درجة من 1 إلى 10 للخطورة والحدوث والكشف معنى مكتوب، يُعتمد بتاريخ قبل أول تقييم ويبقى نفسه طوال الدراسة. ويذكر ISO 10009 البند 7.3 أن لكل درجة معياراً واضحاً، وألا يكون لأحد حافز لخفض الدرجات تجنباً للإجراء. والخطورة تُقيَّم على الأثر، والحدوث على السبب مع ضوابط المنع الحالية، والكشف على قدرة الضوابط الحالية على الاكتشاف قبل العميل. المقاييس الافتراضية في الأداة صياغتها هي، تُعدَّل مع الفريق."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the concrete team agreed the scales on 15 September and rated on 16 September; it edited severity 7 to name \"load rejected at the gate\".",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: اعتمد فريق الخرسانة المقاييس في 15 سبتمبر وقيّم في 16 سبتمبر؛ وعدّل معنى الخطورة 7 ليذكر «رفض الشحنة عند البوابة»."
+      },
+      "how": [
+       {
+        "en": "Edit the scales to fit your process",
+        "ar": "عدّل المقاييس لتناسب عمليتك"
+       },
+       {
+        "en": "Agree them on a date before the rating",
+        "ar": "اعتمدها بتاريخ قبل التقييم"
+       },
+       {
+        "en": "Do not change them in the middle of the study",
+        "ar": "لا تغيرها في منتصف الدراسة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The agreed scales with their date",
+        "ar": "المقاييس المعتمدة بتاريخها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Scales written after the rating",
+        "ar": "مقاييس تُكتب بعد التقييم"
+       },
+       {
+        "en": "Levels with no written meaning",
+        "ar": "درجات بلا معنى مكتوب"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسر"
+      },
+      "kpi": {
+       "en": "Share of studies with scales agreed before the rating",
+       "ar": "نسبة الدراسات بمقاييس معتمدة قبل التقييم"
+      }
+     }
+    ]
+   },
+   {
+    "id": "8.1",
+    "phase": "plan",
+    "title": {
+     "en": "Clause 8.1 Operational planning and control, and 8.3.4 design controls",
+     "ar": "البند 8.1 التخطيط والضبط التشغيلي، والبند 8.3.4 ضوابط التصميم"
+    },
+    "short": {
+     "en": "8.1 · 8.3.4",
+     "ar": "8.1 · 8.3.4"
+    },
+    "intro": {
+     "en": "A process FMEA serves the criteria and control of processes; a design FMEA serves design reviews and verification where design applies.",
+     "ar": "FMEA العملية تخدم معايير العمليات وضبطها، وFMEA التصميم تخدم مراجعات التصميم والتحقق منه حيث ينطبق التصميم."
+    },
+    "items": [
+     {
+      "ref": "s3-1",
+      "clause": "8.1",
+      "title": {
+       "en": "Process criteria and control of planned changes",
+       "ar": "معايير العمليات وضبط التغييرات المخططة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 8.1 asks to plan, implement and control the processes needed, by establishing criteria for the processes and controlling them accordingly, implementing the actions determined in Clause 6, and controlling planned changes and reviewing the consequences of unintended ones. A process FMEA is one way to decide what must be controlled at each step.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 8.1 تخطيط العمليات اللازمة وتنفيذها وضبطها بوضع معايير للعمليات وتطبيق الضبط وفقها، وتنفيذ الإجراءات المحددة في البند 6، وضبط التغييرات المخططة ومراجعة عواقب التغييرات غير المقصودة. وFMEA العملية من طرق تحديد ما يجب ضبطه في كل خطوة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the concrete study produced two process criteria: 32 °C at the gate, and discharge within 90 minutes of batching.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: خرج من دراسة الخرسانة معياران للعملية: الحرارة 32 °م عند البوابة، والتفريغ خلال 90 دقيقة من الخلط."
+      },
+      "how": [
+       {
+        "en": "Turn the controls into process criteria",
+        "ar": "انقل الضوابط إلى معايير العملية"
+       },
+       {
+        "en": "Start the FMEA before a planned change",
+        "ar": "ابدأ FMEA قبل التغيير المخطط"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The process criteria linked to the rows",
+        "ar": "معايير العملية المرتبطة بالصفوف"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A study that changes nothing in the process",
+        "ar": "دراسة لا تغير شيئاً في العملية"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s3-2",
+      "clause": "8.3.4",
+      "title": {
+       "en": "Design FMEA in design reviews",
+       "ar": "FMEA التصميم في مراجعات التصميم"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: where design and development applies, ISO 9001:2026 clause 8.3.4 asks for controls that define the results to be achieved, reviews to evaluate whether the results can meet requirements, verification and validation, and action on the problems found, with documented information. A design FMEA suits these reviews to find how a product or service function could fail.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: حيث ينطبق التصميم والتطوير، تطلب ISO 9001:2026 في البند 8.3.4 ضوابط تحدد النتائج المطلوبة، ومراجعات لتقييم قدرة النتائج على تلبية المتطلبات، وتحققاً وتصديقاً، واتخاذ إجراءات على المشكلات التي تظهر فيها، مع معلومات موثقة. وFMEA التصميم أداة مناسبة في هذه المراجعات لتحديد كيف قد تفشل وظيفة المنتج أو الخدمة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in designing the new \"night pour\" service, a design FMEA was used on the function \"enough light to read the slump test\", and a mobile light tower was added at the gate.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في تصميم خدمة «الصب الليلي» الجديدة، استُخدمت FMEA تصميم لوظيفة «توفير إضاءة كافية لفحص الهبوط»، فأُضيف برج إنارة متنقل للبوابة."
+      },
+      "how": [
+       {
+        "en": "Choose the \"design\" type for functions before launch",
+        "ar": "اختر نوع «تصميم» للوظائف قبل الإطلاق"
+       },
+       {
+        "en": "Link the rows to the design review",
+        "ar": "اربط الصفوف بمراجعة التصميم"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The design review record and the FMEA rows",
+        "ar": "محضر مراجعة التصميم وصفوف FMEA"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A design FMEA after launch",
+        "ar": "FMEA تصميم بعد الإطلاق"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Design engineer",
+       "ar": "مهندس التصميم"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   },
+   {
+    "id": "8.5.1",
+    "phase": "analyse",
+    "title": {
+     "en": "Clause 8.5.1 Control of production and service provision",
+     "ar": "البند 8.5.1 ضبط الإنتاج وتقديم الخدمة"
+    },
+    "short": {
+     "en": "8.5.1 · Controls",
+     "ar": "8.5.1 · الضوابط"
+    },
+    "intro": {
+     "en": "For each step: the function, the single failure mode, its effect as the customer sees it, its cause, the prevention control and the detection control. \"Human error\" is a cause to design out.",
+     "ar": "لكل خطوة: الوظيفة، ونمط الفشل المنفرد، وأثره كما يراه العميل، وسببه، وضابط المنع، وضابط الكشف. و«الخطأ البشري» سبب يُزال بالتصميم."
+    },
+    "items": [
+     {
+      "ref": "s4-1",
+      "clause": "GD-3",
+      "title": {
+       "en": "Failure mode, effect and cause",
+       "ar": "نمط الفشل والأثر والسبب"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the failure mode is how the step fails to do its job (one single mode per row). The effect is what the customer or the next step sees if the failure happens, and severity is rated on it. The cause is what could lead to the mode, written as something that can be acted on in the process or the design. Do not mix the mode and the cause (\"temperature above 32 °C\" is a mode, \"chilled water not used\" is a cause), and do not write the effect only from the side of the person doing the step.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: نمط الفشل هو كيف تفشل الخطوة في وظيفتها (نمط منفرد في كل صف). والأثر ما يراه العميل أو الخطوة التالية إن وقع الفشل، وعليه تُقيَّم الخطورة. والسبب ما قد يؤدي إلى النمط، ويُكتب شيئاً يمكن العمل عليه في العملية أو التصميم. فلا يُخلط النمط بالسبب («الحرارة فوق 32 °م» نمط، و«لا يُستخدم الماء المبرد» سبب)، ولا يُكتب الأثر من جهة من ينفذ الخطوة فقط."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: R1 of the concrete study: function \"concrete at no more than 32 °C\", mode \"temperature above 32 °C at discharge\", effect \"load rejected; if missed, cold joints\", cause \"chilled water not used at plant 1 in the afternoon\".",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: R1 في دراسة الخرسانة: الوظيفة «خرسانة لا تزيد على 32 °م»، والنمط «الحرارة فوق 32 °م عند التفريغ»، والأثر «رفض الشحنة؛ وإن فاتت فواصل باردة»، والسبب «لا يُستخدم الماء المبرد في المحطة 1 بعد الظهر»."
+      },
+      "how": [
+       {
+        "en": "Write one mode per row",
+        "ar": "اكتب نمطاً واحداً في كل صف"
+       },
+       {
+        "en": "Describe the effect from the customer's side",
+        "ar": "صف الأثر من جهة العميل"
+       },
+       {
+        "en": "Keep the mode apart from the cause",
+        "ar": "افصل النمط عن السبب"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Complete analysis rows",
+        "ar": "صفوف التحليل كاملة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Mode and cause in the same cell",
+        "ar": "نمط وسبب في الخانة نفسها"
+       },
+       {
+        "en": "An effect that does not name the customer",
+        "ar": "أثر لا يذكر العميل"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "The team",
+       "ar": "الفريق"
+      },
+      "kpi": {
+       "en": "Share of complete rows",
+       "ar": "نسبة الصفوف المكتملة"
+      }
+     },
+     {
+      "ref": "s4-2",
+      "clause": "8.5.1 g",
+      "title": {
+       "en": "Preventing human error: a cause to design out",
+       "ar": "منع الخطأ البشري: سبب يُزال بالتصميم"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 8.5.1 g) makes the implementation of actions to prevent human error part of the controlled conditions of production and service provision, as applicable. So \"human error\" is neither a failure mode nor a cause to blame on someone; ask instead why the error was possible and what in the process allowed it, then design what prevents or detects it.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تجعل ISO 9001:2026 في البند 8.5.1 ز) من الظروف المضبوطة للإنتاج وتقديم الخدمة تطبيق إجراءات لمنع الخطأ البشري، حيثما انطبق. فلا يكون «الخطأ البشري» نمط فشل ولا سبباً يُلام عليه شخص؛ بل يُسأل: لماذا كان الخطأ ممكناً، وما الذي في العملية سمح به؟ ثم يُصمم ما يمنعه أو يكشفه."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the crane study the cause was written \"rigger not paying attention\", and the tool flagged it; the team rewrote it as \"landing requires guiding the load by hand\", and the action was tag lines.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في دراسة الرافعة كُتب السبب «عدم انتباه الرافع»، فنبهت الأداة؛ فأعاد الفريق صياغته «الإنزال يتطلب توجيه الحمولة باليد»، وكان الإجراء حبال الدليل."
+      },
+      "how": [
+       {
+        "en": "Ask why the error was possible",
+        "ar": "اسأل لماذا كان الخطأ ممكناً"
+       },
+       {
+        "en": "Design error-proofing or automatic detection",
+        "ar": "صمم منعاً للخطأ أو كشفاً آلياً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Rows with no \"human error\" and no person's name",
+        "ar": "صفوف لا تحمل «خطأ بشري» ولا اسم شخص"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "\"Human error\" as a mode or a cause",
+        "ar": "«خطأ بشري» نمطاً أو سبباً"
+       },
+       {
+        "en": "\"Awareness\" as the only action",
+        "ar": "إجراء «توعية» وحده"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسر"
+      },
+      "kpi": {
+       "en": "Number of open \"human error\" flags",
+       "ar": "عدد تنبيهات «خطأ بشري» المفتوحة"
+      }
+     },
+     {
+      "ref": "s4-3",
+      "clause": "8.5.1 c",
+      "title": {
+       "en": "Prevention controls and detection controls",
+       "ar": "ضوابط المنع وضوابط الكشف"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 8.5.1 c) asks for monitoring and measurement at appropriate stages to verify that the criteria for process control and the acceptance criteria for products and services are met. In FMEA, what prevents the cause (a prevention control that lowers occurrence) is kept apart from what detects the cause or the mode before the customer (a detection control that improves detection). A control is written as it is actually applied, not as written in the procedure.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 8.5.1 ج) رصداً وقياساً في المراحل المناسبة للتحقق من استيفاء معايير ضبط العمليات ومعايير قبول المنتجات والخدمات. وفي FMEA يُفصل ما يمنع السبب (ضابط منع يخفض الحدوث) عما يكتشف السبب أو النمط قبل العميل (ضابط كشف يحسن الكشف). والضابط يُكتب كما هو مطبق فعلاً، لا كما هو مكتوب في الإجراء."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: R3 of the concrete study: prevention control \"weekly comparison with the calibrated probe\" (occurrence 3), detection control \"cubes at 7 days\" (detection 8): detection far too late, so the row's priority was high.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: R3 في دراسة الخرسانة: ضابط المنع «مقارنة أسبوعية بالمجس المعاير» (الحدوث 3)، وضابط الكشف «المكعبات بعد 7 أيام» (الكشف 8): كشف متأخر جداً، فكانت أولوية الصف عالية."
+      },
+      "how": [
+       {
+        "en": "Write the prevention and detection controls in two cells",
+        "ar": "اكتب ضابطي المنع والكشف في خانتين"
+       },
+       {
+        "en": "Rate occurrence with the prevention control, detection with the detection control",
+        "ar": "قيّم الحدوث مع ضابط المنع، والكشف مع ضابط الكشف"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Rows with separate prevention and detection controls",
+        "ar": "صفوف بضابطي منع وكشف منفصلين"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "One control counted as both prevention and detection",
+        "ar": "ضابط واحد يُحسب منعاً وكشفاً"
+       },
+       {
+        "en": "Controls on paper only",
+        "ar": "ضوابط على الورق فقط"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "The team",
+       "ar": "الفريق"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   },
+   {
+    "id": "9.1.3",
+    "phase": "act",
+    "title": {
+     "en": "Clause 9.1.3 Analysis and evaluation: priority and re-rating",
+     "ar": "البند 9.1.3 التحليل والتقييم: الأولوية وإعادة التقييم"
+    },
+    "short": {
+     "en": "9.1.3 · Priority",
+     "ar": "9.1.3 · الأولوية"
+    },
+    "intro": {
+     "en": "High severity first whatever the priority number, by a written rule. Severity falls only with a change. After the action, the ratings are given again with evidence.",
+     "ar": "الخطورة العالية أولاً مهما كان رقم الأولوية، بقاعدة مكتوبة. والخطورة لا تنخفض إلا بتغيير. وبعد التنفيذ تُقيَّم الدرجات من جديد بالدليل."
+    },
+    "items": [
+     {
+      "ref": "s5-1",
+      "clause": "9.1.3",
+      "title": {
+       "en": "Re-rating with evidence: the effectiveness of the actions",
+       "ar": "إعادة التقييم بالدليل: فعالية الإجراءات"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 9.1.3 asks to analyse and evaluate the data from monitoring and measurement, and to use the results to evaluate, among other things, e) the effectiveness of actions taken to address risks. In FMEA this means the ratings after the action are given again with written evidence (data, observation, records), not by wishful thinking.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 9.1.3 تحليل البيانات من الرصد والقياس وتقييمها، واستخدام النتائج لتقييم أمور منها هـ) فعالية الإجراءات المتخذة لمعالجة المخاطر. وفي FMEA يعني ذلك أن الدرجات بعد الإجراء تُعطى من جديد بدليل مكتوب (بيانات، ملاحظة، سجلات)، لا بالتمني."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: R1 of the concrete study: occurrence from 7 to 3, with the after-change data of DM-EX-01 as evidence (2.4% rejected from 14 September to 11 October).",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: R1 في دراسة الخرسانة: الحدوث من 7 إلى 3 بدليل بيانات ما بعد التغيير في DM-EX-01 (2.4% رفض من 14 سبتمبر إلى 11 أكتوبر)."
+      },
+      "how": [
+       {
+        "en": "Re-rate after the action, not before",
+        "ar": "أعد التقييم بعد التنفيذ لا قبله"
+       },
+       {
+        "en": "Write the evidence next to the new ratings",
+        "ar": "اكتب الدليل بجانب الدرجات الجديدة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Ratings before and after, with the evidence",
+        "ar": "الدرجات قبل وبعد مع الدليل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "New ratings with no evidence",
+        "ar": "درجات جديدة بلا دليل"
+       },
+       {
+        "en": "A completed action never re-rated",
+        "ar": "إجراء منفذ لم يُعَد تقييمه"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of studies re-rated after their actions",
+       "ar": "نسبة الدراسات المعاد تقييمها بعد إجراءاتها"
+      }
+     },
+     {
+      "ref": "s5-2",
+      "clause": "GD-5",
+      "title": {
+       "en": "Severity first, and the limits of the priority number",
+       "ar": "الخطورة أولاً، وحدود رقم الأولوية"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the priority number (severity × occurrence × detection) hides big severities: a row with severity 10, occurrence 2 and detection 2 scores 40, a row with severity 6, occurrence 6 and detection 7 scores 252. So it is not used alone to rank the work. The tool uses a written action priority rule: \"high\" when severity is 9 or 10 whatever occurrence and detection, or severity × occurrence is 40 or more, or 20 or more with detection 7 or more; then \"medium\" and \"low\". ISO 10009 subclause 7.3 puts the priority on reducing occurrence and designing out high-severity failure modes where possible. The rule is the tool's wording, not copied from a published handbook.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: رقم الأولوية (الخطورة × الحدوث × الكشف) يخفي الخطورة الكبيرة: صف بخطورة 10 وحدوث 2 وكشف 2 رقمه 40، وصف بخطورة 6 وحدوث 6 وكشف 7 رقمه 252. فلا يُرتَّب العمل به وحده. وتستخدم الأداة قاعدة مكتوبة لأولوية الإجراء: «عالية» إذا كانت الخطورة 9 أو 10 مهما كان الحدوث والكشف، أو الخطورة × الحدوث 40 فأكثر، أو 20 فأكثر مع كشف 7 فأكثر؛ ثم «متوسطة» و«منخفضة». ويضع ISO 10009 البند 7.3 الأولوية لخفض الحدوث وإزالة أنماط الفشل عالية الخطورة بالتصميم ما أمكن. والقاعدة صياغة الأداة، وليست منقولة من دليل منشور."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the crane study \"bundle weight underestimated\" scores only 40 but has severity 10, so it is \"high\" and was acted on before \"load swings\", which scores 252 with severity 6.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في دراسة الرافعة: «تقدير الوزن بأقل من الحقيقة» رقمه 40 فقط لكن خطورته 10، فهو «عالٍ» وعولج قبل «تأرجح الحمولة» الذي رقمه 252 وخطورته 6."
+      },
+      "how": [
+       {
+        "en": "Rank the work by action priority, not by the number",
+        "ar": "رتّب العمل بأولوية الإجراء لا بالرقم"
+       },
+       {
+        "en": "Act on every severity 9 or 10",
+        "ar": "عالج كل خطورة 9 أو 10"
+       },
+       {
+        "en": "Show the number for comparison only",
+        "ar": "اعرض الرقم للمقارنة فقط"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The list of high-priority rows and their actions",
+        "ar": "قائمة الصفوف عالية الأولوية وإجراءاتها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Ranking by the number alone",
+        "ar": "ترتيب بالرقم وحده"
+       },
+       {
+        "en": "A fixed number threshold (say 100) deciding everything",
+        "ar": "حد ثابت للرقم (مثلاً 100) يقرر كل شيء"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسر"
+      },
+      "kpi": {
+       "en": "High-priority rows with no action",
+       "ar": "صفوف عالية الأولوية بلا إجراء"
+      }
+     },
+     {
+      "ref": "s5-3",
+      "clause": "GD-6",
+      "title": {
+       "en": "Severity falls only with a change",
+       "ar": "الخطورة لا تنخفض إلا بتغيير"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: severity is rated on the effect, and a control does not change the effect of a failure if it happens: a prevention control lowers occurrence and a detection control improves detection. Severity falls only with a design or process change that removes or reduces the effect, as ISO 10009 subclause 7.3 says: severity cannot be reduced, only designed out. The tool warns when severity is lowered in a re-rating while the action is a prevention or detection control.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: الخطورة تُقيَّم على الأثر، والضابط لا يغير أثر الفشل إذا وقع: ضابط المنع يخفض الحدوث، وضابط الكشف يحسن الكشف. ولا تنخفض الخطورة إلا بتغيير في التصميم أو العملية يزيل الأثر أو يخففه، كما يقول ISO 10009 البند 7.3: الخطورة لا تُخفض، بل تُزال بالتصميم. وتنبّه الأداة إذا خُفضت الخطورة في إعادة التقييم ونوع الإجراء ضابط منع أو كشف."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: tag lines in the crane study kept the rigger's hand away from the load: a process change, so severity fell from 8 to 6. The daily thermometer check in the concrete study improved detection from 8 to 4, and severity stayed at 8.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: حبال الدليل في دراسة الرافعة أبعدت يد الرافع عن الحمولة: تغيير في العملية، فانخفضت الخطورة من 8 إلى 6. أما الفحص اليومي لميزان الحرارة في دراسة الخرسانة فحسّن الكشف من 8 إلى 4 وبقيت الخطورة 8."
+      },
+      "how": [
+       {
+        "en": "Name the type of each action",
+        "ar": "حدد نوع كل إجراء"
+       },
+       {
+        "en": "Do not lower severity with a control",
+        "ar": "لا تخفض الخطورة بضابط"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Re-ratings that respect the severity rule",
+        "ar": "إعادة تقييم تحترم قاعدة الخطورة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Severity lowered by an extra check",
+        "ar": "خطورة تنخفض بفحص إضافي"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسر"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   },
+   {
+    "id": "8.5.6",
+    "phase": "learn",
+    "title": {
+     "en": "Clause 8.5.6 Control of changes, and ISO 10009 subclause 6.3 control plan",
+     "ar": "البند 8.5.6 ضبط التغييرات، وISO 10009 البند 6.3 خطة الضبط"
+    },
+    "short": {
+     "en": "8.5.6 · 6.3",
+     "ar": "8.5.6 · 6.3"
+    },
+    "intro": {
+     "en": "Every change in the process reopens the study, and the study's results feed the control plan and the procedures.",
+     "ar": "كل تغيير في العملية يعيد فتح الدراسة، ونتائج الدراسة تدخل خطة الضبط والإجراءات."
+    },
+    "items": [
+     {
+      "ref": "s6-1",
+      "clause": "8.5.6",
+      "title": {
+       "en": "Reviewing the study when the process changes",
+       "ar": "مراجعة الدراسة عند تغيير العملية"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 8.5.6 asks to review and control changes for production or service provision to the extent necessary to ensure continuing conformity, with documented information on the results of the review and who authorized the change. The FMEA study is a natural part of that review: a change of step, supplier or equipment re-rates its rows.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 8.5.6 مراجعة التغييرات في الإنتاج أو تقديم الخدمة وضبطها بالقدر اللازم لضمان استمرار المطابقة، مع معلومات موثقة بنتائج المراجعة ومن اعتمد التغيير. ودراسة FMEA جزء طبيعي من هذه المراجعة: تغيير الخطوة أو المورد أو المعدة يعيد تقييم صفوفها."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: after chilled water became the rule at both plants, the concrete study was reviewed on 12 October and R1–R4 were re-rated.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بعد أن صار الماء المبرد قاعدة في المحطتين، روجعت دراسة الخرسانة في 12 أكتوبر وأعيد تقييم R1–R4."
+      },
+      "how": [
+       {
+        "en": "Make the FMEA review an item of the change request",
+        "ar": "اجعل مراجعة FMEA بنداً في طلب التغيير"
+       },
+       {
+        "en": "Record the date, the team and what changed",
+        "ar": "سجّل التاريخ والفريق وما تغيّر"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Dated reviews after the last change",
+        "ar": "مراجعات مؤرخة بعد آخر تغيير"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A study never opened since it was written",
+        "ar": "دراسة لم تُفتح منذ إعدادها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of studies reviewed after their last change",
+       "ar": "نسبة الدراسات المراجعة بعد آخر تغيير"
+      }
+     },
+     {
+      "ref": "s6-2",
+      "clause": "6.3",
+      "title": {
+       "en": "From FMEA to the control plan",
+       "ar": "من FMEA إلى خطة الضبط"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 10009:2024 subclause 6.3 describes the control plan: each stage in sequence, the characteristics controlled including special ones (often with a process FMEA as input), the method, frequency and recording of measurement, and the reaction plan if a characteristic does not conform. It notes that flows, FMEA and control plans are reviewed and updated when nonconformities occur.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يصف ISO 10009:2024 في البند 6.3 خطة الضبط: كل مرحلة بالتسلسل، والخصائص المضبوطة بما فيها الخاصة (وكثيراً ما تكون FMEA العملية مدخلاً)، وطريقة القياس وتكراره وتسجيله، وخطة رد الفعل إذا خرجت الخاصية عن المتطلب. ويذكر أن مخططات التدفق وFMEA وخطط الضبط تُراجع وتُحدَّث عند حدوث عدم مطابقة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the concrete study's controls went into the control plan of DM-EX-01: the temperature of every load at the gate with the daily-checked thermometer; reaction: stop the pour and call the plant above 32 °C.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: دخلت ضوابط دراسة الخرسانة خطة الضبط في DM-EX-01: حرارة كل شحنة عند البوابة بالميزان المفحوص يومياً، ورد الفعل إيقاف الصب وإبلاغ المحطة فوق 32 °م."
+      },
+      "how": [
+       {
+        "en": "Carry every detection control into the control plan",
+        "ar": "انقل كل ضابط كشف إلى خطة الضبط"
+       },
+       {
+        "en": "Update the procedures and work instructions",
+        "ar": "حدّث الإجراءات وتعليمات العمل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A control plan that names the FMEA rows",
+        "ar": "خطة ضبط تذكر صفوف FMEA"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A control plan unrelated to the study",
+        "ar": "خطة ضبط لا علاقة لها بالدراسة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   },
+   {
+    "id": "10.2",
+    "phase": "learn",
+    "title": {
+     "en": "Clause 10.2 Nonconformity and corrective action",
+     "ar": "البند 10.2 عدم المطابقة والإجراء التصحيحي"
+    },
+    "short": {
+     "en": "10.2 · Corrective action",
+     "ar": "10.2 · الإجراء التصحيحي"
+    },
+    "intro": {
+     "en": "Every new failure reopens the study: was its mode in it? Was it rated right? Where else could it happen?",
+     "ar": "كل فشل جديد يعيد فتح الدراسة: هل كان نمطه فيها؟ هل قُيّم صحيحاً؟ وأين قد يحدث مثله؟"
+    },
+    "items": [
+     {
+      "ref": "s7-1",
+      "clause": "10.2.1",
+      "title": {
+       "en": "After a nonconformity: similar cases and updated risks",
+       "ar": "بعد عدم المطابقة: حالات مماثلة وتحديث المخاطر"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 10.2.1 asks, when a nonconformity occurs and as part of evaluating the need to eliminate its causes, to determine whether similar nonconformities exist or can potentially occur (b) 3)), then to update the risks and opportunities determined during planning, if necessary (e)). The FMEA study is a natural place for this: the mode is added if it was missing, occurrence and detection are re-rated, and similar steps are checked.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 10.2.1 عند حدوث عدم مطابقة، ضمن تقييم الحاجة إلى إزالة أسبابها، تحديد ما إذا كانت حالات مماثلة موجودة أو قد تحدث (ب) 3))، ثم تحديث المخاطر والفرص المحددة أثناء التخطيط عند الحاجة (هـ). ودراسة FMEA مكان طبيعي لذلك: يُضاف النمط إن لم يكن فيها، ويُعاد تقييم الحدوث والكشف، ويُبحث في الخطوات المماثلة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: after audit finding IA-2026-07 on overdue calibration, with CAPA record CA-EX-02, the calibration study was written and the mode \"rented device with no certificate\", which had never been written, was added.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بعد ملاحظة التدقيق IA-2026-07 عن تأخر المعايرة، ومع سجل CAPA CA-EX-02، أُعدت دراسة المعايرة وأُضيف نمط «جهاز مستأجر دون شهادة» الذي لم يكن مكتوباً."
+      },
+      "how": [
+       {
+        "en": "Open the study after each nonconformity",
+        "ar": "افتح الدراسة بعد كل عدم مطابقة"
+       },
+       {
+        "en": "Link it to the CAPA record",
+        "ar": "اربطها بسجل CAPA"
+       },
+       {
+        "en": "Look for similar steps",
+        "ar": "ابحث عن الخطوات المماثلة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A review after the nonconformity and the CAPA link",
+        "ar": "مراجعة بعد عدم المطابقة وربط CAPA"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A nonconformity that changes nothing in the study",
+        "ar": "عدم مطابقة لا يغير شيئاً في الدراسة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s7-2",
+      "clause": "GD-7",
+      "title": {
+       "en": "FMEA uses the toolbox rather than replacing it",
+       "ar": "FMEA يستخدم صندوق الأدوات ولا يحل محله"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: FMEA looks ahead, and the other tools complete it: the structured what-if technique first for a large process, Pareto and RCA for the failures already seen (a vital-few category or the event as a mode in the study), Fishbone and 5 Whys for the causes, DMAIC and A3 for the actions that need a project, CAPA when a nonconformity is involved, and PDCA for the follow-up. The tool links all of these by id and reads the other tools without writing to them.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: FMEA نظرة إلى الأمام، وبقية الأدوات تكملها: أسلوب «ماذا لو» المنظم أولاً للعملية الكبيرة، وباريتو وRCA للأعطال التي وقعت فعلاً (الفئة الحيوية أو الحدث نمطاً في الدراسة)، وعظمة السمكة ولماذا الخمس للأسباب، وDMAIC وA3 للإجراءات التي تحتاج مشروعاً، وCAPA عندما توجد حالة عدم مطابقة، وPDCA للمتابعة. وتربط الأداة كل ذلك برقمه وتقرأ الأدوات الأخرى دون أن تكتب فيها."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the crane study started from investigation RC-EX-02 (the event as a mode, its root cause as a cause), and named A3-EX-02, which carried the two-sling rigging action.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بدأت دراسة الرافعة من التحقيق RC-EX-02 (الحدث نمطاً وسببه الجذري سبباً)، وذكرت صفحة A3-EX-02 التي حملت إجراء الربط بحبلين."
+      },
+      "how": [
+       {
+        "en": "Start from another tool when the failure has already happened",
+        "ar": "ابدأ من أداة أخرى عندما يكون الفشل قد وقع"
+       },
+       {
+        "en": "Send a large action to DMAIC or A3",
+        "ar": "أرسل الإجراء الكبير إلى DMAIC أو A3"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The study's links to the other tools",
+        "ar": "روابط الدراسة بالأدوات الأخرى"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An FMEA repeating an existing analysis instead of linking it",
+        "ar": "FMEA تكرر تحليلاً موجوداً بدل ربطه"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسر"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   },
+   {
+    "id": "10.1",
+    "phase": "learn",
+    "title": {
+     "en": "Clause 10.1 Continual improvement, and ISO 9000:2026 principles",
+     "ar": "البند 10.1 التحسين المستمر، ومبادئ ISO 9000:2026"
+    },
+    "short": {
+     "en": "10.1 · Learning",
+     "ar": "10.1 · التعلّم"
+    },
+    "intro": {
+     "en": "FMEA prevents undesired effects before they happen, rests on facts and data, and what it teaches goes into the next study.",
+     "ar": "FMEA تمنع الآثار غير المرغوبة قبل وقوعها، وتُبنى على الوقائع والبيانات، وما تتعلمه يدخل الدراسة التالية."
+    },
+    "items": [
+     {
+      "ref": "s8-1",
+      "clause": "10.1",
+      "title": {
+       "en": "Preventing undesired effects",
+       "ar": "منع الآثار غير المرغوبة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 10.1 asks to continually improve the suitability, adequacy and effectiveness of the system, with actions that include c) correcting, preventing or reducing undesired effects. FMEA is a prevention tool: it acts on a failure before it happens, and lowers the occurrence of what cannot be prevented.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 10.1 تحسين ملاءمة النظام وكفايته وفعاليته باستمرار، وأن تشمل الإجراءات أموراً منها ج) تصحيح الآثار غير المرغوبة أو منعها أو خفضها. وFMEA أداة منع: تعالج الفشل قبل أن يقع، وتخفض حدوث ما لا يمكن منعه."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: after the crane study no load dropped in 46 observed lifts, and two-sling rigging went into lifting procedure LP-07.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بعد دراسة الرافعة لم يتكرر سقوط حمولة في 46 رفعة مراقبة، ودخل الربط بحبلين إجراء الرفع LP-07."
+      },
+      "how": [
+       {
+        "en": "Carry what you learned into the next study",
+        "ar": "انقل ما تعلمته إلى الدراسة التالية"
+       },
+       {
+        "en": "Use past studies as a starting point",
+        "ar": "استخدم الدراسات السابقة نقطة بداية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Procedures and instructions updated from the study",
+        "ar": "إجراءات وتعليمات محدّثة من الدراسة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Studies nobody goes back to",
+        "ar": "دراسات لا يُرجع إليها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s8-2",
+      "clause": "4.2.7",
+      "title": {
+       "en": "Ratings from data and the team",
+       "ar": "التقييم من البيانات والفريق"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the principle of evidence-based decision-making in ISO 9000:2026 (4.2.7) holds that decisions based on the analysis and evaluation of data and information are more likely to produce the desired results, and the improvement principle (4.2.6) holds to an ongoing focus on improvement. In FMEA, occurrence is rated from records, Pareto data and past failures, and the team decides the ratings together, not one person.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يقوم مبدأ اتخاذ القرار المبني على الدليل في ISO 9000:2026 (4.2.7) على أن القرارات المبنية على تحليل البيانات والمعلومات وتقييمها أكثر احتمالاً لتحقيق النتائج المرجوة، ويقوم مبدأ التحسين (4.2.6) على التركيز المستمر على التحسين. وفي FMEA: يُقيَّم الحدوث من السجلات وبيانات باريتو والأعطال السابقة، ويقرر الفريق الدرجات معاً، لا شخص واحد."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the occurrence evidence of R1 in the concrete study: \"7.9% rejected without chilled water against 1.9% with it\", from the DM-EX-01 analysis.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: دليل الحدوث في R1 من دراسة الخرسانة: «7.9% رفض دون ماء مبرد مقابل 1.9% معه» من تحليل DM-EX-01."
+      },
+      "how": [
+       {
+        "en": "Write the occurrence evidence in the row",
+        "ar": "اكتب دليل الحدوث في الصف"
+       },
+       {
+        "en": "Rate by agreement after discussion",
+        "ar": "قيّم بالإجماع بعد النقاش"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Occurrence evidence for the important rows",
+        "ar": "دليل الحدوث للصفوف المهمة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Ratings decided by one person",
+        "ar": "درجات يقررها شخص واحد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "The team",
+       "ar": "الفريق"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s8-3",
+      "clause": "GD-8",
+      "title": {
+       "en": "Common gaps and what an auditor asks for",
+       "ar": "الفجوات الشائعة وما يطلبه المدقق"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: common gaps: a study filled in by one person, scales written after the rating, compound modes, an effect that does not name the customer, \"human error\" as a cause, one control counted as both prevention and detection, work ranked by the priority number alone, severity lowered by a check, actions with no owner, new ratings with no evidence, and a study never opened since it was written. An auditor usually asks for: the team and the facilitator, the agreed scales with their date, the structure, the analysis table, the high-severity rows and their actions, the re-rating with evidence, the last review after a change or a nonconformity, and the link to the control plan. The tool checks this automatically in the Audit tab.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: الفجوات الشائعة: دراسة يملؤها شخص واحد، ومقاييس تُكتب بعد التقييم، وأنماط مركبة، وأثر لا يذكر العميل، و«خطأ بشري» سبباً، وضابط واحد يُحسب منعاً وكشفاً، وترتيب العمل برقم الأولوية وحده، وخطورة تنخفض بفحص، وإجراءات بلا مالك، ودرجات جديدة بلا دليل، ودراسة لم تُفتح منذ إعدادها. وكثيراً ما يطلب المدقق: الفريق والميسر، والمقاييس المعتمدة بتاريخها، والبنية، وجدول التحليل، والصفوف عالية الخطورة وإجراءاتها، وإعادة التقييم بالدليل، وآخر مراجعة بعد تغيير أو عدم مطابقة، وصلة الدراسة بخطة الضبط. وتفحص الأداة ذلك آلياً في تبويب التدقيق."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the automatic audit on the crane study: every check passes except \"no human error\", because the cause of R4 still reads \"rigger not paying attention\".",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: التدقيق الآلي على دراسة الرافعة: كل الفحوص ناجحة ما عدا «لا خطأ بشري»، لأن سبب R4 ما زال «عدم انتباه الرافع»."
+      },
+      "how": [
+       {
+        "en": "Check the Audit tab before each review",
+        "ar": "راجع تبويب التدقيق قبل كل مراجعة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The automatic audit result for each study",
+        "ar": "نتيجة التدقيق الآلي لكل دراسة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A big table with no actions",
+        "ar": "جدول كبير بلا إجراءات"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Internal auditor",
+       "ar": "المدقق الداخلي"
+      },
+      "kpi": {
+       "en": "Audit pass rate",
+       "ar": "نسبة الفحوص الناجحة"
+      }
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "id": "rpn",
+    "q": {
+     "en": "Is the RPN enough to decide what to fix?",
+     "ar": "هل يكفي رقم الأولوية لتقرير ما نعالجه؟"
+    },
+    "a": {
+     "en": "No. **The risk priority number (severity × occurrence × detection) hides big severities**: a row with severity 10, occurrence 2 and detection 5 scores 100, while severity 6, occurrence 6 and detection 7 scores 252; the first can kill, the second causes a delay. So the tool treats **high severity first** with a written rule: severity 9 or 10 is always \"high\", then severity × occurrence, then detection. That is the tower-crane example: \"bundle slips from the sling\" was acted on first whatever its number. ISO 10009 subclause 7.3 puts the priority on reducing occurrence and designing out high-severity failure modes where possible. Details in the [[tab:explain-std]].",
+     "ar": "لا. **رقم الأولوية (الخطورة × الحدوث × الكشف) يخفي الخطورة الكبيرة**: صف خطورته 10 وحدوثه 2 وكشفه 5 رقمه 100، وصف خطورته 6 وحدوثه 6 وكشفه 7 رقمه 252؛ والأول قد يقتل والثاني يؤخر. لذلك تعالج الأداة **الخطورة العالية أولاً** بقاعدة مكتوبة: الخطورة 9 أو 10 «عالية» دائماً، ثم الخطورة × الحدوث، ثم الكشف. وهذا ما في مثال الرافعة البرجية: نمط «انزلاق الحزمة» عولج أولاً مهما كان رقمه. ويذكر ISO 10009 البند 7.3 أن الأولوية لخفض الحدوث وإزالة أنماط الفشل عالية الخطورة بالتصميم ما أمكن. التفاصيل في [[tab:explain-std]]."
+    }
+   },
+   {
+    "id": "which",
+    "q": {
+     "en": "FMEA, RCA or DMAIC — which one?",
+     "ar": "FMEA أم RCA أم DMAIC: أيها أستخدم؟"
+    },
+    "a": {
+     "en": "They are not alternatives. **FMEA looks ahead**: how the process could fail before it fails. **RCA looks back**: why it actually failed. **DMAIC is a project** for an existing problem whose cause is unknown and whose process can be measured. They work together: an FMEA starts from a DMAIC project's SIPOC steps and proved causes, or from the failure an RCA investigated and its root causes; the actions that need a project go to DMAIC or A3, and a nonconformity goes to CAPA. The study is reviewed after each new failure.",
+     "ar": "هي ليست بدائل. **FMEA نظرة إلى الأمام**: كيف يمكن أن تفشل العملية قبل أن تفشل. و**RCA نظرة إلى الخلف**: لماذا فشلت فعلاً. و**DMAIC مشروع** لمشكلة قائمة سببها غير معروف وعمليتها قابلة للقياس. وتعمل معاً: يبدأ FMEA من خطوات SIPOC مشروع DMAIC وأسبابه المثبتة، أو من الفشل الذي حققت فيه RCA وأسبابه الجذرية، ثم تذهب الإجراءات التي تحتاج مشروعاً إلى DMAIC أو A3، وتذهب حالة عدم المطابقة إلى CAPA. والدراسة تُراجع بعد كل فشل جديد."
+    }
+   },
+   {
+    "id": "scales",
+    "q": {
+     "en": "Why write the scales before the rating?",
+     "ar": "لماذا تُكتب المقاييس قبل التقييم؟"
+    },
+    "a": {
+     "en": "Because **a scale written after the rating is fitted to the result**. ISO 10009 subclause 7.3 asks for clear criteria for each point of the scale, and for nobody to gain by scoring low to avoid action. So the tool asks for a written meaning for each level from 1 to 10 for severity, occurrence and detection, and a date agreed no later than the first rating, and it warns when it is later. The default scales are the tool's own wording: edit them with the team to fit your process before agreeing them.",
+     "ar": "لأن **المقياس الذي يُكتب بعد التقييم يُفصَّل على النتيجة**. ويطلب ISO 10009 البند 7.3 معياراً واضحاً لكل درجة، ولا حافز لخفض الدرجات تجنباً للإجراء. لذلك تطلب الأداة معنى مكتوباً لكل درجة من 1 إلى 10 للخطورة والحدوث والكشف، وتاريخ اعتماد لا يتأخر عن أول تقييم، وتنبّه إذا تأخر. المقاييس الافتراضية في الأداة صياغتها هي، فعدّلها مع الفريق لتناسب عمليتكم قبل اعتمادها."
+    }
+   },
+   {
+    "id": "sev",
+    "q": {
+     "en": "Can a new check lower the severity?",
+     "ar": "هل يمكن خفض الخطورة بإضافة فحص؟"
+    },
+    "a": {
+     "en": "No. **Severity is rated on the effect**, and a check does not change the effect of a failure if it happens; it improves detection. Severity falls only with **a design or process change** that removes or reduces the effect. ISO 10009 subclause 7.3 says severity cannot be reduced; it can only be designed out. So the tool warns when severity is lowered in a re-rating while the action is a prevention or a detection control. In the crane example, tag lines kept the rigger's hands away from the load, so severity fell from 8 to 6 because the process changed.",
+     "ar": "لا. **الخطورة تُقيَّم على الأثر**، والفحص لا يغير أثر الفشل إذا وقع؛ هو يحسن الكشف. ولا تنخفض الخطورة إلا **بتغيير في التصميم أو العملية** يزيل الأثر أو يخففه. ويقول ISO 10009 البند 7.3 إن الخطورة لا تنخفض، بل تُزال بالتصميم. لذلك تنبّه الأداة إذا خُفضت الخطورة في إعادة التقييم ونوع الإجراء «ضابط منع» أو «ضابط كشف». في مثال الرافعة: حبال الدليل جعلت يد الرافع بعيدة عن الحمولة، فانخفضت الخطورة من 8 إلى 6 لأن العملية تغيرت."
+    }
+   },
+   {
+    "id": "human",
+    "q": {
+     "en": "What if the cause is \"human error\"?",
+     "ar": "ماذا أفعل إذا كان السبب «خطأ بشري»؟"
+    },
+    "a": {
+     "en": "\"Human error\" is **a cause to design out, not a failure mode and not a name to blame**. ISO 9001:2026 clause 8.5.1 g) asks for actions to prevent human error. So ask: why was the error possible? What in the process allowed it? Then design a control that prevents or detects it (error-proofing, a checklist, an automatic limit). The tool flags a failure mode written as \"human error\" or a cause that names a person only, and the analysis stage is not complete until it is rewritten.",
+     "ar": "«الخطأ البشري» **سبب يُزال بالتصميم، وليس نمط فشل ولا اسماً يُلام**. يطلب البند 8.5.1 ز) من ISO 9001:2026 تطبيق إجراءات لمنع الخطأ البشري. فاسأل: لماذا كان الخطأ ممكناً؟ ما الذي في العملية سمح به؟ ثم صمم ضابطاً يمنعه أو يكشفه (منع الخطأ، قائمة فحص، حد آلي). وتنبّه الأداة عندما يُكتب نمط الفشل «خطأ بشري» أو يشير السبب إلى شخص فقط، ولا تكتمل مرحلة التحليل قبل إعادة الصياغة."
+    }
+   },
+   {
+    "id": "live",
+    "q": {
+     "en": "When is an FMEA study reviewed?",
+     "ar": "متى تُراجع دراسة FMEA؟"
+    },
+    "a": {
+     "en": "FMEA is **a living document**: it is reviewed when the process changes (control of changes 8.5.6), after each nonconformity (10.2; 10.2.1 b) 3) asks whether similar nonconformities exist or could occur), after an audit finding, and when an unexpected issue arises, as ISO 10009 subclause 7.3 says. Its subclause 6.3 says flows, FMEA and control plans are reviewed when nonconformities occur. In the tool, a study is complete with a dated review after its last change.",
+     "ar": "FMEA **وثيقة حية**: تُراجع عند تغيير العملية (ضبط التغييرات 8.5.6)، وبعد كل حالة عدم مطابقة (10.2؛ وتطلب 10.2.1 ب) 3) تحديد ما إذا كانت حالات مماثلة قد توجد أو قد تحدث)، وبعد ملاحظة التدقيق، وعند ظهور مشكلة غير متوقعة كما يذكر ISO 10009 البند 7.3. ويذكر البند 6.3 منه أن مخططات التدفق وFMEA وخطط الضبط تُراجع عند حدوث عدم مطابقة. وفي الأداة: تكتمل الدراسة بمراجعة مؤرخة بعد آخر تغيير فيها."
+    }
+   }
+  ],
+  "competencies": [
+   "RSK-01",
+   "RSK-02",
+   "QM-02"
+  ],
+  "ecosystem": "risk"
+ }
+}

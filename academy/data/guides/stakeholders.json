@@ -1,0 +1,1540 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-STAKE",
+  "slug": "stakeholders",
+  "kind": "method",
+  "module": "stakeholders",
+  "title": {
+   "en": "Stakeholder analysis",
+   "ar": "تحليل الأطراف المعنية"
+  },
+  "subtitle": {
+   "en": "Method tool: who matters and what they need",
+   "ar": "أداة منهجية: من يهمّ وماذا يحتاج"
+  },
+  "lede": {
+   "en": "To turn \"interested parties\" from a generic list into decisions: parties by name, requirements with their sources and dates, an explicit decision on each requirement, power and interest with reasons that set the engagement approach and the relationship owner, an explicit climate question, then every key party into SWOT, PESTLE or risks or set aside with a reason, then a review on a date and after changes. A register that changes no decision has no value.",
+   "ar": "أن تتحول «الأطراف المعنية» من قائمة عامة إلى قرارات: أطراف بأسمائها، ومتطلبات بمصادرها وتواريخها، وقرار صريح لكل متطلب، وقوة واهتمام بسبب يحددان طريقة التعامل ومالك العلاقة، وسؤال صريح عن المناخ، ثم يذهب كل طرف رئيسي إلى SWOT أو PESTLE أو المخاطر أو يُستبعد بسبب، ثم مراجعة دورية وبعد التغيرات. السجل الذي لا يغيّر قراراً لا قيمة له."
+  },
+  "author": "مدثر سلامه",
+  "note": {
+   "en": "Stakeholder analysis is a technique, not a standard or a requirement, and ISO 10009:2024 names no tool by that name. The ISO 9001:2026 requirements it serves: interested parties, their requirements, the decision to address them and their monitoring (4.2), the scope (4.3 b)), customer focus (5.1.2), risks and opportunities (6.1.1), customer satisfaction (9.1.2) and management review inputs (9.3.2 c)).",
+   "ar": "تحليل الأطراف المعنية أسلوب، وليس مواصفة ولا متطلباً، ولا تسمي ISO 10009:2024 أداة بهذا الاسم. والمتطلبات التي يخدمها في ISO 9001:2026: الأطراف المعنية ومتطلباتها وقرار معالجتها ومتابعتها (4.2)، والنطاق (4.3 ب))، والتركيز على العميل (5.1.2)، والمخاطر والفرص (6.1.1)، ورضا العميل (9.1.2)، ومدخلات مراجعة الإدارة (9.3.2 ج))."
+  },
+  "who": {
+   "en": "Top management, quality and risk managers, project, bid and procurement managers, HSE managers, whoever prepares management review, and internal auditors.",
+   "ar": "الإدارة العليا ومديرو الجودة والمخاطر، ومديرو المشاريع والعطاءات والمشتريات، ومديرو السلامة، ومن يعد مراجعة الإدارة، والمدققون الداخليون."
+  },
+  "roles": [
+   {
+    "name": {
+     "en": "Decision owner",
+     "ar": "مالك القرار"
+    },
+    "text": {
+     "en": "Sets the scope and the decision the register serves, approves the 4.2 c) decisions, and carries the changes to management review.",
+     "ar": "يحدد النطاق والقرار الذي يخدمه السجل، ويعتمد قرارات 4.2 ج)، ويحمل التغيرات إلى مراجعة الإدارة."
+    }
+   },
+   {
+    "name": {
+     "en": "Facilitator",
+     "ar": "الميسّر"
+    },
+    "text": {
+     "en": "Brings the team and the outside input together, asks for each party's specific name and for the source and date of each requirement.",
+     "ar": "يجمع الفريق والرأي الخارجي، ويطلب لكل طرف اسمه بعينه، ولكل متطلب مصدره وتاريخه."
+    }
+   },
+   {
+    "name": {
+     "en": "Relationship owners",
+     "ar": "مالكو العلاقات"
+    },
+    "text": {
+     "en": "Projects with the client, procurement with suppliers, HSE with regulators and workers: they know the requirement and its source and keep the channel open.",
+     "ar": "مدير المشاريع مع العميل، والمشتريات مع الموردين، والسلامة مع الجهات التنظيمية والعمال: يعرفون المتطلب ومصدره ويحافظون على القناة."
+    }
+   },
+   {
+    "name": {
+     "en": "Outcome owners",
+     "ar": "مالكو المخرجات"
+    },
+    "text": {
+     "en": "Carry the key parties into SWOT, PESTLE, the risk register and the 6.1 plan, and carry out the actions on time.",
+     "ar": "يحملون الأطراف الرئيسية إلى SWOT وPESTLE وسجل المخاطر وخطة 6.1، وينفذون الإجراءات بمواعيدها."
+    }
+   },
+   {
+    "name": {
+     "en": "Internal auditor",
+     "ar": "المدقق الداخلي"
+    },
+    "text": {
+     "en": "Asks: who are the relevant parties? What are their requirements and where do they come from? Which does the system address, and why not the rest? When was it reviewed?",
+     "ar": "يسأل: من الأطراف ذات الصلة؟ وما متطلباتها ومن أين؟ وأيها يعالجه النظام ولماذا لا يعالج الباقي؟ ومتى روجعت؟"
+    }
+   }
+  ],
+  "steps": [
+   {
+    "no": "1",
+    "title": {
+     "en": "Scope and decision",
+     "ar": "النطاق والقرار"
+    },
+    "text": {
+     "en": "Which decision the analysis serves.",
+     "ar": "لأي قرار نحلل الأطراف."
+    },
+    "ref": "GD-1"
+   },
+   {
+    "no": "2",
+    "title": {
+     "en": "The team",
+     "ar": "الفريق"
+    },
+    "text": {
+     "en": "Three roles and outside input.",
+     "ar": "ثلاثة أدوار ورأي من الخارج."
+    },
+    "ref": "GD-2"
+   },
+   {
+    "no": "3",
+    "title": {
+     "en": "The specific party",
+     "ar": "الطرف بعينه"
+    },
+    "text": {
+     "en": "Not \"the community\", not \"customers\".",
+     "ar": "لا «المجتمع» ولا «العملاء»."
+    },
+    "ref": "GD-3"
+   },
+   {
+    "no": "4",
+    "title": {
+     "en": "The requirement and its source",
+     "ar": "المتطلب ومصدره"
+    },
+    "text": {
+     "en": "A contract clause, a regulation, a survey or minutes.",
+     "ar": "بند عقد، أو نظام، أو استبيان، أو محضر."
+    },
+    "ref": "GD-4"
+   },
+   {
+    "no": "5",
+    "title": {
+     "en": "The 4.2 c) decision",
+     "ar": "قرار 4.2 ج)"
+    },
+    "text": {
+     "en": "Addressed by the system or not, and why.",
+     "ar": "يعالجه النظام أم لا، ولماذا."
+    },
+    "ref": "4.2"
+   },
+   {
+    "no": "6",
+    "title": {
+     "en": "Power and interest",
+     "ar": "القوة والاهتمام"
+    },
+    "text": {
+     "en": "With a reason for each score.",
+     "ar": "بسبب لكل درجة."
+    },
+    "ref": "GD-6"
+   },
+   {
+    "no": "7",
+    "title": {
+     "en": "Engagement",
+     "ar": "التعامل"
+    },
+    "text": {
+     "en": "Owner, channel and frequency.",
+     "ar": "مالك وقناة وتكرار."
+    },
+    "ref": "GD-7"
+   },
+   {
+    "no": "8",
+    "title": {
+     "en": "Climate",
+     "ar": "المناخ"
+    },
+    "text": {
+     "en": "An explicit question for each key party.",
+     "ar": "سؤال صريح لكل طرف رئيسي."
+    },
+    "ref": "GD-8"
+   },
+   {
+    "no": "9",
+    "title": {
+     "en": "Into SWOT, PESTLE and risks",
+     "ar": "إلى SWOT وPESTLE والمخاطر"
+    },
+    "text": {
+     "en": "Or set aside with a reason.",
+     "ar": "أو يُستبعد بسبب."
+    },
+    "ref": "GD-9"
+   },
+   {
+    "no": "10",
+    "title": {
+     "en": "Review and communicate",
+     "ar": "راجع وأبلغ"
+    },
+    "text": {
+     "en": "On its date, after changes and at management review.",
+     "ar": "في الموعد وبعد التغيرات وفي مراجعة الإدارة."
+    },
+    "ref": "9.3.2"
+   }
+  ],
+  "related": [
+   {
+    "code": "SWOT",
+    "name": {
+     "en": "SWOT analysis",
+     "ar": "تحليل SWOT"
+    },
+    "text": {
+     "en": "Key parties go into a SWOT study as opportunities and threats by its id, and a register can start from SWOT items whose source is \"customer\" (read-only).",
+     "ar": "الأطراف الرئيسية تدخل دراسة SWOT فرصاً وتهديدات برقم الدراسة، ويبدأ سجل من بنود SWOT التي مصدرها «العملاء» (قراءة فقط)."
+    }
+   },
+   {
+    "code": "PESTLE",
+    "name": {
+     "en": "PESTLE analysis",
+     "ar": "تحليل PESTLE"
+    },
+    "text": {
+     "en": "A party can be an item under one of the six factors, and a register can start from the \"who is affected\" of a scan's items (read-only).",
+     "ar": "الطرف قد يكون بنداً في عامل من العوامل الستة، ويبدأ سجل من «من يتأثر» في بنود المسح (قراءة فقط)."
+    }
+   },
+   {
+    "code": "Strategy Studio",
+    "name": {
+     "en": "Strategy & Performance Studio",
+     "ar": "استوديو الاستراتيجية والأداء"
+    },
+    "text": {
+     "en": "It holds no interested-parties register; this tool reads its SWOT and PESTLE rows that name a party (read-only).",
+     "ar": "لا يحمل سجلاً للأطراف المعنية؛ يقرأ السجل بنود SWOT وPESTLE فيه التي تسمي طرفاً (قراءة فقط)."
+    }
+   },
+   {
+    "code": "ISO 10009",
+    "name": {
+     "en": "ISO 10009 quality tools guide",
+     "ar": "دليل أدوات الجودة ISO 10009"
+    },
+    "text": {
+     "en": "No tool named \"stakeholder analysis\"; the closest: the context of the organization log in 5.5, and the consulted and informed parties of RACI in 6.5.",
+     "ar": "لا أداة باسم «تحليل الأطراف المعنية»؛ الأقرب: سجل سياق المنشأة في 5.5، و«المستشارون» و«المطلعون» من الأطراف في RACI في 6.5."
+    }
+   },
+   {
+    "code": "ISO 31000",
+    "name": {
+     "en": "ISO 31000 Risk Studio",
+     "ar": "استوديو المخاطر ISO 31000"
+    },
+    "text": {
+     "en": "A destination for parties that carry risks managed there.",
+     "ar": "وجهة للأطراف التي تحمل مخاطر تُدار هناك."
+    }
+   },
+   {
+    "code": "Lessons",
+    "name": {
+     "en": "Lessons learned register",
+     "ar": "سجل الدروس المستفادة"
+    },
+    "text": {
+     "en": "A lesson about a customer or a supplier can reveal an unwritten requirement, and a register can start from it (read-only).",
+     "ar": "درس يخص عميلاً أو مورداً قد يكشف متطلباً لم يُكتب، ويبدأ منه سجل (قراءة فقط)."
+    }
+   },
+   {
+    "code": "Smart Audit · ISO 9001",
+    "name": {
+     "en": "Audit and the ISO 9001 guide",
+     "ar": "التدقيق ودليل ISO 9001"
+    },
+    "text": {
+     "en": "The auditor asks for the register as evidence of clause 4.2; the ISO 9001:2026 guide explains the clause itself.",
+     "ar": "المدقق يطلب السجل دليلاً على البند 4.2؛ ودليل ISO 9001:2026 يشرح البند نفسه."
+    }
+   }
+  ],
+  "serves": [
+   {
+    "code": "ISO 9001:2026 §4.2 · A.4.2 · §4.3",
+    "name": {
+     "en": "Interested parties and the scope",
+     "ar": "الأطراف المعنية والنطاق"
+    },
+    "text": {
+     "en": "Parties, their requirements and which the system addresses, their monitoring and review, and the climate NOTE; the requirements considered when setting the scope.",
+     "ar": "الأطراف ومتطلباتها وأيها يعالجه النظام، ومتابعتها ومراجعتها، وملاحظة المناخ؛ ومراعاة المتطلبات في تحديد النطاق."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 §5.1.2 · §6.1.1 · §9.1.2 · §9.3.2",
+    "name": {
+     "en": "Customer, risks and management review",
+     "ar": "العميل والمخاطر ومراجعة الإدارة"
+    },
+    "text": {
+     "en": "Customer focus, requirements considered for risks and opportunities, customer satisfaction, and changes in the parties' needs at management review.",
+     "ar": "التركيز على العميل، ومراعاة المتطلبات في المخاطر والفرص، ورضا العميل، وتغيرات احتياجات الأطراف في مراجعة الإدارة."
+    }
+   },
+   {
+    "code": "ISO 9000:2026 §3.1.4 · §4.4.2",
+    "name": {
+     "en": "Interested party",
+     "ar": "الطرف المعني"
+    },
+    "text": {
+     "en": "An interested party (stakeholder) is a person or organization that can affect, be affected by, or perceive itself affected by a decision or activity; meeting its needs is an opportunity and neglecting them a risk.",
+     "ar": "الطرف المعني (صاحب المصلحة) شخص أو منظمة تؤثر في قرار أو نشاط أو تتأثر به أو ترى أنها تتأثر؛ وتلبية احتياجاته فرصة وإهمالها خطر."
+    }
+   },
+   {
+    "code": "ISO 10009:2024 §5.1 · §5.5 · §6.5",
+    "name": {
+     "en": "What the tools guide covers and what it does not",
+     "ar": "ما يغطيه دليل الأدوات وما لا يغطيه"
+    },
+    "text": {
+     "en": "No tool named stakeholder analysis; Table 5.1 names parties in SWOT's external review, 5.5 names the context of the organization log, and 6.5 the consulted and informed parties of RACI.",
+     "ar": "لا أداة باسم تحليل الأطراف المعنية؛ الجدول 5.1 يذكر الأطراف في مراجعة SWOT الخارجية، و5.5 يذكر سجل سياق المنشأة، و6.5 يذكر الأطراف المستشارة والمطلعة في RACI."
+    }
+   },
+   {
+    "code": "Power/interest · AA1000 · ISO 26000",
+    "name": {
+     "en": "Power/interest grid and engagement frameworks (not verified)",
+     "ar": "مصفوفة القوة والاهتمام وأطر إشراك الأطراف (غير متحقق منها)"
+    },
+    "text": {
+     "en": "None is uploaded to the project; so the grid, the \"key party\" rule and the stage and audit rules are the tool's own wording.",
+     "ar": "لا يوجد منها شيء مرفوع إلى المشروع؛ فالمصفوفة وقاعدة «الطرف الرئيسي» وقواعد المراحل والتدقيق صياغة الأداة."
+    }
+   }
+  ],
+  "clauses": [
+   {
+    "id": "4.2",
+    "phase": "ctx",
+    "title": {
+     "en": "Clause 4.2 Understanding the needs and expectations of interested parties",
+     "ar": "البند 4.2 فهم احتياجات الأطراف المعنية وتوقعاتها"
+    },
+    "short": {
+     "en": "4.2 · Parties",
+     "ar": "4.2 · الأطراف"
+    },
+    "intro": {
+     "en": "The standard asks to determine the relevant parties, their requirements and which of them the system will address, and to monitor and review them. A register is a way to organise this, provided it serves a decision and is reviewed.",
+     "ar": "تطلب المواصفة تحديد الأطراف ذات الصلة ومتطلباتها وأيها سيعالجه النظام، ومتابعتها ومراجعتها. والسجل طريقة لتنظيم ذلك، بشرط أن يخدم قراراً وأن يُراجع."
+    },
+    "items": [
+     {
+      "ref": "s1-1",
+      "clause": "4.2",
+      "title": {
+       "en": "Parties, their requirements, and which the system addresses",
+       "ar": "الأطراف ومتطلباتها وأيها يعالجه النظام"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 4.2 asks the organization to determine a) the interested parties relevant to the quality management system, b) the relevant requirements of these parties and c) which of these requirements will be addressed through the system. It asks to monitor and review information about these parties and their requirements. Its NOTE says relevant parties can have requirements related to climate change.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 4.2 أن تحدد المنشأة: أ) الأطراف المعنية ذات الصلة بنظام إدارة الجودة، ب) متطلبات هذه الأطراف ذات الصلة، ج) أي هذه المتطلبات سيعالجه النظام. وتطلب متابعة المعلومات عن هذه الأطراف ومتطلباتها ومراجعتها. وتذكر الملاحظة أن للأطراف ذات الصلة متطلبات قد تتصل بتغير المناخ."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in Al-Waha's register ST-EX-01, the bank's requirement \"quarterly financial statements and a delayed-projects report\" was decided \"partly\": the system covers the delayed-projects report, the statements sit outside it, and the reason was written.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في سجل الواحة ST-EX-01 كُتب متطلب البنك «قوائم مالية ربع سنوية وتقرير بالمشاريع المتأخرة» وقُرر «جزئياً»: يعالج النظام تقرير المشاريع المتأخرة، أما القوائم المالية فخارجه، وكُتب السبب."
+      },
+      "how": [
+       {
+        "en": "Record a decision for every requirement: yes, partly or no",
+        "ar": "سجّل لكل متطلب قراراً: نعم أو جزئياً أو لا"
+       },
+       {
+        "en": "Write the reason for partly or no",
+        "ar": "اكتب السبب عند «جزئياً» أو «لا»"
+       },
+       {
+        "en": "Set a review date for the register",
+        "ar": "حدد موعد مراجعة للسجل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A dated register of parties, requirements and decisions",
+        "ar": "سجل مؤرخ بالأطراف والمتطلبات وقراراتها"
+       },
+       {
+        "en": "The review log",
+        "ar": "سجل المراجعات"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A list of parties with no requirements",
+        "ar": "قائمة أطراف بلا متطلبات"
+       },
+       {
+        "en": "Every requirement \"yes\" with no distinction",
+        "ar": "كل المتطلبات «نعم» دون تمييز"
+       },
+       {
+        "en": "A requirement rejected with no reason",
+        "ar": "متطلب مرفوض بلا سبب"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Top management",
+       "ar": "الإدارة العليا"
+      },
+      "kpi": {
+       "en": "Requirements with a decision and reason ÷ all requirements",
+       "ar": "متطلبات لها قرار وسبب ÷ كل المتطلبات"
+      }
+     },
+     {
+      "ref": "s1-2",
+      "clause": "A.4.2",
+      "title": {
+       "en": "Parties and their requirements change",
+       "ar": "الأطراف ومتطلباتها تتغير"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: Annex A.4.2 of ISO 9001:2026 explains that understanding parties means determining the parties relevant to the system and their requirements, that the requirements the organization considers relevant fall within the system's boundaries, and that requirements of external providers can apply. It says parties and their requirements change over time, so awareness of the changes is part of keeping the system effective, and that climate expectations can influence regulatory compliance, customer requirements and organizational commitments.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يوضح الملحق A.4.2 من ISO 9001:2026 أن فهم الأطراف يعني تحديد الأطراف ذات الصلة بالنظام ومتطلباتها، وأن المتطلبات التي تعدها المنشأة ذات صلة تدخل في حدود النظام، وأن متطلبات المزودين الخارجيين قد تنطبق. ويذكر أن الأطراف ومتطلباتها تتغير مع الوقت، فالوعي بالتغير جزء من بقاء النظام فعالاً، وأن توقعات المناخ قد تؤثر في الامتثال التنظيمي ومتطلبات العملاء والتزامات المنشأة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: when the Jeddah schools contract was awarded in October 2026, register ST-EX-01 was reviewed and it was recorded that a second client joins the next register.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: لما رُسّي عقد مدارس جدة في أكتوبر 2026، روجع السجل ST-EX-01 وسُجل أن عميلاً ثانياً يدخل السجل القادم."
+      },
+      "how": [
+       {
+        "en": "Write in the register the changes that call for a review before its date",
+        "ar": "اكتب في السجل التغيرات التي تستدعي مراجعته قبل موعده"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The review log with dates, reasons and what changed",
+        "ar": "سجل المراجعات بتاريخها وسببها وما تغير"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A register that never changed despite a new contract or a new supplier",
+        "ar": "سجل لم يتغير رغم عقد جديد أو مورد جديد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Decision owner",
+       "ar": "مالك القرار"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s1-3",
+      "clause": "GD-1",
+      "title": {
+       "en": "Scope and decision before the parties",
+       "ar": "النطاق والقرار قبل الأطراف"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: write before any party: why we analyse (the organization, a unit, a project, a bid, a site or a process), which decision or plan the register serves, and when it is taken. A key party on a site may not matter for the company strategy. So the \"scoped\" stage is not complete until the decision, the date and the facilitator are written.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: اكتب قبل أي طرف: لماذا نحلل (المنشأة، أو وحدة، أو مشروع، أو عطاء، أو موقع، أو عملية)، وأي قرار أو خطة يخدم السجل، ومتى يُتخذ. فطرف رئيسي في موقع قد لا يهم استراتيجية الشركة. لذلك لا تكتمل مرحلة «حُدد النطاق» حتى يُكتب القرار والتاريخ والميسّر."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the Tower C register ST-EX-03 serves one decision: which parties the lift plan and the 2027 HSE plan must cover.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: سجل البرج ج ST-EX-03 يخدم قراراً واحداً: أي الأطراف تغطيها خطة الرفع وخطة السلامة لعام 2027."
+      },
+      "how": [
+       {
+        "en": "Write the decision as one sentence with a verb and a date",
+        "ar": "اكتب القرار جملة واحدة بفعل وموعد"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The decision written at the head of the register",
+        "ar": "القرار المكتوب في رأس السجل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A \"general\" company register with no decision",
+        "ar": "سجل «عام» للشركة بلا قرار"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Decision owner",
+       "ar": "مالك القرار"
+      },
+      "kpi": {
+       "en": "Registers with a written decision ÷ all registers",
+       "ar": "سجلات لها قرار مكتوب ÷ كل السجلات"
+      }
+     },
+     {
+      "ref": "s1-4",
+      "clause": "4.3",
+      "title": {
+       "en": "The scope considers the parties' requirements",
+       "ar": "النطاق يراعي متطلبات الأطراف"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 4.3 asks to determine the boundaries and applicability of the system to establish its scope, considering a) the issues of 4.1, b) the requirements of 4.2 and c) the organization's products and services. A party's requirement decided as addressed falls within the scope's boundaries.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 4.3 تحديد حدود النظام وانطباقه لتحديد نطاقه، مع مراعاة: أ) القضايا في 4.1، ب) المتطلبات في 4.2، ج) منتجات المنشأة وخدماتها. فمتطلب طرف قُرر أن يعالجه النظام يدخل في حدود النطاق."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the safety certificate before handover (civil defence) fell within the system's scope because it conditions the handover of every building.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: شهادة السلامة قبل التسليم (الدفاع المدني) دخلت نطاق النظام لأنها شرط لتسليم كل مبنى."
+      },
+      "how": [
+       {
+        "en": "Revisit the scope when a new requirement is decided \"yes\"",
+        "ar": "راجع النطاق إذا قُرر متطلب جديد «نعم»"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The scope statement",
+        "ar": "بيان النطاق"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A scope that does not reflect the main client's requirements",
+        "ar": "نطاق لا يعكس متطلبات العميل الرئيسية"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   },
+   {
+    "id": "3.1.4",
+    "phase": "evid",
+    "title": {
+     "en": "The team, the specific party, the requirement with its source",
+     "ar": "الفريق والطرف المحدد والمتطلب بمصدره"
+    },
+    "short": {
+     "en": "GD · Parties",
+     "ar": "GD · الأطراف"
+    },
+    "intro": {
+     "en": "A party is named specifically, by a team with outside input, and its need is written as a requirement with a source and a date.",
+     "ar": "الطرف يُسمّى بعينه، ويكتبه فريق فيه رأي من الخارج، واحتياجه يُكتب متطلباً بمصدر وتاريخ."
+    },
+    "items": [
+     {
+      "ref": "s2-1",
+      "clause": "3.1.4",
+      "title": {
+       "en": "Interested party in ISO 9000:2026",
+       "ar": "الطرف المعني في ISO 9000:2026"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9000:2026 defines the interested party, also called stakeholder (3.1.4), as a person or organization that can affect, be affected by, or perceive itself to be affected by a decision or activity. Examples include customers, owners, people in the organization, providers, bankers, regulatory authorities, unions, partners and society, including competitors and opposing pressure groups.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يعرّف ISO 9000:2026 الطرف المعني، ويسميه أيضاً صاحب المصلحة (3.1.4)، بأنه شخص أو منظمة يمكن أن يؤثر في قرار أو نشاط، أو يتأثر به، أو يرى أنه يتأثر به. ومن أمثلته العملاء والملاك والعاملون والمزودون والمصارف والجهات التنظيمية والنقابات والشركاء والمجتمع، ومنه المنافسون وجماعات الضغط المعارضة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: \"the Al-Nakheel residents' association\" perceives itself affected by the crane's path, so it is an interested party even with no contract.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «جمعية سكان حي النخيل» طرف يرى أنه يتأثر بمسار الرافعة، فهو طرف معني ولو لم يكن له عقد."
+      },
+      "how": [
+       {
+        "en": "Go through the 3.1.4 examples to check that no group is missing",
+        "ar": "مر على أمثلة 3.1.4 للتأكد أن لا فئة غائبة"
+       },
+       {
+        "en": "Name the body inside each group",
+        "ar": "سمِّ الجهة داخل كل فئة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The list of parties with names and types",
+        "ar": "قائمة الأطراف بأسمائها وأنواعها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Forgetting internal parties such as employees",
+        "ar": "نسيان الأطراف الداخلية مثل العاملين"
+       },
+       {
+        "en": "\"The community\" with no named body",
+        "ar": "«المجتمع» بلا جهة مسماة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "Parties with specific names ÷ all parties",
+       "ar": "أطراف بأسماء محددة ÷ كل الأطراف"
+      }
+     },
+     {
+      "ref": "s2-2",
+      "clause": "GD-2",
+      "title": {
+       "en": "A team with outside input",
+       "ar": "فريق برأي من الخارج"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: at least three roles, and at least one from outside the team: a client representative, a supplier, an advisor or another department. Management alone does not see every party, as ISO 10009:2024 Table 5.1 notes for SWOT (carried out with external inputs, not by one person). The tool flags a \"one-person register\".",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: ثلاثة أدوار على الأقل، وواحد على الأقل من خارج الفريق: ممثل عميل، أو مورد، أو مستشار، أو إدارة أخرى. فالإدارة وحدها لا ترى كل الأطراف، كما ينبّه الجدول 5.1 في ISO 10009:2024 بالنسبة لـ SWOT (أن يُنفذ بمدخلات خارجية لا بشخص واحد). وتنبّه الأداة على «سجل الشخص الواحد»."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the company register the client's supervising engineer sat with the team and added the \"monthly progress report with quality indicators\" requirement.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في سجل الشركة جلس مهندس الإشراف ممثل العميل مع الفريق، فأضاف متطلب «تقرير التقدم الشهري بمؤشرات الجودة»."
+      },
+      "how": [
+       {
+        "en": "Invite a representative of a key party to the session",
+        "ar": "ادعُ ممثلاً لطرف رئيسي إلى الجلسة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The team's names and roles in the register",
+        "ar": "أسماء الفريق وأدوارهم في السجل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A register prepared by the quality manager alone",
+        "ar": "سجل يعده مدير الجودة وحده"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "Registers with a team and outside input ÷ all registers",
+       "ar": "سجلات بفريق ورأي خارجي ÷ كل السجلات"
+      }
+     },
+     {
+      "ref": "s2-3",
+      "clause": "GD-3",
+      "title": {
+       "en": "The specific party, not the group",
+       "ar": "الطرف بعينه، لا الفئة"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: name the body: \"Riyadh municipality — building permits department\", not \"the government\"; \"Al-Nukhba Ready-Mix plant\", not \"suppliers\". A named body has requirements that can be read and a relationship owner who can be asked. The tool flags generic names (\"the community\", \"the public\", \"customers\"), and the \"parties named\" stage is not complete while one remains.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: سمِّ الجهة: «أمانة الرياض — إدارة رخص البناء» لا «الحكومة»، و«مصنع النخبة للخرسانة» لا «الموردون». فالجهة المسماة لها متطلبات تُقرأ ومالك علاقة يُسأل. وتنبّه الأداة على الاسم العام («المجتمع»، «الجمهور»، «العملاء»)، ولا تكتمل مرحلة «أطراف مسماة» وفيها اسم عام."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: \"the Al-Nakheel residents' association\" was written instead of \"the local community\", so the party got a channel (a weekly message) and an owner (the site manager).",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: كُتب «جمعية سكان حي النخيل» بدل «المجتمع المحلي»، فصار للطرف قناة (رسالة أسبوعية) ومالك (مدير الموقع)."
+      },
+      "how": [
+       {
+        "en": "Ask: who exactly? What is the body's name?",
+        "ar": "اسأل: من بالضبط؟ وما اسم الجهة؟"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Generic parties no one can contact",
+        "ar": "أطراف عامة لا يمكن التواصل معها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s2-4",
+      "clause": "GD-4",
+      "title": {
+       "en": "The requirement with its source and date",
+       "ar": "المتطلب بمصدره وتاريخه"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: write the need as a requirement that can be checked, and name its source: a contract clause, a regulation or circular, a survey, meeting minutes or a complaint, with the source's date. A requirement with no source is an opinion until someone owns it. The tool requires the source and date for every key-party requirement and flags the others.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: اكتب الاحتياج متطلباً يمكن التحقق منه، واذكر مصدره: بند عقد، أو نظام وتعميم، أو استبيان، أو محضر اجتماع، أو شكوى، وتاريخ المصدر. فالمتطلب بلا مصدر رأي حتى يُعرف من قاله. وتطلب الأداة المصدر والتاريخ لكل متطلبات الأطراف الرئيسية، وتنبّه على غيرها."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: \"a hot-weather method statement before June\" comes from contract RS-2025-114, technical annex, clause 7.4, dated 2025-11-20.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «طريقة عمل للصب في الحر قبل يونيو» مصدرها العقد RS-2025-114، الملحق الفني، البند 7.4، بتاريخ 2025-11-20."
+      },
+      "how": [
+       {
+        "en": "Quote the clause, circular or minutes number",
+        "ar": "أرفق رقم البند أو التعميم أو المحضر"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The sources named in the register",
+        "ar": "المصادر المذكورة في السجل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "\"Expected\" requirements with no source",
+        "ar": "متطلبات «متوقعة» بلا مصدر"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Relationship owners",
+       "ar": "مالكو العلاقات"
+      },
+      "kpi": {
+       "en": "Key-party requirements with source and date ÷ key-party requirements",
+       "ar": "متطلبات الرئيسيين بمصدر وتاريخ ÷ متطلبات الرئيسيين"
+      }
+     }
+    ]
+   },
+   {
+    "id": "4.4.2",
+    "phase": "rate",
+    "title": {
+     "en": "Power, interest and the engagement approach",
+     "ar": "القوة والاهتمام وطريقة التعامل"
+    },
+    "short": {
+     "en": "GD · Rating",
+     "ar": "GD · التقييم"
+    },
+    "intro": {
+     "en": "A power score and an interest score, each with a reason, set the engagement approach, and every key party has an owner and a channel.",
+     "ar": "درجة القوة ودرجة الاهتمام، كل منهما بسبب، تحددان طريقة التعامل، ولكل طرف رئيسي مالك وقناة."
+    },
+    "items": [
+     {
+      "ref": "s3-1",
+      "clause": "4.4.2",
+      "title": {
+       "en": "Parties as opportunity and risk in ISO 9000:2026",
+       "ar": "الأطراف فرصة وخطر في ISO 9000:2026"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9000:2026 clause 4.4.2 says some interested parties can be a significant opportunity for sustained success if their needs and expectations are met, and a risk if they are not; that part of understanding the context is identifying relevant parties, their needs and expectations and their effect on the organization; that the concept extends the focus beyond the customer; and that engaging parties and building positive relationships improves performance, reputation, risk anticipation, decisions and compliance.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يذكر ISO 9000:2026 في البند 4.4.2 أن بعض الأطراف المعنية فرصة كبيرة للنجاح المستدام إذا لُبيت احتياجاتها وتوقعاتها، وخطر إذا لم تُلبَّ، وأن جزءاً من فهم السياق تحديد الأطراف ذات الصلة واحتياجاتها وتوقعاتها وأثرها في المنشأة، وأن المفهوم يوسع التركيز إلى ما بعد العميل، وأن إشراك الأطراف وبناء علاقات إيجابية معها يحسن الأداء والسمعة واستباق المخاطر والقرار والامتثال."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: site workers: meeting the shade and water requirement is an opportunity (fewer heat incidents), neglecting it a risk.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: عمال المواقع: تلبية متطلب الظل والماء فرصة (حوادث حرارية أقل)، وإهماله خطر."
+      },
+      "how": [
+       {
+        "en": "Ask for each key party: what is the opportunity if we meet it, the risk if we don't?",
+        "ar": "اسأل لكل طرف رئيسي: ما الفرصة إن لبّينا، وما الخطر إن لم نلبّ؟"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Focusing on the customer alone",
+        "ar": "التركيز على العميل وحده"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Decision owner",
+       "ar": "مالك القرار"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s3-2",
+      "clause": "GD-6",
+      "title": {
+       "en": "Power and interest with a reason",
+       "ar": "القوة والاهتمام بسبب"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: rate power or influence (the party's ability to change your decisions or stop your work) and interest (how much what you do affects it) from 1 to 5, with a short reason for each. The tool places the party: manage closely (both 4 or more), keep satisfied (power only), keep informed (interest only) or monitor. A \"key\" party has power or interest of 4 or more. This grid and rule are the tool's design; the uploaded standards do not state them.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: قيّم القوة أو التأثير (قدرة الطرف على تغيير قراراتك أو إيقاف عملك) والاهتمام (مدى تأثره بما تفعل) من 1 إلى 5، واكتب سبباً قصيراً لكل درجة. وتضع الأداة الطرف في مربع: إدارة عن قرب (كلاهما 4 أو أكثر)، أو إبقاء راضياً (القوة فقط)، أو إبقاء مطلعاً (الاهتمام فقط)، أو متابعة. والطرف «الرئيسي» قوته أو اهتمامه 4 أو أكثر. هذه المصفوفة والقاعدة تصميم الأداة، ولا تذكرها المواصفات المرفوعة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: civil defence: power 5 (issues the handover certificate) and interest 3 (steps in at handover and after incidents), so \"keep satisfied\".",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: الدفاع المدني: قوة 5 (يصدر شهادة التسليم) واهتمام 3 (يتدخل عند التسليم والحوادث)، فهو «إبقاء راضياً»."
+      },
+      "how": [
+       {
+        "en": "Write a one-line reason for each score",
+        "ar": "اكتب سبباً من سطر لكل درجة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The grid in the register and the report",
+        "ar": "المصفوفة في السجل والتقرير"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Scores with no reason that change with whoever writes them",
+        "ar": "درجات بلا سبب تتغير بتغير من يكتبها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "Parties rated with reasons ÷ all parties",
+       "ar": "أطراف مقيّمة بسبب ÷ كل الأطراف"
+      }
+     },
+     {
+      "ref": "s3-3",
+      "clause": "GD-7",
+      "title": {
+       "en": "Engagement approach and relationship owner",
+       "ar": "طريقة التعامل ومالك العلاقة"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: for every key party: a relationship owner by job title, a channel (a meeting, a portal, a report, a visit) and a frequency. This is close to how RACI in ISO 10009:2024 clause 6.5 splits parties into consulted and informed. The \"engagement and outcomes\" stage is not complete while a key party has no owner, channel or frequency.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: لكل طرف رئيسي: مالك علاقة باسم وظيفته، وقناة تواصل (اجتماع، بوابة، تقرير، زيارة)، وتكرار. ويشبه ذلك تقسيم RACI في ISO 10009:2024 البند 6.5 للأطراف إلى من يُستشار ومن يُبلّغ. ولا تكتمل مرحلة «تعامل ومخرجات» وطرف رئيسي بلا مالك أو قناة أو تكرار."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: Al-Nukhba plant: the owner is the procurement manager, the channel a weekly meeting and the ordering system, the frequency weekly.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: مصنع النخبة: مالك العلاقة مدير المشتريات، والقناة اجتماع أسبوعي ونظام الطلبات، والتكرار أسبوعي."
+      },
+      "how": [
+       {
+        "en": "Match the channel's frequency to the quadrant",
+        "ar": "اربط القناة بتكرار يناسب المربع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Meeting minutes or periodic reports",
+        "ar": "محاضر الاجتماعات أو التقارير الدورية"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A \"manage closely\" party with no regular meeting",
+        "ar": "طرف «إدارة عن قرب» بلا اجتماع منتظم"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Relationship owners",
+       "ar": "مالكو العلاقات"
+      },
+      "kpi": {
+       "en": "Key parties with an owner and channel ÷ key parties",
+       "ar": "أطراف رئيسية لها مالك وقناة ÷ الأطراف الرئيسية"
+      }
+     }
+    ]
+   },
+   {
+    "id": "6.1.1",
+    "phase": "risk",
+    "title": {
+     "en": "Climate, outcomes, risks and the customer",
+     "ar": "المناخ والمخرجات والمخاطر والعميل"
+    },
+    "short": {
+     "en": "6.1 · Outcomes",
+     "ar": "6.1 · المخرجات"
+    },
+    "intro": {
+     "en": "Every key party is asked about climate and goes into SWOT, PESTLE, risks or the 6.1 plan, or is set aside with a reason.",
+     "ar": "يُسأل كل طرف رئيسي عن المناخ، ويذهب إلى SWOT أو PESTLE أو المخاطر أو خطة 6.1، أو يُستبعد بسبب."
+    },
+    "items": [
+     {
+      "ref": "s4-1",
+      "clause": "6.1.1",
+      "title": {
+       "en": "Requirements in determining risks and opportunities",
+       "ar": "المتطلبات في تحديد المخاطر والفرص"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 6.1.1 asks the organization, when planning the system, to consider the issues of 4.1 and the requirements of 4.2 and to determine the risks and opportunities to address to give assurance the system can achieve its intended results, prevent or reduce undesired effects, achieve continual improvement and enhance desired effects.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 6.1.1 أن تراعي المنشأة عند التخطيط للنظام القضايا في 4.1 والمتطلبات في 4.2، وتحدد المخاطر والفرص التي يجب معالجتها لضمان قدرة النظام على تحقيق نتائجه، ومنع الآثار غير المرغوبة أو تقليلها، وتحقيق التحسين المستمر، وتعزيز الآثار المرغوبة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the civil defence certificate went into the risk register as RR-2026-15, and a back-up concrete supplier into the 6.1 supply plan.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: شهادة الدفاع المدني دخلت سجل المخاطر برقم RR-2026-15، والمورد البديل للخرسانة دخل خطة 6.1 للتوريد."
+      },
+      "how": [
+       {
+        "en": "Write the risk id or the plan entry in the party's outcome",
+        "ar": "اكتب رقم الخطر أو بند الخطة في مخرج الطرف"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Register and plan references in the outcomes",
+        "ar": "مراجع السجل والخطة في المخرجات"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A 6.1 plan that names no party",
+        "ar": "خطة 6.1 لا تذكر أي طرف"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Risk manager",
+       "ar": "مدير المخاطر"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s4-2",
+      "clause": "GD-8",
+      "title": {
+       "en": "An explicit question on climate-related requirements",
+       "ar": "سؤال صريح عن متطلبات المناخ"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: ask every key party explicitly: do you have a requirement related to climate change? Mark the requirement \"climate-related\", and write in the register what was asked, of whom, and the result, even when it is \"no relevant requirement\". The NOTE to 4.2 says parties can have climate-related requirements, and Annex A.4.2 names their effect on regulatory compliance and customer requirements.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: اسأل كل طرف رئيسي صراحة: هل لديكم متطلب يتصل بتغير المناخ؟ وعلّم المتطلب «يتصل بالمناخ»، واكتب في السجل ما الذي سُئل ومن سُئل والنتيجة، ولو كانت «لا متطلبات ذات صلة». فملاحظة 4.2 تذكر أن للأطراف متطلبات قد تتصل بتغير المناخ، والملحق A.4.2 يذكر أثرها في الامتثال التنظيمي ومتطلبات العملاء."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the hospital bid the authority was asked at the clarification meeting, and the \"heat management plan\" requirement surfaced in appendix C.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في عطاء المستشفى سُئلت الهيئة في اجتماع الاستيضاح، فظهر متطلب «خطة إدارة الحرارة» في الملحق ج."
+      },
+      "how": [
+       {
+        "en": "Add the climate question to the agenda with every key party",
+        "ar": "أضف سؤال المناخ إلى جدول الاجتماع مع كل طرف رئيسي"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The question's result in the register",
+        "ar": "نتيجة السؤال في السجل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "\"No climate requirements\" without anyone being asked",
+        "ar": "«لا متطلبات مناخية» دون أن يُسأل أحد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "Registers where climate was asked ÷ all registers",
+       "ar": "سجلات سُئل فيها عن المناخ ÷ كل السجلات"
+      }
+     },
+     {
+      "ref": "s4-3",
+      "clause": "GD-9",
+      "title": {
+       "en": "Key parties into SWOT and PESTLE",
+       "ar": "الأطراف الرئيسية إلى SWOT وPESTLE"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: parties are sources of opportunities and threats: a client asking for something new is an opportunity, a regulator tightening a condition is a threat. So carry every key party into a SWOT study (an opportunity or a threat, by the study id) or a PESTLE scan (by its factor and scan id), or into risks, or set it aside with a written reason. The \"engagement and outcomes\" stage is not complete while a key party has no outcome.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: الأطراف مصدر للفرص والتهديدات: عميل يطلب شيئاً جديداً فرصة، وجهة تنظيمية تشدد شرطاً تهديد. فاحمل كل طرف رئيسي إلى دراسة SWOT (فرصة أو تهديد، برقم الدراسة) أو إلى مسح PESTLE (بعامله، برقم المسح)، أو إلى المخاطر، أو استبعده بسبب مكتوب. ولا تكتمل مرحلة «تعامل ومخرجات» وطرف رئيسي بلا مخرج."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the client's \"hot-weather method statement\" went into SW-EX-01 as a threat, and the amended insulation code (municipality) into PE-EX-01 under the legal factor.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: متطلب العميل «طريقة العمل في الحر» دخل SW-EX-01 تهديداً، وكود العزل المعدل (الأمانة) دخل PE-EX-01 في العامل القانوني."
+      },
+      "how": [
+       {
+        "en": "Use the \"add an outcome for every key party\" button",
+        "ar": "استخدم زر «أضف مخرجاً لكل طرف رئيسي»"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Study and scan ids in the outcomes",
+        "ar": "أرقام الدراسات والمسوح في المخرجات"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Key parties with no trace in SWOT or risks",
+        "ar": "أطراف رئيسية لا أثر لها في SWOT ولا المخاطر"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Outcome owners",
+       "ar": "مالكو المخرجات"
+      },
+      "kpi": {
+       "en": "Key parties with an outcome ÷ key parties",
+       "ar": "أطراف رئيسية لها مخرج ÷ الأطراف الرئيسية"
+      }
+     },
+     {
+      "ref": "s4-4",
+      "clause": "5.1.2",
+      "title": {
+       "en": "Customer focus",
+       "ar": "التركيز على العميل"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 5.1.2 asks top management to show leadership on customer focus by ensuring that a) customer and applicable statutory and regulatory requirements are determined, understood and consistently met, b) the risks and opportunities affecting conformity and customer satisfaction are determined and addressed, and c) the focus on enhancing customer satisfaction is maintained.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 5.1.2 أن تُظهر الإدارة العليا قيادتها في التركيز على العميل بضمان: أ) تحديد متطلبات العميل والمتطلبات القانونية والتنظيمية المنطبقة وفهمها والوفاء بها باستمرار، ب) تحديد المخاطر والفرص التي تمس مطابقة المنتجات والخدمات ورضا العميل ومعالجتها، ج) الحفاظ على التركيز على تعزيز رضا العميل."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the client, the municipality and civil defence in the company register: the customer's and the regulators' requirements in one place, with their decisions.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: العميل والأمانة والدفاع المدني في سجل الشركة: متطلبات العميل والجهات التنظيمية في مكان واحد بقراراتها."
+      },
+      "how": [
+       {
+        "en": "Put the customer and the regulators first in the register",
+        "ar": "ضع العميل والجهات التنظيمية في أول السجل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Regulatory requirements missing from the register",
+        "ar": "متطلبات تنظيمية غائبة عن السجل"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Top management",
+       "ar": "الإدارة العليا"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s4-5",
+      "clause": "9.1.2",
+      "title": {
+       "en": "Customer satisfaction as a source of requirements",
+       "ar": "رضا العميل مصدر للمتطلبات"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 9.1.2 asks to monitor customer satisfaction and to determine the methods for obtaining, monitoring and reviewing its information; its NOTE names sources such as surveys, feedback on delivered products and services, meetings with customers and complaints and claims.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 9.1.2 متابعة رضا العميل وتحديد طرق الحصول على معلوماته ومتابعتها ومراجعتها، وتذكر الملاحظة مصادر مثل الاستبيانات وملاحظات العملاء على ما سُلّم والاجتماعات معهم والشكاوى والمطالبات."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the \"monthly progress report with quality indicators\" requirement came from the progress meeting with the client, so its source is the meeting record.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: متطلب «تقرير تقدم شهري بمؤشرات الجودة» جاء من اجتماع التقدم مع العميل، فصار مصدره محضر الاجتماع."
+      },
+      "how": [
+       {
+        "en": "Use surveys and complaints as sources of requirements",
+        "ar": "استخدم الاستبيانات والشكاوى مصادر للمتطلبات"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Customer satisfaction results that never change the register",
+        "ar": "نتائج رضا العميل لا تغيّر السجل"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   },
+   {
+    "id": "9.3.2",
+    "phase": "rev",
+    "title": {
+     "en": "Review, communication and management review",
+     "ar": "المراجعة والإبلاغ ومراجعة الإدارة"
+    },
+    "short": {
+     "en": "9.3.2 · Review",
+     "ar": "9.3.2 · المراجعة"
+    },
+    "intro": {
+     "en": "The register is dated and reviewed periodically and after changes; its changes go to management review and its result to the relationship owners.",
+     "ar": "يؤرخ السجل ويُراجع دورياً وبعد التغيرات، وتذهب تغيراته إلى مراجعة الإدارة، وتُبلّغ نتيجته لمالكي العلاقات."
+    },
+    "items": [
+     {
+      "ref": "s5-1",
+      "clause": "9.3.2",
+      "title": {
+       "en": "Changes in parties' needs at management review",
+       "ar": "تغيرات احتياجات الأطراف في مراجعة الإدارة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 9.3.2 asks management review inputs to include, among others, c) changes in the needs and expectations of interested parties relevant to the system, and, within performance information, customer satisfaction and feedback from relevant interested parties, and the performance of external providers.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 9.3.2 أن تشمل مدخلات مراجعة الإدارة، ضمن أمور أخرى: ج) التغيرات في احتياجات الأطراف المعنية وتوقعاتها ذات الصلة بالنظام، ومن معلومات الأداء رضا العملاء وملاحظات الأطراف المعنية ذات الصلة، وأداء المزودين الخارجيين."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the 9 October 2026 review of ST-EX-01 (the Jeddah contract, the insulation code's confirmed date) went to the Q4 management review.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: عُرضت مراجعة ST-EX-01 في 9 أكتوبر 2026 (عقد جدة، وتأكيد موعد كود العزل) في مراجعة الإدارة للربع الرابع."
+      },
+      "how": [
+       {
+        "en": "Attach a summary of the register's changes to the management review inputs",
+        "ar": "أرفق ملخص تغيرات السجل بمدخلات مراجعة الإدارة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Management review minutes that mention the changes",
+        "ar": "محضر مراجعة الإدارة يذكر التغيرات"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A management review that never mentions interested parties",
+        "ar": "مراجعة إدارة لا تذكر الأطراف المعنية"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Decision owner",
+       "ar": "مالك القرار"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s5-2",
+      "clause": "GD-10",
+      "title": {
+       "en": "Review on its date and after changes",
+       "ar": "المراجعة في موعدها وبعد التغيرات"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the register carries the next review date and the changes that call for a review before it (a new contract, a new regulation, a major complaint, a new key supplier). At the review, write what changed and the parties added or removed. The tool flags a review date that passes with no review.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: يحمل السجل موعد المراجعة القادمة، والتغيرات التي تستدعي مراجعة قبله (عقد جديد، نظام جديد، شكوى كبيرة، مورد رئيسي جديد). وفي المراجعة يُكتب ما الذي تغير، والأطراف المضافة والمحذوفة. وتنبّه الأداة عندما يمضي الموعد بلا مراجعة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: bid register ST-EX-02 was reviewed on 14 October 2026 after addendum 2 was issued.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: سجل العطاء ST-EX-02 روجع في 14 أكتوبر 2026 بعد صدور الملحق 2."
+      },
+      "how": [
+       {
+        "en": "Tie the review date to the management review cycle",
+        "ar": "اربط موعد المراجعة بدورة مراجعة الإدارة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The review log",
+        "ar": "سجل المراجعات"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A register never reviewed since it was written",
+        "ar": "سجل لم يُراجع منذ إعداده"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Decision owner",
+       "ar": "مالك القرار"
+      },
+      "kpi": {
+       "en": "Registers reviewed ÷ all registers",
+       "ar": "سجلات روجعت ÷ كل السجلات"
+      }
+     },
+     {
+      "ref": "s5-3",
+      "clause": "GD-11",
+      "title": {
+       "en": "Communicating the result",
+       "ar": "إبلاغ النتيجة"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: send the register's result and decisions to the relationship owners and those who need them: which requirements the system addresses, what will not be addressed and why, and who follows each party. An owner who does not know the decision cannot keep it.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: أرسل نتيجة السجل وقراراته إلى مالكي العلاقات ومن يحتاجها: ما المتطلبات التي يعالجها النظام، وما الذي لن يُعالج ولماذا، ومن يتابع كل طرف. فالمالك الذي لا يعرف القرار لا يستطيع الوفاء به."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the report was sent to the projects, procurement and HSE managers after approval.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: أُرسل التقرير إلى مديري المشاريع والمشتريات والسلامة بعد اعتماده."
+      },
+      "how": [
+       {
+        "en": "Download the HTML report and send it after each review",
+        "ar": "نزّل تقرير HTML وأرسله بعد كل مراجعة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A register the relationship owners have never seen",
+        "ar": "سجل لا يعرفه مالكو العلاقات"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s5-4",
+      "clause": "GD-12",
+      "title": {
+       "en": "What the auditor asks and the common gaps",
+       "ar": "ما يطلبه المدقق والفجوات الشائعة"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the auditor usually asks for: the dated register, the parties' names and types, their requirements and sources, the 4.2 c) decision on each requirement with its reason, where the parties show up in risks and opportunities, and the last review and when it went to management review. Common gaps: generic parties, unsourced requirements, everything \"yes\", and a register never reviewed. The tool's automatic audit checks ten of these.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: يطلب المدقق عادة: السجل المؤرخ، وأسماء الأطراف ونوعها، ومتطلباتها ومصادرها، وقرار 4.2 ج) لكل متطلب وسببه، وأين ظهرت الأطراف في المخاطر والفرص، وآخر مراجعة ومتى عُرضت في مراجعة الإدارة. والفجوات الشائعة: أطراف عامة، ومتطلبات بلا مصدر، وكل شيء «نعم»، وسجل لم يُراجع. والتدقيق الآلي في الأداة يفحص عشرة بنود منها."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the automatic audit result of the Al-Waha example shows in the Audit tab.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: نتيجة التدقيق الآلي لمثال الواحة تظهر في تبويب التدقيق."
+      },
+      "how": [
+       {
+        "en": "Run the automatic audit before the internal audit",
+        "ar": "شغّل التدقيق الآلي قبل التدقيق الداخلي"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The automatic audit result",
+        "ar": "نتيجة التدقيق الآلي"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Internal auditor",
+       "ar": "المدقق الداخلي"
+      },
+      "kpi": {
+       "en": "Audit pass rate",
+       "ar": "نجاح التدقيق"
+      }
+     }
+    ]
+   },
+   {
+    "id": "5.5",
+    "phase": "evid",
+    "title": {
+     "en": "ISO 10009:2024: what it covers and what it does not (5.1, 5.5, 6.5)",
+     "ar": "ISO 10009:2024: ما يغطيه وما لا يغطيه (5.1 و5.5 و6.5)"
+    },
+    "short": {
+     "en": "10009 · 5.5",
+     "ar": "10009 · 5.5"
+    },
+    "intro": {
+     "en": "ISO 10009:2024 names no \"stakeholder analysis\" tool. The closest: the context of the organization log among the other tools of 5.5, the consulted and informed parties of RACI in 6.5, and the parties in SWOT's external review in Table 5.1.",
+     "ar": "لا تسمي ISO 10009:2024 أداة «تحليل الأطراف المعنية». أقرب ما فيها: سجل سياق المنشأة بين الأدوات الأخرى في 5.5، والأطراف المستشارة والمطلعة في RACI في 6.5، والأطراف في مراجعة SWOT الخارجية في الجدول 5.1."
+    },
+    "items": [
+     {
+      "ref": "s6-1",
+      "clause": "5.5",
+      "title": {
+       "en": "Other relevant tools in clause 5",
+       "ar": "أدوات أخرى ذات صلة في البند 5"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 10009:2024 clause 5.5 lists, among other resources relevant to the strategy tools, the context of the organization (COTO) diagram, matrix or log, ISO/PAS 24644-1, and the COSO framework in Figure 1. It does not review any of them with a table of benefits and points to note, as it does for SWOT and PESTLE.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يذكر البند 5.5 من ISO 10009:2024 بين الموارد الأخرى ذات الصلة بأدوات الاستراتيجية: مخطط أو مصفوفة أو سجل سياق المنشأة (COTO)، والمواصفة ISO/PAS 24644-1، وإطار COSO في الشكل 1. ولا يراجع أياً منها بجدول فوائد ونقاط انتباه كما يفعل مع SWOT وPESTLE."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: this register can be the \"interested parties\" part of a context of the organization log, next to the PESTLE scan of external issues.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: يمكن أن يكون هذا السجل جزء «الأطراف المعنية» من سجل سياق المنشأة، بجانب مسح PESTLE للقضايا الخارجية."
+      },
+      "how": [
+       {
+        "en": "Keep the parties register and the PESTLE scan in one context file",
+        "ar": "اجمع سجل الأطراف ومسح PESTLE في ملف سياق واحد"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Claiming ISO 10009 describes stakeholder analysis",
+        "ar": "ادعاء أن ISO 10009 تصف تحليل الأطراف المعنية"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s6-2",
+      "clause": "6.5",
+      "title": {
+       "en": "RACI and interested parties",
+       "ar": "RACI والأطراف المعنية"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 10009:2024 clause 6.5 reviews the authority matrix and RACI/RASCI: responsible, accountable, consulted (other interested parties with potential input to the process or affected by its outputs), supporting (parties with inputs only) and informed (parties kept informed but not directly involved).",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يراجع البند 6.5 من ISO 10009:2024 مصفوفة الصلاحيات وRACI/RASCI: المسؤول، والمساءل، والمستشار (أطراف معنية أخرى لها مدخلات محتملة في العملية أو تتأثر بمخرجاتها)، والداعم (أطراف بمدخلات فقط)، والمطلع (أطراف تُبلّغ دون مشاركة مباشرة)."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: \"keep informed\" in the grid matches \"informed\" in the lifting process RACI: the residents' association is told every week.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «إبقاء مطلعاً» في المصفوفة يقابل «المطلع» في RACI لعملية الرفع: جمعية السكان تُبلّغ أسبوعياً."
+      },
+      "how": [
+       {
+        "en": "Use the quadrants to fill the consulted and informed columns of a RACI",
+        "ar": "استخدم المربعات لملء أعمدة المستشار والمطلع في RACI"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owners",
+       "ar": "مالكو العمليات"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s6-3",
+      "clause": "5.1",
+      "title": {
+       "en": "Parties in SWOT in ISO 10009:2024",
+       "ar": "الأطراف في SWOT في ISO 10009:2024"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 10009:2024 Table 5.1 says SWOT's external review includes interested parties such as competitors and customers, that the analysis benefits from diverse perspectives because management alone will not see all interested parties' perspectives, and that it should be carried out with external inputs, not by a single person.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يذكر الجدول 5.1 في ISO 10009:2024 أن المراجعة الخارجية في SWOT تشمل الأطراف المعنية كالمنافسين والعملاء، وأن التحليل يستفيد من تنوع وجهات النظر لأن الإدارة وحدها لا ترى وجهات نظر كل الأطراف، وأن يُنفذ بمدخلات خارجية لا بشخص واحد."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: study SW-EX-02 took the \"experience condition met\" opportunity from the authority in the bid register.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: دراسة SW-EX-02 أخذت فرصة «مطابقة شرط الخبرة» من طرف الهيئة في سجل العطاء."
+      },
+      "how": [
+       {
+        "en": "Name the SWOT study in the outcome of every party carried into it",
+        "ar": "سمِّ دراسة SWOT في مخرج كل طرف ينتقل إليها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "SWOT opportunities and threats that name no party",
+        "ar": "فرص وتهديدات في SWOT لا تذكر أي طرف"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Decision owner",
+       "ar": "مالك القرار"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "id": "useful",
+    "q": {
+     "en": "What makes a stakeholder analysis useful?",
+     "ar": "ما الذي يجعل تحليل الأطراف المعنية مفيداً؟"
+    },
+    "a": {
+     "en": "**It leads to decisions about the parties that matter.** A list of \"customers, employees, government, community\" changes nothing. So the tool computes the stage: **scoped** (with the decision the register serves), **team complete** (three roles and outside input), **parties named** (specifically, none generic), **requirements sourced and decided** (a requirement for each party, the 4.2 c) decision on each with its reason, key-party requirements with a source and a date), **rated** (power and interest with reasons, and the climate question), **engagement and outcomes** (an owner, a channel and an outcome for every key party), then **reviewed**. In the example, the \"hot-weather method statement\" is a requirement of the public client with its source (a contract clause), decided as addressed by the system, and carried into SW-EX-01 as a threat.",
+     "ar": "**أن يقود إلى قرارات عن الأطراف التي تهم.** قائمة «العملاء، الموظفون، الحكومة، المجتمع» لا تغيّر شيئاً. لذلك تحسب الأداة المرحلة: **حُدد النطاق** (والقرار الذي يخدمه السجل)، ثم **اكتمل الفريق** (ثلاثة أدوار ورأي من الخارج)، ثم **أطراف مسماة** (بأسمائها لا عامة)، ثم **متطلبات بمصادر وقرارات** (لكل طرف متطلب، ولكل متطلب قرار 4.2 ج) وسببه، ومتطلبات الأطراف الرئيسية بمصدر وتاريخ)، ثم **قُيّمت** (قوة واهتمام بسبب، وسؤال المناخ)، ثم **تعامل ومخرجات** (مالك وقناة ومخرج لكل طرف رئيسي)، ثم **روجع**. في المثال: «طريقة العمل في الحر» متطلب من العميل الحكومي بمصدره (بند في العقد)، قُرر أن النظام يعالجه، ودخل دراسة SW-EX-01 تهديداً."
+    }
+   },
+   {
+    "id": "which",
+    "q": {
+     "en": "Stakeholders, PESTLE or SWOT — which one?",
+     "ar": "الأطراف المعنية أم PESTLE أم SWOT: أيها أستخدم؟"
+    },
+    "a": {
+     "en": "They are not alternatives; they work together. **The stakeholder register** answers clause 4.2: who matters, what they require, and which of it the system addresses. **PESTLE** scans the general environment (policy, the economy, society, technology, law and the environment) for clause 4.1, and may name \"who is affected\". **SWOT** sets the external opportunities and threats against the internal strengths and weaknesses and turns them into options. Parties are sources of opportunities and threats: a client asking for something new is an opportunity, a regulator tightening a condition is a threat. So every key party here goes into SWOT, PESTLE or the risk register. ISO 10009:2024 Table 5.1 says the external review in SWOT includes interested parties such as competitors and customers.",
+     "ar": "ليست بدائل؛ تعمل معاً. **سجل الأطراف المعنية** يجيب عن البند 4.2: من يهمّ، وما متطلباته، وأيها يعالجه النظام. و**PESTLE** يمسح البيئة العامة (الأنظمة والاقتصاد والمجتمع والتقنية والقانون والبيئة) للبند 4.1، وقد يسمّي «من يتأثر». و**SWOT** يضع الفرص والتهديدات الخارجية أمام القوة والضعف الداخليين ويحوّلها إلى خيارات. والأطراف مصدر للفرص والتهديدات: عميل يطلب شيئاً جديداً فرصة، وجهة تنظيمية تشدد اشتراطاً تهديد. لذلك يذهب كل طرف رئيسي هنا إلى SWOT أو PESTLE أو سجل المخاطر. وتذكر ISO 10009:2024 في الجدول 5.1 أن المراجعة الخارجية في SWOT تشمل الأطراف المعنية كالمنافسين والعملاء."
+    }
+   },
+   {
+    "id": "req",
+    "q": {
+     "en": "What exactly does clause 4.2 ask for?",
+     "ar": "ما الذي يطلبه البند 4.2 بالضبط؟"
+    },
+    "a": {
+     "en": "ISO 9001:2026 asks in **4.2** to determine **a)** the interested parties relevant to the quality management system, **b)** their relevant requirements and **c)** which of these requirements will be addressed through the system, and to **monitor and review information about them**. Its **NOTE** says these parties can have requirements related to climate change. These requirements are then used to set the **scope** (4.3 b)), considered for **risks and opportunities** (6.1.1), and their **changes go to management review** (9.3.2 c)). Annex A.4.2 explains that parties and their requirements change over time, and that climate expectations can influence regulatory compliance, customer requirements and organizational commitments. The analysis itself is a technique, not a requirement.",
+     "ar": "تطلب ISO 9001:2026 في **4.2** تحديد: **أ)** الأطراف المعنية ذات الصلة بنظام إدارة الجودة، **ب)** متطلباتها ذات الصلة، **ج)** أي هذه المتطلبات سيعالجها النظام؛ ثم **متابعة المعلومات عنها ومراجعتها**. وتذكر **الملاحظة** أن لهذه الأطراف متطلبات قد تتصل بتغير المناخ. ثم تُستخدم هذه المتطلبات في تحديد **النطاق** (4.3 ب))، وتُراعى في **المخاطر والفرص** (6.1.1)، وتُعرض **تغيراتها في مراجعة الإدارة** (9.3.2 ج)). ويوضح الملحق A.4.2 أن الأطراف ومتطلباتها تتغير مع الوقت، وأن توقعات المناخ قد تؤثر في الامتثال التنظيمي ومتطلبات العملاء والتزامات المنشأة. التحليل نفسه أسلوب، لا متطلب."
+    }
+   },
+   {
+    "id": "grid",
+    "q": {
+     "en": "How do I use the power/interest grid?",
+     "ar": "كيف أستخدم مصفوفة القوة والاهتمام؟"
+    },
+    "a": {
+     "en": "Rate each party's **power or influence** (its ability to change your decisions or stop your work) and **interest** (how much what you do affects it) from 1 to 5, with **a short reason** for each score. The tool then places the party: **manage closely** (power and interest 4 or more), **keep satisfied** (high power only), **keep informed** (high interest only) or **monitor**. A **key** party has power or interest of 4 or more and gets a relationship owner, a channel, a frequency and an outcome. This rule is the tool's design, not the text of a standard. In the example, civil defence has power 5 and interest 3 (keep satisfied), and the residents' association power 3 and interest 5 (keep informed).",
+     "ar": "قيّم لكل طرف **القوة أو التأثير** (قدرته على تغيير قراراتك أو إيقاف عملك) و**الاهتمام** (مدى تأثره بما تفعل) من 1 إلى 5، واكتب **سبباً قصيراً** لكل درجة. ثم تضع الأداة الطرف في مربع: **إدارة عن قرب** (قوة واهتمام 4 أو أكثر)، أو **إبقاء راضياً** (قوة عالية فقط)، أو **إبقاء مطلعاً** (اهتمام عالٍ فقط)، أو **متابعة**. والطرف **الرئيسي** قوته أو اهتمامه 4 أو أكثر، وله مالك علاقة وقناة وتكرار ومخرج. هذه القاعدة تصميم الأداة، لا نص مواصفة. في المثال: الدفاع المدني قوة 5 واهتمام 3 «إبقاء راضياً»، وجمعية سكان الحي قوة 3 واهتمام 5 «إبقاء مطلعاً»."
+    }
+   },
+   {
+    "id": "climate",
+    "q": {
+     "en": "How do I ask about climate-related requirements?",
+     "ar": "كيف أسأل عن متطلبات المناخ؟"
+    },
+    "a": {
+     "en": "Ask each key party explicitly: do you have **a requirement related to climate change**? For example, a client asking for a hot-weather method statement or an emissions report, a regulator requiring thermal insulation, or a bank tying finance to environmental criteria. Then mark the requirement \"climate-related\" and write in the climate question **what was asked, of whom, and the result**, even when it is \"no relevant requirement\". The NOTE to 4.2 in ISO 9001:2026 says parties can have climate-related requirements, and Annex A.4.2 names their effect on regulatory compliance and customer requirements.",
+     "ar": "اسأل كل طرف رئيسي صراحة: هل لديكم **متطلب يتصل بتغير المناخ**؟ مثلاً: عميل يطلب طريقة عمل في الحر أو تقرير انبعاثات، أو جهة تنظيمية تشترط عزلاً حرارياً، أو بنك يربط التمويل بمعايير بيئية. ثم علّم المتطلب «يتصل بالمناخ» واكتب في سؤال المناخ **ما الذي سُئل ومن سُئل والنتيجة**، ولو كانت «لا متطلبات ذات صلة». تذكر ملاحظة 4.2 في ISO 9001:2026 أن للأطراف متطلبات قد تتصل بتغير المناخ، ويذكر الملحق A.4.2 أثرها في الامتثال التنظيمي ومتطلبات العملاء."
+    }
+   },
+   {
+    "id": "review",
+    "q": {
+     "en": "When do I review the register?",
+     "ar": "متى أراجع السجل؟"
+    },
+    "a": {
+     "en": "**On a set date, and after any major change**: a new contract, a new regulation, a major complaint or a new key supplier. ISO 9001:2026 asks to monitor and review information about the parties and their requirements (4.2) and to bring changes in their needs and expectations to management review (9.3.2 c)). So the register carries **the next review date** and **the changes that call for a review before it**; at the review, write what changed and the parties added or removed. In the example, the company register was reviewed on 9 October 2026 after a new contract award.",
+     "ar": "**في موعد محدد، وبعد أي تغير كبير**: عقد جديد، أو نظام جديد، أو شكوى كبيرة، أو مورد رئيسي جديد. تطلب ISO 9001:2026 متابعة المعلومات عن الأطراف ومتطلباتها ومراجعتها (4.2)، وعرض تغيرات احتياجاتها وتوقعاتها في مراجعة الإدارة (9.3.2 ج)). لذلك يحمل السجل **موعد المراجعة القادمة** و**التغيرات التي تستدعي مراجعة قبله**، وفي المراجعة اكتب ما الذي تغير والأطراف المضافة والمحذوفة. في المثال روجع سجل الشركة في 9 أكتوبر 2026 بعد ترسية عقد جديد."
+    }
+   }
+  ],
+  "competencies": [
+   "PM-02",
+   "LDR-02"
+  ],
+  "ecosystem": "quality"
+ }
+}

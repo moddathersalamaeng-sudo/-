@@ -1,0 +1,4278 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-22301",
+  "slug": "iso-22301",
+  "kind": "standard",
+  "module": "iso22301",
+  "standard_id": null,
+  "title": {
+   "en": "ISO 22301:2019 Interactive Guide",
+   "ar": "دليل ISO 22301:2019 التفاعلي"
+  },
+  "subtitle": {
+   "en": "Security and resilience — Business continuity management systems — Requirements",
+   "ar": "الأمن والمرونة — أنظمة إدارة استمرارية الأعمال — المتطلبات"
+  },
+  "lede": {
+   "en": "Every clause from 4 to 10 explained in clear professional language, with a worked example from an operation and maintenance contractor for power networks, the steps to apply it, the evidence an auditor will ask for, and tools for business impact analysis and recovery times.",
+   "ar": "كل بند من 4 إلى 10 مشروح بلغة مهنية واضحة، مع مثال تطبيقي من شركة خدمات تشغيل وصيانة لشبكات الكهرباء، وخطوات التطبيق، والأدلة التي سيطلبها المدقق، وأدوات لتحليل أثر الأعمال وأزمنة الاستعادة."
+  },
+  "author": "مدثر سلامه",
+  "clauses": [
+   {
+    "id": "4",
+    "phase": "ctx",
+    "title": {
+     "en": "Context of the organization",
+     "ar": "سياق المنظمة"
+    },
+    "intro": {
+     "en": "Business continuity starts with understanding what could stop the organization: internal and external issues, the parties who depend on its products and services, the legal and contractual requirements about continuity, and then the boundaries of the system and the products and services it protects. Since the 2024 amendment you must also decide explicitly whether climate change is a relevant issue.",
+     "ar": "استمرارية الأعمال تبدأ بفهم ما يمكن أن يوقف المنظمة: القضايا الداخلية والخارجية، والأطراف التي تعتمد على منتجاتها وخدماتها، والمتطلبات التشريعية والتعاقدية المتعلقة بالاستمرارية، ثم حدود النظام والمنتجات والخدمات التي يحميها. ومنذ تعديل 2024 يجب أن تقرر صراحة هل تغيّر المناخ قضية ذات صلة."
+    },
+    "items": [
+     {
+      "ref": "4.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Understanding the organization and its context",
+       "ar": "فهم المنظمة وسياقها"
+      },
+      "req": {
+       "en": "Determine the external and internal issues relevant to your purpose that affect your ability to achieve the intended outcomes of the BCMS: natural and technological threats, dependence on suppliers and infrastructure, legislation and internal capabilities. Amendment 1:2024 adds that the organization shall determine whether climate change is a relevant issue.",
+       "ar": "حدِّد القضايا الخارجية والداخلية المرتبطة بغرض المنظمة والمؤثرة على قدرتها على تحقيق النتائج المقصودة لنظام إدارة استمرارية الأعمال: التهديدات الطبيعية والتقنية، والاعتماد على الموردين والبنية التحتية، والتشريعات، والقدرات الداخلية. وأضاف التعديل 1:2024 أن تحدد المنظمة هل تغيّر المناخ قضية ذات صلة."
+      },
+      "ex": {
+       "en": "Al-Nukhba O&M Services identified external issues such as the maintenance contract clause requiring power restoration within 4 hours, summer heatwaves that double fault volumes, seasonal flash floods and dependence on a single transformer supplier; and internal issues such as knowledge concentrated in a few control-room supervisors and an ERP hosted at a single site. It concluded that climate change is directly relevant.",
+       "ar": "حددت شركة النخبة لخدمات التشغيل والصيانة قضايا خارجية مثل: بنود عقد الصيانة التي تلزمها بإعادة التيار خلال 4 ساعات، وموجات الحر الصيفية التي تضاعف الأعطال، والسيول الموسمية، والاعتماد على مورد وحيد للمحولات. وقضايا داخلية مثل: تركّز المعرفة لدى مشرفي غرفة التحكم، ونظام ERP مستضاف في موقع واحد. وقررت أن تغيّر المناخ ذو صلة مباشرة."
+      },
+      "how": [
+       {
+        "en": "Run a disruption-focused PESTLE and SWOT workshop with top management, operations, IT and procurement.",
+        "ar": "ورشة PESTLE وSWOT مركزة على الانقطاع مع الإدارة العليا والعمليات وتقنية المعلومات والمشتريات."
+       },
+       {
+        "en": "Record the climate change relevance decision and its reasoning (heat, floods, dust, power loss).",
+        "ar": "قرار موثق بشأن صلة تغيّر المناخ ومبرره (حرارة، سيول، غبار، انقطاع كهرباء)."
+       },
+       {
+        "en": "Link every significant issue to a risk or opportunity (6.1) or to a scenario in the disruption risk assessment (8.2.3).",
+        "ar": "ربط كل قضية مهمة بخطر أو فرصة (6.1) أو بسيناريو في تقييم مخاطر الانقطاع (8.2.3)."
+       },
+       {
+        "en": "Review the analysis at management review and on any major change.",
+        "ar": "مراجعة التحليل في مراجعة الإدارة وعند أي تغيير كبير."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Up-to-date context analysis",
+        "ar": "تحليل السياق المحدَّث"
+       },
+       {
+        "en": "Climate change decision and rationale",
+        "ar": "قرار تغيّر المناخ ومبرراته"
+       },
+       {
+        "en": "Management review minutes",
+        "ar": "محضر مراجعة الإدارة"
+       }
+      ],
+      "tip": {
+       "en": "In continuity work the climate issue is rarely 'not relevant'. Even if you conclude it is, record the assessment and the reason.",
+       "ar": "في الاستمرارية تحديداً، قضية المناخ نادراً ما تكون «غير ذات صلة». وحتى لو خلصت إلى ذلك، وثّق التقييم والمبرر."
+      },
+      "checks": [
+       {
+        "ar": "كيف حُددت القضايا الداخلية والخارجية المؤثرة على الاستمرارية؟ ومتى رُوجعت آخر مرة؟",
+        "en": "How were internal and external issues affecting continuity determined, and when were they last reviewed?"
+       },
+       {
+        "ar": "أين القرار الموثق بشأن صلة تغيّر المناخ (تعديل 2024)؟",
+        "en": "Where is the documented decision on climate change relevance (2024 amendment)?"
+       },
+       {
+        "ar": "كيف انتقلت القضايا المهمة إلى تقييم المخاطر وسيناريوهات الانقطاع؟",
+        "en": "How did significant issues flow into the risk assessment and disruption scenarios?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.3",
+         "why": {
+          "ar": "القضايا تُراعى عند تحديد النطاق.",
+          "en": "Issues are considered when setting the scope."
+         }
+        },
+        {
+         "ref": "6.1",
+         "why": {
+          "ar": "القضايا تغذي مخاطر النظام وفرصه.",
+          "en": "Issues feed system risks and opportunities."
+         }
+        },
+        {
+         "ref": "8.2.3",
+         "why": {
+          "ar": "القضايا المهمة تصبح سيناريوهات مخاطر انقطاع.",
+          "en": "Significant issues become disruption risk scenarios."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4.2.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Interested parties: general",
+       "ar": "الأطراف المعنية: عام"
+      },
+      "req": {
+       "en": "Determine the interested parties relevant to the BCMS and their relevant requirements: customers who rely on the service, regulators, employees, suppliers, owners and emergency services. The 2024 amendment adds a note that parties can have requirements related to climate change.",
+       "ar": "حدِّد الأطراف المعنية ذات الصلة بالنظام ومتطلباتها ذات الصلة: العملاء الذين يعتمدون على الخدمة، والجهات التنظيمية، والموظفون، والموردون، والملاك، وجهات الطوارئ. وتشير ملاحظة تعديل 2024 إلى أن الأطراف قد تكون لها متطلبات تتعلق بتغيّر المناخ."
+      },
+      "ex": {
+       "en": "Al-Nukhba recorded that the electricity utility (client) requires an approved continuity plan and a report within one hour of any major disruption, that field staff need clear instructions in a crisis, and that Civil Defence expects a single point of contact during emergencies.",
+       "ar": "سجلت النخبة أن شركة الكهرباء (العميل) تشترط خطة استمرارية معتمدة وتقريراً خلال ساعة من أي انقطاع كبير، وأن الموظفين الميدانيين يحتاجون تعليمات واضحة وقت الأزمة، وأن الدفاع المدني يطلب نقطة اتصال واحدة أثناء الطوارئ."
+      },
+      "how": [
+       {
+        "en": "Keep an interested parties register showing each requirement, its source and whether the BCMS will address it.",
+        "ar": "سجل للأطراف المعنية يبين المتطلب ومصدره وهل سيعالجه النظام."
+       },
+       {
+        "en": "Focus on who depends on your products and services during a disruption and on whom you depend.",
+        "ar": "التركيز على من يعتمد على منتجاتك وخدماتك وقت الانقطاع ومن تعتمد أنت عليه."
+       },
+       {
+        "en": "Review the register with every new contract or regulatory change.",
+        "ar": "مراجعة السجل مع كل عقد جديد أو تغيير تنظيمي."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Interested parties and requirements register",
+        "ar": "سجل الأطراف المعنية ومتطلباتها"
+       },
+       {
+        "en": "Sources of contractual requirements",
+        "ar": "مصادر المتطلبات التعاقدية"
+       }
+      ],
+      "tip": {
+       "en": "Ask every key client: what is the longest outage you will accept? The answer is a direct input to the BIA in 8.2.2.",
+       "ar": "اسأل كل عميل رئيسي: ما أقصى توقف تقبله؟ الإجابة مدخل مباشر لتحليل أثر الأعمال في 8.2.2."
+      },
+      "checks": [
+       {
+        "ar": "من هي الأطراف المعنية ذات الصلة وما متطلباتها المتعلقة بالاستمرارية؟",
+        "en": "Who are the relevant interested parties and what are their continuity requirements?"
+       },
+       {
+        "ar": "هل رُوعيت متطلبات تغيّر المناخ لدى الأطراف؟",
+        "en": "Were climate-related requirements of the parties considered?"
+       },
+       {
+        "ar": "كيف تُحدَّث المتطلبات عند توقيع عقد جديد؟",
+        "en": "How are requirements updated when a new contract is signed?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.3",
+         "why": {
+          "ar": "متطلبات الأطراف تُراعى في النطاق.",
+          "en": "Party requirements are considered in the scope."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4.2.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Legal and regulatory requirements",
+       "ar": "المتطلبات التشريعية والتنظيمية"
+      },
+      "req": {
+       "en": "Implement a process to identify, access and assess the applicable legal and regulatory requirements related to the continuity of your products, services, activities and resources; make sure they are taken into account in the BCMS, and document and update them.",
+       "ar": "طبّق عملية لتحديد المتطلبات التشريعية والتنظيمية المنطبقة على استمرارية منتجاتك وخدماتك وأنشطتك ومواردك، والوصول إليها وتقييمها، وتأكد من أخذها في الاعتبار عند تطبيق النظام، ووثّقها وحدّثها."
+      },
+      "ex": {
+       "en": "Al-Nukhba built a register covering Civil Defence requirements for emergency and evacuation plans, the electricity regulator's response-time requirements, NCA controls on backup and recovery, and the contract clauses on continuity and penalties.",
+       "ar": "أعدت النخبة سجلاً يضم: اشتراطات الدفاع المدني لخطط الطوارئ والإخلاء، ومتطلبات هيئة تنظيم الكهرباء لأزمنة الاستجابة، وضوابط الهيئة الوطنية للأمن السيبراني للنسخ الاحتياطي والتعافي، وبنود العقد الخاصة بالاستمرارية والغرامات."
+      },
+      "how": [
+       {
+        "en": "Keep a requirements register: short summary, source, owner, how you comply and review date.",
+        "ar": "سجل للمتطلبات: النص المختصر، المصدر، المالك، طريقة الامتثال، تاريخ المراجعة."
+       },
+       {
+        "en": "Use an official source to follow updates (official gazette, regulator websites).",
+        "ar": "مصدر رسمي لمتابعة التحديثات (جريدة رسمية، مواقع الجهات)."
+       },
+       {
+        "en": "Evaluate compliance within 8.6 and the internal audit.",
+        "ar": "تقييم الامتثال ضمن 8.6 والتدقيق الداخلي."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Legal and regulatory requirements register",
+        "ar": "سجل المتطلبات التشريعية والتنظيمية"
+       },
+       {
+        "en": "Evidence of periodic review",
+        "ar": "دليل على المراجعة الدورية"
+       }
+      ],
+      "tip": {
+       "en": "Do not stop at general legislation; contractual delay penalties often define the real recovery time.",
+       "ar": "لا تكتفِ بالتشريعات العامة؛ غرامات التأخير في العقود غالباً هي ما يحدد زمن التعافي الحقيقي."
+      },
+      "checks": [
+       {
+        "ar": "ما العملية المتبعة لتحديد المتطلبات التشريعية والتنظيمية للاستمرارية؟",
+        "en": "What process identifies legal and regulatory continuity requirements?"
+       },
+       {
+        "ar": "اعرض السجل: هل هو محدث ومرتبط بمالكين؟",
+        "en": "Show the register: is it current and assigned to owners?"
+       },
+       {
+        "ar": "كيف أُخذت هذه المتطلبات في الاعتبار في الخطط؟",
+        "en": "How were these requirements reflected in the plans?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.2.2",
+         "why": {
+          "ar": "المتطلبات التشريعية والتعاقدية تحدد معايير الأثر.",
+          "en": "Legal and contractual requirements shape impact criteria."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Determining the scope of the BCMS",
+       "ar": "تحديد نطاق النظام"
+      },
+      "req": {
+       "en": "Set the boundaries and applicability of the BCMS, considering the issues (4.1), the requirements (4.2) and your mission and obligations. Identify the parts of the organization included, taking account of locations, size, nature and complexity, and the products and services included. Document and justify any exclusion so it does not affect your ability to provide the required continuity. The scope is documented information.",
+       "ar": "حدد حدود النظام وقابلية تطبيقه بمراعاة القضايا (4.1) والمتطلبات (4.2) ورسالة المنظمة والتزاماتها. حدد أجزاء المنظمة المشمولة مع مراعاة المواقع والحجم والطبيعة والتعقيد، والمنتجات والخدمات المشمولة. وثّق أي استبعاد وبرره بحيث لا يمس قدرتك على تقديم الاستمرارية المطلوبة. والنطاق معلومات موثقة."
+      },
+      "ex": {
+       "en": "Al-Nukhba's scope: 'Emergency fault response and planned maintenance services for distribution networks in the Riyadh region, including the control and dispatch centre, the central warehouse and the ERP and GIS systems.' It excluded external training because it does not affect client service.",
+       "ar": "نطاق النخبة: «خدمات الاستجابة للأعطال الطارئة والصيانة المخططة لشبكات التوزيع في منطقة الرياض، شاملة غرفة التحكم والإرسال والمستودع المركزي وأنظمة ERP وGIS». واستبعدت نشاط التدريب الخارجي لأنه لا يؤثر على خدمة العميل."
+      },
+      "how": [
+       {
+        "en": "Start from the products and services whose interruption would harm clients, reputation or compliance.",
+        "ar": "ابدأ من المنتجات والخدمات التي لو توقفت لتضرر العملاء أو السمعة أو الامتثال."
+       },
+       {
+        "en": "Include the activities, sites and resources those services depend on.",
+        "ar": "اشمل الأنشطة والمواقع والموارد التي تعتمد عليها هذه الخدمات."
+       },
+       {
+        "en": "Write a short scope statement and justify exclusions.",
+        "ar": "اكتب بيان نطاق مختصراً ومبرراً للاستبعادات."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Documented scope statement",
+        "ar": "بيان النطاق الموثق"
+       },
+       {
+        "en": "Justification of exclusions",
+        "ar": "مبررات الاستبعاد"
+       }
+      ],
+      "tip": {
+       "en": "A scope that excludes the data centre or warehouse an included service depends on will not survive the audit.",
+       "ar": "نطاق يستبعد مركز البيانات أو المستودع الذي تعتمد عليه خدمة مشمولة لن يصمد أمام المدقق."
+      },
+      "checks": [
+       {
+        "ar": "اعرض بيان النطاق: هل يحدد المنتجات والخدمات والمواقع؟",
+        "en": "Show the scope statement: does it name products, services and sites?"
+       },
+       {
+        "ar": "كيف رُوعيت الاعتماديات عند رسم الحدود؟",
+        "en": "How were dependencies considered when drawing the boundaries?"
+       },
+       {
+        "ar": "ما مبرر أي استبعاد وهل يؤثر على الاستمرارية؟",
+        "en": "What justifies each exclusion and does it affect continuity?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.2.2",
+         "why": {
+          "ar": "تحليل الأثر يُنفذ على المنتجات والخدمات داخل النطاق.",
+          "en": "The BIA covers products and services within scope."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.1",
+         "why": {
+          "ar": "القضايا تُراعى عند تحديد النطاق.",
+          "en": "Issues are considered when setting the scope."
+         }
+        },
+        {
+         "ref": "4.2.1",
+         "why": {
+          "ar": "متطلبات الأطراف تُراعى في النطاق.",
+          "en": "Party requirements are considered in the scope."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "4.4",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Business continuity management system",
+       "ar": "نظام إدارة استمرارية الأعمال"
+      },
+      "req": {
+       "en": "Establish, implement, maintain and continually improve the BCMS, including the processes needed and their interactions, in line with the requirements of the standard.",
+       "ar": "أنشئ النظام وطبّقه وحافظ عليه وحسّنه باستمرار، بما في ذلك العمليات اللازمة وتفاعلاتها، وفق متطلبات المواصفة."
+      },
+      "ex": {
+       "en": "Al-Nukhba mapped the BCMS processes: BIA and risk assessment, strategies and solutions, plans and response, exercising, and evaluation and improvement, with an owner and an indicator for each.",
+       "ar": "رسمت النخبة خريطة عمليات النظام: تحليل الأثر وتقييم المخاطر، والاستراتيجيات والحلول، والخطط والاستجابة، والتمارين، والتقييم والتحسين، مع مالك ومؤشر لكل عملية."
+      },
+      "how": [
+       {
+        "en": "A process map showing inputs, outputs and interactions.",
+        "ar": "خريطة عمليات تُظهر المدخلات والمخرجات والتفاعلات."
+       },
+       {
+        "en": "An owner and a performance indicator for each process.",
+        "ar": "مالك لكل عملية ومؤشر أداء."
+       },
+       {
+        "en": "Integrate the BCMS with existing management systems (quality, safety, information security).",
+        "ar": "دمج النظام مع أنظمة الإدارة القائمة (الجودة، السلامة، أمن المعلومات)."
+       }
+      ],
+      "ev": [
+       {
+        "en": "BCMS process map",
+        "ar": "خريطة عمليات النظام"
+       },
+       {
+        "en": "BCMS manual or description",
+        "ar": "دليل النظام أو وصفه"
+       }
+      ],
+      "tip": {
+       "en": "The BCMS is not one continuity plan in a drawer; it is a continuous cycle of analysis, preparation, exercising and improvement.",
+       "ar": "النظام ليس «خطة استمرارية» واحدة في درج؛ هو دورة مستمرة من التحليل والإعداد والتمرين والتحسين."
+      },
+      "checks": [
+       {
+        "ar": "ما عمليات النظام وكيف تتفاعل؟",
+        "en": "What are the BCMS processes and how do they interact?"
+       },
+       {
+        "ar": "من مالك كل عملية وما مؤشرها؟",
+        "en": "Who owns each process and what is its indicator?"
+       },
+       {
+        "ar": "كيف دُمج النظام مع أنظمة الإدارة الأخرى؟",
+        "en": "How is the BCMS integrated with other management systems?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "10.2",
+         "why": {
+          "ar": "التحسين يطور النظام نفسه.",
+          "en": "Improvement develops the system itself."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "5",
+    "phase": "lead",
+    "title": {
+     "en": "Leadership",
+     "ar": "القيادة"
+    },
+    "intro": {
+     "en": "Continuity is a management decision before it is a plan. Top management decides what must continue and how fast, provides resources, issues the policy and appoints who leads the response. Delegating it to the safety or IT department is not enough.",
+     "ar": "الاستمرارية قرار إداري قبل أن تكون خطة. الإدارة العليا هي من تحدد ما يجب أن يستمر وبأي سرعة، وتوفر الموارد، وتصدر السياسة، وتعين من يقود الاستجابة. ولا يكفي تفويض الأمر لقسم السلامة أو تقنية المعلومات."
+    },
+    "items": [
+     {
+      "ref": "5.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Leadership and commitment",
+       "ar": "القيادة والالتزام"
+      },
+      "req": {
+       "en": "Top management demonstrates leadership by ensuring the policy and objectives fit the strategic direction, integrating BCMS requirements into business processes, providing resources, communicating the importance of continuity, ensuring intended outcomes, directing and supporting people, promoting continual improvement and supporting other management roles.",
+       "ar": "تُثبت الإدارة العليا قيادتها بضمان وضع السياسة والأهداف بما يتوافق مع توجه المنظمة، ودمج متطلبات النظام في عملياتها، وتوفير الموارد، وإبلاغ أهمية الاستمرارية، وضمان تحقيق النتائج، وتوجيه الأشخاص ودعمهم، وتعزيز التحسين المستمر، ودعم الأدوار الإدارية الأخرى."
+      },
+      "ex": {
+       "en": "Al-Nukhba's CEO chairs the continuity committee, approved a budget for standby generators and an alternate dispatch site, and added 'service restoration time' to management's monthly performance dashboard.",
+       "ar": "ترأس الرئيس التنفيذي للنخبة لجنة الاستمرارية، واعتمد موازنة لمولدات احتياطية ولموقع إرسال بديل، وأدرج مؤشر «زمن استعادة الخدمة» في لوحة الأداء الشهرية للإدارة."
+      },
+      "how": [
+       {
+        "en": "A management decision to implement the BCMS, naming a sponsor and a BCMS manager.",
+        "ar": "قرار إداري بتطبيق النظام وتعيين راعٍ ومدير له."
+       },
+       {
+        "en": "A continuity committee chaired by top management that meets regularly.",
+        "ar": "لجنة استمرارية برئاسة الإدارة العليا تجتمع دورياً."
+       },
+       {
+        "en": "A standing continuity item in management meetings.",
+        "ar": "بند ثابت عن الاستمرارية في اجتماعات الإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Implementation decision and project charter",
+        "ar": "قرار التطبيق وميثاق المشروع"
+       },
+       {
+        "en": "Continuity committee minutes",
+        "ar": "محاضر لجنة الاستمرارية"
+       },
+       {
+        "en": "Resource approvals",
+        "ar": "اعتماد الموارد"
+       }
+      ],
+      "tip": {
+       "en": "The auditor will interview top management. If the general manager cannot name the first activity to restore, the commitment exists only on paper.",
+       "ar": "المدقق سيقابل الإدارة العليا. إن لم يعرف المدير العام أهم نشاط يجب استعادته أولاً، فالالتزام على الورق فقط."
+      },
+      "checks": [
+       {
+        "ar": "كيف تُثبت الإدارة العليا التزامها بالنظام؟ أعط أمثلة.",
+        "en": "How does top management demonstrate commitment to the BCMS? Give examples."
+       },
+       {
+        "ar": "ما الموارد التي اعتُمدت للاستمرارية في آخر 12 شهراً؟",
+        "en": "What resources were approved for continuity in the last 12 months?"
+       },
+       {
+        "ar": "كيف دُمجت متطلبات النظام في عمليات الأعمال؟",
+        "en": "How are BCMS requirements integrated into business processes?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "7.1",
+         "why": {
+          "ar": "التزام القيادة يترجم إلى موارد.",
+          "en": "Leadership commitment translates into resources."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "5.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Policy",
+       "ar": "السياسة"
+      },
+      "req": {
+       "en": "Top management sets a continuity policy suited to the organization's purpose that provides a framework for objectives and commits to meeting applicable requirements and to continual improvement. It is documented information, communicated within the organization and available to interested parties as appropriate.",
+       "ar": "تضع الإدارة العليا سياسة استمرارية مناسبة لغرض المنظمة، توفر إطاراً للأهداف، وتتضمن الالتزام بالمتطلبات المنطبقة وبالتحسين المستمر. تُتاح السياسة كمعلومات موثقة، وتُبلّغ داخل المنظمة، وتتاح للأطراف المعنية حسب الحاجة."
+      },
+      "ex": {
+       "en": "Al-Nukhba's policy puts life safety first, then restoration of emergency fault service within the contractual time frame, and commits the company to annual exercising and continual improvement. The CEO signed it and it is posted in the control room and on the intranet.",
+       "ar": "تنص سياسة النخبة على حماية الأرواح أولاً، ثم استعادة خدمة الأعطال الطارئة خلال الإطار الزمني التعاقدي، والتزام الشركة بالتمرين السنوي والتحسين المستمر. وقعها الرئيس التنفيذي ونُشرت في غرفة التحكم وعلى البوابة الداخلية."
+      },
+      "how": [
+       {
+        "en": "A short (one-page) policy, approved and dated.",
+        "ar": "سياسة مختصرة (صفحة واحدة) معتمدة ومؤرخة."
+       },
+       {
+        "en": "Include the two mandatory commitments and a framework for objectives.",
+        "ar": "تضمين الالتزامين الإلزاميين وإطار للأهداف."
+       },
+       {
+        "en": "Publish it and check staff awareness of it.",
+        "ar": "نشرها وقياس معرفة الموظفين بها في التوعية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Approved policy",
+        "ar": "السياسة المعتمدة"
+       },
+       {
+        "en": "Evidence of communication and availability",
+        "ar": "دليل الإبلاغ والإتاحة"
+       }
+      ],
+      "tip": {
+       "en": "A good continuity policy states priorities plainly: people first, then critical services, then the rest.",
+       "ar": "سياسة الاستمرارية الجيدة تحدد الأولويات بوضوح: الأرواح، ثم الخدمات الحرجة، ثم البقية."
+      },
+      "checks": [
+       {
+        "ar": "هل تتضمن السياسة إطار الأهداف والالتزامين بالمتطلبات والتحسين؟",
+        "en": "Does the policy include the objectives framework and the commitments to requirements and improvement?"
+       },
+       {
+        "ar": "كيف أُبلغت السياسة؟ اسأل موظفين عنها.",
+        "en": "How was the policy communicated? Ask staff about it."
+       },
+       {
+        "ar": "متى رُوجعت آخر مرة ومن اعتمدها؟",
+        "en": "When was it last reviewed and who approved it?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "السياسة إطار للأهداف.",
+          "en": "The policy frames the objectives."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "5.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Roles, responsibilities and authorities",
+       "ar": "الأدوار والمسؤوليات والصلاحيات"
+      },
+      "req": {
+       "en": "Top management assigns and communicates responsibilities and authorities for relevant roles, including responsibility for ensuring the BCMS conforms to the standard and for reporting its performance to top management.",
+       "ar": "تضمن الإدارة العليا تعيين المسؤوليات والصلاحيات للأدوار ذات الصلة وإبلاغها، بما في ذلك مسؤولية ضمان مطابقة النظام لمتطلبات المواصفة، ورفع تقارير أدائه إلى الإدارة العليا."
+      },
+      "ex": {
+       "en": "Al-Nukhba appointed a continuity manager reporting to the CEO, defined the crisis management team and site response teams with a deputy for every role, and gave the crisis lead emergency spending authority up to SAR 500,000.",
+       "ar": "عينت النخبة مديراً للاستمرارية يرفع تقاريره للرئيس التنفيذي، وحددت فريق إدارة الأزمات وفرق الاستجابة لكل موقع، مع بديل لكل دور وصلاحية صرف طارئ لقائد الأزمة حتى 500 ألف ريال."
+      },
+      "how": [
+       {
+        "en": "A RACI matrix for BCMS processes and response roles.",
+        "ar": "مصفوفة مسؤوليات (RACI) لعمليات النظام وأدوار الاستجابة."
+       },
+       {
+        "en": "A named deputy for every critical role.",
+        "ar": "بديل مسمى لكل دور حرج."
+       },
+       {
+        "en": "Written authority for decisions and spending in a crisis.",
+        "ar": "صلاحيات مكتوبة للقرار والصرف وقت الأزمة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Appointment decision",
+        "ar": "قرار التعيين"
+       },
+       {
+        "en": "Roles and deputies matrix",
+        "ar": "مصفوفة الأدوار والبدلاء"
+       },
+       {
+        "en": "Performance reports to management",
+        "ar": "تقارير الأداء للإدارة"
+       }
+      ],
+      "tip": {
+       "en": "Crises do not wait for the named person. Without trained deputies the structure collapses at the first absence.",
+       "ar": "الأزمات لا تنتظر الشخص المعين. بلا بدلاء مدربين، يسقط الهيكل عند أول غياب."
+      },
+      "checks": [
+       {
+        "ar": "من المسؤول عن مطابقة النظام ورفع التقارير للإدارة؟",
+        "en": "Who is responsible for BCMS conformity and reporting to management?"
+       },
+       {
+        "ar": "هل لكل دور حرج في الاستجابة بديل مدرب؟",
+        "en": "Does every critical response role have a trained deputy?"
+       },
+       {
+        "ar": "كيف أُبلغت الأدوار والصلاحيات؟",
+        "en": "How were roles and authorities communicated?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.4.2",
+         "why": {
+          "ar": "الأدوار تحدد أعضاء هيكل الاستجابة وصلاحياتهم.",
+          "en": "Roles define response structure members and authority."
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "6",
+    "phase": "plan",
+    "title": {
+     "en": "Planning",
+     "ar": "التخطيط"
+    },
+    "intro": {
+     "en": "Planning here is at the level of the system itself: which risks and opportunities threaten or strengthen the BCMS, which measurable objectives it pursues, and how changes to it are planned. Risks of disruption to activities belong to the BIA and risk assessment in clause 8.2.",
+     "ar": "التخطيط هنا على مستوى النظام نفسه: ما المخاطر والفرص التي تهدد نجاح النظام أو تعززه، وما الأهداف القابلة للقياس، وكيف تُخطط التغييرات عليه. أما مخاطر انقطاع الأنشطة فمكانها تحليل الأثر وتقييم المخاطر في البند 8.2."
+    },
+    "items": [
+     {
+      "ref": "6.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Actions to address risks and opportunities",
+       "ar": "الإجراءات لمعالجة المخاطر والفرص"
+      },
+      "req": {
+       "en": "When planning, consider the issues (4.1) and requirements (4.2) and determine the risks and opportunities to address so the BCMS achieves its outcomes, prevents or reduces undesired effects and achieves continual improvement. Plan actions, integrate them into BCMS processes and evaluate their effectiveness.",
+       "ar": "عند التخطيط، راعِ القضايا (4.1) والمتطلبات (4.2) وحدد المخاطر والفرص التي يجب معالجتها لضمان تحقيق النظام نتائجه، ومنع الآثار غير المرغوبة أو تقليلها، وتحقيق التحسين المستمر. خطط الإجراءات، وادمجها في عمليات النظام، وقيّم فعاليتها."
+      },
+      "ex": {
+       "en": "Al-Nukhba identified a risk to the BCMS: 'plans depend on one supervisor who knows the control-room procedures', and an opportunity: 'combine continuity exercises with mandatory evacuation drills to save time'. Both actions went into the action plan with an effectiveness indicator.",
+       "ar": "حددت النخبة خطراً على النظام: «اعتماد الخطط على مشرف واحد يعرف إجراءات غرفة التحكم»، وفرصة: «دمج تمارين الاستمرارية مع تمارين الإخلاء الإلزامية لتوفير الوقت». وأدرجت الإجراءين في خطة العمل مع مؤشر فعالية."
+      },
+      "how": [
+       {
+        "en": "A system-level risks and opportunities register derived from 4.1 and 4.2.",
+        "ar": "سجل مخاطر وفرص على مستوى النظام مشتق من 4.1 و4.2."
+       },
+       {
+        "en": "An action, owner, date and effectiveness indicator for each item.",
+        "ar": "إجراء ومالك وموعد ومؤشر فعالية لكل بند."
+       },
+       {
+        "en": "Review effectiveness at management review.",
+        "ar": "مراجعة الفعالية في مراجعة الإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "BCMS risks and opportunities register",
+        "ar": "سجل المخاطر والفرص للنظام"
+       },
+       {
+        "en": "Action plan and effectiveness evaluation",
+        "ar": "خطة الإجراءات وتقييم فعاليتها"
+       }
+      ],
+      "tip": {
+       "en": "Do not mix this register with the disruption risk assessment in 8.2.3: the first is about the system succeeding, the second about activities stopping.",
+       "ar": "لا تخلط بين هذا السجل وتقييم مخاطر الانقطاع في 8.2.3؛ الأول عن نجاح النظام، والثاني عن توقف الأنشطة."
+      },
+      "checks": [
+       {
+        "ar": "ما المخاطر والفرص على مستوى النظام المستمدة من 4.1 و4.2؟",
+        "en": "What system-level risks and opportunities derive from 4.1 and 4.2?"
+       },
+       {
+        "ar": "ما الإجراءات المخططة وكيف دُمجت في العمليات؟",
+        "en": "What actions are planned and how are they integrated into processes?"
+       },
+       {
+        "ar": "كيف قُيّمت فعالية هذه الإجراءات؟",
+        "en": "How was the effectiveness of these actions evaluated?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.1",
+         "why": {
+          "ar": "إجراءات المخاطر والفرص تُدمج في العمليات.",
+          "en": "Risk and opportunity actions are built into processes."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.1",
+         "why": {
+          "ar": "القضايا تغذي مخاطر النظام وفرصه.",
+          "en": "Issues feed system risks and opportunities."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Business continuity objectives and planning to achieve them",
+       "ar": "أهداف الاستمرارية والتخطيط لتحقيقها"
+      },
+      "req": {
+       "en": "Set continuity objectives at relevant functions and levels that are consistent with the policy, measurable, take requirements into account, and are monitored, communicated and updated. For each, determine what will be done, the resources, who is responsible, when it will be completed and how results will be evaluated.",
+       "ar": "ضع أهداف استمرارية على المستويات والوظائف ذات الصلة تكون متسقة مع السياسة وقابلة للقياس، وتراعي المتطلبات، وتُرصد وتُبلّغ وتُحدّث. وحدد لكل هدف: ما الذي سيُنفذ، والموارد، والمسؤول، والموعد، وكيف تُقيّم النتائج."
+      },
+      "ex": {
+       "en": "Al-Nukhba's objectives include 'restore dispatch from the alternate site within 60 minutes in the exercise', '100% of prioritized activities covered by tested plans during 2026' and 'two trained deputies for every critical role'.",
+       "ar": "من أهداف النخبة: «استعادة خدمة الإرسال من الموقع البديل خلال 60 دقيقة في التمرين»، و«تغطية 100% من الأنشطة ذات الأولوية بخطط مختبرة خلال 2026»، و«تدريب بديلين لكل دور حرج»."
+      },
+      "how": [
+       {
+        "en": "Derive objectives from the BIA results and from gaps.",
+        "ar": "اشتق الأهداف من نتائج تحليل الأثر ومن الفجوات."
+       },
+       {
+        "en": "Write each objective with a metric, target and date.",
+        "ar": "صغ كل هدف بمؤشر ومستهدف وموعد."
+       },
+       {
+        "en": "Monitor monthly or quarterly and report to the committee.",
+        "ar": "رصد شهري أو ربع سنوي وتقرير للجنة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Objectives register and plans",
+        "ar": "سجل الأهداف وخطط تحقيقها"
+       },
+       {
+        "en": "Monitoring reports",
+        "ar": "تقارير الرصد"
+       }
+      ],
+      "tip": {
+       "en": "'Improve crisis readiness' is not an objective. 'Test 4 plans before December' is.",
+       "ar": "«تحسين الاستعداد للأزمات» ليس هدفاً. «اختبار 4 خطط قبل ديسمبر» هدف."
+      },
+      "checks": [
+       {
+        "ar": "ما أهداف الاستمرارية وهل هي قابلة للقياس؟",
+        "en": "What are the continuity objectives, and are they measurable?"
+       },
+       {
+        "ar": "كيف تُرصد الأهداف وأين التوثيق؟",
+        "en": "How are objectives monitored and where is it documented?"
+       },
+       {
+        "ar": "ما خطة تحقيق كل هدف (ماذا، من، متى، الموارد، التقييم)؟",
+        "en": "What is the plan for each objective (what, who, when, resources, evaluation)?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.1",
+         "why": {
+          "ar": "الأهداف تُرصد بمؤشرات.",
+          "en": "Objectives are monitored by indicators."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.2",
+         "why": {
+          "ar": "السياسة إطار للأهداف.",
+          "en": "The policy frames the objectives."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.3",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Planning changes to the BCMS",
+       "ar": "تخطيط التغييرات على النظام"
+      },
+      "req": {
+       "en": "When the organization decides to change the BCMS, including changes identified in clause 10, the changes are carried out in a planned way, considering their purpose and potential consequences, the integrity of the BCMS, the availability of resources, and the allocation or reallocation of responsibilities.",
+       "ar": "عندما تقرر المنظمة تغيير النظام، بما في ذلك ما يرد في البند 10، تُنفذ التغييرات بطريقة مخططة مع مراعاة غرض التغيير وعواقبه المحتملة، وسلامة النظام، وتوافر الموارد، وتوزيع المسؤوليات أو إعادة توزيعها."
+      },
+      "ex": {
+       "en": "When Al-Nukhba moved its ERP to the cloud, it planned the change: updated the BIA and recovery time, revised the IT recovery plan, reassigned recovery responsibility to the provider by contract and ran an exercise before go-live.",
+       "ar": "عند نقل النخبة نظام ERP إلى السحابة، خططت التغيير: حدّثت تحليل الأثر وزمن الاستعادة، وعدّلت خطة تعافي تقنية المعلومات، وأعادت توزيع مسؤولية الاستعادة على المزود بعقد، ونفذت تمريناً قبل الإطلاق."
+      },
+      "how": [
+       {
+        "en": "A change request form assessing the effect on plans, resources and roles.",
+        "ar": "نموذج طلب تغيير يقيّم الأثر على الخطط والموارد والأدوار."
+       },
+       {
+        "en": "Continuity manager approval before implementation.",
+        "ar": "موافقة مدير الاستمرارية قبل التنفيذ."
+       },
+       {
+        "en": "Update documents and exercise after the change.",
+        "ar": "تحديث الوثائق والتمرين بعد التغيير."
+       }
+      ],
+      "ev": [
+       {
+        "en": "BCMS change log",
+        "ar": "سجل تغييرات النظام"
+       },
+       {
+        "en": "Change impact assessment",
+        "ar": "تقييم أثر التغيير"
+       }
+      ],
+      "tip": {
+       "en": "Any change to sites, systems or key suppliers changes the BIA results; make it a mandatory review trigger.",
+       "ar": "أي تغيير في المواقع أو الأنظمة أو الموردين الرئيسيين يغير نتائج تحليل الأثر؛ اجعله محفزاً إلزامياً للمراجعة."
+      },
+      "checks": [
+       {
+        "ar": "اعرض مثالاً لتغيير على النظام وكيف خُطط له.",
+        "en": "Show an example of a change to the BCMS and how it was planned."
+       },
+       {
+        "ar": "كيف قُيّم أثر التغيير على الخطط والموارد والمسؤوليات؟",
+        "en": "How was the effect on plans, resources and responsibilities assessed?"
+       },
+       {
+        "ar": "هل حُدّثت الوثائق بعد التغيير؟",
+        "en": "Were documents updated after the change?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.2.2",
+         "why": {
+          "ar": "تغيير النظام يستدعي تحديث تحليل الأثر.",
+          "en": "Changing the BCMS triggers a BIA update."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "9.3",
+         "why": {
+          "ar": "قرارات المراجعة تخطط تغييرات النظام.",
+          "en": "Review decisions plan changes to the BCMS."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "7",
+    "phase": "do",
+    "title": {
+     "en": "Support",
+     "ar": "الدعم"
+    },
+    "intro": {
+     "en": "Plans do not work without competent people who know their role before, during and after a disruption, reliable communication channels, and documents available where and when they are needed, even if the building or the systems are down.",
+     "ar": "لا تعمل الخطط دون أشخاص أكفاء يعرفون دورهم قبل الانقطاع وأثناءه وبعده، وقنوات اتصال موثوقة، ووثائق متاحة في المكان والوقت الذي تُحتاج فيه، حتى لو سقط المبنى أو الأنظمة."
+    },
+    "items": [
+     {
+      "ref": "7.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Resources",
+       "ar": "الموارد"
+      },
+      "req": {
+       "en": "Determine and provide the resources needed to establish, implement, maintain and continually improve the BCMS.",
+       "ar": "حدد الموارد اللازمة لإنشاء النظام وتطبيقه وصيانته وتحسينه ووفرها."
+      },
+      "ex": {
+       "en": "Al-Nukhba allocated a full-time continuity manager, exercise hours for the response teams, and an annual budget for the alternate site contract and a mass SMS notification system.",
+       "ar": "خصصت النخبة مدير استمرارية متفرغاً، وساعات لفرق الاستجابة للتمارين، وموازنة سنوية لعقد الموقع البديل ونظام الإنذار الجماعي بالرسائل."
+      },
+      "how": [
+       {
+        "en": "An annual BCMS budget, separate from solution resources (8.3.3).",
+        "ar": "موازنة سنوية للنظام منفصلة عن موارد الحلول (8.3.3)."
+       },
+       {
+        "en": "Link resources to the objectives and the annual plan.",
+        "ar": "ربط الموارد بالأهداف والخطة السنوية."
+       },
+       {
+        "en": "Review adequacy at management review.",
+        "ar": "مراجعة كفايتها في مراجعة الإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Approved budget",
+        "ar": "الموازنة المعتمدة"
+       },
+       {
+        "en": "Resource allocation decision",
+        "ar": "قرار تخصيص الموارد"
+       }
+      ],
+      "tip": {
+       "en": "Distinguish resources to run the system (7.1) from resources to execute solutions during a disruption (8.3.3); auditors ask about both.",
+       "ar": "فرّق بين موارد إدارة النظام (7.1) وموارد تنفيذ الحلول وقت الانقطاع (8.3.3)؛ المدققون يسألون عن الاثنين."
+      },
+      "checks": [
+       {
+        "ar": "ما الموارد المخصصة لإدارة النظام؟",
+        "en": "What resources are allocated to run the BCMS?"
+       },
+       {
+        "ar": "هل تكفي لتحقيق الأهداف والخطة السنوية؟",
+        "en": "Are they sufficient for the objectives and the annual plan?"
+       },
+       {
+        "ar": "كيف تُراجع كفاية الموارد؟",
+        "en": "How is resource adequacy reviewed?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "5.1",
+         "why": {
+          "ar": "التزام القيادة يترجم إلى موارد.",
+          "en": "Leadership commitment translates into resources."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "7.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Competence",
+       "ar": "الكفاءة"
+      },
+      "req": {
+       "en": "Determine the competence needed by people whose work affects continuity performance, ensure they are competent through education, training or experience, take action to acquire it and evaluate its effectiveness, and retain documented evidence.",
+       "ar": "حدد الكفاءة اللازمة لمن يؤثر عمله على أداء الاستمرارية، وتأكد من كفاءتهم بالتعليم أو التدريب أو الخبرة، واتخذ إجراءات لاكتسابها وقيّم فعاليتها، واحتفظ بدليل موثق عليها."
+      },
+      "ex": {
+       "en": "Al-Nukhba defined competences for the crisis lead (decision-making under pressure, media communication) and for response coordinators (operating the alternate site), sent the continuity manager on an accredited course and evaluated effectiveness through each person's performance in the exercise.",
+       "ar": "حددت النخبة كفاءات لقائد الأزمة (اتخاذ القرار تحت الضغط، التواصل الإعلامي) ولمنسقي الاستجابة (تشغيل الموقع البديل)، وأرسلت مدير الاستمرارية لدورة معتمدة، وقيّمت الفعالية بأداء كل فرد في التمرين."
+      },
+      "how": [
+       {
+        "en": "A competence matrix for response and BCMS roles.",
+        "ar": "مصفوفة كفاءات لأدوار الاستجابة والنظام."
+       },
+       {
+        "en": "Classroom training, then practice in exercises (8.5).",
+        "ar": "تدريب نظري ثم تطبيق في التمارين (8.5)."
+       },
+       {
+        "en": "Training records and performance evaluation.",
+        "ar": "سجلات التدريب وتقييم الأداء."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Competence matrix",
+        "ar": "مصفوفة الكفاءات"
+       },
+       {
+        "en": "Training records",
+        "ar": "سجلات التدريب"
+       },
+       {
+        "en": "Effectiveness evaluation",
+        "ar": "تقييم الفعالية"
+       }
+      ],
+      "tip": {
+       "en": "The best evidence of response-team competence is an exercise report showing its performance, not an attendance certificate.",
+       "ar": "أفضل دليل على كفاءة فريق الاستجابة هو تقرير تمرين يظهر أداءه، لا شهادة حضور."
+      },
+      "checks": [
+       {
+        "ar": "ما الكفاءات المطلوبة لأدوار الاستجابة؟",
+        "en": "What competences are required for response roles?"
+       },
+       {
+        "ar": "كيف تحققت من كفاءة قائد الأزمة وبدلائه؟",
+        "en": "How did you verify the competence of the crisis lead and deputies?"
+       },
+       {
+        "ar": "كيف قُيّمت فعالية التدريب؟",
+        "en": "How was training effectiveness evaluated?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.5",
+         "why": {
+          "ar": "الكفاءة تُبنى وتُقاس في التمارين.",
+          "en": "Competence is built and measured in exercises."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "7.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Awareness",
+       "ar": "الوعي"
+      },
+      "req": {
+       "en": "People working under the organization's control are aware of the continuity policy, their contribution to BCMS effectiveness, the implications of not conforming, and their own role and responsibilities before, during and after disruptions.",
+       "ar": "يكون الأشخاص العاملون تحت سيطرة المنظمة على وعي بسياسة الاستمرارية، ومساهمتهم في فعالية النظام، وآثار عدم المطابقة، ودورهم ومسؤولياتهم قبل الانقطاع وأثناءه وبعده."
+      },
+      "ex": {
+       "en": "Al-Nukhba gave field technicians a pocket card with the emergency line number, the assembly point and what to do if contact with the control room is lost, and added a continuity segment to induction.",
+       "ar": "وزعت النخبة بطاقة جيب على الفنيين الميدانيين فيها: رقم خط الطوارئ، ونقطة التجمع، وماذا يفعل الفني إذا انقطع الاتصال بغرفة التحكم. وأضافت فقرة عن الاستمرارية في التهيئة الوظيفية."
+      },
+      "how": [
+       {
+        "en": "Short awareness messages by role.",
+        "ar": "رسائل توعية مختصرة حسب الدور."
+       },
+       {
+        "en": "Quick-reference cards for field staff.",
+        "ar": "بطاقات إجراءات سريعة للميدان."
+       },
+       {
+        "en": "Measure awareness with a short quiz or questions in exercises.",
+        "ar": "قياس الوعي باختبار قصير أو أسئلة في التمرين."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Awareness materials",
+        "ar": "مواد التوعية"
+       },
+       {
+        "en": "Attendance records",
+        "ar": "سجلات الحضور"
+       },
+       {
+        "en": "Awareness test results",
+        "ar": "نتائج قياس الوعي"
+       }
+      ],
+      "tip": {
+       "en": "The auditor will ask a random employee: what do you do if you cannot reach your office tomorrow? Make sure everyone knows the answer.",
+       "ar": "المدقق سيسأل موظفاً عشوائياً: ماذا تفعل إذا لم تستطع الوصول لمكتبك غداً؟ جهّز الإجابة لدى الجميع."
+      },
+      "checks": [
+       {
+        "ar": "هل يعرف الموظفون السياسة ودورهم وقت الانقطاع؟ اسأل عينة.",
+        "en": "Do staff know the policy and their role in a disruption? Ask a sample."
+       },
+       {
+        "ar": "كيف تُقدَّم التوعية للموظفين الجدد والمقاولين؟",
+        "en": "How is awareness provided to new staff and contractors?"
+       },
+       {
+        "ar": "كيف يُقاس الوعي؟",
+        "en": "How is awareness measured?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.4.4",
+         "why": {
+          "ar": "الوعي بالدور شرط لتنفيذ الخطط.",
+          "en": "Role awareness is a condition for executing plans."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "7.4",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Communication",
+       "ar": "الاتصال"
+      },
+      "req": {
+       "en": "Determine the internal and external communications relevant to the BCMS: what, when, with whom, how and who communicates. Communication during a disruption itself is detailed in the warning and communication procedures of 8.4.3.",
+       "ar": "حدد الاتصالات الداخلية والخارجية المتعلقة بالنظام: ما الذي يُبلّغ، ومتى، ومع من، وكيف، ومن يتولى ذلك. أما الاتصال وقت الانقطاع نفسه فتفصله إجراءات الإنذار والاتصال في 8.4.3."
+      },
+      "ex": {
+       "en": "Al-Nukhba's communication plan: a quarterly continuity readiness report to the client, an internal bulletin after every exercise, and an annual update of contact numbers to Civil Defence.",
+       "ar": "خطة اتصال النخبة: تقرير ربع سنوي للعميل عن جاهزية الاستمرارية، ونشرة داخلية بعد كل تمرين، وتحديث سنوي للدفاع المدني بأرقام الاتصال."
+      },
+      "how": [
+       {
+        "en": "A communication table: topic, audience, channel, timing, owner.",
+        "ar": "جدول اتصال: الموضوع، الجمهور، الوسيلة، التوقيت، المسؤول."
+       },
+       {
+        "en": "Separate routine communication from crisis communication.",
+        "ar": "فصل الاتصال الروتيني عن اتصال الأزمة."
+       },
+       {
+        "en": "Review the table yearly.",
+        "ar": "مراجعة الجدول سنوياً."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Communication plan",
+        "ar": "خطة الاتصال"
+       },
+       {
+        "en": "Records of communications made",
+        "ar": "سجلات الاتصالات المنفذة"
+       }
+      ],
+      "tip": {
+       "en": "Everyday communication builds the trust you need on crisis day; a client who knows your plan is more patient.",
+       "ar": "اتصال يوم عادي يبني الثقة التي تحتاجها يوم الأزمة؛ العميل الذي يعرف خطتك يصبر عليك أكثر."
+      },
+      "checks": [
+       {
+        "ar": "ما الاتصالات المخطط لها بشأن النظام؟",
+        "en": "What communications about the BCMS are planned?"
+       },
+       {
+        "ar": "من المسؤول عن كل اتصال وما وسيلته؟",
+        "en": "Who owns each communication and through which channel?"
+       },
+       {
+        "ar": "اعرض دليلاً على اتصالات نُفذت.",
+        "en": "Show evidence of communications carried out."
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "7.5",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Documented information",
+       "ar": "المعلومات الموثقة"
+      },
+      "req": {
+       "en": "The BCMS includes the documented information required by the standard and what the organization finds necessary for effectiveness. When creating and updating: appropriate identification and description, format and media, and review and approval. It must be controlled so it is available and suitable for use where and when needed, and adequately protected.",
+       "ar": "يتضمن النظام المعلومات الموثقة التي تطلبها المواصفة وما تراه المنظمة لازماً لفعاليته. عند الإنشاء والتحديث: تعريف ووصف مناسب، وصيغة ووسيط مناسبان، ومراجعة واعتماد. ويجب ضبطها لتكون متاحة ومناسبة للاستخدام حيث ومتى تُحتاج، ومحمية بشكل كاف."
+      },
+      "ex": {
+       "en": "Al-Nukhba keeps plans on the online platform, an updated printed copy in the crisis grab bag of the crisis lead and at the alternate site, and a copy on phones that works offline, with a version table that prevents use of outdated copies.",
+       "ar": "تحفظ النخبة الخطط على المنصة الإلكترونية، ونسخة مطبوعة محدثة في حقيبة الأزمة لدى قائد الأزمة وفي الموقع البديل، ونسخة على الهواتف تعمل دون اتصال، مع جدول إصدارات يمنع استخدام نسخة قديمة."
+      },
+      "how": [
+       {
+        "en": "A list of mandatory and additional documented information.",
+        "ar": "قائمة بالمعلومات الموثقة الإلزامية والإضافية."
+       },
+       {
+        "en": "Version and distribution control.",
+        "ar": "ضبط الإصدارات والتوزيع."
+       },
+       {
+        "en": "Plans available offline and off-site.",
+        "ar": "إتاحة الخطط دون اتصال وخارج الموقع."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Master document list",
+        "ar": "قائمة الوثائق الرئيسية"
+       },
+       {
+        "en": "Version and distribution log",
+        "ar": "سجل الإصدارات والتوزيع"
+       },
+       {
+        "en": "Off-site copies of plans",
+        "ar": "نسخ الخطط خارج الموقع"
+       }
+      ],
+      "tip": {
+       "en": "A plan stored only on the server that may fail is an unavailable plan. Test access to it in the exercise.",
+       "ar": "خطة محفوظة فقط على الخادم الذي قد يتعطل هي خطة غير متاحة. اختبر الوصول إليها في التمرين."
+      },
+      "checks": [
+       {
+        "ar": "اعرض قائمة المعلومات الموثقة الإلزامية.",
+        "en": "Show the list of mandatory documented information."
+       },
+       {
+        "ar": "كيف تُضبط الإصدارات والتوزيع؟",
+        "en": "How are versions and distribution controlled?"
+       },
+       {
+        "ar": "هل الخطط متاحة إذا تعطلت الأنظمة أو المبنى؟",
+        "en": "Are plans available if systems or the building are down?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.4.4",
+         "why": {
+          "ar": "الخطط معلومات موثقة يجب أن تكون متاحة وقت الحاجة.",
+          "en": "Plans are documented information that must be available when needed."
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "8",
+    "phase": "do",
+    "title": {
+     "en": "Operation",
+     "ar": "التشغيل"
+    },
+    "intro": {
+     "en": "The heart of the standard: analyse how the impact of stopping each activity grows over time and set priorities, assess disruption risks, choose strategies and solutions that protect prioritized activities, then write response, continuity and recovery plans, exercise them and evaluate your capability regularly.",
+     "ar": "قلب المواصفة: حلل أثر توقف كل نشاط عبر الزمن وحدد أولوياته، وقيّم مخاطر الانقطاع، واختر استراتيجيات وحلولاً تحمي الأنشطة ذات الأولوية، ثم اكتب خطط الاستجابة والاستمرارية والتعافي، ومرّن عليها، وقيّم قدرتك دورياً."
+    },
+    "items": [
+     {
+      "ref": "8.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Operational planning and control",
+       "ar": "التخطيط والضبط التشغيلي"
+      },
+      "req": {
+       "en": "Plan, implement and control the processes needed to meet requirements and carry out the actions of clause 6: set criteria for the processes, control them against the criteria and keep documented information showing they were carried out as planned. Control planned changes, review unintended ones, and ensure outsourced processes and the supply chain are controlled.",
+       "ar": "خطط العمليات اللازمة لتلبية المتطلبات وتنفيذ إجراءات البند 6، ونفذها واضبطها: بوضع معايير للعمليات وضبطها وفقها، والاحتفاظ بمعلومات موثقة تثبت تنفيذها كما خُطط. واضبط التغييرات المخططة وراجع عواقب غير المقصودة، وتأكد من ضبط العمليات المسندة لجهات خارجية وسلسلة الإمداد."
+      },
+      "ex": {
+       "en": "Al-Nukhba set an annual BCMS calendar: BIA update in January, a tabletop exercise every quarter, a full exercise before summer and plan review after every activation. It required the cloud provider to submit a quarterly restore report.",
+       "ar": "وضعت النخبة تقويماً سنوياً للنظام: تحديث تحليل الأثر في يناير، وتمرين طاولة كل ربع، وتمرين شامل قبل الصيف، ومراجعة الخطط بعد كل تفعيل. وألزمت مزود السحابة بتقرير استعادة ربع سنوي."
+      },
+      "how": [
+       {
+        "en": "An annual calendar of BCMS activities with clear criteria.",
+        "ar": "تقويم سنوي لأنشطة النظام بمعايير واضحة."
+       },
+       {
+        "en": "Continuity clauses in critical supplier contracts.",
+        "ar": "بنود استمرارية في عقود الموردين الحرجين."
+       },
+       {
+        "en": "Records proving execution.",
+        "ar": "سجلات تثبت التنفيذ."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Annual BCMS calendar",
+        "ar": "التقويم السنوي للنظام"
+       },
+       {
+        "en": "Contract clauses",
+        "ar": "بنود العقود"
+       },
+       {
+        "en": "Execution records",
+        "ar": "سجلات التنفيذ"
+       }
+      ],
+      "tip": {
+       "en": "If you outsource a prioritized activity, continuity is still your responsibility; ask for evidence of the supplier's capability, not a promise.",
+       "ar": "إذا أسندت نشاطاً ذا أولوية، فالاستمرارية ما زالت مسؤوليتك؛ اطلب دليلاً على قدرة المورد لا وعداً."
+      },
+      "checks": [
+       {
+        "ar": "ما معايير ضبط عمليات النظام؟",
+        "en": "What criteria control the BCMS processes?"
+       },
+       {
+        "ar": "كيف تُضبط العمليات المسندة وسلسلة الإمداد؟",
+        "en": "How are outsourced processes and the supply chain controlled?"
+       },
+       {
+        "ar": "اعرض سجلات تثبت التنفيذ كما خُطط.",
+        "en": "Show records proving execution as planned."
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "6.1",
+         "why": {
+          "ar": "إجراءات المخاطر والفرص تُدمج في العمليات.",
+          "en": "Risk and opportunity actions are built into processes."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.2.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Business impact analysis (BIA)",
+       "ar": "تحليل أثر الأعمال (BIA)"
+      },
+      "req": {
+       "en": "Implement systematic processes for BIA and risk assessment and review them at planned intervals and on change. In the BIA: define impact types and criteria, identify the activities that support products and services, assess the impacts over time of not performing them, set prioritized time frames to resume them at a minimum acceptable capacity (the point after which the impact becomes unacceptable is the MTPD), then identify the prioritized activities, the resources they need and their dependencies, including partners and suppliers.",
+       "ar": "طبّق عمليات منهجية لتحليل أثر الأعمال وتقييم المخاطر وراجعها دورياً وعند التغيير. في التحليل: حدد أنواع الأثر ومعاييره، وحدد الأنشطة الداعمة للمنتجات والخدمات، واستخدمها لتقييم الأثر عبر الزمن لعدم أدائها، وحدد أطراً زمنية مرتبة للأولوية لاستئنافها بحد أدنى مقبول من القدرة (الزمن الذي يصبح بعده الأثر غير مقبول يسمى MTPD)، ثم حدد الأنشطة ذات الأولوية والموارد اللازمة لها والاعتماديات مع الشركاء والموردين."
+      },
+      "ex": {
+       "en": "Al-Nukhba found that stopping 'emergency fault dispatch' becomes unacceptable after 4 hours (contract penalties and a public safety risk), so it set MTPD = 4 hours and RTO = 2 hours at 60% capacity, while 'invoicing' has an MTPD of 10 days. Its dependencies are the GIS system, radio communications and 12 dispatch supervisors.",
+       "ar": "وجدت النخبة أن توقف «الإرسال للأعطال الطارئة» يصبح غير مقبول بعد 4 ساعات (غرامات تعاقدية وخطر على السلامة العامة)، فحددت MTPD = 4 ساعات وRTO = ساعتين عند 60% من القدرة، بينما «إصدار الفواتير» MTPD = 10 أيام. واعتمادياته: نظام GIS، والاتصالات اللاسلكية، و12 مشرف إرسال."
+      },
+      "how": [
+       {
+        "en": "Standard impact scales (financial, operational, reputational, legal, safety) across time bands.",
+        "ar": "مقاييس أثر موحدة (مالي، تشغيلي، سمعة، قانوني، سلامة) عبر فترات زمنية."
+       },
+       {
+        "en": "Interviews with activity owners, results validated with management.",
+        "ar": "مقابلات مع مالكي الأنشطة والتحقق من النتائج مع الإدارة."
+       },
+       {
+        "en": "Set MTPD, RTO, RPO, minimum capacity and resources for each activity.",
+        "ar": "تحديد MTPD وRTO وRPO والحد الأدنى من القدرة والموارد لكل نشاط."
+       },
+       {
+        "en": "Top management approves the results; review them yearly.",
+        "ar": "اعتماد النتائج من الإدارة العليا ومراجعتها سنوياً."
+       }
+      ],
+      "ev": [
+       {
+        "en": "BIA method and criteria",
+        "ar": "منهجية تحليل الأثر ومعاييره"
+       },
+       {
+        "en": "Approved BIA results",
+        "ar": "نتائج التحليل المعتمدة"
+       },
+       {
+        "en": "List of prioritized activities and dependencies",
+        "ar": "قائمة الأنشطة ذات الأولوية واعتمادياتها"
+       }
+      ],
+      "tip": {
+       "en": "The RTO must sit below the MTPD with a realistic margin. If they are equal, any small activation delay means failure.",
+       "ar": "RTO يجب أن يكون أقل من MTPD بهامش واقعي. إن تساويا فأي تأخير بسيط في التفعيل يعني الفشل."
+      },
+      "checks": [
+       {
+        "ar": "اعرض منهجية تحليل الأثر ومعايير الأثر عبر الزمن.",
+        "en": "Show the BIA method and the impact criteria over time."
+       },
+       {
+        "ar": "كيف حُددت MTPD وRTO للأنشطة ذات الأولوية؟ ومن اعتمدها؟",
+        "en": "How were MTPD and RTO set for prioritized activities, and who approved them?"
+       },
+       {
+        "ar": "هل حُددت الموارد والاعتماديات بما فيها الموردون؟",
+        "en": "Were resources and dependencies, including suppliers, identified?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.2.3",
+         "why": {
+          "ar": "الأنشطة ذات الأولوية ومواردها نطاق تقييم المخاطر.",
+          "en": "Prioritized activities and resources scope the risk assessment."
+         }
+        },
+        {
+         "ref": "8.3.2",
+         "why": {
+          "ar": "MTPD وRTO معيار اختيار الحلول.",
+          "en": "MTPD and RTO are the criteria for selecting solutions."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.2.2",
+         "why": {
+          "ar": "المتطلبات التشريعية والتعاقدية تحدد معايير الأثر.",
+          "en": "Legal and contractual requirements shape impact criteria."
+         }
+        },
+        {
+         "ref": "4.3",
+         "why": {
+          "ar": "تحليل الأثر يُنفذ على المنتجات والخدمات داخل النطاق.",
+          "en": "The BIA covers products and services within scope."
+         }
+        },
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "تغيير النظام يستدعي تحديث تحليل الأثر.",
+          "en": "Changing the BCMS triggers a BIA update."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.2.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Risk assessment",
+       "ar": "تقييم المخاطر"
+      },
+      "req": {
+       "en": "Implement a process to assess disruption risk: identify the risks of disruption to prioritized activities and their resources, analyse and evaluate them, and determine which require treatment, consistent with the continuity objectives.",
+       "ar": "طبّق عملية لتقييم مخاطر الانقطاع: حدد مخاطر انقطاع الأنشطة ذات الأولوية ومواردها، وحللها، وقيّمها، وحدد أيها يحتاج معالجة. والمعالجة تكون متسقة مع أهداف الاستمرارية."
+      },
+      "ex": {
+       "en": "Al-Nukhba assessed risks such as power loss at the control room (likelihood 3 × impact 5), ransomware on GIS (4 × 5), technicians unable to travel due to floods (3 × 4) and failure of the transformer supplier (2 × 4). It decided to treat everything above 12.",
+       "ar": "قيّمت النخبة مخاطر مثل: انقطاع الكهرباء عن غرفة التحكم (احتمال 3 × أثر 5)، وهجوم فدية على GIS (4 × 5)، وتعذر وصول الفنيين بسبب السيول (3 × 4)، وتوقف مورد المحولات (2 × 4). وقررت معالجة كل ما تجاوز 12."
+      },
+      "how": [
+       {
+        "en": "Assess threats to resources rather than abstract activities: people, sites, technology, suppliers.",
+        "ar": "تقييم التهديدات على الموارد لا على الأنشطة المجردة: الأفراد، المواقع، التقنية، الموردون."
+       },
+       {
+        "en": "Use a likelihood × impact matrix with acceptance criteria.",
+        "ar": "مصفوفة احتمال × أثر ومعايير قبول."
+       },
+       {
+        "en": "Link treatment to strategies and solutions (8.3).",
+        "ar": "ربط المعالجة بالاستراتيجيات والحلول (8.3)."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Disruption risk register",
+        "ar": "سجل مخاطر الانقطاع"
+       },
+       {
+        "en": "Evaluation and acceptance criteria",
+        "ar": "معايير التقييم والقبول"
+       },
+       {
+        "en": "Treatment decisions",
+        "ar": "قرارات المعالجة"
+       }
+      ],
+      "tip": {
+       "en": "You can use ISO 31000 as the framework, but remember: here you assess what stops the prioritized activities specifically.",
+       "ar": "يمكنك استخدام ISO 31000 كإطار، لكن تذكر: هنا نقيّم ما يوقف الأنشطة ذات الأولوية تحديداً."
+      },
+      "checks": [
+       {
+        "ar": "اعرض سجل مخاطر الانقطاع: هل يغطي موارد الأنشطة ذات الأولوية؟",
+        "en": "Show the disruption risk register: does it cover the resources of prioritized activities?"
+       },
+       {
+        "ar": "ما معايير التقييم وتحديد ما يحتاج معالجة؟",
+        "en": "What criteria evaluate risks and decide which need treatment?"
+       },
+       {
+        "ar": "كيف ارتبطت المعالجة بالاستراتيجيات؟",
+        "en": "How is treatment linked to strategies?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.3.2",
+         "why": {
+          "ar": "المخاطر التي تحتاج معالجة تقود الاستراتيجيات.",
+          "en": "Risks needing treatment drive the strategies."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.1",
+         "why": {
+          "ar": "القضايا المهمة تصبح سيناريوهات مخاطر انقطاع.",
+          "en": "Significant issues become disruption risk scenarios."
+         }
+        },
+        {
+         "ref": "8.2.2",
+         "why": {
+          "ar": "الأنشطة ذات الأولوية ومواردها نطاق تقييم المخاطر.",
+          "en": "Prioritized activities and resources scope the risk assessment."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.3.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Identification and selection of strategies and solutions",
+       "ar": "تحديد الاستراتيجيات والحلول واختيارها"
+      },
+      "req": {
+       "en": "Using the BIA and risk assessment, identify continuity strategies and solutions for before, during and after a disruption that protect, stabilize, continue, resume and recover prioritized activities within their time frames and reduce impacts. Select solutions based on their ability to meet requirements within the time frames and minimum capacity, the amount of risk acceptable, and costs and benefits.",
+       "ar": "بناءً على تحليل الأثر وتقييم المخاطر، حدد استراتيجيات وحلولاً للاستمرارية تغطي ما قبل الانقطاع وأثناءه وبعده، وتحمي الأنشطة ذات الأولوية وتثبتها وتستمر فيها وتستأنفها وتستعيدها ضمن الأطر الزمنية، وتخفف الأثر. واختر الحلول بحسب قدرتها على تلبية المتطلبات ضمن الأطر الزمنية والحد الأدنى من القدرة، ومقدار المخاطر المقبول، والتكلفة والعائد."
+      },
+      "ex": {
+       "en": "Al-Nukhba compared three options for the control room: a fully equipped 'hot' site (costly), a 'warm' site in the company warehouse ready within 90 minutes (selected), or remote working (does not cover radio communications). For transformers it chose strategic stock plus a second qualified supplier.",
+       "ar": "قارنت النخبة ثلاثة حلول لغرفة التحكم: موقع بديل «ساخن» مجهز (مكلف)، أو موقع «دافئ» في مستودع الشركة يُجهز خلال 90 دقيقة (مختار)، أو العمل عن بعد (لا يغطي الاتصالات اللاسلكية). واختارت للمحولات مخزوناً استراتيجياً ومورداً ثانياً مؤهلاً."
+      },
+      "how": [
+       {
+        "en": "Options for each critical resource: people, sites, technology, information, suppliers.",
+        "ar": "خيارات لكل مورد حرج: الأفراد، المواقع، التقنية، المعلومات، الموردون."
+       },
+       {
+        "en": "A documented comparison of cost, time and residual risk.",
+        "ar": "مقارنة موثقة بالتكلفة والزمن والمخاطر المتبقية."
+       },
+       {
+        "en": "Management approval of the selected solutions.",
+        "ar": "اعتماد الإدارة للحلول المختارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Options study and comparison",
+        "ar": "دراسة الخيارات والمقارنة"
+       },
+       {
+        "en": "Strategy selection decision",
+        "ar": "قرار اختيار الاستراتيجيات"
+       }
+      ],
+      "tip": {
+       "en": "Ask of every solution: does it really work within the RTO? An alternate site that needs 8 hours cannot serve an activity with a 4-hour MTPD.",
+       "ar": "اسأل عن كل حل: هل يعمل خلال RTO فعلاً؟ الموقع البديل الذي يحتاج 8 ساعات لا يخدم نشاطاً MTPD له 4 ساعات."
+      },
+      "checks": [
+       {
+        "ar": "ما الاستراتيجيات والحلول المختارة للأنشطة ذات الأولوية؟",
+        "en": "What strategies and solutions were chosen for prioritized activities?"
+       },
+       {
+        "ar": "كيف تم الاختيار (الزمن، التكلفة، المخاطر المقبولة)؟",
+        "en": "How were they selected (time, cost, acceptable risk)?"
+       },
+       {
+        "ar": "هل تحقق الحلول الأطر الزمنية والحد الأدنى من القدرة؟",
+        "en": "Do the solutions meet the time frames and minimum capacity?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.3.3",
+         "why": {
+          "ar": "كل حل مختار يحدد موارده.",
+          "en": "Each selected solution defines its resources."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "8.2.2",
+         "why": {
+          "ar": "MTPD وRTO معيار اختيار الحلول.",
+          "en": "MTPD and RTO are the criteria for selecting solutions."
+         }
+        },
+        {
+         "ref": "8.2.3",
+         "why": {
+          "ar": "المخاطر التي تحتاج معالجة تقود الاستراتيجيات.",
+          "en": "Risks needing treatment drive the strategies."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.3.3",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Resource requirements",
+       "ar": "متطلبات الموارد"
+      },
+      "req": {
+       "en": "Determine the resource requirements to implement the selected solutions, including people, information and data, physical infrastructure (buildings, workplaces, facilities), equipment and consumables, ICT systems, transportation and logistics, finance, and partners and suppliers.",
+       "ar": "حدد متطلبات الموارد لتنفيذ الحلول المختارة، وتشمل: الأفراد، والمعلومات والبيانات، والبنية المادية (المباني وأماكن العمل والمرافق)، والمعدات والمستهلكات، وأنظمة تقنية المعلومات والاتصالات، والنقل والإمداد، والتمويل، والشركاء والموردين."
+      },
+      "ex": {
+       "en": "Al-Nukhba listed the alternate site resources: 8 workstations, an isolated GIS replica, two base radios, a 100 kVA generator, two vehicles for supervisors, an emergency spending limit and an agreement with a telecom operator for a backup line.",
+       "ar": "أعدت النخبة قائمة موارد الموقع البديل: 8 محطات عمل، ونسخة GIS معزولة، وجهازا لاسلكي أساسي، ومولد 100 كيلوفولت أمبير، وسيارتا نقل للمشرفين، وحد صرف طارئ، واتفاقية مع شركة اتصالات لخط احتياطي."
+      },
+      "how": [
+       {
+        "en": "A resource list per solution with quantity, source and owner.",
+        "ar": "قائمة موارد لكل حل بالكمية والمصدر والمسؤول."
+       },
+       {
+        "en": "Pre-arranged supplier agreements for emergency resources.",
+        "ar": "اتفاقيات مسبقة مع الموردين للموارد الطارئة."
+       },
+       {
+        "en": "Periodic checks that resources are available.",
+        "ar": "فحص دوري لتوافر الموارد."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Resource requirement lists",
+        "ar": "قوائم متطلبات الموارد"
+       },
+       {
+        "en": "Supplier agreements",
+        "ar": "الاتفاقيات مع الموردين"
+       },
+       {
+        "en": "Inspection records",
+        "ar": "سجلات الفحص"
+       }
+      ],
+      "tip": {
+       "en": "People are the most neglected resource in plans: how many do you actually need at 60% capacity, and who are they?",
+       "ar": "الأفراد أكثر الموارد إهمالاً في الخطط: كم شخصاً تحتاج فعلاً عند 60% من القدرة؟ ومن هم؟"
+      },
+      "checks": [
+       {
+        "ar": "اعرض متطلبات الموارد لكل حل مختار.",
+        "en": "Show the resource requirements for each selected solution."
+       },
+       {
+        "ar": "هل تشمل الأفراد والمعلومات والبنية والتقنية والتمويل والموردين؟",
+        "en": "Do they cover people, information, facilities, ICT, finance and suppliers?"
+       },
+       {
+        "ar": "كيف تتحقق من توافر هذه الموارد عند الحاجة؟",
+        "en": "How do you verify these resources are available when needed?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.3.4",
+         "why": {
+          "ar": "الموارد المحددة تُوفر عند التنفيذ.",
+          "en": "Defined resources are provided on implementation."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "8.3.2",
+         "why": {
+          "ar": "كل حل مختار يحدد موارده.",
+          "en": "Each selected solution defines its resources."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.3.4",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Implementation of solutions",
+       "ar": "تنفيذ الحلول"
+      },
+      "req": {
+       "en": "Implement and maintain the selected solutions so they can be activated when needed.",
+       "ar": "نفذ الحلول المختارة وحافظ عليها بحيث يمكن تفعيلها عند الحاجة."
+      },
+      "ex": {
+       "en": "Al-Nukhba physically fitted out the alternate site, installed the GIS replica synchronised every 15 minutes, signed the second supplier contract and set a monthly generator maintenance plan with a test run.",
+       "ar": "جهزت النخبة الموقع البديل فعلياً، وركبت نسخة GIS المتزامنة كل 15 دقيقة، ووقعت عقد المورد الثاني، ووضعت خطة صيانة شهرية للمولد مع تشغيل تجريبي."
+      },
+      "how": [
+       {
+        "en": "An implementation plan with tasks, dates and owners.",
+        "ar": "خطة تنفيذ بمهام ومواعيد ومسؤولين."
+       },
+       {
+        "en": "Test each solution after implementation.",
+        "ar": "اختبار كل حل بعد تنفيذه."
+       },
+       {
+        "en": "Periodic maintenance and readiness records.",
+        "ar": "صيانة دورية وسجلات جاهزية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Implementation plan and status",
+        "ar": "خطة التنفيذ وحالتها"
+       },
+       {
+        "en": "Test and maintenance records",
+        "ar": "سجلات الاختبار والصيانة"
+       }
+      ],
+      "tip": {
+       "en": "A planned but unimplemented solution gives false comfort. Track implementation status in the continuity committee.",
+       "ar": "الحل المخطط غير المنفذ يعطي شعوراً زائفاً بالأمان. تابع حالة التنفيذ في لجنة الاستمرارية."
+      },
+      "checks": [
+       {
+        "ar": "هل نُفذت الحلول المختارة فعلاً؟ اعرض دليلاً.",
+        "en": "Were the selected solutions actually implemented? Show evidence."
+       },
+       {
+        "ar": "كيف تُصان الحلول لتبقى جاهزة؟",
+        "en": "How are solutions maintained to stay ready?"
+       },
+       {
+        "ar": "متى اختُبر كل حل آخر مرة؟",
+        "en": "When was each solution last tested?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.4.4",
+         "why": {
+          "ar": "الحلول المنفذة هي ما تفعّله الخطط.",
+          "en": "Implemented solutions are what plans activate."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "8.3.3",
+         "why": {
+          "ar": "الموارد المحددة تُوفر عند التنفيذ.",
+          "en": "Defined resources are provided on implementation."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.4.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Response structure",
+       "ar": "هيكل الاستجابة"
+      },
+      "req": {
+       "en": "Implement a response structure of one or more teams with clear roles, responsibilities, authorities and competence. The structure identifies thresholds for activating the response, assesses the nature, extent and potential impact of the disruption, activates the appropriate response, has processes to activate, operate, coordinate and communicate, has the resources it needs and communicates with interested parties.",
+       "ar": "حدد هيكل استجابة من فريق أو أكثر بأدوار ومسؤوليات وصلاحيات وكفاءات واضحة. ويحدد الهيكل عتبات تفعيل الاستجابة، ويقيّم طبيعة الانقطاع ومداه وأثره المحتمل، ويفعّل الاستجابة المناسبة، وله عمليات للتفعيل والتشغيل والتنسيق والاتصال، والموارد اللازمة، والاتصال بالأطراف المعنية."
+      },
+      "ex": {
+       "en": "Al-Nukhba's structure has three tiers: the crisis management team (strategic), the operational response team and site teams. Activation thresholds: dispatch down for more than 30 minutes, loss of a site, or more than 20% of technicians affected.",
+       "ar": "هيكل النخبة ثلاثي المستويات: فريق إدارة الأزمات (استراتيجي)، وفريق الاستجابة التشغيلي، وفرق المواقع. وعتبة التفعيل: توقف الإرسال أكثر من 30 دقيقة، أو فقدان موقع، أو تأثر أكثر من 20% من الفنيين."
+      },
+      "how": [
+       {
+        "en": "A response structure chart with roles and deputies.",
+        "ar": "مخطط لهيكل الاستجابة بالأدوار والبدلاء."
+       },
+       {
+        "en": "Clear, numeric activation thresholds.",
+        "ar": "عتبات تفعيل واضحة ومحددة بالأرقام."
+       },
+       {
+        "en": "A primary and an alternate command room.",
+        "ar": "غرفة عمليات أساسية وبديلة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Response structure document",
+        "ar": "وثيقة هيكل الاستجابة"
+       },
+       {
+        "en": "Activation thresholds",
+        "ar": "عتبات التفعيل"
+       },
+       {
+        "en": "Updated team membership list",
+        "ar": "قائمة أعضاء الفرق المحدثة"
+       }
+      ],
+      "tip": {
+       "en": "Vague activation thresholds cause fatal delay: everyone waits for someone to declare it a 'crisis'.",
+       "ar": "عتبات التفعيل الغامضة تسبب تأخيراً قاتلاً: الجميع ينتظر أن يعلن أحد أن هذه «أزمة»."
+      },
+      "checks": [
+       {
+        "ar": "اعرض هيكل الاستجابة: الفرق والأدوار والصلاحيات والبدلاء.",
+        "en": "Show the response structure: teams, roles, authorities and deputies."
+       },
+       {
+        "ar": "ما عتبات التفعيل ومن يقرر التفعيل؟",
+        "en": "What are the activation thresholds and who decides to activate?"
+       },
+       {
+        "ar": "كيف يُقيّم الفريق طبيعة الانقطاع ومداه؟",
+        "en": "How does the team assess the nature and extent of the disruption?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.4.3",
+         "why": {
+          "ar": "هيكل الاستجابة يدير الإنذار والاتصال.",
+          "en": "The response structure runs warning and communication."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.3",
+         "why": {
+          "ar": "الأدوار تحدد أعضاء هيكل الاستجابة وصلاحياتهم.",
+          "en": "Roles define response structure members and authority."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.4.3",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Warning and communication",
+       "ar": "الإنذار والاتصال"
+      },
+      "req": {
+       "en": "Document procedures for internal and external communication covering: communicating with interested parties; receiving, documenting and responding to communications from them, including national or regional risk advisory systems; ensuring communication means are available during a disruption; coordinating with emergency responders; media response; and recording details of the disruption, actions and decisions. Where applicable, warn parties potentially affected and ensure interoperability between responders. These procedures are exercised within the exercise programme.",
+       "ar": "وثّق إجراءات لاتصالات داخلية وخارجية تشمل: الاتصال بالأطراف المعنية، واستقبال الاتصالات منها وتوثيقها والرد عليها بما في ذلك أنظمة الإنذار الوطنية والإقليمية، وضمان توافر وسائل الاتصال وقت الانقطاع، والتنسيق مع جهات الطوارئ، والرد الإعلامي، وتسجيل تفاصيل الانقطاع والإجراءات والقرارات. وحيث ينطبق: إنذار الأطراف التي قد تتأثر، وضمان التوافقية بين جهات الاستجابة. وتُمرّن هذه الإجراءات ضمن برنامج التمارين."
+      },
+      "ex": {
+       "en": "Al-Nukhba has a mass messaging system for staff, contact lists for the client and Civil Defence with primary and backup levels, a single media spokesperson with pre-approved messages, and an event log recording every decision with its time.",
+       "ar": "لدى النخبة نظام رسائل جماعية للموظفين، وقائمة اتصالات بالعميل والدفاع المدني بمستويين (أساسي وبديل)، ومتحدث إعلامي وحيد برسائل معدة مسبقاً، ودفتر أحداث يسجل كل قرار بالوقت."
+      },
+      "how": [
+       {
+        "en": "A call tree and contact lists updated monthly.",
+        "ar": "شجرة اتصال وقوائم محدثة شهرياً."
+       },
+       {
+        "en": "Pre-approved messages for expected scenarios.",
+        "ar": "رسائل معدة مسبقاً لسيناريوهات متوقعة."
+       },
+       {
+        "en": "Backup communication means (radio, satellite).",
+        "ar": "وسائل اتصال بديلة (لاسلكي، أقمار صناعية)."
+       },
+       {
+        "en": "An event and decision log during response.",
+        "ar": "سجل أحداث وقرارات أثناء الاستجابة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Warning and communication procedures",
+        "ar": "إجراءات الإنذار والاتصال"
+       },
+       {
+        "en": "Updated contact lists",
+        "ar": "قوائم الاتصال المحدثة"
+       },
+       {
+        "en": "Pre-approved messages",
+        "ar": "رسائل معدة مسبقاً"
+       },
+       {
+        "en": "Event logs from exercises",
+        "ar": "سجلات الأحداث من التمارين"
+       }
+      ],
+      "tip": {
+       "en": "Test the contact list for real every quarter: the share of wrong numbers alone reveals your readiness.",
+       "ar": "اختبر قائمة الاتصال فعلياً كل ربع: نسبة الأرقام الخاطئة وحدها تكشف جاهزيتك."
+      },
+      "checks": [
+       {
+        "ar": "اعرض إجراءات الإنذار والاتصال الداخلي والخارجي.",
+        "en": "Show the internal and external warning and communication procedures."
+       },
+       {
+        "ar": "ما وسائل الاتصال البديلة إذا تعطلت الأساسية؟",
+        "en": "What backup means exist if primary communications fail?"
+       },
+       {
+        "ar": "كيف تُسجل القرارات والإجراءات أثناء الاستجابة؟",
+        "en": "How are decisions and actions recorded during response?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "8.4.2",
+         "why": {
+          "ar": "هيكل الاستجابة يدير الإنذار والاتصال.",
+          "en": "The response structure runs warning and communication."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.4.4",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Business continuity plans",
+       "ar": "خطط الاستمرارية"
+      },
+      "req": {
+       "en": "Identify and document continuity plans and procedures based on the strategies and solutions, to manage a disruption and continue prioritized activities. Collectively the plans contain: actions to continue or recover within the time frames, monitoring of impact, activation thresholds, delivery of products and services at the agreed capacity, and managing immediate consequences with priority to the welfare of people. Each plan includes purpose, scope and objectives, team roles, actions, information needed, dependencies, resources, reporting requirements and how to stand down. Plans are usable and available when and where needed.",
+       "ar": "حدد خطط وإجراءات الاستمرارية ووثّقها بناءً على الاستراتيجيات والحلول، لإدارة الانقطاع واستمرار الأنشطة ذات الأولوية. تتضمن الخطط مجتمعة: إجراءات الاستمرار أو الاستعادة ضمن الأطر الزمنية، ورصد الأثر، وعتبات التفعيل، وتقديم المنتجات والخدمات بالقدرة المتفق عليها، وإدارة العواقب الفورية مع الأولوية لسلامة الأفراد. وتتضمن كل خطة: الغرض والنطاق والأهداف، وأدوار الفريق، والإجراءات، والمعلومات اللازمة، والاعتماديات، والموارد، ومتطلبات التقارير، وآلية إنهاء التفعيل. وتكون الخطط قابلة للاستخدام ومتاحة وقت الحاجة."
+      },
+      "ex": {
+       "en": "Al-Nukhba's 'dispatch continuity' plan is 6 pages: a timed task list for the first four hours, alternate site activation, informing the client within 60 minutes, switching to manual dispatch with paper maps if GIS fails, and the stand-down criterion.",
+       "ar": "خطة «استمرارية الإرسال» في النخبة من 6 صفحات: قائمة مهام بالتوقيت للساعات الأربع الأولى، وتفعيل الموقع البديل، والاتصال بالعميل خلال 60 دقيقة، والتحول للإرسال اليدوي بالخرائط الورقية إذا تعطل GIS، ومعيار إنهاء التفعيل."
+      },
+      "how": [
+       {
+        "en": "A plan per prioritized activity or group, short and practical.",
+        "ar": "خطة لكل نشاط ذي أولوية أو مجموعة أنشطة، قصيرة وعملية."
+       },
+       {
+        "en": "Time-ordered checklists, not long text.",
+        "ar": "قوائم مهام مرتبة زمنياً لا نصوص طويلة."
+       },
+       {
+        "en": "All mandatory contents, including stand-down.",
+        "ar": "المحتويات الإلزامية كاملة مع آلية إنهاء التفعيل."
+       },
+       {
+        "en": "Copies available offline and at the alternate site.",
+        "ar": "نسخ متاحة دون اتصال وفي الموقع البديل."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Approved continuity plans",
+        "ar": "خطط الاستمرارية المعتمدة"
+       },
+       {
+        "en": "Check of mandatory contents",
+        "ar": "تحقق من المحتويات الإلزامية"
+       },
+       {
+        "en": "Distribution log",
+        "ar": "سجل التوزيع"
+       }
+      ],
+      "tip": {
+       "en": "A good plan can be executed by the deputy at 3 a.m. without calling the person who wrote it.",
+       "ar": "الخطة الجيدة يستطيع البديل تنفيذها في الثالثة فجراً دون الرجوع لمن كتبها."
+      },
+      "checks": [
+       {
+        "ar": "اعرض خطة استمرارية لنشاط ذي أولوية: هل تحتوي العناصر الإلزامية؟",
+        "en": "Show the continuity plan for a prioritized activity: does it contain the mandatory elements?"
+       },
+       {
+        "ar": "هل تحقق الإجراءات الأطر الزمنية المحددة في تحليل الأثر؟",
+        "en": "Do the actions meet the time frames set in the BIA?"
+       },
+       {
+        "ar": "كيف تضمن أن الخطط متاحة وقابلة للاستخدام وقت الحاجة؟",
+        "en": "How do you ensure plans are available and usable when needed?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.4.5",
+         "why": {
+          "ar": "خطط الاستمرارية تنتهي بالتعافي والعودة.",
+          "en": "Continuity plans end in recovery and return."
+         }
+        },
+        {
+         "ref": "8.5",
+         "why": {
+          "ar": "الخطط تُثبت فعاليتها بالتمارين.",
+          "en": "Plans prove their effectiveness in exercises."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "7.3",
+         "why": {
+          "ar": "الوعي بالدور شرط لتنفيذ الخطط.",
+          "en": "Role awareness is a condition for executing plans."
+         }
+        },
+        {
+         "ref": "7.5",
+         "why": {
+          "ar": "الخطط معلومات موثقة يجب أن تكون متاحة وقت الحاجة.",
+          "en": "Plans are documented information that must be available when needed."
+         }
+        },
+        {
+         "ref": "8.3.4",
+         "why": {
+          "ar": "الحلول المنفذة هي ما تفعّله الخطط.",
+          "en": "Implemented solutions are what plans activate."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.4.5",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Recovery",
+       "ar": "التعافي"
+      },
+      "req": {
+       "en": "Have documented processes to restore and return business activities from the temporary measures adopted during and after a disruption.",
+       "ar": "ضع عمليات موثقة لاستعادة الأنشطة وإعادتها من الإجراءات المؤقتة التي اتُخذت أثناء الانقطاع وبعده إلى الوضع الطبيعي."
+      },
+      "ex": {
+       "en": "Al-Nukhba's recovery plan sets conditions for returning to the original control room (electrical inspection, data restored and integrity checked), entering manually recorded data into the system, and a post-incident review within 10 days.",
+       "ar": "خطة تعافي النخبة تحدد: شروط العودة لغرفة التحكم الأصلية (فحص كهربائي، استعادة البيانات والتحقق من سلامتها)، ونقل البيانات المسجلة يدوياً إلى النظام، ومراجعة ما بعد الحادث خلال 10 أيام."
+      },
+      "how": [
+       {
+        "en": "Clear criteria for returning to normal.",
+        "ar": "معايير واضحة للعودة للوضع الطبيعي."
+       },
+       {
+        "en": "Steps to reconcile data and manual records.",
+        "ar": "خطوات مصالحة البيانات والسجلات اليدوية."
+       },
+       {
+        "en": "Post-incident review and plan updates.",
+        "ar": "مراجعة ما بعد الحادث وتحديث الخطط."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Recovery procedures",
+        "ar": "إجراءات التعافي"
+       },
+       {
+        "en": "Post-incident reports",
+        "ar": "تقارير ما بعد الحادث"
+       }
+      ],
+      "tip": {
+       "en": "Much damage happens on the way back; do not return to the original system before verifying data integrity.",
+       "ar": "كثير من الأضرار تحدث في مرحلة العودة؛ لا تعد إلى النظام الأصلي قبل التحقق من سلامة البيانات."
+      },
+      "checks": [
+       {
+        "ar": "اعرض عمليات التعافي والعودة للوضع الطبيعي.",
+        "en": "Show the recovery and return-to-normal processes."
+       },
+       {
+        "ar": "كيف تُصالح البيانات والسجلات المؤقتة؟",
+        "en": "How are data and temporary records reconciled?"
+       },
+       {
+        "ar": "هل نُفذت مراجعة بعد آخر انقطاع أو تفعيل؟",
+        "en": "Was a review carried out after the last disruption or activation?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "8.4.4",
+         "why": {
+          "ar": "خطط الاستمرارية تنتهي بالتعافي والعودة.",
+          "en": "Continuity plans end in recovery and return."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.5",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Exercise programme",
+       "ar": "برنامج التمارين"
+      },
+      "req": {
+       "en": "Implement a programme of exercising and testing that validates over time the effectiveness of strategies and solutions; is consistent with the objectives; is based on appropriate scenarios, well planned with clear aims; develops teamwork, competence, confidence and knowledge; taken together over time validates all continuity arrangements; and minimises the risk of disruption from the exercise. Produce formal post-exercise reports with outcomes, recommendations and actions, review them for improvement, and exercise at planned intervals and on significant change.",
+       "ar": "طبّق برنامج تمارين واختبارات يثبت عبر الزمن فعالية الاستراتيجيات والحلول، ويكون متسقاً مع الأهداف، ومبنياً على سيناريوهات مناسبة مخطط لها بأهداف واضحة، وينمي العمل الجماعي والكفاءة والثقة والمعرفة، ويثبت مجتمعاً عبر الزمن ترتيبات الاستمرارية كاملة، ويقلل خطر الانقطاع أثناء التمرين. أصدر تقارير رسمية بعد التمارين بالنتائج والتوصيات والإجراءات، وراجعها للتحسين، ونفذ التمارين على فترات مخططة وعند التغييرات الجوهرية."
+      },
+      "ex": {
+       "en": "Al-Nukhba's annual programme: quarterly call-tree tests, a crisis-team tabletop on a ransomware attack, a GIS restore test and a full exercise activating the alternate site before summer. The last exercise showed activation took 110 minutes against a 90-minute target, so the plan was revised.",
+       "ar": "برنامج النخبة السنوي: اختبار شجرة الاتصال ربع سنوياً، وتمرين طاولة لفريق الأزمات عن هجوم فدية، واختبار استعادة GIS، وتمرين شامل بتفعيل الموقع البديل قبل الصيف. أظهر التمرين الأخير أن التفعيل استغرق 110 دقائق مقابل 90 مستهدفة، فعُدلت الخطة."
+      },
+      "how": [
+       {
+        "en": "A multi-year programme that gradually covers every plan and solution.",
+        "ar": "برنامج متعدد السنوات يغطي كل الخطط والحلول تدريجياً."
+       },
+       {
+        "en": "A mix of types: walkthrough, tabletop, simulation, technical test, full exercise.",
+        "ar": "تدرج الأنواع: مراجعة، طاولة، محاكاة، اختبار تقني، تمرين شامل."
+       },
+       {
+        "en": "Measurable aims for each exercise and a formal report after it.",
+        "ar": "أهداف قابلة للقياس لكل تمرين وتقرير رسمي بعده."
+       },
+       {
+        "en": "Track actions to closure.",
+        "ar": "متابعة الإجراءات حتى الإغلاق."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Exercise programme",
+        "ar": "برنامج التمارين"
+       },
+       {
+        "en": "Exercise plans and scenarios",
+        "ar": "خطط التمارين وسيناريوهاتها"
+       },
+       {
+        "en": "Post-exercise reports and actions",
+        "ar": "تقارير ما بعد التمرين وإجراءاتها"
+       }
+      ],
+      "tip": {
+       "en": "An exercise that 'succeeded' with no findings was probably too easy. The aim is to find the flaw before the crisis.",
+       "ar": "التمرين الذي «نجح» دون أي ملاحظة غالباً كان سهلاً جداً. الهدف أن تكتشف الخلل قبل الأزمة."
+      },
+      "checks": [
+       {
+        "ar": "اعرض برنامج التمارين: هل يغطي كل الخطط والحلول عبر الزمن؟",
+        "en": "Show the exercise programme: does it cover all plans and solutions over time?"
+       },
+       {
+        "ar": "اعرض تقرير آخر تمرين ونتائجه وإجراءاته.",
+        "en": "Show the report of the last exercise with its outcomes and actions."
+       },
+       {
+        "ar": "كيف قُلل خطر الانقطاع أثناء التمرين؟",
+        "en": "How was the risk of disruption during the exercise minimised?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.6",
+         "why": {
+          "ar": "نتائج التمارين مدخل لتقييم القدرات.",
+          "en": "Exercise results feed the capability evaluation."
+         }
+        },
+        {
+         "ref": "10.1",
+         "why": {
+          "ar": "إخفاقات التمارين تُعالج بإجراءات تصحيحية.",
+          "en": "Exercise failures are handled by corrective action."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "7.2",
+         "why": {
+          "ar": "الكفاءة تُبنى وتُقاس في التمارين.",
+          "en": "Competence is built and measured in exercises."
+         }
+        },
+        {
+         "ref": "8.4.4",
+         "why": {
+          "ar": "الخطط تُثبت فعاليتها بالتمارين.",
+          "en": "Plans prove their effectiveness in exercises."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.6",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Evaluation of business continuity documentation and capabilities",
+       "ar": "تقييم وثائق الاستمرارية والقدرات"
+      },
+      "req": {
+       "en": "Evaluate the suitability, adequacy and effectiveness of the BIA, risk assessment, strategies, solutions, plans and procedures through reviews, analysis, exercises, tests, post-incident reports and performance evaluations. Evaluate the capabilities of relevant partners and suppliers and compliance with legal and regulatory requirements, good practice, the policy and objectives, and update documentation in a timely way. Evaluate at planned intervals, after any incident or activation, and on significant change.",
+       "ar": "قيّم ملاءمة وكفاية وفعالية تحليل الأثر وتقييم المخاطر والاستراتيجيات والحلول والخطط والإجراءات، عبر المراجعات والتحليل والتمارين والاختبارات وتقارير ما بعد الحوادث وتقييمات الأداء. وقيّم قدرات الشركاء والموردين ذوي الصلة، والامتثال للمتطلبات التشريعية والتنظيمية وأفضل الممارسات والسياسة والأهداف، وحدّث الوثائق في الوقت المناسب. ويُنفذ التقييم على فترات مخططة، وبعد أي حادث أو تفعيل، وعند التغييرات الجوهرية."
+      },
+      "ex": {
+       "en": "After a power failure hit the control room for an hour, Al-Nukhba evaluated the plan: the generator worked but the intercom was not on backup power. It updated the plan and asked the transformer supplier for evidence of its own continuity plan.",
+       "ar": "بعد عطل الكهرباء الذي أصاب غرفة التحكم لساعة، قيّمت النخبة الخطة: المولد عمل، لكن نظام الاتصال الداخلي لم يكن على مصدر احتياطي. حدّثت الخطة، وطلبت من مورد المحولات دليلاً على خطته للاستمرارية."
+      },
+      "how": [
+       {
+        "en": "A structured annual review of all continuity documents.",
+        "ar": "مراجعة سنوية منظمة لكل وثائق الاستمرارية."
+       },
+       {
+        "en": "An evaluation after every real incident or activation.",
+        "ar": "تقييم بعد كل حادث أو تفعيل حقيقي."
+       },
+       {
+        "en": "A questionnaire or audit of critical suppliers' capabilities.",
+        "ar": "استبيان أو تدقيق لقدرات الموردين الحرجين."
+       },
+       {
+        "en": "A log of resulting updates.",
+        "ar": "سجل للتحديثات الناتجة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Evaluation reports",
+        "ar": "تقارير التقييم"
+       },
+       {
+        "en": "Supplier evaluations",
+        "ar": "تقييمات الموردين"
+       },
+       {
+        "en": "Documentation update log",
+        "ar": "سجل تحديث الوثائق"
+       }
+      ],
+      "tip": {
+       "en": "Clause 8.6 is new in 2019 and often overlooked; a real incident is the most valuable test of your capability, do not waste it.",
+       "ar": "البند 8.6 جديد في 2019 ويغفله كثيرون؛ الحادث الحقيقي أثمن مصدر لتقييم قدرتك، فلا تضيعه."
+      },
+      "checks": [
+       {
+        "ar": "متى قُيّمت وثائق الاستمرارية آخر مرة؟ اعرض النتائج.",
+        "en": "When were continuity documents last evaluated? Show the results."
+       },
+       {
+        "ar": "هل قُيّمت قدرات الموردين والشركاء الحرجين؟",
+        "en": "Were the capabilities of critical suppliers and partners evaluated?"
+       },
+       {
+        "ar": "هل نُفذ تقييم بعد آخر حادث أو تفعيل؟",
+        "en": "Was an evaluation carried out after the last incident or activation?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.3",
+         "why": {
+          "ar": "نتائج التقييم مدخل إلزامي لمراجعة الإدارة.",
+          "en": "Evaluation results are a mandatory management review input."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "8.5",
+         "why": {
+          "ar": "نتائج التمارين مدخل لتقييم القدرات.",
+          "en": "Exercise results feed the capability evaluation."
+         }
+        },
+        {
+         "ref": "10.1",
+         "why": {
+          "ar": "الحوادث وعدم المطابقة تستدعي تحديث الوثائق.",
+          "en": "Incidents and nonconformities trigger document updates."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "9",
+    "phase": "check",
+    "title": {
+     "en": "Performance evaluation",
+     "ar": "تقييم الأداء"
+    },
+    "intro": {
+     "en": "Does the system actually work? Measure what matters (readiness, exercise results, actual recovery time), audit objectively, then top management decides what to change based on the evidence.",
+     "ar": "هل يعمل النظام فعلاً؟ قِس ما يهم (الجاهزية، نتائج التمارين، زمن الاستعادة الفعلي)، ودقق داخلياً بموضوعية، ثم تقرر الإدارة العليا ما يلزم تغييره بناءً على الأدلة."
+    },
+    "items": [
+     {
+      "ref": "9.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Monitoring, measurement, analysis and evaluation",
+       "ar": "الرصد والقياس والتحليل والتقييم"
+      },
+      "req": {
+       "en": "Determine what needs monitoring and measuring, the methods that ensure valid results, when to monitor and measure, and when and by whom results are analysed and evaluated. Retain documented information as evidence of the results and evaluate continuity performance and the effectiveness of the BCMS.",
+       "ar": "حدد ما يجب رصده وقياسه، والطرق التي تضمن نتائج صحيحة، ومتى يُرصد ويُقاس، ومتى تُحلل النتائج وتُقيّم ومن يفعل ذلك. واحتفظ بمعلومات موثقة كدليل على النتائج، وقيّم أداء الاستمرارية وفعالية النظام."
+      },
+      "ex": {
+       "en": "Al-Nukhba's indicators: share of prioritized activities with tested plans, alternate site activation time in exercises versus the RTO, contact list accuracy, share of exercise actions closed on time, and service restoration time in real incidents.",
+       "ar": "مؤشرات النخبة: نسبة الأنشطة ذات الأولوية بخطط مختبرة، وزمن تفعيل الموقع البديل في التمرين مقابل RTO، ونسبة دقة قائمة الاتصال، ونسبة إجراءات التمارين المغلقة في موعدها، وزمن استعادة الخدمة في الحوادث الحقيقية."
+      },
+      "how": [
+       {
+        "en": "5 to 8 indicators, each with a definition, data source and frequency.",
+        "ar": "5 إلى 8 مؤشرات بتعريف ومصدر بيانات وتكرار."
+       },
+       {
+        "en": "A quarterly dashboard for the committee.",
+        "ar": "لوحة مؤشرات ربع سنوية للجنة."
+       },
+       {
+        "en": "Analyse trends, not single numbers.",
+        "ar": "تحليل الاتجاهات لا الأرقام المنفردة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Monitoring and measurement plan",
+        "ar": "خطة الرصد والقياس"
+       },
+       {
+        "en": "Indicator results and analysis",
+        "ar": "نتائج المؤشرات وتحليلها"
+       }
+      ],
+      "tip": {
+       "en": "'Number of plans written' is a misleading indicator; measure plans tested that met their aims.",
+       "ar": "«عدد الخطط المكتوبة» مؤشر مضلل؛ قِس الخطط المختبرة التي حققت أهدافها."
+      },
+      "checks": [
+       {
+        "ar": "ما الذي يُرصد ويُقاس في النظام وكيف؟",
+        "en": "What is monitored and measured in the BCMS, and how?"
+       },
+       {
+        "ar": "من يحلل النتائج ومتى؟",
+        "en": "Who analyses results and when?"
+       },
+       {
+        "ar": "اعرض دليلاً على تقييم أداء الاستمرارية وفعالية النظام.",
+        "en": "Show evidence of evaluating continuity performance and BCMS effectiveness."
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.3",
+         "why": {
+          "ar": "نتائج الرصد مدخل للمراجعة.",
+          "en": "Monitoring results feed the review."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "الأهداف تُرصد بمؤشرات.",
+          "en": "Objectives are monitored by indicators."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "9.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Internal audit",
+       "ar": "التدقيق الداخلي"
+      },
+      "req": {
+       "en": "Conduct internal audits at planned intervals to provide information on whether the BCMS conforms to the organization's and the standard's requirements and is effectively implemented. Plan an audit programme covering frequency, methods, responsibilities, planning requirements and reporting, considering the importance of processes and previous results. Define criteria and scope for each audit, select objective and impartial auditors, report results to management and retain evidence.",
+       "ar": "نفّذ تدقيقات داخلية على فترات مخططة لتقديم معلومات عن مطابقة النظام لمتطلبات المنظمة والمواصفة وفعالية تطبيقه. خطط برنامج تدقيق يشمل التكرار والطرق والمسؤوليات ومتطلبات التخطيط والتقارير، مع مراعاة أهمية العمليات ونتائج التدقيقات السابقة. حدد معايير ونطاق كل تدقيق، واختر مدققين موضوعيين محايدين، وأبلغ النتائج للإدارة، واحتفظ بالأدلة."
+      },
+      "ex": {
+       "en": "Al-Nukhba's programme: a yearly full audit of clauses 4–10 plus an extra audit of the alternate site after fit-out. An auditor from the quality department (not auditing his own work) found the contact list had not been updated for 5 months.",
+       "ar": "برنامج النخبة: تدقيق سنوي شامل على البنود 4–10، وتدقيق إضافي على الموقع البديل بعد تجهيزه. نفذه مدقق من إدارة الجودة (لا يدقق عمله)، ووجد أن قائمة الاتصال لم تُحدث منذ 5 أشهر."
+      },
+      "how": [
+       {
+        "en": "A yearly risk-based audit programme.",
+        "ar": "برنامج تدقيق سنوي مبني على المخاطر."
+       },
+       {
+        "en": "Auditors qualified per ISO 19011 and independent of the work audited.",
+        "ar": "مدققون مؤهلون وفق ISO 19011 ومستقلون عن العمل المدقق."
+       },
+       {
+        "en": "Link findings to corrective action (10.1).",
+        "ar": "ربط النتائج بالإجراءات التصحيحية (10.1)."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Audit programme",
+        "ar": "برنامج التدقيق"
+       },
+       {
+        "en": "Audit plans and reports",
+        "ar": "خطط وتقارير التدقيق"
+       },
+       {
+        "en": "Auditor qualifications",
+        "ar": "مؤهلات المدققين"
+       }
+      ],
+      "tip": {
+       "en": "Audit evidence, not paper: ask for the last exercise report, call a number from the list, open the plan from the alternate site.",
+       "ar": "دقق على الأدلة لا على الورق: اطلب تقرير آخر تمرين، واتصل برقم من القائمة، وافتح الخطة من الموقع البديل."
+      },
+      "checks": [
+       {
+        "ar": "اعرض برنامج التدقيق: هل يغطي كل البنود ويراعي المخاطر؟",
+        "en": "Show the audit programme: does it cover all clauses and consider risk?"
+       },
+       {
+        "ar": "كيف تُضمن موضوعية المدققين وحيادهم؟",
+        "en": "How are auditor objectivity and impartiality ensured?"
+       },
+       {
+        "ar": "هل أُبلغت النتائج للإدارة وعولجت؟",
+        "en": "Were results reported to management and addressed?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "10.1",
+         "why": {
+          "ar": "نتائج التدقيق تولد إجراءات تصحيحية.",
+          "en": "Audit findings drive corrective actions."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "9.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Management review",
+       "ar": "مراجعة الإدارة"
+      },
+      "req": {
+       "en": "Top management reviews the BCMS at planned intervals. Inputs: status of previous actions, changes in issues and requirements, performance information (nonconformities, monitoring, audits), interested party feedback, need for change, actions not completed on time, BIA and risk assessment results, evaluation results (8.6), risks not adequately addressed, lessons from incidents and exercises, and improvement opportunities. Outputs: decisions on improvement and changes to the BCMS, including its scope, updates to the analysis and plans, and resources.",
+       "ar": "تراجع الإدارة العليا النظام على فترات مخططة. المدخلات: حالة إجراءات المراجعات السابقة، والتغييرات في القضايا والمتطلبات، ومعلومات الأداء (عدم المطابقة، الرصد، التدقيق)، وملاحظات الأطراف، والحاجة للتغيير، وإجراءات لم تُنفذ في الموعد، ونتائج تحليل الأثر وتقييم المخاطر، ونتائج التقييم (8.6)، والمخاطر غير المعالجة بشكل كاف، والدروس من الحوادث والتمارين، وفرص التحسين. المخرجات: قرارات التحسين والتغييرات على النظام، بما فيها نطاقه، وتحديث التحليل والخطط، والموارد."
+      },
+      "ex": {
+       "en": "At Al-Nukhba's annual review, the full exercise results, the power failure and the audit findings were presented. Management decided to extend the scope to the Dammam warehouse, fund a satellite link and reduce the dispatch RTO to 90 minutes.",
+       "ar": "في مراجعة النخبة السنوية، عُرضت نتائج التمرين الشامل وعطل الكهرباء ونتيجة التدقيق. وقررت الإدارة: توسيع النطاق ليشمل مستودع الدمام، وتمويل خط اتصال فضائي، وخفض RTO للإرسال إلى 90 دقيقة."
+      },
+      "how": [
+       {
+        "en": "An agenda covering every mandatory input.",
+        "ar": "جدول أعمال يغطي كل المدخلات الإلزامية."
+       },
+       {
+        "en": "Clear decisions with owner and date.",
+        "ar": "قرارات واضحة بمسؤول وموعد."
+       },
+       {
+        "en": "Follow up decisions at the next review.",
+        "ar": "متابعة القرارات في المراجعة التالية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Management review minutes",
+        "ar": "محضر مراجعة الإدارة"
+       },
+       {
+        "en": "Input presentation",
+        "ar": "عرض المدخلات"
+       },
+       {
+        "en": "Decision follow-up",
+        "ar": "متابعة القرارات"
+       }
+      ],
+      "tip": {
+       "en": "The continuity-specific inputs (analysis results, 8.6 evaluation, lessons from incidents and exercises) are what set this review apart; do not miss them.",
+       "ar": "مدخلات الاستمرارية الخاصة (نتائج التحليل، التقييم 8.6، دروس الحوادث والتمارين) هي ما يميز هذه المراجعة؛ لا تنسها."
+      },
+      "checks": [
+       {
+        "ar": "اعرض محضر آخر مراجعة: هل غطى كل المدخلات الإلزامية؟",
+        "en": "Show the last review minutes: did they cover every mandatory input?"
+       },
+       {
+        "ar": "ما القرارات المتخذة بشأن التحسين والموارد؟",
+        "en": "What decisions were made on improvement and resources?"
+       },
+       {
+        "ar": "هل نوقشت دروس الحوادث والتمارين؟",
+        "en": "Were lessons from incidents and exercises discussed?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "قرارات المراجعة تخطط تغييرات النظام.",
+          "en": "Review decisions plan changes to the BCMS."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "8.6",
+         "why": {
+          "ar": "نتائج التقييم مدخل إلزامي لمراجعة الإدارة.",
+          "en": "Evaluation results are a mandatory management review input."
+         }
+        },
+        {
+         "ref": "9.1",
+         "why": {
+          "ar": "نتائج الرصد مدخل للمراجعة.",
+          "en": "Monitoring results feed the review."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "10",
+    "phase": "act",
+    "title": {
+     "en": "Improvement",
+     "ar": "التحسين"
+    },
+    "intro": {
+     "en": "Every exercise, incident or audit that reveals a weakness is an opportunity. Deal with the effect, remove the root cause so it does not recur, and keep improving the suitability, adequacy and effectiveness of the system.",
+     "ar": "كل تمرين أو حادث أو تدقيق يكشف ضعفاً هو فرصة. عالج الأثر، وأزل السبب الجذري حتى لا يتكرر، وحسّن ملاءمة النظام وكفايته وفعاليته باستمرار."
+    },
+    "items": [
+     {
+      "ref": "10.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Nonconformity and corrective action",
+       "ar": "عدم المطابقة والإجراء التصحيحي"
+      },
+      "req": {
+       "en": "When a nonconformity occurs: react to control and correct it and deal with the consequences; evaluate the need to eliminate its causes by reviewing it, determining the causes and whether similar cases exist; implement the actions needed, review their effectiveness and change the BCMS if needed. Retain evidence of the nature of the nonconformity, the actions and their results.",
+       "ar": "عند حدوث عدم مطابقة: تفاعل معها لضبطها وتصحيحها والتعامل مع عواقبها، وقيّم الحاجة لإزالة أسبابها بمراجعتها وتحديد أسبابها ومعرفة وجود حالات مشابهة، ونفذ الإجراءات اللازمة، وراجع فعاليتها، وعدّل النظام عند الحاجة. واحتفظ بدليل على طبيعة عدم المطابقة والإجراءات ونتائجها."
+      },
+      "ex": {
+       "en": "The outdated contact list (audit finding): Al-Nukhba updated it at once (correction), found the cause was that it was not linked to the HR system, automated the update from HR (corrective action) and verified 100% accuracy three months later.",
+       "ar": "قائمة الاتصال القديمة (نتيجة التدقيق): حدّثت النخبة القائمة فوراً (تصحيح)، ووجدت أن السبب عدم ربطها بنظام الموارد البشرية، فأتمتت التحديث من النظام (إجراء تصحيحي)، وتحققت بعد 3 أشهر من دقة 100%."
+      },
+      "how": [
+       {
+        "en": "One register for nonconformities from audits, exercises and incidents.",
+        "ar": "سجل موحد لعدم المطابقة من التدقيق والتمارين والحوادث."
+       },
+       {
+        "en": "Root cause analysis (5 Whys, fishbone).",
+        "ar": "تحليل السبب الجذري (لماذا الخمس، عظمة السمكة)."
+       },
+       {
+        "en": "Verify effectiveness before closing.",
+        "ar": "التحقق من الفعالية قبل الإغلاق."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Nonconformity and corrective action register",
+        "ar": "سجل عدم المطابقة والإجراءات التصحيحية"
+       },
+       {
+        "en": "Root cause analyses",
+        "ar": "تحليلات السبب الجذري"
+       },
+       {
+        "en": "Effectiveness verification evidence",
+        "ar": "أدلة التحقق من الفعالية"
+       }
+      ],
+      "tip": {
+       "en": "Correction removes the effect; corrective action removes the cause. The auditor looks for the second.",
+       "ar": "التصحيح يزيل الأثر، والإجراء التصحيحي يزيل السبب. المدقق يبحث عن الثاني."
+      },
+      "checks": [
+       {
+        "ar": "اعرض حالات عدم مطابقة حديثة وكيف عولجت.",
+        "en": "Show recent nonconformities and how they were handled."
+       },
+       {
+        "ar": "كيف حُدد السبب الجذري؟",
+        "en": "How was the root cause determined?"
+       },
+       {
+        "ar": "كيف تحققت من فعالية الإجراء التصحيحي؟",
+        "en": "How was the effectiveness of the corrective action verified?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.6",
+         "why": {
+          "ar": "الحوادث وعدم المطابقة تستدعي تحديث الوثائق.",
+          "en": "Incidents and nonconformities trigger document updates."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "8.5",
+         "why": {
+          "ar": "إخفاقات التمارين تُعالج بإجراءات تصحيحية.",
+          "en": "Exercise failures are handled by corrective action."
+         }
+        },
+        {
+         "ref": "9.2",
+         "why": {
+          "ar": "نتائج التدقيق تولد إجراءات تصحيحية.",
+          "en": "Audit findings drive corrective actions."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "10.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Continual improvement",
+       "ar": "التحسين المستمر"
+      },
+      "req": {
+       "en": "Continually improve the suitability, adequacy and effectiveness of the BCMS, considering the results of analysis and evaluation and the outputs of management review to identify needs and opportunities.",
+       "ar": "حسّن ملاءمة النظام وكفايته وفعاليته باستمرار، مع مراعاة نتائج التحليل والتقييم ومخرجات مراجعة الإدارة لتحديد الاحتياجات والفرص."
+      },
+      "ex": {
+       "en": "Al-Nukhba's alternate-site activation time fell from 110 to 75 minutes within a year after simplifying the checklist, training two more deputies and automating the GIS replica.",
+       "ar": "انخفض زمن تفعيل الموقع البديل في النخبة من 110 دقائق إلى 75 خلال عام، بعد تبسيط قائمة المهام وتدريب بديلين إضافيين وأتمتة نسخ GIS."
+      },
+      "how": [
+       {
+        "en": "A log of improvement opportunities from every source.",
+        "ar": "سجل فرص التحسين من كل المصادر."
+       },
+       {
+        "en": "Prioritise by effect on capability.",
+        "ar": "أولويات بحسب الأثر على القدرة."
+       },
+       {
+        "en": "Measure improvement with the indicators (9.1).",
+        "ar": "قياس التحسن بالمؤشرات (9.1)."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Improvement log",
+        "ar": "سجل التحسين"
+       },
+       {
+        "en": "Indicator trends",
+        "ar": "اتجاهات المؤشرات"
+       }
+      ],
+      "tip": {
+       "en": "The best evidence of continual improvement: a recovery-time curve that improves across successive exercises.",
+       "ar": "أفضل دليل على التحسين المستمر: منحنى يتحسن لزمن الاستعادة في التمارين المتتالية."
+      },
+      "checks": [
+       {
+        "ar": "اعرض أمثلة على تحسينات تمت في النظام.",
+        "en": "Show examples of improvements made to the BCMS."
+       },
+       {
+        "ar": "كيف تُحدد فرص التحسين وتُرتب أولوياتها؟",
+        "en": "How are improvement opportunities identified and prioritised?"
+       },
+       {
+        "ar": "هل تُظهر المؤشرات تحسناً عبر الزمن؟",
+        "en": "Do the indicators show improvement over time?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.4",
+         "why": {
+          "ar": "التحسين يطور النظام نفسه.",
+          "en": "Improvement develops the system itself."
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   }
+  ],
+  "changes": [
+   {
+    "title": {
+     "en": "Context and parties + the 2024 climate amendment",
+     "ar": "السياق والأطراف + تعديل المناخ 2024"
+    },
+    "text": {
+     "en": "Amendment 1:2024 added the climate change relevance decision in 4.1 and a note in 4.2.1 that parties can have climate-related requirements. Clause 4.2.2 still covers legal and regulatory requirements.",
+     "ar": "أضاف التعديل 1:2024 قرار صلة تغيّر المناخ في 4.1 وملاحظة في 4.2.1 بأن للأطراف متطلبات تتعلق بالمناخ. وبقي 4.2.2 للمتطلبات التشريعية والتنظيمية."
+    },
+    "refs": [
+     "4.1",
+     "4.2.1"
+    ]
+   },
+   {
+    "title": {
+     "en": "Simpler, less prescriptive wording",
+     "ar": "صياغة أبسط وأقل تفصيلاً"
+    },
+    "text": {
+     "en": "The 2019 edition was rewritten on the common structure; many requirements for specific 'documented procedures' were removed, leaving the organization to decide the documents it needs.",
+     "ar": "أُعيدت صياغة 2019 على الهيكل الموحد، وحُذفت متطلبات كثيرة كانت تنص على «إجراءات موثقة» بعينها، وتُرك للمنظمة تحديد ما تحتاجه من وثائق."
+    },
+    "refs": [
+     "4.4",
+     "7.5"
+    ]
+   },
+   {
+    "title": {
+     "en": "New clause: planning changes",
+     "ar": "بند جديد: تخطيط التغييرات"
+    },
+    "text": {
+     "en": "Clause 6.3 is new in 2019: changes to the BCMS are planned considering purpose, consequences, integrity, resources and responsibilities.",
+     "ar": "البند 6.3 جديد في 2019: تغييرات النظام تُخطط مع مراعاة الغرض والعواقب وسلامة النظام والموارد والمسؤوليات."
+    },
+    "refs": [
+     "6.3"
+    ]
+   },
+   {
+    "title": {
+     "en": "A clearer BIA and risk assessment",
+     "ar": "تحليل الأثر وتقييم المخاطر أوضح"
+    },
+    "text": {
+     "en": "Clause 8.2 separates the general framework, BIA and risk assessment. The BIA sets prioritized time frames at a minimum capacity, mentions the MTPD in a note and requires dependencies, including suppliers.",
+     "ar": "البند 8.2 يفصل الإطار العام وتحليل الأثر وتقييم المخاطر. التحليل يحدد أطراً زمنية مرتبة للأولوية بحد أدنى من القدرة، ويذكر MTPD في ملاحظة، ويطلب الاعتماديات بما فيها الموردون."
+    },
+    "refs": [
+     "8.2.2",
+     "8.2.3"
+    ]
+   },
+   {
+    "title": {
+     "en": "From 'strategy' to 'strategies and solutions'",
+     "ar": "من «الاستراتيجية» إلى «الاستراتيجيات والحلول»"
+    },
+    "text": {
+     "en": "Solutions cover before, during and after a disruption; each is selected on time, capacity, acceptable risk and cost, with an explicit resource list covering people, information, facilities, ICT, transport, finance and suppliers.",
+     "ar": "تغطي الحلول ما قبل الانقطاع وأثناءه وبعده، ويُختار كل حل بحسب الزمن والقدرة والمخاطر المقبولة والتكلفة، مع قائمة موارد صريحة تشمل الأفراد والمعلومات والبنية والتقنية والنقل والتمويل والموردين."
+    },
+    "refs": [
+     "8.3.2",
+     "8.3.3"
+    ]
+   },
+   {
+    "title": {
+     "en": "Response structure, warning and communication",
+     "ar": "هيكل الاستجابة والإنذار والاتصال"
+    },
+    "text": {
+     "en": "A 'response structure' with clear activation thresholds replaced the 'incident response structure', and warning and communication procedures were separated, including national warning systems and coordination with emergency services.",
+     "ar": "حل «هيكل الاستجابة» بعتبات تفعيل واضحة محل «هيكل الاستجابة للحوادث»، وفُصلت إجراءات الإنذار والاتصال بما فيها أنظمة الإنذار الوطنية والتنسيق مع جهات الطوارئ."
+    },
+    "refs": [
+     "8.4.2",
+     "8.4.3"
+    ]
+   },
+   {
+    "title": {
+     "en": "Exercise programme",
+     "ar": "برنامج التمارين"
+    },
+    "text": {
+     "en": "The requirement is now a 'programme' that validates all arrangements over time, with scenario-based exercises, formal post-exercise reports and review for improvement.",
+     "ar": "صار المطلوب «برنامجاً» يثبت فعالية الترتيبات كاملة عبر الزمن، بتمارين مبنية على سيناريوهات وتقارير رسمية بعدها ومراجعة للتحسين."
+    },
+    "refs": [
+     "8.5"
+    ]
+   },
+   {
+    "title": {
+     "en": "New clause: evaluating documentation and capabilities",
+     "ar": "بند جديد: تقييم الوثائق والقدرات"
+    },
+    "text": {
+     "en": "Clause 8.6 is new: periodic and post-incident evaluation of the suitability and effectiveness of the BIA, solutions and plans, of supplier and partner capabilities, and of compliance.",
+     "ar": "البند 8.6 جديد: تقييم دوري وبعد الحوادث لملاءمة تحليل الأثر والحلول والخطط وفعاليتها، ولقدرات الموردين والشركاء، والامتثال للمتطلبات."
+    },
+    "refs": [
+     "8.6"
+    ]
+   }
+  ],
+  "terms": [
+   {
+    "no": "22300",
+    "en": "Business continuity",
+    "ar": "استمرارية الأعمال",
+    "def": {
+     "ar": "قدرة المنظمة على مواصلة تقديم منتجاتها وخدماتها ضمن أطر زمنية مقبولة وبقدرة محددة مسبقاً أثناء الانقطاع.",
+     "en": "The organization's ability to keep delivering products and services within acceptable time frames at a predefined capacity during a disruption."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Business continuity management system (BCMS)",
+    "ar": "نظام إدارة استمرارية الأعمال",
+    "def": {
+     "ar": "جزء من نظام الإدارة الكلي ينشئ الاستمرارية ويطبقها ويشغلها ويرصدها ويراجعها ويحافظ عليها ويحسنها.",
+     "en": "The part of the overall management system that establishes, implements, operates, monitors, reviews, maintains and improves business continuity."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Business continuity plan",
+    "ar": "خطة استمرارية الأعمال",
+    "def": {
+     "ar": "معلومات موثقة ترشد المنظمة للاستجابة للانقطاع واستئناف تقديم منتجاتها وخدماتها واستعادته بما يتسق مع أهدافها.",
+     "en": "Documented information that guides the organization to respond to a disruption and to resume and recover the delivery of its products and services consistent with its objectives."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Business impact analysis (BIA)",
+    "ar": "تحليل أثر الأعمال",
+    "def": {
+     "ar": "عملية تحليل أثر الانقطاع على المنظمة عبر الزمن، لتحديد الأولويات والأطر الزمنية والموارد.",
+     "en": "The process of analysing the impact of a disruption on the organization over time, to set priorities, time frames and resources."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Disruption",
+    "ar": "الانقطاع",
+    "def": {
+     "ar": "حادث متوقع أو غير متوقع يسبب انحرافاً سلبياً غير مخطط عن التقديم المتوقع للمنتجات والخدمات.",
+     "en": "An anticipated or unanticipated incident that causes an unplanned, negative deviation from the expected delivery of products and services."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Incident",
+    "ar": "الحادث",
+    "def": {
+     "ar": "حدث قد يكون انقطاعاً أو خسارة أو طارئاً أو أزمة، أو قد يؤدي إليها.",
+     "en": "An event that can be, or could lead to, a disruption, loss, emergency or crisis."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Crisis",
+    "ar": "الأزمة",
+    "def": {
+     "ar": "وضع غير مستقر بدرجة عالية من عدم اليقين يتطلب إجراءً عاجلاً لحماية الأرواح والأصول والسمعة.",
+     "en": "An unstable situation with a high degree of uncertainty that requires urgent action to protect people, assets and reputation."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Emergency",
+    "ar": "الطوارئ",
+    "def": {
+     "ar": "حدث مفاجئ وعاجل وغير متوقع عادة يتطلب إجراءً فورياً.",
+     "en": "A sudden, urgent, usually unexpected occurrence requiring immediate action."
+    }
+   },
+   {
+    "no": "22301",
+    "en": "Prioritized activity",
+    "ar": "النشاط ذو الأولوية",
+    "def": {
+     "ar": "نشاط تُعطى له الأسبقية بعد الانقطاع لتقليل الأثر.",
+     "en": "An activity given precedence following a disruption in order to reduce the impact."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Maximum tolerable period of disruption (MTPD)",
+    "ar": "أقصى فترة انقطاع محتملة",
+    "def": {
+     "ar": "الزمن الذي تصبح بعده آثار عدم استئناف النشاط غير مقبولة للمنظمة.",
+     "en": "The time after which the impacts of not resuming an activity would become unacceptable to the organization."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Recovery time objective (RTO)",
+    "ar": "هدف زمن الاستعادة",
+    "def": {
+     "ar": "الفترة المستهدفة لاستئناف نشاط أو مورد أو منتج أو خدمة بالحد الأدنى من القدرة، وتكون أقل من MTPD.",
+     "en": "The target period to resume an activity, resource, product or service at a minimum capacity; it must be shorter than the MTPD."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Recovery point objective (RPO)",
+    "ar": "هدف نقطة الاستعادة",
+    "def": {
+     "ar": "النقطة التي يجب أن تُستعاد إليها المعلومات لتمكين النشاط من العمل؛ أي أقصى فقدان بيانات مقبول.",
+     "en": "The point to which information must be restored for an activity to operate on resumption; in effect, the maximum acceptable data loss."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Minimum business continuity objective (MBCO)",
+    "ar": "الحد الأدنى لهدف الاستمرارية",
+    "def": {
+     "ar": "أدنى مستوى من الخدمات أو المنتجات تقبله المنظمة لتحقيق أهدافها أثناء الانقطاع.",
+     "en": "The minimum level of services or products acceptable to the organization to achieve its objectives during a disruption."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Recovery",
+    "ar": "التعافي",
+    "def": {
+     "ar": "استعادة الأنشطة والموارد وإعادتها إلى الوضع الطبيعي بعد الانقطاع.",
+     "en": "Restoring and returning activities and resources to normal after a disruption."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Resilience",
+    "ar": "المرونة المؤسسية",
+    "def": {
+     "ar": "قدرة المنظمة على الاستيعاب والتكيف في بيئة متغيرة.",
+     "en": "The ability to absorb and adapt in a changing environment."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Exercise",
+    "ar": "التمرين",
+    "def": {
+     "ar": "عملية لتدريب الأداء وتقييمه وممارسته وتحسينه في المنظمة.",
+     "en": "A process to train for, assess, practise and improve performance in an organization."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Test",
+    "ar": "الاختبار",
+    "def": {
+     "ar": "نوع من التمارين يهدف لمعرفة هل يحقق مورد أو نظام متطلباته، وله نتيجة نجاح أو فشل.",
+     "en": "A type of exercise that checks whether a resource or system meets its requirements, with a pass or fail result."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Scenario",
+    "ar": "السيناريو",
+    "def": {
+     "ar": "تسلسل أو مجموعة أحداث مخططة مسبقاً وقابلة للتصديق تُستخدم في التمرين.",
+     "en": "A pre-planned, plausible storyline of events used in an exercise."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Dependency",
+    "ar": "الاعتمادية",
+    "def": {
+     "ar": "علاقة يحتاج فيها نشاط أو مورد إلى نشاط أو مورد آخر ليعمل، داخلياً أو لدى مورد خارجي.",
+     "en": "A relationship in which an activity or resource needs another activity or resource to function, internally or at an external supplier."
+    }
+   },
+   {
+    "no": "22301",
+    "en": "Response structure",
+    "ar": "هيكل الاستجابة",
+    "def": {
+     "ar": "الفرق والأدوار والصلاحيات وعتبات التفعيل التي تدير الانقطاع.",
+     "en": "The teams, roles, authorities and activation thresholds that manage a disruption."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Activation",
+    "ar": "التفعيل",
+    "def": {
+     "ar": "تطبيق إجراءات الاستمرارية عند تجاوز عتبة محددة مسبقاً.",
+     "en": "Putting continuity procedures into effect when a predefined threshold is crossed."
+    }
+   },
+   {
+    "no": "22300",
+    "en": "Alternate site",
+    "ar": "الموقع البديل",
+    "def": {
+     "ar": "مكان عمل بديل تنتقل إليه الأنشطة عند فقدان الموقع الأساسي؛ قد يكون ساخناً أو دافئاً أو بارداً بحسب جاهزيته.",
+     "en": "An alternative workplace to which activities relocate if the primary site is lost; hot, warm or cold depending on readiness."
+    }
+   },
+   {
+    "no": "31000",
+    "en": "Risk",
+    "ar": "الخطر",
+    "def": {
+     "ar": "أثر عدم اليقين على الأهداف.",
+     "en": "The effect of uncertainty on objectives."
+    }
+   },
+   {
+    "no": "22301",
+    "en": "Documented information",
+    "ar": "المعلومات الموثقة",
+    "def": {
+     "ar": "المعلومات التي يجب على المنظمة ضبطها والمحافظة عليها، والوسيط الذي تحتويه.",
+     "en": "Information the organization must control and maintain, and the medium containing it."
+    }
+   }
+  ],
+  "pairs": [
+   {
+    "title": {
+     "en": "MTPD or RTO?",
+     "ar": "MTPD أم RTO؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "أقصى فترة انقطاع (MTPD)",
+       "en": "MTPD"
+      },
+      "meaning": {
+       "ar": "النقطة التي يصبح بعدها الأثر غير مقبول؛ تحددها نتائج تحليل الأثر.",
+       "en": "The point after which the impact becomes unacceptable; set by the BIA."
+      }
+     },
+     {
+      "term": {
+       "ar": "هدف زمن الاستعادة (RTO)",
+       "en": "RTO"
+      },
+      "meaning": {
+       "ar": "الزمن المستهدف للاستئناف بالحد الأدنى من القدرة؛ يجب أن يكون أقل من MTPD بهامش.",
+       "en": "The target time to resume at minimum capacity; must sit below the MTPD with a margin."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "RTO or RPO?",
+     "ar": "RTO أم RPO؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "RTO",
+       "en": "RTO"
+      },
+      "meaning": {
+       "ar": "متى يعود النشاط للعمل؟ يقيس الزمن.",
+       "en": "When will the activity run again? It measures time."
+      }
+     },
+     {
+      "term": {
+       "ar": "RPO",
+       "en": "RPO"
+      },
+      "meaning": {
+       "ar": "إلى أي نقطة تُستعاد البيانات؟ يقيس مقدار البيانات المقبول فقدانها.",
+       "en": "To what point is data restored? It measures how much data loss is acceptable."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "BIA or risk assessment?",
+     "ar": "تحليل الأثر أم تقييم المخاطر؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "تحليل الأثر (8.2.2)",
+       "en": "BIA (8.2.2)"
+      },
+      "meaning": {
+       "ar": "ماذا يحدث لو توقف النشاط، بغض النظر عن السبب؟ يحدد الأولويات والأزمنة.",
+       "en": "What happens if the activity stops, whatever the cause? It sets priorities and times."
+      }
+     },
+     {
+      "term": {
+       "ar": "تقييم المخاطر (8.2.3)",
+       "en": "Risk assessment (8.2.3)"
+      },
+      "meaning": {
+       "ar": "ما الذي قد يوقف النشاط ومواردَه وما احتماله؟ يحدد ما يحتاج معالجة.",
+       "en": "What could stop the activity and its resources, and how likely? It decides what needs treatment."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Incident, disruption or crisis?",
+     "ar": "حادث أم انقطاع أم أزمة؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "حادث",
+       "en": "Incident"
+      },
+      "meaning": {
+       "ar": "حدث قد يؤدي إلى انقطاع أو خسارة.",
+       "en": "An event that could lead to disruption or loss."
+      }
+     },
+     {
+      "term": {
+       "ar": "انقطاع",
+       "en": "Disruption"
+      },
+      "meaning": {
+       "ar": "انحراف غير مخطط عن تقديم المنتجات والخدمات.",
+       "en": "An unplanned deviation from delivering products and services."
+      }
+     },
+     {
+      "term": {
+       "ar": "أزمة",
+       "en": "Crisis"
+      },
+      "meaning": {
+       "ar": "وضع غير مستقر عالي الغموض يتطلب قرارات عاجلة من الإدارة العليا.",
+       "en": "An unstable, highly uncertain situation needing urgent top-management decisions."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Exercise or test?",
+     "ar": "تمرين أم اختبار؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "تمرين",
+       "en": "Exercise"
+      },
+      "meaning": {
+       "ar": "يدرب الأشخاص ويقيّم الأداء ويكشف فجوات الخطة؛ لا نجاح أو فشل مطلق.",
+       "en": "Trains people, assesses performance and exposes plan gaps; no absolute pass or fail."
+      }
+     },
+     {
+      "term": {
+       "ar": "اختبار",
+       "en": "Test"
+      },
+      "meaning": {
+       "ar": "يتحقق من أن مورداً أو نظاماً يعمل كما يجب، بنتيجة نجاح أو فشل.",
+       "en": "Checks a resource or system works as required, with a pass or fail result."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Continuity or recovery?",
+     "ar": "الاستمرارية أم التعافي؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "خطط الاستمرارية (8.4.4)",
+       "en": "Continuity plans (8.4.4)"
+      },
+      "meaning": {
+       "ar": "كيف نواصل الأنشطة ذات الأولوية بحلول مؤقتة أثناء الانقطاع.",
+       "en": "How prioritized activities continue with temporary measures during the disruption."
+      }
+     },
+     {
+      "term": {
+       "ar": "التعافي (8.4.5)",
+       "en": "Recovery (8.4.5)"
+      },
+      "meaning": {
+       "ar": "كيف نعود من الحلول المؤقتة إلى الوضع الطبيعي بأمان.",
+       "en": "How to return safely from temporary measures to normal."
+      }
+     }
+    ]
+   }
+  ],
+  "timeline": [
+   {
+    "date": {
+     "ar": "مايو 2012",
+     "en": "May 2012"
+    },
+    "text": {
+     "ar": "نشر ISO 22301:2012، أول مواصفة دولية قابلة للشهادة لأنظمة إدارة استمرارية الأعمال.",
+     "en": "ISO 22301:2012 published, the first certifiable international standard for business continuity management systems."
+    }
+   },
+   {
+    "date": {
+     "ar": "أكتوبر 2019",
+     "en": "October 2019"
+    },
+    "text": {
+     "ar": "نشر ISO 22301:2019 (الإصدار الثاني) ليحل محل إصدار 2012.",
+     "en": "ISO 22301:2019 (second edition) published, replacing the 2012 edition."
+    }
+   },
+   {
+    "date": {
+     "ar": "أكتوبر 2022",
+     "en": "October 2022"
+    },
+    "text": {
+     "ar": "انتهاء فترة الانتقال (3 سنوات) وسقوط صلاحية شهادات 2012.",
+     "en": "End of the 3-year transition; 2012 certificates ceased to be valid."
+    }
+   },
+   {
+    "date": {
+     "ar": "فبراير 2024",
+     "en": "February 2024"
+    },
+    "text": {
+     "ar": "التعديل 1:2024 يضيف تغيّر المناخ إلى 4.1 و4.2.1.",
+     "en": "Amendment 1:2024 adds climate change to 4.1 and 4.2.1."
+    }
+   }
+  ],
+  "threads": [
+   {
+    "id": "ctx",
+    "chain": [
+     "4.1",
+     "4.2.1",
+     "4.3",
+     "8.2.2",
+     "8.2.3"
+    ],
+    "title": {
+     "en": "From context to BIA",
+     "ar": "من السياق إلى تحليل الأثر"
+    },
+    "text": {
+     "en": "Issues and party requirements set the scope, within which impact is analysed and risk assessed.",
+     "ar": "القضايا ومتطلبات الأطراف تحدد النطاق، وداخله يُحلل الأثر وتُقيّم المخاطر."
+    }
+   },
+   {
+    "id": "risk",
+    "chain": [
+     "8.2.2",
+     "8.3.2",
+     "8.3.3",
+     "8.3.4",
+     "8.4.4"
+    ],
+    "title": {
+     "en": "From impact to plan",
+     "ar": "من الأثر إلى الخطة"
+    },
+    "text": {
+     "en": "Time frames select solutions, solutions define resources, then they are implemented and activated by plans.",
+     "ar": "الأزمنة تحدد الحلول، والحلول تحدد الموارد، ثم تُنفذ وتفعّلها الخطط."
+    }
+   },
+   {
+    "id": "obj",
+    "chain": [
+     "5.2",
+     "6.2",
+     "9.1",
+     "9.3",
+     "10.2"
+    ],
+    "title": {
+     "en": "From policy to performance",
+     "ar": "من السياسة إلى الأداء"
+    },
+    "text": {
+     "en": "The policy frames objectives that are monitored, reviewed and turned into decisions.",
+     "ar": "السياسة تؤطر الأهداف التي تُرصد وتُراجع وتنتج قرارات."
+    }
+   },
+   {
+    "id": "check",
+    "chain": [
+     "8.4.4",
+     "8.5",
+     "8.6",
+     "10.1",
+     "8.2.2"
+    ],
+    "title": {
+     "en": "From plan to proof",
+     "ar": "من الخطة إلى الإثبات"
+    },
+    "text": {
+     "en": "Plans are exercised, results evaluated, failures corrected and the analysis updated.",
+     "ar": "الخطط تُمرّن، والنتائج تُقيّم، والإخفاقات تُصحح وتحدّث التحليل."
+    }
+   },
+   {
+    "id": "imp",
+    "chain": [
+     "9.3",
+     "6.3",
+     "8.2.2",
+     "10.1",
+     "4.4"
+    ],
+    "title": {
+     "en": "From decision to system development",
+     "ar": "من القرار إلى تطوير النظام"
+    },
+    "text": {
+     "en": "Review decisions plan changes and improve the system itself.",
+     "ar": "قرارات المراجعة تخطط التغيير وتحسن النظام نفسه."
+    }
+   }
+  ],
+  "scale": [
+   {
+    "level": 0,
+    "meaning": {
+     "en": "The requirement does not exist at all: no practice, no document, no owner.",
+     "ar": "المتطلب غير موجود إطلاقاً: لا ممارسة ولا وثيقة ولا مسؤول."
+    },
+    "look": {
+     "en": "'We haven't thought about it yet', and nobody knows who is responsible.",
+     "ar": "«لم نفكر فيه بعد» ولا يعرف أحد المسؤول."
+    },
+    "evidence": {
+     "en": "Nothing.",
+     "ar": "لا شيء."
+    }
+   },
+   {
+    "level": 1,
+    "meaning": {
+     "en": "Informal, undocumented, person-dependent practice.",
+     "ar": "ممارسة فردية غير موثقة وغير منتظمة تعتمد على شخص."
+    },
+    "look": {
+     "en": "'So-and-so knows how that works'.",
+     "ar": "«فلان يعرف كيف يعمل ذلك»."
+    },
+    "evidence": {
+     "en": "People's memory and a few emails.",
+     "ar": "ذاكرة الأشخاص وبعض رسائل البريد."
+    }
+   },
+   {
+    "level": 2,
+    "meaning": {
+     "en": "Partly documented or applied, or an important element missing.",
+     "ar": "موثق أو مطبق جزئياً، أو ينقصه عنصر مهم."
+    },
+    "look": {
+     "en": "A procedure exists but is not always applied, or records are missing.",
+     "ar": "يوجد إجراء لكن لا يُطبق في كل الحالات أو لا سجلات."
+    },
+    "evidence": {
+     "en": "A document without enough records.",
+     "ar": "وثيقة دون سجلات كافية."
+    }
+   },
+   {
+    "level": 3,
+    "meaning": {
+     "en": "Documented, applied consistently, with records.",
+     "ar": "موثق ومطبق بانتظام ومعه سجلات تثبته."
+    },
+    "look": {
+     "en": "You can show records for any sample the auditor picks.",
+     "ar": "يمكنك عرض السجلات لأي عينة يطلبها المدقق."
+    },
+    "evidence": {
+     "en": "Procedure plus consistent records over time.",
+     "ar": "إجراء وسجلات متسقة لفترة كافية."
+    }
+   },
+   {
+    "level": 4,
+    "meaning": {
+     "en": "Achieves its results, measured and improved.",
+     "ar": "مطبق ويحقق نتائجه ويُقاس ويُحسَّن."
+    },
+    "look": {
+     "en": "Metrics improve and results are reviewed and drive improvement.",
+     "ar": "المؤشرات تتحسن والنتائج تُراجع وتقود التحسين."
+    },
+    "evidence": {
+     "en": "Metrics, trends and improvement decisions.",
+     "ar": "مؤشرات واتجاهات وقرارات تحسين."
+    }
+   }
+  ],
+  "faq": [
+   {
+    "id": "whatis",
+    "q": {
+     "en": "What is ISO 22301:2019?",
+     "ar": "ما هي ISO 22301:2019؟"
+    },
+    "a": {
+     "en": "ISO 22301:2019 sets the requirements for a business continuity management system (BCMS). It was published in **October 2019**, replacing the 2012 edition, and supplemented by **Amendment 1:2024** on climate change.\n\n- Structure: clauses 4 to 10 on the PDCA cycle; its heart is clause 8: BIA and risk assessment, strategies and solutions, plans, exercising and evaluation.\n- Purpose: keep delivering products and services at an acceptable capacity during a disruption, and recover from it.\n- Certification: only on the 2019 edition.\n\nStart with the [[tab:assess]] or read the [[tab:clauses]].",
+     "ar": "ISO 22301:2019 هي متطلبات نظام إدارة استمرارية الأعمال (BCMS)، نُشرت في **أكتوبر 2019** وحلت محل إصدار 2012، وأُضيف لها **التعديل 1:2024** الخاص بتغيّر المناخ.\n\n- الهيكل: البنود 4 إلى 10 على دورة PDCA، وقلبها البند 8: تحليل الأثر وتقييم المخاطر، والاستراتيجيات والحلول، والخطط، والتمارين، والتقييم.\n- الغرض: أن تستمر المنظمة في تقديم منتجاتها وخدماتها بقدرة مقبولة أثناء الانقطاع وتتعافى منه.\n- الشهادة: متاحة على إصدار 2019 فقط.\n\nابدأ بـ [[tab:assess]] أو اطلع على [[tab:clauses]]."
+    }
+   },
+   {
+    "id": "changes",
+    "q": {
+     "en": "What are the key differences between the 2019 and 2012 editions?",
+     "ar": "ما أهم الفروق بين إصدار 2019 وإصدار 2012؟"
+    },
+    "a": {
+     "en": "The main differences:\n\n1. Simpler, less prescriptive wording on the common structure, with many mandatory 'documented procedures' removed.\n2. New clause **6.3** on planning changes to the BCMS.\n3. A clearer **8.2**: a BIA with prioritized time frames, minimum capacity (MTPD in a note) and dependencies, then risk assessment.\n4. **8.3** 'strategies and solutions', with an explicit resource list.\n5. **8.4.2** response structure with activation thresholds, and **8.4.3** warning and communication.\n6. **8.5** an exercise programme validating all arrangements over time.\n7. New clause **8.6** on evaluating continuity documentation and capabilities.\n8. The 2024 amendment: the climate relevance decision in 4.1 and a note in 4.2.1.\n\nDetails in [[tab:changes]].",
+     "ar": "أهم الفروق:\n\n1. صياغة أبسط وأقل تفصيلاً على الهيكل الموحد، وحذف كثير من «الإجراءات الموثقة» الإلزامية.\n2. بند جديد **6.3** لتخطيط التغييرات على النظام.\n3. **8.2** أوضح: تحليل الأثر بأطر زمنية مرتبة للأولوية والحد الأدنى من القدرة (MTPD في ملاحظة) والاعتماديات، ثم تقييم المخاطر.\n4. **8.3** «الاستراتيجيات والحلول» مع قائمة موارد صريحة.\n5. **8.4.2** هيكل الاستجابة بعتبات تفعيل، و**8.4.3** الإنذار والاتصال.\n6. **8.5** برنامج تمارين يثبت الترتيبات كاملة عبر الزمن.\n7. بند جديد **8.6** لتقييم وثائق الاستمرارية والقدرات.\n8. تعديل 2024: قرار صلة تغيّر المناخ في 4.1 وملاحظة في 4.2.1.\n\nالتفاصيل في [[tab:changes]]."
+    }
+   },
+   {
+    "id": "bia",
+    "q": {
+     "en": "How do I run a business impact analysis (BIA)?",
+     "ar": "كيف أنفذ تحليل أثر الأعمال (BIA)؟"
+    },
+    "a": {
+     "en": "Practical steps for **8.2.2**:\n\n1. Define impact types and scales (financial, operational, reputational, legal/contractual, safety) at levels 1–5.\n2. List the activities that support each product or service in scope.\n3. Rate each activity's impact across time bands (1 hour, 4 hours, 1 day, 3 days, 1 week...).\n4. **MTPD** = the first band where impact becomes unacceptable; then set an **RTO** below it with a margin, the minimum capacity and the **RPO** for data.\n5. Identify resources and dependencies, including suppliers.\n6. Have top management approve the results; review yearly and on change.\n\nUse the [[tab:annexa]] for automatic calculation, or the [[tpl:bia]] template.",
+     "ar": "خطوات عملية للبند **8.2.2**:\n\n1. حدد أنواع الأثر ومقاييسه (مالي، تشغيلي، سمعة، قانوني/تعاقدي، سلامة) بمستويات 1–5.\n2. اسرد الأنشطة التي تدعم كل منتج أو خدمة داخل النطاق.\n3. قيّم الأثر لكل نشاط عبر فترات زمنية (ساعة، 4 ساعات، يوم، 3 أيام، أسبوع...).\n4. **MTPD** = أول فترة يصبح فيها الأثر غير مقبول، ثم حدد **RTO** أقل منها بهامش، والحد الأدنى من القدرة، و**RPO** للبيانات.\n5. حدد الموارد والاعتماديات بما فيها الموردون.\n6. اعتمد النتائج من الإدارة العليا وراجعها سنوياً وعند التغيير.\n\nاستخدم [[tab:annexa]] للحساب التلقائي، أو النموذج [[tpl:bia]]."
+    }
+   },
+   {
+    "id": "rto",
+    "q": {
+     "en": "What is the difference between MTPD, RTO and RPO?",
+     "ar": "ما الفرق بين MTPD وRTO وRPO؟"
+    },
+    "a": {
+     "en": "- **MTPD** (maximum tolerable period of disruption): the time after which the impact becomes unacceptable. It comes from the BIA.\n- **RTO** (recovery time objective): the target time to resume at minimum capacity. **It must be shorter than the MTPD**, with a margin for activation delay.\n- **RPO** (recovery point objective): the maximum acceptable data loss, i.e. the point data is restored to.\n- **MBCO**: the minimum acceptable service level during a disruption.\n\nExample: fault dispatch MTPD = 4 h, RTO = 2 h at 60% capacity, RPO = 15 min. The [[tab:annexa]] checks consistency automatically.",
+     "ar": "- **MTPD** (أقصى فترة انقطاع محتملة): الزمن الذي يصبح بعده الأثر غير مقبول. يأتي من تحليل الأثر.\n- **RTO** (هدف زمن الاستعادة): الزمن المستهدف لاستئناف النشاط بالحد الأدنى من القدرة. **يجب أن يكون أقل من MTPD** بهامش يغطي تأخر التفعيل.\n- **RPO** (هدف نقطة الاستعادة): أقصى فقدان بيانات مقبول، أي النقطة التي تُستعاد إليها البيانات.\n- **MBCO**: أدنى مستوى خدمة مقبول أثناء الانقطاع.\n\nمثال: الإرسال للأعطال MTPD = 4 ساعات، RTO = ساعتان عند 60% من القدرة، RPO = 15 دقيقة. الأداة في [[tab:annexa]] تتحقق من الاتساق تلقائياً."
+    }
+   },
+   {
+    "id": "riskbia",
+    "q": {
+     "en": "What is the difference between the BIA and the risk assessment?",
+     "ar": "ما الفرق بين تحليل الأثر وتقييم المخاطر؟"
+    },
+    "a": {
+     "en": "- **BIA (8.2.2):** what happens if the activity stops, **whatever the cause**? It sets priorities, times and resources.\n- **Risk assessment (8.2.3):** **what** could stop prioritized activities and their resources, how likely and how severe? It decides what needs treatment.\n- **System risks (6.1):** what threatens the success of the BCMS itself, not activities stopping.\n\nTemplates: [[tpl:bia]] and [[tpl:risks]].",
+     "ar": "- **تحليل الأثر (8.2.2):** ماذا يحدث لو توقف النشاط، **بغض النظر عن السبب**؟ يحدد الأولويات والأزمنة والموارد.\n- **تقييم المخاطر (8.2.3):** **ما الذي** قد يوقف الأنشطة ذات الأولوية ومواردها، وما احتماله وأثره؟ يحدد ما يحتاج معالجة.\n- **مخاطر النظام (6.1):** ما يهدد نجاح النظام نفسه، وليس توقف الأنشطة.\n\nالنموذجان: [[tpl:bia]] و[[tpl:risks]]."
+    }
+   },
+   {
+    "id": "strategy",
+    "q": {
+     "en": "How do I select continuity strategies and solutions?",
+     "ar": "كيف أختار استراتيجيات وحلول الاستمرارية؟"
+    },
+    "a": {
+     "en": "For **8.3**:\n\n1. For each critical resource (people, sites, ICT, information, suppliers), list options: hot/warm/cold alternate site, remote working, mutual agreement, strategic stock, second supplier, isolated backup...\n2. Compare each: **does it work within the RTO?**, its cost and residual risk.\n3. Approve the choice, define its resources (8.3.3), implement and maintain it (8.3.4).\n\nTemplates: [[tpl:strategies]] and [[tpl:resources]].",
+     "ar": "للبند **8.3**:\n\n1. لكل مورد حرج (أفراد، مواقع، تقنية، معلومات، موردون) اسرد الخيارات: موقع بديل ساخن/دافئ/بارد، عمل عن بعد، اتفاقية متبادلة، مخزون استراتيجي، مورد ثانٍ، نسخة احتياطية معزولة...\n2. قارن كل خيار: **هل يعمل خلال RTO؟** وتكلفته والمخاطر المتبقية.\n3. اعتمد المختار وحدد موارده (8.3.3) ونفّذه وصُنه (8.3.4).\n\nالنماذج: [[tpl:strategies]] و[[tpl:resources]]."
+    }
+   },
+   {
+    "id": "plans",
+    "q": {
+     "en": "What must a business continuity plan contain?",
+     "ar": "ماذا يجب أن تتضمن خطة الاستمرارية؟"
+    },
+    "a": {
+     "en": "Under **8.4.4** each plan contains:\n\n1. Purpose, scope and objectives.\n2. Team roles and responsibilities.\n3. Actions to implement the solutions.\n4. Information needed to activate, operate, coordinate and communicate.\n5. Internal and external dependencies.\n6. Resource requirements.\n7. Reporting requirements.\n8. How to stand down.\n\nCollectively they cover people's welfare first, thresholds and resumption within time frames. Keep them as short, timed checklists: [[tpl:bcp]].",
+     "ar": "حسب **8.4.4** تتضمن كل خطة:\n\n1. الغرض والنطاق والأهداف.\n2. أدوار الفريق ومسؤولياته.\n3. إجراءات تنفيذ الحلول.\n4. المعلومات اللازمة للتفعيل والتشغيل والتنسيق والاتصال.\n5. الاعتماديات الداخلية والخارجية.\n6. متطلبات الموارد.\n7. متطلبات التقارير.\n8. آلية إنهاء التفعيل.\n\nومجتمعة تغطي سلامة الأفراد أولاً، والعتبات، والاستئناف ضمن الأطر الزمنية. اجعلها قوائم مهام زمنية قصيرة: [[tpl:bcp]]."
+    }
+   },
+   {
+    "id": "response",
+    "q": {
+     "en": "How do I build the response structure and activation thresholds?",
+     "ar": "كيف أبني هيكل الاستجابة وعتبات التفعيل؟"
+    },
+    "a": {
+     "en": "For **8.4.2**:\n\n- Tiered teams: crisis management (strategic), operational response, and site or ICT recovery teams.\n- For each role: a primary, a trained deputy and written authority (decisions, spending).\n- **Numeric thresholds** for activation, e.g. a service down over 30 minutes or loss of a site.\n- An initial assessment of the disruption's nature and extent, then the right response.\n- A primary and an alternate command room.\n\nTemplate: [[tpl:response]].",
+     "ar": "للبند **8.4.2**:\n\n- فرق بمستويات: إدارة الأزمات (استراتيجي)، والاستجابة التشغيلية، وفرق المواقع أو التعافي التقني.\n- لكل دور: أساسي وبديل مدرب وصلاحيات مكتوبة (قرار، صرف).\n- **عتبات رقمية** للتفعيل: مثل توقف خدمة أكثر من 30 دقيقة أو فقدان موقع.\n- تقييم أولي لطبيعة الانقطاع ومداه، ثم تفعيل الاستجابة المناسبة.\n- غرفة عمليات أساسية وبديلة.\n\nالنموذج: [[tpl:response]]."
+    }
+   },
+   {
+    "id": "exercise",
+    "q": {
+     "en": "What does the exercise programme require?",
+     "ar": "ما المطلوب في برنامج التمارين؟"
+    },
+    "a": {
+     "en": "For **8.5**, a programme (not a single exercise):\n\n- Consistent with objectives, based on realistic scenarios with clear aims.\n- Taken together over time, validates **all** plans and solutions.\n- Builds teamwork, competence and confidence.\n- Minimises the risk of causing a disruption during the exercise.\n- A **formal report** after each exercise with outcomes, recommendations and actions, reviewed for improvement.\n- Run at planned intervals and on significant change.\n\nGrade them: walkthrough → tabletop → simulation → technical test → full exercise. Template: [[tpl:exercise]].",
+     "ar": "للبند **8.5** برنامج (لا تمريناً واحداً):\n\n- متسق مع الأهداف ومبني على سيناريوهات واقعية بأهداف واضحة.\n- يثبت مجتمعاً عبر الزمن **كل** الخطط والحلول.\n- ينمي العمل الجماعي والكفاءة والثقة.\n- يقلل خطر إحداث انقطاع أثناء التمرين.\n- **تقرير رسمي** بعد كل تمرين بالنتائج والتوصيات والإجراءات، ومراجعة للتحسين.\n- يُنفذ على فترات مخططة وعند التغييرات الجوهرية.\n\nتدرّج: مراجعة ← طاولة ← محاكاة ← اختبار تقني ← تمرين شامل. النموذج: [[tpl:exercise]]."
+    }
+   },
+   {
+    "id": "eval86",
+    "q": {
+     "en": "What does clause 8.6 require?",
+     "ar": "ما المطلوب في البند 8.6؟"
+    },
+    "a": {
+     "en": "Clause **8.6** is new in 2019: evaluate the suitability, adequacy and effectiveness of the BIA, risk assessment, solutions and plans through reviews, exercises and post-incident reports. Also evaluate **critical supplier and partner capabilities**, and compliance with requirements, policy and objectives, then update documents.\n\nWhen? At planned intervals, **after any incident or activation**, and on significant change. Its results are a mandatory management review input. Supplier evaluation: [[tpl:suppliers]].",
+     "ar": "البند **8.6** جديد في 2019: قيّم ملاءمة وكفاية وفعالية تحليل الأثر وتقييم المخاطر والحلول والخطط، عبر المراجعات والتمارين وتقارير ما بعد الحوادث. وقيّم **قدرات الموردين والشركاء** الحرجين، والامتثال للمتطلبات والسياسة والأهداف، وحدّث الوثائق.\n\nمتى؟ على فترات مخططة، **وبعد أي حادث أو تفعيل**، وعند التغييرات الجوهرية. ونتائجه مدخل إلزامي لمراجعة الإدارة. تقييم الموردين: [[tpl:suppliers]]."
+    }
+   },
+   {
+    "id": "climate",
+    "q": {
+     "en": "What does the 2024 climate amendment require?",
+     "ar": "ماذا يتطلب تعديل المناخ 2024؟"
+    },
+    "a": {
+     "en": "Amendment 1:2024 added:\n\n- **4.1:** the organization determines whether climate change is a relevant issue.\n- **4.2.1 (note):** interested parties can have climate-related requirements.\n\nNo transition and no certificate reissue; it is audited in routine audits. Record the decision and reason, and turn its effects (heat, floods, dust, power loss) into scenarios in the risk assessment. Template: [[tpl:context]].",
+     "ar": "التعديل 1:2024 أضاف:\n\n- **4.1:** أن تحدد المنظمة هل تغيّر المناخ قضية ذات صلة.\n- **4.2.1 (ملاحظة):** قد تكون للأطراف المعنية متطلبات تتعلق بالمناخ.\n\nلا فترة انتقال ولا إعادة إصدار للشهادة؛ يُدقق في التدقيقات الاعتيادية. وثّق القرار ومبرره، وحوّل آثاره (حرارة، سيول، غبار، انقطاع طاقة) إلى سيناريوهات في تقييم المخاطر. النموذج: [[tpl:context]]."
+    }
+   },
+   {
+    "id": "scope",
+    "q": {
+     "en": "How do I define the BCMS scope?",
+     "ar": "كيف أحدد نطاق نظام الاستمرارية؟"
+    },
+    "a": {
+     "en": "Start from the **products and services** whose interruption would harm clients, reputation or compliance, then include the activities, sites and resources they depend on. Consider the issues (4.1), requirements (4.2) and your mission. Document the scope and justify any exclusion so it does not affect the required continuity. See the [[tab:clauses]].",
+     "ar": "ابدأ من **المنتجات والخدمات** التي يضر توقفها العملاء أو السمعة أو الامتثال، ثم اشمل الأنشطة والمواقع والموارد التي تعتمد عليها. راعِ القضايا (4.1) والمتطلبات (4.2) ورسالة المنظمة. وثّق النطاق كمعلومات موثقة، وبرر أي استبعاد بحيث لا يمس الاستمرارية المطلوبة. انظر [[tab:clauses]]."
+    }
+   },
+   {
+    "id": "docs",
+    "q": {
+     "en": "What documented information is mandatory in ISO 22301?",
+     "ar": "ما المعلومات الموثقة الإلزامية في ISO 22301؟"
+    },
+    "a": {
+     "en": "The main items:\n\n- Scope (4.3) and legal requirements (4.2.2).\n- Policy (5.2) and objectives (6.2).\n- Evidence of competence (7.2).\n- Evidence processes were carried out as planned (8.1).\n- BIA and risk assessment (8.2).\n- Continuity, communication and recovery plans and procedures (8.4).\n- Exercise reports (8.5) and evaluation results (8.6).\n- Monitoring (9.1), audit (9.2) and management review (9.3) results.\n- Nonconformities and corrective actions (10.1).\n\nEvery plan must be **available when needed**, even if systems are down.",
+     "ar": "أهمها:\n\n- النطاق (4.3) والمتطلبات التشريعية (4.2.2).\n- السياسة (5.2) والأهداف (6.2).\n- أدلة الكفاءة (7.2).\n- أدلة تنفيذ العمليات كما خُطط (8.1).\n- تحليل الأثر وتقييم المخاطر (8.2).\n- خطط وإجراءات الاستمرارية والاتصال والتعافي (8.4).\n- تقارير التمارين (8.5) ونتائج التقييم (8.6).\n- نتائج الرصد (9.1)، والتدقيق (9.2)، ومراجعة الإدارة (9.3).\n- عدم المطابقة والإجراءات التصحيحية (10.1).\n\nوكل خطة يجب أن تكون **متاحة وقت الحاجة** حتى لو تعطلت الأنظمة."
+    }
+   },
+   {
+    "id": "objectives",
+    "q": {
+     "en": "How do I set continuity objectives?",
+     "ar": "كيف أضع أهداف الاستمرارية؟"
+    },
+    "a": {
+     "en": "Derive 3–5 objectives from the BIA results and gaps, and make them measurable with a metric, target, date, owner, resources and evaluation method. Examples: 'activate the alternate site within 90 minutes', '100% of prioritized activities with tested plans'. Template: [[tpl:objectives]].",
+     "ar": "اشتق 3–5 أهداف من نتائج تحليل الأثر والفجوات، وصغها قابلة للقياس بمؤشر ومستهدف وموعد ومسؤول وموارد وطريقة تقييم. أمثلة: «تفعيل الموقع البديل خلال 90 دقيقة»، «100% من الأنشطة ذات الأولوية بخطط مختبرة». النموذج: [[tpl:objectives]]."
+    }
+   },
+   {
+    "id": "kpis",
+    "q": {
+     "en": "What are examples of continuity performance indicators?",
+     "ar": "ما أمثلة مؤشرات أداء الاستمرارية؟"
+    },
+    "a": {
+     "en": "- % of prioritized activities with tested plans.\n- Actual activation time in exercises versus RTO.\n- % successful ICT restore tests, compared with RPO.\n- Contact list accuracy in tests.\n- % of exercise and audit actions closed on time.\n- % of critical suppliers evaluated.\n- Service restoration time in real incidents.\n\nAvoid 'number of plans written'. See clause 9.1 in the [[tab:clauses]].",
+     "ar": "- % الأنشطة ذات الأولوية بخطط مختبرة.\n- زمن التفعيل الفعلي في التمارين مقابل RTO.\n- % نجاح اختبارات الاستعادة التقنية ومقارنتها بـ RPO.\n- دقة قوائم الاتصال في الاختبار.\n- % إجراءات التمارين والتدقيق المغلقة في موعدها.\n- % الموردين الحرجين المقيّمين.\n- زمن استعادة الخدمة في الحوادث الحقيقية.\n\nتجنب «عدد الخطط المكتوبة». انظر [[tab:clauses]] البند 9.1."
+    }
+   },
+   {
+    "id": "audit",
+    "q": {
+     "en": "How do I plan the BCMS internal audit?",
+     "ar": "كيف أخطط التدقيق الداخلي لنظام الاستمرارية؟"
+    },
+    "a": {
+     "en": "A yearly risk-based programme covering clauses 4–10, with auditors competent per ISO 19011 and independent of the work audited. Audit **evidence**: the last exercise report, call a number from the list, open the plan from the alternate site. Use the [[tab:checklist]] and the [[tpl:audit]] template.",
+     "ar": "برنامج سنوي مبني على المخاطر يغطي البنود 4–10، بمدققين أكفاء وفق ISO 19011 ومستقلين عن العمل المدقق. دقق على **الأدلة**: تقرير آخر تمرين، اتصل برقم من القائمة، افتح الخطة من الموقع البديل. استخدم [[tab:checklist]] والنموذج [[tpl:audit]]."
+    }
+   },
+   {
+    "id": "mr",
+    "q": {
+     "en": "What are the management review inputs in ISO 22301?",
+     "ar": "ما مدخلات مراجعة الإدارة في ISO 22301؟"
+    },
+    "a": {
+     "en": "Beyond the usual inputs (action status, context changes, performance, audits, party feedback, improvement opportunities), 22301 requires:\n\n- BIA and risk assessment results.\n- Results of the documentation and capability evaluation (8.6).\n- Risks not adequately addressed.\n- **Lessons from incidents and exercises**.\n- Actions not completed on time.\n\nTemplate: [[tpl:review]].",
+     "ar": "إضافة للمدخلات المعتادة (حالة الإجراءات، تغييرات السياق، الأداء، التدقيق، ملاحظات الأطراف، فرص التحسين)، تطلب 22301:\n\n- نتائج تحليل الأثر وتقييم المخاطر.\n- نتائج تقييم الوثائق والقدرات (8.6).\n- المخاطر غير المعالجة بشكل كاف.\n- **الدروس من الحوادث والتمارين**.\n- الإجراءات التي لم تُنفذ في موعدها.\n\nالنموذج: [[tpl:review]]."
+    }
+   },
+   {
+    "id": "correction",
+    "q": {
+     "en": "Correction or corrective action: what is the difference?",
+     "ar": "التصحيح أم الإجراء التصحيحي: ما الفرق؟"
+    },
+    "a": {
+     "en": "- **Correction:** deals with the effect at once (update the outdated contact list).\n- **Corrective action:** removes the cause so it does not recur (link the list automatically to the HR system), then verify effectiveness.\n\nThe auditor looks for the second.",
+     "ar": "- **التصحيح:** يعالج الأثر فوراً (تحديث قائمة الاتصال القديمة).\n- **الإجراء التصحيحي:** يزيل السبب حتى لا يتكرر (ربط القائمة آلياً بنظام الموارد البشرية)، ثم التحقق من الفعالية.\n\nالمدقق يبحث عن الثاني."
+    }
+   },
+   {
+    "id": "certsteps",
+    "q": {
+     "en": "What are the steps to certification?",
+     "ar": "ما خطوات الحصول على الشهادة؟"
+    },
+    "a": {
+     "en": "1. Implement and run the system for at least 3 months with records, including **at least one exercise**.\n2. A full internal audit and a management review.\n3. Choose a certification body accredited for 22301 by a Global ACI member.\n4. **Stage 1:** readiness, documents and BIA review.\n5. **Stage 2:** evaluation of implementation and effectiveness.\n6. Close nonconformities, then a 3-year certificate with yearly surveillance audits.\n\nStart with the [[tab:assess]].",
+     "ar": "1. تطبيق النظام وتشغيله 3 أشهر على الأقل بسجلات، مع **تمرين واحد على الأقل**.\n2. تدقيق داخلي كامل ومراجعة إدارة.\n3. اختيار جهة منح معتمدة لـ 22301 من عضو في Global ACI.\n4. **المرحلة الأولى:** مراجعة الجاهزية والوثائق وتحليل الأثر.\n5. **المرحلة الثانية:** تقييم التطبيق والفعالية.\n6. إغلاق عدم المطابقة ثم الشهادة لـ 3 سنوات بتدقيقات مراقبة سنوية.\n\nابدأ بـ [[tab:assess]]."
+    }
+   },
+   {
+    "id": "ims",
+    "q": {
+     "en": "Can 22301 be integrated with ISO 9001, 27001 and 45001?",
+     "ar": "هل يمكن دمج 22301 مع ISO 9001 و27001 و45001؟"
+    },
+    "a": {
+     "en": "Yes, all share the common structure. Integrate one context, one risk and opportunity register, shared documents, combined internal audits and one management review. The strongest links: **22301 with 27001** (ICT recovery and backups) and **with 45001** (emergencies and people's safety). Recommendations are in the [[tab:report]].",
+     "ar": "نعم، كلها على الهيكل الموحد. ادمج: سياقاً واحداً، وسجل مخاطر وفرص واحداً، ووثائق مشتركة، وتدقيقاً داخلياً مشتركاً، ومراجعة إدارة واحدة. وأقوى تكامل: **22301 مع 27001** (التعافي التقني والنسخ الاحتياطي) و**مع 45001** (الطوارئ وسلامة الأفراد). التوصيات في [[tab:report]]."
+    }
+   },
+   {
+    "id": "start",
+    "q": {
+     "en": "Where do I start implementing a BCMS?",
+     "ar": "من أين أبدأ تطبيق نظام استمرارية الأعمال؟"
+    },
+    "a": {
+     "en": "A practical path:\n\n1. Top-management decision; appoint the sponsor and BCM manager.\n2. Context, parties, requirements and scope (clause 4).\n3. Policy, roles and objectives.\n4. **BIA**, then disruption risk assessment.\n5. Strategies and solutions, and implement them.\n6. Response structure, communication and plans.\n7. Exercises, then evaluation, audit and management review.\n\nMeasure your starting point in the [[tab:assess]] and get a timed plan in the [[tab:report]].",
+     "ar": "مسار عملي:\n\n1. قرار الإدارة العليا وتعيين الراعي ومدير الاستمرارية.\n2. السياق والأطراف والمتطلبات والنطاق (البند 4).\n3. السياسة والأدوار والأهداف.\n4. **تحليل الأثر** ثم تقييم مخاطر الانقطاع.\n5. الاستراتيجيات والحلول وتنفيذها.\n6. هيكل الاستجابة والاتصال والخطط.\n7. التمارين، ثم التقييم والتدقيق ومراجعة الإدارة.\n\nقِس نقطة بدايتك في [[tab:assess]] واحصل على خطة زمنية في [[tab:report]]."
+    }
+   },
+   {
+    "id": "howuse",
+    "q": {
+     "en": "How do I use this toolkit?",
+     "ar": "كيف أستخدم هذه الأداة؟"
+    },
+    "a": {
+     "en": "1. [[tab:assess]]: 40 questions measuring readiness.\n2. [[tab:report]]: score, timed plan, recommendations, risks and opportunities.\n3. [[tab:annexa]]: impact over time, MTPD calculation and RTO checks.\n4. [[tab:templates]]: 16 pre-filled templates.\n5. [[tab:checklist]]: audit checklist.\n6. Reference: [[tab:clauses]], [[tab:changes]] and [[tab:terms]].",
+     "ar": "1. [[tab:assess]]: 40 سؤالاً تقيس جاهزيتك.\n2. [[tab:report]]: النتيجة والخطة الزمنية والتوصيات والمخاطر والفرص.\n3. [[tab:annexa]]: تحليل الأثر عبر الزمن وحساب MTPD وفحص RTO.\n4. [[tab:templates]]: 16 نموذجاً معبأً.\n5. [[tab:checklist]]: قائمة تحقق للتدقيق.\n6. المرجع: [[tab:clauses]] و[[tab:changes]] و[[tab:terms]]."
+    }
+   },
+   {
+    "id": "data",
+    "q": {
+     "en": "Where is my data stored?",
+     "ar": "أين تُحفظ بياناتي؟"
+    },
+    "a": {
+     "en": "Everything you enter is kept **in this browser only**, on this device, and never sent to a server. Export files (CSV or PDF) to move it. Clearing browser data deletes it.",
+     "ar": "كل ما تدخله يُحفظ **في متصفحك فقط** على هذا الجهاز، ولا يُرسل لأي خادم. لنقله صدّر الملفات (CSV أو PDF). مسح بيانات المتصفح يحذفها."
+    }
+   },
+   {
+    "id": "export",
+    "q": {
+     "en": "How do I export results?",
+     "ar": "كيف أصدّر النتائج؟"
+    },
+    "a": {
+     "en": "- The report: PDF or HTML, and the plan as CSV from the [[tab:report]].\n- The checklist: PDF report and CSV from the [[tab:checklist]].\n- Each template: CSV and PDF from the [[tab:templates]].\n- The BIA tool: CSV from the [[tab:annexa]].",
+     "ar": "- التقرير: PDF أو HTML، والخطة CSV من [[tab:report]].\n- قائمة التحقق: تقرير PDF وCSV من [[tab:checklist]].\n- كل نموذج: CSV وPDF من [[tab:templates]].\n- أداة تحليل الأثر: CSV من [[tab:annexa]]."
+    }
+   },
+   {
+    "id": "official",
+    "q": {
+     "en": "Is this toolkit a substitute for the official standard?",
+     "ar": "هل الأداة بديل عن المواصفة الرسمية؟"
+    },
+    "a": {
+     "en": "No. It is an explanatory commentary in our own words for understanding, implementation and training; the authoritative text is ISO 22301:2019 and Amendment 1:2024, protected by ISO copyright. Where to buy it: [[tab:standard]].",
+     "ar": "لا. الأداة شرح تفسيري بصياغتنا للفهم والتطبيق والتدريب، والنص المعتمد هو ISO 22301:2019 وتعديله 1:2024 المحمي بحقوق ISO. مصادر الشراء في [[tab:standard]]."
+    }
+   },
+   {
+    "id": "contact",
+    "q": {
+     "en": "How do I contact مدثر سلامه?",
+     "ar": "كيف أتواصل مع مدثر سلامه؟"
+    },
+    "a": {
+     "en": "Email مدثر سلامه at **moddathersalama.eng@gmail.com** for consulting, training, audits and certification readiness, or use the 'Email me' button on the [[tab:home]].",
+     "ar": "راسل مدثر سلامه على **moddathersalama.eng@gmail.com** للاستشارات والتدريب والتدقيق والتأهيل للشهادة، أو استخدم زر «راسلني» في [[tab:home]]."
+    }
+   }
+  ],
+  "templates": [
+   {
+    "id": "context",
+    "ref": "4.1",
+    "title": {
+     "en": "Continuity context analysis (PESTLE) and climate decision",
+     "ar": "تحليل سياق الاستمرارية (PESTLE) وقرار المناخ"
+    },
+    "purpose": {
+     "en": "External and internal issues affecting the organization's ability to keep operating, with the climate change relevance decision per the 2024 amendment.",
+     "ar": "القضايا الخارجية والداخلية المؤثرة على قدرة المنظمة على الاستمرار، مع قرار صلة تغيّر المناخ وفق تعديل 2024."
+    },
+    "tips": [
+     {
+      "en": "Involve top management, operations, IT and procurement.",
+      "ar": "أشرك الإدارة العليا والعمليات وتقنية المعلومات والمشتريات."
+     },
+     {
+      "en": "Record the climate decision even if 'not relevant', with the reason.",
+      "ar": "سجّل قرار المناخ حتى لو كان «غير ذي صلة» مع المبرر."
+     },
+     {
+      "en": "Link every significant issue to a scenario in the risk assessment.",
+      "ar": "اربط كل قضية مهمة بسيناريو في تقييم المخاطر."
+     }
+    ]
+   },
+   {
+    "id": "parties",
+    "ref": "4.2.1",
+    "title": {
+     "en": "Interested parties and continuity requirements",
+     "ar": "الأطراف المعنية ومتطلبات الاستمرارية"
+    },
+    "purpose": {
+     "en": "Who depends on your services and on whom you depend, and what each expects during a disruption.",
+     "ar": "من يعتمد على خدماتك ومن تعتمد عليه، وما يتوقعه كل طرف وقت الانقطاع."
+    },
+    "tips": [
+     {
+      "en": "Ask key clients the longest outage they accept.",
+      "ar": "اسأل العملاء الرئيسيين عن أقصى توقف يقبلونه."
+     },
+     {
+      "en": "Decide which requirements the BCMS will address.",
+      "ar": "حدد أي المتطلبات سيعالجها النظام."
+     },
+     {
+      "en": "Review the register with every new contract.",
+      "ar": "راجع السجل مع كل عقد جديد."
+     }
+    ]
+   },
+   {
+    "id": "legal",
+    "ref": "4.2.2",
+    "title": {
+     "en": "Legal and regulatory requirements register",
+     "ar": "سجل المتطلبات التشريعية والتنظيمية"
+    },
+    "purpose": {
+     "en": "Requirements applicable to the continuity of products, services and resources, their owner and how you comply.",
+     "ar": "المتطلبات المنطبقة على استمرارية المنتجات والخدمات والموارد، ومالكها وطريقة الامتثال."
+    },
+    "tips": [
+     {
+      "en": "Use official sources to follow updates.",
+      "ar": "استخدم مصادر رسمية لمتابعة التحديثات."
+     },
+     {
+      "en": "Evaluate compliance yearly under 8.6.",
+      "ar": "قيّم الامتثال سنوياً ضمن 8.6."
+     },
+     {
+      "en": "Do not forget penalty clauses in contracts.",
+      "ar": "لا تنس بنود الغرامات في العقود."
+     }
+    ]
+   },
+   {
+    "id": "objectives",
+    "ref": "6.2",
+    "title": {
+     "en": "Continuity objectives and plans",
+     "ar": "أهداف الاستمرارية وخطط تحقيقها"
+    },
+    "purpose": {
+     "en": "Measurable objectives derived from the BIA and gaps, with plan, owner and date.",
+     "ar": "أهداف قابلة للقياس مشتقة من تحليل الأثر والفجوات، مع الخطة والمسؤول والموعد."
+    },
+    "tips": [
+     {
+      "en": "Derive objectives from the analysis.",
+      "ar": "اشتق الأهداف من نتائج التحليل."
+     },
+     {
+      "en": "Measure outcomes, not activity.",
+      "ar": "قِس النتائج لا الأنشطة."
+     },
+     {
+      "en": "Review quarterly.",
+      "ar": "راجعها ربع سنوياً."
+     }
+    ]
+   },
+   {
+    "id": "bia",
+    "ref": "8.2.2",
+    "title": {
+     "en": "Business impact analysis (BIA)",
+     "ar": "تحليل أثر الأعمال (BIA)"
+    },
+    "purpose": {
+     "en": "Activities supporting products and services, the MTPD, RTO, RPO, minimum capacity and dependencies. For the detailed time-based analysis use the 'BIA tools' tab.",
+     "ar": "الأنشطة الداعمة للمنتجات والخدمات، وأقصى فترة انقطاع محتملة (MTPD)، وهدف زمن الاستعادة (RTO)، ونقطة الاستعادة (RPO)، والحد الأدنى من القدرة، والاعتماديات. للتحليل التفصيلي عبر الزمن استخدم تبويب «أدوات تحليل الأثر»."
+    },
+    "tips": [
+     {
+      "en": "The RTO must sit below the MTPD with a realistic margin.",
+      "ar": "RTO يجب أن يكون أقل من MTPD بهامش واقعي."
+     },
+     {
+      "en": "Have top management approve the results.",
+      "ar": "اعتمد النتائج من الإدارة العليا."
+     },
+     {
+      "en": "Update yearly and on change.",
+      "ar": "حدّث التحليل سنوياً وعند التغيير."
+     }
+    ]
+   },
+   {
+    "id": "risks",
+    "ref": "8.2.3",
+    "title": {
+     "en": "Disruption risk register",
+     "ar": "سجل مخاطر الانقطاع"
+    },
+    "purpose": {
+     "en": "Risks of disruption to prioritized activities and their resources as likelihood × impact, with treatment and owner.",
+     "ar": "مخاطر انقطاع الأنشطة ذات الأولوية ومواردها بالاحتمال × الأثر، مع المعالجة والمالك."
+    },
+    "tips": [
+     {
+      "en": "Scores of 15+ are high and need treatment and management follow-up.",
+      "ar": "الدرجة 15 فأكثر مرتفعة وتحتاج معالجة ومتابعة من الإدارة."
+     },
+     {
+      "en": "Assess threats to resources: people, sites, technology, suppliers.",
+      "ar": "قيّم التهديدات على الموارد: أفراد، مواقع، تقنية، موردون."
+     },
+     {
+      "en": "Link treatment to strategies (8.3).",
+      "ar": "اربط المعالجة بالاستراتيجيات (8.3)."
+     }
+    ]
+   },
+   {
+    "id": "strategies",
+    "ref": "8.3.2",
+    "title": {
+     "en": "Strategy and solution options",
+     "ar": "دراسة خيارات الاستراتيجيات والحلول"
+    },
+    "purpose": {
+     "en": "Comparison of options for each critical resource on time, cost and residual risk, and the selection decision.",
+     "ar": "مقارنة الخيارات لكل مورد حرج بالزمن والتكلفة والمخاطر المتبقية، وقرار الاختيار."
+    },
+    "tips": [
+     {
+      "en": "Test each option: does it work within the RTO?",
+      "ar": "اختبر كل خيار: هل يعمل خلال RTO؟"
+     },
+     {
+      "en": "Cover before, during and after the disruption.",
+      "ar": "غطِّ ما قبل الانقطاع وأثناءه وبعده."
+     },
+     {
+      "en": "Record why other options were rejected.",
+      "ar": "وثّق سبب رفض الخيارات الأخرى."
+     }
+    ]
+   },
+   {
+    "id": "resources",
+    "ref": "8.3.3",
+    "title": {
+     "en": "Solution resource requirements",
+     "ar": "متطلبات موارد الحلول"
+    },
+    "purpose": {
+     "en": "What each solution needs to work at activation: people, information, buildings, equipment, ICT, transport, finance, suppliers.",
+     "ar": "ما يحتاجه كل حل ليعمل عند التفعيل: أفراد، معلومات، مبانٍ، معدات، تقنية، نقل، تمويل، موردون."
+    },
+    "tips": [
+     {
+      "en": "State quantity, source and owner.",
+      "ar": "حدد الكمية والمصدر والمسؤول."
+     },
+     {
+      "en": "Pre-arrange agreements for emergency resources.",
+      "ar": "رتّب اتفاقيات مسبقة للموارد الطارئة."
+     },
+     {
+      "en": "Check availability periodically.",
+      "ar": "افحص التوافر دورياً."
+     }
+    ]
+   },
+   {
+    "id": "suppliers",
+    "ref": "8.1 / 8.6",
+    "title": {
+     "en": "Critical supplier continuity evaluation",
+     "ar": "تقييم استمرارية الموردين الحرجين"
+    },
+    "purpose": {
+     "en": "Evaluation (1–5) of the continuity capability of suppliers that prioritized activities depend on.",
+     "ar": "تقييم قدرة الموردين الذين تعتمد عليهم الأنشطة ذات الأولوية على الاستمرار (1–5)."
+    },
+    "tips": [
+     {
+      "en": "80%+ approved, 60–79% conditional, below 60% not approved.",
+      "ar": "80% فأكثر معتمد، 60–79% مشروط، أقل من 60% غير معتمد."
+     },
+     {
+      "en": "Ask for evidence: plan, exercise report, alternate sites.",
+      "ar": "اطلب دليلاً: خطة، تقرير تمرين، مواقع بديلة."
+     },
+     {
+      "en": "Put continuity clauses in the contract.",
+      "ar": "أدرج بنود الاستمرارية في العقد."
+     }
+    ]
+   },
+   {
+    "id": "response",
+    "ref": "8.4.2 / 5.3",
+    "title": {
+     "en": "Response structure and activation thresholds",
+     "ar": "هيكل الاستجابة وعتبات التفعيل"
+    },
+    "purpose": {
+     "en": "Teams, roles, deputies and authorities, and when each tier is activated.",
+     "ar": "الفرق والأدوار والبدلاء والصلاحيات، ومتى يُفعّل كل مستوى."
+    },
+    "tips": [
+     {
+      "en": "Clear numeric thresholds that need no judgement call.",
+      "ar": "عتبات رقمية واضحة لا تحتاج اجتهاداً."
+     },
+     {
+      "en": "A trained deputy for every role.",
+      "ar": "بديل مدرب لكل دور."
+     },
+     {
+      "en": "A primary and an alternate command room.",
+      "ar": "غرفة عمليات أساسية وبديلة."
+     }
+    ]
+   },
+   {
+    "id": "comms",
+    "ref": "8.4.3",
+    "title": {
+     "en": "Warning and communication plan for disruptions",
+     "ar": "خطة الإنذار والاتصال وقت الانقطاع"
+    },
+    "purpose": {
+     "en": "Who is informed, when, with what message and channel, and who owns it, with backup channels.",
+     "ar": "من يُبلَّغ، ومتى، وبأي رسالة ووسيلة، ومن المسؤول، مع وسائل بديلة."
+    },
+    "tips": [
+     {
+      "en": "Prepare pre-approved messages for expected scenarios.",
+      "ar": "جهّز رسائل معدة مسبقاً للسيناريوهات المتوقعة."
+     },
+     {
+      "en": "Test lists quarterly.",
+      "ar": "اختبر القوائم ربع سنوياً."
+     },
+     {
+      "en": "Log every communication and decision with its time.",
+      "ar": "سجّل كل اتصال وقرار بالوقت."
+     }
+    ]
+   },
+   {
+    "id": "bcp",
+    "ref": "8.4.4",
+    "title": {
+     "en": "Continuity plan: timed task list",
+     "ar": "خطة استمرارية: قائمة المهام الزمنية"
+    },
+    "purpose": {
+     "en": "Emergency dispatch continuity plan: what is done, when and by whom, up to stand-down. Adapt it for each prioritized activity.",
+     "ar": "خطة استمرارية الإرسال للأعطال الطارئة: ماذا يُنفذ ومتى ومن، حتى إنهاء التفعيل. عدّلها لكل نشاط ذي أولوية."
+    },
+    "tips": [
+     {
+      "en": "Write it so a deputy can run it unaided.",
+      "ar": "اكتبها بحيث ينفذها البديل دون مساعدة."
+     },
+     {
+      "en": "Start with people's safety.",
+      "ar": "ابدأ بسلامة الأفراد."
+     },
+     {
+      "en": "Include the stand-down criterion.",
+      "ar": "أضف معيار إنهاء التفعيل."
+     }
+    ]
+   },
+   {
+    "id": "exercise",
+    "ref": "8.5",
+    "title": {
+     "en": "Exercise and test programme",
+     "ar": "برنامج التمارين والاختبارات"
+    },
+    "purpose": {
+     "en": "A graded annual plan that covers every plan and solution over time, with results.",
+     "ar": "خطة سنوية متدرجة تغطي كل الخطط والحلول عبر الزمن، مع النتائج."
+    },
+    "tips": [
+     {
+      "en": "Grade them: walkthrough → tabletop → simulation → full.",
+      "ar": "تدرّج: مراجعة ← طاولة ← محاكاة ← شامل."
+     },
+     {
+      "en": "Set measurable aims for each exercise.",
+      "ar": "ضع أهدافاً قابلة للقياس لكل تمرين."
+     },
+     {
+      "en": "Issue a formal report and track actions.",
+      "ar": "أصدر تقريراً رسمياً وتابع الإجراءات."
+     }
+    ]
+   },
+   {
+    "id": "competence",
+    "ref": "7.2 / 7.3",
+    "title": {
+     "en": "Response role competence matrix",
+     "ar": "مصفوفة كفاءات أدوار الاستجابة"
+    },
+    "purpose": {
+     "en": "Required competence per role, current status, gap, training and effectiveness evaluation.",
+     "ar": "الكفاءة المطلوبة لكل دور، والوضع الحالي، والفجوة، والتدريب، وتقييم الفعالية."
+    },
+    "tips": [
+     {
+      "en": "Evaluate effectiveness through exercise performance.",
+      "ar": "قيّم الفعالية بالأداء في التمرين."
+     },
+     {
+      "en": "Cover deputies, not only primaries.",
+      "ar": "غطِّ البدلاء لا الأساسيين فقط."
+     },
+     {
+      "en": "Keep the records.",
+      "ar": "احتفظ بالسجلات."
+     }
+    ]
+   },
+   {
+    "id": "audit",
+    "ref": "9.2",
+    "title": {
+     "en": "Internal audit programme",
+     "ar": "برنامج التدقيق الداخلي"
+    },
+    "purpose": {
+     "en": "A yearly risk-based plan covering clauses 4–10, sites and plans.",
+     "ar": "خطة سنوية مبنية على المخاطر تغطي البنود 4–10 والمواقع والخطط."
+    },
+    "tips": [
+     {
+      "en": "Focus on prioritized activities and exercise results.",
+      "ar": "ركّز على الأنشطة ذات الأولوية ونتائج التمارين."
+     },
+     {
+      "en": "An auditor independent of the work audited.",
+      "ar": "مدقق مستقل عن العمل المدقق."
+     },
+     {
+      "en": "Use the toolkit checklist.",
+      "ar": "استخدم قائمة التحقق في الأداة."
+     }
+    ]
+   },
+   {
+    "id": "review",
+    "ref": "9.3",
+    "title": {
+     "en": "Management review: inputs and decisions",
+     "ar": "مراجعة الإدارة: المدخلات والقرارات"
+    },
+    "purpose": {
+     "en": "All mandatory inputs, including the continuity-specific ones, with decisions and owners.",
+     "ar": "كل المدخلات الإلزامية بما فيها مدخلات الاستمرارية الخاصة، مع القرارات والمسؤولين."
+    },
+    "tips": [
+     {
+      "en": "Do not forget analysis results, the 8.6 evaluation and incident lessons.",
+      "ar": "لا تنس نتائج التحليل والتقييم 8.6 ودروس الحوادث."
+     },
+     {
+      "en": "Every decision with an owner and date.",
+      "ar": "كل قرار بمسؤول وموعد."
+     },
+     {
+      "en": "Follow up at the next review.",
+      "ar": "تابع القرارات في المراجعة التالية."
+     }
+    ]
+   }
+  ],
+  "official": [
+   {
+    "url": "https://www.iso.org/standard/75106.html",
+    "name": {
+     "ar": "المنظمة الدولية للتقييس ISO",
+     "en": "ISO — International Organization for Standardization"
+    },
+    "note": {
+     "ar": "صفحة ISO 22301:2019 ومتجر النسخة الرسمية، والتعديل 1:2024",
+     "en": "The ISO 22301:2019 page and store, and Amendment 1:2024"
+    }
+   },
+   {
+    "url": "https://www.saso.gov.sa",
+    "name": {
+     "ar": "الهيئة السعودية للمواصفات والمقاييس والجودة",
+     "en": "Saudi Standards, Metrology and Quality Org. (SASO)"
+    },
+    "note": {
+     "ar": "النسخة الوطنية المعتمدة في المملكة",
+     "en": "The national adoption in Saudi Arabia"
+    }
+   },
+   {
+    "url": "https://www.998.gov.sa",
+    "name": {
+     "ar": "المديرية العامة للدفاع المدني",
+     "en": "General Directorate of Civil Defense"
+    },
+    "note": {
+     "ar": "اشتراطات الطوارئ والإخلاء",
+     "en": "Emergency and evacuation requirements"
+    }
+   },
+   {
+    "url": "https://global-aci.org",
+    "name": {
+     "ar": "مؤسسة Global ACI (سابقاً IAF وILAC)",
+     "en": "Global ACI — formerly IAF and ILAC"
+    },
+    "note": {
+     "ar": "قواعد الاعتماد والشهادات المعترف بها",
+     "en": "Accreditation rules and recognised certification"
+    }
+   }
+  ],
+  "readiness_questions": 40,
+  "competencies": [
+   "ISO-01",
+   "ISO-02",
+   "BC-01",
+   "BC-02"
+  ],
+  "ecosystem": "business-continuity"
+ }
+}

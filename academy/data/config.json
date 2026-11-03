@@ -1,0 +1,18 @@
+{
+  "app": "cia-academy",
+  "version": "1.7.2-phase7-closed",
+  "platformBase": "../",
+  "defaultLocale": "ar",
+  "locales": [
+    "ar",
+    "en"
+  ],
+  "defaultDigits": {
+    "ar": "latn",
+    "en": "latn"
+  },
+  "devHosts": [
+    "localhost",
+    "127.0.0.1"
+  ]
+}

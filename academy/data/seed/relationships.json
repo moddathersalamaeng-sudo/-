@@ -1,0 +1,7645 @@
+{
+  "schema": 1,
+  "items": [
+    {
+      "id": "rel-iso-iso9001",
+      "fromType": "ecosystem",
+      "fromId": "iso",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-iso-iso14001",
+      "fromType": "ecosystem",
+      "fromId": "iso",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso14001"
+    },
+    {
+      "id": "rel-iso-iso45001",
+      "fromType": "ecosystem",
+      "fromId": "iso",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso45001"
+    },
+    {
+      "id": "rel-iso-iso27001",
+      "fromType": "ecosystem",
+      "fromId": "iso",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso27001"
+    },
+    {
+      "id": "rel-iso-iso22301",
+      "fromType": "ecosystem",
+      "fromId": "iso",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso22301"
+    },
+    {
+      "id": "rel-iso-iso37301",
+      "fromType": "ecosystem",
+      "fromId": "iso",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso37301"
+    },
+    {
+      "id": "rel-iso-iso37001",
+      "fromType": "ecosystem",
+      "fromId": "iso",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso37001"
+    },
+    {
+      "id": "rel-iso-ims",
+      "fromType": "ecosystem",
+      "fromId": "iso",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "ims"
+    },
+    {
+      "id": "rel-pmo-pmo",
+      "fromType": "ecosystem",
+      "fromId": "pmo",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pmo"
+    },
+    {
+      "id": "rel-efqm-exc",
+      "fromType": "ecosystem",
+      "fromId": "efqm",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-quality-iso9001",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-quality-aud",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-quality-oec",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "oec"
+    },
+    {
+      "id": "rel-risk-iso31000",
+      "fromType": "ecosystem",
+      "fromId": "risk",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso31000"
+    },
+    {
+      "id": "rel-governance-iso37000",
+      "fromType": "ecosystem",
+      "fromId": "governance",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso37000"
+    },
+    {
+      "id": "rel-compliance-iso37301",
+      "fromType": "ecosystem",
+      "fromId": "compliance",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso37301"
+    },
+    {
+      "id": "rel-compliance-iso37001",
+      "fromType": "ecosystem",
+      "fromId": "compliance",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso37001"
+    },
+    {
+      "id": "rel-compliance-ccc",
+      "fromType": "ecosystem",
+      "fromId": "compliance",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "ccc"
+    },
+    {
+      "id": "rel-business-continuity-iso22301",
+      "fromType": "ecosystem",
+      "fromId": "business-continuity",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso22301"
+    },
+    {
+      "id": "rel-information-security-iso27001",
+      "fromType": "ecosystem",
+      "fromId": "information-security",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso27001"
+    },
+    {
+      "id": "rel-hseq-iso14001",
+      "fromType": "ecosystem",
+      "fromId": "hseq",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso14001"
+    },
+    {
+      "id": "rel-hseq-iso45001",
+      "fromType": "ecosystem",
+      "fromId": "hseq",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso45001"
+    },
+    {
+      "id": "rel-performance-str",
+      "fromType": "ecosystem",
+      "fromId": "performance",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "str"
+    },
+    {
+      "id": "rel-performance-w8",
+      "fromType": "ecosystem",
+      "fromId": "performance",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "w8"
+    },
+    {
+      "id": "rel-KA-001-CRS-ISO-101",
+      "fromType": "article",
+      "fromId": "KA-001",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-KA-002-CRS-ISO-101",
+      "fromType": "article",
+      "fromId": "KA-002",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-KA-003-CRS-ISO-101",
+      "fromType": "article",
+      "fromId": "KA-003",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-KA-004-CRS-ISO-101",
+      "fromType": "article",
+      "fromId": "KA-004",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-KA-005-CRS-ISO-101",
+      "fromType": "article",
+      "fromId": "KA-005",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-KA-006-CRS-ISO-101",
+      "fromType": "article",
+      "fromId": "KA-006",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-KA-007-CRS-ISO-101",
+      "fromType": "article",
+      "fromId": "KA-007",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-KA-008-CRS-ISO-101",
+      "fromType": "article",
+      "fromId": "KA-008",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-KA-009-CRS-ISO-101",
+      "fromType": "article",
+      "fromId": "KA-009",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-KA-010-CRS-ISO-101",
+      "fromType": "article",
+      "fromId": "KA-010",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-KA-011-CRS-PM-101",
+      "fromType": "article",
+      "fromId": "KA-011",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-PM-101"
+    },
+    {
+      "id": "rel-KA-012-CRS-PM-101",
+      "fromType": "article",
+      "fromId": "KA-012",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-PM-101"
+    },
+    {
+      "id": "rel-KA-013-CRS-PM-101",
+      "fromType": "article",
+      "fromId": "KA-013",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-PM-101"
+    },
+    {
+      "id": "rel-KA-014-CRS-PM-101",
+      "fromType": "article",
+      "fromId": "KA-014",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-PM-101"
+    },
+    {
+      "id": "rel-KA-015-CRS-QMS-201",
+      "fromType": "article",
+      "fromId": "KA-015",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-QMS-201"
+    },
+    {
+      "id": "rel-KA-016-CRS-QMS-201",
+      "fromType": "article",
+      "fromId": "KA-016",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-QMS-201"
+    },
+    {
+      "id": "rel-KA-017-CRS-QMS-201",
+      "fromType": "article",
+      "fromId": "KA-017",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-QMS-201"
+    },
+    {
+      "id": "rel-KA-018-CRS-QMS-201",
+      "fromType": "article",
+      "fromId": "KA-018",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-QMS-201"
+    },
+    {
+      "id": "rel-KA-019-CRS-EFQM-101",
+      "fromType": "article",
+      "fromId": "KA-019",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EFQM-101"
+    },
+    {
+      "id": "rel-KA-020-CRS-EFQM-101",
+      "fromType": "article",
+      "fromId": "KA-020",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EFQM-101"
+    },
+    {
+      "id": "rel-KA-021-CRS-EFQM-101",
+      "fromType": "article",
+      "fromId": "KA-021",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EFQM-101"
+    },
+    {
+      "id": "rel-KA-022-CRS-P3O-101",
+      "fromType": "article",
+      "fromId": "KA-022",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-P3O-101"
+    },
+    {
+      "id": "rel-KA-023-CRS-P3O-101",
+      "fromType": "article",
+      "fromId": "KA-023",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-P3O-101"
+    },
+    {
+      "id": "rel-KA-024-CRS-P3O-101",
+      "fromType": "article",
+      "fromId": "KA-024",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-P3O-101"
+    },
+    {
+      "id": "rel-a2576df266fe",
+      "fromType": "ecosystem",
+      "fromId": "information-security",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso27701"
+    },
+    {
+      "id": "rel-93d75f7a4e25",
+      "fromType": "ecosystem",
+      "fromId": "iso",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso42001"
+    },
+    {
+      "id": "rel-c88a3610ef83",
+      "fromType": "ecosystem",
+      "fromId": "iso",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso42005"
+    },
+    {
+      "id": "rel-61c795c7ea2a",
+      "fromType": "ecosystem",
+      "fromId": "compliance",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aireg"
+    },
+    {
+      "id": "rel-43c0fa01b424",
+      "fromType": "ecosystem",
+      "fromId": "pmi",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso21500"
+    },
+    {
+      "id": "rel-3cc71c40005e",
+      "fromType": "ecosystem",
+      "fromId": "p3o",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "p3o"
+    },
+    {
+      "id": "rel-cbc07865572e",
+      "fromType": "ecosystem",
+      "fromId": "pmo",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pmoexc"
+    },
+    {
+      "id": "rel-7836a4e3befc",
+      "fromType": "ecosystem",
+      "fromId": "efqm",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "kaqa"
+    },
+    {
+      "id": "rel-8ee701d1a281",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pdca"
+    },
+    {
+      "id": "rel-488ff70d4c75",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "capa"
+    },
+    {
+      "id": "rel-434615bd1242",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "why5"
+    },
+    {
+      "id": "rel-8b189b568d16",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "fish"
+    },
+    {
+      "id": "rel-95e3b0d96433",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pareto"
+    },
+    {
+      "id": "rel-b6ab8b7da20b",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "rca"
+    },
+    {
+      "id": "rel-bdb46f91fa96",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "a3"
+    },
+    {
+      "id": "rel-00eccc3919c7",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "dmaic"
+    },
+    {
+      "id": "rel-05feb01eab43",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso10009"
+    },
+    {
+      "id": "rel-7464b86fc463",
+      "fromType": "ecosystem",
+      "fromId": "risk",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "fmea"
+    },
+    {
+      "id": "rel-b674bd669764",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "lessons"
+    },
+    {
+      "id": "rel-cc41a8bd3018",
+      "fromType": "ecosystem",
+      "fromId": "performance",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "swot"
+    },
+    {
+      "id": "rel-bc3d2ae068b9",
+      "fromType": "ecosystem",
+      "fromId": "performance",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pestle"
+    },
+    {
+      "id": "rel-bb4d40be1059",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-5dc25940b60a",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-69fedf2daec4",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "capa"
+    },
+    {
+      "id": "rel-b6459fa7fb3f",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pdca"
+    },
+    {
+      "id": "rel-0fe2fb789a1b",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso10009"
+    },
+    {
+      "id": "rel-5caa9561497b",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-001"
+    },
+    {
+      "id": "rel-e0da466ffaca",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-002"
+    },
+    {
+      "id": "rel-139c7bae3083",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-005"
+    },
+    {
+      "id": "rel-4104b6991e1a",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-006"
+    },
+    {
+      "id": "rel-4d905c12075f",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-007"
+    },
+    {
+      "id": "rel-5b7d2ced342d",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-008"
+    },
+    {
+      "id": "rel-e61ed7c1fc27",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-22e200983667",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-010"
+    },
+    {
+      "id": "rel-a9cc8d99e1dc",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-2fa45a53d09d",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-b8abe6ff293d",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-01"
+    },
+    {
+      "id": "rel-d030e6601adf",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-04"
+    },
+    {
+      "id": "rel-271c1df7ff85",
+      "fromType": "standard_family",
+      "fromId": "STD-9001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-3b3ef08935c3",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso14001"
+    },
+    {
+      "id": "rel-6c85e09e662a",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "ims"
+    },
+    {
+      "id": "rel-f23cbd2defe9",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-001"
+    },
+    {
+      "id": "rel-f6ffad80feff",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-002"
+    },
+    {
+      "id": "rel-75f60741018a",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-005"
+    },
+    {
+      "id": "rel-82a9cdffa2b9",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-006"
+    },
+    {
+      "id": "rel-3a73e5799317",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-007"
+    },
+    {
+      "id": "rel-b36c844f8e58",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-008"
+    },
+    {
+      "id": "rel-bf1e2e751d70",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-5a07b3618c9b",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-010"
+    },
+    {
+      "id": "rel-f1654c0bd78e",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-ba49f93c31cf",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-a6bd46a86bbc",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-84a0b06202a6",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-e77e7cd9ff2a",
+      "fromType": "standard_family",
+      "fromId": "STD-14001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-d7c3e8fd8851",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso45001"
+    },
+    {
+      "id": "rel-ef29eaac56d5",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "ims"
+    },
+    {
+      "id": "rel-ec8713ca9bb3",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "rca"
+    },
+    {
+      "id": "rel-0d9b412595ac",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-001"
+    },
+    {
+      "id": "rel-216c6e2555d9",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-002"
+    },
+    {
+      "id": "rel-19ee2f44410e",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-005"
+    },
+    {
+      "id": "rel-8f58af414759",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-006"
+    },
+    {
+      "id": "rel-3be7d10e6a0c",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-007"
+    },
+    {
+      "id": "rel-69bf72ca6472",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-008"
+    },
+    {
+      "id": "rel-87befa52fde0",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-015cc0fdfa3f",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-010"
+    },
+    {
+      "id": "rel-7043c70efbca",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-d0627f08d5da",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-fd4ed61a78a2",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-07bb5ad495d8",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-3e824169983e",
+      "fromType": "standard_family",
+      "fromId": "STD-45001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-40f5c67f69ad",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso27001"
+    },
+    {
+      "id": "rel-18014d9e2713",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso27701"
+    },
+    {
+      "id": "rel-b093ff83467b",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "ims"
+    },
+    {
+      "id": "rel-de19207eead4",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-001"
+    },
+    {
+      "id": "rel-ce0ab2d34dbf",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-002"
+    },
+    {
+      "id": "rel-5e6f7c0ee070",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-005"
+    },
+    {
+      "id": "rel-83fa0a3dc9e7",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-006"
+    },
+    {
+      "id": "rel-f42aecde3ecb",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-007"
+    },
+    {
+      "id": "rel-8fc3c5205155",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-008"
+    },
+    {
+      "id": "rel-68ace4130ed9",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-3fe4185848ae",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-010"
+    },
+    {
+      "id": "rel-acf21e3640fb",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISA-01"
+    },
+    {
+      "id": "rel-3bec348e8e6f",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISA-02"
+    },
+    {
+      "id": "rel-8a47b551da3d",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-739cc2e666f5",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-c31fee06fff7",
+      "fromType": "standard_family",
+      "fromId": "STD-27001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-1ec9f6053441",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-9001"
+    },
+    {
+      "id": "rel-36b7a568a4fe",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-14001"
+    },
+    {
+      "id": "rel-613fbcec59bb",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-45001"
+    },
+    {
+      "id": "rel-0319cd51cdcf",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-27001"
+    },
+    {
+      "id": "rel-c950f9edc97f",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-9d5b428a7058",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-0edbbcd3c4e9",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-b524c525c6f0",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-f3cafdf5ff73",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-001"
+    },
+    {
+      "id": "rel-c3494fa7fa3c",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-002"
+    },
+    {
+      "id": "rel-b837dda54b14",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-003"
+    },
+    {
+      "id": "rel-521f7e6a83be",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-004"
+    },
+    {
+      "id": "rel-c99bb89becd4",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-008"
+    },
+    {
+      "id": "rel-42e6695bf50b",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-eb14519a4ddf",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-010"
+    },
+    {
+      "id": "rel-e90cfa7f6993",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-018"
+    },
+    {
+      "id": "rel-a31caedfe8a9",
+      "fromType": "article",
+      "fromId": "KA-018",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-2f5a1179d1c6",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-8d1a746cbc63",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "ims"
+    },
+    {
+      "id": "rel-820e35d05673",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pdca"
+    },
+    {
+      "id": "rel-19edacf34e7b",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T03"
+    },
+    {
+      "id": "rel-89a8a341ef23",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T04"
+    },
+    {
+      "id": "rel-99f6a8875ccf",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-101-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-c955b6e22c8b",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-101-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-1197bcda0468",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-101-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-101"
+    },
+    {
+      "id": "rel-591b9b0db2f8",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-9001"
+    },
+    {
+      "id": "rel-eef073a93779",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-14001"
+    },
+    {
+      "id": "rel-bc0d1cfe9a86",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-45001"
+    },
+    {
+      "id": "rel-8d79b78763de",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-27001"
+    },
+    {
+      "id": "rel-0ecd2430f829",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-15b764670980",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-ddd3820464e3",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-005"
+    },
+    {
+      "id": "rel-6e3443e7a217",
+      "fromType": "article",
+      "fromId": "KA-005",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-READ"
+    },
+    {
+      "id": "rel-8806a90804b4",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-006"
+    },
+    {
+      "id": "rel-80fb87ad879c",
+      "fromType": "article",
+      "fromId": "KA-006",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-READ"
+    },
+    {
+      "id": "rel-0860e623eb89",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-007"
+    },
+    {
+      "id": "rel-3f5c06c81b8e",
+      "fromType": "article",
+      "fromId": "KA-007",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-READ"
+    },
+    {
+      "id": "rel-9c409ced672a",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-010"
+    },
+    {
+      "id": "rel-4208a2cee6e5",
+      "fromType": "article",
+      "fromId": "KA-010",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-READ"
+    },
+    {
+      "id": "rel-17243d92e5d5",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-58fa7baca5c2",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-77c0f40aa6ea",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T01"
+    },
+    {
+      "id": "rel-a8293dd4902f",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-READ"
+    },
+    {
+      "id": "rel-325684a90d82",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-READ-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-READ"
+    },
+    {
+      "id": "rel-b9457a607f35",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-READ-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-READ"
+    },
+    {
+      "id": "rel-2df6bd646019",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-READ-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-READ"
+    },
+    {
+      "id": "rel-456d7d360bee",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-9001"
+    },
+    {
+      "id": "rel-9eae8ffdbe14",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-14001"
+    },
+    {
+      "id": "rel-21ea7b31e1fc",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-45001"
+    },
+    {
+      "id": "rel-0bb886b73b65",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-27001"
+    },
+    {
+      "id": "rel-b3103664161e",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-aa32c82d2757",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-f44f5498e9ca",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-9477fa6cb6c6",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-003"
+    },
+    {
+      "id": "rel-de5db7756070",
+      "fromType": "article",
+      "fromId": "KA-003",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-c229b6ebae36",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-007"
+    },
+    {
+      "id": "rel-9762d8d9c859",
+      "fromType": "article",
+      "fromId": "KA-007",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-465802698db5",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-010"
+    },
+    {
+      "id": "rel-8f0a7ab781ce",
+      "fromType": "article",
+      "fromId": "KA-010",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-aaf46c3871f5",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-018"
+    },
+    {
+      "id": "rel-0f3950f7f2d5",
+      "fromType": "article",
+      "fromId": "KA-018",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-bed879498eef",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-f9353f855d16",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-f4ee3cd4a84d",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "capa"
+    },
+    {
+      "id": "rel-7441b904e0b9",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T01"
+    },
+    {
+      "id": "rel-717281aaced8",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T02"
+    },
+    {
+      "id": "rel-efbbe1ddb394",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-b9558520e56e",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-61b1df4f9be7",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-AUD-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-3e0636260a4d",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-AUD-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-d7ce4f00c62d",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-AUD-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-f7f61a9be9fa",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-9001"
+    },
+    {
+      "id": "rel-9a37f3595075",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-14001"
+    },
+    {
+      "id": "rel-d49fafb8997f",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-45001"
+    },
+    {
+      "id": "rel-704ffbc89715",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-27001"
+    },
+    {
+      "id": "rel-b58a1e501a96",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-8c059d8484d7",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-9056b84c1d2b",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-016"
+    },
+    {
+      "id": "rel-2cbc61f5e7ac",
+      "fromType": "article",
+      "fromId": "KA-016",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-NC"
+    },
+    {
+      "id": "rel-2550cfe21bf6",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-018"
+    },
+    {
+      "id": "rel-d9388fe1b47e",
+      "fromType": "article",
+      "fromId": "KA-018",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-NC"
+    },
+    {
+      "id": "rel-173993f686cd",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "capa"
+    },
+    {
+      "id": "rel-dd6d4c621536",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "why5"
+    },
+    {
+      "id": "rel-acac3db24658",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "fish"
+    },
+    {
+      "id": "rel-4cb6e7a46c47",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "rca"
+    },
+    {
+      "id": "rel-fc2ffd9fe7ab",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T02"
+    },
+    {
+      "id": "rel-d9bcc76b0fd4",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T03"
+    },
+    {
+      "id": "rel-6f56e52f4908",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-NC"
+    },
+    {
+      "id": "rel-1f5e5428eda6",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-NC-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-NC"
+    },
+    {
+      "id": "rel-daec570044fe",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-NC-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-NC"
+    },
+    {
+      "id": "rel-773482c5f97f",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-NC-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-NC"
+    },
+    {
+      "id": "rel-2e19d205e449",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-9001"
+    },
+    {
+      "id": "rel-5e5378d959fc",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-14001"
+    },
+    {
+      "id": "rel-cf15434bc041",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-45001"
+    },
+    {
+      "id": "rel-20211c0abda8",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-27001"
+    },
+    {
+      "id": "rel-7b2944269977",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-fb6819ae4a61",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-def97731fe55",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-80fa38c211a5",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-6604bca747e8",
+      "fromType": "article",
+      "fromId": "KA-009",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-RISK"
+    },
+    {
+      "id": "rel-3b74ba725634",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso31000"
+    },
+    {
+      "id": "rel-b87cf74e13ea",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "fmea"
+    },
+    {
+      "id": "rel-3c544b9039b8",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "swot"
+    },
+    {
+      "id": "rel-cc7876ae87c8",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pestle"
+    },
+    {
+      "id": "rel-fb49453fe27d",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T04"
+    },
+    {
+      "id": "rel-a3ef60c6211b",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-RISK"
+    },
+    {
+      "id": "rel-9f09565608ef",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-RISK-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-RISK"
+    },
+    {
+      "id": "rel-6f7088d7cd0a",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-RISK-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-RISK"
+    },
+    {
+      "id": "rel-2da8b1b5d99d",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-RISK-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-RISK"
+    },
+    {
+      "id": "rel-4b4f899f370a",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-9001"
+    },
+    {
+      "id": "rel-3d43b8709fae",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-14001"
+    },
+    {
+      "id": "rel-cd50e4f6e20a",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-45001"
+    },
+    {
+      "id": "rel-f84d5682a668",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-27001"
+    },
+    {
+      "id": "rel-92f6fb4c5f5e",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-03"
+    },
+    {
+      "id": "rel-f43affe6db1b",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-1f216c7f8a1a",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-4a005988ae83",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-008"
+    },
+    {
+      "id": "rel-c29a62a41628",
+      "fromType": "article",
+      "fromId": "KA-008",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-IMS"
+    },
+    {
+      "id": "rel-380c1ce4d56b",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-f43526d94a0b",
+      "fromType": "article",
+      "fromId": "KA-009",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-IMS"
+    },
+    {
+      "id": "rel-ea61b0f87a93",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-010"
+    },
+    {
+      "id": "rel-798876ae9e24",
+      "fromType": "article",
+      "fromId": "KA-010",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-IMS"
+    },
+    {
+      "id": "rel-df05f32b45a0",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "ims"
+    },
+    {
+      "id": "rel-b14e7ac3bad7",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-4cacfefecbfe",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso14001"
+    },
+    {
+      "id": "rel-afd62109980e",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso45001"
+    },
+    {
+      "id": "rel-cbfe923718bd",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso27001"
+    },
+    {
+      "id": "rel-a524da9d984c",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T06"
+    },
+    {
+      "id": "rel-98293bd9a30a",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T04"
+    },
+    {
+      "id": "rel-1ff7367f9053",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-IMS"
+    },
+    {
+      "id": "rel-0e594537fcba",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-IMS"
+    },
+    {
+      "id": "rel-a29df4afe445",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-IMS-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-IMS"
+    },
+    {
+      "id": "rel-03152a03684d",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-IMS-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-IMS"
+    },
+    {
+      "id": "rel-52a7f287d008",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-IMS-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-IMS"
+    },
+    {
+      "id": "rel-a63b4ded098c",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-9001"
+    },
+    {
+      "id": "rel-aabc158baa55",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-69333852d87d",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-27cf6a5a1c58",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-04"
+    },
+    {
+      "id": "rel-835249974c85",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-001"
+    },
+    {
+      "id": "rel-7ec5ad289d65",
+      "fromType": "article",
+      "fromId": "KA-001",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-F"
+    },
+    {
+      "id": "rel-9db4c13d2953",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-007"
+    },
+    {
+      "id": "rel-e6d0f8d60faf",
+      "fromType": "article",
+      "fromId": "KA-007",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-F"
+    },
+    {
+      "id": "rel-3fd429210c39",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-015"
+    },
+    {
+      "id": "rel-0233580b1e7c",
+      "fromType": "article",
+      "fromId": "KA-015",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-F"
+    },
+    {
+      "id": "rel-cb8752d59998",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-018"
+    },
+    {
+      "id": "rel-97b1fa9e89dc",
+      "fromType": "article",
+      "fromId": "KA-018",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-F"
+    },
+    {
+      "id": "rel-bb1b2b502937",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-67a4891fdb90",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-7e74218916a5",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T01"
+    },
+    {
+      "id": "rel-bffe0bfb0a16",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T02"
+    },
+    {
+      "id": "rel-cb12a88c6cd4",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-F"
+    },
+    {
+      "id": "rel-52c780901828",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-F-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-F"
+    },
+    {
+      "id": "rel-b8075cb74607",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-F-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-F"
+    },
+    {
+      "id": "rel-c7f53ae8b0b0",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-F-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-F"
+    },
+    {
+      "id": "rel-4313923e0283",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-9001"
+    },
+    {
+      "id": "rel-18597752ab7c",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-a98b4beee522",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-01"
+    },
+    {
+      "id": "rel-7055fd7c5067",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "PERF-01"
+    },
+    {
+      "id": "rel-e1c1e9a0bb6d",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-fe57c1c7320a",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-005"
+    },
+    {
+      "id": "rel-f017dd6eedb0",
+      "fromType": "article",
+      "fromId": "KA-005",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-IMP"
+    },
+    {
+      "id": "rel-304ee1c3dfcf",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-007"
+    },
+    {
+      "id": "rel-f751f82cc492",
+      "fromType": "article",
+      "fromId": "KA-007",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-IMP"
+    },
+    {
+      "id": "rel-65b96a198c83",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-008"
+    },
+    {
+      "id": "rel-be90aa750aee",
+      "fromType": "article",
+      "fromId": "KA-008",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-IMP"
+    },
+    {
+      "id": "rel-5b637859eb48",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-015"
+    },
+    {
+      "id": "rel-d73545de4780",
+      "fromType": "article",
+      "fromId": "KA-015",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-IMP"
+    },
+    {
+      "id": "rel-146ccda1c1a8",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-312bb8a3152e",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pdca"
+    },
+    {
+      "id": "rel-5755ce99b2a8",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "str"
+    },
+    {
+      "id": "rel-b0f9edea12f0",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T04"
+    },
+    {
+      "id": "rel-da84e44e3c64",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T05"
+    },
+    {
+      "id": "rel-44a977b82149",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T06"
+    },
+    {
+      "id": "rel-c428325ffb26",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-IMP"
+    },
+    {
+      "id": "rel-763dd3877b30",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-IMP"
+    },
+    {
+      "id": "rel-d300ce1b1447",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-IMP"
+    },
+    {
+      "id": "rel-33a99ea4d146",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-IMP"
+    },
+    {
+      "id": "rel-986dcd7ec3d8",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-IMP"
+    },
+    {
+      "id": "rel-274abc494e86",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-9001"
+    },
+    {
+      "id": "rel-4c65bff92694",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-fdb897439722",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-e491c3e06424",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-eddeffbe70cd",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-9e1679e32534",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-007"
+    },
+    {
+      "id": "rel-d57a7097b125",
+      "fromType": "article",
+      "fromId": "KA-007",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-0b885be6ae3b",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-83b7412a0e2e",
+      "fromType": "article",
+      "fromId": "KA-009",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-cdc9f8b5b4d7",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-010"
+    },
+    {
+      "id": "rel-b04ec51adaec",
+      "fromType": "article",
+      "fromId": "KA-010",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-8b0064d9d95b",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-018"
+    },
+    {
+      "id": "rel-5797fdbad44e",
+      "fromType": "article",
+      "fromId": "KA-018",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-f92a71b17cae",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-5d6002d3450b",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-d0ae270afcee",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "capa"
+    },
+    {
+      "id": "rel-9e4aa53941b6",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T01"
+    },
+    {
+      "id": "rel-fa53e8c563ec",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T02"
+    },
+    {
+      "id": "rel-c52bd21612fb",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T03"
+    },
+    {
+      "id": "rel-2e6cec26c19d",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-39240c1f6417",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-b531a76d2247",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-e0d2459bc2f2",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-ceff21cd91e7",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-31f9182a5fdc",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-14001"
+    },
+    {
+      "id": "rel-a03bc600a7c1",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-a9b6a440afaa",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-f711d1ac658f",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-844a63d3f88a",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-a2d7bbfe0939",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-001"
+    },
+    {
+      "id": "rel-a00e62f765eb",
+      "fromType": "article",
+      "fromId": "KA-001",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-F"
+    },
+    {
+      "id": "rel-3b573b8f7a59",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-002"
+    },
+    {
+      "id": "rel-161ec15abe33",
+      "fromType": "article",
+      "fromId": "KA-002",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-F"
+    },
+    {
+      "id": "rel-ea0194dcc3f1",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-c0e13ba0e45b",
+      "fromType": "article",
+      "fromId": "KA-009",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-F"
+    },
+    {
+      "id": "rel-5734648e8096",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso14001"
+    },
+    {
+      "id": "rel-b8317625f5fe",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "ims"
+    },
+    {
+      "id": "rel-c102d5d695e7",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T04"
+    },
+    {
+      "id": "rel-61e71be10215",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-F"
+    },
+    {
+      "id": "rel-11af9659958b",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-F-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-F"
+    },
+    {
+      "id": "rel-7f0f7393fbba",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-F-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-F"
+    },
+    {
+      "id": "rel-bdf74646a08c",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-F-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-F"
+    },
+    {
+      "id": "rel-7cf0b199167e",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-14001"
+    },
+    {
+      "id": "rel-f072d861c93b",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-ab3b1d27cc4f",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-52f516bb3390",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-469f6e99d637",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-3c3983863d1a",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-002"
+    },
+    {
+      "id": "rel-9210b4cbc35d",
+      "fromType": "article",
+      "fromId": "KA-002",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-AUD"
+    },
+    {
+      "id": "rel-e8d7d549c7c7",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-007"
+    },
+    {
+      "id": "rel-4492d593cee7",
+      "fromType": "article",
+      "fromId": "KA-007",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-AUD"
+    },
+    {
+      "id": "rel-611c5f50ef24",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-2b7110fe95db",
+      "fromType": "article",
+      "fromId": "KA-009",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-AUD"
+    },
+    {
+      "id": "rel-69720af0b58f",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-010"
+    },
+    {
+      "id": "rel-c04b9fa2d9db",
+      "fromType": "article",
+      "fromId": "KA-010",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-AUD"
+    },
+    {
+      "id": "rel-7d08a7c8fb7f",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso14001"
+    },
+    {
+      "id": "rel-90443b9a2581",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-3422449f8f6d",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T01"
+    },
+    {
+      "id": "rel-d614189e4b35",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T02"
+    },
+    {
+      "id": "rel-a11b6a17753a",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-AUD"
+    },
+    {
+      "id": "rel-43f73d2a9a84",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-AUD"
+    },
+    {
+      "id": "rel-0a2375c38c37",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-AUD-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-AUD"
+    },
+    {
+      "id": "rel-73cd71bad605",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-AUD-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-AUD"
+    },
+    {
+      "id": "rel-f733aa8c0ca8",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-AUD-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-14001-AUD"
+    },
+    {
+      "id": "rel-68a24d7b83c0",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-45001"
+    },
+    {
+      "id": "rel-59e49772e6d6",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-d7db2b274079",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-81364ca65171",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-f33f2527eb19",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-f80cc6cd6eff",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-001"
+    },
+    {
+      "id": "rel-fb7c32485c02",
+      "fromType": "article",
+      "fromId": "KA-001",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-F"
+    },
+    {
+      "id": "rel-a60470825f22",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-c416615fa5c0",
+      "fromType": "article",
+      "fromId": "KA-009",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-F"
+    },
+    {
+      "id": "rel-b2bee2376e63",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-018"
+    },
+    {
+      "id": "rel-b74f33bb3c1b",
+      "fromType": "article",
+      "fromId": "KA-018",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-F"
+    },
+    {
+      "id": "rel-6af696df085c",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso45001"
+    },
+    {
+      "id": "rel-99b8ed501879",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "ims"
+    },
+    {
+      "id": "rel-8029ca0c6ae4",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "rca"
+    },
+    {
+      "id": "rel-fb86e98d01be",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T04"
+    },
+    {
+      "id": "rel-7ad4a888a2d2",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-F"
+    },
+    {
+      "id": "rel-08b1a47d3ce0",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-F"
+    },
+    {
+      "id": "rel-668f5dc21720",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-F"
+    },
+    {
+      "id": "rel-26913ac82c5e",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-F"
+    },
+    {
+      "id": "rel-0e27b3eb2b78",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-45001"
+    },
+    {
+      "id": "rel-a06b4b16c496",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-2e95592789bd",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-d099add63812",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-a150f9250d2f",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-dd6a1df704e3",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-004"
+    },
+    {
+      "id": "rel-9ad893dac453",
+      "fromType": "article",
+      "fromId": "KA-004",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-AUD"
+    },
+    {
+      "id": "rel-3ef34c1ce929",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-007"
+    },
+    {
+      "id": "rel-3370fefa2785",
+      "fromType": "article",
+      "fromId": "KA-007",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-AUD"
+    },
+    {
+      "id": "rel-fb70a61d9dff",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-2605b224dbd6",
+      "fromType": "article",
+      "fromId": "KA-009",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-AUD"
+    },
+    {
+      "id": "rel-ec416ec7a113",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-018"
+    },
+    {
+      "id": "rel-26f584a917c0",
+      "fromType": "article",
+      "fromId": "KA-018",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-AUD"
+    },
+    {
+      "id": "rel-64487e24a206",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso45001"
+    },
+    {
+      "id": "rel-277c24c1ea98",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-4b4892d74c73",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "rca"
+    },
+    {
+      "id": "rel-c11ae062b271",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T01"
+    },
+    {
+      "id": "rel-adadd929a458",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T02"
+    },
+    {
+      "id": "rel-5ffc0d1360a1",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-AUD"
+    },
+    {
+      "id": "rel-587f18d526fd",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-AUD"
+    },
+    {
+      "id": "rel-a822a1cea32e",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-AUD-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-AUD"
+    },
+    {
+      "id": "rel-485a904c53be",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-AUD-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-AUD"
+    },
+    {
+      "id": "rel-ef47a074ed78",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-AUD-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-45001-AUD"
+    },
+    {
+      "id": "rel-f0a475d735c2",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-27001"
+    },
+    {
+      "id": "rel-f9592567e0f1",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISA-01"
+    },
+    {
+      "id": "rel-36671a340289",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISA-02"
+    },
+    {
+      "id": "rel-c2f455cca2e6",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-048b8e572d85",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-59169774ca11",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-001"
+    },
+    {
+      "id": "rel-4a3b8c61b237",
+      "fromType": "article",
+      "fromId": "KA-001",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-F"
+    },
+    {
+      "id": "rel-fdb31ae1a0ce",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-8b420ab0381e",
+      "fromType": "article",
+      "fromId": "KA-009",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-F"
+    },
+    {
+      "id": "rel-63b0b88de4cc",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-018"
+    },
+    {
+      "id": "rel-8289e51fb351",
+      "fromType": "article",
+      "fromId": "KA-018",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-F"
+    },
+    {
+      "id": "rel-80febedfae41",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso27001"
+    },
+    {
+      "id": "rel-57d09f0a204a",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso27701"
+    },
+    {
+      "id": "rel-8c5d09971540",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "ims"
+    },
+    {
+      "id": "rel-45bd62de997e",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T04"
+    },
+    {
+      "id": "rel-6a9ad47e6e6c",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-F"
+    },
+    {
+      "id": "rel-91a61e162cb3",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-F-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-F"
+    },
+    {
+      "id": "rel-db0d2d0891c7",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-F-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-F"
+    },
+    {
+      "id": "rel-b279628ae558",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-F-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-F"
+    },
+    {
+      "id": "rel-4abd2283f861",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-27001"
+    },
+    {
+      "id": "rel-0520fa018b49",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-48423df31296",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-d77f712e2ba1",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-b6956054a566",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISA-01"
+    },
+    {
+      "id": "rel-162a1f47cc40",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-007"
+    },
+    {
+      "id": "rel-4c65b3787ce0",
+      "fromType": "article",
+      "fromId": "KA-007",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-AUD"
+    },
+    {
+      "id": "rel-4dba4a91f8f0",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-009"
+    },
+    {
+      "id": "rel-a814eee8996a",
+      "fromType": "article",
+      "fromId": "KA-009",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-AUD"
+    },
+    {
+      "id": "rel-c3f062e9a1b9",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-018"
+    },
+    {
+      "id": "rel-cf031a3f276a",
+      "fromType": "article",
+      "fromId": "KA-018",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-AUD"
+    },
+    {
+      "id": "rel-8e54cd552139",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso27001"
+    },
+    {
+      "id": "rel-9e147a1736e2",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-beaba59deaa3",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T01"
+    },
+    {
+      "id": "rel-18e1d8381a96",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-T02"
+    },
+    {
+      "id": "rel-81b5a11b6514",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-AUD"
+    },
+    {
+      "id": "rel-87e23a89e966",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-F",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-AUD"
+    },
+    {
+      "id": "rel-4127dc005def",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-AUD-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-AUD"
+    },
+    {
+      "id": "rel-d69eab9fe23a",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-AUD-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-AUD"
+    },
+    {
+      "id": "rel-064713d41f73",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-AUD-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-ISO-27001-AUD"
+    },
+    {
+      "id": "rel-0bf4a1389410",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-ISO-001",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-9e5c90cd77bc",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-ISO-001",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-d735e204a667",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-ISO-001",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-7aa33db40a29",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-ISO-001",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-aa6fe40c7315",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-ISO-001",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-f4cd221bca6c",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-ISO-001",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-1224f059296e",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-8f5a10ef431f",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-441248462e0b",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-348c332c5d3f",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-44fb637fcff5",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-04"
+    },
+    {
+      "id": "rel-305d90e63c30",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-e393d8a54288",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-d4d5d551789f",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-1fd04d29bcc8",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-13bfb331f666",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-35640dcc878b",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-5aa88eb1faa9",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-2579e87c7083",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-63572ea01e93",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-af00042f7351",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-cb2e1ef42ceb",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-2d1e15868d6f",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISA-01"
+    },
+    {
+      "id": "rel-71eeaafee262",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISA-02"
+    },
+    {
+      "id": "rel-b2c3806235a5",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-0bda5f6dd151",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-75dbce37cca7",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-101-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-7498058ff2c9",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-101-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-219f069adc89",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-101-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-f9352a463732",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-101-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-608a63f5ee9b",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-101-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-679cc51cd2c0",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-101-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-f1de954479b3",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-READ-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-3d737fcadf66",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-READ-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-02d7749392a8",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-READ-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-1472b31a1831",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-READ-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-7e922758d290",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-5dc515631d52",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-340ace37fd81",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-025e02fcddb6",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-73b11424ee94",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-c0349ec701f9",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-8b0a1d6bdd2a",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-AUD-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-8bb32f63d583",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-NC-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-21c2400c0988",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-NC-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-58d475d3bfe7",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-NC-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-17b075b167cd",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-RISK-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-615717cd682a",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-RISK-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-0e4c2cc902f0",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-RISK-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-f20c871b65b6",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-RISK-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-21cb32c05dfd",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-RISK-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-dcdeb826aaed",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-IMS-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-03"
+    },
+    {
+      "id": "rel-6680a13a8980",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-IMS-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-69e101d6891a",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-IMS-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-88303ec57fa2",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-IMS-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-03"
+    },
+    {
+      "id": "rel-1cae4fa65be6",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-IMS-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-03"
+    },
+    {
+      "id": "rel-79bfe0abf870",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-a73c663e2954",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-f5bd0603db7c",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-2543e3cb1668",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-04"
+    },
+    {
+      "id": "rel-f21aff2dd73b",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-da1280a634a2",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-fe7f9758edee",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-85eabc49f998",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-04"
+    },
+    {
+      "id": "rel-5165fade6103",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-F-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-059aee0fc85b",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-26ef5b5be62f",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-978348f44403",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-01"
+    },
+    {
+      "id": "rel-53b1314123f0",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-3302f29462c7",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-94c7e9874608",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-815f71e0b159",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-01"
+    },
+    {
+      "id": "rel-01b92c6e8c7d",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-1b4b269fc931",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-2cce4faf08f2",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-c95d85c2956e",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-c85eaf8de6a8",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-ec7db8723b56",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-d3e0ea924453",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-9fb962f7ae8d",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-2fb37f037502",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-b70cfeb494f5",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-4a0bdb830972",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-0e466ae051ac",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-f58f257788aa",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-345caf06eea4",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-f024f9c9e144",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-641595a3a6da",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-F-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-7fb2aea2c981",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-ca8d0945c62f",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-80637da084d2",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-2eaeb0624e0f",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-221e3e8c58d2",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-cb9a0d7b7774",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-b99c4e62b210",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-4fd852fc57ed",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-14001-AUD-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-bbcabcb917a4",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-3d5d6c5ff50b",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-c34aa3cb7376",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-90e82bfb2be4",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-1a92d9101a17",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-9813596b74e6",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-98110d6694a1",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-714b9346dbfb",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-e03182c57400",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-348e0fe9393e",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-F-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-858ee3cb25f7",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-bc6fa0ba456a",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-9375ce44b1b2",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-d2fd34d2c225",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-20fd76212aaa",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-d6fe89ebb49a",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-8d2223d99bd3",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-71fc3f337d00",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-45001-AUD-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-581325ff6325",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISA-01"
+    },
+    {
+      "id": "rel-dd22d6125dd4",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-F-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISA-02"
+    },
+    {
+      "id": "rel-24a05de61576",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISA-01"
+    },
+    {
+      "id": "rel-f63c9149dedf",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISA-02"
+    },
+    {
+      "id": "rel-00aee1e4973b",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-F-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-36434693b4b3",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-F-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISA-01"
+    },
+    {
+      "id": "rel-60422e7c1e59",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-38ad25aa45c4",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-be77fdcd9359",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-AUD-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-219ae6f71749",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-324b4328b034",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-8a08f13a6902",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-289ab14fb197",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-AUD-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-a92965feee26",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-27001-AUD-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-1cfebe26584b",
+      "fromType": "article",
+      "fromId": "KA-001",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-AWARE"
+    },
+    {
+      "id": "rel-5984ee0e82c7",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-ISO-001",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-AWARE"
+    },
+    {
+      "id": "rel-b9dcef07f05b",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-AWARE"
+    },
+    {
+      "id": "rel-3609d98b3946",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-AWARE"
+    },
+    {
+      "id": "rel-7947c9657704",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-AWARE"
+    },
+    {
+      "id": "rel-97622ebaef9b",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-101-FINAL",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-AWARE"
+    },
+    {
+      "id": "rel-857e7e6f9605",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-ISO-001",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMPL"
+    },
+    {
+      "id": "rel-e76b41a27f39",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMPL"
+    },
+    {
+      "id": "rel-dcdf00289554",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMPL"
+    },
+    {
+      "id": "rel-349638f24229",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMPL"
+    },
+    {
+      "id": "rel-8ad251b90ff2",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMPL"
+    },
+    {
+      "id": "rel-bc7eafb45091",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMPL"
+    },
+    {
+      "id": "rel-beda31fc2968",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-PRACT",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMPL"
+    },
+    {
+      "id": "rel-486fac7137bf",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-FINAL",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMPL"
+    },
+    {
+      "id": "rel-d36781ecc358",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-ISO-001",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IA"
+    },
+    {
+      "id": "rel-7f4028051065",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IA"
+    },
+    {
+      "id": "rel-1580f088259f",
+      "fromType": "course",
+      "fromId": "CRS-ISO-READ",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IA"
+    },
+    {
+      "id": "rel-87f7317024e8",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IA"
+    },
+    {
+      "id": "rel-310f5def01c1",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IA"
+    },
+    {
+      "id": "rel-6cfdac8e9fcb",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IA"
+    },
+    {
+      "id": "rel-42f846a213b2",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-PRACT",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IA"
+    },
+    {
+      "id": "rel-60da2345a089",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-FINAL",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IA"
+    },
+    {
+      "id": "rel-0ec8fea3d4b6",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-ISO-001",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-LA"
+    },
+    {
+      "id": "rel-2d966e4d3583",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-LA"
+    },
+    {
+      "id": "rel-dffcf75bad7b",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-LA"
+    },
+    {
+      "id": "rel-a22226c6ddd4",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-LA"
+    },
+    {
+      "id": "rel-a5420437a0c6",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-LA"
+    },
+    {
+      "id": "rel-14d3d7f177f6",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-AUD-PRACT",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-LA"
+    },
+    {
+      "id": "rel-4842e202bcbd",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-AUD-FINAL",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-LA"
+    },
+    {
+      "id": "rel-308455974475",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-ISO-001",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMS"
+    },
+    {
+      "id": "rel-0bc8f6b67fb5",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMS"
+    },
+    {
+      "id": "rel-0455631c0599",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMS"
+    },
+    {
+      "id": "rel-ed579f658347",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMS"
+    },
+    {
+      "id": "rel-1cfcb8c514a8",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-F",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMS"
+    },
+    {
+      "id": "rel-a68819b521e8",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-F",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMS"
+    },
+    {
+      "id": "rel-7b2847d79a50",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-IMS-PRACT",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMS"
+    },
+    {
+      "id": "rel-402b768c7567",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-IMS-FINAL",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-IMS"
+    },
+    {
+      "id": "rel-2c55f8efaf9c",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-ISO-001",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-MR"
+    },
+    {
+      "id": "rel-3474c400e8b5",
+      "fromType": "course",
+      "fromId": "CRS-ISO-101",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-MR"
+    },
+    {
+      "id": "rel-f00521c3d4a7",
+      "fromType": "course",
+      "fromId": "CRS-ISO-RISK",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-MR"
+    },
+    {
+      "id": "rel-e38e5cedcc56",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-IMP",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-MR"
+    },
+    {
+      "id": "rel-3bfe5a7e5746",
+      "fromType": "course",
+      "fromId": "CRS-ISO-NC",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-MR"
+    },
+    {
+      "id": "rel-c967e9e860cf",
+      "fromType": "course",
+      "fromId": "CRS-ISO-IMS",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-MR"
+    },
+    {
+      "id": "rel-e8761e4f4b03",
+      "fromType": "assessment",
+      "fromId": "ASM-ISO-9001-IMP-FINAL",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-MR"
+    },
+    {
+      "id": "rel-94dff0bd42c9",
+      "fromType": "ecosystem",
+      "fromId": "quality",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "stakeholders"
+    },
+    {
+      "id": "rel-3c7afb779231",
+      "fromType": "course",
+      "fromId": "CRS-G-9001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-9b179e3bb6ed",
+      "fromType": "course",
+      "fromId": "CRS-G-9001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-c09779965a06",
+      "fromType": "course",
+      "fromId": "CRS-G-9001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-01"
+    },
+    {
+      "id": "rel-5e1ea14d7976",
+      "fromType": "course",
+      "fromId": "CRS-G-9001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-04"
+    },
+    {
+      "id": "rel-ce04ffbec878",
+      "fromType": "course",
+      "fromId": "CRS-G-9001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-1f71163e687c",
+      "fromType": "course",
+      "fromId": "CRS-G-9001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-a1b62c11e21e",
+      "fromType": "course",
+      "fromId": "CRS-G-9001",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-9001"
+    },
+    {
+      "id": "rel-19c06d4351c2",
+      "fromType": "course",
+      "fromId": "CRS-G-9001",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-IMP"
+    },
+    {
+      "id": "rel-04f38398d362",
+      "fromType": "course",
+      "fromId": "CRS-G-14001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-82e8cb8947b9",
+      "fromType": "course",
+      "fromId": "CRS-G-14001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-403913cb9bf9",
+      "fromType": "course",
+      "fromId": "CRS-G-14001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-a57201e55969",
+      "fromType": "course",
+      "fromId": "CRS-G-14001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-a20be3dbe2c8",
+      "fromType": "course",
+      "fromId": "CRS-G-14001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso14001"
+    },
+    {
+      "id": "rel-fbc06c8b2b06",
+      "fromType": "course",
+      "fromId": "CRS-G-14001",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-14001"
+    },
+    {
+      "id": "rel-c18a4c98484b",
+      "fromType": "course",
+      "fromId": "CRS-G-45001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-6c5bffe94eab",
+      "fromType": "course",
+      "fromId": "CRS-G-45001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-6b3299d8c8c5",
+      "fromType": "course",
+      "fromId": "CRS-G-45001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-ca9c7bd248b7",
+      "fromType": "course",
+      "fromId": "CRS-G-45001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-8b55eb474208",
+      "fromType": "course",
+      "fromId": "CRS-G-45001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso45001"
+    },
+    {
+      "id": "rel-c3db73b06b9f",
+      "fromType": "course",
+      "fromId": "CRS-G-45001",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-45001"
+    },
+    {
+      "id": "rel-ff18d0bc1d62",
+      "fromType": "course",
+      "fromId": "CRS-G-27001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-ce3fa59fbb13",
+      "fromType": "course",
+      "fromId": "CRS-G-27001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-69348077bb9b",
+      "fromType": "course",
+      "fromId": "CRS-G-27001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISA-01"
+    },
+    {
+      "id": "rel-293ae0ab652b",
+      "fromType": "course",
+      "fromId": "CRS-G-27001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-5c605c450725",
+      "fromType": "course",
+      "fromId": "CRS-G-27001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-b3d5121518e4",
+      "fromType": "course",
+      "fromId": "CRS-G-27001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso27001"
+    },
+    {
+      "id": "rel-a4f3fc0c0fe3",
+      "fromType": "course",
+      "fromId": "CRS-G-27001",
+      "relation": "part_of",
+      "toType": "standard_family",
+      "toId": "STD-27001"
+    },
+    {
+      "id": "rel-8a012d579020",
+      "fromType": "course",
+      "fromId": "CRS-G-22301",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-fde45e65b579",
+      "fromType": "course",
+      "fromId": "CRS-G-22301",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-f2ed61f9bb41",
+      "fromType": "course",
+      "fromId": "CRS-G-22301",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "BC-01"
+    },
+    {
+      "id": "rel-89f623c52337",
+      "fromType": "course",
+      "fromId": "CRS-G-22301",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "BC-02"
+    },
+    {
+      "id": "rel-c3a2f21564f2",
+      "fromType": "course",
+      "fromId": "CRS-G-22301",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso22301"
+    },
+    {
+      "id": "rel-0e32f34dcef4",
+      "fromType": "course",
+      "fromId": "CRS-G-31000",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-1959eb9d828f",
+      "fromType": "course",
+      "fromId": "CRS-G-31000",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-efb2899b4d5c",
+      "fromType": "course",
+      "fromId": "CRS-G-31000",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-672b88ca6d17",
+      "fromType": "course",
+      "fromId": "CRS-G-31000",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso31000"
+    },
+    {
+      "id": "rel-70c0a52cafc9",
+      "fromType": "course",
+      "fromId": "CRS-G-37000",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "GOV-01"
+    },
+    {
+      "id": "rel-5a28f1355e1e",
+      "fromType": "course",
+      "fromId": "CRS-G-37000",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "GOV-02"
+    },
+    {
+      "id": "rel-73bf07b38709",
+      "fromType": "course",
+      "fromId": "CRS-G-37000",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-f111f3ce50d1",
+      "fromType": "course",
+      "fromId": "CRS-G-37000",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso37000"
+    },
+    {
+      "id": "rel-7c81fb010040",
+      "fromType": "course",
+      "fromId": "CRS-G-37001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "CMP-02"
+    },
+    {
+      "id": "rel-77ac5e62c5dc",
+      "fromType": "course",
+      "fromId": "CRS-G-37001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-0d9da8cba08e",
+      "fromType": "course",
+      "fromId": "CRS-G-37001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-ac13d68cb536",
+      "fromType": "course",
+      "fromId": "CRS-G-37001",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-cc0a36d5bf8f",
+      "fromType": "course",
+      "fromId": "CRS-G-37001",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso37001"
+    },
+    {
+      "id": "rel-b3e290e89a0b",
+      "fromType": "course",
+      "fromId": "CRS-G-37301",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-f199f3c87cb6",
+      "fromType": "course",
+      "fromId": "CRS-G-37301",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "GOV-02"
+    },
+    {
+      "id": "rel-cdb92df21b1c",
+      "fromType": "course",
+      "fromId": "CRS-G-37301",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-882c0d2daa6a",
+      "fromType": "course",
+      "fromId": "CRS-G-37301",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-c8cec9d1e9a9",
+      "fromType": "course",
+      "fromId": "CRS-G-37301",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso37301"
+    },
+    {
+      "id": "rel-d71e1b2d4d8f",
+      "fromType": "course",
+      "fromId": "CRS-M-RCA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-f2b7539b86c8",
+      "fromType": "course",
+      "fromId": "CRS-M-RCA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-49dd6f0e6711",
+      "fromType": "course",
+      "fromId": "CRS-M-RCA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "rca"
+    },
+    {
+      "id": "rel-21e26a1870f3",
+      "fromType": "course",
+      "fromId": "CRS-M-RCA",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-M-CAPA"
+    },
+    {
+      "id": "rel-f47fdb0f0cea",
+      "fromType": "course",
+      "fromId": "CRS-M-WHY5",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-de1b280fd194",
+      "fromType": "course",
+      "fromId": "CRS-M-WHY5",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "why5"
+    },
+    {
+      "id": "rel-c492d425236a",
+      "fromType": "course",
+      "fromId": "CRS-M-WHY5",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-M-RCA"
+    },
+    {
+      "id": "rel-63fe2e5a8afb",
+      "fromType": "course",
+      "fromId": "CRS-M-FISH",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-706f5a6bb32a",
+      "fromType": "course",
+      "fromId": "CRS-M-FISH",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-75070ee4b698",
+      "fromType": "course",
+      "fromId": "CRS-M-FISH",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "fish"
+    },
+    {
+      "id": "rel-9211fbeb8eda",
+      "fromType": "course",
+      "fromId": "CRS-M-FISH",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-M-WHY5"
+    },
+    {
+      "id": "rel-d62f07bfcd52",
+      "fromType": "course",
+      "fromId": "CRS-M-CAPA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-30dd5c5890d8",
+      "fromType": "course",
+      "fromId": "CRS-M-CAPA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-227bc9a808bb",
+      "fromType": "course",
+      "fromId": "CRS-M-CAPA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "capa"
+    },
+    {
+      "id": "rel-6cbffe19db88",
+      "fromType": "course",
+      "fromId": "CRS-M-PARETO",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-38d24e348b16",
+      "fromType": "course",
+      "fromId": "CRS-M-PARETO",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-e4988536bcdb",
+      "fromType": "course",
+      "fromId": "CRS-M-PARETO",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pareto"
+    },
+    {
+      "id": "rel-3aab3a5a0993",
+      "fromType": "course",
+      "fromId": "CRS-M-PARETO",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-M-PDCA"
+    },
+    {
+      "id": "rel-6ba5a5d990dd",
+      "fromType": "course",
+      "fromId": "CRS-M-PDCA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-02b026146cac",
+      "fromType": "course",
+      "fromId": "CRS-M-PDCA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-495b75f059c9",
+      "fromType": "course",
+      "fromId": "CRS-M-PDCA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pdca"
+    },
+    {
+      "id": "rel-318c2e027334",
+      "fromType": "course",
+      "fromId": "CRS-M-PDCA",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-M-A3"
+    },
+    {
+      "id": "rel-da76a5c1040b",
+      "fromType": "course",
+      "fromId": "CRS-M-A3",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-c16d4073bcbb",
+      "fromType": "course",
+      "fromId": "CRS-M-A3",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-cda9218a42a9",
+      "fromType": "course",
+      "fromId": "CRS-M-A3",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "a3"
+    },
+    {
+      "id": "rel-21876ef7d9e8",
+      "fromType": "course",
+      "fromId": "CRS-M-A3",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-M-DMAIC"
+    },
+    {
+      "id": "rel-a98bb855cdfb",
+      "fromType": "course",
+      "fromId": "CRS-M-DMAIC",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-6370fade1a2e",
+      "fromType": "course",
+      "fromId": "CRS-M-DMAIC",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-aa816ad474ed",
+      "fromType": "course",
+      "fromId": "CRS-M-DMAIC",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-568e305296c7",
+      "fromType": "course",
+      "fromId": "CRS-M-DMAIC",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "dmaic"
+    },
+    {
+      "id": "rel-3740bb27b964",
+      "fromType": "course",
+      "fromId": "CRS-M-FMEA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-c315195ea9c5",
+      "fromType": "course",
+      "fromId": "CRS-M-FMEA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-d20e5d3314a2",
+      "fromType": "course",
+      "fromId": "CRS-M-FMEA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-83a8696ba25f",
+      "fromType": "course",
+      "fromId": "CRS-M-FMEA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "fmea"
+    },
+    {
+      "id": "rel-297887cc539e",
+      "fromType": "course",
+      "fromId": "CRS-M-SWOT",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-f3416bf09161",
+      "fromType": "course",
+      "fromId": "CRS-M-SWOT",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-2b713afa8759",
+      "fromType": "course",
+      "fromId": "CRS-M-SWOT",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "swot"
+    },
+    {
+      "id": "rel-5e7f1c6a88a8",
+      "fromType": "course",
+      "fromId": "CRS-M-PESTLE",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-325e088175f3",
+      "fromType": "course",
+      "fromId": "CRS-M-PESTLE",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-b899b39a6f58",
+      "fromType": "course",
+      "fromId": "CRS-M-PESTLE",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pestle"
+    },
+    {
+      "id": "rel-109330470d67",
+      "fromType": "course",
+      "fromId": "CRS-M-STAKE",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "PM-02"
+    },
+    {
+      "id": "rel-c51704241800",
+      "fromType": "course",
+      "fromId": "CRS-M-STAKE",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-e0638d4ef124",
+      "fromType": "course",
+      "fromId": "CRS-M-STAKE",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "stakeholders"
+    },
+    {
+      "id": "rel-cfb3fa2c0fe4",
+      "fromType": "course",
+      "fromId": "CRS-M-LESSONS",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-f980cedf8f93",
+      "fromType": "course",
+      "fromId": "CRS-M-LESSONS",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-32d859873c53",
+      "fromType": "course",
+      "fromId": "CRS-M-LESSONS",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "lessons"
+    },
+    {
+      "id": "rel-7d6e72b10836",
+      "fromType": "course",
+      "fromId": "CRS-M-10009",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-abaa4dd5caea",
+      "fromType": "course",
+      "fromId": "CRS-M-10009",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-01"
+    },
+    {
+      "id": "rel-f5c1092a0fe7",
+      "fromType": "course",
+      "fromId": "CRS-M-10009",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso10009"
+    },
+    {
+      "id": "rel-78e25716641a",
+      "fromType": "assessment",
+      "fromId": "ASM-G-9001-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-9001"
+    },
+    {
+      "id": "rel-59d3cac0137f",
+      "fromType": "assessment",
+      "fromId": "ASM-G-9001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-6fcda5e83c7d",
+      "fromType": "assessment",
+      "fromId": "ASM-G-9001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-b2b8a769b759",
+      "fromType": "assessment",
+      "fromId": "ASM-G-9001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-a68ae62ae164",
+      "fromType": "assessment",
+      "fromId": "ASM-G-9001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-01"
+    },
+    {
+      "id": "rel-a9a521da350c",
+      "fromType": "assessment",
+      "fromId": "ASM-G-9001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-04"
+    },
+    {
+      "id": "rel-4b6e8dcabb87",
+      "fromType": "assessment",
+      "fromId": "ASM-G-9001-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-9001"
+    },
+    {
+      "id": "rel-571a8f4f9dc8",
+      "fromType": "assessment",
+      "fromId": "ASM-G-9001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-eeeac44f637e",
+      "fromType": "assessment",
+      "fromId": "ASM-G-9001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-04"
+    },
+    {
+      "id": "rel-5e49af4b3aec",
+      "fromType": "assessment",
+      "fromId": "ASM-G-9001-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-9001"
+    },
+    {
+      "id": "rel-6187a0d4b0e7",
+      "fromType": "assessment",
+      "fromId": "ASM-G-9001-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-c89aabbcd645",
+      "fromType": "assessment",
+      "fromId": "ASM-G-14001-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-14001"
+    },
+    {
+      "id": "rel-b6ffc5a271ca",
+      "fromType": "assessment",
+      "fromId": "ASM-G-14001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-afb2f312637b",
+      "fromType": "assessment",
+      "fromId": "ASM-G-14001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-4cb5dfe473ce",
+      "fromType": "assessment",
+      "fromId": "ASM-G-14001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-4bd1bf7bc949",
+      "fromType": "assessment",
+      "fromId": "ASM-G-14001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-188dea2c1716",
+      "fromType": "assessment",
+      "fromId": "ASM-G-14001-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-14001"
+    },
+    {
+      "id": "rel-284c7b11a0e1",
+      "fromType": "assessment",
+      "fromId": "ASM-G-14001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-ca5dc1c3268b",
+      "fromType": "assessment",
+      "fromId": "ASM-G-14001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-dba257681b45",
+      "fromType": "assessment",
+      "fromId": "ASM-G-14001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-63fd834d79d4",
+      "fromType": "assessment",
+      "fromId": "ASM-G-14001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-1fea39595c49",
+      "fromType": "assessment",
+      "fromId": "ASM-G-14001-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-14001"
+    },
+    {
+      "id": "rel-4ff7d81c1ae7",
+      "fromType": "assessment",
+      "fromId": "ASM-G-14001-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-17d9ad7a5db4",
+      "fromType": "assessment",
+      "fromId": "ASM-G-45001-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-45001"
+    },
+    {
+      "id": "rel-5047219ab5a3",
+      "fromType": "assessment",
+      "fromId": "ASM-G-45001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-7d70de707464",
+      "fromType": "assessment",
+      "fromId": "ASM-G-45001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-1bae8b41e2b1",
+      "fromType": "assessment",
+      "fromId": "ASM-G-45001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-f73c4d971cf9",
+      "fromType": "assessment",
+      "fromId": "ASM-G-45001-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-45001"
+    },
+    {
+      "id": "rel-c8bf29970503",
+      "fromType": "assessment",
+      "fromId": "ASM-G-45001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-65d1cb1c491e",
+      "fromType": "assessment",
+      "fromId": "ASM-G-45001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-4a360398c5b2",
+      "fromType": "assessment",
+      "fromId": "ASM-G-45001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-cde0254d5253",
+      "fromType": "assessment",
+      "fromId": "ASM-G-45001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-472b75987348",
+      "fromType": "assessment",
+      "fromId": "ASM-G-45001-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-45001"
+    },
+    {
+      "id": "rel-f6b18e90cb44",
+      "fromType": "assessment",
+      "fromId": "ASM-G-45001-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-e12e7fa9544b",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-27001"
+    },
+    {
+      "id": "rel-ea39d3bc4232",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-42677ff5e949",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISA-01"
+    },
+    {
+      "id": "rel-b9b9913b2b33",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-183285518045",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-dbb8f76500be",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-c640aa5e25ec",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-27001"
+    },
+    {
+      "id": "rel-d9ada90ffffd",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-73cf31954c5a",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISA-01"
+    },
+    {
+      "id": "rel-fd1fa253ce4f",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-f5d5ce6c4b59",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-3fd946ead6c7",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-2bbe060dbae1",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-27001"
+    },
+    {
+      "id": "rel-92f2b8d8ecbf",
+      "fromType": "assessment",
+      "fromId": "ASM-G-27001-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-00c001eb3f2d",
+      "fromType": "assessment",
+      "fromId": "ASM-G-22301-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-22301"
+    },
+    {
+      "id": "rel-8b612541db11",
+      "fromType": "assessment",
+      "fromId": "ASM-G-22301-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "BC-01"
+    },
+    {
+      "id": "rel-a0a72f8a5bb7",
+      "fromType": "assessment",
+      "fromId": "ASM-G-22301-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "BC-02"
+    },
+    {
+      "id": "rel-c4b1bf4017f5",
+      "fromType": "assessment",
+      "fromId": "ASM-G-22301-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-748be98ef311",
+      "fromType": "assessment",
+      "fromId": "ASM-G-22301-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-ea31b4cf3895",
+      "fromType": "assessment",
+      "fromId": "ASM-G-22301-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-22301"
+    },
+    {
+      "id": "rel-8a196ef287c4",
+      "fromType": "assessment",
+      "fromId": "ASM-G-22301-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "BC-01"
+    },
+    {
+      "id": "rel-3d641d8cc7e7",
+      "fromType": "assessment",
+      "fromId": "ASM-G-22301-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "BC-02"
+    },
+    {
+      "id": "rel-bab5db854332",
+      "fromType": "assessment",
+      "fromId": "ASM-G-22301-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-48d4bd2967c8",
+      "fromType": "assessment",
+      "fromId": "ASM-G-22301-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-eccb031b0e04",
+      "fromType": "assessment",
+      "fromId": "ASM-G-22301-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-22301"
+    },
+    {
+      "id": "rel-7d7c6344d609",
+      "fromType": "assessment",
+      "fromId": "ASM-G-22301-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-4abd88f7906e",
+      "fromType": "assessment",
+      "fromId": "ASM-G-31000-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-31000"
+    },
+    {
+      "id": "rel-13ad480c468e",
+      "fromType": "assessment",
+      "fromId": "ASM-G-31000-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-195e3fb7bbd1",
+      "fromType": "assessment",
+      "fromId": "ASM-G-31000-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-1d5565e87713",
+      "fromType": "assessment",
+      "fromId": "ASM-G-31000-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-1c345e3a7c06",
+      "fromType": "assessment",
+      "fromId": "ASM-G-31000-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-31000"
+    },
+    {
+      "id": "rel-f833bfa4d31a",
+      "fromType": "assessment",
+      "fromId": "ASM-G-31000-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-1a3b44774b5a",
+      "fromType": "assessment",
+      "fromId": "ASM-G-31000-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-64b0550bdb9a",
+      "fromType": "assessment",
+      "fromId": "ASM-G-31000-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-a023eb4cffff",
+      "fromType": "assessment",
+      "fromId": "ASM-G-31000-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-31000"
+    },
+    {
+      "id": "rel-5c5f04ff5385",
+      "fromType": "assessment",
+      "fromId": "ASM-G-31000-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-9cd1a6c6ecff",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37000-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-37000"
+    },
+    {
+      "id": "rel-a85fb1c173d4",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37000-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "GOV-01"
+    },
+    {
+      "id": "rel-908458645181",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37000-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "GOV-02"
+    },
+    {
+      "id": "rel-69da82f26ab0",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37000-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-4a2eb4fa0b85",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37000-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-37000"
+    },
+    {
+      "id": "rel-b0c828592448",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37000-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "GOV-01"
+    },
+    {
+      "id": "rel-34fac1a4e9f6",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37000-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "GOV-02"
+    },
+    {
+      "id": "rel-542284f86feb",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37000-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-a00d8c053a73",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37000-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-37000"
+    },
+    {
+      "id": "rel-99a89e8e9e51",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37000-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "GOV-01"
+    },
+    {
+      "id": "rel-578f8330425c",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37001-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-37001"
+    },
+    {
+      "id": "rel-5ecbb3f39942",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-537c9a29be7c",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-02"
+    },
+    {
+      "id": "rel-553bcd22719d",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-ee2b381b99e8",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37001-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-8e1f14891681",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37001-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-37001"
+    },
+    {
+      "id": "rel-b7542a39f3c9",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-32fd3cfeb9b6",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-02"
+    },
+    {
+      "id": "rel-1e4a564ee141",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-95eab3203703",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37001-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-c0d1c591d80c",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37001-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-37001"
+    },
+    {
+      "id": "rel-89e70a3f8c88",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37001-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-02"
+    },
+    {
+      "id": "rel-6984b05f4cb7",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37301-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-37301"
+    },
+    {
+      "id": "rel-6676a849a5ec",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37301-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-6f40093793cb",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37301-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "GOV-02"
+    },
+    {
+      "id": "rel-f151d80cdb3d",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37301-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-2a368913b2e8",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37301-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-174e09e642c0",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37301-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-37301"
+    },
+    {
+      "id": "rel-aa99808be46d",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37301-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-22a9dd5b06c2",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37301-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "GOV-02"
+    },
+    {
+      "id": "rel-4f927f871df6",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37301-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-7c5f84517dc4",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37301-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-1ce29cb1fbc7",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37301-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-G-37301"
+    },
+    {
+      "id": "rel-96da4cddb79d",
+      "fromType": "assessment",
+      "fromId": "ASM-G-37301-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "CMP-01"
+    },
+    {
+      "id": "rel-639880a7af7c",
+      "fromType": "assessment",
+      "fromId": "ASM-M-RCA-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-RCA"
+    },
+    {
+      "id": "rel-6db59c755cd6",
+      "fromType": "assessment",
+      "fromId": "ASM-M-RCA-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-1adfaa8a324d",
+      "fromType": "assessment",
+      "fromId": "ASM-M-RCA-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-5135bcb4eaa7",
+      "fromType": "assessment",
+      "fromId": "ASM-M-RCA-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-RCA"
+    },
+    {
+      "id": "rel-f14c79a8b94a",
+      "fromType": "assessment",
+      "fromId": "ASM-M-RCA-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-346e3240ff18",
+      "fromType": "assessment",
+      "fromId": "ASM-M-RCA-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-a7d5b3a51bd0",
+      "fromType": "assessment",
+      "fromId": "ASM-M-RCA-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-RCA"
+    },
+    {
+      "id": "rel-82796bb58224",
+      "fromType": "assessment",
+      "fromId": "ASM-M-RCA-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-5831ff788939",
+      "fromType": "assessment",
+      "fromId": "ASM-M-WHY5-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-WHY5"
+    },
+    {
+      "id": "rel-3fdd7b0a923c",
+      "fromType": "assessment",
+      "fromId": "ASM-M-WHY5-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-ed621790669d",
+      "fromType": "assessment",
+      "fromId": "ASM-M-WHY5-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-WHY5"
+    },
+    {
+      "id": "rel-89641d6b536f",
+      "fromType": "assessment",
+      "fromId": "ASM-M-WHY5-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-94b6b36d88e2",
+      "fromType": "assessment",
+      "fromId": "ASM-M-WHY5-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-WHY5"
+    },
+    {
+      "id": "rel-a24bb75d920e",
+      "fromType": "assessment",
+      "fromId": "ASM-M-WHY5-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-ab5f587a8d54",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FISH-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-FISH"
+    },
+    {
+      "id": "rel-dd6b8fe37cc8",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FISH-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-345dfea2fe37",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FISH-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-2c03d48f8531",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FISH-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-FISH"
+    },
+    {
+      "id": "rel-f703363ddbe7",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FISH-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-c03e1cb768fb",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FISH-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-1590de853a44",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FISH-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-FISH"
+    },
+    {
+      "id": "rel-5586233a9c76",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FISH-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-74f3dcca5b76",
+      "fromType": "assessment",
+      "fromId": "ASM-M-CAPA-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-CAPA"
+    },
+    {
+      "id": "rel-cacbb97bccbc",
+      "fromType": "assessment",
+      "fromId": "ASM-M-CAPA-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-19ec491caa98",
+      "fromType": "assessment",
+      "fromId": "ASM-M-CAPA-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-ec98871e98f7",
+      "fromType": "assessment",
+      "fromId": "ASM-M-CAPA-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-CAPA"
+    },
+    {
+      "id": "rel-153defa6fb9d",
+      "fromType": "assessment",
+      "fromId": "ASM-M-CAPA-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-8aebf61c0d31",
+      "fromType": "assessment",
+      "fromId": "ASM-M-CAPA-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-de162929a364",
+      "fromType": "assessment",
+      "fromId": "ASM-M-CAPA-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-CAPA"
+    },
+    {
+      "id": "rel-afa190dd9ea4",
+      "fromType": "assessment",
+      "fromId": "ASM-M-CAPA-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-ff90a75a1fe8",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PARETO-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-PARETO"
+    },
+    {
+      "id": "rel-18a728bb5d32",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PARETO-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-757809a4b85f",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PARETO-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-aeaf9b40b7bd",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PARETO-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-PARETO"
+    },
+    {
+      "id": "rel-d14bc78cb0d4",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PARETO-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-125469e42006",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PARETO-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-050dd0833e97",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PARETO-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-PARETO"
+    },
+    {
+      "id": "rel-21db03e6a9d4",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PARETO-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-fa8eb937f932",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PDCA-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-PDCA"
+    },
+    {
+      "id": "rel-49e1b29659aa",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PDCA-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-96db8ee2c78f",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PDCA-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-dbbfe140cbd3",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PDCA-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-PDCA"
+    },
+    {
+      "id": "rel-3757ae0c778b",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PDCA-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-e57e741a8e7a",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PDCA-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-083286863911",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PDCA-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-PDCA"
+    },
+    {
+      "id": "rel-f1006018000b",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PDCA-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-312e11aac209",
+      "fromType": "assessment",
+      "fromId": "ASM-M-A3-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-A3"
+    },
+    {
+      "id": "rel-072ad3a6063e",
+      "fromType": "assessment",
+      "fromId": "ASM-M-A3-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-9eb336c61af6",
+      "fromType": "assessment",
+      "fromId": "ASM-M-A3-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-21c7e7806db1",
+      "fromType": "assessment",
+      "fromId": "ASM-M-A3-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-A3"
+    },
+    {
+      "id": "rel-ff966c293124",
+      "fromType": "assessment",
+      "fromId": "ASM-M-A3-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-29839c4dd894",
+      "fromType": "assessment",
+      "fromId": "ASM-M-A3-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-98ffe93040a0",
+      "fromType": "assessment",
+      "fromId": "ASM-M-A3-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-A3"
+    },
+    {
+      "id": "rel-c62eed352a6c",
+      "fromType": "assessment",
+      "fromId": "ASM-M-A3-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-0b43682f70a3",
+      "fromType": "assessment",
+      "fromId": "ASM-M-DMAIC-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-DMAIC"
+    },
+    {
+      "id": "rel-ab0372df0812",
+      "fromType": "assessment",
+      "fromId": "ASM-M-DMAIC-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-bf5d03c051a9",
+      "fromType": "assessment",
+      "fromId": "ASM-M-DMAIC-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-45e655dc7b47",
+      "fromType": "assessment",
+      "fromId": "ASM-M-DMAIC-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-16ffed2b0508",
+      "fromType": "assessment",
+      "fromId": "ASM-M-DMAIC-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-DMAIC"
+    },
+    {
+      "id": "rel-a4e7c0623200",
+      "fromType": "assessment",
+      "fromId": "ASM-M-DMAIC-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-2193f3561480",
+      "fromType": "assessment",
+      "fromId": "ASM-M-DMAIC-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-2acfdc0997e7",
+      "fromType": "assessment",
+      "fromId": "ASM-M-DMAIC-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-26a2787b3ec8",
+      "fromType": "assessment",
+      "fromId": "ASM-M-DMAIC-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-DMAIC"
+    },
+    {
+      "id": "rel-f87436a4be0b",
+      "fromType": "assessment",
+      "fromId": "ASM-M-DMAIC-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-97c7c33122c3",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FMEA-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-FMEA"
+    },
+    {
+      "id": "rel-abc8d323e391",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FMEA-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-179788ecbcb5",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FMEA-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-a8ac40c3e88f",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FMEA-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-66d75dfbb2bd",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FMEA-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-FMEA"
+    },
+    {
+      "id": "rel-9db48f0210ed",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FMEA-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-8254795bd240",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FMEA-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-3102cc21e1ee",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FMEA-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-d19170c44d0b",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FMEA-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-FMEA"
+    },
+    {
+      "id": "rel-1f19f0038681",
+      "fromType": "assessment",
+      "fromId": "ASM-M-FMEA-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-71abfe0f6349",
+      "fromType": "assessment",
+      "fromId": "ASM-M-SWOT-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-SWOT"
+    },
+    {
+      "id": "rel-07a416225965",
+      "fromType": "assessment",
+      "fromId": "ASM-M-SWOT-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-c05e04679571",
+      "fromType": "assessment",
+      "fromId": "ASM-M-SWOT-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-960e4727b0be",
+      "fromType": "assessment",
+      "fromId": "ASM-M-SWOT-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-SWOT"
+    },
+    {
+      "id": "rel-d754103e5431",
+      "fromType": "assessment",
+      "fromId": "ASM-M-SWOT-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-d896b538107c",
+      "fromType": "assessment",
+      "fromId": "ASM-M-SWOT-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-9dfd3df794ce",
+      "fromType": "assessment",
+      "fromId": "ASM-M-SWOT-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-SWOT"
+    },
+    {
+      "id": "rel-00a5d26b1094",
+      "fromType": "assessment",
+      "fromId": "ASM-M-SWOT-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-6a1fe141c498",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PESTLE-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-PESTLE"
+    },
+    {
+      "id": "rel-209fc5be2a7e",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PESTLE-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-1da191e77b87",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PESTLE-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-6b2beed7e288",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PESTLE-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-PESTLE"
+    },
+    {
+      "id": "rel-83e305348dc7",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PESTLE-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-2fc2722a0ced",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PESTLE-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-82df9e4139d1",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PESTLE-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-PESTLE"
+    },
+    {
+      "id": "rel-27837e9f389b",
+      "fromType": "assessment",
+      "fromId": "ASM-M-PESTLE-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-7f2677614f2e",
+      "fromType": "assessment",
+      "fromId": "ASM-M-STAKE-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-STAKE"
+    },
+    {
+      "id": "rel-e2acf41e7308",
+      "fromType": "assessment",
+      "fromId": "ASM-M-STAKE-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-95ef46e171b1",
+      "fromType": "assessment",
+      "fromId": "ASM-M-STAKE-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "PM-02"
+    },
+    {
+      "id": "rel-1d6199b46c65",
+      "fromType": "assessment",
+      "fromId": "ASM-M-STAKE-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-STAKE"
+    },
+    {
+      "id": "rel-42db12e990aa",
+      "fromType": "assessment",
+      "fromId": "ASM-M-STAKE-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-99d9f4fce822",
+      "fromType": "assessment",
+      "fromId": "ASM-M-STAKE-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "PM-02"
+    },
+    {
+      "id": "rel-688f71765c45",
+      "fromType": "assessment",
+      "fromId": "ASM-M-STAKE-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-STAKE"
+    },
+    {
+      "id": "rel-47a7f4b63021",
+      "fromType": "assessment",
+      "fromId": "ASM-M-STAKE-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "PM-02"
+    },
+    {
+      "id": "rel-1db17891c7c6",
+      "fromType": "assessment",
+      "fromId": "ASM-M-LESSONS-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-LESSONS"
+    },
+    {
+      "id": "rel-ccd66f63eb41",
+      "fromType": "assessment",
+      "fromId": "ASM-M-LESSONS-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-1a4e5cb61a45",
+      "fromType": "assessment",
+      "fromId": "ASM-M-LESSONS-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-9b5992bc30d5",
+      "fromType": "assessment",
+      "fromId": "ASM-M-LESSONS-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-LESSONS"
+    },
+    {
+      "id": "rel-0db746a9efa2",
+      "fromType": "assessment",
+      "fromId": "ASM-M-LESSONS-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-e20667645a46",
+      "fromType": "assessment",
+      "fromId": "ASM-M-LESSONS-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-d5423ca26c93",
+      "fromType": "assessment",
+      "fromId": "ASM-M-LESSONS-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-LESSONS"
+    },
+    {
+      "id": "rel-94e3020e0be4",
+      "fromType": "assessment",
+      "fromId": "ASM-M-LESSONS-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-e74db8df5751",
+      "fromType": "assessment",
+      "fromId": "ASM-M-10009-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-10009"
+    },
+    {
+      "id": "rel-a15f4c153f9f",
+      "fromType": "assessment",
+      "fromId": "ASM-M-10009-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-01"
+    },
+    {
+      "id": "rel-44c8586c5cde",
+      "fromType": "assessment",
+      "fromId": "ASM-M-10009-QUIZ",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-bde1872bc303",
+      "fromType": "assessment",
+      "fromId": "ASM-M-10009-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-10009"
+    },
+    {
+      "id": "rel-dadea706bdf2",
+      "fromType": "assessment",
+      "fromId": "ASM-M-10009-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-01"
+    },
+    {
+      "id": "rel-5e8eef988a92",
+      "fromType": "assessment",
+      "fromId": "ASM-M-10009-FINAL",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-1ab6a85cf4c5",
+      "fromType": "assessment",
+      "fromId": "ASM-M-10009-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-M-10009"
+    },
+    {
+      "id": "rel-c7ef8c42049a",
+      "fromType": "assessment",
+      "fromId": "ASM-M-10009-PRACT",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-e0c8a1d73c8a",
+      "fromType": "course",
+      "fromId": "CRS-ISO-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-SIM-02"
+    },
+    {
+      "id": "rel-eaacacaa7c23",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-SIM-02"
+    },
+    {
+      "id": "rel-cc0a76201b2a",
+      "fromType": "course",
+      "fromId": "CRS-ISO-14001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-SIM-02"
+    },
+    {
+      "id": "rel-fc533c4ab4b0",
+      "fromType": "course",
+      "fromId": "CRS-ISO-45001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-SIM-02"
+    },
+    {
+      "id": "rel-100e272477c0",
+      "fromType": "course",
+      "fromId": "CRS-ISO-27001-AUD",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-SIM-02"
+    },
+    {
+      "id": "rel-01caac703fb3",
+      "fromType": "course",
+      "fromId": "CRS-G-9001",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-SIM-01"
+    },
+    {
+      "id": "rel-808d7ab5c023",
+      "fromType": "course",
+      "fromId": "CRS-ISO-9001-F",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-SIM-01"
+    },
+    {
+      "id": "rel-634bab3cb4d0",
+      "fromType": "ecosystem",
+      "fromId": "iso",
+      "relation": "references",
+      "toType": "library_resource",
+      "toId": "LIB-SIM-01"
+    }
+  ]
+}

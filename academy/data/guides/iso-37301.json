@@ -1,0 +1,4492 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-37301",
+  "slug": "iso-37301",
+  "kind": "standard",
+  "module": "iso37301",
+  "standard_id": null,
+  "title": {
+   "en": "ISO 37301:2021 Interactive Guide",
+   "ar": "دليل ISO 37301:2021 التفاعلي"
+  },
+  "subtitle": {
+   "en": "Compliance management systems — Requirements with guidance for use",
+   "ar": "أنظمة إدارة الامتثال — المتطلبات مع إرشادات الاستخدام"
+  },
+  "lede": {
+   "en": "Every clause from 4 to 10 explained in clear professional language, with a worked example from a Saudi electrical contractor, the steps to apply it, the evidence an auditor will ask for, and a tool for the obligations register and compliance risk assessment.",
+   "ar": "كل بند من 4 إلى 10 مشروح بلغة مهنية واضحة، مع مثال تطبيقي من شركة مقاولات كهربائية سعودية، وخطوات التطبيق، والأدلة التي سيطلبها المدقق، وأداة لسجل الالتزامات وتقييم مخاطر الامتثال."
+  },
+  "author": "مدثر سلامه",
+  "clauses": [
+   {
+    "id": "4",
+    "phase": "ctx",
+    "title": {
+     "en": "Context of the organization",
+     "ar": "سياق المنظمة"
+    },
+    "intro": {
+     "en": "Compliance starts with knowing what you must comply with and why: the issues that matter, the interested parties, the scope of the system, then a register of obligations from every source, and an assessment of compliance risk. This clause is wider than usual in 37301 because it includes compliance obligations (4.5) and compliance risk assessment (4.6). Since the 2024 amendment you must also decide explicitly whether climate change is a relevant issue.",
+     "ar": "الامتثال يبدأ بمعرفة ما يجب أن تلتزم به ولماذا: القضايا المؤثرة، والأطراف المعنية، ونطاق النظام، ثم سجل الالتزامات بكل مصادرها، وتقييم مخاطر عدم الامتثال. هذا البند في 37301 أوسع من المعتاد لأنه يضم الالتزامات (4.5) وتقييم مخاطر الامتثال (4.6). ومنذ تعديل 2024 يجب أن تقرر صراحة هل تغيّر المناخ قضية ذات صلة."
+    },
+    "items": [
+     {
+      "ref": "4.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Understanding the organization and its context",
+       "ar": "فهم المنظمة وسياقها"
+      },
+      "req": {
+       "en": "Determine the external and internal issues relevant to your purpose that affect your ability to achieve the intended outcomes of the compliance management system, considering the business model, nature, size, complexity and sustainability, the regulatory, social and cultural environment, the economic situation, and internal policies, procedures and resources. Amendment 1:2024 adds that the organization shall determine whether climate change is a relevant issue.",
+       "ar": "حدِّد القضايا الخارجية والداخلية المرتبطة بغرض المنظمة والمؤثرة على قدرتها على تحقيق النتائج المقصودة لنظام إدارة الامتثال، مع مراعاة نموذج الأعمال والطبيعة والحجم والتعقيد والاستدامة، والبيئة التنظيمية والاجتماعية والثقافية، والوضع الاقتصادي، والسياسات والإجراءات والموارد الداخلية. وأضاف التعديل 1:2024 أن تحدد المنظمة هل تغيّر المناخ قضية ذات صلة."
+      },
+      "ex": {
+       "en": "Al-Riyada Electrical Contracting identified external issues such as tighter enforcement against commercial concealment and corruption, local content requirements in government tenders, e-invoicing and the Personal Data Protection Law; and internal issues such as rapid expansion into new projects, heavy reliance on subcontractors and weak documentation of approvals. It concluded that climate change is relevant because of its clients' environmental disclosure requirements.",
+       "ar": "حددت شركة الريادة للمقاولات الكهربائية قضايا خارجية مثل: تشدد الرقابة على مكافحة التستر والفساد، ومتطلبات المحتوى المحلي في المنافسات الحكومية، والفوترة الإلكترونية، ونظام حماية البيانات الشخصية. وقضايا داخلية مثل: التوسع السريع في مشاريع جديدة، والاعتماد الكبير على مقاولي الباطن، وضعف توثيق الموافقات. وقررت أن تغيّر المناخ ذو صلة بسبب اشتراطات الإفصاح البيئي لدى عملائها."
+      },
+      "how": [
+       {
+        "en": "Run a compliance-focused PESTLE and SWOT workshop with top management, legal, procurement and HR.",
+        "ar": "ورشة PESTLE وSWOT مركزة على الامتثال مع الإدارة العليا والشؤون القانونية والمشتريات والموارد البشرية."
+       },
+       {
+        "en": "Record the climate change relevance decision and its reasoning.",
+        "ar": "قرار موثق بشأن صلة تغيّر المناخ ومبرره."
+       },
+       {
+        "en": "Link every significant issue to an obligation (4.5) or a compliance risk (4.6).",
+        "ar": "ربط كل قضية مهمة بالتزام (4.5) أو بخطر امتثال (4.6)."
+       },
+       {
+        "en": "Review the analysis at management review and on any major change.",
+        "ar": "مراجعة التحليل في مراجعة الإدارة وعند أي تغيير كبير."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Up-to-date context analysis",
+        "ar": "تحليل السياق المحدَّث"
+       },
+       {
+        "en": "Climate change decision and rationale",
+        "ar": "قرار تغيّر المناخ ومبرراته"
+       },
+       {
+        "en": "Management review minutes",
+        "ar": "محضر مراجعة الإدارة"
+       }
+      ],
+      "tip": {
+       "en": "In compliance, climate often shows up as disclosure obligations or client requirements. Record the decision even if you conclude it is not relevant.",
+       "ar": "في الامتثال، قضية المناخ تظهر غالباً كالتزامات إفصاح أو اشتراطات عملاء. وثّق القرار حتى لو خلصت إلى عدم الصلة."
+      },
+      "checks": [
+       {
+        "ar": "كيف حُددت القضايا الداخلية والخارجية المؤثرة على الامتثال؟ ومتى رُوجعت؟",
+        "en": "How were internal and external issues affecting compliance determined, and when were they reviewed?"
+       },
+       {
+        "ar": "أين القرار الموثق بشأن صلة تغيّر المناخ (تعديل 2024)؟",
+        "en": "Where is the documented decision on climate change relevance (2024 amendment)?"
+       },
+       {
+        "ar": "كيف انتقلت القضايا إلى سجل الالتزامات وتقييم المخاطر؟",
+        "en": "How did issues flow into the obligations register and risk assessment?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.3",
+         "why": {
+          "ar": "القضايا تُراعى في النطاق.",
+          "en": "Issues are considered in the scope."
+         }
+        },
+        {
+         "ref": "4.6",
+         "why": {
+          "ar": "القضايا تغذي تحديد مخاطر الامتثال.",
+          "en": "Issues feed compliance risk identification."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Needs and expectations of interested parties",
+       "ar": "احتياجات الأطراف المعنية وتوقعاتها"
+      },
+      "req": {
+       "en": "Determine the interested parties relevant to the compliance management system, their relevant requirements, and which of them will be addressed through the system. The 2024 amendment adds a note that parties can have climate-related requirements.",
+       "ar": "حدد الأطراف المعنية ذات الصلة بالنظام ومتطلباتها ذات الصلة، وأيها سيُعالج من خلال النظام. وتشير ملاحظة تعديل 2024 إلى أن الأطراف قد تكون لها متطلبات تتعلق بتغيّر المناخ."
+      },
+      "ex": {
+       "en": "Al-Riyada recorded that regulators expect compliance proven by records, that the government client requires integrity and conflict-of-interest declarations, that banks require know-your-customer reports, and that employees need a safe reporting channel.",
+       "ar": "سجلت الريادة أن الجهات الرقابية تتوقع امتثالاً مثبتاً بالسجلات، وأن العميل الحكومي يشترط إقرارات النزاهة وعدم تضارب المصالح، وأن البنوك تطلب تقارير «اعرف عميلك»، وأن الموظفين يحتاجون قناة آمنة للإبلاغ."
+      },
+      "how": [
+       {
+        "en": "An interested parties register with a decision on whether the system addresses each requirement.",
+        "ar": "سجل الأطراف والمتطلبات مع قرار «يعالجه النظام أم لا»."
+       },
+       {
+        "en": "Distinguish mandatory from voluntary requirements.",
+        "ar": "التمييز بين المتطلبات الملزمة والطوعية."
+       },
+       {
+        "en": "Selected requirements move into the obligations register (4.5).",
+        "ar": "المتطلبات الملزمة المختارة تنتقل إلى سجل الالتزامات (4.5)."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Interested parties and requirements register",
+        "ar": "سجل الأطراف المعنية ومتطلباتها"
+       }
+      ],
+      "tip": {
+       "en": "Every voluntary requirement the organization adopts becomes an obligation; choose deliberately.",
+       "ar": "كل متطلب طوعي تتبناه المنظمة يصبح التزاماً عليها؛ اختر بوعي."
+      },
+      "checks": [
+       {
+        "ar": "من هي الأطراف المعنية وما متطلباتها ذات الصلة بالامتثال؟",
+        "en": "Who are the interested parties and what are their compliance-related requirements?"
+       },
+       {
+        "ar": "أين القرار بأي المتطلبات يعالجها النظام؟",
+        "en": "Where is the decision on which requirements the system addresses?"
+       },
+       {
+        "ar": "هل رُوعيت متطلبات المناخ لدى الأطراف؟",
+        "en": "Were parties' climate-related requirements considered?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.5",
+         "why": {
+          "ar": "متطلبات الأطراف المختارة تصبح التزامات.",
+          "en": "Selected party requirements become obligations."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Determining the scope of the compliance management system",
+       "ar": "تحديد نطاق النظام"
+      },
+      "req": {
+       "en": "Set the boundaries and applicability of the system considering the issues, requirements, organizational structure, activities, compliance obligations and the results of the compliance risk assessment. The scope is available as documented information.",
+       "ar": "حدد حدود النظام وقابلية تطبيقه بمراعاة القضايا والمتطلبات والهيكل والأنشطة والتزامات الامتثال ونتائج تقييم مخاطر الامتثال. والنطاق متاح كمعلومات موثقة."
+      },
+      "ex": {
+       "en": "Al-Riyada's scope: 'All company activities in the Kingdom: tenders and contracts, procurement and subcontractors, site execution, HR, finance and invoicing, and personal data processing', with no exclusions.",
+       "ar": "نطاق الريادة: «كل أنشطة الشركة في المملكة: المناقصات والعقود، والمشتريات ومقاولي الباطن، والتنفيذ الميداني، والموارد البشرية، والمالية والفوترة، ومعالجة البيانات الشخصية»، مع استثناء لا شيء."
+      },
+      "how": [
+       {
+        "en": "A scope covering the functions where material obligations arise.",
+        "ar": "نطاق يغطي الوظائف التي تنشأ فيها التزامات جوهرية."
+       },
+       {
+        "en": "Link the scope to the risk assessment results (4.6).",
+        "ar": "ربط النطاق بنتائج تقييم المخاطر (4.6)."
+       },
+       {
+        "en": "Justify any exclusion; never exclude a high-risk function.",
+        "ar": "برر أي استبعاد، ولا تستبعد وظيفة عالية المخاطر."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Documented scope statement",
+        "ar": "بيان النطاق الموثق"
+       }
+      ],
+      "tip": {
+       "en": "Excluding procurement or sales from a compliance system is rarely justified; that is where the highest risks sit.",
+       "ar": "استبعاد المشتريات أو المبيعات من نظام امتثال نادراً ما يكون مبرراً؛ فيهما أعلى المخاطر."
+      },
+      "checks": [
+       {
+        "ar": "اعرض بيان النطاق: هل يغطي الوظائف والمواقع ذات المخاطر؟",
+        "en": "Show the scope statement: does it cover risky functions and sites?"
+       },
+       {
+        "ar": "كيف أثرت نتائج تقييم المخاطر على النطاق؟",
+        "en": "How did risk assessment results shape the scope?"
+       },
+       {
+        "ar": "ما مبرر أي استبعاد؟",
+        "en": "What justifies any exclusion?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "4.1",
+         "why": {
+          "ar": "القضايا تُراعى في النطاق.",
+          "en": "Issues are considered in the scope."
+         }
+        },
+        {
+         "ref": "4.6",
+         "why": {
+          "ar": "نتائج تقييم المخاطر تؤثر في النطاق.",
+          "en": "Risk assessment results shape the scope."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "4.4",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Compliance management system",
+       "ar": "نظام إدارة الامتثال"
+      },
+      "req": {
+       "en": "Establish, implement, maintain and continually improve the system, including its processes and their interactions, reflecting the organization's values, objectives, strategy and compliance risks, taking the context into account.",
+       "ar": "أنشئ النظام وطبّقه وحافظ عليه وحسّنه باستمرار، بما في ذلك العمليات وتفاعلاتها، بحيث يعكس قيم المنظمة وأهدافها واستراتيجيتها ومخاطر الامتثال مع مراعاة السياق."
+      },
+      "ex": {
+       "en": "Al-Riyada mapped the system processes: identifying obligations, assessing risk, controls and procedures, training, raising concerns, investigation, monitoring and reporting, and improvement, with an owner for each.",
+       "ar": "رسمت الريادة خريطة عمليات النظام: تحديد الالتزامات، وتقييم المخاطر، والضوابط والإجراءات، والتدريب، والإبلاغ عن المخاوف، والتحقيق، والرصد والتقارير، والتحسين، مع مالك لكل عملية."
+      },
+      "how": [
+       {
+        "en": "A process map with inputs and outputs.",
+        "ar": "خريطة عمليات بالمدخلات والمخرجات."
+       },
+       {
+        "en": "Link the system to the organization's values and code of conduct.",
+        "ar": "ربط النظام بقيم المنظمة ومدونة السلوك."
+       },
+       {
+        "en": "Integrate it with existing systems (quality, anti-bribery, information security).",
+        "ar": "دمجه مع أنظمة الإدارة القائمة (الجودة، مكافحة الرشوة، أمن المعلومات)."
+       }
+      ],
+      "ev": [
+       {
+        "en": "System process map",
+        "ar": "خريطة عمليات النظام"
+       },
+       {
+        "en": "Manual or system description",
+        "ar": "دليل النظام أو وصفه"
+       }
+      ],
+      "tip": {
+       "en": "A successful compliance system looks like part of everyday work, not a separate policing department.",
+       "ar": "نظام الامتثال الناجح يبدو كجزء من طريقة العمل اليومية، لا كقسم رقابي منفصل."
+      },
+      "checks": [
+       {
+        "ar": "ما عمليات النظام وكيف تتفاعل؟",
+        "en": "What are the system processes and how do they interact?"
+       },
+       {
+        "ar": "كيف يعكس النظام قيم المنظمة؟",
+        "en": "How does the system reflect the organization's values?"
+       },
+       {
+        "ar": "كيف دُمج مع أنظمة الإدارة الأخرى؟",
+        "en": "How is it integrated with other management systems?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "10.1",
+         "why": {
+          "ar": "التحسين يطور النظام نفسه.",
+          "en": "Improvement develops the system itself."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "4.5",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Compliance obligations",
+       "ar": "التزامات الامتثال"
+      },
+      "req": {
+       "en": "Systematically identify the compliance obligations arising from your activities, products and services, and assess their impact on operations. Implement processes to identify new and changed obligations, evaluate the impact of changes and act on them. Maintain obligations as documented information. They cover mandatory requirements (laws, regulations, permits, judgments, contracts) and voluntary commitments you choose.",
+       "ar": "حدد التزامات الامتثال الناشئة عن أنشطة المنظمة ومنتجاتها وخدماتها بشكل منهجي، وقيّم أثرها على العمليات. طبّق عمليات لتحديد الالتزامات الجديدة والمتغيرة، وقيّم أثر التغييرات ونفذ ما يلزم. وحافظ على الالتزامات كمعلومات موثقة. وتشمل الالتزامات المتطلبات الملزمة (قوانين، لوائح، تراخيص، أحكام، عقود) والالتزامات الطوعية التي تختارها."
+      },
+      "ex": {
+       "en": "Al-Riyada's register holds 64 obligations classified by source, including the Labour Law and Nitaqat, social insurance, e-invoicing, the Anti-Concealment Law, the Personal Data Protection Law, local content requirements, Civil Defence requirements and the terms of the client's unified contract. Each has an owner, a review date and a monitoring source.",
+       "ar": "سجل الريادة يضم 64 التزاماً مصنفة حسب المصدر، منها: نظام العمل ونطاقات، والتأمينات الاجتماعية، والفوترة الإلكترونية، ونظام مكافحة التستر، ونظام حماية البيانات الشخصية، ومتطلبات المحتوى المحلي، واشتراطات الدفاع المدني، وبنود العقد الموحد مع العميل. ولكل التزام مالك وتاريخ مراجعة ومصدر متابعة."
+      },
+      "how": [
+       {
+        "en": "An obligations register: source, summary, affected function, owner, controls, review date.",
+        "ar": "سجل التزامات: المصدر، النص المختصر، الوظيفة المتأثرة، المالك، الضوابط، تاريخ المراجعة."
+       },
+       {
+        "en": "Subscribe to official sources for updates (official gazette, regulator websites).",
+        "ar": "اشتراك في مصادر رسمية لمتابعة التحديثات (الجريدة الرسمية، مواقع الجهات)."
+       },
+       {
+        "en": "Assess the effect of each change on operations and procedures.",
+        "ar": "تقييم أثر كل تغيير على العمليات والإجراءات."
+       },
+       {
+        "en": "Review the register at least quarterly.",
+        "ar": "مراجعة السجل ربع سنوياً على الأقل."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Compliance obligations register",
+        "ar": "سجل التزامات الامتثال"
+       },
+       {
+        "en": "Regulatory change log",
+        "ar": "سجل متابعة التغييرات التشريعية"
+       },
+       {
+        "en": "Change impact assessments",
+        "ar": "تقييمات أثر التغيير"
+       }
+      ],
+      "tip": {
+       "en": "The obligations register is the backbone of the system; the auditor will pick an obligation and trace it to the control and the record proving it works.",
+       "ar": "سجل الالتزامات هو العمود الفقري للنظام؛ المدقق سيختار التزاماً ويتتبعه حتى الضابط والسجل الذي يثبت تطبيقه."
+      },
+      "checks": [
+       {
+        "ar": "اعرض سجل الالتزامات: هل يغطي كل المصادر (قوانين، تراخيص، عقود، التزامات طوعية)؟",
+        "en": "Show the obligations register: does it cover every source (laws, permits, contracts, voluntary commitments)?"
+       },
+       {
+        "ar": "كيف تُكتشف الالتزامات الجديدة والمتغيرة؟ أعط مثالاً حديثاً.",
+        "en": "How are new and changed obligations detected? Give a recent example."
+       },
+       {
+        "ar": "اختر التزاماً وتتبعه حتى الضابط والسجل.",
+        "en": "Pick an obligation and trace it to its control and record."
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.6",
+         "why": {
+          "ar": "كل التزام يُقيّم خطر عدم الوفاء به.",
+          "en": "Each obligation is assessed for the risk of failing it."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.2",
+         "why": {
+          "ar": "متطلبات الأطراف المختارة تصبح التزامات.",
+          "en": "Selected party requirements become obligations."
+         }
+        },
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "التغيير يستدعي تحديث الالتزامات.",
+          "en": "Change triggers an obligations update."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "4.6",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Compliance risk assessment",
+       "ar": "تقييم مخاطر الامتثال"
+      },
+      "req": {
+       "en": "Identify, analyse and evaluate compliance risks based on an assessment of non-compliance risk, relating obligations to activities, products, services and operations. Assess risks related to outsourced processes and third parties. Reassess periodically and whenever there are material changes in circumstances or context. Retain documented information on the assessment and actions.",
+       "ar": "حدد مخاطر الامتثال وحللها وقيّمها بناءً على تقييم مخاطر عدم الامتثال، بربط الالتزامات بالأنشطة والمنتجات والخدمات والعمليات. قيّم المخاطر المرتبطة بالعمليات المسندة ولدى الأطراف الثالثة. وأعد التقييم دورياً وعند أي تغيير جوهري في الظروف أو السياق. واحتفظ بمعلومات موثقة عن التقييم والإجراءات."
+      },
+      "ex": {
+       "en": "Al-Riyada assessed risks such as 'using a subcontractor's irregular labour' (likelihood 4 × consequence 5), 'hospitality to a government client employee' (3 × 5) and 'late e-invoice issuance' (3 × 3). It calculated residual risk after controls and decided to treat everything still high.",
+       "ar": "قيّمت الريادة مخاطر مثل: «تشغيل عمالة مقاول باطن غير نظامية» (احتمال 4 × أثر 5)، و«تقديم ضيافة لموظف عميل حكومي» (3 × 5)، و«تأخر إصدار الفواتير الإلكترونية» (3 × 3). وحسبت الخطر المتبقي بعد الضوابط، وقررت معالجة كل ما بقي مرتفعاً."
+      },
+      "how": [
+       {
+        "en": "A single method: likelihood × consequence, then control effectiveness, then residual risk.",
+        "ar": "منهجية موحدة: احتمال × عاقبة، ثم فعالية الضوابط، ثم الخطر المتبقي."
+       },
+       {
+        "en": "Assess third parties, subcontractors and agents.",
+        "ar": "تقييم الأطراف الثالثة ومقاولي الباطن والوكلاء."
+       },
+       {
+        "en": "Link treatment to controls and procedures (8.2).",
+        "ar": "ربط المعالجة بالضوابط والإجراءات (8.2)."
+       },
+       {
+        "en": "Reassess yearly and on material change.",
+        "ar": "إعادة التقييم سنوياً وعند التغيير الجوهري."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Compliance risk assessment method",
+        "ar": "منهجية تقييم مخاطر الامتثال"
+       },
+       {
+        "en": "Risk register with residual risk",
+        "ar": "سجل المخاطر بالمخاطر المتبقية"
+       },
+       {
+        "en": "Third-party assessments",
+        "ar": "تقييمات الأطراف الثالثة"
+       }
+      ],
+      "tip": {
+       "en": "The highest compliance risks often sit with third parties: a non-compliant subcontractor or agent can make you liable.",
+       "ar": "المخاطر الأعلى في الامتثال غالباً عند الأطراف الثالثة: مقاول باطن أو وكيل مخالف قد يجعلك مسؤولاً."
+      },
+      "checks": [
+       {
+        "ar": "اعرض منهجية تقييم مخاطر الامتثال ونتائجها.",
+        "en": "Show the compliance risk assessment method and results."
+       },
+       {
+        "ar": "كيف قُيّمت مخاطر الأطراف الثالثة والعمليات المسندة؟",
+        "en": "How were third-party and outsourced risks assessed?"
+       },
+       {
+        "ar": "متى أُعيد التقييم آخر مرة وما سببه؟",
+        "en": "When was it last reassessed and why?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.3",
+         "why": {
+          "ar": "نتائج تقييم المخاطر تؤثر في النطاق.",
+          "en": "Risk assessment results shape the scope."
+         }
+        },
+        {
+         "ref": "8.2",
+         "why": {
+          "ar": "المخاطر المرتفعة تحتاج ضوابط.",
+          "en": "High risks need controls."
+         }
+        },
+        {
+         "ref": "6.1",
+         "why": {
+          "ar": "مخاطر الامتثال مدخل لتخطيط الإجراءات.",
+          "en": "Compliance risks feed action planning."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.1",
+         "why": {
+          "ar": "القضايا تغذي تحديد مخاطر الامتثال.",
+          "en": "Issues feed compliance risk identification."
+         }
+        },
+        {
+         "ref": "4.5",
+         "why": {
+          "ar": "كل التزام يُقيّم خطر عدم الوفاء به.",
+          "en": "Each obligation is assessed for the risk of failing it."
+         }
+        },
+        {
+         "ref": "10.2",
+         "why": {
+          "ar": "عدم الامتثال يستدعي إعادة تقييم المخاطر.",
+          "en": "Non-compliance triggers risk reassessment."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "5",
+    "phase": "lead",
+    "title": {
+     "en": "Leadership",
+     "ar": "القيادة"
+    },
+    "intro": {
+     "en": "In 37301 leadership belongs to the governing body and top management together: a compliance culture set from the top, governance that guarantees the compliance function's independence and direct access to the board, and clear roles for every level down to each employee.",
+     "ar": "في 37301 القيادة مسؤولية مجلس الإدارة (الجهة الحاكمة) والإدارة العليا معاً: ثقافة امتثال تبدأ من القمة، وحوكمة تضمن استقلال وظيفة الامتثال ووصولها المباشر للمجلس، وأدوار واضحة لكل مستوى حتى آخر موظف."
+    },
+    "items": [
+     {
+      "ref": "5.1.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Governing body and top management",
+       "ar": "الجهة الحاكمة والإدارة العليا"
+      },
+      "req": {
+       "en": "The governing body and top management demonstrate leadership and commitment: ensuring the policy and objectives fit the values and strategy, integrating system requirements into processes, providing resources, communicating the importance of compliance, directing and supporting people, promoting improvement and supporting other management roles. The governing body is expected to oversee the system and receive regular reports on it.",
+       "ar": "تُثبت الجهة الحاكمة والإدارة العليا القيادة والالتزام: بضمان وضع السياسة والأهداف بما يتوافق مع القيم والاستراتيجية، ودمج متطلبات النظام في العمليات، وتوفير الموارد، وإبلاغ أهمية الامتثال، وتوجيه الأشخاص ودعمهم، وتعزيز التحسين، ودعم الأدوار الإدارية. ويُتوقع من الجهة الحاكمة الإشراف على النظام وتلقي تقارير منتظمة عنه."
+      },
+      "ex": {
+       "en": "Al-Riyada's board approved the compliance policy and formed an audit and compliance committee that receives a quarterly report; the CEO announced at an all-hands meeting that any deal requiring a breach will be refused whatever its value.",
+       "ar": "اعتمد مجلس إدارة الريادة سياسة الامتثال، وشكّل لجنة المراجعة والامتثال التي تتلقى تقريراً ربع سنوياً، وأعلن الرئيس التنفيذي في لقاء عام أن أي صفقة تتطلب مخالفة ستُرفض مهما كانت قيمتها."
+      },
+      "how": [
+       {
+        "en": "A board resolution adopting the system and naming the overseeing body.",
+        "ar": "قرار مجلس الإدارة بتبني النظام وتحديد الجهة المشرفة."
+       },
+       {
+        "en": "A periodic compliance report to the board or committee.",
+        "ar": "تقرير امتثال دوري للمجلس أو اللجنة."
+       },
+       {
+        "en": "Clear, repeated messages from top management ('tone from the top').",
+        "ar": "رسائل واضحة ومتكررة من الإدارة العليا («النبرة من القمة»)."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Board resolution",
+        "ar": "قرار المجلس"
+       },
+       {
+        "en": "Compliance committee minutes",
+        "ar": "محاضر لجنة الامتثال"
+       },
+       {
+        "en": "Top management communications",
+        "ar": "رسائل الإدارة العليا"
+       }
+      ],
+      "tip": {
+       "en": "The auditor looks for evidence that the board actually discusses compliance, not just signs the policy.",
+       "ar": "المدقق سيبحث عن دليل أن المجلس يناقش الامتثال فعلاً، لا يكتفي بالتوقيع على السياسة."
+      },
+      "checks": [
+       {
+        "ar": "كيف تُثبت الجهة الحاكمة والإدارة العليا التزامهما؟ أعط أمثلة.",
+        "en": "How do the governing body and top management demonstrate commitment? Give examples."
+       },
+       {
+        "ar": "كم مرة يتلقى المجلس تقارير الامتثال؟ اعرض آخرها.",
+        "en": "How often does the board receive compliance reports? Show the latest."
+       },
+       {
+        "ar": "ما الموارد المعتمدة للنظام؟",
+        "en": "What resources were approved for the system?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "7.1",
+         "why": {
+          "ar": "التزام القيادة يترجم إلى موارد.",
+          "en": "Leadership commitment becomes resources."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "5.1.2",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Compliance culture",
+       "ar": "ثقافة الامتثال"
+      },
+      "req": {
+       "en": "The governing body and top management develop, maintain and promote a compliance culture at all levels, through active, visible, consistent and sustained commitment to a common, published standard of behaviour.",
+       "ar": "تطور الجهة الحاكمة والإدارة العليا ثقافة امتثال وتحافظ عليها وتعززها على جميع المستويات، بالتزام نشط ومرئي ومستمر بمعايير سلوك مشتركة ومعلنة."
+      },
+      "ex": {
+       "en": "Al-Riyada measures culture with an annual anonymous survey (confidence in reporting at 62%), added ethical behaviour to managers' appraisals with a 15% weight, and publicly recognised a site supervisor who refused a suspicious offer.",
+       "ar": "قاست الريادة الثقافة باستبيان سنوي مجهول الهوية (مؤشر الثقة في الإبلاغ 62%)، وأدرجت السلوك الأخلاقي في تقييم أداء المديرين بوزن 15%، وكرّمت مشرف موقع رفض عرضاً مشبوهاً."
+      },
+      "how": [
+       {
+        "en": "A published code of conduct signed by everyone.",
+        "ar": "مدونة سلوك معلنة وموقعة من الجميع."
+       },
+       {
+        "en": "Link ethical behaviour to appraisal, rewards and promotion.",
+        "ar": "ربط السلوك الأخلاقي بالتقييم والمكافآت والترقية."
+       },
+       {
+        "en": "Measure culture with a survey and indicators (reports, training, cases).",
+        "ar": "قياس الثقافة باستبيان ومؤشرات (بلاغات، تدريب، حالات)."
+       },
+       {
+        "en": "Management acts firmly on breaches regardless of seniority.",
+        "ar": "تصرف الإدارة بحزم مع المخالفات بغض النظر عن المنصب."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Code of conduct",
+        "ar": "مدونة السلوك"
+       },
+       {
+        "en": "Culture survey results",
+        "ar": "نتائج استبيان الثقافة"
+       },
+       {
+        "en": "Performance appraisal criteria",
+        "ar": "معايير تقييم الأداء"
+       }
+      ],
+      "tip": {
+       "en": "Culture shows in hard decisions: how was the last breach by a senior manager handled? That is what employees watch.",
+       "ar": "الثقافة تظهر في القرارات الصعبة: كيف عوملت آخر مخالفة لمدير كبير؟ هذا ما يراه الموظفون."
+      },
+      "checks": [
+       {
+        "ar": "كيف تطور الإدارة ثقافة الامتثال وتقيسها؟",
+        "en": "How does management develop and measure compliance culture?"
+       },
+       {
+        "ar": "هل يرتبط السلوك الأخلاقي بالتقييم والمكافآت؟",
+        "en": "Is ethical behaviour linked to appraisal and rewards?"
+       },
+       {
+        "ar": "اعرض مثالاً على تعامل الإدارة مع مخالفة.",
+        "en": "Show an example of how management handled a breach."
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "7.3",
+         "why": {
+          "ar": "الثقافة تنتقل عبر الوعي.",
+          "en": "Culture spreads through awareness."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "5.1.3",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Compliance governance",
+       "ar": "حوكمة الامتثال"
+      },
+      "req": {
+       "en": "The governing body and top management ensure governance principles are applied: direct access of the compliance function to the governing body, its independence, and appropriate authority and standing.",
+       "ar": "تضمن الجهة الحاكمة والإدارة العليا تطبيق مبادئ الحوكمة: وصول وظيفة الامتثال المباشر إلى الجهة الحاكمة، واستقلالها، وتمتعها بالصلاحية والمكانة المناسبتين."
+      },
+      "ex": {
+       "en": "Al-Riyada's compliance manager reports administratively to the CEO and functionally to the audit and compliance committee, meets its chair privately twice a year, can only be removed with the committee's approval and holds no operational or commercial duties.",
+       "ar": "مدير الامتثال في الريادة يرفع تقاريره إدارياً للرئيس التنفيذي ووظيفياً للجنة المراجعة والامتثال، ويلتقي رئيسها منفرداً مرتين سنوياً، ولا يُعزل إلا بموافقة اللجنة، ولا يتولى أي مهام تشغيلية أو تجارية."
+      },
+      "how": [
+       {
+        "en": "A dual reporting line with direct access to the board or committee.",
+        "ar": "خط تقرير مزدوج مع وصول مباشر للمجلس أو اللجنة."
+       },
+       {
+        "en": "Independence safeguards: no conflicting duties and protection from arbitrary removal.",
+        "ar": "ضمانات الاستقلال: لا مهام متعارضة، وحماية من العزل التعسفي."
+       },
+       {
+        "en": "Authority to access all information and people.",
+        "ar": "صلاحية الوصول لكل المعلومات والأشخاص."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Compliance function charter",
+        "ar": "ميثاق وظيفة الامتثال"
+       },
+       {
+        "en": "Organization chart and reporting line",
+        "ar": "الهيكل التنظيمي وخط التقرير"
+       },
+       {
+        "en": "Minutes of private sessions",
+        "ar": "محاضر الاجتماعات المنفردة"
+       }
+      ],
+      "tip": {
+       "en": "If the compliance officer reports to the sales director or also runs procurement, independence is missing whatever the documents say.",
+       "ar": "إذا كان مسؤول الامتثال يتبع مدير المبيعات أو يتولى المشتريات، فالاستقلال غائب مهما قالت الوثائق."
+      },
+      "checks": [
+       {
+        "ar": "هل لوظيفة الامتثال وصول مباشر للجهة الحاكمة؟ اعرض الدليل.",
+        "en": "Does the compliance function have direct access to the governing body? Show evidence."
+       },
+       {
+        "ar": "كيف يُضمن استقلالها؟ هل تتولى مهاماً متعارضة؟",
+        "en": "How is its independence ensured? Does it hold conflicting duties?"
+       },
+       {
+        "ar": "ما صلاحياتها في الوصول للمعلومات؟",
+        "en": "What authority does it have to access information?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "5.3.2",
+         "why": {
+          "ar": "الحوكمة تضمن استقلال وظيفة الامتثال.",
+          "en": "Governance secures the compliance function's independence."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "5.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Compliance policy",
+       "ar": "سياسة الامتثال"
+      },
+      "req": {
+       "en": "The governing body and top management set a compliance policy suited to the purpose, providing a framework for objectives, committing to meeting requirements and continual improvement, referring to the obligations, explaining the compliance function's authority and independence, the consequences of non-compliance, and encouraging concerns to be raised without fear of retaliation. It is available, communicated internally and to interested parties as appropriate.",
+       "ar": "تضع الجهة الحاكمة والإدارة العليا سياسة امتثال مناسبة للغرض، توفر إطاراً للأهداف، وتلتزم بتلبية المتطلبات والتحسين المستمر، وتشير إلى الالتزامات، وتوضح صلاحية وظيفة الامتثال واستقلالها، وعواقب عدم الامتثال، وتشجع الإبلاغ عن المخاوف دون خوف من الانتقام. وتُتاح وتُبلّغ داخلياً وللأطراف المعنية حسب الحاجة."
+      },
+      "ex": {
+       "en": "Al-Riyada's two-page policy states zero tolerance for regulatory breaches, the compliance manager's role and authority, disciplinary consequences and the confidential reporting line with a non-retaliation guarantee. It is attached to every subcontract.",
+       "ar": "سياسة الريادة من صفحتين: عدم التسامح مع أي مخالفة للأنظمة، ودور مدير الامتثال وصلاحياته، والعقوبات التأديبية، وخط الإبلاغ السري مع ضمان عدم الانتقام. وتُرفق بكل عقد مع مقاول باطن."
+      },
+      "how": [
+       {
+        "en": "A short policy approved by the board and top management.",
+        "ar": "سياسة مختصرة معتمدة من المجلس والإدارة العليا."
+       },
+       {
+        "en": "Cover all mandatory elements (independence, consequences, reporting).",
+        "ar": "تغطية كل العناصر الإلزامية (الاستقلال، العواقب، الإبلاغ)."
+       },
+       {
+        "en": "Translate and publish it for all groups and third parties.",
+        "ar": "ترجمتها ونشرها لكل الفئات والأطراف الثالثة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Approved policy",
+        "ar": "السياسة المعتمدة"
+       },
+       {
+        "en": "Evidence of communication and publication",
+        "ar": "دليل الإبلاغ والنشر"
+       }
+      ],
+      "tip": {
+       "en": "A policy that does not mention protecting reporters from retaliation is incomplete under 37301, and it is the first thing an auditor notices.",
+       "ar": "سياسة لا تذكر حماية المبلغين من الانتقام ناقصة في 37301، وهي أول ما يلاحظه المدقق."
+      },
+      "checks": [
+       {
+        "ar": "هل تغطي السياسة الالتزامات والاستقلال والعواقب وحماية المبلغين؟",
+        "en": "Does the policy cover obligations, independence, consequences and reporter protection?"
+       },
+       {
+        "ar": "كيف أُبلغت للموظفين والأطراف الثالثة؟",
+        "en": "How was it communicated to staff and third parties?"
+       },
+       {
+        "ar": "من اعتمدها ومتى رُوجعت؟",
+        "en": "Who approved it and when was it reviewed?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "السياسة إطار للأهداف.",
+          "en": "The policy frames the objectives."
+         }
+        },
+        {
+         "ref": "8.3",
+         "why": {
+          "ar": "السياسة تعد بحماية المبلغين.",
+          "en": "The policy promises reporter protection."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "5.3.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Roles of the governing body and top management",
+       "ar": "أدوار الجهة الحاكمة والإدارة العليا"
+      },
+      "req": {
+       "en": "The governing body and top management assign and communicate responsibilities and authorities for relevant roles, including for system conformity and reporting its performance, ensure segregation of authority and resources, that objectives align with obligations, and that incentive schemes do not encourage non-compliance.",
+       "ar": "تعيّن الجهة الحاكمة والإدارة العليا المسؤوليات والصلاحيات للأدوار ذات الصلة وتبلغها، بما فيها مسؤولية مطابقة النظام ورفع تقارير أدائه، وتضمن فصل الصلاحيات وتوفير الموارد، وأن الأهداف تتماشى مع الالتزامات، وأن نظام الحوافز لا يشجع على المخالفة."
+      },
+      "ex": {
+       "en": "Al-Riyada reviewed its sales incentives, removed the bonus tied only to contract value and added a 'no breaches in the tender file' condition. It set an authority matrix that prevents the same person approving both orders and payments.",
+       "ar": "راجعت الريادة نظام حوافز المبيعات فألغت المكافأة المرتبطة بقيمة العقد فقط، وأضافت شرط «لا مخالفات في ملف المناقصة». وحددت مصفوفة صلاحيات تمنع اعتماد الدفعات والطلبات من الشخص نفسه."
+      },
+      "how": [
+       {
+        "en": "An authority matrix with segregation of duties.",
+        "ar": "مصفوفة صلاحيات وفصل مهام."
+       },
+       {
+        "en": "Review incentives from a compliance angle.",
+        "ar": "مراجعة الحوافز من منظور الامتثال."
+       },
+       {
+        "en": "Formally appoint the compliance officer.",
+        "ar": "تعيين مسؤول الامتثال رسمياً."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Authority matrix",
+        "ar": "مصفوفة الصلاحيات"
+       },
+       {
+        "en": "Incentive policy",
+        "ar": "سياسة الحوافز"
+       },
+       {
+        "en": "Appointment decision",
+        "ar": "قرار التعيين"
+       }
+      ],
+      "tip": {
+       "en": "Incentives that reward results at any cost are the fastest path to breaches. Auditors ask about them specifically.",
+       "ar": "الحوافز التي تكافئ النتيجة بأي ثمن هي أسرع طريق للمخالفة. المدقق يسأل عنها تحديداً."
+      },
+      "checks": [
+       {
+        "ar": "من المسؤول عن مطابقة النظام ورفع التقارير؟",
+        "en": "Who is responsible for system conformity and reporting?"
+       },
+       {
+        "ar": "هل رُوجعت أنظمة الحوافز حتى لا تشجع المخالفة؟",
+        "en": "Were incentive schemes reviewed so they do not encourage breaches?"
+       },
+       {
+        "ar": "كيف يُضمن فصل الصلاحيات؟",
+        "en": "How is segregation of authority ensured?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "7.2.2",
+         "why": {
+          "ar": "مراجعة الحوافز جزء من التوظيف.",
+          "en": "Incentive review is part of employment."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "5.3.2",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Compliance function",
+       "ar": "وظيفة الامتثال"
+      },
+      "req": {
+       "en": "The compliance function is responsible for operating the system: facilitating identification of obligations, documenting the risk assessment, aligning the system with objectives, monitoring and measuring, analysing performance, establishing reporting, ensuring periodic review, providing training and advice, and designing controls. It is given the resources, competence and authority it needs.",
+       "ar": "تكون وظيفة الامتثال مسؤولة عن تشغيل النظام: تيسير تحديد الالتزامات، وتوثيق تقييم المخاطر، ومواءمة النظام مع الأهداف، والرصد والقياس، وتحليل الأداء، ووضع نظام للتقارير، وضمان المراجعة الدورية، وتوفير التدريب والمشورة، وتصميم الضوابط. وتُخصص لها الموارد والكفاءات والصلاحيات اللازمة."
+      },
+      "ex": {
+       "en": "Al-Riyada's compliance function has a compliance manager, an obligations analyst and a training specialist, with an independent budget and an electronic register. It provides mandatory advice before any new tender or partnership.",
+       "ar": "وظيفة الامتثال في الريادة: مدير امتثال ومحلل التزامات وأخصائي تدريب، مع ميزانية مستقلة ونظام إلكتروني للسجل. وتقدم استشارة مسبقة إلزامية قبل أي مناقصة أو شراكة جديدة."
+      },
+      "how": [
+       {
+        "en": "A written charter defining duties and authority.",
+        "ar": "ميثاق مكتوب يحدد المهام والصلاحيات."
+       },
+       {
+        "en": "Resources proportionate to the risk profile.",
+        "ar": "موارد متناسبة مع حجم المخاطر."
+       },
+       {
+        "en": "An advisory service for staff and management.",
+        "ar": "خدمة استشارية للموظفين والإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Function charter",
+        "ar": "ميثاق الوظيفة"
+       },
+       {
+        "en": "Job descriptions and qualifications",
+        "ar": "الوصف الوظيفي والمؤهلات"
+       },
+       {
+        "en": "Annual work plan",
+        "ar": "خطة العمل السنوية"
+       }
+      ],
+      "tip": {
+       "en": "In small organizations the compliance function may be one part-time person, provided independence, competence and access are there.",
+       "ar": "في المنظمات الصغيرة قد تكون وظيفة الامتثال شخصاً واحداً بدوام جزئي، بشرط الاستقلال والكفاءة والوصول."
+      },
+      "checks": [
+       {
+        "ar": "من يشكل وظيفة الامتثال وما مهامها وصلاحياتها؟",
+        "en": "Who makes up the compliance function, and what are its duties and authority?"
+       },
+       {
+        "ar": "هل مواردها كافية لحجم المخاطر؟",
+        "en": "Are its resources adequate for the risk profile?"
+       },
+       {
+        "ar": "كيف تقدم المشورة للموظفين؟",
+        "en": "How does it advise staff?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.1.4",
+         "why": {
+          "ar": "وظيفة الامتثال ترفع التقارير للجهة الحاكمة.",
+          "en": "The compliance function reports to the governing body."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.1.3",
+         "why": {
+          "ar": "الحوكمة تضمن استقلال وظيفة الامتثال.",
+          "en": "Governance secures the compliance function's independence."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "5.3.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Management responsibilities",
+       "ar": "مسؤوليات الإدارة"
+      },
+      "req": {
+       "en": "Every manager is responsible for compliance within their area: cooperating with and supporting the compliance function, identifying compliance risks in their operations, integrating obligations into processes and procedures, attending and encouraging training, encouraging reporting, taking part in resolving issues and addressing non-compliance.",
+       "ar": "يكون كل مدير مسؤولاً عن الامتثال في نطاق مسؤوليته: التعاون مع وظيفة الامتثال ودعمها، وتحديد مخاطر الامتثال في عملياته، ودمج الالتزامات في العمليات والإجراءات، وحضور التدريب وتشجيعه، وتشجيع الإبلاغ، والمشاركة في الإدارة والحل، ومعالجة المخالفات."
+      },
+      "ex": {
+       "en": "Every Al-Riyada project manager signs a quarterly 'compliance attestation' confirming the controls on their project (legal labour, payment approvals, site permits), stating any exception.",
+       "ar": "وقّع كل مدير مشروع في الريادة «إقرار امتثال» ربع سنوي يؤكد تحقق ضوابط مشروعه (العمالة النظامية، اعتمادات الدفعات، تصاريح الموقع)، مع ذكر أي استثناء."
+      },
+      "how": [
+       {
+        "en": "Compliance responsibilities in every manager's job description.",
+        "ar": "مسؤوليات الامتثال في الوصف الوظيفي لكل مدير."
+       },
+       {
+        "en": "Periodic manager attestations.",
+        "ar": "إقرارات دورية من المديرين."
+       },
+       {
+        "en": "Compliance indicators in manager appraisals.",
+        "ar": "مؤشرات امتثال في تقييم أداء المديرين."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Job descriptions",
+        "ar": "الأوصاف الوظيفية"
+       },
+       {
+        "en": "Periodic attestations",
+        "ar": "الإقرارات الدورية"
+       }
+      ],
+      "tip": {
+       "en": "Compliance is the first line's responsibility; the compliance function supports it but does not replace it.",
+       "ar": "الامتثال مسؤولية خط الإدارة الأول؛ وظيفة الامتثال تساعد ولا تحل محله."
+      },
+      "checks": [
+       {
+        "ar": "هل يعرف المديرون مسؤولياتهم في الامتثال؟ اسأل عينة.",
+        "en": "Do managers know their compliance responsibilities? Ask a sample."
+       },
+       {
+        "ar": "كيف دمج المديرون الالتزامات في عملياتهم؟",
+        "en": "How did managers integrate obligations into their processes?"
+       },
+       {
+        "ar": "اعرض إقرارات أو تقارير المديرين.",
+        "en": "Show managers' attestations or reports."
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.2",
+         "why": {
+          "ar": "المديرون يطبقون الضوابط في عملياتهم.",
+          "en": "Managers apply controls in their processes."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "5.3.4",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Personnel responsibilities",
+       "ar": "مسؤوليات الأفراد"
+      },
+      "req": {
+       "en": "Every person adheres to the obligations, policies and procedures relevant to their work, attends required training, uses available compliance resources, and reports concerns and potential non-compliance.",
+       "ar": "يلتزم كل فرد بالالتزامات والسياسات والإجراءات المتعلقة بعمله، ويحضر التدريب المطلوب، ويستخدم موارد الامتثال المتاحة، ويبلغ عن المخاوف والمخالفات المحتملة."
+      },
+      "ex": {
+       "en": "Al-Riyada employees annually sign the code of conduct and a conflict-of-interest declaration, pass a short quiz and know the reporting line number printed on their access badge.",
+       "ar": "يوقع موظفو الريادة سنوياً على مدونة السلوك وإقرار تضارب المصالح، ويجتازون اختباراً قصيراً، ويعرفون رقم خط الإبلاغ المطبوع على بطاقة الدخول."
+      },
+      "how": [
+       {
+        "en": "Annual sign-off of the code and conflict-of-interest declaration.",
+        "ar": "توقيع سنوي على المدونة وإقرار تضارب المصالح."
+       },
+       {
+        "en": "Mandatory role-based training.",
+        "ar": "تدريب إلزامي بحسب الدور."
+       },
+       {
+        "en": "Reporting channels available to everyone.",
+        "ar": "إتاحة قنوات الإبلاغ للجميع."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Declaration records",
+        "ar": "سجلات الإقرارات"
+       },
+       {
+        "en": "Training records",
+        "ar": "سجلات التدريب"
+       }
+      ],
+      "tip": {
+       "en": "Make reporting a duty, not an option, and protect those who report; silence is more dangerous than error.",
+       "ar": "اجعل الإبلاغ واجباً لا خياراً، واحمِ من يبلغ؛ الصمت أخطر من الخطأ."
+      },
+      "checks": [
+       {
+        "ar": "هل يعرف الموظفون التزاماتهم وقنوات الإبلاغ؟ اسأل عينة.",
+        "en": "Do staff know their obligations and reporting channels? Ask a sample."
+       },
+       {
+        "ar": "اعرض سجلات الإقرارات السنوية.",
+        "en": "Show the annual declaration records."
+       },
+       {
+        "ar": "هل حضر الموظفون التدريب المطلوب لأدوارهم؟",
+        "en": "Did staff attend the training required for their roles?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "6",
+    "phase": "plan",
+    "title": {
+     "en": "Planning",
+     "ar": "التخطيط"
+    },
+    "intro": {
+     "en": "Turn what you learned in clause 4 into a plan: actions to address risks and opportunities, measurable compliance objectives, and changes that are planned rather than sudden.",
+     "ar": "حوّل ما عرفته في البند 4 إلى خطة: إجراءات لمعالجة المخاطر والفرص، وأهداف امتثال قابلة للقياس، وتغييرات مخططة لا مفاجئة."
+    },
+    "items": [
+     {
+      "ref": "6.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Actions to address risks and opportunities",
+       "ar": "الإجراءات لمعالجة المخاطر والفرص"
+      },
+      "req": {
+       "en": "When planning, consider the issues (4.1), requirements (4.2) and compliance risks (4.6), and determine the risks and opportunities to address so the system achieves its outcomes, prevents undesired effects and achieves improvement. Plan actions, integrate them into processes and evaluate their effectiveness.",
+       "ar": "عند التخطيط، راعِ القضايا (4.1) والمتطلبات (4.2) ومخاطر الامتثال (4.6)، وحدد المخاطر والفرص التي يجب معالجتها لضمان تحقيق النظام نتائجه ومنع الآثار غير المرغوبة وتحقيق التحسين. خطط الإجراءات وادمجها في العمليات وقيّم فعاليتها."
+      },
+      "ex": {
+       "en": "Al-Riyada identified a system risk: 'the compliance function depends on one person', and an opportunity: 'link the obligations register to the ERP to trigger automatic alerts'. Both went into the action plan with an effectiveness indicator.",
+       "ar": "حددت الريادة خطراً على النظام: «وظيفة الامتثال تعتمد على شخص واحد»، وفرصة: «ربط سجل الالتزامات بنظام ERP لإطلاق تنبيهات تلقائية». وأدرجت الإجراءين في خطة العمل مع مؤشر فعالية."
+      },
+      "how": [
+       {
+        "en": "A system-level risks and opportunities register.",
+        "ar": "سجل مخاطر وفرص على مستوى النظام."
+       },
+       {
+        "en": "An action, owner, date and effectiveness indicator for each item.",
+        "ar": "إجراء ومالك وموعد ومؤشر فعالية لكل بند."
+       },
+       {
+        "en": "Review effectiveness at management review.",
+        "ar": "مراجعة الفعالية في مراجعة الإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Risks and opportunities register",
+        "ar": "سجل المخاطر والفرص"
+       },
+       {
+        "en": "Action plan and effectiveness evaluation",
+        "ar": "خطة الإجراءات وتقييم الفعالية"
+       }
+      ],
+      "tip": {
+       "en": "Non-compliance risks belong in 4.6; here you think about the success and weak points of the system itself.",
+       "ar": "مخاطر عدم الامتثال مكانها 4.6؛ هنا تفكر في نجاح النظام نفسه ومواطن ضعفه."
+      },
+      "checks": [
+       {
+        "ar": "ما المخاطر والفرص على مستوى النظام؟",
+        "en": "What system-level risks and opportunities exist?"
+       },
+       {
+        "ar": "ما الإجراءات المخططة وكيف دُمجت؟",
+        "en": "What actions are planned and how are they integrated?"
+       },
+       {
+        "ar": "كيف قُيّمت فعاليتها؟",
+        "en": "How was their effectiveness evaluated?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "4.6",
+         "why": {
+          "ar": "مخاطر الامتثال مدخل لتخطيط الإجراءات.",
+          "en": "Compliance risks feed action planning."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Compliance objectives and planning to achieve them",
+       "ar": "أهداف الامتثال والتخطيط لتحقيقها"
+      },
+      "req": {
+       "en": "Set compliance objectives at relevant functions and levels, consistent with the policy, measurable, taking requirements into account, and monitored, communicated and updated. For each, determine what will be done, resources, owner, timing and how results are evaluated.",
+       "ar": "ضع أهداف امتثال على المستويات والوظائف ذات الصلة متسقة مع السياسة وقابلة للقياس، تراعي المتطلبات، وتُرصد وتُبلّغ وتُحدّث. وحدد لكل هدف ما سيُنفذ والموارد والمسؤول والموعد وطريقة التقييم."
+      },
+      "ex": {
+       "en": "Al-Riyada's objectives include '100% of new subcontractors due-diligence checked before contract', '90% of reports closed within 30 days' and 'raise confidence in reporting to 75%'.",
+       "ar": "من أهداف الريادة: «100% من مقاولي الباطن الجدد خضعوا للفحص النافي للجهالة قبل التعاقد»، و«إغلاق 90% من البلاغات خلال 30 يوماً»، و«رفع مؤشر الثقة في الإبلاغ إلى 75%»."
+      },
+      "how": [
+       {
+        "en": "Derive objectives from the top risks and culture results.",
+        "ar": "اشتق الأهداف من المخاطر الأعلى ونتائج الثقافة."
+       },
+       {
+        "en": "A metric, target, date and owner per objective.",
+        "ar": "مؤشر ومستهدف وموعد ومسؤول لكل هدف."
+       },
+       {
+        "en": "Monitor quarterly and report to the committee.",
+        "ar": "رصد ربع سنوي وتقرير للجنة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Objectives register and plans",
+        "ar": "سجل الأهداف وخططها"
+       },
+       {
+        "en": "Monitoring reports",
+        "ar": "تقارير الرصد"
+       }
+      ],
+      "tip": {
+       "en": "'Zero breaches' is a misleading objective that can encourage concealment; measure controls, behaviour and reporting.",
+       "ar": "«صفر مخالفات» هدف مضلل قد يشجع على الإخفاء؛ قِس الضوابط والسلوك والإبلاغ."
+      },
+      "checks": [
+       {
+        "ar": "ما أهداف الامتثال وهل هي قابلة للقياس؟",
+        "en": "What are the compliance objectives, and are they measurable?"
+       },
+       {
+        "ar": "كيف تُرصد وتُبلّغ؟",
+        "en": "How are they monitored and communicated?"
+       },
+       {
+        "ar": "ما خطة تحقيق كل هدف؟",
+        "en": "What is the plan for each objective?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.1.3",
+         "why": {
+          "ar": "الأهداف تُقاس بالمؤشرات.",
+          "en": "Objectives are measured by indicators."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.2",
+         "why": {
+          "ar": "السياسة إطار للأهداف.",
+          "en": "The policy frames the objectives."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.3",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Planning of changes",
+       "ar": "تخطيط التغييرات"
+      },
+      "req": {
+       "en": "When the organization decides to change the system, changes are carried out in a planned way, considering their purpose, consequences, the integrity of the system, availability of resources and allocation of responsibilities.",
+       "ar": "عندما تقرر المنظمة تغيير النظام، تُنفذ التغييرات بطريقة مخططة مع مراعاة غرضها وعواقبها وسلامة النظام وتوافر الموارد وتوزيع المسؤوليات."
+      },
+      "ex": {
+       "en": "When Al-Riyada entered a new Gulf market, it planned the change: extended the obligations register to the new country's laws, reassessed risk, appointed a local compliance coordinator and updated training before operations started.",
+       "ar": "عند دخول الريادة سوقاً خليجياً جديداً، خططت التغيير: وسعت سجل الالتزامات لقوانين الدولة الجديدة، وأعادت تقييم المخاطر، وعينت منسق امتثال محلياً، وحدثت التدريب قبل بدء العمل."
+      },
+      "how": [
+       {
+        "en": "A change request form assessing effects on obligations, risks and controls.",
+        "ar": "نموذج طلب تغيير يقيّم الأثر على الالتزامات والمخاطر والضوابط."
+       },
+       {
+        "en": "Compliance function approval before implementation.",
+        "ar": "موافقة وظيفة الامتثال قبل التنفيذ."
+       },
+       {
+        "en": "Update documents and training after the change.",
+        "ar": "تحديث الوثائق والتدريب بعد التغيير."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Change log",
+        "ar": "سجل التغييرات"
+       },
+       {
+        "en": "Change impact assessments",
+        "ar": "تقييمات أثر التغيير"
+       }
+      ],
+      "tip": {
+       "en": "Acquisitions, new markets and new products are the riskiest compliance moments; make them mandatory review triggers.",
+       "ar": "الاستحواذات والأسواق الجديدة والمنتجات الجديدة أخطر لحظات الامتثال؛ اجعلها محفزات إلزامية للمراجعة."
+      },
+      "checks": [
+       {
+        "ar": "اعرض مثالاً لتغيير على النظام وكيف خُطط له.",
+        "en": "Show an example of a change to the system and how it was planned."
+       },
+       {
+        "ar": "كيف قُيّم أثر التغيير على الالتزامات والمخاطر؟",
+        "en": "How was the effect on obligations and risks assessed?"
+       },
+       {
+        "ar": "هل حُدّثت الوثائق والتدريب؟",
+        "en": "Were documents and training updated?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.5",
+         "why": {
+          "ar": "التغيير يستدعي تحديث الالتزامات.",
+          "en": "Change triggers an obligations update."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "9.3",
+         "why": {
+          "ar": "قرارات المراجعة تخطط التغيير.",
+          "en": "Review decisions plan change."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "7",
+    "phase": "do",
+    "title": {
+     "en": "Support",
+     "ar": "الدعم"
+    },
+    "intro": {
+     "en": "Compliance lives in people's behaviour: who you hire, how you train them, what they know about their obligations, how you communicate with them, and the documents that prove it all.",
+     "ar": "الامتثال يعيش في سلوك الأفراد: من توظفهم، وكيف تدربهم، وما يعرفونه عن التزاماتهم، وكيف تتواصل معهم، ثم الوثائق التي تثبت ذلك كله."
+    },
+    "items": [
+     {
+      "ref": "7.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Resources",
+       "ar": "الموارد"
+      },
+      "req": {
+       "en": "Determine and provide the resources needed to establish, implement, maintain and continually improve the system.",
+       "ar": "حدد الموارد اللازمة لإنشاء النظام وتطبيقه وصيانته وتحسينه ووفرها."
+      },
+      "ex": {
+       "en": "Al-Riyada allocated a budget for the compliance function, an electronic obligations management system, a regulatory monitoring subscription and an independent reporting platform.",
+       "ar": "خصصت الريادة ميزانية لوظيفة الامتثال، ونظاماً إلكترونياً لإدارة الالتزامات، واشتراكاً في خدمة متابعة تشريعية، ومنصة إبلاغ مستقلة."
+      },
+      "how": [
+       {
+        "en": "An annual budget linked to the compliance plan.",
+        "ar": "موازنة سنوية مرتبطة بخطة الامتثال."
+       },
+       {
+        "en": "People, technology and information sources.",
+        "ar": "موارد بشرية وتقنية ومصادر معلومات."
+       },
+       {
+        "en": "Review adequacy at management review.",
+        "ar": "مراجعة الكفاية في مراجعة الإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Approved budget",
+        "ar": "الموازنة المعتمدة"
+       },
+       {
+        "en": "Resource allocation decisions",
+        "ar": "قرارات تخصيص الموارد"
+       }
+      ],
+      "tip": {
+       "en": "A compliance function without its own budget is easy to weaken quietly.",
+       "ar": "وظيفة امتثال بلا ميزانية مستقلة يسهل إضعافها بصمت."
+      },
+      "checks": [
+       {
+        "ar": "ما الموارد المخصصة للنظام؟",
+        "en": "What resources are allocated to the system?"
+       },
+       {
+        "ar": "هل تكفي لحجم المخاطر والالتزامات؟",
+        "en": "Are they sufficient for the risks and obligations?"
+       },
+       {
+        "ar": "كيف تُراجع كفايتها؟",
+        "en": "How is adequacy reviewed?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "5.1.1",
+         "why": {
+          "ar": "التزام القيادة يترجم إلى موارد.",
+          "en": "Leadership commitment becomes resources."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "7.2.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Competence: general",
+       "ar": "الكفاءة: عام"
+      },
+      "req": {
+       "en": "Determine the competence needed by people whose work affects compliance performance, ensure they are competent through education, training or experience, take action to acquire it and evaluate its effectiveness, and keep evidence.",
+       "ar": "حدد الكفاءة اللازمة لمن يؤثر عمله على أداء الامتثال، وتأكد من كفاءتهم بالتعليم أو التدريب أو الخبرة، واتخذ إجراءات لاكتسابها وقيّم فعاليتها، واحتفظ بالأدلة."
+      },
+      "ex": {
+       "en": "Al-Riyada defined competences for the compliance manager (law, investigations, risk management) and for procurement managers (supplier due diligence), and sent the compliance manager on an accredited lead implementer course.",
+       "ar": "حددت الريادة كفاءات لمدير الامتثال (قانون، تحقيقات، إدارة مخاطر) ولمديري المشتريات (العناية الواجبة بالموردين)، وأرسلت مدير الامتثال لدورة منفذ رئيسي معتمدة."
+      },
+      "how": [
+       {
+        "en": "A competence matrix for high-risk roles.",
+        "ar": "مصفوفة كفاءات للأدوار عالية المخاطر."
+       },
+       {
+        "en": "Documented training and experience.",
+        "ar": "تدريب وخبرة موثقة."
+       },
+       {
+        "en": "Evaluate effectiveness through performance and testing.",
+        "ar": "تقييم الفعالية بالأداء والاختبار."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Competence matrix",
+        "ar": "مصفوفة الكفاءات"
+       },
+       {
+        "en": "Training and qualification records",
+        "ar": "سجلات التدريب والمؤهلات"
+       }
+      ],
+      "tip": {
+       "en": "Start with the riskiest roles: procurement, sales, finance, HR.",
+       "ar": "ابدأ بالأدوار الأعلى مخاطر: المشتريات، المبيعات، المالية، الموارد البشرية."
+      },
+      "checks": [
+       {
+        "ar": "ما الكفاءات المطلوبة للأدوار عالية المخاطر؟",
+        "en": "What competences are required for high-risk roles?"
+       },
+       {
+        "ar": "كيف تحققت من كفاءة وظيفة الامتثال؟",
+        "en": "How was the compliance function's competence verified?"
+       },
+       {
+        "ar": "كيف قُيّمت فعالية التدريب؟",
+        "en": "How was training effectiveness evaluated?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "7.2.2",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Employment process",
+       "ar": "عملية التوظيف"
+      },
+      "req": {
+       "en": "In employment: include terms requiring compliance, provide the policy and training within a reasonable time of hiring, and apply appropriate disciplinary action on breaches. Before hiring, transfer or promotion into roles with high compliance risk, assess the person's compliance risk (due diligence), and review incentives and targets periodically.",
+       "ar": "طبّق في عملية التوظيف: شروطاً تلزم الأفراد بالامتثال، وإتاحة السياسة والتدريب لهم خلال فترة معقولة من التعيين، وإجراءات تأديبية مناسبة عند المخالفة. وقبل التعيين أو النقل أو الترقية في المناصب ذات مخاطر الامتثال المرتفعة، قيّم مخاطر الامتثال المرتبطة بالشخص (العناية الواجبة)، وراجع الحوافز والأهداف دورياً."
+      },
+      "ex": {
+       "en": "Al-Riyada's contracts include a code of conduct clause, and new hires attend compliance training within 30 days. Before appointing a procurement manager it checks professional history, references and conflicts of interest.",
+       "ar": "تتضمن عقود الريادة بند الالتزام بمدونة السلوك، ويحضر الموظف الجديد تدريب الامتثال خلال 30 يوماً. وقبل تعيين مدير مشتريات، تتحقق من السوابق المهنية والمراجع وتضارب المصالح."
+      },
+      "how": [
+       {
+        "en": "A compliance clause in employment contracts.",
+        "ar": "بند امتثال في عقود العمل."
+       },
+       {
+        "en": "Compliance training within a set period of induction.",
+        "ar": "تدريب الامتثال ضمن التهيئة خلال مدة محددة."
+       },
+       {
+        "en": "Due diligence before hiring or promoting into sensitive roles.",
+        "ar": "عناية واجبة قبل تعيين أو ترقية المناصب الحساسة."
+       },
+       {
+        "en": "Disciplinary rules applied fairly.",
+        "ar": "لائحة جزاءات مطبقة بعدالة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Employment contract templates",
+        "ar": "نماذج عقود العمل"
+       },
+       {
+        "en": "Due diligence records",
+        "ar": "سجلات العناية الواجبة"
+       },
+       {
+        "en": "Disciplinary action log",
+        "ar": "سجل الإجراءات التأديبية"
+       }
+      ],
+      "tip": {
+       "en": "This clause is one of 37301's distinctive additions; involve HR early, they are the ones who run it.",
+       "ar": "هذا البند من إضافات 37301 المميزة؛ أشرك الموارد البشرية مبكراً فهي من ينفذه."
+      },
+      "checks": [
+       {
+        "ar": "هل تتضمن عقود العمل التزام الامتثال؟",
+        "en": "Do employment contracts include the compliance obligation?"
+       },
+       {
+        "ar": "اعرض العناية الواجبة لتعيين حديث في منصب حساس.",
+        "en": "Show the due diligence for a recent appointment to a sensitive role."
+       },
+       {
+        "ar": "كيف تُطبق الإجراءات التأديبية عند المخالفة؟",
+        "en": "How is disciplinary action applied on breaches?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "7.2.3",
+         "why": {
+          "ar": "التعيين يبدأ بالتدريب.",
+          "en": "Hiring starts with training."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.3.1",
+         "why": {
+          "ar": "مراجعة الحوافز جزء من التوظيف.",
+          "en": "Incentive review is part of employment."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "7.2.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Training",
+       "ar": "التدريب"
+      },
+      "req": {
+       "en": "Train people regularly from hiring and at planned intervals, according to their roles and the compliance risks they face, evaluating effectiveness and updating training when obligations or risks change.",
+       "ar": "درّب الأفراد بانتظام منذ التعيين وعلى فترات مخططة، بحسب أدوارهم ومخاطر الامتثال التي يتعرضون لها، مع تقييم الفعالية وتحديث التدريب عند تغير الالتزامات أو المخاطر."
+      },
+      "ex": {
+       "en": "Al-Riyada's programme: yearly core training for all, advanced training for procurement on anti-concealment and bribery, for site supervisors on labour and safety rules, and for subcontractors at contract award. Completion is 96%.",
+       "ar": "برنامج الريادة: تدريب أساسي للجميع سنوياً، وتدريب متقدم للمشتريات عن مكافحة التستر والرشوة، ولمشرفي المواقع عن أنظمة العمل والسلامة، ولمقاولي الباطن عند التعاقد. ونسبة الإكمال 96%."
+      },
+      "how": [
+       {
+        "en": "A training matrix by role and risk.",
+        "ar": "مصفوفة تدريب بحسب الدور والمخاطر."
+       },
+       {
+        "en": "Practical cases from the sector.",
+        "ar": "حالات عملية من واقع القطاع."
+       },
+       {
+        "en": "A short test and completion tracking.",
+        "ar": "اختبار قصير وقياس نسبة الإكمال."
+       },
+       {
+        "en": "Update on regulatory changes.",
+        "ar": "تحديث عند التغييرات التشريعية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Training plan",
+        "ar": "خطة التدريب"
+       },
+       {
+        "en": "Attendance records and test results",
+        "ar": "سجلات الحضور ونتائج الاختبارات"
+       }
+      ],
+      "tip": {
+       "en": "Generic training for everyone is not enough; the auditor looks for tailored training for those who actually face the risks.",
+       "ar": "التدريب العام للجميع لا يكفي؛ المدقق يبحث عن تدريب مخصص لمن يواجه المخاطر فعلاً."
+      },
+      "checks": [
+       {
+        "ar": "اعرض خطة التدريب: هل ترتبط بالأدوار والمخاطر؟",
+        "en": "Show the training plan: is it linked to roles and risks?"
+       },
+       {
+        "ar": "ما نسبة الإكمال وكيف تُقاس الفعالية؟",
+        "en": "What is the completion rate and how is effectiveness measured?"
+       },
+       {
+        "ar": "هل دُرّبت الأطراف الثالثة المعنية؟",
+        "en": "Were relevant third parties trained?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "7.3",
+         "why": {
+          "ar": "التدريب يبني الوعي.",
+          "en": "Training builds awareness."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "7.2.2",
+         "why": {
+          "ar": "التعيين يبدأ بالتدريب.",
+          "en": "Hiring starts with training."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "7.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Awareness",
+       "ar": "الوعي"
+      },
+      "req": {
+       "en": "People are aware of the compliance policy, their contribution to system effectiveness, the implications of non-compliance, how compliance obligations relate to their roles, and how and when to raise concerns.",
+       "ar": "يكون الأفراد على وعي بسياسة الامتثال، ومساهمتهم في فعالية النظام، وآثار عدم الامتثال، وعلاقة التزامات الامتثال بأدوارهم، وكيف ومتى يبلغون عن المخاوف."
+      },
+      "ex": {
+       "en": "Al-Riyada publishes a short monthly 'compliance message' with a real case, reporting line posters at every site, and each management meeting starts with two minutes on compliance.",
+       "ar": "تنشر الريادة «رسالة امتثال شهرية» قصيرة بحالة واقعية، وملصقات خط الإبلاغ في كل موقع، ويبدأ كل اجتماع إدارة بدقيقتين عن الامتثال."
+      },
+      "how": [
+       {
+        "en": "Short, regular awareness messages.",
+        "ar": "رسائل توعية دورية مختصرة."
+       },
+       {
+        "en": "Posters and visual aids at sites.",
+        "ar": "ملصقات ووسائل مرئية في المواقع."
+       },
+       {
+        "en": "Measure awareness through surveys and quizzes.",
+        "ar": "قياس الوعي بالاستبيان والاختبار."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Awareness materials",
+        "ar": "مواد التوعية"
+       },
+       {
+        "en": "Awareness measurement results",
+        "ar": "نتائج قياس الوعي"
+       }
+      ],
+      "tip": {
+       "en": "Ask a site employee: if you were asked to do something wrong, who would you tell? The answer measures your system.",
+       "ar": "اسأل موظفاً في الموقع: لو طُلب منك شيء مخالف، لمن تبلغ؟ إجابته مقياس نظامك."
+      },
+      "checks": [
+       {
+        "ar": "هل يعرف الموظفون السياسة وكيف يبلغون؟ اسأل عينة.",
+        "en": "Do staff know the policy and how to report? Ask a sample."
+       },
+       {
+        "ar": "هل يعرفون الالتزامات المرتبطة بأدوارهم؟",
+        "en": "Do they know the obligations linked to their roles?"
+       },
+       {
+        "ar": "كيف يُقاس الوعي؟",
+        "en": "How is awareness measured?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "5.1.2",
+         "why": {
+          "ar": "الثقافة تنتقل عبر الوعي.",
+          "en": "Culture spreads through awareness."
+         }
+        },
+        {
+         "ref": "7.2.3",
+         "why": {
+          "ar": "التدريب يبني الوعي.",
+          "en": "Training builds awareness."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "7.4",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Communication",
+       "ar": "الاتصال"
+      },
+      "req": {
+       "en": "Determine internal and external communications on the system: what, when, with whom, how and who communicates, considering diversity and barriers, and ensuring the views of interested parties are considered. External communication includes third parties and regulators as appropriate.",
+       "ar": "حدد الاتصالات الداخلية والخارجية المتعلقة بالنظام: ما، ومتى، ومع من، وكيف، ومن يتولاها، مع مراعاة التنوع والعوائق، وضمان مراعاة آراء الأطراف المعنية. ويشمل الاتصال الخارجي الأطراف الثالثة والجهات الرقابية حسب الحاجة."
+      },
+      "ex": {
+       "en": "Al-Riyada's plan: a quarterly compliance report to the board, a monthly staff bulletin in Arabic, English and Urdu, the policy sent to every subcontractor, and a defined channel for regulators through Legal.",
+       "ar": "خطة اتصال الريادة: تقرير امتثال ربع سنوي للمجلس، ونشرة شهرية للموظفين بالعربية والإنجليزية والأردية، وإرسال السياسة لكل مقاول باطن، وقناة محددة للتواصل مع الجهات الرقابية عبر الشؤون القانونية."
+      },
+      "how": [
+       {
+        "en": "A communication table with audience, channel, timing and owner.",
+        "ar": "جدول اتصال بالجمهور والوسيلة والتوقيت والمسؤول."
+       },
+       {
+        "en": "Languages and channels that fit the workforce.",
+        "ar": "لغات وقنوات تناسب القوى العاملة."
+       },
+       {
+        "en": "One approved channel for dealing with regulators.",
+        "ar": "قناة واحدة معتمدة للتواصل مع الجهات الرقابية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Communication plan",
+        "ar": "خطة الاتصال"
+       },
+       {
+        "en": "Records of communications made",
+        "ar": "سجلات الاتصالات المنفذة"
+       }
+      ],
+      "tip": {
+       "en": "At multinational sites, a message in one language means half the workforce never heard it.",
+       "ar": "في مواقع العمالة متعددة الجنسيات، رسالة بلغة واحدة تعني أن نصف القوى العاملة لم تسمعها."
+      },
+      "checks": [
+       {
+        "ar": "ما الاتصالات المخطط لها بشأن النظام؟",
+        "en": "What communications about the system are planned?"
+       },
+       {
+        "ar": "كيف رُوعي التنوع اللغوي والثقافي؟",
+        "en": "How were language and cultural diversity addressed?"
+       },
+       {
+        "ar": "من يتواصل مع الجهات الرقابية وكيف؟",
+        "en": "Who communicates with regulators, and how?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "7.5",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Documented information",
+       "ar": "المعلومات الموثقة"
+      },
+      "req": {
+       "en": "The system includes the documented information required by the standard and what the organization finds necessary. When creating and updating: identification, format, review and approval. Control it so it is available and protected, including confidentiality for reports and investigations.",
+       "ar": "يتضمن النظام المعلومات الموثقة التي تطلبها المواصفة وما تراه المنظمة لازماً. عند الإنشاء والتحديث: تعريف، وصيغة، ومراجعة واعتماد. واضبطها لتكون متاحة ومحمية، بما في ذلك السرية للبلاغات والتحقيقات."
+      },
+      "ex": {
+       "en": "Al-Riyada keeps compliance records in the electronic system with fine-grained permissions, restricts reports and investigation files to the compliance function and audit committee, and retains them for ten years.",
+       "ar": "تحفظ الريادة سجلات الامتثال في النظام الإلكتروني مع صلاحيات دقيقة، وتقصر ملفات البلاغات والتحقيقات على وظيفة الامتثال ولجنة المراجعة، وتحتفظ بها عشر سنوات."
+      },
+      "how": [
+       {
+        "en": "A list of mandatory documented information.",
+        "ar": "قائمة المعلومات الموثقة الإلزامية."
+       },
+       {
+        "en": "Version and access control.",
+        "ar": "ضبط الإصدارات والصلاحيات."
+       },
+       {
+        "en": "Protect the confidentiality of reports and investigations.",
+        "ar": "حماية سرية ملفات البلاغات والتحقيقات."
+       },
+       {
+        "en": "Retention periods aligned with legislation.",
+        "ar": "فترات حفظ متوافقة مع الأنظمة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Master document list",
+        "ar": "قائمة الوثائق الرئيسية"
+       },
+       {
+        "en": "Retention and access policy",
+        "ar": "سياسة الحفظ والصلاحيات"
+       }
+      ],
+      "tip": {
+       "en": "Leaking one reporter's identity kills trust in the whole system; technical protection of records is essential, not optional.",
+       "ar": "تسرب هوية مبلّغ واحد يقتل الثقة في النظام كله؛ الحماية التقنية للسجلات ضرورة لا رفاهية."
+      },
+      "checks": [
+       {
+        "ar": "اعرض قائمة المعلومات الموثقة الإلزامية.",
+        "en": "Show the list of mandatory documented information."
+       },
+       {
+        "ar": "كيف تُحمى سرية البلاغات والتحقيقات؟",
+        "en": "How is the confidentiality of reports and investigations protected?"
+       },
+       {
+        "ar": "ما فترات الحفظ ومرجعها؟",
+        "en": "What are the retention periods and their basis?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.3",
+         "why": {
+          "ar": "سرية البلاغات تحميها ضوابط الوثائق.",
+          "en": "Document controls protect report confidentiality."
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "8",
+    "phase": "do",
+    "title": {
+     "en": "Operation",
+     "ar": "التشغيل"
+    },
+    "intro": {
+     "en": "This is where the system becomes practice: controls and procedures that prevent and detect breaches, safe channels for raising concerns, and independent, fair investigations when something happens.",
+     "ar": "هنا يتحول النظام إلى ممارسة: ضوابط وإجراءات تمنع المخالفة وتكتشفها، وقنوات آمنة للإبلاغ عن المخاوف، وتحقيقات مستقلة وعادلة عندما يقع ما يستدعي ذلك."
+    },
+    "items": [
+     {
+      "ref": "8.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Operational planning and control",
+       "ar": "التخطيط والضبط التشغيلي"
+      },
+      "req": {
+       "en": "Plan, implement and control the processes needed to meet requirements and carry out the actions of clause 6: set criteria for processes, control them accordingly and keep documented information. Control planned changes, review unintended ones, and ensure outsourced processes are controlled.",
+       "ar": "خطط العمليات اللازمة لتلبية المتطلبات وتنفيذ إجراءات البند 6 ونفذها واضبطها: بوضع معايير للعمليات، وتطبيق الضبط وفقها، والاحتفاظ بمعلومات موثقة. واضبط التغييرات المخططة وراجع عواقب غير المقصودة، وتأكد من ضبط العمليات المسندة للخارج."
+      },
+      "ex": {
+       "en": "Al-Riyada set a yearly compliance calendar: licence and registration renewals, tax filings, Nitaqat updates and local content reports, with alerts 30 days ahead. Subcontractors are bound by the same requirements in their contracts.",
+       "ar": "وضعت الريادة تقويم امتثال سنوياً: مواعيد تجديد التراخيص والسجلات، والإقرارات الضريبية، وتحديث نطاقات، وتقارير المحتوى المحلي، مع تنبيهات قبل 30 يوماً. وتلزم مقاولي الباطن بنفس المتطلبات في العقود."
+      },
+      "how": [
+       {
+        "en": "A compliance calendar of statutory deadlines.",
+        "ar": "تقويم امتثال بالمواعيد النظامية."
+       },
+       {
+        "en": "Control criteria for each high-risk process.",
+        "ar": "معايير ضبط لكل عملية عالية المخاطر."
+       },
+       {
+        "en": "Control outsourced processes and subcontractors through contracts and audits.",
+        "ar": "ضبط العمليات المسندة ومقاولي الباطن بالعقود والتدقيق."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Annual calendar",
+        "ar": "التقويم السنوي"
+       },
+       {
+        "en": "Execution records",
+        "ar": "سجلات التنفيذ"
+       },
+       {
+        "en": "Third-party contract clauses",
+        "ar": "بنود العقود مع الأطراف الثالثة"
+       }
+      ],
+      "tip": {
+       "en": "Outsourcing an activity does not outsource legal responsibility; regulators will ask you.",
+       "ar": "إسناد نشاط لا يسند المسؤولية القانونية؛ الجهات الرقابية ستسألك أنت."
+      },
+      "checks": [
+       {
+        "ar": "ما معايير ضبط العمليات عالية المخاطر؟",
+        "en": "What control criteria apply to high-risk processes?"
+       },
+       {
+        "ar": "كيف تُضبط العمليات المسندة ومقاولو الباطن؟",
+        "en": "How are outsourced processes and subcontractors controlled?"
+       },
+       {
+        "ar": "اعرض سجلات تثبت الالتزام بالمواعيد النظامية.",
+        "en": "Show records proving statutory deadlines were met."
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.2",
+         "why": {
+          "ar": "العمليات المسندة تحتاج ضوابط.",
+          "en": "Outsourced processes need controls."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "8.2",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Establishing controls and procedures",
+       "ar": "وضع الضوابط والإجراءات"
+      },
+      "req": {
+       "en": "Implement, maintain, review and test controls to manage compliance obligations and their associated risks, to ensure they stay effective. This includes preventive, detective and corrective controls, built into processes.",
+       "ar": "طبّق ضوابط لإدارة التزامات الامتثال ومخاطرها المرتبطة وحافظ عليها وراجعها واختبرها دورياً لضمان فعاليتها المستمرة. ويشمل ذلك ضوابط وقائية واكتشافية وتصحيحية، ودمجها في العمليات."
+      },
+      "ex": {
+       "en": "Al-Riyada's controls for 'irregular labour at subcontractors': prior vetting of the subcontractor (preventive), site access linked to ID and permit (preventive), monthly matching of labour lists against social insurance (detective), and payment holds on breaches (corrective). Internal audit tests them twice a year.",
+       "ar": "ضوابط الريادة لخطر «العمالة غير النظامية لدى مقاولي الباطن»: فحص مسبق للمقاول (وقائي)، وربط دخول الموقع بالهوية والتصريح (وقائي)، ومطابقة شهرية لكشوف العمالة مع التأمينات (اكتشافي)، وإيقاف الدفعات عند المخالفة (تصحيحي). ويختبرها المدقق الداخلي نصف سنوياً."
+      },
+      "how": [
+       {
+        "en": "One or more controls for every high risk in the register.",
+        "ar": "ضابط أو أكثر لكل خطر مرتفع في سجل المخاطر."
+       },
+       {
+        "en": "A mix of preventive, detective and corrective.",
+        "ar": "مزيج وقائي واكتشافي وتصحيحي."
+       },
+       {
+        "en": "Build controls into systems and daily procedures.",
+        "ar": "دمج الضوابط في النظم والإجراءات اليومية."
+       },
+       {
+        "en": "Test effectiveness periodically and record results.",
+        "ar": "اختبار دوري للفعالية وتوثيق النتائج."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Risk and control matrix",
+        "ar": "مصفوفة المخاطر والضوابط"
+       },
+       {
+        "en": "Approved procedures",
+        "ar": "الإجراءات المعتمدة"
+       },
+       {
+        "en": "Control test results",
+        "ar": "نتائج اختبار الضوابط"
+       }
+      ],
+      "tip": {
+       "en": "An untested control is an assumption. Ask for evidence that it works, not that it is written.",
+       "ar": "الضابط غير المختبر افتراض. اطلب دليلاً على أنه يعمل، لا أنه مكتوب."
+      },
+      "checks": [
+       {
+        "ar": "اعرض مصفوفة المخاطر والضوابط: هل لكل خطر مرتفع ضابط؟",
+        "en": "Show the risk and control matrix: does every high risk have a control?"
+       },
+       {
+        "ar": "كيف تُختبر فعالية الضوابط؟ اعرض آخر نتائج.",
+        "en": "How is control effectiveness tested? Show the latest results."
+       },
+       {
+        "ar": "هل الضوابط مدمجة في العمليات فعلاً؟",
+        "en": "Are controls actually built into processes?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.1.1",
+         "why": {
+          "ar": "فعالية الضوابط تُرصد.",
+          "en": "Control effectiveness is monitored."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.6",
+         "why": {
+          "ar": "المخاطر المرتفعة تحتاج ضوابط.",
+          "en": "High risks need controls."
+         }
+        },
+        {
+         "ref": "5.3.3",
+         "why": {
+          "ar": "المديرون يطبقون الضوابط في عملياتهم.",
+          "en": "Managers apply controls in their processes."
+         }
+        },
+        {
+         "ref": "8.1",
+         "why": {
+          "ar": "العمليات المسندة تحتاج ضوابط.",
+          "en": "Outsourced processes need controls."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.3",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Raising concerns",
+       "ar": "الإبلاغ عن المخاوف"
+      },
+      "req": {
+       "en": "Establish a process that encourages reporting in good faith or on reasonable belief of attempted, suspected or actual violations of the policy or obligations, is available to everyone, treats reports confidentially, allows anonymous reporting, protects reporters from retaliation and enables people to get advice.",
+       "ar": "ضع عملية تشجع الإبلاغ بحسن نية أو بناءً على اعتقاد معقول عن محاولات أو شبهات أو حالات فعلية لانتهاك السياسة أو الالتزامات، وتتيحها لجميع الأفراد، وتعامل البلاغات بسرية، وتسمح بالإبلاغ مجهول الهوية، وتحمي المبلغين من الانتقام، وتمكّن من الحصول على المشورة."
+      },
+      "ex": {
+       "en": "Al-Riyada runs a reporting line through an independent provider (phone, email, web form) in four languages, allowing anonymity; reports against top management go directly to the audit committee chair. It received 23 reports in 2025, of which 9 were substantiated.",
+       "ar": "لدى الريادة خط إبلاغ يديره مزود مستقل (هاتف، بريد، نموذج إلكتروني) بأربع لغات، يسمح بعدم ذكر الهوية، وتصل البلاغات ضد الإدارة العليا مباشرة لرئيس لجنة المراجعة. استقبل 23 بلاغاً في 2025، ثبت منها 9."
+      },
+      "how": [
+       {
+        "en": "Multiple channels available to staff and third parties.",
+        "ar": "قنوات متعددة ومتاحة للموظفين والأطراف الثالثة."
+       },
+       {
+        "en": "Anonymous option and confidentiality safeguards.",
+        "ar": "خيار عدم ذكر الهوية وضمانات السرية."
+       },
+       {
+        "en": "A non-retaliation policy and follow-up on the reporter's situation.",
+        "ar": "سياسة عدم الانتقام ومتابعة حالة المبلغ لاحقاً."
+       },
+       {
+        "en": "An independent escalation route for reports against top management.",
+        "ar": "مسار تصعيد مستقل للبلاغات ضد الإدارة العليا."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Reporting procedure",
+        "ar": "إجراء الإبلاغ"
+       },
+       {
+        "en": "Report log",
+        "ar": "سجل البلاغات"
+       },
+       {
+        "en": "Non-retaliation policy",
+        "ar": "سياسة عدم الانتقام"
+       }
+      ],
+      "tip": {
+       "en": "No reports is not proof of integrity; it is usually proof of no trust. ISO 37002 is a good reference here.",
+       "ar": "انعدام البلاغات ليس دليلاً على النزاهة، بل غالباً على انعدام الثقة. ISO 37002 مرجع جيد هنا."
+      },
+      "checks": [
+       {
+        "ar": "ما قنوات الإبلاغ المتاحة، وهل تسمح بعدم ذكر الهوية؟",
+        "en": "What reporting channels exist, and do they allow anonymity?"
+       },
+       {
+        "ar": "كيف يُحمى المبلغون من الانتقام؟ اعرض الدليل.",
+        "en": "How are reporters protected from retaliation? Show evidence."
+       },
+       {
+        "ar": "كم بلاغاً استُقبل وكيف عولج؟",
+        "en": "How many reports were received and how were they handled?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.4",
+         "why": {
+          "ar": "البلاغات الجدية تُحال للتحقيق.",
+          "en": "Serious reports go to investigation."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.2",
+         "why": {
+          "ar": "السياسة تعد بحماية المبلغين.",
+          "en": "The policy promises reporter protection."
+         }
+        },
+        {
+         "ref": "7.5",
+         "why": {
+          "ar": "سرية البلاغات تحميها ضوابط الوثائق.",
+          "en": "Document controls protect report confidentiality."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.4",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Investigation processes",
+       "ar": "عمليات التحقيق"
+      },
+      "req": {
+       "en": "Establish processes to assess, investigate and close reports and suspected cases, ensuring fair, impartial decisions without conflicts of interest, independent and competent investigators, reporting of results to management and the governing body as appropriate, and retention of documented information.",
+       "ar": "ضع عمليات لتقييم البلاغات والحالات المشتبه بها والتحقيق فيها ومعالجتها، تضمن اتخاذ القرار بعدالة وحياد ودون تضارب مصالح، واستقلال المحققين وكفاءتهم، وإبلاغ النتائج للإدارة والجهة الحاكمة حسب الحاجة، والاحتفاظ بمعلومات موثقة."
+      },
+      "ex": {
+       "en": "Al-Riyada's investigation procedure: triage within 5 days, an investigator independent of the department concerned, an investigation plan, documented interviews, a report with findings and root cause, a decision by a designated committee, and closure within 45 days. Criminal matters go to the authorities through Legal.",
+       "ar": "إجراء التحقيق في الريادة: فرز خلال 5 أيام، وتعيين محقق مستقل عن الإدارة المعنية، وخطة تحقيق، ومقابلات موثقة، وتقرير بالنتائج والسبب الجذري، وقرار من لجنة مختصة، وإغلاق خلال 45 يوماً. وتُحال الحالات الجنائية للجهات المختصة عبر الشؤون القانونية."
+      },
+      "how": [
+       {
+        "en": "A written procedure for triage, investigation and decision.",
+        "ar": "إجراء مكتوب للفرز والتحقيق والقرار."
+       },
+       {
+        "en": "Criteria for investigator independence and competence.",
+        "ar": "معايير لاستقلال المحقق وكفاءته."
+       },
+       {
+        "en": "Protect evidence and the rights of those involved.",
+        "ar": "حماية الأدلة وحقوق الأطراف."
+       },
+       {
+        "en": "Root cause analysis and control updates.",
+        "ar": "تحليل السبب الجذري وتحديث الضوابط."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Investigation procedure",
+        "ar": "إجراء التحقيق"
+       },
+       {
+        "en": "Investigation files and reports",
+        "ar": "ملفات التحقيقات وتقاريرها"
+       },
+       {
+        "en": "Reports to the governing body",
+        "ar": "تقارير للجهة الحاكمة"
+       }
+      ],
+      "tip": {
+       "en": "Every investigation should end with the question: which control failed? Otherwise you deal with the person and leave the gap.",
+       "ar": "كل تحقيق يجب أن ينتهي بسؤال: أي ضابط فشل؟ وإلا عالجت الشخص وتركت الثغرة."
+      },
+      "checks": [
+       {
+        "ar": "اعرض إجراء التحقيق: كيف يُضمن الحياد والاستقلال؟",
+        "en": "Show the investigation procedure: how are impartiality and independence ensured?"
+       },
+       {
+        "ar": "اختر ملف تحقيق مغلقاً وتتبعه من البلاغ حتى القرار.",
+        "en": "Pick a closed investigation file and trace it from report to decision."
+       },
+       {
+        "ar": "كيف تُستخدم نتائج التحقيقات لتحسين الضوابط؟",
+        "en": "How are investigation results used to improve controls?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "10.2",
+         "why": {
+          "ar": "نتائج التحقيق تولد إجراءات تصحيحية.",
+          "en": "Investigation results drive corrective action."
+         }
+        },
+        {
+         "ref": "9.1.4",
+         "why": {
+          "ar": "التحقيقات الجوهرية تُبلغ للجهة الحاكمة.",
+          "en": "Material investigations are reported to the governing body."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "8.3",
+         "why": {
+          "ar": "البلاغات الجدية تُحال للتحقيق.",
+          "en": "Serious reports go to investigation."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "9",
+    "phase": "check",
+    "title": {
+     "en": "Performance evaluation",
+     "ar": "تقييم الأداء"
+    },
+    "intro": {
+     "en": "37301 details monitoring more than most standards: sources of feedback, development of indicators, reporting to the governing body and record-keeping, followed by internal audit and management review.",
+     "ar": "37301 تفصّل الرصد أكثر من غيرها: مصادر التغذية الراجعة، وتطوير المؤشرات، والتقارير للجهة الحاكمة، وحفظ السجلات، ثم التدقيق الداخلي ومراجعة الإدارة."
+    },
+    "items": [
+     {
+      "ref": "9.1.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Monitoring and measurement: general",
+       "ar": "الرصد والقياس: عام"
+      },
+      "req": {
+       "en": "Determine what is monitored and measured, methods that ensure valid results, when, and when results are analysed and evaluated. Evaluate compliance performance and system effectiveness, and keep evidence.",
+       "ar": "حدد ما يُرصد ويُقاس، والطرق التي تضمن نتائج صحيحة، ومتى، ومتى تُحلل النتائج وتُقيّم. وقيّم أداء الامتثال وفعالية النظام، واحتفظ بالأدلة."
+      },
+      "ex": {
+       "en": "Al-Riyada's monitoring plan covers register updates, control tests, training, reports and investigations, breaches and fines, and third-party results, analysed quarterly.",
+       "ar": "خطة رصد الريادة تغطي: تحديث السجل، واختبار الضوابط، والتدريب، والبلاغات والتحقيقات، والمخالفات والغرامات، ونتائج الأطراف الثالثة، مع تحليل ربع سنوي."
+      },
+      "how": [
+       {
+        "en": "A monitoring plan: what, when, who, how.",
+        "ar": "خطة رصد بما ومتى ومن وكيف."
+       },
+       {
+        "en": "Analyse trends and causes.",
+        "ar": "تحليل الاتجاهات والأسباب."
+       },
+       {
+        "en": "Link results to objectives (6.2).",
+        "ar": "ربط النتائج بالأهداف (6.2)."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Monitoring plan",
+        "ar": "خطة الرصد"
+       },
+       {
+        "en": "Analysis results",
+        "ar": "نتائج التحليل"
+       }
+      ],
+      "tip": {
+       "en": "Good monitoring combines leading indicators (training, control tests) and lagging ones (breaches, fines).",
+       "ar": "الرصد الجيد يجمع مؤشرات «سابقة» (تدريب، اختبار ضوابط) و«لاحقة» (مخالفات، غرامات)."
+      },
+      "checks": [
+       {
+        "ar": "ما الذي يُرصد ويُقاس وكيف؟",
+        "en": "What is monitored and measured, and how?"
+       },
+       {
+        "ar": "من يحلل النتائج ومتى؟",
+        "en": "Who analyses results and when?"
+       },
+       {
+        "ar": "اعرض دليلاً على تقييم فعالية النظام.",
+        "en": "Show evidence of evaluating system effectiveness."
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "8.2",
+         "why": {
+          "ar": "فعالية الضوابط تُرصد.",
+          "en": "Control effectiveness is monitored."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "9.1.2",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Sources of feedback on compliance performance",
+       "ar": "مصادر التغذية الراجعة عن أداء الامتثال"
+      },
+      "req": {
+       "en": "Collect information on compliance performance from multiple sources: staff, reporting channels, customers, suppliers, regulators, and audit and monitoring results, and analyse it to identify root causes and act.",
+       "ar": "اجمع المعلومات عن أداء الامتثال من مصادر متعددة: الموظفين، وقنوات الإبلاغ، والعملاء، والموردين، والجهات الرقابية، ونتائج التدقيق والرصد، وحللها لتحديد الأسباب الجذرية واتخاذ الإجراءات."
+      },
+      "ex": {
+       "en": "Al-Riyada gathers feedback from the reporting line, the culture survey, regulator visits, client observations, subcontractor evaluations and audit results into one dashboard.",
+       "ar": "تجمع الريادة التغذية الراجعة من: خط الإبلاغ، واستبيان الثقافة، وزيارات الجهات الرقابية، وملاحظات العميل، وتقييم مقاولي الباطن، ونتائج التدقيق، في لوحة واحدة."
+      },
+      "how": [
+       {
+        "en": "A list of feedback sources and an owner for each.",
+        "ar": "قائمة مصادر التغذية الراجعة ومالك كل مصدر."
+       },
+       {
+        "en": "Bring them into one dashboard.",
+        "ar": "تجميعها في لوحة واحدة."
+       },
+       {
+        "en": "Analyse root causes of recurring patterns.",
+        "ar": "تحليل الأسباب الجذرية للأنماط المتكررة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Feedback sources log",
+        "ar": "سجل مصادر التغذية الراجعة"
+       },
+       {
+        "en": "Cause analyses",
+        "ar": "تحليلات الأسباب"
+       }
+      ],
+      "tip": {
+       "en": "A receptionist's remark about a gift delivered to a manager can be worth more than a formal report.",
+       "ar": "ملاحظة موظف الاستقبال عن هدية وصلت لمدير أحياناً أثمن من تقرير رسمي."
+      },
+      "checks": [
+       {
+        "ar": "ما مصادر التغذية الراجعة عن الامتثال؟",
+        "en": "What are the sources of feedback on compliance?"
+       },
+       {
+        "ar": "كيف تُحلل وتُستخدم؟",
+        "en": "How is it analysed and used?"
+       },
+       {
+        "ar": "اعرض مثالاً لإجراء نتج عن تغذية راجعة.",
+        "en": "Show an example of an action resulting from feedback."
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.1.3",
+         "why": {
+          "ar": "التغذية الراجعة تغذي المؤشرات.",
+          "en": "Feedback feeds indicators."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "9.1.3",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Development of indicators",
+       "ar": "تطوير المؤشرات"
+      },
+      "req": {
+       "en": "Develop appropriate indicators to help assess achievement of objectives and compliance performance, combining activity, reactive and predictive indicators.",
+       "ar": "طوّر مؤشرات مناسبة تساعد في تقييم تحقيق الأهداف وأداء الامتثال، تجمع بين مؤشرات النشاط والتفاعل والنتائج."
+      },
+      "ex": {
+       "en": "Al-Riyada's indicators: % training completion, % controls tested successfully, reports per 100 employees, average investigation closure time, % subcontractors vetted, number of breaches and fines, and confidence in reporting.",
+       "ar": "مؤشرات الريادة: % إكمال التدريب، % الضوابط المختبرة بنجاح، عدد البلاغات لكل 100 موظف، متوسط زمن إغلاق التحقيقات، % مقاولي الباطن المفحوصين، عدد المخالفات والغرامات، مؤشر الثقة في الإبلاغ."
+      },
+      "how": [
+       {
+        "en": "6 to 10 indicators, each with definition, source and frequency.",
+        "ar": "6 إلى 10 مؤشرات بتعريف ومصدر وتكرار."
+       },
+       {
+        "en": "A mix of activity, outcome and predictive indicators.",
+        "ar": "مزيج من مؤشرات النشاط والنتائج والتنبؤ."
+       },
+       {
+        "en": "Targets linked to objectives.",
+        "ar": "مستهدفات مرتبطة بالأهداف."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Indicator definition cards",
+        "ar": "بطاقات تعريف المؤشرات"
+       },
+       {
+        "en": "Indicator dashboard",
+        "ar": "لوحة المؤشرات"
+       }
+      ],
+      "tip": {
+       "en": "Rising reports after launching a new line is a sign of success, not failure; interpret the indicator before judging it.",
+       "ar": "ارتفاع البلاغات بعد إطلاق خط جديد علامة نجاح لا فشل؛ فسّر المؤشر قبل الحكم عليه."
+      },
+      "checks": [
+       {
+        "ar": "ما مؤشرات أداء الامتثال وكيف عُرّفت؟",
+        "en": "What are the compliance indicators and how are they defined?"
+       },
+       {
+        "ar": "هل تجمع بين مؤشرات النشاط والنتائج؟",
+        "en": "Do they combine activity and outcome indicators?"
+       },
+       {
+        "ar": "كيف ترتبط بالأهداف؟",
+        "en": "How are they linked to objectives?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.1.4",
+         "why": {
+          "ar": "المؤشرات تُعرض في التقارير.",
+          "en": "Indicators appear in reports."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "الأهداف تُقاس بالمؤشرات.",
+          "en": "Objectives are measured by indicators."
+         }
+        },
+        {
+         "ref": "9.1.2",
+         "why": {
+          "ar": "التغذية الراجعة تغذي المؤشرات.",
+          "en": "Feedback feeds indicators."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "9.1.4",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Compliance reporting",
+       "ar": "تقارير الامتثال"
+      },
+      "req": {
+       "en": "Set up internal reporting arrangements ensuring regular reports to the governing body and top management and immediate reporting of material matters, with clear criteria on what to report and when, and considering reporting to external authorities where required.",
+       "ar": "ضع ترتيبات تقارير داخلية تضمن رفع تقارير منتظمة للجهة الحاكمة والإدارة العليا، والإبلاغ الفوري عن الأمور الجوهرية، مع معايير واضحة لما يجب الإبلاغ عنه ومتى، ومراعاة الإبلاغ للجهات الخارجية حيث يلزم."
+      },
+      "ex": {
+       "en": "Al-Riyada's quarterly committee report covers obligations status and changes, top residual risks, control test results, reports and investigations, training and indicators. Any breach that could lead to a fine over SAR 100,000 is escalated within 48 hours.",
+       "ar": "تقرير الريادة الربع سنوي للجنة: حالة الالتزامات والتغييرات، وأعلى المخاطر المتبقية، ونتائج اختبار الضوابط، والبلاغات والتحقيقات، والتدريب، والمؤشرات. وأي مخالفة قد تؤدي لغرامة تتجاوز 100 ألف ريال تُرفع خلال 48 ساعة."
+      },
+      "how": [
+       {
+        "en": "A standard periodic report template for the governing body.",
+        "ar": "نموذج تقرير دوري موحد للجهة الحاكمة."
+       },
+       {
+        "en": "Immediate escalation criteria for material matters.",
+        "ar": "معايير تصعيد فوري للأمور الجوهرية."
+       },
+       {
+        "en": "A clear decision process on disclosure to external authorities.",
+        "ar": "قرار واضح بشأن الإفصاح للجهات الخارجية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Periodic compliance reports",
+        "ar": "تقارير الامتثال الدورية"
+       },
+       {
+        "en": "Escalation criteria",
+        "ar": "معايير التصعيد"
+       }
+      ],
+      "tip": {
+       "en": "A good report tells the board what it does not want to hear, early.",
+       "ar": "التقرير الجيد يقول للمجلس ما لا يحب سماعه، مبكراً."
+      },
+      "checks": [
+       {
+        "ar": "اعرض آخر تقرير امتثال للجهة الحاكمة.",
+        "en": "Show the latest compliance report to the governing body."
+       },
+       {
+        "ar": "ما معايير الإبلاغ الفوري عن الأمور الجوهرية؟",
+        "en": "What are the criteria for immediate reporting of material matters?"
+       },
+       {
+        "ar": "كيف يُقرر الإبلاغ للجهات الخارجية؟",
+        "en": "How is external reporting decided?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "5.3.2",
+         "why": {
+          "ar": "وظيفة الامتثال ترفع التقارير للجهة الحاكمة.",
+          "en": "The compliance function reports to the governing body."
+         }
+        },
+        {
+         "ref": "8.4",
+         "why": {
+          "ar": "التحقيقات الجوهرية تُبلغ للجهة الحاكمة.",
+          "en": "Material investigations are reported to the governing body."
+         }
+        },
+        {
+         "ref": "9.1.3",
+         "why": {
+          "ar": "المؤشرات تُعرض في التقارير.",
+          "en": "Indicators appear in reports."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "9.1.5",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Record-keeping",
+       "ar": "حفظ السجلات"
+      },
+      "req": {
+       "en": "Keep accurate, up-to-date records of compliance activities that support monitoring and review and demonstrate conformity, protected against unauthorised alteration and destruction.",
+       "ar": "احتفظ بسجلات دقيقة ومحدثة لأنشطة الامتثال تدعم عملية الرصد والمراجعة وتثبت المطابقة، مع حمايتها من التعديل والإتلاف غير المصرح."
+      },
+      "ex": {
+       "en": "Al-Riyada keeps records of obligations and changes, risk assessments, control tests, training, declarations, reports and investigations, and reports, in a system with an audit trail that prevents deletion.",
+       "ar": "تحفظ الريادة سجلات: الالتزامات وتغييراتها، وتقييمات المخاطر، واختبارات الضوابط، والتدريب، والإقرارات، والبلاغات والتحقيقات، والتقارير، في نظام بسجل تدقيق يمنع الحذف."
+      },
+      "how": [
+       {
+        "en": "A list of required records and retention periods.",
+        "ar": "قائمة السجلات المطلوبة ومدد حفظها."
+       },
+       {
+        "en": "Protection from unauthorised change (audit trail).",
+        "ar": "حماية من التعديل غير المصرح (سجل تدقيق)."
+       },
+       {
+        "en": "Backups and tested retrieval.",
+        "ar": "نسخ احتياطية واسترجاع مختبر."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Records index and retention schedule",
+        "ar": "سجل السجلات ومدد الحفظ"
+       }
+      ],
+      "tip": {
+       "en": "In a formal investigation or case, your records are your only defence.",
+       "ar": "عند التحقيق الرسمي أو القضية، سجلاتك هي دفاعك الوحيد."
+      },
+      "checks": [
+       {
+        "ar": "ما السجلات المحفوظة ومددها؟",
+        "en": "What records are kept and for how long?"
+       },
+       {
+        "ar": "كيف تُحمى من التعديل والحذف؟",
+        "en": "How are they protected from change and deletion?"
+       },
+       {
+        "ar": "اختر سجلاً واسترجعه.",
+        "en": "Pick a record and retrieve it."
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.2",
+         "why": {
+          "ar": "السجلات دليل التدقيق.",
+          "en": "Records are audit evidence."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "9.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Internal audit",
+       "ar": "التدقيق الداخلي"
+      },
+      "req": {
+       "en": "Conduct internal audits at planned intervals to provide information on system conformity and effective implementation, with a programme considering the importance of processes, risks and previous results, objective and impartial auditors, and results reported to management and the governing body.",
+       "ar": "نفّذ تدقيقات داخلية على فترات مخططة لتقديم معلومات عن مطابقة النظام وفعالية تطبيقه، ببرنامج يراعي أهمية العمليات والمخاطر ونتائج التدقيقات السابقة، ومدققين موضوعيين محايدين، وإبلاغ النتائج للإدارة والجهة الحاكمة."
+      },
+      "ex": {
+       "en": "Al-Riyada's programme: a yearly full audit and a half-yearly audit of procurement and subcontractors, run by internal audit reporting to the audit committee, with an external reviewer every three years.",
+       "ar": "برنامج الريادة: تدقيق سنوي شامل، وتدقيق نصف سنوي على المشتريات ومقاولي الباطن، ينفذه التدقيق الداخلي الذي يرفع تقاريره للجنة المراجعة، مع مراجع خارجي كل ثلاث سنوات."
+      },
+      "how": [
+       {
+        "en": "A risk-based programme.",
+        "ar": "برنامج مبني على المخاطر."
+       },
+       {
+        "en": "Auditors independent of the compliance function and the processes audited.",
+        "ar": "مدققون مستقلون عن وظيفة الامتثال والعمليات المدققة."
+       },
+       {
+        "en": "Trace obligations through to controls and records.",
+        "ar": "تتبع الالتزامات حتى الضوابط والسجلات."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Audit programme",
+        "ar": "برنامج التدقيق"
+       },
+       {
+        "en": "Audit reports",
+        "ar": "تقارير التدقيق"
+       },
+       {
+        "en": "Auditor qualifications",
+        "ar": "مؤهلات المدققين"
+       }
+      ],
+      "tip": {
+       "en": "The compliance function does not audit itself; have the audit done by someone independent of it.",
+       "ar": "وظيفة الامتثال لا تدقق نفسها؛ اجعل التدقيق من جهة مستقلة عنها."
+      },
+      "checks": [
+       {
+        "ar": "اعرض برنامج التدقيق: هل يراعي المخاطر؟",
+        "en": "Show the audit programme: does it consider risk?"
+       },
+       {
+        "ar": "كيف يُضمن استقلال المدققين عن وظيفة الامتثال؟",
+        "en": "How is auditor independence from the compliance function ensured?"
+       },
+       {
+        "ar": "هل أُبلغت النتائج للجهة الحاكمة؟",
+        "en": "Were results reported to the governing body?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "10.2",
+         "why": {
+          "ar": "نتائج التدقيق تولد إجراءات تصحيحية.",
+          "en": "Audit findings drive corrective action."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "9.1.5",
+         "why": {
+          "ar": "السجلات دليل التدقيق.",
+          "en": "Records are audit evidence."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "9.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Management review",
+       "ar": "مراجعة الإدارة"
+      },
+      "req": {
+       "en": "Top management reviews the system at planned intervals, and the governing body reviews it too. Inputs: status of previous actions, changes in issues and obligations, performance information (nonconformities, indicators, audits), party feedback, effectiveness of risk actions, adequacy of the policy and resources, reports and investigations, and improvement opportunities. Outputs: decisions on improvement, change and resources, reported to the governing body.",
+       "ar": "تراجع الإدارة العليا النظام على فترات مخططة، ويراجعه المجلس أيضاً. المدخلات: حالة الإجراءات السابقة، والتغييرات في القضايا والالتزامات، ومعلومات الأداء (عدم المطابقة، المؤشرات، التدقيق)، وملاحظات الأطراف، وفعالية إجراءات المخاطر، وكفاية السياسة والموارد، والبلاغات والتحقيقات، وفرص التحسين. المخرجات: قرارات التحسين والتغيير والموارد، وتُبلّغ للجهة الحاكمة."
+      },
+      "ex": {
+       "en": "At Al-Riyada's annual review, the culture survey and reporting patterns were presented. Management decided to hire a second compliance specialist, launch automated supplier due diligence and review sales incentives, and reported the decisions to the audit committee.",
+       "ar": "في مراجعة الريادة السنوية عُرضت نتائج استبيان الثقافة وأنماط البلاغات. وقررت الإدارة: تعيين أخصائي امتثال ثانٍ، وإطلاق برنامج عناية واجبة آلي للموردين، ومراجعة حوافز المبيعات، ورفعت القرارات للجنة المراجعة."
+      },
+      "how": [
+       {
+        "en": "An agenda covering all inputs.",
+        "ar": "جدول أعمال يغطي كل المدخلات."
+       },
+       {
+        "en": "Decisions with owner and date.",
+        "ar": "قرارات بمسؤول وموعد."
+       },
+       {
+        "en": "Report outcomes to the governing body.",
+        "ar": "رفع النتائج للجهة الحاكمة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Management review minutes",
+        "ar": "محضر مراجعة الإدارة"
+       },
+       {
+        "en": "Report to the governing body",
+        "ar": "تقرير للجهة الحاكمة"
+       }
+      ],
+      "tip": {
+       "en": "A review that does not discuss reports, investigations and compliance culture misses what makes 37301 distinctive.",
+       "ar": "مراجعة لا تناقش البلاغات والتحقيقات وثقافة الامتثال تفوّت أهم ما يميز 37301."
+      },
+      "checks": [
+       {
+        "ar": "اعرض محضر آخر مراجعة: هل غطى كل المدخلات؟",
+        "en": "Show the last review minutes: did they cover all inputs?"
+       },
+       {
+        "ar": "ما القرارات المتخذة بشأن الموارد والتحسين؟",
+        "en": "What decisions were made on resources and improvement?"
+       },
+       {
+        "ar": "هل رُفعت النتائج للجهة الحاكمة؟",
+        "en": "Were outcomes reported to the governing body?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "قرارات المراجعة تخطط التغيير.",
+          "en": "Review decisions plan change."
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "10",
+    "phase": "act",
+    "title": {
+     "en": "Improvement",
+     "ar": "التحسين"
+    },
+    "intro": {
+     "en": "Every breach, finding or substantiated report should end with the question: why did the system fail? Then fix the cause, not only the effect, and keep improving the system.",
+     "ar": "كل مخالفة أو ملاحظة أو بلاغ ثبت يجب أن ينتهي بسؤال: لماذا فشل النظام؟ ثم إصلاح السبب لا الأثر فقط، وتحسين النظام باستمرار."
+    },
+    "items": [
+     {
+      "ref": "10.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Continual improvement",
+       "ar": "التحسين المستمر"
+      },
+      "req": {
+       "en": "Continually improve the suitability, adequacy and effectiveness of the system.",
+       "ar": "حسّن ملاءمة النظام وكفايته وفعاليته باستمرار."
+      },
+      "ex": {
+       "en": "Al-Riyada cut average investigation closure time from 70 to 38 days and raised confidence in reporting from 62% to 71% after launching an independent line and training managers to receive concerns.",
+       "ar": "خفّضت الريادة متوسط زمن إغلاق التحقيقات من 70 إلى 38 يوماً، ورفعت مؤشر الثقة في الإبلاغ من 62% إلى 71%، بعد إطلاق خط إبلاغ مستقل وتدريب المديرين على استقبال المخاوف."
+      },
+      "how": [
+       {
+        "en": "A log of improvement opportunities from every source.",
+        "ar": "سجل فرص التحسين من كل المصادر."
+       },
+       {
+        "en": "Prioritise by risk.",
+        "ar": "أولويات بحسب المخاطر."
+       },
+       {
+        "en": "Measure improvement with indicators.",
+        "ar": "قياس التحسن بالمؤشرات."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Improvement log",
+        "ar": "سجل التحسين"
+       },
+       {
+        "en": "Indicator trends",
+        "ar": "اتجاهات المؤشرات"
+       }
+      ],
+      "tip": {
+       "en": "In 37301 continual improvement comes before nonconformity in the order; focus on maturity, not firefighting.",
+       "ar": "في 37301 التحسين المستمر يأتي قبل عدم المطابقة في الترتيب؛ ركّز على النضج لا على إطفاء الحرائق."
+      },
+      "checks": [
+       {
+        "ar": "اعرض أمثلة على تحسينات في النظام.",
+        "en": "Show examples of improvements to the system."
+       },
+       {
+        "ar": "كيف تُحدد فرص التحسين؟",
+        "en": "How are improvement opportunities identified?"
+       },
+       {
+        "ar": "هل تُظهر المؤشرات تحسناً؟",
+        "en": "Do indicators show improvement?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.4",
+         "why": {
+          "ar": "التحسين يطور النظام نفسه.",
+          "en": "Improvement develops the system itself."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "10.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Nonconformity and corrective action",
+       "ar": "عدم المطابقة والإجراء التصحيحي"
+      },
+      "req": {
+       "en": "When a nonconformity or non-compliance occurs: react to control and correct it and deal with the consequences; evaluate the need to eliminate its causes by analysing it and checking for similar cases; implement actions, review their effectiveness, change the system if needed and keep evidence.",
+       "ar": "عند حدوث عدم مطابقة أو عدم امتثال: تفاعل معها لضبطها وتصحيحها والتعامل مع عواقبها، وقيّم الحاجة لإزالة أسبابها بتحليلها ومعرفة وجود حالات مشابهة، ونفذ الإجراءات، وراجع فعاليتها، وعدّل النظام عند الحاجة، واحتفظ بالأدلة."
+      },
+      "ex": {
+       "en": "Al-Riyada found a warehouse licence renewed late (non-compliance): it renewed at once and paid the fine (correction), found the cause was no clear owner for licences, added all licences to the automated calendar with owners (corrective action) and verified after six months that no delay recurred.",
+       "ar": "اكتشفت الريادة تأخر تجديد ترخيص مستودع (عدم امتثال): جددته فوراً ودفعت الغرامة (تصحيح)، ووجدت أن السبب غياب مالك واضح للتراخيص، فأضافت كل التراخيص للتقويم الآلي بمالكين (إجراء تصحيحي)، وتحققت بعد 6 أشهر من عدم تكرار أي تأخير."
+      },
+      "how": [
+       {
+        "en": "One register for nonconformity and non-compliance.",
+        "ar": "سجل موحد لعدم المطابقة وعدم الامتثال."
+       },
+       {
+        "en": "Root cause analysis.",
+        "ar": "تحليل السبب الجذري."
+       },
+       {
+        "en": "Verify effectiveness before closing.",
+        "ar": "التحقق من الفعالية قبل الإغلاق."
+       },
+       {
+        "en": "Update the risk assessment and controls.",
+        "ar": "تحديث تقييم المخاطر والضوابط."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Nonconformity and corrective action register",
+        "ar": "سجل عدم المطابقة والإجراءات التصحيحية"
+       },
+       {
+        "en": "Effectiveness verification evidence",
+        "ar": "أدلة التحقق من الفعالية"
+       }
+      ],
+      "tip": {
+       "en": "Distinguish nonconformity (with system requirements) from non-compliance (with a legal or contractual obligation); the second may require external disclosure.",
+       "ar": "فرّق بين عدم المطابقة (مع متطلبات النظام) وعدم الامتثال (مع التزام قانوني أو تعاقدي)؛ والثاني قد يستدعي إفصاحاً خارجياً."
+      },
+      "checks": [
+       {
+        "ar": "اعرض حالات عدم امتثال حديثة وكيف عولجت.",
+        "en": "Show recent non-compliance cases and how they were handled."
+       },
+       {
+        "ar": "كيف حُدد السبب الجذري؟",
+        "en": "How was the root cause determined?"
+       },
+       {
+        "ar": "كيف تحققت من فعالية الإجراء؟",
+        "en": "How was effectiveness verified?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.6",
+         "why": {
+          "ar": "عدم الامتثال يستدعي إعادة تقييم المخاطر.",
+          "en": "Non-compliance triggers risk reassessment."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "8.4",
+         "why": {
+          "ar": "نتائج التحقيق تولد إجراءات تصحيحية.",
+          "en": "Investigation results drive corrective action."
+         }
+        },
+        {
+         "ref": "9.2",
+         "why": {
+          "ar": "نتائج التدقيق تولد إجراءات تصحيحية.",
+          "en": "Audit findings drive corrective action."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "changes": [
+   {
+    "title": {
+     "en": "From guidelines to certifiable requirements",
+     "ar": "من إرشادات إلى متطلبات قابلة للشهادة"
+    },
+    "text": {
+     "en": "ISO 37301:2021 replaced ISO 19600:2014, which was guidance only ('should'). It is now requirements ('shall') on the common structure, auditable and certifiable.",
+     "ar": "حلت ISO 37301:2021 محل ISO 19600:2014 التي كانت إرشادات فقط («ينبغي»). صارت متطلبات («يجب») على الهيكل الموحد، قابلة للتدقيق والشهادة."
+    },
+    "refs": [
+     "4.4",
+     "10.2"
+    ]
+   },
+   {
+    "title": {
+     "en": "The 2024 climate amendment",
+     "ar": "تعديل المناخ 2024"
+    },
+    "text": {
+     "en": "Amendment 1:2024 added the climate change relevance decision in 4.1 and a note in 4.2 that parties can have climate-related requirements.",
+     "ar": "أضاف التعديل 1:2024 قرار صلة تغيّر المناخ في 4.1 وملاحظة في 4.2 بأن للأطراف متطلبات تتعلق بالمناخ."
+    },
+    "refs": [
+     "4.1",
+     "4.2"
+    ]
+   },
+   {
+    "title": {
+     "en": "Obligations and risk assessment inside clause 4",
+     "ar": "الالتزامات وتقييم المخاطر داخل البند 4"
+    },
+    "text": {
+     "en": "Identifying compliance obligations (4.5) and assessing compliance risk (4.6) are now part of context, including third-party risk and reassessment on change.",
+     "ar": "صار تحديد التزامات الامتثال (4.5) وتقييم مخاطر الامتثال (4.6) جزءاً من سياق المنظمة، مع تقييم مخاطر الأطراف الثالثة وإعادة التقييم عند التغيير."
+    },
+    "refs": [
+     "4.5",
+     "4.6"
+    ]
+   },
+   {
+    "title": {
+     "en": "Compliance culture and governance",
+     "ar": "ثقافة الامتثال وحوكمته"
+    },
+    "text": {
+     "en": "Two explicit requirements: a compliance culture built by the governing body and top management (5.1.2), and governance ensuring the compliance function's direct access, independence and authority (5.1.3).",
+     "ar": "متطلبان صريحان: ثقافة امتثال تبنيها الجهة الحاكمة والإدارة العليا (5.1.2)، وحوكمة تضمن وصول وظيفة الامتثال المباشر للجهة الحاكمة واستقلالها وصلاحيتها (5.1.3)."
+    },
+    "refs": [
+     "5.1.2",
+     "5.1.3"
+    ]
+   },
+   {
+    "title": {
+     "en": "The compliance function and responsibilities at every level",
+     "ar": "وظيفة الامتثال ومسؤوليات كل مستوى"
+    },
+    "text": {
+     "en": "'Compliance function' replaced 'compliance officer', and responsibilities of the governing body, management and personnel were set out separately.",
+     "ar": "حلت «وظيفة الامتثال» محل «مسؤول الامتثال»، وفُصلت مسؤوليات الجهة الحاكمة والإدارة والأفراد."
+    },
+    "refs": [
+     "5.3.2",
+     "5.3.3",
+     "5.3.4"
+    ]
+   },
+   {
+    "title": {
+     "en": "Employment process",
+     "ar": "عملية التوظيف"
+    },
+    "text": {
+     "en": "A new requirement: compliance terms in employment contracts, due diligence before hiring or promoting into high-risk roles, disciplinary action and review of incentives.",
+     "ar": "متطلب جديد: بنود الامتثال في عقود العمل، وعناية واجبة قبل التعيين أو الترقية في المناصب عالية المخاطر، وإجراءات تأديبية، ومراجعة الحوافز."
+    },
+    "refs": [
+     "7.2.2"
+    ]
+   },
+   {
+    "title": {
+     "en": "Raising concerns and investigations",
+     "ar": "الإبلاغ عن المخاوف والتحقيقات"
+    },
+    "text": {
+     "en": "A confidential reporting process allowing anonymity and protecting against retaliation (8.3), and independent, impartial investigation processes (8.4).",
+     "ar": "عملية إبلاغ سرية تسمح بعدم ذكر الهوية وتحمي من الانتقام (8.3)، وعمليات تحقيق مستقلة ونزيهة (8.4)."
+    },
+    "refs": [
+     "8.3",
+     "8.4"
+    ]
+   },
+   {
+    "title": {
+     "en": "More detailed monitoring",
+     "ar": "رصد أكثر تفصيلاً"
+    },
+    "text": {
+     "en": "Sub-clauses on feedback sources, indicator development, compliance reporting to the governing body and record-keeping.",
+     "ar": "بنود فرعية لمصادر التغذية الراجعة، وتطوير المؤشرات، وتقارير الامتثال للجهة الحاكمة، وحفظ السجلات."
+    },
+    "refs": [
+     "9.1.2",
+     "9.1.3",
+     "9.1.4",
+     "9.1.5"
+    ]
+   }
+  ],
+  "terms": [
+   {
+    "no": "37301",
+    "en": "Compliance",
+    "ar": "الامتثال",
+    "def": {
+     "ar": "الوفاء بكل التزامات الامتثال الخاصة بالمنظمة.",
+     "en": "Meeting all of the organization's compliance obligations."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Compliance obligations",
+    "ar": "التزامات الامتثال",
+    "def": {
+     "ar": "المتطلبات التي يجب على المنظمة الوفاء بها إلزامياً، والتي تختار طوعاً الوفاء بها.",
+     "en": "Requirements the organization mandatorily has to comply with, as well as those it voluntarily chooses to comply with."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Compliance risk",
+    "ar": "مخاطر الامتثال",
+    "def": {
+     "ar": "احتمال حدوث عدم امتثال وعواقبه على المنظمة.",
+     "en": "The likelihood of non-compliance occurring and its consequences for the organization."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Non-compliance",
+    "ar": "عدم الامتثال",
+    "def": {
+     "ar": "عدم الوفاء بالتزام امتثال.",
+     "en": "Not fulfilling a compliance obligation."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Compliance culture",
+    "ar": "ثقافة الامتثال",
+    "def": {
+     "ar": "القيم والأخلاقيات والمعتقدات والسلوك السائدة في المنظمة والتي تتفاعل مع هياكلها وأنظمة الضبط لتنتج معايير سلوك تدعم الامتثال.",
+     "en": "The values, ethics, beliefs and conduct across the organization that interact with its structures and control systems to produce behavioural norms conducive to compliance."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Compliance function",
+    "ar": "وظيفة الامتثال",
+    "def": {
+     "ar": "شخص أو مجموعة لها المسؤولية والصلاحية لتشغيل نظام إدارة الامتثال.",
+     "en": "A person or group with the responsibility and authority to operate the compliance management system."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Governing body",
+    "ar": "الجهة الحاكمة",
+    "def": {
+     "ar": "الشخص أو المجموعة ذات المسؤولية النهائية والصلاحية عن أنشطة المنظمة وحوكمتها وسياساتها، وترفع لها الإدارة العليا تقاريرها (مثل مجلس الإدارة).",
+     "en": "The person or group with ultimate responsibility and authority for the organization's activities, governance and policies, to which top management reports (e.g. the board)."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Top management",
+    "ar": "الإدارة العليا",
+    "def": {
+     "ar": "الشخص أو المجموعة التي توجه المنظمة وتضبطها على أعلى مستوى.",
+     "en": "The person or group who directs and controls the organization at the highest level."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Personnel",
+    "ar": "الأفراد",
+    "def": {
+     "ar": "المديرون والموظفون والعاملون المؤقتون والمتطوعون الذين يعملون لصالح المنظمة.",
+     "en": "Directors, officers, employees, temporary staff or workers and volunteers working for the organization."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Third party",
+    "ar": "الطرف الثالث",
+    "def": {
+     "ar": "شخص أو جهة مستقلة عن المنظمة، مثل المورد أو مقاول الباطن أو الوكيل.",
+     "en": "A person or body independent of the organization, such as a supplier, subcontractor or agent."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Interested party",
+    "ar": "الطرف المعني",
+    "def": {
+     "ar": "شخص أو جهة يمكن أن يؤثر في قرار أو نشاط أو يتأثر به أو يرى أنه متأثر به.",
+     "en": "A person or organization that can affect, be affected by, or perceive itself to be affected by a decision or activity."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Compliance management system",
+    "ar": "نظام إدارة الامتثال",
+    "def": {
+     "ar": "العناصر المترابطة التي تضعها المنظمة للسياسات والأهداف والعمليات لتحقيق الامتثال.",
+     "en": "The interrelated elements the organization sets up for policies, objectives and processes to achieve compliance."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Compliance policy",
+    "ar": "سياسة الامتثال",
+    "def": {
+     "ar": "النوايا والتوجه للمنظمة بشأن الامتثال كما تعلنها الجهة الحاكمة والإدارة العليا.",
+     "en": "The organization's intentions and direction on compliance as formally expressed by the governing body and top management."
+    }
+   },
+   {
+    "no": "37002",
+    "en": "Raising concerns (whistleblowing)",
+    "ar": "الإبلاغ عن المخاوف",
+    "def": {
+     "ar": "إبلاغ من يعتقد بحسن نية أو لسبب معقول بوجود مخالفة أو شبهة مخالفة إلى جهة تستطيع التصرف.",
+     "en": "Reporting, in good faith or on reasonable belief, a suspected or actual wrongdoing to someone who can act on it."
+    }
+   },
+   {
+    "no": "37002",
+    "en": "Retaliation",
+    "ar": "الانتقام",
+    "def": {
+     "ar": "أي فعل أو إغفال ضار يلحق بالمبلغ أو المرتبطين به بسبب البلاغ، مثل الفصل أو التهميش أو التهديد.",
+     "en": "Any harmful act or omission against a reporter or people connected to them because of the report, such as dismissal, sidelining or threats."
+    }
+   },
+   {
+    "no": "37008",
+    "en": "Investigation",
+    "ar": "التحقيق",
+    "def": {
+     "ar": "عملية منهجية ومستقلة لجمع الأدلة وتقييمها لتحديد هل وقعت مخالفة ومسبباتها.",
+     "en": "A systematic, independent process to gather and evaluate evidence to determine whether a breach occurred and why."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Due diligence",
+    "ar": "العناية الواجبة",
+    "def": {
+     "ar": "عملية لتقييم طبيعة ومدى مخاطر الامتثال المرتبطة بشخص أو طرف ثالث أو معاملة لدعم القرار.",
+     "en": "A process to assess the nature and extent of the compliance risk related to a person, third party or transaction to support a decision."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Control",
+    "ar": "الضابط",
+    "def": {
+     "ar": "إجراء أو ممارسة تُعدّل الخطر، ويكون وقائياً أو اكتشافياً أو تصحيحياً.",
+     "en": "A measure or practice that modifies risk; it can be preventive, detective or corrective."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Code of conduct",
+    "ar": "مدونة السلوك",
+    "def": {
+     "ar": "وثيقة تعلن القيم ومعايير السلوك المتوقعة من الأفراد والأطراف الثالثة.",
+     "en": "A document setting out the values and expected standards of behaviour for personnel and third parties."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Conflict of interest",
+    "ar": "تضارب المصالح",
+    "def": {
+     "ar": "وضع قد تؤثر فيه مصلحة شخصية أو علاقة على موضوعية قرار يتخذه الفرد لصالح المنظمة.",
+     "en": "A situation where a personal interest or relationship could affect the objectivity of a decision made for the organization."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Nonconformity",
+    "ar": "عدم المطابقة",
+    "def": {
+     "ar": "عدم استيفاء متطلب من متطلبات النظام.",
+     "en": "Non-fulfilment of a requirement of the management system."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Documented information",
+    "ar": "المعلومات الموثقة",
+    "def": {
+     "ar": "المعلومات التي يجب على المنظمة ضبطها والمحافظة عليها، والوسيط الذي تحتويه.",
+     "en": "Information the organization must control and maintain, and the medium containing it."
+    }
+   },
+   {
+    "no": "31000",
+    "en": "Risk",
+    "ar": "الخطر",
+    "def": {
+     "ar": "أثر عدم اليقين على الأهداف.",
+     "en": "The effect of uncertainty on objectives."
+    }
+   }
+  ],
+  "pairs": [
+   {
+    "title": {
+     "en": "Nonconformity or non-compliance?",
+     "ar": "عدم المطابقة أم عدم الامتثال؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "عدم المطابقة",
+       "en": "Nonconformity"
+      },
+      "meaning": {
+       "ar": "عدم استيفاء متطلب من متطلبات النظام أو المواصفة (مثل عدم تنفيذ مراجعة الإدارة).",
+       "en": "Not meeting a requirement of the system or standard (e.g. no management review held)."
+      }
+     },
+     {
+      "term": {
+       "ar": "عدم الامتثال",
+       "en": "Non-compliance"
+      },
+      "meaning": {
+       "ar": "عدم الوفاء بالتزام قانوني أو تعاقدي أو طوعي؛ قد يترتب عليه غرامة أو إفصاح خارجي.",
+       "en": "Not meeting a legal, contractual or voluntary obligation; it may lead to fines or external disclosure."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Mandatory or voluntary obligation?",
+     "ar": "التزام ملزم أم طوعي؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "المتطلبات الملزمة",
+       "en": "Mandatory requirements"
+      },
+      "meaning": {
+       "ar": "قوانين ولوائح وتراخيص وأحكام وعقود مفروضة على المنظمة.",
+       "en": "Laws, regulations, permits, judgments and contracts imposed on the organization."
+      }
+     },
+     {
+      "term": {
+       "ar": "الالتزامات الطوعية",
+       "en": "Voluntary commitments"
+      },
+      "meaning": {
+       "ar": "مدونات قطاعية ومبادرات ومعايير تختارها المنظمة؛ تصبح ملزمة لها بعد تبنيها.",
+       "en": "Industry codes, initiatives and standards the organization chooses; binding on it once adopted."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Compliance function or management?",
+     "ar": "وظيفة الامتثال أم الإدارة؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "وظيفة الامتثال",
+       "en": "Compliance function"
+      },
+      "meaning": {
+       "ar": "تشغل النظام وتنصح وترصد وترفع التقارير باستقلال.",
+       "en": "Operates the system, advises, monitors and reports independently."
+      }
+     },
+     {
+      "term": {
+       "ar": "الإدارة (الخط الأول)",
+       "en": "Management (first line)"
+      },
+      "meaning": {
+       "ar": "مسؤولة عن الامتثال في عملياتها وتطبيق الضوابط يومياً.",
+       "en": "Responsible for compliance in its operations and applying controls day to day."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Compliance risk or system risk?",
+     "ar": "مخاطر الامتثال أم مخاطر النظام؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "مخاطر الامتثال (4.6)",
+       "en": "Compliance risk (4.6)"
+      },
+      "meaning": {
+       "ar": "احتمال عدم الوفاء بالتزام وعواقبه.",
+       "en": "The likelihood and consequences of failing an obligation."
+      }
+     },
+     {
+      "term": {
+       "ar": "المخاطر والفرص (6.1)",
+       "en": "Risks and opportunities (6.1)"
+      },
+      "meaning": {
+       "ar": "ما يهدد نجاح النظام نفسه أو يعززه.",
+       "en": "What threatens or strengthens the success of the system itself."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Raising concerns or investigation?",
+     "ar": "الإبلاغ أم التحقيق؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الإبلاغ (8.3)",
+       "en": "Raising concerns (8.3)"
+      },
+      "meaning": {
+       "ar": "قناة آمنة تستقبل المخاوف بسرية وتحمي المبلغ.",
+       "en": "A safe channel that receives concerns confidentially and protects the reporter."
+      }
+     },
+     {
+      "term": {
+       "ar": "التحقيق (8.4)",
+       "en": "Investigation (8.4)"
+      },
+      "meaning": {
+       "ar": "عملية مستقلة لتقييم البلاغ وجمع الأدلة واتخاذ قرار عادل.",
+       "en": "An independent process to assess the report, gather evidence and reach a fair decision."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Correction or corrective action?",
+     "ar": "التصحيح أم الإجراء التصحيحي؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "التصحيح",
+       "en": "Correction"
+      },
+      "meaning": {
+       "ar": "معالجة الأثر فوراً (تجديد الترخيص المتأخر).",
+       "en": "Dealing with the effect at once (renewing the late licence)."
+      }
+     },
+     {
+      "term": {
+       "ar": "الإجراء التصحيحي",
+       "en": "Corrective action"
+      },
+      "meaning": {
+       "ar": "إزالة السبب حتى لا يتكرر (مالك وتنبيه آلي لكل ترخيص).",
+       "en": "Removing the cause so it does not recur (an owner and automatic alert for every licence)."
+      }
+     }
+    ]
+   }
+  ],
+  "timeline": [
+   {
+    "date": {
+     "ar": "ديسمبر 2014",
+     "en": "December 2014"
+    },
+    "text": {
+     "ar": "نشر ISO 19600:2014 كإرشادات لأنظمة إدارة الامتثال، غير قابلة للشهادة.",
+     "en": "ISO 19600:2014 published as guidelines for compliance management systems, not certifiable."
+    }
+   },
+   {
+    "date": {
+     "ar": "أبريل 2021",
+     "en": "April 2021"
+    },
+    "text": {
+     "ar": "نشر ISO 37301:2021 كمتطلبات قابلة للشهادة، لتحل محل ISO 19600.",
+     "en": "ISO 37301:2021 published as certifiable requirements, replacing ISO 19600."
+    }
+   },
+   {
+    "date": {
+     "ar": "فبراير 2024",
+     "en": "February 2024"
+    },
+    "text": {
+     "ar": "التعديل 1:2024 يضيف تغيّر المناخ إلى 4.1 و4.2.",
+     "en": "Amendment 1:2024 adds climate change to 4.1 and 4.2."
+    }
+   },
+   {
+    "date": {
+     "ar": "1 يناير 2026",
+     "en": "1 January 2026"
+    },
+    "text": {
+     "ar": "Global ACI تحل محل IAF وILAC في قواعد الاعتماد.",
+     "en": "Global ACI replaces IAF and ILAC for accreditation rules."
+    }
+   }
+  ],
+  "threads": [
+   {
+    "id": "ctx",
+    "chain": [
+     "4.1",
+     "4.2",
+     "4.5",
+     "4.6",
+     "8.2"
+    ],
+    "title": {
+     "en": "From context to controls",
+     "ar": "من السياق إلى الضوابط"
+    },
+    "text": {
+     "en": "Issues and party requirements become obligations whose risks are assessed and controlled.",
+     "ar": "القضايا ومتطلبات الأطراف تصبح التزامات، تُقيّم مخاطرها، وتُضبط."
+    }
+   },
+   {
+    "id": "risk",
+    "chain": [
+     "4.6",
+     "8.2",
+     "9.1.1",
+     "10.2",
+     "4.6"
+    ],
+    "title": {
+     "en": "The compliance risk cycle",
+     "ar": "دورة مخاطر الامتثال"
+    },
+    "text": {
+     "en": "Assess, control, monitor, correct, then reassess.",
+     "ar": "تقييم، ضوابط، رصد، تصحيح، ثم إعادة تقييم."
+    }
+   },
+   {
+    "id": "obj",
+    "chain": [
+     "5.1.1",
+     "5.1.2",
+     "5.1.3",
+     "5.3.2",
+     "9.1.4"
+    ],
+    "title": {
+     "en": "From the top to reporting",
+     "ar": "من القمة إلى التقارير"
+    },
+    "text": {
+     "en": "The governing body builds culture and governance; the independent compliance function reports back to it.",
+     "ar": "الجهة الحاكمة تبني الثقافة والحوكمة، ووظيفة الامتثال المستقلة تعيد إليها التقارير."
+    }
+   },
+   {
+    "id": "check",
+    "chain": [
+     "8.3",
+     "8.4",
+     "10.2",
+     "8.2",
+     "9.3"
+    ],
+    "title": {
+     "en": "From report to fix",
+     "ar": "من البلاغ إلى الإصلاح"
+    },
+    "text": {
+     "en": "A report leads to investigation, which reveals the failed control, which is corrected and reviewed.",
+     "ar": "البلاغ يقود للتحقيق، والتحقيق يكشف الضابط الفاشل، فيُصحح ويُراجع."
+    }
+   },
+   {
+    "id": "imp",
+    "chain": [
+     "9.3",
+     "6.3",
+     "4.5",
+     "10.1",
+     "4.4"
+    ],
+    "title": {
+     "en": "From decision to system development",
+     "ar": "من القرار إلى تطوير النظام"
+    },
+    "text": {
+     "en": "Review decisions plan change and improve the system.",
+     "ar": "قرارات المراجعة تخطط التغيير وتحسن النظام."
+    }
+   }
+  ],
+  "scale": [
+   {
+    "level": 0,
+    "meaning": {
+     "en": "The requirement does not exist at all: no practice, no document, no owner.",
+     "ar": "المتطلب غير موجود إطلاقاً: لا ممارسة ولا وثيقة ولا مسؤول."
+    },
+    "look": {
+     "en": "'We haven't thought about it yet', and nobody knows who is responsible.",
+     "ar": "«لم نفكر فيه بعد» ولا يعرف أحد المسؤول."
+    },
+    "evidence": {
+     "en": "Nothing.",
+     "ar": "لا شيء."
+    }
+   },
+   {
+    "level": 1,
+    "meaning": {
+     "en": "Informal, undocumented, person-dependent practice.",
+     "ar": "ممارسة فردية غير موثقة وغير منتظمة تعتمد على شخص."
+    },
+    "look": {
+     "en": "'So-and-so knows how that works'.",
+     "ar": "«فلان يعرف كيف يعمل ذلك»."
+    },
+    "evidence": {
+     "en": "People's memory and a few emails.",
+     "ar": "ذاكرة الأشخاص وبعض رسائل البريد."
+    }
+   },
+   {
+    "level": 2,
+    "meaning": {
+     "en": "Partly documented or applied, or an important element missing.",
+     "ar": "موثق أو مطبق جزئياً، أو ينقصه عنصر مهم."
+    },
+    "look": {
+     "en": "A procedure exists but is not always applied, or records are missing.",
+     "ar": "يوجد إجراء لكن لا يُطبق في كل الحالات أو لا سجلات."
+    },
+    "evidence": {
+     "en": "A document without enough records.",
+     "ar": "وثيقة دون سجلات كافية."
+    }
+   },
+   {
+    "level": 3,
+    "meaning": {
+     "en": "Documented, applied consistently, with records.",
+     "ar": "موثق ومطبق بانتظام ومعه سجلات تثبته."
+    },
+    "look": {
+     "en": "You can show records for any sample the auditor picks.",
+     "ar": "يمكنك عرض السجلات لأي عينة يطلبها المدقق."
+    },
+    "evidence": {
+     "en": "Procedure plus consistent records over time.",
+     "ar": "إجراء وسجلات متسقة لفترة كافية."
+    }
+   },
+   {
+    "level": 4,
+    "meaning": {
+     "en": "Achieves its results, measured and improved.",
+     "ar": "مطبق ويحقق نتائجه ويُقاس ويُحسَّن."
+    },
+    "look": {
+     "en": "Metrics improve and results are reviewed and drive improvement.",
+     "ar": "المؤشرات تتحسن والنتائج تُراجع وتقود التحسين."
+    },
+    "evidence": {
+     "en": "Metrics, trends and improvement decisions.",
+     "ar": "مؤشرات واتجاهات وقرارات تحسين."
+    }
+   }
+  ],
+  "faq": [
+   {
+    "id": "whatis",
+    "q": {
+     "en": "What is ISO 37301:2021?",
+     "ar": "ما هي ISO 37301:2021؟"
+    },
+    "a": {
+     "en": "ISO 37301:2021 sets the requirements, with guidance for use, for a **compliance management system**. It was published in **April 2021**, replacing ISO 19600:2014 (which was guidance only), and supplemented by **Amendment 1:2024** on climate.\n\n- Structure: clauses 4 to 10 on the common structure; Annex A is informative guidance.\n- Core: an obligations register (4.5), compliance risk assessment (4.6), culture and governance (5.1), controls (8.2), and raising concerns and investigation (8.3, 8.4).\n- Certification: certifiable for any organization.\n\nStart with the [[tab:assess]] or the [[tab:annexa]].",
+     "ar": "ISO 37301:2021 هي متطلبات **نظام إدارة الامتثال** مع إرشادات للاستخدام، نُشرت في **أبريل 2021** وحلت محل ISO 19600:2014 (التي كانت إرشادات فقط)، وأُضيف لها **التعديل 1:2024** الخاص بالمناخ.\n\n- الهيكل: البنود 4 إلى 10 على الهيكل الموحد، والملحق A إرشادي.\n- الجوهر: سجل التزامات (4.5)، وتقييم مخاطر الامتثال (4.6)، وثقافة وحوكمة (5.1)، وضوابط (8.2)، وإبلاغ وتحقيق (8.3، 8.4).\n- الشهادة: قابلة للشهادة لأي منظمة.\n\nابدأ بـ [[tab:assess]] أو [[tab:annexa]]."
+    }
+   },
+   {
+    "id": "changes",
+    "q": {
+     "en": "What is the difference between ISO 37301 and ISO 19600?",
+     "ar": "ما الفرق بين ISO 37301 وISO 19600؟"
+    },
+    "a": {
+     "en": "The main differences:\n\n1. **19600 is guidance** ('should'), not certifiable; **37301 is requirements** ('shall'), certifiable.\n2. Obligations (4.5) and compliance risk assessment (4.6) now sit in clause 4.\n3. Explicit requirements for **compliance culture** (5.1.2) and **governance** with direct access and independence (5.1.3).\n4. A 'compliance function' instead of a 'compliance officer', and responsibilities at every level.\n5. The **employment process** with due diligence (7.2.2).\n6. **Raising concerns** (8.3) and **investigations** (8.4).\n7. Detailed monitoring: feedback, indicators, reporting and records (9.1.2–9.1.5).\n8. The 2024 amendment: the climate decision.\n\nDetails in [[tab:changes]].",
+     "ar": "أهم الفروق:\n\n1. **19600 إرشادات** («ينبغي») غير قابلة للشهادة، و**37301 متطلبات** («يجب») قابلة للشهادة.\n2. الالتزامات (4.5) وتقييم مخاطر الامتثال (4.6) صارت داخل البند 4.\n3. متطلبات صريحة لـ **ثقافة الامتثال** (5.1.2) و**الحوكمة** بوصول مباشر واستقلال (5.1.3).\n4. «وظيفة الامتثال» بدل «مسؤول الامتثال»، ومسؤوليات لكل مستوى.\n5. **عملية التوظيف** بعناية واجبة (7.2.2).\n6. **الإبلاغ عن المخاوف** (8.3) و**التحقيقات** (8.4).\n7. رصد مفصل: التغذية الراجعة، المؤشرات، التقارير، السجلات (9.1.2–9.1.5).\n8. تعديل 2024: قرار المناخ.\n\nالتفاصيل في [[tab:changes]]."
+    }
+   },
+   {
+    "id": "obligations",
+    "q": {
+     "en": "How do I build the compliance obligations register?",
+     "ar": "كيف أبني سجل التزامات الامتثال؟"
+    },
+    "a": {
+     "en": "For **4.5**:\n\n1. Walk through each function (procurement, finance, HR, projects, IT) and ask: which laws, regulations, permits and contracts govern your work?\n2. Add the voluntary commitments you have adopted (codes, initiatives).\n3. For each obligation: source, summary, affected function, **one owner**, controls, review date.\n4. Subscribe to official sources to track changes and assess their impact.\n5. Review the register quarterly.\n\nUse the [[tab:annexa]] or the [[tpl:obligations]] template.",
+     "ar": "للبند **4.5**:\n\n1. امشِ على الوظائف (مشتريات، مالية، موارد بشرية، مشاريع، تقنية) واسأل: ما الأنظمة واللوائح والتراخيص والعقود التي تحكم عملك؟\n2. أضف الالتزامات الطوعية التي تبنيتها (مدونات، مبادرات).\n3. لكل التزام: المصدر، النص المختصر، الوظيفة المتأثرة، **مالك واحد**، الضوابط، تاريخ المراجعة.\n4. اشترك في مصادر رسمية لرصد التغييرات وقيّم أثرها.\n5. راجع السجل ربع سنوياً.\n\nاستخدم [[tab:annexa]] أو النموذج [[tpl:obligations]]."
+    }
+   },
+   {
+    "id": "risk",
+    "q": {
+     "en": "How do I assess compliance risk?",
+     "ar": "كيف أقيّم مخاطر الامتثال؟"
+    },
+    "a": {
+     "en": "For **4.6**:\n\n1. Link each obligation to the activities that could breach it.\n2. Rate **likelihood × consequence** (fines, suspension, reputation, criminal liability) = inherent risk.\n3. Rate the **effectiveness of existing controls**, then derive **residual risk**.\n4. Include **third-party** and outsourced risks.\n5. Treat high residual risks with controls (8.2) and inform the governing body.\n6. Reassess yearly and on material change.\n\nThe [[tab:annexa]] calculates inherent and residual risk and draws the heat map.",
+     "ar": "للبند **4.6**:\n\n1. اربط كل التزام بالأنشطة التي قد تخالفه.\n2. قيّم **الاحتمال × العاقبة** (غرامات، إيقاف، سمعة، مسؤولية جنائية) = الخطر الكامن.\n3. قيّم **فعالية الضوابط** القائمة، ثم احسب **الخطر المتبقي**.\n4. ضمّن مخاطر **الأطراف الثالثة** والعمليات المسندة.\n5. عالج المخاطر المتبقية المرتفعة بضوابط (8.2) وأبلغ الجهة الحاكمة.\n6. أعد التقييم سنوياً وعند التغيير الجوهري.\n\nالأداة في [[tab:annexa]] تحسب الكامن والمتبقي وترسم خريطة الحرارة."
+    }
+   },
+   {
+    "id": "culture",
+    "q": {
+     "en": "How do I build and measure compliance culture?",
+     "ar": "كيف أبني ثقافة الامتثال وأقيسها؟"
+    },
+    "a": {
+     "en": "For **5.1.2**:\n\n- **Example:** repeated messages from top management and firm action on breaches regardless of seniority.\n- **Incentives:** a conduct criterion in manager appraisals, and review of incentives that reward results at any cost.\n- **Recognition:** celebrate integrity.\n- **Measurement:** an annual anonymous survey (confidence in reporting, pressure to breach, fairness of consequences) and indicators (reports, training, cases).\n\nTemplate: [[tpl:culture]].",
+     "ar": "للبند **5.1.2**:\n\n- **القدوة:** رسائل متكررة من الإدارة العليا وتصرف حازم مع المخالفات مهما كان المنصب.\n- **الحوافز:** معيار سلوكي في تقييم المديرين، ومراجعة الحوافز التي تكافئ النتيجة بأي ثمن.\n- **الاعتراف:** تكريم مواقف النزاهة.\n- **القياس:** استبيان سنوي مجهول (الثقة في الإبلاغ، الضغط للمخالفة، عدالة العواقب) ومؤشرات (بلاغات، تدريب، حالات).\n\nالنموذج: [[tpl:culture]]."
+    }
+   },
+   {
+    "id": "governance",
+    "q": {
+     "en": "What do compliance governance and function independence mean?",
+     "ar": "ما المقصود بحوكمة الامتثال واستقلال وظيفة الامتثال؟"
+    },
+    "a": {
+     "en": "**5.1.3** requires three principles:\n\n1. **Direct access** of the compliance function to the governing body (board or its committee).\n2. **Independence:** no conflicting operational or commercial duties, and protection from arbitrary removal.\n3. **Authority and standing:** access to all information and people, and adequate resources.\n\nIn small organizations the function may be one part-time person, provided these principles hold. Template: [[tpl:roles]].",
+     "ar": "**5.1.3** تطلب ثلاثة مبادئ:\n\n1. **وصول مباشر** لوظيفة الامتثال إلى الجهة الحاكمة (المجلس أو لجنته).\n2. **استقلال:** لا مهام تشغيلية أو تجارية متعارضة، وحماية من العزل التعسفي.\n3. **صلاحية ومكانة:** وصول لكل المعلومات والأشخاص، وموارد كافية.\n\nوفي المنظمات الصغيرة قد تكون الوظيفة شخصاً واحداً بدوام جزئي بشرط هذه المبادئ. النموذج: [[tpl:roles]]."
+    }
+   },
+   {
+    "id": "concerns",
+    "q": {
+     "en": "What does raising concerns (8.3) require?",
+     "ar": "ما المطلوب في الإبلاغ عن المخاوف (8.3)؟"
+    },
+    "a": {
+     "en": "For **8.3**:\n\n- **Multiple, accessible** channels for staff and third parties.\n- **Confidentiality** and an **anonymous** option.\n- **Protection from retaliation** and follow-up on the reporter's situation.\n- The ability to seek **advice** before acting.\n- An **independent** route for reports against top management.\n\nRemember: no reports usually means no trust. Supporting reference: ISO 37002. Template: [[tpl:concerns]].",
+     "ar": "للبند **8.3**:\n\n- قنوات **متعددة ومتاحة** للموظفين والأطراف الثالثة.\n- **سرية** وإمكانية **عدم ذكر الهوية**.\n- **حماية من الانتقام** ومتابعة وضع المبلغ لاحقاً.\n- إمكانية طلب **المشورة** قبل التصرف.\n- مسار **مستقل** للبلاغات ضد الإدارة العليا.\n\nتذكر: غياب البلاغات يدل غالباً على غياب الثقة. المرجع المساند: ISO 37002. النموذج: [[tpl:concerns]]."
+    }
+   },
+   {
+    "id": "investigation",
+    "q": {
+     "en": "How do I run investigations (8.4)?",
+     "ar": "كيف أدير التحقيقات (8.4)؟"
+    },
+    "a": {
+     "en": "For **8.4**:\n\n1. **Triage** the report within a set time (e.g. 5 days).\n2. An **investigator independent** of the department concerned, competent and free of conflicts.\n3. An **investigation plan**, protecting evidence and the rights of those involved.\n4. A **report** with findings and root cause.\n5. A **fair decision** by a designated body; criminal matters referred through Legal.\n6. **Report results** to management and the governing body, and **update controls**.\n\nSupporting reference: ISO/TS 37008. Template: [[tpl:investigation]].",
+     "ar": "للبند **8.4**:\n\n1. **فرز** البلاغ خلال مدة محددة (مثل 5 أيام).\n2. **محقق مستقل** عن الإدارة المعنية وكفء، بلا تضارب مصالح.\n3. **خطة تحقيق** وحماية الأدلة وحقوق الأطراف.\n4. **تقرير** بالنتيجة والسبب الجذري.\n5. **قرار عادل** من جهة مختصة، وإحالة الحالات الجنائية عبر الشؤون القانونية.\n6. **رفع النتائج** للإدارة والجهة الحاكمة، و**تحديث الضوابط**.\n\nالمرجع المساند: ISO/TS 37008. النموذج: [[tpl:investigation]]."
+    }
+   },
+   {
+    "id": "controls",
+    "q": {
+     "en": "What types of compliance controls are there (8.2)?",
+     "ar": "ما أنواع ضوابط الامتثال (8.2)؟"
+    },
+    "a": {
+     "en": "- **Preventive:** stop the breach (prior approval, segregation of duties, third-party vetting).\n- **Detective:** find it early (reconciliation, data analytics, audit).\n- **Corrective:** limit the effect (payment holds, disciplinary action).\n\nEvery high risk needs a mix of all three, built into systems and procedures, and **tested periodically**. Template: [[tpl:controls]].",
+     "ar": "- **وقائية:** تمنع المخالفة (موافقة مسبقة، فصل مهام، فحص الطرف الثالث).\n- **اكتشافية:** تكشفها مبكراً (مطابقة، تحليل بيانات، تدقيق).\n- **تصحيحية:** تحد من أثرها (إيقاف دفعات، إجراءات تأديبية).\n\nلكل خطر مرتفع مزيج من الثلاثة، مدمج في النظم والإجراءات، **ومختبر دورياً**. النموذج: [[tpl:controls]]."
+    }
+   },
+   {
+    "id": "thirdparty",
+    "q": {
+     "en": "How do I manage third-party compliance risk?",
+     "ar": "كيف أدير مخاطر الأطراف الثالثة؟"
+    },
+    "a": {
+     "en": "1. **Tier** third parties by risk (agents, intermediaries and those dealing with government are highest).\n2. Proportionate **due diligence:** legal registrations, ownership (concealment risk), integrity policies, reputation.\n3. **Contract clauses:** adherence to the policy, audit rights, termination on breach.\n4. **Ongoing monitoring** and yearly re-evaluation of critical ones.\n\nTemplate: [[tpl:duediligence]].",
+     "ar": "1. **صنّف** الأطراف الثالثة حسب المخاطر (الوكلاء والوسطاء والجهات المتعاملة مع الحكومة أعلاها).\n2. **عناية واجبة** متناسبة: السجلات النظامية، الملكية (خطر التستر)، سياسات النزاهة، السمعة.\n3. **بنود عقدية:** الالتزام بالسياسة، حق التدقيق، الإنهاء عند المخالفة.\n4. **رصد مستمر** وتجديد التقييم سنوياً للحرجين.\n\nالنموذج: [[tpl:duediligence]]."
+    }
+   },
+   {
+    "id": "employment",
+    "q": {
+     "en": "What does the employment process (7.2.2) require?",
+     "ar": "ما المطلوب في عملية التوظيف (7.2.2)؟"
+    },
+    "a": {
+     "en": "- A **compliance clause** in employment contracts.\n- **Training and the policy** within a reasonable time of hiring.\n- **Due diligence** before hiring, transfer or promotion into high-risk roles (history, references, conflicts of interest).\n- Appropriate **disciplinary action**.\n- **Review incentives** and targets periodically so they do not encourage breaches.",
+     "ar": "- **بند امتثال** في عقود العمل.\n- **تدريب وسياسة** خلال فترة معقولة من التعيين.\n- **عناية واجبة** قبل التعيين أو النقل أو الترقية في المناصب عالية المخاطر (السوابق، المراجع، تضارب المصالح).\n- **إجراءات تأديبية** مناسبة.\n- **مراجعة الحوافز** والأهداف دورياً حتى لا تشجع المخالفة."
+    }
+   },
+   {
+    "id": "climate",
+    "q": {
+     "en": "What does the 2024 climate amendment require?",
+     "ar": "ماذا يتطلب تعديل المناخ 2024؟"
+    },
+    "a": {
+     "en": "Amendment 1:2024 added:\n\n- **4.1:** the organization determines whether climate change is a relevant issue.\n- **4.2 (note):** parties can have climate-related requirements.\n\nIn compliance, climate usually appears as **disclosure obligations** or client and bank requirements that go into the obligations register. No transition. Template: [[tpl:context]].",
+     "ar": "التعديل 1:2024 أضاف:\n\n- **4.1:** أن تحدد المنظمة هل تغيّر المناخ قضية ذات صلة.\n- **4.2 (ملاحظة):** قد تكون للأطراف متطلبات تتعلق بالمناخ.\n\nفي الامتثال يظهر المناخ غالباً كـ**التزامات إفصاح** أو اشتراطات عملاء وبنوك تُضاف لسجل الالتزامات. لا فترة انتقال. النموذج: [[tpl:context]]."
+    }
+   },
+   {
+    "id": "docs",
+    "q": {
+     "en": "What documented information is mandatory in ISO 37301?",
+     "ar": "ما المعلومات الموثقة الإلزامية في ISO 37301؟"
+    },
+    "a": {
+     "en": "The main items:\n\n- Scope (4.3), the obligations register (4.5), and the compliance risk assessment and actions (4.6).\n- The compliance policy (5.2) and objectives (6.2).\n- Evidence of competence and training (7.2).\n- Evidence of operational control (8.1).\n- Records of reports and investigations (8.3, 8.4).\n- Monitoring results, reports and records (9.1), audit (9.2) and management review (9.3).\n- Nonconformities and corrective actions (10.2).\n\nWith **confidentiality** protection for report and investigation files.",
+     "ar": "أهمها:\n\n- النطاق (4.3) وسجل الالتزامات (4.5) وتقييم مخاطر الامتثال وإجراءاته (4.6).\n- سياسة الامتثال (5.2) والأهداف (6.2).\n- أدلة الكفاءة والتدريب (7.2).\n- أدلة الضبط التشغيلي (8.1).\n- سجلات البلاغات والتحقيقات (8.3، 8.4).\n- نتائج الرصد والتقارير والسجلات (9.1)، والتدقيق (9.2)، ومراجعة الإدارة (9.3).\n- عدم المطابقة والإجراءات التصحيحية (10.2).\n\nمع حماية **سرية** ملفات البلاغات والتحقيقات."
+    }
+   },
+   {
+    "id": "nc",
+    "q": {
+     "en": "Nonconformity or non-compliance: what is the difference?",
+     "ar": "عدم المطابقة أم عدم الامتثال: ما الفرق؟"
+    },
+    "a": {
+     "en": "- **Nonconformity:** not meeting a requirement of the system or standard (e.g. no internal audit held).\n- **Non-compliance:** not meeting a legal, contractual or voluntary obligation (e.g. a licence renewed late).\n\nBoth are handled under 10.2, but the second may bring fines or **external disclosure** and triggers a risk reassessment.",
+     "ar": "- **عدم المطابقة:** عدم استيفاء متطلب من متطلبات النظام أو المواصفة (مثل عدم تنفيذ تدقيق داخلي).\n- **عدم الامتثال:** عدم الوفاء بالتزام قانوني أو تعاقدي أو طوعي (مثل تأخر تجديد ترخيص).\n\nكلاهما يُعالج في 10.2، لكن الثاني قد يترتب عليه غرامة أو **إفصاح للجهات الخارجية** ويستدعي إعادة تقييم المخاطر."
+    }
+   },
+   {
+    "id": "kpis",
+    "q": {
+     "en": "What are examples of compliance performance indicators?",
+     "ar": "ما أمثلة مؤشرات أداء الامتثال؟"
+    },
+    "a": {
+     "en": "- % mandatory training completed.\n- % controls tested effective.\n- % third parties vetted before contract.\n- Reports per 100 employees and average investigation closure time.\n- Confidence in reporting from the survey.\n- Number of regulatory breaches and fines.\n- % obligations reviewed on time.\n\nCombine **leading** and **lagging** indicators. Template: [[tpl:kpis]].",
+     "ar": "- % إكمال التدريب الإلزامي.\n- % الضوابط المختبرة بنجاح.\n- % الأطراف الثالثة المفحوصة قبل التعاقد.\n- بلاغات لكل 100 موظف ومتوسط زمن إغلاق التحقيقات.\n- مؤشر الثقة في الإبلاغ من الاستبيان.\n- عدد المخالفات النظامية والغرامات.\n- % الالتزامات المراجعة في موعدها.\n\nاجمع بين المؤشرات **السابقة** و**اللاحقة**. النموذج: [[tpl:kpis]]."
+    }
+   },
+   {
+    "id": "reporting",
+    "q": {
+     "en": "What goes into the compliance report to the board?",
+     "ar": "ماذا يتضمن تقرير الامتثال للمجلس؟"
+    },
+    "a": {
+     "en": "For **9.1.4**, a periodic report (usually quarterly) covering:\n\n- Obligations status and regulatory changes.\n- Top residual risks.\n- Control test results.\n- Reports and investigations (without revealing identities).\n- Training, culture and indicators.\n- Decisions needed from the board.\n\nPlus criteria for **immediate escalation** of material matters.",
+     "ar": "للبند **9.1.4**، تقرير دوري (ربع سنوي عادة) يتضمن:\n\n- حالة الالتزامات والتغييرات التشريعية.\n- أعلى المخاطر المتبقية.\n- نتائج اختبار الضوابط.\n- البلاغات والتحقيقات (دون كشف هويات).\n- التدريب والثقافة والمؤشرات.\n- الإجراءات المطلوبة من المجلس.\n\nإضافة لمعايير **تصعيد فوري** للأمور الجوهرية."
+    }
+   },
+   {
+    "id": "audit",
+    "q": {
+     "en": "How do I plan the compliance system internal audit?",
+     "ar": "كيف أخطط التدقيق الداخلي لنظام الامتثال؟"
+    },
+    "a": {
+     "en": "A yearly risk-based programme with auditors **independent of the compliance function** (internal audit or an external reviewer). Pick obligations and trace them to controls and records, focusing on procurement, third parties and reporting. Use the [[tab:checklist]] and the [[tpl:audit]] template.",
+     "ar": "برنامج سنوي مبني على المخاطر، بمدققين **مستقلين عن وظيفة الامتثال** (التدقيق الداخلي أو مراجع خارجي). اختر التزامات وتتبعها حتى الضابط والسجل، وركّز على المشتريات والأطراف الثالثة والإبلاغ. استخدم [[tab:checklist]] والنموذج [[tpl:audit]]."
+    }
+   },
+   {
+    "id": "ims",
+    "q": {
+     "en": "Can 37301 be integrated with ISO 37001, 9001 and others?",
+     "ar": "هل يمكن دمج 37301 مع ISO 37001 و9001 وغيرها؟"
+    },
+    "a": {
+     "en": "Yes. The strongest link is **37301 with 37001**: one policy and compliance function, shared due diligence, reporting and investigation, and one audit. With **9001/14001/45001**, integrate context, the obligations register, audits and management review on the common structure. Recommendations are in the [[tab:report]].",
+     "ar": "نعم. أقوى تكامل هو **37301 مع 37001**: سياسة ووظيفة امتثال واحدة، وعناية واجبة وإبلاغ وتحقيق مشترك، وتدقيق واحد. ومع **9001/14001/45001** ادمج السياق وسجل الالتزامات والتدقيق ومراجعة الإدارة على الهيكل الموحد. التوصيات في [[tab:report]]."
+    }
+   },
+   {
+    "id": "certsteps",
+    "q": {
+     "en": "What are the steps to certification?",
+     "ar": "ما خطوات الحصول على الشهادة؟"
+    },
+    "a": {
+     "en": "1. Implement and run the system for at least 3 months with records.\n2. An independent internal audit and a management review reported to the governing body.\n3. Choose a certification body **accredited specifically for ISO 37301** by a Global ACI member.\n4. **Stage 1:** review of the register, risks and documents.\n5. **Stage 2:** evaluation of implementation and effectiveness, with interviews at every level.\n6. Close findings, then a 3-year certificate with yearly surveillance audits.",
+     "ar": "1. تطبيق النظام وتشغيله 3 أشهر على الأقل بسجلات.\n2. تدقيق داخلي مستقل ومراجعة إدارة ورفعها للجهة الحاكمة.\n3. اختيار جهة منح **معتمدة لـ ISO 37301 تحديداً** من عضو في Global ACI.\n4. **المرحلة الأولى:** مراجعة السجل والمخاطر والوثائق.\n5. **المرحلة الثانية:** تقييم التطبيق والفعالية ومقابلات على كل المستويات.\n6. إغلاق الملاحظات ثم الشهادة لـ 3 سنوات بتدقيقات مراقبة سنوية."
+    }
+   },
+   {
+    "id": "start",
+    "q": {
+     "en": "Where do I start implementing a compliance management system?",
+     "ar": "من أين أبدأ تطبيق نظام إدارة الامتثال؟"
+    },
+    "a": {
+     "en": "A practical path:\n\n1. A board decision and a compliance function with clear governance.\n2. Context, parties and scope.\n3. The **obligations register**, then **compliance risk assessment**.\n4. Policy, code of conduct and roles.\n5. Controls for high risks and due diligence.\n6. A reporting channel and investigation procedure.\n7. Training, then monitoring, reporting, audit and management review.\n\nMeasure your starting point in the [[tab:assess]] and get a timed plan in the [[tab:report]].",
+     "ar": "مسار عملي:\n\n1. قرار المجلس وتعيين وظيفة الامتثال بحوكمة واضحة.\n2. السياق والأطراف والنطاق.\n3. **سجل الالتزامات** ثم **تقييم مخاطر الامتثال**.\n4. السياسة ومدونة السلوك والأدوار.\n5. الضوابط للمخاطر المرتفعة والعناية الواجبة.\n6. قناة الإبلاغ وإجراء التحقيق.\n7. التدريب، ثم الرصد والتقارير والتدقيق ومراجعة الإدارة.\n\nقِس نقطة بدايتك في [[tab:assess]] واحصل على خطة زمنية في [[tab:report]]."
+    }
+   },
+   {
+    "id": "howuse",
+    "q": {
+     "en": "How do I use this toolkit?",
+     "ar": "كيف أستخدم هذه الأداة؟"
+    },
+    "a": {
+     "en": "1. [[tab:assess]]: 40 questions measuring readiness.\n2. [[tab:report]]: score, plan, recommendations, risks and opportunities.\n3. [[tab:annexa]]: obligations register, inherent and residual risk, heat map.\n4. [[tab:templates]]: 16 pre-filled templates.\n5. [[tab:checklist]]: audit checklist.\n6. Reference: [[tab:clauses]], [[tab:changes]] and [[tab:terms]].",
+     "ar": "1. [[tab:assess]]: 40 سؤالاً تقيس جاهزيتك.\n2. [[tab:report]]: النتيجة والخطة والتوصيات والمخاطر والفرص.\n3. [[tab:annexa]]: سجل الالتزامات، الخطر الكامن والمتبقي، خريطة الحرارة.\n4. [[tab:templates]]: 16 نموذجاً معبأً.\n5. [[tab:checklist]]: قائمة تحقق للتدقيق.\n6. المرجع: [[tab:clauses]] و[[tab:changes]] و[[tab:terms]]."
+    }
+   },
+   {
+    "id": "data",
+    "q": {
+     "en": "Where is my data stored?",
+     "ar": "أين تُحفظ بياناتي؟"
+    },
+    "a": {
+     "en": "Everything you enter stays **in this browser only**, on this device, and is never sent to a server. Export files (CSV or PDF) to move it.",
+     "ar": "كل ما تدخله يُحفظ **في متصفحك فقط** على هذا الجهاز ولا يُرسل لأي خادم. صدّر الملفات (CSV أو PDF) لنقله."
+    }
+   },
+   {
+    "id": "export",
+    "q": {
+     "en": "How do I export results?",
+     "ar": "كيف أصدّر النتائج؟"
+    },
+    "a": {
+     "en": "- Report as PDF and HTML, plan as CSV from the [[tab:report]].\n- The checklist from the [[tab:checklist]].\n- Each template as CSV and PDF from the [[tab:templates]].\n- The obligations and risk tool as CSV and PDF from the [[tab:annexa]].",
+     "ar": "- التقرير PDF وHTML والخطة CSV من [[tab:report]].\n- قائمة التحقق من [[tab:checklist]].\n- كل نموذج CSV وPDF من [[tab:templates]].\n- أداة الالتزامات والمخاطر CSV وPDF من [[tab:annexa]]."
+    }
+   },
+   {
+    "id": "official",
+    "q": {
+     "en": "Is this toolkit a substitute for the standard or legal advice?",
+     "ar": "هل الأداة بديل عن المواصفة أو الاستشارة القانونية؟"
+    },
+    "a": {
+     "en": "No. It is an explanatory commentary in our own words; the authoritative text is ISO 37301:2021 and Amendment 1:2024. References to local legislation are illustrative, not legal advice; verify obligations with your legal counsel. Sources: [[tab:standard]].",
+     "ar": "لا. الأداة شرح تفسيري بصياغتنا، والنص المعتمد هو ISO 37301:2021 وتعديله 1:2024. والإشارات للأنظمة المحلية للتوضيح وليست استشارة قانونية؛ تحقق من الالتزامات مع مستشارك القانوني. المصادر في [[tab:standard]]."
+    }
+   },
+   {
+    "id": "contact",
+    "q": {
+     "en": "How do I contact مدثر سلامه?",
+     "ar": "كيف أتواصل مع مدثر سلامه؟"
+    },
+    "a": {
+     "en": "Email مدثر سلامه at **moddathersalama.eng@gmail.com** for consulting, training, audits and certification readiness, or use the 'Email me' button on the [[tab:home]].",
+     "ar": "راسل مدثر سلامه على **moddathersalama.eng@gmail.com** للاستشارات والتدريب والتدقيق والتأهيل للشهادة، أو استخدم زر «راسلني» في [[tab:home]]."
+    }
+   }
+  ],
+  "templates": [
+   {
+    "id": "context",
+    "ref": "4.1",
+    "title": {
+     "en": "Compliance context analysis (PESTLE) and climate decision",
+     "ar": "تحليل سياق الامتثال (PESTLE) وقرار المناخ"
+    },
+    "purpose": {
+     "en": "External and internal issues affecting compliance, with the climate change relevance decision per the 2024 amendment.",
+     "ar": "القضايا الخارجية والداخلية المؤثرة على الامتثال، مع قرار صلة تغيّر المناخ وفق تعديل 2024."
+    },
+    "tips": [
+     {
+      "en": "Involve top management, legal, procurement and HR.",
+      "ar": "أشرك الإدارة العليا والشؤون القانونية والمشتريات والموارد البشرية."
+     },
+     {
+      "en": "Record the climate decision even if 'not relevant'.",
+      "ar": "سجّل قرار المناخ حتى لو كان «غير ذي صلة»."
+     },
+     {
+      "en": "Link each significant issue to an obligation or risk.",
+      "ar": "اربط كل قضية مهمة بالتزام أو خطر."
+     }
+    ]
+   },
+   {
+    "id": "parties",
+    "ref": "4.2",
+    "title": {
+     "en": "Interested parties and requirements",
+     "ar": "الأطراف المعنية ومتطلباتها"
+    },
+    "purpose": {
+     "en": "Who affects or is affected by your compliance, what they expect, and whether the system addresses it.",
+     "ar": "من يتأثر بامتثالك أو يؤثر فيه، وما يتوقعه، وهل سيعالجه النظام."
+    },
+    "tips": [
+     {
+      "en": "Separate mandatory from voluntary.",
+      "ar": "ميّز الملزم من الطوعي."
+     },
+     {
+      "en": "Selected requirements move to the obligations register.",
+      "ar": "المتطلبات المختارة تنتقل لسجل الالتزامات."
+     },
+     {
+      "en": "Review yearly.",
+      "ar": "راجع السجل سنوياً."
+     }
+    ]
+   },
+   {
+    "id": "obligations",
+    "ref": "4.5",
+    "title": {
+     "en": "Compliance obligations register",
+     "ar": "سجل التزامات الامتثال"
+    },
+    "purpose": {
+     "en": "Every mandatory and voluntary obligation, its source, affected function, owner, controls and review date. For full risk scoring use the 'Compliance tools' tab.",
+     "ar": "كل الالتزامات الملزمة والطوعية، مصدرها، والوظيفة المتأثرة، والمالك، والضوابط، وتاريخ المراجعة. للتقييم الكامل للمخاطر استخدم تبويب «أدوات الامتثال»."
+    },
+    "tips": [
+     {
+      "en": "Cover every source: laws, regulations, permits, contracts, voluntary commitments.",
+      "ar": "غطِّ كل المصادر: أنظمة، لوائح، تراخيص، عقود، التزامات طوعية."
+     },
+     {
+      "en": "One clear owner per obligation.",
+      "ar": "لكل التزام مالك واحد واضح."
+     },
+     {
+      "en": "Review quarterly and on any regulatory change.",
+      "ar": "راجع السجل ربع سنوياً وعند أي تغيير تشريعي."
+     }
+    ]
+   },
+   {
+    "id": "risks",
+    "ref": "4.6",
+    "title": {
+     "en": "Compliance risk register",
+     "ar": "سجل مخاطر الامتثال"
+    },
+    "purpose": {
+     "en": "Risks of failing obligations: likelihood × consequence, with controls and owner. For residual risk after control effectiveness, use the 'Compliance tools' tab.",
+     "ar": "مخاطر عدم الوفاء بالالتزامات: الاحتمال × العاقبة، مع الضوابط والمالك. للخطر المتبقي بعد فعالية الضوابط استخدم تبويب «أدوات الامتثال»."
+    },
+    "tips": [
+     {
+      "en": "Scores of 15+ are high and need controls and board visibility.",
+      "ar": "الدرجة 15 فأكثر مرتفعة وتحتاج ضوابط وإبلاغ الجهة الحاكمة."
+     },
+     {
+      "en": "Include third-party risks.",
+      "ar": "ضمّن مخاطر الأطراف الثالثة."
+     },
+     {
+      "en": "Reassess yearly and on material change.",
+      "ar": "أعد التقييم سنوياً وعند التغيير الجوهري."
+     }
+    ]
+   },
+   {
+    "id": "controls",
+    "ref": "8.2",
+    "title": {
+     "en": "Risk and control matrix",
+     "ar": "مصفوفة المخاطر والضوابط"
+    },
+    "purpose": {
+     "en": "Preventive, detective and corrective controls for each high risk, how they are tested and the result.",
+     "ar": "الضوابط الوقائية والاكتشافية والتصحيحية لكل خطر مرتفع، وطريقة اختبارها ونتيجتها."
+    },
+    "tips": [
+     {
+      "en": "Every high risk gets a mix of all three types.",
+      "ar": "لكل خطر مرتفع مزيج من الأنواع الثلاثة."
+     },
+     {
+      "en": "Build the control into a system or procedure.",
+      "ar": "ادمج الضابط في النظام أو الإجراء."
+     },
+     {
+      "en": "Test it and record the result.",
+      "ar": "اختبر وسجّل النتيجة."
+     }
+    ]
+   },
+   {
+    "id": "objectives",
+    "ref": "6.2",
+    "title": {
+     "en": "Compliance objectives and plans",
+     "ar": "أهداف الامتثال وخطط تحقيقها"
+    },
+    "purpose": {
+     "en": "Measurable objectives linked to risk and culture, with plan, owner and date.",
+     "ar": "أهداف قابلة للقياس مرتبطة بالمخاطر والثقافة، مع الخطة والمسؤول والموعد."
+    },
+    "tips": [
+     {
+      "en": "Avoid 'zero breaches' as the only objective.",
+      "ar": "تجنب «صفر مخالفات» كهدف وحيد."
+     },
+     {
+      "en": "Measure controls, behaviour and reporting.",
+      "ar": "قِس الضوابط والسلوك والإبلاغ."
+     },
+     {
+      "en": "Review quarterly.",
+      "ar": "راجعها ربع سنوياً."
+     }
+    ]
+   },
+   {
+    "id": "roles",
+    "ref": "5.3",
+    "title": {
+     "en": "Roles and responsibilities matrix (RACI)",
+     "ar": "مصفوفة الأدوار والمسؤوليات (RACI)"
+    },
+    "purpose": {
+     "en": "Who approves, executes, is consulted and is informed across system processes.",
+     "ar": "من يعتمد ومن ينفذ ومن يُستشار ومن يُبلَّغ في عمليات النظام."
+    },
+    "tips": [
+     {
+      "en": "One accountable (A) per process.",
+      "ar": "مسؤول واحد (A) لكل عملية."
+     },
+     {
+      "en": "The compliance function owns no operational processes.",
+      "ar": "وظيفة الامتثال لا تملك عمليات تشغيلية."
+     },
+     {
+      "en": "Review with every organizational change.",
+      "ar": "راجعها مع كل تغيير تنظيمي."
+     }
+    ]
+   },
+   {
+    "id": "culture",
+    "ref": "5.1.2",
+    "title": {
+     "en": "Compliance culture plan and indicators",
+     "ar": "خطة ثقافة الامتثال ومؤشراتها"
+    },
+    "purpose": {
+     "en": "Culture-building initiatives and how they are measured.",
+     "ar": "مبادرات بناء الثقافة ومؤشرات قياسها."
+    },
+    "tips": [
+     {
+      "en": "Measure culture yearly with an anonymous survey.",
+      "ar": "قِس الثقافة سنوياً باستبيان مجهول."
+     },
+     {
+      "en": "Link conduct to appraisal and rewards.",
+      "ar": "اربط السلوك بالتقييم والمكافآت."
+     },
+     {
+      "en": "Apply consequences fairly to everyone.",
+      "ar": "أظهر العواقب بعدالة للجميع."
+     }
+    ]
+   },
+   {
+    "id": "training",
+    "ref": "7.2 / 7.3",
+    "title": {
+     "en": "Training matrix by role and risk",
+     "ar": "مصفوفة التدريب بحسب الدور والمخاطر"
+    },
+    "purpose": {
+     "en": "Who needs which training, when, and how effectiveness is measured.",
+     "ar": "من يحتاج أي تدريب، ومتى، وكيف تُقاس الفعالية."
+    },
+    "tips": [
+     {
+      "en": "Start with the riskiest roles.",
+      "ar": "ابدأ بالأدوار الأعلى مخاطر."
+     },
+     {
+      "en": "Practical sector cases.",
+      "ar": "حالات عملية من القطاع."
+     },
+     {
+      "en": "A short test and completion rate.",
+      "ar": "اختبار قصير ونسبة إكمال."
+     }
+    ]
+   },
+   {
+    "id": "comms",
+    "ref": "7.4",
+    "title": {
+     "en": "Compliance communication plan",
+     "ar": "خطة الاتصال بشأن الامتثال"
+    },
+    "purpose": {
+     "en": "What is communicated, to whom, when, through which channel and language, and by whom.",
+     "ar": "ما يُبلَّغ ولمن ومتى وبأي وسيلة ولغة ومن المسؤول."
+    },
+    "tips": [
+     {
+      "en": "Use the workforce's languages.",
+      "ar": "استخدم لغات القوى العاملة."
+     },
+     {
+      "en": "One channel for dealing with regulators.",
+      "ar": "قناة واحدة للتواصل مع الجهات الرقابية."
+     },
+     {
+      "en": "Record communications made.",
+      "ar": "سجّل الاتصالات المنفذة."
+     }
+    ]
+   },
+   {
+    "id": "duediligence",
+    "ref": "4.6 / 8.1",
+    "title": {
+     "en": "Third-party due diligence",
+     "ar": "العناية الواجبة للأطراف الثالثة"
+    },
+    "purpose": {
+     "en": "A 1–5 compliance evaluation of subcontractors, agents and suppliers.",
+     "ar": "تقييم (1–5) لمقاولي الباطن والوكلاء والموردين من منظور الامتثال."
+    },
+    "tips": [
+     {
+      "en": "80%+ approved, 60–79% conditional, below 60% not approved.",
+      "ar": "80% فأكثر معتمد، 60–79% مشروط، أقل من 60% غير معتمد."
+     },
+     {
+      "en": "Agents and intermediaries carry the highest risk.",
+      "ar": "الوكلاء والوسطاء أعلى مخاطر."
+     },
+     {
+      "en": "Re-evaluate critical ones yearly.",
+      "ar": "جدد التقييم سنوياً للحرجين."
+     }
+    ]
+   },
+   {
+    "id": "concerns",
+    "ref": "8.3",
+    "title": {
+     "en": "Report log",
+     "ar": "سجل البلاغات"
+    },
+    "purpose": {
+     "en": "Receiving, triaging and following up reports while protecting the reporter.",
+     "ar": "استقبال البلاغات وفرزها ومتابعتها مع حماية المبلغ."
+    },
+    "tips": [
+     {
+      "en": "Never record or try to uncover an anonymous reporter's identity.",
+      "ar": "لا تسجل هوية المبلغ المجهول ولا تحاول كشفها."
+     },
+     {
+      "en": "Triage within 5 days.",
+      "ar": "فرز خلال 5 أيام."
+     },
+     {
+      "en": "Follow up the reporter's situation at 3 and 6 months.",
+      "ar": "تابع وضع المبلغ بعد 3 و6 أشهر."
+     }
+    ]
+   },
+   {
+    "id": "investigation",
+    "ref": "8.4",
+    "title": {
+     "en": "Investigation log and outcomes",
+     "ar": "سجل التحقيقات ونتائجها"
+    },
+    "purpose": {
+     "en": "From report to decision, root cause and updated control.",
+     "ar": "من البلاغ حتى القرار والسبب الجذري والضابط المحدث."
+    },
+    "tips": [
+     {
+      "en": "An investigator independent of the department concerned.",
+      "ar": "محقق مستقل عن الإدارة المعنية."
+     },
+     {
+      "en": "Close within 45 days.",
+      "ar": "إغلاق خلال 45 يوماً."
+     },
+     {
+      "en": "Every investigation ends with: which control failed?",
+      "ar": "كل تحقيق ينتهي بسؤال: أي ضابط فشل؟"
+     }
+    ]
+   },
+   {
+    "id": "kpis",
+    "ref": "9.1.3",
+    "title": {
+     "en": "Compliance performance indicators",
+     "ar": "مؤشرات أداء الامتثال"
+    },
+    "purpose": {
+     "en": "Activity and outcome indicators with definition, source, frequency and target.",
+     "ar": "مؤشرات نشاط ونتائج بتعريف ومصدر وتكرار ومستهدف."
+    },
+    "tips": [
+     {
+      "en": "Combine leading and lagging indicators.",
+      "ar": "اجمع المؤشرات السابقة واللاحقة."
+     },
+     {
+      "en": "Interpret rising reports before judging.",
+      "ar": "فسّر ارتفاع البلاغات قبل الحكم."
+     },
+     {
+      "en": "Present them quarterly to the committee.",
+      "ar": "اعرضها ربع سنوياً للجنة."
+     }
+    ]
+   },
+   {
+    "id": "audit",
+    "ref": "9.2",
+    "title": {
+     "en": "Internal audit programme",
+     "ar": "برنامج التدقيق الداخلي"
+    },
+    "purpose": {
+     "en": "A yearly risk-based plan run by auditors independent of the compliance function.",
+     "ar": "خطة سنوية مبنية على المخاطر ينفذها مدققون مستقلون عن وظيفة الامتثال."
+    },
+    "tips": [
+     {
+      "en": "Trace obligations to controls and records.",
+      "ar": "تتبع الالتزام حتى الضابط والسجل."
+     },
+     {
+      "en": "Focus on procurement and third parties.",
+      "ar": "ركّز على المشتريات والأطراف الثالثة."
+     },
+     {
+      "en": "Use the toolkit checklist.",
+      "ar": "استخدم قائمة التحقق في الأداة."
+     }
+    ]
+   },
+   {
+    "id": "review",
+    "ref": "9.3",
+    "title": {
+     "en": "Management review: inputs and decisions",
+     "ar": "مراجعة الإدارة: المدخلات والقرارات"
+    },
+    "purpose": {
+     "en": "All inputs including culture, reports and investigations, and the decisions reported to the governing body.",
+     "ar": "كل المدخلات بما فيها الثقافة والبلاغات والتحقيقات، والقرارات المرفوعة للجهة الحاكمة."
+    },
+    "tips": [
+     {
+      "en": "Do not forget culture, reports and investigations.",
+      "ar": "لا تنس الثقافة والبلاغات والتحقيقات."
+     },
+     {
+      "en": "Every decision with an owner and date.",
+      "ar": "كل قرار بمسؤول وموعد."
+     },
+     {
+      "en": "Report outcomes to the governing body.",
+      "ar": "ارفع النتائج للجهة الحاكمة."
+     }
+    ]
+   }
+  ],
+  "official": [
+   {
+    "url": "https://www.iso.org/standard/75080.html",
+    "name": {
+     "ar": "المنظمة الدولية للتقييس ISO",
+     "en": "ISO — International Organization for Standardization"
+    },
+    "note": {
+     "ar": "صفحة ISO 37301:2021 ومتجر النسخة الرسمية، والتعديل 1:2024",
+     "en": "The ISO 37301:2021 page and store, and Amendment 1:2024"
+    }
+   },
+   {
+    "url": "https://www.saso.gov.sa",
+    "name": {
+     "ar": "الهيئة السعودية للمواصفات والمقاييس والجودة",
+     "en": "Saudi Standards, Metrology and Quality Org. (SASO)"
+    },
+    "note": {
+     "ar": "النسخة الوطنية المعتمدة في المملكة",
+     "en": "The national adoption in Saudi Arabia"
+    }
+   },
+   {
+    "url": "https://www.nazaha.gov.sa",
+    "name": {
+     "ar": "هيئة الرقابة ومكافحة الفساد (نزاهة)",
+     "en": "Oversight and Anti-Corruption Authority (Nazaha)"
+    },
+    "note": {
+     "ar": "الإطار الوطني للنزاهة ومكافحة الفساد",
+     "en": "The national integrity and anti-corruption framework"
+    }
+   },
+   {
+    "url": "https://global-aci.org",
+    "name": {
+     "ar": "مؤسسة Global ACI (سابقاً IAF وILAC)",
+     "en": "Global ACI — formerly IAF and ILAC"
+    },
+    "note": {
+     "ar": "قواعد الاعتماد والشهادات المعترف بها",
+     "en": "Accreditation rules and recognised certification"
+    }
+   }
+  ],
+  "readiness_questions": 40,
+  "competencies": [
+   "CMP-01",
+   "GOV-02",
+   "ISO-01",
+   "ISO-02"
+  ],
+  "ecosystem": "compliance"
+ }
+}

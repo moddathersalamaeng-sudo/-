@@ -1,0 +1,5726 @@
+{
+  "schema": "cia.seed.v1",
+  "collection": "competencies",
+  "phase": 2,
+  "generated": "2026-09-28",
+  "author": "مدثر سلامه",
+  "items": [
+    {
+      "type": "competency",
+      "id": "QM-01",
+      "domain": "QM",
+      "name": {
+        "ar": "تخطيط الجودة والأهداف",
+        "en": "Quality planning & objectives"
+      },
+      "definition": {
+        "ar": "ترجمة متطلبات العملاء والمنظمة إلى أهداف جودة قابلة للقياس وخطط لتحقيقها.",
+        "en": "Translating customer and organisational requirements into measurable quality objectives and the plans needed to achieve them."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "QM-01.1",
+          "name": {
+            "ar": "وضع أهداف جودة قابلة للقياس",
+            "en": "Setting measurable quality objectives"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "QM-01.2",
+          "name": {
+            "ar": "تخطيط الجودة للمنتجات والعمليات",
+            "en": "Quality planning for products and processes"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "QM-01.3",
+          "name": {
+            "ar": "ترجمة متطلبات العملاء",
+            "en": "Translating customer requirements"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف سبب وجود أهداف وخطط الجودة.",
+          "en": "Knows why quality objectives and plans exist."
+        },
+        {
+          "level": 2,
+          "ar": "يصوغ هدفًا أو جزءًا من خطة باستخدام نموذج معطى.",
+          "en": "Drafts an objective or plan section from a given template."
+        },
+        {
+          "level": 3,
+          "ar": "يضع أهدافًا قابلة للقياس وخطة جودة لعملية باستقلالية.",
+          "en": "Sets measurable objectives and a quality plan for a process independently."
+        },
+        {
+          "level": 4,
+          "ar": "يواءم الأهداف بين الإدارات ويحل تعارض المتطلبات.",
+          "en": "Aligns objectives across functions and resolves conflicting requirements."
+        },
+        {
+          "level": 5,
+          "ar": "يحدد منهجية تخطيط الجودة على مستوى المنظمة.",
+          "en": "Sets the quality planning approach for the organisation."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 3,
+        "ROLE-IA": 2,
+        "ROLE-LA": 3,
+        "ROLE-QMGR": 4,
+        "ROLE-PMOA": 1,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "QM"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "bdd9cc72c5bf4cefbd6ddfa0b9ad1600f7a46c5ad073d050dd1cb6c1b63504c2"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "QM-02",
+      "domain": "QM",
+      "name": {
+        "ar": "أدوات الجودة وتحليل البيانات",
+        "en": "Quality tools & data analysis"
+      },
+      "definition": {
+        "ar": "اختيار أدوات الجودة الأساسية والإحصاء واستخدامها لفهم أداء العمليات والتباين.",
+        "en": "Selecting and using basic quality tools and statistics to understand process performance and variation."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "QM-02.1",
+          "name": {
+            "ar": "أدوات الجودة الأساسية",
+            "en": "Basic quality tools"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "QM-02.2",
+          "name": {
+            "ar": "الإحصاء الوصفي",
+            "en": "Descriptive statistics"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "QM-02.3",
+          "name": {
+            "ar": "قراءة خرائط التحكم",
+            "en": "Reading control charts"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يسمّي أدوات الجودة الشائعة والغرض من كل منها.",
+          "en": "Names common quality tools and what each is for."
+        },
+        {
+          "level": 2,
+          "ar": "يعدّ مخطط باريتو أو ورقة تحقق من بيانات جاهزة.",
+          "en": "Builds a Pareto chart or check sheet from prepared data."
+        },
+        {
+          "level": 3,
+          "ar": "يختار الأداة المناسبة للمشكلة ويفسّر النتائج بشكل صحيح.",
+          "en": "Chooses the right tool for a problem and interprets results correctly."
+        },
+        {
+          "level": 4,
+          "ar": "يصمم جمع البيانات ويكتشف التباين ذا الأسباب الخاصة.",
+          "en": "Designs data collection and detects special-cause variation."
+        },
+        {
+          "level": 5,
+          "ar": "يبني ممارسة التحليل في المنظمة ويدرّب المحللين.",
+          "en": "Builds the organisation's analytics practice and coaches analysts."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 4,
+        "ROLE-IA": 2,
+        "ROLE-LA": 3,
+        "ROLE-QMGR": 3,
+        "ROLE-PMOA": 2,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "QM"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "bcb303b628a05b806c67a68963b48322ddff35fbf8d29647e189184aa90ae6c0"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "QM-03",
+      "domain": "QM",
+      "name": {
+        "ar": "حل المشكلات والإجراءات التصحيحية",
+        "en": "Problem solving & corrective action"
+      },
+      "definition": {
+        "ar": "التمييز بين التصحيح والإجراء التصحيحي، وتحديد الأسباب الجذرية، والتحقق من فعالية الإجراءات.",
+        "en": "Distinguishing correction from corrective action, finding root causes and verifying that actions work."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "QM-03.1",
+          "name": {
+            "ar": "التصحيح مقابل الإجراء التصحيحي",
+            "en": "Correction vs corrective action"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "QM-03.2",
+          "name": {
+            "ar": "تحليل السبب الجذري (لماذا الخمس، هيكل السمكة)",
+            "en": "Root cause analysis (5 Why, fishbone)"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "QM-03.3",
+          "name": {
+            "ar": "التحقق من الفعالية",
+            "en": "Effectiveness verification"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف أن معالجة العَرَض تختلف عن إزالة السبب.",
+          "en": "Knows that fixing the symptom differs from removing the cause."
+        },
+        {
+          "level": 2,
+          "ar": "ينفّذ تحليل «لماذا الخمس» بتوجيه ويوثّق النتيجة.",
+          "en": "Runs a 5 Why analysis with guidance and records the result."
+        },
+        {
+          "level": 3,
+          "ar": "يقود تحليل السبب الجذري ويحدد إجراءات قابلة للتحقق.",
+          "en": "Leads a root cause analysis and defines verifiable actions."
+        },
+        {
+          "level": 4,
+          "ar": "يعالج المشكلات المتكررة متعددة الأسباب ويتحقق من الفعالية بالبيانات.",
+          "en": "Handles recurring, multi-cause problems and checks effectiveness with data."
+        },
+        {
+          "level": 5,
+          "ar": "يضع منظومة الإجراءات التصحيحية ويبني ثقافة حل المشكلات.",
+          "en": "Sets the corrective action system and builds a problem-solving culture."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 4,
+        "ROLE-IA": 3,
+        "ROLE-LA": 3,
+        "ROLE-QMGR": 4,
+        "ROLE-PMOA": 1,
+        "ROLE-HSEQM": 4
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "QM"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 4
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "2fce76ea90e253062cdc65c3bc9405fc6f2ce9e42791056f11ed0b3ae4b0d9f3"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "QM-04",
+      "domain": "QM",
+      "name": {
+        "ar": "جودة العملاء والموردين",
+        "en": "Customer & supplier quality"
+      },
+      "definition": {
+        "ar": "إدارة الجودة عبر سلسلة القيمة: تقييم الموردين، وجودة الوارد، وملاحظات العملاء وشكاواهم.",
+        "en": "Managing quality across the value chain: supplier evaluation, incoming quality, customer feedback and complaints."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "QM-04.1",
+          "name": {
+            "ar": "تقييم الموردين",
+            "en": "Supplier evaluation"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "QM-04.2",
+          "name": {
+            "ar": "معالجة الشكاوى",
+            "en": "Complaint handling"
+          },
+          "primary_dimension": "S"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف أن مدخلات الموردين والعملاء تؤثر في الجودة.",
+          "en": "Knows that supplier and customer inputs affect quality."
+        },
+        {
+          "level": 2,
+          "ar": "يسجّل الشكاوى ومشكلات الموردين بدقة.",
+          "en": "Records complaints and supplier issues accurately."
+        },
+        {
+          "level": 3,
+          "ar": "يقيّم الموردين ويعالج الشكاوى حتى الإغلاق.",
+          "en": "Evaluates suppliers and resolves complaints to closure."
+        },
+        {
+          "level": 4,
+          "ar": "يطوّر الموردين ويحوّل ملاحظات العملاء إلى تحسينات.",
+          "en": "Develops suppliers and turns customer feedback into improvements."
+        },
+        {
+          "level": 5,
+          "ar": "يضع استراتيجية جودة الموردين والعملاء.",
+          "en": "Sets supplier and customer quality strategy."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 3,
+        "ROLE-IA": 1,
+        "ROLE-LA": 2,
+        "ROLE-QMGR": 4,
+        "ROLE-PMOA": 0,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "QM"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "ef1901a8f543eeee4c1ad5a55158d89dbc5f829be97bdc6942eaa6a1d82d8d88"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "ISO-01",
+      "domain": "ISO",
+      "name": {
+        "ar": "تفسير متطلبات أنظمة الإدارة",
+        "en": "Interpreting management system requirements"
+      },
+      "definition": {
+        "ar": "قراءة بنية المواصفة وصياغتها (يجب، ينبغي، يجوز، يمكن) وتحويل المتطلبات إلى توقعات عملية.",
+        "en": "Reading a standard's structure and wording (shall, should, may, can) and turning requirements into practical expectations."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "ISO-01.1",
+          "name": {
+            "ar": "بنية المواصفة والبنود",
+            "en": "Standard structure and clauses"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "ISO-01.2",
+          "name": {
+            "ar": "الصيغ اللفظية: يجب / ينبغي / يجوز / يمكن",
+            "en": "Verbal forms: shall / should / may / can"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "ISO-01.3",
+          "name": {
+            "ar": "من المتطلب إلى الدليل",
+            "en": "From requirement to evidence"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف ما هي مواصفة نظام الإدارة وكيف تُنظَّم.",
+          "en": "Knows what a management system standard is and how it is organised."
+        },
+        {
+          "level": 2,
+          "ar": "يميّز المتطلبات عن التوصيات داخل البند.",
+          "en": "Distinguishes requirements from recommendations in a clause."
+        },
+        {
+          "level": 3,
+          "ar": "يشرح ما يعنيه المتطلب لمنظمة معيّنة والأدلة التي يحتاجها.",
+          "en": "Explains what a requirement means for a given organisation and the evidence it needs."
+        },
+        {
+          "level": 4,
+          "ar": "يفسّر المتطلبات الغامضة عبر عدة مواصفات بشكل متسق.",
+          "en": "Interprets ambiguous requirements across several standards consistently."
+        },
+        {
+          "level": 5,
+          "ar": "مرجع في التفسير ويحسم الخلافات.",
+          "en": "Is a reference for interpretation and resolves disputes."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 3,
+        "ROLE-IA": 3,
+        "ROLE-LA": 4,
+        "ROLE-QMGR": 4,
+        "ROLE-PMOA": 1,
+        "ROLE-HSEQM": 4
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "ISO"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 4
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "38b80b853f72a1a33c3fa825b91827a5a5acc7118e0c34e82ecc5a4988e79907"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "ISO-02",
+      "domain": "ISO",
+      "name": {
+        "ar": "التطبيق والمعلومات الموثقة",
+        "en": "Implementation & documented information"
+      },
+      "definition": {
+        "ar": "بناء نظام الإدارة عبر العمليات والمسؤوليات والمعلومات الموثقة المضبوطة.",
+        "en": "Building a management system through processes, responsibilities and controlled documented information."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "ISO-02.1",
+          "name": {
+            "ar": "رسم العمليات",
+            "en": "Process mapping"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "ISO-02.2",
+          "name": {
+            "ar": "ضبط الوثائق والسجلات",
+            "en": "Document and record control"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "ISO-02.3",
+          "name": {
+            "ar": "تخطيط التطبيق",
+            "en": "Implementation planning"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف الأجزاء الرئيسية لنظام الإدارة.",
+          "en": "Knows the main parts of a management system."
+        },
+        {
+          "level": 2,
+          "ar": "يحافظ على الوثائق والسجلات وفق إجراء قائم.",
+          "en": "Maintains documents and records under an existing procedure."
+        },
+        {
+          "level": 3,
+          "ar": "يرسم العمليات ويكتب المعلومات الموثقة لإدارة.",
+          "en": "Maps processes and writes documented information for a function."
+        },
+        {
+          "level": 4,
+          "ar": "يقود التطبيق على مستوى المنظمة حتى الجاهزية للشهادة.",
+          "en": "Leads implementation across the organisation to certification readiness."
+        },
+        {
+          "level": 5,
+          "ar": "يصمم أنظمة الإدارة للمنظمات المعقدة أو متعددة المواقع.",
+          "en": "Designs management systems for complex or multi-site organisations."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 3,
+        "ROLE-IA": 2,
+        "ROLE-LA": 3,
+        "ROLE-QMGR": 4,
+        "ROLE-PMOA": 1,
+        "ROLE-HSEQM": 4
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "ISO"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 4
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "c9f15e7f04be3e9149e20d922f9c17b16267770af45b3cfc0e1df6d1b83b1c48"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "ISO-03",
+      "domain": "ISO",
+      "name": {
+        "ar": "أنظمة الإدارة المتكاملة",
+        "en": "Integrated management systems"
+      },
+      "definition": {
+        "ar": "مواءمة أنظمة الجودة والبيئة والصحة والسلامة وغيرها من خلال الهيكل الموحد المشترك.",
+        "en": "Aligning quality, environment, health and safety and other systems through the common harmonised structure."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "ISO-03.1",
+          "name": {
+            "ar": "الهيكل الموحد",
+            "en": "Harmonised structure"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "ISO-03.2",
+          "name": {
+            "ar": "تصميم التكامل",
+            "en": "Integration design"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف أن عدة مواصفات تشترك في هيكل موحد.",
+          "en": "Knows that several standards share a common structure."
+        },
+        {
+          "level": 2,
+          "ar": "يحدد البنود المشتركة بين مواصفتين.",
+          "en": "Identifies common clauses across two standards."
+        },
+        {
+          "level": 3,
+          "ar": "يدمج العمليات المشتركة مثل التدقيق ومراجعة الإدارة.",
+          "en": "Integrates shared processes such as audit and management review."
+        },
+        {
+          "level": 4,
+          "ar": "يصمم نظامًا متكاملًا واحدًا يغطي ثلاث مواصفات أو أكثر.",
+          "en": "Designs one integrated system covering three or more standards."
+        },
+        {
+          "level": 5,
+          "ar": "يضع استراتيجية التكامل وحوكمته للمنظمة.",
+          "en": "Sets integration strategy and governance for the organisation."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 1,
+        "ROLE-IA": 2,
+        "ROLE-LA": 3,
+        "ROLE-QMGR": 3,
+        "ROLE-PMOA": 0,
+        "ROLE-HSEQM": 4
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "ISO"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 4
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "d09db5fd0f5eb4da2d02950d6df1ba2108b47892c835b18c300c0fb5ada4171c"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "AUD-01",
+      "domain": "AUD",
+      "name": {
+        "ar": "برنامج التدقيق وتخطيطه",
+        "en": "Audit programme & planning"
+      },
+      "definition": {
+        "ar": "تحديد أهداف التدقيق ونطاقه ومعاييره، وتخطيط عمليات التدقيق بناءً على المخاطر والنتائج السابقة.",
+        "en": "Setting audit objectives, scope and criteria, and planning audits based on risk and previous results."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "AUD-01.1",
+          "name": {
+            "ar": "الأهداف والنطاق والمعايير",
+            "en": "Objectives, scope and criteria"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "AUD-01.2",
+          "name": {
+            "ar": "التخطيط القائم على المخاطر",
+            "en": "Risk-based planning"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "AUD-01.3",
+          "name": {
+            "ar": "خطة التدقيق وقائمة التحقق",
+            "en": "Audit plan and checklist"
+          },
+          "primary_dimension": "S"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف الفرق بين برنامج التدقيق وخطة التدقيق.",
+          "en": "Knows the difference between an audit programme and an audit plan."
+        },
+        {
+          "level": 2,
+          "ar": "يعدّ قائمة تحقق من معايير معطاة.",
+          "en": "Prepares a checklist from given criteria."
+        },
+        {
+          "level": 3,
+          "ar": "يخطط تدقيقًا واحدًا بنطاق ومعايير وجدول واضحة.",
+          "en": "Plans a single audit with clear scope, criteria and schedule."
+        },
+        {
+          "level": 4,
+          "ar": "يدير برنامجًا قائمًا على المخاطر عبر العمليات والمواقع.",
+          "en": "Manages a risk-based programme across processes and sites."
+        },
+        {
+          "level": 5,
+          "ar": "يصمم برامج التدقيق ويقيّم فعاليتها.",
+          "en": "Designs audit programmes and evaluates their effectiveness."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 1,
+        "ROLE-IA": 3,
+        "ROLE-LA": 4,
+        "ROLE-QMGR": 3,
+        "ROLE-PMOA": 0,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "AUD"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "b5b5e712cf95262a561e991752c2913f761c1027c53ea3399ea0d95a34108f72"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "AUD-02",
+      "domain": "AUD",
+      "name": {
+        "ar": "جمع الأدلة وأخذ العينات",
+        "en": "Evidence collection & sampling"
+      },
+      "definition": {
+        "ar": "جمع الأدلة الموضوعية عبر المقابلات والملاحظة ومراجعة السجلات وأخذ العينات مع الحفاظ على مسار تدقيق واضح.",
+        "en": "Gathering objective evidence through interviews, observation, records review and sampling while keeping a clear audit trail."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "AUD-02.1",
+          "name": {
+            "ar": "المقابلة",
+            "en": "Interviewing"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "AUD-02.2",
+          "name": {
+            "ar": "أخذ العينات",
+            "en": "Sampling"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "AUD-02.3",
+          "name": {
+            "ar": "مسار التدقيق",
+            "en": "Audit trail"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف ما يُعدّ دليلًا موضوعيًا.",
+          "en": "Knows what counts as objective evidence."
+        },
+        {
+          "level": 2,
+          "ar": "يجمع السجلات والملاحظات تحت الإشراف.",
+          "en": "Collects records and notes under supervision."
+        },
+        {
+          "level": 3,
+          "ar": "يجري المقابلات ويأخذ العينات ويتتبع المسارات باستقلالية.",
+          "en": "Interviews, samples and follows trails independently."
+        },
+        {
+          "level": 4,
+          "ar": "يكيّف العينات حسب المخاطر ويتعامل مع الجهات المدققة المقاومة.",
+          "en": "Adapts sampling to risk and handles resistant auditees."
+        },
+        {
+          "level": 5,
+          "ar": "يوجّه المدققين في الحكم على الأدلة.",
+          "en": "Coaches auditors on evidence judgement."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": true,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 2,
+        "ROLE-IA": 3,
+        "ROLE-LA": 4,
+        "ROLE-QMGR": 2,
+        "ROLE-PMOA": 0,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "AUD"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "196a6bd9f7806127dbb1660e48304fb95711128ba914343749a51a1c670fcee4"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "AUD-03",
+      "domain": "AUD",
+      "name": {
+        "ar": "الملاحظات وإعداد التقارير",
+        "en": "Findings & reporting"
+      },
+      "definition": {
+        "ar": "كتابة ملاحظات واضحة (المتطلب، الدليل، العبارة)، وإعداد الاستنتاجات، ومتابعة الإجراءات.",
+        "en": "Writing clear findings (requirement, evidence, statement), reporting conclusions and following up actions."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "AUD-03.1",
+          "name": {
+            "ar": "كتابة عدم المطابقة",
+            "en": "Nonconformity writing"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "AUD-03.2",
+          "name": {
+            "ar": "تقرير التدقيق",
+            "en": "Audit report"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "AUD-03.3",
+          "name": {
+            "ar": "المتابعة والتحقق",
+            "en": "Follow-up and verification"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف أجزاء عبارة عدم المطابقة.",
+          "en": "Knows the parts of a nonconformity statement."
+        },
+        {
+          "level": 2,
+          "ar": "يكتب ملاحظة من دليل معطى مع مراجعة.",
+          "en": "Writes a finding from given evidence, with review."
+        },
+        {
+          "level": 3,
+          "ar": "يكتب ملاحظات وتقارير دقيقة دون دعم.",
+          "en": "Writes accurate findings and reports without support."
+        },
+        {
+          "level": 4,
+          "ar": "يقود الاجتماعات الختامية ويتعامل مع الملاحظات المتنازع عليها.",
+          "en": "Leads closing meetings and handles disputed findings."
+        },
+        {
+          "level": 5,
+          "ar": "يضع معايير التقارير ويراجع ملاحظات الآخرين.",
+          "en": "Sets reporting standards and reviews others' findings."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": true,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 2,
+        "ROLE-IA": 3,
+        "ROLE-LA": 4,
+        "ROLE-QMGR": 3,
+        "ROLE-PMOA": 0,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "AUD"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "1c5ddc16756f036ea602d182524e6d79761e67cc25fa2e0deba6183ec9acbc01"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "PM-01",
+      "domain": "PM",
+      "name": {
+        "ar": "تخطيط النطاق والجدول والتكلفة",
+        "en": "Scope, schedule & cost planning"
+      },
+      "definition": {
+        "ar": "تحديد ما يسلّمه المشروع وتخطيط الوقت والتكلفة لتسليمه.",
+        "en": "Defining what a project delivers and planning the time and cost to deliver it."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "PM-01.1",
+          "name": {
+            "ar": "النطاق وهيكل تجزئة العمل",
+            "en": "Scope and work breakdown"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "PM-01.2",
+          "name": {
+            "ar": "الجدولة",
+            "en": "Scheduling"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "PM-01.3",
+          "name": {
+            "ar": "تقدير التكلفة",
+            "en": "Cost estimating"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف القيود الثلاثية ومصطلحات التخطيط الأساسية.",
+          "en": "Knows the triple constraint and basic planning terms."
+        },
+        {
+          "level": 2,
+          "ar": "يحدّث جدولًا أو هيكل تجزئة أعدّه آخرون.",
+          "en": "Updates a schedule or breakdown prepared by others."
+        },
+        {
+          "level": 3,
+          "ar": "يبني النطاق والجدول والميزانية لمشروع متوسط.",
+          "en": "Builds scope, schedule and budget for a medium project."
+        },
+        {
+          "level": 4,
+          "ar": "يخطط المشاريع المعقدة ويضبط التغيير والانحرافات.",
+          "en": "Plans complex projects and controls change and variance."
+        },
+        {
+          "level": 5,
+          "ar": "يضع معايير التخطيط عبر المشاريع.",
+          "en": "Sets planning standards across projects."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 1,
+        "ROLE-IA": 0,
+        "ROLE-LA": 1,
+        "ROLE-QMGR": 2,
+        "ROLE-PMOA": 3,
+        "ROLE-HSEQM": 2
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "PM"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 2
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "b328d0dffb5f92088a60434edb6fe97bc746a493ccf7b322dc7899963f79a8e5"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "PM-02",
+      "domain": "PM",
+      "name": {
+        "ar": "إدارة أصحاب المصلحة والتواصل",
+        "en": "Stakeholder & communication management"
+      },
+      "definition": {
+        "ar": "تحديد أصحاب المصلحة وفهم احتياجاتهم وتأثيرهم وإبقاؤهم على اطلاع ومشاركة.",
+        "en": "Identifying stakeholders, understanding their needs and influence, and keeping them informed and engaged."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "PM-02.1",
+          "name": {
+            "ar": "تحليل أصحاب المصلحة",
+            "en": "Stakeholder analysis"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "PM-02.2",
+          "name": {
+            "ar": "تخطيط التواصل",
+            "en": "Communication planning"
+          },
+          "primary_dimension": "S"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف من هم أصحاب المصلحة ولماذا يهمّون.",
+          "en": "Knows who stakeholders are and why they matter."
+        },
+        {
+          "level": 2,
+          "ar": "يحافظ على سجل أصحاب المصلحة.",
+          "en": "Maintains a stakeholder register."
+        },
+        {
+          "level": 3,
+          "ar": "يخطط التواصل لمشروع وينفّذه.",
+          "en": "Plans and runs communication for a project."
+        },
+        {
+          "level": 4,
+          "ar": "يدير المصالح المتعارضة والرعاة من الإدارة العليا.",
+          "en": "Manages conflicting interests and senior sponsors."
+        },
+        {
+          "level": 5,
+          "ar": "يوجّه إشراك أصحاب المصلحة عبر المحفظة.",
+          "en": "Shapes stakeholder engagement across a portfolio."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 1,
+        "ROLE-IA": 0,
+        "ROLE-LA": 1,
+        "ROLE-QMGR": 3,
+        "ROLE-PMOA": 2,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "PM"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "76ea11479dc6393601c330205231e08963f5b4507f26e51a6fce26a39ce21031"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "PM-03",
+      "domain": "PM",
+      "name": {
+        "ar": "أساليب التسليم",
+        "en": "Delivery approaches"
+      },
+      "definition": {
+        "ar": "اختيار الأساليب التنبؤية أو الرشيقة أو الهجينة وتطبيقها بما يناسب سياق المشروع.",
+        "en": "Choosing and applying predictive, agile or hybrid approaches to fit the project context."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "PM-03.1",
+          "name": {
+            "ar": "دورة الحياة التنبؤية",
+            "en": "Predictive lifecycle"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "PM-03.2",
+          "name": {
+            "ar": "الممارسات الرشيقة",
+            "en": "Agile practices"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "PM-03.3",
+          "name": {
+            "ar": "تكييف الأسلوب",
+            "en": "Tailoring the approach"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف أساليب التسليم الرئيسية.",
+          "en": "Knows the main delivery approaches."
+        },
+        {
+          "level": 2,
+          "ar": "يعمل ضمن أسلوب محدد في فريق.",
+          "en": "Works within a defined approach on a team."
+        },
+        {
+          "level": 3,
+          "ar": "يختار أسلوبًا ويكيّفه لمشروع.",
+          "en": "Selects and tailors an approach for a project."
+        },
+        {
+          "level": 4,
+          "ar": "يجمع بين الأساليب في البيئات الهجينة.",
+          "en": "Combines approaches in hybrid environments."
+        },
+        {
+          "level": 5,
+          "ar": "يضع أطر التسليم للمنظمة.",
+          "en": "Sets delivery frameworks for the organisation."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 1,
+        "ROLE-IA": 0,
+        "ROLE-LA": 0,
+        "ROLE-QMGR": 1,
+        "ROLE-PMOA": 2,
+        "ROLE-HSEQM": 1
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "PM"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 1
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "daf5e3aada6fbd1b7f0957e6862cd7c24fdb896f46194e6ab169cd1ff774a1c8"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "RSK-01",
+      "domain": "RSK",
+      "name": {
+        "ar": "تحديد المخاطر وتقييمها",
+        "en": "Risk identification & assessment"
+      },
+      "definition": {
+        "ar": "اكتشاف المخاطر والفرص وتقييم الاحتمالية والعواقب وفق معايير محددة.",
+        "en": "Finding risks and opportunities and assessing likelihood and consequence against defined criteria."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "RSK-01.1",
+          "name": {
+            "ar": "تحديد المخاطر",
+            "en": "Risk identification"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "RSK-01.2",
+          "name": {
+            "ar": "معايير المخاطر ومصفوفاتها",
+            "en": "Risk criteria and matrices"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "RSK-01.3",
+          "name": {
+            "ar": "الفرص",
+            "en": "Opportunities"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف الفرق بين الخطر والمشكلة والفرصة.",
+          "en": "Knows the difference between a risk, an issue and an opportunity."
+        },
+        {
+          "level": 2,
+          "ar": "يسجّل المخاطر في سجل باستخدام مصفوفة معطاة.",
+          "en": "Records risks in a register using a given matrix."
+        },
+        {
+          "level": 3,
+          "ar": "يدير جلسة تقييم المخاطر لعملية أو مشروع.",
+          "en": "Facilitates risk assessment for a process or project."
+        },
+        {
+          "level": 4,
+          "ar": "يضع معايير المخاطر ويجمعها عبر المجالات.",
+          "en": "Sets risk criteria and aggregates risks across areas."
+        },
+        {
+          "level": 5,
+          "ar": "يقود إطار إدارة المخاطر المؤسسي.",
+          "en": "Leads the enterprise risk framework."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 2,
+        "ROLE-IA": 2,
+        "ROLE-LA": 3,
+        "ROLE-QMGR": 3,
+        "ROLE-PMOA": 2,
+        "ROLE-HSEQM": 4
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "RSK"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 4
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "0d546c241ef3002a6606d2178a6c7a7c5107fb1b2d33153ec0f5285a7f05ed26"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "RSK-02",
+      "domain": "RSK",
+      "name": {
+        "ar": "معالجة المخاطر ومتابعتها",
+        "en": "Risk treatment & monitoring"
+      },
+      "definition": {
+        "ar": "اختيار المعالجات وتعيين المسؤولين ومتابعة تغيّر مستويات المخاطر كما هو مخطط.",
+        "en": "Selecting treatments, assigning owners and monitoring whether risk levels change as intended."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "RSK-02.1",
+          "name": {
+            "ar": "خيارات المعالجة",
+            "en": "Treatment options"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "RSK-02.2",
+          "name": {
+            "ar": "متابعة المخاطر ومؤشراتها",
+            "en": "Risk monitoring and indicators"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف خيارات معالجة المخاطر الرئيسية.",
+          "en": "Knows the main risk treatment options."
+        },
+        {
+          "level": 2,
+          "ar": "يتابع الإجراءات المتفق عليها في سجل المخاطر.",
+          "en": "Tracks agreed actions in the risk register."
+        },
+        {
+          "level": 3,
+          "ar": "يصمم خطط المعالجة ويراجع المخاطر المتبقية.",
+          "en": "Designs treatment plans and reviews residual risk."
+        },
+        {
+          "level": 4,
+          "ar": "يتابع مؤشرات المخاطر ويصعّد بشكل مناسب.",
+          "en": "Monitors risk indicators and escalates appropriately."
+        },
+        {
+          "level": 5,
+          "ar": "يحدد شهية المخاطر والتقارير المرفوعة للقيادة.",
+          "en": "Sets risk appetite and reporting to leadership."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 1,
+        "ROLE-IA": 1,
+        "ROLE-LA": 2,
+        "ROLE-QMGR": 3,
+        "ROLE-PMOA": 2,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "RSK"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "e744c0471d5cd445da2b57f905ea5aacd47af202dc0a68cd2356112fc168c731"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "PMO-01",
+      "domain": "PMO",
+      "name": {
+        "ar": "تصميم مكتب إدارة المشاريع وخدماته",
+        "en": "PMO design & services"
+      },
+      "definition": {
+        "ar": "تحديد غرض مكتب المشاريع أو البرامج أو المحافظ وخدماته وأدواره ومسار نضجه.",
+        "en": "Defining the purpose, services, roles and maturity path of a project, programme or portfolio office."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "PMO-01.1",
+          "name": {
+            "ar": "أنواع المكتب وخدماته",
+            "en": "PMO types and services"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "PMO-01.2",
+          "name": {
+            "ar": "النموذج التشغيلي",
+            "en": "Operating model"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف ما هو مكتب إدارة المشاريع وأنواعه الشائعة.",
+          "en": "Knows what a PMO is and its common types."
+        },
+        {
+          "level": 2,
+          "ar": "يدعم عمليات المكتب مثل النماذج وجمع البيانات.",
+          "en": "Supports PMO processes such as templates and data collection."
+        },
+        {
+          "level": 3,
+          "ar": "يدير خدمات المكتب لمجموعة من المشاريع.",
+          "en": "Runs PMO services for a set of projects."
+        },
+        {
+          "level": 4,
+          "ar": "يصمم النموذج التشغيلي للمكتب ويحسّن نضجه.",
+          "en": "Designs the PMO operating model and improves its maturity."
+        },
+        {
+          "level": 5,
+          "ar": "يقود مكتب مشاريع مؤسسي أو مكتب محافظ.",
+          "en": "Leads an enterprise PMO or portfolio office."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-PMOA"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 0,
+        "ROLE-IA": 0,
+        "ROLE-LA": 0,
+        "ROLE-QMGR": 0,
+        "ROLE-PMOA": 3,
+        "ROLE-HSEQM": 0
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "PMO"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "facc8758a1792713fb8da21a0d8dbde2addcc9b8bbe61e5cc60eb6c27c76ff3e"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "PMO-02",
+      "domain": "PMO",
+      "name": {
+        "ar": "تقارير المحفظة ودعم الحوكمة",
+        "en": "Portfolio reporting & governance support"
+      },
+      "definition": {
+        "ar": "تجميع بيانات المشاريع في تقارير موثوقة ودعم القرارات بشأن الأولويات والموارد.",
+        "en": "Consolidating project data into reliable reports and supporting decisions on priorities and resources."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "PMO-02.1",
+          "name": {
+            "ar": "تقارير الحالة",
+            "en": "Status reporting"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "PMO-02.2",
+          "name": {
+            "ar": "دعم تحديد الأولويات",
+            "en": "Prioritisation support"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف الغرض من تقارير المحفظة.",
+          "en": "Knows what portfolio reporting is used for."
+        },
+        {
+          "level": 2,
+          "ar": "يجمع تقارير الحالة من مدخلات المشاريع.",
+          "en": "Compiles status reports from project inputs."
+        },
+        {
+          "level": 3,
+          "ar": "يُعدّ لوحات متابعة دقيقة ويبرز الاستثناءات.",
+          "en": "Produces accurate dashboards and flags exceptions."
+        },
+        {
+          "level": 4,
+          "ar": "يقدّم المشورة لمجالس الحوكمة بشأن الأولويات والموارد.",
+          "en": "Advises governance boards on priorities and resources."
+        },
+        {
+          "level": 5,
+          "ar": "يصمم عمليات اتخاذ القرار على مستوى المحفظة.",
+          "en": "Designs portfolio decision processes."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QMGR",
+          "ROLE-PMOA"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 0,
+        "ROLE-IA": 0,
+        "ROLE-LA": 0,
+        "ROLE-QMGR": 1,
+        "ROLE-PMOA": 3,
+        "ROLE-HSEQM": 0
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "PMO"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "1068eb43436094d5be266f0aace775eeb9e4bef303802acf5d78d4fc3f51e0e5"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "OE-01",
+      "domain": "OE",
+      "name": {
+        "ar": "التقييم الذاتي القائم على الأدلة",
+        "en": "Evidence-based self-assessment"
+      },
+      "definition": {
+        "ar": "تقييم المنظمة مقابل نموذج تميّز باستخدام الأدلة لتحديد نقاط القوة وفرص التحسين.",
+        "en": "Assessing an organisation against an excellence model using evidence to identify strengths and opportunities for improvement."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "OE-01.1",
+          "name": {
+            "ar": "جمع الأدلة",
+            "en": "Evidence gathering"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "OE-01.2",
+          "name": {
+            "ar": "نقاط القوة وفرص التحسين",
+            "en": "Strengths and opportunities for improvement"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "OE-01.3",
+          "name": {
+            "ar": "منطق التقييم المنظم",
+            "en": "Structured assessment logic"
+          },
+          "primary_dimension": "K"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف الغرض من نموذج التميّز.",
+          "en": "Knows what an excellence model is for."
+        },
+        {
+          "level": 2,
+          "ar": "يجمع الأدلة لفريق التقييم.",
+          "en": "Collects evidence for an assessment team."
+        },
+        {
+          "level": 3,
+          "ar": "يكتب نقاط قوة وفرص تحسين مبنية على الأدلة لمجال.",
+          "en": "Writes evidence-based strengths and opportunities for an area."
+        },
+        {
+          "level": 4,
+          "ar": "يقود تقييمًا ذاتيًا كاملًا ويصل إلى توافق.",
+          "en": "Leads a full self-assessment and reaches consensus."
+        },
+        {
+          "level": 5,
+          "ar": "يصمم منهجية التقييم ويعاير المقيّمين.",
+          "en": "Designs the assessment approach and calibrates assessors."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 1,
+        "ROLE-IA": 1,
+        "ROLE-LA": 2,
+        "ROLE-QMGR": 3,
+        "ROLE-PMOA": 1,
+        "ROLE-HSEQM": 2
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "OE"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 2
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "66b70d8b53c27151dda20b191a0f780075e0eb6a8c76ddffd70a3e4a98f47da5"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "OE-02",
+      "domain": "OE",
+      "name": {
+        "ar": "ترتيب أولويات التحسين والتحول",
+        "en": "Improvement prioritisation & transformation"
+      },
+      "definition": {
+        "ar": "تحويل نتائج التقييم إلى خطط تحسين مرتبة الأولويات ومحددة المسؤولين، واستدامة التغيير.",
+        "en": "Turning assessment results into prioritised, owned improvement plans and sustaining change."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "OE-02.1",
+          "name": {
+            "ar": "ترتيب الأولويات",
+            "en": "Prioritisation"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "OE-02.2",
+          "name": {
+            "ar": "تخطيط التحسين",
+            "en": "Improvement planning"
+          },
+          "primary_dimension": "S"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف أنه لا يمكن تنفيذ كل التحسينات دفعة واحدة.",
+          "en": "Knows that not every improvement can be done at once."
+        },
+        {
+          "level": 2,
+          "ar": "يتابع إجراءات التحسين لصالح مسؤول.",
+          "en": "Tracks improvement actions for an owner."
+        },
+        {
+          "level": 3,
+          "ar": "يرتّب فرص التحسين ويبني خطة عمل.",
+          "en": "Prioritises opportunities and builds an action plan."
+        },
+        {
+          "level": 4,
+          "ar": "يقود برنامج تحسين متعدد الإدارات.",
+          "en": "Leads a cross-functional improvement programme."
+        },
+        {
+          "level": 5,
+          "ar": "يقود التحول على مستوى المنظمة.",
+          "en": "Drives organisation-wide transformation."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 1,
+        "ROLE-IA": 1,
+        "ROLE-LA": 1,
+        "ROLE-QMGR": 3,
+        "ROLE-PMOA": 1,
+        "ROLE-HSEQM": 2
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "OE"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 2
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "cf0d3c96f23b0e6b0c15a332aead8fb2b6f575995aca91fe926f2b8d45ab494e"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "LDR-01",
+      "domain": "LDR",
+      "name": {
+        "ar": "قيادة الفرق والتغيير",
+        "en": "Leading teams & change"
+      },
+      "definition": {
+        "ar": "تحديد الاتجاه للفريق وتطوير الأفراد وقيادتهم خلال التغيير.",
+        "en": "Setting direction for a team, developing people and leading them through change."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "LDR-01.1",
+          "name": {
+            "ar": "تطوير الفريق",
+            "en": "Team development"
+          },
+          "primary_dimension": "E"
+        },
+        {
+          "id": "LDR-01.2",
+          "name": {
+            "ar": "قيادة التغيير",
+            "en": "Leading change"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "LDR-01.3",
+          "name": {
+            "ar": "التوجيه والتغذية الراجعة",
+            "en": "Coaching and feedback"
+          },
+          "primary_dimension": "S"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف مفاهيم القيادة والتغيير الأساسية.",
+          "en": "Knows basic leadership and change concepts."
+        },
+        {
+          "level": 2,
+          "ar": "يساهم في أهداف الفريق ويدعم الزملاء.",
+          "en": "Contributes to team goals and supports peers."
+        },
+        {
+          "level": 3,
+          "ar": "يقود فريقًا صغيرًا ويقدّم تغذية راجعة فعالة.",
+          "en": "Leads a small team and gives effective feedback."
+        },
+        {
+          "level": 4,
+          "ar": "يقود المديرين خلال تغيير جوهري.",
+          "en": "Leads managers through significant change."
+        },
+        {
+          "level": 5,
+          "ar": "يشكّل الثقافة ويطوّر قادة المستقبل.",
+          "en": "Shapes culture and develops future leaders."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "4": [
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ],
+        "5": [
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": true,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 1,
+        "ROLE-IA": 1,
+        "ROLE-LA": 3,
+        "ROLE-QMGR": 4,
+        "ROLE-PMOA": 1,
+        "ROLE-HSEQM": 4
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "LDR"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 4
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "493cc548613917e69cac0dd3765a782ce3f30aebe8ac504af2ef43221d0a47b3"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "LDR-02",
+      "domain": "LDR",
+      "name": {
+        "ar": "التفكير الاستراتيجي واتخاذ القرار",
+        "en": "Strategic thinking & decision-making"
+      },
+      "definition": {
+        "ar": "ربط العمل اليومي بالاستراتيجية، ووزن الخيارات بالبيانات، واتخاذ قرارات سليمة.",
+        "en": "Linking daily work to strategy, weighing options with data and making sound decisions."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "LDR-02.1",
+          "name": {
+            "ar": "المواءمة الاستراتيجية",
+            "en": "Strategic alignment"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "LDR-02.2",
+          "name": {
+            "ar": "تحليل القرار",
+            "en": "Decision analysis"
+          },
+          "primary_dimension": "S"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف استراتيجية المنظمة وأهدافها.",
+          "en": "Knows the organisation's strategy and objectives."
+        },
+        {
+          "level": 2,
+          "ar": "يشرح كيف يدعم عمله الأهداف الاستراتيجية.",
+          "en": "Explains how own work supports strategic objectives."
+        },
+        {
+          "level": 3,
+          "ar": "يتخذ قرارات مبنية على البيانات في نطاقه.",
+          "en": "Makes data-informed decisions within own area."
+        },
+        {
+          "level": 4,
+          "ar": "يطوّر استراتيجية الإدارة ويقيّم المفاضلات.",
+          "en": "Develops functional strategy and evaluates trade-offs."
+        },
+        {
+          "level": 5,
+          "ar": "يضع استراتيجية المنظمة مع الفريق التنفيذي.",
+          "en": "Sets organisational strategy with the executive team."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 1,
+        "ROLE-IA": 1,
+        "ROLE-LA": 2,
+        "ROLE-QMGR": 3,
+        "ROLE-PMOA": 2,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "LDR"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "8dea932edf170befab1cdee6de26b8adde2e074f2ff153f57c116ee95e2646bd"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "GOV-01",
+      "domain": "GOV",
+      "name": {
+        "ar": "هياكل الحوكمة والمساءلة",
+        "en": "Governance structures & accountability"
+      },
+      "definition": {
+        "ar": "فهم كيفية تنظيم الصلاحيات والمساءلة والرقابة وتطبيقها عمليًا.",
+        "en": "Understanding how authority, accountability and oversight are organised, and applying them in practice."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "GOV-01.1",
+          "name": {
+            "ar": "الأدوار والصلاحيات والتفويض",
+            "en": "Roles, authorities and delegation"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "GOV-01.2",
+          "name": {
+            "ar": "اللجان وجهات الرقابة",
+            "en": "Committees and oversight bodies"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف معنى الحوكمة وأهميتها.",
+          "en": "Knows what governance means and why it matters."
+        },
+        {
+          "level": 2,
+          "ar": "يلتزم بقواعد التفويض والاعتماد بشكل صحيح.",
+          "en": "Follows delegation and approval rules correctly."
+        },
+        {
+          "level": 3,
+          "ar": "يدعم اللجان بالمواثيق والمحاضر والمتابعة.",
+          "en": "Supports committees with charters, minutes and follow-up."
+        },
+        {
+          "level": 4,
+          "ar": "يصمم هياكل الحوكمة لإدارة أو برنامج.",
+          "en": "Designs governance structures for a function or programme."
+        },
+        {
+          "level": 5,
+          "ar": "يقدّم المشورة لمجالس الإدارة حول فعالية الحوكمة.",
+          "en": "Advises boards on governance effectiveness."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 0,
+        "ROLE-IA": 1,
+        "ROLE-LA": 2,
+        "ROLE-QMGR": 2,
+        "ROLE-PMOA": 2,
+        "ROLE-HSEQM": 2
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "GOV"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 2
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "a1624ff4f20cea5a3f75ed5a361403972daefb679b7b29bd6b313f295b9fd26a"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "GOV-02",
+      "domain": "GOV",
+      "name": {
+        "ar": "السياسات والرقابة",
+        "en": "Policy & oversight"
+      },
+      "definition": {
+        "ar": "صياغة السياسات واعتمادها ومتابعتها بحيث تتحول النوايا إلى ممارسات مضبوطة.",
+        "en": "Writing, approving and monitoring policies so that intent becomes controlled practice."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "GOV-02.1",
+          "name": {
+            "ar": "صياغة السياسات",
+            "en": "Policy writing"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "GOV-02.2",
+          "name": {
+            "ar": "متابعة تطبيق السياسات",
+            "en": "Policy monitoring"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف الفرق بين السياسة والإجراء.",
+          "en": "Knows the difference between a policy and a procedure."
+        },
+        {
+          "level": 2,
+          "ar": "يحافظ على سجل السياسات.",
+          "en": "Maintains a policy register."
+        },
+        {
+          "level": 3,
+          "ar": "يصوغ السياسات ويتحقق من تطبيقها.",
+          "en": "Drafts policies and checks their implementation."
+        },
+        {
+          "level": 4,
+          "ar": "يقود أطر السياسات على مستوى المنظمة.",
+          "en": "Leads policy frameworks across the organisation."
+        },
+        {
+          "level": 5,
+          "ar": "يحدد أولويات الرقابة مع مجلس الإدارة.",
+          "en": "Sets oversight priorities with the board."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 0,
+        "ROLE-IA": 1,
+        "ROLE-LA": 2,
+        "ROLE-QMGR": 2,
+        "ROLE-PMOA": 1,
+        "ROLE-HSEQM": 2
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "GOV"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 2
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "60f28150e04c2ad12fa809909778a95fcbd745167ba01b6a975d0afd8c492713"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "CMP-01",
+      "domain": "CMP",
+      "name": {
+        "ar": "إدارة الالتزامات",
+        "en": "Compliance obligations management"
+      },
+      "definition": {
+        "ar": "تحديد الالتزامات القانونية والتنظيمية والطوعية والحفاظ على امتثال المنظمة.",
+        "en": "Identifying legal, regulatory and voluntary obligations and keeping the organisation compliant."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "CMP-01.1",
+          "name": {
+            "ar": "سجل الالتزامات",
+            "en": "Obligations register"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "CMP-01.2",
+          "name": {
+            "ar": "تقييم الامتثال",
+            "en": "Compliance evaluation"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف ما هي الالتزامات المطلوب الامتثال لها.",
+          "en": "Knows what compliance obligations are."
+        },
+        {
+          "level": 2,
+          "ar": "يحدّث سجل الالتزامات.",
+          "en": "Updates an obligations register."
+        },
+        {
+          "level": 3,
+          "ar": "يقيّم الامتثال ويرفع الفجوات.",
+          "en": "Evaluates compliance and reports gaps."
+        },
+        {
+          "level": 4,
+          "ar": "يدير برنامج امتثال عبر الإدارات.",
+          "en": "Manages a compliance programme across functions."
+        },
+        {
+          "level": 5,
+          "ar": "يقود وظيفة الامتثال.",
+          "en": "Leads the compliance function."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 1,
+        "ROLE-IA": 2,
+        "ROLE-LA": 2,
+        "ROLE-QMGR": 2,
+        "ROLE-PMOA": 1,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "CMP"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "6e8f644013fcae1c660519af62da5f78238575caafda684627572105d97a8a9d"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "CMP-02",
+      "domain": "CMP",
+      "name": {
+        "ar": "النزاهة وضوابط مكافحة الرشوة",
+        "en": "Integrity & anti-bribery controls"
+      },
+      "definition": {
+        "ar": "تطبيق ضوابط تمنع الرشوة وسوء السلوك وتكشفها، مثل العناية الواجبة والهدايا وتعارض المصالح.",
+        "en": "Applying controls that prevent and detect bribery and misconduct, such as due diligence, gifts and conflicts of interest."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "CMP-02.1",
+          "name": {
+            "ar": "العناية الواجبة",
+            "en": "Due diligence"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "CMP-02.2",
+          "name": {
+            "ar": "الهدايا والضيافة وتعارض المصالح",
+            "en": "Gifts, hospitality and conflicts of interest"
+          },
+          "primary_dimension": "K"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف ما هي الرشوة وتعارض المصالح.",
+          "en": "Knows what bribery and conflicts of interest are."
+        },
+        {
+          "level": 2,
+          "ar": "يلتزم بقواعد الهدايا وتعارض المصالح.",
+          "en": "Follows gifts and conflict-of-interest rules."
+        },
+        {
+          "level": 3,
+          "ar": "يجري العناية الواجبة على الأطراف الثالثة.",
+          "en": "Performs due diligence on third parties."
+        },
+        {
+          "level": 4,
+          "ar": "يصمم ضوابط مكافحة الرشوة للمجالات عالية المخاطر.",
+          "en": "Designs anti-bribery controls for high-risk areas."
+        },
+        {
+          "level": 5,
+          "ar": "يقود برنامج النزاهة.",
+          "en": "Leads the integrity programme."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 0,
+        "ROLE-IA": 1,
+        "ROLE-LA": 2,
+        "ROLE-QMGR": 2,
+        "ROLE-PMOA": 0,
+        "ROLE-HSEQM": 2
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "CMP"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 2
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "ae1035ddd45734416247cad1aa43900c33509f80bdcd952147804ccacfae2327"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "BC-01",
+      "domain": "BC",
+      "name": {
+        "ar": "تحليل الأثر على الأعمال واستراتيجية الاستمرارية",
+        "en": "Business impact analysis & continuity strategy"
+      },
+      "definition": {
+        "ar": "تحديد الأنشطة الحرجة وأوقات التعطل المقبولة لها والاستراتيجيات اللازمة لاستمرارها.",
+        "en": "Identifying critical activities, their tolerable disruption times and the strategies to keep them running."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "BC-01.1",
+          "name": {
+            "ar": "تحليل الأثر على الأعمال",
+            "en": "Business impact analysis"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "BC-01.2",
+          "name": {
+            "ar": "استراتيجيات الاستمرارية",
+            "en": "Continuity strategies"
+          },
+          "primary_dimension": "K"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف لماذا تخطط المنظمات للتعطل.",
+          "en": "Knows why organisations plan for disruption."
+        },
+        {
+          "level": 2,
+          "ar": "يجمع بيانات تحليل الأثر من الإدارات.",
+          "en": "Collects impact analysis data from departments."
+        },
+        {
+          "level": 3,
+          "ar": "ينفّذ تحليل الأثر ويقترح استراتيجيات لمجال.",
+          "en": "Performs an impact analysis and proposes strategies for an area."
+        },
+        {
+          "level": 4,
+          "ar": "يضع استراتيجية الاستمرارية على مستوى المنظمة.",
+          "en": "Sets continuity strategy across the organisation."
+        },
+        {
+          "level": 5,
+          "ar": "يقود المرونة المؤسسية على المستوى التنفيذي.",
+          "en": "Leads organisational resilience at executive level."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 0,
+        "ROLE-IA": 1,
+        "ROLE-LA": 1,
+        "ROLE-QMGR": 1,
+        "ROLE-PMOA": 0,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "BC"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "bad8a472f3cb0a6ffde8a2f9aa3fd48842640616f0a40a38efce25cad13e2f67"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "BC-02",
+      "domain": "BC",
+      "name": {
+        "ar": "خطط الاستمرارية والتمارين والتعافي",
+        "en": "Continuity plans, exercising & recovery"
+      },
+      "definition": {
+        "ar": "كتابة خطط قابلة للاستخدام واختبارها بالتمارين وتحسينها بعد الحوادث.",
+        "en": "Writing usable plans, testing them through exercises and improving them after incidents."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "BC-02.1",
+          "name": {
+            "ar": "كتابة الخطط",
+            "en": "Plan writing"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "BC-02.2",
+          "name": {
+            "ar": "التمارين",
+            "en": "Exercising"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف الغرض من خطة الاستمرارية.",
+          "en": "Knows the purpose of a continuity plan."
+        },
+        {
+          "level": 2,
+          "ar": "يعرف دوره في الخطة ويشارك في التمارين.",
+          "en": "Knows own role in a plan and takes part in exercises."
+        },
+        {
+          "level": 3,
+          "ar": "يكتب خطة وينفّذ تمرينًا مكتبيًا.",
+          "en": "Writes a plan and runs a tabletop exercise."
+        },
+        {
+          "level": 4,
+          "ar": "يقود التمارين الحية ومراجعات ما بعد الحوادث.",
+          "en": "Leads live exercises and post-incident reviews."
+        },
+        {
+          "level": 5,
+          "ar": "يقود إدارة الأزمات.",
+          "en": "Leads crisis management."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 0,
+        "ROLE-IA": 0,
+        "ROLE-LA": 1,
+        "ROLE-QMGR": 1,
+        "ROLE-PMOA": 0,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "BC"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "47b12518bc34c7c7095728eb935c46ce932ae82e7f4c166460cfedd396d0b410"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "ISA-01",
+      "domain": "ISA",
+      "name": {
+        "ar": "أساسيات أمن المعلومات ومخاطرها",
+        "en": "Information security fundamentals & risks"
+      },
+      "definition": {
+        "ar": "فهم السرية والسلامة والإتاحة والتهديدات الشائعة والضوابط التي تعالجها.",
+        "en": "Understanding confidentiality, integrity and availability, common threats and the controls that address them."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "ISA-01.1",
+          "name": {
+            "ar": "السرية والسلامة والإتاحة",
+            "en": "Confidentiality, integrity and availability"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "ISA-01.2",
+          "name": {
+            "ar": "التهديدات الشائعة",
+            "en": "Common threats"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "ISA-01.3",
+          "name": {
+            "ar": "نظرة عامة على الضوابط",
+            "en": "Overview of controls"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف المصطلحات الأساسية لأمن المعلومات.",
+          "en": "Knows the basic terms of information security."
+        },
+        {
+          "level": 2,
+          "ar": "يتعرّف على التهديدات الشائعة في العمل اليومي.",
+          "en": "Recognises common threats in daily work."
+        },
+        {
+          "level": 3,
+          "ar": "يطبّق ضوابط الأمن المتعلقة بدوره.",
+          "en": "Applies security controls relevant to own role."
+        },
+        {
+          "level": 4,
+          "ar": "يقيّم مخاطر أمن المعلومات لعملية.",
+          "en": "Assesses information security risks for a process."
+        },
+        {
+          "level": 5,
+          "ar": "يقود التوعية بأمن المعلومات في المنظمة.",
+          "en": "Leads security awareness for the organisation."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 2,
+        "ROLE-IA": 2,
+        "ROLE-LA": 2,
+        "ROLE-QMGR": 2,
+        "ROLE-PMOA": 2,
+        "ROLE-HSEQM": 2
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "ISA"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 2
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "54c6df01920a5fa777cdc095844145424b7c0b16a50f0330138baa22a9d606e3"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "ISA-02",
+      "domain": "ISA",
+      "name": {
+        "ar": "السلوك الآمن والإبلاغ عن الحوادث",
+        "en": "Secure behaviour & incident reporting"
+      },
+      "definition": {
+        "ar": "التعامل مع المعلومات بأمان، واكتشاف الأنشطة المشبوهة، والإبلاغ السريع عن الحوادث.",
+        "en": "Handling information safely, spotting suspicious activity and reporting incidents quickly."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "ISA-02.1",
+          "name": {
+            "ar": "التصيد والهندسة الاجتماعية",
+            "en": "Phishing and social engineering"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "ISA-02.2",
+          "name": {
+            "ar": "الإبلاغ عن الحوادث",
+            "en": "Incident reporting"
+          },
+          "primary_dimension": "S"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف أنه يجب الإبلاغ عن الحوادث.",
+          "en": "Knows that incidents must be reported."
+        },
+        {
+          "level": 2,
+          "ar": "يتعرّف على التصيد الواضح ويبلّغ عنه.",
+          "en": "Identifies obvious phishing and reports it."
+        },
+        {
+          "level": 3,
+          "ar": "يلتزم بالممارسات الآمنة باستمرار ويبلّغ فورًا.",
+          "en": "Follows secure practices consistently and reports promptly."
+        },
+        {
+          "level": 4,
+          "ar": "يوجّه الزملاء ويحقق في الحوادث البسيطة.",
+          "en": "Guides colleagues and investigates minor incidents."
+        },
+        {
+          "level": 5,
+          "ar": "يشكّل ثقافة الأمن وبرامج السلوك.",
+          "en": "Shapes security culture and behaviour programmes."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": true,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 2,
+        "ROLE-IA": 2,
+        "ROLE-LA": 2,
+        "ROLE-QMGR": 2,
+        "ROLE-PMOA": 2,
+        "ROLE-HSEQM": 2
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "ISA"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 2
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "efc8ce648e56e190d087b63c7d4dbd47ffea457296bee933fa4b79205f075a6a"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "PERF-01",
+      "domain": "PERF",
+      "name": {
+        "ar": "تصميم مؤشرات الأداء وقياسها",
+        "en": "KPI design & measurement"
+      },
+      "definition": {
+        "ar": "تصميم مؤشرات تعكس الأهداف بتعريفات ومصادر بيانات ومستهدفات ودورية واضحة.",
+        "en": "Designing indicators that reflect objectives, with clear definitions, data sources, targets and frequency."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "PERF-01.1",
+          "name": {
+            "ar": "بطاقات تعريف المؤشرات",
+            "en": "KPI definition cards"
+          },
+          "primary_dimension": "S"
+        },
+        {
+          "id": "PERF-01.2",
+          "name": {
+            "ar": "المؤشرات القيادية والمتأخرة",
+            "en": "Leading and lagging indicators"
+          },
+          "primary_dimension": "K"
+        },
+        {
+          "id": "PERF-01.3",
+          "name": {
+            "ar": "وضع المستهدفات",
+            "en": "Target setting"
+          },
+          "primary_dimension": "A"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف ما هو مؤشر الأداء ولماذا يُقاس.",
+          "en": "Knows what a KPI is and why it is measured."
+        },
+        {
+          "level": 2,
+          "ar": "يجمع المؤشرات ويحسبها من تعريفات معطاة.",
+          "en": "Collects and calculates KPIs from given definitions."
+        },
+        {
+          "level": 3,
+          "ar": "يصمم مؤشرات بتعريفات ومستهدفات لعملية.",
+          "en": "Designs KPIs with definitions and targets for a process."
+        },
+        {
+          "level": 4,
+          "ar": "يبني منظومات مؤشرات متوازنة تتسلسل من الاستراتيجية.",
+          "en": "Builds balanced KPI sets that cascade from strategy."
+        },
+        {
+          "level": 5,
+          "ar": "يضع إطار قياس الأداء.",
+          "en": "Sets the performance measurement framework."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 3,
+        "ROLE-IA": 2,
+        "ROLE-LA": 2,
+        "ROLE-QMGR": 4,
+        "ROLE-PMOA": 3,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "PERF"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "83174cd98f63d63854d5101500431d288a01961c6cabc8b11fdacf2d7e8265c4"
+      }
+    },
+    {
+      "type": "competency",
+      "id": "PERF-02",
+      "domain": "PERF",
+      "name": {
+        "ar": "مراجعة الأداء والتقارير",
+        "en": "Performance review & reporting"
+      },
+      "definition": {
+        "ar": "تحليل النتائج وتفسير الانحرافات وإدارة المراجعات التي تقود إلى قرارات.",
+        "en": "Analysing results, explaining variance and running reviews that lead to decisions."
+      },
+      "dimensions": [
+        "K",
+        "S",
+        "A",
+        "E"
+      ],
+      "sub_competencies": [
+        {
+          "id": "PERF-02.1",
+          "name": {
+            "ar": "تحليل الانحرافات",
+            "en": "Variance analysis"
+          },
+          "primary_dimension": "A"
+        },
+        {
+          "id": "PERF-02.2",
+          "name": {
+            "ar": "مراجعة الإدارة",
+            "en": "Management review"
+          },
+          "primary_dimension": "S"
+        }
+      ],
+      "level_descriptors": [
+        {
+          "level": 1,
+          "ar": "يعرف الغرض من مراجعات الأداء.",
+          "en": "Knows the purpose of performance reviews."
+        },
+        {
+          "level": 2,
+          "ar": "يُعدّ بيانات الأداء لاجتماعات المراجعة.",
+          "en": "Prepares performance data for review meetings."
+        },
+        {
+          "level": 3,
+          "ar": "يفسّر الانحرافات ويقترح الإجراءات.",
+          "en": "Explains variance and proposes actions."
+        },
+        {
+          "level": 4,
+          "ar": "يدير مراجعات الإدارة التي تُنتج قرارات واضحة.",
+          "en": "Runs management reviews that produce clear decisions."
+        },
+        {
+          "level": 5,
+          "ar": "يصمم دورة مراجعة الأداء في المنظمة.",
+          "en": "Designs the organisation's performance review cycle."
+        }
+      ],
+      "evidence_rule": {
+        "1": [
+          [
+            "assessment"
+          ]
+        ],
+        "2": [
+          [
+            "assessment"
+          ]
+        ],
+        "3": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ]
+        ],
+        "4": [
+          [
+            "assessment"
+          ],
+          [
+            "practical",
+            "simulation"
+          ],
+          [
+            "experience"
+          ]
+        ],
+        "5": [
+          [
+            "assessment"
+          ],
+          [
+            "experience"
+          ],
+          [
+            "reviewer"
+          ]
+        ]
+      },
+      "evidence_override": false,
+      "course_completion_counts": false,
+      "mappings": {
+        "assessments": [],
+        "courses": [],
+        "certifications": [],
+        "roles": [
+          "ROLE-QE",
+          "ROLE-IA",
+          "ROLE-LA",
+          "ROLE-QMGR",
+          "ROLE-PMOA",
+          "ROLE-HSEQM"
+        ]
+      },
+      "target_thresholds": {
+        "ROLE-QE": 2,
+        "ROLE-IA": 1,
+        "ROLE-LA": 2,
+        "ROLE-QMGR": 4,
+        "ROLE-PMOA": 3,
+        "ROLE-HSEQM": 3
+      },
+      "relationships": [
+        {
+          "type": "belongs_to_domain",
+          "target_type": "domain",
+          "target_id": "PERF"
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QE",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-IA",
+          "level": 1
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-LA",
+          "level": 2
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-QMGR",
+          "level": 4
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-PMOA",
+          "level": 3
+        },
+        {
+          "type": "required_by_role",
+          "target_type": "target_role",
+          "target_id": "ROLE-HSEQM",
+          "level": 3
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "created": "2026-09-28",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "857033cc00d070ebea2818b7c5fcf4090397c23429335c867c68d01ec6bad9d4"
+      }
+    }
+  ]
+}

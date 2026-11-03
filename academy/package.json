@@ -1,0 +1,20 @@
+{
+  "name": "cia-academy",
+  "version": "1.7.2-phase7-closed",
+  "private": true,
+  "description": "Continual Improvement Academy — Academy module (Phases 1–7 complete, integrated with the hub toolkits). © 2026 Modather Salama.",
+  "type": "module",
+  "scripts": {
+    "serve": "cd .. && python3 -m http.server 8765",
+    "test": "node --test tests/unit/*.test.mjs",
+    "test:e2e": "python3 tests/e2e/run_e2e.py && python3 tests/e2e/run_e2e_phase7.py && python3 tests/e2e/run_e2e_guides.py && python3 tests/e2e/run_e2e_closure.py",
+    "sync:modules": "python3 tools/sync_platform_modules.py",
+    "build:content": "python3 tools/build_phase7.py",
+    "extract:toolkits": "npm install --no-save acorn@8.12.1 && node tools/extract_toolkit_content.mjs",
+    "build:guides": "python3 tools/build_toolkit_courses.py",
+    "build:review": "node tools/build_review_bundle.mjs",
+    "review:apply": "python3 tools/apply_review_decisions.py",
+    "pre-review": "python3 tools/pre_review.py"
+  },
+  "engines": { "node": ">=20" }
+}

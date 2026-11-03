@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "items": [
+    {
+      "id": "learner",
+      "labelKey": "roles.learner",
+      "placeholder": false
+    },
+    {
+      "id": "instructor",
+      "labelKey": "roles.instructor",
+      "placeholder": false
+    },
+    {
+      "id": "reviewer",
+      "labelKey": "roles.reviewer",
+      "placeholder": false
+    },
+    {
+      "id": "admin",
+      "labelKey": "roles.admin",
+      "placeholder": false
+    },
+    {
+      "id": "company_admin",
+      "labelKey": "roles.company_admin",
+      "placeholder": true
+    }
+  ]
+}

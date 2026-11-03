@@ -1,0 +1,450 @@
+{
+  "schema": 1,
+  "items": [
+    {
+      "id": "home",
+      "labelKey": "nav.items.home",
+      "group": "learn",
+      "kind": "route",
+      "phase": 1,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": true,
+      "route": "/"
+    },
+    {
+      "id": "knowledge",
+      "labelKey": "nav.items.knowledge",
+      "group": "learn",
+      "kind": "route",
+      "phase": 3,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": true,
+      "route": "/knowledge"
+    },
+    {
+      "id": "guides",
+      "labelKey": "nav.items.guides",
+      "group": "learn",
+      "kind": "route",
+      "phase": 7,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": true,
+      "route": "/guides"
+    },
+    {
+      "id": "library",
+      "labelKey": "nav.items.library",
+      "group": "learn",
+      "kind": "route",
+      "phase": 3,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "route": "/library"
+    },
+    {
+      "id": "isoAcademy",
+      "labelKey": "nav.items.isoAcademy",
+      "group": "learn",
+      "kind": "route",
+      "phase": 7,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "route": "/academy/iso"
+    },
+    {
+      "id": "academy",
+      "labelKey": "nav.items.academy",
+      "group": "learn",
+      "kind": "route",
+      "phase": 4,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": true,
+      "route": "/academy/courses"
+    },
+    {
+      "id": "certification",
+      "labelKey": "nav.items.certification",
+      "group": "learn",
+      "kind": "route",
+      "phase": 8,
+      "status": "coming",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false
+    },
+    {
+      "id": "assessments",
+      "labelKey": "nav.items.assessments",
+      "group": "learn",
+      "kind": "route",
+      "phase": 5,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "route": "/assessments"
+    },
+    {
+      "id": "labs",
+      "labelKey": "nav.items.labs",
+      "group": "learn",
+      "kind": "route",
+      "phase": 11,
+      "status": "coming",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "professional",
+      "primary": false
+    },
+    {
+      "group": "grow",
+      "kind": "route",
+      "phase": 6,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "id": "recommendations",
+      "labelKey": "nav.items.recommendations",
+      "route": "/recommendations"
+    },
+    {
+      "group": "grow",
+      "kind": "route",
+      "phase": 6,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "id": "learningPath",
+      "labelKey": "nav.items.learningPath",
+      "route": "/learning-path"
+    },
+    {
+      "id": "me",
+      "labelKey": "nav.items.me",
+      "group": "grow",
+      "kind": "route",
+      "phase": 1,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": true,
+      "route": "/me"
+    },
+    {
+      "id": "profile",
+      "labelKey": "nav.items.profile",
+      "group": "grow",
+      "kind": "route",
+      "phase": 2,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "route": "/profile"
+    },
+    {
+      "id": "career",
+      "labelKey": "nav.items.career",
+      "group": "grow",
+      "kind": "route",
+      "phase": 12,
+      "status": "coming",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "professional",
+      "primary": false
+    },
+    {
+      "id": "passport",
+      "labelKey": "nav.items.passport",
+      "group": "grow",
+      "kind": "route",
+      "phase": 12,
+      "status": "coming",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "professional",
+      "primary": false
+    },
+    {
+      "id": "cpd",
+      "labelKey": "nav.items.cpd",
+      "group": "grow",
+      "kind": "route",
+      "phase": 12,
+      "status": "coming",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "professional",
+      "primary": false
+    },
+    {
+      "id": "coach",
+      "labelKey": "nav.items.coach",
+      "group": "grow",
+      "kind": "route",
+      "phase": 13,
+      "status": "coming",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "professional",
+      "primary": false
+    },
+    {
+      "id": "standards",
+      "labelKey": "nav.items.standards",
+      "group": "platform",
+      "kind": "platform",
+      "phase": 0,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": true,
+      "href": "../#systems"
+    },
+    {
+      "id": "tools",
+      "labelKey": "nav.items.tools",
+      "group": "platform",
+      "kind": "platform",
+      "phase": 0,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "href": "../#tools"
+    },
+    {
+      "id": "resources",
+      "labelKey": "nav.items.resources",
+      "group": "platform",
+      "kind": "route",
+      "phase": 3,
+      "status": "coming",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false
+    },
+    {
+      "id": "review",
+      "labelKey": "nav.items.review",
+      "group": "manage",
+      "kind": "route",
+      "phase": 7,
+      "status": "active",
+      "roles": [
+        "reviewer",
+        "admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "route": "/review"
+    },
+    {
+      "id": "admin",
+      "labelKey": "nav.items.admin",
+      "group": "manage",
+      "kind": "route",
+      "phase": 14,
+      "status": "coming",
+      "roles": [
+        "admin"
+      ],
+      "requiredTier": "free",
+      "primary": false
+    },
+    {
+      "id": "company",
+      "labelKey": "nav.items.company",
+      "group": "manage",
+      "kind": "route",
+      "phase": "12A",
+      "status": "coming",
+      "roles": [
+        "company_admin",
+        "admin"
+      ],
+      "requiredTier": "corporate",
+      "primary": false
+    },
+    {
+      "id": "settings",
+      "labelKey": "nav.items.settings",
+      "group": "utility",
+      "kind": "route",
+      "phase": 1,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "route": "/settings"
+    },
+    {
+      "id": "governance",
+      "labelKey": "nav.items.governance",
+      "group": "utility",
+      "kind": "route",
+      "phase": 1,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "route": "/about-governance"
+    },
+    {
+      "id": "components",
+      "labelKey": "nav.items.components",
+      "group": "utility",
+      "kind": "route",
+      "phase": 1,
+      "status": "active",
+      "roles": [
+        "admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "route": "/dev/components"
+    }
+  ]
+}

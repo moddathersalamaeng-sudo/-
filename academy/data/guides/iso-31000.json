@@ -1,0 +1,3827 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-31000",
+  "slug": "iso-31000",
+  "kind": "standard",
+  "module": "iso31000",
+  "standard_id": null,
+  "title": {
+   "en": "ISO 31000:2018 — Enterprise Risk Studio",
+   "ar": "ISO 31000:2018 — استوديو المخاطر المؤسسية"
+  },
+  "subtitle": {
+   "en": "Risk management — Guidelines",
+   "ar": "إدارة المخاطر — إرشادات"
+  },
+  "lede": {
+   "en": "The principles, framework and process of ISO 31000 explained in clear professional language, with a worked example from a Saudi electrical contractor, the steps to apply them, evidence of good practice, and a full studio for the risk register, risk appetite, heat maps, bow-tie analysis and key risk indicators.",
+   "ar": "المبادئ والإطار والعملية في ISO 31000 مشروحة بلغة مهنية واضحة، مع مثال تطبيقي من شركة مقاولات كهربائية سعودية، وخطوات التطبيق، وأدلة الممارسة الجيدة، واستوديو كامل لسجل المخاطر والرغبة في المخاطر وخرائط الحرارة وربطة العنق ومؤشرات المخاطر الرئيسية."
+  },
+  "author": "مدثر سلامه",
+  "clauses": [
+   {
+    "id": "4",
+    "phase": "prin",
+    "title": {
+     "en": "Principles",
+     "ar": "المبادئ"
+    },
+    "intro": {
+     "en": "In ISO 31000 the purpose of risk management is the creation and protection of value. The eight principles are the criteria for judging whether risk management is effective, and they shape both the framework and the process. A framework that is documented but ignores the principles in practice produces paper risk management that never influences a decision.",
+     "ar": "غاية إدارة المخاطر في ISO 31000 هي خلق القيمة وحمايتها. المبادئ الثمانية هي معايير الحكم على فعالية إدارة المخاطر، وهي أساس تصميم الإطار والعملية معاً. إذا كان الإطار موثقاً لكن المبادئ غائبة عن الممارسة الفعلية، فالنتيجة إدارة مخاطر ورقية لا تؤثر في القرار."
+    },
+    "items": [
+     {
+      "ref": "4a",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Integrated",
+       "ar": "متكاملة"
+      },
+      "req": {
+       "en": "Risk management is an integral part of all organizational activities: strategy, budgeting, projects, procurement and operations. It is not a separate activity owned by one department.",
+       "ar": "إدارة المخاطر جزء لا يتجزأ من كل أنشطة المنظمة: الاستراتيجية والميزانية والمشاريع والمشتريات والعمليات، وليست نشاطاً منفصلاً تديره إدارة واحدة."
+      },
+      "ex": {
+       "en": "At Al-Riyada Electrical Contracting the risk register used to be updated once a year for the auditors. After integration, every budget request and every bid above SAR 5 million carries a short risk assessment, and the board discusses the top ten risks when it approves the annual plan.",
+       "ar": "في شركة الريادة للمقاولات الكهربائية كان سجل المخاطر يُحدَّث مرة في السنة لأغراض التدقيق. بعد الدمج أصبح كل طلب ميزانية وكل عطاء فوق 5 ملايين ريال يرفق تقييم مخاطر مختصراً، ويناقش مجلس الإدارة أعلى عشرة مخاطر عند اعتماد الخطة السنوية."
+      },
+      "how": [
+       {
+        "en": "List the key decisions (plan, budget, bids, investment, contracting) and add a risk step to each.",
+        "ar": "حدد القرارات الرئيسية (الخطة، الميزانية، العطاءات، الاستثمار، التعاقد) وأضف لكل منها خطوة تقييم مخاطر."
+       },
+       {
+        "en": "Link the risk register to strategic objectives and KPIs.",
+        "ar": "اربط سجل المخاطر بالأهداف الاستراتيجية ومؤشرات الأداء."
+       },
+       {
+        "en": "Make risk a standing item in management meetings.",
+        "ar": "اجعل مراجعة المخاطر بنداً ثابتاً في اجتماعات الإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Decision templates with a risk section",
+        "ar": "نماذج قرارات تتضمن قسم المخاطر"
+       },
+       {
+        "en": "Minutes that discuss risk",
+        "ar": "محاضر اجتماعات تناقش المخاطر"
+       },
+       {
+        "en": "Risks mapped to objectives",
+        "ar": "ربط المخاطر بالأهداف"
+       }
+      ],
+      "tip": {
+       "en": "The telling question: did a risk assessment change a single decision last year? If not, risk management is not integrated.",
+       "ar": "السؤال الكاشف: هل غيّر تقييمُ المخاطر قراراً واحداً خلال العام الماضي؟ إذا كانت الإجابة لا، فإدارة المخاطر غير مدمجة."
+      },
+      "checks": [
+       {
+        "ar": "ما القرارات الرئيسية التي تتضمن تقييم مخاطر رسمياً؟",
+        "en": "Which key decisions include a formal risk assessment?"
+       },
+       {
+        "ar": "هل يُناقش سجل المخاطر عند اعتماد الخطة والميزانية؟",
+        "en": "Is the risk register discussed when the plan and budget are approved?"
+       },
+       {
+        "ar": "أعطني مثالاً على قرار تغيّر بسبب تقييم المخاطر.",
+        "en": "Give an example of a decision changed by a risk assessment."
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "5.3",
+         "why": {
+          "ar": "مبدأ التكامل يتحقق عبر الدمج.",
+          "en": "The integrated principle is delivered through integration."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4b",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Structured and comprehensive",
+       "ar": "منظمة وشاملة"
+      },
+      "req": {
+       "en": "A structured and comprehensive approach gives consistent and comparable results: one language, one set of criteria and one method across departments.",
+       "ar": "نهج منظم وشامل لإدارة المخاطر يعطي نتائج متسقة وقابلة للمقارنة: لغة واحدة، ومعايير واحدة، ومنهجية واحدة عبر الإدارات."
+      },
+      "ex": {
+       "en": "Projects rated risks on a 1–3 scale, finance on 1–10 and safety on a 4×4 matrix. The company adopted one 5×5 matrix with shared likelihood and consequence definitions, so a project delay risk could finally be compared with a credit risk.",
+       "ar": "كانت إدارة المشاريع تقيّم المخاطر على مقياس 1–3 والمالية على 1–10 والسلامة على مصفوفة 4×4. وحّدت الشركة المصفوفة إلى 5×5 بتعريفات مشتركة للاحتمال والأثر، فأصبح ممكناً مقارنة خطر تأخر مشروع بخطر ائتماني."
+      },
+      "how": [
+       {
+        "en": "Adopt one matrix and shared likelihood and consequence scales.",
+        "ar": "اعتمد مصفوفة واحدة ومقاييس موحدة للاحتمال والأثر."
+       },
+       {
+        "en": "Use one format for writing a risk: cause → event → consequence.",
+        "ar": "استخدم صيغة موحدة لكتابة الخطر: سبب ← حدث ← أثر."
+       },
+       {
+        "en": "Cover every category: strategic, operational, financial and compliance.",
+        "ar": "غطِّ كل فئات المخاطر: استراتيجية وتشغيلية ومالية وامتثال."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Risk methodology manual",
+        "ar": "دليل منهجية المخاطر"
+       },
+       {
+        "en": "Approved rating matrix",
+        "ar": "مصفوفة التقييم المعتمدة"
+       },
+       {
+        "en": "Register in a single format",
+        "ar": "سجل مخاطر بصيغة موحدة"
+       }
+      ],
+      "tip": {
+       "en": "If you cannot combine two departments' risks in one report without conversion, the approach is not structured.",
+       "ar": "إذا لم تستطع جمع مخاطر إدارتين في تقرير واحد دون تحويل، فالنهج غير منظم."
+      },
+      "checks": [
+       {
+        "ar": "هل توجد منهجية ومصفوفة موحدة تستخدمها كل الإدارات؟",
+        "en": "Is there one method and matrix used by every department?"
+       },
+       {
+        "ar": "هل يُكتب الخطر بصيغة موحدة (سبب، حدث، أثر)؟",
+        "en": "Are risks written in one format (cause, event, consequence)?"
+       },
+       {
+        "ar": "هل تغطي فئات المخاطر كل أنشطة المنظمة؟",
+        "en": "Do the risk categories cover all activities?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.3.4",
+         "why": {
+          "ar": "النهج المنظم يعتمد معايير موحدة.",
+          "en": "A structured approach relies on common criteria."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4c",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Customized",
+       "ar": "مخصصة"
+      },
+      "req": {
+       "en": "The framework and process are designed to fit the organization's external and internal context and its objectives, not copied from another organization or an off-the-shelf template.",
+       "ar": "الإطار والعملية يُصممان ليتناسبا مع سياق المنظمة الخارجي والداخلي وأهدافها، لا أن يُنسخا من منظمة أخرى أو من قالب جاهز."
+      },
+      "ex": {
+       "en": "The company refused to copy a consultancy's bank risk framework built around market and liquidity risk. It designed one centred on contract risk, safety, project cash flow and equipment supply chains.",
+       "ar": "رفضت الشركة نسخ إطار مخاطر بنك استشاري لأنه يركز على مخاطر السوق والسيولة. صممت إطاراً يركز على مخاطر العقود والسلامة والتدفق النقدي للمشاريع وسلاسل توريد المعدات."
+      },
+      "how": [
+       {
+        "en": "Start from objectives and context before choosing tools.",
+        "ar": "ابدأ من أهداف المنظمة وسياقها قبل اختيار الأدوات."
+       },
+       {
+        "en": "Set a level of detail proportionate to size.",
+        "ar": "حدد مستوى التفصيل المناسب لحجم المنظمة."
+       },
+       {
+        "en": "Review fit whenever the business or its size changes.",
+        "ar": "راجع مدى ملاءمة الإطار عند تغير النشاط أو الحجم."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Context analysis",
+        "ar": "تحليل السياق"
+       },
+       {
+        "en": "Framework design rationale",
+        "ar": "مبررات تصميم الإطار"
+       },
+       {
+        "en": "A framework that reflects the business",
+        "ar": "إطار يعكس طبيعة النشاط"
+       }
+      ],
+      "tip": {
+       "en": "The sign of a copied framework: risk categories unrelated to the business and roles that do not exist in the structure.",
+       "ar": "علامة الإطار المنسوخ: فئات مخاطر لا علاقة لها بالنشاط، وأدوار لا وجود لها في الهيكل."
+      },
+      "checks": [
+       {
+        "ar": "كيف رُوعي حجم المنظمة وطبيعة نشاطها في تصميم الإطار؟",
+        "en": "How were size and nature of business reflected in the framework design?"
+       },
+       {
+        "ar": "هل فئات المخاطر وأدوارها تعكس الهيكل الفعلي؟",
+        "en": "Do the risk categories and roles reflect the actual structure?"
+       },
+       {
+        "ar": "متى رُوجعت ملاءمة الإطار آخر مرة؟",
+        "en": "When was the framework's fit last reviewed?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "5.4.1",
+         "why": {
+          "ar": "التخصيص يبدأ من فهم السياق.",
+          "en": "Customization starts from understanding context."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4d",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Inclusive",
+       "ar": "شاملة للأطراف"
+      },
+      "req": {
+       "en": "Timely involvement of stakeholders brings their knowledge, views and perceptions into the assessment, raising awareness and improving decisions.",
+       "ar": "إشراك الأطراف المعنية في الوقت المناسب يجعل معارفهم ووجهات نظرهم وتصوراتهم جزءاً من التقييم، ويرفع الوعي ويحسّن القرار."
+      },
+      "ex": {
+       "en": "Before identifying risks for a substation project, the company ran a workshop with site engineers, procurement, the main subcontractor and the client's representative. It surfaced a risk of delayed crossing permits that the head-office assessment had missed.",
+       "ar": "قبل تحديد مخاطر مشروع محطة تحويل، عقدت الشركة ورشة مع مهندسي الموقع والمشتريات ومقاول الباطن الرئيسي وممثل العميل، فظهر خطر تأخر تصاريح العبور الذي لم يكن في تقييم المكتب الرئيسي."
+      },
+      "how": [
+       {
+        "en": "Identify stakeholders for every significant assessment.",
+        "ar": "حدد الأطراف المعنية لكل تقييم مخاطر مهم."
+       },
+       {
+        "en": "Involve them in identification and analysis, not only in reporting.",
+        "ar": "أشركهم عند التحديد والتحليل لا عند الإبلاغ فقط."
+       },
+       {
+        "en": "Record what they contributed and how it changed the result.",
+        "ar": "وثّق ما قدموه وكيف أثّر في النتيجة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Workshop attendance lists",
+        "ar": "قوائم حضور ورش المخاطر"
+       },
+       {
+        "en": "Consultation plan",
+        "ar": "خطة التشاور"
+       },
+       {
+        "en": "Stakeholder input recorded in the register",
+        "ar": "ملاحظات الأطراف المعنية في السجل"
+       }
+      ],
+      "tip": {
+       "en": "An assessment written by one person at a desk usually misses the most important risks: the ones people in the field know about.",
+       "ar": "تقييم يُعدّه شخص واحد في مكتبه يفتقد عادةً أهم المخاطر: تلك التي يعرفها العاملون في الميدان."
+      },
+      "checks": [
+       {
+        "ar": "من شارك في آخر تقييم للمخاطر الاستراتيجية؟",
+        "en": "Who took part in the last strategic risk assessment?"
+       },
+       {
+        "ar": "هل يُستشار الميدان والشركاء الخارجيون عند تحديد المخاطر؟",
+        "en": "Are field staff and external partners consulted during identification?"
+       },
+       {
+        "ar": "كيف وُثقت ملاحظات الأطراف وأثرها؟",
+        "en": "How were stakeholder inputs and their effect recorded?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "الشمول يتحقق بالاتصال والتشاور.",
+          "en": "Inclusion is delivered through communication and consultation."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4e",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Dynamic",
+       "ar": "ديناميكية"
+      },
+      "req": {
+       "en": "Risks emerge, change or disappear as the context changes. Risk management anticipates, detects, acknowledges and responds to those changes in a timely way.",
+       "ar": "المخاطر تظهر وتتغير وتختفي مع تغير السياق. إدارة المخاطر تتوقع هذه التغيرات وتكتشفها وتستجيب لها في الوقت المناسب."
+      },
+      "ex": {
+       "en": "When copper prices rose 30% in one quarter, the company launched an immediate review of fixed-price contract risk instead of waiting for the annual review, and added a price adjustment clause to new bids.",
+       "ar": "عند ارتفاع أسعار النحاس 30% خلال ربع واحد، أطلقت الشركة مراجعة فورية لمخاطر العقود ذات السعر الثابت بدلاً من انتظار المراجعة السنوية، وأضافت بند تعديل الأسعار في العطاءات الجديدة."
+      },
+      "how": [
+       {
+        "en": "Define triggers for an immediate review: regulatory change, incident, KRI breach.",
+        "ar": "حدد محفزات مراجعة فورية: تغيّر تنظيمي، حادث، ارتفاع مؤشر خطر."
+       },
+       {
+        "en": "Scan the external environment for emerging risks.",
+        "ar": "راقب المخاطر الناشئة بمسح دوري للبيئة الخارجية."
+       },
+       {
+        "en": "Update the register on every material change, not only before audits.",
+        "ar": "حدّث السجل عند كل تغيير جوهري لا عند التدقيق فقط."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Dated register updates",
+        "ar": "سجل تحديثات المخاطر بتواريخها"
+       },
+       {
+        "en": "Documented review triggers",
+        "ar": "محفزات المراجعة الموثقة"
+       },
+       {
+        "en": "Emerging risk list",
+        "ar": "قائمة المخاطر الناشئة"
+       }
+      ],
+      "tip": {
+       "en": "A register unchanged for six months in a changing environment is not stable; it is neglected.",
+       "ar": "سجل مخاطر لم يتغير منذ ستة أشهر في بيئة متغيرة ليس مستقراً؛ إنه مهمَل."
+      },
+      "checks": [
+       {
+        "ar": "ما محفزات المراجعة الفورية للمخاطر؟",
+        "en": "What triggers an immediate risk review?"
+       },
+       {
+        "ar": "متى حُدّث السجل آخر مرة ولماذا؟",
+        "en": "When was the register last updated, and why?"
+       },
+       {
+        "ar": "هل توجد آلية لرصد المخاطر الناشئة؟",
+        "en": "Is there a mechanism for spotting emerging risks?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.6",
+         "why": {
+          "ar": "الديناميكية تتطلب المراقبة المستمرة.",
+          "en": "Being dynamic requires ongoing monitoring."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4f",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Best available information",
+       "ar": "أفضل المعلومات المتاحة"
+      },
+      "req": {
+       "en": "Inputs are based on historical and current information and on future expectations, taking account of their limitations and uncertainties. Information should be timely, clear and available to relevant stakeholders.",
+       "ar": "المدخلات تعتمد على المعلومات التاريخية والحالية والتوقعات المستقبلية، مع مراعاة حدودها وأوجه عدم اليقين فيها. المعلومات يجب أن تكون متاحة في وقتها وواضحة للأطراف المعنية."
+      },
+      "ex": {
+       "en": "The company used five years of payment delay data to estimate the likelihood of a liquidity risk instead of personal opinion, and stated in the report that the data excluded new clients, which increased uncertainty.",
+       "ar": "استخدمت الشركة بيانات 5 سنوات من تأخر المستخلصات لتقدير احتمال خطر السيولة بدلاً من الرأي الشخصي، وذكرت في التقرير أن البيانات لا تشمل عملاء جدداً ما يزيد عدم اليقين."
+      },
+      "how": [
+       {
+        "en": "Collect incident, loss and delay data and use it in analysis.",
+        "ar": "اجمع بيانات الحوادث والخسائر والتأخيرات واستخدمها في التحليل."
+       },
+       {
+        "en": "Record information sources and their limits.",
+        "ar": "وثّق مصادر المعلومات وحدودها."
+       },
+       {
+        "en": "State the level of confidence in every significant estimate.",
+        "ar": "صرّح بمستوى الثقة في كل تقدير مهم."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Incident and loss database",
+        "ar": "قاعدة بيانات الحوادث والخسائر"
+       },
+       {
+        "en": "Analysis sources in the register",
+        "ar": "مصادر التحليل في السجل"
+       },
+       {
+        "en": "Uncertainty notes",
+        "ar": "ملاحظات عدم اليقين"
+       }
+      ],
+      "tip": {
+       "en": "Expert judgment is acceptable as long as it is labelled as such and revisited when data becomes available.",
+       "ar": "التقدير المبني على رأي خبير مقبول، بشرط أن يُذكر أنه رأي وأن يُراجع عند توفر بيانات."
+      },
+      "checks": [
+       {
+        "ar": "ما مصادر البيانات المستخدمة في تقدير الاحتمال والأثر؟",
+        "en": "What data sources inform likelihood and consequence ratings?"
+       },
+       {
+        "ar": "هل تُوثق حدود المعلومات ومستوى الثقة؟",
+        "en": "Are information limits and confidence levels recorded?"
+       },
+       {
+        "ar": "هل تُستخدم بيانات الحوادث والخسائر في التحليل؟",
+        "en": "Are incident and loss data used in analysis?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.4.3",
+         "why": {
+          "ar": "أفضل المعلومات تغذي التحليل.",
+          "en": "Best information feeds the analysis."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4g",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Human and cultural factors",
+       "ar": "العوامل البشرية والثقافية"
+      },
+      "req": {
+       "en": "Human behaviour and culture significantly influence every aspect of risk management: what gets reported, what is ignored and how risks are rated.",
+       "ar": "سلوك الناس وثقافة المنظمة يؤثران بقوة في كل مراحل إدارة المخاطر: ما يُبلَّغ عنه، وما يُتجاهل، وكيف تُقدَّر المخاطر."
+      },
+      "ex": {
+       "en": "The company noticed project managers under-rated risks because high ratings delayed project approval. It changed incentives so early risk reporting was rewarded, and early reporting rose noticeably.",
+       "ar": "لاحظت الشركة أن مديري المشاريع يقللون تقييم المخاطر لأن المخاطر المرتفعة تؤخر اعتماد المشروع. غيّرت الحوافز بحيث يُكافأ الإبلاغ المبكر عن المخاطر، فارتفع عدد المخاطر المبلّغ عنها مبكراً بنسبة واضحة."
+      },
+      "how": [
+       {
+        "en": "Assess risk culture: do people feel safe raising risks?",
+        "ar": "قيّم ثقافة المخاطر: هل يشعر الموظفون بالأمان عند الإبلاغ عن المخاطر؟"
+       },
+       {
+        "en": "Review incentives that may encourage hiding risk.",
+        "ar": "راجع الحوافز التي قد تدفع لإخفاء المخاطر."
+       },
+       {
+        "en": "Watch for biases: optimism, groupthink and deference to authority.",
+        "ar": "انتبه للتحيزات: التفاؤل المفرط، والتفكير الجماعي، وتأثير السلطة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Risk culture survey",
+        "ar": "استبيان ثقافة المخاطر"
+       },
+       {
+        "en": "No-blame reporting policy",
+        "ar": "سياسة الإبلاغ دون لوم"
+       },
+       {
+        "en": "Incentive scheme review",
+        "ar": "مراجعة أنظمة الحوافز"
+       }
+      ],
+      "tip": {
+       "en": "The most dangerous risks are the ones staff know about and do not dare mention in the meeting.",
+       "ar": "أخطر المخاطر هي التي يعرفها الموظفون ولا يجرؤون على ذكرها في الاجتماع."
+      },
+      "checks": [
+       {
+        "ar": "هل قيست ثقافة المخاطر أو شعور الموظفين بالأمان عند الإبلاغ؟",
+        "en": "Has risk culture, or staff confidence in raising risks, been measured?"
+       },
+       {
+        "ar": "هل تشجع الحوافز الإبلاغ المبكر عن المخاطر أم إخفاءها؟",
+        "en": "Do incentives encourage early risk reporting or hiding risk?"
+       },
+       {
+        "ar": "كيف تُعالج التحيزات في جلسات التقييم؟",
+        "en": "How are biases handled in assessment sessions?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "5.2",
+         "why": {
+          "ar": "الثقافة تبدأ من القيادة.",
+          "en": "Culture starts with leadership."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4h",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Continual improvement",
+       "ar": "التحسين المستمر"
+      },
+      "req": {
+       "en": "Risk management is continually improved through learning and experience: incidents, near misses, review findings and changes in context.",
+       "ar": "إدارة المخاطر تتحسن باستمرار من خلال التعلم والخبرة: الحوادث، والأخطاء القريبة، ونتائج المراجعات، وتغيرات السياق."
+      },
+      "ex": {
+       "en": "After a late transformer delivery led to delay penalties, the company ran a root cause analysis, added a supplier diversification control for all long-lead equipment and updated its method to include lead time.",
+       "ar": "بعد حادث تأخر توريد محولات أدى إلى غرامة تأخير، أجرت الشركة تحليل أسباب جذرية وأضافت ضابط تنويع الموردين لكل المعدات طويلة التوريد، وحدّثت منهجية التقييم لتشمل مدة التوريد."
+      },
+      "how": [
+       {
+        "en": "Use incidents and losses to update the register and the method.",
+        "ar": "راجع الحوادث والخسائر لتحديث السجل والمنهجية."
+       },
+       {
+        "en": "Measure risk management maturity every year.",
+        "ar": "قِس نضج إدارة المخاطر سنوياً."
+       },
+       {
+        "en": "Turn lessons learned into controls and procedures.",
+        "ar": "حوّل الدروس المستفادة إلى ضوابط وإجراءات."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Lessons learned log",
+        "ar": "سجل الدروس المستفادة"
+       },
+       {
+        "en": "Annual maturity assessment",
+        "ar": "تقييم النضج السنوي"
+       },
+       {
+        "en": "Methodology updates",
+        "ar": "تحديثات المنهجية"
+       }
+      ],
+      "tip": {
+       "en": "An organization that suffers the same loss twice is not learning; check whether incidents feed back into the register.",
+       "ar": "المنظمة التي تتكرر فيها الخسارة نفسها لا تتعلم؛ تحقق هل تنعكس الحوادث على السجل."
+      },
+      "checks": [
+       {
+        "ar": "كيف تنعكس الحوادث والخسائر على السجل والمنهجية؟",
+        "en": "How do incidents and losses feed back into the register and the method?"
+       },
+       {
+        "ar": "هل يُقاس نضج إدارة المخاطر دورياً؟",
+        "en": "Is risk management maturity measured periodically?"
+       },
+       {
+        "ar": "ما آخر تحسين أُدخل على الإطار أو العملية؟",
+        "en": "What was the latest improvement made to the framework or process?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "5.7",
+         "why": {
+          "ar": "التحسين المستمر يُنفذ في تحسين الإطار.",
+          "en": "Continual improvement is carried out in framework improvement."
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "5",
+    "phase": "frame",
+    "title": {
+     "en": "Framework",
+     "ar": "الإطار"
+    },
+    "intro": {
+     "en": "The framework is what makes risk management part of governance and day-to-day activity. Leadership and commitment sit at its centre, surrounded by a cycle of five components: integration, design, implementation, evaluation and improvement. Organizations rarely build it from scratch; they evaluate current practice and close the gaps.",
+     "ar": "الإطار هو ما يجعل إدارة المخاطر جزءاً من الحوكمة والأنشطة اليومية. في قلبه القيادة والالتزام، وحوله دورة من خمسة عناصر: الدمج، والتصميم، والتطبيق، والتقييم، والتحسين. المنظمة لا تبني الإطار من الصفر عادةً؛ بل تقيّم ممارساتها الحالية وتسد الفجوات."
+    },
+    "items": [
+     {
+      "ref": "5.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Leadership and commitment",
+       "ar": "القيادة والالتزام"
+      },
+      "req": {
+       "en": "Top management and oversight bodies should ensure risk management is integrated into all activities and demonstrate leadership and commitment: customizing the framework, issuing a statement or policy, providing resources and assigning authority and responsibility. Oversight bodies should ensure risks are considered when setting objectives and that they understand the risks the organization faces.",
+       "ar": "على الإدارة العليا وجهات الإشراف (المجلس) ضمان دمج إدارة المخاطر في كل الأنشطة، وإظهار القيادة والالتزام: تخصيص الإطار، وإصدار بيان أو سياسة، وتوفير الموارد، وإسناد الصلاحيات والمسؤوليات. وتتولى جهات الإشراف التأكد من أن المخاطر مأخوذة في الاعتبار عند وضع الأهداف، وأنها تفهم المخاطر التي تواجهها المنظمة."
+      },
+      "ex": {
+       "en": "Al-Riyada's board issued a risk management policy and a risk appetite statement, created an audit and risk committee meeting quarterly, and appointed a risk manager reporting to the CEO with an independent line to the committee.",
+       "ar": "أصدر مجلس إدارة شركة الريادة سياسة إدارة مخاطر وبيان الرغبة في المخاطر، وأنشأ لجنة مراجعة ومخاطر تجتمع كل ربع سنة، وعيّن مديراً للمخاطر يرفع تقاريره مباشرة للرئيس التنفيذي مع خط تقرير مستقل إلى اللجنة."
+      },
+      "how": [
+       {
+        "en": "Have the board approve the risk management policy.",
+        "ar": "اعتمد سياسة إدارة المخاطر من المجلس."
+       },
+       {
+        "en": "Define and approve risk appetite by category.",
+        "ar": "حدد الرغبة في المخاطر حسب الفئة واعتمدها."
+       },
+       {
+        "en": "Set a regular schedule for risk reports to the board.",
+        "ar": "خصص جدولاً دورياً لتقارير المخاطر إلى المجلس."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Board-approved policy",
+        "ar": "سياسة معتمدة من المجلس"
+       },
+       {
+        "en": "Risk appetite statement",
+        "ar": "بيان الرغبة في المخاطر"
+       },
+       {
+        "en": "Risk committee minutes",
+        "ar": "محاضر لجنة المخاطر"
+       }
+      ],
+      "tip": {
+       "en": "In 2018 'leadership and commitment' became the heart of the framework, replacing 'mandate and commitment'. A reviewer looks for evidence the board actually discusses risk, not just that it signed the policy.",
+       "ar": "في إصدار 2018 أصبحت «القيادة والالتزام» قلب الإطار بدلاً من «التفويض والالتزام». المراجع يبحث عن أدلة أن المجلس يناقش المخاطر فعلاً، لا أنه وقّع السياسة فقط."
+      },
+      "checks": [
+       {
+        "ar": "هل السياسة والرغبة في المخاطر معتمدتان من المجلس؟",
+        "en": "Are the policy and risk appetite approved by the board?"
+       },
+       {
+        "ar": "كم مرة يناقش المجلس أو لجنته تقارير المخاطر؟ وما القرارات الناتجة؟",
+        "en": "How often does the board or its committee discuss risk reports, and with what decisions?"
+       },
+       {
+        "ar": "كيف تُراعى المخاطر عند وضع الأهداف الاستراتيجية؟",
+        "en": "How are risks considered when strategic objectives are set?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "5.4.2",
+         "why": {
+          "ar": "القيادة تعبّر عن الالتزام بالسياسة.",
+          "en": "Leadership states its commitment through the policy."
+         }
+        },
+        {
+         "ref": "5.4.3",
+         "why": {
+          "ar": "القيادة تسند الأدوار والمساءلة.",
+          "en": "Leadership assigns roles and accountability."
+         }
+        },
+        {
+         "ref": "5.4.4",
+         "why": {
+          "ar": "القيادة تخصص الموارد.",
+          "en": "Leadership allocates resources."
+         }
+        },
+        {
+         "ref": "6.3.4",
+         "why": {
+          "ar": "المجلس يعتمد الرغبة التي تحدد المعايير.",
+          "en": "The board approves the appetite that shapes the criteria."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4g",
+         "why": {
+          "ar": "الثقافة تبدأ من القيادة.",
+          "en": "Culture starts with leadership."
+         }
+        },
+        {
+         "ref": "6.7",
+         "why": {
+          "ar": "التقارير تصل للمجلس للقرار.",
+          "en": "Reports reach the board for decision."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "5.3",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Integration",
+       "ar": "الدمج"
+      },
+      "req": {
+       "en": "Integrating risk management relies on understanding organizational structures and context. Risk is managed in every part of the organization, and everyone has responsibility for managing risk in their area. Governance guides the organization's course and relationships, and risk management is part of its purpose, governance, leadership and operations.",
+       "ar": "دمج إدارة المخاطر يعتمد على فهم هياكل المنظمة وسياقها. المخاطر تُدار في كل جزء من المنظمة، وكل شخص مسؤول عن إدارة المخاطر في نطاق عمله. الحوكمة توجّه مسار المنظمة وعلاقاتها، وإدارة المخاطر جزء من غاية المنظمة وحوكمتها وقيادتها وعملياتها."
+      },
+      "ex": {
+       "en": "The company integrated risk management into five processes: strategic planning, budgeting, bidding, project stage gates and supplier contracting. At each project gate the project risk register is reviewed before moving to the next phase.",
+       "ar": "دمجت الشركة إدارة المخاطر في خمس عمليات: التخطيط الاستراتيجي، والميزانية، والعطاءات، وبوابات المشاريع، والتعاقد مع الموردين. في كل بوابة مشروع يُراجع سجل مخاطر المشروع قبل الانتقال للمرحلة التالية."
+      },
+      "how": [
+       {
+        "en": "Map the key processes and mark where risk steps belong in each.",
+        "ar": "ارسم خريطة العمليات الرئيسية وحدد نقاط دمج المخاطر في كل منها."
+       },
+       {
+        "en": "Assign risk owners from the business, not from the risk function.",
+        "ar": "حدد مالك خطر من خط الأعمال لا من إدارة المخاطر."
+       },
+       {
+        "en": "Link risk reporting to performance reporting.",
+        "ar": "اربط تقارير المخاطر بتقارير الأداء."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Integration point map",
+        "ar": "خريطة نقاط الدمج"
+       },
+       {
+        "en": "Procedures with risk steps",
+        "ar": "إجراءات تتضمن خطوات المخاطر"
+       },
+       {
+        "en": "Business-line risk owners",
+        "ar": "مالكو مخاطر من خطوط الأعمال"
+       }
+      ],
+      "tip": {
+       "en": "Integration is the most important addition in 2018. Ask: who owns the risk? If the answer is 'the risk department', integration is missing; the risk owner is whoever owns the activity.",
+       "ar": "الدمج هو الإضافة الأهم في إصدار 2018. اسأل: من يملك الخطر؟ إذا كانت الإجابة «إدارة المخاطر» فالدمج غائب؛ مالك الخطر هو من يملك النشاط."
+      },
+      "checks": [
+       {
+        "ar": "في أي عمليات أُدمجت خطوات إدارة المخاطر؟",
+        "en": "In which processes are risk steps built in?"
+       },
+       {
+        "ar": "هل ملاك المخاطر من خطوط الأعمال؟",
+        "en": "Are risk owners drawn from the business lines?"
+       },
+       {
+        "ar": "هل ترتبط تقارير المخاطر بتقارير الأداء؟",
+        "en": "Is risk reporting linked to performance reporting?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "5.5",
+         "why": {
+          "ar": "الدمج يتحقق بالتطبيق في العمليات.",
+          "en": "Integration is achieved by implementing in processes."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4a",
+         "why": {
+          "ar": "مبدأ التكامل يتحقق عبر الدمج.",
+          "en": "The integrated principle is delivered through integration."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "5.4.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Understanding the organization and its context",
+       "ar": "فهم المنظمة وسياقها"
+      },
+      "req": {
+       "en": "When designing the framework the organization examines its external context (social, regulatory, financial, technological, economic and environmental factors, key drivers and trends, relationships and contracts) and its internal context (vision, mission and values, governance, structure and roles, strategy, culture, capabilities, data and systems).",
+       "ar": "عند تصميم الإطار تفحص المنظمة سياقها الخارجي (الاجتماعي والتنظيمي والمالي والتقني والاقتصادي والبيئي، والمحركات والاتجاهات، والعلاقات والتعاقدات) وسياقها الداخلي (الرؤية والرسالة والقيم، والحوكمة والهيكل والأدوار، والاستراتيجية، والثقافة، والقدرات والبيانات والأنظمة)."
+      },
+      "ex": {
+       "en": "The company analysed its context: externally, 70% of revenue from the utilities sector, Vision 2030 programmes, local content requirements and volatile metal prices; internally, fast growth in project numbers, a shortage of qualified engineers and a new ERP system.",
+       "ar": "حللت الشركة سياقها: خارجياً اعتماد 70% من الإيرادات على قطاع المرافق، وبرامج رؤية 2030، ومتطلبات المحتوى المحلي، وتقلب أسعار المعادن. داخلياً توسع سريع في عدد المشاريع مع نقص في المهندسين المؤهلين ونظام ERP حديث."
+      },
+      "how": [
+       {
+        "en": "Analyse the external context with PESTLE and the internal context with a capability review.",
+        "ar": "حلل السياق الخارجي بأداة PESTLE والداخلي بتحليل القدرات."
+       },
+       {
+        "en": "Identify stakeholders and their expectations.",
+        "ar": "حدد الأطراف المعنية وتوقعاتهم."
+       },
+       {
+        "en": "Draw out what affects the framework's design.",
+        "ar": "استخرج من التحليل ما يؤثر في تصميم الإطار."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Context analysis",
+        "ar": "تحليل السياق"
+       },
+       {
+        "en": "Stakeholder list",
+        "ar": "قائمة الأطراف المعنية"
+       },
+       {
+        "en": "Design rationale",
+        "ar": "مبررات التصميم"
+       }
+      ],
+      "tip": {
+       "en": "This is the context for the framework itself (5.4.1). It differs from the context of each risk assessment (6.3.3), even though the questions look similar.",
+       "ar": "هذا تحليل سياق للإطار نفسه (البند 5.4.1)، ويختلف عن سياق كل تقييم مخاطر (البند 6.3.3) رغم تشابه الأسئلة."
+      },
+      "checks": [
+       {
+        "ar": "هل يوجد تحليل موثق للسياق الخارجي والداخلي للإطار؟",
+        "en": "Is there a documented external and internal context analysis for the framework?"
+       },
+       {
+        "ar": "هل حُددت الأطراف المعنية وتوقعاتها؟",
+        "en": "Have stakeholders and their expectations been identified?"
+       },
+       {
+        "ar": "كيف أثّر التحليل في تصميم الإطار؟",
+        "en": "How did the analysis shape the framework design?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.3.3",
+         "why": {
+          "ar": "سياق المنظمة أساس سياق كل تقييم.",
+          "en": "The organization's context underpins each assessment's context."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4c",
+         "why": {
+          "ar": "التخصيص يبدأ من فهم السياق.",
+          "en": "Customization starts from understanding context."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "5.4.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Articulating risk management commitment",
+       "ar": "التعبير عن الالتزام بإدارة المخاطر"
+      },
+      "req": {
+       "en": "Top management and oversight bodies demonstrate continual commitment through a policy, statement or other form that sets out the organization's objectives for risk management, links them to other objectives and policies, reinforces integration, and covers accountability, resources, how conflicting objectives are handled and how performance is measured.",
+       "ar": "تُظهر الإدارة العليا وجهات الإشراف التزامها المستمر من خلال سياسة أو بيان أو صيغة أخرى توضح أهداف المنظمة من إدارة المخاطر، وتربطها بالأهداف والسياسات الأخرى، وتعزز الدمج، وتحدد المسؤوليات والموارد وطريقة التعامل مع الأهداف المتعارضة وقياس الأداء."
+      },
+      "ex": {
+       "en": "The company's policy set out the purpose of risk management, appetite by category, the duties of the board, management and risk owners, and a commitment to review the framework every year. It was communicated to all staff and to key subcontractors.",
+       "ar": "تضمنت سياسة الشركة: الغرض من إدارة المخاطر، والرغبة في المخاطر لكل فئة، ومسؤوليات المجلس والإدارة وملاك المخاطر، والتزاماً بمراجعة الإطار سنوياً، وأُعلنت لكل الموظفين وللمقاولين الرئيسيين."
+      },
+      "how": [
+       {
+        "en": "Write a short policy (two pages) covering purpose, roles and appetite.",
+        "ar": "اكتب سياسة مختصرة (صفحتان) تغطي الغرض والأدوار والرغبة في المخاطر."
+       },
+       {
+        "en": "Communicate it internally and to relevant stakeholders.",
+        "ar": "انشر السياسة داخلياً ولأصحاب المصلحة المعنيين."
+       },
+       {
+        "en": "Review it every year or after a significant change.",
+        "ar": "راجعها سنوياً أو عند تغير جوهري."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Risk management policy",
+        "ar": "سياسة إدارة المخاطر"
+       },
+       {
+        "en": "Communication and awareness record",
+        "ar": "سجل النشر والتوعية"
+       },
+       {
+        "en": "Date of last review",
+        "ar": "تاريخ آخر مراجعة"
+       }
+      ],
+      "tip": {
+       "en": "A twenty-page policy nobody reads is weaker than two pages every manager knows.",
+       "ar": "سياسة من عشرين صفحة لا يقرؤها أحد أضعف من صفحتين يعرفهما كل مدير."
+      },
+      "checks": [
+       {
+        "ar": "هل توجد سياسة تحدد غرض إدارة المخاطر والأدوار والموارد؟",
+        "en": "Is there a policy setting purpose, roles and resources?"
+       },
+       {
+        "ar": "كيف أُبلغت السياسة للموظفين والأطراف؟",
+        "en": "How was the policy communicated to staff and stakeholders?"
+       },
+       {
+        "ar": "متى رُوجعت السياسة آخر مرة؟",
+        "en": "When was the policy last reviewed?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "5.2",
+         "why": {
+          "ar": "القيادة تعبّر عن الالتزام بالسياسة.",
+          "en": "Leadership states its commitment through the policy."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "5.4.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Assigning organizational roles, authorities, responsibilities and accountabilities",
+       "ar": "إسناد الأدوار والصلاحيات والمسؤوليات والمساءلة"
+      },
+      "req": {
+       "en": "Top management and oversight bodies assign authority, responsibility and accountability for relevant risk management roles, emphasize that risk management is a core responsibility for everyone, and identify who owns each risk and has the authority to manage it.",
+       "ar": "تسند الإدارة العليا وجهات الإشراف الصلاحيات والمسؤوليات والمساءلة للأدوار المعنية بإدارة المخاطر، وتؤكد أن إدارة المخاطر مسؤولية أساسية للجميع، وتحدد من يملك الخطر ومن لديه صلاحية إدارته."
+      },
+      "ex": {
+       "en": "The company set up a RACI matrix: the board approves risk appetite, the CEO is accountable for strategic risks, department heads own their risks, the risk manager develops the method and challenges assessments, and internal audit provides independent assurance.",
+       "ar": "وضعت الشركة مصفوفة RACI: المجلس يعتمد الرغبة في المخاطر، والرئيس التنفيذي مساءَل عن المخاطر الاستراتيجية، ومديرو الإدارات يملكون مخاطرهم، ومدير المخاطر يطور المنهجية ويتحدى التقييمات، والتدقيق الداخلي يقدم تأكيداً مستقلاً."
+      },
+      "how": [
+       {
+        "en": "Build a roles matrix covering the board, management, risk owners, the risk function and audit.",
+        "ar": "أعد مصفوفة أدوار تغطي المجلس والإدارة وملاك المخاطر ووظيفة المخاطر والتدقيق."
+       },
+       {
+        "en": "Put risk duties into job descriptions.",
+        "ar": "أدرج مسؤوليات المخاطر في الأوصاف الوظيفية."
+       },
+       {
+        "en": "Link risk management performance to appraisals.",
+        "ar": "اربط الأداء في إدارة المخاطر بتقييم الأداء."
+       }
+      ],
+      "ev": [
+       {
+        "en": "RACI matrix",
+        "ar": "مصفوفة RACI"
+       },
+       {
+        "en": "Job descriptions",
+        "ar": "الأوصاف الوظيفية"
+       },
+       {
+        "en": "Risk owner list",
+        "ar": "قائمة ملاك المخاطر"
+       }
+      ],
+      "tip": {
+       "en": "The three lines model is not part of ISO 31000, but it is a common and useful way to allocate these roles.",
+       "ar": "نموذج الخطوط الثلاثة ليس جزءاً من ISO 31000 لكنه أداة شائعة ومفيدة لتوزيع الأدوار."
+      },
+      "checks": [
+       {
+        "ar": "هل توجد مصفوفة أدوار واضحة لإدارة المخاطر؟",
+        "en": "Is there a clear roles matrix for risk management?"
+       },
+       {
+        "ar": "هل لكل خطر مالك بصلاحية إدارته؟",
+        "en": "Does every risk have an owner with authority to manage it?"
+       },
+       {
+        "ar": "هل مسؤوليات المخاطر ضمن الأوصاف الوظيفية وتقييم الأداء؟",
+        "en": "Are risk duties in job descriptions and appraisals?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.5.3",
+         "why": {
+          "ar": "الأدوار تحدد مالكي خطط المعالجة.",
+          "en": "Roles determine who owns treatment plans."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.2",
+         "why": {
+          "ar": "القيادة تسند الأدوار والمساءلة.",
+          "en": "Leadership assigns roles and accountability."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "5.4.4",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Allocating resources",
+       "ar": "تخصيص الموارد"
+      },
+      "req": {
+       "en": "Top management ensures appropriate resources for risk management: people with the right skills, experience and competence; processes, methods and tools; documented procedures; information and knowledge management systems; and professional development and training.",
+       "ar": "تضمن الإدارة العليا توفير الموارد المناسبة لإدارة المخاطر: الأشخاص ومهاراتهم وخبراتهم وكفاءتهم، والعمليات والأساليب والأدوات، والإجراءات الموثقة، وأنظمة المعلومات وإدارة المعرفة، والتطوير المهني والتدريب."
+      },
+      "ex": {
+       "en": "The company appointed a full-time risk manager and a risk coordinator in each business unit, introduced an electronic risk register linked to the project system, and ran a two-day training programme for every project manager.",
+       "ar": "خصصت الشركة مديراً متفرغاً للمخاطر ومنسقاً في كل قطاع أعمال، ونظاماً إلكترونياً لسجل المخاطر مرتبطاً بنظام المشاريع، وبرنامج تدريب من يومين لكل مديري المشاريع."
+      },
+      "how": [
+       {
+        "en": "Size the resources to the organization's scale and complexity.",
+        "ar": "قدّر الموارد اللازمة حسب حجم المنظمة وتعقيدها."
+       },
+       {
+        "en": "Provide a suitable register tool (spreadsheet or system).",
+        "ar": "وفّر أداة مناسبة لسجل المخاطر (جدول أو نظام)."
+       },
+       {
+        "en": "Plan training for risk owners and coordinators.",
+        "ar": "خطط لتدريب ملاك المخاطر ومنسقيها."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Risk management budget",
+        "ar": "ميزانية إدارة المخاطر"
+       },
+       {
+        "en": "Training plan and records",
+        "ar": "خطة التدريب وسجلاته"
+       },
+       {
+        "en": "Register tools and system",
+        "ar": "أدوات ونظام السجل"
+       }
+      ],
+      "tip": {
+       "en": "Start with a simple tool everyone uses before buying an expensive system nobody opens.",
+       "ar": "ابدأ بأداة بسيطة يستخدمها الجميع قبل شراء نظام مكلف لا يُستخدم."
+      },
+      "checks": [
+       {
+        "ar": "ما الموارد المخصصة لإدارة المخاطر (أشخاص، أدوات، ميزانية)؟",
+        "en": "What resources are allocated (people, tools, budget)?"
+       },
+       {
+        "ar": "هل تلقى ملاك المخاطر تدريباً مناسباً؟",
+        "en": "Have risk owners received suitable training?"
+       },
+       {
+        "ar": "هل الأداة المستخدمة للسجل مناسبة ومتاحة للجميع؟",
+        "en": "Is the register tool suitable and accessible to all?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "5.2",
+         "why": {
+          "ar": "القيادة تخصص الموارد.",
+          "en": "Leadership allocates resources."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "5.4.5",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Establishing communication and consultation",
+       "ar": "إنشاء الاتصال والتشاور"
+      },
+      "req": {
+       "en": "The organization establishes an approved approach to communication and consultation to support the framework and its application: communication shares information with targeted audiences, while consultation gathers feedback to inform decisions. Information should be accurate, timely and understandable.",
+       "ar": "تعتمد المنظمة نهجاً معتمداً للاتصال والتشاور لدعم الإطار وتسهيل تطبيقه: الاتصال يشارك المعلومات مع الجمهور المستهدف، والتشاور يجمع الملاحظات لدعم القرار. يجب أن تكون المعلومات دقيقة وفي وقتها ومفهومة."
+      },
+      "ex": {
+       "en": "The company set channels: a quarterly report to the risk committee, a monthly risk dashboard per project, a quarterly awareness newsletter for staff, and an annual workshop with key subcontractors on shared risks.",
+       "ar": "حددت الشركة قنوات: تقرير ربع سنوي للجنة المخاطر، ولوحة مخاطر شهرية لكل مشروع، ونشرة توعية فصلية للموظفين، وورشة سنوية مع المقاولين الرئيسيين حول المخاطر المشتركة."
+      },
+      "how": [
+       {
+        "en": "Define audience, content, timing and channel for each report or message.",
+        "ar": "حدد الجمهور والمحتوى والتوقيت والقناة لكل تقرير أو تواصل."
+       },
+       {
+        "en": "Design consultation channels to gather views before decisions.",
+        "ar": "صمم قنوات تشاور لجمع آراء الأطراف قبل القرارات."
+       },
+       {
+        "en": "Check communication works by asking the recipients.",
+        "ar": "راجع فعالية الاتصال بسؤال المستفيدين."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Communication and consultation plan",
+        "ar": "خطة الاتصال والتشاور"
+       },
+       {
+        "en": "Periodic risk reports",
+        "ar": "تقارير المخاطر الدورية"
+       },
+       {
+        "en": "Consultation workshop records",
+        "ar": "سجلات ورش التشاور"
+       }
+      ],
+      "tip": {
+       "en": "The difference: communication informs; consultation asks and listens before the decision.",
+       "ar": "الفرق بين الاتصال والتشاور: الأول يُخبر، والثاني يسأل ويستمع قبل القرار."
+      },
+      "checks": [
+       {
+        "ar": "هل توجد خطة اتصال وتشاور لإدارة المخاطر؟",
+        "en": "Is there a communication and consultation plan for risk management?"
+       },
+       {
+        "ar": "كيف يُجمع رأي الأطراف قبل القرارات المهمة؟",
+        "en": "How are stakeholder views gathered before key decisions?"
+       },
+       {
+        "ar": "هل التقارير مفهومة وفي وقتها لمستخدميها؟",
+        "en": "Are reports understandable and timely for their users?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "نهج الاتصال المعتمد يُطبق في العملية.",
+          "en": "The approved communication approach is applied in the process."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "5.5",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Implementation",
+       "ar": "التطبيق"
+      },
+      "req": {
+       "en": "The organization implements the framework through an appropriate plan including time and resources, identifies where, when, how and by whom decisions are made, modifies decision-making processes where needed, and ensures risk management arrangements are understood and practised. Success requires stakeholder engagement and awareness.",
+       "ar": "تطبق المنظمة الإطار بخطة مناسبة تشمل الوقت والموارد، وتحدد أين ومتى وكيف ومن يتخذ القرارات عبر المنظمة، وتعدّل عمليات اتخاذ القرار عند الحاجة، وتضمن أن ترتيبات إدارة المخاطر مفهومة وممارَسة. التطبيق الناجح يتطلب مشاركة الأطراف المعنية ووعيهم."
+      },
+      "ex": {
+       "en": "The company rolled out the framework in three waves: head office and strategic risks first, then the ten largest projects, then the remaining projects and support functions. Each wave had training, a risk identification workshop and a first report.",
+       "ar": "طبقت الشركة الإطار على ثلاث موجات: المكتب الرئيسي والمخاطر الاستراتيجية أولاً، ثم أكبر عشرة مشاريع، ثم بقية المشاريع والإدارات المساندة. في كل موجة تدريب ثم ورشة تحديد مخاطر ثم أول تقرير."
+      },
+      "how": [
+       {
+        "en": "Write a phased implementation plan with owners and dates.",
+        "ar": "ضع خطة تطبيق مرحلية بمسؤولين ومواعيد."
+       },
+       {
+        "en": "Pilot in one unit or project, then extend.",
+        "ar": "ابدأ بتجربة في وحدة أو مشروع ثم عمّم."
+       },
+       {
+        "en": "Track rollout with indicators: share of projects with a current register.",
+        "ar": "تابع التطبيق بمؤشرات: نسبة المشاريع التي لديها سجل محدث."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Implementation plan",
+        "ar": "خطة التطبيق"
+       },
+       {
+        "en": "Training and workshop records",
+        "ar": "سجلات التدريب والورش"
+       },
+       {
+        "en": "Coverage indicators",
+        "ar": "مؤشرات التغطية"
+       }
+      ],
+      "tip": {
+       "en": "Implementation usually fails when it is treated as a documentation project. Measure use, not the number of documents.",
+       "ar": "التطبيق يفشل عادةً عندما يُعامل كمشروع توثيق. قِس الاستخدام لا عدد الوثائق."
+      },
+      "checks": [
+       {
+        "ar": "هل توجد خطة تطبيق بمراحل ومسؤولين ومواعيد؟",
+        "en": "Is there an implementation plan with phases, owners and dates?"
+       },
+       {
+        "ar": "ما نسبة الوحدات أو المشاريع التي تطبق العملية فعلياً؟",
+        "en": "What share of units or projects actually apply the process?"
+       },
+       {
+        "ar": "هل عُدلت عمليات اتخاذ القرار لتتضمن المخاطر؟",
+        "en": "Were decision processes modified to include risk?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "5.6",
+         "why": {
+          "ar": "التطبيق يُقاس بالتقييم.",
+          "en": "Implementation is measured by evaluation."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.3",
+         "why": {
+          "ar": "الدمج يتحقق بالتطبيق في العمليات.",
+          "en": "Integration is achieved by implementing in processes."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "5.6",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Evaluation",
+       "ar": "التقييم"
+      },
+      "req": {
+       "en": "To evaluate the framework's effectiveness, the organization periodically measures its performance against its purpose, implementation plans, indicators and expected behaviour, and determines whether it remains suitable to support achieving objectives.",
+       "ar": "لتقييم فعالية الإطار، تقيس المنظمة أداءه دورياً مقابل غرضه وخطط تطبيقه ومؤشراته والسلوك المتوقع، وتحدد هل ما زال مناسباً لدعم تحقيق أهدافها."
+      },
+      "ex": {
+       "en": "The company defined framework indicators: share of risks with an owner and a treatment plan, share of high risks treated on time, and the number of unexpected losses (risks not in the register). It measures framework maturity every year using this tool.",
+       "ar": "حددت الشركة مؤشرات للإطار: نسبة المخاطر ذات المالك وخطة المعالجة، ونسبة المخاطر المرتفعة المعالجة في موعدها، وعدد الخسائر غير المتوقعة (مخاطر لم تكن في السجل). وتقيس نضج الإطار سنوياً عبر هذه الأداة."
+      },
+      "how": [
+       {
+        "en": "Set indicators for framework effectiveness, not only for risk levels.",
+        "ar": "حدد مؤشرات لفعالية الإطار لا لأداء المخاطر فقط."
+       },
+       {
+        "en": "Run an annual maturity assessment or internal audit.",
+        "ar": "نفّذ تقييماً سنوياً للنضج أو تدقيقاً داخلياً."
+       },
+       {
+        "en": "Compare actual losses with what the register contained.",
+        "ar": "قارن الخسائر الفعلية بما كان في السجل."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Framework indicators",
+        "ar": "مؤشرات الإطار"
+       },
+       {
+        "en": "Maturity assessment or audit report",
+        "ar": "تقرير تقييم النضج أو التدقيق"
+       },
+       {
+        "en": "Unexpected loss analysis",
+        "ar": "تحليل الخسائر غير المتوقعة"
+       }
+      ],
+      "tip": {
+       "en": "The strongest effectiveness indicator: were the big losses in the register before they happened?",
+       "ar": "أقوى مؤشر على الفعالية: هل كانت الخسائر الكبيرة في السجل قبل وقوعها؟"
+      },
+      "checks": [
+       {
+        "ar": "ما مؤشرات قياس فعالية الإطار؟",
+        "en": "What indicators measure framework effectiveness?"
+       },
+       {
+        "ar": "هل نُفذ تقييم نضج أو تدقيق داخلي للإطار؟",
+        "en": "Has a maturity assessment or internal audit of the framework been done?"
+       },
+       {
+        "ar": "هل كانت الخسائر الكبيرة الأخيرة مسجلة مسبقاً؟",
+        "en": "Were recent major losses already in the register?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "5.7",
+         "why": {
+          "ar": "نتائج التقييم تقود التحسين.",
+          "en": "Evaluation results drive improvement."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.5",
+         "why": {
+          "ar": "التطبيق يُقاس بالتقييم.",
+          "en": "Implementation is measured by evaluation."
+         }
+        },
+        {
+         "ref": "6.6",
+         "why": {
+          "ar": "المراقبة تغذي تقييم الإطار.",
+          "en": "Monitoring feeds framework evaluation."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "5.7",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Improvement",
+       "ar": "التحسين"
+      },
+      "req": {
+       "en": "The organization continually monitors and adapts the framework to address external and internal changes (5.7.1), and continually improves its suitability, adequacy and effectiveness and the way the risk management process is integrated (5.7.2). Where gaps or improvement opportunities are found, plans are developed and assigned.",
+       "ar": "تراقب المنظمة الإطار باستمرار وتكيّفه لمواجهة التغيرات الخارجية والداخلية (5.7.1)، وتحسّن باستمرار ملاءمته وكفايته وفعاليته وطريقة دمج عملية إدارة المخاطر (5.7.2). عند تحديد فجوات أو فرص تحسين، تُعد خطط وتُسند لمسؤولين."
+      },
+      "ex": {
+       "en": "The annual maturity assessment showed financial risks were well reviewed while supply chain risks were weak. The company added an improvement plan: key risk indicators for critical suppliers and a quarterly joint review by procurement and projects.",
+       "ar": "بعد تقييم النضج السنوي ظهر أن المخاطر المالية تُراجع جيداً بينما مخاطر سلاسل التوريد ضعيفة. أضافت الشركة خطة تحسين: مؤشرات مخاطر رئيسية للموردين الحرجين، ومراجعة ربع سنوية مشتركة بين المشتريات والمشاريع."
+      },
+      "how": [
+       {
+        "en": "Turn evaluation results into an improvement plan with owners and dates.",
+        "ar": "حوّل نتائج التقييم إلى خطة تحسين بمسؤولين ومواعيد."
+       },
+       {
+        "en": "Adapt the framework when structure, strategy or regulation changes.",
+        "ar": "كيّف الإطار عند تغير الهيكل أو الاستراتيجية أو التنظيم."
+       },
+       {
+        "en": "Track closure of improvement actions in the risk committee.",
+        "ar": "تابع إغلاق إجراءات التحسين في لجنة المخاطر."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Improvement plan",
+        "ar": "خطة التحسين"
+       },
+       {
+        "en": "Framework change log",
+        "ar": "سجل التغييرات على الإطار"
+       },
+       {
+        "en": "Closure tracking",
+        "ar": "متابعة الإغلاق"
+       }
+      ],
+      "tip": {
+       "en": "In 2018 adapting (5.7.1) became explicit: a framework that fits today may not fit after an acquisition or a strategic shift.",
+       "ar": "في 2018 أصبح التكيّف (5.7.1) صريحاً: الإطار الجيد اليوم قد لا يناسب المنظمة بعد استحواذ أو تغيير استراتيجي."
+      },
+      "checks": [
+       {
+        "ar": "هل توجد خطة تحسين من نتائج التقييم؟",
+        "en": "Is there an improvement plan from evaluation results?"
+       },
+       {
+        "ar": "كيف كُيّف الإطار مع التغييرات الأخيرة؟",
+        "en": "How was the framework adapted to recent changes?"
+       },
+       {
+        "ar": "من يتابع إغلاق إجراءات التحسين؟",
+        "en": "Who tracks closure of improvement actions?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "4h",
+         "why": {
+          "ar": "التحسين المستمر يُنفذ في تحسين الإطار.",
+          "en": "Continual improvement is carried out in framework improvement."
+         }
+        },
+        {
+         "ref": "5.6",
+         "why": {
+          "ar": "نتائج التقييم تقود التحسين.",
+          "en": "Evaluation results drive improvement."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "6",
+    "phase": "proc",
+    "title": {
+     "en": "Process",
+     "ar": "العملية"
+    },
+    "intro": {
+     "en": "The process is the systematic application of policies and procedures to communicating and consulting, establishing the context, and assessing, treating, monitoring, reviewing, recording and reporting risk. It is iterative, not linear, applies at strategic, operational, programme and project levels, and forms part of decision-making rather than something done after it.",
+     "ar": "العملية هي التطبيق المنظم للسياسات والإجراءات على أنشطة الاتصال والتشاور، وتحديد السياق، وتقييم المخاطر ومعالجتها ومراقبتها ومراجعتها وتسجيلها والإبلاغ عنها. هي عملية تكرارية لا خطية، وتُطبق على المستوى الاستراتيجي والتشغيلي وعلى البرامج والمشاريع، وتكون جزءاً من القرار لا نشاطاً لاحقاً له."
+    },
+    "items": [
+     {
+      "ref": "6.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Communication and consultation",
+       "ar": "الاتصال والتشاور"
+      },
+      "req": {
+       "en": "Helps stakeholders understand risk, the basis for decisions and why particular actions are needed. It takes place throughout the process, not at the end; brings different expertise to each step; ensures different views are considered when defining criteria and evaluating risks; and builds a sense of ownership.",
+       "ar": "يساعد الأطراف المعنية على فهم المخاطر وأساس القرارات وأسباب الإجراءات المطلوبة. يجري في كل خطوات العملية لا في نهايتها، ويجمع خبرات مختلفة لكل خطوة، ويضمن مراعاة وجهات النظر المختلفة عند تحديد معايير المخاطر وتقييمها، ويبني الإحساس بالملكية."
+      },
+      "ex": {
+       "en": "On an overhead transmission line project, the safety team and the landowner liaison officer joined the delay risk analysis. They added the risk of landowner objections, a main cause of delay on earlier projects, and the client was told early about the treatment plan.",
+       "ar": "في مشروع خط نقل هوائي، شارك قسم السلامة ومسؤول العلاقات مع ملاك الأراضي في تحليل مخاطر التأخير، فأضيف خطر اعتراضات الملاك الذي كان سبباً رئيسياً لتأخر مشاريع سابقة، وأُبلغ العميل مبكراً بخطة المعالجة."
+      },
+      "how": [
+       {
+        "en": "For each assessment define who is consulted, when and how.",
+        "ar": "حدد لكل تقييم من يُستشار ومتى وكيف."
+       },
+       {
+        "en": "Communicate the decision and its reasons to those affected.",
+        "ar": "أبلغ القرار وأسبابه لمن يتأثر به."
+       },
+       {
+        "en": "Record the input received and how it was handled.",
+        "ar": "وثّق الملاحظات الواردة وكيف عولجت."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Project communication and consultation plan",
+        "ar": "خطة الاتصال والتشاور للمشروع"
+       },
+       {
+        "en": "Workshop minutes",
+        "ar": "محاضر الورش"
+       },
+       {
+        "en": "Risk communication messages",
+        "ar": "رسائل الإبلاغ عن المخاطر"
+       }
+      ],
+      "tip": {
+       "en": "In the standard's well-known diagram, communication and consultation is a side bar running the length of the whole process. That is deliberate.",
+       "ar": "في الرسم المعروف للمواصفة، الاتصال والتشاور عمود جانبي يمتد بطول العملية كلها، وهذا مقصود."
+      },
+      "checks": [
+       {
+        "ar": "من استُشير في آخر تقييم مهم؟ ومتى؟",
+        "en": "Who was consulted in the last significant assessment, and when?"
+       },
+       {
+        "ar": "كيف أُبلغت القرارات وأسبابها للمتأثرين؟",
+        "en": "How were decisions and their reasons communicated?"
+       },
+       {
+        "ar": "هل الاتصال مستمر طوال العملية أم في نهايتها فقط؟",
+        "en": "Is communication continuous or only at the end?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "4d",
+         "why": {
+          "ar": "الشمول يتحقق بالاتصال والتشاور.",
+          "en": "Inclusion is delivered through communication and consultation."
+         }
+        },
+        {
+         "ref": "5.4.5",
+         "why": {
+          "ar": "نهج الاتصال المعتمد يُطبق في العملية.",
+          "en": "The approved communication approach is applied in the process."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.3.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Defining the scope",
+       "ar": "تحديد النطاق"
+      },
+      "req": {
+       "en": "The organization defines the scope of its risk management activities, because the process may be applied at different levels. This covers objectives and decisions to be made, expected outcomes of the steps, time, location, inclusions and exclusions, appropriate tools and techniques, and resources, responsibilities and records.",
+       "ar": "تحدد المنظمة نطاق أنشطة إدارة المخاطر لأن العملية تُطبق على مستويات مختلفة. يشمل ذلك الأهداف والقرارات المطلوبة، والنتائج المتوقعة من الخطوات، والتوقيت والموقع والشمول والاستبعادات، والأدوات والأساليب المناسبة، والموارد والمسؤوليات والسجلات."
+      },
+      "ex": {
+       "en": "For a solar plant bid assessment the scope was set: the objective was the bid/no-bid and pricing decision; the duration two weeks; inclusions design, supply, construction and commissioning; exclusion long-term operation; tools a workshop and a cost sensitivity analysis.",
+       "ar": "لتقييم مخاطر عطاء محطة طاقة شمسية حُدد النطاق: الهدف قرار الدخول في العطاء وتسعيره، والمدة أسبوعان، والشمول التصميم والتوريد والتنفيذ والتشغيل التجريبي، والاستبعاد التشغيل طويل الأجل، والأداة ورشة وتحليل حساسية للتكلفة."
+      },
+      "how": [
+       {
+        "en": "Start every assessment by naming the decision it supports.",
+        "ar": "ابدأ كل تقييم بتحديد القرار الذي سيدعمه."
+       },
+       {
+        "en": "Set the boundaries: what is in and out of scope.",
+        "ar": "حدد الحدود: ما داخل وما خارج النطاق."
+       },
+       {
+        "en": "Choose a technique that fits the decision (see ISO/IEC 31010).",
+        "ar": "اختر الأداة المناسبة للقرار (انظر ISO/IEC 31010)."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Assessment scope statement",
+        "ar": "بيان نطاق التقييم"
+       },
+       {
+        "en": "Selected techniques",
+        "ar": "الأدوات المختارة"
+       },
+       {
+        "en": "Timeline and owners",
+        "ar": "الجدول الزمني والمسؤولون"
+       }
+      ],
+      "tip": {
+       "en": "An assessment without a clear decision produces a long list nobody uses.",
+       "ar": "تقييم بلا قرار واضح ينتج قائمة طويلة لا يستخدمها أحد."
+      },
+      "checks": [
+       {
+        "ar": "هل يبدأ كل تقييم بتحديد القرار والنطاق والحدود؟",
+        "en": "Does each assessment start by defining the decision, scope and boundaries?"
+       },
+       {
+        "ar": "كيف اختيرت أدوات التقييم؟",
+        "en": "How were the assessment techniques chosen?"
+       },
+       {
+        "ar": "هل حُدد المسؤولون والجدول الزمني؟",
+        "en": "Were owners and a timeline set?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.4.2",
+         "why": {
+          "ar": "النطاق يحدد حدود التحديد.",
+          "en": "Scope sets the boundaries of identification."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "6.3.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "External and internal context",
+       "ar": "السياق الخارجي والداخلي"
+      },
+      "req": {
+       "en": "The environment in which the organization seeks to achieve its objectives. The context of the risk management process is drawn from understanding the organization's external and internal environment and reflects the specific environment of the activity to which the process is applied.",
+       "ar": "البيئة التي تسعى فيها المنظمة لتحقيق أهدافها. سياق عملية إدارة المخاطر يُستمد من فهم السياق الخارجي والداخلي للمنظمة ويعكس البيئة الخاصة بالنشاط الذي تُطبق عليه العملية."
+      },
+      "ex": {
+       "en": "For the solar bid, the external context included local content requirements, imported panel prices and a remote site with high temperatures. The internal context included limited solar experience, a consortium with a technology partner and a bank financing ceiling.",
+       "ar": "في عطاء المحطة الشمسية شمل السياق الخارجي: متطلبات المحتوى المحلي، وأسعار الألواح المستوردة، وموقع ناءٍ بدرجات حرارة مرتفعة. والداخلي: خبرة محدودة في الطاقة الشمسية، وتحالف مع شريك تقني، وسقف تمويل بنكي."
+      },
+      "how": [
+       {
+        "en": "Derive the assessment context from the organization-wide analysis (5.4.1).",
+        "ar": "اشتق سياق التقييم من تحليل السياق العام (5.4.1)."
+       },
+       {
+        "en": "Add factors specific to the activity being assessed.",
+        "ar": "أضف العوامل الخاصة بالنشاط محل التقييم."
+       },
+       {
+        "en": "Identify the stakeholders of this specific activity.",
+        "ar": "حدد الأطراف المعنية بهذا النشاط تحديداً."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Assessment context",
+        "ar": "سياق التقييم"
+       },
+       {
+        "en": "Activity stakeholder list",
+        "ar": "قائمة الأطراف المعنية بالنشاط"
+       },
+       {
+        "en": "Assessment assumptions",
+        "ar": "افتراضات التقييم"
+       }
+      ],
+      "tip": {
+       "en": "Assumptions are part of the context. Write them down, because they are the first thing to change.",
+       "ar": "افتراضات التقييم جزء من السياق؛ اكتبها لأنها أول ما يتغير."
+      },
+      "checks": [
+       {
+        "ar": "هل وُثق سياق التقييم الخارجي والداخلي؟",
+        "en": "Was the assessment's external and internal context documented?"
+       },
+       {
+        "ar": "هل حُددت افتراضات التقييم؟",
+        "en": "Were the assessment assumptions recorded?"
+       },
+       {
+        "ar": "هل حُددت الأطراف المعنية بالنشاط؟",
+        "en": "Were the activity's stakeholders identified?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.4.2",
+         "why": {
+          "ar": "السياق يكشف مصادر المخاطر.",
+          "en": "Context reveals risk sources."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.4.1",
+         "why": {
+          "ar": "سياق المنظمة أساس سياق كل تقييم.",
+          "en": "The organization's context underpins each assessment's context."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.3.4",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Defining risk criteria",
+       "ar": "تحديد معايير المخاطر"
+      },
+      "req": {
+       "en": "The organization specifies the amount and type of risk it may or may not take relative to objectives, and criteria to evaluate the significance of risk and support decisions. Criteria align with the framework, are set at the start of the assessment and are dynamic, reviewed as needed. They consider the nature and type of uncertainties, how consequences and likelihood are defined and measured, time-related factors, consistency of measurement, how the level of risk is determined, combinations and sequences of risks, and the organization's capacity.",
+       "ar": "تحدد المنظمة مقدار ونوع المخاطر التي يمكنها أو لا يمكنها تحملها قياساً بأهدافها، ومعايير تقييم أهمية المخاطر ودعم القرار. تتسق المعايير مع الإطار، وتُحدد في بداية التقييم وتكون ديناميكية تُراجع عند الحاجة. تراعي طبيعة ونوع حالات عدم اليقين، وكيفية تعريف وقياس الآثار والاحتمالية، وعامل الزمن، واتساق القياسات، وكيفية تحديد مستوى الخطر، ومراعاة تراكب المخاطر وتعاقبها، وقدرة المنظمة."
+      },
+      "ex": {
+       "en": "The company adopted a five-level consequence scale across financial (from under SAR 100k to over SAR 10m), safety (first aid to fatality), reputation, compliance and schedule dimensions, and a likelihood scale from 'rare: less than once in 10 years' to 'almost certain: several times a year'. Ratings were linked to the risk appetite for each category.",
+       "ar": "اعتمدت الشركة مقياس أثر من خمسة مستويات بأبعاد: مالي (من أقل من 100 ألف ريال إلى أكثر من 10 ملايين)، والسلامة (من إسعاف أولي إلى وفاة)، والسمعة، والامتثال، والجدول الزمني. ومقياس احتمال من «نادر: أقل من مرة كل 10 سنوات» إلى «شبه مؤكد: عدة مرات في السنة». وربطت الدرجات بالرغبة في المخاطر لكل فئة."
+      },
+      "how": [
+       {
+        "en": "Define consequence scales across several dimensions with specific values.",
+        "ar": "عرّف مقاييس الأثر بأبعاد متعددة وقيم محددة."
+       },
+       {
+        "en": "Define likelihood with clear frequencies or probabilities.",
+        "ar": "عرّف مقياس الاحتمال بتكرار أو نسبة واضحة."
+       },
+       {
+        "en": "Set risk levels, the action each requires and their link to appetite.",
+        "ar": "حدد مستويات الخطر والإجراء المطلوب لكل مستوى، واربطها بالرغبة في المخاطر."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Approved risk criteria table",
+        "ar": "جدول معايير المخاطر المعتمد"
+       },
+       {
+        "en": "Appetite and tolerance statement",
+        "ar": "بيان الرغبة والتحمل"
+       },
+       {
+        "en": "Escalation rules",
+        "ar": "قواعد التصعيد"
+       }
+      ],
+      "tip": {
+       "en": "Vague criteria ('major impact') produce ratings that cannot be compared. Use numbers and examples for every level.",
+       "ar": "المعايير الغامضة («أثر كبير») تنتج تقييمات لا يمكن مقارنتها. استخدم أرقاماً وأمثلة لكل مستوى."
+      },
+      "checks": [
+       {
+        "ar": "هل مقاييس الاحتمال والأثر محددة بأرقام وأمثلة؟",
+        "en": "Are likelihood and consequence scales defined with numbers and examples?"
+       },
+       {
+        "ar": "هل ترتبط مستويات الخطر بالرغبة في المخاطر وقواعد التصعيد؟",
+        "en": "Are risk levels linked to appetite and escalation rules?"
+       },
+       {
+        "ar": "متى رُوجعت المعايير آخر مرة؟",
+        "en": "When were the criteria last reviewed?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.4.3",
+         "why": {
+          "ar": "المعايير تحدد مقاييس التحليل.",
+          "en": "Criteria set the analysis scales."
+         }
+        },
+        {
+         "ref": "6.4.4",
+         "why": {
+          "ar": "المعايير هي أساس التقييم.",
+          "en": "Criteria are the basis of evaluation."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4b",
+         "why": {
+          "ar": "النهج المنظم يعتمد معايير موحدة.",
+          "en": "A structured approach relies on common criteria."
+         }
+        },
+        {
+         "ref": "5.2",
+         "why": {
+          "ar": "المجلس يعتمد الرغبة التي تحدد المعايير.",
+          "en": "The board approves the appetite that shapes the criteria."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.4.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Risk identification",
+       "ar": "تحديد المخاطر"
+      },
+      "req": {
+       "en": "The purpose is to find, recognize and describe risks that might help or prevent the organization from achieving its objectives. Relevant, up-to-date information is important. The organization considers tangible and intangible sources, causes and events, threats and opportunities, vulnerabilities and capabilities, changes in context, indicators of emerging risks, the nature and value of assets and resources, consequences and their impact on objectives, limits of knowledge and reliability of information, time-related factors, and biases and assumptions. Risks are identified whether or not their sources are under the organization's control.",
+       "ar": "الغرض إيجاد ووصف المخاطر التي قد تساعد المنظمة في تحقيق أهدافها أو تمنعها من ذلك. المعلومات المناسبة والحديثة مهمة. تراعي المنظمة: المصادر الملموسة وغير الملموسة، والأسباب والأحداث، والتهديدات والفرص، ونقاط الضعف والقدرات، والتغيرات في السياق، ومؤشرات المخاطر الناشئة، وطبيعة الأصول والموارد، والآثار على الأهداف، وحدود المعرفة وموثوقية المعلومات، والعوامل الزمنية، والتحيزات والافتراضات. المخاطر تُحدد سواء كانت مصادرها تحت سيطرة المنظمة أم لا."
+      },
+      "ex": {
+       "en": "At the solar bid workshop the team used checklists from past projects, 'what if' analysis and interviews with the technology partner. It identified 34 risks and opportunities, including the opportunity to gain local content incentives by fabricating structures locally.",
+       "ar": "في ورشة عطاء المحطة الشمسية استخدم الفريق قوائم مراجعة من مشاريع سابقة وتحليل «ماذا لو» ومقابلات مع الشريك التقني، فحدد 34 خطراً وفرصة، منها فرصة الحصول على حوافز المحتوى المحلي إذا صُنعت الهياكل محلياً."
+      },
+      "how": [
+       {
+        "en": "Use more than one technique: workshop, checklists, interviews, historical data.",
+        "ar": "استخدم أكثر من أسلوب: ورشة، قوائم مراجعة، مقابلات، تحليل بيانات سابقة."
+       },
+       {
+        "en": "Write each risk as: because of (cause), (event) may occur, leading to (effect on objective).",
+        "ar": "اكتب كل خطر بصيغة: بسبب (سبب)، قد يحدث (حدث)، مما يؤدي إلى (أثر على الهدف)."
+       },
+       {
+        "en": "Identify opportunities as well as threats.",
+        "ar": "حدد الفرص إلى جانب التهديدات."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Initial risk register",
+        "ar": "سجل المخاطر الأولي"
+       },
+       {
+        "en": "Workshop output",
+        "ar": "مخرجات الورشة"
+       },
+       {
+        "en": "Opportunity list",
+        "ar": "قائمة الفرص"
+       }
+      ],
+      "tip": {
+       "en": "'Lack of resources' is not a risk; it is a cause. The risk is the uncertain event and its effect on the objective.",
+       "ar": "«نقص الموارد» ليس خطراً بل سبب. الخطر هو الحدث غير المؤكد وأثره على الهدف."
+      },
+      "checks": [
+       {
+        "ar": "ما الأساليب المستخدمة لتحديد المخاطر؟",
+        "en": "Which techniques are used to identify risks?"
+       },
+       {
+        "ar": "هل تُكتب المخاطر بصيغة سبب ← حدث ← أثر؟",
+        "en": "Are risks written as cause → event → consequence?"
+       },
+       {
+        "ar": "هل تُحدد الفرص إلى جانب التهديدات؟",
+        "en": "Are opportunities identified alongside threats?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.4.3",
+         "why": {
+          "ar": "المخاطر المحددة تُحلل.",
+          "en": "Identified risks are analysed."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.3.2",
+         "why": {
+          "ar": "النطاق يحدد حدود التحديد.",
+          "en": "Scope sets the boundaries of identification."
+         }
+        },
+        {
+         "ref": "6.3.3",
+         "why": {
+          "ar": "السياق يكشف مصادر المخاطر.",
+          "en": "Context reveals risk sources."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.4.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Risk analysis",
+       "ar": "تحليل المخاطر"
+      },
+      "req": {
+       "en": "The purpose is to comprehend the nature of risk and its characteristics, including the level of risk where appropriate. It involves detailed consideration of uncertainties, risk sources, consequences, likelihood, events, scenarios, controls and their effectiveness. An event can have multiple causes and consequences. Analysis can be qualitative, quantitative or a combination, depending on purpose and data.",
+       "ar": "الغرض فهم طبيعة الخطر وخصائصه، بما في ذلك مستواه عند الاقتضاء. يشمل النظر التفصيلي في حالات عدم اليقين ومصادر المخاطر والآثار والاحتمالية والأحداث والسيناريوهات والضوابط وفعاليتها. قد يكون للحدث أسباب وآثار متعددة. يمكن أن يكون التحليل نوعياً أو كمياً أو مزيجاً حسب الغرض وتوفر البيانات."
+      },
+      "ex": {
+       "en": "The company analysed the risk of high temperatures on labour productivity: likelihood 4 (every summer), consequence 3 (3–6 weeks' delay), existing controls (summer night shifts) partly adequate. Inherent risk 12, residual 9. For panel shipment delays it used a Monte Carlo schedule analysis.",
+       "ar": "حللت الشركة خطر ارتفاع درجات الحرارة على إنتاجية العمالة: الاحتمال 4 (يحدث كل صيف)، والأثر 3 (تأخير 3–6 أسابيع)، والضوابط الحالية (نوبات ليلية صيفاً) كافية جزئياً. الخطر الكامن 12 والمتبقي 9. ولخطر تأخر شحنات الألواح استخدمت تحليل مونت كارلو للجدول."
+      },
+      "how": [
+       {
+        "en": "Rate likelihood and consequence using the approved criteria (6.3.4).",
+        "ar": "قدّر الاحتمال والأثر باستخدام المعايير المعتمدة (6.3.4)."
+       },
+       {
+        "en": "Assess existing controls and their effectiveness before setting the residual level.",
+        "ar": "قيّم الضوابط الحالية وفعاليتها قبل تحديد المستوى المتبقي."
+       },
+       {
+        "en": "Use quantitative techniques for major risks where data allows.",
+        "ar": "استخدم أدوات كمية للمخاطر الكبيرة إذا توفرت البيانات."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Likelihood and consequence ratings",
+        "ar": "تقديرات الاحتمال والأثر"
+       },
+       {
+        "en": "Control effectiveness assessment",
+        "ar": "تقييم فعالية الضوابط"
+       },
+       {
+        "en": "Quantitative analyses where needed",
+        "ar": "تحليلات كمية عند الحاجة"
+       }
+      ],
+      "tip": {
+       "en": "Distinguish inherent risk (before controls) from residual (after). The gap reveals the critical controls that must not fail.",
+       "ar": "ميّز بين الخطر الكامن (قبل الضوابط) والمتبقي (بعدها). التمييز يكشف الضوابط الحرجة التي يجب ألا تفشل."
+      },
+      "checks": [
+       {
+        "ar": "هل تُقدَّر المخاطر وفق المعايير المعتمدة؟",
+        "en": "Are risks rated using the approved criteria?"
+       },
+       {
+        "ar": "هل تُقيّم فعالية الضوابط قبل تحديد الخطر المتبقي؟",
+        "en": "Is control effectiveness assessed before setting residual risk?"
+       },
+       {
+        "ar": "هل تُستخدم أساليب كمية للمخاطر الكبيرة؟",
+        "en": "Are quantitative techniques used for major risks?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.4.4",
+         "why": {
+          "ar": "مستوى الخطر يُقارن بالمعايير.",
+          "en": "The risk level is compared with the criteria."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4f",
+         "why": {
+          "ar": "أفضل المعلومات تغذي التحليل.",
+          "en": "Best information feeds the analysis."
+         }
+        },
+        {
+         "ref": "6.3.4",
+         "why": {
+          "ar": "المعايير تحدد مقاييس التحليل.",
+          "en": "Criteria set the analysis scales."
+         }
+        },
+        {
+         "ref": "6.4.2",
+         "why": {
+          "ar": "المخاطر المحددة تُحلل.",
+          "en": "Identified risks are analysed."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.4.4",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Risk evaluation",
+       "ar": "تقييم المخاطر"
+      },
+      "req": {
+       "en": "The purpose is to support decisions by comparing the results of analysis with the risk criteria to determine where additional action is required. Outcomes can be to do nothing further, consider treatment options, undertake further analysis, maintain existing controls or reconsider objectives. Decisions take account of the wider context and the actual and perceived consequences for stakeholders.",
+       "ar": "الغرض دعم القرار بمقارنة نتائج التحليل بمعايير المخاطر لتحديد أين يلزم إجراء إضافي. قد يؤدي إلى: عدم فعل شيء إضافي، أو دراسة خيارات المعالجة، أو مزيد من التحليل، أو الإبقاء على الضوابط الحالية، أو إعادة النظر في الأهداف. يراعي القرار السياق الأوسع والآثار الفعلية والمتصورة على الأطراف المعنية."
+      },
+      "ex": {
+       "en": "The company compared residual risks with appetite: six were above appetite and needed treatment before bid submission, and eleven were within appetite with monitoring. For the high delay-penalty risk, management decided the exposure exceeded its capacity and made a lower penalty cap a condition for bidding.",
+       "ar": "قارنت الشركة المخاطر المتبقية بالرغبة: 6 مخاطر فوق الرغبة تتطلب معالجة قبل تقديم العطاء، و11 ضمن الرغبة مع المراقبة. ولخطر غرامات التأخير المرتفعة قررت الإدارة أن الخطر يتجاوز قدرتها، فاشترطت تعديل سقف الغرامات للدخول في العطاء."
+      },
+      "how": [
+       {
+        "en": "Compare each residual risk with the appetite threshold for its category.",
+        "ar": "قارن كل خطر متبقٍ بحد الرغبة لفئته."
+       },
+       {
+        "en": "Decide for each risk: accept, treat, analyse further or escalate.",
+        "ar": "حدد القرار لكل خطر: قبول، معالجة، تحليل إضافي، أو تصعيد."
+       },
+       {
+        "en": "Record the decision, who made it and why.",
+        "ar": "وثّق القرار ومن اتخذه ومبرره."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Comparison with criteria",
+        "ar": "نتائج المقارنة بالمعايير"
+       },
+       {
+        "en": "Documented evaluation decisions",
+        "ar": "قرارات التقييم الموثقة"
+       },
+       {
+        "en": "Escalated risk list",
+        "ar": "قائمة المخاطر المصعّدة"
+       }
+      ],
+      "tip": {
+       "en": "Evaluation is the moment of decision. A report that ends with a coloured matrix and no decision has not completed the step.",
+       "ar": "التقييم هو لحظة القرار. تقرير ينتهي بمصفوفة ملونة دون قرار لم يُكمل الخطوة."
+      },
+      "checks": [
+       {
+        "ar": "هل يُقارن كل خطر متبقٍ بالرغبة في المخاطر؟",
+        "en": "Is each residual risk compared with appetite?"
+       },
+       {
+        "ar": "هل تُوثق قرارات القبول والمعالجة والتصعيد؟",
+        "en": "Are acceptance, treatment and escalation decisions recorded?"
+       },
+       {
+        "ar": "من يتخذ القرار لكل مستوى خطر؟",
+        "en": "Who decides at each risk level?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.5.2",
+         "why": {
+          "ar": "المخاطر فوق الرغبة تحتاج خيارات معالجة.",
+          "en": "Risks above appetite need treatment options."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.3.4",
+         "why": {
+          "ar": "المعايير هي أساس التقييم.",
+          "en": "Criteria are the basis of evaluation."
+         }
+        },
+        {
+         "ref": "6.4.3",
+         "why": {
+          "ar": "مستوى الخطر يُقارن بالمعايير.",
+          "en": "The risk level is compared with the criteria."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.5.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Selection of risk treatment options",
+       "ar": "اختيار خيارات معالجة المخاطر"
+      },
+      "req": {
+       "en": "Selecting the most appropriate option balances potential benefits against the cost, effort or disadvantages of implementation. Options are not necessarily mutually exclusive and include: avoiding the risk by not starting or continuing the activity; taking or increasing the risk to pursue an opportunity; removing the risk source; changing the likelihood; changing the consequences; sharing the risk (contracts, insurance); and retaining the risk by informed decision. Stakeholder values and perceptions are considered, and treatment can introduce new risks.",
+       "ar": "اختيار الخيار الأنسب يوازن بين الفوائد المحتملة وتكلفة التطبيق أو الجهد أو العيوب. الخيارات ليست متنافية بالضرورة وتشمل: تجنب الخطر بعدم بدء النشاط أو إيقافه، أو قبول الخطر أو زيادته لاقتناص فرصة، أو إزالة مصدر الخطر، أو تغيير الاحتمالية، أو تغيير الآثار، أو مشاركة الخطر (عقود، تأمين)، أو الاحتفاظ بالخطر بقرار مدروس. تراعي المنظمة قيم الأطراف وتصوراتها، وقد تُدخل المعالجة مخاطر جديدة."
+      },
+      "ex": {
+       "en": "For panel price volatility the company chose a combination: changing likelihood (a six-month fixed-price framework agreement) and sharing (a price adjustment clause with the client). For penalties it changed the consequence (a 10% cap). It avoided the long-term operation element entirely by not bidding for it.",
+       "ar": "لخطر تقلب أسعار الألواح اختارت الشركة مزيجاً: تغيير الاحتمالية (عقد إطاري بسعر ثابت 6 أشهر)، ومشاركة الخطر (بند تعديل أسعار مع العميل)، ولخطر الغرامات تغيير الأثر (سقف 10%). وتجنبت كلياً عنصر التشغيل طويل الأجل بعدم تقديمه."
+      },
+      "how": [
+       {
+        "en": "Consider more than one option for every risk above appetite.",
+        "ar": "اطرح أكثر من خيار لكل خطر فوق الرغبة."
+       },
+       {
+        "en": "Compare options on cost, benefit and any new risks they create.",
+        "ar": "قارن الخيارات بالتكلفة والفائدة والمخاطر الجديدة التي قد تنشأ."
+       },
+       {
+        "en": "Have the option approved by the right authority for that risk level.",
+        "ar": "اعتمد الخيار من صاحب الصلاحية حسب مستوى الخطر."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Option analysis",
+        "ar": "تحليل الخيارات"
+       },
+       {
+        "en": "Approved treatment decision",
+        "ar": "قرار المعالجة المعتمد"
+       },
+       {
+        "en": "Secondary risks created",
+        "ar": "المخاطر الثانوية الناتجة"
+       }
+      ],
+      "tip": {
+       "en": "Retaining a risk is legitimate as long as it is an informed, documented decision by someone with the authority, not the result of neglect.",
+       "ar": "«قبول الخطر» خيار مشروع بشرط أن يكون قراراً واعياً موثقاً من صاحب صلاحية، لا نتيجة إهمال."
+      },
+      "checks": [
+       {
+        "ar": "هل دُرس أكثر من خيار معالجة للمخاطر المرتفعة؟",
+        "en": "Were several treatment options considered for high risks?"
+       },
+       {
+        "ar": "هل قبول المخاطر قرار موثق من صاحب صلاحية؟",
+        "en": "Is risk retention a documented decision by the right authority?"
+       },
+       {
+        "ar": "هل حُددت المخاطر الثانوية الناتجة عن المعالجة؟",
+        "en": "Were secondary risks from treatment identified?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.5.3",
+         "why": {
+          "ar": "الخيار المختار يصبح خطة.",
+          "en": "The chosen option becomes a plan."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.4.4",
+         "why": {
+          "ar": "المخاطر فوق الرغبة تحتاج خيارات معالجة.",
+          "en": "Risks above appetite need treatment options."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.5.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Preparing and implementing risk treatment plans",
+       "ar": "إعداد وتطبيق خطط المعالجة"
+      },
+      "req": {
+       "en": "Treatment plans specify how the chosen options will be implemented so those involved understand the arrangements and progress can be monitored. They cover the rationale and expected benefits, who approves and implements, the actions, resources, performance measures, constraints, required reporting and monitoring, and when actions start and finish. They are integrated into management plans and processes in consultation with stakeholders, and the remaining risk after treatment is identified and judged acceptable or not.",
+       "ar": "توضح خطط المعالجة كيف ستُطبق الخيارات المختارة ليفهمها المعنيون ويُراقب تقدمها. تشمل: مبرر الاختيار والفوائد المتوقعة، والمسؤولين عن الاعتماد والتطبيق، والإجراءات، والموارد، ومقاييس الأداء، والقيود، والتقارير والمراقبة المطلوبة، ومواعيد التنفيذ والإنجاز. تُدمج في خطط وعمليات الإدارة بالتشاور مع الأطراف، ويُحدد الخطر المتبقي بعد المعالجة ويُقرر هل هو مقبول."
+      },
+      "ex": {
+       "en": "The treatment plan for transformer delays: action, contracts with two manufacturers and early ordering; owner, procurement manager; resources, a 15% advance payment; indicator, share of orders confirmed 20 weeks ahead; deadline, two weeks before contract award; target risk after treatment 6 instead of 15.",
+       "ar": "خطة معالجة خطر تأخر المحولات: الإجراء عقد مع مصنعين اثنين وطلب مبكر، والمسؤول مدير المشتريات، والموارد دفعة مقدمة 15%، والمؤشر نسبة الطلبات المؤكدة قبل 20 أسبوعاً، والموعد قبل ترسية العقد بأسبوعين، والخطر المستهدف بعد المعالجة 6 بدلاً من 15."
+      },
+      "how": [
+       {
+        "en": "For each treatment record the action, owner, resources, deadline, indicator and target risk.",
+        "ar": "اكتب لكل معالجة: الإجراء، والمسؤول، والموارد، والموعد، والمؤشر، والخطر المستهدف."
+       },
+       {
+        "en": "Build the actions into project plans and budgets.",
+        "ar": "أدرج الإجراءات في خطط المشاريع والميزانيات."
+       },
+       {
+        "en": "After implementation check the residual risk is now within appetite.",
+        "ar": "تحقق بعد التطبيق من أن الخطر المتبقي أصبح ضمن الرغبة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Treatment plans",
+        "ar": "خطط المعالجة"
+       },
+       {
+        "en": "Implementation tracking",
+        "ar": "متابعة التنفيذ"
+       },
+       {
+        "en": "Residual risk after treatment",
+        "ar": "الخطر المتبقي بعد المعالجة"
+       }
+      ],
+      "tip": {
+       "en": "A treatment plan without an owner and a date is a wish. Track it like any other project.",
+       "ar": "خطة معالجة بلا مالك وموعد مجرد أمنية. تابعها كما تتابع أي مشروع."
+      },
+      "checks": [
+       {
+        "ar": "هل لكل خطة معالجة مالك وموارد وموعد ومؤشر؟",
+        "en": "Does every treatment plan have an owner, resources, a deadline and an indicator?"
+       },
+       {
+        "ar": "ما نسبة خطط المعالجة المنفذة في موعدها؟",
+        "en": "What share of treatment plans are completed on time?"
+       },
+       {
+        "ar": "هل تُحقق من الخطر المتبقي بعد المعالجة؟",
+        "en": "Is residual risk verified after treatment?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.6",
+         "why": {
+          "ar": "المعالجة تُراقب حتى الإنجاز.",
+          "en": "Treatment is monitored to completion."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.4.3",
+         "why": {
+          "ar": "الأدوار تحدد مالكي خطط المعالجة.",
+          "en": "Roles determine who owns treatment plans."
+         }
+        },
+        {
+         "ref": "6.5.2",
+         "why": {
+          "ar": "الخيار المختار يصبح خطة.",
+          "en": "The chosen option becomes a plan."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.6",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Monitoring and review",
+       "ar": "المراقبة والمراجعة"
+      },
+      "req": {
+       "en": "The purpose is to assure and improve the quality and effectiveness of process design, implementation and outcomes. Ongoing monitoring and periodic review are planned parts of the process with clearly defined responsibilities, covering all stages: planning, gathering and analysing information, recording results and providing feedback. Results are incorporated into performance management, measurement and reporting.",
+       "ar": "الغرض ضمان وتحسين جودة وفعالية تصميم العملية وتطبيقها ونتائجها. المراقبة المستمرة والمراجعة الدورية جزء مخطط من العملية مع مسؤوليات محددة، وتشمل كل مراحلها: التخطيط، وجمع المعلومات وتحليلها، وتسجيل النتائج، وتقديم الملاحظات. ونتائجها تُدمج في إدارة الأداء والقياس والتقارير."
+      },
+      "ex": {
+       "en": "The company monitors key risk indicators: average days to collect interim payments (red limit 120 days), engineer turnover (limit 15%) and the share of long-lead orders confirmed. Risk owners review their risks monthly for projects and quarterly for strategic risks, and the risk manager challenges the ratings.",
+       "ar": "تراقب الشركة مؤشرات مخاطر رئيسية: متوسط أيام تحصيل المستخلصات (حد أحمر 120 يوماً)، ودوران المهندسين (حد 15%)، ونسبة الطلبات طويلة التوريد المؤكدة. يُراجع مالك الخطر خطره شهرياً للمشاريع وربع سنوياً للمخاطر الاستراتيجية، ويتحدى مدير المخاطر التقييمات."
+      },
+      "how": [
+       {
+        "en": "Set key risk indicators with alert thresholds for significant risks.",
+        "ar": "حدد مؤشرات مخاطر رئيسية بحدود إنذار للمخاطر المهمة."
+       },
+       {
+        "en": "Set a review frequency for each risk based on its level.",
+        "ar": "ضع دورية مراجعة لكل خطر حسب مستواه."
+       },
+       {
+        "en": "Test critical controls rather than assume they work.",
+        "ar": "راجع فعالية الضوابط الحرجة بالاختبار لا بالافتراض."
+       }
+      ],
+      "ev": [
+       {
+        "en": "KRI register",
+        "ar": "سجل مؤشرات المخاطر الرئيسية"
+       },
+       {
+        "en": "Review dates in the register",
+        "ar": "تواريخ المراجعة في السجل"
+       },
+       {
+        "en": "Control test results",
+        "ar": "نتائج اختبار الضوابط"
+       }
+      ],
+      "tip": {
+       "en": "Monitoring asks 'has the risk changed?'; review asks 'does the process work?'. You need both.",
+       "ar": "المراقبة تسأل «هل تغير الخطر؟»، والمراجعة تسأل «هل تعمل العملية؟». تحتاج الاثنين."
+      },
+      "checks": [
+       {
+        "ar": "هل توجد مؤشرات مخاطر رئيسية بحدود إنذار للمخاطر المهمة؟",
+        "en": "Are there KRIs with alert thresholds for significant risks?"
+       },
+       {
+        "ar": "هل تُراجع المخاطر بدورية تناسب مستواها؟",
+        "en": "Are risks reviewed at a frequency matching their level?"
+       },
+       {
+        "ar": "هل تُختبر الضوابط الحرجة؟",
+        "en": "Are critical controls tested?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.7",
+         "why": {
+          "ar": "نتائج المراقبة تُسجل ويُبلغ عنها.",
+          "en": "Monitoring results are recorded and reported."
+         }
+        },
+        {
+         "ref": "5.6",
+         "why": {
+          "ar": "المراقبة تغذي تقييم الإطار.",
+          "en": "Monitoring feeds framework evaluation."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4e",
+         "why": {
+          "ar": "الديناميكية تتطلب المراقبة المستمرة.",
+          "en": "Being dynamic requires ongoing monitoring."
+         }
+        },
+        {
+         "ref": "6.5.3",
+         "why": {
+          "ar": "المعالجة تُراقب حتى الإنجاز.",
+          "en": "Treatment is monitored to completion."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.7",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Recording and reporting",
+       "ar": "التسجيل والإبلاغ"
+      },
+      "req": {
+       "en": "The risk management process and its outcomes are documented and reported through appropriate mechanisms in order to: communicate activities and outcomes, provide information for decision-making, improve risk management activities, and assist interaction with stakeholders, including those responsible for risk. Reporting is part of governance and considers the different stakeholders and their needs, the cost, frequency and timeliness of reporting, the method, and the relevance of information.",
+       "ar": "تُوثق عملية إدارة المخاطر ونتائجها وتُبلغ عبر الآليات المناسبة بهدف: إيصال الأنشطة والنتائج، وتوفير معلومات للقرار، وتحسين أنشطة إدارة المخاطر، ودعم التفاعل مع الأطراف ومنهم المسؤولون عن المخاطر. التقارير جزء من الحوكمة وتراعي الأطراف المختلفة واحتياجاتهم، وتكلفة التقرير وتكراره وتوقيته، والطريقة، وأهمية المعلومات."
+      },
+      "ex": {
+       "en": "The company issues a monthly risk dashboard per project for the project manager, a quarterly report to the risk committee with the top 15 risks, risks above appetite and red KRIs, and a principal risks section in the annual report. The register keeps a change log for every edit.",
+       "ar": "تصدر الشركة: لوحة مخاطر شهرية لكل مشروع لمدير المشروع، وتقريراً ربع سنوياً للجنة المخاطر بأعلى 15 خطراً والمخاطر فوق الرغبة والمؤشرات الحمراء، وقسماً عن المخاطر الرئيسية في التقرير السنوي. ويُحفظ السجل بسجل تغييرات لكل تعديل."
+      },
+      "how": [
+       {
+        "en": "Design reports by audience: operational, management, board.",
+        "ar": "صمم التقارير حسب الجمهور: تشغيلي، إداري، مجلس."
+       },
+       {
+        "en": "In the board report highlight risks above appetite, changes, red KRIs and decisions needed.",
+        "ar": "أبرز في تقرير المجلس: المخاطر فوق الرغبة، والتغيرات، والمؤشرات الحمراء، والقرارات المطلوبة."
+       },
+       {
+        "en": "Keep a history of assessments and decisions.",
+        "ar": "احتفظ بسجل تاريخي للتقييمات والقرارات."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Periodic risk reports",
+        "ar": "تقارير المخاطر الدورية"
+       },
+       {
+        "en": "Register with change log",
+        "ar": "سجل المخاطر بسجل التغييرات"
+       },
+       {
+        "en": "Board decisions on risk reports",
+        "ar": "قرارات المجلس على تقارير المخاطر"
+       }
+      ],
+      "tip": {
+       "en": "This step was added explicitly in 2018. A good board report is short and asks for a decision; it does not reproduce the register.",
+       "ar": "أُضيفت هذه الخطوة صراحة في 2018. تقرير المجلس الجيد قصير ويطلب قراراً، لا ينسخ السجل كاملاً."
+      },
+      "checks": [
+       {
+        "ar": "ما التقارير الدورية ولمن تُرفع؟",
+        "en": "What periodic reports exist, and to whom?"
+       },
+       {
+        "ar": "هل يتضمن تقرير المجلس المخاطر فوق الرغبة والقرارات المطلوبة؟",
+        "en": "Does the board report show risks above appetite and decisions needed?"
+       },
+       {
+        "ar": "هل يحتفظ السجل بسجل تغييرات تاريخي؟",
+        "en": "Does the register keep a history of changes?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "5.2",
+         "why": {
+          "ar": "التقارير تصل للمجلس للقرار.",
+          "en": "Reports reach the board for decision."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.6",
+         "why": {
+          "ar": "نتائج المراقبة تُسجل ويُبلغ عنها.",
+          "en": "Monitoring results are recorded and reported."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "changes": [
+   {
+    "title": {
+     "en": "Principles: from 11 to 8 with a clear purpose",
+     "ar": "المبادئ: من 11 إلى 8 مع غاية واضحة"
+    },
+    "text": {
+     "en": "The principles were rewritten as eight criteria for effectiveness, and 'value creation and protection' became the purpose they serve instead of one principle among others.",
+     "ar": "أعيدت صياغة المبادئ لتصبح ثمانية معايير للفعالية، وأصبح «خلق القيمة وحمايتها» هو الغاية التي تخدمها المبادئ بدلاً من أن يكون مبدأً بين المبادئ."
+    },
+    "refs": [
+     "4a",
+     "4h"
+    ]
+   },
+   {
+    "title": {
+     "en": "Leadership and commitment at the heart of the framework",
+     "ar": "القيادة والالتزام في قلب الإطار"
+    },
+    "text": {
+     "en": "'Leadership and commitment' replaced 'mandate and commitment', with an explicit role for oversight bodies (the board) in understanding risk and considering it when setting objectives.",
+     "ar": "حلت «القيادة والالتزام» محل «التفويض والالتزام»، مع دور صريح لجهات الإشراف (المجلس) في التأكد من فهم المخاطر ومراعاتها عند وضع الأهداف."
+    },
+    "refs": [
+     "5.2"
+    ]
+   },
+   {
+    "title": {
+     "en": "Integration as a framework component",
+     "ar": "الدمج عنصر مستقل في الإطار"
+    },
+    "text": {
+     "en": "Integrating risk management into governance, strategy and operations became a component in its own right, stressing that everyone manages risk within their own area.",
+     "ar": "أصبح دمج إدارة المخاطر في الحوكمة والاستراتيجية والعمليات عنصراً قائماً بذاته، مع تأكيد أن كل شخص مسؤول عن إدارة المخاطر في نطاق عمله."
+    },
+    "refs": [
+     "5.3"
+    ]
+   },
+   {
+    "title": {
+     "en": "Iterative and dynamic nature",
+     "ar": "الطبيعة التكرارية والديناميكية"
+    },
+    "text": {
+     "en": "Greater emphasis that the process is iterative and that new experience and information continually revise its elements, actions and controls.",
+     "ar": "تأكيد أكبر أن العملية تكرارية وأن الخبرات والمعلومات الجديدة تعيد النظر في عناصرها وإجراءاتها وضوابطها باستمرار."
+    },
+    "refs": [
+     "4e",
+     "6.6"
+    ]
+   },
+   {
+    "title": {
+     "en": "Human and cultural factors and inclusion",
+     "ar": "العوامل البشرية والثقافية والشمول"
+    },
+    "text": {
+     "en": "More weight on behaviour, culture and timely stakeholder involvement, because they shape what gets reported and how risks are rated.",
+     "ar": "وزن أكبر لسلوك الناس وثقافة المنظمة وإشراك الأطراف المعنية في الوقت المناسب، لأنها تحدد ما يُبلَّغ عنه وكيف تُقدَّر المخاطر."
+    },
+    "refs": [
+     "4g",
+     "4d"
+    ]
+   },
+   {
+    "title": {
+     "en": "Scope, context and criteria",
+     "ar": "النطاق والسياق والمعايير"
+    },
+    "text": {
+     "en": "'Establishing the context' became 'scope, context and criteria', with more detail on risk criteria and the point that they are dynamic and reviewed as needed.",
+     "ar": "توسعت خطوة «تحديد السياق» لتصبح «النطاق والسياق والمعايير»، مع تفصيل أكبر لمعايير المخاطر وأنها ديناميكية تُراجع عند الحاجة."
+    },
+    "refs": [
+     "6.3.2",
+     "6.3.4"
+    ]
+   },
+   {
+    "title": {
+     "en": "Recording and reporting as an explicit step",
+     "ar": "التسجيل والإبلاغ خطوة صريحة"
+    },
+    "text": {
+     "en": "Recording and reporting was added to the process to link risk management outcomes with governance, decision-making and stakeholder communication.",
+     "ar": "أضيفت خطوة التسجيل والإبلاغ إلى العملية لربط نتائج إدارة المخاطر بالحوكمة والقرار والتواصل مع الأطراف."
+    },
+    "refs": [
+     "6.7"
+    ]
+   },
+   {
+    "title": {
+     "en": "Clearer treatment options",
+     "ar": "خيارات المعالجة بوضوح أكبر"
+    },
+    "text": {
+     "en": "The treatment options are clearer and explicitly include taking or increasing risk to pursue an opportunity, with a warning that treatment can introduce new risks.",
+     "ar": "قائمة خيارات المعالجة أوضح، وتشمل صراحة قبول الخطر أو زيادته لاقتناص فرصة، مع التنبيه إلى أن المعالجة قد تُدخل مخاطر جديدة."
+    },
+    "refs": [
+     "6.5.2"
+    ]
+   },
+   {
+    "title": {
+     "en": "Shorter document, fewer terms",
+     "ar": "وثيقة أقصر ومصطلحات أقل"
+    },
+    "text": {
+     "en": "The standard became shorter and plainer, terms fell from 29 to 8, and the wider vocabulary moved to ISO 31073:2022, which replaced ISO Guide 73.",
+     "ar": "أصبحت المواصفة أقصر وأبسط لغة، وتقلصت المصطلحات من 29 إلى 8، وانتقلت المفردات الموسعة إلى ISO 31073:2022 التي حلت محل ISO Guide 73."
+    },
+    "refs": [
+     "3"
+    ]
+   }
+  ],
+  "terms": [
+   {
+    "no": "31000 · 3.1",
+    "en": "Risk",
+    "ar": "الخطر",
+    "def": {
+     "ar": "أثر عدم اليقين على تحقيق الأهداف. الأثر انحراف عن المتوقع قد يكون إيجابياً أو سلبياً أو كليهما، ويُعبَّر عنه عادةً بمصادر الخطر والأحداث المحتملة وآثارها واحتماليتها.",
+     "en": "The effect uncertainty has on achieving objectives. The effect is a deviation from what is expected, positive, negative or both, and is usually expressed through risk sources, potential events, their consequences and their likelihood."
+    }
+   },
+   {
+    "no": "31000 · 3.2",
+    "en": "Risk management",
+    "ar": "إدارة المخاطر",
+    "def": {
+     "ar": "الأنشطة المنسقة لتوجيه المنظمة وضبطها فيما يتعلق بالمخاطر.",
+     "en": "Coordinated activities to direct and control an organization with regard to risk."
+    }
+   },
+   {
+    "no": "31000 · 3.3",
+    "en": "Stakeholder",
+    "ar": "الطرف المعني",
+    "def": {
+     "ar": "شخص أو منظمة يمكن أن يؤثر في قرار أو نشاط أو يتأثر به أو يرى أنه يتأثر به.",
+     "en": "A person or organization that can affect, be affected by, or perceive itself to be affected by a decision or activity."
+    }
+   },
+   {
+    "no": "31000 · 3.4",
+    "en": "Risk source",
+    "ar": "مصدر الخطر",
+    "def": {
+     "ar": "عنصر قادر وحده أو مع غيره على إحداث خطر.",
+     "en": "An element which alone or in combination has the potential to give rise to risk."
+    }
+   },
+   {
+    "no": "31000 · 3.5",
+    "en": "Event",
+    "ar": "الحدث",
+    "def": {
+     "ar": "وقوع أو تغير مجموعة معينة من الظروف؛ قد يكون حدثاً واحداً أو أكثر، وقد يكون له أسباب وآثار متعددة، وقد يكون متوقعاً ولا يقع أو غير متوقع ويقع.",
+     "en": "The occurrence or change of a particular set of circumstances; it can be one or more occurrences, have several causes and consequences, and be something expected that does not happen or unexpected that does."
+    }
+   },
+   {
+    "no": "31000 · 3.6",
+    "en": "Consequence",
+    "ar": "الأثر (العاقبة)",
+    "def": {
+     "ar": "نتيجة حدث تؤثر في الأهداف؛ قد تكون مؤكدة أو غير مؤكدة، إيجابية أو سلبية، مباشرة أو غير مباشرة، وقد تتصاعد عبر آثار متتابعة.",
+     "en": "The outcome of an event affecting objectives; it can be certain or uncertain, positive or negative, direct or indirect, and can escalate through cascading effects."
+    }
+   },
+   {
+    "no": "31000 · 3.7",
+    "en": "Likelihood",
+    "ar": "الاحتمالية",
+    "def": {
+     "ar": "فرصة حدوث شيء ما، سواء عُرّفت أو قيست أو حُددت نوعياً أو كمياً، ووُصفت بعبارات عامة أو رياضية.",
+     "en": "The chance of something happening, whether defined, measured or determined objectively or subjectively, qualitatively or quantitatively, and described in general or mathematical terms."
+    }
+   },
+   {
+    "no": "31000 · 3.8",
+    "en": "Control",
+    "ar": "الضابط",
+    "def": {
+     "ar": "إجراء يحافظ على الخطر أو يعدّله، ويشمل العمليات والسياسات والأجهزة والممارسات وغيرها. الضوابط قد لا تحقق دائماً الأثر المقصود أو المفترض.",
+     "en": "A measure that maintains and/or modifies risk, including processes, policies, devices and practices. Controls may not always exert the intended or assumed effect."
+    }
+   },
+   {
+    "no": "31073",
+    "en": "Risk owner",
+    "ar": "مالك الخطر",
+    "def": {
+     "ar": "شخص أو جهة لديها المساءلة والصلاحية لإدارة خطر معين.",
+     "en": "A person or entity with the accountability and authority to manage a risk."
+    }
+   },
+   {
+    "no": "31000 · 6.3.4",
+    "en": "Risk criteria",
+    "ar": "معايير المخاطر",
+    "def": {
+     "ar": "المرجع الذي تُقيَّم به أهمية الخطر، ويُبنى على الأهداف والسياق.",
+     "en": "The terms of reference against which the significance of a risk is evaluated, based on objectives and context."
+    }
+   },
+   {
+    "no": "31073",
+    "en": "Level of risk",
+    "ar": "مستوى الخطر",
+    "def": {
+     "ar": "حجم الخطر معبَّراً عنه بتركيبة الآثار واحتماليتها.",
+     "en": "The magnitude of a risk, expressed as a combination of consequences and their likelihood."
+    }
+   },
+   {
+    "no": "31073",
+    "en": "Risk appetite",
+    "ar": "الرغبة في المخاطر",
+    "def": {
+     "ar": "مقدار ونوع المخاطر التي تكون المنظمة مستعدة لتحمّلها أو السعي إليها أو الاحتفاظ بها.",
+     "en": "The amount and type of risk an organization is willing to pursue, retain or take."
+    }
+   },
+   {
+    "no": "Practice",
+    "en": "Risk tolerance",
+    "ar": "تحمّل المخاطر",
+    "def": {
+     "ar": "الحد المقبول من التباين حول الرغبة في المخاطر، يُعبَّر عنه غالباً بحدود قابلة للقياس لكل هدف أو فئة.",
+     "en": "The acceptable variation around risk appetite, usually expressed as measurable limits for an objective or category."
+    }
+   },
+   {
+    "no": "Practice",
+    "en": "Inherent risk",
+    "ar": "الخطر الكامن",
+    "def": {
+     "ar": "مستوى الخطر قبل احتساب الضوابط القائمة أو بافتراض فشلها.",
+     "en": "The level of risk before existing controls are taken into account, or assuming they fail."
+    }
+   },
+   {
+    "no": "31073",
+    "en": "Residual risk",
+    "ar": "الخطر المتبقي",
+    "def": {
+     "ar": "الخطر الباقي بعد المعالجة أو مع الضوابط القائمة، وقد يتضمن مخاطر غير محددة.",
+     "en": "The risk remaining after treatment or with existing controls; it can include unidentified risk."
+    }
+   },
+   {
+    "no": "31073",
+    "en": "Risk register",
+    "ar": "سجل المخاطر",
+    "def": {
+     "ar": "سجل المعلومات عن المخاطر المحددة: وصفها ومالكها وتقييمها وضوابطها ومعالجتها وحالتها.",
+     "en": "A record of information about identified risks: description, owner, rating, controls, treatment and status."
+    }
+   },
+   {
+    "no": "31073",
+    "en": "Risk profile",
+    "ar": "ملف المخاطر",
+    "def": {
+     "ar": "وصف لمجموعة من المخاطر على مستوى المنظمة أو جزء منها.",
+     "en": "A description of a set of risks relating to the whole organization or part of it."
+    }
+   },
+   {
+    "no": "31000 · 6.5",
+    "en": "Risk treatment",
+    "ar": "معالجة الخطر",
+    "def": {
+     "ar": "عملية اختيار وتطبيق خيارات لتعديل الخطر.",
+     "en": "The process of selecting and implementing options for addressing risk."
+    }
+   },
+   {
+    "no": "Practice",
+    "en": "Key risk indicator (KRI)",
+    "ar": "مؤشر الخطر الرئيسي",
+    "def": {
+     "ar": "مقياس يعطي إنذاراً مبكراً بتغير مستوى خطر، بحدود أخضر وأصفر وأحمر.",
+     "en": "A measure that gives early warning of a change in a risk level, with green, amber and red thresholds."
+    }
+   },
+   {
+    "no": "ISO/TS 31050",
+    "en": "Emerging risk",
+    "ar": "الخطر الناشئ",
+    "def": {
+     "ar": "خطر جديد أو متغير لم يُفهم بعد بشكل كافٍ، ويصعب تقديره لقلة البيانات.",
+     "en": "A new or changing risk that is not yet well understood and is hard to rate because data is scarce."
+    }
+   },
+   {
+    "no": "IEC 31010",
+    "en": "Bow-tie analysis",
+    "ar": "تحليل ربطة العنق",
+    "def": {
+     "ar": "أسلوب يعرض أسباب الحدث وضوابطه الوقائية في جهة، وآثاره وضوابطه المخففة في الجهة الأخرى.",
+     "en": "A technique that shows the causes of an event with preventive controls on one side and its consequences with mitigating controls on the other."
+    }
+   },
+   {
+    "no": "Practice",
+    "en": "Risk culture",
+    "ar": "ثقافة المخاطر",
+    "def": {
+     "ar": "القيم والمعتقدات والمعارف والسلوكيات المشتركة المتعلقة بالمخاطر لدى أفراد المنظمة.",
+     "en": "The shared values, beliefs, knowledge and behaviours about risk among the people of an organization."
+    }
+   },
+   {
+    "no": "31000 · 6.4",
+    "en": "Risk assessment",
+    "ar": "تقدير المخاطر",
+    "def": {
+     "ar": "العملية الشاملة لتحديد المخاطر وتحليلها وتقييمها.",
+     "en": "The overall process of risk identification, risk analysis and risk evaluation."
+    }
+   }
+  ],
+  "pairs": [
+   {
+    "title": {
+     "en": "Risk or issue?",
+     "ar": "خطر أم مشكلة قائمة؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الخطر",
+       "en": "Risk"
+      },
+      "meaning": {
+       "ar": "حدث غير مؤكد لم يقع بعد، يُدار بالتوقع والوقاية.",
+       "en": "An uncertain event that has not happened yet; managed by anticipation and prevention."
+      }
+     },
+     {
+      "term": {
+       "ar": "المشكلة",
+       "en": "Issue"
+      },
+      "meaning": {
+       "ar": "أمر وقع فعلاً ويُدار بالاستجابة والتصحيح.",
+       "en": "Something that has already happened; managed by response and correction."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Likelihood or probability?",
+     "ar": "الاحتمالية أم الاحتمال الرياضي؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الاحتمالية",
+       "en": "Likelihood"
+      },
+      "meaning": {
+       "ar": "مصطلح واسع يشمل الوصف النوعي والكمي لفرصة الحدوث.",
+       "en": "A broad term covering qualitative and quantitative descriptions of chance."
+      }
+     },
+     {
+      "term": {
+       "ar": "الاحتمال",
+       "en": "Probability"
+      },
+      "meaning": {
+       "ar": "قياس رياضي بين 0 و1، وهو صورة واحدة من صور الاحتمالية.",
+       "en": "A mathematical measure between 0 and 1; one form of likelihood."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Appetite or tolerance?",
+     "ar": "الرغبة أم التحمّل؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الرغبة",
+       "en": "Appetite"
+      },
+      "meaning": {
+       "ar": "توجه عام يعتمده المجلس: كم نقبل من الخطر سعياً لأهدافنا.",
+       "en": "A board-level stance: how much risk we accept in pursuit of our objectives."
+      }
+     },
+     {
+      "term": {
+       "ar": "التحمّل",
+       "en": "Tolerance"
+      },
+      "meaning": {
+       "ar": "حدود قابلة للقياس حول الرغبة تطلق التصعيد عند تجاوزها.",
+       "en": "Measurable limits around the appetite that trigger escalation when breached."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Inherent or residual?",
+     "ar": "الكامن أم المتبقي؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الكامن",
+       "en": "Inherent"
+      },
+      "meaning": {
+       "ar": "قبل الضوابط؛ يكشف حجم التعرض لو فشلت الضوابط.",
+       "en": "Before controls; shows the exposure if controls fail."
+      }
+     },
+     {
+      "term": {
+       "ar": "المتبقي",
+       "en": "Residual"
+      },
+      "meaning": {
+       "ar": "مع الضوابط القائمة أو بعد المعالجة؛ يُقارن بالرغبة لاتخاذ القرار.",
+       "en": "With existing controls or after treatment; compared with appetite to decide."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Framework or process?",
+     "ar": "الإطار أم العملية؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الإطار",
+       "en": "Framework"
+      },
+      "meaning": {
+       "ar": "الترتيبات التنظيمية: القيادة والأدوار والسياسة والموارد والدمج.",
+       "en": "The organizational arrangements: leadership, roles, policy, resources and integration."
+      }
+     },
+     {
+      "term": {
+       "ar": "العملية",
+       "en": "Process"
+      },
+      "meaning": {
+       "ar": "خطوات إدارة كل خطر: السياق، التقدير، المعالجة، المراقبة، الإبلاغ.",
+       "en": "The steps for managing each risk: context, assessment, treatment, monitoring, reporting."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Monitoring or review?",
+     "ar": "المراقبة أم المراجعة؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "المراقبة",
+       "en": "Monitoring"
+      },
+      "meaning": {
+       "ar": "متابعة مستمرة لحالة الخطر ومؤشراته وضوابطه.",
+       "en": "Continuous checking of the risk, its indicators and its controls."
+      }
+     },
+     {
+      "term": {
+       "ar": "المراجعة",
+       "en": "Review"
+      },
+      "meaning": {
+       "ar": "فحص دوري لملاءمة العملية والإطار وفعاليتهما.",
+       "en": "A periodic examination of whether the process and framework remain suitable and effective."
+      }
+     }
+    ]
+   }
+  ],
+  "timeline": [
+   {
+    "date": {
+     "ar": "نوفمبر 2009",
+     "en": "November 2009"
+    },
+    "text": {
+     "ar": "نشر ISO 31000:2009 كأول مواصفة دولية لمبادئ وإرشادات إدارة المخاطر، مع ISO Guide 73 للمفردات.",
+     "en": "ISO 31000:2009 published as the first international standard of risk management principles and guidelines, alongside ISO Guide 73 on vocabulary."
+    }
+   },
+   {
+    "date": {
+     "ar": "فبراير 2018",
+     "en": "February 2018"
+    },
+    "text": {
+     "ar": "نشر ISO 31000:2018 (الإصدار الثاني): وثيقة أقصر، وقيادة ودمج أقوى، وخطوة التسجيل والإبلاغ.",
+     "en": "ISO 31000:2018 (edition 2) published: a shorter document, stronger leadership and integration, and a recording and reporting step."
+    }
+   },
+   {
+    "date": {
+     "ar": "2019 – 2022",
+     "en": "2019 – 2022"
+    },
+    "text": {
+     "ar": "صدور ISO/IEC 31010:2019 لأساليب تقدير المخاطر، وISO 31073:2022 للمفردات بديلاً عن Guide 73.",
+     "en": "ISO/IEC 31010:2019 on risk assessment techniques and ISO 31073:2022 on vocabulary, replacing Guide 73."
+    }
+   },
+   {
+    "date": {
+     "ar": "2023",
+     "en": "2023"
+    },
+    "text": {
+     "ar": "مراجعة ISO 31000:2018 وتأكيد صلاحيتها، فهي الإصدار الساري.",
+     "en": "ISO 31000:2018 reviewed and confirmed, so it remains the current edition."
+    }
+   },
+   {
+    "date": {
+     "ar": "2024 – 2026",
+     "en": "2024 – 2026"
+    },
+    "text": {
+     "ar": "بدء مشروع الإصدار الثالث (أكتوبر 2024)، ومسودة لجنة ISO/CD 31000 للتعليق حتى مارس 2026، دون موعد نشر معلن.",
+     "en": "Edition 3 project started (October 2024); committee draft ISO/CD 31000 out for comment until March 2026, with no announced publication date."
+    }
+   }
+  ],
+  "threads": [
+   {
+    "id": "gov",
+    "chain": [
+     "5.2",
+     "6.3.4",
+     "6.4.4",
+     "6.7"
+    ],
+    "title": {
+     "en": "From the board to the decision",
+     "ar": "من المجلس إلى القرار"
+    },
+    "text": {
+     "en": "The board sets appetite, which shapes criteria, against which each risk is evaluated, and the report returns to the board.",
+     "ar": "المجلس يعتمد الرغبة، فتتحدد المعايير، فيُقيَّم كل خطر، ثم يعود التقرير للمجلس."
+    }
+   },
+   {
+    "id": "proc",
+    "chain": [
+     "6.3.2",
+     "6.4.2",
+     "6.4.3",
+     "6.4.4",
+     "6.5.2",
+     "6.5.3"
+    ],
+    "title": {
+     "en": "The core of the process",
+     "ar": "قلب العملية"
+    },
+    "text": {
+     "en": "From scope to identification, analysis, evaluation and treatment.",
+     "ar": "من النطاق إلى التحديد والتحليل والتقييم ثم المعالجة."
+    }
+   },
+   {
+    "id": "loop",
+    "chain": [
+     "6.6",
+     "5.6",
+     "5.7",
+     "4h"
+    ],
+    "title": {
+     "en": "The improvement loop",
+     "ar": "حلقة التحسين"
+    },
+    "text": {
+     "en": "Monitoring feeds framework evaluation, so it keeps improving.",
+     "ar": "المراقبة تغذي تقييم الإطار، فيتحسن باستمرار."
+    }
+   },
+   {
+    "id": "int",
+    "chain": [
+     "4a",
+     "5.3",
+     "5.5",
+     "5.4.3"
+    ],
+    "title": {
+     "en": "Integration into daily work",
+     "ar": "الدمج في العمل اليومي"
+    },
+    "text": {
+     "en": "The integrated principle is realized through integration, implementation and clear roles.",
+     "ar": "مبدأ التكامل يتحقق بالدمج والتطبيق وأدوار واضحة."
+    }
+   },
+   {
+    "id": "ppl",
+    "chain": [
+     "4d",
+     "4g",
+     "6.2",
+     "5.4.5"
+    ],
+    "title": {
+     "en": "People and culture",
+     "ar": "الناس والثقافة"
+    },
+    "text": {
+     "en": "Inclusion and culture are delivered through planned communication and consultation.",
+     "ar": "الشمول والثقافة يتحققان بالاتصال والتشاور المخطط."
+    }
+   }
+  ],
+  "scale": [
+   {
+    "level": 0,
+    "meaning": {
+     "en": "Nothing exists: no practice, no document, no owner.",
+     "ar": "غير موجود إطلاقاً: لا ممارسة ولا وثيقة ولا مسؤول."
+    },
+    "look": {
+     "en": "'We haven't thought about it yet', and nobody is responsible.",
+     "ar": "«لم نفكر فيه بعد»، ولا أحد مسؤول."
+    },
+    "evidence": {
+     "en": "Nothing.",
+     "ar": "لا شيء."
+    }
+   },
+   {
+    "level": 1,
+    "meaning": {
+     "en": "Informal and person-dependent; not documented or repeated.",
+     "ar": "غير رسمي ومعتمد على الأشخاص؛ غير موثق وغير منتظم."
+    },
+    "look": {
+     "en": "One person does it their way when they remember.",
+     "ar": "شخص يقوم به بطريقته عندما يتذكر."
+    },
+    "evidence": {
+     "en": "Emails or notes at best.",
+     "ar": "رسائل أو ملاحظات في أحسن الأحوال."
+    }
+   },
+   {
+    "level": 2,
+    "meaning": {
+     "en": "Partly documented or applied, or an important element is missing.",
+     "ar": "موثق أو مطبق جزئياً، أو ينقصه عنصر مهم."
+    },
+    "look": {
+     "en": "It exists on paper or in some units only.",
+     "ar": "موجود على الورق أو في بعض الوحدات فقط."
+    },
+    "evidence": {
+     "en": "A draft document or partial records.",
+     "ar": "مسودة وثيقة أو سجلات جزئية."
+    }
+   },
+   {
+    "level": 3,
+    "meaning": {
+     "en": "Documented, applied consistently, with records that prove it.",
+     "ar": "موثق ومطبق باتساق ومعه سجلات تثبته."
+    },
+    "look": {
+     "en": "Everyone uses it and you can show it.",
+     "ar": "الجميع يستخدمه ويمكنك إثباته."
+    },
+    "evidence": {
+     "en": "Approved document plus records across units.",
+     "ar": "وثيقة معتمدة وسجلات عبر الوحدات."
+    }
+   },
+   {
+    "level": 4,
+    "meaning": {
+     "en": "In place, achieves its result, measured and improved.",
+     "ar": "مطبق ويحقق نتيجته ويُقاس ويُحسَّن."
+    },
+    "look": {
+     "en": "You know it works and you keep improving it.",
+     "ar": "تعرف أنه يعمل وتواصل تحسينه."
+    },
+    "evidence": {
+     "en": "Records plus indicators and improvement actions.",
+     "ar": "سجلات ومؤشرات وإجراءات تحسين."
+    }
+   }
+  ],
+  "faq": [
+   {
+    "id": "whatis",
+    "q": {
+     "en": "What is ISO 31000:2018?",
+     "ar": "ما هي ISO 31000:2018؟"
+    },
+    "a": {
+     "en": "ISO 31000:2018 gives **risk management guidelines**, published in **February 2018**, for any organization and any type of risk.\n\n- **Principles (4):** eight criteria for effectiveness serving value creation and protection.\n- **Framework (5):** leadership and commitment at the centre, with integration, design, implementation, evaluation and improvement.\n- **Process (6):** communication and consultation; scope, context and criteria; risk assessment; treatment; monitoring and review; recording and reporting.\n\nStart with the [[tab:clauses]] or the [[tab:annexa]].",
+     "ar": "ISO 31000:2018 هي **إرشادات إدارة المخاطر** الصادرة في **فبراير 2018**، وتنطبق على أي منظمة وأي نوع من المخاطر.\n\n- **المبادئ (4):** ثمانية معايير للفعالية تخدم غاية خلق القيمة وحمايتها.\n- **الإطار (5):** القيادة والالتزام في القلب، وحولها الدمج والتصميم والتطبيق والتقييم والتحسين.\n- **العملية (6):** الاتصال والتشاور، النطاق والسياق والمعايير، تقدير المخاطر، المعالجة، المراقبة والمراجعة، التسجيل والإبلاغ.\n\nابدأ بـ [[tab:clauses]] أو [[tab:annexa]]."
+    }
+   },
+   {
+    "id": "cert",
+    "q": {
+     "en": "Can you be certified to ISO 31000?",
+     "ar": "هل ISO 31000 قابلة للإشهاد (الشهادة)؟"
+    },
+    "a": {
+     "en": "**No.** ISO 31000 is **guidance** ('should', not 'shall'), so there is no accredited certification against it.\n\n- You can run an **alignment review**, a **maturity assessment** or an internal audit of risk management.\n- A 31000 framework feeds the risks and opportunities clause (6.1) of certifiable systems such as 9001, 14001, 45001, 27001 and 22301.\n\nUse the [[tab:assess]] and the [[tab:checklist]].",
+     "ar": "**لا.** ISO 31000 مواصفة **إرشادية** («ينبغي» لا «يجب»)، فلا يوجد تدقيق إشهاد معتمد عليها.\n\n- يمكن إجراء **مراجعة توافق** أو **تقييم نضج** أو تدقيق داخلي لإدارة المخاطر.\n- إطار 31000 يغذي بند المخاطر والفرص (6.1) في الأنظمة القابلة للإشهاد مثل 9001 و14001 و45001 و27001 و22301.\n\nاستخدم [[tab:assess]] و[[tab:checklist]]."
+    }
+   },
+   {
+    "id": "changes",
+    "q": {
+     "en": "What changed in 2018 compared with 2009?",
+     "ar": "ما الجديد في إصدار 2018 مقارنة بـ 2009؟"
+    },
+    "a": {
+     "en": "Main changes:\n\n- Principles cut from 11 to **8**, with value creation and protection as the purpose.\n- **Leadership and commitment** at the heart of the framework (5.2).\n- **Integration** as its own component (5.3).\n- More emphasis on the **iterative nature** and human and cultural factors.\n- 'Scope, context and criteria' (6.3).\n- A **recording and reporting** step (6.7).\n- A shorter document; terms cut from 29 to 8.\n\nDetails in the [[tab:changes]].",
+     "ar": "أهم التغييرات:\n\n- المبادئ من 11 إلى **8**، وخلق القيمة وحمايتها غاية لا مبدأ.\n- **القيادة والالتزام** في قلب الإطار (5.2).\n- **الدمج** عنصر مستقل (5.3).\n- تأكيد **الطبيعة التكرارية** والعوامل البشرية والثقافية.\n- «النطاق والسياق والمعايير» (6.3).\n- خطوة **التسجيل والإبلاغ** (6.7).\n- وثيقة أقصر ومصطلحات من 29 إلى 8.\n\nالتفاصيل في [[tab:changes]]."
+    }
+   },
+   {
+    "id": "revision",
+    "q": {
+     "en": "Is a new edition of ISO 31000 coming?",
+     "ar": "هل هناك إصدار جديد من ISO 31000 قادم؟"
+    },
+    "a": {
+     "en": "Yes, a revision is under way: the **edition 3** project was approved in October 2024 and the committee draft **ISO/CD 31000** was open for comment until March 2026, **with no announced publication date**.\n\n- Apply **ISO 31000:2018** now; drafts are not a basis for application.\n- There is no transition period, because it is not certifiable.\n\nSee the [[tab:transition]].",
+     "ar": "نعم، المراجعة جارية: اعتُمد مشروع **الإصدار الثالث** في أكتوبر 2024، وطُرحت مسودة اللجنة **ISO/CD 31000** للتعليق حتى مارس 2026، **دون موعد نشر معلن**.\n\n- طبّق **ISO 31000:2018** الآن؛ المسودات ليست مرجعاً للتطبيق.\n- لا فترة انتقال لأنها غير قابلة للإشهاد.\n\nانظر [[tab:transition]]."
+    }
+   },
+   {
+    "id": "principles",
+    "q": {
+     "en": "What are the eight principles?",
+     "ar": "ما مبادئ إدارة المخاطر الثمانية؟"
+    },
+    "a": {
+     "en": "The eight principles (clause 4): **integrated, structured and comprehensive, customized, inclusive, dynamic, best available information, human and cultural factors, continual improvement**. They serve the purpose of **value creation and protection**. Use them as criteria to test your framework. [[tab:clauses]]",
+     "ar": "المبادئ الثمانية (البند 4): **متكاملة، منظمة وشاملة، مخصصة، شاملة للأطراف، ديناميكية، أفضل المعلومات المتاحة، العوامل البشرية والثقافية، التحسين المستمر**. وكلها تخدم غاية **خلق القيمة وحمايتها**. استخدمها معياراً لفحص فعالية إطارك. [[tab:clauses]]"
+    }
+   },
+   {
+    "id": "appetite",
+    "q": {
+     "en": "How do I set risk appetite?",
+     "ar": "كيف أحدد الرغبة في المخاطر؟"
+    },
+    "a": {
+     "en": "- Define the main risk **categories** (safety, compliance, financial, strategic, projects…).\n- Choose a level per category: averse, minimal, cautious, open, hungry.\n- Translate the level into a **numeric tolerance** and an indicator (e.g. collection days under 120).\n- Have the **board** approve it (5.2) and link it to the risk criteria (6.3.4).\n\nTemplate: [[tpl:appetite]]. In the [[tab:annexa]] you set appetite per category and risks above it are flagged automatically.",
+     "ar": "- حدد **فئات** المخاطر الرئيسية (سلامة، امتثال، مالية، استراتيجية، مشاريع…).\n- اختر لكل فئة مستوى: متجنبة، دنيا، حذرة، منفتحة، مقبلة.\n- ترجم المستوى إلى **حد تحمّل رقمي** ومؤشر (مثلاً: أيام التحصيل أقل من 120).\n- اعتمد البيان من **المجلس** (5.2) واربطه بمعايير المخاطر (6.3.4).\n\nنموذج: [[tpl:appetite]]. وفي [[tab:annexa]] تحدد الرغبة لكل فئة فتظهر المخاطر فوقها تلقائياً."
+    }
+   },
+   {
+    "id": "criteria",
+    "q": {
+     "en": "How do I design the likelihood × consequence matrix?",
+     "ar": "كيف أصمم مصفوفة الاحتمالية والأثر؟"
+    },
+    "a": {
+     "en": "- Use a **5×5** matrix, with a numeric definition for each likelihood level (frequency or probability).\n- Define consequence across dimensions: financial, safety, reputation and compliance, schedule; rate by the worst dimension.\n- Score = likelihood × consequence: **15+ high, 8–14 medium, below that low**.\n- Set the action and decision-maker for each level.\n\nTemplate: [[tpl:criteria]] — clause 6.3.4.",
+     "ar": "- استخدم **5×5** غالباً، بتعريف رقمي لكل مستوى احتمالية (تكرار أو نسبة).\n- عرّف الأثر بأبعاد: مالي، سلامة، سمعة وامتثال، جدول زمني؛ ويُقيّم بأعلى بُعد.\n- الدرجة = الاحتمالية × الأثر: **15+ مرتفع، 8–14 متوسط، أقل منخفض**.\n- حدد الإجراء وصاحب القرار لكل مستوى.\n\nنموذج: [[tpl:criteria]] — البند 6.3.4."
+    }
+   },
+   {
+    "id": "register",
+    "q": {
+     "en": "What should a risk register contain?",
+     "ar": "ما الذي يجب أن يتضمنه سجل المخاطر؟"
+    },
+    "a": {
+     "en": "At minimum: **ref, risk (cause → event → consequence), category, objective affected, owner, likelihood and consequence, inherent risk, controls and their effectiveness, residual risk, comparison with appetite, treatment option and plan, KRI, next review.**\n\nAll of this is ready and calculated in the [[tab:annexa]], or in simple form in [[tpl:risks]].",
+     "ar": "الحد الأدنى: **الرمز، الخطر (سبب ← حدث ← أثر)، الفئة، الهدف المتأثر، المالك، الاحتمالية والأثر، الخطر الكامن، الضوابط وفعاليتها، الخطر المتبقي، المقارنة بالرغبة، خيار المعالجة وخطتها، مؤشر الخطر، موعد المراجعة.**\n\nكل ذلك جاهز ويُحسب تلقائياً في [[tab:annexa]]، أو بصيغة مبسطة في [[tpl:risks]]."
+    }
+   },
+   {
+    "id": "treatment",
+    "q": {
+     "en": "What are the risk treatment options?",
+     "ar": "ما خيارات معالجة المخاطر؟"
+    },
+    "a": {
+     "en": "Clause 6.5.2 lists options that can be combined:\n\n- **Avoid** the activity.\n- **Take or increase** the risk to pursue an opportunity.\n- **Remove the source**.\n- **Change the likelihood**.\n- **Change the consequences**.\n- **Share** (contracts, insurance).\n- **Retain** by informed decision.\n\nThen the treatment plan (6.5.3): owner, resources, deadline, indicator and target risk. [[tpl:treatment]]",
+     "ar": "البند 6.5.2 يعرض خيارات يمكن الجمع بينها:\n\n- **تجنب** النشاط.\n- **قبول أو زيادة** الخطر لاقتناص فرصة.\n- **إزالة المصدر**.\n- **تغيير الاحتمالية**.\n- **تغيير الأثر**.\n- **المشاركة** (عقود، تأمين).\n- **الاحتفاظ** بقرار مدروس.\n\nثم خطة المعالجة (6.5.3): مالك وموارد وموعد ومؤشر وخطر مستهدف. [[tpl:treatment]]"
+    }
+   },
+   {
+    "id": "residual",
+    "q": {
+     "en": "What is the difference between inherent and residual risk?",
+     "ar": "ما الفرق بين الخطر الكامن والمتبقي؟"
+    },
+    "a": {
+     "en": "- **Inherent:** before controls; shows the exposure if they fail.\n- **Residual:** with existing controls; compared with appetite to decide (6.4.4).\n\nA large gap means **critical controls** that must be tested. In the [[tab:annexa]], strong controls reduce likelihood by two levels and adequate ones by one.",
+     "ar": "- **الكامن:** قبل احتساب الضوابط؛ يكشف التعرض لو فشلت.\n- **المتبقي:** مع الضوابط القائمة؛ يُقارن بالرغبة لاتخاذ القرار (6.4.4).\n\nالفرق الكبير بينهما يعني **ضوابط حرجة** يجب اختبارها. في [[tab:annexa]] تخفض الضوابط القوية الاحتمالية درجتين والكافية درجة."
+    }
+   },
+   {
+    "id": "bowtie",
+    "q": {
+     "en": "What is bow-tie analysis and how do I use it?",
+     "ar": "ما تحليل ربطة العنق وكيف أستخدمه؟"
+    },
+    "a": {
+     "en": "A technique from IEC 31010 that puts the **event** in the centre: **causes** on the left with **preventive controls**, **consequences** on the right with **mitigating controls**. It shows which cause has no control and which consequence has no mitigation.\n\nIn the [[tab:annexa]] pick any risk and it is drawn from the recorded causes, consequences and controls (separate items with semicolons).",
+     "ar": "أسلوب من IEC 31010 يضع **الحدث** في المنتصف: **الأسباب** يساراً مع **الضوابط الوقائية**، و**الآثار** يميناً مع **الضوابط المخففة**. يوضح أي سبب بلا ضابط وأي أثر بلا تخفيف.\n\nفي [[tab:annexa]] اختر أي خطر ليُرسم تلقائياً من الأسباب والآثار والضوابط المسجلة (افصل البنود بفاصلة منقوطة)."
+    }
+   },
+   {
+    "id": "kri",
+    "q": {
+     "en": "How do I choose key risk indicators?",
+     "ar": "كيف أختار مؤشرات المخاطر الرئيسية؟"
+    },
+    "a": {
+     "en": "- Choose **leading** indicators that come before the event (collection days, staff turnover, critical stock).\n- Set **green/amber/red** thresholds and the direction (higher is worse or lower is worse).\n- Give each a source, frequency and owner; red triggers escalation (6.6).\n\nLive tracking in the [[tab:annexa]] and the register in [[tpl:kri]].",
+     "ar": "- اختر مؤشرات **قائدة** تسبق الحدث (أيام التحصيل، دوران الموظفين، مخزون حرج).\n- حدد حدود **أخضر/أصفر/أحمر** واتجاه الخطر (الأعلى أسوأ أو الأقل أسوأ).\n- لكل مؤشر مصدر وتكرار ومالك، والأحمر يطلق التصعيد (6.6).\n\nالمتابعة الحية في [[tab:annexa]] والسجل في [[tpl:kri]]."
+    }
+   },
+   {
+    "id": "roles",
+    "q": {
+     "en": "Who owns risks, and what does the risk function do?",
+     "ar": "من يملك المخاطر؟ وما دور إدارة المخاطر؟"
+    },
+    "a": {
+     "en": "- The **risk owner** is whoever owns the activity or objective, not the risk department (5.3, 5.4.3).\n- The **risk function** sets the method, coordinates, trains, challenges ratings and reports.\n- The **board** approves appetite and oversees.\n- **Internal audit** gives independent assurance.\n\nTemplate: [[tpl:roles]].",
+     "ar": "- **مالك الخطر** هو من يملك النشاط أو الهدف، لا إدارة المخاطر (5.3، 5.4.3).\n- **وظيفة المخاطر** تضع المنهجية وتنسق وتدرب وتتحدى التقييمات وتعد التقارير.\n- **المجلس** يعتمد الرغبة ويشرف.\n- **التدقيق الداخلي** يقدم تأكيداً مستقلاً.\n\nنموذج: [[tpl:roles]]."
+    }
+   },
+   {
+    "id": "ims",
+    "q": {
+     "en": "How does ISO 31000 relate to ISO 9001, 45001 and other systems?",
+     "ar": "كيف ترتبط ISO 31000 بأنظمة الإدارة مثل 9001 و45001؟"
+    },
+    "a": {
+     "en": "Every harmonized-structure management system requires you to address **risks and opportunities (6.1)** without prescribing how. ISO 31000 supplies the how: **one criteria set, one register, one appetite** across systems, adding the specifics (hazards in 45001, controls in 27001).\n\nRecommendations are in the [[tab:report]].",
+     "ar": "كل أنظمة الإدارة على الهيكل الموحد تتطلب معالجة **المخاطر والفرص (6.1)** دون تحديد طريقة. ISO 31000 تعطي هذه الطريقة: **معايير واحدة، سجل واحد، رغبة واحدة** لكل الأنظمة، مع إضافة المخاطر الخاصة (الأخطار في 45001، الضوابط في 27001).\n\nالتوصيات في [[tab:report]]."
+    }
+   },
+   {
+    "id": "culture",
+    "q": {
+     "en": "How do I build a healthy risk culture?",
+     "ar": "كيف أبني ثقافة مخاطر صحية؟"
+    },
+    "a": {
+     "en": "- Lead by example: the board asks about risk in every decision.\n- **No-blame reporting** and rewards for early warnings.\n- Review incentives that push people to hide risk.\n- Measure culture with a periodic survey.\n\nPrinciple 4g and clause 5.2.",
+     "ar": "- قدوة من القيادة: المجلس يسأل عن المخاطر في كل قرار.\n- **الإبلاغ دون لوم** ومكافأة الإبلاغ المبكر.\n- مراجعة الحوافز التي تدفع لإخفاء المخاطر.\n- قياس الثقافة باستبيان دوري.\n\nالمبدأ 4g والبند 5.2."
+    }
+   },
+   {
+    "id": "reporting",
+    "q": {
+     "en": "What should a board risk report contain?",
+     "ar": "ماذا يتضمن تقرير المخاطر للمجلس؟"
+    },
+    "a": {
+     "en": "A short report (two to four pages):\n\n- Profile summary: number of risks, spread and changes.\n- **Risks above appetite** and their treatment plans.\n- **Red KRIs**.\n- Inherent and residual heat maps.\n- **Decisions needed** from the board.\n\nA ready PDF comes from the [[tab:annexa]], plus [[tpl:reporting]] — clause 6.7.",
+     "ar": "تقرير قصير (صفحتان إلى أربع):\n\n- ملخص الملف: عدد المخاطر وتوزيعها وتغيراتها.\n- **المخاطر فوق الرغبة** وخطط معالجتها.\n- **المؤشرات الحمراء**.\n- خريطة الحرارة الكامنة والمتبقية.\n- **القرارات المطلوبة** من المجلس.\n\nتقرير PDF جاهز من [[tab:annexa]]، ونموذج [[tpl:reporting]] — البند 6.7."
+    }
+   },
+   {
+    "id": "techniques",
+    "q": {
+     "en": "Which techniques can I use to identify and analyse risk?",
+     "ar": "ما أدوات تحديد وتحليل المخاطر؟"
+    },
+    "a": {
+     "en": "IEC 31010:2019 describes dozens of techniques. The most used:\n\n- **Identification:** brainstorming, interviews, checklists, SWOT and PESTLE, 'what if'.\n- **Analysis:** likelihood × consequence matrix, bow-tie, FMEA, fault tree, Monte Carlo.\n- **Evaluation:** comparison with criteria and appetite.\n\nChoose by the decision and the data available (6.3.2).",
+     "ar": "IEC 31010:2019 تعرض عشرات الأساليب. الأكثر استخداماً:\n\n- **التحديد:** العصف الذهني، المقابلات، قوائم المراجعة، SWOT وPESTLE، «ماذا لو».\n- **التحليل:** مصفوفة الاحتمالية والأثر، ربطة العنق، FMEA، شجرة الأخطاء، مونت كارلو.\n- **التقييم:** المقارنة بالمعايير والرغبة.\n\nاختر حسب القرار والبيانات (6.3.2)."
+    }
+   },
+   {
+    "id": "start",
+    "q": {
+     "en": "Where do I start building enterprise risk management?",
+     "ar": "من أين أبدأ بناء إدارة المخاطر المؤسسية؟"
+    },
+    "a": {
+     "en": "1. Board commitment and a short policy (5.2, 5.4.2).\n2. Risk criteria and appetite ([[tpl:criteria]] and [[tpl:appetite]]).\n3. Roles and risk owners ([[tpl:roles]]).\n4. Identification workshops for the top risks, building the register in the [[tab:annexa]].\n5. Treatment plans and KRIs.\n6. The first board report, then roll out to units.\n\nMeasure your starting point first in the [[tab:assess]].",
+     "ar": "1. التزام المجلس وسياسة مختصرة (5.2، 5.4.2).\n2. معايير المخاطر والرغبة ([[tpl:criteria]] و[[tpl:appetite]]).\n3. الأدوار وملاك المخاطر ([[tpl:roles]]).\n4. ورش تحديد لأعلى المخاطر وبناء السجل في [[tab:annexa]].\n5. خطط المعالجة والمؤشرات.\n6. أول تقرير للمجلس، ثم التعميم على الوحدات.\n\nقِس نقطة البداية أولاً في [[tab:assess]]."
+    }
+   },
+   {
+    "id": "docs",
+    "q": {
+     "en": "What documents does risk management need?",
+     "ar": "ما الوثائق المطلوبة لإدارة المخاطر؟"
+    },
+    "a": {
+     "en": "ISO 31000 does not mandate documents, but good practice includes: **policy, appetite statement, methodology and criteria, roles matrix, risk register, treatment plans, KRI register, board reports, framework evaluation and improvement plan.** All are in the [[tab:templates]].",
+     "ar": "ISO 31000 لا تفرض وثائق، لكن الممارسة الجيدة تشمل: **السياسة، بيان الرغبة، دليل المنهجية ومعايير المخاطر، مصفوفة الأدوار، سجل المخاطر، خطط المعالجة، سجل المؤشرات، تقارير المجلس، تقييم الإطار وخطة التحسين.** كلها في [[tab:templates]]."
+    }
+   },
+   {
+    "id": "maturity",
+    "q": {
+     "en": "How is the maturity score calculated?",
+     "ar": "كيف تُحسب درجة النضج في الأداة؟"
+    },
+    "a": {
+     "en": "Each question scores 0 to 4 and is multiplied by its weight (1–3). Maturity = weighted total ÷ maximum. Bands: under 25% ad hoc, 25–49% initial, 50–69% defined, 70–84% managed, 85%+ optimized. Answers of 0–2 enter the roadmap automatically. [[tab:report]]",
+     "ar": "كل سؤال من 0 إلى 4 ويُضرب في وزنه (1–3). النضج = مجموع الدرجات الموزونة ÷ الحد الأقصى. النطاقات: أقل من 25% عشوائي، 25–49% بدائي، 50–69% محدد، 70–84% مُدار، 85%+ محسَّن. الإجابات 0–2 تدخل خارطة التحسين تلقائياً. [[tab:report]]"
+    }
+   },
+   {
+    "id": "howuse",
+    "q": {
+     "en": "How do I use this toolkit?",
+     "ar": "كيف أستخدم هذه الأداة؟"
+    },
+    "a": {
+     "en": "- [[tab:clauses]]: understand principles, framework and process.\n- [[tab:assess]] then [[tab:report]]: measure maturity and get the roadmap.\n- [[tab:annexa]]: build the register, appetite, heat maps, bow-tie and KRIs.\n- [[tab:checklist]]: review alignment.\n- [[tab:templates]]: 12 pre-filled templates.",
+     "ar": "- [[tab:clauses]]: افهم المبادئ والإطار والعملية.\n- [[tab:assess]] ثم [[tab:report]]: قِس النضج واحصل على الخارطة.\n- [[tab:annexa]]: ابنِ سجل المخاطر والرغبة وخرائط الحرارة وربطة العنق والمؤشرات.\n- [[tab:checklist]]: راجع التوافق.\n- [[tab:templates]]: 12 نموذجاً معبأً."
+    }
+   },
+   {
+    "id": "data",
+    "q": {
+     "en": "Where is my data stored?",
+     "ar": "أين تُحفظ بياناتي؟"
+    },
+    "a": {
+     "en": "Everything you enter is kept **in this browser only** and is not sent anywhere. To keep or share a copy, download CSV or PDF.",
+     "ar": "كل إجاباتك وسجلاتك تُحفظ **في هذا المتصفح فقط** ولا تُرسل لأي جهة. للاحتفاظ بنسخة أو مشاركتها نزّل CSV أو PDF."
+    }
+   },
+   {
+    "id": "export",
+    "q": {
+     "en": "How do I export results?",
+     "ar": "كيف أصدّر النتائج؟"
+    },
+    "a": {
+     "en": "Every tool has download buttons: maturity report PDF/HTML and roadmap CSV, checklist PDF/CSV, templates CSV/PDF, and the risk studio CSV and board PDF report.",
+     "ar": "كل أداة فيها أزرار تنزيل: تقرير النضج PDF/HTML وخارطة CSV، وقائمة المراجعة PDF/CSV، والنماذج CSV/PDF، واستوديو المخاطر CSV وتقرير PDF للمجلس."
+    }
+   },
+   {
+    "id": "official",
+    "q": {
+     "en": "Where do I get the official text?",
+     "ar": "أين أجد النص الرسمي للمواصفة؟"
+    },
+    "a": {
+     "en": "From the **ISO** store or your national body (in Saudi Arabia: **SASO**). This toolkit is an explanation and does not reproduce the text. [[tab:standard]]",
+     "ar": "من متجر **ISO** أو الجهة الوطنية (في السعودية: **SASO**). هذه الأداة شرح تعليمي ولا تنقل نص المواصفة. [[tab:standard]]"
+    }
+   },
+   {
+    "id": "contact",
+    "q": {
+     "en": "How do I contact مدثر سلامه for consulting or training?",
+     "ar": "كيف أتواصل مع مدثر سلامه للاستشارة أو التدريب؟"
+    },
+    "a": {
+     "en": "For consulting, building an ERM framework, risk owner training and assessment workshops, email **moddathersalama.eng@gmail.com**, or use the 'Request consultation' and 'Request training' forms on the Continual Improvement Academy hub.",
+     "ar": "للاستشارات وبناء إطار إدارة المخاطر المؤسسية وتدريب ملاك المخاطر وورش التقييم، راسل **moddathersalama.eng@gmail.com**، أو استخدم نموذجي «طلب استشارة» و«طلب تدريب» في بوابة أكاديمية التحسين المستمر."
+    }
+   }
+  ],
+  "templates": [
+   {
+    "id": "context",
+    "ref": "5.4.1 / 6.3.3",
+    "title": {
+     "en": "External and internal context analysis",
+     "ar": "تحليل السياق الخارجي والداخلي"
+    },
+    "purpose": {
+     "en": "External (PESTLE) and internal issues affecting objectives, with each significant issue linked to a risk or opportunity.",
+     "ar": "القضايا الخارجية (PESTLE) والداخلية المؤثرة في الأهداف، وربط كل قضية مهمة بخطر أو فرصة."
+    },
+    "tips": [
+     {
+      "en": "Cover all six external dimensions and internal capabilities.",
+      "ar": "غطِّ الأبعاد الستة الخارجية والقدرات الداخلية."
+     },
+     {
+      "en": "State the issue and its effect on a specific objective.",
+      "ar": "اكتب القضية وأثرها على هدف محدد."
+     },
+     {
+      "en": "Update yearly and after significant change.",
+      "ar": "حدّث التحليل سنوياً وعند تغير جوهري."
+     }
+    ]
+   },
+   {
+    "id": "stakeholders",
+    "ref": "5.4.5 / 6.2",
+    "title": {
+     "en": "Stakeholder communication and consultation plan",
+     "ar": "خطة الاتصال والتشاور مع الأطراف المعنية"
+    },
+    "purpose": {
+     "en": "Who we consult and who we inform, about what, when, how and who is responsible.",
+     "ar": "من نستشير ومن نبلغ، وبماذا، ومتى، وكيف، ومن المسؤول."
+    },
+    "tips": [
+     {
+      "en": "Distinguish communication (informing) from consultation (listening before a decision).",
+      "ar": "فرّق بين الاتصال (إبلاغ) والتشاور (استماع قبل القرار)."
+     },
+     {
+      "en": "Time consultation before key decisions.",
+      "ar": "حدد التوقيت قبل القرارات المهمة."
+     },
+     {
+      "en": "Check effectiveness by asking stakeholders.",
+      "ar": "راجع الفعالية بسؤال الأطراف."
+     }
+    ]
+   },
+   {
+    "id": "criteria",
+    "ref": "6.3.4",
+    "title": {
+     "en": "Risk criteria table (5×5)",
+     "ar": "جدول معايير المخاطر (5×5)"
+    },
+    "purpose": {
+     "en": "Likelihood and consequence definitions for each level across several dimensions: the basis for comparing every risk.",
+     "ar": "تعريفات الاحتمالية والأثر لكل مستوى بأبعاد متعددة، أساس مقارنة كل المخاطر."
+    },
+    "tips": [
+     {
+      "en": "Use specific numbers, not general phrases.",
+      "ar": "استخدم أرقاماً محددة لا عبارات عامة."
+     },
+     {
+      "en": "Rate consequence by the most affected dimension.",
+      "ar": "الأثر يُقيّم بأعلى بُعد متأثر."
+     },
+     {
+      "en": "Have top management approve it and review it yearly.",
+      "ar": "اعتمد الجدول من الإدارة العليا وراجعه سنوياً."
+     }
+    ]
+   },
+   {
+    "id": "appetite",
+    "ref": "5.2 / 6.3.4",
+    "title": {
+     "en": "Risk appetite statement",
+     "ar": "بيان الرغبة في المخاطر"
+    },
+    "purpose": {
+     "en": "The appetite level for each category with the maximum acceptable limit and indicators, approved by the board.",
+     "ar": "مستوى الرغبة لكل فئة مع الحد الأعلى المقبول والمؤشرات، معتمد من المجلس."
+    },
+    "tips": [
+     {
+      "en": "An averse appetite suits safety and compliance.",
+      "ar": "الرغبة المتجنبة تناسب السلامة والامتثال."
+     },
+     {
+      "en": "Link each category to a numeric limit and a measurable indicator.",
+      "ar": "اربط كل فئة بحد رقمي ومؤشر قابل للقياس."
+     },
+     {
+      "en": "Use the same limits in the risk studio.",
+      "ar": "استخدم الحدود نفسها في استوديو المخاطر."
+     }
+    ]
+   },
+   {
+    "id": "risks",
+    "ref": "6.4",
+    "title": {
+     "en": "Risk register",
+     "ar": "سجل المخاطر"
+    },
+    "purpose": {
+     "en": "Risks written as cause → event → consequence, with likelihood × consequence, treatment and owner. For inherent and residual risk, appetite and bow-tie, use the 'Risk studio'.",
+     "ar": "المخاطر بصيغة سبب ← حدث ← أثر، مع الاحتمالية × الأثر والمعالجة والمالك. للخطر الكامن والمتبقي والرغبة وربطة العنق استخدم «استوديو المخاطر»."
+    },
+    "tips": [
+     {
+      "en": "15+ is high and needs treatment and top management visibility.",
+      "ar": "15 فأكثر مرتفع ويحتاج معالجة وإبلاغ الإدارة العليا."
+     },
+     {
+      "en": "Write the risk as an uncertain event, not a cause.",
+      "ar": "اكتب الخطر كحدث غير مؤكد لا كسبب."
+     },
+     {
+      "en": "Review high risks monthly and medium ones quarterly.",
+      "ar": "راجع المرتفع شهرياً والمتوسط ربع سنوياً."
+     }
+    ]
+   },
+   {
+    "id": "opps",
+    "ref": "6.4.2",
+    "title": {
+     "en": "Opportunity register",
+     "ar": "سجل الفرص"
+    },
+    "purpose": {
+     "en": "Opportunities rated benefit × feasibility: 15+ 'pursue', 8–14 'study', below that 'hold'.",
+     "ar": "الفرص مقيّمة بالفائدة × الجدوى: 15 فأكثر «اقتنص»، 8–14 «ادرس»، أقل «أجّل»."
+    },
+    "tips": [
+     {
+      "en": "ISO 31000 defines risk as potentially positive.",
+      "ar": "ISO 31000 تعرّف الخطر بأنه قد يكون إيجابياً."
+     },
+     {
+      "en": "Give each opportunity an owner and an action.",
+      "ar": "لكل فرصة مالك وإجراء."
+     },
+     {
+      "en": "Review with the annual plan.",
+      "ar": "راجعها مع الخطة السنوية."
+     }
+    ]
+   },
+   {
+    "id": "treatment",
+    "ref": "6.5.3",
+    "title": {
+     "en": "Risk treatment plan",
+     "ar": "خطة معالجة المخاطر"
+    },
+    "purpose": {
+     "en": "For each risk above appetite: option, action, owner, resources, deadline, target risk and status.",
+     "ar": "لكل خطر فوق الرغبة: الخيار والإجراء والمسؤول والموارد والموعد والخطر المستهدف والحالة."
+    },
+    "tips": [
+     {
+      "en": "A plan without an owner and a date is not a plan.",
+      "ar": "خطة بلا مالك وموعد ليست خطة."
+     },
+     {
+      "en": "Options can be combined.",
+      "ar": "يمكن الجمع بين أكثر من خيار."
+     },
+     {
+      "en": "Verify residual risk after implementation.",
+      "ar": "تحقق من الخطر المتبقي بعد التنفيذ."
+     }
+    ]
+   },
+   {
+    "id": "kri",
+    "ref": "6.6",
+    "title": {
+     "en": "Key risk indicator register",
+     "ar": "سجل مؤشرات المخاطر الرئيسية"
+    },
+    "purpose": {
+     "en": "An early-warning indicator for each significant risk with green, amber and red thresholds, data source, frequency and owner.",
+     "ar": "مؤشر إنذار مبكر لكل خطر مهم بحدود أخضر وأصفر وأحمر، ومصدر البيانات والتكرار والمسؤول."
+    },
+    "tips": [
+     {
+      "en": "Choose leading indicators that come before the event.",
+      "ar": "اختر مؤشرات قائدة تسبق الحدث."
+     },
+     {
+      "en": "A red threshold triggers escalation at once.",
+      "ar": "الحد الأحمر يطلق التصعيد فوراً."
+     },
+     {
+      "en": "Live indicators are in the 'Risk studio'.",
+      "ar": "المؤشرات الحية متاحة في «استوديو المخاطر»."
+     }
+    ]
+   },
+   {
+    "id": "roles",
+    "ref": "5.4.3",
+    "title": {
+     "en": "Roles and responsibilities (RACI)",
+     "ar": "الأدوار والمسؤوليات (RACI)"
+    },
+    "purpose": {
+     "en": "Who approves, owns, is consulted and is informed in risk management.",
+     "ar": "من يعتمد ومن يملك ومن يُستشار ومن يُبلَّغ في إدارة المخاطر."
+    },
+    "tips": [
+     {
+      "en": "The risk owner is whoever owns the activity.",
+      "ar": "مالك الخطر من يملك النشاط."
+     },
+     {
+      "en": "The risk function coordinates and challenges; it does not own risks.",
+      "ar": "وظيفة المخاطر تنسق وتتحدى ولا تملك المخاطر."
+     },
+     {
+      "en": "Internal audit provides independent assurance.",
+      "ar": "التدقيق الداخلي يقدم تأكيداً مستقلاً."
+     }
+    ]
+   },
+   {
+    "id": "reporting",
+    "ref": "6.7",
+    "title": {
+     "en": "Reporting plan",
+     "ar": "خطة التقارير"
+    },
+    "purpose": {
+     "en": "For each report: audience, content, frequency, owner and format.",
+     "ar": "كل تقرير: الجمهور والمحتوى والتكرار والمسؤول والصيغة."
+    },
+    "tips": [
+     {
+      "en": "The board report is short and asks for a decision.",
+      "ar": "تقرير المجلس قصير ويطلب قراراً."
+     },
+     {
+      "en": "Operational management needs detail and follow-up.",
+      "ar": "الإدارة التشغيلية تحتاج تفاصيل ومتابعة."
+     },
+     {
+      "en": "Keep a history.",
+      "ar": "احتفظ بسجل تاريخي."
+     }
+    ]
+   },
+   {
+    "id": "review",
+    "ref": "5.6 / 5.7",
+    "title": {
+     "en": "Framework evaluation and improvement plan",
+     "ar": "تقييم فعالية الإطار وخطة التحسين"
+    },
+    "purpose": {
+     "en": "Rate each framework component on evidence and the action needed to improve it.",
+     "ar": "تقييم كل عنصر من عناصر الإطار بالأدلة، والإجراء المطلوب لتحسينه."
+    },
+    "tips": [
+     {
+      "en": "Rate what actually happens, not what is written.",
+      "ar": "قيّم بما يحدث فعلاً لا بما هو مكتوب."
+     },
+     {
+      "en": "Use the results of this tool's self-assessment.",
+      "ar": "استخدم نتائج التقييم الذاتي في هذه الأداة."
+     },
+     {
+      "en": "Track actions to closure.",
+      "ar": "تابع الإجراءات حتى الإغلاق."
+     }
+    ]
+   },
+   {
+    "id": "swot",
+    "ref": "5.4.1",
+    "title": {
+     "en": "SWOT as input to risk identification",
+     "ar": "تحليل SWOT لمدخلات المخاطر"
+    },
+    "purpose": {
+     "en": "Internal strengths and weaknesses and external opportunities and threats, used as input to risk and opportunity identification.",
+     "ar": "نقاط القوة والضعف الداخلية والفرص والتهديدات الخارجية كمدخل لتحديد المخاطر والفرص."
+    },
+    "tips": [
+     {
+      "en": "Threats and weaknesses feed the risk register.",
+      "ar": "التهديدات والضعف مدخل لسجل المخاطر."
+     },
+     {
+      "en": "Opportunities and strengths feed the opportunity register.",
+      "ar": "الفرص والقوة مدخل لسجل الفرص."
+     },
+     {
+      "en": "Add specific items, not generic ones.",
+      "ar": "أضف بنوداً محددة لا عامة."
+     }
+    ]
+   }
+  ],
+  "official": [
+   {
+    "url": "https://www.iso.org/standard/65694.html",
+    "name": {
+     "ar": "المنظمة الدولية للتقييس ISO",
+     "en": "ISO — International Organization for Standardization"
+    },
+    "note": {
+     "ar": "صفحة ISO 31000:2018 ومتجر النسخة الرسمية",
+     "en": "The ISO 31000:2018 page and official store"
+    }
+   },
+   {
+    "url": "https://www.iso.org/standard/88574.html",
+    "name": {
+     "ar": "مشروع الإصدار الثالث ISO/CD 31000",
+     "en": "Edition 3 project — ISO/CD 31000"
+    },
+    "note": {
+     "ar": "حالة المراجعة الجارية لدى ISO/TC 262",
+     "en": "Status of the ongoing revision at ISO/TC 262"
+    }
+   },
+   {
+    "url": "https://www.saso.gov.sa",
+    "name": {
+     "ar": "الهيئة السعودية للمواصفات والمقاييس والجودة",
+     "en": "Saudi Standards, Metrology and Quality Org. (SASO)"
+    },
+    "note": {
+     "ar": "النسخة الوطنية المعتمدة في المملكة",
+     "en": "The national adoption in Saudi Arabia"
+    }
+   }
+  ],
+  "readiness_questions": 40,
+  "competencies": [
+   "RSK-01",
+   "RSK-02",
+   "ISO-01"
+  ],
+  "ecosystem": "risk"
+ }
+}

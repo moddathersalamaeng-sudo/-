@@ -1,0 +1,941 @@
+{
+  "schema": "cia.learning-path.v1",
+  "items": [
+    {
+      "id": "PATH-IA",
+      "roles": [
+        "ROLE-IA",
+        "ROLE-LA"
+      ],
+      "title": {
+        "en": "Internal Auditor Development Path",
+        "ar": "مسار تطوير المدقق الداخلي"
+      },
+      "goal": {
+        "en": "Build evidence-based internal auditing capability",
+        "ar": "بناء كفاءة التدقيق الداخلي المبنية على الأدلة"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "knowledge",
+          "target_id": "KA-005",
+          "title": {
+            "en": "How to Read a Management-System Standard",
+            "ar": "كيف تقرأ مواصفة نظام إدارة"
+          },
+          "dependency": "recommended",
+          "effort": "25 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "assessment",
+          "target_id": "ASM-READY-ISO-001",
+          "title": {
+            "en": "ISO & Audit Readiness",
+            "ar": "جاهزية ISO والتدقيق"
+          },
+          "dependency": "required",
+          "effort": "15 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 3,
+          "type": "knowledge",
+          "target_id": "KA-010",
+          "title": {
+            "en": "Audit and Finding Basics",
+            "ar": "أساسيات التدقيق والنتائج"
+          },
+          "dependency": "recommended",
+          "effort": "25 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-ISO-101",
+          "title": {
+            "en": "ISO Foundations",
+            "ar": "أساسيات ISO"
+          },
+          "dependency": "recommended",
+          "effort": "8 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 5,
+          "type": "practice",
+          "target_id": "ASM-PRACT-001",
+          "title": {
+            "en": "Audit Practical Assessment",
+            "ar": "التقييم العملي للتدقيق"
+          },
+          "dependency": "required",
+          "effort": "45 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "final_assessment",
+          "target_id": "ASM-FINAL-001",
+          "title": {
+            "en": "ISO Auditor Final Assessment",
+            "ar": "التقييم النهائي لمدقق ISO"
+          },
+          "dependency": "required",
+          "effort": "60 min",
+          "skip_if_completed": true
+        }
+      ]
+    },
+    {
+      "id": "PATH-PMO",
+      "roles": [
+        "ROLE-PMOA"
+      ],
+      "title": {
+        "en": "PMO Professional Development Path",
+        "ar": "مسار التطوير المهني لمكتب إدارة المشاريع"
+      },
+      "goal": {
+        "en": "Develop PMO, governance and performance capability",
+        "ar": "تطوير كفاءات PMO والحوكمة وإدارة الأداء"
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "knowledge",
+          "target_id": "KA-011",
+          "title": {
+            "en": "Project vs Programme vs Portfolio",
+            "ar": "المشروع مقابل البرنامج والمحفظة"
+          },
+          "dependency": "recommended",
+          "effort": "20 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-PM-101",
+          "title": {
+            "en": "Project Management Foundations",
+            "ar": "أساسيات إدارة المشاريع"
+          },
+          "dependency": "recommended",
+          "effort": "10 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 3,
+          "type": "knowledge",
+          "target_id": "KA-012",
+          "title": {
+            "en": "PMO Types",
+            "ar": "أنواع مكاتب إدارة المشاريع"
+          },
+          "dependency": "required",
+          "effort": "20 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-P3O-101",
+          "title": {
+            "en": "P3O Foundations",
+            "ar": "أساسيات P3O"
+          },
+          "dependency": "required",
+          "effort": "8 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 5,
+          "type": "competency_development",
+          "target_id": "PERF-DEV-01",
+          "title": {
+            "en": "KPI & Performance Development",
+            "ar": "تطوير مؤشرات وإدارة الأداء"
+          },
+          "dependency": "recommended",
+          "effort": "2 h",
+          "skip_if_completed": true
+        }
+      ]
+    },
+    {
+      "id": "ROUTE-AWARE",
+      "kind": "iso_route",
+      "roles": [],
+      "standard_ids": [
+        "STD-9001",
+        "STD-14001",
+        "STD-45001",
+        "STD-27001"
+      ],
+      "title": {
+        "en": "ISO Awareness & Foundation",
+        "ar": "مسار الوعي والأساسيات في ISO"
+      },
+      "goal": {
+        "en": "Understand ISO management systems and read requirements correctly.",
+        "ar": "فهم نظم إدارة ISO وقراءة المتطلبات بدقة."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "knowledge",
+          "target_id": "KA-001",
+          "title": {
+            "en": "What ISO is and how standards are developed",
+            "ar": "ما هي ISO وكيف تُطوّر المواصفات"
+          },
+          "dependency": "recommended",
+          "effort": "10 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "assessment",
+          "target_id": "ASM-READY-ISO-001",
+          "title": {
+            "en": "ISO & Audit Readiness",
+            "ar": "جاهزية ISO والتدقيق"
+          },
+          "dependency": "recommended",
+          "effort": "20 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-ISO-101",
+          "title": {
+            "en": "ISO Management Systems Foundations",
+            "ar": "أساسيات نظم إدارة ISO"
+          },
+          "dependency": "recommended",
+          "effort": "9 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "ISO-01",
+            "ISO-02"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-ISO-READ",
+          "title": {
+            "en": "How to Read ISO Standards",
+            "ar": "كيف تقرأ مواصفات ISO"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "ISO-01"
+          ]
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-ISO-9001-F",
+          "title": {
+            "en": "ISO 9001:2026 Foundation",
+            "ar": "أساسيات ISO 9001:2026"
+          },
+          "dependency": "recommended",
+          "effort": "6 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "final_assessment",
+          "target_id": "ASM-ISO-101-FINAL",
+          "title": {
+            "en": "ISO Management Systems Foundations — final assessment",
+            "ar": "أساسيات نظم إدارة ISO — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "ISO-01",
+            "ISO-02"
+          ]
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.8.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "94110fa4d64878520b3e75304fbe4b9bf57a0b9cd8ae15f01ed9edbe2d9b8018"
+      }
+    },
+    {
+      "id": "ROUTE-IMPL",
+      "kind": "iso_route",
+      "roles": [
+        "ROLE-QE"
+      ],
+      "standard_ids": [
+        "STD-9001"
+      ],
+      "title": {
+        "en": "ISO Implementer",
+        "ar": "مسار مطبق ISO"
+      },
+      "goal": {
+        "en": "Build or upgrade a working, auditable management system.",
+        "ar": "بناء نظام إدارة يعمل وقابل للتدقيق أو تطويره."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-READY-ISO-001",
+          "title": {
+            "en": "ISO & Audit Readiness",
+            "ar": "جاهزية ISO والتدقيق"
+          },
+          "dependency": "recommended",
+          "effort": "20 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-ISO-101",
+          "title": {
+            "en": "ISO Management Systems Foundations",
+            "ar": "أساسيات نظم إدارة ISO"
+          },
+          "dependency": "recommended",
+          "effort": "9 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "ISO-01",
+            "ISO-02"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-ISO-READ",
+          "title": {
+            "en": "How to Read ISO Standards",
+            "ar": "كيف تقرأ مواصفات ISO"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "ISO-01"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-ISO-RISK",
+          "title": {
+            "en": "Risk-Based Thinking for Management Systems",
+            "ar": "التفكير القائم على المخاطر لنظم الإدارة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-ISO-9001-IMP",
+          "title": {
+            "en": "ISO 9001:2026 Implementer",
+            "ar": "مطبق ISO 9001:2026"
+          },
+          "dependency": "required",
+          "effort": "10.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-ISO-NC",
+          "title": {
+            "en": "Nonconformity, Correction and Corrective Action",
+            "ar": "عدم المطابقة والتصحيح والإجراء التصحيحي"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 7,
+          "type": "practice",
+          "target_id": "ASM-ISO-9001-IMP-PRACT",
+          "title": {
+            "en": "ISO 9001:2026 Implementer — practical task",
+            "ar": "مطبق ISO 9001:2026 — المهمة العملية"
+          },
+          "dependency": "recommended",
+          "effort": "150 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 8,
+          "type": "final_assessment",
+          "target_id": "ASM-ISO-9001-IMP-FINAL",
+          "title": {
+            "en": "ISO 9001:2026 Implementer — final assessment",
+            "ar": "مطبق ISO 9001:2026 — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.8.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "438fdd67c65f21322c062017976be02fe2f8d3c09dbacc66201724eead38fb53"
+      }
+    },
+    {
+      "id": "ROUTE-IA",
+      "kind": "iso_route",
+      "roles": [
+        "ROLE-IA"
+      ],
+      "standard_ids": [
+        "STD-9001",
+        "STD-14001",
+        "STD-45001",
+        "STD-27001"
+      ],
+      "title": {
+        "en": "ISO Internal Auditor",
+        "ar": "مسار المدقق الداخلي في ISO"
+      },
+      "goal": {
+        "en": "Plan and perform evidence-based internal audits.",
+        "ar": "تخطيط تدقيق داخلي مبني على الأدلة وتنفيذه."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-READY-ISO-001",
+          "title": {
+            "en": "ISO & Audit Readiness",
+            "ar": "جاهزية ISO والتدقيق"
+          },
+          "dependency": "recommended",
+          "effort": "20 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-ISO-101",
+          "title": {
+            "en": "ISO Management Systems Foundations",
+            "ar": "أساسيات نظم إدارة ISO"
+          },
+          "dependency": "recommended",
+          "effort": "9 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "ISO-01",
+            "ISO-02"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-ISO-READ",
+          "title": {
+            "en": "How to Read ISO Standards",
+            "ar": "كيف تقرأ مواصفات ISO"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "ISO-01"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-ISO-AUD",
+          "title": {
+            "en": "Auditing Fundamentals for Management Systems",
+            "ar": "أساسيات تدقيق نظم الإدارة"
+          },
+          "dependency": "required",
+          "effort": "10 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "AUD-01",
+            "AUD-02",
+            "AUD-03"
+          ]
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-ISO-9001-AUD",
+          "title": {
+            "en": "ISO 9001:2026 Internal Auditor",
+            "ar": "المدقق الداخلي ISO 9001:2026"
+          },
+          "dependency": "required",
+          "effort": "7.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-ISO-NC",
+          "title": {
+            "en": "Nonconformity, Correction and Corrective Action",
+            "ar": "عدم المطابقة والتصحيح والإجراء التصحيحي"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 7,
+          "type": "practice",
+          "target_id": "ASM-ISO-9001-AUD-PRACT",
+          "title": {
+            "en": "ISO 9001:2026 Internal Auditor — practical task",
+            "ar": "المدقق الداخلي ISO 9001:2026 — المهمة العملية"
+          },
+          "dependency": "recommended",
+          "effort": "120 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 8,
+          "type": "final_assessment",
+          "target_id": "ASM-ISO-9001-AUD-FINAL",
+          "title": {
+            "en": "ISO 9001:2026 Internal Auditor — final assessment",
+            "ar": "المدقق الداخلي ISO 9001:2026 — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.8.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "434e6ee9e8ec0e5eb9a86445e3dfa3acc4fdac8f6a0e959d49ae3b03f12b94d1"
+      }
+    },
+    {
+      "id": "ROUTE-LA",
+      "kind": "iso_route",
+      "roles": [
+        "ROLE-LA"
+      ],
+      "standard_ids": [
+        "STD-9001",
+        "STD-14001",
+        "STD-45001",
+        "STD-27001"
+      ],
+      "title": {
+        "en": "Lead Auditor development (foundation)",
+        "ar": "مسار تطوير رئيس فريق التدقيق (تأسيسي)"
+      },
+      "goal": {
+        "en": "Strengthen audit planning, evidence and reporting across standards. Lead-auditor certification needs a separate external course certified by an auditor certification body (for example CQI | IRCA).",
+        "ar": "تعزيز تخطيط التدقيق والأدلة وإعداد التقارير عبر المواصفات. أما شهادة رئيس فريق التدقيق فتحتاج دورة خارجية منفصلة مسجلة لدى جهة لتسجيل المدققين (مثل CQI | IRCA)."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-READY-ISO-001",
+          "title": {
+            "en": "ISO & Audit Readiness",
+            "ar": "جاهزية ISO والتدقيق"
+          },
+          "dependency": "recommended",
+          "effort": "20 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-ISO-AUD",
+          "title": {
+            "en": "Auditing Fundamentals for Management Systems",
+            "ar": "أساسيات تدقيق نظم الإدارة"
+          },
+          "dependency": "recommended",
+          "effort": "10 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "AUD-01",
+            "AUD-02",
+            "AUD-03"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-ISO-9001-AUD",
+          "title": {
+            "en": "ISO 9001:2026 Internal Auditor",
+            "ar": "المدقق الداخلي ISO 9001:2026"
+          },
+          "dependency": "required",
+          "effort": "7.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-ISO-45001-AUD",
+          "title": {
+            "en": "ISO 45001 Internal Auditor",
+            "ar": "المدقق الداخلي ISO 45001"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-ISO-IMS",
+          "title": {
+            "en": "Integrated Management Systems (Quality, Environment, OH&S, Information Security)",
+            "ar": "النظم المتكاملة (الجودة والبيئة والسلامة وأمن المعلومات)"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "practice",
+          "target_id": "ASM-ISO-AUD-PRACT",
+          "title": {
+            "en": "Auditing Fundamentals for Management Systems — practical task",
+            "ar": "أساسيات تدقيق نظم الإدارة — المهمة العملية"
+          },
+          "dependency": "recommended",
+          "effort": "120 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 7,
+          "type": "final_assessment",
+          "target_id": "ASM-ISO-9001-AUD-FINAL",
+          "title": {
+            "en": "ISO 9001:2026 Internal Auditor — final assessment",
+            "ar": "المدقق الداخلي ISO 9001:2026 — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.8.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "931f9cd9de385ab3157e6c7a1c9022679182ce36bee6e73aeff20ac4033bf9a3"
+      }
+    },
+    {
+      "id": "ROUTE-IMS",
+      "kind": "iso_route",
+      "roles": [
+        "ROLE-HSEQM"
+      ],
+      "standard_ids": [
+        "STD-9001",
+        "STD-14001",
+        "STD-45001",
+        "STD-27001"
+      ],
+      "title": {
+        "en": "Integrated Management Systems",
+        "ar": "مسار النظم المتكاملة"
+      },
+      "goal": {
+        "en": "Run quality, environment, OH&S and information security as one system.",
+        "ar": "إدارة الجودة والبيئة والسلامة وأمن المعلومات كنظام واحد."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-READY-ISO-001",
+          "title": {
+            "en": "ISO & Audit Readiness",
+            "ar": "جاهزية ISO والتدقيق"
+          },
+          "dependency": "recommended",
+          "effort": "20 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-ISO-101",
+          "title": {
+            "en": "ISO Management Systems Foundations",
+            "ar": "أساسيات نظم إدارة ISO"
+          },
+          "dependency": "recommended",
+          "effort": "9 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "ISO-01",
+            "ISO-02"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-ISO-RISK",
+          "title": {
+            "en": "Risk-Based Thinking for Management Systems",
+            "ar": "التفكير القائم على المخاطر لنظم الإدارة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "RSK-01",
+            "RSK-02"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-ISO-IMS",
+          "title": {
+            "en": "Integrated Management Systems (Quality, Environment, OH&S, Information Security)",
+            "ar": "النظم المتكاملة (الجودة والبيئة والسلامة وأمن المعلومات)"
+          },
+          "dependency": "required",
+          "effort": "7.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-ISO-45001-F",
+          "title": {
+            "en": "ISO 45001:2018 Foundation (with Amendment 1:2024)",
+            "ar": "أساسيات ISO 45001:2018 (مع التعديل 1:2024)"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-ISO-14001-F",
+          "title": {
+            "en": "ISO 14001:2026 Foundation",
+            "ar": "أساسيات ISO 14001:2026"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 7,
+          "type": "practice",
+          "target_id": "ASM-ISO-IMS-PRACT",
+          "title": {
+            "en": "Integrated Management Systems (Quality, Environment, OH&S, Information Security) — practical task",
+            "ar": "النظم المتكاملة (الجودة والبيئة والسلامة وأمن المعلومات) — المهمة العملية"
+          },
+          "dependency": "recommended",
+          "effort": "120 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 8,
+          "type": "final_assessment",
+          "target_id": "ASM-ISO-IMS-FINAL",
+          "title": {
+            "en": "Integrated Management Systems (Quality, Environment, OH&S, Information Security) — final assessment",
+            "ar": "النظم المتكاملة (الجودة والبيئة والسلامة وأمن المعلومات) — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.8.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "f56a68ec144a7e8f99f671373a37759f30f41b91b986a9e54de6fd0a3a5e67b2"
+      }
+    },
+    {
+      "id": "ROUTE-MR",
+      "kind": "iso_route",
+      "roles": [
+        "ROLE-QMGR"
+      ],
+      "standard_ids": [
+        "STD-9001"
+      ],
+      "title": {
+        "en": "Manager / Management Representative",
+        "ar": "مسار المدير وممثل الإدارة"
+      },
+      "goal": {
+        "en": "Lead a management system: objectives, risk, review and improvement.",
+        "ar": "قيادة نظام الإدارة: الأهداف والمخاطر والمراجعة والتحسين."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-READY-ISO-001",
+          "title": {
+            "en": "ISO & Audit Readiness",
+            "ar": "جاهزية ISO والتدقيق"
+          },
+          "dependency": "recommended",
+          "effort": "20 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-ISO-101",
+          "title": {
+            "en": "ISO Management Systems Foundations",
+            "ar": "أساسيات نظم إدارة ISO"
+          },
+          "dependency": "recommended",
+          "effort": "9 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "ISO-01",
+            "ISO-02"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-ISO-RISK",
+          "title": {
+            "en": "Risk-Based Thinking for Management Systems",
+            "ar": "التفكير القائم على المخاطر لنظم الإدارة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-ISO-9001-IMP",
+          "title": {
+            "en": "ISO 9001:2026 Implementer",
+            "ar": "مطبق ISO 9001:2026"
+          },
+          "dependency": "required",
+          "effort": "10.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-ISO-NC",
+          "title": {
+            "en": "Nonconformity, Correction and Corrective Action",
+            "ar": "عدم المطابقة والتصحيح والإجراء التصحيحي"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-ISO-IMS",
+          "title": {
+            "en": "Integrated Management Systems (Quality, Environment, OH&S, Information Security)",
+            "ar": "النظم المتكاملة (الجودة والبيئة والسلامة وأمن المعلومات)"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 7,
+          "type": "final_assessment",
+          "target_id": "ASM-ISO-9001-IMP-FINAL",
+          "title": {
+            "en": "ISO 9001:2026 Implementer — final assessment",
+            "ar": "مطبق ISO 9001:2026 — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.8.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "844b7acdc8da05d95a3c432c91c3040d4fd7b7edd3a7c5b2c9dc97a2f209ceee"
+      }
+    }
+  ]
+}

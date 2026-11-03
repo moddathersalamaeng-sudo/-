@@ -1,0 +1,703 @@
+{
+  "schema": "cia.lesson-guide-map.v1",
+  "items": [
+    {
+      "id": "CRS-ISO-101-L03",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "4.4.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-101-L04",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "4.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "4.2"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "4.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-101-L05",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "5.1.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "6.1.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "7.1.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-101-L06",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "8.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "9.1.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "10.2.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-READ-L04",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "4.4.2"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "7.5.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-AUD-L01",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "9.2.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "9.2.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-AUD-L02",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "9.2.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-AUD-L05",
+      "refs": [
+        {
+          "guide": "capa",
+          "ref": "s7-1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-AUD-L06",
+      "refs": [
+        {
+          "guide": "capa",
+          "ref": "s7-2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-NC-L01",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "10.2.1"
+        },
+        {
+          "guide": "capa",
+          "ref": "s2-1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-NC-L02",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "8.7.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "8.7.2"
+        },
+        {
+          "guide": "capa",
+          "ref": "s1-1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-NC-L03",
+      "refs": [
+        {
+          "guide": "rca",
+          "ref": "s2-1"
+        },
+        {
+          "guide": "rca",
+          "ref": "s2-3"
+        },
+        {
+          "guide": "five-whys",
+          "ref": "s1-4"
+        },
+        {
+          "guide": "fishbone",
+          "ref": "s1-4"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-NC-L04",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "10.2.2"
+        },
+        {
+          "guide": "capa",
+          "ref": "s2-4"
+        },
+        {
+          "guide": "capa",
+          "ref": "s2-6"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-RISK-L01",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "6.1.1"
+        },
+        {
+          "guide": "iso-31000",
+          "ref": "4a"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-RISK-L02",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "6.1.2"
+        },
+        {
+          "guide": "iso-31000",
+          "ref": "6.4.2"
+        },
+        {
+          "guide": "iso-31000",
+          "ref": "6.4.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-RISK-L03",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "6.1.2"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "6.1.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-RISK-L04",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "9.1.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-IMS-L03",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "9.2.2"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "9.3.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-F-L01",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "5.1.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-F-L02",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "8.2.2"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "8.2.3"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "8.2.4"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-F-L03",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "8.4.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "8.5.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "8.6"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-F-L04",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "9.1.2"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "10.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-IMP-L01",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "4.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "6.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-IMP-L02",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "4.3"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "4.4.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-IMP-L03",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "7.5.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "7.5.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-IMP-L04",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "6.2.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "6.2.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-IMP-L05",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "7.2"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "7.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-IMP-L06",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "9.2.2"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "9.3.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-AUD-L01",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "9.2.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-AUD-L02",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "8.2.3"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "8.5.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-AUD-L03",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "5.1.1"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "6.1.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-AUD-L04",
+      "refs": [
+        {
+          "guide": "iso-9001",
+          "ref": "9.1.3"
+        },
+        {
+          "guide": "iso-9001",
+          "ref": "10.2.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-F-L02",
+      "refs": [
+        {
+          "guide": "iso-14001",
+          "ref": "6.1.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-F-L03",
+      "refs": [
+        {
+          "guide": "iso-14001",
+          "ref": "6.1.3"
+        },
+        {
+          "guide": "iso-14001",
+          "ref": "9.1.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-F-L04",
+      "refs": [
+        {
+          "guide": "iso-14001",
+          "ref": "8.1"
+        },
+        {
+          "guide": "iso-14001",
+          "ref": "8.2"
+        },
+        {
+          "guide": "iso-14001",
+          "ref": "9.1.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-AUD-L01",
+      "refs": [
+        {
+          "guide": "iso-14001",
+          "ref": "9.2.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-AUD-L02",
+      "refs": [
+        {
+          "guide": "iso-14001",
+          "ref": "6.1.2"
+        },
+        {
+          "guide": "iso-14001",
+          "ref": "8.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-AUD-L03",
+      "refs": [
+        {
+          "guide": "iso-14001",
+          "ref": "9.1.2"
+        },
+        {
+          "guide": "iso-14001",
+          "ref": "8.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-AUD-L04",
+      "refs": [
+        {
+          "guide": "iso-14001",
+          "ref": "9.1.1"
+        },
+        {
+          "guide": "iso-14001",
+          "ref": "10.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-F-L01",
+      "refs": [
+        {
+          "guide": "iso-45001",
+          "ref": "5.4"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-F-L02",
+      "refs": [
+        {
+          "guide": "iso-45001",
+          "ref": "6.1.2.1"
+        },
+        {
+          "guide": "iso-45001",
+          "ref": "6.1.2.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-F-L03",
+      "refs": [
+        {
+          "guide": "iso-45001",
+          "ref": "8.1.2"
+        },
+        {
+          "guide": "iso-45001",
+          "ref": "8.1.3"
+        },
+        {
+          "guide": "iso-45001",
+          "ref": "8.1.4.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-F-L04",
+      "refs": [
+        {
+          "guide": "iso-45001",
+          "ref": "8.2"
+        },
+        {
+          "guide": "iso-45001",
+          "ref": "10.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-AUD-L01",
+      "refs": [
+        {
+          "guide": "iso-45001",
+          "ref": "9.2.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-AUD-L02",
+      "refs": [
+        {
+          "guide": "iso-45001",
+          "ref": "8.1.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-AUD-L03",
+      "refs": [
+        {
+          "guide": "iso-45001",
+          "ref": "5.4"
+        },
+        {
+          "guide": "iso-45001",
+          "ref": "7.2"
+        },
+        {
+          "guide": "iso-45001",
+          "ref": "8.1.4.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-AUD-L04",
+      "refs": [
+        {
+          "guide": "iso-45001",
+          "ref": "10.2"
+        },
+        {
+          "guide": "iso-45001",
+          "ref": "9.1.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-F-L02",
+      "refs": [
+        {
+          "guide": "iso-27001",
+          "ref": "4.3"
+        },
+        {
+          "guide": "iso-27001",
+          "ref": "6.1.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-F-L03",
+      "refs": [
+        {
+          "guide": "iso-27001",
+          "ref": "6.1.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-F-L04",
+      "refs": [
+        {
+          "guide": "iso-27001",
+          "ref": "8.1"
+        },
+        {
+          "guide": "iso-27001",
+          "ref": "10.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-AUD-L01",
+      "refs": [
+        {
+          "guide": "iso-27001",
+          "ref": "9.2.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-AUD-L02",
+      "refs": [
+        {
+          "guide": "iso-27001",
+          "ref": "6.1.2"
+        },
+        {
+          "guide": "iso-27001",
+          "ref": "6.1.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-AUD-L03",
+      "refs": [
+        {
+          "guide": "iso-27001",
+          "ref": "7.2"
+        },
+        {
+          "guide": "iso-27001",
+          "ref": "8.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-AUD-L04",
+      "refs": [
+        {
+          "guide": "iso-27001",
+          "ref": "9.1"
+        },
+        {
+          "guide": "iso-27001",
+          "ref": "10.2"
+        }
+      ]
+    }
+  ]
+}

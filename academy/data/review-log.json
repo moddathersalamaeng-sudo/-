@@ -1,0 +1,17 @@
+{
+  "schema": "cia.review-log.v1",
+  "items": [
+    {
+      "applied_at": "2026-11-03T10:56:26+00:00",
+      "file": "cia-review-decisions-2026-11-03-owner-approval.json",
+      "sha256": "e6b3e7d286ee64077396a7f17d369410c079c5f54eb74f267ef1295a80125a66",
+      "reviewer": {
+        "name": "مدثر سلامه",
+        "role": "Platform owner"
+      },
+      "approved": 1075,
+      "changes_requested": 0,
+      "skipped": 0
+    }
+  ]
+}

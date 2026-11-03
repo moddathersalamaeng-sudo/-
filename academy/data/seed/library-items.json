@@ -1,0 +1,1475 @@
+{
+  "schema": 1,
+  "items": [
+    {
+      "id": "LIB-TOOL-01",
+      "kind": "tool",
+      "title": {
+        "en": "ISO 9001:2026",
+        "ar": "ISO 9001:2026"
+      },
+      "description": {
+        "en": "Quality",
+        "ar": "الجودة"
+      },
+      "domain": null,
+      "ecosystem": "iso",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso9001",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "open"
+    },
+    {
+      "id": "LIB-TOOL-02",
+      "kind": "tool",
+      "title": {
+        "en": "ISO 14001:2026",
+        "ar": "ISO 14001:2026"
+      },
+      "description": {
+        "en": "Environment",
+        "ar": "البيئة"
+      },
+      "domain": null,
+      "ecosystem": "iso",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso14001",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-03",
+      "kind": "tool",
+      "title": {
+        "en": "ISO 45001:2018",
+        "ar": "ISO 45001:2018"
+      },
+      "description": {
+        "en": "OH&S",
+        "ar": "السلامة والصحة المهنية"
+      },
+      "domain": null,
+      "ecosystem": "iso",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso45001",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-04",
+      "kind": "tool",
+      "title": {
+        "en": "ISO/IEC 27001:2022",
+        "ar": "ISO/IEC 27001:2022"
+      },
+      "description": {
+        "en": "Information security",
+        "ar": "أمن المعلومات"
+      },
+      "domain": null,
+      "ecosystem": "iso",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso27001",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-05",
+      "kind": "tool",
+      "title": {
+        "en": "ISO 22301:2019",
+        "ar": "ISO 22301:2019"
+      },
+      "description": {
+        "en": "Business continuity",
+        "ar": "استمرارية الأعمال"
+      },
+      "domain": null,
+      "ecosystem": "iso",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso22301",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-06",
+      "kind": "tool",
+      "title": {
+        "en": "ISO 37301:2021",
+        "ar": "ISO 37301:2021"
+      },
+      "description": {
+        "en": "Compliance",
+        "ar": "الامتثال"
+      },
+      "domain": null,
+      "ecosystem": "iso",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso37301",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-07",
+      "kind": "tool",
+      "title": {
+        "en": "ISO 37001:2025",
+        "ar": "ISO 37001:2025"
+      },
+      "description": {
+        "en": "Anti-bribery",
+        "ar": "مكافحة الرشوة"
+      },
+      "domain": null,
+      "ecosystem": "iso",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso37001",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-08",
+      "kind": "tool",
+      "title": {
+        "en": "IMS Builder",
+        "ar": "منشئ النظام المتكامل"
+      },
+      "description": {
+        "en": "Seven standards in one integrated system",
+        "ar": "دمج سبع مواصفات في نظام واحد"
+      },
+      "domain": null,
+      "ecosystem": "iso",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=ims",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-09",
+      "kind": "tool",
+      "title": {
+        "en": "Enterprise Risk Studio",
+        "ar": "استوديو المخاطر المؤسسية"
+      },
+      "description": {
+        "en": "ISO 31000:2018",
+        "ar": "ISO 31000:2018"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso31000",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-10",
+      "kind": "tool",
+      "title": {
+        "en": "Governance Maturity",
+        "ar": "نضج الحوكمة المؤسسية"
+      },
+      "description": {
+        "en": "ISO 37000:2021",
+        "ar": "ISO 37000:2021"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso37000",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-11",
+      "kind": "tool",
+      "title": {
+        "en": "Compliance & Anti-Bribery Center",
+        "ar": "مركز الامتثال ومكافحة الرشوة"
+      },
+      "description": {
+        "en": "Registers · speak-up · investigations · breaches",
+        "ar": "السجلات · البلاغات · التحقيقات · المخالفات"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=ccc",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-12",
+      "kind": "tool",
+      "title": {
+        "en": "P3M3 Maturity Assessment",
+        "ar": "تقييم النضج وفق P3M3"
+      },
+      "description": {
+        "en": "3 models × 7 perspectives · roadmap · PMO studio",
+        "ar": "3 نماذج × 7 منظورات · خارطة تحوّل · استوديو المكتب"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=pmo",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-13",
+      "kind": "tool",
+      "title": {
+        "en": "Excellence Assessment Center",
+        "ar": "مركز تقييم التميّز"
+      },
+      "description": {
+        "en": "EFQM Model 2025 · quick scan, full self-assessment, assessor RADAR review · 1000-point results, year-on-year, 0–12 month plan",
+        "ar": "نموذج EFQM 2025 · مسح سريع وتقييم ذاتي شامل ومراجعة المقيّم RADAR · نتائج من 1000 ومقارنة سنوية وخطة 0–12 شهراً"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=exc",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-14",
+      "kind": "tool",
+      "title": {
+        "en": "Strategy & Performance Studio",
+        "ar": "استوديو الاستراتيجية والأداء"
+      },
+      "description": {
+        "en": "SWOT/PESTLE/TOWS, BSC objectives & strategy map · KPI dictionary with automatic RAG & cascade · initiatives with RAID and budget",
+        "ar": "SWOT/PESTLE/TOWS وأهداف البطاقة وخريطة الاستراتيجية · قاموس مؤشرات بحالة RAG تلقائية وتتالٍ · مبادرات بسجل RAID وميزانية"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=str",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-15",
+      "kind": "tool",
+      "title": {
+        "en": "Smart Audit & Improvement Center",
+        "ar": "مركز التدقيق والتحسين الذكي"
+      },
+      "description": {
+        "en": "Programme, execution, CAPA and dashboard · improvement toolbox (5 Whys, fishbone, Pareto, FMEA, A3) · ISO 19011:2026 clause guide and what changed",
+        "ar": "البرنامج والتنفيذ والإجراءات التصحيحية واللوحة · صندوق أدوات التحسين (لماذا الخمس، عظمة السمكة، باريتو، FMEA، A3) · ISO 19011:2026 · دليل البنود وما الجديد"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=aud",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-16",
+      "kind": "tool",
+      "title": {
+        "en": "Operations Excellence Center",
+        "ar": "مركز التميّز التشغيلي"
+      },
+      "description": {
+        "en": "Process excellence · competency & training · vendor & contractor qualification",
+        "ar": "تميّز العمليات · الكفاءات والتدريب · تأهيل الموردين والمقاولين"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=oec",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-17",
+      "kind": "tool",
+      "title": {
+        "en": "Executive Cockpit & Organization Workspace",
+        "ar": "منصة القيادة ومساحة عمل المنشأة"
+      },
+      "description": {
+        "en": "CIA AI Consultant · Organizational Health Index · module registry & backup",
+        "ar": "مستشار CIA الذكي · مؤشر صحة المنشأة · سجل الوحدات والنسخ الاحتياطي"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=w8",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-27",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-T01",
+      "kind": "checklist",
+      "title": {
+        "en": "Internal Audit Checklist Skeleton",
+        "ar": "هيكل قائمة تحقق للتدقيق الداخلي"
+      },
+      "description": {
+        "en": "Original CIA reusable structured resource. Printable and CSV-ready.",
+        "ar": "مورد أصلي من CIA قابل لإعادة الاستخدام والطباعة والتنزيل بصيغة CSV."
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "structured/csv",
+      "structured_data": {
+        "columns": [
+          "Requirement / Criterion",
+          "Audit question",
+          "Evidence",
+          "Status",
+          "Notes"
+        ],
+        "rows": []
+      },
+      "related": [],
+      "version": "1.0.0",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "LIB-T02",
+      "kind": "template",
+      "title": {
+        "en": "NCR Form",
+        "ar": "نموذج عدم المطابقة"
+      },
+      "description": {
+        "en": "Original CIA reusable structured resource. Printable and CSV-ready.",
+        "ar": "مورد أصلي من CIA قابل لإعادة الاستخدام والطباعة والتنزيل بصيغة CSV."
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "structured/csv",
+      "structured_data": {
+        "columns": [
+          "NCR ID",
+          "Requirement",
+          "Objective evidence",
+          "Nonconformity statement",
+          "Owner",
+          "Due date",
+          "Status"
+        ],
+        "rows": []
+      },
+      "related": [],
+      "version": "1.0.0",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "LIB-T03",
+      "kind": "template",
+      "title": {
+        "en": "CAPA Log",
+        "ar": "سجل الإجراءات التصحيحية"
+      },
+      "description": {
+        "en": "Original CIA reusable structured resource. Printable and CSV-ready.",
+        "ar": "مورد أصلي من CIA قابل لإعادة الاستخدام والطباعة والتنزيل بصيغة CSV."
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "structured/csv",
+      "structured_data": {
+        "columns": [
+          "ID",
+          "Issue",
+          "Root cause",
+          "Action",
+          "Owner",
+          "Due date",
+          "Effectiveness",
+          "Status"
+        ],
+        "rows": []
+      },
+      "related": [],
+      "version": "1.0.0",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "LIB-T04",
+      "kind": "template",
+      "title": {
+        "en": "Risk Register Skeleton",
+        "ar": "هيكل سجل المخاطر"
+      },
+      "description": {
+        "en": "Original CIA reusable structured resource. Printable and CSV-ready.",
+        "ar": "مورد أصلي من CIA قابل لإعادة الاستخدام والطباعة والتنزيل بصيغة CSV."
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "structured/csv",
+      "structured_data": {
+        "columns": [
+          "Risk ID",
+          "Context",
+          "Risk",
+          "Cause",
+          "Consequence",
+          "Likelihood",
+          "Impact",
+          "Treatment",
+          "Owner"
+        ],
+        "rows": []
+      },
+      "related": [],
+      "version": "1.0.0",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "LIB-T05",
+      "kind": "template",
+      "title": {
+        "en": "Training Matrix Skeleton",
+        "ar": "هيكل مصفوفة التدريب"
+      },
+      "description": {
+        "en": "Original CIA reusable structured resource. Printable and CSV-ready.",
+        "ar": "مورد أصلي من CIA قابل لإعادة الاستخدام والطباعة والتنزيل بصيغة CSV."
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "structured/csv",
+      "structured_data": {
+        "columns": [
+          "Role",
+          "Competency",
+          "Required level",
+          "Current level",
+          "Gap",
+          "Training action",
+          "Due date"
+        ],
+        "rows": []
+      },
+      "related": [],
+      "version": "1.0.0",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "LIB-T06",
+      "kind": "template",
+      "title": {
+        "en": "Management Review Agenda",
+        "ar": "أجندة مراجعة الإدارة"
+      },
+      "description": {
+        "en": "Original CIA reusable structured resource. Printable and CSV-ready.",
+        "ar": "مورد أصلي من CIA قابل لإعادة الاستخدام والطباعة والتنزيل بصيغة CSV."
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "structured/csv",
+      "structured_data": {
+        "columns": [
+          "Topic",
+          "Required input",
+          "Owner",
+          "Decision / output",
+          "Action",
+          "Due date"
+        ],
+        "rows": []
+      },
+      "related": [],
+      "version": "1.0.0",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-09-28",
+        "change_note": "Initial Phase 3 owner-approved seed"
+      }
+    },
+    {
+      "id": "LIB-TOOL-18",
+      "kind": "tool",
+      "title": {
+        "en": "ISO/IEC 27701:2025",
+        "ar": "ISO/IEC 27701:2025"
+      },
+      "description": {
+        "en": "Privacy information management",
+        "ar": "إدارة معلومات الخصوصية"
+      },
+      "domain": null,
+      "ecosystem": "information-security",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso27701",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-19",
+      "kind": "tool",
+      "title": {
+        "en": "ISO/IEC 42001:2023",
+        "ar": "ISO/IEC 42001:2023"
+      },
+      "description": {
+        "en": "AI management system",
+        "ar": "نظام إدارة الذكاء الاصطناعي"
+      },
+      "domain": null,
+      "ecosystem": "iso",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso42001",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-20",
+      "kind": "tool",
+      "title": {
+        "en": "ISO/IEC 42005:2025",
+        "ar": "ISO/IEC 42005:2025"
+      },
+      "description": {
+        "en": "AI system impact assessment",
+        "ar": "تقييم أثر أنظمة الذكاء الاصطناعي"
+      },
+      "domain": null,
+      "ecosystem": "iso",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso42005",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-21",
+      "kind": "tool",
+      "title": {
+        "en": "AI Regulatory Readiness",
+        "ar": "الجاهزية التنظيمية للذكاء الاصطناعي"
+      },
+      "description": {
+        "en": "SDAIA draft · PDPL · EU AI Act after 2026/1744 — obligations and timeline",
+        "ar": "مسودة سدايا · نظام حماية البيانات · القانون الأوروبي بعد 2026/1744 — الالتزامات والمواعيد"
+      },
+      "domain": null,
+      "ecosystem": "compliance",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=aireg",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-22",
+      "kind": "tool",
+      "title": {
+        "en": "ISO 21500 Series Conformity Assessment",
+        "ar": "تقييم المطابقة وفق سلسلة ISO 21500"
+      },
+      "description": {
+        "en": "21502 · 21503 · 21504 · 21505 — 58 practices, conformity %, EVM",
+        "ar": "21502 · 21503 · 21504 · 21505 — 58 ممارسة، نسبة مطابقة، قيمة مكتسبة"
+      },
+      "domain": null,
+      "ecosystem": "pmi",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso21500",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-23",
+      "kind": "tool",
+      "title": {
+        "en": "P3O® Office Design & Capability Assessment",
+        "ar": "تصميم مكاتب P3O® وتقييم قدرتها"
+      },
+      "description": {
+        "en": "42 practices in 8 areas · model fit · design studio: services, FTE, value matrix, plan",
+        "ar": "42 ممارسة في 8 مجالات · ملاءمة النموذج · استوديو تصميم: الخدمات والوظائف ومصفوفة القيمة والخطة"
+      },
+      "domain": null,
+      "ecosystem": "p3o",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=p3o",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-24",
+      "kind": "tool",
+      "title": {
+        "en": "PMO Excellence Assessment",
+        "ar": "تقييم التميّز في مكاتب إدارة المشاريع"
+      },
+      "description": {
+        "en": "P3M3 + ISO 21500 + P3O® in one assessment · 14 domains, 42 questions · one index, one roadmap, board pack",
+        "ar": "P3M3 وISO 21500 وP3O® في تقييم واحد · 14 مجالاً و42 سؤالاً · مؤشر واحد وخارطة واحدة وحزمة للمجلس"
+      },
+      "domain": null,
+      "ecosystem": "pmo",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=pmoexc",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-25",
+      "kind": "tool",
+      "title": {
+        "en": "King Abdulaziz Quality Award assessment",
+        "ar": "تقييم التميز وفق جائزة الملك عبدالعزيز للجودة"
+      },
+      "description": {
+        "en": "National Model 4th edition 2026 · Itqan · readiness for the next cycle",
+        "ar": "النموذج الوطني · الإصدار الرابع 2026 · إتقان · الجاهزية للدورة القادمة"
+      },
+      "domain": null,
+      "ecosystem": "efqm",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=kaqa",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-26",
+      "kind": "tool",
+      "title": {
+        "en": "PDCA — Continual Improvement Cycle",
+        "ar": "PDCA — دورة التحسين المستمر"
+      },
+      "description": {
+        "en": "Cycle records linked to NCRs, audits, processes and projects · stage self-assessment · automatic cycle audit · first tool of the improvement toolbox",
+        "ar": "سجلات دورات مربوطة بعدم المطابقة والتدقيق والعمليات والمشاريع · تقييم ذاتي لكل مرحلة · تدقيق آلي للدورات · أول أداة في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=pdca",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-27",
+      "kind": "tool",
+      "title": {
+        "en": "CAPA — Corrective Action",
+        "ar": "CAPA — الإجراءات التصحيحية"
+      },
+      "description": {
+        "en": "One record per nonconformity from reaction to verified closure · read-only import from the Smart Audit center · link to a PDCA cycle · automatic record audit · second tool of the improvement toolbox",
+        "ar": "سجل لكل عدم مطابقة من التفاعل حتى الإغلاق بعد التحقق · استيراد للقراءة من مركز التدقيق الذكي · ربط بدورة PDCA · تدقيق آلي للسجلات · الأداة الثانية في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=capa",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-28",
+      "kind": "tool",
+      "title": {
+        "en": "5 Whys — Root Cause Analysis",
+        "ar": "لماذا الخمس — تحليل السبب الجذري"
+      },
+      "description": {
+        "en": "Problem from facts · chain of whys with evidence and up to two branches · root cause test and independent review · starts from a CAPA record and sends the root cause back · third tool of the improvement toolbox",
+        "ar": "مشكلة من الوقائع · سلسلة لماذا بالدليل وفرعان كحد أقصى · اختبار السبب الجذري ومراجعة مستقلة · يبدأ من سجل CAPA ويعيد إليه السبب الجذري · الأداة الثالثة في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=why5",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-29",
+      "kind": "tool",
+      "title": {
+        "en": "Fishbone — Cause and Effect Analysis",
+        "ar": "عظمة السمكة — تحليل السبب والنتيجة"
+      },
+      "description": {
+        "en": "Effect from facts · categories chosen to fit the process (6M, 4S, 8P or custom) · causes with evidence and a status, ruled out with data · the likely few verified with 5 Whys or data · live diagram · starts from a CAPA record and sends the root cause back · fourth tool of the improvement toolbox",
+        "ar": "أثر من الوقائع · فئات تناسب العملية (6M أو 4S أو 8P أو خاصة) · أسباب بدليلها وحالتها، والاستبعاد بالبيانات · التحقق من القليل الأرجح بلماذا الخمس أو بالبيانات · مخطط حي · يبدأ من سجل CAPA ويعيد إليه السبب الجذري · الأداة الرابعة في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=fish",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-30",
+      "kind": "tool",
+      "title": {
+        "en": "Pareto — Vital Few Analysis",
+        "ar": "باريتو — تحليل القلة الحيوية"
+      },
+      "description": {
+        "en": "One question per chart · categories defined in one line · count, cost, time or severity · live chart with the cumulative line and an adjustable cut-off · the vital few confirmed by the team · each linked to Fishbone, 5 Whys or CAPA · before/after check on the same basis · fifth tool of the improvement toolbox",
+        "ar": "سؤال واحد لكل مخطط · فئات معرّفة في سطر · عدد أو تكلفة أو وقت أو خطورة · مخطط حي بالنسبة التراكمية وخط قطع قابل للتعديل · قلة حيوية يؤكدها الفريق · وكل فئة منها مربوطة بعظمة السمكة أو لماذا الخمس أو CAPA · تحقق قبل وبعد على الأساس نفسه · الأداة الخامسة في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=pareto",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-31",
+      "kind": "tool",
+      "title": {
+        "en": "Root Cause Analysis — Investigation",
+        "ar": "تحليل السبب الجذري — التحقيق"
+      },
+      "description": {
+        "en": "The problem in four parts with the requirement not met · depth set by severity × likelihood · timeline of facts and assumptions · evidence register · methods chosen from the toolbox (Pareto, Fishbone, 5 Whys, data, barrier analysis) · direct, contributing and root causes, each root cause tested · live cause tree · actions on confirmed causes with a criterion written first · sixth tool of the improvement toolbox",
+        "ar": "المشكلة بأجزائها الأربعة مع المتطلب الذي لم يُستوفَ · عمق يحدده الخطر (الخطورة × الاحتمال) · تسلسل أحداث يميّز الواقعة من الافتراض · سجل أدلة · طرق من صندوق الأدوات (باريتو وعظمة السمكة ولماذا الخمس والبيانات وتحليل الحواجز) · أسباب مباشرة ومساهمة وجذرية واختبار لكل سبب جذري · شجرة أسباب حية · إجراءات على أسباب مؤكدة بمعيار يُكتب قبل التنفيذ · الأداة السادسة في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=rca",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-32",
+      "kind": "tool",
+      "title": {
+        "en": "A3 Problem Solving",
+        "ar": "حل المشكلات بأسلوب A3"
+      },
+      "description": {
+        "en": "The whole problem-solving story on one page, on the PDCA cycle · background tied to a measure · current condition from facts with a live chart · a measurable goal written before the causes · proved root causes picked from RCA, Fishbone or 5 Whys · countermeasures tied to causes and tested · plan with owners and dates · follow-up against the goal, then standardise · coach reviews through questions · live A3 page · seventh tool of the improvement toolbox",
+        "ar": "قصة حل المشكلة كاملة في صفحة واحدة على دورة PDCA · خلفية مرتبطة بمقياس · وضع حالي بالوقائع ورسم حي · هدف رقمي يُكتب قبل الأسباب · أسباب جذرية مثبتة من RCA أو عظمة السمكة أو لماذا الخمس · إجراءات مضادة مرتبطة بالأسباب ومختبرة · خطة بمسؤولين وتواريخ · متابعة مقابل الهدف ثم التوحيد · مراجعات الموجّه بالأسئلة · صفحة A3 حية · الأداة السابعة في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=a3",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-33",
+      "kind": "tool",
+      "title": {
+        "en": "DMAIC Improvement Project",
+        "ar": "مشروع التحسين بمنهج DMAIC"
+      },
+      "description": {
+        "en": "A data-driven project for a problem whose cause is unknown · five phases, each closed by the sponsor's gate review through questions · charter with CTQs, SIPOC and a goal written before the analysis · operational definition and a measurement check before the baseline · baseline and after-change run charts with mean, median and defect rate · causes from Fishbone, 5 Whys or RCA proved or ruled out with a two-group data check · piloted solutions with the risks of the change · control plan with a reaction plan and the hand-over to the process owner · eighth tool of the improvement toolbox",
+        "ar": "مشروع قائم على البيانات لمشكلة سببها غير معروف · خمس مراحل تنتهي كل منها ببوابة يراجعها الراعي بالأسئلة · ميثاق بمتطلبات العميل الحرجة وSIPOC وهدف يُكتب قبل التحليل · تعريف تشغيلي للمقياس وتحقق من الثقة فيه قبل الأساس · رسمان تشغيليان للأساس وما بعد التغيير بالمتوسط والوسيط ونسبة العيوب · أسباب من عظمة السمكة أو لماذا الخمس أو RCA تُثبت أو تُستبعد بمقارنة مجموعتين · حلول مجرّبة مع مخاطر التغيير · خطة ضبط برد فعل وتسليم لمالك العملية · الأداة الثامنة في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=dmaic",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-34",
+      "kind": "tool",
+      "title": {
+        "en": "ISO 10009:2024 Quality tools guide",
+        "ar": "ISO 10009:2024 دليل أدوات الجودة"
+      },
+      "description": {
+        "en": "The guidance standard on quality tools, explained in full · the 53 tools of clauses 5 to 16 with their PDCA phase (Annex A) and attributes (Annex C) · a tool navigator by aim, phase, team, data and capability · a library that opens each tool where it lives on the platform · a PDCA storyboard (Annex B) linked to the records of Pareto, Fishbone, 5 Whys, RCA, DMAIC and PDCA · NPS, OEE and cost of quality calculators · platform coverage of the standard's tools",
+        "ar": "المواصفة الإرشادية لأدوات الجودة مشروحة كاملة · الأدوات الـ 53 في البنود 5 إلى 16 بمرحلتها في PDCA (الملحق A) وخصائصها (الملحق C) · مستكشف يقترح الأداة بحسب الغرض والمرحلة والفريق والبيانات والكفاءة · مكتبة تفتح كل أداة حيث توجد في المنصة · لوحة قصة على PDCA (الملحق B) مرتبطة بسجلات باريتو وعظمة السمكة ولماذا الخمس وRCA وDMAIC وPDCA · حاسبات NPS وOEE وتكلفة الجودة · تغطية المنصة لأدوات المواصفة"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=iso10009",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-35",
+      "kind": "tool",
+      "title": {
+        "en": "FMEA — Failure Mode and Effects Analysis",
+        "ar": "تحليل أنماط الفشل وآثارها FMEA"
+      },
+      "description": {
+        "en": "A structured team look ahead at how each process step or design function can fail · written 1–10 severity, occurrence and detection scales agreed before the rating · failure mode, effect, cause, prevention and detection controls · priority number and action priority computed by a written rule, high severity first · actions with an owner and a date, re-rated with evidence; severity falls only with a design or process change · severity × occurrence heat map before and after · dated reviews after a change, a nonconformity or an audit finding · starts from DMAIC, RCA or Pareto · ISO 10009:2024 7.3 · ninth tool of the improvement toolbox",
+        "ar": "نظرة فريق منظمة إلى كيف قد تفشل كل خطوة في العملية أو وظيفة في التصميم · مقاييس مكتوبة من 1 إلى 10 للخطورة والحدوث والكشف تُعتمد قبل التقييم · نمط الفشل والأثر والسبب وضوابط المنع والكشف · رقم الأولوية وأولوية الإجراء محسوبان بقاعدة مكتوبة، والخطورة العالية أولاً · إجراءات بمالك وموعد وإعادة تقييم بالدليل؛ والخطورة لا تنخفض إلا بتغيير في التصميم أو العملية · خريطة حرارة للخطورة × الحدوث قبل الإجراءات وبعدها · مراجعات مؤرخة بعد التغيير وعدم المطابقة وملاحظة التدقيق · البدء من DMAIC أو RCA أو باريتو · ISO 10009:2024 البند 7.3 · الأداة التاسعة في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=fmea",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-36",
+      "kind": "tool",
+      "title": {
+        "en": "Lessons Learned Register",
+        "ar": "سجل الدروس المستفادة"
+      },
+      "description": {
+        "en": "One record per lesson: what happened and the evidence, the cause taken read-only from a real analysis (RCA, 5 Whys, Fishbone, A3, DMAIC, FMEA, CAPA), the lesson written as a rule others can apply (When…, do…, because…) with where it applies · embedding actions that change a procedure, a form, a checklist, a training, an FMEA row or a control plan, with an owner, a date and evidence · verification on the next project and sharing · computed stages, blame-free wording, a search of the register and a read-before-you-start list · starts from RCA, A3, DMAIC, FMEA, CAPA or PDCA · a practice serving ISO 9001:2026 7.1.6 and 10.2.1 · tenth tool of the improvement toolbox",
+        "ar": "سجل لكل درس: ما حدث بدليله، والسبب مأخوذ للقراءة فقط من تحليل حقيقي (RCA أو لماذا الخمس أو عظمة السمكة أو A3 أو DMAIC أو FMEA أو CAPA)، والدرس قاعدة يطبقها غيرك (عندما… افعل… لأن…) مع أين تنطبق · إجراءات ترسيخ تغيّر إجراءً أو نموذجاً أو قائمة فحص أو تدريباً أو صفاً في FMEA أو خطة ضبط، بمالك وموعد ودليل · تحقق في المشروع التالي وتعميم · مراحل محسوبة، وصياغة بلا لوم، وبحث في السجل، وقائمة «اقرأ قبل أن تبدأ» · البدء من RCA أو A3 أو DMAIC أو FMEA أو CAPA أو PDCA · ممارسة تخدم ISO 9001:2026 البندين 7.1.6 و10.2.1 · الأداة العاشرة في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=lessons",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-37",
+      "kind": "tool",
+      "title": {
+        "en": "SWOT Analysis",
+        "ar": "تحليل SWOT"
+      },
+      "description": {
+        "en": "One study per analysis, serving a named decision: a team of at least three roles with outside input · internal strengths and weaknesses backed by a KPI, an audit result or a lesson, external opportunities and threats from PESTLE, Porter's forces and market data, with a placement check and an opinion-only flag · each quadrant weighted and ranked, the grid of top items · TOWS options linking two quadrants, actions with an owner and a date, risk and opportunity entries for the 6.1 plan · a dated review when the context changes · starts read-only from the Strategy Studio's SWOT, TOWS and PESTLE, lessons, Pareto and FMEA · ISO 10009:2024 5.1 · eleventh tool of the improvement toolbox",
+        "ar": "دراسة لكل تحليل تخدم قراراً محدداً: فريق من ثلاثة أدوار على الأقل برأي خارجي · قوة وضعف داخليان بدليل من مؤشر أو تدقيق أو درس، وفرص وتهديدات خارجية من PESTLE وقوى بورتر وبيانات السوق، مع فحص الموضع وتنبيه «رأي فقط» · وزن ورتبة لكل ربع، ومصفوفة البنود العليا · خيارات TOWS تربط ربعين، وإجراءات بمالك وموعد، ومداخل مخاطر وفرص لخطة 6.1 · مراجعة مؤرخة عند تغير السياق · البدء للقراءة فقط من SWOT وTOWS وPESTLE في استوديو الاستراتيجية والدروس وباريتو وFMEA · ISO 10009:2024 البند 5.1 · الأداة الحادية عشرة في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "performance",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=swot",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-38",
+      "kind": "tool",
+      "title": {
+        "en": "PESTLE Analysis",
+        "ar": "تحليل PESTLE"
+      },
+      "description": {
+        "en": "One scan per decision or plan, at the international, national, regional or local level: a team of at least three roles with outside input · the six factors (names adjustable, factors can be added), each item a specific fact with its source and date, its effect, significance, certainty and time horizon, with flags on generic and unsourced items · an explicit climate change decision (ISO 9001:2026 4.1) · a ranking by significance × certainty, the board, the matrix and the time horizon · an outcome for every top item into a SWOT study, the risk register or the 6.1 plan, or set aside with a reason · a review on a date and after major events · starts read-only from the Strategy Studio's PESTLE register and SWOT studies · ISO 10009:2024 5.2 · twelfth tool of the improvement toolbox",
+        "ar": "مسح لكل قرار أو خطة، على المستوى الدولي أو الوطني أو الإقليمي أو المحلي: فريق من ثلاثة أدوار على الأقل برأي خارجي · العوامل الستة (يمكن تعديل أسمائها وإضافة عوامل)، ولكل بند واقعة محددة بمصدرها وتاريخها وأثرها وأهميتها ويقينها وأفقها، مع تنبيه على البند العام وغير الموثق · قرار صريح في تغير المناخ (ISO 9001:2026 البند 4.1) · ترتيب بالأهمية × اليقين، واللوحة والمصفوفة والأفق الزمني · مخرج لكل بند أعلى إلى دراسة SWOT أو سجل المخاطر أو خطة 6.1، أو الاستبعاد بسبب · مراجعة في موعدها وبعد الأحداث الكبرى · البدء للقراءة فقط من سجل PESTLE في استوديو الاستراتيجية ودراسات SWOT · ISO 10009:2024 البند 5.2 · الأداة الثانية عشرة في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "performance",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=pestle",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-10-25",
+        "note": "Mirrors the owner-published hub; edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-TOOL-39",
+      "kind": "tool",
+      "title": {
+        "en": "Stakeholder Analysis",
+        "ar": "تحليل الأطراف المعنية"
+      },
+      "description": {
+        "en": "One register per decision or plan: a team of at least three roles with outside input · interested parties named specifically, with generic names flagged · each party's requirements with their source and date, and the ISO 9001:2026 4.2 c) decision on every requirement (addressed, partly or not, with the reason) · power and interest rated with reasons, the power/interest grid and the engagement approach, a relationship owner, channel and frequency · an explicit question on climate-related requirements (NOTE to 4.2) · an outcome for every key party into a SWOT study, a PESTLE scan, the risk register or the 6.1 plan, or set aside with a reason · a review on a date and after major changes, with its changes for management review (9.3.2 c)) · starts read-only from SWOT, PESTLE, the Strategy Studio and Lessons Learned · thirteenth tool of the improvement toolbox",
+        "ar": "سجل لكل قرار أو خطة: فريق من ثلاثة أدوار على الأقل برأي خارجي · أطراف معنية بأسمائها مع تنبيه على الأسماء العامة · متطلبات كل طرف بمصدرها وتاريخها، وقرار البند 4.2 ج) من ISO 9001:2026 لكل متطلب (يعالجه النظام أو جزئياً أو لا، مع السبب) · القوة والاهتمام بسببهما، ومصفوفة القوة والاهتمام وطريقة التعامل، ومالك العلاقة وقناتها وتكرارها · سؤال صريح عن متطلبات المناخ (ملاحظة 4.2) · مخرج لكل طرف رئيسي إلى دراسة SWOT أو مسح PESTLE أو سجل المخاطر أو خطة 6.1، أو يُستبعد بسبب · مراجعة في موعدها وبعد التغيرات الكبيرة، وتغيراتها لمراجعة الإدارة (9.3.2 ج)) · البدء للقراءة فقط من SWOT وPESTLE واستوديو الاستراتيجية والدروس المستفادة · الأداة الثالثة عشرة في صندوق أدوات التحسين"
+      },
+      "domain": null,
+      "ecosystem": "quality",
+      "standard_reference": null,
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../#m=stakeholders",
+      "related": [],
+      "version": "hub-sync",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "hub-sync",
+        "reviewer": "Owner publication (live hub)",
+        "review_date": "2026-11-02",
+        "note": "Mirrors the toolkit list the owner published on the live hub; no Academy review implied. Edition labels pending external verification (V-01)."
+      },
+      "access": "account"
+    },
+    {
+      "id": "LIB-SIM-01",
+      "kind": "simulation",
+      "title": {
+        "en": "Quality Mission — ISO 9001 learning game",
+        "ar": "مهمة الجودة — لعبة تعلّم ISO 9001"
+      },
+      "description": {
+        "en": "32 workplace scenarios across health, manufacturing, construction and financial services: choose the action and the evidence, then see the consequence.",
+        "ar": "32 سيناريو عمليًا في الصحة والتصنيع والإنشاءات والخدمات المالية: اختر التصرف والدليل، ثم شاهد العاقبة."
+      },
+      "domain": null,
+      "ecosystem": "iso",
+      "standard_reference": "ISO 9001",
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../cia-quality-mission/",
+      "related": [],
+      "version": "2.0-audit-day",
+      "access": "open",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "2.0-audit-day",
+        "reviewer": "Owner publication (live toolkit)",
+        "review_date": "2026-10-28",
+        "change_note": "Links to the owner's published Quality Mission game (live commit db802aa); no Academy review implied."
+      }
+    },
+    {
+      "id": "LIB-SIM-02",
+      "kind": "simulation",
+      "title": {
+        "en": "Quality Mission — audit-day simulation",
+        "ar": "مهمة الجودة — محاكاة يوم التدقيق"
+      },
+      "description": {
+        "en": "Walk through a full audit day in 12 stages, from the opening meeting to follow-up and the independent review of the audit file, in the sector you choose.",
+        "ar": "عِش يوم تدقيق كاملًا في 12 مرحلة، من اجتماع البداية حتى المتابعة والمراجعة المستقلة لملف التدقيق، في القطاع الذي تختاره."
+      },
+      "domain": null,
+      "ecosystem": "iso",
+      "standard_reference": "ISO 9001",
+      "language": "ar-en",
+      "access_tier": "free",
+      "format": "html",
+      "link": "../cia-quality-mission/simulation.html",
+      "related": [],
+      "version": "2.0-audit-day",
+      "access": "open",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "2.0-audit-day",
+        "reviewer": "Owner publication (live toolkit)",
+        "review_date": "2026-10-28",
+        "change_note": "Links to the owner's published Quality Mission game (live commit db802aa); no Academy review implied."
+      }
+    }
+  ]
+}

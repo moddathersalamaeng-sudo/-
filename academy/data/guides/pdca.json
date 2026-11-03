@@ -1,0 +1,770 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-PDCA",
+  "slug": "pdca",
+  "kind": "method",
+  "module": "pdca",
+  "title": {
+   "en": "PDCA — Plan-Do-Check-Act",
+   "ar": "PDCA — دورة التحسين المستمر"
+  },
+  "subtitle": {
+   "en": "Method tool, not a certification standard",
+   "ar": "أداة منهجية، وليست شهادة"
+  },
+  "lede": {
+   "en": "PDCA is a repeating management method: plan a small, specific change, carry it out, measure its effect, then decide whether to keep it, adjust it or start a new cycle. Its purpose is to turn improvement from scattered initiatives into a disciplined, repeatable routine.",
+   "ar": "PDCA دورة إدارة متكررة: تخطط لتغيير صغير ومحدد، تنفّذه، تقيس أثره، ثم تقرر تثبيته أو تعديله وتبدأ دورة جديدة. الغرض أن يتحول التحسين من مبادرات متفرقة إلى عمل منضبط ومتكرر."
+  },
+  "author": "مدثر سلامه",
+  "note": {
+   "en": "PDCA is a management method, not a certification standard. Its formal reference in the platform is ISO 9001:2026 clause 0.3.2.",
+   "ar": "PDCA منهجية إدارة وليست مواصفة للشهادة. المرجع الرسمي لدورتها في المنصة هو ISO 9001:2026 البند 0.3.2."
+  },
+  "who": {
+   "en": "Process owners, improvement teams, quality and HSE managers, and auditors who check that improvement is documented and measured.",
+   "ar": "مالكو العمليات، وفرق التحسين، ومديرو الجودة وHSE، والمدققون الذين يتحققون من أن التحسين موثّق ومقاس."
+  },
+  "roles": [],
+  "steps": [
+   {
+    "no": "P",
+    "title": {
+     "en": "Plan",
+     "ar": "التخطيط"
+    },
+    "text": {
+     "en": "Define the problem and target, analyse causes, then plan actions and risks.",
+     "ar": "حدّد المشكلة والهدف، وحلّل الأسباب، ثم خطّط الإجراءات والمخاطر."
+    },
+    "ref": "PL1"
+   },
+   {
+    "no": "D",
+    "title": {
+     "en": "Do",
+     "ar": "التنفيذ"
+    },
+    "text": {
+     "en": "Carry out the plan as written, record deviations and keep evidence.",
+     "ar": "نفّذ الخطة كما كُتبت، وسجّل الانحرافات، واحتفظ بالدليل."
+    },
+    "ref": "DO1"
+   },
+   {
+    "no": "C",
+    "title": {
+     "en": "Check",
+     "ar": "التحقق"
+    },
+    "text": {
+     "en": "Measure the result the same way, and check implementation and effect.",
+     "ar": "قِس النتيجة بالطريقة نفسها، وتحقق من التنفيذ ومن الأثر."
+    },
+    "ref": "CK1"
+   },
+   {
+    "no": "A",
+    "title": {
+     "en": "Act",
+     "ar": "التصرف"
+    },
+    "text": {
+     "en": "Standardise what worked or adjust the plan, then close the cycle and link it to its origin.",
+     "ar": "ثبّت ما نجح أو عدّل الخطة، وأغلق الدورة واربطها بسجلها الأصلي."
+    },
+    "ref": "AC1"
+   }
+  ],
+  "related": [
+   {
+    "code": "CAPA",
+    "name": {
+     "en": "Corrective action (CAPA)",
+     "ar": "إجراء تصحيحي (CAPA)"
+    },
+    "text": {
+     "en": "When a cycle starts from a nonconformity, the CAPA record is the reference that closes it (clause 10.2).",
+     "ar": "عندما تبدأ الدورة من عدم مطابقة، يصبح سجل CAPA هو المرجع الذي تُغلق به الدورة (البند 10.2)."
+    }
+   },
+   {
+    "code": "RCA",
+    "name": {
+     "en": "Root cause analysis",
+     "ar": "تحليل السبب الجذري"
+    },
+    "text": {
+     "en": "Feeds the planning stage with likely causes. Toolbox tools: 5 Whys, Fishbone, Pareto.",
+     "ar": "يغذّي مرحلة التخطيط بالأسباب المرجّحة. أدوات الصندوق: 5 Whys وFishbone وPareto."
+    }
+   },
+   {
+    "code": "ISO 9001",
+    "name": {
+     "en": "Quality management system",
+     "ar": "نظام إدارة الجودة"
+    },
+    "text": {
+     "en": "PDCA is the structure on which clauses 4 to 10 of the standard are arranged.",
+     "ar": "PDCA هو البنية التي تقوم عليها متطلبات البنود 4 إلى 10 في المواصفة."
+    }
+   }
+  ],
+  "serves": [
+   {
+    "code": "ISO 9001:2026 §0.3.2",
+    "name": {
+     "en": "PDCA cycle",
+     "ar": "دورة PDCA"
+    },
+    "text": {
+     "en": "Describes the cycle for processes and for the whole system, linked to clauses 4 to 10.",
+     "ar": "وصف الدورة للعمليات والنظام ككل، وربطها بالبنود 4 إلى 10."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 §10.2",
+    "name": {
+     "en": "Nonconformity and corrective action",
+     "ar": "عدم المطابقة والإجراء التصحيحي"
+    },
+    "text": {
+     "en": "Review the nonconformity, determine causes, implement action, review its effectiveness and update risks where needed.",
+     "ar": "مراجعة عدم المطابقة، وتحديد أسبابها، وتنفيذ الإجراء، ومراجعة فعاليته، وتحديث المخاطر عند الحاجة."
+    }
+   }
+  ],
+  "clauses": [
+   {
+    "id": "P",
+    "phase": "plan",
+    "title": {
+     "en": "Plan",
+     "ar": "التخطيط — Plan"
+    },
+    "short": {
+     "en": "Plan · Plan",
+     "ar": "Plan · التخطيط"
+    },
+    "intro": {
+     "en": "Before any change, define the problem, the target, why it happens, what you will do and who owns what.",
+     "ar": "قبل أي تغيير، تحدد ما المشكلة، وما الهدف، ولماذا تحدث، وماذا ستفعل ومن يتولى ماذا."
+    },
+    "items": [
+     {
+      "ref": "s1-1",
+      "clause": "PL1",
+      "title": {
+       "en": "Define the problem and a measurable target",
+       "ar": "حدّد المشكلة والهدف القابل للقياس"
+      },
+      "req": {
+       "en": "State the problem as observed: what happens, where and since when. Then set a target you can measure against a clear baseline, so you can later tell whether things actually improved.",
+       "ar": "صِغ المشكلة كما تُلاحظ: ما الذي يحدث، أين، ومنذ متى. ثم حدّد هدفاً يمكن قياسه مقابل خط أساس (baseline) واضح، حتى تعرف لاحقاً إن كان الوضع قد تحسّن فعلاً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “Technical submittals returned after the agreed date in the last quarter; the baseline is counted from the submittals register itself.”",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «تأخر إرجاع الاعتمادات الفنية عن الموعد المتفق عليه في الربع الأخير، والخط الأساس يُحسب من سجل الاعتمادات نفسه»."
+      },
+      "how": [
+       {
+        "en": "Take baseline data from an existing record, not from memory",
+        "ar": "اجمع بيانات الخط الأساس من سجل موجود، لا من الذاكرة"
+       },
+       {
+        "en": "Define the target with a unit, a period and a calculation method",
+        "ar": "عرّف الهدف بوحدة قياس ومدة وطريقة حساب"
+       },
+       {
+        "en": "Write the cycle scope: what is included and what is not",
+        "ar": "اكتب نطاق الدورة: ما الذي يشمله وما الذي لا يشمله"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Problem statement with the data source",
+        "ar": "وصف المشكلة مع مصدر البيانات"
+       },
+       {
+        "en": "Baseline record and how it was calculated",
+        "ar": "سجل الخط الأساس وطريقة حسابه"
+       },
+       {
+        "en": "Target written with its unit",
+        "ar": "الهدف مكتوباً بوحدة القياس"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A general goal such as “improve performance” with no measure",
+        "ar": "هدف عام مثل «تحسين الأداء» بلا مقياس"
+       },
+       {
+        "en": "A baseline estimated from memory",
+        "ar": "خط أساس مقدّر من الذاكرة"
+       },
+       {
+        "en": "A problem written as a disguised solution, such as “we need a new system”",
+        "ar": "مشكلة مكتوبة كحل مقنّع، مثل «نحتاج برنامجاً جديداً»"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of cycles with a recorded target and baseline",
+       "ar": "نسبة الدورات التي لها هدف وخط أساس مسجّلان"
+      }
+     },
+     {
+      "ref": "s1-2",
+      "clause": "PL2",
+      "title": {
+       "en": "Analyse causes before choosing a fix",
+       "ar": "حلّل الأسباب قبل اختيار الحل"
+      },
+      "req": {
+       "en": "Look for the root cause or the most likely causes before proposing an action. Use the toolbox analysis tools (5 Whys, Fishbone, Pareto) and record which ones you used.",
+       "ar": "ابحث عن السبب الجذري أو الأسباب المرجّحة قبل اقتراح الإجراء. استخدم أدوات التحليل في الصندوق (5 Whys وFishbone وPareto) وسجّل ما استخدمته."
+      },
+      "ex": {
+       "en": "If delays repeat at the internal review stage, ask why submittals stop there, not how to make people work faster.",
+       "ar": "إذا تكرر التأخير عند مرحلة المراجعة الداخلية، فالسؤال هو: لماذا تتوقف الاعتمادات هناك؟ وليس: كيف نُسرّع الموظفين؟"
+      },
+      "how": [
+       {
+        "en": "Pick an analysis tool that fits the problem and record why",
+        "ar": "اختر أداة تحليل تناسب المشكلة وسجّل سببها"
+       },
+       {
+        "en": "Separate the cause from its symptoms by asking “why” repeatedly",
+        "ar": "فرّق بين السبب وأعراضه بسؤال «لماذا» متكرر"
+       },
+       {
+        "en": "Go back to the data: does the cause actually appear in it?",
+        "ar": "ارجع إلى البيانات: هل السبب يظهر فعلاً فيها؟"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Analysis tool output saved",
+        "ar": "مخرجات أداة التحليل محفوظة"
+       },
+       {
+        "en": "Evidence supporting the likely cause",
+        "ar": "أدلة تدعم السبب المرجّح"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Choosing the fix before analysing",
+        "ar": "اختيار الحل قبل التحليل"
+       },
+       {
+        "en": "A cause written without evidence",
+        "ar": "سبب مكتوب دون دليل"
+       },
+       {
+        "en": "Stopping at the direct cause without asking what caused it",
+        "ar": "الاكتفاء بالسبب المباشر دون السؤال عن سببه"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Improvement team",
+       "ar": "فريق التحسين"
+      },
+      "kpi": {
+       "en": "Causes identified with evidence",
+       "ar": "عدد الأسباب المحدّدة بدليل"
+      }
+     },
+     {
+      "ref": "s1-3",
+      "clause": "PL3",
+      "title": {
+       "en": "Plan actions, owners, resources and risks",
+       "ar": "خطّط الإجراءات والمخاطر والموارد"
+      },
+      "req": {
+       "en": "For each action: a clear owner, start and due dates, the resources needed and what could block it. Addressing the risks and opportunities linked to the change is part of planning, not an add-on.",
+       "ar": "لكل إجراء: مسؤول واضح، وتاريخ بداية وتاريخ استحقاق، والموارد المطلوبة، وما قد يعيق التنفيذ. ومعالجة المخاطر والفرص المرتبطة بالتغيير جزء من التخطيط وليست ملحقاً له."
+      },
+      "ex": {
+       "en": "Action “train reviewers on the submittal form”: owner is the engineering manager, starts next week, due before month end, and could be blocked by the lead reviewer's leave.",
+       "ar": "إجراء «تدريب المراجعين على نموذج الاعتماد» مالكه مدير الهندسة، يبدأ الأسبوع القادم، ويستحق قبل نهاية الشهر، ويعيقه غياب المراجع الرئيسي في الإجازات."
+      },
+      "how": [
+       {
+        "en": "Write each action as a specific, completable task",
+        "ar": "اكتب الإجراء بفعل محدد ومُنجَز"
+       },
+       {
+        "en": "Link each action to a cause from PL2",
+        "ar": "اربط كل إجراء بسبب من PL2"
+       },
+       {
+        "en": "Record the risks that could block it and how to handle them",
+        "ar": "سجّل المخاطر التي قد تعيق التنفيذ وطريقة معالجتها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Action plan with owners and dates",
+        "ar": "خطة إجراءات بمالك وتواريخ"
+       },
+       {
+        "en": "Cycle risk log",
+        "ar": "سجل مخاطر الدورة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "General actions with no owner or date",
+        "ar": "إجراءات عامة بلا مالك أو موعد"
+       },
+       {
+        "en": "Ignoring the risks and opportunities linked to the change",
+        "ar": "تجاهل المخاطر والفرص المرتبطة بالتغيير"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "صاحب العملية"
+      },
+      "kpi": {
+       "en": "Share of actions with an owner and a due date",
+       "ar": "نسبة الإجراءات التي لها مالك وتاريخ"
+      }
+     }
+    ]
+   },
+   {
+    "id": "D",
+    "phase": "support",
+    "title": {
+     "en": "Do",
+     "ar": "التنفيذ — Do"
+    },
+    "short": {
+     "en": "Do · Do",
+     "ar": "Do · التنفيذ"
+    },
+    "intro": {
+     "en": "Carry out what was planned, record what changed during the work, and collect evidence as you go.",
+     "ar": "نفّذ ما خُطط له، وسجّل ما تغيّر أثناء التنفيذ، واجمع الدليل وأنت تعمل."
+    },
+    "items": [
+     {
+      "ref": "s2-1",
+      "clause": "DO1",
+      "title": {
+       "en": "Carry out the plan as written and record deviations",
+       "ar": "نفّذ الخطة كما كُتبت وسجّل الانحرافات"
+      },
+      "req": {
+       "en": "Carry out the actions in the planned order. Any change in scope, date or owner is recorded with its date and reason, so the later comparison stays accurate.",
+       "ar": "نفّذ الإجراءات بالترتيب المخطط له. أي تغيير في النطاق أو الموعد أو المسؤول يُسجَّل بتاريخه وسببه، حتى لا تصبح المقارنة اللاحقة غير دقيقة."
+      },
+      "ex": {
+       "en": "Training is postponed two weeks because of leave; the postponement is logged with the reason and the new date.",
+       "ar": "تأجل التدريب أسبوعين بسبب الإجازات؛ يُسجَّل التأجيل مع السبب الجديد للموعد."
+      },
+      "how": [
+       {
+        "en": "Review the plan with the owner at the start",
+        "ar": "راجع الخطة مع المالك في بداية التنفيذ"
+       },
+       {
+        "en": "Log each deviation in the cycle record as it happens",
+        "ar": "سجّل كل انحراف في سجل الدورة فور حدوثه"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Deviation log with dates and reasons",
+        "ar": "سجل الانحرافات بتاريخها وسببها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Work done with no log, then reconstructed from memory",
+        "ar": "تنفيذ بلا سجل، ثم تُكتب الذكريات لاحقاً"
+       },
+       {
+        "en": "Changing the plan without the target owner knowing",
+        "ar": "تغيير الخطة دون علم صاحب الهدف"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Action owner",
+       "ar": "مالك الإجراء"
+      },
+      "kpi": {
+       "en": "Share of actions completed on time",
+       "ar": "نسبة الإجراءات المنفذة في موعدها"
+      }
+     },
+     {
+      "ref": "s2-2",
+      "clause": "DO2",
+      "title": {
+       "en": "Keep evidence while doing the work",
+       "ar": "احتفظ بالدليل أثناء التنفيذ"
+      },
+      "req": {
+       "en": "Evidence is what makes improvement auditable: a training attendance list, a revised form, meeting minutes, a before-and-after photo or an operating report. Collect it during the work, not afterwards from memory.",
+       "ar": "الدليل هو ما يجعل التحسين قابلاً للتدقيق: سجل حضور تدريب، نموذج معدّل، محضر اجتماع، صورة قبل وبعد، أو تقرير تشغيل. اجمعه أثناء التنفيذ، لا بعده من الذاكرة."
+      },
+      "ex": {
+       "en": "After the form is revised, the old and new versions are kept with the effective date and the list of users who were trained.",
+       "ar": "بعد تعديل النموذج تُحفظ نسخته القديمة والجديدة مع تاريخ السريان وقائمة المستخدمين الذين تلقّوا التدريب."
+      },
+      "how": [
+       {
+        "en": "Decide before starting what evidence each action needs",
+        "ar": "حدّد قبل البدء ما الدليل المطلوب لكل إجراء"
+       },
+       {
+        "en": "Store evidence in one place linked to the cycle",
+        "ar": "احفظ الدليل في مكان واحد مرتبط بالدورة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Dated attachments linked to the action",
+        "ar": "مرفقات مؤرخة ومرتبطة بالإجراء"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Evidence that exists but is undated or unlinked to the action",
+        "ar": "دليل موجود لكن غير مؤرخ أو غير مرتبط بالإجراء"
+       },
+       {
+        "en": "Relying on a verbal statement from a staff member",
+        "ar": "الاعتماد على شهادة شفهية من أحد الموظفين"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Action owner",
+       "ar": "مالك الإجراء"
+      },
+      "kpi": {
+       "en": "Share of completed actions with evidence",
+       "ar": "نسبة الإجراءات المنفذة ولها دليل"
+      }
+     }
+    ]
+   },
+   {
+    "id": "C",
+    "phase": "check",
+    "title": {
+     "en": "Check",
+     "ar": "التحقق — Check"
+    },
+    "short": {
+     "en": "Check · Check",
+     "ar": "Check · التحقق"
+    },
+    "intro": {
+     "en": "Measure the result with the same method, verify that the action was implemented and that it produced the intended effect.",
+     "ar": "قِس النتيجة بالمقياس نفسه، وتحقق من أن الإجراء نُفّذ، ومن أنه أحدث الأثر المطلوب."
+    },
+    "items": [
+     {
+      "ref": "s3-1",
+      "clause": "CK1",
+      "title": {
+       "en": "Measure the result with the same method",
+       "ar": "قِس النتيجة بالمقياس نفسه"
+      },
+      "req": {
+       "en": "Re-measure with the same method you used for the baseline, over a similar period or volume, then compare the result with the target. If you changed the method, record it so the comparison is not misread.",
+       "ar": "أعد القياس بالطريقة نفسها التي استخدمتها للخط الأساس، ولفترة أو حجم مماثل تقريباً، ثم قارن النتيجة بالهدف. إذا غيّرت طريقة القياس فسجّل ذلك حتى لا تُقرأ المقارنة خطأً."
+      },
+      "ex": {
+       "en": "If the baseline counts late submittals from the monthly register, the post-change measure is counted from the same register for a matching period.",
+       "ar": "إذا كان الخط الأساس يحسب الاعتمادات المتأخرة من السجل الشهري، فالقياس بعد التغيير يُحسب من السجل نفسه للفترة الموازية."
+      },
+      "how": [
+       {
+        "en": "Use the same definition of “late”",
+        "ar": "استخدم التعريف نفسه للحالة «متأخر»"
+       },
+       {
+        "en": "Compare matching periods only",
+        "ar": "قارن الفترات المتماثلة فقط"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Measured result with its calculation method",
+        "ar": "نتيجة القياس مع طريقة حسابها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Comparing a full month with one week",
+        "ar": "مقارنة شهر كامل مع أسبوع"
+       },
+       {
+        "en": "Changing the measure's definition mid-cycle without recording it",
+        "ar": "تغيير تعريف المقياس في منتصف الدورة دون تسجيل"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process manager or quality lead",
+       "ar": "مدير العملية أو مسؤول الجودة"
+      },
+      "kpi": {
+       "en": "Measured result against the target",
+       "ar": "نتيجة القياس مقارنة بالهدف"
+      }
+     },
+     {
+      "ref": "s3-2",
+      "clause": "CK2",
+      "title": {
+       "en": "Check implementation and effectiveness together",
+       "ar": "تحقق من التنفيذ ومن الأثر معاً"
+      },
+      "req": {
+       "en": "Verification has two parts: was what was planned implemented, and did it produce the intended effect? You can implement an action fully and see no change; that is important information that leads to adjusting the fix, not to closing the cycle.",
+       "ar": "التحقق خطوتان: هل نُفّذ ما خُطط له؟ وهل حقق الأثر المطلوب؟ قد تنفّذ إجراءً كاملاً ولا يتغير شيء، وهذه معلومة مهمة تقود إلى تعديل الحل لا إلى إغلاق الدورة."
+      },
+      "ex": {
+       "en": "Training was delivered to all reviewers, but the delay rate did not change; the real cause may lie in the consultant's approval step, not with the reviewers.",
+       "ar": "تدريب نُفّذ لكل المراجعين، لكن معدل التأخير لم يتغير؛ السبب الحقيقي ربما في اعتماد المهندس الاستشاري، لا في المراجعين."
+      },
+      "how": [
+       {
+        "en": "Use a simple implementation checklist",
+        "ar": "اعمل قائمة تحقق بسيطة للتنفيذ"
+       },
+       {
+        "en": "Ask: did the result change because of the action or for another reason?",
+        "ar": "اسأل: هل النتيجة تغيّرت بسبب الإجراء أم لسبب آخر؟"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Signed implementation checklist",
+        "ar": "قائمة تحقق التنفيذ موقعة"
+       },
+       {
+        "en": "Note on the effect and its reason",
+        "ar": "ملاحظة عن الأثر وسببها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Treating implementation as proof of effectiveness",
+        "ar": "اعتبار التنفيذ دليلاً على الفعالية"
+       },
+       {
+        "en": "Closing the cycle before enough time has passed to measure",
+        "ar": "إغلاق الدورة قبل مرور فترة كافية للقياس"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Internal auditor or system owner",
+       "ar": "مدقق داخلي أو مسؤول النظام"
+      },
+      "kpi": {
+       "en": "Share of cycles with an effectiveness check",
+       "ar": "نسبة الدورات التي لها تحقق من الأثر"
+      }
+     }
+    ]
+   },
+   {
+    "id": "A",
+    "phase": "act",
+    "title": {
+     "en": "Act",
+     "ar": "التصرف — Act"
+    },
+    "short": {
+     "en": "Act · Act",
+     "ar": "Act · التصرف"
+    },
+    "intro": {
+     "en": "If the change worked, make it permanent; if not, adjust and start a new cycle. Then close the cycle and link it to its origin.",
+     "ar": "إن نجح التغيير فثبّته، وإن لم ينجح فعدّل وابدأ دورة جديدة، ثم أغلق الدورة واربطها بسجلها الأصلي."
+    },
+    "items": [
+     {
+      "ref": "s4-1",
+      "clause": "AC1",
+      "title": {
+       "en": "Standardise what worked or adjust the plan",
+       "ar": "ثبّت ما نجح أو عدّل الخطة"
+      },
+      "req": {
+       "en": "If the target was met, turn the change into a written procedure, form or training so the old way does not return. If it was not met, do not close the cycle: adjust the fix and start a new cycle from PL2, not from zero.",
+       "ar": "إذا تحقق الهدف، حوّل التغيير إلى إجراء مكتوب أو نموذج أو تدريب، حتى لا يعود الوضع القديم. وإذا لم يتحقق، فلا تُغلق الدورة: عدّل الحل وابدأ دورة جديدة من PL2 لا من الصفر."
+      },
+      "ex": {
+       "en": "The new submittal form worked, so it is written into the review procedure and the approved forms list is updated. Training alone was not enough, so a new cycle starts targeting the consultant's approval step.",
+       "ar": "نجح نموذج الاعتماد الجديد، فيُدرج في إجراء المراجعة وتُحدَّث قائمة النماذج المعتمدة. أما التدريب وحده فلم يكفِ، فتُبدأ دورة جديدة تستهدف الاعتماد الاستشاري."
+      },
+      "how": [
+       {
+        "en": "Update the document or form before closing the cycle",
+        "ar": "حدّث الوثيقة أو النموذج قبل إغلاق الدورة"
+       },
+       {
+        "en": "If the target was not met, record which assumption failed",
+        "ar": "إن لم يتحقق الهدف، سجّل الفرضية التي فشلت"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Updated document or form with its effective date",
+        "ar": "وثيقة أو نموذج محدّث بتاريخ السريان"
+       },
+       {
+        "en": "Link to the new cycle when needed",
+        "ar": "رابط الدورة الجديدة عند الحاجة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A change that lives in people's heads and is never written down",
+        "ar": "تغيير يعيش في ذهن الفريق ولا يُكتب"
+       },
+       {
+        "en": "Closing a failed cycle because it has become tedious",
+        "ar": "إغلاق دورة فاشلة لأنها أصبحت مملة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "صاحب العملية"
+      },
+      "kpi": {
+       "en": "Changes made permanent in updated documents",
+       "ar": "عدد التغييرات المثبتة في وثائق مُحدّثة"
+      }
+     },
+     {
+      "ref": "s4-2",
+      "clause": "AC2",
+      "title": {
+       "en": "Close the cycle and link it to its origin",
+       "ar": "أغلق الدورة واربطها بسجلها الأصلي"
+      },
+      "req": {
+       "en": "If the cycle started from a nonconformity (NCR) or an audit finding, link it to that record and to the corrective action, and update the risks and opportunities from planning if they changed. Then close the cycle with a date and a reason.",
+       "ar": "إذا بدأت الدورة من عدم مطابقة (NCR) أو ملاحظة تدقيق، فاربطها بسجل المعالجة وبإجراء التصحيح، وحدّث المخاطر والفرص التي حددتها في التخطيط إن تغيّرت. ثم أغلق الدورة بتاريخ وسبب."
+      },
+      "ex": {
+       "en": "A cycle that began from an audit finding on submittal delays is closed with a link to the finding record, and the risk register is updated with “delay in consultant approval”.",
+       "ar": "دورة بدأت من ملاحظة تدقيق عن تأخر الاعتمادات تُغلق مع رابط إلى سجل الملاحظة، وتحديث سجل المخاطر ببند «تأخر الاعتماد الاستشاري»."
+      },
+      "how": [
+       {
+        "en": "Link the cycle to its reference: NCR, audit, project or process",
+        "ar": "اربط الدورة بمرجعها: NCR أو تدقيق أو مشروع أو عملية"
+       },
+       {
+        "en": "Never close a cycle without a closure date and reason",
+        "ar": "لا تُغلق دورة دون تاريخ إغلاق وسبب"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Reference number, closure date and reason",
+        "ar": "رقم المرجع وتاريخ الإغلاق وسببه"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A closed cycle with no link to its origin",
+        "ar": "دورة مغلقة دون رابط بمرجعها"
+       },
+       {
+        "en": "Risks not updated although the situation changed",
+        "ar": "مخاطر لم تُحدَّث رغم تغيّر الوضع"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "System owner",
+       "ar": "مسؤول النظام"
+      },
+      "kpi": {
+       "en": "Average cycle closure time",
+       "ar": "متوسط زمن إغلاق الدورة"
+      }
+     },
+     {
+      "ref": "s4-3",
+      "clause": "AC3",
+      "title": {
+       "en": "Share the lessons learned",
+       "ar": "شارك الدروس المستفادة"
+      },
+      "req": {
+       "en": "Write down what you learned: what was harder than expected and what would work for other processes. Lessons that are not written down get relearned the hard way.",
+       "ar": "سجّل ما تعلّمته: ما الذي كان أصعب من المتوقع، وما الذي يصلح لعمليات أخرى. الدروس التي لا تُكتب تُعاد تجربتها."
+      },
+      "ex": {
+       "en": "The team found that data was entered by hand into two registers; the lesson: fix one data source before measuring.",
+       "ar": "اكتشف الفريق أن البيانات تُدخل يدوياً في سجلين؛ الدرس: توحيد مصدر البيانات قبل القياس."
+      },
+      "how": [
+       {
+        "en": "Write two or three lessons at most, clearly",
+        "ar": "اكتب درسين أو ثلاثة على الأكثر، بوضوح"
+       },
+       {
+        "en": "Send them to owners of similar processes",
+        "ar": "أرسلها لأصحاب العمليات المشابهة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Lessons learned notes",
+        "ar": "ملاحظات الدروس المستفادة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Generic lessons such as “we should communicate more”",
+        "ar": "دروس عامة مثل «يجب التواصل أكثر»"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Improvement team",
+       "ar": "فريق التحسين"
+      },
+      "kpi": {
+       "en": "Lessons applied to other processes",
+       "ar": "عدد الدروس المطبقة في عمليات أخرى"
+      }
+     }
+    ]
+   }
+  ],
+  "faq": [],
+  "competencies": [
+   "QM-03",
+   "OE-02"
+  ],
+  "ecosystem": "quality"
+ }
+}

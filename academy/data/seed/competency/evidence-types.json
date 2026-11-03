@@ -1,0 +1,99 @@
+{
+  "schema": "cia.seed.v1",
+  "collection": "evidence_types",
+  "phase": 2,
+  "generated": "2026-09-28",
+  "author": "مدثر سلامه",
+  "qualifying": [
+    {
+      "id": "assessment",
+      "name": {
+        "ar": "تقييم معرفي",
+        "en": "Knowledge assessment"
+      },
+      "available_from_phase": 5
+    },
+    {
+      "id": "practical",
+      "name": {
+        "ar": "مهمة عملية",
+        "en": "Practical assignment"
+      },
+      "available_from_phase": 11
+    },
+    {
+      "id": "simulation",
+      "name": {
+        "ar": "محاكاة",
+        "en": "Simulation"
+      },
+      "available_from_phase": 11
+    },
+    {
+      "id": "experience",
+      "name": {
+        "ar": "خبرة موثّقة",
+        "en": "Documented experience"
+      },
+      "available_from_phase": 12
+    },
+    {
+      "id": "reviewer",
+      "name": {
+        "ar": "تحقق من مُراجِع",
+        "en": "Reviewer verification"
+      },
+      "available_from_phase": 12
+    }
+  ],
+  "non_qualifying": [
+    "course_completion",
+    "self_declared",
+    "video_watched"
+  ],
+  "default_rule": {
+    "1": [
+      [
+        "assessment"
+      ]
+    ],
+    "2": [
+      [
+        "assessment"
+      ]
+    ],
+    "3": [
+      [
+        "assessment"
+      ],
+      [
+        "practical",
+        "simulation"
+      ]
+    ],
+    "4": [
+      [
+        "assessment"
+      ],
+      [
+        "practical",
+        "simulation"
+      ],
+      [
+        "experience"
+      ]
+    ],
+    "5": [
+      [
+        "assessment"
+      ],
+      [
+        "experience"
+      ],
+      [
+        "reviewer"
+      ]
+    ]
+  },
+  "rule_semantics": "Cumulative. For level L every requirement group of levels 1..L must be satisfied; a group is satisfied by any one evidence type in it. Non-qualifying signals never raise a level."
+}

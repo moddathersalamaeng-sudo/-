@@ -1,0 +1,1735 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-LESSONS",
+  "slug": "lessons-learned",
+  "kind": "method",
+  "module": "lessons",
+  "title": {
+   "en": "Lessons learned",
+   "ar": "الدروس المستفادة"
+  },
+  "subtitle": {
+   "en": "Method tool: knowledge that changes the next project",
+   "ar": "أداة منهجية: معرفة تغيّر المشروع التالي"
+  },
+  "lede": {
+   "en": "To turn the experience of a project or a process (a failure or a success) into a rule someone else can apply, then into a change in a document, a control or a practice, then into evidence that the next project applied it and it worked. A lesson that stays in meeting minutes changes nothing.",
+   "ar": "أن تتحول تجربة مشروع أو عملية (فشلاً كانت أو نجاحاً) إلى قاعدة يطبقها غيرك، ثم إلى تغيير في وثيقة أو ضابط أو ممارسة، ثم إلى دليل أن المشروع التالي طبّقها ونجحت. الدرس الذي يبقى في محضر اجتماع لا يغيّر شيئاً."
+  },
+  "author": "مدثر سلامه",
+  "note": {
+   "en": "Lessons learned is a practice, not a standard or a requirement, and ISO 10009:2024 does not review it as a tool of its own; the nearest content is clause 15 (improvement), with suggestion schemes among the other relevant tools in 15.6. The ISO 9001:2026 requirements the practice serves: organizational knowledge (7.1.6), communication (7.4), control of processes and changes (8.1 and 8.5.6), analysis and evaluation (9.1.3), management review inputs (9.3.2), improvement (10.1), and updating risks and making changes after a nonconformity (10.2.1 e) and f)). ISO 19011:2026 names lessons learned in audit planning and in improving the audit programme.",
+   "ar": "الدروس المستفادة ممارسة، وليست مواصفة ولا متطلباً، ولا تراجعها ISO 10009:2024 أداةً مستقلة؛ أقرب ما فيها البند 15 (التحسين) وأنظمة الاقتراحات بين الأدوات الأخرى في 15.6. والمتطلبات التي تخدمها الممارسة في ISO 9001:2026: المعرفة التنظيمية (7.1.6)، والتواصل (7.4)، وضبط العمليات والتغييرات (8.1 و8.5.6)، والتحليل والتقييم (9.1.3)، ومدخلات مراجعة الإدارة (9.3.2)، والتحسين (10.1)، وتحديث المخاطر وإجراء التغييرات بعد عدم المطابقة (10.2.1 هـ) و و)). ويذكر ISO 19011:2026 الدروس المستفادة في تخطيط التدقيق وتحسين برنامجه."
+  },
+  "who": {
+   "en": "Project managers and site engineers, quality and HSE managers, process owners, procurement, anyone starting a project or a change, and internal auditors.",
+   "ar": "مديرو المشاريع ومهندسو المواقع، ومديرو الجودة والصحة والسلامة، ومالكو العمليات، والمشتريات، ومن يبدأ مشروعاً أو تغييراً، والمدققون الداخليون."
+  },
+  "roles": [
+   {
+    "name": {
+     "en": "Lesson owner",
+     "ar": "مالك الدرس"
+    },
+    "text": {
+     "en": "Writes the event with its evidence, links the cause, words the rule, and follows the embedding and the verification.",
+     "ar": "يكتب الحدث بدليله ويربط السبب، ويصوغ القاعدة، ويتابع الترسيخ والتحقق."
+    }
+   },
+   {
+    "name": {
+     "en": "Process or document owner",
+     "ar": "مالك العملية أو الوثيقة"
+    },
+    "text": {
+     "en": "Changes the procedure, the form, the checklist or the control plan, and issues the new version.",
+     "ar": "يغيّر الإجراء أو النموذج أو قائمة الفحص أو خطة الضبط، ويصدر النسخة الجديدة."
+    }
+   },
+   {
+    "name": {
+     "en": "The next project's manager",
+     "ar": "مدير المشروع التالي"
+    },
+    "text": {
+     "en": "Reads the rules that apply before starting, applies them, and reports whether they worked.",
+     "ar": "يقرأ القواعد التي تنطبق قبل البدء، ويطبقها، ويبلغ هل نجحت."
+    }
+   },
+   {
+    "name": {
+     "en": "Quality",
+     "ar": "الجودة"
+    },
+    "text": {
+     "en": "Reviews the register periodically, checks the blame-free wording, and carries the lessons to management review.",
+     "ar": "تراجع السجل دورياً، وتدقق الصياغة بلا لوم، وتحمل الدروس إلى مراجعة الإدارة."
+    }
+   },
+   {
+    "name": {
+     "en": "Internal auditor",
+     "ar": "المدقق الداخلي"
+    },
+    "text": {
+     "en": "Asks: what changed after the lesson? Who applied it next? And uses lessons in audit planning.",
+     "ar": "يسأل: ما الذي تغيّر بعد الدرس؟ ومن طبّقه بعد ذلك؟ ويستخدم الدروس في تخطيط التدقيق."
+    }
+   }
+  ],
+  "steps": [
+   {
+    "no": "1",
+    "title": {
+     "en": "Capture the event",
+     "ar": "سجّل الحدث"
+    },
+    "text": {
+     "en": "A problem, a near miss or a success, with its evidence.",
+     "ar": "مشكلة أو حادث وشيك أو نجاح، بدليله."
+    },
+    "ref": "GD-1"
+   },
+   {
+    "no": "2",
+    "title": {
+     "en": "The evidence",
+     "ar": "الدليل"
+    },
+    "text": {
+     "en": "Expected against actual, in numbers.",
+     "ar": "المتوقع مقابل الفعلي، بالأرقام."
+    },
+    "ref": "4.2.7"
+   },
+   {
+    "no": "3",
+    "title": {
+     "en": "The cause from an analysis",
+     "ar": "السبب من تحليل"
+    },
+    "text": {
+     "en": "A sentence from RCA, A3, DMAIC or FMEA, not an opinion.",
+     "ar": "جملة من RCA أو A3 أو DMAIC أو FMEA، لا رأي."
+    },
+    "ref": "GD-3"
+   },
+   {
+    "no": "4",
+    "title": {
+     "en": "The lesson as a rule",
+     "ar": "الدرس قاعدة"
+    },
+    "text": {
+     "en": "When…, do…, because… and where it applies.",
+     "ar": "عندما… افعل… لأن… وأين ينطبق."
+    },
+    "ref": "GD-4"
+   },
+   {
+    "no": "5",
+    "title": {
+     "en": "Blame-free",
+     "ar": "بلا لوم"
+    },
+    "text": {
+     "en": "What in the process allowed it, not who.",
+     "ar": "ما في العملية سمح بالخطأ، لا من أخطأ."
+    },
+    "ref": "4.2.4"
+   },
+   {
+    "no": "6",
+    "title": {
+     "en": "Embed it",
+     "ar": "رسّخه"
+    },
+    "text": {
+     "en": "A document, a control or a training changes, with evidence.",
+     "ar": "وثيقة أو ضابط أو تدريب يتغيّر بدليل."
+    },
+    "ref": "10.2.1"
+   },
+   {
+    "no": "7",
+    "title": {
+     "en": "Into FMEA and the control plan",
+     "ar": "إلى FMEA وخطة الضبط"
+    },
+    "text": {
+     "en": "The lesson becomes an FMEA row or a control-plan item.",
+     "ar": "الدرس صف في FMEA أو بند في خطة ضبط."
+    },
+    "ref": "GD-6"
+   },
+   {
+    "no": "8",
+    "title": {
+     "en": "Verify on the next project",
+     "ar": "تحقق في المشروع التالي"
+    },
+    "text": {
+     "en": "Applied and worked? With a date and evidence.",
+     "ar": "طُبّق ونجح؟ بتاريخ ودليل."
+    },
+    "ref": "3.2.4"
+   },
+   {
+    "no": "9",
+    "title": {
+     "en": "Share it",
+     "ar": "عمّمه"
+    },
+    "text": {
+     "en": "Who needs it, how and when.",
+     "ar": "من يحتاجه، وكيف، ومتى."
+    },
+    "ref": "7.4"
+   },
+   {
+    "no": "10",
+    "title": {
+     "en": "Read before you start",
+     "ar": "اقرأ قبل أن تبدأ"
+    },
+    "text": {
+     "en": "The register is read at the start of each project or change.",
+     "ar": "السجل يُقرأ عند بدء كل مشروع أو تغيير."
+    },
+    "ref": "7.1.6"
+   }
+  ],
+  "related": [
+   {
+    "code": "FMEA",
+    "name": {
+     "en": "Failure mode and effects analysis",
+     "ar": "تحليل أنماط الفشل وآثارها"
+    },
+    "text": {
+     "en": "A lesson starts from a study with a review or a re-rated row, and an \"FMEA row\" embedding action names the study by its id; the study lists the lessons that name it (read-only).",
+     "ar": "يبدأ درس من دراسة فيها مراجعة أو صف أعيد تقييمه، وإجراء الترسيخ «صف في FMEA» يسمي الدراسة برقمها؛ وتعرض الدراسة الدروس التي تذكرها (قراءة فقط)."
+    }
+   },
+   {
+    "code": "DMAIC",
+    "name": {
+     "en": "DMAIC improvement project",
+     "ar": "مشروع التحسين بمنهج DMAIC"
+    },
+    "text": {
+     "en": "A lesson starts from a closed or stopped project: the problem as the event and its proved causes as the cause.",
+     "ar": "يبدأ درس من مشروع مغلق أو موقوف: المشكلة حدثاً وأسبابه المثبتة سبباً."
+    }
+   },
+   {
+    "code": "A3",
+    "name": {
+     "en": "A3 problem solving",
+     "ar": "حل المشكلات بأسلوب A3"
+    },
+    "text": {
+     "en": "A lesson starts from an A3: the background as the event and the proved causes as the cause.",
+     "ar": "يبدأ درس من صفحة A3: الخلفية حدثاً والأسباب المثبتة سبباً."
+    }
+   },
+   {
+    "code": "RCA",
+    "name": {
+     "en": "Root cause analysis — investigation",
+     "ar": "تحليل السبب الجذري — التحقيق"
+    },
+    "text": {
+     "en": "A lesson starts from an investigation: the problem as the event, the root causes as the cause, and the severity from the risk rating.",
+     "ar": "يبدأ درس من تحقيق: المشكلة حدثاً والأسباب الجذرية سبباً، والجسامة من تقييم الخطر."
+    }
+   },
+   {
+    "code": "CAPA",
+    "name": {
+     "en": "Corrective action",
+     "ar": "الإجراءات التصحيحية"
+    },
+    "text": {
+     "en": "When a nonconformity is the source, the corrective action stays in the CAPA record the lesson names.",
+     "ar": "عندما يكون المصدر حالة عدم مطابقة، يبقى الإجراء التصحيحي في سجل CAPA الذي يذكره الدرس."
+    }
+   },
+   {
+    "code": "PDCA",
+    "name": {
+     "en": "PDCA cycle",
+     "ar": "دورة PDCA"
+    },
+    "text": {
+     "en": "A lesson starts from a cycle: the problem as the event, its causes as the cause, and its lessons field as a draft rule.",
+     "ar": "يبدأ درس من دورة: المشكلة حدثاً والأسباب سبباً، وحقل الدروس فيها مسودة للقاعدة."
+    }
+   },
+   {
+    "code": "5 Whys · Fishbone · Pareto",
+    "name": {
+     "en": "5 Whys, Fishbone and Pareto",
+     "ar": "لماذا الخمس وعظمة السمكة وباريتو"
+    },
+    "text": {
+     "en": "Sources of the cause by id, with a preview by each tool's own rule.",
+     "ar": "مصادر للسبب بأرقامها، مع معاينة بقاعدة كل أداة."
+    }
+   },
+   {
+    "code": "ISO 10009",
+    "name": {
+     "en": "ISO 10009 quality tools guide",
+     "ar": "دليل أدوات الجودة ISO 10009"
+    },
+    "text": {
+     "en": "Lessons learned is not one of its 53 tools; the nearest is clause 15 (improvement) and suggestion schemes in 15.6, and the words \"lessons learned\" do not appear in its text; the lessons field of the storyboard is the platform's own.",
+     "ar": "الدروس المستفادة ليست من أدواته الـ53؛ أقرب ما فيه البند 15 (التحسين) وأنظمة الاقتراحات في 15.6، ولا ترد عبارة «الدروس المستفادة» في نصه؛ وحقل الدروس في لوحة القصة من تصميم المنصة."
+    }
+   }
+  ],
+  "serves": [
+   {
+    "code": "ISO 9001:2026 §7.1.6 · A.7.1.6",
+    "name": {
+     "en": "Organizational knowledge",
+     "ar": "المعرفة التنظيمية"
+    },
+    "text": {
+     "en": "Determine the knowledge needed, retain, apply and share it, update it through use and experience, and retain it to reduce the risk of its loss.",
+     "ar": "تحديد المعرفة اللازمة، والاحتفاظ بها وتطبيقها ومشاركتها، وتحديثها بالاستخدام والخبرة، والاحتفاظ بها لتقليل خطر فقدانها."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 §10.2.1 e) f) · §10.1",
+    "name": {
+     "en": "Updating risks, changes and improvement",
+     "ar": "تحديث المخاطر والتغييرات والتحسين"
+    },
+    "text": {
+     "en": "After a nonconformity: update the risks and opportunities and make changes to the system if necessary; and continual improvement, including preventing undesired effects.",
+     "ar": "بعد عدم المطابقة: تحديث المخاطر والفرص وإجراء التغييرات على النظام عند الحاجة؛ والتحسين المستمر بما فيه منع الآثار غير المرغوبة."
+    }
+   },
+   {
+    "code": "ISO 9000:2026 §3.2.4 · §3.10.4 · §4.2.4 · §4.2.6",
+    "name": {
+     "en": "Good practice, knowledge, engagement of people, improvement",
+     "ar": "الممارسة الجيدة والمعرفة ومشاركة الناس والتحسين"
+    },
+    "text": {
+     "en": "A good practice is a method proven to work; knowledge includes know-how and good practices; sharing knowledge without fear; effective use of learning for improvement.",
+     "ar": "الممارسة الجيدة طريقة ثبت أنها تعمل؛ والمعرفة تشمل الخبرة والممارسات الجيدة؛ ومشاركة المعرفة دون خوف؛ والاستخدام الفعال للتعلم في التحسين."
+    }
+   },
+   {
+    "code": "ISO 19011:2026 §5.7 · §6.3.2.2 · §6.6",
+    "name": {
+     "en": "Lessons in auditing",
+     "ar": "الدروس في التدقيق"
+    },
+    "text": {
+     "en": "Lessons from reviewing the audit programme feed its improvement; audit planning considers follow-up from lessons learned and project reviews; lessons from the audit can show risks and opportunities.",
+     "ar": "الدروس من مراجعة برنامج التدقيق مدخلات لتحسينه؛ وتخطيط التدقيق يراعي المتابعة من الدروس ومراجعات المشاريع؛ والدروس من التدقيق تكشف مخاطر وفرصاً."
+    }
+   },
+   {
+    "code": "ISO 30401 · PMBOK · PRINCE2",
+    "name": {
+     "en": "Knowledge management and lessons logs (not verified)",
+     "ar": "إدارة المعرفة وسجلات الدروس (غير متحقق منه)"
+    },
+    "text": {
+     "en": "None is uploaded to the project; ISO 30401 is named only in the NOTE of Annex A.7.1.6. So the stage and audit rules in the tool are its own wording.",
+     "ar": "لا يوجد منها شيء مرفوع إلى المشروع؛ ISO 30401 مذكورة فقط في ملاحظة الملحق A.7.1.6. فقواعد المراحل والتدقيق في الأداة صياغتها هي."
+    }
+   }
+  ],
+  "clauses": [
+   {
+    "id": "7.1.6",
+    "phase": "know",
+    "title": {
+     "en": "Clause 7.1.6 Organizational knowledge",
+     "ar": "البند 7.1.6 المعرفة التنظيمية"
+    },
+    "short": {
+     "en": "7.1.6 · Knowledge",
+     "ar": "7.1.6 · المعرفة"
+    },
+    "intro": {
+     "en": "The standard asks for knowledge that is determined, retained, applied and shared. A lessons register is a structured way to do that, provided it is read before starting.",
+     "ar": "تطلب المواصفة معرفة محددة ومحفوظة ومطبقة ومشتركة. وسجل الدروس طريقة منظمة لذلك، بشرط أن يُقرأ قبل البدء."
+    },
+    "items": [
+     {
+      "ref": "s1-1",
+      "clause": "7.1.6",
+      "title": {
+       "en": "The knowledge needed: retained, applied and shared",
+       "ar": "المعرفة اللازمة: محفوظة ومطبقة ومشتركة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 7.1.6 asks to determine the knowledge necessary to operate the processes and achieve the intended results, to retain, apply and share it to the extent necessary, and to consider current knowledge when addressing changing needs and trends. Its NOTE lists the forms knowledge takes: experience held by people, what is acquired through education, training and learning from others, knowledge embedded in methods, processes and products, and documented information. The 2026 NOTE does not use the words \"lessons learned\"; a register is a means to meet the requirement, not a requirement in itself.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 7.1.6 تحديد المعرفة اللازمة لتشغيل العمليات وتحقيق النتائج المقصودة، والاحتفاظ بها وتطبيقها ومشاركتها بالقدر اللازم، ومراعاة المعرفة الحالية عند التعامل مع الاحتياجات والتوجهات المتغيرة. وتذكر الملاحظة أشكال المعرفة: خبرة الأشخاص، وما يُكتسب بالتعليم والتدريب والتعلم من الآخرين، والمعرفة المضمنة في الطرق والعمليات والمنتجات، والمعلومات الموثقة. ولا تستخدم ملاحظة إصدار 2026 عبارة «الدروس المستفادة» نصاً؛ والسجل وسيلة لتطبيق المتطلب، لا متطلب بذاته."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: before the first pour on project PRJ-2026-118, the project manager picked the process \"ready-mix concrete supply and pouring\" in \"read before you start\"; the chilled-water rule showed up and went into the supply contract before it was signed.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: قبل أول صبة في المشروع PRJ-2026-118 اختار مدير المشروع في «اقرأ قبل أن تبدأ» عملية «توريد الخرسانة الجاهزة وصبها»، فظهرت قاعدة الماء المبرد ودخلت عقد التوريد قبل توقيعه."
+      },
+      "how": [
+       {
+        "en": "Make reading the register a step in starting each project or change",
+        "ar": "اجعل قراءة السجل خطوة في بدء كل مشروع أو تغيير"
+       },
+       {
+        "en": "Search by process, project type and site",
+        "ar": "ابحث بالعملية ونوع المشروع والموقع"
+       },
+       {
+        "en": "Record in the kick-off minutes the lessons that were read",
+        "ar": "سجّل في محضر البدء الدروس التي قُرئت"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Kick-off minutes naming the lessons read",
+        "ar": "محضر بدء المشروع يذكر الدروس المقروءة"
+       },
+       {
+        "en": "The register with its tags",
+        "ar": "السجل بوسومه"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A register nobody reads",
+        "ar": "سجل لا يقرؤه أحد"
+       },
+       {
+        "en": "Lessons kept in one person's mailbox",
+        "ar": "دروس محفوظة في بريد شخص واحد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Project manager",
+       "ar": "مدير المشروع"
+      },
+      "kpi": {
+       "en": "Share of projects that read the register before starting",
+       "ar": "نسبة المشاريع التي قرأت السجل قبل البدء"
+      }
+     },
+     {
+      "ref": "s1-2",
+      "clause": "A.7.1.6",
+      "title": {
+       "en": "Knowledge changes through use and experience",
+       "ar": "المعرفة تتغير بالاستخدام والخبرة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: Annex A.7.1.6 of ISO 9001:2026 explains that organizational knowledge is dynamic and is updated through use and experience, and that managing it involves acquiring or creating new knowledge, applying it, keeping it valid and relevant, and retaining it to reduce the risk of its loss. Its NOTE points to ISO 30401 for knowledge management system requirements (not uploaded: \"not verified\").",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يوضح الملحق A.7.1.6 من ISO 9001:2026 أن المعرفة التنظيمية متغيرة وتتحدث بالاستخدام والخبرة، وأن إدارتها تشمل اكتساب المعرفة الجديدة أو إنشاءها، وتطبيقها، والمحافظة عليها صالحة وذات صلة، والاحتفاظ بها لتقليل خطر فقدانها. وتشير ملاحظته إلى ISO 30401 لمتطلبات أنظمة إدارة المعرفة (غير مرفوعة: «غير متحقق منه»)."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the lifting supervisor's know-how on rigging bundles was in his head only; after lesson LL-EX-02 it became part of procedure LP-07 rev 3 and the lift plan template, so it is not lost if he moves.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: خبرة مشرف الرفع في ربط الحزم كانت في رأسه وحده؛ صارت بعد الدرس LL-EX-02 جزءاً من الإجراء LP-07 rev 3 ونموذج خطة الرفع، فلا تضيع إذا انتقل."
+      },
+      "how": [
+       {
+        "en": "Turn personal know-how into a document or a control",
+        "ar": "حوّل الخبرة الشخصية إلى وثيقة أو ضابط"
+       },
+       {
+        "en": "Review old rules: are they still valid?",
+        "ar": "راجع القواعد القديمة: هل ما زالت صالحة؟"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Updated documents naming the lesson",
+        "ar": "وثائق محدّثة تذكر الدرس"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Knowledge that leaves with whoever leaves",
+        "ar": "معرفة تغادر مع من يغادر"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s1-3",
+      "clause": "3.10.4",
+      "title": {
+       "en": "Knowledge and good practice in ISO 9000:2026",
+       "ar": "المعرفة والممارسة الجيدة في ISO 9000:2026"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9000:2026 defines knowledge (3.10.4) as the understanding that enables effective context-specific decisions and action; its examples are insights, know-how and good practices, and it exists within and between individuals, teams and organizations. It defines improvement (3.2.3) as an activity to enhance performance, which can be recurring or singular.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يعرّف ISO 9000:2026 المعرفة (3.10.4) بأنها الفهم الذي يمكّن من قرارات وأفعال فعالة في سياقها، ومن أمثلتها البصائر والدراية والممارسات الجيدة، وهي موجودة داخل الأفراد والفرق والمنظمات وبينها. ويعرّف التحسين (3.2.3) بأنه نشاط لتعزيز الأداء قد يتكرر أو يكون مرة واحدة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the rule \"write the bundle weight on its tag\" is a small piece of know-how, but it prevents a weight error that could overturn a crane.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: قاعدة «اكتب وزن الحزمة على بطاقتها» دراية عملية صغيرة، لكنها تمنع خطأ وزن قد يقلب رافعة."
+      },
+      "how": [
+       {
+        "en": "Write the lesson so it enables a decision or an action",
+        "ar": "اكتب الدرس بما يمكّن من قرار أو فعل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Rules written with specific actions",
+        "ar": "قواعد مكتوبة بأفعال محددة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "General lessons such as \"pay attention to quality\"",
+        "ar": "دروس عامة مثل «يجب الاهتمام بالجودة»"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Lesson owner",
+       "ar": "مالك الدرس"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s1-4",
+      "clause": "15",
+      "title": {
+       "en": "ISO 10009:2024 clause 15 Improvement",
+       "ar": "ISO 10009:2024 البند 15 التحسين"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 10009:2024 does not review lessons learned as one of its 53 tools. The nearest is clause 15 (improvement), which the platform's catalogue maps to ISO 9001 clauses 7.1.6 and 10.1 (the author's mapping): benchmarking (15.1), the affinity diagram (15.2), quality circles (15.3), brainstorming (15.4), six thinking hats (15.5), and among the other relevant tools in 15.6: PDCA, the capability maturity model and suggestion schemes (with the PICK chart and the Crawford slip method). The words \"lessons learned\" do not appear in the standard's text or in its Annex B storyboards; the lessons field of the platform's storyboard is the platform's own.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: لا تراجع ISO 10009:2024 الدروس المستفادة أداةً من أدواتها الـ53. أقرب ما فيها البند 15 (التحسين)، الذي يربطه فهرس المنصة بالبندين 7.1.6 و10.1 من ISO 9001 (ربط من إعداد الكاتب): المقارنة المرجعية (15.1)، ومخطط التقارب (15.2)، وحلقات الجودة (15.3)، والعصف الذهني (15.4)، والقبعات الست (15.5)، وبين الأدوات الأخرى ذات الصلة في 15.6: دورة PDCA ونموذج نضج القدرات وأنظمة الاقتراحات (مع مخطط PICK وطريقة كروفورد). ولا ترد عبارة «الدروس المستفادة» في نص المواصفة ولا في لوحات القصة في الملحق B؛ وحقل الدروس في لوحة القصة على المنصة من تصميمها."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the ISO 10009 guide on the platform, Al-Waha wrote \"lessons learned\" in the storyboard, then carried the lesson that changes procedures into this register to be embedded and verified.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في دليل ISO 10009 على المنصة سجّلت شركة الواحة «الدروس المستفادة» في لوحة القصة، ثم نقلت الدرس الذي يغيّر الإجراءات إلى هذا السجل ليُرسَّخ ويُتحقق منه."
+      },
+      "how": [
+       {
+        "en": "Open the ISO 10009 guide on clause 15",
+        "ar": "افتح دليل ISO 10009 على البند 15"
+       },
+       {
+        "en": "Use suggestion schemes as a source of lessons",
+        "ar": "استخدم أنظمة الاقتراحات مصدراً للدروس"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Treating lessons learned as an ISO 10009 tool",
+        "ar": "اعتبار الدروس المستفادة أداة في ISO 10009"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   },
+   {
+    "id": "10.2",
+    "phase": "cause",
+    "title": {
+     "en": "Clause 10.2 Nonconformity and corrective action",
+     "ar": "البند 10.2 عدم المطابقة والإجراء التصحيحي"
+    },
+    "short": {
+     "en": "10.2 · Corrective action",
+     "ar": "10.2 · الإجراء التصحيحي"
+    },
+    "intro": {
+     "en": "After a nonconformity the standard asks to update the risks and change the system if necessary. The lesson carries the change to other projects, and the cause comes from a real analysis.",
+     "ar": "بعد عدم المطابقة تطلب المواصفة تحديث المخاطر وتغيير النظام عند الحاجة. والدرس يحمل التغيير إلى المشاريع الأخرى، والسبب يأتي من تحليل حقيقي."
+    },
+    "items": [
+     {
+      "ref": "s2-1",
+      "clause": "10.2.1",
+      "title": {
+       "en": "Update the risks and change the system after a nonconformity",
+       "ar": "تحديث المخاطر وتغيير النظام بعد عدم المطابقة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 10.2.1 asks, when a nonconformity occurs, to react to it, to evaluate the need to eliminate its causes by reviewing it, determining its causes and determining whether similar nonconformities exist or could occur (b) 3)), to implement the actions, review their effectiveness, e) update the risks and opportunities determined during planning, if necessary, and f) make changes to the quality management system, if necessary. The lesson is what carries the change to the other projects and processes where \"similar nonconformities\" could occur.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 10.2.1 عند وقوع عدم مطابقة: الاستجابة لها، وتقييم الحاجة إلى إزالة أسبابها بمراجعتها وتحديد أسبابها وتحديد ما إذا كانت حالات مماثلة موجودة أو قد تحدث (ب) 3))، وتنفيذ الإجراءات، ومراجعة فعاليتها، و(هـ) تحديث المخاطر والفرص المحددة في التخطيط عند الحاجة، و(و) إجراء التغييرات على نظام إدارة الجودة عند الحاجة. والدرس هو ما يجعل التغيير يصل إلى المشاريع والعمليات الأخرى حيث قد تحدث «حالات مماثلة»."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: after NCR-2026-044 the PRJ-2026-112 contract addendum was not enough; the chilled-water clause went into the company contract template (PROC-T-05 rev 2), so it reached every new project.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بعد NCR-2026-044 لم يكفِ ملحق عقد المشروع PRJ-2026-112؛ أصبح بند الماء المبرد في نموذج عقد الشركة (PROC-T-05 rev 2)، فوصل إلى كل مشروع جديد."
+      },
+      "how": [
+       {
+        "en": "Ask after each CAPA: where could a similar case occur?",
+        "ar": "اسأل بعد كل CAPA: أين قد تحدث حالة مماثلة؟"
+       },
+       {
+        "en": "Change the document at company level, not only for one project",
+        "ar": "غيّر الوثيقة على مستوى الشركة لا المشروع وحده"
+       },
+       {
+        "en": "Record the evidence of the change (the issue number)",
+        "ar": "سجّل دليل التغيير (رقم الإصدار)"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Updated documents with their issue numbers",
+        "ar": "وثائق محدّثة برقم إصدارها"
+       },
+       {
+        "en": "The lesson linked to the CAPA record",
+        "ar": "ربط الدرس بسجل CAPA"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A corrective action closed on one project that recurs on another",
+        "ar": "إجراء تصحيحي يُغلق في مشروع واحد ويتكرر في غيره"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of lessons that changed a document or a control",
+       "ar": "نسبة الدروس التي غيّرت وثيقة أو ضابطاً"
+      }
+     },
+     {
+      "ref": "s2-2",
+      "clause": "GD-1",
+      "title": {
+       "en": "Capture problems, near misses and successes",
+       "ar": "سجّل المشكلات والحوادث الوشيكة والنجاحات"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: capture a lesson from every event that teaches something: a problem, a near miss, an audit finding, a project close-out, customer feedback, and a success too. A success that is not recorded repeats only by chance. Record the type of event, its date and the lesson owner from day one, then the event as it happened.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: سجّل الدرس من كل حدث يعلّم شيئاً: مشكلة، حادث وشيك، ملاحظة تدقيق، إغلاق مشروع، ملاحظة عميل، ونجاح أيضاً. النجاح الذي لا يُسجّل لا يتكرر إلا بالصدفة. واكتب نوع الحدث وتاريخه ومالك الدرس من اليوم الأول، ثم الحدث كما وقع."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: LL-EX-02 is a lesson from a success: after the Tower B near miss, two-sling rigging worked in 46 lifts, so it became a company standard and was shared with Tower A.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: LL-EX-02 درس من نجاح: بعد الحادث الوشيك في البرج ب نجح الربط بحبلين في 46 رفعة، فصار معياراً للشركة وعُمّم على البرج أ."
+      },
+      "how": [
+       {
+        "en": "Add a \"what did we learn?\" item to every project close-out and investigation",
+        "ar": "أضف بنداً «ما الذي تعلمناه؟» في إغلاق كل مشروع وتحقيق"
+       },
+       {
+        "en": "Record successes the same way",
+        "ar": "سجّل النجاحات بالطريقة نفسها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A register with different types of events",
+        "ar": "سجل يضم أنواعاً مختلفة من الأحداث"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Lessons from big failures only",
+        "ar": "دروس من الأعطال الكبيرة وحدها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Lesson owner",
+       "ar": "مالك الدرس"
+      },
+      "kpi": {
+       "en": "Share of lessons from successes",
+       "ar": "نسبة الدروس من النجاحات"
+      }
+     },
+     {
+      "ref": "s2-3",
+      "clause": "GD-2",
+      "title": {
+       "en": "Expected against actual",
+       "ar": "المتوقع مقابل الفعلي"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: write what was expected (a target, a requirement, an acceptance criterion) and what actually happened, in numbers where possible, then the impact (cost, time, safety, customer). The difference between the two is the lesson; without a number the lesson becomes an opinion.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: اكتب ما كان متوقعاً (هدف، متطلب، معيار قبول) وما حدث فعلاً، بالأرقام إن أمكن، ثم الأثر (تكلفة، وقت، سلامة، عميل). الفرق بين الاثنين هو الدرس؛ وبلا رقم يصبح الدرس رأياً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: expected: under 3% of loads rejected a week; actual: 6% (20 of 335); impact: about SAR 38,000 over two months.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: المتوقع: أقل من 3% شحنات مرفوضة أسبوعياً؛ الفعلي: 6% (20 من 335)؛ الأثر: نحو 38,000 ريال في شهرين."
+      },
+      "how": [
+       {
+        "en": "Write both numbers and the source",
+        "ar": "اكتب الرقمين والمصدر"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Expected, actual and their source",
+        "ar": "المتوقع والفعلي ومصدرهما"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "\"There was a problem\" with no number",
+        "ar": "«حدثت مشكلة» دون رقم"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Lesson owner",
+       "ar": "مالك الدرس"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s2-4",
+      "clause": "GD-3",
+      "title": {
+       "en": "The cause from a real analysis, not analysed again here",
+       "ar": "السبب من تحليل حقيقي، لا يُعاد هنا"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: take the cause in one sentence from the linked analysis: an RCA investigation, a 5 Whys, a Fishbone, an A3, a DMAIC project, an FMEA study or a CAPA record. The tool reads the source record read-only and shows its stage by its own tool's rule. A cause written here carries a \"not analysed\" flag, which is accepted only for an event that is not severe; a severe event needs a real analysis before the lesson is written.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: خذ السبب في جملة واحدة من التحليل المرتبط: تحقيق RCA أو لماذا الخمس أو عظمة السمكة أو صفحة A3 أو مشروع DMAIC أو دراسة FMEA أو سجل CAPA. الأداة تقرأ السجل المصدر للقراءة فقط وتعرض مرحلته بقاعدة أداته. والسبب المكتوب هنا يحمل علامة «غير محلل»، وهي مقبولة لحدث غير جسيم فقط؛ الحدث الجسيم يحتاج تحليلاً حقيقياً قبل كتابة الدرس."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the cause of LL-EX-01 is taken from DM-EX-01: chilled water depends on the plant shift, and the contract does not ask for a temperature check; the analysis was not redone in the register.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: سبب LL-EX-01 مأخوذ من DM-EX-01: الماء المبرد يعتمد على وردية المحطة، والعقد لا يطلب فحص الحرارة؛ ولم يُعَد التحليل في السجل."
+      },
+      "how": [
+       {
+        "en": "Link the lesson to the source record by its id",
+        "ar": "اربط الدرس بالسجل المصدر برقمه"
+       },
+       {
+        "en": "Use \"take the cause from the source tool\"",
+        "ar": "استخدم «خذ السبب من الأداة المصدر»"
+       },
+       {
+        "en": "A severe event with no analysis? Start an RCA investigation first",
+        "ar": "حدث جسيم بلا تحليل؟ ابدأ تحقيق RCA أولاً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The source analysis id and its stage",
+        "ar": "رقم التحليل المصدر ومرحلته"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A cause from an opinion in a meeting",
+        "ar": "سبب من رأي في اجتماع"
+       },
+       {
+        "en": "An analysis redone in every tool",
+        "ar": "تحليل يُعاد في كل أداة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Lesson owner",
+       "ar": "مالك الدرس"
+      },
+      "kpi": {
+       "en": "Share of lessons with a cause linked to an analysis",
+       "ar": "نسبة الدروس بسبب مرتبط بتحليل"
+      }
+     }
+    ]
+   },
+   {
+    "id": "4.2",
+    "phase": "rule",
+    "title": {
+     "en": "ISO 9000:2026 clause 4.2 Quality management principles",
+     "ar": "ISO 9000:2026 البند 4.2 مبادئ إدارة الجودة"
+    },
+    "short": {
+     "en": "4.2 · Principles",
+     "ar": "4.2 · المبادئ"
+    },
+    "intro": {
+     "en": "Three principles carry the practice: evidence-based decisions, engagement of people without fear, and improvement through learning; with a quality culture that shares knowledge.",
+     "ar": "ثلاثة مبادئ تحمل الممارسة: القرار المبني على الدليل، ومشاركة الناس دون خوف، والتحسين بالتعلم؛ ومعها ثقافة جودة تشارك المعرفة."
+    },
+    "items": [
+     {
+      "ref": "s3-1",
+      "clause": "4.2.7",
+      "title": {
+       "en": "A lesson built on evidence",
+       "ar": "الدرس مبني على دليل"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the principle of evidence-based decision-making in ISO 9000:2026 (4.2.7) holds that decisions based on the analysis and evaluation of data and information are more likely to produce the desired results. A lesson is a decision others are asked to apply; without evidence it becomes an opinion that is ignored.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يقوم مبدأ اتخاذ القرار المبني على الدليل في ISO 9000:2026 (4.2.7) على أن القرارات المبنية على تحليل البيانات والمعلومات وتقييمها أكثر احتمالاً لتحقيق النتائج المرجوة. والدرس قرار يُطلب من الآخرين تطبيقه؛ فبلا دليل يصبح رأياً يُتجاهل."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the evidence of LL-EX-03: audit report IA-2026-07 finding F-03, CAPA record CA-EX-02, and row R4 of FM-EX-03.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: دليل LL-EX-03: تقرير التدقيق IA-2026-07 الملاحظة F-03، وسجل CAPA CA-EX-02، والصف R4 في FM-EX-03."
+      },
+      "how": [
+       {
+        "en": "Give the source of every number",
+        "ar": "أرفق المصدر لكل رقم"
+       },
+       {
+        "en": "Write the evidence before the lesson",
+        "ar": "اكتب الدليل قبل الدرس"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The evidence named in every lesson",
+        "ar": "الدليل المذكور في كل درس"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Lessons from memory",
+        "ar": "دروس من الذاكرة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Lesson owner",
+       "ar": "مالك الدرس"
+      },
+      "kpi": {
+       "en": "Share of lessons with evidence",
+       "ar": "نسبة الدروس بدليل"
+      }
+     },
+     {
+      "ref": "s3-2",
+      "clause": "4.2.4",
+      "title": {
+       "en": "Blame-free: engaging people without fear",
+       "ar": "بلا لوم: مشاركة الناس دون خوف"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the principle of engagement of people in ISO 9000:2026 (4.2.4) lists, among possible actions, open discussion and sharing of knowledge and experience, and letting people identify constraints to performance and take initiatives without fear. A lesson that blames a person makes people hide errors and near misses, so the learning is lost; that is why the tool flags wording that names a person (negligence, inattention, someone's mistake), with the same rule as FMEA, DMAIC, A3 and RCA.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يذكر مبدأ مشاركة الناس في ISO 9000:2026 (4.2.4) بين الأفعال الممكنة تسهيل النقاش المفتوح وتبادل المعرفة والخبرة، وتمكين الناس من تحديد قيود الأداء والمبادرة دون خوف. والدرس الذي يلوم شخصاً يجعل الناس يخفون الأخطاء والحوادث الوشيكة فيضيع التعلم؛ لذلك تنبّه الأداة على الصياغة التي تشير إلى شخص (إهمال، عدم انتباه، خطأ فلان) بالقاعدة نفسها في FMEA وDMAIC وA3 وRCA."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in FM-EX-02 the cause of R4 still reads \"rigger not paying attention\"; the lifting lesson LL-EX-02 instead says what in the process allowed the error: a lift plan template with no rigging method.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في FM-EX-02 ما زال سبب R4 «عدم انتباه الرافع»؛ أما درس الرفع LL-EX-02 فيقول ما في العملية سمح بالخطأ: نموذج خطة رفع بلا أسلوب ربط."
+      },
+      "how": [
+       {
+        "en": "Ask: what in the process allowed the error?",
+        "ar": "اسأل: ما الذي في العملية سمح بالخطأ؟"
+       },
+       {
+        "en": "No names of people in the lesson",
+        "ar": "لا أسماء أشخاص في الدرس"
+       },
+       {
+        "en": "Thank whoever reported the near miss",
+        "ar": "اشكر من أبلغ عن الحادث الوشيك"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Lessons in blame-free wording",
+        "ar": "دروس بصياغة بلا لوم"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "\"Employee negligence\" as a cause",
+        "ar": "«إهمال الموظف» سبباً"
+       },
+       {
+        "en": "Near misses not reported",
+        "ar": "حوادث وشيكة لا تُبلّغ"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Number of blame flags",
+       "ar": "عدد تنبيهات اللوم"
+      }
+     },
+     {
+      "ref": "s3-3",
+      "clause": "4.2.6",
+      "title": {
+       "en": "Improvement through learning",
+       "ar": "التحسين بالتعلم"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the improvement principle in ISO 9000:2026 (4.2.6) holds that successful organizations have an ongoing focus on improvement; its benefits include the effective use of learning for improvement, and its possible actions include building improvement into the development of new or modified products, services and processes.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يقوم مبدأ التحسين في ISO 9000:2026 (4.2.6) على أن المنظمات الناجحة تركز باستمرار على التحسين، ومن فوائده الاستخدام الفعال للتعلم في التحسين، ومن أفعاله الممكنة إدخال التحسين في تطوير المنتجات والخدمات والعمليات الجديدة أو المعدلة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: when designing a lift plan for a new project, the engineer starts from the rules written in the register, not from a blank page.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: عند تصميم خطة رفع لمشروع جديد يبدأ المهندس من القواعد المكتوبة في السجل، لا من صفحة بيضاء."
+      },
+      "how": [
+       {
+        "en": "Start every new design with the lessons that apply",
+        "ar": "ابدأ كل تصميم جديد بالدروس المنطبقة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "The same mistakes repeated on every project",
+        "ar": "تكرار الأخطاء نفسها في كل مشروع"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s3-4",
+      "clause": "4.3.9",
+      "title": {
+       "en": "A quality culture that shares knowledge",
+       "ar": "ثقافة جودة تشارك المعرفة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9000:2026 (4.3.9 organizational quality culture) notes that quality culture can influence the context in which knowledge is created, the extent to which people share it, and the ability to adapt to change.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يذكر ISO 9000:2026 (4.3.9 ثقافة الجودة التنظيمية) أن ثقافة الجودة قد تؤثر في السياق الذي تُنشأ فيه المعرفة، وفي مدى مشاركة الناس لها، وفي القدرة على التكيف مع التغيير."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the monthly quality meeting each project presents one lesson, a success or a failure, with no search for someone to blame.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في اجتماع الجودة الشهري يعرض كل مشروع درساً واحداً، نجاحاً أو فشلاً، دون بحث عن مذنب."
+      },
+      "how": [
+       {
+        "en": "Make presenting lessons a monthly habit",
+        "ar": "اجعل عرض الدروس عادة شهرية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Lessons written for the audit only",
+        "ar": "دروس تُكتب للتدقيق فقط"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Top management",
+       "ar": "الإدارة العليا"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   },
+   {
+    "id": "8.1",
+    "phase": "embed",
+    "title": {
+     "en": "Clause 8.1 Operational planning and control, and 8.5.6 Control of changes",
+     "ar": "البند 8.1 التخطيط والضبط التشغيلي والبند 8.5.6 ضبط التغييرات"
+    },
+    "short": {
+     "en": "8.1 · Embedding",
+     "ar": "8.1 · الترسيخ"
+    },
+    "intro": {
+     "en": "The lesson is a rule that enters the process criteria and controls: a procedure, a form, an FMEA row or a control plan, and it is read at each change.",
+     "ar": "الدرس قاعدة تدخل معايير العمليات وضوابطها: إجراء أو نموذج أو صف في FMEA أو خطة ضبط، ويُقرأ عند كل تغيير."
+    },
+    "items": [
+     {
+      "ref": "s4-1",
+      "clause": "8.1",
+      "title": {
+       "en": "Process criteria and control of planned changes",
+       "ar": "معايير العمليات وضبط التغييرات المخططة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 8.1 asks to plan, implement and control the processes by establishing criteria for the processes and for the acceptance of products and services and controlling the processes against them, and to control planned changes and review the consequences of unintended ones. An embedded lesson becomes a criterion or a control in the next planning.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 8.1 تخطيط العمليات وتنفيذها وضبطها بتحديد معايير للعمليات وقبول المنتجات والخدمات وضبط العمليات وفقها، وضبط التغييرات المخططة ومراجعة عواقب التغييرات غير المقصودة. والدرس المرسّخ يصبح معياراً أو ضابطاً في التخطيط التالي."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the 32 °C limit at discharge and the plant temperature check became acceptance criteria in receiving form QF-CON-11 rev 3.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: حد 32 °م عند التفريغ وفحص الحرارة في المحطة أصبحا معايير قبول في نموذج الاستلام QF-CON-11 rev 3."
+      },
+      "how": [
+       {
+        "en": "Write the lesson as a measurable criterion",
+        "ar": "اكتب الدرس معياراً قابلاً للقياس"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The criterion in the approved document",
+        "ar": "المعيار في الوثيقة المعتمدة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Lessons that enter no criterion",
+        "ar": "دروس لا تدخل أي معيار"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s4-2",
+      "clause": "8.5.6",
+      "title": {
+       "en": "Read the register at each change",
+       "ar": "اقرأ السجل عند كل تغيير"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 8.5.6 asks to review and control changes for production or service provision to the extent necessary to ensure continuing conformity, with documented information on the results of the review, who authorized the change and any necessary actions. The review of a change is the right moment to read the lessons that apply.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 8.5.6 مراجعة التغييرات في الإنتاج أو تقديم الخدمة وضبطها بالقدر اللازم لضمان استمرار المطابقة، مع معلومات موثقة بنتائج المراجعة ومن اعتمد التغيير والإجراءات اللازمة. ومراجعة التغيير لحظة مناسبة لقراءة الدروس المنطبقة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: when the concrete supplier changed for a running project, the team read the chilled-water rule, and it went into the new supplier's contract.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: عند تغيير مورد الخرسانة لمشروع قائم قرأ الفريق قاعدة الماء المبرد، فدخلت عقد المورد الجديد."
+      },
+      "how": [
+       {
+        "en": "Add \"lessons that apply\" to the change request form",
+        "ar": "أضف «الدروس المنطبقة» إلى نموذج طلب التغيير"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Change requests naming the lessons read",
+        "ar": "طلبات تغيير تذكر الدروس المقروءة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A change that repeats a mistake already learned",
+        "ar": "تغيير يعيد خطأً سبق تعلمه"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s4-3",
+      "clause": "GD-4",
+      "title": {
+       "en": "The lesson as a rule: When…, do…, because…",
+       "ar": "الدرس قاعدة: عندما… افعل… لأن…"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: write the lesson so that someone who was not there can apply it: \"When\" the situation that comes back, \"do\" a specific action that can be checked, \"because\" what you learned, with evidence; then where the rule applies (process, project type, site) and where it does not. The tags make the rule show up for whoever needs it in \"read before you start\".",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: اكتب الدرس بحيث يطبقه شخص لم يحضر الحدث: «عندما» الموقف الذي يتكرر، «افعل» فعلاً محدداً يمكن التحقق منه، «لأن» ما تعلمتموه بالدليل؛ ثم أين تنطبق القاعدة (عملية، نوع مشروع، موقع) وأين لا تنطبق. والوسوم تجعل القاعدة تظهر لمن يحتاجها في «اقرأ قبل أن تبدأ»."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: \"When we rent a measuring device, we write in the rental order that it must arrive with a valid calibration certificate and refuse it without one, because two of the six overdue devices were rented without a certificate.\" It does not apply to central-store devices.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «عندما نستأجر جهاز قياس، نكتب في أمر الاستئجار أن الجهاز يصل بشهادة معايرة سارية ونرفضه دونها، لأن اثنين من الأجهزة الستة المتأخرة كانا مستأجرين بلا شهادة.» ولا تنطبق على أجهزة المخزن المركزي."
+      },
+      "how": [
+       {
+        "en": "Write all three parts",
+        "ar": "اكتب الأجزاء الثلاثة كاملة"
+       },
+       {
+        "en": "State the scope and what is outside it",
+        "ar": "حدد النطاق وما خارجه"
+       },
+       {
+        "en": "Add the tags: process, project type and site",
+        "ar": "ضع الوسوم: العملية ونوع المشروع والموقع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Rules written with their scope",
+        "ar": "قواعد مكتوبة بنطاقها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "\"Pay attention to quality\" as a lesson",
+        "ar": "«الانتباه للجودة» درساً"
+       },
+       {
+        "en": "A rule with no scope applied where it does not fit",
+        "ar": "قاعدة بلا نطاق تُطبق في غير موضعها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Lesson owner",
+       "ar": "مالك الدرس"
+      },
+      "kpi": {
+       "en": "Share of lessons written as a rule with its scope",
+       "ar": "نسبة الدروس المكتوبة قاعدة بنطاقها"
+      }
+     },
+     {
+      "ref": "s4-4",
+      "clause": "GD-6",
+      "title": {
+       "en": "The lesson into FMEA and control plans",
+       "ar": "الدرس إلى FMEA وخطط الضبط"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the strongest embedding is when the lesson enters the tools used every day: a new or revised row in an FMEA study, an item in the control plan, a design standard, a contract clause, a checklist. In the tool an \"FMEA row\" embedding action names the study by its id, with a preview by its own rule, and the FMEA study lists the lessons that name it (read-only).",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: أقوى ترسيخ أن يدخل الدرس الأدوات التي تُستخدم كل يوم: صف جديد أو معدل في دراسة FMEA، وبند في خطة الضبط، ومعيار تصميم، وبند عقد، وقائمة فحص. وفي الأداة يسمي إجراء الترسيخ «صف في FMEA» الدراسة برقمها مع معاينة بقاعدتها، وتعرض دراسة FMEA الدروس التي تذكرها (قراءة فقط)."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the chilled-water and thermometer rows in FM-EX-01 became the starting study for every concrete project; the study shows LL-EX-01 in its review section.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: صفا الماء المبرد وميزان الحرارة في FM-EX-01 أصبحا دراسة البداية لكل مشروع خرسانة؛ والدراسة تعرض LL-EX-01 في مراجعتها."
+      },
+      "how": [
+       {
+        "en": "Add an \"FMEA row\" action with the study id",
+        "ar": "أضف إجراء «صف في FMEA» برقم الدراسة"
+       },
+       {
+        "en": "Update the control plan with the rule",
+        "ar": "حدّث خطة الضبط بالقاعدة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "FMEA rows and control-plan items naming the lesson",
+        "ar": "صفوف FMEA وبنود خطط الضبط التي تذكر الدرس"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An FMEA that never changes after lessons",
+        "ar": "FMEA لا تتغير بعد الدروس"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of lessons in an FMEA or a control plan",
+       "ar": "نسبة الدروس التي دخلت FMEA أو خطة ضبط"
+      }
+     }
+    ]
+   },
+   {
+    "id": "9.1.3",
+    "phase": "share",
+    "title": {
+     "en": "Clause 9.1.3 Analysis and evaluation",
+     "ar": "البند 9.1.3 التحليل والتقييم"
+    },
+    "short": {
+     "en": "9.1.3 · Verification",
+     "ar": "9.1.3 · التحقق"
+    },
+    "intro": {
+     "en": "A lesson is not learned until it is checked that the next project applied it and it worked. Embedding with an owner, a date and evidence, then a dated check after it.",
+     "ar": "الدرس لا يكون مستفاداً حتى يُتحقق أن المشروع التالي طبّقه ونجح. الترسيخ بمالك وموعد ودليل، ثم تحقق مؤرخ بعده."
+    },
+    "items": [
+     {
+      "ref": "s5-1",
+      "clause": "9.1.3",
+      "title": {
+       "en": "Evaluating the effectiveness of actions",
+       "ar": "تقييم فعالية الإجراءات"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 9.1.3 asks to analyse and evaluate the data and information from monitoring and measurement, and to use the results to evaluate, among other things, e) the effectiveness of actions taken to address risks and h) the need for improvements. The check on the next project is the evaluation of the lesson's effectiveness.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 9.1.3 تحليل البيانات والمعلومات الناتجة عن الرصد والقياس وتقييمها، واستخدام النتائج لتقييم أمور منها (هـ) فعالية الإجراءات المتخذة لمعالجة المخاطر، و(ح) الحاجة إلى تحسينات. والتحقق في المشروع التالي هو تقييم فعالية الدرس."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the LL-EX-01 check on project PRJ-2026-118: 1 of 64 loads rejected (1.6%), none for temperature.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: تحقق LL-EX-01 في المشروع PRJ-2026-118: شحنة واحدة مرفوضة من 64 (1.6%)، ولا شحنة بسبب الحرارة."
+      },
+      "how": [
+       {
+        "en": "Measure with the same measure that showed the problem",
+        "ar": "قِس بالمقياس نفسها الذي كشف المشكلة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The result of the check and its source",
+        "ar": "نتيجة التحقق ومصدرها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A check by impression",
+        "ar": "تحقق بالانطباع"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "The next project's manager",
+       "ar": "مدير المشروع التالي"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s5-2",
+      "clause": "3.2.4",
+      "title": {
+       "en": "A good practice: proven to work",
+       "ar": "الممارسة الجيدة: ثبت أنها تعمل"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9000:2026 defines a good practice (3.2.4) as a method that has been proven to work well and produce good results, and is therefore recommended to be adopted as a model; its note says it has usually been tested over time and validated through repeated trials before being accepted for broad adoption. That is why the tool asks for a dated check after the actions, naming the next project or process, with the result \"applied and worked\" and evidence.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يعرّف ISO 9000:2026 الممارسة الجيدة (3.2.4) بأنها طريقة ثبت أنها تعمل جيداً وتعطي نتائج جيدة، فيوصى باعتمادها نموذجاً؛ وتذكر الملاحظة أنها تُختبر عادة مع الوقت وتُثبت بالتجارب المتكررة قبل قبولها للاعتماد الواسع. لذلك تشترط الأداة تحققاً مؤرخاً بعد الإجراءات، يسمي المشروع أو العملية التالية، بنتيجة «طُبّق ونجح» ودليل."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: LL-EX-03 is embedded (the rental order revised) but not verified yet; it waits for the first rental in November and stays at the \"embedded\" stage.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: LL-EX-03 رُسّخ (أمر الاستئجار معدل) لكنه لم يُتحقق منه بعد؛ ينتظر أول استئجار في نوفمبر، ويبقى في مرحلة «رُسّخ»."
+      },
+      "how": [
+       {
+        "en": "Name who will check and when, as you write the lesson",
+        "ar": "حدد من سيتحقق ومتى عند كتابة الدرس"
+       },
+       {
+        "en": "Record \"applied, partly\" honestly and plan a further action",
+        "ar": "سجّل «طُبّق جزئياً» بصدق وخطط إجراءً إضافياً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A dated check after the actions, with evidence",
+        "ar": "تحقق مؤرخ بعد الإجراءات بدليل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A lesson closed on the day it is written",
+        "ar": "درس يُغلق يوم كتابته"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Lesson owner",
+       "ar": "مالك الدرس"
+      },
+      "kpi": {
+       "en": "Share of verified lessons",
+       "ar": "نسبة الدروس المتحقق منها"
+      }
+     },
+     {
+      "ref": "s5-3",
+      "clause": "GD-5",
+      "title": {
+       "en": "Embedding actions with an owner, a date and evidence",
+       "ar": "إجراءات الترسيخ بمالك وموعد ودليل"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: for each embedding action: what changes (procedure, form, checklist, training, FMEA row, control plan, design standard, contract clause), the document reference, an owner, a due date, a status, the date done and evidence of the change (the issue number, the training record). A lesson does not count as \"embedded\" until all its actions are done with evidence.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: لكل إجراء ترسيخ: ما الذي يتغيّر (إجراء، نموذج، قائمة فحص، تدريب، صف FMEA، خطة ضبط، معيار تصميم، بند عقد)، ومرجع الوثيقة، ومالك، وموعد، وحالة، وتاريخ تنفيذ، ودليل على التغيير (رقم الإصدار، سجل التدريب). ولا يُعدّ الدرس «مرسّخاً» حتى تُنفذ كل إجراءاته بدليل."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: LL-EX-02: four actions (LP-07 rev 3, the weight on the tag, training TBT-2026-41, the FM-EX-02 re-rating), all done with evidence.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: LL-EX-02: أربعة إجراءات (LP-07 rev 3، والوزن على البطاقة، والتدريب TBT-2026-41، وإعادة تقييم FM-EX-02)، كلها منفذة بدليل."
+      },
+      "how": [
+       {
+        "en": "An owner and a due date for every action",
+        "ar": "مالك وموعد لكل إجراء"
+       },
+       {
+        "en": "Evidence of the change, not just \"done\"",
+        "ar": "دليل التغيير لا مجرد «تم»"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The action table with owners and evidence",
+        "ar": "جدول الإجراءات بمالكيها ودليلها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Actions with no owner",
+        "ar": "إجراءات بلا مالك"
+       },
+       {
+        "en": "\"Done\" with no evidence",
+        "ar": "«تم» بلا دليل"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Lesson owner",
+       "ar": "مالك الدرس"
+      },
+      "kpi": {
+       "en": "Share of embedding actions done with evidence",
+       "ar": "نسبة إجراءات الترسيخ المنفذة بدليل"
+      }
+     }
+    ]
+   },
+   {
+    "id": "7.4",
+    "phase": "share",
+    "title": {
+     "en": "Clause 7.4 Communication, and 9.3.2 Management review inputs",
+     "ar": "البند 7.4 التواصل والبند 9.3.2 مدخلات مراجعة الإدارة"
+    },
+    "short": {
+     "en": "7.4 · Sharing",
+     "ar": "7.4 · التعميم"
+    },
+    "intro": {
+     "en": "A lesson that does not reach those who need it changes nothing. The register is reviewed periodically in management review.",
+     "ar": "الدرس الذي لا يصل إلى من يحتاجه لا يغيّر شيئاً. والسجل يُراجع دورياً في مراجعة الإدارة."
+    },
+    "items": [
+     {
+      "ref": "s6-1",
+      "clause": "7.4",
+      "title": {
+       "en": "Sharing: what, when, with whom, how and who",
+       "ar": "التعميم: ماذا ومتى ولمن وكيف ومن"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 7.4 asks to determine the internal and external communications relevant to the system: on what, when, with whom, how, and who communicates. Annex A.7.4 explains that communication can be planned and evaluated for effectiveness. Sharing a lesson is planned communication: who needs it, how it reaches them, and when.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 7.4 تحديد التواصل الداخلي والخارجي المتعلق بالنظام: عمّا يُتواصل، ومتى، ومع من، وكيف، ومن يتواصل. ويوضح الملحق A.7.4 أن التواصل قد يُخطط له وتُقيَّم فعاليته. وتعميم الدرس تواصل مخطط: من يحتاجه، وكيف يصله، ومتى."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: LL-EX-02 was shared with the Tower A team through a \"good practice\" safety alert and a walk-through at Tower B, then with the HSE committee and every project manager.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: عُمّم LL-EX-02 على فريق البرج أ بتنبيه سلامة «ممارسة جيدة» وجولة في البرج ب، ثم على لجنة السلامة وكل مديري المشاريع."
+      },
+      "how": [
+       {
+        "en": "Pick the audience before the channel",
+        "ar": "حدد الجمهور قبل الوسيلة"
+       },
+       {
+        "en": "Put the lesson card in the project start pack",
+        "ar": "ضع بطاقة الدرس في حزمة بدء المشروع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The sharing record: date, who and how",
+        "ar": "سجل التعميم: التاريخ ومن وكيف"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A mass e-mail nobody reads",
+        "ar": "بريد جماعي لا يقرؤه أحد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Lesson owner",
+       "ar": "مالك الدرس"
+      },
+      "kpi": {
+       "en": "Share of lessons shared",
+       "ar": "نسبة الدروس المعممة"
+      }
+     },
+     {
+      "ref": "s6-2",
+      "clause": "9.3.2",
+      "title": {
+       "en": "Reviewing the register in management review",
+       "ar": "مراجعة السجل في مراجعة الإدارة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 9.3.2 asks that management review include, among other things, the status of actions from previous reviews, information on system performance including trends in nonconformities and corrective actions and audit results, and opportunities for improvement. Reviewing the register periodically shows the lessons that are not embedded or not verified.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 9.3.2 أن تشمل مراجعة الإدارة أموراً منها: حالة الإجراءات من المراجعات السابقة، ومعلومات أداء النظام بما فيها اتجاهات عدم المطابقة والإجراءات التصحيحية ونتائج التدقيق، وفرص التحسين. ومراجعة السجل دورياً تكشف الدروس التي لم تُرسّخ أو لم يُتحقق منها."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the third-quarter management review the register was shown: two lessons shared, one waiting for verification, and it was decided to check it at the first rental.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في مراجعة الإدارة للربع الثالث عُرض السجل: درسان عُمّما، ودرس ينتظر التحقق، وقُرر أن يُتحقق منه في أول استئجار."
+      },
+      "how": [
+       {
+        "en": "Bring the register dashboard to management review",
+        "ar": "أدخل لوحة مؤشرات السجل في مراجعة الإدارة"
+       },
+       {
+        "en": "Close what is not embedded by a decision",
+        "ar": "أغلق ما لم يُرسّخ بقرار"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Management review minutes naming the register",
+        "ar": "محضر مراجعة الإدارة يذكر السجل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A register never reviewed since it was created",
+        "ar": "سجل لم يُراجع منذ إنشائه"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Top management",
+       "ar": "الإدارة العليا"
+      },
+      "kpi": {
+       "en": "Number of open items in the register",
+       "ar": "عدد البنود المفتوحة في السجل"
+      }
+     },
+     {
+      "ref": "s6-3",
+      "clause": "10.1",
+      "title": {
+       "en": "Continual improvement and preventing undesired effects",
+       "ar": "التحسين المستمر ومنع الآثار غير المرغوبة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 10.1 asks to continually improve the suitability, adequacy and effectiveness of the system, with actions that include c) correcting, preventing or reducing undesired effects. Annex A.10.1 explains that improvement activities can involve adapting processes, knowledge and resources. A lesson is prevention: it carries what you learned to where the failure has not happened yet.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 10.1 تحسين ملاءمة النظام وكفايته وفعاليته باستمرار، وأن تشمل الإجراءات أموراً منها ج) تصحيح الآثار غير المرغوبة أو منعها أو خفضها. ويوضح الملحق A.10.1 أن أنشطة التحسين قد تشمل تكييف العمليات والمعرفة والموارد. والدرس منع: يحمل ما تعلمته إلى حيث لم يقع الفشل بعد."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: after LL-EX-02, bundle lifts restarted on Tower C with the new template: 24 lifts with no single sling.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بعد LL-EX-02 عاد رفع الحزم في البرج ج بالنموذج الجديد: 24 رفعة دون حبل واحد."
+      },
+      "how": [
+       {
+        "en": "Carry the lesson to where the failure has not happened",
+        "ar": "انقل الدرس إلى حيث لم يقع الفشل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An improvement that stays where it happened",
+        "ar": "تحسين يبقى في مكان حدوثه"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   },
+   {
+    "id": "19011",
+    "phase": "share",
+    "title": {
+     "en": "ISO 19011:2026 Lessons in auditing",
+     "ar": "ISO 19011:2026 الدروس في التدقيق"
+    },
+    "short": {
+     "en": "19011 · Auditing",
+     "ar": "19011 · التدقيق"
+    },
+    "intro": {
+     "en": "Lessons feed audit planning and the improvement of the programme, and the auditor asks: what changed? Who applied it next?",
+     "ar": "الدروس مدخل لتخطيط التدقيق وتحسين برنامجه، والمدقق يسأل: ما الذي تغيّر؟ ومن طبّقه بعد ذلك؟"
+    },
+    "items": [
+     {
+      "ref": "s7-1",
+      "clause": "5.7",
+      "title": {
+       "en": "Lessons to improve the audit programme",
+       "ar": "الدروس لتحسين برنامج التدقيق"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 19011:2026 subclause 5.7 (reviewing and improving the audit programme) says the person managing the programme and the audit client review it to assess whether its objectives were achieved, and that lessons learned from the review should be used as inputs to improve it. ISO 19011 is guidance, not requirements.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يذكر ISO 19011:2026 في البند 5.7 (مراجعة برنامج التدقيق وتحسينه) أن مسؤول البرنامج وعميل التدقيق يراجعان البرنامج لتقييم تحقق أهدافه، وأن الدروس المستفادة من المراجعة ينبغي أن تُستخدم مدخلات لتحسينه. وISO 19011 إرشادات لا متطلبات."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: after calibration finding F-03, the 2027 audit programme added a check of rented devices on every site.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بعد ملاحظة المعايرة F-03 أضاف برنامج التدقيق لعام 2027 فحص الأجهزة المستأجرة في كل موقع."
+      },
+      "how": [
+       {
+        "en": "Record the audit programme's lessons in the same register",
+        "ar": "سجّل دروس برنامج التدقيق في السجل نفسه"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An audit programme that never changes",
+        "ar": "برنامج تدقيق لا يتغير"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Audit programme manager",
+       "ar": "مسؤول برنامج التدقيق"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s7-2",
+      "clause": "6.3.2.2",
+      "title": {
+       "en": "Lessons in audit planning",
+       "ar": "الدروس في تخطيط التدقيق"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 19011:2026 subclause 6.3.2.2 (audit planning details) says planning takes into account, as appropriate, follow-up activities from a previous audit or other sources, such as lessons learned and project reviews. Subclause 6.6 (completing the audit) says lessons learned from the audit can identify risks and opportunities for the audit programme and the auditee.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يذكر ISO 19011:2026 في البند 6.3.2.2 (تفاصيل تخطيط التدقيق) أن التخطيط يراعي، حسب الاقتضاء، أنشطة المتابعة من تدقيق سابق أو مصادر أخرى، ومن أمثلتها الدروس المستفادة ومراجعات المشاريع. ويذكر في البند 6.6 (إكمال التدقيق) أن الدروس المستفادة من التدقيق قد تكشف مخاطر وفرصاً لبرنامج التدقيق وللجهة المدققة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: before auditing a new site, the internal auditor read the lessons on \"control of measuring devices\" and \"lifting operations\" and put their questions into the checklist.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: قبل تدقيق موقع جديد قرأ المدقق الداخلي دروس «ضبط أجهزة القياس» و«عمليات الرفع»، فوضع أسئلتها في قائمة الفحص."
+      },
+      "how": [
+       {
+        "en": "Search the register before each audit",
+        "ar": "ابحث في السجل قبل كل تدقيق"
+       },
+       {
+        "en": "Add a lesson after every audit that teaches something",
+        "ar": "أضف درساً بعد كل تدقيق يعلّم شيئاً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The audit plan naming the lessons",
+        "ar": "خطة التدقيق تذكر الدروس"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An audit that ignores what the company learned",
+        "ar": "تدقيق يتجاهل ما تعلمته الشركة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Internal auditor",
+       "ar": "المدقق الداخلي"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s7-3",
+      "clause": "GD-7",
+      "title": {
+       "en": "Common gaps and what an auditor asks for",
+       "ar": "الفجوات الشائعة وما يطلبه المدقق"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: common gaps: lessons in minutes nobody reads, lessons from failures only, a cause from an opinion, a lesson that blames a person, a general lesson with no specific action, an action with no owner or no evidence, a lesson \"closed\" on the day it was written with no check, and a register never searched before projects and never reviewed. An auditor usually asks for: the lesson and its evidence, the analysis the cause came from, the document that changed with its issue number, the project that applied it next and the result, who was told, and how the register was read before a new project.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: الفجوات الشائعة: دروس في محاضر لا يقرؤها أحد، ودروس من الأعطال وحدها، وسبب من رأي، ودرس يلوم شخصاً، ودرس عام بلا فعل محدد، وإجراء بلا مالك أو بلا دليل، ودرس «مغلق» يوم كتابته دون تحقق، وسجل لا يُبحث فيه قبل المشاريع ولا يُراجع. والمدقق يطلب عادة: الدرس ودليله، والتحليل الذي أخذ منه السبب، والوثيقة التي تغيّرت برقم إصدارها، والمشروع الذي طبّقه بعد ذلك ونتيجته، ومن أُبلغ، وكيف قُرئ السجل قبل مشروع جديد."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the automatic audit of the example: LL-EX-01 and LL-EX-02 pass every applicable check; the verification and sharing checks do not apply to LL-EX-03 yet, and its open item is \"check on the next project\".",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: التدقيق الآلي للمثال: LL-EX-01 وLL-EX-02 ينجحان في كل الفحوص المنطبقة؛ وLL-EX-03 لا تنطبق عليه فحوص التحقق والتعميم بعد، وبنده المفتوح «تحقق في المشروع التالي»."
+      },
+      "how": [
+       {
+        "en": "Check the Audit tab before each management review",
+        "ar": "راجع تبويب التدقيق قبل كل مراجعة إدارة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The automatic audit result for each lesson",
+        "ar": "نتيجة التدقيق الآلي لكل درس"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A big register with not one change",
+        "ar": "سجل كبير بلا تغيير واحد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Internal auditor",
+       "ar": "المدقق الداخلي"
+      },
+      "kpi": {
+       "en": "Audit pass rate",
+       "ar": "نسبة الفحوص الناجحة"
+      }
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "id": "learned",
+    "q": {
+     "en": "When is a lesson really learned?",
+     "ar": "متى يكون الدرس «مستفاداً» فعلاً؟"
+    },
+    "a": {
+     "en": "**When a document, a control or a practice has changed, and the next project used it and it worked.** Writing the lesson in meeting minutes is not learning. So the tool computes the stage: captured, cause linked, lesson written as a rule, actions planned, then **embedded** (the actions done with evidence of the change), then **verified** (a dated check after the actions that a later project applied it and it worked), then shared. ISO 9000:2026 defines a good practice (3.2.4) as a method proven to work and adopted as a model after testing. In the example, the summer concrete lesson counted as learned only after one load in 64 was rejected on the second project.",
+     "ar": "**عندما تتغير وثيقة أو ضابط أو ممارسة، ويستخدمه المشروع التالي وينجح.** كتابة الدرس في محضر اجتماع ليست تعلماً. لذلك تحسب الأداة المرحلة: سُجّل الحدث، ثم رُبط السبب، ثم كُتب الدرس قاعدة، ثم خُططت الإجراءات، ثم **رُسّخ** (نُفذت الإجراءات بدليل التغيير)، ثم **تُحقق منه** (تحقق مؤرخ بعد الإجراءات أن مشروعاً تالياً طبّقه ونجح)، ثم عُمّم. ويعرّف ISO 9000:2026 الممارسة الجيدة (3.2.4) بأنها طريقة ثبت أنها تعمل وتُعتمد نموذجاً بعد اختبارها. في المثال: درس خرسانة الصيف لم يُعدّ مستفاداً إلا بعد أن رُفضت شحنة واحدة من 64 في المشروع الثاني."
+    }
+   },
+   {
+    "id": "which",
+    "q": {
+     "en": "Lessons learned, CAPA or FMEA — which one?",
+     "ar": "الدروس المستفادة أم CAPA أم FMEA: أيها أستخدم؟"
+    },
+    "a": {
+     "en": "They are not alternatives. **CAPA** deals with one nonconformity: correction, cause, corrective action and its effectiveness (10.2). **FMEA** looks ahead in a process: how it could fail and what comes first. **Lessons learned** carries what you learned from an event (a failure or a success) to **other projects and processes**: a rule, then embedding, then a check on the next project. They work together: the cause comes from CAPA or RCA, the lesson becomes an FMEA row or a control-plan item, and the case stays in CAPA when a nonconformity is the source.",
+     "ar": "ليست بدائل. **CAPA** للتعامل مع حالة عدم مطابقة محددة: التصحيح والسبب والإجراء التصحيحي وفعاليته (10.2). و**FMEA** نظرة إلى الأمام في عملية: كيف قد تفشل وما الأولوية. و**الدروس المستفادة** تحمل ما تعلمته من حدث (فشل أو نجاح) إلى **المشاريع والعمليات الأخرى**: قاعدة، ثم ترسيخ، ثم تحقق في المشروع التالي. وتعمل معاً: يُؤخذ السبب من CAPA أو RCA، ويصبح الدرس صفاً في FMEA أو بنداً في خطة ضبط، وتُسجّل الحالة في CAPA عندما يكون المصدر عدم مطابقة."
+    }
+   },
+   {
+    "id": "req",
+    "q": {
+     "en": "Is lessons learned required by ISO 9001:2026?",
+     "ar": "هل الدروس المستفادة متطلب في ISO 9001:2026؟"
+    },
+    "a": {
+     "en": "Not by that name. Lessons learned is **a practice**, not a requirement. But ISO 9001:2026 asks in **7.1.6** to determine the knowledge needed to operate the processes and to retain, apply and share it to the extent necessary; in **10.2.1 e) and f)** to update the risks and opportunities and make changes to the system, if necessary, after a nonconformity; and in **10.1** to improve continually. A register is a structured way to show it. ISO 10009:2024 does not review lessons learned as a tool; the nearest is clause 15, with suggestion schemes in 15.6. The NOTE of 7.1.6 in the 2026 edition lists the forms knowledge can take (experience held by people, learning from others, knowledge embedded in methods and processes, documented information).",
+     "ar": "لا، بهذا الاسم. الدروس المستفادة **ممارسة** وليست متطلباً. لكن ISO 9001:2026 تطلب في **7.1.6** تحديد المعرفة اللازمة لتشغيل العمليات والاحتفاظ بها وتطبيقها ومشاركتها بالقدر اللازم، وفي **10.2.1 هـ) و و)** تحديث المخاطر والفرص وإجراء التغييرات على النظام عند الحاجة بعد عدم المطابقة، وفي **10.1** التحسين المستمر. والسجل طريقة منظمة لإثبات ذلك. ولا تراجع ISO 10009:2024 الدروس المستفادة أداةً؛ أقرب ما فيها البند 15 وأنظمة الاقتراحات في 15.6. وملاحظة 7.1.6 في إصدار 2026 تذكر أشكال المعرفة (خبرة الأشخاص، والتعلم من الآخرين، والمعرفة المضمنة في الطرق والعمليات، والمعلومات الموثقة)."
+    }
+   },
+   {
+    "id": "write",
+    "q": {
+     "en": "How do I write a lesson others can use?",
+     "ar": "كيف أكتب درساً يستفيد منه غيري؟"
+    },
+    "a": {
+     "en": "Write it as **a rule**: \"**When** (the situation that comes back), **do** (a specific action), **because** (what we learned, with evidence)\", then **where it applies** and **where it does not**. For example: \"When ordering ready-mix concrete for pours between May and September, write chilled water into the supply contract and check every load with a calibrated thermometer at the gate, because rejections without chilled water were four times higher.\" A success is written the same way: what worked, why, and where to repeat it. Tag it (process, project type, site) so whoever needs it can find it.",
+     "ar": "اكتبه **قاعدة**: «**عندما** (الموقف الذي يتكرر)، **افعل** (فعلاً محدداً)، **لأن** (ما تعلمناه بالدليل)»، ثم **أين تنطبق** وأين **لا تنطبق**. مثال: «عندما نطلب خرسانة جاهزة لصبات بين مايو وسبتمبر، اكتب الماء المبرد في عقد التوريد وافحص كل شحنة بميزان حرارة معاير عند البوابة، لأن الرفض بلا ماء مبرد كان أعلى أربع مرات». والنجاح يُكتب بالطريقة نفسها: ما الذي نجح، ولماذا، وأين يُكرر. وابحث بالوسوم (العملية، نوع المشروع، الموقع) حتى يجده من يحتاجه."
+    }
+   },
+   {
+    "id": "blame",
+    "q": {
+     "en": "Why must a lesson be blame-free?",
+     "ar": "لماذا يجب أن يكون الدرس بلا لوم؟"
+    },
+    "a": {
+     "en": "Because **a lesson that blames a person does not change the process**, and it makes people hide errors and near misses, so the learning is lost. Write what in the process allowed the error: a template with no rigging method, a check given by radio, a contract that does not ask for the certificate. ISO 9000:2026, in the engagement of people principle (4.2.4), speaks of open discussion, sharing knowledge and experience, and letting people take initiatives without fear. The tool flags wording that names a person (negligence, inattention, someone's mistake) with the same rule as FMEA, DMAIC, A3 and RCA, and the \"lesson written\" stage is not complete until it is rewritten.",
+     "ar": "لأن **الدرس الذي يلوم شخصاً لا يغيّر العملية**، ويجعل الناس يخفون الأخطاء والحوادث الوشيكة فيضيع التعلم. اكتب ما في العملية سمح بالخطأ: قالب بلا طريقة ربط، فحص يُعطى بالراديو، عقد لا يطلب الشهادة. ويذكر ISO 9000:2026 في مبدأ مشاركة الناس (4.2.4) تسهيل النقاش المفتوح وتبادل المعرفة والخبرة وتمكين الناس من المبادرة دون خوف. وتنبّه الأداة على الصياغة التي تشير إلى شخص (إهمال، عدم انتباه، خطأ فلان) بالقاعدة نفسها في FMEA وDMAIC وA3 وRCA، ولا تكتمل مرحلة «كُتب الدرس» قبل إعادة الصياغة."
+    }
+   },
+   {
+    "id": "start",
+    "q": {
+     "en": "How do we use the register when a new project starts?",
+     "ar": "كيف نستخدم السجل عند بدء مشروع جديد؟"
+    },
+    "a": {
+     "en": "Open the [[tab:tools]] and pick the process or the project type in \"read before you start\": the written rules that apply show up, with who verified them and where. Or search by text, type, stage and tags. Then make reading a step of starting a project (planning 8.1 and control of changes 8.5.6): a few minutes in the kick-off meeting, rows in the FMEA, items in the control plan. ISO 19011:2026 names lessons learned as an input to audit planning (6.3.2.2) and to improving the audit programme (5.7). A register nobody reads is a gap.",
+     "ar": "افتح [[tab:tools]] واختر في «اقرأ قبل أن تبدأ» العملية أو نوع المشروع: تظهر القواعد المكتوبة التي تنطبق عليه، ومن تحقق منها وأين. أو ابحث بالنص والنوع والمرحلة والوسوم. ثم اجعل القراءة خطوة في بدء المشروع (التخطيط 8.1 وضبط التغييرات 8.5.6): دقائق في اجتماع البدء، وصفوف في FMEA، وبنود في خطة الضبط. ويذكر ISO 19011:2026 الدروس المستفادة مدخلاً في تخطيط التدقيق (6.3.2.2) وفي تحسين برنامج التدقيق (5.7). سجل لا يقرؤه أحد فجوة."
+    }
+   }
+  ],
+  "competencies": [
+   "OE-02",
+   "QM-03"
+  ],
+  "ecosystem": "quality"
+ }
+}

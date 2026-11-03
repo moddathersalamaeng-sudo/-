@@ -1,0 +1,3 @@
+node_modules/
+tools/_extract/
+tests/e2e/out/

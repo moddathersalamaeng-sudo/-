@@ -1,0 +1,334 @@
+{
+  "schema": "cia.seed.v1",
+  "collection": "competency_domains",
+  "phase": 2,
+  "generated": "2026-09-28",
+  "author": "مدثر سلامه",
+  "items": [
+    {
+      "type": "competency_domain",
+      "id": "QM",
+      "name": {
+        "ar": "إدارة الجودة",
+        "en": "Quality Management"
+      },
+      "short": {
+        "ar": "الجودة",
+        "en": "Quality"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "e1fc87db86481844e09b384de9ac9074df4bbc0e728c10e6daad078d8c437336"
+      }
+    },
+    {
+      "type": "competency_domain",
+      "id": "ISO",
+      "name": {
+        "ar": "أنظمة إدارة الأيزو",
+        "en": "ISO Management Systems"
+      },
+      "short": {
+        "ar": "الأيزو",
+        "en": "ISO"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "680dd34cc23d328476ad1f26b89583d83e4fb8a3b05d298fa7657c9b3a65949c"
+      }
+    },
+    {
+      "type": "competency_domain",
+      "id": "AUD",
+      "name": {
+        "ar": "التدقيق",
+        "en": "Auditing"
+      },
+      "short": {
+        "ar": "التدقيق",
+        "en": "Auditing"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "894618b5c6625d48bfccb505f2108fb92070124e5c04d16e520c0133c8025876"
+      }
+    },
+    {
+      "type": "competency_domain",
+      "id": "PM",
+      "name": {
+        "ar": "إدارة المشاريع",
+        "en": "Project Management"
+      },
+      "short": {
+        "ar": "المشاريع",
+        "en": "Projects"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "21b7a2ff9a50776641651e0a3c5a73db28d582a260e5f8e60d6e8dbd4ef4430f"
+      }
+    },
+    {
+      "type": "competency_domain",
+      "id": "RSK",
+      "name": {
+        "ar": "إدارة المخاطر",
+        "en": "Risk Management"
+      },
+      "short": {
+        "ar": "المخاطر",
+        "en": "Risk"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "156b1883914b886f25c4642b38f3f9b4ec8b37b035c17789d03268eb706d925e"
+      }
+    },
+    {
+      "type": "competency_domain",
+      "id": "PMO",
+      "name": {
+        "ar": "مكاتب إدارة المشاريع",
+        "en": "PMO"
+      },
+      "short": {
+        "ar": "مكاتب المشاريع",
+        "en": "PMO"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "64d86aaff23dda08841aa64b38693c98735c189ebcb6543dbdfab06275177438"
+      }
+    },
+    {
+      "type": "competency_domain",
+      "id": "OE",
+      "name": {
+        "ar": "التميّز المؤسسي",
+        "en": "Organizational Excellence"
+      },
+      "short": {
+        "ar": "التميّز",
+        "en": "Excellence"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "8934aa3620a0ce45a3663c91a8359dabb864659ea3b0185758b68b106b95a3d7"
+      }
+    },
+    {
+      "type": "competency_domain",
+      "id": "LDR",
+      "name": {
+        "ar": "القيادة",
+        "en": "Leadership"
+      },
+      "short": {
+        "ar": "القيادة",
+        "en": "Leadership"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "767faeeb146ced8f0946676f1aff7aacc841f9d014b4ab3d485a71fe675b6409"
+      }
+    },
+    {
+      "type": "competency_domain",
+      "id": "GOV",
+      "name": {
+        "ar": "الحوكمة",
+        "en": "Governance"
+      },
+      "short": {
+        "ar": "الحوكمة",
+        "en": "Governance"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "c2a22be881cab8d33ccb28f26168150afdc2f5ce19674d5db9583b85b8bcfcef"
+      }
+    },
+    {
+      "type": "competency_domain",
+      "id": "CMP",
+      "name": {
+        "ar": "الامتثال",
+        "en": "Compliance"
+      },
+      "short": {
+        "ar": "الامتثال",
+        "en": "Compliance"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "1c75618318954030728d60edc0934e5734c7e7320d07eebcff389b60073650fa"
+      }
+    },
+    {
+      "type": "competency_domain",
+      "id": "BC",
+      "name": {
+        "ar": "استمرارية الأعمال",
+        "en": "Business Continuity"
+      },
+      "short": {
+        "ar": "الاستمرارية",
+        "en": "Continuity"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "ba064711093e499a405e7b4f360ae78419f8cd9519965f3864ddc14562d56bbb"
+      }
+    },
+    {
+      "type": "competency_domain",
+      "id": "ISA",
+      "name": {
+        "ar": "التوعية بأمن المعلومات",
+        "en": "Information Security Awareness"
+      },
+      "short": {
+        "ar": "أمن المعلومات",
+        "en": "InfoSec"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "cacda061a2b72a72a1783bb9955e21735c249a73e02c1cfd461d03b712f5d5a8"
+      }
+    },
+    {
+      "type": "competency_domain",
+      "id": "PERF",
+      "name": {
+        "ar": "إدارة الأداء",
+        "en": "Performance Management"
+      },
+      "short": {
+        "ar": "الأداء",
+        "en": "Performance"
+      },
+      "source_ref": "CIA_MASTER_PROJECT §15",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "owner": "مدثر سلامه",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "version": "0.1.0",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
+        "approved_hash": "e8fc71deb66203d540e77143df524c1d766f0af8d798e0e31250c0c651a02e98"
+      }
+    }
+  ]
+}

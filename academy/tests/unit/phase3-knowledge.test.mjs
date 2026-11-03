@@ -1,0 +1,9 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import { readFileSync } from 'node:fs';
+import { normalizeArabic, validateArticle, validateLibraryItem, searchRecords, filterRecords, csvFor } from '../../src/domain/knowledge.mjs';
+const J=f=>JSON.parse(readFileSync(new URL('../../data/seed/'+f,import.meta.url))); const arts=J('knowledge-articles.json').items, libs=J('library-items.json').items, comps=J('competency/competencies.json').items;
+test('article/library schema and governance valid',()=>{const c=new Set(comps.map(x=>x.id)),l=new Set(libs.map(x=>x.id));for(const a of arts)assert.deepEqual(validateArticle(a,{competencyIds:c,libraryIds:l}),[],a.id);for(const x of libs)assert.deepEqual(validateLibraryItem(x),[],x.id)});
+test('ADD-17 publish gate requires cross-type relation',()=>{const a=structuredClone(arts[0]);a.related=[];assert.ok(validateArticle(a).includes('published_without_cross_type_relationship'))});
+test('Arabic normalization variants and diacritics',()=>{assert.equal(normalizeArabic('إِدَارَة'),normalizeArabic('اداره'));assert.equal(normalizeArabic('على'),normalizeArabic('علي'));assert.equal(normalizeArabic('جودة'),normalizeArabic('جوده'))});
+test('search ranks title matches and filters',()=>{const r=searchRecords(arts,'quality','en');assert.ok(r.length);assert.ok(r[0]._score>=r.at(-1)._score);assert.ok(filterRecords(arts,{ecosystem:'iso'}).length>=10)});
+test('library links every hub toolkit and has 6+ structured resources',()=>{const tools=J('platform-modules.json').items;assert.equal(libs.filter(x=>x.kind==='tool').length,tools.length);assert.deepEqual(libs.filter(x=>x.kind==='tool').map(x=>x.link).sort(),tools.map(t=>t.href).sort());assert.ok(libs.filter(x=>x.structured_data).length>=6);for(const x of libs.filter(x=>x.kind==='tool'))assert.ok(x.link)});
+test('CSV generator emits headers',()=>{assert.ok(csvFor(libs.find(x=>x.id==='LIB-T01')).includes('Audit question'))});

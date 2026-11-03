@@ -1,0 +1,982 @@
+{
+ "schema": "cia.guide-index.v1",
+ "source": "hub toolkits, live commit db802aa",
+ "items": [
+  {
+   "id": "GUIDE-9001",
+   "slug": "iso-9001",
+   "kind": "standard",
+   "code": "9001",
+   "module": "iso9001",
+   "standard_id": "STD-9001",
+   "title": {
+    "en": "ISO 9001:2026 Interactive Guide & Toolkit",
+    "ar": "دليل ISO 9001:2026 التفاعلي وأدوات التطبيق"
+   },
+   "subtitle": {
+    "en": "Quality management systems — Requirements",
+    "ar": "Quality management systems — Requirements"
+   },
+   "lede": {
+    "en": "Every clause from 4 to 10 explained plainly with a worked example, steps and evidence, plus a full working toolkit: a readiness self-assessment that builds an action plan, an audit checklist, and 14 fill-in templates.",
+    "ar": "كل بند من البنود 4 إلى 10 مشروح بلغة بسيطة مع مثال تطبيقي وخطوات وأدلة، ومعه أدوات عمل كاملة: تقييم ذاتي للجاهزية يولّد خطة عمل، وقائمة تحقق للتدقيق، و14 نموذجاً تطبيقياً قابلاً للتعبئة."
+   },
+   "ecosystem": "iso",
+   "competencies": [
+    "ISO-01",
+    "ISO-02",
+    "QM-01",
+    "QM-04",
+    "AUD-02"
+   ],
+   "counts": {
+    "sections": 7,
+    "items": 63,
+    "checks": 98,
+    "terms": 23,
+    "faq": 32
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/iso9001.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-14001",
+   "slug": "iso-14001",
+   "kind": "standard",
+   "code": "14001",
+   "module": "iso14001",
+   "standard_id": "STD-14001",
+   "title": {
+    "en": "ISO 14001:2026 Interactive Guide",
+    "ar": "دليل ISO 14001:2026 التفاعلي"
+   },
+   "subtitle": {
+    "en": "Environmental management systems — Requirements with guidance for use",
+    "ar": "Environmental management systems — Requirements with guidance for use"
+   },
+   "lede": {
+    "en": "Every clause from 4 to 10 explained in plain language, with a worked example from an electrical contractor, the steps to apply it, and the evidence an auditor will ask for.",
+    "ar": "كل بند من البنود 4 إلى 10 مشروح بلغة بسيطة، مع مثال تطبيقي من شركة مقاولات كهربائية، وخطوات التطبيق، والأدلة التي يطلبها المدقق."
+   },
+   "ecosystem": "iso",
+   "competencies": [
+    "ISO-01",
+    "ISO-02",
+    "CMP-01",
+    "AUD-02"
+   ],
+   "counts": {
+    "sections": 7,
+    "items": 35,
+    "checks": 53,
+    "terms": 29,
+    "faq": 27
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/iso14001.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-45001",
+   "slug": "iso-45001",
+   "kind": "standard",
+   "code": "45001",
+   "module": "iso45001",
+   "standard_id": "STD-45001",
+   "title": {
+    "en": "ISO 45001:2018 Interactive Guide",
+    "ar": "دليل ISO 45001:2018 التفاعلي"
+   },
+   "subtitle": {
+    "en": "Occupational health and safety management systems — Requirements with guidance for use",
+    "ar": "أنظمة إدارة السلامة والصحة المهنية — المتطلبات مع إرشادات الاستخدام"
+   },
+   "lede": {
+    "en": "Every clause from 4 to 10 explained in plain language, with a worked example from an electrical contractor, the steps to apply it, and the evidence an auditor will ask for.",
+    "ar": "كل بند من 4 إلى 10 مشروح بلغة بسيطة، مع مثال تطبيقي من مقاول كهربائي، وخطوات التطبيق، والأدلة التي سيطلبها المدقق."
+   },
+   "ecosystem": "iso",
+   "competencies": [
+    "ISO-01",
+    "ISO-02",
+    "RSK-01",
+    "AUD-02"
+   ],
+   "counts": {
+    "sections": 7,
+    "items": 40,
+    "checks": 120,
+    "terms": 30,
+    "faq": 34
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/iso45001.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-27001",
+   "slug": "iso-27001",
+   "kind": "standard",
+   "code": "27001",
+   "module": "iso27001",
+   "standard_id": "STD-27001",
+   "title": {
+    "en": "ISO/IEC 27001:2022 Interactive Guide",
+    "ar": "دليل ISO/IEC 27001:2022 التفاعلي"
+   },
+   "subtitle": {
+    "en": "Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
+    "ar": "أمن المعلومات والأمن السيبراني وحماية الخصوصية — أنظمة إدارة أمن المعلومات — المتطلبات"
+   },
+   "lede": {
+    "en": "Every clause from 4 to 10 and all 93 Annex A controls explained in clear professional language, with a worked example from an engineering and digital services company, the steps to apply it, and the evidence an auditor will ask for.",
+    "ar": "كل بند من 4 إلى 10 وكل ضابط من ضوابط الملحق A الـ93 مشروح بلغة مهنية واضحة، مع مثال تطبيقي من شركة خدمات هندسية ورقمية، وخطوات التطبيق، والأدلة التي سيطلبها المدقق."
+   },
+   "ecosystem": "iso",
+   "competencies": [
+    "ISO-01",
+    "ISO-02",
+    "ISA-01",
+    "RSK-01",
+    "AUD-02"
+   ],
+   "counts": {
+    "sections": 7,
+    "items": 30,
+    "checks": 90,
+    "terms": 25,
+    "faq": 29
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/iso27001.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-22301",
+   "slug": "iso-22301",
+   "kind": "standard",
+   "code": "22301",
+   "module": "iso22301",
+   "standard_id": null,
+   "title": {
+    "en": "ISO 22301:2019 Interactive Guide",
+    "ar": "دليل ISO 22301:2019 التفاعلي"
+   },
+   "subtitle": {
+    "en": "Security and resilience — Business continuity management systems — Requirements",
+    "ar": "الأمن والمرونة — أنظمة إدارة استمرارية الأعمال — المتطلبات"
+   },
+   "lede": {
+    "en": "Every clause from 4 to 10 explained in clear professional language, with a worked example from an operation and maintenance contractor for power networks, the steps to apply it, the evidence an auditor will ask for, and tools for business impact analysis and recovery times.",
+    "ar": "كل بند من 4 إلى 10 مشروح بلغة مهنية واضحة، مع مثال تطبيقي من شركة خدمات تشغيل وصيانة لشبكات الكهرباء، وخطوات التطبيق، والأدلة التي سيطلبها المدقق، وأدوات لتحليل أثر الأعمال وأزمنة الاستعادة."
+   },
+   "ecosystem": "business-continuity",
+   "competencies": [
+    "ISO-01",
+    "ISO-02",
+    "BC-01",
+    "BC-02"
+   ],
+   "counts": {
+    "sections": 7,
+    "items": 33,
+    "checks": 99,
+    "terms": 24,
+    "faq": 26
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/iso22301.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-31000",
+   "slug": "iso-31000",
+   "kind": "standard",
+   "code": "31000",
+   "module": "iso31000",
+   "standard_id": null,
+   "title": {
+    "en": "ISO 31000:2018 — Enterprise Risk Studio",
+    "ar": "ISO 31000:2018 — استوديو المخاطر المؤسسية"
+   },
+   "subtitle": {
+    "en": "Risk management — Guidelines",
+    "ar": "إدارة المخاطر — إرشادات"
+   },
+   "lede": {
+    "en": "The principles, framework and process of ISO 31000 explained in clear professional language, with a worked example from a Saudi electrical contractor, the steps to apply them, evidence of good practice, and a full studio for the risk register, risk appetite, heat maps, bow-tie analysis and key risk indicators.",
+    "ar": "المبادئ والإطار والعملية في ISO 31000 مشروحة بلغة مهنية واضحة، مع مثال تطبيقي من شركة مقاولات كهربائية سعودية، وخطوات التطبيق، وأدلة الممارسة الجيدة، واستوديو كامل لسجل المخاطر والرغبة في المخاطر وخرائط الحرارة وربطة العنق ومؤشرات المخاطر الرئيسية."
+   },
+   "ecosystem": "risk",
+   "competencies": [
+    "RSK-01",
+    "RSK-02",
+    "ISO-01"
+   ],
+   "counts": {
+    "sections": 3,
+    "items": 29,
+    "checks": 87,
+    "terms": 23,
+    "faq": 25
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/iso31000-risk-studio.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-37000",
+   "slug": "iso-37000",
+   "kind": "standard",
+   "code": "37000",
+   "module": "iso37000",
+   "standard_id": null,
+   "title": {
+    "en": "ISO 37000:2021 — Governance Maturity",
+    "ar": "ISO 37000:2021 — نضج الحوكمة المؤسسية"
+   },
+   "subtitle": {
+    "en": "Governance of organizations — Guidance",
+    "ar": "حوكمة المنظمات — إرشادات"
+   },
+   "lede": {
+    "en": "The eleven principles and three governance outcomes of ISO 37000 explained in clear professional language, with a worked example from a Saudi group preparing to list, application steps and evidence of good practice; plus a five-level maturity assessment and a governance studio covering board and committee evaluation, the delegation of authority matrix, the conflict of interest register, the board's risk oversight dashboard and a board report.",
+    "ar": "المبادئ الإحدى عشرة في ISO 37000 ونواتج الحوكمة الثلاثة، بشرح مهني واضح ومثال من مجموعة سعودية تستعد للإدراج، وخطوات التطبيق وأدلة الممارسة الجيدة؛ مع تقييم نضج بخمسة مستويات، واستوديو للحوكمة يشمل تقييم المجلس ولجانه ومصفوفة الصلاحيات وسجل تعارض المصالح ولوحة إشراف المجلس على المخاطر وتقرير المجلس."
+   },
+   "ecosystem": "governance",
+   "competencies": [
+    "GOV-01",
+    "GOV-02",
+    "LDR-02"
+   ],
+   "counts": {
+    "sections": 4,
+    "items": 14,
+    "checks": 45,
+    "terms": 24,
+    "faq": 21
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/iso37000-governance.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-37001",
+   "slug": "iso-37001",
+   "kind": "standard",
+   "code": "37001",
+   "module": "iso37001",
+   "standard_id": null,
+   "title": {
+    "en": "ISO 37001:2025 Interactive Guide",
+    "ar": "دليل ISO 37001:2025 التفاعلي"
+   },
+   "subtitle": {
+    "en": "Anti-bribery management systems — Requirements with guidance for use",
+    "ar": "أنظمة إدارة مكافحة الرشوة — المتطلبات مع إرشادات الاستخدام"
+   },
+   "lede": {
+    "en": "Every clause from 4 to 10 explained in clear professional language, with a worked example from a Saudi electrical contractor, the steps to apply it, the evidence an auditor will ask for, and a studio for bribery risk assessment and controls.",
+    "ar": "كل بند من 4 إلى 10 مشروح بلغة مهنية واضحة، مع مثال تطبيقي من شركة مقاولات كهربائية سعودية، وخطوات التطبيق، والأدلة التي سيطلبها المدقق، واستوديو لتقييم مخاطر الرشوة والضوابط."
+   },
+   "ecosystem": "compliance",
+   "competencies": [
+    "CMP-02",
+    "CMP-01",
+    "ISO-01",
+    "ISO-02"
+   ],
+   "counts": {
+    "sections": 7,
+    "items": 37,
+    "checks": 111,
+    "terms": 23,
+    "faq": 27
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/iso37001.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-37301",
+   "slug": "iso-37301",
+   "kind": "standard",
+   "code": "37301",
+   "module": "iso37301",
+   "standard_id": null,
+   "title": {
+    "en": "ISO 37301:2021 Interactive Guide",
+    "ar": "دليل ISO 37301:2021 التفاعلي"
+   },
+   "subtitle": {
+    "en": "Compliance management systems — Requirements with guidance for use",
+    "ar": "أنظمة إدارة الامتثال — المتطلبات مع إرشادات الاستخدام"
+   },
+   "lede": {
+    "en": "Every clause from 4 to 10 explained in clear professional language, with a worked example from a Saudi electrical contractor, the steps to apply it, the evidence an auditor will ask for, and a tool for the obligations register and compliance risk assessment.",
+    "ar": "كل بند من 4 إلى 10 مشروح بلغة مهنية واضحة، مع مثال تطبيقي من شركة مقاولات كهربائية سعودية، وخطوات التطبيق، والأدلة التي سيطلبها المدقق، وأداة لسجل الالتزامات وتقييم مخاطر الامتثال."
+   },
+   "ecosystem": "compliance",
+   "competencies": [
+    "CMP-01",
+    "GOV-02",
+    "ISO-01",
+    "ISO-02"
+   ],
+   "counts": {
+    "sections": 7,
+    "items": 37,
+    "checks": 111,
+    "terms": 23,
+    "faq": 25
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/iso37301.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-RCA",
+   "slug": "rca",
+   "kind": "method",
+   "code": "RCA",
+   "module": "rca",
+   "standard_id": null,
+   "title": {
+    "en": "Root Cause Analysis — Investigation",
+    "ar": "تحليل السبب الجذري — التحقيق"
+   },
+   "subtitle": {
+    "en": "Method tool serving ISO 9001:2026 clause 10.2.1 b) and Annex A.10.2",
+    "ar": "أداة منهجية تخدم ISO 9001:2026 البند 10.2.1 ب) والملحق A.10.2"
+   },
+   "lede": {
+    "en": "To turn every significant nonconformity or incident into a cause the organization can change and has proved, at a depth that fits its risk, then build the corrective action on that cause and measure its effect against a criterion written before the action.",
+    "ar": "أن يتحول كل عدم مطابقة أو حادث مهم إلى سبب تستطيع المنشأة تغييره وأثبتت صحته، بعمق يناسب خطره، ثم يُبنى الإجراء التصحيحي على هذا السبب ويُقاس أثره بمعيار كُتب قبل التنفيذ."
+   },
+   "ecosystem": "quality",
+   "competencies": [
+    "QM-03",
+    "QM-02"
+   ],
+   "level": 2,
+   "counts": {
+    "sections": 9,
+    "items": 18,
+    "checks": 0,
+    "terms": 0,
+    "faq": 6
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/rca.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-WHY5",
+   "slug": "five-whys",
+   "kind": "method",
+   "code": "WHY5",
+   "module": "why5",
+   "standard_id": null,
+   "title": {
+    "en": "5 Whys — Root cause analysis",
+    "ar": "لماذا الخمس — تحليل السبب الجذري"
+   },
+   "subtitle": {
+    "en": "Method tool serving ISO 9001:2026 clause 10.2.1 b)",
+    "ar": "أداة منهجية تخدم ISO 9001:2026 البند 10.2.1 ب)"
+   },
+   "lede": {
+    "en": "To get from a nonconformity that happened to a cause the organization can change, through a short chain of questions where evidence backs every answer, and then to test that cause before a corrective action is built on it.",
+    "ar": "أن تصل من عدم مطابقة وقعت إلى سبب تستطيع المنشأة أن تغيّره، بسلسلة أسئلة قصيرة يسند الدليلُ كل جواب فيها، ثم تختبر السبب قبل أن يُبنى عليه إجراء تصحيحي."
+   },
+   "ecosystem": "quality",
+   "competencies": [
+    "QM-03"
+   ],
+   "level": 1,
+   "counts": {
+    "sections": 5,
+    "items": 14,
+    "checks": 0,
+    "terms": 0,
+    "faq": 7
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/five-whys.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-FISH",
+   "slug": "fishbone",
+   "kind": "method",
+   "code": "FISH",
+   "module": "fish",
+   "standard_id": null,
+   "title": {
+    "en": "Fishbone — Cause and effect analysis",
+    "ar": "عظمة السمكة — تحليل السبب والنتيجة"
+   },
+   "subtitle": {
+    "en": "Method tool serving ISO 9001:2026 clause 10.2.1 b)",
+    "ar": "أداة منهجية تخدم ISO 9001:2026 البند 10.2.1 ب)"
+   },
+   "lede": {
+    "en": "To spread the possible causes of an effect across clear categories so the team does not miss an important one, then separate what the evidence supports from what it does not, and verify the two or three most likely causes before a corrective action is built on them.",
+    "ar": "أن تنشر الأسباب الممكنة لأثر وقع على فئات واضحة، فلا يفوت الفريقَ سببٌ مهم، ثم تفصل ما يسنده الدليل عما لا يسنده، وتتحقق من سببين أو ثلاثة هي الأرجح قبل أن يُبنى عليها إجراء تصحيحي."
+   },
+   "ecosystem": "quality",
+   "competencies": [
+    "QM-03",
+    "QM-02"
+   ],
+   "level": 1,
+   "counts": {
+    "sections": 5,
+    "items": 15,
+    "checks": 0,
+    "terms": 0,
+    "faq": 6
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/fishbone.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-CAPA",
+   "slug": "capa",
+   "kind": "method",
+   "code": "CAPA",
+   "module": "capa",
+   "standard_id": null,
+   "title": {
+    "en": "CAPA — Corrective action",
+    "ar": "CAPA — الإجراءات التصحيحية"
+   },
+   "subtitle": {
+    "en": "Method tool built on ISO 9001:2026 clause 10.2",
+    "ar": "أداة منهجية مبنية على ISO 9001:2026 البند 10.2"
+   },
+   "lede": {
+    "en": "To deal with every nonconformity twice: once by correcting the case itself, and once by removing its cause so it does not recur there or elsewhere. Then prove with data that the action worked before the record is closed.",
+    "ar": "أن تعالج كل عدم مطابقة مرتين: مرة بتصحيح الحالة نفسها، ومرة بإزالة سببها حتى لا تتكرر في المكان نفسه ولا في مكان آخر. ثم تثبت بالبيانات أن الإجراء نجح قبل أن يُغلق السجل."
+   },
+   "ecosystem": "quality",
+   "competencies": [
+    "QM-03",
+    "AUD-03"
+   ],
+   "level": 2,
+   "counts": {
+    "sections": 7,
+    "items": 19,
+    "checks": 0,
+    "terms": 0,
+    "faq": 7
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/capa.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-PARETO",
+   "slug": "pareto",
+   "kind": "method",
+   "code": "PARETO",
+   "module": "pareto",
+   "standard_id": null,
+   "title": {
+    "en": "Pareto — Vital few analysis",
+    "ar": "باريتو — تحليل القلة الحيوية"
+   },
+   "subtitle": {
+    "en": "Method tool serving ISO 9001:2026 clauses 9.1.3 and 10.2.1 b)",
+    "ar": "أداة منهجية تخدم ISO 9001:2026 البندين 9.1.3 و10.2.1 ب)"
+   },
+   "lede": {
+    "en": "To answer one question with data: which categories make up most of the problem? Analysis and action then go to the vital few instead of being spread over everything, and the effect is measured on the same basis after the action.",
+    "ar": "أن تجيب عن سؤال واحد بالبيانات: أي الفئات تصنع معظم المشكلة؟ فيذهب جهد التحليل والإجراء إلى القلة الحيوية بدل توزيعه على كل شيء، ثم يُقاس الأثر على الأساس نفسه بعد الإجراء."
+   },
+   "ecosystem": "quality",
+   "competencies": [
+    "QM-02",
+    "OE-02"
+   ],
+   "level": 1,
+   "counts": {
+    "sections": 5,
+    "items": 14,
+    "checks": 0,
+    "terms": 0,
+    "faq": 6
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/pareto.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-PDCA",
+   "slug": "pdca",
+   "kind": "method",
+   "code": "PDCA",
+   "module": "pdca",
+   "standard_id": null,
+   "title": {
+    "en": "PDCA — Plan-Do-Check-Act",
+    "ar": "PDCA — دورة التحسين المستمر"
+   },
+   "subtitle": {
+    "en": "Method tool, not a certification standard",
+    "ar": "أداة منهجية، وليست شهادة"
+   },
+   "lede": {
+    "en": "PDCA is a repeating management method: plan a small, specific change, carry it out, measure its effect, then decide whether to keep it, adjust it or start a new cycle. Its purpose is to turn improvement from scattered initiatives into a disciplined, repeatable routine.",
+    "ar": "PDCA دورة إدارة متكررة: تخطط لتغيير صغير ومحدد، تنفّذه، تقيس أثره، ثم تقرر تثبيته أو تعديله وتبدأ دورة جديدة. الغرض أن يتحول التحسين من مبادرات متفرقة إلى عمل منضبط ومتكرر."
+   },
+   "ecosystem": "quality",
+   "competencies": [
+    "QM-03",
+    "OE-02"
+   ],
+   "level": 1,
+   "counts": {
+    "sections": 4,
+    "items": 10,
+    "checks": 0,
+    "terms": 0,
+    "faq": 0
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/pdca.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-A3",
+   "slug": "a3",
+   "kind": "method",
+   "code": "A3",
+   "module": "a3",
+   "standard_id": null,
+   "title": {
+    "en": "A3 Problem Solving",
+    "ar": "حل المشكلات بأسلوب A3"
+   },
+   "subtitle": {
+    "en": "Method tool: the problem-solving story on the PDCA cycle (ISO 9001:2026 introduction 0.3.2)",
+    "ar": "أداة منهجية: قصة حل المشكلة على دورة PDCA (ISO 9001:2026 المقدمة 0.3.2)"
+   },
+   "lede": {
+    "en": "To solve every important problem with one clear story that can be read in minutes: why it matters, where we are in numbers, where we want to be and by when, why it happens with evidence, what we change, who does what, and whether we got there; then what worked is standardised and a new cycle starts for what is left.",
+    "ar": "أن تُحل كل مشكلة مهمة بقصة واحدة واضحة تُقرأ في دقائق: لماذا تهم، وأين نحن بالأرقام، وإلى أين نريد بحلول متى، ولماذا يحدث ذلك بالدليل، وماذا نغيّر، ومن يفعل ماذا، وهل وصلنا؛ ثم يُوحَّد ما نجح وتبدأ دورة جديدة لما بقي."
+   },
+   "ecosystem": "quality",
+   "competencies": [
+    "QM-03",
+    "LDR-01"
+   ],
+   "level": 2,
+   "counts": {
+    "sections": 8,
+    "items": 19,
+    "checks": 0,
+    "terms": 0,
+    "faq": 6
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/a3.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-DMAIC",
+   "slug": "dmaic",
+   "kind": "method",
+   "code": "DMAIC",
+   "module": "dmaic",
+   "standard_id": null,
+   "title": {
+    "en": "DMAIC Improvement Project",
+    "ar": "مشروع التحسين بمنهج DMAIC"
+   },
+   "subtitle": {
+    "en": "Method tool: a data-driven improvement project in five phases with gates",
+    "ar": "أداة منهجية: مشروع تحسين قائم على البيانات بخمس مراحل وبوابات"
+   },
+   "lede": {
+    "en": "To solve a problem whose cause is unknown with a data-driven project: a goal written before the analysis and not moved, a measure that can be trusted, causes proved with data rather than opinion, solutions piloted before the roll-out, then a control that holds the result and a hand-over to the process owner; each phase ends with a gate the sponsor reviews through questions.",
+    "ar": "أن تُحل المشكلة التي لا يُعرف سببها بمشروع قائم على البيانات: هدف يُكتب قبل التحليل ولا يُحرَّك، ومقياس يُوثق به، وأسباب تُثبت بالبيانات لا بالرأي، وحلول تُجرَّب قبل تعميمها، ثم ضبط يحفظ النتيجة وتسليم لمالك العملية؛ وتنتهي كل مرحلة ببوابة يراجعها الراعي بالأسئلة."
+   },
+   "ecosystem": "quality",
+   "competencies": [
+    "QM-02",
+    "QM-03",
+    "OE-02"
+   ],
+   "level": 3,
+   "counts": {
+    "sections": 8,
+    "items": 24,
+    "checks": 0,
+    "terms": 0,
+    "faq": 6
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/dmaic.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-FMEA",
+   "slug": "fmea",
+   "kind": "method",
+   "code": "FMEA",
+   "module": "fmea",
+   "standard_id": null,
+   "title": {
+    "en": "Failure Mode and Effects Analysis (FMEA)",
+    "ar": "تحليل أنماط الفشل وآثارها (FMEA)"
+   },
+   "subtitle": {
+    "en": "Method tool: a structured team look at failure modes before they happen",
+    "ar": "أداة منهجية: نظرة فريق منظمة إلى أنماط الفشل قبل وقوعها"
+   },
+   "lede": {
+    "en": "For a team to look at the process (or the design) step by step and ask: how could it fail? What would the customer see if it did? What could cause it? What prevents or detects it today? Then to act on the most severe first, with owned and dated actions, rate again with evidence, and keep the study alive.",
+    "ar": "أن ينظر فريق إلى العملية (أو التصميم) خطوة خطوة ويسأل: كيف يمكن أن تفشل؟ وماذا يرى العميل إن فشلت؟ وما الذي قد يسبب ذلك؟ وما الذي يمنعه أو يكشفه الآن؟ ثم يعالج الأخطر أولاً بإجراءات بمالك وتاريخ، ويقيّم من جديد بالدليل، ويُبقي الدراسة حية."
+   },
+   "ecosystem": "risk",
+   "competencies": [
+    "RSK-01",
+    "RSK-02",
+    "QM-02"
+   ],
+   "level": 2,
+   "counts": {
+    "sections": 8,
+    "items": 22,
+    "checks": 0,
+    "terms": 0,
+    "faq": 6
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/fmea.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-SWOT",
+   "slug": "swot",
+   "kind": "method",
+   "code": "SWOT",
+   "module": "swot",
+   "standard_id": null,
+   "title": {
+    "en": "SWOT analysis",
+    "ar": "تحليل SWOT"
+   },
+   "subtitle": {
+    "en": "Method tool: from the grid to decisions",
+    "ar": "أداة منهجية: من المصفوفة إلى القرار"
+   },
+   "lede": {
+    "en": "To turn an understanding of the context into decisions: internal strengths and weaknesses with evidence, external opportunities and threats from known sources, ranked, then options and actions with an owner and a date, risks and opportunities carried into the 6.1 plan, then a review when the context changes. A grid that reaches no decision changes nothing.",
+    "ar": "أن يتحول فهم السياق إلى قرارات: قوة وضعف داخليان بدليل، وفرص وتهديدات خارجية من مصادر معروفة، مرتبة، ثم خيارات وإجراءات بمالك وموعد، ومخاطر وفرص تدخل خطة 6.1، ثم مراجعة عند تغير السياق. المصفوفة التي لا تصل إلى قرار لا تغيّر شيئاً."
+   },
+   "ecosystem": "performance",
+   "competencies": [
+    "LDR-02",
+    "RSK-01"
+   ],
+   "level": 1,
+   "counts": {
+    "sections": 7,
+    "items": 28,
+    "checks": 0,
+    "terms": 0,
+    "faq": 6
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/swot.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-PESTLE",
+   "slug": "pestle",
+   "kind": "method",
+   "code": "PESTLE",
+   "module": "pestle",
+   "standard_id": null,
+   "title": {
+    "en": "PESTLE analysis",
+    "ar": "تحليل PESTLE"
+   },
+   "subtitle": {
+    "en": "Method tool: scanning the outside world",
+    "ar": "أداة منهجية: مسح البيئة الخارجية"
+   },
+   "lede": {
+    "en": "To turn the outside world into decisions: specific items with their source, date and effect, ranked by significance × certainty, an explicit climate change decision, then every top item into SWOT, the risk register or the 6.1 plan, or set aside with a reason, then a periodic review and one after major events. A list that reaches no decision changes nothing.",
+    "ar": "أن تتحول البيئة الخارجية إلى قرارات: بنود محددة بمصدرها وتاريخها وأثرها، مرتبة بالأهمية × اليقين، وقرار صريح في تغير المناخ، ثم يذهب كل بند أعلى إلى SWOT أو سجل المخاطر أو خطة 6.1 أو يُستبعد بسبب، ثم مراجعة دورية وبعد الأحداث الكبرى. القائمة التي لا تصل إلى قرار لا تغيّر شيئاً."
+   },
+   "ecosystem": "performance",
+   "competencies": [
+    "LDR-02",
+    "RSK-01"
+   ],
+   "level": 1,
+   "counts": {
+    "sections": 7,
+    "items": 26,
+    "checks": 0,
+    "terms": 0,
+    "faq": 6
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/pestle.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-STAKE",
+   "slug": "stakeholders",
+   "kind": "method",
+   "code": "STAKE",
+   "module": "stakeholders",
+   "standard_id": null,
+   "title": {
+    "en": "Stakeholder analysis",
+    "ar": "تحليل الأطراف المعنية"
+   },
+   "subtitle": {
+    "en": "Method tool: who matters and what they need",
+    "ar": "أداة منهجية: من يهمّ وماذا يحتاج"
+   },
+   "lede": {
+    "en": "To turn \"interested parties\" from a generic list into decisions: parties by name, requirements with their sources and dates, an explicit decision on each requirement, power and interest with reasons that set the engagement approach and the relationship owner, an explicit climate question, then every key party into SWOT, PESTLE or risks or set aside with a reason, then a review on a date and after changes. A register that changes no decision has no value.",
+    "ar": "أن تتحول «الأطراف المعنية» من قائمة عامة إلى قرارات: أطراف بأسمائها، ومتطلبات بمصادرها وتواريخها، وقرار صريح لكل متطلب، وقوة واهتمام بسبب يحددان طريقة التعامل ومالك العلاقة، وسؤال صريح عن المناخ، ثم يذهب كل طرف رئيسي إلى SWOT أو PESTLE أو المخاطر أو يُستبعد بسبب، ثم مراجعة دورية وبعد التغيرات. السجل الذي لا يغيّر قراراً لا قيمة له."
+   },
+   "ecosystem": "quality",
+   "competencies": [
+    "PM-02",
+    "LDR-02"
+   ],
+   "level": 1,
+   "counts": {
+    "sections": 6,
+    "items": 23,
+    "checks": 0,
+    "terms": 0,
+    "faq": 6
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/stakeholders.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-LESSONS",
+   "slug": "lessons-learned",
+   "kind": "method",
+   "code": "LESSONS",
+   "module": "lessons",
+   "standard_id": null,
+   "title": {
+    "en": "Lessons learned",
+    "ar": "الدروس المستفادة"
+   },
+   "subtitle": {
+    "en": "Method tool: knowledge that changes the next project",
+    "ar": "أداة منهجية: معرفة تغيّر المشروع التالي"
+   },
+   "lede": {
+    "en": "To turn the experience of a project or a process (a failure or a success) into a rule someone else can apply, then into a change in a document, a control or a practice, then into evidence that the next project applied it and it worked. A lesson that stays in meeting minutes changes nothing.",
+    "ar": "أن تتحول تجربة مشروع أو عملية (فشلاً كانت أو نجاحاً) إلى قاعدة يطبقها غيرك، ثم إلى تغيير في وثيقة أو ضابط أو ممارسة، ثم إلى دليل أن المشروع التالي طبّقها ونجحت. الدرس الذي يبقى في محضر اجتماع لا يغيّر شيئاً."
+   },
+   "ecosystem": "quality",
+   "competencies": [
+    "OE-02",
+    "QM-03"
+   ],
+   "level": 1,
+   "counts": {
+    "sections": 7,
+    "items": 25,
+    "checks": 0,
+    "terms": 0,
+    "faq": 6
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/lessons.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  },
+  {
+   "id": "GUIDE-10009",
+   "slug": "iso-10009",
+   "kind": "method",
+   "code": "10009",
+   "module": "iso10009",
+   "standard_id": null,
+   "title": {
+    "en": "Quality management — Guidance for quality tools and their application",
+    "ar": "إدارة الجودة — إرشاد لأدوات الجودة وتطبيقها"
+   },
+   "subtitle": {
+    "en": "First edition, June 2024 (ISO/TC 176/SC 3)",
+    "ar": "الإصدار الأول، يونيو 2024 (اللجنة ISO/TC 176/SC 3)"
+   },
+   "lede": {
+    "en": "To choose a quality tool for its purpose, not by habit: to characterize a process or variable, solve a problem, highlight what needs improving or raise effectiveness; to apply it with the team, data, capability and effort it needs; and to tell its results in one storyboard from the problem to the standard.",
+    "ar": "أن تُختار أداة الجودة بغرضها لا بعادتها: لوصف عملية أو متغير، أو لحل مشكلة، أو لإبراز ما يحتاج تحسيناً، أو لرفع الفعالية؛ وأن تُطبق بما تحتاجه من فريق وبيانات وكفاءة وجهد، وأن تُروى نتائجها في لوحة قصة واحدة من المشكلة إلى الإجراء الموحد."
+   },
+   "ecosystem": "quality",
+   "competencies": [
+    "QM-02",
+    "QM-01"
+   ],
+   "level": 2,
+   "counts": {
+    "sections": 17,
+    "items": 82,
+    "checks": 0,
+    "terms": 0,
+    "faq": 9
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/iso10009.html (live commit db802aa) by tools/build_toolkit_courses.py."
+   }
+  }
+ ]
+}

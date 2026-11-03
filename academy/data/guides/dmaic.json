@@ -1,0 +1,1696 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-DMAIC",
+  "slug": "dmaic",
+  "kind": "method",
+  "module": "dmaic",
+  "title": {
+   "en": "DMAIC Improvement Project",
+   "ar": "مشروع التحسين بمنهج DMAIC"
+  },
+  "subtitle": {
+   "en": "Method tool: a data-driven improvement project in five phases with gates",
+   "ar": "أداة منهجية: مشروع تحسين قائم على البيانات بخمس مراحل وبوابات"
+  },
+  "lede": {
+   "en": "To solve a problem whose cause is unknown with a data-driven project: a goal written before the analysis and not moved, a measure that can be trusted, causes proved with data rather than opinion, solutions piloted before the roll-out, then a control that holds the result and a hand-over to the process owner; each phase ends with a gate the sponsor reviews through questions.",
+   "ar": "أن تُحل المشكلة التي لا يُعرف سببها بمشروع قائم على البيانات: هدف يُكتب قبل التحليل ولا يُحرَّك، ومقياس يُوثق به، وأسباب تُثبت بالبيانات لا بالرأي، وحلول تُجرَّب قبل تعميمها، ثم ضبط يحفظ النتيجة وتسليم لمالك العملية؛ وتنتهي كل مرحلة ببوابة يراجعها الراعي بالأسئلة."
+  },
+  "author": "مدثر سلامه",
+  "note": {
+   "en": "DMAIC is an improvement method (the Six Sigma improvement cycle), not a standard or a clause. ISO 9001:2026 names the PDCA cycle in its introduction (0.3.2), and the note to clause 9.1.3 says that methods to analyse data can include statistical techniques; the introduction and the notes explain, they set no requirements. The requirements the method serves are measurable objectives (6.2), measuring resources that give valid and reliable results (7.1.5), monitoring and analysis (9.1), controlled conditions and the control of changes (8.5), corrective action and the review of its effectiveness (10.2.1), and continual improvement (10.1).",
+   "ar": "DMAIC منهج للتحسين (دورة التحسين في Six Sigma)، وليس مواصفة ولا بنداً. تذكر ISO 9001:2026 دورة PDCA في مقدمتها (0.3.2)، وتقول ملاحظة البند 9.1.3 إن طرق تحليل البيانات قد تشمل تقنيات إحصائية؛ والمقدمة والملاحظات شرح لا متطلبات. والمتطلبات التي يخدمها المنهج هي الأهداف القابلة للقياس (6.2)، وموارد القياس التي تعطي نتائج صحيحة وموثوقة (7.1.5)، والرصد والتحليل (9.1)، والضبط وضبط التغييرات (8.5)، والإجراء التصحيحي ومراجعة فعاليته (10.2.1)، والتحسين المستمر (10.1)."
+  },
+  "who": {
+   "en": "Improvement project leads, process owners, quality engineers, sponsors from management, data analysts, and anyone who owns a recurring, measurable problem that quick fixes have not solved.",
+   "ar": "قادة مشاريع التحسين، ومالكو العمليات، ومهندسو الجودة، والرعاة من الإدارة، ومحللو البيانات، وكل من يملك مشكلة متكررة قابلة للقياس لم تُحل بالحلول السريعة."
+  },
+  "roles": [
+   {
+    "name": {
+     "en": "Project lead",
+     "ar": "قائد المشروع"
+    },
+    "text": {
+     "en": "Writes the charter, collects the data with the team, and carries the project from Define to the hand-over.",
+     "ar": "يكتب الميثاق، ويجمع البيانات مع الفريق، ويحمل المشروع من التعريف إلى التسليم."
+    }
+   },
+   {
+    "name": {
+     "en": "Sponsor",
+     "ar": "الراعي"
+    },
+    "text": {
+     "en": "Reviews each gate through questions, removes obstacles, and decides pass, rework or stop; not the project lead.",
+     "ar": "يراجع كل بوابة بالأسئلة، ويزيل العوائق، ويقرر الاجتياز أو إعادة العمل أو الإيقاف؛ ولا يكون قائد المشروع."
+    }
+   },
+   {
+    "name": {
+     "en": "Process owner",
+     "ar": "مالك العملية"
+    },
+    "text": {
+     "en": "Takes over the control plan and the result on a date, and keeps them after the project ends.",
+     "ar": "يتسلّم خطة الضبط والنتيجة بتاريخ، ويحافظ عليهما بعد انتهاء المشروع."
+    }
+   },
+   {
+    "name": {
+     "en": "The team",
+     "ar": "الفريق"
+    },
+    "text": {
+     "en": "The people who do the work: they know what happens, collect the data and pilot the solutions on a small scale.",
+     "ar": "من يؤدي العمل فعلاً: يعرفون ما يحدث، ويجمعون البيانات، ويجربون الحلول على نطاق صغير."
+    }
+   },
+   {
+    "name": {
+     "en": "Data owner",
+     "ar": "مالك البيانات"
+    },
+    "text": {
+     "en": "Provides the data on the same operational definition before and after the change, so the result is compared with the goal honestly.",
+     "ar": "يقدم البيانات بالتعريف التشغيلي نفسه قبل التغيير وبعده، حتى تُقارن النتيجة بالهدف بصدق."
+    }
+   }
+  ],
+  "steps": [
+   {
+    "no": "1",
+    "title": {
+     "en": "Does DMAIC fit?",
+     "ar": "هل يناسب DMAIC؟"
+    },
+    "text": {
+     "en": "Cause unknown, data possible.",
+     "ar": "السبب غير معروف، والبيانات ممكنة."
+    },
+    "ref": "GD-1"
+   },
+   {
+    "no": "2",
+    "title": {
+     "en": "The charter and the goal",
+     "ar": "الميثاق والهدف"
+    },
+    "text": {
+     "en": "A problem with its cost, a sponsor, a numeric dated goal.",
+     "ar": "مشكلة بتكلفتها، وراعٍ، وهدف رقمي بتاريخ."
+    },
+    "ref": "6.2.1"
+   },
+   {
+    "no": "3",
+    "title": {
+     "en": "Voice of the customer and SIPOC",
+     "ar": "صوت العميل وSIPOC"
+    },
+    "text": {
+     "en": "Critical requirements, scope in and out.",
+     "ar": "متطلبات حرجة، ونطاق داخل وخارج."
+    },
+    "ref": "GD-3"
+   },
+   {
+    "no": "4",
+    "title": {
+     "en": "Define the measure",
+     "ar": "عرّف المقياس"
+    },
+    "text": {
+     "en": "What is counted, unit, source, sample.",
+     "ar": "ما يُعدّ، والوحدة، والمصدر، والعينة."
+    },
+    "ref": "GD-6"
+   },
+   {
+    "no": "5",
+    "title": {
+     "en": "Trust the measurement",
+     "ar": "ثق بالقياس"
+    },
+    "text": {
+     "en": "Checked before the baseline, against a written rule.",
+     "ar": "تحقق قبل الأساس، بقاعدة مكتوبة."
+    },
+    "ref": "7.1.5.1"
+   },
+   {
+    "no": "6",
+    "title": {
+     "en": "The baseline",
+     "ar": "الأساس"
+    },
+    "text": {
+     "en": "A period, a sample and a run chart.",
+     "ar": "فترة وعينة ورسم تشغيلي."
+    },
+    "ref": "9.1.1"
+   },
+   {
+    "no": "7",
+    "title": {
+     "en": "Prove the causes with data",
+     "ar": "أثبت الأسباب بالبيانات"
+    },
+    "text": {
+     "en": "A comparison of groups, not a vote.",
+     "ar": "مقارنة مجموعات، لا تصويت."
+    },
+    "ref": "9.1.3"
+   },
+   {
+    "no": "8",
+    "title": {
+     "en": "Pilot before the roll-out",
+     "ar": "جرّب قبل التعميم"
+    },
+    "text": {
+     "en": "Result against the goal, risks of the change.",
+     "ar": "النتيجة مقابل الهدف، ومخاطر التغيير."
+    },
+    "ref": "8.5.6"
+   },
+   {
+    "no": "9",
+    "title": {
+     "en": "Control and hand over",
+     "ar": "اضبط وسلّم"
+    },
+    "text": {
+     "en": "A control plan with a reaction, a dated hand-over.",
+     "ar": "خطة ضبط برد فعل، وتسليم مؤرخ."
+    },
+    "ref": "8.5.1"
+   },
+   {
+    "no": "10",
+    "title": {
+     "en": "A gate for each phase",
+     "ar": "بوابة لكل مرحلة"
+    },
+    "text": {
+     "en": "The sponsor asks, then decides.",
+     "ar": "الراعي يسأل، ثم يقرر."
+    },
+    "ref": "GD-2"
+   }
+  ],
+  "related": [
+   {
+    "code": "A3",
+    "name": {
+     "en": "A3 problem solving",
+     "ar": "حل المشكلات بأسلوب A3"
+    },
+    "text": {
+     "en": "When an A3 does not close the gap, a DMAIC project starts from it (read-only) and carries its id, and the A3 lists the projects that name it.",
+     "ar": "عندما لا تُغلق صفحة A3 الفجوة، يبدأ مشروع DMAIC منها (قراءة فقط) ويحمل رقمها، وتعرض صفحة A3 المشاريع التي تذكرها."
+    }
+   },
+   {
+    "code": "RCA",
+    "name": {
+     "en": "Root cause analysis — investigation",
+     "ar": "تحليل السبب الجذري — التحقيق"
+    },
+    "text": {
+     "en": "For a full investigation of a severe event; its proved root causes enter Analyse, proved by the linked analysis.",
+     "ar": "للتحقيق الكامل في حدث جسيم؛ أسبابه الجذرية المثبتة تدخل مرحلة التحليل مثبتةً بالتحليل المرتبط."
+    }
+   },
+   {
+    "code": "Pareto",
+    "name": {
+     "en": "Pareto — vital few analysis",
+     "ar": "باريتو — تحليل القلة الحيوية"
+    },
+    "text": {
+     "en": "Frames the problem and stratifies the data: a vital-few category opens a project, and a Pareto analysis can serve as the Measure baseline.",
+     "ar": "يؤطر المشكلة ويقسّم البيانات: الفئة الحيوية تفتح مشروعاً، وقد يكون تحليل باريتو أساس المرحلة الثانية."
+    }
+   },
+   {
+    "code": "Fishbone",
+    "name": {
+     "en": "Fishbone",
+     "ar": "عظمة السمكة"
+    },
+    "text": {
+     "en": "Maps the candidate causes; its cause is taken by analysis id, then proved or ruled out with data.",
+     "ar": "ترسم الأسباب المحتملة؛ يُؤخذ سببها برقم التحليل ثم يُثبت أو يُستبعد بالبيانات."
+    }
+   },
+   {
+    "code": "5 Whys",
+    "name": {
+     "en": "5 Whys",
+     "ar": "لماذا الخمس"
+    },
+    "text": {
+     "en": "Digs down one path; its cause is taken by analysis id.",
+     "ar": "تحفر في مسار واحد؛ يُؤخذ سببها برقم التحليل."
+    }
+   },
+   {
+    "code": "CAPA",
+    "name": {
+     "en": "Corrective action",
+     "ar": "الإجراءات التصحيحية"
+    },
+    "text": {
+     "en": "When a nonconformity is involved, its corrective actions stay in the CAPA record the project names by id.",
+     "ar": "عندما توجد حالة عدم مطابقة، تبقى إجراءاتها التصحيحية في سجل CAPA الذي يذكره المشروع برقمه."
+    }
+   },
+   {
+    "code": "PDCA",
+    "name": {
+     "en": "PDCA cycle",
+     "ar": "دورة PDCA"
+    },
+    "text": {
+     "en": "The control cycle after the hand-over, or the next cycle for what is left open, is run in the PDCA tool and named by its id.",
+     "ar": "دورة الضبط بعد التسليم، أو الدورة التالية لما بقي مفتوحاً، تُدار في أداة PDCA وتُذكر برقمها."
+    }
+   }
+  ],
+  "serves": [
+   {
+    "code": "ISO 9001:2026 §0.3.2",
+    "name": {
+     "en": "The PDCA cycle (introduction)",
+     "ar": "دورة PDCA (المقدمة)"
+    },
+    "text": {
+     "en": "Plan, Do, Check and Act, applicable to all processes and to the system as a whole. The introduction explains; it sets no requirements.",
+     "ar": "الخطة والتنفيذ والتحقق والتصرف، وتنطبق على كل العمليات وعلى النظام كله. المقدمة شرح وليست متطلبات."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 §7.1.5 · §9.1",
+    "name": {
+     "en": "Measuring resources, monitoring and analysis",
+     "ar": "موارد القياس والرصد والتحليل"
+    },
+    "text": {
+     "en": "Measuring resources that give valid and reliable results, deciding what is monitored and measured, how and when, and analysing and evaluating the data; methods can include statistical techniques (note to 9.1.3).",
+     "ar": "موارد قياس تعطي نتائج صحيحة وموثوقة، وتحديد ما يُرصد ويُقاس وطرقه ومتى، وتحليل البيانات وتقييمها؛ وقد تشمل الطرق تقنيات إحصائية (ملاحظة 9.1.3)."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 §8.5.1 · §8.5.6 · §10.2.1",
+    "name": {
+     "en": "Controlled conditions, control of changes, corrective action",
+     "ar": "الضبط وضبط التغييرات والإجراء التصحيحي"
+    },
+    "text": {
+     "en": "Controlled conditions with monitoring at the right stages, changes reviewed before they are adopted, causes determined and the effectiveness of the action reviewed.",
+     "ar": "ظروف مضبوطة بالرصد في المراحل المناسبة، ومراجعة التغييرات قبل اعتمادها، وتحديد الأسباب ومراجعة فعالية الإجراء."
+    }
+   },
+   {
+    "code": "ISO 9000:2026 §3.10.2 · §3.11.4 · §4.2.7",
+    "name": {
+     "en": "Quality characteristic, measurement, evidence-based decisions",
+     "ar": "الخاصية النوعية والقياس والقرار المبني على الدليل"
+    },
+    "text": {
+     "en": "A quality characteristic relates to a requirement, measurement is a process to determine a value, and decisions rest on facts and data analysis.",
+     "ar": "الخاصية النوعية مرتبطة بمتطلب، والقياس عملية لتحديد قيمة، والقرار يُبنى على الوقائع وتحليل البيانات."
+    }
+   },
+   {
+    "code": "Six Sigma · ISO 13053 · ISO 7870 · ISO 10017",
+    "name": {
+     "en": "Method and statistics references (not verified)",
+     "ar": "مراجع المنهج والإحصاء (غير متحقق منه)"
+    },
+    "text": {
+     "en": "No Six Sigma reference, ISO 13053 or ISO 7870 is uploaded to the project, so what is said here about the method is practical guidance, “not verified” against a text. ISO 10017 is only named in a note of Annex A.9.1.",
+     "ar": "لا يوجد مرجع لـ Six Sigma ولا ISO 13053 ولا ISO 7870 مرفوع إلى المشروع، فما يرد عن المنهج هنا إرشاد تطبيقي «غير متحقق منه» من نص. ISO 10017 تذكرها ملاحظة الملحق A.9.1 فقط."
+    }
+   }
+  ],
+  "clauses": [
+   {
+    "id": "0.3.2",
+    "phase": "frame",
+    "title": {
+     "en": "Introduction 0.3.2 Plan-Do-Check-Act cycle",
+     "ar": "المقدمة 0.3.2 دورة PDCA"
+    },
+    "short": {
+     "en": "0.3.2 · PDCA",
+     "ar": "0.3.2 · PDCA"
+    },
+    "intro": {
+     "en": "DMAIC is an improvement project that follows the logic of the PDCA cycle in five phases: Define, Measure and Analyse are a detailed Plan, Improve is Do and Check, and Control is the Act that holds the result. Each phase ends with a gate.",
+     "ar": "DMAIC مشروع تحسين يسير على منطق دورة PDCA بخمس مراحل: التعريف والقياس والتحليل خطة مفصلة، والتحسين تنفيذ وتحقق، والضبط تصرف يحفظ النتيجة. وتنتهي كل مرحلة ببوابة."
+    },
+    "items": [
+     {
+      "ref": "s1-1",
+      "clause": "0.3.2",
+      "title": {
+       "en": "DMAIC on the PDCA cycle",
+       "ar": "DMAIC على دورة PDCA"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the introduction of ISO 9001:2026 describes the PDCA cycle: Plan establishes the objectives of the system and its processes and the resources needed, and determines and addresses risks and opportunities; Do implements what was planned; Check monitors and, as applicable, measures processes, products and services against policies, objectives and requirements and reports the results; Act takes actions to improve performance. It applies to all processes and to the system as a whole. The introduction explains; it sets no requirements. DMAIC is not a clause in it, but a structured way to apply this logic to a problem whose cause is unknown.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تصف مقدمة ISO 9001:2026 دورة PDCA: الخطة تضع أهداف النظام وعملياته والموارد اللازمة وتحدد المخاطر والفرص وتعالجها، والتنفيذ ينفذ ما خُطط له، والتحقق يرصد العمليات والمنتجات والخدمات ويقيسها حيث ينطبق مقابل السياسات والأهداف والمتطلبات ويبلغ النتائج، والتصرف يتخذ إجراءات لتحسين الأداء. وتنطبق على كل العمليات وعلى النظام كله. والمقدمة شرح، وليست متطلبات. وDMAIC ليس بنداً فيها، بل طريقة منظمة لتطبيق هذا المنطق على مشكلة سببها غير معروف."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: on the concrete project: Define, Measure and Analyse from 1 to 6 September (Plan), the pilot on one plant from 7 to 13 September (Do and Check), and the control plan, then cycle PD-EX-03 (Act).",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في مشروع الخرسانة: التعريف والقياس والتحليل من 1 إلى 6 سبتمبر (الخطة)، والتجربة في محطة واحدة من 7 إلى 13 سبتمبر (التنفيذ والتحقق)، وخطة الضبط ثم دورة PD-EX-03 (التصرف)."
+      },
+      "how": [
+       {
+        "en": "Read the five phases as one story from the problem to the hand-over",
+        "ar": "اقرأ المراحل الخمس كقصة واحدة من المشكلة إلى التسليم"
+       },
+       {
+        "en": "Do not jump to the solution before the analysis is complete",
+        "ar": "لا تقفز إلى الحل قبل أن يكتمل التحليل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A project with its five phases and gates",
+        "ar": "مشروع بمراحله الخمس وبواباته"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A project that starts with the solution",
+        "ar": "مشروع يبدأ بالحل"
+       },
+       {
+        "en": "A project that stops at Improve and never reaches Control",
+        "ar": "مشروع يتوقف عند التحسين ولا يصل إلى الضبط"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Project lead",
+       "ar": "قائد المشروع"
+      },
+      "kpi": {
+       "en": "Share of projects that reached Control",
+       "ar": "نسبة المشاريع التي وصلت إلى الضبط"
+      }
+     },
+     {
+      "ref": "s1-2",
+      "clause": "GD-1",
+      "title": {
+       "en": "When DMAIC fits, and when it does not",
+       "ar": "متى يناسب DMAIC، ومتى لا يناسب"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: DMAIC is for a problem whose cause is unknown, whose process can be measured and whose data can be collected. A known solution is an implementation project, run and followed with a plan, not a DMAIC. A small problem is solved with a 5 Whys or an A3, and a severe one-off event starts with an RCA investigation. DMAIC uses the toolbox rather than replacing it: Pareto to frame and stratify, Fishbone and 5 Whys for candidate causes, RCA for a full investigation, A3 to tell the story, PDCA for the control cycle, and CAPA when a nonconformity is involved.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: DMAIC للمشكلة التي لا يُعرف سببها وعمليتها قابلة للقياس والبيانات عنها ممكنة الجمع. أما الحل المعروف فمشروع تنفيذ، يُنفذ ويُتابع بخطة لا بـ DMAIC. والمشكلة الصغيرة يحلها لماذا الخمس أو صفحة A3، والحدث الجسيم لمرة واحدة يبدأ بتحقيق RCA. ويستخدم DMAIC صندوق الأدوات ولا يحل محله: باريتو للتأطير والتقسيم، وعظمة السمكة ولماذا الخمس للأسباب المحتملة، وRCA للتحقيق الكامل، وA3 لرواية القصة، وPDCA لدورة الضبط، وCAPA عند عدم المطابقة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: after the A3, concrete rejections stayed at 6% with an unclear cause, so a DMAIC project started; the delay in drawing approvals had a known fix (a priority list and a second reviewer), so it was run as a PDCA cycle, not a DMAIC.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بعد صفحة A3 بقي رفض الخرسانة عند 6% وسببه غير واضح، فبدأ مشروع DMAIC؛ أما تأخر اعتماد المخططات فحله معروف (قائمة أولوية ومراجع ثانٍ)، فأُدير دورة PDCA لا مشروع DMAIC."
+      },
+      "how": [
+       {
+        "en": "Ask at the Define gate: do we already know the solution?",
+        "ar": "اسأل في بوابة التعريف: هل نعرف الحل مسبقاً؟"
+       },
+       {
+        "en": "Stop the project at the gate if the answer is yes",
+        "ar": "أوقف المشروع عند البوابة إذا كان الجواب نعم"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The Define gate decision and its questions",
+        "ar": "قرار بوابة التعريف وأسئلتها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A DMAIC to implement a known solution",
+        "ar": "DMAIC لتنفيذ حل معروف"
+       },
+       {
+        "en": "A project with no data that can be collected",
+        "ar": "مشروع بلا بيانات يمكن جمعها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Sponsor",
+       "ar": "الراعي"
+      },
+      "kpi": {
+       "en": "Share of projects that passed the Define gate",
+       "ar": "نسبة المشاريع التي اجتازت بوابة التعريف"
+      }
+     },
+     {
+      "ref": "s1-3",
+      "clause": "GD-2",
+      "title": {
+       "en": "The phases and their gates",
+       "ar": "المراحل وبواباتها"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: each phase ends with a gate the sponsor reviews through questions, not a signature, and decides: pass, rework or stop. The next phase does not start before the pass. Gate questions include: is the cause really unknown? Was the goal written before the analysis? Can we trust the measurement? What is the difference between the groups, and is the sample large enough? Did the pilot reach the goal? Who owns the control plan now? Stopping at a gate is a sound decision, not a failure.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: تنتهي كل مرحلة ببوابة يراجعها الراعي بالأسئلة لا بالتوقيع، ويقرر: اجتياز، أو إعادة عمل، أو إيقاف. ولا تبدأ المرحلة التالية قبل الاجتياز. ومن أسئلة البوابات: هل السبب فعلاً غير معروف؟ هل الهدف مكتوب قبل التحليل؟ هل نثق بالقياس؟ ما الفرق بين المجموعتين وهل يكفي حجم العينة؟ هل بلغت التجربة الهدف؟ من يملك خطة الضبط الآن؟ والإيقاف عند بوابة قرار سليم وليس فشلاً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: at the Analyse gate the projects director asked: “what is the difference between loads with and without chilled water, and is the sample large enough?”, and the gate-wait comparison was added and ruled out with data.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في بوابة التحليل سأل مدير المشاريع: «ما الفرق بين الشحنات بماء مبرد ودونه، وهل يكفي حجم العينة؟»، فأُضيفت مقارنة الانتظار عند البوابة واستُبعدت بالبيانات."
+      },
+      "how": [
+       {
+        "en": "Record each gate's date, reviewer, questions and decision",
+        "ar": "سجّل لكل بوابة التاريخ والمراجع والأسئلة والقرار"
+       },
+       {
+        "en": "Do not let the project lead review their own gate",
+        "ar": "لا تجعل قائد المشروع يراجع بوابته"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The dated record of gates with questions and decisions",
+        "ar": "سجل البوابات المؤرخة بالأسئلة والقرارات"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Gates by signature only",
+        "ar": "بوابات بالتوقيع فقط"
+       },
+       {
+        "en": "A phase that starts before the previous gate is passed",
+        "ar": "مرحلة تبدأ قبل اجتياز بوابة سابقتها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Sponsor",
+       "ar": "الراعي"
+      },
+      "kpi": {
+       "en": "Share of completed phases passed at their gate",
+       "ar": "نسبة المراحل المكتملة التي اجتازت بوابتها"
+      }
+     }
+    ]
+   },
+   {
+    "id": "6.2",
+    "phase": "define",
+    "title": {
+     "en": "Clause 6.2 Quality objectives and planning to achieve them",
+     "ar": "البند 6.2 أهداف الجودة والتخطيط لتحقيقها"
+    },
+    "short": {
+     "en": "6.2 · Goal",
+     "ar": "6.2 · الهدف"
+    },
+    "intro": {
+     "en": "The charter says what the problem is and what it costs, who the customer is and what is critical to them, where the scope starts and stops, and what the goal is, with its date. The goal is written before the analysis.",
+     "ar": "الميثاق يقول ما المشكلة وكم تكلف، ومن العميل وما متطلباته الحرجة، وأين يبدأ النطاق وأين ينتهي، وما الهدف بتاريخه. ويُكتب الهدف قبل التحليل."
+    },
+    "items": [
+     {
+      "ref": "s2-1",
+      "clause": "6.2.1",
+      "title": {
+       "en": "A charter with a sponsor and a numeric dated goal",
+       "ar": "ميثاق براعٍ وهدف رقمي بتاريخ"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization sets quality objectives for the relevant functions, levels and processes; they are consistent with the policy, measurable, take account of applicable requirements, monitored, communicated, updated as needed and available as documented information. ISO 9000:2026 defines an objective (3.7.11) as a result to be achieved, and notes it can also be called an aim, a goal or a target. That is why a project goal is written as a number from and to with a deadline, and the date it was written is recorded.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تضع المنشأة أهداف جودة للوظائف والمستويات والعمليات المعنية، وتكون الأهداف متسقة مع السياسة، وقابلة للقياس، وتراعي المتطلبات المنطبقة، ومرصودة، ومُبلَّغة، ومحدّثة عند الحاجة، ومتاحة معلومات موثقة. ويعرّف ISO 9000:2026 الهدف (3.7.11) بأنه نتيجة يراد تحقيقها، ويذكر أن من أسمائه الغاية والمستهدف. لذلك يُكتب هدف المشروع رقماً من وإلى بموعد، ويُسجَّل تاريخ كتابته."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “rejected loads from 6% to below 3% of loads by 31 October 2026”, written on 1 September; the analysis started on 4 September.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «نسبة الشحنات المرفوضة من 6% إلى أقل من 3% بحلول 31 أكتوبر 2026»، كُتب في 1 سبتمبر، وبدأ التحليل في 4 سبتمبر."
+      },
+      "how": [
+       {
+        "en": "Name the sponsor and the project lead as two different people",
+        "ar": "سمِّ الراعي وقائد المشروع شخصين مختلفين"
+       },
+       {
+        "en": "Write the goal as a number, with a deadline and the date it was written",
+        "ar": "اكتب الهدف رقماً بموعد وتاريخ كتابة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The project charter with the goal and its date",
+        "ar": "ميثاق المشروع بالهدف وتاريخه"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A goal in adjectives: “improve quality”",
+        "ar": "هدف بالصفات: «تحسين الجودة»"
+       },
+       {
+        "en": "A sponsor who is the project lead",
+        "ar": "راعٍ هو قائد المشروع نفسه"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Sponsor",
+       "ar": "الراعي"
+      },
+      "kpi": {
+       "en": "Share of projects with a numeric dated goal",
+       "ar": "نسبة المشاريع بهدف رقمي مؤرخ"
+      }
+     },
+     {
+      "ref": "s2-2",
+      "clause": "GD-3",
+      "title": {
+       "en": "The voice of the customer and the CTQs",
+       "ar": "صوت العميل ومتطلباته الحرجة (CTQ)"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the voice of the customer is turned into measurable critical-to-quality requirements (CTQs), each with a limit or specification, before the project measure is chosen. ISO 9000:2026 defines a quality characteristic (3.10.2) as an inherent characteristic related to a requirement, and a customer (3.9.1) can be internal, receiving the output of another process. Five requirements at most are enough; more scatter the project.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: يُترجم صوت العميل إلى متطلبات حرجة للجودة (CTQ) قابلة للقياس، بحدّ أو مواصفة لكل منها، قبل اختيار مقياس المشروع. ويعرّف ISO 9000:2026 الخاصية النوعية (3.10.2) بأنها خاصية متأصلة مرتبطة بمتطلب، والعميل (3.9.1) قد يكون داخلياً يتسلم ناتج عملية أخرى. خمسة متطلبات على الأكثر تكفي؛ الكثرة تشتت المشروع."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the internal customer is the structural team: concrete at 32 °C or less, slump within the mix range, and 90 minutes or less from batching to discharge.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: العميل الداخلي هو الفريق الإنشائي: حرارة الخرسانة 32 °م أو أقل، والهبوط ضمن مدى الخلطة، و90 دقيقة أو أقل من الخلط إلى التفريغ."
+      },
+      "how": [
+       {
+        "en": "Ask the customer what makes the output acceptable",
+        "ar": "اسأل العميل ما الذي يجعل الناتج مقبولاً"
+       },
+       {
+        "en": "Give each CTQ a measurable limit",
+        "ar": "اكتب لكل CTQ حداً قابلاً للقياس"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The CTQ list with limits in the charter",
+        "ar": "قائمة CTQ بحدودها في الميثاق"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A CTQ with no limit",
+        "ar": "CTQ بلا حد"
+       },
+       {
+        "en": "A project measure tied to no CTQ",
+        "ar": "مقياس المشروع لا يرتبط بأي CTQ"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Project lead",
+       "ar": "قائد المشروع"
+      },
+      "kpi": {
+       "en": "Share of projects with a CTQ and its limit",
+       "ar": "نسبة المشاريع بـ CTQ مكتوب بحده"
+      }
+     },
+     {
+      "ref": "s2-3",
+      "clause": "GD-4",
+      "title": {
+       "en": "SIPOC and the scope",
+       "ar": "SIPOC والنطاق"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: a SIPOC maps the process at a high level: suppliers, inputs, 5 to 7 process steps, outputs and customers. ISO 9000:2026 defines a process (3.3.1) as interrelated or interacting activities that use or transform inputs to deliver a result. What is in and out of scope is written plainly, so the project does not grow on the way.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: يرسم SIPOC العملية على مستوى عالٍ: الموردون، والمدخلات، وخطوات العملية من 5 إلى 7، والمخرجات، والعملاء. ويعرّف ISO 9000:2026 العملية (3.3.1) بأنها أنشطة مترابطة تستخدم المدخلات أو تحولها لتعطي نتيجة. ويُكتب ما داخل النطاق وما خارجه صراحةً، فلا يتسع المشروع أثناء العمل."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in scope: loads from both plants from batching to acceptance. Out of scope: the mix design and cube tests. Seven steps from ordering the load to discharge.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: داخل النطاق: الشحنات من المحطتين من الخلط حتى القبول. خارج النطاق: تصميم الخلطة واختبارات المكعبات. وسبع خطوات من طلب الشحنة إلى التفريغ."
+      },
+      "how": [
+       {
+        "en": "Map the SIPOC with the team in one session",
+        "ar": "ارسم SIPOC مع الفريق في جلسة واحدة"
+       },
+       {
+        "en": "Write what is out of scope just as clearly",
+        "ar": "اكتب ما خارج النطاق بالقدر نفسه من الوضوح"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A SIPOC of 5 to 7 steps and a written scope",
+        "ar": "SIPOC من 5 إلى 7 خطوات ونطاق مكتوب"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Twenty steps in a SIPOC",
+        "ar": "عشرون خطوة في SIPOC"
+       },
+       {
+        "en": "A scope with no boundaries",
+        "ar": "نطاق بلا حدود"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Project lead",
+       "ar": "قائد المشروع"
+      },
+      "kpi": {
+       "en": "Share of projects with a complete scope and SIPOC",
+       "ar": "نسبة المشاريع بنطاق وSIPOC مكتملين"
+      }
+     },
+     {
+      "ref": "s2-4",
+      "clause": "GD-5",
+      "title": {
+       "en": "The goal before the analysis, and not moved",
+       "ar": "الهدف قبل التحليل، ولا يُحرَّك"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the goal is written in Define, before the analysis starts, so the date it was written is not after the date the analysis started. A goal written after the causes are known gets fitted to what we know we can do, not to what the problem needs. If it is changed for a real reason (the requirement changed, or the baseline was wrong), the first target stays written with the reason.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: يُكتب الهدف في مرحلة التعريف قبل بدء التحليل، أي أن تاريخ كتابته لا يأتي بعد تاريخ بدء التحليل. الهدف الذي يُكتب بعد معرفة الأسباب يُكيَّف مع ما نعرف أننا نستطيع فعله، لا مع ما تحتاجه المشكلة. وإذا عُدّل لسبب حقيقي (تغيّر المتطلب، أو ظهر خطأ في الأساس)، يبقى الهدف الأول مكتوباً ومعه السبب."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the formwork project the goal (from 7.1% to 3.5%) was written on 5 October and the analysis started on 9 October.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في مشروع القوالب كُتب الهدف (من 7.1% إلى 3.5%) في 5 أكتوبر، وبدأ التحليل في 9 أكتوبر."
+      },
+      "how": [
+       {
+        "en": "Record the date the goal was written and the date the analysis started",
+        "ar": "سجّل تاريخ كتابة الهدف وتاريخ بدء التحليل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The first target and the reason, if it was changed",
+        "ar": "الهدف الأول وسبب تعديله إن عُدّل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A goal rewritten to fit the result",
+        "ar": "هدف يُعاد كتابته ليناسب النتيجة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Sponsor",
+       "ar": "الراعي"
+      },
+      "kpi": {
+       "en": "Share of goals written before the analysis",
+       "ar": "نسبة الأهداف المكتوبة قبل التحليل"
+      }
+     },
+     {
+      "ref": "s2-5",
+      "clause": "6.2.2",
+      "title": {
+       "en": "The project plan: what, who and when",
+       "ar": "خطة المشروع: ماذا ومن ومتى"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: when planning how to achieve objectives, the organization decides what will be done, the resources needed, who is responsible, when it will be completed and how results will be evaluated. In a DMAIC project the charter sets the lead, sponsor, team, phases and gates, and Control sets how the result is evaluated on the same measure.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: عند التخطيط لتحقيق الأهداف تحدد المنشأة ما سيُعمل، والموارد اللازمة، والمسؤول، وموعد الإنجاز، وكيف تُقيَّم النتائج. وفي مشروع DMAIC يحدد الميثاق القائد والراعي والفريق والمراحل والبوابات، ويحدد الضبط طريقة تقييم النتيجة بالمقياس نفسه."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the calibration project: the lead is the quality engineer, the sponsor the quality manager, the team the two site supervisors and the equipment manager, the gates from 30 July to 14 October.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: مشروع المعايرة: القائد مهندس الجودة، والراعي مدير الجودة، والفريق مشرفا الموقعين ومدير المعدات، والبوابات من 30 يوليو إلى 14 أكتوبر."
+      },
+      "how": [
+       {
+        "en": "Put an approximate date for each gate in the charter",
+        "ar": "ضع في الميثاق موعداً تقريبياً لكل بوابة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The charter with its roles and dates",
+        "ar": "الميثاق بأدواره ومواعيده"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A project with no date and no sponsor",
+        "ar": "مشروع بلا موعد ولا راعٍ"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Project lead",
+       "ar": "قائد المشروع"
+      },
+      "kpi": {
+       "en": "Share of gates on time",
+       "ar": "نسبة البوابات في موعدها"
+      }
+     }
+    ]
+   },
+   {
+    "id": "7.1.5",
+    "phase": "measure",
+    "title": {
+     "en": "Clause 7.1.5 Monitoring and measuring resources",
+     "ar": "البند 7.1.5 موارد الرصد والقياس"
+    },
+    "short": {
+     "en": "7.1.5 · Measurement",
+     "ar": "7.1.5 · القياس"
+    },
+    "intro": {
+     "en": "Before any baseline: exactly what is counted, and can the measurement be trusted? A measure that cannot be trusted makes every later phase unreliable.",
+     "ar": "قبل أي أساس: ما الذي يُعدّ بالضبط، وهل القياس يُوثق به؟ مقياس لا يُوثق به يجعل كل مرحلة بعده غير موثوقة."
+    },
+    "items": [
+     {
+      "ref": "s3-1",
+      "clause": "GD-6",
+      "title": {
+       "en": "The operational definition of the measure",
+       "ar": "التعريف التشغيلي للمقياس"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the operational definition says exactly what is counted or measured, in which unit, from which source and on which sample, so that two different people get the same number from the same reality. ISO 9000:2026 defines measurement (3.11.4) as a process to determine a value. Without an operational definition, before and after the change cannot be compared.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: التعريف التشغيلي يقول ما الذي يُعدّ أو يُقاس بالضبط، وبأي وحدة، ومن أي مصدر، وعلى أي عينة؛ حتى يحصل شخصان مختلفان على الرقم نفسه من الواقع نفسه. ويعرّف ISO 9000:2026 القياس (3.11.4) بأنه عملية لتحديد قيمة. وبلا تعريف تشغيلي لا يمكن مقارنة ما قبل التغيير بما بعده."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “loads rejected at the receiving point for any reason, divided by all loads received, per week, from receiving log QF-CON-11”.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «الشحنات المرفوضة عند نقطة الاستلام لأي سبب، مقسومة على كل الشحنات المستلمة، لكل أسبوع، من سجل الاستلام QF-CON-11»."
+      },
+      "how": [
+       {
+        "en": "Write what counts and what does not, with an example of each",
+        "ar": "اكتب ما يُعدّ وما لا يُعدّ بمثال لكل منهما"
+       },
+       {
+        "en": "Use the same definition before and after the change",
+        "ar": "استخدم التعريف نفسه قبل التغيير وبعده"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The operational definition written in the charter",
+        "ar": "التعريف التشغيلي المكتوب في الميثاق"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A measure whose definition changes between baseline and result",
+        "ar": "مقياس يتغير تعريفه بين الأساس والنتيجة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Data owner",
+       "ar": "مالك البيانات"
+      },
+      "kpi": {
+       "en": "Share of projects with a complete operational definition",
+       "ar": "نسبة المشاريع بتعريف تشغيلي كامل"
+      }
+     },
+     {
+      "ref": "s3-2",
+      "clause": "7.1.5.1",
+      "title": {
+       "en": "Checking the measurement can be trusted before the baseline",
+       "ar": "التحقق من أن القياس يُوثق به قبل الأساس"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization determines the resources needed for valid and reliable monitoring and measurement results, makes sure they suit the type of measurement and are maintained to stay fit, and keeps evidence of their fitness. Annex A.7.1.5 explains that measuring resources can include non-equipment elements, such as defined evaluation criteria and the competence of people. That is why the measurement is checked before the baseline: repeatability and reproducibility for repeated measurements, attribute agreement for classification data, or a comparison with a calibrated reference, against a written acceptance rule.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحدد المنشأة الموارد اللازمة لنتائج رصد وقياس صحيحة وموثوقة، وتتأكد أنها مناسبة لنوع القياس ومصانة لتبقى صالحة، وتحتفظ بما يثبت صلاحيتها. ويوضح الملحق A.7.1.5 أن موارد القياس قد تشمل عناصر غير الأجهزة، مثل معايير التقييم المحددة وكفاءة الأشخاص. لذلك يُتحقق من القياس قبل الأساس: تكرار وإعادة إنتاج للقياسات المتكررة، أو اتفاق المقيّمين للبيانات المصنفة، أو مقارنة بمرجع معاير، بقاعدة قبول مكتوبة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the formwork project: two engineers classified 30 timesheet lines and agreed on 87% (rule: 90% pass, 80–90% partly); a coding guide was issued before the baseline was fixed.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: مشروع القوالب: صنّف مهندسان 30 سطراً من سجلات الدوام، فاتفقا في 87% (القاعدة: 90% مقبول، 80–90% جزئي)؛ صدر دليل ترميز قبل تثبيت الأساس."
+      },
+      "how": [
+       {
+        "en": "Write the acceptance rule before running the check",
+        "ar": "اكتب قاعدة القبول قبل إجراء الفحص"
+       },
+       {
+        "en": "Fix the measurement if it cannot be trusted, then check again",
+        "ar": "أصلح القياس إذا لم يُوثق به، ثم أعد الفحص"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The check's result and date, before the date the baseline was fixed",
+        "ar": "نتيجة التحقق وتاريخه قبل تاريخ تثبيت الأساس"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A baseline from data never checked",
+        "ar": "أساس من بيانات لم يُتحقق منها"
+       },
+       {
+        "en": "A check with no written rule",
+        "ar": "فحص بلا قاعدة مكتوبة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Data owner",
+       "ar": "مالك البيانات"
+      },
+      "kpi": {
+       "en": "Share of projects with a trusted measurement before the baseline",
+       "ar": "نسبة المشاريع بقياس موثوق قبل الأساس"
+      }
+     },
+     {
+      "ref": "s3-3",
+      "clause": "7.1.5.2",
+      "title": {
+       "en": "Measuring equipment and traceability",
+       "ar": "أجهزة القياس وإمكانية التتبع"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: when traceability of measurement results is required or essential for confidence in them, measuring equipment is calibrated or verified at set intervals or before use against traceable standards, its status is identified, and it is protected from what would spoil its results. When a device is found unfit, the organization determines whether earlier results were affected and acts as needed.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: عندما يكون تتبع نتائج القياس مطلوباً أو أساسياً للثقة بها، تُعاير أجهزة القياس أو يُتحقق منها على فترات محددة أو قبل الاستخدام مقابل مراجع قابلة للتتبع، وتُعرَّف حالتها، وتُحمى مما يفسد نتائجها. وإذا وُجد جهاز غير صالح، تحدد المنشأة هل تأثرت صحة النتائج السابقة وتتخذ الإجراء المناسب."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the calibration project's control plan: a device past its due date is withdrawn the same day, and the tests taken with it since that date are reviewed.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: خطة ضبط مشروع المعايرة: الجهاز المتجاوز موعده يُسحب في اليوم نفسه، وتُراجع الاختبارات المأخوذة به منذ موعده."
+      },
+      "how": [
+       {
+        "en": "Tie every device in the project to a valid calibration certificate",
+        "ar": "اربط كل جهاز في المشروع بشهادة معايرة سارية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The calibration register and the status label",
+        "ar": "سجل المعايرة وملصق الحالة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An overdue device with no review of its earlier results",
+        "ar": "جهاز متأخر دون مراجعة نتائجه السابقة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Equipment manager",
+       "ar": "مدير المعدات"
+      },
+      "kpi": {
+       "en": "Devices past their due date",
+       "ar": "الأجهزة المتجاوزة موعدها"
+      }
+     }
+    ]
+   },
+   {
+    "id": "9.1",
+    "phase": "measure",
+    "title": {
+     "en": "Clause 9.1 Monitoring, measurement, analysis and evaluation",
+     "ar": "البند 9.1 الرصد والقياس والتحليل والتقييم"
+    },
+    "short": {
+     "en": "9.1 · Data",
+     "ar": "9.1 · البيانات"
+    },
+    "intro": {
+     "en": "The baseline is a number with its period, sample and a run chart, and a cause is proved or ruled out by comparing data, not by vote. Statistics serve the decision, and simple tools are usually enough.",
+     "ar": "الأساس رقم بفترته وعينته ورسم تشغيلي، والسبب يُثبت أو يُستبعد بمقارنة بيانات، لا بالتصويت. والإحصاء يخدم القرار، والأدوات البسيطة تكفي غالباً."
+    },
+    "items": [
+     {
+      "ref": "s4-1",
+      "clause": "9.1.1",
+      "title": {
+       "en": "The baseline with its period and sample",
+       "ar": "الأساس بفترته وعينته"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization decides what needs to be monitored and measured, the methods for monitoring, measurement, analysis and evaluation that ensure valid results, when monitoring and measuring take place, and when the results are analysed and evaluated. In the project: the baseline is fixed on a date, with a known period and sample, and drawn as a run chart with its points and median, not one number from memory.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحدد المنشأة ما يحتاج إلى رصد وقياس، وطرق الرصد والقياس والتحليل والتقييم التي تضمن نتائج صحيحة، ومتى يُرصد ويُقاس، ومتى تُحلَّل النتائج وتُقيَّم. وفي المشروع: الأساس يُثبَّت بتاريخ، بفترة وعينة معلومتين، ويُرسم رسماً تشغيلياً بنقاطه ووسيطه، لا رقماً واحداً من الذاكرة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the concrete baseline: nine weeks (27 to 35), 20 of 335 loads rejected (6.0%), fixed on 3 September after the thermometer check on 2 September.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: أساس الخرسانة: تسعة أسابيع (27 إلى 35)، 20 شحنة مرفوضة من 335 (6.0%)، ثُبّت في 3 سبتمبر بعد التحقق من الموازين في 2 سبتمبر."
+      },
+      "how": [
+       {
+        "en": "Draw the baseline as a run chart before any calculation",
+        "ar": "ارسم الأساس رسماً تشغيلياً قبل أي حساب"
+       },
+       {
+        "en": "Write the period and sample size next to the number",
+        "ar": "اكتب الفترة وحجم العينة بجانب الرقم"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The baseline chart, its points and the date it was fixed",
+        "ar": "رسم الأساس ونقاطه وتاريخ تثبيته"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A baseline with no period and no sample",
+        "ar": "أساس بلا فترة ولا عينة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Data owner",
+       "ar": "مالك البيانات"
+      },
+      "kpi": {
+       "en": "Share of projects with a complete baseline",
+       "ar": "نسبة المشاريع بأساس مكتمل"
+      }
+     },
+     {
+      "ref": "s4-2",
+      "clause": "9.1.3",
+      "title": {
+       "en": "Proving causes with data",
+       "ar": "إثبات الأسباب بالبيانات"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization analyses and evaluates the data and information from monitoring and measurement, and uses the results to evaluate conformity, customer satisfaction, the system's performance, the effectiveness of actions and the need for improvement. The note to the clause says methods to analyse data can include statistical techniques. In the project a cause is proved or ruled out by comparing two groups (two rates or two means), a stratified Pareto, a before/after or a linked analysis; a vote proves nothing.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحلل المنشأة البيانات والمعلومات الناتجة عن الرصد والقياس وتقيّمها، وتستخدم النتائج لتقييم المطابقة ورضا العملاء وأداء النظام وفعالية الإجراءات والحاجة إلى التحسين. وتقول ملاحظة البند إن طرق تحليل البيانات قد تشمل تقنيات إحصائية. وفي المشروع يُثبت السبب أو يُستبعد بمقارنة مجموعتين (نسبتين أو متوسطين)، أو باريتو مقسّم، أو قبل وبعد، أو تحليل مرتبط؛ والتصويت لا يثبت سبباً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: without chilled water 18 of 229 loads were rejected (7.9%), with chilled water 2 of 106 (1.9%): a 6-point difference and |z| = 2.15, so the cause was proved. Gate waiting time: 5.9% against 6.0%, so it was ruled out.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: دون ماء مبرد رُفضت 18 من 229 شحنة (7.9%)، وبماء مبرد 2 من 106 (1.9%): فرق 6 نقاط، و|z| = 2.15، فأُثبت السبب. وانتظار الشاحنات عند البوابة: 5.9% مقابل 6.0%، فاستُبعد."
+      },
+      "how": [
+       {
+        "en": "Write for each cause the data comparison that proves or rules it out",
+        "ar": "اكتب لكل سبب مقارنة البيانات التي تثبته أو تستبعده"
+       },
+       {
+        "en": "Use the simplest tool that is enough for the decision",
+        "ar": "استخدم أبسط أداة تكفي للقرار"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The data check for each cause and its result",
+        "ar": "فحص البيانات لكل سبب ونتيجته"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A cause “proved” by consensus",
+        "ar": "سبب «مثبت» بالإجماع"
+       },
+       {
+        "en": "“Human error” as the cause",
+        "ar": "«الخطأ البشري» سبباً"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Project lead",
+       "ar": "قائد المشروع"
+      },
+      "kpi": {
+       "en": "Share of causes proved with data",
+       "ar": "نسبة الأسباب المثبتة بالبيانات"
+      }
+     },
+     {
+      "ref": "s4-3",
+      "clause": "4.2.7",
+      "title": {
+       "en": "ISO 9000:2026 · 4.2.7 Evidence-based decision-making",
+       "ar": "ISO 9000:2026 · 4.2.7 القرار المبني على الدليل"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: decisions based on the analysis and evaluation of data and information are more likely to produce the desired results. What matters is understanding cause and effect and unintended consequences; facts, evidence and data analysis give decisions objectivity and confidence. Possible actions include making sure data are accurate and reliable enough, analysing them with suitable methods, and deciding on evidence balanced with experience and intuition.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: القرارات المبنية على تحليل البيانات والمعلومات وتقييمها أرجح أن تحقق النتائج المرجوة. والمهم فهم علاقات السبب والنتيجة والعواقب غير المقصودة، والوقائع والأدلة وتحليل البيانات تعطي القرار موضوعية وثقة. ومن الإجراءات الممكنة: التأكد من أن البيانات دقيقة وموثوقة بما يكفي، وتحليلها بطرق مناسبة، واتخاذ القرار على الدليل مع الخبرة والحدس."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the team suggested the new crew caused the rework; the data compared 7.3% with 7.0% (|z| = 0.66), so it was ruled out and no training decision was taken that would not change the result.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: اقترح الفريق أن الفريق الجديد سبب إعادة العمل؛ قارنت البيانات 7.3% بـ 7.0% (|z| = 0.66)، فاستُبعد ولم يُتخذ قرار تدريب لا يغيّر النتيجة."
+      },
+      "how": [
+       {
+        "en": "Show the data before opinions at every gate",
+        "ar": "اعرض البيانات قبل الرأي في كل بوابة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The decisions recorded at the gates with their evidence",
+        "ar": "القرارات المسجلة في البوابات بأدلتها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A decision taken first, with data found for it later",
+        "ar": "قرار يُتخذ ثم تُبحث له بيانات"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Sponsor",
+       "ar": "الراعي"
+      },
+      "kpi": {
+       "en": "Share of decisions backed by data",
+       "ar": "نسبة القرارات المسندة ببيانات"
+      }
+     }
+    ]
+   },
+   {
+    "id": "8.5",
+    "phase": "control",
+    "title": {
+     "en": "Clause 8.5 Production and service provision",
+     "ar": "البند 8.5 الإنتاج وتقديم الخدمة"
+    },
+    "short": {
+     "en": "8.5 · Control",
+     "ar": "8.5 · الضبط"
+    },
+    "intro": {
+     "en": "A solution is piloted on a small scale and the risks of the change are checked before the roll-out; then the control plan holds the result under controlled conditions: what is measured, how often, by whom, and the reaction when it drifts.",
+     "ar": "الحل يُجرَّب على نطاق صغير وتُفحص مخاطر تغييره قبل التعميم، ثم تحفظ خطة الضبط النتيجة في ظروف مضبوطة: ما يُقاس، وكم مرة، ومن يقيس، وما رد الفعل عند الانحراف."
+    },
+    "items": [
+     {
+      "ref": "s5-1",
+      "clause": "8.5.6",
+      "title": {
+       "en": "Solutions are piloted, and the risks of the change checked",
+       "ar": "الحلول تُجرَّب، ومخاطر التغيير تُفحص"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization reviews and controls changes for production or service provision to the extent needed for continuing conformity to requirements, and keeps documented information on the results of the review, who authorized the change and any actions needed. In the project: each solution is tied to a proved cause, piloted in one place over a stated period with its result compared with the goal, the risks of the change and their control written, and then the roll-out decided.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تراجع المنشأة التغييرات في الإنتاج أو تقديم الخدمة وتضبطها بالقدر اللازم لاستمرار المطابقة للمتطلبات، وتحتفظ بمعلومات موثقة بنتائج المراجعة، ومن اعتمد التغيير، وأي إجراءات لازمة. وفي المشروع: كل حل مرتبط بسبب مثبت، ويُجرَّب في مكان واحد لفترة محددة وتُقارن نتيجته بالهدف، وتُكتب مخاطر التغيير وضبطها، ثم يُقرر التعميم."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the chilled-water and plant-temperature pilot at plant 2 from 7 to 13 September: 1 of 52 loads rejected (1.9%) against a goal below 3%; the risk was chiller capacity, the control a daily check and a second chiller line.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: تجربة الماء المبرد وفحص الحرارة في المحطة 2 من 7 إلى 13 سبتمبر: شحنة واحدة مرفوضة من 52 (1.9%) مقابل هدف أقل من 3%؛ المخاطرة سعة المبرد، والضبط فحص يومي وخط تبريد ثانٍ."
+      },
+      "how": [
+       {
+        "en": "Pilot in one place before all of them",
+        "ar": "جرّب في مكان واحد قبل الكل"
+       },
+       {
+        "en": "Write what may fail at the roll-out and how to prevent it",
+        "ar": "اكتب ما قد يفشل عند التعميم وكيف تمنعه"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The pilot result, the roll-out decision and who authorized it",
+        "ar": "نتيجة التجربة وقرار التعميم ومن اعتمده"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A solution rolled out with no pilot",
+        "ar": "حل يُعمَّم دون تجربة"
+       },
+       {
+        "en": "A solution tied to no proved cause",
+        "ar": "حل لا يرتبط بسبب مثبت"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Sponsor",
+       "ar": "الراعي"
+      },
+      "kpi": {
+       "en": "Share of solutions piloted before the roll-out",
+       "ar": "نسبة الحلول المجرّبة قبل التعميم"
+      }
+     },
+     {
+      "ref": "s5-2",
+      "clause": "8.5.1",
+      "title": {
+       "en": "A control plan with a reaction when it drifts",
+       "ar": "خطة الضبط برد فعل عند الانحراف"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization carries out production and service provision under controlled conditions that include, as applicable: documented information on the characteristics, activities and results required; suitable monitoring and measuring resources; monitoring and measurement at appropriate stages to verify control and acceptance criteria; suitable infrastructure and environment; competent persons; validation of process capability where the output cannot be verified later; actions to prevent human error; and release and delivery activities. The project's control plan is the practical form of these conditions: the measure, the target, the frequency, the owner and the reaction.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تنفذ المنشأة الإنتاج وتقديم الخدمة في ظروف مضبوطة تشمل، حيث ينطبق: معلومات موثقة بالخصائص والأنشطة والنتائج المطلوبة، وموارد رصد وقياس مناسبة، وتنفيذ الرصد والقياس في المراحل المناسبة للتحقق من معايير الضبط والقبول، وبنية تحتية وبيئة مناسبتين، وأشخاصاً أكفاء، والتحقق من قدرة العمليات حين لا يمكن التحقق من الناتج لاحقاً، وإجراءات تمنع الخطأ البشري، وأنشطة الإفراج والتسليم. وخطة الضبط في المشروع هي الصورة العملية لهذه الظروف: المقياس، والمستهدف، والتكرار، والمسؤول، ورد الفعل."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “rejected loads weekly, below 3%, the quality engineer; two weeks in a row at 3% or more: call the supplier's QA and check the chiller log, and a CAPA record if it happens again”.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «الشحنات المرفوضة أسبوعياً، أقل من 3%، مهندس الجودة؛ أسبوعان متتاليان عند 3% أو أكثر: اتصال بجودة المورد ومراجعة سجل المبرد، وسجل CAPA إن تكرر»."
+      },
+      "how": [
+       {
+        "en": "Write a specific reaction for each measure",
+        "ar": "اكتب رد فعل محدداً لكل مقياس"
+       },
+       {
+        "en": "Put in an action that prevents human error instead of blame",
+        "ar": "ضع إجراءً يمنع الخطأ البشري بدل اللوم"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The control plan with its owners and frequency",
+        "ar": "خطة الضبط بمسؤوليها وتكرارها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A control plan with no reaction",
+        "ar": "خطة ضبط بلا رد فعل"
+       },
+       {
+        "en": "A measure with no owner",
+        "ar": "مقياس بلا مسؤول"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of complete control plan lines",
+       "ar": "نسبة أسطر خطة الضبط المكتملة"
+      }
+     }
+    ]
+   },
+   {
+    "id": "10.2",
+    "phase": "control",
+    "title": {
+     "en": "Clause 10.2 Nonconformity and corrective action",
+     "ar": "البند 10.2 عدم المطابقة والإجراء التصحيحي"
+    },
+    "short": {
+     "en": "10.2 · Effectiveness",
+     "ar": "10.2 · الفعالية"
+    },
+    "intro": {
+     "en": "When the project concerns a nonconformity: its causes are determined, then the effectiveness of the action is reviewed on the same measure after the change, and the system is changed by what is standardised.",
+     "ar": "عندما يتعلق المشروع بحالة عدم مطابقة: تُحدد أسبابها، ثم تُراجع فعالية الإجراء بالمقياس نفسه بعد التغيير، ويُعدَّل النظام بما وُحّد."
+    },
+    "items": [
+     {
+      "ref": "s6-1",
+      "clause": "10.2.1 b 2",
+      "title": {
+       "en": "Determining the causes of the nonconformity",
+       "ar": "تحديد أسباب عدم المطابقة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: when a nonconformity occurs the organization evaluates the need for action to remove its causes so it does not recur, including determining its causes (10.2.1 b) 2)). The Analyse phase of DMAIC is a structured way to do that with data; the corrective actions themselves and their follow-up stay in the CAPA record the project names.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: عند وقوع عدم مطابقة تقيّم المنشأة الحاجة إلى إجراء يزيل أسبابها حتى لا تتكرر، ومن ذلك تحديد أسبابها (10.2.1 ب) 2)). ومرحلة التحليل في DMAIC طريقة منظمة لذلك بالبيانات، والإجراءات التصحيحية نفسها ومتابعتها تبقى في سجل CAPA الذي يذكره المشروع."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the concrete project names CAPA record CA-EX-04, and takes from investigation RC-EX-01 the missing plant temperature check, proved by the linked analysis.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: مشروع الخرسانة يذكر سجل CAPA ‏CA-EX-04، ويأخذ من تحقيق RC-EX-01 سبب غياب فحص الحرارة في المحطة مثبتاً بالتحليل المرتبط."
+      },
+      "how": [
+       {
+        "en": "Name the CAPA record in the project header",
+        "ar": "اذكر رقم سجل CAPA في بيانات المشروع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The link between the project and the CAPA record",
+        "ar": "ربط المشروع بسجل CAPA"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Corrective actions outside the CAPA record that nobody follows",
+        "ar": "إجراءات تصحيحية خارج سجل CAPA لا يتابعها أحد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality engineer",
+       "ar": "مهندس الجودة"
+      },
+      "kpi": {
+       "en": "Share of projects linked to a CAPA record when a nonconformity is involved",
+       "ar": "نسبة المشاريع المرتبطة بسجل CAPA عند عدم المطابقة"
+      }
+     },
+     {
+      "ref": "s6-2",
+      "clause": "10.2.1 d",
+      "title": {
+       "en": "The result after the change against the goal",
+       "ar": "النتيجة بعد التغيير مقابل الهدف"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization reviews the effectiveness of any corrective action taken (10.2.1 d)). In the project: the same measure, on the same operational definition, is measured after the change over a stated period, drawn as a run chart with the baseline median, and the result compared with the goal: met, partly met or not met.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تراجع المنشأة فعالية أي إجراء تصحيحي اتُّخذ (10.2.1 د)). وفي المشروع: يُقاس المقياس نفسه بالتعريف التشغيلي نفسه بعد التغيير لفترة محددة، ويُرسم رسماً تشغيلياً مع وسيط الأساس، وتُقارن النتيجة بالهدف: تحقق، أو تحقق جزئياً، أو لم يتحقق."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: after the change (14 September to 11 October): 4 of 164 loads rejected (2.4%) against a goal below 3%: goal met.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بعد التغيير (14 سبتمبر إلى 11 أكتوبر): 4 شحنات مرفوضة من 164 (2.4%) مقابل هدف أقل من 3%: تحقق الهدف."
+      },
+      "how": [
+       {
+        "en": "Measure the same way the baseline was measured",
+        "ar": "قِس بالطريقة نفسها التي قيس بها الأساس"
+       },
+       {
+        "en": "Read the run chart before calling it a success",
+        "ar": "اقرأ الرسم التشغيلي قبل إعلان النجاح"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The after-change chart and its result against the goal",
+        "ar": "رسم ما بعد التغيير ونتيجته مقابل الهدف"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Success declared on another measure",
+        "ar": "نجاح يُعلن بمقياس آخر"
+       },
+       {
+        "en": "A period too short to judge",
+        "ar": "فترة قصيرة لا تكفي للحكم"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Sponsor",
+       "ar": "الراعي"
+      },
+      "kpi": {
+       "en": "Share of projects meeting their goal after the change",
+       "ar": "نسبة المشاريع التي تحقق هدفها بعد التغيير"
+      }
+     },
+     {
+      "ref": "s6-3",
+      "clause": "10.2.1 f",
+      "title": {
+       "en": "Standardise and hand over to the process owner",
+       "ar": "التوحيد والتسليم لمالك العملية"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization makes changes to the quality system if necessary (10.2.1 f)). In the project: what worked goes into the system (a procedure, a form, a contract, training), the project is handed over to the process owner on a date with the control plan, and what is left open moves to a PDCA cycle or a next project.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تُجري المنشأة تغييرات على نظام الجودة عند الحاجة (10.2.1 و)). وفي المشروع: ما نجح يدخل النظام (إجراء، نموذج، عقد، تدريب)، ويُسلَّم المشروع لمالك العملية بتاريخ ومعه خطة الضبط، وما بقي مفتوحاً ينتقل إلى دورة PDCA أو مشروع تالٍ."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the calibration project: the unified register and the transfer note in procedure QP-12 rev 4, handed over to the equipment manager on 13 October, with rented devices left in cycle PD-EX-02.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: مشروع المعايرة: السجل الموحد ومذكرة النقل في الإجراء QP-12 الإصدار 4، وسُلّم لمدير المعدات في 13 أكتوبر، وبقيت الأجهزة المستأجرة في دورة PD-EX-02."
+      },
+      "how": [
+       {
+        "en": "Hand the project over in a short meeting with the process owner",
+        "ar": "سلّم المشروع في اجتماع قصير مع مالك العملية"
+       },
+       {
+        "en": "Update the documents before the project closes",
+        "ar": "حدّث الوثائق قبل إغلاق المشروع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The revised documents and the hand-over date",
+        "ar": "الوثائق المعدلة وتاريخ التسليم"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A project that closes with nobody owning its result",
+        "ar": "مشروع يُغلق ولا يملك أحد نتيجته"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of projects handed over on a date",
+       "ar": "نسبة المشاريع المسلَّمة بتاريخ"
+      }
+     },
+     {
+      "ref": "s6-4",
+      "clause": "A.10.2",
+      "title": {
+       "en": "The extent of investigation and the methods by context",
+       "ar": "حجم التحقيق والطرق بحسب السياق"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: Annex A.10.2 explains that the organization decides how to address nonconformities, including the extent of investigation and the methods used, based on its context and needs, and considers the risk of recurrence, the impact and the requirements of customers and interested parties. A DMAIC project is one of these methods, chosen when the size of the problem and the uncertainty of its cause justify the effort.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يوضح الملحق A.10.2 أن المنشأة تحدد طريقة معالجة عدم المطابقة، ومنها مدى التحقيق والطرق المستخدمة، بحسب سياقها واحتياجاتها، وتنظر في خطر التكرار والأثر ومتطلبات العملاء والأطراف المعنية. فمشروع DMAIC واحد من الطرق، يُختار حين يبرر حجم المشكلة وغموض سببها جهده."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: repeated concrete rejections (SAR 38,000 in two months) justified a DMAIC project; a single superseded drawing on one site needed only a 5 Whys and a CAPA record.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: رفض الخرسانة المتكرر (38,000 ريال في شهرين) برر مشروع DMAIC؛ أما مخطط ملغى واحد في موقع فكفاه لماذا الخمس وسجل CAPA."
+      },
+      "how": [
+       {
+        "en": "Choose the method by risk and impact",
+        "ar": "اختر الطريقة بحسب الخطر والأثر"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The reason for choosing DMAIC in the charter",
+        "ar": "سبب اختيار DMAIC في الميثاق"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A DMAIC for every small problem",
+        "ar": "DMAIC لكل مشكلة صغيرة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Share of projects whose size justified the method",
+       "ar": "نسبة المشاريع التي برر حجمها المنهج"
+      }
+     }
+    ]
+   },
+   {
+    "id": "10.1",
+    "phase": "learn",
+    "title": {
+     "en": "Clause 10.1 Continual improvement",
+     "ar": "البند 10.1 التحسين المستمر"
+    },
+    "short": {
+     "en": "10.1 · Improvement",
+     "ar": "10.1 · التحسين"
+    },
+    "intro": {
+     "en": "DMAIC projects are part of continual improvement: they are chosen from analysis results and management review, and reviewed together to find patterns.",
+     "ar": "مشاريع DMAIC جزء من التحسين المستمر: تُختار من نتائج التحليل ومراجعة الإدارة، وتُراجع معاً لاكتشاف الأنماط."
+    },
+    "items": [
+     {
+      "ref": "s7-1",
+      "clause": "10.1",
+      "title": {
+       "en": "Projects chosen from the results",
+       "ar": "مشاريع تُختار من النتائج"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization continually improves the suitability, adequacy and effectiveness of the quality system, and considers the results of monitoring, measurement, analysis and evaluation and of management review to determine and address opportunities. Actions include improving processes, products and services, addressing future needs, and correcting, preventing or reducing undesired effects. The note to the clause says improvement can be incremental or a breakthrough.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحسّن المنشأة باستمرار ملاءمة نظام الجودة وكفايته وفعاليته، وتنظر في نتائج الرصد والقياس والتحليل والتقييم ونتائج مراجعة الإدارة لتحديد الفرص وتعالجها. ومن الإجراءات تحسين العمليات والمنتجات والخدمات، ومعالجة الاحتياجات المستقبلية، وتصحيح الآثار غير المرغوبة أو منعها أو تقليلها. وتذكر ملاحظة البند أن التحسين قد يكون تدريجياً أو اختراقياً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the formwork project was chosen from the cost-of-poor-quality Pareto PA-EX-03, where rework was the second largest category (SAR 214,000).",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: مشروع القوالب اختير من باريتو تكلفة الجودة الرديئة PA-EX-03، حيث كانت إعادة العمل ثاني أكبر فئة (214,000 ريال)."
+      },
+      "how": [
+       {
+        "en": "Choose projects from Pareto and management review",
+        "ar": "اختر المشاريع من باريتو ومراجعة الإدارة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The list of projects and their sources in management review",
+        "ar": "قائمة المشاريع ومصادرها في مراجعة الإدارة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Projects chosen by enthusiasm, not data",
+        "ar": "مشاريع تُختار بالحماس لا بالبيانات"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Share of projects chosen from data",
+       "ar": "نسبة المشاريع المختارة من البيانات"
+      }
+     },
+     {
+      "ref": "s7-2",
+      "clause": "4.2.6",
+      "title": {
+       "en": "ISO 9000:2026 · 4.2.6 Improvement",
+       "ar": "ISO 9000:2026 · 4.2.6 التحسين"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: successful organizations have an ongoing focus on improvement. Benefits named include a stronger focus on root cause investigation and determination followed by prevention and corrective actions, and considering both incremental and breakthrough improvement. Possible actions include teaching people the basic tools and methods of improvement, deploying processes to run improvement projects, and tracking, reviewing and auditing the planning, implementation, completion and results of improvement actions.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تركز المنشآت الناجحة على التحسين باستمرار. ومن فوائده المذكورة: تعزيز التركيز على البحث في السبب الجذري وتحديده ثم الإجراءات الوقائية والتصحيحية، والنظر في التحسين التدريجي والاختراقي. ومن الإجراءات الممكنة: تعليم الناس أدوات التحسين ومناهجه الأساسية، ونشر عمليات لتنفيذ مشاريع التحسين، وتتبع تخطيط إجراءات التحسين وتنفيذها وإكمالها ونتائجها ومراجعتها وتدقيقها."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the tool's dashboard tracks projects, their phases, gates and results, and its automatic audit reviews each project.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: لوحة مؤشرات الأداة تتبع المشاريع ومراحلها وبواباتها ونتائجها، وتدقيقها الآلي يراجع كل مشروع."
+      },
+      "how": [
+       {
+        "en": "Train project leads on the simple tools first",
+        "ar": "درّب قادة المشاريع على الأدوات البسيطة أولاً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The register of projects and their results",
+        "ar": "سجل المشاريع ونتائجها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Projects whose results nobody follows",
+        "ar": "مشاريع لا يتابع أحد نتائجها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Projects closed with the hand-over",
+       "ar": "عدد المشاريع المغلقة بالتسليم"
+      }
+     }
+    ]
+   },
+   {
+    "id": "7.1.6",
+    "phase": "learn",
+    "title": {
+     "en": "Clause 7.1.6 Organizational knowledge",
+     "ar": "البند 7.1.6 المعرفة التنظيمية"
+    },
+    "short": {
+     "en": "7.1.6 · Knowledge",
+     "ar": "7.1.6 · المعرفة"
+    },
+    "intro": {
+     "en": "What the project learnt about the process is kept and shared: why the defect happens, what prevents it and how it is measured.",
+     "ar": "ما تعلمه المشروع عن العملية يُحفظ ويُشارك: لماذا يحدث العيب، وما الذي يمنعه، وكيف يُقاس."
+    },
+    "items": [
+     {
+      "ref": "s8-1",
+      "clause": "7.1.6",
+      "title": {
+       "en": "Keep and share what the project learnt",
+       "ar": "احفظ ما تعلمه المشروع وشاركه"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization determines the knowledge needed to operate its processes and achieve quality system results, and retains, applies and shares it to the extent necessary. Its forms include experience-based knowledge, knowledge built into methods and processes, and knowledge held in documented information and digital systems.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحدد المنشأة المعرفة اللازمة لتشغيل عملياتها وتحقيق نتائج نظام الجودة، وتحتفظ بها وتطبقها وتشاركها بالقدر اللازم. ومن أشكالها المعرفة المبنية على الخبرة، والمعرفة المضمّنة في الطرق والعمليات، والمعرفة الممثّلة في المعلومات الموثقة والأنظمة الرقمية."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the rework coding guide became part of the timesheet instructions on every project, not only the formwork project.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: دليل ترميز إعادة العمل صار جزءاً من تعليمات سجلات الدوام في كل المشاريع، لا في مشروع القوالب فقط."
+      },
+      "how": [
+       {
+        "en": "Present the project in ten minutes to other teams",
+        "ar": "اعرض المشروع في عشر دقائق على الفرق الأخرى"
+       },
+       {
+        "en": "Put the lesson into the method itself",
+        "ar": "ضع الدرس في الطريقة نفسها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The register of shared projects and their lessons",
+        "ar": "سجل المشاريع المشاركة ودروسها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A project report in a file nobody opens",
+        "ar": "تقرير مشروع في ملف لا يفتحه أحد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Share of projects whose lessons were shared",
+       "ar": "نسبة المشاريع التي شوركت دروسها"
+      }
+     },
+     {
+      "ref": "s8-2",
+      "clause": "GD-7",
+      "title": {
+       "en": "Common gaps and what an auditor asks for",
+       "ar": "الفجوات الشائعة وما يطلبه المدقق"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: what weakens a DMAIC project most: starting from a known solution, a goal written after the analysis or moved, a baseline from data never checked, causes “proved” by vote, “human error” as a cause, solutions rolled out with no pilot, a result on another measure, a project closed with no hand-over, and gates by signature only. An auditor usually asks for: the charter, the goal and its date, the measurement check before the baseline, the data that proved each cause, the pilot result, the control plan and its reaction, the result after the change on the same measure, the revised documents and the gate record. The tool checks this automatically in the Audit tab.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: أكثر ما يضعف مشروع DMAIC: البدء بحل معروف، وهدف يُكتب بعد التحليل أو يتحرك، وأساس من بيانات لم يُتحقق منها، وأسباب «مثبتة» بالتصويت، و«الخطأ البشري» سبباً، وحلول تُعمَّم دون تجربة، ونتيجة بمقياس آخر، ومشروع يُغلق دون تسليم، وبوابات بالتوقيع فقط. ويطلب المدقق عادةً: الميثاق والهدف وتاريخه، ونتيجة التحقق من القياس قبل الأساس، والبيانات التي أثبتت كل سبب، ونتيجة التجربة، وخطة الضبط ورد فعلها، والنتيجة بعد التغيير بالمقياس نفسه، والوثائق المعدلة، وسجل البوابات. الأداة تفحص هذا آلياً في تبويب التدقيق."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the automatic audit on the formwork project: every check passes up to the baseline, and “a cause proved with data” is still a gap because the project is in Analyse.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: التدقيق الآلي على مشروع القوالب: كل الفحوص ناجحة حتى الأساس، وفحص «سبب مثبت بالبيانات» ما زال ثغرة لأن المشروع في التحليل."
+      },
+      "how": [
+       {
+        "en": "Check the Audit tab before each gate",
+        "ar": "راجع تبويب التدقيق قبل كل بوابة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The automatic audit result for each project",
+        "ar": "نتيجة التدقيق الآلي لكل مشروع"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A project with good slides and no data",
+        "ar": "مشروع جميل العرض بلا بيانات"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Internal auditor",
+       "ar": "المدقق الداخلي"
+      },
+      "kpi": {
+       "en": "Audit pass rate",
+       "ar": "نسبة الفحوص الناجحة"
+      }
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "id": "six",
+    "q": {
+     "en": "Is DMAIC only for Six Sigma experts?",
+     "ar": "هل DMAIC لخبراء Six Sigma فقط؟"
+    },
+    "a": {
+     "en": "No. **DMAIC is a structured way of thinking before it is a set of statistical tools**: define the problem and its goal, trust the measurement, prove the cause with data, pilot the solution, then control it and hand it over. Most projects need only simple tools: a run chart, a mean and a median, a defect rate, a two-group comparison and a stratified Pareto. Belts and certificates organise training; they are not a condition of the method. What cannot be skipped: a problem whose cause is unknown, data that can be collected, and a sponsor who reviews the gates. Details in the [[tab:explain-std]].",
+     "ar": "لا. **DMAIC طريقة تفكير منظمة قبل أن يكون أدوات إحصائية**: عرّف المشكلة وهدفها، ثق بالقياس، أثبت السبب بالبيانات، جرّب الحل، ثم اضبطه وسلّمه. وفي أغلب المشاريع تكفي أدوات بسيطة: رسم تشغيلي، ومتوسط ووسيط، ونسبة عيوب، ومقارنة مجموعتين، وباريتو مقسّم. الأحزمة والشهادات تنظيم للتدريب وليست شرطاً للمنهج. ما لا غنى عنه: مشكلة سببها غير معروف، وبيانات يمكن جمعها، وراعٍ يراجع البوابات. التفاصيل في [[tab:explain-std]]."
+    }
+   },
+   {
+    "id": "which",
+    "q": {
+     "en": "DMAIC, A3 or PDCA — which one?",
+     "ar": "DMAIC أم A3 أم PDCA: أيها أستخدم؟"
+    },
+    "a": {
+     "en": "They are not alternatives. **PDCA is the general cycle** of improvement. **An A3 is the story of one cycle on one page**, owned by one person and coached, and it suits most everyday problems. **DMAIC is a larger data-driven project** for a problem whose cause is unknown and whose process can be measured, with phases, gates, a sponsor and a measurement check. When an A3 does not close the gap (as in the concrete example: 6% against a goal below 3%), DMAIC starts where it stopped, and a PDCA cycle then follows the control. CAPA carries the corrective actions when a nonconformity is involved.",
+     "ar": "هي ليست بدائل. **PDCA هي الدورة** العامة للتحسين. و**A3 قصة دورة واحدة على صفحة واحدة** يملكها شخص ويوجّهه موجّه، وتناسب أغلب المشكلات اليومية. و**DMAIC مشروع أكبر قائم على البيانات** لمشكلة سببها غير معروف وعمليتها قابلة للقياس، بمراحل وبوابات وراعٍ وتحقق من القياس. فإذا لم تُغلق صفحة A3 الفجوة (كما في مثال الخرسانة: 6% مقابل هدف أقل من 3%)، يبدأ DMAIC من حيث انتهت، ثم تتابع دورة PDCA الضبط. وCAPA يحمل الإجراءات التصحيحية عندما توجد حالة عدم مطابقة."
+    }
+   },
+   {
+    "id": "when",
+    "q": {
+     "en": "When is DMAIC the wrong choice?",
+     "ar": "متى لا يكون DMAIC هو الاختيار الصحيح؟"
+    },
+    "a": {
+     "en": "When **the solution is known**: that is an implementation project; do it and follow it with a plan. When **no data can be collected** on the problem, or the problem is small and a 5 Whys or an A3 solves it in days. When the event is severe and one-off and needs a full investigation, start with an RCA. That is why the Define gate asks first: do we already know the solution? If the answer is yes, the right decision is to stop the project at the gate.",
+     "ar": "عندما يكون **الحل معروفاً**: هذا مشروع تنفيذ، نفّذه وتابعه بخطة. وعندما **لا يمكن جمع بيانات** عن المشكلة، أو كانت المشكلة صغيرة ويحلها لماذا الخمس أو صفحة A3 في أيام. وعندما يكون الحدث جسيماً لمرة واحدة ويحتاج تحقيقاً كاملاً، فابدأ بتحقيق RCA. لذلك تسأل بوابة التعريف أولاً: هل نعرف الحل مسبقاً؟ وإن كان الجواب نعم، فالقرار الصحيح «إيقاف المشروع» عند البوابة."
+    }
+   },
+   {
+    "id": "msa",
+    "q": {
+     "en": "Why check the measurement before the baseline?",
+     "ar": "لماذا نتحقق من القياس قبل الأساس؟"
+    },
+    "a": {
+     "en": "Because **a measure that cannot be trusted makes every later phase unreliable**: the baseline, the causes and the result. In the concrete example the thermometers were compared with a calibrated probe; one read 2 °C low and was replaced before the baseline was fixed. For classification data (defect or not), an attribute agreement check is usually enough: two people classify the same sample against a rule written beforehand (for example 90% agreement). ISO 9001:2026 clause 7.1.5 asks for measuring resources that give valid and reliable results.",
+     "ar": "لأن **مقياساً لا يُوثق به يجعل كل مرحلة بعده غير موثوقة**: الأساس والأسباب والنتيجة. في مثال الخرسانة قورنت موازين الحرارة بمجس معاير، فوُجد ميزان يقرأ أقل بدرجتين واستُبدل قبل تثبيت الأساس. وفي البيانات المصنفة (عيب أو لا) يكفي غالباً فحص اتفاق المقيّمين: شخصان يصنفان العينة نفسها، والقاعدة مكتوبة مسبقاً (مثلاً 90% اتفاق). ويطلب البند 7.1.5 من ISO 9001:2026 موارد قياس تعطي نتائج صحيحة وموثوقة."
+    }
+   },
+   {
+    "id": "gate",
+    "q": {
+     "en": "What happens at a gate review?",
+     "ar": "ماذا يحدث في بوابة المرحلة؟"
+    },
+    "a": {
+     "en": "At the end of each phase **the sponsor reviews it through questions, not a signature**: is the cause really unknown? Can we trust the measurement? What is the difference between the two groups, and is the sample large enough? Did the pilot reach the goal? Who owns the control plan now? The decision is pass, rework or stop. In the tool the next phase counts only after the gate is passed with a date, the reviewer's name and the questions, and it warns when a gate is recorded under the project lead's name.",
+     "ar": "في نهاية كل مرحلة **يراجعها الراعي بالأسئلة لا بالتوقيع**: هل السبب فعلاً غير معروف؟ هل نثق بالقياس؟ ما الفرق بين المجموعتين، وهل يكفي حجم العينة؟ هل بلغت التجربة الهدف؟ من يملك خطة الضبط الآن؟ ويكون القرار اجتيازاً أو إعادة عمل أو إيقافاً. وفي الأداة لا تُحسب المرحلة التالية إلا بعد اجتياز البوابة بتاريخ واسم المراجع والأسئلة، وتنبّه إذا سُجلت البوابة باسم قائد المشروع."
+    }
+   },
+   {
+    "id": "stats",
+    "q": {
+     "en": "Do I need advanced statistics?",
+     "ar": "هل أحتاج إحصاءً متقدماً؟"
+    },
+    "a": {
+     "en": "Usually not. **Statistics serve the decision**, and simple tools are enough in most projects: a run chart with its median, a defect rate, and a comparison of two rates or two means. The tool computes the difference between the two groups and a simple z estimate: |z| ≥ 2 means the difference is unlikely to be chance. Cpk shows, as indicative only, with ten points or more and a specification limit. The note to clause 9.1.3 says analysis methods can include statistical techniques; a means, not a condition.",
+     "ar": "غالباً لا. **الإحصاء يخدم القرار**، والأدوات البسيطة تكفي في أغلب المشاريع: رسم تشغيلي بالوسيط، ونسبة عيوب، ومقارنة نسبتين أو متوسطين. تحسب الأداة الفرق بين المجموعتين، وتقدّر z بطريقة مبسطة: |z| ≥ 2 يعني أن الفرق يصعب أن يكون مصادفة. وCpk يظهر استرشادياً فقط عند عشر نقاط أو أكثر وحد مواصفة. وتقول ملاحظة البند 9.1.3 إن طرق التحليل قد تشمل تقنيات إحصائية؛ أي أنها وسيلة وليست شرطاً."
+    }
+   }
+  ],
+  "competencies": [
+   "QM-02",
+   "QM-03",
+   "OE-02"
+  ],
+  "ecosystem": "quality"
+ }
+}

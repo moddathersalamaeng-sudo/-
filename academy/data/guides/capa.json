@@ -1,0 +1,1458 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-CAPA",
+  "slug": "capa",
+  "kind": "method",
+  "module": "capa",
+  "title": {
+   "en": "CAPA — Corrective action",
+   "ar": "CAPA — الإجراءات التصحيحية"
+  },
+  "subtitle": {
+   "en": "Method tool built on ISO 9001:2026 clause 10.2",
+   "ar": "أداة منهجية مبنية على ISO 9001:2026 البند 10.2"
+  },
+  "lede": {
+   "en": "To deal with every nonconformity twice: once by correcting the case itself, and once by removing its cause so it does not recur there or elsewhere. Then prove with data that the action worked before the record is closed.",
+   "ar": "أن تعالج كل عدم مطابقة مرتين: مرة بتصحيح الحالة نفسها، ومرة بإزالة سببها حتى لا تتكرر في المكان نفسه ولا في مكان آخر. ثم تثبت بالبيانات أن الإجراء نجح قبل أن يُغلق السجل."
+  },
+  "author": "مدثر سلامه",
+  "note": {
+   "en": "CAPA is a way of working, not a certification standard. The requirement it serves is clause 10.2 of ISO 9001:2026, which is audited as part of the quality management system.",
+   "ar": "CAPA طريقة عمل وليست مواصفة إشهاد. المتطلب الذي تخدمه هو البند 10.2 من ISO 9001:2026، ويُدقَّق عليه ضمن نظام إدارة الجودة."
+  },
+  "who": {
+   "en": "Process owners, quality, HSE and environment managers, site and production supervisors, internal auditors, and top management, who review trends and decide on resources.",
+   "ar": "مالكو العمليات، ومديرو الجودة والسلامة والبيئة، ومشرفو المواقع والإنتاج، والمدققون الداخليون، والإدارة العليا التي تراجع الاتجاهات وتقرر الموارد."
+  },
+  "roles": [
+   {
+    "name": {
+     "en": "Whoever finds it",
+     "ar": "من يكتشف"
+    },
+    "text": {
+     "en": "An inspector, an auditor or any employee: records the nonconformity with evidence and reports it at once.",
+     "ar": "مفتش أو مدقق أو أي موظف: يسجّل عدم المطابقة بدليل ويبلغ فوراً."
+    }
+   },
+   {
+    "name": {
+     "en": "Process owner",
+     "ar": "مالك العملية"
+    },
+    "text": {
+     "en": "Reacts to the case, leads the cause analysis and owns the action plan.",
+     "ar": "يتفاعل مع الحالة، ويقود تحليل السبب، ويملك خطة الإجراء."
+    }
+   },
+   {
+    "name": {
+     "en": "Action owner",
+     "ar": "مالك الإجراء"
+    },
+    "text": {
+     "en": "Carries out the action on time and keeps the implementation evidence.",
+     "ar": "ينفذ إجراءه في موعده ويحفظ دليل التنفيذ."
+    }
+   },
+   {
+    "name": {
+     "en": "Quality officer",
+     "ar": "مسؤول الجودة"
+    },
+    "text": {
+     "en": "Tracks dates, reviews effectiveness and analyses trends.",
+     "ar": "يتابع المواعيد، ويراجع الفعالية، ويحلل الاتجاهات."
+    }
+   },
+   {
+    "name": {
+     "en": "Approver",
+     "ar": "المعتمد"
+    },
+    "text": {
+     "en": "An authorized manager who approves closure once effectiveness is shown.",
+     "ar": "مدير مخوّل يوافق على الإغلاق بعد ثبوت الفعالية."
+    }
+   },
+   {
+    "name": {
+     "en": "Top management",
+     "ar": "الإدارة العليا"
+    },
+    "text": {
+     "en": "Reviews trends in nonconformities and actions, and decides on resources and changes.",
+     "ar": "تراجع اتجاهات عدم المطابقة والإجراءات، وتقرر الموارد والتغييرات."
+    }
+   },
+   {
+    "name": {
+     "en": "Internal auditor",
+     "ar": "المدقق الداخلي"
+    },
+    "text": {
+     "en": "Verifies at follow-up that actions were completed and were effective.",
+     "ar": "يتحقق في المتابعة من إنجاز الإجراءات ومن فعاليتها."
+    }
+   }
+  ],
+  "steps": [
+   {
+    "no": "1",
+    "title": {
+     "en": "React",
+     "ar": "التفاعل"
+    },
+    "text": {
+     "en": "Correct and contain the case and deal with its consequences, with a date.",
+     "ar": "صحّح الحالة واحتوِها وتعامل مع عواقبها، بتاريخ."
+    },
+    "ref": "10.2.1 a"
+   },
+   {
+    "no": "2",
+    "title": {
+     "en": "Analyse the cause",
+     "ar": "تحليل السبب"
+    },
+    "text": {
+     "en": "Find the root cause with a known method and evidence, and look for similar cases.",
+     "ar": "حدّد السبب الجذري بطريقة معروفة ودليل، وابحث عن الحالات المشابهة."
+    },
+    "ref": "10.2.1 b"
+   },
+   {
+    "no": "3",
+    "title": {
+     "en": "Action plan",
+     "ar": "خطة الإجراء"
+    },
+    "text": {
+     "en": "Actions that remove the cause, each with an owner, a due date and a status.",
+     "ar": "إجراءات تعالج السبب، لكل منها مالك وموعد وحالة."
+    },
+    "ref": "10.2.1 c"
+   },
+   {
+    "no": "4",
+    "title": {
+     "en": "Implement and keep evidence",
+     "ar": "التنفيذ والدليل"
+    },
+    "text": {
+     "en": "Carry out the actions and keep the evidence of each with the record.",
+     "ar": "نفّذ الإجراءات واحفظ دليل كل منها مع السجل."
+    },
+    "ref": "10.2.2"
+   },
+   {
+    "no": "5",
+    "title": {
+     "en": "Effectiveness review",
+     "ar": "مراجعة الفعالية"
+    },
+    "text": {
+     "en": "Measure against a set criterion on a set date; “not effective” reopens the record.",
+     "ar": "قِس بمعيار محدد في موعد محدد؛ «غير فعال» يعيد فتح السجل."
+    },
+    "ref": "10.2.1 d"
+   },
+   {
+    "no": "6",
+    "title": {
+     "en": "Updates",
+     "ar": "التحديثات"
+    },
+    "text": {
+     "en": "Update risks and opportunities and the management system where needed.",
+     "ar": "حدّث المخاطر والفرص ونظام الإدارة عند الحاجة."
+    },
+    "ref": "10.2.1 e"
+   },
+   {
+    "no": "7",
+    "title": {
+     "en": "Closure",
+     "ar": "الإغلاق"
+    },
+    "text": {
+     "en": "Close with a justification and an authorized approval once effectiveness is shown.",
+     "ar": "أغلق بتبرير وموافقة شخص مخوّل بعد ثبوت الفعالية."
+    },
+    "ref": "7.5.3"
+   }
+  ],
+  "related": [
+   {
+    "code": "PDCA",
+    "name": {
+     "en": "Continual improvement cycle",
+     "ar": "دورة التحسين المستمر"
+    },
+    "text": {
+     "en": "When a corrective action needs a change measured in stages, a PDCA cycle carries it and its number is written in the CAPA record.",
+     "ar": "عندما يحتاج الإجراء التصحيحي تغييراً يُقاس على مراحل، تحمله دورة PDCA ويُسجَّل رقمها في سجل CAPA."
+    }
+   },
+   {
+    "code": "AUDIT",
+    "name": {
+     "en": "Smart audit & improvement center",
+     "ar": "مركز التدقيق والتحسين الذكي"
+    },
+    "text": {
+     "en": "Findings and actions recorded there are imported here after a preview, with no change to the center's data.",
+     "ar": "الملاحظات والإجراءات المسجلة هناك تُستورد هنا بعد المعاينة، دون أي تعديل على بيانات المركز."
+    }
+   },
+   {
+    "code": "ISO 9001",
+    "name": {
+     "en": "Quality management system",
+     "ar": "نظام إدارة الجودة"
+    },
+    "text": {
+     "en": "Clause 10.2 is part of the quality management system requirements and is asked about in every certification audit.",
+     "ar": "البند 10.2 جزء من متطلبات نظام إدارة الجودة، ويُسأل عنه في كل تدقيق إشهاد."
+    }
+   },
+   {
+    "code": "5 Whys",
+    "name": {
+     "en": "Root cause analysis",
+     "ar": "تحليل السبب الجذري"
+    },
+    "text": {
+     "en": "Starts the analysis from a CAPA record and sends the root cause back to it; the cause analysis section here lists the analyses that name the record.",
+     "ar": "تبدأ التحليل من سجل CAPA وتعيد السبب الجذري إليه؛ ويعرض قسم تحليل السبب هنا التحليلات التي تذكر السجل."
+    }
+   }
+  ],
+  "serves": [
+   {
+    "code": "ISO 9001:2026 §10.2",
+    "name": {
+     "en": "Nonconformity and corrective action",
+     "ar": "عدم المطابقة والإجراء التصحيحي"
+    },
+    "text": {
+     "en": "The requirement the tool is built on: react, evaluate the need for action, implement, review effectiveness, update, keep records.",
+     "ar": "المتطلب الذي تبني عليه الأداة: التفاعل، وتقييم الحاجة إلى إجراء، والتنفيذ، ومراجعة الفعالية، والتحديث، والسجلات."
+    }
+   },
+   {
+    "code": "ISO 9000:2026 §3.6",
+    "name": {
+     "en": "Terms related to action",
+     "ar": "مصطلحات الإجراءات"
+    },
+    "text": {
+     "en": "Definitions of correction, corrective action and preventive action, and how they differ.",
+     "ar": "تعريفات التصحيح والإجراء التصحيحي والإجراء الوقائي، والفرق بينها."
+    }
+   },
+   {
+    "code": "ISO 19011:2026 §6.7",
+    "name": {
+     "en": "Audit follow-up",
+     "ar": "متابعة التدقيق"
+    },
+    "text": {
+     "en": "Guidance on verifying that actions from an audit were completed and were effective.",
+     "ar": "إرشاد للتحقق من إنجاز الإجراءات الناتجة عن التدقيق ومن فعاليتها."
+    }
+   }
+  ],
+  "clauses": [
+   {
+    "id": "8.7",
+    "phase": "detect",
+    "title": {
+     "en": "Clause 8.7 Control of nonconforming outputs",
+     "ar": "البند 8.7 ضبط المخرجات غير المطابقة"
+    },
+    "short": {
+     "en": "8.7 · Nonconforming outputs",
+     "ar": "8.7 · ضبط المخرجات"
+    },
+    "intro": {
+     "en": "Before any analysis or action, a nonconforming output must be stopped from reaching the customer or being used. Most CAPA records on sites and in plants start here.",
+     "ar": "قبل أي تحليل أو إجراء، يجب أن يتوقف المخرج غير المطابق عن الوصول إلى العميل أو الاستخدام. من هنا تبدأ أغلب سجلات CAPA في المواقع والمصانع."
+    },
+    "items": [
+     {
+      "ref": "s1-1",
+      "clause": "8.7.1",
+      "title": {
+       "en": "Contain the nonconforming output and decide how to deal with it",
+       "ar": "اعزل المخرج غير المطابق وقرّر طريقة التعامل معه"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization identifies nonconforming outputs and controls them so they are not used or delivered by mistake, including those found after delivery. It deals with them in one or more ways: correction; segregation, containment, return or suspension; informing the customer; or acceptance under an authorized concession. After a correction, conformity is verified.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحدد المنشأة المخرجات غير المطابقة وتضبطها حتى لا تُستخدم أو تُسلَّم دون قصد، ويشمل ذلك ما يُكتشف بعد التسليم. وتتعامل معها بطريقة أو أكثر: التصحيح، أو العزل والاحتواء أو الإرجاع أو إيقاف التقديم، أو إبلاغ العميل، أو القبول بتنازل معتمد. وبعد التصحيح يُتحقق من المطابقة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: a delivery of reinforcing steel arrived without mill certificates; it was tagged “on hold” and moved to a separate area until the certificates arrived or the load was rejected.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: وصلت شحنة حديد تسليح دون شهادات المصنع، فوُضعت عليها بطاقة «موقوف» وعُزلت في منطقة منفصلة حتى تصل الشهادات أو تُرفض الشحنة."
+      },
+      "how": [
+       {
+        "en": "Put a clear tag on the contained output and record where it is",
+        "ar": "ضع بطاقة واضحة على المخرج المعزول وسجّل مكانه"
+       },
+       {
+        "en": "Name who has authority to accept under concession, and write it in the record",
+        "ar": "حدّد من يملك صلاحية القبول بتنازل، واكتب اسمه في السجل"
+       },
+       {
+        "en": "After a correction, re-inspect and record the result",
+        "ar": "بعد التصحيح أعد الفحص وسجّل نتيجته"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Hold tag or containment record with its date",
+        "ar": "بطاقة الإيقاف أو سجل العزل بتاريخه"
+       },
+       {
+        "en": "The decision on the output and who took it",
+        "ar": "قرار التعامل مع المخرج ومن اتخذه"
+       },
+       {
+        "en": "Re-inspection result after the correction",
+        "ar": "نتيجة إعادة الفحص بعد التصحيح"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A nonconforming output used before a decision",
+        "ar": "مخرج غير مطابق استُخدم قبل القرار"
+       },
+       {
+        "en": "Acceptance under concession with no documented authority",
+        "ar": "قبول بتنازل دون صلاحية موثقة"
+       },
+       {
+        "en": "A correction with no re-inspection",
+        "ar": "تصحيح دون إعادة فحص"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Site or production supervisor",
+       "ar": "مشرف الموقع أو الإنتاج"
+      },
+      "kpi": {
+       "en": "Time from detection to containment",
+       "ar": "الزمن من الاكتشاف حتى العزل"
+      }
+     },
+     {
+      "ref": "s1-2",
+      "clause": "8.7.2",
+      "title": {
+       "en": "Keep evidence of the nonconformity and the decision",
+       "ar": "احتفظ بدليل طبيعة عدم المطابقة والقرار"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: documented information is kept on the nature of the nonconformity, the actions taken, any concession obtained and who decided the action.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تُحفظ معلومات موثقة تبيّن طبيعة عدم المطابقة، والإجراءات المتخذة، وأي تنازل حصلت عليه المنشأة، والجهة التي قررت الإجراء."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: an NCR with its number, description and photos, and the decision “return to supplier” signed by the quality manager.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: تقرير عدم مطابقة NCR يحمل رقمه ووصفه وصوره، وقرار «إرجاع للمورد» بتوقيع مدير الجودة."
+      },
+      "how": [
+       {
+        "en": "Use one NCR form on every site",
+        "ar": "استخدم نموذج NCR واحداً في كل المواقع"
+       },
+       {
+        "en": "Link the NCR number to the CAPA record when corrective action is needed",
+        "ar": "اربط رقم NCR بسجل CAPA عندما يلزم إجراء تصحيحي"
+       }
+      ],
+      "ev": [
+       {
+        "en": "NCRs with every field complete",
+        "ar": "تقارير NCR مكتملة الحقول"
+       },
+       {
+        "en": "Signature of the person with authority on the decision",
+        "ar": "توقيع صاحب الصلاحية على القرار"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An NCR with no decision or no name of who decided",
+        "ar": "NCR بلا قرار أو بلا اسم من قرر"
+       },
+       {
+        "en": "Records scattered across email and phone",
+        "ar": "سجلات متفرقة في البريد والهاتف"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality officer",
+       "ar": "مسؤول الجودة"
+      },
+      "kpi": {
+       "en": "Share of NCRs with every field complete",
+       "ar": "نسبة تقارير NCR المكتملة الحقول"
+      }
+     }
+    ]
+   },
+   {
+    "id": "10.2",
+    "phase": "act",
+    "title": {
+     "en": "Clause 10.2 Nonconformity and corrective action",
+     "ar": "البند 10.2 عدم المطابقة والإجراء التصحيحي"
+    },
+    "short": {
+     "en": "10.2 · Corrective action",
+     "ar": "10.2 · الإجراء التصحيحي"
+    },
+    "intro": {
+     "en": "The heart of the CAPA tool: react to the nonconformity, decide whether action is needed to remove its cause, carry it out and review its effectiveness, update risks and the system where needed, and keep the records.",
+     "ar": "قلب أداة CAPA: التفاعل مع عدم المطابقة، ثم تقرير هل يلزم إجراء يزيل سببها، ثم التنفيذ ومراجعة الفعالية، وتحديث المخاطر والنظام عند الحاجة، مع الاحتفاظ بالسجلات."
+    },
+    "items": [
+     {
+      "ref": "s2-1",
+      "clause": "10.2.1 a",
+      "title": {
+       "en": "React to the nonconformity and deal with its consequences",
+       "ar": "تفاعل مع عدم المطابقة وتعامل مع عواقبها"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: when a nonconformity occurs, the organization reacts to it and, as applicable, takes action to control and correct it and deals with the consequences. ISO 9000:2026 (3.6.3) describes correction as action to eliminate the detected nonconformity itself.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: عند وقوع عدم مطابقة تتفاعل المنشأة معها، وبحسب الحالة تتخذ إجراءً لضبطها وتصحيحها، وتتعامل مع عواقبها. والتصحيح في ISO 9000:2026 (3.6.3) إجراء يزيل عدم المطابقة المكتشفة نفسها."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: superseded drawings were found in use on site B; the old copies were withdrawn the same day and the engineer reviewed the work built from them over the previous two weeks.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: اكتُشف استخدام مخططات ملغاة في الموقع ب، فسُحبت النسخ القديمة في اليوم نفسه، وراجع المهندس ما نُفّذ عليها خلال الأسبوعين السابقين."
+      },
+      "how": [
+       {
+        "en": "Record correction and containment with their date",
+        "ar": "سجّل التصحيح والاحتواء بتاريخهما"
+       },
+       {
+        "en": "Ask what was affected before detection, then deal with it",
+        "ar": "اسأل: ما الذي تأثر قبل الاكتشاف؟ ثم عالجه"
+       },
+       {
+        "en": "Inform the customer when something delivered is affected",
+        "ar": "أبلغ العميل عندما يتأثر ما سُلّم له"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Date of correction and containment",
+        "ar": "تاريخ التصحيح والاحتواء"
+       },
+       {
+        "en": "List of affected work or products and the decision on each",
+        "ar": "قائمة الأعمال أو المنتجات المتأثرة وما تقرر بشأنها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Fixing the single case without looking at consequences",
+        "ar": "تصحيح الحالة وحدها دون النظر في العواقب"
+       },
+       {
+        "en": "A reaction with no date",
+        "ar": "تفاعل غير مؤرّخ"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Average days to react",
+       "ar": "متوسط الأيام حتى التفاعل"
+      }
+     },
+     {
+      "ref": "s2-2",
+      "clause": "10.2.1 b",
+      "title": {
+       "en": "Evaluate the need for action on the cause, and determine the causes",
+       "ar": "قيّم الحاجة إلى إجراء يزيل السبب، وحدّد الأسباب"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization evaluates the need for action to eliminate the cause so the nonconformity does not recur or occur elsewhere, by reviewing it and determining its causes. Annex A.10.2 explains that the organization sets the extent of investigation and the methods for its context, considering the risk of recurrence, the impact and customer requirements.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تقيّم المنشأة الحاجة إلى إجراء يزيل سبب عدم المطابقة حتى لا تتكرر ولا تحدث في مكان آخر، بمراجعة عدم المطابقة وتحديد أسبابها. ويوضح الملحق A.10.2 أن المنشأة تحدد مدى التحقيق والطرق المستخدمة بحسب سياقها، مع مراعاة خطر التكرار والأثر ومتطلبات العملاء."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: a 5 Whys for the steel delivery: why no certificates? Because the purchase order did not ask for them. Why? Because the purchase order form has no certificate clause for structural materials.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: تحليل 5 Whys لشحنة الحديد: لماذا وصلت دون شهادات؟ لأن أمر الشراء لم يطلبها. ولماذا؟ لأن نموذج أمر الشراء لا يحتوي بند الشهادات للمواد الإنشائية."
+      },
+      "how": [
+       {
+        "en": "Pick a method that fits the problem: 5 Whys for direct problems, Fishbone when several causes act together",
+        "ar": "اختر طريقة تناسب حجم المشكلة: 5 Whys للمشكلات المباشرة، وFishbone عندما تتعدد الأسباب"
+       },
+       {
+        "en": "Collect evidence for each cause before accepting it",
+        "ar": "اجمع الدليل على كل سبب قبل اعتماده"
+       },
+       {
+        "en": "Stop at a cause the organization can control",
+        "ar": "توقّف عند سبب تستطيع المنشأة التحكم فيه"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The analysis output (5 Whys or Fishbone)",
+        "ar": "مخرجات التحليل (5 Whys أو Fishbone)"
+       },
+       {
+        "en": "Evidence supporting the root cause",
+        "ar": "الدليل الذي يدعم السبب الجذري"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A root cause that says only “human error”",
+        "ar": "سبب جذري مكتوب «خطأ بشري» فقط"
+       },
+       {
+        "en": "Choosing the action before the analysis",
+        "ar": "اختيار الإجراء قبل التحليل"
+       },
+       {
+        "en": "Analysis without evidence",
+        "ar": "تحليل دون دليل"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Analysis team led by the process owner",
+       "ar": "فريق التحليل بقيادة مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of records with an evidence-backed root cause",
+       "ar": "نسبة السجلات التي لها سبب جذري مدعوم بدليل"
+      }
+     },
+     {
+      "ref": "s2-3",
+      "clause": "10.2.1 b 3",
+      "title": {
+       "en": "Check whether similar nonconformities exist or could occur",
+       "ar": "تحقّق من وجود حالات مشابهة أو احتمال حدوثها"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: part of the evaluation is determining whether similar nonconformities exist or could potentially occur. This is what stops a problem being fixed on one site and left on another.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: من خطوات التقييم تحديد ما إذا كانت حالات مشابهة موجودة فعلاً أو قد تحدث. وهذا ما يمنع أن يُصحَّح الخطأ في موقع ويبقى في موقع آخر."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: after the superseded drawings on site B, sites A and C were checked and two superseded copies were found on site C.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بعد اكتشاف المخططات الملغاة في الموقع ب، فُحص الموقعان أ وج، ووُجدت نسختان ملغاتان في الموقع ج."
+      },
+      "how": [
+       {
+        "en": "Ask where the same thing could happen",
+        "ar": "اسأل: أين يمكن أن يحدث الشيء نفسه؟"
+       },
+       {
+        "en": "Check a sample of similar sites or processes and record the result",
+        "ar": "افحص عينة من المواقع أو العمليات المشابهة وسجّل النتيجة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Result of the check on similar sites or processes",
+        "ar": "نتيجة فحص المواقع أو العمليات المشابهة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Closing the case without looking beyond where it happened",
+        "ar": "إغلاق الحالة دون النظر خارج مكانها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality officer",
+       "ar": "مسؤول الجودة"
+      },
+      "kpi": {
+       "en": "Share of records where similar cases were checked",
+       "ar": "نسبة السجلات التي فُحصت فيها الحالات المشابهة"
+      }
+     },
+     {
+      "ref": "s2-4",
+      "clause": "10.2.1 c",
+      "title": {
+       "en": "Implement the action needed, with an owner and a date",
+       "ar": "نفّذ الإجراء اللازم بمالك وموعد"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization implements any action needed. In practice this means a plan of specific actions, each with an owner, a due date and a status, and evidence that it was done.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تنفذ المنشأة أي إجراء لازم. وفي الممارسة يعني ذلك خطة بإجراءات محددة، لكل منها مالك وموعد وحالة، مع دليل على التنفيذ."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: revise the purchase order form to include a mill certificate clause — Procurement manager — 2026-05-15 — done; evidence: the revised form with its new revision number.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: تعديل نموذج أمر الشراء ليشمل بند شهادات المصنع — مدير المشتريات — 2026-05-15 — منفّذ، والدليل: النموذج المعدّل بإصداره الجديد."
+      },
+      "how": [
+       {
+        "en": "Write each action as a clear task whose completion can be checked",
+        "ar": "اكتب كل إجراء بفعل واضح يمكن التحقق من إنجازه"
+       },
+       {
+        "en": "Track the status weekly until done",
+        "ar": "تابع الحالة أسبوعياً حتى الإنجاز"
+       },
+       {
+        "en": "Keep the implementation evidence with the record",
+        "ar": "احفظ دليل التنفيذ مع السجل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Action plan with owner, due date and status",
+        "ar": "خطة الإجراءات بالمالك والموعد والحالة"
+       },
+       {
+        "en": "Implementation evidence: a revised document, a training record or a photo",
+        "ar": "دليل التنفيذ: وثيقة معدلة أو سجل تدريب أو صورة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An action with no owner or date",
+        "ar": "إجراء بلا مالك أو موعد"
+       },
+       {
+        "en": "Overdue actions with no follow-up",
+        "ar": "إجراءات متأخرة دون متابعة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Action owner",
+       "ar": "مالك الإجراء"
+      },
+      "kpi": {
+       "en": "Share of actions done on time",
+       "ar": "نسبة الإجراءات المنفذة في موعدها"
+      }
+     },
+     {
+      "ref": "s2-5",
+      "clause": "GD-1",
+      "title": {
+       "en": "Make the action fit the effect and remove the cause",
+       "ar": "اجعل الإجراء مناسباً لأثر المشكلة ويعالج سببها"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: clause 10.2.1 ends by saying corrective actions are appropriate to the effects of the nonconformities. A minor slip does not need a new system, and a repeated problem that reached the customer is not solved by a reminder. ISO 9000:2026 (3.6.4) describes corrective action as removing the cause and preventing recurrence.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يختم البند 10.2.1 بأن الإجراءات التصحيحية تكون مناسبة لآثار عدم المطابقة. فلا يُبنى نظام كامل لخطأ بسيط، ولا يُكتفى بتذكير لخطأ تكرر ووصل إلى العميل. والإجراء التصحيحي في ISO 9000:2026 (3.6.4) يزيل السبب ويمنع التكرار."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: repeated concrete rejections were first handled with a reminder to the supplier and came back. The fitting action was a contract clause on chilled mixing water plus a temperature check at the plant.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: رفض الخرسانة المتكرر عولج أولاً بتذكير المورد فقط، ثم تكرر. الإجراء المناسب كان شرطاً تعاقدياً لتبريد ماء الخلط مع فحص الحرارة في المصنع."
+      },
+      "how": [
+       {
+        "en": "Compare the action with the root cause: does it really remove it?",
+        "ar": "قارن الإجراء بالسبب الجذري: هل يزيله فعلاً؟"
+       },
+       {
+        "en": "Do not rely on training or reminders alone",
+        "ar": "لا تعتمد على التدريب أو التذكير وحدهما"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A clear link between each action and a cause",
+        "ar": "ربط واضح بين كل إجراء وسبب"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Training or a reminder with no change to the method",
+        "ar": "تدريب أو تذكير دون تغيير في الطريقة"
+       },
+       {
+        "en": "An action far bigger than the problem",
+        "ar": "إجراء أكبر بكثير من المشكلة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of actions that changed a method, a form or an authority",
+       "ar": "نسبة الإجراءات التي غيّرت طريقة أو نموذجاً أو صلاحية"
+      }
+     },
+     {
+      "ref": "s2-6",
+      "clause": "10.2.1 d",
+      "title": {
+       "en": "Review the effectiveness of the corrective action",
+       "ar": "راجع فعالية الإجراء التصحيحي"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization reviews the effectiveness of any corrective action taken. ISO 9000:2026 (3.7.17) describes effectiveness as the extent to which planned activities are realized and planned results achieved: the question is not only “was it done?” but “did it stop the recurrence?”.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تراجع المنشأة فعالية أي إجراء تصحيحي اتخذته. والفعالية في ISO 9000:2026 (3.7.17) هي مدى تنفيذ الأنشطة المخططة وتحقيق النتائج المخططة؛ فالسؤال ليس «هل نُفّذ؟» فقط، بل «هل منع التكرار؟»."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: effectiveness criterion: “no steel delivery received without certificates in the 90 days after the form change”, checked from the receiving log.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: معيار الفعالية: «صفر شحنات حديد تُستلم دون شهادات خلال 90 يوماً من تعديل النموذج»، ويُراجع من سجل الاستلام."
+      },
+      "how": [
+       {
+        "en": "Write the effectiveness criterion and the review date when you plan the action",
+        "ar": "اكتب معيار الفعالية وموعد المراجعة عند التخطيط للإجراء"
+       },
+       {
+        "en": "Leave enough time for a recurrence to show",
+        "ar": "اترك مدة كافية ليظهر التكرار إن وُجد"
+       },
+       {
+        "en": "Review from new data, not from the owner's opinion",
+        "ar": "راجع من بيانات جديدة لا من رأي المالك"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Effectiveness criterion and review date",
+        "ar": "معيار الفعالية وتاريخ مراجعته"
+       },
+       {
+        "en": "Review result and the data source",
+        "ar": "نتيجة المراجعة ومصدر البيانات"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Closing on completion without an effectiveness review",
+        "ar": "إغلاق الإجراء عند تنفيذه دون مراجعة فعاليته"
+       },
+       {
+        "en": "A vague criterion such as “did not recur” with no period or source",
+        "ar": "معيار عام مثل «لم تتكرر» دون مدة أو مصدر"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality officer or auditor",
+       "ar": "مسؤول الجودة أو المدقق"
+      },
+      "kpi": {
+       "en": "Share of records closed after an effectiveness review",
+       "ar": "نسبة السجلات المغلقة بعد مراجعة فعالية"
+      }
+     },
+     {
+      "ref": "s2-7",
+      "clause": "GD-2",
+      "title": {
+       "en": "Reopen the record when the action was not effective",
+       "ar": "أعد فتح السجل إذا لم يكن الإجراء فعالاً"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: if the review shows the nonconformity recurred, the action was not effective. The record goes back to analysis to find the cause that was missed, instead of being closed and replaced by a separate new record that hides the history.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: إذا أظهرت المراجعة أن عدم المطابقة تكرر، فالإجراء لم يكن فعالاً. يعود السجل إلى التحليل للبحث عن سبب لم يُعالج، بدل إغلاقه وفتح سجل جديد منفصل يُخفي التاريخ."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: two months later concrete rejections were still 6%; the record was reopened and a second cause was found: the supplier was not chilling the water.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بعد شهرين بقيت نسبة رفض الخرسانة 6%، فأُعيد فتح السجل، وظهر سبب ثانٍ هو عدم التزام المورد بتبريد الماء."
+      },
+      "how": [
+       {
+        "en": "Record the “not effective” result with its date; do not delete it",
+        "ar": "سجّل نتيجة «غير فعال» بتاريخها ولا تحذفها"
+       },
+       {
+        "en": "Go back to the analysis and ask what was missed",
+        "ar": "ارجع إلى التحليل واسأل: ما الذي لم نره؟"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The earlier “not effective” review",
+        "ar": "المراجعة السابقة غير الفعالة"
+       },
+       {
+        "en": "The updated analysis and the new actions",
+        "ar": "التحليل المحدّث والإجراءات الجديدة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A new record for every attempt, so the history is lost",
+        "ar": "سجل جديد لكل محاولة فيضيع التاريخ"
+       },
+       {
+        "en": "Extending the date with no new analysis",
+        "ar": "تمديد الموعد دون تحليل جديد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality officer",
+       "ar": "مسؤول الجودة"
+      },
+      "kpi": {
+       "en": "Share of records reopened",
+       "ar": "نسبة السجلات التي أعيد فتحها"
+      }
+     },
+     {
+      "ref": "s2-8",
+      "clause": "10.2.1 e",
+      "title": {
+       "en": "Update risks and opportunities where needed",
+       "ar": "حدّث المخاطر والفرص عند الحاجة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization updates the risks and opportunities determined during planning, if necessary. A nonconformity is evidence of a live risk: if it is not in the register it is added, and if it was rated low it is reviewed.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحدّث المنشأة المخاطر والفرص التي حددتها أثناء التخطيط إن لزم. فعدم المطابقة دليل على خطر قائم: إن لم يكن في السجل يُضاف، وإن كان تقديره منخفضاً يُراجع."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the risk “structural materials without conformity certificates” was added to the procurement risk register at medium, with the purchase order certificate clause as its control.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: أُضيف خطر «مواد إنشائية دون شهادات مطابقة» إلى سجل مخاطر المشتريات بدرجة متوسطة، وضابطه بند الشهادات في أمر الشراء."
+      },
+      "how": [
+       {
+        "en": "After every CAPA, ask whether the risk register is still right",
+        "ar": "اسأل بعد كل CAPA: هل سجل المخاطر ما زال صحيحاً؟"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Risk register update with its date and the CAPA reference",
+        "ar": "تحديث سجل المخاطر بتاريخه ومرجع CAPA"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A risk register that never changes although nonconformities repeat",
+        "ar": "سجل مخاطر لا يتغير رغم تكرار عدم المطابقة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Risk register owner",
+       "ar": "مالك سجل المخاطر"
+      },
+      "kpi": {
+       "en": "Risk register updates triggered by CAPA",
+       "ar": "عدد تحديثات سجل المخاطر الناتجة عن CAPA"
+      }
+     },
+     {
+      "ref": "s2-9",
+      "clause": "10.2.1 f",
+      "title": {
+       "en": "Change the management system where needed",
+       "ar": "غيّر نظام الإدارة عند الحاجة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: changes are made to the quality management system if necessary, such as revising a procedure, a form, an authority or training. The change is planned, not improvised.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تُجرى تغييرات على نظام إدارة الجودة إن لزم، مثل تعديل إجراء أو نموذج أو صلاحية أو تدريب. والتغيير يُخطط له ولا يُنفذ ارتجالاً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: a certificate check was added to the material receiving procedure (revision 4) and storekeepers were trained on it.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: أُضيف فحص الشهادات إلى إجراء استلام المواد (الإصدار 4)، ودُرّب أمناء المستودعات عليه."
+      },
+      "how": [
+       {
+        "en": "Record the revised document and its revision number in the CAPA record",
+        "ar": "سجّل الوثيقة المعدلة ورقم إصدارها في سجل CAPA"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The revised document and the change notice",
+        "ar": "الوثيقة المعدلة وإشعار التغيير"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A change in practice with no document update",
+        "ar": "تغيير في الممارسة دون تحديث الوثيقة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "System owner",
+       "ar": "مسؤول النظام"
+      },
+      "kpi": {
+       "en": "Documents revised because of CAPA",
+       "ar": "عدد الوثائق المعدلة بسبب CAPA"
+      }
+     },
+     {
+      "ref": "s2-10",
+      "clause": "10.2.2",
+      "title": {
+       "en": "Keep evidence of the nonconformity, the actions and their results",
+       "ar": "احتفظ بدليل طبيعة عدم المطابقة والإجراءات ونتائجها"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: documented information is kept on the nature of the nonconformities and any later actions, and on the results of any corrective action. A CAPA record in this tool does that when its fields are complete.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تُحفظ معلومات موثقة تبيّن طبيعة عدم المطابقة وما تبعها من إجراءات، ونتائج أي إجراء تصحيحي. وسجل CAPA في هذه الأداة يحقق ذلك عندما تكتمل حقوله."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: record CA-EX-01 carries the description, evidence, correction, analysis, actions, effectiveness result and closure justification.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: السجل CA-EX-01 يحمل الوصف والدليل والتصحيح والتحليل والإجراءات ونتيجة الفعالية وتبرير الإغلاق."
+      },
+      "how": [
+       {
+        "en": "Export the CAPA report regularly and file it in the document system",
+        "ar": "صدّر تقرير CAPA دورياً واحفظه في نظام الوثائق"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Complete CAPA records",
+        "ar": "سجلات CAPA مكتملة"
+       },
+       {
+        "en": "The exported report",
+        "ar": "التقرير المصدّر"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "The action result not recorded",
+        "ar": "نتيجة الإجراء غير مسجلة"
+       },
+       {
+        "en": "Records deleted after closure",
+        "ar": "سجلات تُحذف بعد الإغلاق"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality officer",
+       "ar": "مسؤول الجودة"
+      },
+      "kpi": {
+       "en": "Share of records passing the automatic audit",
+       "ar": "نسبة السجلات التي تجتاز التدقيق الآلي"
+      }
+     }
+    ]
+   },
+   {
+    "id": "7.5",
+    "phase": "record",
+    "title": {
+     "en": "Clause 7.5 Documented information",
+     "ar": "البند 7.5 المعلومات الموثقة"
+    },
+    "short": {
+     "en": "7.5 · Documented information",
+     "ar": "7.5 · المعلومات الموثقة"
+    },
+    "intro": {
+     "en": "A CAPA record is documented information: it is created, updated and controlled like any record in the system, and closed by a clear decision.",
+     "ar": "سجل CAPA معلومة موثقة: يُنشأ ويُحدَّث ويُضبط مثل أي سجل في النظام، ويُغلق بقرار واضح."
+    },
+    "items": [
+     {
+      "ref": "s3-1",
+      "clause": "7.5.3",
+      "title": {
+       "en": "Control CAPA records and close them with approval",
+       "ar": "اضبط سجلات CAPA وأغلقها بموافقة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: clause 7.5 asks that documented information is created and updated appropriately and controlled (7.5.3) so it is available and protected. Closing with a justification and the approval of an authorized person is a practice that makes closure a clear decision; it is guidance, not normative text.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يطلب البند 7.5 أن تُنشأ المعلومات الموثقة وتُحدَّث بطريقة مناسبة، وأن تُضبط (7.5.3) فتكون متاحة ومحمية. أما الإغلاق بتبرير وموافقة شخص مخوّل فممارسة تجعل الإغلاق قراراً واضحاً، وهي إرشاد وليست نصاً معيارياً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the record is closed with “effective: zero cases in 90 days from the receiving log” and the quality manager's approval.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: يُغلق السجل بعبارة «فعال: صفر حالات خلال 90 يوماً من سجل الاستلام» وموافقة مدير الجودة."
+      },
+      "how": [
+       {
+        "en": "Set who may close a CAPA by grade",
+        "ar": "حدّد من يملك صلاحية إغلاق CAPA بحسب التصنيف"
+       },
+       {
+        "en": "Never close without an effectiveness result",
+        "ar": "لا تُغلق دون نتيجة فعالية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Closure justification, approver name and date",
+        "ar": "تبرير الإغلاق واسم المعتمد وتاريخه"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Closure by signature with no justification",
+        "ar": "إغلاق بتوقيع دون تبرير"
+       },
+       {
+        "en": "Records changed after closure without a trace",
+        "ar": "سجلات تُعدّل بعد الإغلاق دون أثر"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Share of records closed with justification and approval",
+       "ar": "نسبة السجلات المغلقة بتبرير وموافقة"
+      }
+     }
+    ]
+   },
+   {
+    "id": "9.1.3",
+    "phase": "check",
+    "title": {
+     "en": "Clause 9.1.3 Analysis and evaluation",
+     "ar": "البند 9.1.3 التحليل والتقييم"
+    },
+    "short": {
+     "en": "9.1.3 · Analysis",
+     "ar": "9.1.3 · التحليل"
+    },
+    "intro": {
+     "en": "CAPA data is one of the main inputs to analysis: repeat sources, the processes most affected, closure time and the effectiveness rate.",
+     "ar": "بيانات CAPA من أهم مدخلات التحليل: المصادر المتكررة، والعمليات الأكثر تعرضاً، وزمن الإغلاق، ونسبة الفعالية."
+    },
+    "items": [
+     {
+      "ref": "s4-1",
+      "clause": "9.1.3 a–h",
+      "title": {
+       "en": "Analyse CAPA data to spot trends",
+       "ar": "حلّل بيانات CAPA لتكتشف الاتجاهات"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization analyses and evaluates data and information from monitoring and measurement, and uses the results to evaluate, among other things, conformity of products and services, system performance and effectiveness, the effectiveness of actions on risks and opportunities, external provider performance and the need for improvement.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحلل المنشأة البيانات والمعلومات الناتجة عن الرصد والقياس وتقيّمها، وتستخدم النتائج لتقييم أمور منها مطابقة المنتجات والخدمات، وأداء النظام وفعاليته، وفعالية الإجراءات المتخذة للمخاطر والفرص، وأداء الموردين، والحاجة إلى التحسين."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the CAPA dashboard shows three of four records come from suppliers, so a supplier audit is proposed for next quarter.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: لوحة CAPA تُظهر أن ثلاثة من أربعة سجلات مصدرها الموردون، فيُقترح تدقيق موردين في الربع القادم."
+      },
+      "how": [
+       {
+        "en": "Review the CAPA dashboard monthly by source and process",
+        "ar": "راجع لوحة CAPA شهرياً بحسب المصدر والعملية"
+       },
+       {
+        "en": "Look for repeats before they become normal",
+        "ar": "ابحث عن التكرار قبل أن يصبح عادة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A periodic analysis report of CAPA data",
+        "ar": "تقرير تحليل دوري لبيانات CAPA"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Many records with no trend analysis",
+        "ar": "سجلات كثيرة دون أي تحليل لاتجاهها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality officer",
+       "ar": "مسؤول الجودة"
+      },
+      "kpi": {
+       "en": "Records with a repeated source",
+       "ar": "عدد السجلات ذات المصدر المتكرر"
+      }
+     }
+    ]
+   },
+   {
+    "id": "9.3",
+    "phase": "check",
+    "title": {
+     "en": "Clause 9.3 Management review",
+     "ar": "البند 9.3 مراجعة الإدارة"
+    },
+    "short": {
+     "en": "9.3 · Management review",
+     "ar": "9.3 · مراجعة الإدارة"
+    },
+    "intro": {
+     "en": "Top management sees the trend of nonconformities and corrective actions, and decides on resources and changes.",
+     "ar": "ترى الإدارة العليا اتجاه عدم المطابقة والإجراءات التصحيحية، وتقرر الموارد والتغييرات."
+    },
+    "items": [
+     {
+      "ref": "s5-1",
+      "clause": "9.3.2 d 1",
+      "title": {
+       "en": "Present trends in nonconformities and corrective actions at management review",
+       "ar": "اعرض اتجاهات عدم المطابقة والإجراءات التصحيحية في مراجعة الإدارة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: management review inputs include information on quality system performance, including trends in nonconformities and corrective actions. Review results include decisions on improvement and any needed changes to the system and resources (9.3.3).",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: من مدخلات مراجعة الإدارة معلومات عن أداء نظام الجودة، ومنها الاتجاهات في عدم المطابقة والإجراءات التصحيحية. ونتائج المراجعة تشمل قرارات التحسين وأي تغيير مطلوب في النظام والموارد (9.3.3)."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: quarterly slide: 4 records, one closed and effective, one reopened, one overdue. Management decision: trial an alternative concrete supplier.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: عرض ربع سنوي: 4 سجلات، واحد مغلق فعال، وواحد أعيد فتحه، وواحد متأخر. قرار الإدارة: تجربة مورد خرسانة بديل."
+      },
+      "how": [
+       {
+        "en": "Make the CAPA report a standing input to every review",
+        "ar": "اجعل تقرير CAPA مدخلاً ثابتاً في كل مراجعة"
+       },
+       {
+        "en": "Record management's decision and its reference in the record",
+        "ar": "سجّل قرار الإدارة ومرجعه في السجل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Management review minutes with a CAPA item",
+        "ar": "محضر مراجعة الإدارة وفيه بند CAPA"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A review that gives a count only, with no trend or decision",
+        "ar": "مراجعة تذكر عدد السجلات فقط دون اتجاه أو قرار"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Top management",
+       "ar": "الإدارة العليا"
+      },
+      "kpi": {
+       "en": "Management review decisions on CAPA",
+       "ar": "عدد قرارات مراجعة الإدارة المتعلقة بـ CAPA"
+      }
+     }
+    ]
+   },
+   {
+    "id": "6.1",
+    "phase": "plan",
+    "title": {
+     "en": "Clause 6.1 Actions to address risks and opportunities",
+     "ar": "البند 6.1 الإجراءات لمواجهة المخاطر والفرص"
+    },
+    "short": {
+     "en": "6.1 · Risks and opportunities",
+     "ar": "6.1 · المخاطر والفرص"
+    },
+    "intro": {
+     "en": "This is where “prevention” sits in ISO 9001:2026: planning for risks before they happen, not a separate preventive action clause.",
+     "ar": "هنا يقع «المنع» في ISO 9001:2026: التخطيط للمخاطر قبل وقوعها، وليس بنداً منفصلاً للإجراء الوقائي."
+    },
+    "items": [
+     {
+      "ref": "s6-1",
+      "clause": "6.1.1 b",
+      "title": {
+       "en": "Prevent undesired effects by planning for risks",
+       "ar": "امنع الآثار غير المرغوبة بالتخطيط للمخاطر"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: when planning, the organization determines the risks and opportunities to address, among other things to prevent or reduce undesired effects. Clause 10.1 c) says improvement actions include correcting, preventing or reducing undesired effects. “Preventive action” is defined in ISO 9000:2026 (3.6.2) and in the note to term 3.17 of ISO 9001:2026, but it has no requirement clause of its own.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: عند التخطيط تحدد المنشأة المخاطر والفرص التي تحتاج معالجة، ومن أغراض ذلك منع الآثار غير المرغوبة أو تقليلها. ويذكر البند 10.1 ج أن إجراءات التحسين تشمل تصحيح الآثار غير المرغوبة ومنعها وتقليلها. أما «الإجراء الوقائي» فمعرّف في ISO 9000:2026 (3.6.2) وفي ملاحظة المصطلح 3.17 من ISO 9001:2026، وليس له بند متطلبات مستقل."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: after CA-EX-01, procurement reviewed every other structural material and added the certificate clause before a similar problem happened: prevention through risk.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بعد CA-EX-01 راجعت المشتريات كل المواد الإنشائية الأخرى وأضافت بند الشهادات قبل أن تحدث مشكلة مماثلة؛ هذا منع عبر المخاطر."
+      },
+      "how": [
+       {
+        "en": "Turn the lesson from a CAPA into a control in the risk register",
+        "ar": "حوّل الدرس من CAPA إلى ضابط في سجل المخاطر"
+       },
+       {
+        "en": "Use the “similar cases” result to widen prevention",
+        "ar": "استخدم نتيجة «الحالات المشابهة» لتوسيع المنع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Controls added to the risk register with the CAPA reference",
+        "ar": "ضوابط مضافة إلى سجل المخاطر بمرجع CAPA"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A separate “preventive actions” log with no link to risks",
+        "ar": "سجل «إجراءات وقائية» منفصل لا يرتبط بالمخاطر"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Risk register owner",
+       "ar": "مالك سجل المخاطر"
+      },
+      "kpi": {
+       "en": "Preventive controls added from CAPA lessons",
+       "ar": "عدد الضوابط الوقائية المضافة من دروس CAPA"
+      }
+     },
+     {
+      "ref": "s6-2",
+      "clause": "6.1.2",
+      "title": {
+       "en": "Plan actions on risks and evaluate their effectiveness",
+       "ar": "خطط إجراءات المخاطر وقيّم فعاليتها"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization determines, analyses and evaluates risks, and plans actions to address them, how to build them into its processes and how to evaluate their effectiveness, in proportion to the potential impact.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحدد المنشأة المخاطر وتحللها وتقيّمها، وتخطط إجراءات معالجتها وطريقة دمجها في عملياتها وتقييم فعاليتها، على أن تكون متناسبة مع الأثر المحتمل."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the risk of late certificates for rented devices was handled by a contract clause and a monthly check.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: خطر تأخر شهادات الأجهزة المستأجرة عولج ببند تعاقدي ومتابعة شهرية."
+      },
+      "how": [
+       {
+        "en": "Link every significant CAPA to a risk in the register",
+        "ar": "اربط كل CAPA مهم بخطر في السجل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The risk register with its actions and their effectiveness results",
+        "ar": "سجل المخاطر بإجراءاته ونتيجة تقييم فعاليتها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Risk treatment with no effectiveness check",
+        "ar": "معالجة مخاطر دون تقييم لفعاليتها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of risks with an action and an effectiveness check",
+       "ar": "نسبة المخاطر التي لها إجراء وتقييم فعالية"
+      }
+     }
+    ]
+   },
+   {
+    "id": "9.2",
+    "phase": "check",
+    "title": {
+     "en": "Clause 9.2 Internal audit",
+     "ar": "البند 9.2 التدقيق الداخلي"
+    },
+    "short": {
+     "en": "9.2 · Internal audit",
+     "ar": "9.2 · التدقيق الداخلي"
+    },
+    "intro": {
+     "en": "Audit is a main source of CAPA records, and it is also how completion and effectiveness of actions are checked later.",
+     "ar": "التدقيق مصدر رئيسي لسجلات CAPA، وهو أيضاً الطريقة التي يُتحقق بها لاحقاً من إنجاز الإجراءات وفعاليتها."
+    },
+    "items": [
+     {
+      "ref": "s7-1",
+      "clause": "9.2.2 d",
+      "title": {
+       "en": "Take correction and corrective action without undue delay",
+       "ar": "اتخذ التصحيح والإجراء التصحيحي دون تأخير غير مبرر"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the internal audit programme requires appropriate correction and corrective actions to be taken without undue delay. That is why this tool flags overdue actions and reviews.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: من متطلبات برنامج التدقيق الداخلي اتخاذ التصحيح والإجراءات التصحيحية المناسبة دون تأخير غير مبرر. ولهذا تُبرز هذه الأداة الإجراءات والمراجعات المتأخرة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: audit finding IA-2026-07 / F-03 got a CAPA record within a week, with a plan due within 60 days.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: ملاحظة التدقيق IA-2026-07 / F-03 فُتح لها سجل CAPA خلال أسبوع، بخطة تنتهي خلال 60 يوماً."
+      },
+      "how": [
+       {
+        "en": "Open a CAPA record for every audit nonconformity within a set time",
+        "ar": "افتح سجل CAPA لكل عدم مطابقة من التدقيق خلال مدة محددة"
+       },
+       {
+        "en": "Import findings from the Smart Audit center instead of retyping them",
+        "ar": "استورد الملاحظات من مركز التدقيق الذكي بدل إعادة كتابتها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Finding date and record opening date",
+        "ar": "تاريخ الملاحظة وتاريخ فتح السجل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Audit findings with no action months later",
+        "ar": "ملاحظات تدقيق بلا إجراء بعد أشهر"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Audit programme manager",
+       "ar": "مدير برنامج التدقيق"
+      },
+      "kpi": {
+       "en": "Average days from finding to action plan",
+       "ar": "متوسط الأيام من الملاحظة إلى خطة الإجراء"
+      }
+     },
+     {
+      "ref": "s7-2",
+      "clause": "19011 6.7",
+      "title": {
+       "en": "Verify completion and effectiveness at follow-up",
+       "ar": "تحقق في المتابعة من الإنجاز والفعالية"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: clause 6.7 of ISO 19011:2026 guides that audit outcomes can call for correction, corrective action or improvement, carried out by the auditee within an agreed time, and that completion and effectiveness of these actions should be verified, possibly as part of a later audit. An audit finding (term 3.11) is the result of evaluating audit evidence against audit criteria.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يرشد البند 6.7 من ISO 19011:2026 إلى أن نتائج التدقيق قد تستلزم تصحيحاً أو إجراءً تصحيحياً أو فرصة تحسين، ينفذها من خضع للتدقيق خلال مدة متفق عليها، وأن يُتحقق من إنجاز هذه الإجراءات ومن فعاليتها، وقد يكون ذلك جزءاً من تدقيق لاحق. والملاحظة في المصطلح 3.11 هي نتيجة تقييم أدلة التدقيق مقابل معاييره."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the auditor added a line to the next audit plan to verify the effectiveness of CA-EX-02.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: أضاف المدقق إلى خطة التدقيق القادم بنداً للتحقق من فعالية CA-EX-02."
+      },
+      "how": [
+       {
+        "en": "Add due effectiveness reviews to the next audit plan",
+        "ar": "أضف مراجعات الفعالية المستحقة إلى خطة التدقيق القادم"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The follow-up entry in the audit report",
+        "ar": "سجل المتابعة في تقرير التدقيق"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Follow-up that checks completion only, not effectiveness",
+        "ar": "متابعة تتحقق من الإنجاز فقط دون الفعالية"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Internal auditor",
+       "ar": "المدقق الداخلي"
+      },
+      "kpi": {
+       "en": "Share of findings whose effectiveness was verified",
+       "ar": "نسبة الملاحظات التي تُحقّق من فعاليتها"
+      }
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "id": "diff",
+    "q": {
+     "en": "What is the difference between correction and corrective action?",
+     "ar": "ما الفرق بين التصحيح والإجراء التصحيحي؟"
+    },
+    "a": {
+     "en": "**Correction** removes the detected nonconformity itself, such as returning a load or withdrawing a superseded drawing (ISO 9000:2026, 3.6.3).\n\n**Corrective action** removes its cause so it does not recur (3.6.4).\n\nIn the record, the first goes under “Reaction” and the second under “Corrective action plan” in the [[tab:tools]].",
+     "ar": "**التصحيح** يزيل عدم المطابقة المكتشفة نفسها، مثل إعادة شحنة أو سحب مخطط ملغى (ISO 9000:2026، 3.6.3).\n\n**الإجراء التصحيحي** يزيل سببها حتى لا تتكرر (3.6.4).\n\nفي السجل: الأول في قسم «التفاعل»، والثاني في «خطة الإجراء التصحيحي» في [[tab:tools]]."
+    }
+   },
+   {
+    "id": "prev",
+    "q": {
+     "en": "Why is there no preventive action in ISO 9001:2026?",
+     "ar": "لماذا لا يوجد إجراء وقائي في ISO 9001:2026؟"
+    },
+    "a": {
+     "en": "The standard has no preventive action clause. Preventing problems before they happen is done by planning for risks and opportunities in **clause 6.1**, and clause 10.1 c) names preventing undesired effects as part of improvement. We keep the name **CAPA** because people use it. Details in the [[tab:explain-std]].",
+     "ar": "المواصفة لا تحتوي بنداً للإجراء الوقائي. منع المشكلات قبل وقوعها يتم بالتخطيط للمخاطر والفرص في **البند 6.1**، ويذكر البند 10.1 ج منع الآثار غير المرغوبة ضمن التحسين. نحتفظ باسم **CAPA** لأنه المتداول. التفاصيل في [[tab:explain-std]]."
+    }
+   },
+   {
+    "id": "eff",
+    "q": {
+     "en": "When do I review effectiveness?",
+     "ar": "متى أراجع فعالية الإجراء؟"
+    },
+    "a": {
+     "en": "Set the **effectiveness criterion** and the **review date** when you plan the action, and leave enough time for a recurrence to show (often 60 to 90 days). Review from new data such as the receiving or inspection log. A record is not closed before an “effective” result.",
+     "ar": "حدّد **معيار الفعالية** و**موعد المراجعة** عند التخطيط للإجراء، واترك مدة تسمح بظهور التكرار إن وُجد (غالباً 60 إلى 90 يوماً). راجع من بيانات جديدة مثل سجل الاستلام أو الفحص. لا يُغلق السجل قبل نتيجة «فعال»."
+    }
+   },
+   {
+    "id": "reopen",
+    "q": {
+     "en": "What if the action was not effective?",
+     "ar": "ماذا أفعل إذا لم يكن الإجراء فعالاً؟"
+    },
+    "a": {
+     "en": "Choose the result “not effective” and save: the record becomes **reopened**. Go back to the cause analysis, find what was missed, add new actions, then select “Start a new review round”. The earlier review stays in the record's history.",
+     "ar": "اختر النتيجة «غير فعال» واحفظ، فيصبح السجل **أعيد فتحه**. ارجع إلى تحليل السبب وابحث عما لم يُعالج، وأضف إجراءات جديدة، ثم اضغط «ابدأ جولة مراجعة جديدة». تبقى المراجعة السابقة في تاريخ السجل."
+    }
+   },
+   {
+    "id": "import",
+    "q": {
+     "en": "How do I import from the Smart Audit center?",
+     "ar": "كيف أستورد من مركز التدقيق الذكي؟"
+    },
+    "a": {
+     "en": "In the [[tab:docs]] → “Import from the audit center”: select “Preview import”, choose “Take theirs” or “Keep mine” for each row, then “Apply import”. The tool only reads; nothing is written to the center's data.",
+     "ar": "في [[tab:docs]] ← «الاستيراد من مركز التدقيق»: اضغط «معاينة الاستيراد»، ثم اختر لكل صف «خذ بياناتهم» أو «أبقِ بياناتي»، ثم «طبّق الاستيراد». الأداة تقرأ فقط، ولا يُكتب أي شيء في بيانات المركز."
+    }
+   },
+   {
+    "id": "pdca",
+    "q": {
+     "en": "When do I link a record to a PDCA cycle?",
+     "ar": "متى أربط السجل بدورة PDCA؟"
+    },
+    "a": {
+     "en": "When the action needs a change measured in stages (target, baseline, result), open a cycle in the PDCA tool and write its number in the “Linked PDCA cycle” field. The “Open PDCA” button opens the tool inside the platform.",
+     "ar": "عندما يحتاج الإجراء تغييراً يُقاس على مراحل (هدف وخط أساس ونتيجة)، افتح دورة في أداة PDCA واكتب رقمها في حقل «دورة PDCA المرتبطة». زر «افتح PDCA» يفتح الأداة داخل المنصة."
+    }
+   },
+   {
+    "id": "data",
+    "q": {
+     "en": "Where is my data stored?",
+     "ar": "أين تُحفظ بياناتي؟"
+    },
+    "a": {
+     "en": "In **this browser only**, under the key cia-capa:v1; nothing is sent to a server. The Academy hub reads a summary for its performance dashboard. Export the report or CSV from the [[tab:report]] to keep a copy.",
+     "ar": "في **هذا المتصفح فقط** تحت المفتاح cia-capa:v1، ولا تُرسل إلى أي خادم. تقرأ بوابة الأكاديمية ملخصاً منها للوحة الأداء. صدّر التقرير أو CSV للاحتفاظ بنسخة من [[tab:report]]."
+    }
+   }
+  ],
+  "competencies": [
+   "QM-03",
+   "AUD-03"
+  ],
+  "ecosystem": "quality"
+ }
+}

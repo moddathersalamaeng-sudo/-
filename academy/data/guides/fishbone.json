@@ -1,0 +1,1247 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-FISH",
+  "slug": "fishbone",
+  "kind": "method",
+  "module": "fish",
+  "title": {
+   "en": "Fishbone — Cause and effect analysis",
+   "ar": "عظمة السمكة — تحليل السبب والنتيجة"
+  },
+  "subtitle": {
+   "en": "Method tool serving ISO 9001:2026 clause 10.2.1 b)",
+   "ar": "أداة منهجية تخدم ISO 9001:2026 البند 10.2.1 ب)"
+  },
+  "lede": {
+   "en": "To spread the possible causes of an effect across clear categories so the team does not miss an important one, then separate what the evidence supports from what it does not, and verify the two or three most likely causes before a corrective action is built on them.",
+   "ar": "أن تنشر الأسباب الممكنة لأثر وقع على فئات واضحة، فلا يفوت الفريقَ سببٌ مهم، ثم تفصل ما يسنده الدليل عما لا يسنده، وتتحقق من سببين أو ثلاثة هي الأرجح قبل أن يُبنى عليها إجراء تصحيحي."
+  },
+  "author": "مدثر سلامه",
+  "note": {
+   "en": "Fishbone (Ishikawa) is a way of organising possible causes, not a standard or a requirement. The requirements it serves are determining the causes of the nonconformity in ISO 9001:2026 clause 10.2.1 b) 2) and checking for similar nonconformities in 10.2.1 b) 3), both audited as part of the quality management system.",
+   "ar": "«عظمة السمكة» (إيشيكاوا) طريقة لتنظيم الأسباب المحتملة، وليست مواصفة ولا متطلباً. المتطلب الذي تخدمه هو تحديد أسباب عدم المطابقة في البند 10.2.1 ب) 2) من ISO 9001:2026، والتحقق من الحالات المشابهة في 10.2.1 ب) 3)، ويُدقَّق عليهما ضمن نظام إدارة الجودة."
+  },
+  "who": {
+   "en": "Process owners, quality, HSE and environment managers, site and production supervisors, quality engineers, internal auditors, and any team asked to find the causes of a problem with more than one possible path.",
+   "ar": "مالكو العمليات، ومديرو الجودة والسلامة والبيئة، ومشرفو المواقع والإنتاج، ومهندسو الجودة، والمدققون الداخليون، وكل فريق يُطلب منه تحديد أسباب مشكلة لها أكثر من مسار محتمل."
+  },
+  "roles": [
+   {
+    "name": {
+     "en": "Facilitator",
+     "ar": "الميسّر"
+    },
+    "text": {
+     "en": "Writes the effect at the head, goes through the categories one by one, turns blame into a description of the process and asks for evidence for each cause.",
+     "ar": "يكتب الأثر في رأس السمكة، ويمرّ على الفئات واحدة واحدة، ويحوّل اللوم إلى وصف للعملية، ويطلب دليلاً لكل سبب."
+    }
+   },
+   {
+    "name": {
+     "en": "Person who does the work",
+     "ar": "من يؤدي العمل"
+    },
+    "text": {
+     "en": "Knows what really happens; without them the bones fill up with office assumptions.",
+     "ar": "يعرف ما يحدث فعلاً؛ بدونه تمتلئ العظام بافتراضات من المكتب."
+    }
+   },
+   {
+    "name": {
+     "en": "Process owner",
+     "ar": "مالك العملية"
+    },
+    "text": {
+     "en": "Owns the method, form and authority the causes point to, and owns the action afterwards.",
+     "ar": "يملك الطريقة والنموذج والصلاحية التي تشير إليها الأسباب، ويملك الإجراء بعد ذلك."
+    }
+   },
+   {
+    "name": {
+     "en": "Quality or data engineer",
+     "ar": "مهندس الجودة أو البيانات"
+    },
+    "text": {
+     "en": "Brings the records and figures that prove or rule out a cause, and keeps the evidence.",
+     "ar": "يأتي بالسجلات والأرقام التي تثبت السبب أو تستبعده، ويحفظ الأدلة."
+    }
+   },
+   {
+    "name": {
+     "en": "Reviewer",
+     "ar": "المراجِع"
+    },
+    "text": {
+     "en": "Someone outside the team who checks that the selected causes were verified with evidence, and that the ruled-out ones were ruled out with evidence.",
+     "ar": "شخص من خارج الفريق يتأكد أن الأسباب المختارة تحقق منها دليل، وأن المستبعدة استُبعدت بدليل."
+    }
+   },
+   {
+    "name": {
+     "en": "Internal auditor",
+     "ar": "المدقق الداخلي"
+    },
+    "text": {
+     "en": "Asks at audit for the diagram, the evidence and the verification, not just the list of causes.",
+     "ar": "يطلب في التدقيق المخطط والأدلة والتحقق، لا قائمة الأسباب وحدها."
+    }
+   }
+  ],
+  "steps": [
+   {
+    "no": "1",
+    "title": {
+     "en": "Write the effect from facts",
+     "ar": "اكتب الأثر من الوقائع"
+    },
+    "text": {
+     "en": "What, where, when and how much, at the head of the fish. No cause and no blame.",
+     "ar": "ماذا، وأين، ومتى، وكم، في رأس السمكة. بلا سبب ولا اتهام."
+    },
+    "ref": "10.2.1 b 1"
+   },
+   {
+    "no": "2",
+    "title": {
+     "en": "Bring the right team",
+     "ar": "اجمع الفريق المناسب"
+    },
+    "text": {
+     "en": "At least one person who does the work, and people who know each category.",
+     "ar": "شخص واحد على الأقل يؤدي العمل نفسه، ومن يعرف كل فئة."
+    },
+    "ref": "7.2"
+   },
+   {
+    "no": "3",
+    "title": {
+     "en": "Choose the categories",
+     "ar": "اختر الفئات"
+    },
+    "text": {
+     "en": "6M, 4S, 8P or your own; rename them to fit the process.",
+     "ar": "6M أو 4S أو 8P أو فئات خاصة؛ أعد تسميتها بما يناسب العملية."
+    },
+    "ref": "GD-1"
+   },
+   {
+    "no": "4",
+    "title": {
+     "en": "Write causes as facts, not blame",
+     "ar": "اكتب الأسباب وقائع لا لوماً"
+    },
+    "text": {
+     "en": "What happens in the process, not who got it wrong.",
+     "ar": "ما الذي في العملية يحدث، لا من أخطأ."
+    },
+    "ref": "GD-2"
+   },
+   {
+    "no": "5",
+    "title": {
+     "en": "Link each cause to its evidence",
+     "ar": "اربط كل سبب بدليله"
+    },
+    "text": {
+     "en": "A candidate until evidence you can show supports it.",
+     "ar": "مرشّح حتى يسنده دليل يمكن عرضه."
+    },
+    "ref": "10.2.1 b 2"
+   },
+   {
+    "no": "6",
+    "title": {
+     "en": "Rule out with data",
+     "ar": "استبعد بالبيانات"
+    },
+    "text": {
+     "en": "Write the evidence for ruling out, and keep the cause on the diagram.",
+     "ar": "اكتب دليل الاستبعاد، وأبقِ السبب على المخطط."
+    },
+    "ref": "GD-3"
+   },
+   {
+    "no": "7",
+    "title": {
+     "en": "Pick the likely few",
+     "ar": "اختر القليل الأرجح"
+    },
+    "text": {
+     "en": "Three causes at most, by votes or weight, with the evidence.",
+     "ar": "ثلاثة أسباب على الأكثر، بالأصوات أو الوزن مع الدليل."
+    },
+    "ref": "GD-4"
+   },
+   {
+    "no": "8",
+    "title": {
+     "en": "Verify with 5 Whys or data",
+     "ar": "تحقق بلماذا الخمس أو بالبيانات"
+    },
+    "text": {
+     "en": "Then test: if the cause is removed, does the effect stop?",
+     "ar": "ثم اختبر: إذا أُزيل السبب، هل يتوقف الأثر؟"
+    },
+    "ref": "GD-5"
+   },
+   {
+    "no": "9",
+    "title": {
+     "en": "Look for similar cases",
+     "ar": "ابحث عن الحالات المشابهة"
+    },
+    "text": {
+     "en": "Where could the same cause be at work?",
+     "ar": "أين يمكن أن يعمل السبب نفسه؟"
+    },
+    "ref": "10.2.1 b 3"
+   },
+   {
+    "no": "10",
+    "title": {
+     "en": "Carry the cause into CAPA and share the lesson",
+     "ar": "انقل السبب إلى CAPA وشارك الدرس"
+    },
+    "text": {
+     "en": "The action is planned in CAPA, and the lesson becomes organizational knowledge.",
+     "ar": "الإجراء يُخطط في CAPA، والدرس يصبح معرفة للمنشأة."
+    },
+    "ref": "10.2.1 c"
+   }
+  ],
+  "related": [
+   {
+    "code": "CAPA",
+    "name": {
+     "en": "Corrective action",
+     "ar": "الإجراءات التصحيحية"
+    },
+    "text": {
+     "en": "The analysis starts from a CAPA record and sends the root cause back to it; both directions read only, with no writing into the other tool's data.",
+     "ar": "التحليل يبدأ من سجل CAPA ويعيد إليه السبب الجذري، والقراءة في الاتجاهين دون كتابة في بيانات الأداة الأخرى."
+    }
+   },
+   {
+    "code": "5 Whys",
+    "name": {
+     "en": "Root cause analysis",
+     "ar": "تحليل السبب الجذري"
+    },
+    "text": {
+     "en": "Digs into each selected cause until it reaches one the organization can change; the analysis is linked to the selected cause here.",
+     "ar": "يحفر في كل سبب مختار حتى سبب تستطيع المنشأة تغييره؛ ويُربط التحليل بالسبب المختار هنا."
+    }
+   },
+   {
+    "code": "PDCA",
+    "name": {
+     "en": "Continual improvement cycle",
+     "ar": "دورة التحسين المستمر"
+    },
+    "text": {
+     "en": "When the action needs a change measured in stages, a PDCA cycle carries it and its number is written in the analysis.",
+     "ar": "عندما يحتاج الإجراء تغييراً يُقاس على مراحل، تحمله دورة PDCA ويُسجَّل رقمها في التحليل."
+    }
+   },
+   {
+    "code": "AUDIT",
+    "name": {
+     "en": "Smart audit & improvement center",
+     "ar": "مركز التدقيق والتحسين الذكي"
+    },
+    "text": {
+     "en": "Audit findings reach CAPA through its import, and the analysis here starts from the CAPA record.",
+     "ar": "ملاحظات التدقيق تصل إلى CAPA بالاستيراد، ومن سجل CAPA يبدأ التحليل هنا."
+    }
+   }
+  ],
+  "serves": [
+   {
+    "code": "ISO 9001:2026 §10.2.1 b)",
+    "name": {
+     "en": "Evaluating the need for action and determining causes",
+     "ar": "تقييم الحاجة إلى إجراء وتحديد الأسباب"
+    },
+    "text": {
+     "en": "The requirement the method serves: review the nonconformity, determine its causes and check for similar cases.",
+     "ar": "المتطلب الذي تخدمه الطريقة: مراجعة عدم المطابقة، وتحديد أسبابها، والتحقق من الحالات المشابهة."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 A.10.2",
+    "name": {
+     "en": "Extent of investigation and methods used",
+     "ar": "مدى التحقيق والطرق المستخدمة"
+    },
+    "text": {
+     "en": "The annex leaves the method and the extent of investigation to the organization's context, and names no particular method.",
+     "ar": "الملحق يترك للمنشأة اختيار الطريقة ومدى التحقيق بحسب سياقها، ولا يسمّي طريقة بعينها."
+    }
+   },
+   {
+    "code": "ISO 9000:2026 §3.8.6 · §4.2.7",
+    "name": {
+     "en": "Objective evidence and evidence-based decision-making",
+     "ar": "الدليل الموضوعي واتخاذ القرار المبني على الدليل"
+    },
+    "text": {
+     "en": "Principle 4.2.7 stresses understanding cause and effect relationships, and evidence is what moves a cause from candidate to supported.",
+     "ar": "يؤكد المبدأ 4.2.7 أهمية فهم علاقات السبب والنتيجة، والدليل هو ما ينقل السبب من مرشّح إلى مدعوم."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 §9.1.3",
+    "name": {
+     "en": "Analysis and evaluation",
+     "ar": "التحليل والتقييم"
+    },
+    "text": {
+     "en": "Data chooses what to analyse and rules causes out; the clause's note says analysis methods can include statistical techniques.",
+     "ar": "البيانات تختار ما يُحلَّل وتستبعد الأسباب؛ وتذكر الملاحظة في البند أن طرق التحليل قد تشمل الأساليب الإحصائية."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 A.9.1",
+    "name": {
+     "en": "Monitoring, measurement, analysis and evaluation (annex)",
+     "ar": "الرصد والقياس والتحليل والتقييم (الملحق)"
+    },
+    "text": {
+     "en": "Its notes 3 and 4 point to ISO 10009 for guidance on quality tools and ISO 10017 for statistical techniques. ISO 10009:2024 reviews the fishbone/Ishikawa diagram in 14.5 and brainstorming in 15.4, and places it in Do for process improvement and continual improvement (Tables A.2 and A.3); the full guide is the ISO 10009 tool on the platform. ISO 10017 is not uploaded: “not verified”.",
+     "ar": "تشير ملاحظتاه 3 و4 إلى ISO 10009 للإرشاد في أدوات الجودة وISO 10017 للأساليب الإحصائية. تشرح ISO 10009:2024 مخطط عظمة السمكة / إيشيكاوا في البند 14.5 والعصف الذهني في 15.4، وتضعه في مرحلة التنفيذ لتحسين العمليات والتحسين المستمر (الجدولان A.2 وA.3)؛ والشرح الكامل في دليل ISO 10009 على المنصة. أما ISO 10017 فغير مرفوعة: «غير متحقق منها»."
+    }
+   }
+  ],
+  "clauses": [
+   {
+    "id": "10.2",
+    "phase": "map",
+    "title": {
+     "en": "Clause 10.2 Nonconformity and corrective action",
+     "ar": "البند 10.2 عدم المطابقة والإجراء التصحيحي"
+    },
+    "short": {
+     "en": "10.2 · Determining causes",
+     "ar": "10.2 · تحديد الأسباب"
+    },
+    "intro": {
+     "en": "This is where Fishbone works: clause 10.2.1 b) asks for the nonconformity to be reviewed, its causes determined and similar cases checked, before the action is chosen. The method's rules (GD) are guidance on doing that well.",
+     "ar": "هنا تعمل عظمة السمكة: البند 10.2.1 ب) يطلب مراجعة عدم المطابقة وتحديد أسبابها والتحقق من الحالات المشابهة، قبل اختيار الإجراء. وقواعد الطريقة (GD) إرشاد لكيفية فعل ذلك جيداً."
+    },
+    "items": [
+     {
+      "ref": "s1-1",
+      "clause": "10.2.1 b 1",
+      "title": {
+       "en": "Review the nonconformity and write the effect from facts",
+       "ar": "راجِع عدم المطابقة واكتب الأثر من الوقائع"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: one step in evaluating the need for action on the cause is reviewing the nonconformity itself. ISO 9000:2026 (3.5.13) describes a nonconformity as the non-fulfilment of a requirement, so the effect at the head of the fish is written as it happened: which requirement was not met, where, when and to what extent.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: من خطوات تقييم الحاجة إلى إجراء يزيل السبب أن تُراجَع عدم المطابقة نفسها. وعدم المطابقة في ISO 9000:2026 (3.5.13) هي عدم استيفاء متطلب؛ فيُكتب الأثر في رأس السمكة كما وقع: أي متطلب لم يُستوفَ، وأين، ومتى، وبأي حجم."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “6 of 38 measuring devices at sites A and B were past their calibration date, and two were used for receiving inspection”, instead of “the technicians neglected calibration”.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «6 من 38 جهاز قياس في الموقعين أ وب تجاوزت موعد المعايرة، واستُخدم اثنان منها في فحص الاستلام»، بدل «الفنيون أهملوا المعايرة»."
+      },
+      "how": [
+       {
+        "en": "Write the four parts: what, where, when and how much",
+        "ar": "اكتب الأجزاء الأربعة: ماذا، وأين، ومتى، وكم"
+       },
+       {
+        "en": "One effect per diagram; if there are two problems, draw two diagrams",
+        "ar": "أثر واحد في كل مخطط؛ إذا كانت هناك مشكلتان فارسم مخططين"
+       },
+       {
+        "en": "Put no cause and no blame in the effect",
+        "ar": "لا تضع سبباً أو اتهاماً في الأثر"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The effect in its four parts",
+        "ar": "الأثر بأجزائه الأربعة"
+       },
+       {
+        "en": "The reference: NCR, audit finding or complaint",
+        "ar": "المرجع: NCR أو ملاحظة التدقيق أو الشكوى"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An effect written as a ready-made cause",
+        "ar": "أثر مكتوب كسبب جاهز"
+       },
+       {
+        "en": "A general effect with no size and no date",
+        "ar": "أثر عام بلا حجم ولا تاريخ"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "Share of analyses with a complete effect statement",
+       "ar": "نسبة التحليلات بأثر مكتمل الأجزاء"
+      }
+     },
+     {
+      "ref": "s1-2",
+      "clause": "10.2.1 b 2",
+      "title": {
+       "en": "Determine the causes of the nonconformity, and back each one with evidence",
+       "ar": "حدّد أسباب عدم المطابقة، وادعم كل سبب بدليل"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the clause requires the causes of the nonconformity to be determined. It names no method, and Fishbone is one possible way to organise the search. A cause on the diagram is a candidate until objective evidence supports it, described in ISO 9000:2026 (3.8.6) as data supporting the existence or truth of something.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يطلب البند تحديد أسباب عدم المطابقة. لا يسمّي طريقة، وعظمة السمكة إحدى الطرق الممكنة لتنظيم البحث. والسبب على المخطط مرشّح حتى يسنده دليل موضوعي، وهو في ISO 9000:2026 (3.8.6) بيانات تدعم وجود شيء أو صحته."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “the calibration log is on paper with no reminder” — evidence: the two paper logs have no reminder column. Status: supported by evidence.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «سجل المعايرة ورقي ولا تنبيه قبل الموعد» — الدليل: السجلان الورقيان في الموقعين بلا عمود للتنبيه. الحالة: مدعوم بالدليل."
+      },
+      "how": [
+       {
+        "en": "Write the evidence next to every cause",
+        "ar": "اكتب الدليل بجانب كل سبب"
+       },
+       {
+        "en": "Mark each cause candidate, supported by evidence or ruled out",
+        "ar": "صنّف كل سبب: مرشّح، أو مدعوم بالدليل، أو مستبعد"
+       },
+       {
+        "en": "Do not pick a cause with no evidence for verification unless nothing else is left, and say so",
+        "ar": "لا تختر للتحقق سبباً بلا دليل إلا إذا لم يبقَ غيره، واكتب ذلك"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The diagram with its causes, evidence and statuses",
+        "ar": "المخطط بأسبابه وأدلتها وحالاتها"
+       },
+       {
+        "en": "The documents and records referred to",
+        "ar": "الوثائق والسجلات المشار إليها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A diagram full of opinions with no evidence",
+        "ar": "مخطط مليء بآراء بلا دليل"
+       },
+       {
+        "en": "The cause chosen before the session, then the bones filled to justify it",
+        "ar": "السبب يُختار قبل الجلسة ثم تُملأ العظام لتبريره"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "The team, led by the facilitator",
+       "ar": "الفريق بقيادة الميسّر"
+      },
+      "kpi": {
+       "en": "Share of supported causes with written evidence",
+       "ar": "نسبة الأسباب المدعومة التي كُتب دليلها"
+      }
+     },
+     {
+      "ref": "s1-3",
+      "clause": "GD-1",
+      "title": {
+       "en": "Choose categories that fit the process",
+       "ar": "اختر فئات تناسب العملية"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: categories are prompts that open up the thinking, not a fixed list. 6M (people, method, materials, machines and equipment, measurement, environment) fits manufacturing and construction, 4S (surroundings, suppliers, systems, skills) fits services and support processes, and 8P fits marketing and services. Rename any category that does not fit and add what is missing.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: الفئات محفّزات تفتح التفكير، لا قائمة ثابتة. 6M (الأفراد، والطريقة، والمواد، والآلات والمعدات، والقياس، والبيئة) تناسب التصنيع والمقاولات، و4S (المحيط، والموردون، والأنظمة، والمهارات) تناسب الخدمات والعمليات المساندة، و8P تناسب التسويق والخدمات. أعد تسمية أي فئة لا تناسب، وأضف ما ينقص."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the superseded drawings problem sits in a support process (document control), so 4S was used: “systems” and “surroundings” were the richest categories, and 6M would not easily have caught “local printing on site”.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: مشكلة المخططات الملغاة عملية ضبط وثائق مساندة، فاستُخدمت 4S: كانت «الأنظمة» و«المحيط» أغنى الفئات، ولم تكن 6M لتلتقط «الطباعة المحلية في الموقع» بسهولة."
+      },
+      "how": [
+       {
+        "en": "Pick the set before the session by the kind of process",
+        "ar": "اختر المجموعة قبل الجلسة بحسب نوع العملية"
+       },
+       {
+        "en": "Rename a category in the site's language (for example “supplier” instead of “materials”)",
+        "ar": "أعد تسمية الفئة بلغة الموقع (مثلاً «المورد» بدل «المواد»)"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The category set used and its names",
+        "ar": "مجموعة الفئات المستخدمة وأسماؤها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Categories unrelated to the process that stay empty",
+        "ar": "فئات لا تخص العملية فتبقى فارغة"
+       },
+       {
+        "en": "One category that swallows every cause",
+        "ar": "فئة واحدة تبتلع كل الأسباب"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "Share of analyses with three or more categories holding causes",
+       "ar": "نسبة التحليلات بثلاث فئات على الأقل فيها أسباب"
+      }
+     },
+     {
+      "ref": "s1-4",
+      "clause": "GD-2",
+      "title": {
+       "en": "Write causes as facts about the process, not blame",
+       "ar": "اكتب الأسباب وقائع عن العملية، لا لوماً"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the “people” bone is not a place for names. “Human error” and “negligence” describe what happened; write instead what in the process allowed it: an unclear form, a missing second check, incomplete training, workload. This also protects the people who speak openly in the session.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: عظمة «الأفراد» ليست مكاناً لأسماء الأشخاص. «خطأ بشري» و«إهمال» وصف لما حدث؛ اكتب بدلاً منه ما في العملية سمح به: نموذج غامض، أو فحص ثانٍ غائب، أو تدريب ناقص، أو عبء عمل. ويحمي هذا من يتكلم بصراحة في الجلسة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: instead of “technicians do not care about calibration” the team wrote “no named owner follows up calibration at each site”, backed by the responsibility matrix.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بدل «الفنيون لا يهتمون بالمعايرة» كُتب «لا مسؤول مسمّى لمتابعة المعايرة في كل موقع»، ودليله مصفوفة المسؤوليات."
+      },
+      "how": [
+       {
+        "en": "Rewrite any cause that blames a person as a description of the process",
+        "ar": "أعد صياغة أي سبب يلوم شخصاً إلى وصف للعملية"
+       },
+       {
+        "en": "Ask: if the person changed, would the cause stay?",
+        "ar": "اسأل: لو تغيّر الشخص، هل يبقى السبب؟"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Causes written in the language of the process",
+        "ar": "أسباب مكتوبة بلغة العملية"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "“Human error” as a selected cause and “awareness” as the action",
+        "ar": "«خطأ بشري» سبباً مختاراً وإجراء «توعية»"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "Share of selected causes that point at a person only",
+       "ar": "نسبة الأسباب المختارة التي تشير إلى شخص فقط"
+      }
+     },
+     {
+      "ref": "s1-5",
+      "clause": "GD-3",
+      "title": {
+       "en": "Rule causes out with data, and keep them on the diagram",
+       "ar": "استبعد الأسباب بالبيانات، وأبقِها على المخطط"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: a cause is ruled out when the evidence says it did not act in this case, not because someone in the room is not convinced. Write the evidence for ruling it out next to it, and do not delete it: keeping it shows the auditor and the next team that you looked at it. Principle 4.2.7 of ISO 9000:2026 ties good decisions to data and to understanding cause and effect relationships.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: السبب يُستبعد عندما يقول الدليل إنه لم يعمل في هذه الحالة، لا لأن أحداً في الغرفة لا يقتنع به. اكتب دليل الاستبعاد بجانبه، ولا تحذفه: بقاؤه يبيّن للمدقق وللفريق التالي أنكم نظرتم فيه. ويربط المبدأ 4.2.7 في ISO 9000:2026 القرار الجيد بالبيانات وبفهم علاقات السبب والنتيجة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “the truck mixers are old and lose slump” was ruled out: the supplier's fleet maintenance log shows every mixer's maintenance is current.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «خلاطات الشاحنات قديمة وتفقد الهبوط» استُبعد: سجل صيانة أسطول المورد يبيّن أن صيانة كل الخلاطات سارية."
+      },
+      "how": [
+       {
+        "en": "Write the evidence for ruling out as you write evidence for support",
+        "ar": "اكتب دليل الاستبعاد كما تكتب دليل الدعم"
+       },
+       {
+        "en": "Do not rule out by vote",
+        "ar": "لا تستبعد بالتصويت"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The ruled-out causes and their evidence",
+        "ar": "الأسباب المستبعدة وأدلتها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Causes deleted from the diagram without a trace",
+        "ar": "أسباب تُحذف من المخطط دون أثر"
+       },
+       {
+        "en": "Ruling out by opinion or seniority",
+        "ar": "استبعاد بالرأي أو بالأقدمية"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality engineer",
+       "ar": "مهندس الجودة"
+      },
+      "kpi": {
+       "en": "Causes ruled out with written evidence",
+       "ar": "عدد الأسباب المستبعدة بدليل مكتوب"
+      }
+     },
+     {
+      "ref": "s1-6",
+      "clause": "GD-4",
+      "title": {
+       "en": "Focus on the likely few",
+       "ar": "ركّز على القليل الأرجح"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: a good diagram holds many causes, but verification needs focus. Pick the two or three most likely: votes or weight show the team's view, and the evidence decides between them. What is not picked stays on the diagram as a candidate or ruled out, and you go back to it if the verification does not confirm what was picked.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: المخطط الجيد يحمل أسباباً كثيرة، لكن التحقق يحتاج تركيزاً. اختر سببين أو ثلاثة هي الأرجح: الأصوات أو الوزن تُظهر رأي الفريق، والدليل يرجّح بينها. ما لا يُختار يبقى على المخطط مرشّحاً أو مستبعداً، ويُرجع إليه إذا لم يؤكد التحقق ما اختير."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: for the concrete rejections, “pouring in the hot hours” got 6 votes and “mixing water not chilled” got 5, both supported by evidence, so both were picked.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في رفض الخرسانة حصل «الصب في ساعات الحرارة» على 6 أصوات و«ماء الخلط غير مبرد» على 5، وكلاهما مدعوم بالدليل، فاختيرا معاً."
+      },
+      "how": [
+       {
+        "en": "Three selected causes at most",
+        "ar": "ثلاثة أسباب مختارة على الأكثر"
+       },
+       {
+        "en": "Pick from the causes supported by evidence first",
+        "ar": "اختر من المدعوم بالدليل أولاً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The selected causes and their votes",
+        "ar": "الأسباب المختارة وأصواتها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Acting on everything on the diagram with scattered actions",
+        "ar": "معالجة كل ما على المخطط بإجراءات متفرقة"
+       },
+       {
+        "en": "Picking the loudest cause with no evidence",
+        "ar": "اختيار الأعلى صوتاً دون دليل"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "The team, led by the facilitator",
+       "ar": "الفريق بقيادة الميسّر"
+      },
+      "kpi": {
+       "en": "Average number of selected causes per analysis",
+       "ar": "متوسط عدد الأسباب المختارة لكل تحليل"
+      }
+     },
+     {
+      "ref": "s1-7",
+      "clause": "GD-5",
+      "title": {
+       "en": "Confirm the root cause before acting",
+       "ar": "تحقق من السبب الجذري قبل الإجراء"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the diagram shows where to look; on its own it does not prove the cause. Each selected cause gets a verification: a 5 Whys analysis that digs into it until it reaches a cause the organization can change, or data that compares what happened with what did not. Then test the root cause: if it is removed, does the effect stop? Principle 4.2.6 of ISO 9000:2026 lists a sharper focus on root cause investigation and determination among the benefits of improvement.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: المخطط يبيّن أين تبحث، ولا يثبت وحده السبب. لكل سبب مختار تحقق: تحليل «لماذا الخمس» يحفر فيه حتى سبب تستطيع المنشأة تغييره، أو بيانات تقارن ما حدث بما لم يحدث. ثم اختبر السبب الجذري: إذا أُزيل، هل يتوقف الأثر؟ ويذكر المبدأ 4.2.6 في ISO 9000:2026 من فوائد التحسين تركيزاً أكبر على التحقق من السبب الجذري وتحديده."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: 4 of 6 overdue devices had moved between sites, against only 2 of 32 devices that were not overdue: the data confirmed the cause “moving without updating the log”.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: 4 من 6 أجهزة متأخرة نُقلت بين الموقعين، مقابل 2 فقط من 32 جهازاً غير متأخر: البيانات أكدت سبب «النقل دون تحديث السجل»."
+      },
+      "how": [
+       {
+        "en": "Link a 5 Whys analysis to the selected cause, or write the verification note with data",
+        "ar": "اربط تحليل «لماذا الخمس» بالسبب المختار، أو اكتب ملاحظة التحقق بالبيانات"
+       },
+       {
+        "en": "Write the result: confirmed or not confirmed",
+        "ar": "اكتب النتيجة: مؤكد أو غير مؤكد"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The verification and its result for each selected cause",
+        "ar": "التحقق ونتيجته لكل سبب مختار"
+       },
+       {
+        "en": "The result of the root cause test",
+        "ar": "نتيجة اختبار السبب الجذري"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An action built on a cause that was never verified",
+        "ar": "إجراء يُبنى على سبب لم يُتحقق منه"
+       },
+       {
+        "en": "A “not confirmed” cause kept as the root cause",
+        "ar": "سبب «غير مؤكد» يبقى سبباً جذرياً"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Team and reviewer",
+       "ar": "الفريق والمراجِع"
+      },
+      "kpi": {
+       "en": "Share of analyses whose selected causes were verified",
+       "ar": "نسبة التحليلات التي تحققت أسبابها المختارة"
+      }
+     },
+     {
+      "ref": "s1-8",
+      "clause": "10.2.1 b 3",
+      "title": {
+       "en": "Check for similar nonconformities that exist or could occur",
+       "ar": "تحقّق من الحالات المشابهة الموجودة أو المحتملة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: part of the evaluation is determining whether similar nonconformities exist or could potentially occur. The diagram makes this easier: every confirmed cause in a shared form, procedure or supplier means every place that uses it is exposed.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: من خطوات التقييم تحديد ما إذا كانت حالات مشابهة موجودة أو قد تحدث. والمخطط يسهّل ذلك: كل سبب مؤكد في نموذج أو إجراء أو مورد مشترك يعني أن كل مكان يستخدمه معرّض."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the cause was in the shared document control procedure, so sites A and C were checked and two superseded copies were found on site C.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: السبب في إجراء ضبط الوثائق المشترك، ففُحص الموقعان أ وج، ووُجدت نسختان ملغاتان في الموقع ج."
+      },
+      "how": [
+       {
+        "en": "For each confirmed cause, ask who else uses the same thing",
+        "ar": "لكل سبب مؤكد اسأل: من يستخدم الشيء نفسه؟"
+       },
+       {
+        "en": "Record where you checked and what you found",
+        "ar": "سجّل أين فُحص وما النتيجة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Result of the check on similar sites or processes",
+        "ar": "نتيجة فحص المواقع أو العمليات المشابهة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Closing the case without looking beyond where it happened",
+        "ar": "إغلاق الحالة دون النظر خارج مكانها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality officer",
+       "ar": "مسؤول الجودة"
+      },
+      "kpi": {
+       "en": "Share of analyses where similar cases were checked",
+       "ar": "نسبة التحليلات التي فُحصت فيها الحالات المشابهة"
+      }
+     },
+     {
+      "ref": "s1-9",
+      "clause": "10.2.1 c",
+      "title": {
+       "en": "Build the action on the root cause, and carry it out from the CAPA record",
+       "ar": "ابنِ الإجراء على السبب الجذري، ونفّذه من سجل CAPA"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: once the causes are determined, the organization implements any action needed, and corrective actions are appropriate to the effects of the nonconformities. ISO 9000:2026 (3.6.4) describes corrective action as removing the cause and preventing recurrence, so each action is read against a confirmed cause on the diagram.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: بعد تحديد الأسباب تنفذ المنشأة أي إجراء لازم، وتكون الإجراءات التصحيحية مناسبة لآثار عدم المطابقة. والإجراء التصحيحي في ISO 9000:2026 (3.6.4) يزيل سبب عدم المطابقة ويمنع تكرارها؛ لذلك يُقرأ كل إجراء مقابل سبب مؤكد على المخطط."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the confirmed cause “no named owner at each site” became an action in record CA-EX-02: name a calibration owner at each site, with an owner and a date.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: السبب المؤكد «لا مسؤول مسمّى في كل موقع» صار إجراءً في سجل CA-EX-02: تسمية مسؤول معايرة في كل موقع، بمالك وموعد."
+      },
+      "how": [
+       {
+        "en": "Carry the root cause into the CAPA record with “Use this root cause”",
+        "ar": "انقل السبب الجذري إلى سجل CAPA بزر «استخدم هذا السبب الجذري»"
+       },
+       {
+        "en": "Each countermeasure has an owner here and a due date in CAPA",
+        "ar": "لكل إجراء مقترح مالك هنا، وموعده في CAPA"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The analysis linked to the CAPA record number",
+        "ar": "ربط التحليل برقم سجل CAPA"
+       },
+       {
+        "en": "An action for each confirmed cause",
+        "ar": "إجراء لكل سبب مؤكد"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Actions for causes that were not picked or not confirmed",
+        "ar": "إجراءات لأسباب لم تُختر أو لم تتأكد"
+       },
+       {
+        "en": "An analysis that never reaches an action record",
+        "ar": "تحليل لا يصل إلى أي سجل إجراء"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of analyses linked to a CAPA record",
+       "ar": "نسبة التحليلات المرتبطة بسجل CAPA"
+      }
+     },
+     {
+      "ref": "s1-10",
+      "clause": "A.10.2",
+      "title": {
+       "en": "Choose the extent of investigation and the method by risk and impact",
+       "ar": "اختر مدى التحقيق والطريقة بحسب الخطر والأثر"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: Annex A.10.2 explains that the organization decides how to address nonconformities, including the extent of investigation and the methods used, based on its context and needs, considering the risk of recurrence, the actual or potential impact and the requirements of customers and other interested parties when deciding on corrective action.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يوضح الملحق A.10.2 أن المنشأة تحدد طريقة التعامل مع عدم المطابقة، ومنها مدى التحقيق والطرق المستخدمة، بحسب سياقها واحتياجاتها، مع مراعاة خطر التكرار والأثر الفعلي أو المحتمل ومتطلبات العملاء والأطراف المعنية عند تقرير الإجراء التصحيحي."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: a problem with one clear path needs only 5 Whys. Repeated concrete rejections with causes in method, materials and the supplier deserved a fishbone diagram, then verification with 5 Whys.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: مشكلة لها مسار واحد واضح تكفيها «لماذا الخمس». أما رفض الخرسانة المتكرر بأسباب في الطريقة والمواد والمورد فاستحق مخطط عظمة سمكة ثم تحققاً بلماذا الخمس."
+      },
+      "how": [
+       {
+        "en": "Set a rule: when a fishbone diagram is needed, when 5 Whys is enough, and when correction alone is enough",
+        "ar": "ضع قاعدة: متى يلزم مخطط عظمة سمكة، ومتى تكفي «لماذا الخمس»، ومتى يكفي التصحيح"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The rule for choosing the method and the extent of investigation",
+        "ar": "قاعدة اختيار الطريقة ومدى التحقيق"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A full diagram for every small problem",
+        "ar": "مخطط كامل لكل مشكلة صغيرة"
+       },
+       {
+        "en": "A single chain for a problem with several causes",
+        "ar": "سلسلة واحدة لمشكلة لها أسباب متعددة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Share of major nonconformities analysed",
+       "ar": "نسبة عدم المطابقة الرئيسية التي حُللت"
+      }
+     },
+     {
+      "ref": "s1-11",
+      "clause": "10.2.2",
+      "title": {
+       "en": "Keep the diagram and the verification as evidence",
+       "ar": "احتفظ بالمخطط والتحقق دليلاً"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: documented information is kept on the nature of the nonconformities, the actions that followed and the results of corrective action. The diagram, with its causes, evidence and verification, is part of that evidence and auditors usually ask for it.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تُحفظ معلومات موثقة تبيّن طبيعة عدم المطابقة والإجراءات التي تلتها ونتائج الإجراء التصحيحي. والمخطط بأسبابه وأدلته وتحققه جزء من هذا الدليل، ويطلبه المدقق عادةً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the report of analysis FB-EX-01, with its diagram and cause table, is filed with record CA-EX-02 in the document system.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: تقرير التحليل FB-EX-01 بمخططه وجدول أسبابه مرفق بسجل CA-EX-02 في نظام الوثائق."
+      },
+      "how": [
+       {
+        "en": "Download the HTML report and file it with the CAPA record",
+        "ar": "نزّل تقرير HTML واحفظه مع سجل CAPA"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The filed analysis report",
+        "ar": "تقرير التحليل المرفق"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A whiteboard diagram wiped after the meeting",
+        "ar": "مخطط على سبورة يُمسح بعد الاجتماع"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality officer",
+       "ar": "مسؤول الجودة"
+      },
+      "kpi": {
+       "en": "Share of CAPA records with a filed analysis",
+       "ar": "نسبة سجلات CAPA التي يرافقها تحليل محفوظ"
+      }
+     }
+    ]
+   },
+   {
+    "id": "7.2",
+    "phase": "define",
+    "title": {
+     "en": "Clause 7.2 Competence",
+     "ar": "البند 7.2 الكفاءة"
+    },
+    "short": {
+     "en": "7.2 · Competence",
+     "ar": "7.2 · الكفاءة"
+    },
+    "intro": {
+     "en": "A diagram is as good as the people in the room: a facilitator who knows the method, and people who know each category as it really happens.",
+     "ar": "جودة المخطط من جودة من في الغرفة: ميسّر يعرف الطريقة، وأشخاص يعرفون كل فئة كما تحدث فعلاً."
+    },
+    "items": [
+     {
+      "ref": "s2-1",
+      "clause": "7.2",
+      "title": {
+       "en": "Pick a competent team that includes someone who does the work",
+       "ar": "اختر فريقاً كفؤاً يضم من يؤدي العمل"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization determines the competence needed by people whose work affects quality system performance, makes sure they are competent through education, training or experience, acts to gain it where needed and evaluates whether those actions worked, and keeps evidence of it. Cause analysis is work that affects performance, so it needs a trained facilitator and field experience in each category.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحدد المنشأة الكفاءة اللازمة للأشخاص الذين يؤثر عملهم في أداء نظام الجودة، وتتأكد من كفاءتهم بالتعليم أو التدريب أو الخبرة، وتتخذ إجراءات لاكتسابها عند الحاجة وتقيّم فعالية تلك الإجراءات، مع الاحتفاظ بدليل عليها. وتحليل الأسباب عمل يؤثر في الأداء، فيحتاج ميسّراً مدرباً وخبرة ميدانية في كل فئة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the concrete analysis the supplier's batching representative took part; he was the one who confirmed the mixing water was not chilled on evening loads.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في تحليل الخرسانة حضر ممثل المورد المسؤول عن الخلط في المصنع، وهو من أكد أن ماء الخلط لم يُبرّد في شحنات المساء."
+      },
+      "how": [
+       {
+        "en": "Put at least one person who does the work in every team",
+        "ar": "ضع في كل فريق شخصاً واحداً على الأقل يؤدي العمل نفسه"
+       },
+       {
+        "en": "Invite people who know the categories that matter (supplier, equipment, measurement)",
+        "ar": "ادعُ من يعرف الفئات التي تخص المشكلة (المورد، المعدات، القياس)"
+       },
+       {
+        "en": "Train facilitators in the method and keep the training record",
+        "ar": "درّب ميسّرين على الطريقة واحفظ سجل التدريب"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The team list and roles",
+        "ar": "قائمة الفريق وأدوارهم"
+       },
+       {
+        "en": "Facilitator training records",
+        "ar": "سجل تدريب الميسّرين"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A team from the office only",
+        "ar": "فريق من المكتب فقط"
+       },
+       {
+        "en": "A facilitator who fills the bones alone",
+        "ar": "ميسّر يملأ العظام وحده"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Share of analyses that included someone doing the work",
+       "ar": "نسبة التحليلات التي ضمّت من يؤدي العمل"
+      }
+     }
+    ]
+   },
+   {
+    "id": "7.1.6",
+    "phase": "learn",
+    "title": {
+     "en": "Clause 7.1.6 Organizational knowledge",
+     "ar": "البند 7.1.6 المعرفة التنظيمية"
+    },
+    "short": {
+     "en": "7.1.6 · Knowledge",
+     "ar": "7.1.6 · المعرفة"
+    },
+    "intro": {
+     "en": "A reviewed diagram is a ready lesson: its confirmed and ruled-out causes save the next team a whole session, if it is kept and shared.",
+     "ar": "المخطط المراجَع درس جاهز: أسبابه المؤكدة والمستبعدة توفر على الفريق التالي جلسة كاملة، إذا حُفظ وشورك."
+    },
+    "items": [
+     {
+      "ref": "s3-1",
+      "clause": "7.1.6",
+      "title": {
+       "en": "Keep and share what the diagram taught you",
+       "ar": "احفظ ما تعلمته من المخطط وشاركه"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization determines the knowledge needed to operate its processes and achieve quality system results, and retains, applies and shares it to the extent necessary. Its forms include knowledge gained from experience and knowledge built into methods and processes.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحدد المنشأة المعرفة اللازمة لتشغيل عملياتها وتحقيق نتائج نظام الجودة، وتحتفظ بها وتطبقها وتشاركها بالقدر اللازم. ومن أشكالها المعرفة المكتسبة من الخبرة والمعرفة المضمّنة في الطرق والعمليات."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the concrete rejection diagram, with its confirmed and ruled-out causes, became the starting point for any project pouring in summer.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: أصبح مخطط رفض الخرسانة بفئاته المؤكدة والمستبعدة نقطة بداية لأي مشروع يصب في الصيف."
+      },
+      "how": [
+       {
+        "en": "Share a one-page summary of every reviewed diagram",
+        "ar": "انشر ملخصاً من صفحة واحدة لكل مخطط مراجَع"
+       },
+       {
+        "en": "Start a similar problem from the earlier diagram instead of a blank page",
+        "ar": "ابدأ المشكلة المشابهة من المخطط السابق بدل صفحة فارغة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The shared analysis summaries",
+        "ar": "ملخصات التحليلات المنشورة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "The diagram stays in the file of whoever attended",
+        "ar": "المخطط يبقى في ملف من حضر الجلسة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Analysis summaries shared",
+       "ar": "عدد ملخصات التحليل المنشورة"
+      }
+     }
+    ]
+   },
+   {
+    "id": "9.1.3",
+    "phase": "check",
+    "title": {
+     "en": "Clause 9.1.3 Analysis and evaluation",
+     "ar": "البند 9.1.3 التحليل والتقييم"
+    },
+    "short": {
+     "en": "9.1.3 · Analysis",
+     "ar": "9.1.3 · التحليل"
+    },
+    "intro": {
+     "en": "Data works at both ends of the diagram: it chooses the problem that deserves the session, then proves or rules out the causes.",
+     "ar": "البيانات تعمل في طرفي المخطط: تختار المشكلة التي تستحق الجلسة، ثم تثبت الأسباب أو تستبعدها."
+    },
+    "items": [
+     {
+      "ref": "s4-1",
+      "clause": "9.1.3",
+      "title": {
+       "en": "Use data to choose the problem and to verify the causes",
+       "ar": "استخدم البيانات لاختيار المشكلة وللتحقق من الأسباب"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization analyses and evaluates data and information from monitoring and measurement, and uses the results to evaluate, among other things, product and service conformity, system performance, external provider performance and the need for improvement. The clause's note says methods to analyse data can include statistical techniques, some of which prove or rule out a cause.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحلل المنشأة البيانات والمعلومات الناتجة عن الرصد والقياس وتقيّمها، وتستخدم النتائج لتقييم أمور منها مطابقة المنتجات والخدمات وأداء النظام وأداء الموردين والحاجة إلى التحسين. وتذكر الملاحظة في البند أن طرق تحليل البيانات قد تشمل الأساليب الإحصائية، ومنها ما يثبت السبب أو يستبعده."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: comparing overdue devices with the rest (4 of 6 against 2 of 32 had moved between sites) was the verification of the moving cause.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: مقارنة الأجهزة المتأخرة بغير المتأخرة (4 من 6 مقابل 2 من 32 نُقلت بين المواقع) كانت التحقق من سبب النقل."
+      },
+      "how": [
+       {
+        "en": "Rank problems by frequency and impact before choosing what to analyse",
+        "ar": "رتّب المشكلات بحسب التكرار والأثر قبل اختيار ما يُحلَّل"
+       },
+       {
+        "en": "Compare what happened with what did not to verify a cause",
+        "ar": "قارن ما حدث بما لم يحدث للتحقق من السبب"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The data behind the choice and the verification",
+        "ar": "بيانات الاختيار والتحقق"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A diagram for a problem chosen because it caught attention",
+        "ar": "مخطط لمشكلة اختيرت لأنها لفتت الانتباه"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality engineer",
+       "ar": "مهندس الجودة"
+      },
+      "kpi": {
+       "en": "Share of selected causes verified with data",
+       "ar": "نسبة الأسباب المختارة المتحقق منها بالبيانات"
+      }
+     }
+    ]
+   },
+   {
+    "id": "10.1",
+    "phase": "learn",
+    "title": {
+     "en": "Clause 10.1 Continual improvement",
+     "ar": "البند 10.1 التحسين المستمر"
+    },
+    "short": {
+     "en": "10.1 · Improvement",
+     "ar": "10.1 · التحسين"
+    },
+    "intro": {
+     "en": "An analysis that changes a method, a form or a contract clause improves the system, not only the case.",
+     "ar": "التحليل الذي يغيّر طريقة أو نموذجاً أو شرطاً تعاقدياً يحسّن النظام، لا الحالة وحدها."
+    },
+    "items": [
+     {
+      "ref": "s5-1",
+      "clause": "10.1 c",
+      "title": {
+       "en": "Make the confirmed causes an input to improvement",
+       "ar": "اجعل الأسباب المؤكدة مدخلاً للتحسين"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization continually improves the suitability, adequacy and effectiveness of its quality system, and improvement actions include correcting, preventing or reducing undesired effects. The improvement principle in ISO 9000:2026 (4.2.6) lists, among possible actions, training people to apply basic tools and methodologies to achieve improvement objectives.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحسّن المنشأة باستمرار ملاءمة نظام الجودة وكفايته وفعاليته، ومن إجراءات التحسين تصحيح الآثار غير المرغوبة أو منعها أو تقليلها. ويذكر مبدأ التحسين في ISO 9000:2026 (4.2.6) من الإجراءات الممكنة تدريب الناس على تطبيق الأدوات والطرق الأساسية لتحقيق أهداف التحسين."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the chilled mixing water clause became part of the concrete contracts on every project, not only on the project where the problem happened.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: شرط تبريد ماء الخلط أصبح جزءاً من عقود الخرسانة في كل المشاريع، لا في المشروع الذي وقعت فيه المشكلة فقط."
+      },
+      "how": [
+       {
+        "en": "After every analysis, ask whether the cause deserves a change across the system",
+        "ar": "اسأل بعد كل تحليل: هل يستحق السبب تغييراً في النظام كله؟"
+       },
+       {
+        "en": "Open a PDCA cycle when the change needs measuring in stages",
+        "ar": "افتح دورة PDCA عندما يحتاج التغيير قياساً على مراحل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The system change and its reference in the analysis",
+        "ar": "التغيير في النظام ومرجعه في التحليل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "The cause fixed in one place only",
+        "ar": "السبب يُعالج في مكان واحد فقط"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Top management",
+       "ar": "الإدارة العليا"
+      },
+      "kpi": {
+       "en": "System changes triggered by analyses",
+       "ar": "عدد التغييرات في النظام الناتجة عن التحليلات"
+      }
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "id": "fb5",
+    "q": {
+     "en": "Fishbone or 5 Whys?",
+     "ar": "عظمة السمكة أم لماذا الخمس؟"
+    },
+    "a": {
+     "en": "They work together. **Fishbone** spreads the possible causes across categories when they are many or unclear, so it shows **where to look**. **5 Whys** digs into one cause until it reaches a cause the organization can change. The usual order: map the causes here, pick the two or three most likely, then verify each with “Analyse with 5 Whys” or with data. If the problem has one clear path, start with 5 Whys directly. Details in the [[tab:explain-std]].",
+     "ar": "تعملان معاً. **عظمة السمكة** تنشر الأسباب الممكنة على فئات عندما تكون كثيرة أو غير واضحة، فتبيّن **أين تبحث**. و**لماذا الخمس** تحفر في سبب واحد حتى تصل إلى سبب تستطيع المنشأة تغييره. الترتيب المعتاد: ارسم الأسباب هنا، واختر سببين أو ثلاثة هي الأرجح، ثم تحقق من كل منها بزر «حلّل بأداة لماذا الخمس» أو بالبيانات. وإذا كان للمشكلة مسار واحد واضح فابدأ مباشرة بلماذا الخمس. التفاصيل في [[tab:explain-std]]."
+    }
+   },
+   {
+    "id": "cats",
+    "q": {
+     "en": "Which categories should I use?",
+     "ar": "أي الفئات أستخدم؟"
+    },
+    "a": {
+     "en": "Categories are **prompts**, not a fixed list. **6M** (people, method, materials, machines and equipment, measurement, environment) fits manufacturing and construction. **4S** (surroundings, suppliers, systems, skills) fits services and support processes. **8P** fits marketing and services. Rename any category or add one, up to eight. Changing the set never deletes a cause you wrote.",
+     "ar": "الفئات **محفّزات** للتفكير، لا قائمة ثابتة. **6M** (الأفراد، والطريقة، والمواد، والآلات والمعدات، والقياس، والبيئة) تناسب التصنيع والمقاولات. **4S** (المحيط، والموردون، والأنظمة، والمهارات) تناسب الخدمات والعمليات المساندة. **8P** تناسب التسويق والخدمات. أعد تسمية أي فئة أو أضف فئة حتى ثماني. تغيير المجموعة لا يحذف أي سبب مكتوب."
+    }
+   },
+   {
+    "id": "evid",
+    "q": {
+     "en": "When is a cause supported, and when do I rule it out?",
+     "ar": "متى يصبح السبب مدعوماً، ومتى أستبعده؟"
+    },
+    "a": {
+     "en": "Every cause starts as a **candidate**. It becomes **supported by evidence** when you write next to it evidence you can show: a record, a photo, a document with its revision, or data. You **rule it out** when the evidence says it did not act (for example: the calibration certificate is valid), and you write that evidence next to it. Do not delete a ruled-out cause: keeping it on the diagram shows the auditor you looked at it.",
+     "ar": "كل سبب يبدأ **مرشّحاً**. يصبح **مدعوماً بالدليل** عندما تكتب بجانبه دليلاً يمكن عرضه: سجل، أو صورة، أو وثيقة بإصدارها، أو بيانات. و**تستبعده** عندما يقول الدليل إنه لم يعمل (مثلاً: شهادة المعايرة سارية)، واكتب الدليل نفسه بجانبه. لا تحذف السبب المستبعد: بقاؤه على المخطط يبيّن للمدقق أنكم نظرتم فيه."
+    }
+   },
+   {
+    "id": "pick",
+    "q": {
+     "en": "How many causes do I pick to verify, and how?",
+     "ar": "كم سبباً أختار للتحقق، وكيف؟"
+    },
+    "a": {
+     "en": "**Three at most.** Use votes or weight to show the team's view, but pick from the causes **supported by evidence** first. Each selected cause gets one verification: a linked 5 Whys analysis, or a note with data, then the result “confirmed” or “not confirmed”. If the verification does not confirm a cause, go back to the diagram and pick another.",
+     "ar": "**ثلاثة على الأكثر**. استخدم الأصوات أو الوزن ليظهر رأي الفريق، لكن اختر من بين الأسباب **المدعومة بالدليل** أولاً. لكل سبب مختار تحقق واحد: تحليل «لماذا الخمس» مربوط، أو ملاحظة بالبيانات، ثم النتيجة «مؤكد» أو «غير مؤكد». إذا لم يؤكد التحقق سبباً فارجع إلى المخطط واختر غيره."
+    }
+   },
+   {
+    "id": "human",
+    "q": {
+     "en": "What if the team writes “human error” on the people bone?",
+     "ar": "ماذا أفعل إذا كتب الفريق «خطأ بشري» على عظمة الأفراد؟"
+    },
+    "a": {
+     "en": "“Human error” describes what happened; it is not a cause. Write instead what in the process allowed the mistake: an unclear form, a missing second check, incomplete training, workload, or a design that makes the error easy. The tool warns when a selected cause or the root cause points at a person only, and the check “selected cause is not a person alone” fails in the [[tab:audit]].",
+     "ar": "«خطأ بشري» وصف لما حدث، وليس سبباً. اكتب بدلاً منه ما في العملية سمح بالخطأ: نموذج غامض، أو فحص ثانٍ غائب، أو تدريب ناقص، أو عبء عمل، أو تصميم يسهّل الخطأ. تنبّه الأداة عندما يشير سبب مختار أو السبب الجذري إلى شخص فقط، ويفشل فحص «السبب المختار ليس شخصاً فقط» في [[tab:audit]]."
+    }
+   },
+   {
+    "id": "capa",
+    "q": {
+     "en": "How does the analysis link to a CAPA record?",
+     "ar": "كيف يرتبط التحليل بسجل CAPA؟"
+    },
+    "a": {
+     "en": "Start in the [[tab:tools]] → “Start from a CAPA record”: the tool reads the CAPA records, fills the reference and the effect, and brings lines of the cause analysis written as “Category: cause” across as candidate causes, writing nothing to CAPA. In the CAPA tool, the cause analysis section lists every Fishbone analysis that names the record, with “Use this root cause”, which copies the text into the record's field when you click it and save. The data stays in this browser under the key cia-fish:v1.",
+     "ar": "ابدأ من [[tab:tools]] ← «ابدأ من سجل CAPA»: تقرأ الأداة سجلات CAPA وتعبّئ المرجع والأثر، وتنقل أسطر تحليل السبب المكتوبة بصيغة «الفئة: السبب» أسباباً مرشحة، دون أن تكتب شيئاً في CAPA. وفي أداة CAPA يظهر في قسم تحليل السبب كل تحليل عظمة سمكة يذكر السجل، مع زر «استخدم هذا السبب الجذري» الذي ينسخ النص إلى حقل السجل عندما تضغطه وتحفظ. البيانات تبقى في هذا المتصفح تحت المفتاح cia-fish:v1."
+    }
+   }
+  ],
+  "competencies": [
+   "QM-03",
+   "QM-02"
+  ],
+  "ecosystem": "quality"
+ }
+}

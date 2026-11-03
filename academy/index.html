@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+  Continual Improvement Academy — Academy module (Phase 1: foundation & design system)
+  Mounted at /academy/ beside the CIA hub. Run through any static web server.
+  © 2026 Modather Salama — Continual Improvement Academy. All rights reserved.
+-->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="أكاديمية التحسين المستمر — منظومة التطوير المهني والكفاءة">
+<title>أكاديمية التحسين المستمر — Continual Improvement Academy</title>
+<link rel="preload" href="./assets/fonts/IBMPlexSansArabic-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/css/tokens.css">
+<link rel="stylesheet" href="./assets/css/app.css">
+<link rel="stylesheet" href="./assets/css/academy.css">
+<script>
+  /* Apply the platform-wide language (shared `cia-lang` key) before first paint. */
+  (function () {
+    var l = new URLSearchParams(location.search).get('lang');
+    try { if (l !== 'ar' && l !== 'en') l = localStorage.getItem('cia-lang'); } catch (e) {}
+    if (l !== 'ar' && l !== 'en') l = 'ar';
+    document.documentElement.lang = l; document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
+  })();
+</script>
+<script type="module" src="./src/main.js"></script>
+</head>
+<body>
+<div id="app">
+  <main class="main"><p class="loading" role="status"><span class="spinner" aria-hidden="true"></span> …</p></main>
+</div>
+<noscript><p style="padding:1rem">تتطلب الأكاديمية تفعيل JavaScript. · The Academy requires JavaScript.</p></noscript>
+</body>
+</html>

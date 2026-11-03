@@ -1,0 +1,1841 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-SWOT",
+  "slug": "swot",
+  "kind": "method",
+  "module": "swot",
+  "title": {
+   "en": "SWOT analysis",
+   "ar": "تحليل SWOT"
+  },
+  "subtitle": {
+   "en": "Method tool: from the grid to decisions",
+   "ar": "أداة منهجية: من المصفوفة إلى القرار"
+  },
+  "lede": {
+   "en": "To turn an understanding of the context into decisions: internal strengths and weaknesses with evidence, external opportunities and threats from known sources, ranked, then options and actions with an owner and a date, risks and opportunities carried into the 6.1 plan, then a review when the context changes. A grid that reaches no decision changes nothing.",
+   "ar": "أن يتحول فهم السياق إلى قرارات: قوة وضعف داخليان بدليل، وفرص وتهديدات خارجية من مصادر معروفة، مرتبة، ثم خيارات وإجراءات بمالك وموعد، ومخاطر وفرص تدخل خطة 6.1، ثم مراجعة عند تغير السياق. المصفوفة التي لا تصل إلى قرار لا تغيّر شيئاً."
+  },
+  "author": "مدثر سلامه",
+  "note": {
+   "en": "SWOT is a technique, not a standard or a requirement. ISO 10009:2024 reviews it in 5.1, with PESTLE in 5.2 and Porter's forces in 5.3. The ISO 9001:2026 requirements it serves: understanding the organization and its context (4.1), interested parties (4.2), determining and planning for risks and opportunities (6.1.1, 6.1.2 and 6.1.3), objectives and planning to achieve them (6.2), and management review inputs (9.3.2).",
+   "ar": "SWOT أسلوب، وليس مواصفة ولا متطلباً. تراجعه ISO 10009:2024 في البند 5.1 مع PESTLE في 5.2 وقوى بورتر في 5.3. والمتطلبات التي يخدمها في ISO 9001:2026: فهم المنشأة وسياقها (4.1)، والأطراف المعنية (4.2)، وتحديد المخاطر والفرص والتخطيط لها (6.1.1 و6.1.2 و6.1.3)، والأهداف وخطط تحقيقها (6.2)، ومدخلات مراجعة الإدارة (9.3.2)."
+  },
+  "who": {
+   "en": "Top management and strategy teams, quality and risk managers, bid and project managers, process owners, whoever prepares management review, and internal auditors.",
+   "ar": "الإدارة العليا وفرق الاستراتيجية، ومديرو الجودة والمخاطر، ومديرو العطاءات والمشاريع، ومالكو العمليات، ومن يعد مراجعة الإدارة، والمدققون الداخليون."
+  },
+  "roles": [
+   {
+    "name": {
+     "en": "Decision owner",
+     "ar": "مالك القرار"
+    },
+    "text": {
+     "en": "Sets the scope and the decision the study serves, approves the options, and carries the result to management review.",
+     "ar": "يحدد النطاق والقرار الذي تخدمه الدراسة، ويعتمد الخيارات، ويحمل النتيجة إلى مراجعة الإدارة."
+    }
+   },
+   {
+    "name": {
+     "en": "Facilitator",
+     "ar": "الميسّر"
+    },
+    "text": {
+     "en": "Brings the team and the outside input together, asks for evidence on every item, and keeps the most senior voice from taking over.",
+     "ar": "يجمع الفريق والرأي الخارجي، ويطلب الدليل لكل بند، ويمنع أن يطغى رأي الأعلى منصباً."
+    }
+   },
+   {
+    "name": {
+     "en": "Evidence holders",
+     "ar": "أصحاب الدليل"
+    },
+    "text": {
+     "en": "Quality, finance and operations: KPIs, audit results, lessons, the PESTLE analysis and market data.",
+     "ar": "الجودة والمالية والعمليات: مؤشرات الأداء ونتائج التدقيق والدروس وتحليل PESTLE وبيانات السوق."
+    }
+   },
+   {
+    "name": {
+     "en": "Action owners",
+     "ar": "مالكو الإجراءات"
+    },
+    "text": {
+     "en": "Carry out the actions on time, and carry the threats into the risk register.",
+     "ar": "ينفذون الإجراءات بمواعيدها، ويحملون التهديدات إلى سجل المخاطر."
+    }
+   },
+   {
+    "name": {
+     "en": "Internal auditor",
+     "ar": "المدقق الداخلي"
+    },
+    "text": {
+     "en": "Asks: what are the external and internal issues? Where did they come from? What was decided because of them? When were they reviewed?",
+     "ar": "يسأل: ما القضايا الخارجية والداخلية؟ ومن أين جاءت؟ وما الذي تقرر بسببها؟ ومتى روجعت؟"
+    }
+   }
+  ],
+  "steps": [
+   {
+    "no": "1",
+    "title": {
+     "en": "Scope and decision",
+     "ar": "النطاق والقرار"
+    },
+    "text": {
+     "en": "What we analyse, and for which decision.",
+     "ar": "ماذا نحلل، ولأي قرار."
+    },
+    "ref": "GD-1"
+   },
+   {
+    "no": "2",
+    "title": {
+     "en": "The team",
+     "ar": "الفريق"
+    },
+    "text": {
+     "en": "Three roles and outside input.",
+     "ar": "ثلاثة أدوار ورأي من الخارج."
+    },
+    "ref": "GD-2"
+   },
+   {
+    "no": "3",
+    "title": {
+     "en": "External first",
+     "ar": "الخارجي أولاً"
+    },
+    "text": {
+     "en": "PESTLE, Porter's forces and the market.",
+     "ar": "PESTLE وقوى بورتر والسوق."
+    },
+    "ref": "GD-5"
+   },
+   {
+    "no": "4",
+    "title": {
+     "en": "Internal with evidence",
+     "ar": "الداخلي بدليل"
+    },
+    "text": {
+     "en": "KPIs, audits and lessons.",
+     "ar": "مؤشرات وتدقيق ودروس."
+    },
+    "ref": "GD-6"
+   },
+   {
+    "no": "5",
+    "title": {
+     "en": "Each item in its quadrant",
+     "ar": "كل بند في ربعه"
+    },
+    "text": {
+     "en": "Internal is a strength or weakness, external an opportunity or threat.",
+     "ar": "الداخلي قوة أو ضعف، والخارجي فرصة أو تهديد."
+    },
+    "ref": "GD-4"
+   },
+   {
+    "no": "6",
+    "title": {
+     "en": "Rank",
+     "ar": "رتّب"
+    },
+    "text": {
+     "en": "Weight and rank; the top three.",
+     "ar": "وزن ورتبة، والأعلى ثلاثة."
+    },
+    "ref": "GD-7"
+   },
+   {
+    "no": "7",
+    "title": {
+     "en": "TOWS options",
+     "ar": "خيارات TOWS"
+    },
+    "text": {
+     "en": "SO, ST, WO and WT.",
+     "ar": "SO وST وWO وWT."
+    },
+    "ref": "GD-8"
+   },
+   {
+    "no": "8",
+    "title": {
+     "en": "An action with an owner and a date",
+     "ar": "إجراء بمالك وموعد"
+    },
+    "text": {
+     "en": "For every option.",
+     "ar": "لكل خيار."
+    },
+    "ref": "GD-9"
+   },
+   {
+    "no": "9",
+    "title": {
+     "en": "Into the 6.1 plan",
+     "ar": "إلى خطة 6.1"
+    },
+    "text": {
+     "en": "The top threats and opportunities.",
+     "ar": "التهديدات والفرص العليا."
+    },
+    "ref": "6.1.2"
+   },
+   {
+    "no": "10",
+    "title": {
+     "en": "Review and communicate",
+     "ar": "راجع وأبلغ"
+    },
+    "text": {
+     "en": "When the context changes and at management review.",
+     "ar": "عند تغير السياق وفي مراجعة الإدارة."
+    },
+    "ref": "9.3.2"
+   }
+  ],
+  "related": [
+   {
+    "code": "Strategy Studio",
+    "name": {
+     "en": "Strategy & Performance Studio",
+     "ar": "استوديو الاستراتيجية والأداء"
+    },
+    "text": {
+     "en": "A study starts from its SWOT register, a TOWS option or a PESTLE factor (read-only); the strategy's objectives and KPIs stay there.",
+     "ar": "تبدأ دراسة من سجل SWOT أو خيار TOWS أو عامل PESTLE فيه (قراءة فقط)، وتبقى أهداف الاستراتيجية ومؤشراتها هناك."
+    }
+   },
+   {
+    "code": "Lessons",
+    "name": {
+     "en": "Lessons learned register",
+     "ar": "سجل الدروس المستفادة"
+    },
+    "text": {
+     "en": "A success lesson is a strength and a problem lesson a weakness, with the lesson's own evidence.",
+     "ar": "الدرس الناجح قوة، والمشكلة ضعف، ودليلهما من الدرس نفسه."
+    }
+   },
+   {
+    "code": "Pareto",
+    "name": {
+     "en": "Pareto — vital few",
+     "ar": "باريتو — القلة الحيوية"
+    },
+    "text": {
+     "en": "Vital-few categories as internal weaknesses, with their figures.",
+     "ar": "فئات القلة الحيوية ضعف داخلي بأرقامه."
+    }
+   },
+   {
+    "code": "FMEA",
+    "name": {
+     "en": "Failure mode and effects analysis",
+     "ar": "تحليل أنماط الفشل وآثارها"
+    },
+    "text": {
+     "en": "High-priority rows as threats to a process, and a risk entry names the study by its id.",
+     "ar": "الصفوف عالية الأولوية تهديدات للعملية، ومدخل الخطر يسمي الدراسة برقمها."
+    }
+   },
+   {
+    "code": "ISO 10009",
+    "name": {
+     "en": "ISO 10009 quality tools guide",
+     "ar": "دليل أدوات الجودة ISO 10009"
+    },
+    "text": {
+     "en": "Clause 5.1 SWOT with 5.2 PESTLE and 5.3 Porter's forces; this SWOT tool is its dedicated platform tool.",
+     "ar": "البند 5.1 SWOT مع 5.2 PESTLE و5.3 قوى بورتر، وأداة SWOT هنا أداته المستقلة على المنصة."
+    }
+   },
+   {
+    "code": "ISO 31000",
+    "name": {
+     "en": "ISO 31000 Risk Studio",
+     "ar": "استوديو المخاطر ISO 31000"
+    },
+    "text": {
+     "en": "A destination for the risk entries that come out of the top threats.",
+     "ar": "وجهة لمداخل الخطر التي تخرج من التهديدات العليا."
+    }
+   },
+   {
+    "code": "RCA · A3 · DMAIC · CAPA · PDCA",
+    "name": {
+     "en": "Problem-solving tools",
+     "ar": "أدوات حل المشكلات"
+    },
+    "text": {
+     "en": "A major weakness may need a cause analysis or an improvement project before it becomes an option.",
+     "ar": "ضعف كبير يحتاج تحليل سبب أو مشروع تحسين قبل أن يصبح خياراً."
+    }
+   }
+  ],
+  "serves": [
+   {
+    "code": "ISO 9001:2026 §4.1 · §4.2 · A.4",
+    "name": {
+     "en": "Context and interested parties",
+     "ar": "السياق والأطراف المعنية"
+    },
+    "text": {
+     "en": "The external and internal issues relevant to purpose and strategic direction, monitoring them, and the interested parties and their requirements.",
+     "ar": "القضايا الخارجية والداخلية ذات الصلة بالغرض والتوجه الاستراتيجي، ومتابعتها، والأطراف المعنية ومتطلباتها."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 §6.1.1–6.1.3 · A.6.1",
+    "name": {
+     "en": "Risks and opportunities",
+     "ar": "المخاطر والفرص"
+    },
+    "text": {
+     "en": "Considering the issues and requirements when determining risks and opportunities, and planning, integrating and evaluating the actions.",
+     "ar": "مراعاة القضايا والمتطلبات عند تحديد المخاطر والفرص، والتخطيط للإجراءات ودمجها وتقييم فعاليتها."
+    }
+   },
+   {
+    "code": "ISO 9000:2026 §3.1.2 · §3.1.4 · §3.7.2 · §4.4.1 · §4.4.2",
+    "name": {
+     "en": "Context, interested party, risk",
+     "ar": "السياق والطرف المعني والخطر"
+    },
+    "text": {
+     "en": "The context of the organization is a combination of internal and external issues; risk is the effect of uncertainty, positive or negative.",
+     "ar": "سياق المنشأة مزيج من القضايا الداخلية والخارجية، والخطر أثر عدم اليقين إيجاباً أو سلباً."
+    }
+   },
+   {
+    "code": "ISO 10009:2024 §5.1 · §5.2 · §5.3",
+    "name": {
+     "en": "SWOT, PESTLE and Porter's forces",
+     "ar": "SWOT وPESTLE وقوى بورتر"
+    },
+    "text": {
+     "en": "The strategy tools of clause 5, placed by Annex A in Plan and Act of strategy and business planning.",
+     "ar": "أدوات الاستراتيجية في البند 5، وفي الملحق A في مرحلتي التخطيط والتصرف لتخطيط الاستراتيجية والأعمال."
+    }
+   },
+   {
+    "code": "TOWS · ISO 31000 · BSC",
+    "name": {
+     "en": "TOWS, risk management, scorecard (not verified)",
+     "ar": "TOWS وإدارة المخاطر وبطاقة الأداء (غير متحقق منه)"
+    },
+    "text": {
+     "en": "None is uploaded to the project; ISO 31000 is named only in a NOTE of Annex A.6.1. So the stage and audit rules in the tool are its own wording.",
+     "ar": "لا يوجد منها شيء مرفوع إلى المشروع؛ ISO 31000 مذكورة فقط في ملاحظة الملحق A.6.1. فقواعد المراحل والتدقيق في الأداة صياغتها هي."
+    }
+   }
+  ],
+  "clauses": [
+   {
+    "id": "4.1",
+    "phase": "ctx",
+    "title": {
+     "en": "Clause 4.1 Understanding the organization and its context",
+     "ar": "البند 4.1 فهم المنشأة وسياقها"
+    },
+    "short": {
+     "en": "4.1 · Context",
+     "ar": "4.1 · السياق"
+    },
+    "intro": {
+     "en": "The standard asks to determine and monitor the external and internal issues. A SWOT is a way to organise them, provided it serves a decision and is reviewed.",
+     "ar": "تطلب المواصفة تحديد القضايا الخارجية والداخلية ومتابعتها. وSWOT طريقة لتنظيمها، بشرط أن يخدم قراراً وأن يُراجع."
+    },
+    "items": [
+     {
+      "ref": "s1-1",
+      "clause": "4.1",
+      "title": {
+       "en": "External and internal issues: determined and monitored",
+       "ar": "القضايا الخارجية والداخلية: تُحدد وتُتابع"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 4.1 asks to determine the external and internal issues relevant to the organization's purpose and strategic direction that affect the ability of the quality management system to achieve its intended results, to determine whether climate change is a relevant issue, and to monitor and review information about these issues. Its notes say issues can be positive or negative factors, that the external context can be understood by considering legal, technological, competitive, market, cultural, political, social, economic and environmental issues, and the internal one by considering strategic direction, values, culture, resources, knowledge and performance. The standard does not name SWOT; it is a means, not a requirement.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 4.1 تحديد القضايا الخارجية والداخلية ذات الصلة بغرض المنشأة وتوجهها الاستراتيجي، والتي تؤثر في قدرة نظام إدارة الجودة على تحقيق نتائجه المقصودة، وتحديد ما إذا كان تغير المناخ قضية ذات صلة، ومتابعة المعلومات عن هذه القضايا ومراجعتها. وتذكر الملاحظات أن القضايا قد تكون عوامل إيجابية أو سلبية، وأن فهم السياق الخارجي يسهل بالنظر في القضايا القانونية والتقنية والتنافسية والسوقية والثقافية والسياسية والاجتماعية والاقتصادية والبيئية، والداخلي بالنظر في التوجه الاستراتيجي والقيم والثقافة والموارد والمعرفة والأداء. ولا تذكر المواصفة SWOT؛ فهو وسيلة لا متطلب."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in Al-Waha's 2027 strategy study, \"longer heatwaves\" came in as an external issue from the environmental PESTLE factor; the company decided climate change is a relevant issue for its concrete work and recorded it in the dated grid.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في دراسة استراتيجية 2027 لشركة الواحة جاءت «موجات الحر الأطول» قضيةً خارجية من PESTLE البيئي، وقررت الشركة أن تغير المناخ قضية ذات صلة بأعمال الصب، وسجلت ذلك في المصفوفة المؤرخة."
+      },
+      "how": [
+       {
+        "en": "Use the dated grid as the record of external and internal issues",
+        "ar": "اجعل المصفوفة سجل القضايا الخارجية والداخلية بتاريخ"
+       },
+       {
+        "en": "Decide explicitly whether climate change is relevant, and why",
+        "ar": "قرر صراحة هل تغير المناخ قضية ذات صلة، ولماذا"
+       },
+       {
+        "en": "Name who monitors each issue and when it is reviewed",
+        "ar": "حدد من يتابع كل قضية ومتى تُراجع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A dated grid with the names of those who took part",
+        "ar": "مصفوفة مؤرخة بأسماء المشاركين"
+       },
+       {
+        "en": "A written decision on climate change",
+        "ar": "قرار مكتوب بشأن تغير المناخ"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A list of issues written once and never reviewed",
+        "ar": "قائمة قضايا كُتبت مرة ولم تُراجع"
+       },
+       {
+        "en": "General issues unrelated to the organization's purpose",
+        "ar": "قضايا عامة لا تمس غرض المنشأة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Top management",
+       "ar": "الإدارة العليا"
+      },
+      "kpi": {
+       "en": "Issues reviewed in the last 12 months",
+       "ar": "عدد القضايا المراجعة في آخر 12 شهراً"
+      }
+     },
+     {
+      "ref": "s1-2",
+      "clause": "A.4.1",
+      "title": {
+       "en": "Issues change over time",
+       "ar": "القضايا تتغير مع الوقت"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: Annex A.4.1 of ISO 9001:2026 explains that external and internal issues are part of the organization's context, that they can arise from factors affecting its purpose, strategic direction or operating conditions, that they change over time, and that awareness of the changes supports the continuing effectiveness of the system.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يوضح الملحق A.4.1 من ISO 9001:2026 أن القضايا الخارجية والداخلية جزء من سياق المنشأة، وقد تنشأ من عوامل تؤثر في غرضها وتوجهها الاستراتيجي وظروف عملها، وأنها تتغير مع الوقت، وأن الوعي بتغيرها يدعم استمرار فعالية النظام."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: when the thermal insulation requirements came out with a 2027 start date, Al-Waha held a review of the grid on 8 October 2026 and confirmed the opportunity's weight.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: لما صدرت متطلبات العزل الحراري بموعد بدء في 2027 أضافت الواحة مراجعة للمصفوفة في 8 أكتوبر 2026، وثبتت وزن الفرصة."
+      },
+      "how": [
+       {
+        "en": "Name events that call for an immediate review (a new regulation, a major client, an incident)",
+        "ar": "حدد أحداثاً تستدعي المراجعة فوراً (نظام جديد، عميل كبير، حادث)"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The review log with dates and what changed",
+        "ar": "سجل المراجعات بتاريخها وما تغير"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A grid that never changes while the market does",
+        "ar": "مصفوفة لا تتغير رغم تغير السوق"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Decision owner",
+       "ar": "مالك القرار"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s1-3",
+      "clause": "3.1.2",
+      "title": {
+       "en": "Context of the organization in ISO 9000:2026",
+       "ar": "سياق المنشأة في ISO 9000:2026"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9000:2026 defines the context of the organization (3.1.2) as the combination of internal and external issues that can affect the organization's approach to specifying and achieving its objectives. Subclause 4.4.1 says the internal context includes mission, vision, values, culture, history, knowledge and performance, the external one legal, technological, competitive, market, cultural, climate change, social, economic, environmental and governmental influences, and that understanding it clarifies how the organization manages its risks and opportunities.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يعرّف ISO 9000:2026 سياق المنشأة (3.1.2) بأنه مزيج من القضايا الداخلية والخارجية التي قد تؤثر في طريقة المنشأة في تحديد أهدافها وتحقيقها. ويذكر البند 4.4.1 أن السياق الداخلي يشمل الرسالة والرؤية والقيم والثقافة والتاريخ والمعرفة والأداء، والخارجي يشمل القانوني والتقني والتنافسي والسوقي والثقافي وأثر تغير المناخ والاجتماعي والاقتصادي والبيئي والحكومي، وأن فهمه يوضح كيف تدير المنشأة مخاطرها وفرصها."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: \"concrete know-how in hot weather\" is knowledge and performance (internal); \"the new insulation requirements\" is a legal and governmental influence (external).",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «خبرة الخرسانة في الحر» معرفة وأداء (داخلي)، و«متطلبات العزل الجديدة» تأثير قانوني وحكومي (خارجي)."
+      },
+      "how": [
+       {
+        "en": "Use the 4.4.1 lists to check that no area is missing",
+        "ar": "استخدم قوائم 4.4.1 للتأكد أن لا محور غائباً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Mixing mission and values in with the items",
+        "ar": "خلط الرسالة والقيم بالبنود"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s1-4",
+      "clause": "GD-1",
+      "title": {
+       "en": "Scope and decision before the grid",
+       "ar": "النطاق والقرار قبل المصفوفة"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: write before any item: what is being analysed (the organization, a business unit, a project, a process, a bid or a product), which decision the study serves, and when it is taken. A strength for a hospital bid is not a strength for the lifting process. A study with no decision produces a list, not options. So the \"scoped\" stage is not complete until the decision, the date and the facilitator are written.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: اكتب قبل أي بند: ماذا نحلل (المنشأة، أو وحدة أعمال، أو مشروع، أو عملية، أو عطاء، أو منتج)، وأي قرار ستخدمه الدراسة، ومتى يُتخذ. فالقوة في عطاء مستشفى ليست القوة في عملية الرفع. والدراسة بلا قرار تنتج قائمة لا خيارات. لذلك لا تكتمل مرحلة «حُدد النطاق» حتى يُكتب القرار والتاريخ والميسّر."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: bid study SW-EX-02 serves one decision: \"bid or not for the hospital tender, and at what floor price\" before 20 November 2026.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: دراسة العطاء SW-EX-02 تخدم قراراً واحداً: «نتقدم أم لا لمنافسة المستشفى، وبأي سعر أدنى» قبل 20 نوفمبر 2026."
+      },
+      "how": [
+       {
+        "en": "Write the decision as one sentence with a verb and a date",
+        "ar": "اكتب القرار جملة واحدة بفعل وموعد"
+       },
+       {
+        "en": "Pick the narrowest scope that serves the decision",
+        "ar": "اختر النطاق الأضيق الذي يكفي القرار"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The decision written at the head of the study",
+        "ar": "القرار المكتوب في رأس الدراسة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A \"general\" company SWOT with no decision",
+        "ar": "SWOT «عام» للشركة بلا قرار"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Decision owner",
+       "ar": "مالك القرار"
+      },
+      "kpi": {
+       "en": "Share of studies with a written decision",
+       "ar": "نسبة الدراسات التي لها قرار مكتوب"
+      }
+     }
+    ]
+   },
+   {
+    "id": "4.2",
+    "phase": "ctx",
+    "title": {
+     "en": "Clause 4.2 Needs and expectations of interested parties",
+     "ar": "البند 4.2 احتياجات الأطراف المعنية وتوقعاتها"
+    },
+    "short": {
+     "en": "4.2 · Interested parties",
+     "ar": "4.2 · الأطراف المعنية"
+    },
+    "intro": {
+     "en": "Interested parties are a source of opportunities and threats, and their voice in the team keeps the analysis from being an inside view only.",
+     "ar": "الأطراف المعنية مصدر للفرص والتهديدات، ورأيها في الفريق يمنع أن يكون التحليل نظرة من الداخل وحده."
+    },
+    "items": [
+     {
+      "ref": "s2-1",
+      "clause": "4.2",
+      "title": {
+       "en": "Interested parties and their requirements",
+       "ar": "الأطراف المعنية ومتطلباتها"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 4.2 asks to determine the interested parties relevant to the quality management system, their relevant requirements, and which of these requirements will be addressed through the system, and to monitor and review information about them. Its note says interested parties can have requirements related to climate change. ISO 9000:2026 defines an interested party (3.1.4) as a person or organization that can affect, be affected by, or perceive itself to be affected by a decision or activity; its examples include customers, owners, people in the organization, providers, regulators, partners and society.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 4.2 تحديد الأطراف المعنية ذات الصلة بنظام إدارة الجودة، ومتطلباتها ذات الصلة، وأي هذه المتطلبات يُعالج من خلال النظام، ومتابعة المعلومات عنها ومراجعتها. وتذكر الملاحظة أن للأطراف المعنية متطلبات قد تتصل بتغير المناخ. ويعرّف ISO 9000:2026 الطرف المعني (3.1.4) بأنه شخص أو منشأة يمكن أن يؤثر في قرار أو نشاط أو يتأثر به أو يرى أنه يتأثر به، ومن أمثلته العملاء والملاك والعاملون والموردون والجهات التنظيمية والشركاء والمجتمع."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the lifting process study, the crane supplier joined the team, and the \"load-monitoring retrofit\" opportunity came from him with a written quotation.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في دراسة عملية الرفع شارك مورد الرافعات في الفريق، فجاءت منه فرصة «نظام مراقبة الحمل» بعرض سعر مكتوب."
+      },
+      "how": [
+       {
+        "en": "Invite at least one interested party into the team",
+        "ar": "ادعُ طرفاً معنياً واحداً على الأقل إلى الفريق"
+       },
+       {
+        "en": "Link each opportunity or threat to an interested party where possible",
+        "ar": "اربط كل فرصة أو تهديد بطرف معني عند الإمكان"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The list of interested parties and their requirements",
+        "ar": "قائمة الأطراف المعنية ومتطلباتها"
+       },
+       {
+        "en": "The names of the outside participants",
+        "ar": "أسماء الحاضرين من الخارج"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Interested parties in a list that never reaches any analysis",
+        "ar": "أطراف معنية في قائمة لا تصل إلى أي تحليل"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "Share of studies with outside input",
+       "ar": "نسبة الدراسات برأي خارجي"
+      }
+     },
+     {
+      "ref": "s2-2",
+      "clause": "A.4.2",
+      "title": {
+       "en": "Requirements that change over time",
+       "ar": "متطلبات تتغير مع الوقت"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: Annex A.4.2 explains that understanding interested parties' needs means determining the relevant ones and their requirements, that requirements the organization considers relevant come within the boundaries of the system, that they change over time so awareness of the changes is needed, and that expectations about climate change can influence regulatory and customer requirements.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يوضح الملحق A.4.2 أن فهم احتياجات الأطراف المعنية يعني تحديد ذات الصلة منها ومتطلباتها، وأن المتطلبات التي تراها المنشأة ذات صلة تدخل حدود النظام، وأنها تتغير مع الوقت فيلزم الوعي بتغيرها، وأن التوقعات المتصلة بتغير المناخ قد تؤثر في المتطلبات النظامية ومتطلبات العملاء."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the public client asked for a summer works plan in the latest tender, which became one more reason for the ST option in the 2027 study.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: طلب العميل الحكومي في المنافسة الأخيرة خطة للأعمال الصيفية، فصار ذلك سبباً إضافياً لخيار ST في دراسة 2027."
+      },
+      "how": [
+       {
+        "en": "Check new customer requirements at each review of the grid",
+        "ar": "راجع متطلبات العملاء الجديدة عند كل مراجعة للمصفوفة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A new customer requirement that never shows in the analysis",
+        "ar": "متطلب عميل جديد لا يظهر في التحليل"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Business development manager",
+       "ar": "مدير تطوير الأعمال"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s2-3",
+      "clause": "3.1.4",
+      "title": {
+       "en": "Interested party in ISO 9000:2026",
+       "ar": "الطرف المعني في ISO 9000:2026"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9000:2026 defines an interested party (3.1.4), also called a stakeholder, as a person or organization that can affect, be affected by, or perceive itself to be affected by a decision or activity. Subclause 4.4.2 says some interested parties can be a significant opportunity for sustained success if their needs and expectations are met, and a risk if they are not, and that identifying them is part of understanding the context.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يعرّف ISO 9000:2026 الطرف المعني (3.1.4)، ويسميه أيضاً صاحب المصلحة، بأنه شخص أو منشأة يمكن أن يؤثر في قرار أو نشاط أو يتأثر به أو يرى أنه يتأثر به. ويذكر البند 4.4.2 أن بعض الأطراف المعنية قد تكون فرصة كبيرة للنجاح المستدام إذا لُبيت احتياجاتها وتوقعاتها، وخطراً إذا لم تُلبَّ، وأن تحديدها جزء من فهم سياق المنشأة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the public client in the bid study is an interested party that creates a threat (\"high buyer power\") and an opportunity (\"a programme of similar hospitals\") at the same time.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: العميل الحكومي في دراسة العطاء طرف معني يصنع تهديداً («قوة المشتري مرتفعة») وفرصة («برنامج مستشفيات مماثلة») في الوقت نفسه."
+      },
+      "how": [
+       {
+        "en": "Ask for each interested party: what is the opportunity and what is the risk?",
+        "ar": "اسأل لكل طرف معني: ما الفرصة وما الخطر؟"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Interested parties listed but absent from the grid",
+        "ar": "أطراف معنية تُذكر في قائمة ولا تظهر في المصفوفة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s2-4",
+      "clause": "GD-2",
+      "title": {
+       "en": "A team, not one person",
+       "ar": "فريق، لا شخص واحد"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: one person's SWOT is not a SWOT. At least three roles, and at least one from outside the team: a customer, a supplier, an external advisor or another department. ISO 10009:2024, in the points to note of 5.1, says diversity of views is a condition and that the leadership team runs it with outside input (from the platform's checked catalogue). The facilitator asks for evidence and keeps the most senior voice from taking over. So the tool flags a one-person study, and the \"team complete\" stage needs outside input.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: تحليل شخص واحد ليس تحليلاً SWOT. ثلاثة أدوار على الأقل، وواحد على الأقل من خارج الفريق: عميل أو مورد أو مستشار خارجي أو إدارة أخرى. وتذكر ISO 10009:2024 في نقاط الانتباه للبند 5.1 أن تنوع وجهات النظر شرط وأن فريق القيادة يجريه بمدخلات من خارجه (من فهرس المنصة المتحقق منه). والميسّر يطلب الدليل ويمنع أن يطغى رأي الأعلى منصباً. لذلك تنبّه الأداة على الشخص الواحد، ولا تكتمل مرحلة «اكتمل الفريق» بلا رأي خارجي."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the bid study brought together the tender manager, the estimating engineer, the projects director, the finance manager and the MEP subcontractor.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: دراسة العطاء ضمت مدير العطاءات ومهندس التسعير ومدير المشاريع والمدير المالي ومقاول الأعمال الكهروميكانيكية."
+      },
+      "how": [
+       {
+        "en": "Name a facilitator who does not own the decision",
+        "ar": "سمّ ميسّراً لا يملك القرار"
+       },
+       {
+        "en": "Collect items in writing before the discussion",
+        "ar": "اطلب البنود كتابة قبل النقاش"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The team list with roles",
+        "ar": "قائمة الفريق بأدوارهم"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "The manager writes the grid alone",
+        "ar": "المدير يكتب المصفوفة وحده"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "Average number of roles in the team",
+       "ar": "متوسط عدد الأدوار في الفريق"
+      }
+     }
+    ]
+   },
+   {
+    "id": "ev",
+    "phase": "evid",
+    "title": {
+     "en": "Evidence, placement and ranking",
+     "ar": "الدليل والموضع والترتيب"
+    },
+    "short": {
+     "en": "Evidence · ranking",
+     "ar": "الدليل · الترتيب"
+    },
+    "intro": {
+     "en": "An item with no evidence is an opinion, an item in the wrong quadrant misleads, and a list with no ranking leads to no option.",
+     "ar": "البند بلا دليل رأي، والبند في غير ربعه يضلل، والقائمة بلا ترتيب لا تقود إلى خيار."
+    },
+    "items": [
+     {
+      "ref": "s3-1",
+      "clause": "GD-3",
+      "title": {
+       "en": "Evidence for every item",
+       "ar": "لكل بند دليل"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: each item needs a figure or a fact, its source and its date. \"Drawing approval cycle 21 days against 10 in the contracts (KPI DWG-01, Q3 2026)\" is evidence; \"slow approvals\" is an opinion. A weakness written as \"lack of…\" with no evidence is flagged, because it is often a proposed solution dressed up as a problem. ISO 9000:2026, in the evidence-based decision-making principle (4.2.7), says decisions based on the analysis and evaluation of data are more likely to produce the desired results.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: لكل بند رقم أو واقعة، ومصدرها، وتاريخها. «دورة اعتماد المخططات 21 يوماً مقابل 10 في العقود (مؤشر DWG-01، الربع الثالث 2026)» دليل؛ و«بطء الاعتماد» رأي. والضعف المكتوب «نقص في…» بلا دليل يُنبَّه عليه، لأنه غالباً حل مقترح متخفٍّ في صورة مشكلة. ويعرّف ISO 9000:2026 في مبدأ اتخاذ القرار المبني على الدليل (4.2.7) أن القرارات المبنية على تحليل البيانات وتقييمها أرجح أن تحقق النتائج المرجوة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the 2027 study the weakness \"lack of BIM coordinators\" was written with its evidence, \"two trained coordinators for nine live projects\", so it was not flagged.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في دراسة 2027 كُتب الضعف «نقص منسقي BIM» بدليله: «منسقان مدربان لتسعة مشاريع جارية»، فلم يُنبَّه عليه."
+      },
+      "how": [
+       {
+        "en": "Write the figure, the source and the date on every item",
+        "ar": "اكتب الرقم والمصدر والتاريخ في كل بند"
+       },
+       {
+        "en": "Drop the item nobody can back with evidence",
+        "ar": "احذف البند الذي لا يجد أحد دليله"
+       },
+       {
+        "en": "Mark \"opinion only\" rather than hiding it",
+        "ar": "علّم «رأي فقط» بدل إخفائه"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Items with their evidence and sources",
+        "ar": "البنود بأدلتها ومصادرها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Items from impressions",
+        "ar": "بنود من الانطباع"
+       },
+       {
+        "en": "\"Lack of…\" with no figure",
+        "ar": "«نقص في…» بلا رقم"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Evidence holders",
+       "ar": "أصحاب الدليل"
+      },
+      "kpi": {
+       "en": "Share of top items with evidence",
+       "ar": "نسبة البنود العليا بدليل"
+      }
+     },
+     {
+      "ref": "s3-2",
+      "clause": "GD-4",
+      "title": {
+       "en": "Internal is a strength or a weakness, external an opportunity or a threat",
+       "ar": "الداخلي قوة أو ضعف، والخارجي فرصة أو تهديد"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: strengths and weaknesses are internal: the resources, competence, processes and performance the organization controls. Opportunities and threats are external: the market, customers, competitors, regulation and environment it does not control. Mixing them spoils the options: \"the market is growing\" is not a strength, and \"our team is small\" is not a threat. The tool checks placement by source type: a PESTLE factor, a Porter force or market data in an internal quadrant, or a KPI, an audit or a lesson in an external one, is flagged until it is moved or a note says why it belongs there.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: القوة والضعف داخليان: ما في يد المنشأة من موارد وكفاءة وعمليات وأداء. والفرص والتهديدات خارجية: ما لا تسيطر عليه من سوق وعملاء ومنافسين وأنظمة وبيئة. وخلطهما يفسد الخيارات: «السوق يكبر» ليست قوة، و«فريقنا صغير» ليس تهديداً. وتفحص الأداة الموضع بنوع المصدر: عامل PESTLE أو قوة بورتر أو بيانات السوق في ربع داخلي، أو مؤشر أو تدقيق أو درس في ربع خارجي، ينبّه عليه حتى يُنقل أو تُكتب ملاحظة لماذا هو هنا."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the lifting process, high-severity FMEA rows came in as threats to the process with the source \"risk analysis\", a source the tool does not flag in any quadrant.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في عملية الرفع جاءت صفوف FMEA عالية الخطورة تهديدات للعملية بمصدر «تحليل مخاطر»، وهو مصدر لا تنبّه عليه الأداة في أي ربع."
+      },
+      "how": [
+       {
+        "en": "Start with the external side, then the internal one",
+        "ar": "ابدأ بالخارجي ثم الداخلي"
+       },
+       {
+        "en": "Ask: do we control this?",
+        "ar": "اسأل: هل نسيطر على هذا؟"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Opportunities that are really strengths",
+        "ar": "فرص هي في الحقيقة نقاط قوة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "Items in the wrong quadrant",
+       "ar": "عدد البنود في غير ربعها"
+      }
+     },
+     {
+      "ref": "s3-3",
+      "clause": "GD-5",
+      "title": {
+       "en": "PESTLE and Porter's forces feed the external side",
+       "ar": "PESTLE وقوى بورتر تغذي الجانب الخارجي"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: opportunities and threats do not come from the meeting; they come from an external scan: PESTLE (political, economic, social, technological, legal and environmental factors; ISO 10009:2024 5.2) and Porter's forces (buyers, suppliers, new entrants, substitutes and rivalry, with complementors as a sixth force; 5.3), plus market and customer data. The tool reads the Strategy Studio's PESTLE factors read-only.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: الفرص والتهديدات لا تأتي من الاجتماع؛ تأتي من مسح خارجي: PESTLE (العوامل السياسية والاقتصادية والاجتماعية والتقنية والقانونية والبيئية؛ ISO 10009:2024 البند 5.2) وقوى بورتر (المشترون والموردون والداخلون الجدد والبدائل والمنافسة، والقوة السادسة المكمّلون؛ 5.3)، وبيانات السوق والعملاء. وتقرأ الأداة عوامل PESTLE من استوديو الاستراتيجية للقراءة فقط."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the bid study, \"high buyer power\" came from Porter's forces: one public client, award at the lowest price, nine bidders.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في دراسة العطاء جاءت «قوة المشتري مرتفعة» من قوى بورتر: عميل حكومي واحد، وترسية بأقل سعر، وتسعة متقدمين."
+      },
+      "how": [
+       {
+        "en": "Run or update PESTLE before the SWOT",
+        "ar": "أجرِ PESTLE قبل SWOT أو حدّثه"
+       },
+       {
+        "en": "Read the sector with Porter's forces for each major bid",
+        "ar": "اقرأ القطاع بقوى بورتر عند كل عطاء كبير"
+       }
+      ],
+      "ev": [
+       {
+        "en": "PESTLE factors with their sources",
+        "ar": "عوامل PESTLE بمصادرها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Opportunities and threats with no external source",
+        "ar": "فرص وتهديدات بلا مصدر خارجي"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Business development manager",
+       "ar": "مدير تطوير الأعمال"
+      },
+      "kpi": {
+       "en": "Share of external items from PESTLE, Porter or the market",
+       "ar": "نسبة البنود الخارجية من PESTLE أو بورتر أو السوق"
+      }
+     },
+     {
+      "ref": "s3-4",
+      "clause": "GD-6",
+      "title": {
+       "en": "KPIs, audits and lessons feed the internal side",
+       "ar": "المؤشرات والتدقيق والدروس تغذي الجانب الداخلي"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: strengths and weaknesses come from the organization's own performance: KPIs, internal and external audit results, the vital-few categories of a Pareto, and lessons learned (a success lesson is a strength, a problem lesson a weakness). The tool reads lessons and Pareto read-only and fills the item with its evidence and source id.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: القوة والضعف يأتيان من أداء المنشأة نفسه: مؤشرات الأداء، ونتائج التدقيق الداخلي والخارجي، وفئات القلة الحيوية في باريتو، والدروس المستفادة (الدرس الناجح قوة، والمشكلة ضعف). وتقرأ الأداة الدروس وباريتو للقراءة فقط، وتملأ البند بدليله ورقم مصدره."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the strength \"banded bundles and two slings as a company standard\" in the lifting study came from lesson LL-EX-02 with its evidence: no slip in 46 lifts.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: قوة «حزم مربوطة وحبلان معياراً للشركة» في دراسة الرفع جاءت من الدرس LL-EX-02 بدليله: لا انزلاق في 46 رفعة."
+      },
+      "how": [
+       {
+        "en": "Open the KPI dashboard and the audit reports before the meeting",
+        "ar": "افتح لوحة المؤشرات وتقارير التدقيق قبل الاجتماع"
+       },
+       {
+        "en": "Start from the documented lessons learned",
+        "ar": "ابدأ من الدروس المستفادة الموثقة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "References to KPIs, audits and lessons",
+        "ar": "مراجع المؤشرات والتدقيق والدروس"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A strength based on reputation alone",
+        "ar": "قوة مبنية على السمعة وحدها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Share of internal items from a KPI, an audit or a lesson",
+       "ar": "نسبة البنود الداخلية من مؤشر أو تدقيق أو درس"
+      }
+     },
+     {
+      "ref": "s3-5",
+      "clause": "GD-7",
+      "title": {
+       "en": "Rank and keep the most important",
+       "ar": "رتّب واحتفظ بالأهم"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: long unranked lists are a gap. Each item gets a weight from 1 to 5 and a rank inside its quadrant; the top items are three per quadrant, and the options are built on them. The tool flags a quadrant with more than seven unranked items, repeated ranks, and a rank that goes against the weight. The \"rank by weight\" button proposes an order for the team to check.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: القوائم الطويلة بلا ترتيب فجوة. لكل بند وزن من 1 إلى 5 ورتبة داخل ربعه، والبنود العليا ثلاثة في كل ربع؛ عليها تُبنى الخيارات. وتنبّه الأداة على الربع الذي فيه أكثر من سبعة بنود دون ترتيب، وعلى الرتب المكررة، وعلى الرتبة التي تخالف الوزن. وزر «رتّب بالوزن» يقترح ترتيباً يراجعه الفريق."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the bid study, \"a weak name in the health sector\" came fourth among the weaknesses, with weight 2 and no evidence, so it stayed out of the top items and no option was built on it.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في دراسة العطاء جاء «سمعة ضعيفة في القطاع الصحي» رابعاً في الضعف بوزن 2 ودون دليل، فبقي خارج البنود العليا ولم يُبنَ عليه خيار."
+      },
+      "how": [
+       {
+        "en": "Vote on the weight, then discuss the differences",
+        "ar": "صوّت على الوزن ثم ناقش الفروق"
+       },
+       {
+        "en": "Keep the top three in each quadrant",
+        "ar": "احتفظ بأعلى ثلاثة في كل ربع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The weight and rank of every item",
+        "ar": "الوزن والرتبة لكل بند"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Twenty items in one quadrant",
+        "ar": "عشرون بنداً في ربع واحد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "Share of ranked studies",
+       "ar": "نسبة الدراسات المرتبة"
+      }
+     },
+     {
+      "ref": "s3-6",
+      "clause": "4.2.7",
+      "title": {
+       "en": "Evidence-based decision-making",
+       "ar": "القرار المبني على الدليل"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9000:2026 states the evidence-based decision-making principle (4.2.7): decisions based on the analysis and evaluation of data and information are more likely to produce the desired results. In a SWOT this means an item is judged by its evidence, not by how loudly it was said.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يذكر ISO 9000:2026 مبدأ اتخاذ القرار المبني على الدليل (4.2.7): القرارات المبنية على تحليل البيانات والمعلومات وتقييمها أرجح أن تحقق النتائج المرجوة. وفي SWOT يعني ذلك أن يُحكم على البند بدليله لا بقوة صوت من قاله."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: \"hot-weather concrete know-how\" was raised to weight 5 because its evidence is numeric, from two projects.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: رُفعت «الخبرة في الخرسانة الحارة» إلى الوزن 5 لأن دليلها رقمي من مشروعين."
+      },
+      "how": [
+       {
+        "en": "Tie the weight to the strength of the evidence",
+        "ar": "اربط الوزن بقوة الدليل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A high weight on an item with no evidence",
+        "ar": "وزن عالٍ لبند بلا دليل"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   },
+   {
+    "id": "6.1",
+    "phase": "risk",
+    "title": {
+     "en": "Clause 6.1 Actions to address risks and opportunities",
+     "ar": "البند 6.1 الإجراءات للتعامل مع المخاطر والفرص"
+    },
+    "short": {
+     "en": "6.1 · Risks and opportunities",
+     "ar": "6.1 · المخاطر والفرص"
+    },
+    "intro": {
+     "en": "The standard asks to consider the issues (4.1) and requirements (4.2) when determining risks and opportunities, then to plan for them. The top threats and opportunities of a SWOT feed straight into that.",
+     "ar": "تطلب المواصفة مراعاة القضايا (4.1) والمتطلبات (4.2) عند تحديد المخاطر والفرص، ثم التخطيط لها. والتهديدات والفرص العليا في SWOT مدخل مباشر لذلك."
+    },
+    "items": [
+     {
+      "ref": "s4-1",
+      "clause": "6.1.1",
+      "title": {
+       "en": "Determining risks and opportunities from the issues and requirements",
+       "ar": "تحديد المخاطر والفرص من القضايا والمتطلبات"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 6.1.1 asks the organization, when planning for the quality management system, to consider the issues referred to in 4.1 and the requirements referred to in 4.2, and to determine the risks and opportunities that need to be addressed to give assurance the system can achieve its intended results, prevent or reduce undesired effects, achieve continual improvement, and enhance desired effects.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 6.1.1 أن تراعي المنشأة عند التخطيط لنظام إدارة الجودة القضايا المشار إليها في 4.1 والمتطلبات المشار إليها في 4.2، وأن تحدد المخاطر والفرص التي يلزم التعامل معها لضمان قدرة النظام على تحقيق نتائجه، ومنع الآثار غير المرغوبة أو تقليلها، وتحقيق التحسين المستمر، وتعزيز الآثار المرغوبة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the two top threats of the 2027 study (heatwaves and new entrants) went into the risk register and the 6.1 plan, and the top opportunity (thermal insulation) into the opportunities plan.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: التهديدان الأعليان في دراسة 2027 (موجات الحر والداخلون الجدد) دخلا سجل المخاطر وخطة 6.1، والفرصة الأعلى (العزل الحراري) دخلت خطة الفرص."
+      },
+      "how": [
+       {
+        "en": "A risk entry for every top threat",
+        "ar": "لكل تهديد أعلى مدخل خطر"
+       },
+       {
+        "en": "An opportunity entry or an option for every top opportunity",
+        "ar": "لكل فرصة عليا مدخل فرصة أو خيار"
+       },
+       {
+        "en": "Record the destination and its reference",
+        "ar": "سجّل الوجهة ومرجعها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A risk register that names the study",
+        "ar": "سجل المخاطر يذكر رقم الدراسة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A SWOT and a risk register that do not know each other",
+        "ar": "SWOT وسجل مخاطر لا يعرف أحدهما الآخر"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Risk or quality manager",
+       "ar": "مدير المخاطر أو الجودة"
+      },
+      "kpi": {
+       "en": "Share of top threats with a risk entry",
+       "ar": "نسبة التهديدات العليا التي لها مدخل خطر"
+      }
+     },
+     {
+      "ref": "s4-2",
+      "clause": "6.1.2",
+      "title": {
+       "en": "Actions to address risks",
+       "ar": "الإجراءات للتعامل مع المخاطر"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 6.1.2 asks to determine, analyse and evaluate the risks that can have an undesired effect, to plan actions to address them, how to integrate and implement the actions in the system's processes and evaluate their effectiveness, and that actions be proportionate to the potential impact. Its note says actions can include avoiding the risk, taking it to pursue an opportunity, eliminating the source, changing the likelihood or consequences, sharing it, or retaining it by informed decision.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 6.1.2 تحديد المخاطر التي قد يكون لها أثر غير مرغوب وتحليلها وتقييمها، والتخطيط لإجراءات التعامل معها، وكيفية دمج الإجراءات في عمليات النظام وتنفيذها وتقييم فعاليتها، وأن تكون الإجراءات متناسبة مع الأثر المحتمل. وتذكر الملاحظة أن الإجراءات قد تشمل تجنب الخطر، أو قبوله لاقتناص فرصة، أو إزالة مصدره، أو تغيير احتماله أو عواقبه، أو مشاركته، أو الاحتفاظ به بقرار مدروس."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the WT option of the bid study, \"do not bid below cost\", avoids the risk of a loss-making award, and approving a floor price is an action that reduces its impact.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: خيار WT في دراسة العطاء «لا نسعّر دون التكلفة» تجنب لخطر الترسية بسعر خاسر، واعتماد سعر أدنى إجراء يخفض أثره."
+      },
+      "how": [
+       {
+        "en": "Name the type of response explicitly",
+        "ar": "اختر نوع الاستجابة صراحة"
+       },
+       {
+        "en": "Measure the effectiveness at a later review",
+        "ar": "قِس الفعالية في مراجعة لاحقة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The risk entry with its response type and owner",
+        "ar": "مدخل الخطر بنوع الاستجابة ومالكها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A risk with no action or no owner",
+        "ar": "خطر بلا إجراء أو بلا مالك"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Action owners",
+       "ar": "مالكو الإجراءات"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s4-3",
+      "clause": "6.1.3",
+      "title": {
+       "en": "Actions to address opportunities",
+       "ar": "الإجراءات للتعامل مع الفرص"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 6.1.3 asks to determine, analyse and evaluate the opportunities that can have a desired effect, to plan actions on them, integrate them and evaluate their effectiveness, and that they be appropriate to the organization's context. Its note gives examples: new practices, new products or services, partnerships, emerging technologies, initiatives. Annex A.6.1.3 explains that opportunities can be determined from assessing the context, interested parties, capability and monitoring results, and from sources such as market conditions, technologies and regulatory requirements.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 6.1.3 تحديد الفرص التي قد يكون لها أثر مرغوب وتحليلها وتقييمها، والتخطيط لإجراءاتها ودمجها وتقييم فعاليتها، وأن تكون مناسبة لسياق المنشأة. وتذكر الملاحظة أمثلة: ممارسات جديدة، ومنتجات أو خدمات جديدة، وشراكات، وتقنيات ناشئة، ومبادرات. ويوضح الملحق A.6.1.3 أن الفرص قد تُحدد من تقييم السياق والأطراف المعنية والقدرة ونتائج المتابعة، ومن مصادر كظروف السوق والتقنيات والمتطلبات النظامية."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the SO option \"bid for public buildings under the insulation code\" acts on an opportunity that came from a new regulatory requirement, through a pre-qualification action with an owner and a date.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: خيار SO «التقدم لمباني العزل الحراري الحكومية» إجراء لفرصة جاءت من متطلب نظامي جديد، بإجراء ملف تأهيل له مالك وموعد."
+      },
+      "how": [
+       {
+        "en": "Treat an opportunity like a risk: an entry, an owner and a review",
+        "ar": "عامل الفرصة مثل الخطر: مدخل ومالك ومراجعة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The opportunities plan with its references",
+        "ar": "خطة الفرص بمراجعها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Opportunities that are named and never acted on",
+        "ar": "فرص تُذكر ولا يُعمل بها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Business development manager",
+       "ar": "مدير تطوير الأعمال"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s4-4",
+      "clause": "A.6.1",
+      "title": {
+       "en": "Risk-based and opportunity-based thinking",
+       "ar": "التفكير القائم على المخاطر والفرص"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: Annex A.6.1.1 explains that risk is often understood as the effect of uncertainty that can harm the system's ability to achieve its results, and opportunity as circumstances that make beneficial effects possible, that they are distinct and can be determined and addressed through separate processes. A.6.1.2 says risk-based thinking does not imply a formal risk management approach, and points to ISO 31000 for guidance (not uploaded: \"not verified\"). ISO 9000:2026 defines risk (3.7.2) as the effect of uncertainty, an effect being a deviation from the expected, positive or negative, and 4.3.8 says risk-based thinking includes a missed opportunity. ISO 9000:2026 has no term entry for \"opportunity\".",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يوضح الملحق A.6.1.1 أن الخطر يُفهم كثيراً بوصفه أثر عدم اليقين الذي قد يضر بقدرة النظام على تحقيق نتائجه، والفرصة بوصفها ظروفاً تتيح آثاراً مفيدة، وأنهما مختلفان ويمكن تحديدهما ومعالجتهما بعمليات منفصلة. ويذكر A.6.1.2 أن التفكير القائم على المخاطر لا يعني بالضرورة نهجاً رسمياً لإدارة المخاطر، ويشير إلى ISO 31000 للإرشاد (غير مرفوعة: «غير متحقق منه»). ويعرّف ISO 9000:2026 الخطر (3.7.2) بأنه أثر عدم اليقين، والأثر انحراف عن المتوقع إيجاباً أو سلباً، ويذكر البند 4.3.8 أن التفكير القائم على المخاطر يشمل الفرصة الضائعة. ولا يعرّف ISO 9000:2026 «الفرصة» مصطلحاً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: Al-Waha kept risk entries apart from opportunity entries in the plan, each with its owner.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: فصلت الواحة مداخل المخاطر عن مداخل الفرص في الخطة، ولكل منهما مالك."
+      },
+      "how": [
+       {
+        "en": "Do not make an opportunity just a \"positive risk\" in the table",
+        "ar": "لا تجعل الفرصة مجرد «خطر إيجابي» في الجدول"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A risk table with no opportunities",
+        "ar": "جدول مخاطر بلا فرص"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   },
+   {
+    "id": "6.2",
+    "phase": "act",
+    "title": {
+     "en": "Clause 6.2 Quality objectives and planning to achieve them",
+     "ar": "البند 6.2 أهداف الجودة والتخطيط لتحقيقها"
+    },
+    "short": {
+     "en": "6.2 · Actions",
+     "ar": "6.2 · الإجراءات"
+    },
+    "intro": {
+     "en": "An option that never becomes an action with an owner and a date stays an idea. The standard asks: what, with which resources, who, when, and how the result is evaluated.",
+     "ar": "الخيار الذي لا يصير إجراءً بمالك وموعد يبقى فكرة. والمواصفة تطلب: ماذا، وبأي موارد، ومن، ومتى، وكيف تُقيّم النتيجة."
+    },
+    "items": [
+     {
+      "ref": "s5-1",
+      "clause": "6.2",
+      "title": {
+       "en": "What, who, when and how the result is evaluated",
+       "ar": "ماذا ومن ومتى وكيف تُقيّم النتيجة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 6.2.1 asks for quality objectives at relevant functions, levels and processes, consistent with the policy, measurable, monitored, communicated and updated, and 6.2.2 asks, when planning to achieve them, to determine what will be done, what resources, who is responsible, when it will be completed and how the results will be evaluated. SWOT actions that touch quality objectives follow that rule.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 6.2.1 وضع أهداف للجودة في الوظائف والمستويات والعمليات ذات الصلة، متسقة مع السياسة وقابلة للقياس ومتابعة ومبلّغة ومحدّثة، وفي 6.2.2 أن يُحدد عند التخطيط لتحقيقها: ما الذي سيُعمل، وما الموارد، ومن المسؤول، ومتى يكتمل، وكيف تُقيّم النتائج. وإجراءات SWOT التي تمس أهداف الجودة تتبع هذه القاعدة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the action \"approve the floor price at the bid committee\" has an owner (the finance manager) and a date (5 November 2026), and is evaluated by the committee's written decision.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: إجراء «اعتماد السعر الأدنى في لجنة العطاءات» له مالك (المدير المالي) وموعد (5 نوفمبر 2026)، ويُقيّم بقرار اللجنة المكتوب."
+      },
+      "how": [
+       {
+        "en": "At least one action with an owner and a date for every option",
+        "ar": "لكل خيار إجراء واحد على الأقل بمالك وموعد"
+       },
+       {
+        "en": "Tie the action to an objective or a KPI where possible",
+        "ar": "اربط الإجراء بهدف أو مؤشر عند الإمكان"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The action list with owners and dates",
+        "ar": "قائمة الإجراءات بمالكيها ومواعيدها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Actions with no owner",
+        "ar": "إجراءات بلا مالك"
+       },
+       {
+        "en": "\"We will work on…\" with no date",
+        "ar": "«سنعمل على…» بلا موعد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Action owners",
+       "ar": "مالكو الإجراءات"
+      },
+      "kpi": {
+       "en": "Share of actions done on time",
+       "ar": "نسبة الإجراءات المنفذة في موعدها"
+      }
+     },
+     {
+      "ref": "s5-2",
+      "clause": "GD-8",
+      "title": {
+       "en": "From the grid to TOWS options",
+       "ar": "من المصفوفة إلى خيارات TOWS"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: TOWS turns the grid into options, each taking an item from two quadrants: SO uses a strength to seize an opportunity, ST a strength to meet a threat, WO an opportunity to fix a weakness, WT reduces a weakness in front of a threat. Every top item goes into an option, or into an entry in the risk register or the 6.1 plan. The tool flags an option that does not link an item from each quadrant, and a top item that went into no option. (The TOWS matrix as a named method: \"not verified\"; ISO 10009 does not name it in the platform's catalogue.)",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: يحوّل TOWS المصفوفة إلى خيارات، لكل خيار بند من ربعين: SO قوة تقتنص فرصة، وST قوة تواجه تهديداً، وWO فرصة تعالج ضعفاً، وWT تقليل ضعف أمام تهديد. ويدخل كل بند أعلى خياراً، أو مدخلاً في سجل المخاطر أو خطة 6.1. وتنبّه الأداة على الخيار الذي لا يربط بنداً من كل ربع، وعلى البند الأعلى الذي لم يدخل خياراً. (مصفوفة TOWS بوصفها طريقة مسماة: «غير متحقق منه»؛ ولا تذكرها ISO 10009 بالاسم في فهرس المنصة.)"
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the lifting study, a WT option tied two weaknesses (the wind reading, hand guiding) to two threats (the bundle slipping, the weight underestimated) in one action on the lift permit.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في دراسة الرفع ربط خيار WT ضعفين (قراءة الرياح، والتوجيه باليد) بتهديدين (انزلاق الحزمة، والوزن المقدر بأقل) في إجراء واحد على تصريح الرفع."
+      },
+      "how": [
+       {
+        "en": "Start from the top items, not from every item",
+        "ar": "ابدأ من البنود العليا لا من كل البنود"
+       },
+       {
+        "en": "Write the option with a verb",
+        "ar": "اكتب الخيار بفعل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The TOWS matrix with its links",
+        "ar": "مصفوفة TOWS بروابطها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "General options that name no item",
+        "ar": "خيارات عامة لا تذكر أي بند"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Top management",
+       "ar": "الإدارة العليا"
+      },
+      "kpi": {
+       "en": "Share of top items in an option",
+       "ar": "نسبة البنود العليا التي دخلت خياراً"
+      }
+     },
+     {
+      "ref": "s5-3",
+      "clause": "GD-9",
+      "title": {
+       "en": "The action and the risk entry",
+       "ar": "الإجراء ومدخل الخطر"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: each option gets an action with an owner, a due date, a status and evidence once done. Each top threat gets a risk entry carried into the risk register, the 6.1 plan or an FMEA study, with its reference there. The \"actions and risks\" stage is not complete until all of that is in place. The tool shows an FMEA study by its own rule, read-only, and never writes to the risk register.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: لكل خيار إجراء بمالك وموعد وحالة ودليل عند التنفيذ. ولكل تهديد أعلى مدخل خطر يُنقل إلى سجل المخاطر أو خطة 6.1 أو دراسة FMEA، برقمه في الوجهة. ولا تكتمل مرحلة «إجراءات ومخاطر» حتى يكون ذلك كله. والأداة تعرض دراسة FMEA بقاعدتها للقراءة فقط، ولا تكتب في سجل المخاطر."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: risk entry R1 of the lifting study names study FM-EX-02: \"re-rate row R1 after the monthly audits\".",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: مدخل الخطر R1 في دراسة الرفع يسمي دراسة FM-EX-02: «إعادة تقييم الصف R1 بعد التدقيقات الشهرية»."
+      },
+      "how": [
+       {
+        "en": "Record the destination and the reference for each entry",
+        "ar": "سجّل الوجهة والمرجع لكل مدخل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Entries with their references at the destination",
+        "ar": "المداخل بمراجعها في الوجهة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A top threat that never shows in the risk register",
+        "ar": "تهديد أعلى لا يظهر في سجل المخاطر"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Action owners",
+       "ar": "مالكو الإجراءات"
+      },
+      "kpi": {
+       "en": "Share of studies that led to actions",
+       "ar": "نسبة الدراسات التي خرجت منها إجراءات"
+      }
+     }
+    ]
+   },
+   {
+    "id": "9.3.2",
+    "phase": "rev",
+    "title": {
+     "en": "Clause 9.3.2 Management review inputs",
+     "ar": "البند 9.3.2 مدخلات مراجعة الإدارة"
+    },
+    "short": {
+     "en": "9.3.2 · Review",
+     "ar": "9.3.2 · المراجعة"
+    },
+    "intro": {
+     "en": "The dated grid is reviewed when the context changes, and its changes feed management review along with the effectiveness of the actions on risks and opportunities.",
+     "ar": "المصفوفة المؤرخة تُراجع عند تغير السياق، وتغيراتها مدخل لمراجعة الإدارة مع فعالية الإجراءات على المخاطر والفرص."
+    },
+    "items": [
+     {
+      "ref": "s6-1",
+      "clause": "9.3.2",
+      "title": {
+       "en": "Changes in issues and interested parties, and the effectiveness of actions",
+       "ar": "تغيرات القضايا والأطراف المعنية وفعالية الإجراءات"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 9001:2026 clause 9.3.2 asks that management review include the status of actions from previous reviews (a), changes in external and internal issues (b), changes in the needs and expectations of interested parties (c), opportunities for improvement (e), and the effectiveness of actions taken to address risks (g, see 6.1.2) and opportunities (h, see 6.1.3).",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تطلب ISO 9001:2026 في البند 9.3.2 أن تشمل مراجعة الإدارة: حالة الإجراءات من المراجعات السابقة (أ)، والتغيرات في القضايا الخارجية والداخلية (ب)، والتغيرات في احتياجات الأطراف المعنية وتوقعاتها (ج)، وفرص التحسين (هـ)، وفعالية الإجراءات المتخذة للتعامل مع المخاطر (ز، انظر 6.1.2) ومع الفرص (ح، انظر 6.1.3)."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: Al-Waha presented the grid's review log and the status of its five actions at management review, and the pre-qualification pack was brought forward.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: عرضت الواحة في مراجعة الإدارة سجل مراجعات المصفوفة وحالة إجراءاتها الخمسة، فقُرر تقديم ملف التأهيل."
+      },
+      "how": [
+       {
+        "en": "Make the SWOT report a standing item of management review",
+        "ar": "اجعل تقرير SWOT بنداً ثابتاً في مراجعة الإدارة"
+       },
+       {
+        "en": "Show what changed since the last review, not the whole grid",
+        "ar": "اعرض ما تغير منذ آخر مراجعة، لا المصفوفة كلها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Management review minutes naming the study",
+        "ar": "محضر مراجعة الإدارة يذكر الدراسة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A management review with no external or internal issues",
+        "ar": "مراجعة إدارة بلا قضايا خارجية أو داخلية"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Top management",
+       "ar": "الإدارة العليا"
+      },
+      "kpi": {
+       "en": "Management reviews that covered context changes",
+       "ar": "مراجعات الإدارة التي تناولت تغيرات السياق"
+      }
+     },
+     {
+      "ref": "s6-2",
+      "clause": "GD-10",
+      "title": {
+       "en": "Dated, and reviewed when the context changes",
+       "ar": "مؤرخة وتُراجع عند تغير السياق"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the grid is dated with its next review date set, and reviewed earlier if the context changes: a new regulation, a major client, a competitor, an incident. The review records what changed and the items added and removed. The tool flags a review date that has passed with no review, and the \"reviewed\" stage needs a review after the analysis and a next date.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: تؤرخ المصفوفة ويُحدد موعد مراجعتها القادمة، وتُراجع قبله إن تغير السياق: نظام جديد، أو عميل كبير، أو منافس، أو حادث. وتسجل المراجعة ما تغير والبنود المضافة والمحذوفة. وتنبّه الأداة إذا مضى الموعد دون مراجعة، ولا تكتمل مرحلة «روجعت» إلا بمراجعة بعد التحليل وموعد قادم."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the 2027 study was reviewed on 8 October 2026 after the insulation requirements came out, and its next date is 31 March 2027.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: روجعت دراسة 2027 في 8 أكتوبر 2026 بعد صدور متطلبات العزل، وموعدها القادم 31 مارس 2027."
+      },
+      "how": [
+       {
+        "en": "Name the triggers for an immediate review",
+        "ar": "حدد محفزات المراجعة الفورية"
+       },
+       {
+        "en": "Record the items added and removed",
+        "ar": "سجّل البنود المضافة والمحذوفة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The review log with dates",
+        "ar": "سجل المراجعات بتاريخها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A two-year-old grid never reviewed",
+        "ar": "مصفوفة عمرها سنتان دون مراجعة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Decision owner",
+       "ar": "مالك القرار"
+      },
+      "kpi": {
+       "en": "Share of studies reviewed on time",
+       "ar": "نسبة الدراسات التي روجعت في موعدها"
+      }
+     },
+     {
+      "ref": "s6-3",
+      "clause": "GD-11",
+      "title": {
+       "en": "Communicate the result and the decision",
+       "ar": "أبلغ النتيجة والقرار"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: a result that does not reach those who act changes nothing. Communicate the decision, the options chosen, the actions and their owners, and why what was left out was left out. The tool's report puts that on a printable page.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: النتيجة التي لا تصل إلى من ينفذ لا تغيّر شيئاً. أبلغ القرار والخيارات المختارة والإجراءات ومالكيها، ولماذا تُرك ما تُرك. والتقرير في الأداة يجمع ذلك في صفحة قابلة للطباعة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: Al-Waha sent the lifting study report to the supervisors of all three towers before the 2027 plan.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: أرسلت الواحة تقرير دراسة الرفع إلى مشرفي الأبراج الثلاثة قبل خطة 2027."
+      },
+      "how": [
+       {
+        "en": "Send the report to the action owners",
+        "ar": "أرسل التقرير إلى مالكي الإجراءات"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A result only the team knows",
+        "ar": "نتيجة يعرفها الفريق وحده"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Facilitator",
+       "ar": "الميسّر"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s6-4",
+      "clause": "GD-12",
+      "title": {
+       "en": "Common gaps and what an auditor asks for",
+       "ar": "الفجوات الشائعة وما يطلبه المدقق"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: common gaps: a SWOT prepared by one person, items from opinion, internal and external mixed up, long unranked lists, a grid that reaches no option, options with no owner or date, threats that never reach the risk register, and a grid not reviewed since it was made. An auditor usually asks: which external and internal issues did you determine (4.1)? Where did they come from? Which risks and opportunities came out of them (6.1.1)? Which actions, and where is the evidence of their effectiveness (6.1.2)? When were they reviewed at management review (9.3.2)?",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: الفجوات الشائعة: SWOT يعده شخص واحد، وبنود من الرأي، وخلط الداخلي بالخارجي، وقوائم طويلة بلا ترتيب، ومصفوفة لا تصل إلى خيار، وخيارات بلا مالك أو موعد، وتهديدات لا تدخل سجل المخاطر، ومصفوفة لم تُراجع منذ إعدادها. والمدقق يسأل عادة: ما القضايا الخارجية والداخلية التي حددتموها (4.1)؟ ومن أين جاءت؟ وما المخاطر والفرص التي خرجت منها (6.1.1)؟ وما الإجراءات وأين دليل فعاليتها (6.1.2)؟ ومتى روجعت في مراجعة الإدارة (9.3.2)؟"
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the automatic audit of the example: all three studies pass every applicable check; the bid and lifting studies are not reviewed yet and their review dates have not come.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: التدقيق الآلي للمثال: الدراسات الثلاث تنجح في كل الفحوص المنطبقة؛ ودراستا العطاء والرفع لم تُراجعا بعد وموعداهما لم يحلا."
+      },
+      "how": [
+       {
+        "en": "Check the Audit tab before each management review",
+        "ar": "راجع تبويب التدقيق قبل كل مراجعة إدارة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The automatic audit result for each study",
+        "ar": "نتيجة التدقيق الآلي لكل دراسة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A beautiful grid with not one decision",
+        "ar": "مصفوفة جميلة بلا قرار واحد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Internal auditor",
+       "ar": "المدقق الداخلي"
+      },
+      "kpi": {
+       "en": "Audit pass rate",
+       "ar": "نسبة الفحوص الناجحة"
+      }
+     }
+    ]
+   },
+   {
+    "id": "5.1",
+    "phase": "evid",
+    "title": {
+     "en": "ISO 10009:2024 5.1, 5.2 and 5.3 Strategy tools",
+     "ar": "ISO 10009:2024 البنود 5.1 و5.2 و5.3 أدوات الاستراتيجية"
+    },
+    "short": {
+     "en": "10009 · 5.1",
+     "ar": "10009 · 5.1"
+    },
+    "intro": {
+     "en": "ISO 10009:2024 reviews SWOT in 5.1 with PESTLE and Porter's forces, and places them in Plan and Act of business strategy.",
+     "ar": "تراجع ISO 10009:2024 أسلوب SWOT في البند 5.1 مع PESTLE وقوى بورتر، وتضعها في التخطيط والتصرف لاستراتيجية الأعمال."
+    },
+    "items": [
+     {
+      "ref": "s7-1",
+      "clause": "5.1",
+      "title": {
+       "en": "SWOT in ISO 10009:2024",
+       "ar": "SWOT في ISO 10009:2024"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 10009:2024 (guidance for quality tools and their application) reviews SWOT in 5.1 as a tool to build a strategy by looking at internal strengths and weaknesses and external opportunities and threats. Its Table 5.1 gives its uses (reviewing the effect of internal and external factors, setting action priorities and identifying options, finding barriers), its benefits, and points to note: review it often enough to catch changes, diversity of views through a leadership team with outside input, the limits of the data, and its output as the basis for later actions. Annex A (Table A.1) places it in Plan and Act of strategy and business planning, and Table C.1 describes it: strategy, product and service, team, small data, capability level •, easy effort. (From the platform's catalogue checked against the official file on 2026-10-16.)",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تراجع ISO 10009:2024 (إرشادات أدوات الجودة وتطبيقها) أسلوب SWOT في البند 5.1 أداةً لبناء استراتيجية بالنظر في نقاط القوة والضعف الداخلية والفرص والتهديدات الخارجية. ويذكر جدولها 5.1 استخداماته (مراجعة أثر العوامل الداخلية والخارجية، وترتيب أولوية الإجراءات وتحديد الخيارات، وكشف العوائق)، وفوائده، ونقاط الانتباه: المراجعة بتكرار يكفي لالتقاط التغيرات، وتنوع وجهات النظر بفريق قيادة ومدخلات خارجية، وحدود جودة البيانات، وأن المخرجات أساس لإجراءات لاحقة. ويضعه الملحق A (الجدول A.1) في مرحلتي التخطيط والتصرف لتخطيط الاستراتيجية والأعمال، ويصفه الجدول C.1: استراتيجية، منتج وخدمة، فريق، بيانات قليلة، مستوى كفاءة •، وجهد سهل. (من فهرس المنصة المتحقق منه من الملف الرسمي في 2026-10-16.)"
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the ISO 10009 guide on the platform, the 5.1 tool card opens this tool to apply it.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في دليل ISO 10009 على المنصة تفتح بطاقة الأداة 5.1 هذه الأداة لتطبيقها."
+      },
+      "how": [
+       {
+        "en": "Open card 5.1 in the ISO 10009 guide",
+        "ar": "افتح بطاقة 5.1 في دليل ISO 10009"
+       },
+       {
+        "en": "Follow the four points to note",
+        "ar": "اتبع نقاط الانتباه الأربع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A SWOT by one person, never reviewed",
+        "ar": "SWOT يعده شخص واحد ولا يُراجع"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s7-2",
+      "clause": "5.2",
+      "title": {
+       "en": "PESTLE in ISO 10009:2024",
+       "ar": "PESTLE في ISO 10009:2024"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 10009:2024 reviews PESTLE analysis in 5.2 as a tool to determine and track the external environment through political, economic, social, technological, legal and environmental factors, and says it is often used with SWOT and the five or six forces, and is updated periodically and after major events. Table C.1: team, medium data, capability ••, medium effort. (From the platform's catalogue.) A dedicated PESTLE tool is next in the toolbox.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تراجع ISO 10009:2024 تحليل PESTLE في البند 5.2 أداةً لتحديد البيئة الخارجية وتتبعها عبر العوامل السياسية والاقتصادية والاجتماعية والتقنية والقانونية والبيئية، وتذكر أنه يُستخدم كثيراً مع SWOT ونموذج القوى الخمس أو الست، وأنه يُحدّث دورياً وبعد الأحداث الكبرى. وفي الجدول C.1: فريق، بيانات متوسطة، كفاءة ••، جهد متوسط. (من فهرس المنصة.) وأداة PESTLE المستقلة هي التالية في صندوق الأدوات."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the factors \"new insulation requirements\" (legal) and \"longer heatwaves\" (environmental) came into the 2027 study from PESTLE.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: عاملا «متطلبات العزل الجديدة» (قانوني) و«موجات الحر الأطول» (بيئي) دخلا دراسة 2027 من PESTLE."
+      },
+      "how": [
+       {
+        "en": "Start a study from a PESTLE factor in the Strategy Studio",
+        "ar": "ابدأ دراسة من عامل PESTLE في استوديو الاستراتيجية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A PESTLE that never reaches the SWOT",
+        "ar": "PESTLE لا يصل إلى SWOT"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Business development manager",
+       "ar": "مدير تطوير الأعمال"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     },
+     {
+      "ref": "s7-3",
+      "clause": "5.3",
+      "title": {
+       "en": "Porter's forces in ISO 10009:2024",
+       "ar": "قوى بورتر في ISO 10009:2024"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: ISO 10009:2024 reviews Porter's five or six forces in 5.3 as a tool to understand the competing forces in a sector: the threat of new entrants, rivalry among existing firms, the bargaining power of buyers and of suppliers, the threat of substitutes, and complementors as a sixth force; it says actions are based on data from reliable sources. Table C.1: team, small data, capability •••, medium effort. (From the platform's catalogue.)",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تراجع ISO 10009:2024 القوى الخمس أو الست لبورتر في البند 5.3 أداةً لفهم القوى المتنافسة في القطاع: تهديد الداخلين الجدد، والتنافس بين القائمين، والقوة التفاوضية للمشترين وللموردين، وتهديد البدائل، والقوة السادسة المكمّلون؛ وتذكر أن الإجراءات تُبنى على بيانات من مصادر موثوقة. وفي الجدول C.1: فريق، بيانات قليلة، كفاءة •••، جهد متوسط. (من فهرس المنصة.)"
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: \"high buyer power\" and \"new entrants\" are threats from Porter's forces in the bid and 2027 studies.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «قوة المشتري مرتفعة» و«الداخلون الجدد» تهديدان من قوى بورتر في دراستي العطاء و2027."
+      },
+      "how": [
+       {
+        "en": "Read the sector with Porter's forces before each major bid",
+        "ar": "اقرأ القطاع بقوى بورتر قبل كل عطاء كبير"
+       }
+      ],
+      "ev": [
+       {
+        "en": "—",
+        "ar": "—"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Competitive threats with no figures",
+        "ar": "تهديدات تنافسية بلا أرقام"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Tender manager",
+       "ar": "مدير العطاءات"
+      },
+      "kpi": {
+       "en": "—",
+       "ar": "—"
+      }
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "id": "useful",
+    "q": {
+     "en": "What makes a SWOT useful?",
+     "ar": "ما الذي يجعل تحليل SWOT مفيداً؟"
+    },
+    "a": {
+     "en": "**It leads to a decision.** A grid pinned on the wall changes nothing. So the tool computes the stage: **scoped** (with the decision the study serves), **team complete** (three roles and outside input), **quadrants with evidence** (strengths and weaknesses with internal evidence, opportunities and threats from PESTLE, Porter and the market, no item in the wrong quadrant), **ranked**, **TOWS options** that cover every top item, **actions with an owner and a date** and a risk entry for each top threat, then **reviewed** when the context changes. In the example, the 2027 strategy study led to five actions and was reviewed after the thermal insulation code came out.",
+     "ar": "**أن يقود إلى قرار.** المصفوفة التي تُعلّق على الحائط لا تغيّر شيئاً. لذلك تحسب الأداة المرحلة: **حُدد النطاق** (والقرار الذي تخدمه الدراسة)، ثم **اكتمل الفريق** (ثلاثة أدوار ورأي من الخارج)، ثم **أرباع بدليل** (القوة والضعف بدليل داخلي، والفرص والتهديدات من PESTLE وبورتر والسوق، ولا بند في غير ربعه)، ثم **رُتّبت**، ثم **خيارات TOWS** تغطي كل بند أعلى، ثم **إجراءات بمالك وموعد** ومدخل خطر لكل تهديد أعلى، ثم **روجعت** عند تغير السياق. في المثال: دراسة استراتيجية 2027 خرجت بخمسة إجراءات وروجعت بعد صدور كود العزل الحراري."
+    }
+   },
+   {
+    "id": "which",
+    "q": {
+     "en": "SWOT, PESTLE or risk register — which one?",
+     "ar": "SWOT أم PESTLE أم سجل المخاطر: أيها أستخدم؟"
+    },
+    "a": {
+     "en": "They are not alternatives; they work together. **PESTLE** (ISO 10009 5.2) scans the external environment through six factors, and **Porter's forces** (5.3) read the sector: buyers, suppliers, new entrants, substitutes and rivalry. **Opportunities and threats** come from them. **SWOT** (5.1) sets those against the internal **strengths and weaknesses**, with evidence, ranks them, and turns the most important into options and actions. The **risk register** (7.2) then carries what came out of the threats: likelihood, impact, owner, action and follow-up, which is what ISO 9001:2026 asks in 6.1.2. The working order: PESTLE and Porter, then SWOT, then the risk register and the 6.1 plan.",
+     "ar": "ليست بدائل؛ تعمل معاً. **PESTLE** (ISO 10009 البند 5.2) يمسح البيئة الخارجية بستة عوامل، و**قوى بورتر** (5.3) تقرأ القطاع: المشترون والموردون والداخلون الجدد والبدائل والمنافسة. ومنهما تأتي **الفرص والتهديدات**. و**SWOT** (5.1) يضعها أمام **القوة والضعف** الداخليين بدليل، ويرتب، ثم يحوّل الأهم إلى خيارات وإجراءات. و**سجل المخاطر** (7.2) يحمل ما خرج من التهديدات بعد ذلك: الاحتمال والأثر والمالك والإجراء والمتابعة، وهو ما تطلبه ISO 9001:2026 في 6.1.2. فالترتيب العملي: PESTLE وبورتر، ثم SWOT، ثم سجل المخاطر وخطة 6.1."
+    }
+   },
+   {
+    "id": "req",
+    "q": {
+     "en": "Is SWOT required by ISO 9001:2026?",
+     "ar": "هل SWOT متطلب في ISO 9001:2026؟"
+    },
+    "a": {
+     "en": "No. SWOT is **a technique**, not a requirement. ISO 9001:2026 asks in **4.1** to determine the external and internal issues relevant to the purpose and strategic direction and to monitor them, including whether climate change is a relevant issue; in **4.2** the interested parties and their requirements; in **6.1.1** to consider them when determining risks and opportunities; in **6.1.2 and 6.1.3** to plan actions on them; and in **9.3.2 b) and c)** to review their changes at management review. A SWOT is a structured way to show it, and NOTE 1 of 4.1 says issues can be positive or negative factors.",
+     "ar": "لا. SWOT **أسلوب** وليس متطلباً. تطلب ISO 9001:2026 في **4.1** تحديد القضايا الخارجية والداخلية ذات الصلة بالغرض والتوجه الاستراتيجي ومتابعتها، وتحديد ما إذا كان تغير المناخ قضية ذات صلة، وفي **4.2** الأطراف المعنية ومتطلباتها، وفي **6.1.1** مراعاتها عند تحديد المخاطر والفرص، وفي **6.1.2 و6.1.3** التخطيط للتعامل معها، وفي **9.3.2 ب) وج)** مراجعة تغيراتها في مراجعة الإدارة. وSWOT طريقة منظمة لإثبات ذلك، وتذكر ملاحظة البند 4.1 أن القضايا قد تكون عوامل إيجابية أو سلبية."
+    }
+   },
+   {
+    "id": "evid",
+    "q": {
+     "en": "How do I back a SWOT item with evidence?",
+     "ar": "كيف أثبت بند SWOT بدليل؟"
+    },
+    "a": {
+     "en": "Each item needs three things: **a figure or a fact**, **its source**, and **its date**. Strengths and weaknesses come from KPIs, audit results and lessons learned: \"drawing approval takes 21 days on average against 10 in the contract (KPI DWG-01, Q3 2026)\" rather than \"slow approvals\". Opportunities and threats come from PESTLE, Porter's forces and market data. The tool flags an **opinion-only** item, and a weakness written as \"lack of…\" with no evidence, and the \"quadrants with evidence\" stage is not complete until every top item has evidence.",
+     "ar": "لكل بند ثلاثة أشياء: **رقم أو واقعة**، و**مصدرها**، و**تاريخها**. القوة والضعف من مؤشرات الأداء ونتائج التدقيق والدروس المستفادة: «اعتماد المخططات يستغرق 21 يوماً في المتوسط مقابل 10 في العقد (مؤشر DWG-01، الربع الثالث 2026)» بدل «بطء الاعتماد». والفرص والتهديدات من PESTLE وقوى بورتر وبيانات السوق. وتنبّه الأداة على البند الذي هو **رأي فقط**، وعلى الضعف المكتوب «نقص في…» بلا دليل، ولا تكتمل مرحلة «أرباع بدليل» حتى يكون لكل بند أعلى دليل."
+    }
+   },
+   {
+    "id": "tows",
+    "q": {
+     "en": "How do I turn the grid into options and decisions?",
+     "ar": "كيف أحوّل المصفوفة إلى خيارات وقرارات؟"
+    },
+    "a": {
+     "en": "With a **TOWS** matrix: each option takes an item from two quadrants. **SO** uses a strength to seize an opportunity, **ST** a strength to meet a threat, **WO** an opportunity to fix a weakness, and **WT** reduces a weakness in front of a threat. Start with the top items (the top three of each quadrant): each one goes into an option, or into an entry in the risk register or the 6.1 plan. Then each option gets **an action with an owner and a date**. In the bid example, \"high buyer power\" (a threat from Porter) with \"site overheads above competitors\" (a weakness) gave a WT option: do not bid below cost, and set a floor price before submitting.",
+     "ar": "بمصفوفة **TOWS**: لكل خيار بند من ربعين. **SO** قوة تقتنص فرصة، و**ST** قوة تواجه تهديداً، و**WO** فرصة تعالج ضعفاً، و**WT** تقليل ضعف أمام تهديد. ابدأ بالبنود العليا (أعلى ثلاثة في كل ربع): كل بند أعلى يدخل خياراً، أو مدخلاً في سجل المخاطر أو خطة 6.1. ثم لكل خيار **إجراء بمالك وموعد**. في مثال العطاء: «قوة المشتري مرتفعة» (تهديد من بورتر) مع «تكلفة إدارة الموقع أعلى من المنافسين» (ضعف) أنتجت خيار WT: لا نسعّر دون التكلفة، ونحدد سعراً أدنى قبل التقديم."
+    }
+   },
+   {
+    "id": "team",
+    "q": {
+     "en": "Who should take part in a SWOT?",
+     "ar": "من يجب أن يشارك في تحليل SWOT؟"
+    },
+    "a": {
+     "en": "**A team, not one person.** At least three roles (for example management, operations and finance or quality), and **input from outside the team**: a customer, a supplier, an external advisor or another department. ISO 10009:2024, in the points to note of 5.1, says diversity of views is a condition and that the leadership team runs the analysis with outside input. The tool flags a one-person SWOT, and the \"team complete\" stage needs outside input. A facilitator keeps the most senior voice from taking over.",
+     "ar": "**فريق، لا شخص واحد.** ثلاثة أدوار على الأقل (مثلاً الإدارة والعمليات والمالية أو الجودة)، و**رأي من خارج الفريق**: عميل أو مورد أو مستشار خارجي أو إدارة أخرى. وتذكر ISO 10009:2024 في نقاط الانتباه للبند 5.1 أن تنوع وجهات النظر شرط، وأن التحليل يجريه فريق القيادة بمدخلات من خارجه. وتنبّه الأداة على تحليل الشخص الواحد، ولا تكتمل مرحلة «اكتمل الفريق» بلا رأي خارجي. ويحتاج التحليل ميسّراً يمنع أن يطغى رأي الأعلى منصباً."
+    }
+   }
+  ],
+  "competencies": [
+   "LDR-02",
+   "RSK-01"
+  ],
+  "ecosystem": "performance"
+ }
+}

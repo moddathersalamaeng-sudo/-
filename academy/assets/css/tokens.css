@@ -1,0 +1,48 @@
+/* Continual Improvement Academy — design tokens (decision D-05 / owner approval 0.4).
+   Brand: Midnight Executive — navy #0B1E3D, gold #C6A15B, paper #F7F5F0, deep #16213A.
+   © 2026 Modather Salama. */
+@font-face { font-family: "CIA Arabic"; src: url("../fonts/IBMPlexSansArabic-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "CIA Arabic"; src: url("../fonts/IBMPlexSansArabic-SemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "CIA Arabic"; src: url("../fonts/IBMPlexSansArabic-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+
+:root {
+  /* brand */
+  --navy: #0B1E3D; --deep: #16213A; --gold: #C6A15B; --paper: #F7F5F0;
+  /* semantic — light */
+  --bg: var(--paper); --surface: #FFFFFF; --surface-2: #EFEBE2; --ink: var(--navy); --ink-soft: #3A4660; --muted: #5B6478;
+  --line: #DAD3C4; --line-strong: #B9AF9A; --accent: var(--gold); --accent-ink: #735519; --accent-tint: #F3EAD6;
+  --on-navy: #F7F5F0; --on-navy-soft: #C9CFDB; --focus: var(--navy);
+  --ok: #1F6B45; --ok-tint: #E3F1E8; --warn: #8A5A00; --warn-tint: #FBEFD6; --bad: #A12A2A; --bad-tint: #F8E3E1; --info: #24508F; --info-tint: #E3ECF8;
+  --overlay: rgba(11, 30, 61, .55);
+  /* type */
+  --font-latin-display: Georgia, "Times New Roman", "Noto Serif", serif;
+  --font-latin-body: Aptos, Calibri, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: "CIA Arabic", "Segoe UI", Tahoma, "Geeza Pro", sans-serif;
+  --font-display: var(--font-latin-display); --font-body: var(--font-latin-body);
+  --fs-xs: .8125rem; --fs-sm: .875rem; --fs-md: 1rem; --fs-lg: 1.25rem; --fs-xl: 1.5625rem; --fs-2xl: 1.953rem; --fs-3xl: 2.441rem;
+  --lh-body: 1.6; --lh-tight: 1.2;
+  /* space & shape */
+  --s-1: .25rem; --s-2: .5rem; --s-3: .75rem; --s-4: 1rem; --s-5: 1.5rem; --s-6: 2rem; --s-7: 3rem; --s-8: 4rem;
+  --r-sm: 6px; --r-md: 10px; --r-lg: 16px; --r-pill: 999px;
+  --shadow-pop: 0 12px 32px rgba(11, 30, 61, .18);
+  --measure: 68ch; --page: 76rem; --header-h: 64px;
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+html[lang="ar"] { --font-display: var(--font-arabic); --font-body: var(--font-arabic); --lh-body: 1.8; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: var(--navy); --surface: var(--deep); --surface-2: #1E2B47; --ink: #EFEAE0; --ink-soft: #C9CFDB; --muted: #A3ACBD;
+    --line: #2C3A58; --line-strong: #45557A; --accent: #D9B976; --accent-ink: #E4C88D; --accent-tint: #2C2A22;
+    --focus: #D9B976; --ok: #7CCB9B; --ok-tint: #173326; --warn: #E8B75A; --warn-tint: #33291A; --bad: #F08F86; --bad-tint: #3A1E22; --info: #8DB4EC; --info-tint: #1A2A45;
+    --overlay: rgba(0, 0, 0, .6); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: var(--navy); --surface: var(--deep); --surface-2: #1E2B47; --ink: #EFEAE0; --ink-soft: #C9CFDB; --muted: #A3ACBD;
+  --line: #2C3A58; --line-strong: #45557A; --accent: #D9B976; --accent-ink: #E4C88D; --accent-tint: #2C2A22;
+  --focus: #D9B976; --ok: #7CCB9B; --ok-tint: #173326; --warn: #E8B75A; --warn-tint: #33291A; --bad: #F08F86; --bad-tint: #3A1E22; --info: #8DB4EC; --info-tint: #1A2A45;
+  --overlay: rgba(0, 0, 0, .6); color-scheme: dark;
+}

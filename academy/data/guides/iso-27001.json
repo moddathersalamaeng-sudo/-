@@ -1,0 +1,4125 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-27001",
+  "slug": "iso-27001",
+  "kind": "standard",
+  "module": "iso27001",
+  "standard_id": "STD-27001",
+  "title": {
+   "en": "ISO/IEC 27001:2022 Interactive Guide",
+   "ar": "دليل ISO/IEC 27001:2022 التفاعلي"
+  },
+  "subtitle": {
+   "en": "Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
+   "ar": "أمن المعلومات والأمن السيبراني وحماية الخصوصية — أنظمة إدارة أمن المعلومات — المتطلبات"
+  },
+  "lede": {
+   "en": "Every clause from 4 to 10 and all 93 Annex A controls explained in clear professional language, with a worked example from an engineering and digital services company, the steps to apply it, and the evidence an auditor will ask for.",
+   "ar": "كل بند من 4 إلى 10 وكل ضابط من ضوابط الملحق A الـ93 مشروح بلغة مهنية واضحة، مع مثال تطبيقي من شركة خدمات هندسية ورقمية، وخطوات التطبيق، والأدلة التي سيطلبها المدقق."
+  },
+  "author": "مدثر سلامه",
+  "clauses": [
+   {
+    "id": "4",
+    "phase": "ctx",
+    "title": {
+     "en": "Context of the organization",
+     "ar": "سياق المنظمة"
+    },
+    "intro": {
+     "en": "Before choosing a single control, understand your surroundings: the internal and external issues that affect your ability to protect the confidentiality, integrity and availability of information, the interested parties and their legal and contractual requirements, and the boundaries and interfaces of the system. Since the 2024 amendment you must also decide explicitly whether climate change is a relevant issue.",
+     "ar": "قبل أن تختار أي ضابط أمني افهم ما يحيط بك: القضايا الداخلية والخارجية التي تؤثر على قدرتك على حماية سرية المعلومات وسلامتها وتوافرها، والأطراف المعنية ومتطلباتها التشريعية والتعاقدية، ثم حدود النظام وواجهاته. ومنذ تعديل 2024 يجب أن تقرر صراحة هل تغيّر المناخ قضية ذات صلة."
+    },
+    "items": [
+     {
+      "ref": "4.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Understanding the organization and its context",
+       "ar": "فهم المنظمة وسياقها"
+      },
+      "req": {
+       "en": "Determine the external and internal issues relevant to your purpose that affect your ability to achieve the intended outcomes of the ISMS: legislation, the cyber-threat landscape, technology, the market, culture and internal capabilities. Amendment 1:2024 adds that the organization shall determine whether climate change is a relevant issue.",
+       "ar": "حدِّد القضايا الخارجية والداخلية المرتبطة بغرض المنظمة والمؤثرة على قدرتها على تحقيق النتائج المقصودة لنظام إدارة أمن المعلومات: التشريعات والتهديدات السيبرانية والتقنية والسوق والثقافة والقدرات الداخلية. وأضاف التعديل 1:2024 أن تحدد المنظمة هل تغيّر المناخ قضية ذات صلة."
+      },
+      "ex": {
+       "en": "Al-Madar identified external issues such as the NCA Essential Cybersecurity Controls and the Personal Data Protection Law, ransomware campaigns targeting the energy sector, and the security requirements of its utility clients; and internal issues such as dependence on cloud services, a shortage of cybersecurity skills and remote working. It concluded that climate change is relevant because heatwaves threaten server-room cooling.",
+       "ar": "حددت شركة المدار قضايا خارجية مثل: ضوابط الأمن السيبراني الأساسية من الهيئة الوطنية للأمن السيبراني ونظام حماية البيانات الشخصية، واستهداف قطاع الطاقة بهجمات الفدية، واشتراطات عملائها من شركات الكهرباء. وقضايا داخلية مثل: الاعتماد على الحوسبة السحابية، ونقص كفاءات الأمن السيبراني، والعمل عن بُعد. وقررت أن تغيّر المناخ ذو صلة بسبب موجات الحر وأثرها على تبريد غرفة الخوادم."
+      },
+      "how": [
+       {
+        "en": "Run a PESTLE and SWOT workshop on information security with top management, IT and legal.",
+        "ar": "ورشة PESTLE وتحليل SWOT لأمن المعلومات مع الإدارة العليا وتقنية المعلومات والشؤون القانونية."
+       },
+       {
+        "en": "Record the climate change relevance decision and its reasoning (heat, floods, power outages).",
+        "ar": "قرار موثق بشأن صلة تغيّر المناخ ومبرره (حرارة، سيول، انقطاع كهرباء)."
+       },
+       {
+        "en": "Link every significant issue to a risk or opportunity in the register (6.1).",
+        "ar": "ربط كل قضية مهمة بخطر أو فرصة في سجل المخاطر (6.1)."
+       },
+       {
+        "en": "Review the analysis at management review and on any major change.",
+        "ar": "مراجعة التحليل في مراجعة الإدارة وعند أي تغيير كبير."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Up-to-date context analysis",
+        "ar": "تحليل السياق المحدَّث"
+       },
+       {
+        "en": "Climate change decision and rationale",
+        "ar": "قرار تغيّر المناخ ومبرراته"
+       },
+       {
+        "en": "Management review minutes",
+        "ar": "محضر مراجعة الإدارة"
+       }
+      ],
+      "tip": {
+       "en": "Auditors now ask specifically about the climate decision. Even if you conclude it is not relevant, record the assessment and the reason.",
+       "ar": "المدقق يسأل عن قرار المناخ تحديداً. وحتى لو خلصت إلى أنه غير مؤثر، وثّق التقييم والمبرر."
+      },
+      "checks": [
+       {
+        "ar": "كيف حُددت القضايا الداخلية والخارجية المؤثرة على أمن المعلومات؟ ومتى رُوجعت آخر مرة؟",
+        "en": "How were internal and external issues affecting information security determined, and when were they last reviewed?"
+       },
+       {
+        "ar": "أين القرار الموثق بشأن صلة تغيّر المناخ (تعديل 2024)؟",
+        "en": "Where is the documented decision on climate change relevance (2024 amendment)?"
+       },
+       {
+        "ar": "كيف انتقلت القضايا المهمة إلى تقييم المخاطر؟",
+        "en": "How did significant issues flow into the risk assessment?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.3",
+         "why": {
+          "ar": "القضايا تُراعى عند تحديد النطاق.",
+          "en": "Issues are considered when setting the scope."
+         }
+        },
+        {
+         "ref": "6.1.1",
+         "why": {
+          "ar": "القضايا تغذي تحديد المخاطر والفرص.",
+          "en": "Issues feed the risks and opportunities."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Understanding the needs and expectations of interested parties",
+       "ar": "فهم احتياجات وتوقعات الأطراف المعنية"
+      },
+      "req": {
+       "en": "Determine the interested parties relevant to the ISMS and their relevant requirements, then decide which of these requirements will be addressed through the ISMS (new in 2022). The 2024 amendment notes that parties can have requirements related to climate change.",
+       "ar": "حدِّد الأطراف المعنية ذات الصلة بنظام أمن المعلومات، ومتطلباتها ذات الصلة، ثم قرر أيّ هذه المتطلبات ستُعالج من خلال النظام (بند جديد في 2022). ويوضح التعديل 2024 أن للأطراف متطلبات قد تتعلق بتغيّر المناخ."
+      },
+      "ex": {
+       "en": "Al-Madar recorded: clients (power utilities) requiring NCA control compliance and incident notification within 24 hours, the NCA and SDAIA as regulators, employees, the cloud provider and the insurer. It decided to address client and regulatory requirements through the ISMS, while insurance conditions are handled by finance.",
+       "ar": "سجّلت المدار: العملاء (شركات الكهرباء) ويطلبون الالتزام بضوابط الهيئة الوطنية وإخطار الحوادث خلال 24 ساعة، والهيئة الوطنية للأمن السيبراني وسدايا كجهات تنظيمية، والموظفين، ومزود الخدمة السحابية، وشركة التأمين. وقررت معالجة متطلبات العملاء والتنظيم ضمن النظام، بينما تُدار متطلبات التأمين عبر الإدارة المالية."
+      },
+      "how": [
+       {
+        "en": "List the parties with their requirements and the source of each (contract, law, regulation).",
+        "ar": "قائمة بالأطراف مع متطلباتها ومصدر كل متطلب (عقد، نظام، لائحة)."
+       },
+       {
+        "en": "Add an explicit column: addressed through the ISMS? and why.",
+        "ar": "عمود صريح: هل يُعالج عبر النظام؟ ولماذا."
+       },
+       {
+        "en": "Link legal and contractual requirements to control A.5.31.",
+        "ar": "ربط المتطلبات التشريعية والتعاقدية بالضابط A.5.31."
+       },
+       {
+        "en": "Update the list when you win a new client or a new regulation is issued.",
+        "ar": "تحديث القائمة عند كسب عميل جديد أو صدور تنظيم جديد."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Interested parties register",
+        "ar": "سجل الأطراف المعنية ومتطلباتها"
+       },
+       {
+        "en": "'Addressed through the ISMS' decision",
+        "ar": "قرار «يُعالج عبر النظام»"
+       },
+       {
+        "en": "Legal and contractual requirements register",
+        "ar": "سجل المتطلبات التشريعية والتعاقدية"
+       }
+      ],
+      "tip": {
+       "en": "Clause 4.2 c is the most-questioned new point in 2022: listing requirements is not enough; you must decide which ones the ISMS will address.",
+       "ar": "البند 4.2 ج هو أكثر نقطة جديدة يُسأل عنها في 2022: لا يكفي أن تسرد المتطلبات، يجب أن تقرر أيها يدخل النظام."
+      },
+      "checks": [
+       {
+        "ar": "من هي الأطراف المعنية ذات الصلة وما متطلباتها؟",
+        "en": "Who are the relevant interested parties and what are their requirements?"
+       },
+       {
+        "ar": "أين القرار بأي المتطلبات يعالجها النظام (4.2 ج)؟",
+        "en": "Where is the decision on which requirements the ISMS addresses (4.2 c)?"
+       },
+       {
+        "ar": "كيف تُتابع المتطلبات التشريعية والتعاقدية الجديدة؟",
+        "en": "How are new legal and contractual requirements tracked?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.3",
+         "why": {
+          "ar": "متطلبات الأطراف تُراعى في النطاق.",
+          "en": "Party requirements are considered in the scope."
+         }
+        },
+        {
+         "ref": "6.1.1",
+         "why": {
+          "ar": "متطلبات الأطراف تغذي المخاطر والفرص.",
+          "en": "Party requirements feed the risks and opportunities."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "4.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Determining the scope of the ISMS",
+       "ar": "تحديد نطاق نظام إدارة أمن المعلومات"
+      },
+      "req": {
+       "en": "Determine the boundaries and applicability of the ISMS, considering the issues (4.1), the requirements (4.2), and the interfaces and dependencies between your activities and those performed by others. The scope shall be available as documented information.",
+       "ar": "حدِّد حدود النظام وقابليته للتطبيق مع مراعاة القضايا (4.1) والمتطلبات (4.2) والواجهات والاعتماديات بين أنشطتك وأنشطة الآخرين. ويجب أن يكون النطاق متاحاً كمعلومات موثقة."
+      },
+      "ex": {
+       "en": "Al-Madar's scope: 'Design and delivery of engineering and digital support services to power utilities, including the Riyadh data centre and the cloud-hosted ERP and M365 systems, per Statement of Applicability version 3'. Interfaces: the cloud provider and client networks accessed remotely.",
+       "ar": "نطاق المدار: «تصميم وتقديم خدمات الدعم الهندسي والرقمي لشركات الكهرباء، بما في ذلك مركز البيانات في الرياض وأنظمة ERP وM365 السحابية، وفق بيان قابلية التطبيق الإصدار 3». والواجهات: مزود السحابة، وشبكات العملاء التي يُدخل إليها عن بُعد."
+      },
+      "how": [
+       {
+        "en": "Word the scope by processes, locations, systems and people.",
+        "ar": "صياغة النطاق بالعمليات والمواقع والأنظمة والأشخاص."
+       },
+       {
+        "en": "Draw a diagram of interfaces and dependencies with external parties.",
+        "ar": "رسم مخطط للواجهات والاعتماديات مع الأطراف الخارجية."
+       },
+       {
+        "en": "Reference the SoA version in the scope statement.",
+        "ar": "الإشارة إلى إصدار بيان قابلية التطبيق في نص النطاق."
+       },
+       {
+        "en": "Record the justification for any excluded site or activity.",
+        "ar": "مبرر موثق لأي استبعاد لموقع أو نشاط."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Documented scope statement",
+        "ar": "بيان النطاق الموثق"
+       },
+       {
+        "en": "Interfaces and dependencies diagram",
+        "ar": "مخطط الواجهات والاعتماديات"
+       },
+       {
+        "en": "Justification of exclusions",
+        "ar": "مبررات الاستبعاد"
+       }
+      ],
+      "tip": {
+       "en": "An overly narrow scope raises flags: if you exclude the systems that process client data, neither the auditor nor the client will value the certificate.",
+       "ar": "النطاق الضيق جداً يثير الشك: إذا استبعدت الأنظمة التي تعالج بيانات العملاء فلن يقبل المدقق ولا العميل الشهادة."
+      },
+      "checks": [
+       {
+        "ar": "اعرض بيان النطاق: هل يشمل العمليات والمواقع والأنظمة؟",
+        "en": "Show the scope statement: does it cover processes, locations and systems?"
+       },
+       {
+        "ar": "كيف رُوعيت الواجهات والاعتماديات مع الأطراف الخارجية؟",
+        "en": "How were interfaces and dependencies with external parties considered?"
+       },
+       {
+        "ar": "ما مبرر أي استبعاد من النطاق؟",
+        "en": "What justifies any exclusion from scope?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "المخاطر تُحدد داخل النطاق.",
+          "en": "Risks are identified within the scope."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.1",
+         "why": {
+          "ar": "القضايا تُراعى عند تحديد النطاق.",
+          "en": "Issues are considered when setting the scope."
+         }
+        },
+        {
+         "ref": "4.2",
+         "why": {
+          "ar": "متطلبات الأطراف تُراعى في النطاق.",
+          "en": "Party requirements are considered in the scope."
+         }
+        },
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "التغيير قد يعدّل النطاق.",
+          "en": "A change may modify the scope."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "4.4",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Information security management system",
+       "ar": "نظام إدارة أمن المعلومات"
+      },
+      "req": {
+       "en": "Establish, implement, maintain and continually improve the ISMS, including the processes needed and their interactions (added in 2022), in accordance with the requirements of this standard.",
+       "ar": "أنشئ النظام ونفّذه وحافظ عليه وحسّنه باستمرار، بما في ذلك العمليات اللازمة وتفاعلاتها (إضافة 2022)، وفق متطلبات هذه المواصفة."
+      },
+      "ex": {
+       "en": "Al-Madar drew a process map covering risk management, asset management, identity and access management, change management, incident management, supplier management and internal audit, with the inputs, outputs and owner of each process.",
+       "ar": "رسمت المدار خريطة عمليات تضم: إدارة المخاطر، وإدارة الأصول، وإدارة الهوية والصلاحيات، وإدارة التغيير، وإدارة الحوادث، وإدارة الموردين، والتدقيق الداخلي، مع مدخلات ومخرجات كل عملية ومالكها."
+      },
+      "how": [
+       {
+        "en": "Map the ISMS processes and their interactions.",
+        "ar": "خريطة عمليات النظام وتفاعلاتها."
+       },
+       {
+        "en": "Assign an owner and an indicator to each process.",
+        "ar": "مالك ومؤشر لكل عملية."
+       },
+       {
+        "en": "Link the processes to the controls applied in the SoA.",
+        "ar": "ربط العمليات بالضوابط المطبقة في بيان قابلية التطبيق."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Process map",
+        "ar": "خريطة العمليات"
+       },
+       {
+        "en": "Responsibility matrix",
+        "ar": "مصفوفة المسؤوليات"
+       },
+       {
+        "en": "Process indicators",
+        "ar": "مؤشرات العمليات"
+       }
+      ],
+      "tip": {
+       "en": "An ISMS is not a set of policies: the auditor wants to see how outputs flow from one process to the next.",
+       "ar": "النظام ليس مجموعة سياسات: المدقق يريد أن يرى كيف تتدفق المخرجات من عملية إلى أخرى."
+      },
+      "checks": [
+       {
+        "ar": "ما عمليات النظام وكيف تتفاعل؟",
+        "en": "What are the ISMS processes and how do they interact?"
+       },
+       {
+        "ar": "من مالك كل عملية وما مؤشرها؟",
+        "en": "Who owns each process and what is its indicator?"
+       },
+       {
+        "ar": "كيف يُحافظ على النظام ويُحسّن؟",
+        "en": "How is the system maintained and improved?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.1",
+         "why": {
+          "ar": "العمليات المحددة تُضبط تشغيلياً بمعايير.",
+          "en": "The defined processes are controlled against criteria."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "10.1",
+         "why": {
+          "ar": "التحسين يطور النظام نفسه.",
+          "en": "Improvement develops the system itself."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "5",
+    "phase": "lead",
+    "title": {
+     "en": "Leadership",
+     "ar": "القيادة"
+    },
+    "intro": {
+     "en": "Information security is a management decision before it is a technical one. Top management demonstrates commitment by integrating the ISMS into business processes, providing resources, issuing the policy and assigning authorities, rather than simply delegating it to IT.",
+     "ar": "أمن المعلومات قرار إداري قبل أن يكون تقنياً. الإدارة العليا تثبت التزامها بدمج النظام في العمليات وتوفير الموارد وإصدار السياسة وتوزيع الصلاحيات، ولا تكتفي بتفويض الأمر لقسم تقنية المعلومات."
+    },
+    "items": [
+     {
+      "ref": "5.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Leadership and commitment",
+       "ar": "القيادة والالتزام"
+      },
+      "req": {
+       "en": "Top management demonstrates leadership by ensuring the policy and objectives are established and compatible with strategic direction, integrating ISMS requirements into business processes, providing resources, communicating the importance of information security, ensuring intended outcomes, supporting people and other management roles, and promoting continual improvement.",
+       "ar": "تُثبت الإدارة العليا قيادتها بضمان وضع السياسة والأهداف بما يتوافق مع التوجه الاستراتيجي، ودمج متطلبات النظام في عمليات المنظمة، وتوفير الموارد، والتواصل بأهمية أمن المعلومات، وضمان تحقيق النتائج، ودعم الأشخاص والأدوار الإدارية الأخرى، وتعزيز التحسين المستمر."
+      },
+      "ex": {
+       "en": "Al-Madar's CEO chairs the quarterly cybersecurity committee, approved a budget for a managed SOC, and added information security indicators to the executive balanced scorecard.",
+       "ar": "يرأس الرئيس التنفيذي للمدار لجنة الأمن السيبراني ربع السنوية، واعتمد ميزانية لمركز عمليات أمنية مُدار، وأدرج مؤشرات أمن المعلومات في بطاقة الأداء المتوازن للإدارة التنفيذية."
+      },
+      "how": [
+       {
+        "en": "An information security steering committee chaired by an executive, with a written charter.",
+        "ar": "لجنة توجيهية لأمن المعلومات برئاسة تنفيذية وميثاق مكتوب."
+       },
+       {
+        "en": "An approved ISMS budget and resource plan.",
+        "ar": "ميزانية معتمدة للنظام وخطة موارد."
+       },
+       {
+        "en": "Security indicators in management performance reports.",
+        "ar": "إدراج مؤشرات الأمن في تقارير الأداء الإدارية."
+       },
+       {
+        "en": "Regular messages from top management on the importance of security.",
+        "ar": "رسائل دورية من الإدارة العليا عن أهمية الأمن."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Steering committee charter and minutes",
+        "ar": "ميثاق ومحاضر اللجنة التوجيهية"
+       },
+       {
+        "en": "Approved budget",
+        "ar": "الميزانية المعتمدة"
+       },
+       {
+        "en": "Interview with top management",
+        "ar": "مقابلة الإدارة العليا"
+       }
+      ],
+      "tip": {
+       "en": "The auditor will interview the CEO or delegate: prepare them to explain the top security risks and objectives without notes.",
+       "ar": "المدقق سيقابل الرئيس التنفيذي أو من يمثله: جهّزه ليشرح أهم مخاطر الأمن والأهداف دون أوراق."
+      },
+      "checks": [
+       {
+        "ar": "كيف تُثبت الإدارة العليا التزامها بالنظام؟ أعط أمثلة.",
+        "en": "How does top management demonstrate commitment to the ISMS? Give examples."
+       },
+       {
+        "ar": "كيف دُمجت متطلبات النظام في عمليات الأعمال؟",
+        "en": "How are ISMS requirements integrated into business processes?"
+       },
+       {
+        "ar": "ما الموارد التي اعتُمدت للنظام في آخر 12 شهراً؟",
+        "en": "What resources were approved for the ISMS in the last 12 months?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "7.1",
+         "why": {
+          "ar": "التزام القيادة يترجم إلى موارد.",
+          "en": "Leadership commitment translates into resources."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "5.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Policy",
+       "ar": "السياسة"
+      },
+      "req": {
+       "en": "Top management establishes an information security policy appropriate to the organization's purpose, including objectives or a framework for setting them, a commitment to satisfy applicable requirements, and a commitment to continual improvement. It is documented, communicated internally and available to interested parties as appropriate.",
+       "ar": "تضع الإدارة العليا سياسة لأمن المعلومات مناسبة لغرض المنظمة، تتضمن أهدافاً أو إطاراً لوضعها، والتزاماً بتلبية المتطلبات، والتزاماً بالتحسين المستمر. وتكون موثقة ومُبلّغة داخلياً ومتاحة للأطراف المعنية حسب الاقتضاء."
+      },
+      "ex": {
+       "en": "Al-Madar's one-page policy, signed by the CEO, commits to client data confidentiality and to NCA controls, and refers to the topic-specific policies (access control, cryptography, backup, acceptable use) covered by control A.5.1.",
+       "ar": "سياسة المدار في صفحة واحدة يوقّعها الرئيس التنفيذي، تتضمن الالتزام بسرية بيانات العملاء وبضوابط الهيئة الوطنية، وتحيل إلى السياسات الموضوعية (التحكم في الوصول، التشفير، النسخ الاحتياطي، الاستخدام المقبول) الواردة في الضابط A.5.1."
+      },
+      "how": [
+       {
+        "en": "Draft a concise top-level policy with the three mandatory commitments.",
+        "ar": "صياغة سياسة عليا مختصرة بالالتزامات الثلاثة الإلزامية."
+       },
+       {
+        "en": "Have it approved and signed by top management.",
+        "ar": "اعتمادها وتوقيعها من الإدارة العليا."
+       },
+       {
+        "en": "Publish it on the staff portal and in induction.",
+        "ar": "نشرها في بوابة الموظفين وضمن التعريف الوظيفي."
+       },
+       {
+        "en": "Review it annually or on change.",
+        "ar": "مراجعتها سنوياً أو عند التغيير."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Approved, signed policy",
+        "ar": "السياسة المعتمدة والموقعة"
+       },
+       {
+        "en": "Evidence of communication to staff",
+        "ar": "دليل التبليغ للموظفين"
+       },
+       {
+        "en": "Review record",
+        "ar": "سجل المراجعة"
+       }
+      ],
+      "tip": {
+       "en": "Do not confuse the top-level policy (clause 5.2) with topic-specific policies (control A.5.1): the first is a management commitment, the second operational rules.",
+       "ar": "لا تخلط السياسة العليا (البند 5.2) بالسياسات الموضوعية (الضابط A.5.1): الأولى التزام إداري والثانية قواعد تشغيلية."
+      },
+      "checks": [
+       {
+        "ar": "هل تتضمن السياسة الأهداف أو إطارها والالتزامين بالمتطلبات والتحسين؟",
+        "en": "Does the policy include objectives or a framework and the commitments to requirements and improvement?"
+       },
+       {
+        "ar": "كيف أُبلغت السياسة؟ اسأل موظفين عنها.",
+        "en": "How was the policy communicated? Ask staff about it."
+       },
+       {
+        "ar": "متى رُوجعت آخر مرة ومن اعتمدها؟",
+        "en": "When was it last reviewed and who approved it?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "السياسة إطار للأهداف.",
+          "en": "The policy frames the objectives."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "5.3",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Organizational roles, responsibilities and authorities",
+       "ar": "الأدوار والمسؤوليات والصلاحيات"
+      },
+      "req": {
+       "en": "Top management ensures that responsibilities and authorities for roles relevant to information security are assigned and communicated within the organization (clarified in 2022), including responsibility for ensuring ISMS conformity and reporting on its performance to top management.",
+       "ar": "تضمن الإدارة العليا تعيين المسؤوليات والصلاحيات للأدوار ذات الصلة بأمن المعلومات وتبليغها داخل المنظمة (توضيح 2022)، بما في ذلك مسؤولية ضمان مطابقة النظام ورفع التقارير عن أدائه إلى الإدارة العليا."
+      },
+      "ex": {
+       "en": "Al-Madar appointed an Information Security Manager reporting directly to the CEO (not to the IT Manager) to avoid a conflict of interest, and named risk owners and asset owners in a published RACI matrix.",
+       "ar": "عيّنت المدار مدير أمن المعلومات مرتبطاً بالرئيس التنفيذي مباشرة (وليس بمدير تقنية المعلومات) لتفادي تعارض المصالح، وحددت مالكي المخاطر ومالكي الأصول في مصفوفة RACI منشورة."
+      },
+      "how": [
+       {
+        "en": "A RACI matrix for ISMS roles.",
+        "ar": "مصفوفة RACI لأدوار النظام."
+       },
+       {
+        "en": "An appointment letter for the ISMS lead with an independent reporting line.",
+        "ar": "قرار تعيين مسؤول النظام بخط تقرير مستقل."
+       },
+       {
+        "en": "Security responsibilities in job descriptions.",
+        "ar": "تضمين المسؤوليات الأمنية في الأوصاف الوظيفية."
+       },
+       {
+        "en": "Roles communicated via the org chart and portal.",
+        "ar": "تبليغ الأدوار في الهيكل التنظيمي والبوابة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Appointment letter",
+        "ar": "خطاب التعيين"
+       },
+       {
+        "en": "RACI matrix",
+        "ar": "مصفوفة RACI"
+       },
+       {
+        "en": "Job descriptions",
+        "ar": "الأوصاف الوظيفية"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "من المسؤول عن مطابقة النظام ورفع التقارير للإدارة؟",
+        "en": "Who is responsible for ISMS conformity and reporting to management?"
+       },
+       {
+        "ar": "كيف أُبلغت الأدوار والصلاحيات داخل المنظمة؟",
+        "en": "How were roles and authorities communicated within the organization?"
+       },
+       {
+        "ar": "هل يوجد تعارض مصالح في خط تقرير مسؤول الأمن؟",
+        "en": "Is there a conflict of interest in the security lead's reporting line?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "الأدوار تحدد مالكي المخاطر.",
+          "en": "Roles define the risk owners."
+         }
+        },
+        {
+         "ref": "9.3.2",
+         "why": {
+          "ar": "مسؤول النظام يرفع تقارير الأداء للإدارة.",
+          "en": "The ISMS lead reports performance to management."
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "6",
+    "phase": "plan",
+    "title": {
+     "en": "Planning",
+     "ar": "التخطيط"
+    },
+    "intro": {
+     "en": "The heart of the standard: assess information security risks with a consistent method, then treat them by selecting the necessary controls, comparing them with Annex A, producing the Statement of Applicability and the treatment plan, setting measurable objectives, and planning changes to the ISMS.",
+     "ar": "قلب المواصفة: تقييم مخاطر أمن المعلومات بمنهجية متسقة، ثم معالجتها باختيار الضوابط اللازمة ومقارنتها بالملحق A وإصدار بيان قابلية التطبيق وخطة المعالجة، ووضع أهداف قابلة للقياس، وتخطيط التغييرات على النظام."
+    },
+    "items": [
+     {
+      "ref": "6.1.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Actions to address risks and opportunities: general",
+       "ar": "الإجراءات لمعالجة المخاطر والفرص: عام"
+      },
+      "req": {
+       "en": "When planning the ISMS, consider the issues (4.1) and requirements (4.2) and determine the risks and opportunities to address so the ISMS achieves its outcomes, undesired effects are prevented or reduced, and improvement is achieved; then plan actions, integrate them into ISMS processes and evaluate their effectiveness.",
+       "ar": "عند التخطيط للنظام راعِ القضايا (4.1) والمتطلبات (4.2) وحدد المخاطر والفرص التي يجب معالجتها لضمان تحقيق النتائج ومنع الآثار غير المرغوبة وتحقيق التحسين، ثم خطط الإجراءات وادمجها في عمليات النظام وقيّم فعاليتها."
+      },
+      "ex": {
+       "en": "Besides information risks, Al-Madar recorded risks to the system itself such as 'the ISM leaves with no successor', and opportunities such as 'adopting single sign-on with MFA to cut incidents and support costs'.",
+       "ar": "إلى جانب مخاطر المعلومات، سجلت المدار مخاطر على النظام نفسه مثل «مغادرة مدير أمن المعلومات دون بديل»، وفرصاً مثل «اعتماد الهوية الموحدة مع المصادقة متعددة العوامل لخفض الحوادث وتكلفة الدعم»."
+      },
+      "how": [
+       {
+        "en": "A system-level risk and opportunity register linked to 4.1 and 4.2.",
+        "ar": "سجل للمخاطر والفرص على مستوى النظام مرتبط بـ 4.1 و4.2."
+       },
+       {
+        "en": "Planned actions for each item with an owner and date.",
+        "ar": "إجراءات مخططة لكل بند مع مالك وتاريخ."
+       },
+       {
+        "en": "Review the effectiveness of actions at management review.",
+        "ar": "مراجعة فعالية الإجراءات في مراجعة الإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Risk and opportunity register",
+        "ar": "سجل المخاطر والفرص"
+       },
+       {
+        "en": "Action plan",
+        "ar": "خطة الإجراءات"
+       },
+       {
+        "en": "Effectiveness evaluation",
+        "ar": "تقييم الفعالية"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما المخاطر والفرص على مستوى النظام المستمدة من 4.1 و4.2؟",
+        "en": "What system-level risks and opportunities derive from 4.1 and 4.2?"
+       },
+       {
+        "ar": "ما الإجراءات المخططة لها وكيف دُمجت في العمليات؟",
+        "en": "What actions are planned and how are they integrated into processes?"
+       },
+       {
+        "ar": "كيف قُيّمت فعالية هذه الإجراءات؟",
+        "en": "How was the effectiveness of these actions evaluated?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "4.1",
+         "why": {
+          "ar": "القضايا تغذي تحديد المخاطر والفرص.",
+          "en": "Issues feed the risks and opportunities."
+         }
+        },
+        {
+         "ref": "4.2",
+         "why": {
+          "ar": "متطلبات الأطراف تغذي المخاطر والفرص.",
+          "en": "Party requirements feed the risks and opportunities."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.1.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Information security risk assessment",
+       "ar": "تقييم مخاطر أمن المعلومات"
+      },
+      "req": {
+       "en": "Define and apply a risk assessment process that establishes risk acceptance criteria and criteria for performing assessments, produces consistent, valid and comparable results, identifies risks associated with loss of confidentiality, integrity and availability within scope and assigns a risk owner to each, then analyses them (consequences, likelihood, level of risk) and evaluates them against the criteria to prioritize treatment.",
+       "ar": "عرّف وطبّق عملية تقييم مخاطر تضع معايير قبول المخاطر ومعايير إجراء التقييم، وتنتج نتائج متسقة وصالحة وقابلة للمقارنة، وتحدد المخاطر المرتبطة بفقدان السرية والسلامة والتوافر ضمن النطاق مع تعيين مالك لكل خطر، ثم تحللها (العواقب والاحتمال ومستوى الخطر) وتقيّمها بمقارنتها بالمعايير وتحديد أولويات المعالجة."
+      },
+      "ex": {
+       "en": "Al-Madar adopted a 5×5 matrix with acceptance criteria: scores of 8 or less accepted by the risk owner, 9 to 14 require a treatment plan, 15 and above require CEO approval. Example: 'client data leaked through a compromised mailbox' likelihood 4 × impact 5 = 20, owned by the Digital Services Manager.",
+       "ar": "اعتمدت المدار مصفوفة 5×5 بمعيار قبول: الدرجة 8 فأقل مقبولة بموافقة مالك الخطر، و9–14 تتطلب خطة معالجة، و15 فأكثر تتطلب موافقة الرئيس التنفيذي. ومثال: «تسريب بيانات العملاء عبر بريد مُخترق» احتمال 4 × أثر 5 = 20، ومالكه مدير الخدمات الرقمية."
+      },
+      "how": [
+       {
+        "en": "A documented method defining scales and acceptance criteria.",
+        "ar": "منهجية موثقة تحدد المقاييس ومعايير القبول."
+       },
+       {
+        "en": "Identify risks by assets, scenarios or processes.",
+        "ar": "تحديد المخاطر على أساس الأصول أو السيناريوهات أو العمليات."
+       },
+       {
+        "en": "A named risk owner, by name or role, for every risk.",
+        "ar": "مالك خطر لكل خطر بالاسم أو الدور."
+       },
+       {
+        "en": "Reassess periodically and on change (8.2).",
+        "ar": "إعادة التقييم دورياً وعند التغيير (8.2)."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Risk assessment methodology",
+        "ar": "منهجية تقييم المخاطر"
+       },
+       {
+        "en": "Risk register with owners",
+        "ar": "سجل المخاطر مع المالكين"
+       },
+       {
+        "en": "Assessment results",
+        "ar": "نتائج التقييم"
+       }
+      ],
+      "tip": {
+       "en": "An asset-based approach has not been mandatory since 2013; what matters is results that are consistent, repeatable and comparable.",
+       "ar": "النهج القائم على الأصول ليس إلزامياً منذ 2013؛ المهم أن تكون النتائج متسقة وقابلة للتكرار والمقارنة."
+      },
+      "checks": [
+       {
+        "ar": "اعرض منهجية التقييم ومعايير قبول المخاطر.",
+        "en": "Show the assessment method and risk acceptance criteria."
+       },
+       {
+        "ar": "هل لكل خطر مالك محدد؟ اختر عينة.",
+        "en": "Does every risk have a named owner? Sample some."
+       },
+       {
+        "ar": "كيف تضمن المنهجية نتائج متسقة وقابلة للمقارنة؟",
+        "en": "How does the method ensure consistent and comparable results?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.1.3",
+         "why": {
+          "ar": "نتائج التقييم مدخل لاختيار المعالجة.",
+          "en": "Assessment results drive treatment selection."
+         }
+        },
+        {
+         "ref": "8.2",
+         "why": {
+          "ar": "المنهجية نفسها تُطبق دورياً وعند التغيير.",
+          "en": "The same method is applied periodically and on change."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.3",
+         "why": {
+          "ar": "المخاطر تُحدد داخل النطاق.",
+          "en": "Risks are identified within the scope."
+         }
+        },
+        {
+         "ref": "5.3",
+         "why": {
+          "ar": "الأدوار تحدد مالكي المخاطر.",
+          "en": "Roles define the risk owners."
+         }
+        },
+        {
+         "ref": "10.2",
+         "why": {
+          "ar": "الحوادث وعدم المطابقة تحدّث المخاطر.",
+          "en": "Incidents and nonconformities update the risks."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.1.3",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Information security risk treatment",
+       "ar": "معالجة مخاطر أمن المعلومات"
+      },
+      "req": {
+       "en": "Select appropriate treatment options, determine all controls needed to implement them, then compare them with Annex A to verify that no necessary control has been omitted. Produce a Statement of Applicability containing the necessary controls, the justification for inclusion, whether they are implemented, and the justification for excluding any Annex A control; formulate a risk treatment plan; and obtain risk owners' approval of the plan and acceptance of residual risks.",
+       "ar": "اختر خيارات المعالجة المناسبة، وحدد جميع الضوابط اللازمة لتنفيذها، ثم قارنها بالملحق A للتأكد من عدم إغفال ضابط لازم. أصدر بيان قابلية التطبيق متضمناً الضوابط اللازمة ومبرر إدراجها وهل هي مطبقة ومبرر استبعاد أي ضابط من الملحق A، وضع خطة معالجة المخاطر، واحصل على موافقة مالكي المخاطر على الخطة وعلى المخاطر المتبقية."
+      },
+      "ex": {
+       "en": "For the mailbox leak risk Al-Madar chose 'modify' with controls: MFA (A.8.5), data leakage prevention (A.8.12) and phishing awareness (A.6.3). It excluded control A.8.30 'Outsourced development' because it does not outsource software development, and stated the reason in the SoA.",
+       "ar": "لخطر تسريب البريد اختارت المدار «التعديل» بضوابط: المصادقة متعددة العوامل (A.8.5)، ومنع تسرب البيانات (A.8.12)، والتوعية بالتصيد (A.6.3). واستبعدت الضابط A.8.30 «التطوير الخارجي» لأنها لا تسند تطوير برمجيات، وذكرت المبرر في البيان."
+      },
+      "how": [
+       {
+        "en": "Treatment options: modify, avoid, share, retain.",
+        "ar": "خيارات المعالجة: تعديل، تجنب، مشاركة، إبقاء."
+       },
+       {
+        "en": "Determine controls from any source, then compare them with Annex A (93 controls).",
+        "ar": "تحديد الضوابط من أي مصدر ثم مقارنتها بالملحق A (93 ضابطاً)."
+       },
+       {
+        "en": "SoA with justifications for inclusion and exclusion and implementation status.",
+        "ar": "بيان قابلية التطبيق بمبررات الإدراج والاستبعاد وحالة التطبيق."
+       },
+       {
+        "en": "A treatment plan with owners, dates and risk owner approval.",
+        "ar": "خطة معالجة بمسؤولين وتواريخ وموافقة مالكي المخاطر."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Statement of Applicability",
+        "ar": "بيان قابلية التطبيق"
+       },
+       {
+        "en": "Risk treatment plan",
+        "ar": "خطة معالجة المخاطر"
+       },
+       {
+        "en": "Risk owners' acceptance of residual risk",
+        "ar": "موافقة مالكي المخاطر على المتبقية"
+       }
+      ],
+      "tip": {
+       "en": "Annex A is a reference for comparison, not a mandatory checklist; you may add controls from other sources such as NCA controls. Try the SoA builder in the Annex A tab.",
+       "ar": "الملحق A مرجع للمقارنة وليس قائمة إلزامية؛ ويمكن إضافة ضوابط من خارجه مثل ضوابط الهيئة الوطنية. جرّب منشئ البيان في تبويب الملحق A."
+      },
+      "checks": [
+       {
+        "ar": "اعرض بيان قابلية التطبيق: هل يغطي الضوابط الـ93 بمبررات وحالة التطبيق؟",
+        "en": "Show the SoA: does it cover the 93 controls with justifications and implementation status?"
+       },
+       {
+        "ar": "كيف تمت المقارنة مع الملحق A؟",
+        "en": "How was the comparison with Annex A carried out?"
+       },
+       {
+        "ar": "أين موافقة مالكي المخاطر على الخطة والمخاطر المتبقية؟",
+        "en": "Where is the risk owners' approval of the plan and residual risks?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.3",
+         "why": {
+          "ar": "خطة المعالجة تُنفذ تشغيلياً.",
+          "en": "The treatment plan is executed in operation."
+         }
+        },
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "المخاطر الأعلى تتحول إلى أهداف.",
+          "en": "Top risks become objectives."
+         }
+        },
+        {
+         "ref": "7.2",
+         "why": {
+          "ar": "الضوابط المختارة تحدد الكفاءات المطلوبة.",
+          "en": "The selected controls define the competence needed."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "نتائج التقييم مدخل لاختيار المعالجة.",
+          "en": "Assessment results drive treatment selection."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Information security objectives and planning to achieve them",
+       "ar": "أهداف أمن المعلومات والتخطيط لتحقيقها"
+      },
+      "req": {
+       "en": "Set information security objectives at relevant functions and levels, consistent with the policy, measurable if practicable, taking into account requirements and risk assessment and treatment results, monitored (added in 2022), communicated, updated and available as documented information. For each, determine what will be done, resources, who is responsible, when, and how results will be evaluated.",
+       "ar": "ضع أهدافاً لأمن المعلومات في الوظائف والمستويات ذات الصلة، متسقة مع السياسة، وقابلة للقياس إن أمكن، ومراعية للمتطلبات ونتائج تقييم المخاطر ومعالجتها، ويجري رصدها (إضافة 2022) وتبليغها وتحديثها وإتاحتها كمعلومات موثقة. وحدد لكل هدف ما سيُنفذ والموارد والمسؤول والموعد وكيف تُقيّم النتائج."
+      },
+      "ex": {
+       "en": "Al-Madar objectives include: 'MFA on 100% of privileged accounts by March', 'critical vulnerabilities closed within 14 days in 95% of cases', and 'a phishing-test pass rate of at least 90%'.",
+       "ar": "من أهداف المدار: «تطبيق المصادقة متعددة العوامل على 100% من الحسابات المميزة بحلول مارس»، و«إغلاق الثغرات الحرجة خلال 14 يوماً بنسبة 95%»، و«ألا تقل نسبة اجتياز اختبار التصيد عن 90%»."
+      },
+      "how": [
+       {
+        "en": "SMART objectives derived from the top risks.",
+        "ar": "أهداف SMART مشتقة من المخاطر الأعلى."
+       },
+       {
+        "en": "An achievement plan per objective (what, who, when, resources).",
+        "ar": "خطة تحقيق لكل هدف (ماذا، من، متى، الموارد)."
+       },
+       {
+        "en": "A monthly objectives dashboard.",
+        "ar": "لوحة متابعة شهرية للأهداف."
+       },
+       {
+        "en": "Review the objectives at management review.",
+        "ar": "مراجعة الأهداف في مراجعة الإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Objectives register and plans",
+        "ar": "سجل الأهداف وخطط التحقيق"
+       },
+       {
+        "en": "Monitoring reports",
+        "ar": "تقارير الرصد"
+       },
+       {
+        "en": "Review minutes",
+        "ar": "محاضر المراجعة"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما أهداف أمن المعلومات وهل هي قابلة للقياس؟",
+        "en": "What are the information security objectives, and are they measurable?"
+       },
+       {
+        "ar": "كيف تُرصد الأهداف وأين التوثيق؟",
+        "en": "How are objectives monitored and where is it documented?"
+       },
+       {
+        "ar": "ما خطة تحقيق كل هدف (ماذا، من، متى، الموارد، التقييم)؟",
+        "en": "What is the plan for each objective (what, who, when, resources, evaluation)?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.1",
+         "why": {
+          "ar": "الأهداف تُرصد بالمؤشرات.",
+          "en": "Objectives are tracked through metrics."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.2",
+         "why": {
+          "ar": "السياسة إطار للأهداف.",
+          "en": "The policy frames the objectives."
+         }
+        },
+        {
+         "ref": "6.1.3",
+         "why": {
+          "ar": "المخاطر الأعلى تتحول إلى أهداف.",
+          "en": "Top risks become objectives."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.3",
+      "status": "new",
+      "page": null,
+      "title": {
+       "en": "Planning of changes",
+       "ar": "التخطيط للتغييرات"
+      },
+      "req": {
+       "en": "When the organization determines the need for changes to the ISMS, the changes shall be carried out in a planned manner. This clause is new in the 2022 edition.",
+       "ar": "عندما تحدد المنظمة الحاجة إلى تغييرات في نظام إدارة أمن المعلومات، تُنفذ التغييرات بطريقة مخططة. وهو بند جديد في إصدار 2022."
+      },
+      "ex": {
+       "en": "When moving file servers to the cloud Al-Madar planned the change: risk assessment, SoA update (adding 5.23), scope update, user training, a rollback plan, then a post-implementation review.",
+       "ar": "عند نقل خوادم الملفات إلى السحابة خططت المدار التغيير: تقييم المخاطر، وتحديث بيان قابلية التطبيق (إضافة 5.23)، وتحديث النطاق، وتدريب المستخدمين، وخطة تراجع، ثم مراجعة ما بعد التنفيذ."
+      },
+      "how": [
+       {
+        "en": "An ISMS change request form (distinct from day-to-day IT changes).",
+        "ar": "نموذج طلب تغيير على النظام (غير تغييرات تقنية المعلومات اليومية)."
+       },
+       {
+        "en": "Impact analysis on risks, scope, controls and resources.",
+        "ar": "تحليل الأثر على المخاطر والنطاق والضوابط والموارد."
+       },
+       {
+        "en": "Approve the change, track implementation and review the outcome.",
+        "ar": "اعتماد التغيير ومتابعة تنفيذه ومراجعة نتائجه."
+       }
+      ],
+      "ev": [
+       {
+        "en": "ISMS change log",
+        "ar": "سجل تغييرات النظام"
+       },
+       {
+        "en": "Impact analysis",
+        "ar": "تحليل الأثر"
+       },
+       {
+        "en": "Post-implementation review",
+        "ar": "مراجعة ما بعد التنفيذ"
+       }
+      ],
+      "tip": {
+       "en": "Distinguish ISMS changes (6.3) from changes to technical systems (control A.8.32): the first is governance, the second operational.",
+       "ar": "فرّق بين تغيير النظام (6.3) وتغيير الأنظمة التقنية (الضابط A.8.32): الأول يخص الحوكمة والثاني تشغيلي."
+      },
+      "checks": [
+       {
+        "ar": "ما التغييرات التي أُجريت على النظام مؤخراً؟",
+        "en": "What changes were made to the ISMS recently?"
+       },
+       {
+        "ar": "كيف خُطط لها وقُيّم أثرها؟",
+        "en": "How were they planned and their impact assessed?"
+       },
+       {
+        "ar": "هل حُدّث بيان التطبيق والنطاق تبعاً لذلك؟",
+        "en": "Were the SoA and scope updated accordingly?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.2",
+         "why": {
+          "ar": "تغيير النظام قد يستدعي إعادة تقييم المخاطر.",
+          "en": "An ISMS change may require a risk reassessment."
+         }
+        },
+        {
+         "ref": "4.3",
+         "why": {
+          "ar": "التغيير قد يعدّل النطاق.",
+          "en": "A change may modify the scope."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "9.3.3",
+         "why": {
+          "ar": "قرارات المراجعة قد تغير النظام.",
+          "en": "Review decisions may change the ISMS."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "7",
+    "phase": "do",
+    "title": {
+     "en": "Support",
+     "ar": "الدعم"
+    },
+    "intro": {
+     "en": "The system cannot run without resources, competent people who are aware of their role, clear communication and controlled documented information. This clause secures the fuel the ISMS needs.",
+     "ar": "لا يعمل النظام دون موارد وأشخاص أكفاء واعين بدورهم، وتواصل واضح، ومعلومات موثقة مضبوطة. هذا البند يضمن الوقود الذي يحتاجه النظام."
+    },
+    "items": [
+     {
+      "ref": "7.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Resources",
+       "ar": "الموارد"
+      },
+      "req": {
+       "en": "Determine and provide the resources needed to establish, implement, maintain and continually improve the ISMS: people, technology, tools, budget and time.",
+       "ar": "حدِّد ووفّر الموارد اللازمة لإنشاء النظام وتطبيقه والمحافظة عليه وتحسينه: أشخاص وتقنيات وأدوات وميزانية ووقت."
+      },
+      "ex": {
+       "en": "Al-Madar assigned a full-time ISM and an analyst, contracted a managed SOC, and provided a vulnerability scanner and an asset management tool.",
+       "ar": "خصصت المدار مديراً متفرغاً لأمن المعلومات ومحللاً، وتعاقدت مع مركز عمليات أمنية مُدار، ووفرت أداة لفحص الثغرات وأخرى لإدارة الأصول."
+      },
+      "how": [
+       {
+        "en": "An annual resource plan tied to the treatment plan.",
+        "ar": "خطة موارد سنوية مرتبطة بخطة المعالجة."
+       },
+       {
+        "en": "Estimate the gap in skills and tools.",
+        "ar": "تقدير الفجوة في الكفاءات والأدوات."
+       },
+       {
+        "en": "Approve the budget and track spending.",
+        "ar": "اعتماد الميزانية ومتابعة صرفها."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Resource plan",
+        "ar": "خطة الموارد"
+       },
+       {
+        "en": "Budget",
+        "ar": "الميزانية"
+       },
+       {
+        "en": "Security service contracts",
+        "ar": "عقود الخدمات الأمنية"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "كيف حُددت الموارد اللازمة للنظام؟",
+        "en": "How were the resources needed for the ISMS determined?"
+       },
+       {
+        "ar": "هل الموارد كافية لتنفيذ خطة المعالجة في مواعيدها؟",
+        "en": "Are resources sufficient to deliver the treatment plan on time?"
+       },
+       {
+        "ar": "ما الأدوات والخدمات الأمنية المتوفرة؟",
+        "en": "What security tools and services are available?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "5.1",
+         "why": {
+          "ar": "التزام القيادة يترجم إلى موارد.",
+          "en": "Leadership commitment translates into resources."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "7.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Competence",
+       "ar": "الكفاءة"
+      },
+      "req": {
+       "en": "Determine the competence needed by people whose work affects information security performance, ensure they are competent on the basis of education, training or experience, take action to acquire it and evaluate effectiveness, and retain evidence.",
+       "ar": "حدِّد الكفاءة اللازمة للأشخاص الذين يؤثر عملهم على أداء أمن المعلومات، وتأكد من كفاءتهم بالتعليم أو التدريب أو الخبرة، واتخذ إجراءات لاكتسابها وقيّم فعاليتها، واحتفظ بالأدلة."
+      },
+      "ex": {
+       "en": "Al-Madar defined a competence matrix: ISM (CISSP or equivalent and 5 years' experience), network administrator (firewall training), internal auditors (ISO 27001 internal auditor course).",
+       "ar": "حددت المدار مصفوفة كفاءة: مدير أمن المعلومات (شهادة CISSP أو مكافئة وخبرة 5 سنوات)، ومسؤول الشبكات (تدريب على الجدران النارية)، والمدققون الداخليون (دورة مدقق داخلي ISO 27001)."
+      },
+      "how": [
+       {
+        "en": "A competence matrix for each security role.",
+        "ar": "مصفوفة كفاءة لكل دور أمني."
+       },
+       {
+        "en": "Gap analysis and a training plan.",
+        "ar": "تحليل الفجوات وخطة تدريب."
+       },
+       {
+        "en": "Evaluate training effectiveness (test, performance, observation).",
+        "ar": "تقييم فعالية التدريب (اختبار، أداء، ملاحظة)."
+       },
+       {
+        "en": "Keep certificates and records.",
+        "ar": "حفظ الشهادات والسجلات."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Competence matrix",
+        "ar": "مصفوفة الكفاءة"
+       },
+       {
+        "en": "Training records",
+        "ar": "سجلات التدريب"
+       },
+       {
+        "en": "Effectiveness evaluation",
+        "ar": "تقييم الفعالية"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "اعرض مصفوفة الكفاءة للأدوار الأمنية.",
+        "en": "Show the competence matrix for security roles."
+       },
+       {
+        "ar": "كيف قُيّمت فعالية التدريب؟",
+        "en": "How was training effectiveness evaluated?"
+       },
+       {
+        "ar": "أين أدلة كفاءة المدققين الداخليين؟",
+        "en": "Where is the evidence of internal auditor competence?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "7.3",
+         "why": {
+          "ar": "الكفاءة والوعي يكملان بعضهما.",
+          "en": "Competence and awareness complement each other."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1.3",
+         "why": {
+          "ar": "الضوابط المختارة تحدد الكفاءات المطلوبة.",
+          "en": "The selected controls define the competence needed."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "7.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Awareness",
+       "ar": "الوعي"
+      },
+      "req": {
+       "en": "People doing work under the organization's control shall be aware of the information security policy, their contribution to the effectiveness of the ISMS including the benefits of improved performance, and the implications of not conforming.",
+       "ar": "يجب أن يكون العاملون تحت سيطرة المنظمة على وعي بسياسة أمن المعلومات، ومساهمتهم في فعالية النظام وفوائد تحسين الأداء، وعواقب عدم المطابقة."
+      },
+      "ex": {
+       "en": "Al-Madar runs a monthly awareness campaign and a quarterly phishing test; new joiners receive a security induction before their account is issued.",
+       "ar": "تطلق المدار حملة توعية شهرية واختبار تصيد ربع سنوي، ويحصل الموظف الجديد على جلسة تعريف أمنية قبل منحه الحساب."
+      },
+      "how": [
+       {
+        "en": "An annual awareness programme with risk-based topics.",
+        "ar": "برنامج توعية سنوي بموضوعات مرتبطة بالمخاطر."
+       },
+       {
+        "en": "Phishing simulations with measured results.",
+        "ar": "اختبارات تصيد وقياس النتائج."
+       },
+       {
+        "en": "Include contractors and interns too.",
+        "ar": "توعية المقاولين والمتدربين أيضاً."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Awareness plan",
+        "ar": "خطة التوعية"
+       },
+       {
+        "en": "Phishing test results",
+        "ar": "نتائج اختبارات التصيد"
+       },
+       {
+        "en": "Staff interviews",
+        "ar": "مقابلات الموظفين"
+       }
+      ],
+      "tip": {
+       "en": "Auditors ask staff at random: 'what do you do with a suspicious email?' A correct answer is stronger evidence than any record.",
+       "ar": "المدقق يسأل الموظفين عشوائياً: «ماذا تفعل لو وصلك بريد مشبوه؟» الإجابة الصحيحة دليل أقوى من أي سجل."
+      },
+      "checks": [
+       {
+        "ar": "هل يعرف الموظفون السياسة ودورهم؟ اسأل عينة.",
+        "en": "Do staff know the policy and their role? Ask a sample."
+       },
+       {
+        "ar": "ما نتائج اختبارات التصيد الأخيرة؟",
+        "en": "What were the latest phishing test results?"
+       },
+       {
+        "ar": "هل يشمل برنامج التوعية المقاولين؟",
+        "en": "Does the awareness programme include contractors?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "10.2",
+         "why": {
+          "ar": "ضعف الوعي سبب جذري متكرر.",
+          "en": "Weak awareness is a frequent root cause."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "7.2",
+         "why": {
+          "ar": "الكفاءة والوعي يكملان بعضهما.",
+          "en": "Competence and awareness complement each other."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "7.4",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Communication",
+       "ar": "التواصل"
+      },
+      "req": {
+       "en": "Determine the need for internal and external communications relevant to the ISMS: on what, when, with whom and how. (In 2022 the separate item on 'the processes by which communication shall be effected' was removed; 'how' remains.)",
+       "ar": "حدِّد الحاجة للتواصل الداخلي والخارجي ذي الصلة بالنظام: ماذا، ومتى، ومع من، وكيف. (حُذف في 2022 شرط تحديد عملية التواصل كبند مستقل وبقي «كيف»)."
+      },
+      "ex": {
+       "en": "Al-Madar's communication matrix: notify the client of incidents affecting its data within 24 hours via the account manager, a monthly security bulletin for staff, and notification to the NCA as regulations require.",
+       "ar": "مصفوفة تواصل في المدار: إبلاغ العميل بالحوادث المؤثرة على بياناته خلال 24 ساعة عبر مدير الحساب، ونشرة أمنية شهرية للموظفين، وإبلاغ الهيئة الوطنية حسب الأنظمة."
+      },
+      "how": [
+       {
+        "en": "A communication matrix (topic, timing, audience, channel, owner).",
+        "ar": "مصفوفة تواصل (الموضوع، التوقيت، الجمهور، القناة، المسؤول)."
+       },
+       {
+        "en": "Approved channels for external communication during incidents.",
+        "ar": "قنوات معتمدة للتواصل الخارجي في الحوادث."
+       },
+       {
+        "en": "Review the matrix together with the incident response plan.",
+        "ar": "مراجعة المصفوفة مع خطة الاستجابة للحوادث."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Communication matrix",
+        "ar": "مصفوفة التواصل"
+       },
+       {
+        "en": "Sample messages",
+        "ar": "أمثلة على الرسائل"
+       },
+       {
+        "en": "External notification log",
+        "ar": "سجل التبليغ الخارجي"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "اعرض مصفوفة التواصل الداخلي والخارجي.",
+        "en": "Show the internal and external communication matrix."
+       },
+       {
+        "ar": "كيف يُبلّغ العملاء والجهات عن الحوادث؟",
+        "en": "How are clients and authorities notified of incidents?"
+       },
+       {
+        "ar": "من المخول بالتواصل الخارجي؟",
+        "en": "Who is authorised to communicate externally?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "8.1",
+         "why": {
+          "ar": "التواصل الخارجي جزء من ضبط العمليات والحوادث.",
+          "en": "External communication is part of process and incident control."
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "7.5.1",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Documented information: general",
+       "ar": "المعلومات الموثقة: عام"
+      },
+      "req": {
+       "en": "The ISMS includes the documented information required by the standard and that determined by the organization as necessary for its effectiveness; the extent varies with organization size, process complexity and people's competence.",
+       "ar": "يتضمن النظام المعلومات الموثقة التي تطلبها المواصفة، وتلك التي تراها المنظمة ضرورية لفعالية النظام، ويختلف حجمها باختلاف حجم المنظمة وتعقيد عملياتها وكفاءة أفرادها."
+      },
+      "ex": {
+       "en": "Al-Madar's list of mandatory documented information includes: scope, policy, risk method and results, treatment plan, SoA, objectives, competence evidence, operational control, monitoring results, audit programme and results, management review results, nonconformities and corrective actions.",
+       "ar": "قائمة المعلومات الموثقة الإلزامية في المدار تشمل: النطاق، السياسة، منهجية وتقييم المخاطر، خطة المعالجة، بيان قابلية التطبيق، الأهداف، أدلة الكفاءة، ضبط العمليات، نتائج الرصد، برنامج ونتائج التدقيق، نتائج مراجعة الإدارة، عدم المطابقة والإجراءات التصحيحية."
+      },
+      "how": [
+       {
+        "en": "A list of mandatory documented information and where it is kept.",
+        "ar": "قائمة بالمعلومات الموثقة الإلزامية وأماكن حفظها."
+       },
+       {
+        "en": "Add the operating procedures the organization needs (A.5.37).",
+        "ar": "إضافة ما تحتاجه المنظمة من إجراءات تشغيلية (A.5.37)."
+       },
+       {
+        "en": "Avoid excess documentation nobody uses.",
+        "ar": "تجنب التوثيق الزائد الذي لا يُستخدم."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Documented information list",
+        "ar": "قائمة المعلومات الموثقة"
+       },
+       {
+        "en": "Mandatory documents",
+        "ar": "الوثائق الإلزامية"
+       },
+       {
+        "en": "Records",
+        "ar": "السجلات"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما المعلومات الموثقة الإلزامية وأين هي؟",
+        "en": "What mandatory documented information exists and where?"
+       },
+       {
+        "ar": "ما الوثائق الإضافية التي قررتها المنظمة ولماذا؟",
+        "en": "What additional documents did the organization decide on, and why?"
+       },
+       {
+        "ar": "هل حجم التوثيق مناسب لحجم المنظمة؟",
+        "en": "Is the documentation proportionate to the organization?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "7.5.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Creating and updating",
+       "ar": "الإنشاء والتحديث"
+      },
+      "req": {
+       "en": "When creating and updating documented information, ensure appropriate identification (title, date, author, reference), format and media, and review and approval for suitability and adequacy.",
+       "ar": "عند إنشاء المعلومات الموثقة وتحديثها ضمن التعريف المناسب (العنوان والتاريخ والمؤلف والرقم)، والشكل والوسط المناسبين، والمراجعة والاعتماد للتحقق من ملاءمتها وكفايتها."
+      },
+      "ex": {
+       "en": "Every Al-Madar document carries a code (ISMS-POL-05), version, date and approver, and is published on SharePoint as read-only.",
+       "ar": "كل وثيقة في المدار تحمل رمزاً (ISMS-POL-05) ورقم إصدار وتاريخاً واسم المعتمد، وتُنشر على SharePoint بصلاحية قراءة فقط."
+      },
+      "how": [
+       {
+        "en": "A standard document template.",
+        "ar": "قالب موحد للوثائق."
+       },
+       {
+        "en": "A defined review and approval route.",
+        "ar": "تسلسل مراجعة واعتماد محدد."
+       },
+       {
+        "en": "A version history for each document.",
+        "ar": "سجل إصدارات لكل وثيقة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Master document list",
+        "ar": "قائمة الوثائق الرئيسية"
+       },
+       {
+        "en": "Version history",
+        "ar": "سجل الإصدارات"
+       },
+       {
+        "en": "Approval evidence",
+        "ar": "دليل الاعتماد"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "هل تحمل الوثائق تعريفاً وإصداراً وتاريخاً واعتماداً؟",
+        "en": "Do documents carry identification, version, date and approval?"
+       },
+       {
+        "ar": "من يراجع ويعتمد الوثائق؟",
+        "en": "Who reviews and approves documents?"
+       },
+       {
+        "ar": "اعرض سجل إصدارات وثيقة مهمة.",
+        "en": "Show the version history of an important document."
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "7.5.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Control of documented information",
+       "ar": "ضبط المعلومات الموثقة"
+      },
+      "req": {
+       "en": "Control documented information so it is available and suitable where and when needed and adequately protected from loss of confidentiality, improper use or loss of integrity: distribution, access, retrieval, storage, change control, retention and disposition, including documents of external origin.",
+       "ar": "اضبط المعلومات الموثقة لضمان توافرها وملاءمتها عند الحاجة، وحمايتها من فقدان السرية أو سوء الاستخدام أو فقدان السلامة: التوزيع والوصول والاسترجاع والحفظ وضبط التغييرات والاحتفاظ والتخلص، بما في ذلك الوثائق ذات المصدر الخارجي."
+      },
+      "ex": {
+       "en": "Al-Madar classifies incident records as 'Confidential' with restricted access, retains records for 5 years per contract requirements, and tracks external standards and regulations in a separate list.",
+       "ar": "تصنف المدار سجلات الحوادث «سري» وتقيّد الوصول إليها، وتحفظ السجلات 5 سنوات حسب متطلبات العقود، وتتابع نسخ المواصفات والأنظمة الخارجية في قائمة مستقلة."
+      },
+      "how": [
+       {
+        "en": "Access rights by classification (A.5.12).",
+        "ar": "صلاحيات وصول حسب التصنيف (A.5.12)."
+       },
+       {
+        "en": "A retention and disposal schedule.",
+        "ar": "جدول احتفاظ وتخلص."
+       },
+       {
+        "en": "A list of external documents and their versions.",
+        "ar": "قائمة بالوثائق الخارجية وإصداراتها."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Retention schedule",
+        "ar": "جدول الاحتفاظ"
+       },
+       {
+        "en": "Library permissions",
+        "ar": "صلاحيات المكتبة"
+       },
+       {
+        "en": "External documents list",
+        "ar": "قائمة الوثائق الخارجية"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "كيف تُحمى الوثائق من الوصول غير المصرح والتعديل؟",
+        "en": "How are documents protected from unauthorised access and change?"
+       },
+       {
+        "ar": "ما جدول الاحتفاظ والتخلص؟",
+        "en": "What is the retention and disposal schedule?"
+       },
+       {
+        "ar": "كيف تُضبط الوثائق الخارجية المصدر؟",
+        "en": "How are documents of external origin controlled?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.2.2",
+         "why": {
+          "ar": "المعلومات الموثقة أدلة التدقيق.",
+          "en": "Documented information is audit evidence."
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "8",
+    "phase": "do",
+    "title": {
+     "en": "Operation",
+     "ar": "التشغيل"
+    },
+    "intro": {
+     "en": "This is where plans become reality: controlling processes against clear criteria, including externally provided ones, reassessing risks at intervals and on change, and executing the treatment plan and controls.",
+     "ar": "هنا تتحول الخطط إلى واقع: ضبط العمليات بمعايير واضحة بما فيها العمليات المسندة للخارج، وإعادة تقييم المخاطر دورياً وعند التغيير، وتنفيذ خطة المعالجة وتطبيق الضوابط."
+    },
+    "items": [
+     {
+      "ref": "8.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Operational planning and control",
+       "ar": "التخطيط والضبط التشغيلي"
+      },
+      "req": {
+       "en": "Plan, implement and control the processes needed by establishing criteria for them (added in 2022) and implementing control in accordance with the criteria; keep documented information to show they were carried out as planned. Control planned changes and review the consequences of unintended ones, and ensure externally provided processes, products or services relevant to the ISMS are controlled.",
+       "ar": "خطط العمليات اللازمة وطبقها واضبطها بوضع معايير لها (إضافة 2022) وتنفيذ الضبط وفقها، واحتفظ بمعلومات موثقة تثبت تنفيذها كما خُطط. واضبط التغييرات المخططة وراجع عواقب غير المقصودة منها، وتأكد من ضبط العمليات والمنتجات والخدمات المقدمة من الخارج ذات الصلة بالنظام."
+      },
+      "ex": {
+       "en": "Al-Madar criteria: access reviews quarterly, critical patches within 14 days, monthly restore tests. For the outsourced cloud service it reviews the SOC 2 report annually and the service agreement terms.",
+       "ar": "معايير المدار: مراجعة الصلاحيات ربع سنوياً، وتطبيق التحديثات الحرجة خلال 14 يوماً، واختبار الاستعادة شهرياً. وللخدمة السحابية المُسندة تراجع تقرير SOC 2 سنوياً وبنود اتفاقية الخدمة."
+      },
+      "how": [
+       {
+        "en": "Written operating criteria for each security process.",
+        "ar": "معايير تشغيل مكتوبة لكل عملية أمنية."
+       },
+       {
+        "en": "Records showing execution against the criteria.",
+        "ar": "سجلات تثبت التنفيذ وفق المعايير."
+       },
+       {
+        "en": "A list of outsourced processes and services and how each is controlled.",
+        "ar": "قائمة بالعمليات والخدمات المسندة وطريقة ضبطها."
+       },
+       {
+        "en": "Review unintended changes and act on them.",
+        "ar": "مراجعة التغييرات غير المقصودة واتخاذ إجراء."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Process criteria",
+        "ar": "معايير العمليات"
+       },
+       {
+        "en": "Operational records",
+        "ar": "سجلات التشغيل"
+       },
+       {
+        "en": "Supplier control evidence",
+        "ar": "أدلة ضبط الموردين"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما المعايير الموضوعة للعمليات الأمنية؟ اعرض أمثلة.",
+        "en": "What criteria are set for security processes? Show examples."
+       },
+       {
+        "ar": "ما العمليات والخدمات المسندة للخارج وكيف تُضبط؟",
+        "en": "Which processes and services are outsourced and how are they controlled?"
+       },
+       {
+        "ar": "كيف تُراجع التغييرات غير المقصودة؟",
+        "en": "How are unintended changes reviewed?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.1",
+         "why": {
+          "ar": "معايير العمليات تُقاس.",
+          "en": "Process criteria are measured."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "4.4",
+         "why": {
+          "ar": "العمليات المحددة تُضبط تشغيلياً بمعايير.",
+          "en": "The defined processes are controlled against criteria."
+         }
+        },
+        {
+         "ref": "7.4",
+         "why": {
+          "ar": "التواصل الخارجي جزء من ضبط العمليات والحوادث.",
+          "en": "External communication is part of process and incident control."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.2",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Information security risk assessment",
+       "ar": "تقييم مخاطر أمن المعلومات"
+      },
+      "req": {
+       "en": "Perform information security risk assessments at planned intervals or when significant changes are proposed or occur, using the criteria established in 6.1.2, and retain the results.",
+       "ar": "نفّذ تقييم المخاطر على فترات مخططة وعند اقتراح تغييرات جوهرية أو حدوثها، وفق المعايير المحددة في 6.1.2، واحتفظ بالنتائج."
+      },
+      "ex": {
+       "en": "Al-Madar reassesses annually, and reassessed immediately after signing a client requiring access to its SCADA network, which added new remote-access risks.",
+       "ar": "تعيد المدار التقييم سنوياً، وأعادت تقييم المخاطر فور التعاقد مع عميل يشترط الوصول لشبكة SCADA، ما أضاف مخاطر جديدة على الوصول عن بُعد."
+      },
+      "how": [
+       {
+        "en": "An approved periodic assessment schedule.",
+        "ar": "جدول تقييم دوري معتمد."
+       },
+       {
+        "en": "Reassessment triggers (new system, client, major incident, regulation).",
+        "ar": "محفزات إعادة التقييم (نظام جديد، عميل، حادث كبير، تنظيم)."
+       },
+       {
+        "en": "Keep each cycle's results for comparison.",
+        "ar": "حفظ نتائج كل دورة للمقارنة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Dated assessment results",
+        "ar": "نتائج التقييم المؤرخة"
+       },
+       {
+        "en": "Reassessment trigger log",
+        "ar": "سجل محفزات إعادة التقييم"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "متى نُفّذ آخر تقييم للمخاطر؟",
+        "en": "When was the last risk assessment performed?"
+       },
+       {
+        "ar": "ما التغييرات الجوهرية التي استدعت إعادة التقييم؟",
+        "en": "What significant changes triggered reassessment?"
+       },
+       {
+        "ar": "أين النتائج المحفوظة لكل دورة؟",
+        "en": "Where are the retained results for each cycle?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.3.2",
+         "why": {
+          "ar": "نتائج التقييم مدخل لمراجعة الإدارة.",
+          "en": "Assessment results are a management review input."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "المنهجية نفسها تُطبق دورياً وعند التغيير.",
+          "en": "The same method is applied periodically and on change."
+         }
+        },
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "تغيير النظام قد يستدعي إعادة تقييم المخاطر.",
+          "en": "An ISMS change may require a risk reassessment."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "8.3",
+      "status": "",
+      "page": null,
+      "title": {
+       "en": "Information security risk treatment",
+       "ar": "معالجة مخاطر أمن المعلومات"
+      },
+      "req": {
+       "en": "Implement the information security risk treatment plan and retain the results of the treatment.",
+       "ar": "نفّذ خطة معالجة المخاطر واحتفظ بنتائج المعالجة."
+      },
+      "ex": {
+       "en": "Al-Madar tracks the treatment plan on a monthly dashboard: 42 actions, 35 closed; overdue items go to the steering committee, and residual risk is recalculated after implementation.",
+       "ar": "تتابع المدار خطة المعالجة في لوحة شهرية: 42 إجراءً، أُغلق منها 35، والمتأخرة تُرفع للجنة التوجيهية، وبعد التنفيذ يُعاد حساب الخطر المتبقي."
+      },
+      "how": [
+       {
+        "en": "Periodic tracking of plan execution.",
+        "ar": "متابعة دورية لتنفيذ الخطة."
+       },
+       {
+        "en": "Recalculate residual risk after implementation.",
+        "ar": "إعادة حساب الخطر المتبقي بعد التنفيذ."
+       },
+       {
+        "en": "Risk owner sign-off on closure.",
+        "ar": "موافقة مالك الخطر على الإغلاق."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Treatment plan status",
+        "ar": "حالة خطة المعالجة"
+       },
+       {
+        "en": "Updated residual risks",
+        "ar": "المخاطر المتبقية المحدّثة"
+       },
+       {
+        "en": "Evidence of controls applied",
+        "ar": "أدلة تطبيق الضوابط"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما حالة تنفيذ خطة المعالجة؟",
+        "en": "What is the implementation status of the treatment plan?"
+       },
+       {
+        "ar": "اختر ضابطاً «مطبقاً» في البيان وتحقق من دليل تطبيقه.",
+        "en": "Pick a control marked 'implemented' in the SoA and verify its evidence."
+       },
+       {
+        "ar": "هل أُعيد حساب المخاطر المتبقية بعد التنفيذ؟",
+        "en": "Were residual risks recalculated after implementation?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.3.2",
+         "why": {
+          "ar": "حالة خطة المعالجة مدخل للمراجعة.",
+          "en": "Treatment plan status is a review input."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1.3",
+         "why": {
+          "ar": "خطة المعالجة تُنفذ تشغيلياً.",
+          "en": "The treatment plan is executed in operation."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "9",
+    "phase": "check",
+    "title": {
+     "en": "Performance evaluation",
+     "ar": "تقييم الأداء"
+    },
+    "intro": {
+     "en": "How do you know the ISMS works? Through monitoring and measurement with methods that give comparable results, an independent internal audit, and a management review that takes decisions.",
+     "ar": "كيف تعرف أن النظام يعمل؟ بالرصد والقياس بطرق تعطي نتائج قابلة للمقارنة، والتدقيق الداخلي المستقل، ومراجعة الإدارة التي تتخذ القرارات."
+    },
+    "items": [
+     {
+      "ref": "9.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Monitoring, measurement, analysis and evaluation",
+       "ar": "الرصد والقياس والتحليل والتقييم"
+      },
+      "req": {
+       "en": "Determine what needs to be monitored and measured, including security processes and controls; the methods to ensure valid results that are comparable and reproducible (clarified in 2022); when and who monitors; and when and who analyses and evaluates. Evaluate information security performance and ISMS effectiveness.",
+       "ar": "حدِّد ما يجب رصده وقياسه بما في ذلك عمليات الأمن والضوابط، والطرق التي تضمن نتائج صالحة وقابلة للمقارنة والتكرار (توضيح 2022)، ومتى ومن يرصد، ومتى ومن يحلل ويقيّم. وقيّم أداء أمن المعلومات وفعالية النظام."
+      },
+      "ex": {
+       "en": "Al-Madar indicators: percentage of patched systems, mean time to detect incidents, restore-test success rate and percentage of accounts with MFA, calculated with the same tool and formula every month.",
+       "ar": "مؤشرات المدار: نسبة الأنظمة المحدّثة، ومتوسط زمن اكتشاف الحوادث، ونسبة نجاح اختبارات الاستعادة، ونسبة الحسابات بمصادقة متعددة العوامل، وتُحسب بنفس الأداة والصيغة كل شهر."
+      },
+      "how": [
+       {
+        "en": "A card for each metric (definition, formula, source, frequency, owner, target).",
+        "ar": "بطاقة لكل مؤشر (التعريف، الصيغة، المصدر، التكرار، المسؤول، الهدف)."
+       },
+       {
+        "en": "A monthly dashboard with trend analysis.",
+        "ar": "لوحة شهرية وتحليل للاتجاهات."
+       },
+       {
+        "en": "An ISMS effectiveness report for management review.",
+        "ar": "تقرير فعالية للنظام في مراجعة الإدارة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Metric cards",
+        "ar": "بطاقات المؤشرات"
+       },
+       {
+        "en": "Monitoring reports",
+        "ar": "تقارير الرصد"
+       },
+       {
+        "en": "Trend analysis",
+        "ar": "تحليل الاتجاهات"
+       }
+      ],
+      "tip": {
+       "en": "ISO/IEC 27004 is the guidance reference for building information security metrics.",
+       "ar": "ISO/IEC 27004 هي المرجع الإرشادي لبناء مؤشرات أمن المعلومات."
+      },
+      "checks": [
+       {
+        "ar": "ما الذي يُرصد ويُقاس؟ اعرض بطاقات المؤشرات.",
+        "en": "What is monitored and measured? Show the metric cards."
+       },
+       {
+        "ar": "كيف تضمن الطرق نتائج قابلة للمقارنة والتكرار؟",
+        "en": "How do the methods ensure comparable and reproducible results?"
+       },
+       {
+        "ar": "من يحلل النتائج ومتى، وما الاستنتاجات؟",
+        "en": "Who analyses results and when, and what were the conclusions?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.3.2",
+         "why": {
+          "ar": "نتائج الرصد مدخل للمراجعة.",
+          "en": "Monitoring results are a review input."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "الأهداف تُرصد بالمؤشرات.",
+          "en": "Objectives are tracked through metrics."
+         }
+        },
+        {
+         "ref": "8.1",
+         "why": {
+          "ar": "معايير العمليات تُقاس.",
+          "en": "Process criteria are measured."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "9.2.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Internal audit: general",
+       "ar": "التدقيق الداخلي: عام"
+      },
+      "req": {
+       "en": "Conduct internal audits at planned intervals to determine whether the ISMS conforms to the organization's own requirements and the standard's requirements, and is effectively implemented and maintained.",
+       "ar": "نفّذ تدقيقات داخلية على فترات مخططة لتتحقق من مطابقة النظام لمتطلبات المنظمة ومتطلبات المواصفة، ومن تطبيقه والمحافظة عليه بفعالية."
+      },
+      "ex": {
+       "en": "Al-Madar audits the whole ISMS and all applicable SoA controls within an annual cycle split across four quarters.",
+       "ar": "تدقق المدار كامل النظام وجميع الضوابط المطبقة في بيان قابلية التطبيق خلال دورة سنوية مقسمة على أربعة أرباع."
+      },
+      "how": [
+       {
+        "en": "Cover clauses 4–10 and the applicable controls within the cycle.",
+        "ar": "تغطية البنود 4–10 والضوابط المطبقة خلال الدورة."
+       },
+       {
+        "en": "Define the criteria and scope of each audit.",
+        "ar": "تحديد معايير التدقيق ونطاق كل تدقيق."
+       },
+       {
+        "en": "Auditors independent of the work audited.",
+        "ar": "مدققون مستقلون عن العمل المدقق."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Audit programme",
+        "ar": "برنامج التدقيق"
+       },
+       {
+        "en": "Audit reports",
+        "ar": "تقارير التدقيق"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "هل غطى التدقيق الداخلي جميع البنود والضوابط المطبقة؟",
+        "en": "Did internal audit cover all clauses and applicable controls?"
+       },
+       {
+        "ar": "ما معايير التدقيق ونطاقه؟",
+        "en": "What are the audit criteria and scope?"
+       },
+       {
+        "ar": "هل المدققون مستقلون عن العمل المدقق؟",
+        "en": "Are auditors independent of the work audited?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "9.2.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Internal audit programme",
+       "ar": "برنامج التدقيق الداخلي"
+      },
+      "req": {
+       "en": "Plan, establish, implement and maintain an audit programme including frequency, methods, responsibilities, planning requirements and reporting, considering the importance of the processes and results of previous audits. Define criteria and scope for each audit, select auditors to ensure objectivity and impartiality, report results to relevant management, and retain evidence.",
+       "ar": "خطط برنامج التدقيق ونفّذه وحافظ عليه بما يشمل التكرار والطرق والمسؤوليات ومتطلبات التخطيط والتقارير، مع مراعاة أهمية العمليات ونتائج التدقيقات السابقة. حدد معايير ونطاق كل تدقيق، واختر مدققين يضمنون الموضوعية والحياد، وأبلغ النتائج للإدارة المعنية، واحتفظ بالأدلة."
+      },
+      "ex": {
+       "en": "Al-Madar raised the access management audit frequency to twice a year after two findings in the previous audit, and used an external auditor to audit the information security team itself to ensure impartiality.",
+       "ar": "رفعت المدار تكرار تدقيق عملية إدارة الصلاحيات إلى مرتين سنوياً بعد ملاحظتين في التدقيق السابق، واستعانت بمدقق خارجي لتدقيق قسم أمن المعلومات لضمان الحياد."
+      },
+      "how": [
+       {
+        "en": "A programme based on risk and previous results.",
+        "ar": "برنامج قائم على المخاطر والنتائج السابقة."
+       },
+       {
+        "en": "A plan and checklists for each audit.",
+        "ar": "خطة لكل تدقيق وقوائم تحقق."
+       },
+       {
+        "en": "A report and findings escalated to management, with closure tracked.",
+        "ar": "تقرير ونتائج مرفوعة للإدارة ومتابعة الإغلاق."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Annual programme",
+        "ar": "البرنامج السنوي"
+       },
+       {
+        "en": "Audit plans and reports",
+        "ar": "خطط وتقارير التدقيق"
+       },
+       {
+        "en": "Auditor competence",
+        "ar": "كفاءة المدققين"
+       }
+      ],
+      "tip": {
+       "en": "ISO 19011 guides programme planning, and ISO/IEC 27007 guides ISMS auditing specifically.",
+       "ar": "ISO 19011 مرشد تخطيط البرنامج، وISO/IEC 27007 مرشد تدقيق نظام أمن المعلومات تحديداً."
+      },
+      "checks": [
+       {
+        "ar": "اعرض برنامج التدقيق وكيف رُوعيت المخاطر والنتائج السابقة.",
+        "en": "Show the audit programme and how risks and previous results were considered."
+       },
+       {
+        "ar": "كيف أُبلغت النتائج للإدارة؟",
+        "en": "How were results reported to management?"
+       },
+       {
+        "ar": "ما حالة إغلاق نتائج التدقيق السابق؟",
+        "en": "What is the closure status of previous audit findings?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "10.2",
+         "why": {
+          "ar": "نتائج التدقيق تولد إجراءات تصحيحية.",
+          "en": "Audit findings generate corrective actions."
+         }
+        },
+        {
+         "ref": "9.3.2",
+         "why": {
+          "ar": "نتائج التدقيق مدخل للمراجعة.",
+          "en": "Audit results are a review input."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "7.5.3",
+         "why": {
+          "ar": "المعلومات الموثقة أدلة التدقيق.",
+          "en": "Documented information is audit evidence."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "9.3.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Management review: general",
+       "ar": "مراجعة الإدارة: عام"
+      },
+      "req": {
+       "en": "Top management reviews the ISMS at planned intervals to ensure its continuing suitability, adequacy and effectiveness.",
+       "ar": "تراجع الإدارة العليا النظام على فترات مخططة لضمان استمرار ملاءمته وكفايته وفعاليته."
+      },
+      "ex": {
+       "en": "Al-Madar holds management review twice a year chaired by the CEO, plus an extraordinary review after any major incident.",
+       "ar": "تعقد المدار مراجعة الإدارة مرتين سنوياً برئاسة الرئيس التنفيذي، وتُضاف مراجعة استثنائية بعد أي حادث كبير."
+      },
+      "how": [
+       {
+        "en": "An approved review schedule.",
+        "ar": "جدول مراجعات معتمد."
+       },
+       {
+        "en": "Actual attendance by top management.",
+        "ar": "حضور الإدارة العليا فعلياً."
+       },
+       {
+        "en": "An agenda covering the mandatory inputs.",
+        "ar": "جدول أعمال يغطي المدخلات الإلزامية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Review schedule",
+        "ar": "جدول المراجعات"
+       },
+       {
+        "en": "Attendance list",
+        "ar": "قائمة الحضور"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "متى عُقدت آخر مراجعة ومن حضر من الإدارة العليا؟",
+        "en": "When was the last review held and which top managers attended?"
+       },
+       {
+        "ar": "هل الفاصل الزمني مناسب؟",
+        "en": "Is the interval appropriate?"
+       },
+       {
+        "ar": "هل عُقدت مراجعة استثنائية بعد حدث كبير؟",
+        "en": "Was an extraordinary review held after a major event?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "9.3.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Management review inputs",
+       "ar": "مدخلات مراجعة الإدارة"
+      },
+      "req": {
+       "en": "The review includes: the status of actions from previous reviews, changes in external and internal issues, changes in the needs and expectations of interested parties (added in 2022), feedback on information security performance (nonconformities, monitoring results, audit results, fulfilment of objectives), feedback from interested parties, risk assessment results and treatment plan status, and opportunities for improvement.",
+       "ar": "تشمل المراجعة: حالة إجراءات المراجعات السابقة، والتغيرات في القضايا الداخلية والخارجية، والتغيرات في احتياجات الأطراف المعنية (إضافة 2022)، والتغذية الراجعة عن أداء أمن المعلومات (عدم المطابقة، نتائج الرصد، التدقيق، تحقيق الأهداف)، وتغذية الأطراف، ونتائج تقييم المخاطر وحالة خطة المعالجة، وفرص التحسين."
+      },
+      "ex": {
+       "en": "At Al-Madar's latest review: a new client requiring 12-hour notification (a change in party needs), a 30% rise in phishing attempts, and 7 overdue treatment actions.",
+       "ar": "في مراجعة المدار الأخيرة: عميل جديد يشترط الإبلاغ خلال 12 ساعة (تغير في احتياجات الأطراف)، وارتفاع محاولات التصيد 30%، وتأخر 7 إجراءات في خطة المعالجة."
+      },
+      "how": [
+       {
+        "en": "An input template covering every mandatory item.",
+        "ar": "قالب مدخلات يغطي جميع البنود الإلزامية."
+       },
+       {
+        "en": "Data and figures, not impressions.",
+        "ar": "بيانات وأرقام وليس انطباعات."
+       },
+       {
+        "en": "Circulate the inputs before the meeting.",
+        "ar": "إرسال المدخلات قبل الاجتماع."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Input pack",
+        "ar": "عرض المدخلات"
+       },
+       {
+        "en": "Supporting reports",
+        "ar": "التقارير الداعمة"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "هل غطت المدخلات جميع البنود الإلزامية ومنها تغير احتياجات الأطراف؟",
+        "en": "Did the inputs cover all mandatory items, including changes in party needs?"
+       },
+       {
+        "ar": "هل عُرضت نتائج تقييم المخاطر وحالة الخطة؟",
+        "en": "Were risk assessment results and plan status presented?"
+       },
+       {
+        "ar": "هل عُرضت بيانات أداء وليس انطباعات؟",
+        "en": "Was performance data presented rather than impressions?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "9.3.3",
+         "why": {
+          "ar": "المدخلات تبني القرارات.",
+          "en": "Inputs build the decisions."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "5.3",
+         "why": {
+          "ar": "مسؤول النظام يرفع تقارير الأداء للإدارة.",
+          "en": "The ISMS lead reports performance to management."
+         }
+        },
+        {
+         "ref": "8.2",
+         "why": {
+          "ar": "نتائج التقييم مدخل لمراجعة الإدارة.",
+          "en": "Assessment results are a management review input."
+         }
+        },
+        {
+         "ref": "8.3",
+         "why": {
+          "ar": "حالة خطة المعالجة مدخل للمراجعة.",
+          "en": "Treatment plan status is a review input."
+         }
+        },
+        {
+         "ref": "9.1",
+         "why": {
+          "ar": "نتائج الرصد مدخل للمراجعة.",
+          "en": "Monitoring results are a review input."
+         }
+        },
+        {
+         "ref": "9.2.2",
+         "why": {
+          "ar": "نتائج التدقيق مدخل للمراجعة.",
+          "en": "Audit results are a review input."
+         }
+        },
+        {
+         "ref": "10.2",
+         "why": {
+          "ar": "حالة الإجراءات التصحيحية مدخل للمراجعة.",
+          "en": "Corrective action status is a review input."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "9.3.3",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Management review results",
+       "ar": "مخرجات مراجعة الإدارة"
+      },
+      "req": {
+       "en": "The results include decisions related to continual improvement opportunities and any needs for changes to the ISMS, retained as documented information.",
+       "ar": "تتضمن المخرجات القرارات المتعلقة بفرص التحسين المستمر وأي حاجة لتغييرات في النظام، وتُحفظ كمعلومات موثقة."
+      },
+      "ex": {
+       "en": "Review decisions: approve a DLP tool, extend the scope to the Jeddah site, and add a second analyst, each with owners and dates.",
+       "ar": "قرارات المراجعة: اعتماد أداة لمنع تسرب البيانات، وتحديث النطاق لإضافة موقع جدة، وتخصيص محلل ثانٍ، مع مسؤولين ومواعيد."
+      },
+      "how": [
+       {
+        "en": "Minutes with clear, actionable decisions.",
+        "ar": "محضر بقرارات واضحة وقابلة للتنفيذ."
+       },
+       {
+        "en": "An owner and date for every decision.",
+        "ar": "مسؤول وموعد لكل قرار."
+       },
+       {
+        "en": "Track the decisions at the next review.",
+        "ar": "متابعة القرارات في المراجعة التالية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Review minutes",
+        "ar": "محضر المراجعة"
+       },
+       {
+        "en": "Decision tracker",
+        "ar": "سجل القرارات والمتابعة"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما القرارات المتخذة بشأن التحسين والتغييرات؟",
+        "en": "What decisions were taken on improvement and changes?"
+       },
+       {
+        "ar": "هل لكل قرار مسؤول وموعد؟",
+        "en": "Does each decision have an owner and a date?"
+       },
+       {
+        "ar": "ما حالة تنفيذ قرارات المراجعة السابقة؟",
+        "en": "What is the status of the previous review's decisions?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "قرارات المراجعة قد تغير النظام.",
+          "en": "Review decisions may change the ISMS."
+         }
+        },
+        {
+         "ref": "10.1",
+         "why": {
+          "ar": "قرارات المراجعة تقود التحسين.",
+          "en": "Review decisions drive improvement."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "9.3.2",
+         "why": {
+          "ar": "المدخلات تبني القرارات.",
+          "en": "Inputs build the decisions."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "10",
+    "phase": "act",
+    "title": {
+     "en": "Improvement",
+     "ar": "التحسين"
+    },
+    "intro": {
+     "en": "The system keeps getting better: it deals with nonconformities and removes their causes, and looks for ways to improve suitability, adequacy and effectiveness. In 2022 the two sub-clauses were reordered, so continual improvement is now 10.1.",
+     "ar": "النظام يتحسن باستمرار: يعالج عدم المطابقة ويزيل أسبابه، ويبحث عن فرص تحسين الملاءمة والكفاية والفعالية. وفي 2022 أُعيد ترتيب البندين فأصبح التحسين المستمر 10.1."
+    },
+    "items": [
+     {
+      "ref": "10.1",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Continual improvement",
+       "ar": "التحسين المستمر"
+      },
+      "req": {
+       "en": "Continually improve the suitability, adequacy and effectiveness of the ISMS. (Moved from 10.2 to 10.1 in 2022.)",
+       "ar": "حسّن ملاءمة النظام وكفايته وفعاليته باستمرار. (انتقل من 10.2 إلى 10.1 في 2022)."
+      },
+      "ex": {
+       "en": "Al-Madar's improvement sources: audit results, incident analysis, staff suggestions and benchmarking with sector clients; one outcome was automating access reviews.",
+       "ar": "مصادر التحسين في المدار: نتائج التدقيق، وتحليل الحوادث، واقتراحات الموظفين، ومقارنة الأداء مع عملاء القطاع؛ ونتج عنها أتمتة مراجعة الصلاحيات."
+      },
+      "how": [
+       {
+        "en": "An improvement opportunities log.",
+        "ar": "سجل فرص التحسين."
+       },
+       {
+        "en": "Link opportunities to metrics and objectives.",
+        "ar": "ربط الفرص بالمؤشرات والأهداف."
+       },
+       {
+        "en": "Measure the effect of improvements.",
+        "ar": "قياس أثر التحسينات."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Improvement log",
+        "ar": "سجل التحسين"
+       },
+       {
+        "en": "Before-and-after metrics",
+        "ar": "مقارنة المؤشرات قبل وبعد"
+       }
+      ],
+      "tip": null,
+      "checks": [
+       {
+        "ar": "ما أمثلة التحسين المستمر في آخر سنة؟",
+        "en": "What are examples of continual improvement in the last year?"
+       },
+       {
+        "ar": "كيف تُجمع فرص التحسين؟",
+        "en": "How are improvement opportunities collected?"
+       },
+       {
+        "ar": "هل قيس أثر التحسينات؟",
+        "en": "Was the effect of improvements measured?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "4.4",
+         "why": {
+          "ar": "التحسين يطور النظام نفسه.",
+          "en": "Improvement develops the system itself."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "9.3.3",
+         "why": {
+          "ar": "قرارات المراجعة تقود التحسين.",
+          "en": "Review decisions drive improvement."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "10.2",
+      "status": "upd",
+      "page": null,
+      "title": {
+       "en": "Nonconformity and corrective action",
+       "ar": "عدم المطابقة والإجراء التصحيحي"
+      },
+      "req": {
+       "en": "When a nonconformity occurs: react to it, control and correct it and deal with the consequences; evaluate the need for action to eliminate the cause by reviewing it, determining causes and whether similar ones exist; implement the action, review its effectiveness, and change the ISMS if needed. Retain evidence of the nature of the nonconformity, the actions taken and their results.",
+       "ar": "عند حدوث عدم مطابقة: تفاعل معه واضبطه وصحّحه وتعامل مع عواقبه، وقيّم الحاجة لإجراء يزيل السبب بمراجعته وتحديد أسبابه والتحقق من وجود حالات مماثلة، ونفّذ الإجراء، وراجع فعاليته، وعدّل النظام إن لزم. واحتفظ بالأدلة على طبيعة عدم المطابقة والإجراءات ونتائجها."
+      },
+      "ex": {
+       "en": "An Al-Madar audit found 6 leavers' accounts still active. Correction: disable them immediately. Root cause: HR does not notify IT automatically. Corrective action: integrate HR with the identity system to disable accounts automatically, then verify after 3 months.",
+       "ar": "اكتشف تدقيق المدار 6 حسابات لموظفين غادروا ما زالت نشطة. التصحيح: تعطيلها فوراً. السبب الجذري: الموارد البشرية لا تبلّغ تقنية المعلومات آلياً. الإجراء التصحيحي: ربط نظام الموارد البشرية بنظام الهوية لتعطيل الحساب تلقائياً، ثم التحقق بعد 3 أشهر."
+      },
+      "how": [
+       {
+        "en": "A nonconformity form separating correction from corrective action.",
+        "ar": "نموذج عدم مطابقة يفصل التصحيح عن الإجراء التصحيحي."
+       },
+       {
+        "en": "Root cause analysis (5 Whys or fishbone).",
+        "ar": "تحليل السبب الجذري (5 لماذا أو عظمة السمكة)."
+       },
+       {
+        "en": "Look for similar cases.",
+        "ar": "البحث عن حالات مماثلة."
+       },
+       {
+        "en": "Verify effectiveness before closure.",
+        "ar": "التحقق من الفعالية قبل الإغلاق."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Nonconformity log",
+        "ar": "سجل عدم المطابقة"
+       },
+       {
+        "en": "Cause analysis",
+        "ar": "تحليل الأسباب"
+       },
+       {
+        "en": "Effectiveness verification",
+        "ar": "التحقق من الفعالية"
+       }
+      ],
+      "tip": {
+       "en": "The most common mistake: closing a nonconformity with a correction alone. The auditor looks for the cause removed and verified.",
+       "ar": "الخطأ الأشهر: إغلاق عدم المطابقة بالتصحيح وحده. المدقق يبحث عن إزالة السبب والتحقق من عدم التكرار."
+      },
+      "checks": [
+       {
+        "ar": "اختر عدم مطابقة: هل فُصل التصحيح عن الإجراء التصحيحي؟",
+        "en": "Pick a nonconformity: were correction and corrective action separated?"
+       },
+       {
+        "ar": "كيف حُدد السبب الجذري وهل بُحث عن حالات مماثلة؟",
+        "en": "How was the root cause found, and were similar cases sought?"
+       },
+       {
+        "ar": "كيف تُحقق من الفعالية قبل الإغلاق؟",
+        "en": "How was effectiveness verified before closure?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.1.2",
+         "why": {
+          "ar": "الحوادث وعدم المطابقة تحدّث المخاطر.",
+          "en": "Incidents and nonconformities update the risks."
+         }
+        },
+        {
+         "ref": "9.3.2",
+         "why": {
+          "ar": "حالة الإجراءات التصحيحية مدخل للمراجعة.",
+          "en": "Corrective action status is a review input."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "7.3",
+         "why": {
+          "ar": "ضعف الوعي سبب جذري متكرر.",
+          "en": "Weak awareness is a frequent root cause."
+         }
+        },
+        {
+         "ref": "9.2.2",
+         "why": {
+          "ar": "نتائج التدقيق تولد إجراءات تصحيحية.",
+          "en": "Audit findings generate corrective actions."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "changes": [
+   {
+    "title": {
+     "en": "Context and parties + the 2024 climate amendment",
+     "ar": "السياق والأطراف + تعديل المناخ 2024"
+    },
+    "text": {
+     "en": "New 4.2 c: decide which party requirements the ISMS will address. Amendment 1:2024 added the climate change relevance decision in 4.1 and a note in 4.2.",
+     "ar": "البند 4.2 ج الجديد: قرر أي متطلبات الأطراف يعالجها النظام. وأضاف التعديل 1:2024 قرار صلة تغيّر المناخ في 4.1 وملاحظة في 4.2."
+    },
+    "refs": [
+     "4.1",
+     "4.2"
+    ]
+   },
+   {
+    "title": {
+     "en": "Processes, interactions and criteria",
+     "ar": "العمليات وتفاعلاتها ومعاييرها"
+    },
+    "text": {
+     "en": "4.4 requires the processes and their interactions; 8.1 requires process criteria and control of externally provided processes and services.",
+     "ar": "4.4 يطلب تحديد العمليات وتفاعلاتها، و8.1 يطلب معايير للعمليات وضبط العمليات والخدمات المسندة للخارج."
+    },
+    "refs": [
+     "4.4",
+     "8.1"
+    ]
+   },
+   {
+    "title": {
+     "en": "Monitored objectives and a new clause on changes",
+     "ar": "رصد الأهداف وبند جديد للتغييرات"
+    },
+    "text": {
+     "en": "Objectives must be monitored and available as documented information (6.2), and 6.3 is entirely new: planning changes to the ISMS.",
+     "ar": "الأهداف يجب رصدها وإتاحتها كمعلومات موثقة (6.2)، وبند 6.3 جديد كلياً: تخطيط التغييرات على النظام."
+    },
+    "refs": [
+     "6.2",
+     "6.3"
+    ]
+   },
+   {
+    "title": {
+     "en": "Annex A: from 114 to 93 controls",
+     "ar": "الملحق A: من 114 إلى 93 ضابطاً"
+    },
+    "text": {
+     "en": "Four themes instead of 14 domains: organizational (37), people (8), physical (14), technological (34). 11 new controls and 24 merged ones. The SoA must be updated to the new numbering.",
+     "ar": "أربعة محاور بدل 14 مجالاً: تنظيمية (37)، بشرية (8)، مادية (14)، تقنية (34). 11 ضابطاً جديداً و24 ضابطاً مدمجاً. وبيان قابلية التطبيق يجب تحديثه على الترقيم الجديد."
+    },
+    "refs": [
+     "6.1.3",
+     "A"
+    ]
+   },
+   {
+    "title": {
+     "en": "11 new controls",
+     "ar": "11 ضابطاً جديداً"
+    },
+    "text": {
+     "en": "Threat intelligence 5.7, cloud services 5.23, ICT readiness for continuity 5.30, physical security monitoring 7.4, configuration management 8.9, information deletion 8.10, data masking 8.11, data leakage prevention 8.12, monitoring activities 8.16, web filtering 8.23 and secure coding 8.28.",
+     "ar": "استخبارات التهديدات 5.7، والسحابة 5.23، وجاهزية التقنية للاستمرارية 5.30، ورصد الأمن المادي 7.4، وإدارة الإعدادات 8.9، وحذف المعلومات 8.10، وإخفاء البيانات 8.11، ومنع التسرب 8.12، وأنشطة الرصد 8.16، وتصفية الويب 8.23، والبرمجة الآمنة 8.28."
+    },
+    "refs": [
+     "A"
+    ]
+   },
+   {
+    "title": {
+     "en": "Sharper performance evaluation",
+     "ar": "تقييم الأداء أدق"
+    },
+    "text": {
+     "en": "Monitoring methods giving comparable and reproducible results, audit split into 9.2.1 and 9.2.2, and management review into three sub-clauses with a new input: changes in parties' needs.",
+     "ar": "طرق رصد تعطي نتائج قابلة للمقارنة والتكرار، وتقسيم التدقيق إلى 9.2.1 و9.2.2، ومراجعة الإدارة إلى ثلاثة بنود مع مدخل جديد: تغير احتياجات الأطراف."
+    },
+    "refs": [
+     "9.1",
+     "9.2.1",
+     "9.3.2"
+    ]
+   },
+   {
+    "title": {
+     "en": "Improvement clause reordered",
+     "ar": "إعادة ترتيب بند التحسين"
+    },
+    "text": {
+     "en": "Continual improvement is now 10.1 and nonconformity and corrective action 10.2, in line with the harmonized structure.",
+     "ar": "أصبح التحسين المستمر 10.1 وعدم المطابقة والإجراء التصحيحي 10.2، بما يتسق مع الهيكل الموحد."
+    },
+    "refs": [
+     "10.1",
+     "10.2"
+    ]
+   },
+   {
+    "title": {
+     "en": "Wording clarifications",
+     "ar": "توضيحات صياغية"
+    },
+    "text": {
+     "en": "5.3 roles communicated within the organization, 7.4 'the processes by which communication shall be effected' removed, and the title updated to 'Information security, cybersecurity and privacy protection'.",
+     "ar": "5.3 تبليغ الأدوار داخل المنظمة، و7.4 حذف «العمليات التي يتم بها التواصل»، وتحديث العنوان إلى «أمن المعلومات والأمن السيبراني وحماية الخصوصية»."
+    },
+    "refs": [
+     "5.3",
+     "7.4"
+    ]
+   }
+  ],
+  "terms": [
+   {
+    "no": "27000",
+    "en": "Information security",
+    "ar": "أمن المعلومات",
+    "def": {
+     "ar": "الحفاظ على سرية المعلومات وسلامتها وتوافرها، وقد يشمل خصائص أخرى كالأصالة والمساءلة وعدم الإنكار.",
+     "en": "Preserving the confidentiality, integrity and availability of information; it can also involve authenticity, accountability and non-repudiation."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Confidentiality",
+    "ar": "السرية",
+    "def": {
+     "ar": "ألا تُتاح المعلومات أو تُكشف لأفراد أو كيانات أو عمليات غير مصرح لهم.",
+     "en": "Information is not made available or disclosed to unauthorised individuals, entities or processes."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Integrity",
+    "ar": "السلامة",
+    "def": {
+     "ar": "دقة المعلومات واكتمالها وعدم تعديلها دون تصريح.",
+     "en": "Accuracy and completeness of information, and no unauthorised modification."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Availability",
+    "ar": "التوافر",
+    "def": {
+     "ar": "إمكانية الوصول إلى المعلومات واستخدامها عند الطلب من الجهة المصرح لها.",
+     "en": "Information is accessible and usable on demand by an authorised entity."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "ISMS",
+    "ar": "نظام إدارة أمن المعلومات",
+    "def": {
+     "ar": "جزء من نظام الإدارة الشامل يدير مخاطر أمن المعلومات بسياسات وعمليات وضوابط ضمن دورة تحسين مستمر.",
+     "en": "Part of the overall management system that manages information security risk through policies, processes and controls in a continual improvement cycle."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Control",
+    "ar": "الضابط",
+    "def": {
+     "ar": "إجراء يحافظ على المخاطر أو يعدّلها: سياسة، أو عملية، أو جهاز، أو ممارسة، أو إجراء تقني.",
+     "en": "A measure that maintains or modifies risk: a policy, process, device, practice or technical action."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Risk",
+    "ar": "المخاطر",
+    "def": {
+     "ar": "أثر عدم اليقين على الأهداف؛ وفي أمن المعلومات تُعبّر غالباً باحتمال حدث وعواقبه على السرية أو السلامة أو التوافر.",
+     "en": "The effect of uncertainty on objectives; in information security usually expressed as the likelihood of an event and its consequences for C, I or A."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Risk owner",
+    "ar": "مالك الخطر",
+    "def": {
+     "ar": "الشخص أو الجهة المسؤولة والمخولة بإدارة خطر معين، ومنه قبول الخطر المتبقي.",
+     "en": "The person or entity accountable and authorised to manage a given risk, including accepting residual risk."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Risk treatment",
+    "ar": "معالجة المخاطر",
+    "def": {
+     "ar": "عملية تعديل الخطر: تجنبه، أو تقليله بضوابط، أو مشاركته، أو قبوله بقرار مدروس.",
+     "en": "The process of modifying risk: avoiding it, reducing it with controls, sharing it, or retaining it by informed decision."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Residual risk",
+    "ar": "الخطر المتبقي",
+    "def": {
+     "ar": "الخطر الباقي بعد تطبيق المعالجة، ويجب أن يوافق عليه مالك الخطر.",
+     "en": "The risk remaining after treatment, which the risk owner must accept."
+    }
+   },
+   {
+    "no": "27001 6.1.3",
+    "en": "Statement of Applicability",
+    "ar": "بيان قابلية التطبيق",
+    "def": {
+     "ar": "وثيقة تسرد الضوابط اللازمة ومبرر إدراجها وحالة تطبيقها ومبرر استبعاد أي ضابط من الملحق A.",
+     "en": "A document listing the necessary controls, why they are included, whether implemented, and why any Annex A control is excluded."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Threat",
+    "ar": "التهديد",
+    "def": {
+     "ar": "سبب محتمل لحادث غير مرغوب قد يضر بنظام أو منظمة، مثل هجوم فدية أو خطأ بشري.",
+     "en": "A potential cause of an unwanted incident that may harm a system or organization, such as ransomware or human error."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Vulnerability",
+    "ar": "الثغرة",
+    "def": {
+     "ar": "ضعف في أصل أو ضابط يمكن أن يستغله تهديد، مثل نظام غير محدّث.",
+     "en": "A weakness of an asset or control that a threat can exploit, such as an unpatched system."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Information security event",
+    "ar": "حدث أمن المعلومات",
+    "def": {
+     "ar": "حالة مرصودة تشير إلى احتمال خرق للسياسة أو فشل ضابط.",
+     "en": "An identified occurrence indicating a possible policy breach or control failure."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Information security incident",
+    "ar": "حادث أمن المعلومات",
+    "def": {
+     "ar": "حدث أو سلسلة أحداث غير مرغوبة لها احتمال كبير لإضرار العمليات أو تهديد أمن المعلومات.",
+     "en": "One or more unwanted events with a significant probability of compromising operations and threatening information security."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Asset",
+    "ar": "الأصل",
+    "def": {
+     "ar": "أي شيء له قيمة للمنظمة: معلومات وبرمجيات وأجهزة وخدمات وأشخاص وسمعة.",
+     "en": "Anything of value to the organization: information, software, hardware, services, people and reputation."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Interested party",
+    "ar": "الطرف المعني",
+    "def": {
+     "ar": "شخص أو جهة يمكن أن تؤثر أو تتأثر بقرار أو نشاط، أو ترى أنها متأثرة به.",
+     "en": "A person or organization that can affect, be affected by, or perceive itself to be affected by a decision or activity."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Top management",
+    "ar": "الإدارة العليا",
+    "def": {
+     "ar": "من يوجّه المنظمة ويسيطر عليها في أعلى مستوى، ويملك تفويض الموارد.",
+     "en": "Those who direct and control the organization at the highest level and can delegate resources."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Documented information",
+    "ar": "المعلومات الموثقة",
+    "def": {
+     "ar": "معلومات يجب ضبطها والمحافظة عليها مع الوسط الذي تحتويه، وتشمل الوثائق والسجلات.",
+     "en": "Information required to be controlled and maintained, with its medium; covers documents and records."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Nonconformity",
+    "ar": "عدم المطابقة",
+    "def": {
+     "ar": "عدم استيفاء متطلب من المواصفة أو من متطلبات المنظمة.",
+     "en": "Non-fulfilment of a requirement of the standard or of the organization."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Corrective action",
+    "ar": "الإجراء التصحيحي",
+    "def": {
+     "ar": "إجراء لإزالة سبب عدم المطابقة ومنع تكراره.",
+     "en": "Action to eliminate the cause of a nonconformity and prevent recurrence."
+    }
+   },
+   {
+    "no": "27002",
+    "en": "Cybersecurity",
+    "ar": "الأمن السيبراني",
+    "def": {
+     "ar": "حماية الأنظمة والشبكات والبيانات في الفضاء السيبراني؛ وهو جزء من أمن المعلومات الأشمل.",
+     "en": "Protecting systems, networks and data in cyberspace; a subset of the broader information security."
+    }
+   },
+   {
+    "no": "27002",
+    "en": "Control attributes",
+    "ar": "سمات الضوابط",
+    "def": {
+     "ar": "تصنيفات في ISO/IEC 27002 لكل ضابط: نوعه (وقائي، كاشف، تصحيحي)، والخصائص (س، س، ت)، ومفاهيم الأمن السيبراني، والقدرات التشغيلية، والمجالات الأمنية.",
+     "en": "ISO/IEC 27002 tags for each control: type (preventive, detective, corrective), properties (C, I, A), cybersecurity concepts, operational capabilities and security domains."
+    }
+   },
+   {
+    "no": "27001 6.1.3",
+    "en": "Risk treatment plan",
+    "ar": "خطة معالجة المخاطر",
+    "def": {
+     "ar": "خطة تحدد لكل خطر الضوابط والمسؤول والموارد والمواعيد، ويعتمدها مالكو المخاطر.",
+     "en": "A plan setting out for each risk the controls, owner, resources and timing, approved by the risk owners."
+    }
+   },
+   {
+    "no": "27000",
+    "en": "Personally identifiable information (PII)",
+    "ar": "البيانات الشخصية",
+    "def": {
+     "ar": "أي معلومات يمكن أن تحدد هوية شخص طبيعي بشكل مباشر أو غير مباشر.",
+     "en": "Any information that can identify a natural person directly or indirectly."
+    }
+   }
+  ],
+  "pairs": [
+   {
+    "title": {
+     "en": "Risk assessment or risk treatment?",
+     "ar": "تقييم المخاطر أم معالجتها؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "تقييم المخاطر",
+       "en": "Risk assessment"
+      },
+      "meaning": {
+       "ar": "تحديد الخطر وتحليله وتقييمه ومقارنته بمعايير القبول (6.1.2 و8.2).",
+       "en": "Identify, analyse and evaluate risk against the acceptance criteria (6.1.2 and 8.2)."
+      }
+     },
+     {
+      "term": {
+       "ar": "معالجة المخاطر",
+       "en": "Risk treatment"
+      },
+      "meaning": {
+       "ar": "اختيار الخيار والضوابط وإصدار البيان والخطة وتنفيذها (6.1.3 و8.3).",
+       "en": "Choose options and controls, issue the SoA and plan, then implement (6.1.3 and 8.3)."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "SoA or treatment plan?",
+     "ar": "بيان قابلية التطبيق أم خطة المعالجة؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "بيان قابلية التطبيق",
+       "en": "Statement of Applicability"
+      },
+      "meaning": {
+       "ar": "صورة الضوابط: ما المطبق وما المستبعد ولماذا. وثيقة واحدة على مستوى المنظمة.",
+       "en": "A picture of controls: what applies, what is excluded and why. One document for the organization."
+      }
+     },
+     {
+      "term": {
+       "ar": "خطة المعالجة",
+       "en": "Risk treatment plan"
+      },
+      "meaning": {
+       "ar": "خطة العمل: ماذا سيُنفذ لكل خطر، ومن، ومتى، وبأي موارد.",
+       "en": "The action plan: what will be done for each risk, by whom, when and with what resources."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Annex A: mandatory list or reference?",
+     "ar": "الملحق A: قائمة إلزامية أم مرجع؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الملحق A",
+       "en": "Annex A"
+      },
+      "meaning": {
+       "ar": "قائمة مرجعية تقارن بها ضوابطك للتأكد من عدم إغفال ضابط لازم، وليست قائمة يجب تطبيقها كاملة.",
+       "en": "A reference list to compare your controls against so nothing necessary is missed, not a list to implement in full."
+      }
+     },
+     {
+      "term": {
+       "ar": "الضوابط اللازمة",
+       "en": "Necessary controls"
+      },
+      "meaning": {
+       "ar": "تنبع من معالجة المخاطر، وقد تأتي من خارج الملحق A كضوابط الجهات التنظيمية.",
+       "en": "They come from risk treatment and can come from outside Annex A, such as regulators' controls."
+      }
+     },
+     {
+      "term": {
+       "ar": "الاستبعاد",
+       "en": "Exclusion"
+      },
+      "meaning": {
+       "ar": "مقبول بمبرر مرتبط بالمخاطر أو المتطلبات، وليس لأن الضابط «صعب».",
+       "en": "Acceptable with a justification linked to risks or requirements, not because the control is 'hard'."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Event or incident?",
+     "ar": "الحدث أم الحادث؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الحدث الأمني",
+       "en": "Security event"
+      },
+      "meaning": {
+       "ar": "كل حالة مرصودة تستحق النظر، وأغلبها لا يصبح حادثاً (6.8 و5.25).",
+       "en": "Any observed occurrence worth looking at; most never become incidents (6.8 and 5.25)."
+      }
+     },
+     {
+      "term": {
+       "ar": "الحادث الأمني",
+       "en": "Security incident"
+      },
+      "meaning": {
+       "ar": "حدث قيّم بأنه يهدد العمليات أو المعلومات فعلاً، ويُفعّل خطة الاستجابة (5.26).",
+       "en": "An event assessed as actually threatening operations or information, triggering the response plan (5.26)."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Correction or corrective action?",
+     "ar": "التصحيح أم الإجراء التصحيحي؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "التصحيح",
+       "en": "Correction"
+      },
+      "meaning": {
+       "ar": "معالجة الأثر فوراً: تعطيل الحساب غير المصرح.",
+       "en": "Fix the effect now: disable the unauthorised account."
+      }
+     },
+     {
+      "term": {
+       "ar": "الإجراء التصحيحي",
+       "en": "Corrective action"
+      },
+      "meaning": {
+       "ar": "إزالة السبب: ربط الموارد البشرية بنظام الهوية حتى لا يتكرر.",
+       "en": "Remove the cause: link HR to the identity system so it does not recur."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Asset owner or risk owner?",
+     "ar": "مالك الأصل أم مالك الخطر؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "مالك الأصل",
+       "en": "Asset owner"
+      },
+      "meaning": {
+       "ar": "مسؤول عن حماية الأصل وتصنيفه وصلاحياته خلال دورة حياته (5.9).",
+       "en": "Responsible for protecting, classifying and granting access to the asset through its life (5.9)."
+      }
+     },
+     {
+      "term": {
+       "ar": "مالك الخطر",
+       "en": "Risk owner"
+      },
+      "meaning": {
+       "ar": "مخوّل بقرار معالجة الخطر وقبول المتبقي منه (6.1.2 و6.1.3)، وقد يكون شخصاً مختلفاً.",
+       "en": "Authorised to decide the treatment and accept residual risk (6.1.2 and 6.1.3); may be a different person."
+      }
+     }
+    ]
+   }
+  ],
+  "timeline": [
+   {
+    "date": {
+     "ar": "25 أكتوبر 2022",
+     "en": "25 October 2022"
+    },
+    "text": {
+     "ar": "نشر ISO/IEC 27001:2022 ليحل محل إصدار 2013.",
+     "en": "ISO/IEC 27001:2022 is published, replacing the 2013 edition."
+    }
+   },
+   {
+    "date": {
+     "ar": "فبراير 2024",
+     "en": "February 2024"
+    },
+    "text": {
+     "ar": "التعديل 1:2024 يضيف تغيّر المناخ إلى 4.1 و4.2.",
+     "en": "Amendment 1:2024 adds climate change to 4.1 and 4.2."
+    }
+   },
+   {
+    "date": {
+     "ar": "31 أكتوبر 2025",
+     "en": "31 October 2025"
+    },
+    "text": {
+     "ar": "انتهاء فترة الانتقال وإلغاء صلاحية شهادات 2013.",
+     "en": "End of the transition; 2013 certificates cease to be valid."
+    }
+   },
+   {
+    "date": {
+     "ar": "3 يوليو 2026",
+     "en": "3 July 2026"
+    },
+    "text": {
+     "ar": "نشر ISO/IEC 27000:2026 (الإصدار السادس) كمواصفة إطار عامة.",
+     "en": "ISO/IEC 27000:2026 (sixth edition) published as the overview standard."
+    }
+   }
+  ],
+  "threads": [
+   {
+    "id": "ctx",
+    "chain": [
+     "4.1",
+     "4.2",
+     "4.3",
+     "6.1.1",
+     "6.1.2"
+    ],
+    "title": {
+     "en": "From context to risk",
+     "ar": "من السياق إلى المخاطر"
+    },
+    "text": {
+     "en": "Issues and party requirements set the scope, within which risks are identified.",
+     "ar": "القضايا ومتطلبات الأطراف تحدد النطاق، وداخله تُحدد المخاطر."
+    }
+   },
+   {
+    "id": "risk",
+    "chain": [
+     "6.1.2",
+     "6.1.3",
+     "8.3",
+     "8.2",
+     "9.3.2"
+    ],
+    "title": {
+     "en": "The risk and SoA cycle",
+     "ar": "دورة المخاطر وبيان التطبيق"
+    },
+    "text": {
+     "en": "Assess, treat, SoA and plan, then implement, reassess and review.",
+     "ar": "تقييم ثم معالجة وبيان وخطة، ثم تنفيذ وإعادة تقييم ومراجعة."
+    }
+   },
+   {
+    "id": "obj",
+    "chain": [
+     "5.2",
+     "6.2",
+     "9.1",
+     "9.3.2",
+     "9.3.3"
+    ],
+    "title": {
+     "en": "From policy to performance",
+     "ar": "من السياسة إلى الأداء"
+    },
+    "text": {
+     "en": "The policy frames objectives that are monitored, reviewed and turned into decisions.",
+     "ar": "السياسة تؤطر الأهداف التي تُرصد وتُراجع وتنتج قرارات."
+    }
+   },
+   {
+    "id": "check",
+    "chain": [
+     "8.1",
+     "9.1",
+     "9.2.2",
+     "10.2",
+     "6.1.2"
+    ],
+    "title": {
+     "en": "From operation to correction",
+     "ar": "من التشغيل إلى التصحيح"
+    },
+    "text": {
+     "en": "Processes are measured and audited; findings trigger corrections that update risks.",
+     "ar": "العمليات تُقاس وتُدقق، والنتائج تولد تصحيحاً يعيد تقييم المخاطر."
+    }
+   },
+   {
+    "id": "imp",
+    "chain": [
+     "9.3.3",
+     "6.3",
+     "8.2",
+     "10.1",
+     "4.4"
+    ],
+    "title": {
+     "en": "From decision to system development",
+     "ar": "من القرار إلى تطوير النظام"
+    },
+    "text": {
+     "en": "Review decisions plan changes and improve the system itself.",
+     "ar": "قرارات المراجعة تخطط التغيير وتحسن النظام نفسه."
+    }
+   }
+  ],
+  "scale": [
+   {
+    "level": 0,
+    "meaning": {
+     "en": "The requirement does not exist at all: no practice, no document, no owner.",
+     "ar": "المتطلب غير موجود إطلاقاً: لا ممارسة ولا وثيقة ولا مسؤول."
+    },
+    "look": {
+     "en": "'We haven't thought about it yet', and nobody knows who is responsible.",
+     "ar": "«لم نفكر فيه بعد» ولا يعرف أحد المسؤول."
+    },
+    "evidence": {
+     "en": "Nothing.",
+     "ar": "لا شيء."
+    }
+   },
+   {
+    "level": 1,
+    "meaning": {
+     "en": "Informal, undocumented, person-dependent practice.",
+     "ar": "ممارسة فردية غير موثقة وغير منتظمة تعتمد على شخص."
+    },
+    "look": {
+     "en": "'So-and-so knows how that works'.",
+     "ar": "«فلان يعرف كيف يعمل ذلك»."
+    },
+    "evidence": {
+     "en": "People's memory and a few emails.",
+     "ar": "ذاكرة الأشخاص وبعض رسائل البريد."
+    }
+   },
+   {
+    "level": 2,
+    "meaning": {
+     "en": "Partly documented or applied, or an important element missing.",
+     "ar": "موثق أو مطبق جزئياً، أو ينقصه عنصر مهم."
+    },
+    "look": {
+     "en": "A procedure exists but is not always applied, or records are missing.",
+     "ar": "يوجد إجراء لكن لا يُطبق في كل الحالات أو لا سجلات."
+    },
+    "evidence": {
+     "en": "A document without enough records.",
+     "ar": "وثيقة دون سجلات كافية."
+    }
+   },
+   {
+    "level": 3,
+    "meaning": {
+     "en": "Documented, applied consistently, with records.",
+     "ar": "موثق ومطبق بانتظام ومعه سجلات تثبته."
+    },
+    "look": {
+     "en": "You can show records for any sample the auditor picks.",
+     "ar": "يمكنك عرض السجلات لأي عينة يطلبها المدقق."
+    },
+    "evidence": {
+     "en": "Procedure plus consistent records over time.",
+     "ar": "إجراء وسجلات متسقة لفترة كافية."
+    }
+   },
+   {
+    "level": 4,
+    "meaning": {
+     "en": "Achieves its results, measured and improved.",
+     "ar": "مطبق ويحقق نتائجه ويُقاس ويُحسَّن."
+    },
+    "look": {
+     "en": "Metrics improve and results are reviewed and drive improvement.",
+     "ar": "المؤشرات تتحسن والنتائج تُراجع وتقود التحسين."
+    },
+    "evidence": {
+     "en": "Metrics, trends and improvement decisions.",
+     "ar": "مؤشرات واتجاهات وقرارات تحسين."
+    }
+   }
+  ],
+  "faq": [
+   {
+    "id": "whatis",
+    "q": {
+     "en": "What is ISO/IEC 27001:2022?",
+     "ar": "ما هي ISO/IEC 27001:2022؟"
+    },
+    "a": {
+     "en": "ISO/IEC 27001:2022 sets the requirements for an information security management system (ISMS). It was published on **25 October 2022**, replacing the 2013 edition, and supplemented by **Amendment 1:2024** on climate change.\n\n- Structure: clauses 4 to 10 on the PDCA cycle, plus Annex A with **93 controls** in 4 themes.\n- Purpose: protect confidentiality, integrity and availability by managing risk.\n- Certification: only on the 2022 edition since 31 October 2025.\n\nSee [[tab:annexa]] or start with the [[tab:assess]].",
+     "ar": "ISO/IEC 27001:2022 هي متطلبات نظام إدارة أمن المعلومات (ISMS)، نُشرت في **25 أكتوبر 2022** وحلت محل إصدار 2013، وأُضيف لها **التعديل 1:2024** الخاص بتغيّر المناخ.\n\n- الهيكل: البنود 4 إلى 10 على دورة PDCA، والملحق A بـ **93 ضابطاً** في 4 محاور.\n- الغرض: حماية سرية المعلومات وسلامتها وتوافرها بإدارة المخاطر.\n- الشهادة: متاحة على إصدار 2022 فقط منذ 31 أكتوبر 2025.\n\nاطلع على [[tab:annexa]] أو ابدأ بـ [[tab:assess]]."
+    }
+   },
+   {
+    "id": "changes",
+    "q": {
+     "en": "What are the key differences between the 2022 and 2013 editions?",
+     "ar": "ما أهم الفروق بين إصدار 2022 وإصدار 2013؟"
+    },
+    "a": {
+     "en": "**In the clauses:** 4.2 c (which requirements the ISMS addresses), 4.4 processes and interactions, 6.2 monitored objectives, **6.3 planning of changes (new)**, 8.1 process criteria and outsourced processes, 9.1 comparable results, 9.2 and 9.3 split, and clause 10 reordered.\n\n**In Annex A:** from 114 controls in 14 domains to **93 controls in 4 themes**, including **11 new** and 24 merged.\n\n**Amendment 1:2024:** the climate change relevance decision.\n\nDetails in [[tab:changes]] and [[tab:annexa]].",
+     "ar": "**في البنود:** 4.2 ج (أي متطلبات يعالجها النظام)، و4.4 العمليات وتفاعلاتها، و6.2 رصد الأهداف، و**6.3 تخطيط التغييرات (جديد)**، و8.1 معايير العمليات والمُسند للخارج، و9.1 نتائج قابلة للمقارنة، وتقسيم 9.2 و9.3، وإعادة ترتيب البند 10.\n\n**في الملحق A:** من 114 ضابطاً في 14 مجالاً إلى **93 ضابطاً في 4 محاور**، منها **11 جديداً** و24 مدمجاً.\n\n**التعديل 1:2024:** قرار صلة تغيّر المناخ.\n\nالتفاصيل في [[tab:changes]] و[[tab:annexa]]."
+    }
+   },
+   {
+    "id": "newctrl",
+    "q": {
+     "en": "What are the 11 new Annex A controls?",
+     "ar": "ما الضوابط الـ11 الجديدة في الملحق A؟"
+    },
+    "a": {
+     "en": "- A.5.7 Threat intelligence\n- A.5.23 Cloud services security\n- A.5.30 ICT readiness for business continuity\n- A.7.4 Physical security monitoring\n- A.8.9 Configuration management\n- A.8.10 Information deletion\n- A.8.11 Data masking\n- A.8.12 Data leakage prevention\n- A.8.16 Monitoring activities\n- A.8.23 Web filtering\n- A.8.28 Secure coding\n\nUse the 'new only' filter in [[tab:annexa]].",
+     "ar": "- A.5.7 استخبارات التهديدات\n- A.5.23 أمن الخدمات السحابية\n- A.5.30 جاهزية التقنية للاستمرارية\n- A.7.4 رصد الأمن المادي\n- A.8.9 إدارة الإعدادات\n- A.8.10 حذف المعلومات\n- A.8.11 إخفاء البيانات\n- A.8.12 منع تسرب البيانات\n- A.8.16 أنشطة الرصد\n- A.8.23 تصفية الويب\n- A.8.28 البرمجة الآمنة\n\nفعّل فلتر «الجديد فقط» في [[tab:annexa]]."
+    }
+   },
+   {
+    "id": "annexa",
+    "q": {
+     "en": "Must we implement every Annex A control?",
+     "ar": "هل يجب تطبيق كل ضوابط الملحق A؟"
+    },
+    "a": {
+     "en": "No. Annex A is a **reference for comparison**: you determine the necessary controls through risk treatment, then compare them with Annex A so none is missed (6.1.3 c).\n\n- You may **exclude** a control with a justification linked to risks or requirements.\n- You may **add** controls from other sources, such as NCA controls.\n- All of this appears in the **Statement of Applicability**.\n\nBuild yours in [[tab:annexa]].",
+     "ar": "لا. الملحق A **مرجع للمقارنة**: تحدد الضوابط اللازمة من معالجة المخاطر، ثم تقارنها بالملحق A حتى لا تغفل ضابطاً لازماً (6.1.3 ج).\n\n- يمكن **استبعاد** ضابط بمبرر مرتبط بالمخاطر أو المتطلبات.\n- يمكن **إضافة** ضوابط من خارجه كضوابط الهيئة الوطنية.\n- كل ذلك يظهر في **بيان قابلية التطبيق**.\n\nابنِ بيانك في [[tab:annexa]]."
+    }
+   },
+   {
+    "id": "soa",
+    "q": {
+     "en": "What is the Statement of Applicability and what must it contain?",
+     "ar": "ما هو بيان قابلية التطبيق وماذا يتضمن؟"
+    },
+    "a": {
+     "en": "The SoA (6.1.3 d) contains:\n\n1. The necessary controls.\n2. The justification for including them.\n3. Whether they are implemented.\n4. The justification for excluding any Annex A control.\n\nIt must use the 2022 numbering (93 controls), and its version is quoted in the certificate scope. The full SoA builder with export is in [[tab:annexa]].",
+     "ar": "بيان قابلية التطبيق (6.1.3 د) يتضمن:\n\n1. الضوابط اللازمة.\n2. مبرر إدراجها.\n3. هل هي مطبقة أم لا.\n4. مبرر استبعاد أي ضابط من الملحق A.\n\nيُحدّث على ترقيم 2022 (93 ضابطاً)، ويُذكر إصداره في نطاق الشهادة. منشئ البيان الكامل مع التصدير في [[tab:annexa]]."
+    }
+   },
+   {
+    "id": "riskopp",
+    "q": {
+     "en": "How do I assess and treat information security risks?",
+     "ar": "كيف أقيّم مخاطر أمن المعلومات وأعالجها؟"
+    },
+    "a": {
+     "en": "1. **Method (6.1.2):** likelihood and impact scales and acceptance criteria.\n2. **Identify:** risks of losing C, I or A, each with an owner.\n3. **Analyse and evaluate:** score and compare with the criteria.\n4. **Treat (6.1.3):** modify, avoid, share or retain, and select controls.\n5. **Compare with Annex A**, then SoA, treatment plan and owners' approval.\n6. **Reassess** periodically and on change (8.2).\n\nUse [[tpl:risks]] and [[tpl:rtp]].",
+     "ar": "1. **المنهجية (6.1.2):** مقاييس احتمال وأثر ومعايير قبول.\n2. **التحديد:** مخاطر فقدان السرية أو السلامة أو التوافر، ولكل خطر مالك.\n3. **التحليل والتقييم:** الدرجة ومقارنتها بالمعايير.\n4. **المعالجة (6.1.3):** تعديل أو تجنب أو مشاركة أو إبقاء، واختيار الضوابط.\n5. **المقارنة بالملحق A** ثم بيان التطبيق وخطة المعالجة وموافقة المالكين.\n6. **إعادة التقييم** دورياً وعند التغيير (8.2).\n\nاستخدم [[tpl:risks]] و[[tpl:rtp]]."
+    }
+   },
+   {
+    "id": "climate",
+    "q": {
+     "en": "What does the 2024 climate amendment require?",
+     "ar": "ما المطلوب في تعديل المناخ 2024؟"
+    },
+    "a": {
+     "en": "Amendment 1:2024 adds to 4.1 that the organization determines **whether climate change is a relevant issue**, with a note in 4.2 that parties can have climate-related requirements.\n\nIn information security it mostly affects **availability**: heatwaves and server cooling, floods and power cuts. Record the decision and reasoning even if 'not relevant'. No certificate reissue is needed. [[tpl:context]]",
+     "ar": "التعديل 1:2024 يضيف إلى 4.1 أن تحدد المنظمة **هل تغيّر المناخ قضية ذات صلة**، وملاحظة في 4.2 بأن للأطراف متطلبات مناخية.\n\nفي أمن المعلومات يظهر غالباً في **التوافر**: موجات الحر وتبريد الخوادم، والسيول، وانقطاع الطاقة. وثّق القرار ومبرره حتى لو كان «غير ذي صلة». لا حاجة لإعادة إصدار الشهادة. [[tpl:context]]"
+    }
+   },
+   {
+    "id": "scope",
+    "q": {
+     "en": "How do I define the ISMS scope?",
+     "ar": "كيف أحدد نطاق النظام؟"
+    },
+    "a": {
+     "en": "The scope (4.3) sets the processes, locations, systems and people, considering the issues (4.1), requirements (4.2) and interfaces and dependencies with others.\n\n- Quote the SoA version in the scope.\n- Avoid a narrow scope that excludes client data.\n- Record the reason for any exclusion.",
+     "ar": "النطاق (4.3) يحدد العمليات والمواقع والأنظمة والأشخاص، مع مراعاة القضايا (4.1) والمتطلبات (4.2) والواجهات والاعتماديات مع الآخرين.\n\n- اذكر إصدار بيان التطبيق في النطاق.\n- تجنب النطاق الضيق الذي يستبعد بيانات العملاء.\n- وثّق مبرر أي استبعاد."
+    }
+   },
+   {
+    "id": "docs",
+    "q": {
+     "en": "What documented information is mandatory in ISO 27001?",
+     "ar": "ما المعلومات الموثقة الإلزامية في ISO 27001؟"
+    },
+    "a": {
+     "en": "- Scope (4.3)\n- Policy (5.2)\n- Risk assessment and treatment process (6.1.2, 6.1.3)\n- Statement of Applicability (6.1.3 d)\n- Treatment plan and assessment and treatment results (6.1.3, 8.2, 8.3)\n- Objectives (6.2)\n- Evidence of competence (7.2)\n- Evidence processes were carried out (8.1)\n- Monitoring results (9.1)\n- Audit programme and results (9.2)\n- Management review results (9.3)\n- Nonconformities and actions (10.2)\n\nPlus what applicable Annex A controls call for, such as operating procedures (A.5.37).",
+     "ar": "- النطاق (4.3)\n- السياسة (5.2)\n- منهجية تقييم المخاطر ومعالجتها (6.1.2، 6.1.3)\n- بيان قابلية التطبيق (6.1.3 د)\n- خطة المعالجة ونتائج التقييم والمعالجة (6.1.3، 8.2، 8.3)\n- الأهداف (6.2)\n- أدلة الكفاءة (7.2)\n- ما يثبت تنفيذ العمليات (8.1)\n- نتائج الرصد (9.1)\n- برنامج ونتائج التدقيق (9.2)\n- نتائج مراجعة الإدارة (9.3)\n- عدم المطابقة والإجراءات (10.2)\n\nإضافة إلى ما يطلبه الملحق A عند تطبيق ضوابطه، كالإجراءات التشغيلية (A.5.37)."
+    }
+   },
+   {
+    "id": "cloud",
+    "q": {
+     "en": "How do I handle cloud services in 27001?",
+     "ar": "كيف أتعامل مع الخدمات السحابية في 27001؟"
+    },
+    "a": {
+     "en": "Control **A.5.23** (new) requires processes to acquire, use, manage and exit cloud services:\n\n- A shared-responsibility matrix per service.\n- Encryption and in-Kingdom residency per NCA controls.\n- Review provider reports (27001 certificate or SOC 2).\n- A tested exit plan.\n\nGuidance: ISO/IEC 27017 and 27018.",
+     "ar": "الضابط **A.5.23** (جديد) يطلب عمليات لاقتناء الخدمات السحابية واستخدامها وإدارتها والخروج منها:\n\n- مصفوفة مسؤولية مشتركة لكل خدمة.\n- متطلبات التشفير والإقامة داخل المملكة حسب ضوابط الهيئة.\n- مراجعة تقارير المزود (شهادة 27001 أو SOC 2).\n- خطة خروج مجربة.\n\nالمرجع الإرشادي ISO/IEC 27017 و27018."
+    }
+   },
+   {
+    "id": "nca",
+    "q": {
+     "en": "How does ISO 27001 relate to the NCA controls?",
+     "ar": "ما العلاقة بين ISO 27001 وضوابط الهيئة الوطنية للأمن السيبراني؟"
+    },
+    "a": {
+     "en": "ISO 27001 is a risk-based **management system**, while the NCA Essential Cybersecurity Controls are mandatory **regulatory requirements** for covered entities.\n\n- Put the NCA controls in the requirements register (4.2 and A.5.31).\n- Add them as necessary controls in the SoA alongside Annex A.\n- One system then delivers dual compliance.\n\nThe Personal Data Protection Law is covered through A.5.34.",
+     "ar": "ISO 27001 **نظام إدارة** قائم على المخاطر، بينما ضوابط الهيئة الوطنية (ECC) **متطلبات تنظيمية** إلزامية للجهات المشمولة.\n\n- أدرج ضوابط الهيئة في سجل المتطلبات (4.2 وA.5.31).\n- أضفها كضوابط لازمة في بيان التطبيق بجانب الملحق A.\n- بهذا تحقق امتثالاً مزدوجاً بنظام واحد.\n\nوكذلك نظام حماية البيانات الشخصية عبر A.5.34."
+    }
+   },
+   {
+    "id": "objectives",
+    "q": {
+     "en": "How do I set information security objectives?",
+     "ar": "كيف أضع أهداف أمن المعلومات؟"
+    },
+    "a": {
+     "en": "Objectives (6.2) are consistent with the policy, measurable, derived from risks, **monitored** and documented. Each has: what, resources, owner, deadline, evaluation method.\n\nExample: 'MFA on 100% of privileged accounts by March'. [[tpl:objectives]]",
+     "ar": "الأهداف (6.2) متسقة مع السياسة، قابلة للقياس، مشتقة من المخاطر، **تُرصد** وتُوثق. ولكل هدف: ماذا، الموارد، المسؤول، الموعد، طريقة التقييم.\n\nمثال: «مصادقة متعددة العوامل على 100% من الحسابات المميزة بحلول مارس». [[tpl:objectives]]"
+    }
+   },
+   {
+    "id": "audit",
+    "q": {
+     "en": "How do I plan the internal audit?",
+     "ar": "كيف أخطط التدقيق الداخلي؟"
+    },
+    "a": {
+     "en": "- An annual programme covering clauses 4–10 **and the applicable SoA controls**.\n- Higher frequency for risky processes and previous findings.\n- Competent auditors independent of the work audited.\n- Reports to management and closure tracking.\n\nReferences: ISO 19011 and ISO/IEC 27007. [[tpl:audit]] and [[tab:checklist]].",
+     "ar": "- برنامج سنوي يغطي البنود 4–10 **والضوابط المطبقة** في البيان.\n- تكرار أعلى للعمليات الخطرة وذات النتائج السابقة.\n- مدققون أكفاء مستقلون عن العمل المدقق.\n- تقارير للإدارة ومتابعة الإغلاق.\n\nالمراجع: ISO 19011 وISO/IEC 27007. [[tpl:audit]] و[[tab:checklist]]."
+    }
+   },
+   {
+    "id": "mr",
+    "q": {
+     "en": "What are the management review inputs?",
+     "ar": "ما مدخلات مراجعة الإدارة؟"
+    },
+    "a": {
+     "en": "(9.3.2): status of previous actions, changes in issues, **changes in parties' needs (new)**, security performance (nonconformities, monitoring, audits, objectives), party feedback, risk results and plan status, improvement opportunities. [[tpl:review]]",
+     "ar": "(9.3.2): حالة الإجراءات السابقة، تغير القضايا، **تغير احتياجات الأطراف (جديد)**، أداء أمن المعلومات (عدم المطابقة، الرصد، التدقيق، الأهداف)، تغذية الأطراف، نتائج المخاطر وحالة الخطة، فرص التحسين. [[tpl:review]]"
+    }
+   },
+   {
+    "id": "incident",
+    "q": {
+     "en": "How do I manage security incidents?",
+     "ar": "كيف أدير الحوادث الأمنية؟"
+    },
+    "a": {
+     "en": "Controls **A.5.24 to A.5.28** plus **A.6.8**:\n\n1. Response plan, team and playbooks (A.5.24).\n2. Staff reporting channels (A.6.8).\n3. Triage events and decide on incidents (A.5.25).\n4. Contain, eradicate, recover and communicate (A.5.26).\n5. Collect evidence (A.5.28).\n6. Lessons learned and risk updates (A.5.27).\n\n[[tpl:incident]]",
+     "ar": "ضوابط **A.5.24 إلى A.5.28** مع **A.6.8**:\n\n1. خطة استجابة وفريق وأدلة تشغيل (A.5.24).\n2. قنوات إبلاغ للموظفين (A.6.8).\n3. فرز الأحداث وتقرير الحادث (A.5.25).\n4. احتواء واستئصال وتعافٍ وتواصل (A.5.26).\n5. جمع الأدلة (A.5.28).\n6. دروس مستفادة وتحديث المخاطر (A.5.27).\n\n[[tpl:incident]]"
+    }
+   },
+   {
+    "id": "correction",
+    "q": {
+     "en": "Correction or corrective action: what is the difference?",
+     "ar": "ما الفرق بين التصحيح والإجراء التصحيحي؟"
+    },
+    "a": {
+     "en": "- **Correction:** fix the effect now (disable an unauthorised account).\n- **Corrective action:** remove the cause so it does not recur (link HR to the identity system).\n\nThe auditor expects effectiveness verified before closure (10.2).",
+     "ar": "- **التصحيح:** معالجة الأثر الآن (تعطيل حساب غير مصرح).\n- **الإجراء التصحيحي:** إزالة السبب لمنع التكرار (ربط الموارد البشرية بنظام الهوية).\n\nوالمدقق يطلب التحقق من الفعالية قبل الإغلاق (10.2)."
+    }
+   },
+   {
+    "id": "certsteps",
+    "q": {
+     "en": "What are the steps to certification?",
+     "ar": "ما خطوات الحصول على الشهادة؟"
+    },
+    "a": {
+     "en": "1. Build and run the ISMS with records (at least 3 months).\n2. A full internal audit and management review.\n3. Choose a certification body **accredited by a Global ACI member**.\n4. **Stage 1:** documentation and readiness review.\n5. **Stage 2:** audit of implementation and effectiveness.\n6. Close nonconformities; certificate issued for three years with annual surveillance audits.",
+     "ar": "1. بناء النظام وتشغيله بسجلات (3 أشهر على الأقل).\n2. تدقيق داخلي كامل ومراجعة إدارة.\n3. اختيار جهة منح **معتمدة من عضو في Global ACI**.\n4. **المرحلة 1:** مراجعة الوثائق والجاهزية.\n5. **المرحلة 2:** تدقيق التطبيق والفعالية.\n6. إغلاق عدم المطابقة ثم إصدار الشهادة لثلاث سنوات مع تدقيقات مراقبة سنوية."
+    }
+   },
+   {
+    "id": "ims",
+    "q": {
+     "en": "Can 27001 be integrated with ISO 9001, 45001 and others?",
+     "ar": "هل يمكن دمج 27001 مع ISO 9001 و45001 وغيرها؟"
+    },
+    "a": {
+     "en": "Yes. They all share the **harmonized structure** (clauses 4–10): context, policy, roles, documentation, audit, management review and improvement are common, while the specific parts (information security risk assessment, SoA, Annex A) stay with 27001. An integrated audit can cut days and cost.",
+     "ar": "نعم. كلها على **الهيكل الموحد** (البنود 4–10)، فتشترك في السياق والسياسة والأدوار والتوثيق والتدقيق ومراجعة الإدارة والتحسين، وتبقى الأجزاء النوعية (تقييم مخاطر أمن المعلومات، بيان التطبيق، الملحق A) خاصة بـ 27001. يمكن طلب تدقيق متكامل يقلل الأيام والتكلفة."
+    }
+   },
+   {
+    "id": "start",
+    "q": {
+     "en": "Where do I start implementing an ISMS?",
+     "ar": "من أين أبدأ تطبيق نظام إدارة أمن المعلومات؟"
+    },
+    "a": {
+     "en": "1. Management decision, ISMS lead and team.\n2. Context, parties and scope (4.1–4.3).\n3. Policy and roles (5).\n4. Asset inventory, risk method and assessment (6.1.2).\n5. Treatment, SoA on the 93 controls, and plan (6.1.3).\n6. Topic-specific policies and control implementation.\n7. Awareness and competence.\n8. Monitoring, internal audit and management review.\n\nStart with the [[tab:assess]] for a tailored plan.",
+     "ar": "1. قرار الإدارة وتعيين المسؤول والفريق.\n2. السياق والأطراف والنطاق (4.1–4.3).\n3. السياسة والأدوار (5).\n4. جرد الأصول ومنهجية المخاطر وتقييمها (6.1.2).\n5. المعالجة وبيان التطبيق على الـ93 ضابطاً والخطة (6.1.3).\n6. السياسات الموضوعية وتطبيق الضوابط.\n7. التوعية والكفاءة.\n8. الرصد والتدقيق الداخلي ومراجعة الإدارة.\n\nابدأ بـ [[tab:assess]] لتحصل على خطة مخصصة."
+    }
+   },
+   {
+    "id": "kpis",
+    "q": {
+     "en": "What are examples of information security metrics?",
+     "ar": "ما أمثلة مؤشرات أداء أمن المعلومات؟"
+    },
+    "a": {
+     "en": "- % systems patched with no critical vulnerabilities.\n- Mean time to detect and respond.\n- % restore tests successful.\n- % accounts with MFA.\n- % passing phishing tests.\n- % access reviews done on time.\n\nUse the same method each time (9.1). [[tpl:monitoring]]",
+     "ar": "- % الأنظمة المحدّثة بلا ثغرات حرجة.\n- متوسط زمن اكتشاف الحوادث والاستجابة لها.\n- % نجاح اختبارات الاستعادة.\n- % الحسابات بمصادقة متعددة العوامل.\n- % اجتياز اختبارات التصيد.\n- % مراجعات الصلاحيات المنفذة في موعدها.\n\nاستخدم نفس الطريقة كل مرة (9.1). [[tpl:monitoring]]"
+    }
+   },
+   {
+    "id": "howuse",
+    "q": {
+     "en": "How do I use this toolkit?",
+     "ar": "كيف أستخدم هذه الأداة؟"
+    },
+    "a": {
+     "en": "1. [[tab:assess]]: answer 40 questions.\n2. [[tab:report]]: score, plan, recommendations and risks.\n3. [[tab:annexa]]: the 93 controls explained, plus an SoA builder with export.\n4. [[tab:checklist]]: audit clauses 4–10.\n5. [[tab:templates]]: editable pre-filled templates.\n\nAll data stays in your browser.",
+     "ar": "1. [[tab:assess]]: أجب عن 40 سؤالاً.\n2. [[tab:report]]: النتيجة والخطة والتوصيات والمخاطر.\n3. [[tab:annexa]]: شرح الضوابط الـ93 وبناء بيان قابلية التطبيق وتصديره.\n4. [[tab:checklist]]: تدقيق البنود 4–10.\n5. [[tab:templates]]: نماذج معبأة بأمثلة قابلة للتعديل.\n\nكل البيانات تُحفظ في متصفحك فقط."
+    }
+   },
+   {
+    "id": "data",
+    "q": {
+     "en": "Where is my data stored?",
+     "ar": "أين تُحفظ بياناتي؟"
+    },
+    "a": {
+     "en": "Your answers, SoA and templates are kept **only in your browser** on your device and are not sent to any server. Clearing browser data removes them, so export CSV or PDF to keep them.",
+     "ar": "إجاباتك وبيان التطبيق والنماذج تُحفظ **في متصفحك فقط** على جهازك، ولا تُرسل لأي خادم. مسح بيانات المتصفح يحذفها، فصدّرها CSV أو PDF للاحتفاظ بها."
+    }
+   },
+   {
+    "id": "export",
+    "q": {
+     "en": "How do I export results?",
+     "ar": "كيف أصدّر النتائج؟"
+    },
+    "a": {
+     "en": "- Report: PDF or HTML, and plan as CSV in [[tab:report]].\n- SoA: CSV or PDF in [[tab:annexa]].\n- Audit: PDF, HTML and CSV in [[tab:checklist]].\n- Each template: CSV or PDF in [[tab:templates]].",
+     "ar": "- التقرير: PDF أو HTML وخطة CSV في [[tab:report]].\n- بيان قابلية التطبيق: CSV أو PDF في [[tab:annexa]].\n- التدقيق: PDF وHTML وCSV في [[tab:checklist]].\n- كل نموذج: CSV أو PDF في [[tab:templates]]."
+    }
+   },
+   {
+    "id": "official",
+    "q": {
+     "en": "Is this toolkit a substitute for the official standard?",
+     "ar": "هل هذه الأداة بديل عن نص المواصفة الرسمي؟"
+    },
+    "a": {
+     "en": "No. The toolkit is an explanatory commentary in our own words for understanding, training and implementation; control titles are cited for reference only. The authoritative text is ISO/IEC 27001:2022 and Amendment 1:2024 from ISO or your national standards body. [[tab:standard]]",
+     "ar": "لا. الأداة شرح تفسيري بصياغتنا للفهم والتدريب والتطبيق، وعناوين الضوابط مذكورة للإشارة فقط. النص المعتمد هو ISO/IEC 27001:2022 وتعديله 1:2024 من ISO أو من جهة التقييس الوطنية. [[tab:standard]]"
+    }
+   },
+   {
+    "id": "contact",
+    "q": {
+     "en": "How do I contact مدثر سلامه?",
+     "ar": "كيف أتواصل مع مدثر سلامه؟"
+    },
+    "a": {
+     "en": "For consulting, implementation, training, audits and certification readiness, email **مدثر سلامه**: moddathersalama.eng@gmail.com",
+     "ar": "للاستشارات والتطبيق والتدريب والتدقيق والتجهيز للشهادة راسل **مدثر سلامه**: moddathersalama.eng@gmail.com"
+    }
+   },
+   {
+    "id": "exguide",
+    "q": {
+     "en": "Where is the plain-language guide to the clauses and controls?",
+     "ar": "أين أجد شرح البنود والضوابط بلغة بسيطة؟"
+    },
+    "a": {
+     "en": "In the **Clause and control guide** tab: clauses 4–10 on a wheel with the four Annex A control groups around it. Select any part to read the requirement in plain words, an example from Al-Madar and what the auditor asks for. **A method guide to the standard** covers its purpose, roles and related standards.",
+     "ar": "في تبويب **دليل البنود والضوابط**: عجلة البنود 4–10، وحولها مجموعات ضوابط الملحق A الأربع. اضغط أي جزء لتقرأ المتطلب بكلمات بسيطة، ومثالاً من شركة المدار، وما يطلبه المدقق. وفي **شرح منهجي للمواصفة** الغرض منها والأدوار فيها وعلاقتها بالمواصفات الأخرى."
+    }
+   },
+   {
+    "id": "exassess",
+    "q": {
+     "en": "What does 'Assess this clause' do in the guide?",
+     "ar": "ماذا يفعل زر «قيّم هذا البند» في الدليل؟"
+    },
+    "a": {
+     "en": "It takes you to the self-assessment question linked to that clause or control and highlights it. Next to each question in the [[tab:assess]] an **Explain** button takes you back to its explanation. Clauses and controls without a question of their own say so and offer a button to open the assessment.",
+     "ar": "ينقلك إلى سؤال التقييم الذاتي المرتبط بالبند أو الضابط ويبرزه. وبجانب كل سؤال في [[tab:assess]] زر **اشرح** يعيدك إلى شرحه. أما البنود والضوابط التي ليس لها سؤال مستقل فتظهر معها ملاحظة بذلك وزر لفتح التقييم."
+    }
+   },
+   {
+    "id": "exofficial",
+    "q": {
+     "en": "Is the guide the text of the standard?",
+     "ar": "هل الشرح في الدليل هو نص المواصفة؟"
+    },
+    "a": {
+     "en": "No. The guide is an interpretive summary in independent wording, not the official text and not a translation. Clause and control numbers and titles are checked against the uploaded copy (third edition, 2022). For implementation and audit, use a licensed copy from ISO or from SASO.",
+     "ar": "لا. الدليل ملخص تفسيري بصياغة مستقلة، وليس النص الرسمي ولا ترجمة له. أرقام البنود والضوابط وعناوينها متحقق منها من النسخة المرفوعة (الإصدار الثالث 2022). وللتطبيق والتدقيق استخدم نسخة مرخصة من ISO أو من الهيئة السعودية للمواصفات والمقاييس والجودة."
+    }
+   },
+   {
+    "id": "exsoa",
+    "q": {
+     "en": "How does the Annex A guide relate to the Statement of Applicability?",
+     "ar": "كيف يرتبط شرح ضوابط الملحق A ببيان قابلية التطبيق؟"
+    },
+    "a": {
+     "en": "Each control in the **Clause and control guide** explains its purpose, an example and how to apply it, with a button that opens the [[tab:annexa]], where you record the applicability decision, the reason and the status. The statement is built from your decisions there.",
+     "ar": "كل ضابط في **دليل البنود والضوابط** يشرح غرضه ومثالاً وطريقة تطبيقه، ومعه زر يفتح [[tab:annexa]]، حيث تسجّل قرار التطبيق ومبرره وحالة التنفيذ. ويُبنى البيان من قراراتك هناك."
+    }
+   }
+  ],
+  "templates": [
+   {
+    "id": "context",
+    "ref": "4.1",
+    "title": {
+     "en": "Information security context analysis (PESTLE) and climate decision",
+     "ar": "تحليل سياق أمن المعلومات (PESTLE) وقرار المناخ"
+    },
+    "purpose": {
+     "en": "External and internal issues affecting the ISMS's ability to protect information, with the climate change relevance decision per the 2024 amendment.",
+     "ar": "القضايا الخارجية والداخلية المؤثرة على قدرة النظام على حماية المعلومات، مع قرار صلة تغيّر المناخ وفق تعديل 2024."
+    },
+    "tips": [
+     {
+      "en": "Involve top management, IT and legal.",
+      "ar": "أشرك الإدارة العليا وتقنية المعلومات والشؤون القانونية."
+     },
+     {
+      "en": "Record the climate decision even if 'not relevant', with the reason.",
+      "ar": "سجّل قرار المناخ حتى لو كان «غير ذي صلة» مع المبرر."
+     },
+     {
+      "en": "Link every significant issue to the risk register.",
+      "ar": "اربط كل قضية مهمة بسجل المخاطر."
+     }
+    ]
+   },
+   {
+    "id": "parties",
+    "ref": "4.2",
+    "title": {
+     "en": "Interested parties and their requirements",
+     "ar": "الأطراف المعنية ومتطلباتها"
+    },
+    "purpose": {
+     "en": "Who cares about your information security, what they require, and which requirements the ISMS addresses (4.2 c).",
+     "ar": "من يهتم بأمن معلوماتك وماذا يطلب، وقرار أي المتطلبات يعالجها النظام (4.2 ج)."
+    },
+    "tips": [
+     {
+      "en": "State the source of each requirement: contract, law or regulation.",
+      "ar": "اذكر مصدر كل متطلب: عقد أو نظام أو لائحة."
+     },
+     {
+      "en": "The 'addressed through the ISMS' decision is the new 2022 point.",
+      "ar": "القرار «يُعالج عبر النظام» هو نقطة 2022 الجديدة."
+     },
+     {
+      "en": "Review the register on every new client or regulation.",
+      "ar": "راجع السجل عند كل عميل أو تنظيم جديد."
+     }
+    ]
+   },
+   {
+    "id": "assets",
+    "ref": "A.5.9 / 6.1.2",
+    "title": {
+     "en": "Asset and information register",
+     "ar": "سجل الأصول والمعلومات"
+    },
+    "purpose": {
+     "en": "An inventory of assets with owner, classification and C-I-A values, the basis for risk assessment.",
+     "ar": "جرد الأصول مع المالك والتصنيف وقيمة السرية والسلامة والتوافر، أساس تقييم المخاطر."
+    },
+    "tips": [
+     {
+      "en": "Start with information assets, then the systems that hold them.",
+      "ar": "ابدأ بالأصول المعلوماتية ثم الأنظمة الحاضنة لها."
+     },
+     {
+      "en": "One owner per asset.",
+      "ar": "لكل أصل مالك واحد."
+     },
+     {
+      "en": "Link the inventory to a CMDB so it stays current.",
+      "ar": "اربط الجرد بأداة CMDB لتحديثه آلياً."
+     }
+    ]
+   },
+   {
+    "id": "risks",
+    "ref": "6.1.2 / 8.2",
+    "title": {
+     "en": "Information security risk register",
+     "ar": "سجل مخاطر أمن المعلومات"
+    },
+    "purpose": {
+     "en": "Assessment of risks of loss of confidentiality, integrity or availability as likelihood × impact, with risk owner and treatment.",
+     "ar": "تقييم مخاطر فقدان السرية أو السلامة أو التوافر بالاحتمال × الأثر، مع مالك الخطر والمعالجة."
+    },
+    "tips": [
+     {
+      "en": "Scores of 15+ are high and need top-management acceptance of residual risk.",
+      "ar": "الدرجة 15 فأكثر مرتفعة وتحتاج موافقة الإدارة العليا على المتبقي."
+     },
+     {
+      "en": "Every risk has an owner authorised to accept residual risk.",
+      "ar": "كل خطر له مالك مخوّل بقبول المتبقي."
+     },
+     {
+      "en": "Reassess yearly and on significant change.",
+      "ar": "أعد التقييم سنوياً وعند التغيير الجوهري."
+     }
+    ]
+   },
+   {
+    "id": "opps",
+    "ref": "6.1.1",
+    "title": {
+     "en": "Opportunities register",
+     "ar": "سجل الفرص"
+    },
+    "purpose": {
+     "en": "Opportunities to improve information security and the ISMS, rated benefit × feasibility.",
+     "ar": "فرص تحسين أمن المعلومات والنظام، تُقيّم بالفائدة × قابلية التنفيذ."
+    },
+    "tips": [
+     {
+      "en": "An opportunity is not the opposite of a risk; it is an improvement worth investing in.",
+      "ar": "الفرصة ليست عكس الخطر؛ هي تحسين يستحق الاستثمار."
+     },
+     {
+      "en": "Link opportunities to objectives (6.2).",
+      "ar": "اربط الفرص بالأهداف (6.2)."
+     },
+     {
+      "en": "Review them at management review.",
+      "ar": "راجعها في مراجعة الإدارة."
+     }
+    ]
+   },
+   {
+    "id": "soa",
+    "ref": "6.1.3 d",
+    "title": {
+     "en": "Statement of Applicability (short form)",
+     "ar": "بيان قابلية التطبيق (نموذج مختصر)"
+    },
+    "purpose": {
+     "en": "A sample of the SoA: control, applicable, justification for inclusion or exclusion, and status. Build the full 93-control SoA in the Annex A tab.",
+     "ar": "عينة من البيان: الضابط، هل ينطبق، ومبرر الإدراج أو الاستبعاد، وحالة التطبيق. البيان الكامل للضوابط الـ93 تبنيه في تبويب الملحق A."
+    },
+    "tips": [
+     {
+      "en": "The justification links to a risk or requirement, not just 'required'.",
+      "ar": "المبرر يرتبط بخطر أو متطلب، لا بكلمة «مطلوب»."
+     },
+     {
+      "en": "Exclusion is fine with a clear reason.",
+      "ar": "الاستبعاد مقبول بمبرر واضح."
+     },
+     {
+      "en": "Quote the SoA version in the certificate scope.",
+      "ar": "اذكر رقم الإصدار في نطاق الشهادة."
+     }
+    ]
+   },
+   {
+    "id": "rtp",
+    "ref": "6.1.3 e / 8.3",
+    "title": {
+     "en": "Risk treatment plan",
+     "ar": "خطة معالجة المخاطر"
+    },
+    "purpose": {
+     "en": "For each risk above the acceptance criteria: option, controls, owner, date, residual risk and owner approval.",
+     "ar": "لكل خطر يتجاوز معيار القبول: الخيار والضوابط والمسؤول والموعد والخطر المتبقي وموافقة المالك."
+    },
+    "tips": [
+     {
+      "en": "Treatment options: modify, avoid, share, retain.",
+      "ar": "خيارات المعالجة: تعديل، تجنب، مشاركة، إبقاء."
+     },
+     {
+      "en": "Residual risk is recalculated after implementation.",
+      "ar": "الخطر المتبقي يُعاد حسابه بعد التنفيذ."
+     },
+     {
+      "en": "Risk owner approval is mandatory.",
+      "ar": "الموافقة من مالك الخطر إلزامية."
+     }
+    ]
+   },
+   {
+    "id": "objectives",
+    "ref": "6.2",
+    "title": {
+     "en": "Information security objectives and plans",
+     "ar": "أهداف أمن المعلومات وخطط تحقيقها"
+    },
+    "purpose": {
+     "en": "Measurable objectives linked to risks, with what will be done, owner, date and how results are evaluated.",
+     "ar": "أهداف قابلة للقياس مرتبطة بالمخاطر، مع ما سيُنفذ والمسؤول والموعد وطريقة التقييم."
+    },
+    "tips": [
+     {
+      "en": "Derive objectives from the top risks.",
+      "ar": "اشتق الأهداف من المخاطر الأعلى."
+     },
+     {
+      "en": "Monitoring is mandatory since 2022.",
+      "ar": "الرصد الشهري إلزامي منذ 2022."
+     },
+     {
+      "en": "One measurable objective beats five vague ones.",
+      "ar": "هدف واحد قابل للقياس أفضل من خمسة عامة."
+     }
+    ]
+   },
+   {
+    "id": "changes",
+    "ref": "6.3",
+    "title": {
+     "en": "ISMS change planning log",
+     "ar": "سجل تخطيط التغييرات على النظام"
+    },
+    "purpose": {
+     "en": "Changes to the ISMS itself (scope, processes, roles, major systems) and how they were planned before implementation.",
+     "ar": "التغييرات على نظام إدارة أمن المعلومات نفسه (نطاق، عمليات، أدوار، أنظمة رئيسية) وتخطيطها قبل التنفيذ."
+    },
+    "tips": [
+     {
+      "en": "Keep it separate from the IT change log (A.8.32).",
+      "ar": "فرّقه عن سجل تغييرات تقنية المعلومات (A.8.32)."
+     },
+     {
+      "en": "Analyse the impact on risks, SoA and scope.",
+      "ar": "حلل الأثر على المخاطر والبيان والنطاق."
+     },
+     {
+      "en": "Review the outcome after implementation.",
+      "ar": "راجع النتيجة بعد التنفيذ."
+     }
+    ]
+   },
+   {
+    "id": "competence",
+    "ref": "7.2 / 7.3",
+    "title": {
+     "en": "Competence and awareness matrix",
+     "ar": "مصفوفة الكفاءة والتوعية"
+    },
+    "purpose": {
+     "en": "The competence required for each security role, the gap, the action and effectiveness evaluation.",
+     "ar": "الكفاءات المطلوبة لكل دور أمني، والفجوة، والإجراء، وتقييم الفعالية."
+    },
+    "tips": [
+     {
+      "en": "Include internal auditors and risk owners.",
+      "ar": "اشمل المدققين الداخليين ومالكي المخاطر."
+     },
+     {
+      "en": "Evaluate effectiveness by performance, not attendance alone.",
+      "ar": "قيّم الفعالية بالأداء لا بالحضور فقط."
+     },
+     {
+      "en": "General awareness is measured through phishing tests.",
+      "ar": "التوعية العامة تُقاس باختبارات التصيد."
+     }
+    ]
+   },
+   {
+    "id": "suppliers",
+    "ref": "A.5.19–A.5.22 / 8.1",
+    "title": {
+     "en": "Supplier security evaluation",
+     "ar": "تقييم الموردين الأمني"
+    },
+    "purpose": {
+     "en": "Weighted evaluation of suppliers with access to information or systems, with a decision.",
+     "ar": "تقييم الموردين ذوي الوصول للمعلومات أو الأنظمة بمعايير مرجحة، مع قرار واعتماد."
+    },
+    "tips": [
+     {
+      "en": "Tier the supplier first by data access.",
+      "ar": "صنّف المورد أولاً حسب وصوله للبيانات."
+     },
+     {
+      "en": "Request ISO 27001 or a SOC 2 report from critical suppliers.",
+      "ar": "اطلب شهادة 27001 أو تقرير SOC 2 للموردين الحرجين."
+     },
+     {
+      "en": "Re-evaluate yearly.",
+      "ar": "أعد التقييم سنوياً."
+     }
+    ]
+   },
+   {
+    "id": "incident",
+    "ref": "A.5.24–A.5.28 / 10.2",
+    "title": {
+     "en": "Security incident log",
+     "ar": "سجل الحوادث الأمنية"
+    },
+    "purpose": {
+     "en": "Recording, classifying and responding to incidents, with cause analysis and lessons learned.",
+     "ar": "تسجيل الحوادث وتصنيفها والاستجابة لها وتحليل السبب والدروس المستفادة."
+    },
+    "tips": [
+     {
+      "en": "Distinguish events from incidents.",
+      "ar": "فرّق بين الحدث والحادث."
+     },
+     {
+      "en": "Record detection and containment times.",
+      "ar": "وثّق زمن الاكتشاف والاحتواء."
+     },
+     {
+      "en": "Every significant incident feeds a risk update.",
+      "ar": "كل حادث مهم يُغذي تحديث المخاطر."
+     }
+    ]
+   },
+   {
+    "id": "monitoring",
+    "ref": "9.1",
+    "title": {
+     "en": "Monitoring and measurement plan",
+     "ar": "خطة الرصد والقياس"
+    },
+    "purpose": {
+     "en": "What is measured, how, when, who analyses it and the evaluation criteria, so results are comparable.",
+     "ar": "ما يُقاس، وكيف، ومتى، ومن يحلل، ومعايير التقييم لضمان نتائج قابلة للمقارنة."
+    },
+    "tips": [
+     {
+      "en": "Same formula and source every time.",
+      "ar": "نفس الصيغة ونفس المصدر كل مرة."
+     },
+     {
+      "en": "Set a target for each metric.",
+      "ar": "ضع هدفاً لكل مؤشر."
+     },
+     {
+      "en": "Analyse the trend, not a single number.",
+      "ar": "حلل الاتجاه لا الرقم المنفرد."
+     }
+    ]
+   },
+   {
+    "id": "audit",
+    "ref": "9.2",
+    "title": {
+     "en": "Internal audit programme",
+     "ar": "برنامج التدقيق الداخلي"
+    },
+    "purpose": {
+     "en": "Clauses and controls spread over an annual cycle based on risk and previous results.",
+     "ar": "توزيع البنود والضوابط على دورة سنوية حسب المخاطر ونتائج التدقيق السابقة."
+    },
+    "tips": [
+     {
+      "en": "Cover clauses 4–10 and applicable controls within the cycle.",
+      "ar": "غطِّ البنود 4–10 والضوابط المطبقة خلال الدورة."
+     },
+     {
+      "en": "Increase frequency where findings arose.",
+      "ar": "زِد التكرار للعمليات ذات النتائج."
+     },
+     {
+      "en": "Auditors do not audit their own work.",
+      "ar": "المدقق لا يدقق عمله."
+     }
+    ]
+   },
+   {
+    "id": "review",
+    "ref": "9.3",
+    "title": {
+     "en": "Management review inputs and outputs",
+     "ar": "مدخلات ومخرجات مراجعة الإدارة"
+    },
+    "purpose": {
+     "en": "A template covering every mandatory input in 9.3.2 and the decisions in 9.3.3.",
+     "ar": "قالب يغطي كل المدخلات الإلزامية في 9.3.2 والقرارات في 9.3.3."
+    },
+    "tips": [
+     {
+      "en": "Do not forget the new input: changes in parties' needs.",
+      "ar": "لا تنسَ المدخل الجديد: تغير احتياجات الأطراف."
+     },
+     {
+      "en": "Figures, not impressions.",
+      "ar": "أرقام لا انطباعات."
+     },
+     {
+      "en": "Every decision has an owner and date.",
+      "ar": "لكل قرار مسؤول وموعد."
+     }
+    ]
+   }
+  ],
+  "official": [
+   {
+    "url": "https://www.iso.org/standard/27001",
+    "name": {
+     "ar": "المنظمة الدولية للتقييس ISO",
+     "en": "ISO — International Organization for Standardization"
+    },
+    "note": {
+     "ar": "صفحة ISO/IEC 27001:2022 ومتجر النسخة الرسمية، والتعديل 1:2024 متاح مجاناً",
+     "en": "The ISO/IEC 27001:2022 page and store; Amendment 1:2024 is free"
+    }
+   },
+   {
+    "url": "https://www.saso.gov.sa",
+    "name": {
+     "ar": "الهيئة السعودية للمواصفات والمقاييس والجودة",
+     "en": "Saudi Standards, Metrology and Quality Org. (SASO)"
+    },
+    "note": {
+     "ar": "النسخة الوطنية المعتمدة في المملكة",
+     "en": "The national adoption in Saudi Arabia"
+    }
+   },
+   {
+    "url": "https://nca.gov.sa",
+    "name": {
+     "ar": "الهيئة الوطنية للأمن السيبراني",
+     "en": "National Cybersecurity Authority (NCA)"
+    },
+    "note": {
+     "ar": "الضوابط الأساسية للأمن السيبراني وضوابط الحوسبة السحابية",
+     "en": "Essential Cybersecurity Controls and Cloud Cybersecurity Controls"
+    }
+   },
+   {
+    "url": "https://global-aci.org",
+    "name": {
+     "ar": "مؤسسة Global ACI (سابقاً IAF وILAC)",
+     "en": "Global ACI — formerly IAF and ILAC"
+    },
+    "note": {
+     "ar": "قواعد الاعتماد والشهادات المعترف بها",
+     "en": "Accreditation rules and recognised certification"
+    }
+   }
+  ],
+  "readiness_questions": 40,
+  "competencies": [
+   "ISO-01",
+   "ISO-02",
+   "ISA-01",
+   "RSK-01",
+   "AUD-02"
+  ],
+  "ecosystem": "iso"
+ }
+}

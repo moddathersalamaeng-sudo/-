@@ -1,0 +1,1469 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-A3",
+  "slug": "a3",
+  "kind": "method",
+  "module": "a3",
+  "title": {
+   "en": "A3 Problem Solving",
+   "ar": "حل المشكلات بأسلوب A3"
+  },
+  "subtitle": {
+   "en": "Method tool: the problem-solving story on the PDCA cycle (ISO 9001:2026 introduction 0.3.2)",
+   "ar": "أداة منهجية: قصة حل المشكلة على دورة PDCA (ISO 9001:2026 المقدمة 0.3.2)"
+  },
+  "lede": {
+   "en": "To solve every important problem with one clear story that can be read in minutes: why it matters, where we are in numbers, where we want to be and by when, why it happens with evidence, what we change, who does what, and whether we got there; then what worked is standardised and a new cycle starts for what is left.",
+   "ar": "أن تُحل كل مشكلة مهمة بقصة واحدة واضحة تُقرأ في دقائق: لماذا تهم، وأين نحن بالأرقام، وإلى أين نريد بحلول متى، ولماذا يحدث ذلك بالدليل، وماذا نغيّر، ومن يفعل ماذا، وهل وصلنا؛ ثم يُوحَّد ما نجح وتبدأ دورة جديدة لما بقي."
+  },
+  "author": "مدثر سلامه",
+  "note": {
+   "en": "A3 is a problem-solving method, not a standard or a clause. It runs on the PDCA cycle that ISO 9001:2026 describes in its introduction (0.3.2); the introduction explains and sets no requirement. The requirements the method serves are measurable objectives and planning to achieve them (6.2), analysis and evaluation (9.1.3), corrective action and the review of its effectiveness (10.2.1), and continual improvement (10.1).",
+   "ar": "A3 طريقة لحل المشكلات، وليست مواصفة ولا بنداً. تسير على دورة PDCA التي تصفها ISO 9001:2026 في مقدمتها (0.3.2)، والمقدمة شرح لا متطلبات. والمتطلبات التي تخدمها الطريقة هي الأهداف القابلة للقياس والتخطيط لتحقيقها (6.2)، والتحليل والتقييم (9.1.3)، والإجراء التصحيحي ومراجعة فعاليته (10.2.1)، والتحسين المستمر (10.1)."
+  },
+  "who": {
+   "en": "Process owners, project and site managers, quality and safety engineers, team leaders, coaches and mentors, and anyone who owns a recurring problem or a gap in a KPI.",
+   "ar": "مالكو العمليات، ومديرو المشاريع والمواقع، ومهندسو الجودة والسلامة، وقادة الفرق، والموجّهون والمرشدون، وكل من يملك مشكلة تتكرر أو فجوة في مؤشر أداء."
+  },
+  "roles": [
+   {
+    "name": {
+     "en": "A3 owner",
+     "ar": "مالك الصفحة"
+    },
+    "text": {
+     "en": "One person who writes the page, goes to the workplace to see, and carries the story from the background to the follow-up.",
+     "ar": "شخص واحد يكتب الصفحة بنفسه، ويذهب إلى مكان العمل ليرى، ويحمل القصة من الخلفية إلى المتابعة."
+    }
+   },
+   {
+    "name": {
+     "en": "Coach or mentor",
+     "ar": "الموجّه أو المرشد"
+    },
+    "text": {
+     "en": "Reviews through questions, not approvals, and does not write the solution; someone other than the owner.",
+     "ar": "يراجع بالأسئلة لا بالتوقيع، ولا يكتب الحل؛ ويكون شخصاً غير المالك."
+    }
+   },
+   {
+    "name": {
+     "en": "Sponsor",
+     "ar": "الراعي"
+    },
+    "text": {
+     "en": "Gives time and resources, and removes obstacles the owner cannot.",
+     "ar": "يوفر الوقت والموارد، ويزيل العوائق التي لا يستطيع المالك إزالتها."
+    }
+   },
+   {
+    "name": {
+     "en": "The people who do the work",
+     "ar": "من يؤدي العمل"
+    },
+    "text": {
+     "en": "They know what really happens, and test the countermeasures for real before they are rolled out.",
+     "ar": "يعرفون ما يحدث فعلاً، ويختبرون الإجراءات المضادة في الواقع قبل تعميمها."
+    }
+   },
+   {
+    "name": {
+     "en": "Data owner",
+     "ar": "مالك البيانات"
+    },
+    "text": {
+     "en": "Provides the baseline and the follow-up data measured the same way, so the result is compared with the goal honestly.",
+     "ar": "يقدم القيمة الأساسية وبيانات المتابعة بالطريقة نفسها، حتى تُقارن النتيجة بالهدف بصدق."
+    }
+   }
+  ],
+  "steps": [
+   {
+    "no": "1",
+    "title": {
+     "en": "One owner and a coach",
+     "ar": "مالك واحد وموجّه"
+    },
+    "text": {
+     "en": "The owner writes; the coach asks.",
+     "ar": "المالك يكتب، والموجّه يسأل."
+    },
+    "ref": "GD-1"
+   },
+   {
+    "no": "2",
+    "title": {
+     "en": "Background with a measure that matters",
+     "ar": "الخلفية بمقياس يهم"
+    },
+    "text": {
+     "en": "Customer, safety, cost or strategy.",
+     "ar": "العميل أو السلامة أو التكلفة أو الاستراتيجية."
+    },
+    "ref": "GD-3"
+   },
+   {
+    "no": "3",
+    "title": {
+     "en": "The current condition from facts, drawn",
+     "ar": "الوضع الحالي بالوقائع مرسوماً"
+    },
+    "text": {
+     "en": "A baseline, a period, a chart and the gap in one line.",
+     "ar": "قيمة أساسية وفترة ورسم وفجوة في سطر."
+    },
+    "ref": "9.1.3"
+   },
+   {
+    "no": "4",
+    "title": {
+     "en": "The goal as a number and a date, before the causes",
+     "ar": "الهدف رقماً بتاريخ قبل الأسباب"
+    },
+    "text": {
+     "en": "And not changed to fit the result.",
+     "ar": "ولا يُعدَّل ليناسب النتيجة."
+    },
+    "ref": "GD-4"
+   },
+   {
+    "no": "5",
+    "title": {
+     "en": "Root causes proved",
+     "ar": "الأسباب الجذرية مثبتة"
+    },
+    "text": {
+     "en": "From RCA, Fishbone, 5 Whys or data.",
+     "ar": "من RCA أو عظمة السمكة أو لماذا الخمس أو البيانات."
+    },
+    "ref": "10.2.1 b 2"
+   },
+   {
+    "no": "6",
+    "title": {
+     "en": "A tested countermeasure for each cause",
+     "ar": "إجراء مضاد لكل سبب، مختبر"
+    },
+    "text": {
+     "en": "Small first, then the roll-out.",
+     "ar": "صغيراً أولاً، ثم التعميم."
+    },
+    "ref": "GD-5"
+   },
+   {
+    "no": "7",
+    "title": {
+     "en": "The plan: what, who, when",
+     "ar": "الخطة: ماذا ومن ومتى"
+    },
+    "text": {
+     "en": "With the corrective actions of a nonconformity in CAPA.",
+     "ar": "والإجراءات التصحيحية لعدم المطابقة في CAPA."
+    },
+    "ref": "6.2.2"
+   },
+   {
+    "no": "8",
+    "title": {
+     "en": "Follow-up against the goal",
+     "ar": "المتابعة مقابل الهدف"
+    },
+    "text": {
+     "en": "The same measure, over a stated period.",
+     "ar": "المقياس نفسه، لفترة محددة."
+    },
+    "ref": "10.2.1 d"
+   },
+   {
+    "no": "9",
+    "title": {
+     "en": "Standardise, or start again",
+     "ar": "وحّد أو ابدأ من جديد"
+    },
+    "text": {
+     "en": "What worked goes into the system; what is left starts a new cycle.",
+     "ar": "ما نجح يدخل النظام، وما بقي يبدأ دورة جديدة."
+    },
+    "ref": "10.2.1 f"
+   },
+   {
+    "no": "10",
+    "title": {
+     "en": "Share the lesson",
+     "ar": "شارك الدرس"
+    },
+    "text": {
+     "en": "Knowledge for the organization, not a report in an archive.",
+     "ar": "معرفة للمنشأة، لا تقرير في أرشيف."
+    },
+    "ref": "7.1.6"
+   }
+  ],
+  "related": [
+   {
+    "code": "PDCA",
+    "name": {
+     "en": "PDCA cycle",
+     "ar": "دورة PDCA"
+    },
+    "text": {
+     "en": "An A3 is the story of one cycle; the second cycle for what is left open is run in the PDCA tool and named by its id in the follow-up.",
+     "ar": "صفحة A3 قصة دورة واحدة؛ والدورة الثانية لما بقي مفتوحاً تُدار في أداة PDCA وتُذكر برقمها في المتابعة."
+    }
+   },
+   {
+    "code": "RCA",
+    "name": {
+     "en": "Root cause analysis — investigation",
+     "ar": "تحليل السبب الجذري — التحقيق"
+    },
+    "text": {
+     "en": "For a severe or complex problem, the analysis block takes the proved root causes from the investigation by its id (read-only), and the investigation lists the A3s that name it.",
+     "ar": "للمشكلة الجسيمة أو المعقدة، تأخذ كتلة التحليل الأسباب الجذرية المثبتة من التحقيق برقمه (قراءة فقط)، ويعرض التحقيق صفحات A3 التي تذكره."
+    }
+   },
+   {
+    "code": "CAPA",
+    "name": {
+     "en": "Corrective action",
+     "ar": "الإجراءات التصحيحية"
+    },
+    "text": {
+     "en": "When a nonconformity is involved, its corrective actions, their follow-up and closure stay in the CAPA record the page names by id.",
+     "ar": "عندما توجد حالة عدم مطابقة، تبقى الإجراءات التصحيحية ومتابعتها وإغلاقها في سجل CAPA الذي تذكره الصفحة برقمه."
+    }
+   },
+   {
+    "code": "Pareto",
+    "name": {
+     "en": "Pareto — vital few analysis",
+     "ar": "باريتو — تحليل القلة الحيوية"
+    },
+    "text": {
+     "en": "Frames the gap: a vital-few category opens an A3 with its value and period, and its categories draw the current condition.",
+     "ar": "يؤطر الفجوة: الفئة الحيوية تفتح صفحة A3 بقيمتها وفترتها، وترسم فئاتها الوضع الحالي."
+    }
+   },
+   {
+    "code": "Fishbone",
+    "name": {
+     "en": "Fishbone",
+     "ar": "عظمة السمكة"
+    },
+    "text": {
+     "en": "Maps the possible causes when there are several paths; its verified root cause is taken by analysis id.",
+     "ar": "ترسم الأسباب المحتملة عندما تتعدد المسارات، ويُؤخذ سببها الجذري المتحقق منه برقم التحليل."
+    }
+   },
+   {
+    "code": "5 Whys",
+    "name": {
+     "en": "5 Whys",
+     "ar": "لماذا الخمس"
+    },
+    "text": {
+     "en": "Digs down one clear path; its tested root cause is taken by analysis id.",
+     "ar": "تحفر في مسار واحد واضح، ويُؤخذ سببها الجذري المختبر برقم التحليل."
+    }
+   }
+  ],
+  "serves": [
+   {
+    "code": "ISO 9001:2026 §0.3.2",
+    "name": {
+     "en": "The PDCA cycle (introduction)",
+     "ar": "دورة PDCA (المقدمة)"
+    },
+    "text": {
+     "en": "Plan, Do, Check and Act, applicable to all processes and to the system as a whole. The introduction explains; it sets no requirements.",
+     "ar": "الخطة والتنفيذ والتحقق والتصرف، وتنطبق على كل العمليات وعلى النظام كله. المقدمة شرح وليست متطلبات."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 §6.2",
+    "name": {
+     "en": "Objectives and planning to achieve them",
+     "ar": "الأهداف والتخطيط لتحقيقها"
+    },
+    "text": {
+     "en": "Measurable, monitored objectives, and a plan that sets what will be done, resources, who, when and how results are evaluated.",
+     "ar": "أهداف قابلة للقياس ومرصودة، وخطة تحدد ما سيُعمل والموارد والمسؤول والموعد وطريقة تقييم النتائج."
+    }
+   },
+   {
+    "code": "ISO 9001:2026 §10.2.1",
+    "name": {
+     "en": "Corrective action and the review of its effectiveness",
+     "ar": "الإجراء التصحيحي ومراجعة فعاليته"
+    },
+    "text": {
+     "en": "Determining the causes, implementing the action, reviewing its effectiveness, and changing the system if necessary.",
+     "ar": "تحديد الأسباب، وتنفيذ الإجراء، ومراجعة فعاليته، وتعديل النظام عند الحاجة."
+    }
+   },
+   {
+    "code": "ISO 9000:2026 §3.7.11 · §3.7.17 · §4.2.7",
+    "name": {
+     "en": "Objective, effectiveness and evidence-based decisions",
+     "ar": "الهدف والفعالية والقرار المبني على الدليل"
+    },
+    "text": {
+     "en": "An objective is a result to be achieved, effectiveness is the extent planned results are achieved, and decisions rest on facts and data analysis.",
+     "ar": "الهدف نتيجة يراد تحقيقها، والفعالية مدى تحقيق النتائج المخطط لها، والقرار يُبنى على الوقائع وتحليل البيانات."
+    }
+   },
+   {
+    "code": "A3 · Lean · ISO 10009:2024 §14.7 · ISO 10017",
+    "name": {
+     "en": "Method and tool references (not verified)",
+     "ar": "مراجع المنهج والأدوات (غير متحقق منه)"
+    },
+    "text": {
+     "en": "No A3 or lean reference is uploaded to the project, so what is said here about the method is practical guidance, “not verified” against a text. ISO 10009:2024 names “8D and A3 charts” among the other relevant tools of 14.7, with no detailed review, and shows storyboards in Annex B; see the ISO 10009 guide on the platform. ISO 10017 is not uploaded.",
+     "ar": "لا يوجد مرجع لمنهج A3 أو الإنتاج الرشيق مرفوع إلى المشروع، فما يرد عن المنهج هنا إرشاد تطبيقي «غير متحقق منه» من نص. وتذكر ISO 10009:2024 «مخططات 8D وA3» بالاسم ضمن الأدوات الأخرى ذات الصلة في البند 14.7 دون مراجعة تفصيلية، وتعرض لوحات القصة في الملحق B؛ والشرح في دليل ISO 10009 على المنصة. أما ISO 10017 فغير مرفوعة."
+    }
+   }
+  ],
+  "clauses": [
+   {
+    "id": "0.3.2",
+    "phase": "frame",
+    "title": {
+     "en": "Introduction 0.3.2 Plan-Do-Check-Act cycle",
+     "ar": "المقدمة 0.3.2 دورة PDCA"
+    },
+    "short": {
+     "en": "0.3.2 · PDCA",
+     "ar": "0.3.2 · PDCA"
+    },
+    "intro": {
+     "en": "An A3 is the story of one PDCA cycle for one problem. The first half is the Plan; the second half is Do, Check and Act. One person owns it and a coach reviews it.",
+     "ar": "صفحة A3 قصة دورة PDCA واحدة لمشكلة واحدة. النصف الأول هو الخطة، والنصف الثاني هو التنفيذ والتحقق والتصرف. ويملكها شخص واحد ويراجعها موجّه."
+    },
+    "items": [
+     {
+      "ref": "s1-1",
+      "clause": "0.3.2",
+      "title": {
+       "en": "The page on the PDCA cycle",
+       "ar": "الصفحة على دورة PDCA"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the introduction of ISO 9001:2026 describes the PDCA cycle: Plan establishes the objectives of the system and its processes and the resources needed, and determines and addresses risks and opportunities; Do implements what was planned; Check monitors and, as applicable, measures processes, products and services against policies, objectives, requirements and planned activities and reports the results; Act takes actions to improve the system's performance. The cycle applies to all processes and to the system as a whole. The introduction explains; it sets no requirements.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تصف مقدمة ISO 9001:2026 دورة PDCA: الخطة تضع أهداف النظام وعملياته والموارد اللازمة وتحدد المخاطر والفرص وتعالجها، والتنفيذ ينفذ ما خُطط له، والتحقق يرصد العمليات والمنتجات والخدمات ويقيسها حيث ينطبق مقابل السياسات والأهداف والمتطلبات والأنشطة المخطط لها ويبلغ النتائج، والتصرف يتخذ إجراءات لتحسين أداء النظام. وتنطبق الدورة على كل العمليات وعلى النظام كله. والمقدمة شرح، وليست متطلبات."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: on the concrete A3: blocks 1 to 4 (background, condition, goal, analysis) are the Plan, blocks 5 and 6 the Do, and block 7 the Check and Act.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في صفحة الخرسانة: الكتل 1 إلى 4 (الخلفية والوضع والهدف والتحليل) هي الخطة، والكتلتان 5 و6 التنفيذ، والكتلة 7 التحقق والتصرف."
+      },
+      "how": [
+       {
+        "en": "Read the page top to bottom as one story",
+        "ar": "اقرأ الصفحة من أعلى إلى أسفل كقصة واحدة"
+       },
+       {
+        "en": "Do not move to countermeasures before the Plan is complete",
+        "ar": "لا تنتقل إلى الإجراءات قبل أن تكتمل الخطة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A complete A3 with its seven blocks",
+        "ar": "صفحة A3 كاملة بكتلها السبع"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A page that starts with the solution",
+        "ar": "صفحة تبدأ بالحل"
+       },
+       {
+        "en": "The cycle stops at Do and never reaches Check",
+        "ar": "الدورة تتوقف عند التنفيذ ولا تصل إلى التحقق"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "A3 owner",
+       "ar": "مالك الصفحة"
+      },
+      "kpi": {
+       "en": "Share of A3s that reached the follow-up",
+       "ar": "نسبة الصفحات التي وصلت إلى المتابعة"
+      }
+     },
+     {
+      "ref": "s1-2",
+      "clause": "GD-1",
+      "title": {
+       "en": "One owner and a coach",
+       "ar": "مالك واحد وموجّه"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: an A3 is owned by one person who writes it and goes to the workplace to see. The coach or mentor is someone else who reviews it. A page written by a whole team or a consultant teaches no one.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: يملك صفحة A3 شخص واحد يكتبها بنفسه ويذهب إلى مكان العمل ليرى. والموجّه أو المرشد شخص آخر يراجعها. الصفحة التي يكتبها فريق كامل أو مستشار لا يتعلم منها أحد."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the owner of the concrete A3 is the project manager, the coach is the quality manager and the sponsor is the projects director.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: مالك صفحة الخرسانة مدير المشروع، والموجّه مدير الجودة، والراعي مدير المشاريع."
+      },
+      "how": [
+       {
+        "en": "Name the owner and the coach at the top of the page",
+        "ar": "سمِّ المالك والموجّه في رأس الصفحة"
+       },
+       {
+        "en": "The coach is not the owner",
+        "ar": "لا يكون الموجّه هو المالك"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The page header with owner, coach and sponsor",
+        "ar": "رأس الصفحة بالمالك والموجّه والراعي"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "“The team” as the owner",
+        "ar": "«الفريق» مالكاً"
+       },
+       {
+        "en": "The manager writes the page for the owner",
+        "ar": "المدير يكتب الصفحة عن المالك"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Sponsor",
+       "ar": "الراعي"
+      },
+      "kpi": {
+       "en": "Share of A3s with one owner and a different coach",
+       "ar": "نسبة الصفحات بمالك واحد وموجّه غيره"
+      }
+     },
+     {
+      "ref": "s1-3",
+      "clause": "GD-2",
+      "title": {
+       "en": "The coach's questions",
+       "ar": "أسئلة الموجّه"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the coach reviews through questions, not approvals: what does the number say? what is the measure? how do you know this is the cause? which cause does this countermeasure address? did you try it? how will you know it worked? what will you standardise? Each review is recorded with its date, the questions and what changed afterwards.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: يراجع الموجّه بالأسئلة لا بالتوقيع: ما الذي يقوله الرقم؟ ما المقياس؟ كيف تعرف أن هذا هو السبب؟ أي سبب يعالجه هذا الإجراء؟ هل جرّبته؟ كيف ستعرف أنه نجح؟ ما الذي ستوحّده؟ وتُسجَّل كل مراجعة بتاريخها والأسئلة وما تغيّر بعدها."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: after the follow-up the coach asked: “rejections fell to 6% against a goal below 3%: which root cause is still at work?”, and the chilled-water clause moved to the second cycle.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: سأل الموجّه بعد المتابعة: «انخفض الرفض إلى 6% والهدف أقل من 3%: أي سبب جذري ما زال يعمل؟»، فانتقل شرط تبريد الماء إلى الدورة الثانية."
+      },
+      "how": [
+       {
+        "en": "Ask; do not dictate the solution",
+        "ar": "اسأل ولا تملِ الحل"
+       },
+       {
+        "en": "Record what changed on the page after each review",
+        "ar": "سجّل ما تغيّر في الصفحة بعد كل مراجعة"
+       },
+       {
+        "en": "Review after the follow-up, not only before it",
+        "ar": "راجع بعد المتابعة لا قبلها فقط"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The dated record of the coach's reviews",
+        "ar": "سجل مراجعات الموجّه المؤرخة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A signature “approved” with no question",
+        "ar": "توقيع «موافق» بلا سؤال"
+       },
+       {
+        "en": "A coach who writes the countermeasures himself",
+        "ar": "موجّه يكتب الإجراءات بنفسه"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Coach",
+       "ar": "الموجّه"
+      },
+      "kpi": {
+       "en": "Dated reviews per A3",
+       "ar": "عدد المراجعات المؤرخة لكل صفحة"
+      }
+     }
+    ]
+   },
+   {
+    "id": "7.3",
+    "phase": "frame",
+    "title": {
+     "en": "Clause 7.3 Awareness",
+     "ar": "البند 7.3 الوعي"
+    },
+    "short": {
+     "en": "7.3 · Awareness",
+     "ar": "7.3 · الوعي"
+    },
+    "intro": {
+     "en": "The coaching conversation around an A3 is where a person sees how their work contributes to the objectives, and what to do when results are not achieved.",
+     "ar": "محادثة التوجيه حول صفحة A3 هي حيث يرى الشخص كيف يسهم عمله في الأهداف، وماذا يفعل عندما لا تتحقق النتائج."
+    },
+    "items": [
+     {
+      "ref": "s2-1",
+      "clause": "7.3",
+      "title": {
+       "en": "The A3 in coaching conversations",
+       "ar": "صفحة A3 في محادثات التوجيه"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization ensures that persons doing work under its control are aware of the quality policy, their contribution to the system's effectiveness and the benefits of improved performance, the implications of not conforming, relevant quality objectives, and the quality culture and ethical behaviour. Annex A.7.3 explains that awareness shows in daily work when people recognize whether their work meets requirements and act when processes do not achieve intended results.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تتأكد المنشأة أن من يعملون تحت سيطرتها واعون بسياسة الجودة، وبإسهامهم في فعالية النظام وفوائد تحسين الأداء، وبعواقب عدم المطابقة، وبأهداف الجودة ذات الصلة، وبثقافة الجودة والسلوك الأخلاقي. ويوضح الملحق A.7.3 أن الوعي يظهر في العمل اليومي عندما يعرف الشخص هل يستوفي عمله المتطلبات، ويتصرف عندما لا تحقق العمليات النتائج المقصودة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in the lifting A3 review the coach asked the lifting supervisor “why were two permits signed after the lift?”, and the supervisor himself added a rule that the operator does not lift without a signature.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في مراجعة صفحة الرفع سأل الموجّه مشرف الرفع «لماذا وُقّع تصريحان بعد الرفع؟»، فأضاف المشرف بنفسه شرطاً ألا يرفع المشغل دون توقيع."
+      },
+      "how": [
+       {
+        "en": "Have the owner present the page, not their manager",
+        "ar": "اجعل المالك يقدم صفحته لا مديره"
+       },
+       {
+        "en": "Ask until the owner sees the gap",
+        "ar": "اسأل حتى يرى المالك الفجوة بنفسه"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Dated reviews with the questions and what changed",
+        "ar": "مراجعات مؤرخة بالأسئلة وما تغيّر"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "The page is emailed and never discussed",
+        "ar": "الصفحة تُرسل بالبريد ولا تُناقش"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Coach",
+       "ar": "الموجّه"
+      },
+      "kpi": {
+       "en": "Share of A3s reviewed in a conversation",
+       "ar": "نسبة الصفحات التي روجعت في محادثة"
+      }
+     }
+    ]
+   },
+   {
+    "id": "9.1.3",
+    "phase": "plan",
+    "title": {
+     "en": "Clause 9.1.3 Analysis and evaluation",
+     "ar": "البند 9.1.3 التحليل والتقييم"
+    },
+    "short": {
+     "en": "9.1.3 · Facts",
+     "ar": "9.1.3 · الوقائع"
+    },
+    "intro": {
+     "en": "The background says why the problem matters with a measure; the current condition says where we are in numbers: a baseline, a period, a chart and the gap in one line.",
+     "ar": "الخلفية تقول لماذا تهم المشكلة بمقياس، والوضع الحالي يقول أين نحن بالأرقام: قيمة أساسية وفترة ورسم وفجوة في سطر."
+    },
+    "items": [
+     {
+      "ref": "s3-1",
+      "clause": "9.1.3",
+      "title": {
+       "en": "The current condition from facts and data",
+       "ar": "الوضع الحالي بالوقائع والبيانات"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization analyses and evaluates data and information from monitoring and measurement, and uses the results to evaluate conformity, customer satisfaction, the system's performance and effectiveness, and the need for improvement; methods can include statistical techniques. The evidence-based decision-making principle in ISO 9000:2026 (4.2.7) says facts, evidence and data analysis give decisions objectivity. That is why the current condition is written in numbers, drawn, not in adjectives.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحلل المنشأة البيانات والمعلومات الناتجة عن الرصد والقياس وتقيّمها، وتستخدم النتائج لتقييم المطابقة ورضا العملاء وأداء النظام وفعاليته والحاجة إلى التحسين، وقد تشمل الطرق تقنيات إحصائية. ويقول مبدأ القرار المبني على الدليل في ISO 9000:2026 ‏(4.2.7) إن الوقائع والأدلة وتحليل البيانات تعطي القرار موضوعية. لذلك يُكتب الوضع الحالي بالأرقام مرسومة، لا بالصفات."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “9.2% of loads rejected between 1 April and 31 May (35 of 380)” with a run chart of four periods, instead of “rejections are very high”.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «9.2% من الشحنات مرفوضة بين 1 أبريل و31 مايو (35 من 380)» مع خط زمني لأربع فترات، بدل «الرفض مرتفع جداً»."
+      },
+      "how": [
+       {
+        "en": "Write the baseline, its period and its source",
+        "ar": "اكتب القيمة الأساسية وفترتها ومصدرها"
+       },
+       {
+        "en": "Draw it: bars, a run chart or a Pareto",
+        "ar": "ارسمها: أعمدة أو خط زمني أو باريتو"
+       },
+       {
+        "en": "Write the gap in one line",
+        "ar": "اكتب الفجوة في سطر واحد"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The chart and the data source",
+        "ar": "الرسم ومصدر البيانات"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "“Many” and “bad” instead of numbers",
+        "ar": "«كثير» و«سيئ» بدل الأرقام"
+       },
+       {
+        "en": "A number with no period",
+        "ar": "رقم بلا فترة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Data owner",
+       "ar": "مالك البيانات"
+      },
+      "kpi": {
+       "en": "Share of A3s with a baseline, period and chart",
+       "ar": "نسبة الصفحات بأساس وفترة ورسم"
+      }
+     },
+     {
+      "ref": "s3-2",
+      "clause": "GD-3",
+      "title": {
+       "en": "A background with a measure that matters",
+       "ar": "خلفية بمقياس يهم"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the page starts with why: the effect of the problem on the customer, safety, cost or strategy, in a short paragraph, with the measure that shows the effect. A problem whose effect is unknown does not deserve a page.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: تبدأ الصفحة بلماذا: أثر المشكلة على العميل أو السلامة أو التكلفة أو الاستراتيجية، في فقرة قصيرة، مع المقياس الذي يُظهر هذا الأثر. مشكلة لا يُعرف أثرها لا تستحق صفحة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “every rejected load delays the pour, and slab pours slipped three days on the critical path”, with the measure “share of loads rejected”.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «كل شحنة مرفوضة تؤخر الصب، وتأخر صب البلاطات ثلاثة أيام على المسار الحرج» مع مقياس «نسبة الشحنات المرفوضة»."
+      },
+      "how": [
+       {
+        "en": "Tie the background to one measure",
+        "ar": "اربط الخلفية بمقياس واحد"
+       },
+       {
+        "en": "Write it in a short paragraph",
+        "ar": "اكتبها في فقرة قصيرة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The background and measure in block 1",
+        "ar": "الخلفية والمقياس في الكتلة 1"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A background with no number and no effect",
+        "ar": "خلفية بلا رقم ولا أثر"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "A3 owner",
+       "ar": "مالك الصفحة"
+      },
+      "kpi": {
+       "en": "Share of A3s with a background and a measure",
+       "ar": "نسبة الصفحات بخلفية ومقياس"
+      }
+     }
+    ]
+   },
+   {
+    "id": "6.2",
+    "phase": "plan",
+    "title": {
+     "en": "Clause 6.2 Quality objectives and planning to achieve them",
+     "ar": "البند 6.2 أهداف الجودة والتخطيط لتحقيقها"
+    },
+    "short": {
+     "en": "6.2 · Goal",
+     "ar": "6.2 · الهدف"
+    },
+    "intro": {
+     "en": "The goal is a number with a date written before the causes are known; the plan says what, who, when and how results are evaluated.",
+     "ar": "الهدف رقم بتاريخ يُكتب قبل معرفة الأسباب، والخطة تقول ماذا ومن ومتى وكيف تُقيَّم النتائج."
+    },
+    "items": [
+     {
+      "ref": "s4-1",
+      "clause": "6.2.1",
+      "title": {
+       "en": "A measurable goal with a date",
+       "ar": "هدف قابل للقياس بتاريخ"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization establishes quality objectives at relevant functions, levels and processes; they are consistent with the policy, measurable, take requirements into account, monitored, communicated, updated and available as documented information. In ISO 9000:2026 (3.7.11) an objective is a result to be achieved, and it can be called an aim, a goal or a target.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تضع المنشأة أهداف الجودة في الوظائف والمستويات والعمليات ذات الصلة، وتكون متسقة مع السياسة، وقابلة للقياس، وتراعي المتطلبات، ومرصودة، ومبلغة، ومحدّثة، ومتاحة معلومات موثقة. والهدف في ISO 9000:2026 ‏(3.7.11) نتيجة يراد تحقيقها، ويمكن أن يسمى غاية أو مستهدفاً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: “share of loads rejected from 9.2% to below 3% by 31 August 2026”, written on 2 June, before the investigation started on 4 June.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: «نسبة الشحنات المرفوضة من 9.2% إلى أقل من 3% بحلول 31 أغسطس 2026»، كُتب في 2 يونيو، قبل بدء التحقيق في 4 يونيو."
+      },
+      "how": [
+       {
+        "en": "Write the measure, the value from and to, and the date",
+        "ar": "اكتب المقياس والقيمة من وإلى والموعد"
+       },
+       {
+        "en": "Date when the goal was written",
+        "ar": "أرّخ كتابة الهدف"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The goal with the date it was written in block 3",
+        "ar": "الهدف بتاريخ كتابته في الكتلة 3"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "“Improve quality” as the goal",
+        "ar": "«تحسين الجودة» هدفاً"
+       },
+       {
+        "en": "A goal with no date",
+        "ar": "هدف بلا موعد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "A3 owner",
+       "ar": "مالك الصفحة"
+      },
+      "kpi": {
+       "en": "Share of A3s with a dated numeric goal",
+       "ar": "نسبة الصفحات بهدف رقمي مؤرخ"
+      }
+     },
+     {
+      "ref": "s4-2",
+      "clause": "GD-4",
+      "title": {
+       "en": "The goal before the causes, not changed to fit the result",
+       "ar": "الهدف قبل الأسباب، ولا يُعدَّل ليناسب النتيجة"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: the goal is written before the causes are known, because it says what must happen, not what we know we can do. It is not changed after the result to look met. If it is changed for a real reason (the requirement changed or the baseline was measured wrongly), the first target stays written with the reason. The tool compares the date the goal was written with the date the analysis started.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: يُكتب الهدف قبل أن تُعرف الأسباب، لأنه يقول ما يجب أن يحدث، لا ما نعرف أننا نستطيع فعله. ولا يُعدَّل بعد النتيجة ليبدو أنه تحقق. إن عُدّل لسبب حقيقي (تغيّر المتطلب أو ظهر خطأ في القياس الأساسي) يبقى الهدف الأول مكتوباً ومعه السبب. تقارن الأداة تاريخ كتابة الهدف بتاريخ بدء التحليل."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the concrete goal stayed below 3% after the follow-up came in at 6%, so the result was recorded honestly as “partly met”.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: بقي هدف الخرسانة أقل من 3% بعد أن جاءت المتابعة 6%، فسُجّلت النتيجة «تحقق جزئياً» بصدق."
+      },
+      "how": [
+       {
+        "en": "Date the goal and the analysis",
+        "ar": "أرّخ الهدف والتحليل"
+       },
+       {
+        "en": "Write the reason for any change",
+        "ar": "اكتب سبب أي تعديل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The goal's date is not after the analysis date",
+        "ar": "تاريخ الهدف لا يأتي بعد تاريخ التحليل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A goal written after the solution was chosen",
+        "ar": "هدف يُكتب بعد اختيار الحل"
+       },
+       {
+        "en": "A goal lowered after the follow-up",
+        "ar": "هدف يُخفَّض بعد المتابعة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Coach",
+       "ar": "الموجّه"
+      },
+      "kpi": {
+       "en": "Share of goals written before the analysis",
+       "ar": "نسبة الأهداف المكتوبة قبل التحليل"
+      }
+     },
+     {
+      "ref": "s4-3",
+      "clause": "6.2.2",
+      "title": {
+       "en": "The plan: what, who, when",
+       "ar": "الخطة: ماذا ومن ومتى"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: when planning how to achieve its objectives, the organization determines what will be done, what resources will be required, who will be responsible, when it will be completed, and how the results will be evaluated.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: عند التخطيط لتحقيق الأهداف تحدد المنشأة ما سيُعمل، والموارد اللازمة، والمسؤول، وموعد الإنجاز، وطريقة تقييم النتائج."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: each countermeasure has one line or more: “revise method statement MS-CON-04 — project manager — 15 June — done”, with the corrective action in CAPA CA-EX-04.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: لكل إجراء مضاد سطر أو أكثر: «تعديل بيان الطريقة MS-CON-04 — مدير المشروع — 15 يونيو — تم»، والإجراء التصحيحي في CAPA ‏CA-EX-04."
+      },
+      "how": [
+       {
+        "en": "A line with an owner and a date for each countermeasure",
+        "ar": "سطر بمسؤول وتاريخ لكل إجراء مضاد"
+       },
+       {
+        "en": "Put the actions of a nonconformity in CAPA",
+        "ar": "ضع إجراءات عدم المطابقة في CAPA"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The plan table in block 6",
+        "ar": "جدول الخطة في الكتلة 6"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A plan with no owner or date",
+        "ar": "خطة بلا مسؤول أو موعد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "A3 owner",
+       "ar": "مالك الصفحة"
+      },
+      "kpi": {
+       "en": "Share of plan steps done on time",
+       "ar": "نسبة خطوات الخطة المنجزة في موعدها"
+      }
+     }
+    ]
+   },
+   {
+    "id": "10.2",
+    "phase": "cause",
+    "title": {
+     "en": "Clause 10.2 Nonconformity and corrective action",
+     "ar": "البند 10.2 عدم المطابقة والإجراء التصحيحي"
+    },
+    "short": {
+     "en": "10.2 · Causes",
+     "ar": "10.2 · الأسباب"
+    },
+    "intro": {
+     "en": "Root causes proved by evidence, a tested countermeasure for each, a follow-up on the same measure against the goal, then what goes into the system.",
+     "ar": "أسباب جذرية مثبتة بالدليل، وإجراء مضاد مختبر لكل منها، ومتابعة بالمقياس نفسه مقابل الهدف، ثم ما يدخل النظام."
+    },
+    "items": [
+     {
+      "ref": "s5-1",
+      "clause": "10.2.1 b 2",
+      "title": {
+       "en": "Proved root causes, not opinions",
+       "ar": "أسباب جذرية مثبتة لا آراء"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: to evaluate the need for action to eliminate the cause(s) of a nonconformity so it does not recur or occur elsewhere, the organization determines its causes. On an A3 a root cause is proved with objective evidence, which ISO 9000:2026 (3.8.6) defines as data supporting the existence or truth of something. “Human error” is a starting point for a question, not a root cause.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: لتقييم الحاجة إلى إجراء يزيل سبب أو أسباب عدم المطابقة حتى لا تتكرر أو تقع في مكان آخر، تحدد المنشأة أسبابها. والسبب الجذري في صفحة A3 يُثبت بدليل موضوعي، وهو في ISO 9000:2026 ‏(3.8.6) بيانات تدعم وجود الشيء أو صحته. و«الخطأ البشري» نقطة بداية للسؤال، وليس سبباً جذرياً."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: two root causes were taken from investigation RC-EX-01 with their evidence: “no summer pour window” (24 of 25 rejected loads between noon and 4 pm) and “the contract does not require chilled water” (only 40 of 380 loads with chilled water).",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: أُخذ سببان جذريان من التحقيق RC-EX-01 مع دليل كل منهما: «لا نافذة صب صيفية» (24 من 25 شحنة مرفوضة بين الظهر والرابعة) و«العقد لا يطلب ماء مبرداً» (40 من 380 شحنة فقط بماء مبرد)."
+      },
+      "how": [
+       {
+        "en": "Take the causes from RCA, Fishbone or 5 Whys by id",
+        "ar": "خذ الأسباب من RCA أو عظمة السمكة أو لماذا الخمس برقمها"
+       },
+       {
+        "en": "Write the evidence next to each cause",
+        "ar": "اكتب الدليل بجانب كل سبب"
+       },
+       {
+        "en": "Rewrite any cause that names a person",
+        "ar": "أعد كتابة كل سبب يشير إلى شخص"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The analysis block with causes, evidence and methods",
+        "ar": "كتلة التحليل بالأسباب وأدلتها وطرقها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "“Lack of awareness” as a cause with no evidence",
+        "ar": "«قلة الوعي» سبباً بلا دليل"
+       },
+       {
+        "en": "“Operator error” as a root cause",
+        "ar": "«خطأ العامل» سبباً جذرياً"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "A3 owner",
+       "ar": "مالك الصفحة"
+      },
+      "kpi": {
+       "en": "Share of causes proved by evidence",
+       "ar": "نسبة الأسباب المثبتة بدليل"
+      }
+     },
+     {
+      "ref": "s5-2",
+      "clause": "GD-5",
+      "title": {
+       "en": "A countermeasure for each cause, tested before roll-out",
+       "ar": "إجراء مضاد لكل سبب، مختبر قبل التعميم"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: every countermeasure is tied to a proved root cause, and every proved cause has a countermeasure. A countermeasure is tested on a small scale (two pours, one tower, one site) before it is rolled out, and its expected effect is written. A countermeasure that was not tested is an assumption.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: كل إجراء مضاد مرتبط بسبب جذري مثبت، ولكل سبب مثبت إجراء. ويُختبر الإجراء على نطاق صغير (صبّتان، برج واحد، موقع واحد) قبل تعميمه، ويُسجَّل الأثر المتوقع. والإجراء الذي لم يُختبر افتراض."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the new lift plan template was trialled on Tower B for two weeks (38 bundle lifts, none with one sling) before it was issued to all three towers.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: جُرّب نموذج خطة الرفع الجديد في البرج ب لأسبوعين (38 رفعة حزم، لا واحدة بحبل واحد) قبل إصداره للأبراج الثلاثة."
+      },
+      "how": [
+       {
+        "en": "Tie each countermeasure to its cause's code",
+        "ar": "اربط كل إجراء برمز سببه"
+       },
+       {
+        "en": "Trial small and record the result",
+        "ar": "جرّب صغيراً وسجّل النتيجة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The countermeasure table with causes and test results",
+        "ar": "جدول الإجراءات بأسبابها ونتيجة الاختبار"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A list of actions tied to no cause",
+        "ar": "قائمة إجراءات لا ترتبط بسبب"
+       },
+       {
+        "en": "Immediate roll-out with no trial",
+        "ar": "تعميم فوري بلا تجربة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "A3 owner",
+       "ar": "مالك الصفحة"
+      },
+      "kpi": {
+       "en": "Share of countermeasures tested before roll-out",
+       "ar": "نسبة الإجراءات المختبرة قبل التعميم"
+      }
+     },
+     {
+      "ref": "s5-3",
+      "clause": "10.2.1 d",
+      "title": {
+       "en": "Follow-up: the effect against the goal",
+       "ar": "المتابعة: الأثر مقابل الهدف"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization reviews the effectiveness of any corrective action taken. In ISO 9000:2026 (3.7.17) effectiveness is the extent to which planned activities are realized and planned results achieved. So the follow-up measures the same measure the same way over a stated period, and compares the result with the written goal.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تراجع المنشأة فعالية أي إجراء تصحيحي اتُّخذ. والفعالية في ISO 9000:2026 ‏(3.7.17) مدى تنفيذ الأنشطة المخطط لها وتحقيق النتائج المخطط لها. لذلك تقيس المتابعة المقياس نفسه بالطريقة نفسها لفترة محددة، وتقارن النتيجة بالهدف المكتوب."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: in July and August 20 of 335 loads were rejected (6%) against a goal below 3%: “partly met”.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: في يوليو وأغسطس رُفضت 20 من 335 شحنة (6%) مقابل هدف أقل من 3%: «تحقق جزئياً»."
+      },
+      "how": [
+       {
+        "en": "Set the follow-up period before it starts",
+        "ar": "حدّد فترة المتابعة قبل أن تبدأ"
+       },
+       {
+        "en": "Compare with the goal, not with a wish",
+        "ar": "قارن بالهدف لا بالأمنية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The follow-up value, its period and its result",
+        "ar": "قيمة المتابعة وفترتها ونتيجتها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "“It improved” with no number",
+        "ar": "«تحسن» دون رقم"
+       },
+       {
+        "en": "A different measure in the follow-up",
+        "ar": "مقياس مختلف في المتابعة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Data owner",
+       "ar": "مالك البيانات"
+      },
+      "kpi": {
+       "en": "Share of A3s with a complete follow-up",
+       "ar": "نسبة الصفحات بمتابعة مكتملة"
+      }
+     },
+     {
+      "ref": "s5-4",
+      "clause": "10.2.1 f",
+      "title": {
+       "en": "Standardise what worked, or start again",
+       "ar": "وحّد ما نجح، أو ابدأ من جديد"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization makes changes to the quality system if necessary, and updates the risks and opportunities if necessary (10.2.1 e). On an A3 this means what worked goes into the procedure, the form, the contract or the training, and what was not achieved starts a new page or cycle.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تجري المنشأة تغييرات على نظام الجودة إذا لزم ذلك، وتحدّث المخاطر والفرص إذا لزم (10.2.1 هـ). وفي صفحة A3 يعني ذلك أن يدخل ما نجح إلى الإجراء أو النموذج أو العقد أو التدريب، وأن يبدأ ما لم يتحقق صفحة أو دورة جديدة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the pour window went into method statement MS-CON-04 rev 3, and compliance with chilled water moved to cycle PD-EX-03.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: دخلت نافذة الصب إلى بيان الطريقة MS-CON-04 الإصدار 3، وانتقل الالتزام بتبريد الماء إلى الدورة PD-EX-03."
+      },
+      "how": [
+       {
+        "en": "Name the document and its revision",
+        "ar": "سمِّ الوثيقة وإصدارها"
+       },
+       {
+        "en": "Write what is left open and the next step",
+        "ar": "اكتب ما بقي مفتوحاً والخطوة التالية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The revised document and its revision",
+        "ar": "الوثيقة المعدلة وإصدارها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A countermeasure that worked and was written nowhere",
+        "ar": "إجراء نجح ولم يُكتب في أي مكان"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Process owner",
+       "ar": "مالك العملية"
+      },
+      "kpi": {
+       "en": "Share of A3s whose result was standardised",
+       "ar": "نسبة الصفحات التي وُحّدت نتيجتها"
+      }
+     },
+     {
+      "ref": "s5-5",
+      "clause": "A.10.2",
+      "title": {
+       "en": "When a problem deserves an A3",
+       "ar": "متى تستحق المشكلة صفحة A3"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: Annex A.10.2 explains that the organization decides how to address nonconformities, including the extent of investigation and the methods used, based on its context, considering the risk of recurrence, the impact and the requirements of customers and other interested parties. A simple problem needs a correction and a short CAPA record; a recurring or high-impact one deserves an A3; a severe one a full RCA investigation whose causes the page takes.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يوضح الملحق A.10.2 أن المنشأة تحدد طريقة التعامل مع عدم المطابقة، ومنها مدى التحقيق والطرق المستخدمة، بحسب سياقها، وتراعي خطر التكرار والأثر ومتطلبات العملاء والأطراف المعنية. فالمشكلة البسيطة يكفيها تصحيح وسجل CAPA قصير، والمشكلة المتكررة أو ذات الأثر تستحق صفحة A3، والجسيمة تحقيق RCA كاملاً تأخذ الصفحة أسبابه."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the superseded drawings got a short A3 with one cause; the lifting near miss got a full RCA investigation, then an A3 to manage the countermeasures and the follow-up.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: المخططات الملغاة أخذت صفحة قصيرة بسبب واحد، والحادث الوشيك في الرفع أخذ تحقيق RCA كاملاً ثم صفحة A3 لإدارة الإجراءات والمتابعة."
+      },
+      "how": [
+       {
+        "en": "Choose the tool by risk and recurrence",
+        "ar": "اختر الأداة بحسب الخطر والتكرار"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A written rule for when an A3 is opened",
+        "ar": "قاعدة مكتوبة لمتى تُفتح صفحة A3"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "An A3 for every small thing",
+        "ar": "صفحة A3 لكل صغيرة"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Share of recurring problems with an A3",
+       "ar": "نسبة المشكلات المتكررة التي لها صفحة"
+      }
+     }
+    ]
+   },
+   {
+    "id": "4.2",
+    "phase": "cause",
+    "title": {
+     "en": "ISO 9000:2026 · 4.2 Quality management principles",
+     "ar": "ISO 9000:2026 · 4.2 مبادئ إدارة الجودة"
+    },
+    "short": {
+     "en": "4.2 · Principles",
+     "ar": "4.2 · المبادئ"
+    },
+    "intro": {
+     "en": "Two principles the method stands on: evidence-based decisions, and improvement.",
+     "ar": "مبدآن يقف عليهما المنهج: القرار المبني على الدليل، والتحسين."
+    },
+    "items": [
+     {
+      "ref": "s6-1",
+      "clause": "4.2.7",
+      "title": {
+       "en": "Toolbox methods instead of opinion",
+       "ar": "طرق الصندوق بدل الرأي"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the evidence-based decision-making principle in ISO 9000:2026 says decisions based on the analysis and evaluation of data and information are more likely to produce the desired results, and that it is important to understand cause and effect relationships and unintended consequences. That is why an A3 uses the toolbox methods: Pareto to frame the gap, Fishbone and 5 Whys for the causes, RCA for a full investigation, and data to prove.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يقول مبدأ القرار المبني على الدليل في ISO 9000:2026 إن القرارات المبنية على تحليل البيانات والمعلومات وتقييمها أرجح أن تحقق النتائج المرجوة، ومن المهم فهم علاقات السبب والنتيجة والعواقب غير المقصودة. لذلك تستخدم صفحة A3 طرق الصندوق: باريتو لتأطير الفجوة، وعظمة السمكة ولماذا الخمس للأسباب، وRCA للتحقيق الكامل، والبيانات للإثبات."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the categories of Pareto PA-EX-02 drew the current condition, and the causes came from investigation RC-EX-01, which used Fishbone FB-EX-02 and 5 Whys W5-EX-03.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: رسمت فئات باريتو PA-EX-02 الوضع الحالي، وجاءت الأسباب من التحقيق RC-EX-01 الذي استخدم عظمة السمكة FB-EX-02 ولماذا الخمس W5-EX-03."
+      },
+      "how": [
+       {
+        "en": "Record the id of the analysis that found each cause",
+        "ar": "سجّل رقم التحليل الذي وجد كل سبب"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The analysis links in the analysis block",
+        "ar": "روابط التحليلات في كتلة التحليل"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Causes from the meeting discussion only",
+        "ar": "أسباب من نقاش الاجتماع فقط"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "A3 owner",
+       "ar": "مالك الصفحة"
+      },
+      "kpi": {
+       "en": "Share of causes linked to an analysis",
+       "ar": "نسبة الأسباب المرتبطة بتحليل"
+      }
+     },
+     {
+      "ref": "s6-2",
+      "clause": "4.2.6",
+      "title": {
+       "en": "Improvement: one page after another",
+       "ar": "التحسين: صفحة تلو صفحة"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the improvement principle in ISO 9000:2026 says successful organizations have an ongoing focus on improvement. Its benefits include an enhanced focus on root cause investigation and determination and the effective use of learning. Its possible actions include educating people to apply basic tools and methodologies, and tracking the planning, implementation and results of improvement actions. In ISO 9000:2026 (3.2.3) improvement is an activity to enhance performance.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: يقول مبدأ التحسين في ISO 9000:2026 إن المنشآت الناجحة تركز على التحسين باستمرار. ومن فوائده تركيز أكبر على التحقيق في السبب الجذري وتحديده، والاستخدام الفعال للتعلم. ومن إجراءاته تعليم الناس تطبيق الأدوات والمنهجيات الأساسية، وتتبع تخطيط إجراءات التحسين وتنفيذها ونتائجها. والتحسين في ISO 9000:2026 ‏(3.2.3) نشاط لتعزيز الأداء."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the superseded drawings A3 ended with an idea for a next page: digital distribution that removes paper copies.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: انتهت صفحة المخططات الملغاة بفكرة لصفحة تالية: توزيع رقمي يُغني عن النسخ الورقية."
+      },
+      "how": [
+       {
+        "en": "Start a next page for what is left open",
+        "ar": "ابدأ صفحة تالية لما بقي مفتوحاً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The register of A3s and their results",
+        "ar": "سجل الصفحات ونتائجها"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A page closed with nothing after it",
+        "ar": "صفحة تُغلق ولا تبدأ بعدها أخرى"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Top management",
+       "ar": "الإدارة العليا"
+      },
+      "kpi": {
+       "en": "A3s completed per year",
+       "ar": "عدد الصفحات المكتملة في السنة"
+      }
+     }
+    ]
+   },
+   {
+    "id": "10.1",
+    "phase": "learn",
+    "title": {
+     "en": "Clause 10.1 Continual improvement",
+     "ar": "البند 10.1 التحسين المستمر"
+    },
+    "short": {
+     "en": "10.1 · Improvement",
+     "ar": "10.1 · التحسين"
+    },
+    "intro": {
+     "en": "A3s taken together reveal what repeats, and become improvement opportunities for the whole system.",
+     "ar": "صفحات A3 مجتمعة تكشف ما يتكرر، فتصير فرص تحسين للنظام كله."
+    },
+    "items": [
+     {
+      "ref": "s7-1",
+      "clause": "10.1",
+      "title": {
+       "en": "Read the pages together",
+       "ar": "اقرأ الصفحات معاً"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization continually improves the suitability, adequacy and effectiveness of the quality system, and considers the results of monitoring, measurement, analysis and evaluation and of management review to determine and address opportunities. Actions include improving processes, products and services, addressing future needs, and correcting, preventing or reducing undesired effects.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحسّن المنشأة باستمرار ملاءمة نظام الجودة وكفايته وفعاليته، وتنظر في نتائج الرصد والقياس والتحليل والتقييم ونتائج مراجعة الإدارة لتحديد الفرص وتعالجها. ومن الإجراءات تحسين العمليات والمنتجات والخدمات، ومعالجة الاحتياجات المستقبلية، وتصحيح الآثار غير المرغوبة أو منعها أو تقليلها."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: two of three A3s ended at “the template does not set the method” (the lift plan, the document procedure), so a review of the templates became an item for management review.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: صفحتان من ثلاث انتهتا إلى «النموذج لا يحدد الطريقة» (خطة الرفع، وإجراء الوثائق)، فصارت مراجعة النماذج بنداً في مراجعة الإدارة."
+      },
+      "how": [
+       {
+        "en": "Review the A3 dashboard every quarter",
+        "ar": "راجع لوحة صفحات A3 كل ربع سنة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The A3 summary in management review",
+        "ar": "ملخص صفحات A3 في مراجعة الإدارة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "Each page read on its own",
+        "ar": "كل صفحة تُقرأ وحدها"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Repeated patterns addressed",
+       "ar": "عدد الأنماط المتكررة المعالجة"
+      }
+     }
+    ]
+   },
+   {
+    "id": "7.1.6",
+    "phase": "learn",
+    "title": {
+     "en": "Clause 7.1.6 Organizational knowledge",
+     "ar": "البند 7.1.6 المعرفة التنظيمية"
+    },
+    "short": {
+     "en": "7.1.6 · Knowledge",
+     "ar": "7.1.6 · المعرفة"
+    },
+    "intro": {
+     "en": "A one-page story is easy to share: it is presented in minutes, and its lessons pass to other teams and sites.",
+     "ar": "الصفحة الواحدة سهلة المشاركة: تُعرض في دقائق، وتنتقل دروسها إلى الفرق والمواقع الأخرى."
+    },
+    "items": [
+     {
+      "ref": "s8-1",
+      "clause": "7.1.6",
+      "title": {
+       "en": "Share the lesson",
+       "ar": "شارك الدرس"
+      },
+      "req": {
+       "en": "Interpretive summary, not the official text: the organization determines the knowledge needed to operate its processes and achieve quality system results, and retains, applies and shares it to the extent necessary. Its forms include experience-based knowledge, knowledge built into methods and processes, and knowledge held in documented information.",
+       "ar": "ملخص تفسيري، وليس النص الرسمي: تحدد المنشأة المعرفة اللازمة لتشغيل عملياتها وتحقيق نتائج نظام الجودة، وتحتفظ بها وتطبقها وتشاركها بالقدر اللازم. ومن أشكالها المعرفة المبنية على الخبرة، والمعرفة المضمّنة في الطرق والعمليات، والمعرفة الممثّلة في المعلومات الموثقة."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the lifting A3 was presented at the weekly toolbox talk for the three towers, and the rigging sketch went into the lift plan template.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: عُرضت صفحة الرفع في حديث السلامة الأسبوعي للأبراج الثلاثة، ودخل رسم الربط في نموذج خطة الرفع."
+      },
+      "how": [
+       {
+        "en": "Present the page in a short meeting",
+        "ar": "اعرض الصفحة في اجتماع قصير"
+       },
+       {
+        "en": "Put the lesson into the method itself",
+        "ar": "ضع الدرس في الطريقة نفسها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The register of shared A3s",
+        "ar": "سجل الصفحات المشاركة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A page in a file nobody opens",
+        "ar": "صفحة في ملف لا يفتحه أحد"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "Share of A3s whose lessons were shared",
+       "ar": "نسبة الصفحات التي شوركت دروسها"
+      }
+     },
+     {
+      "ref": "s8-2",
+      "clause": "GD-6",
+      "title": {
+       "en": "Common gaps and what an auditor asks for",
+       "ar": "الفجوات الشائعة وما يطلبه المدقق"
+      },
+      "req": {
+       "en": "Practical guidance from the author's experience, not normative text: what weakens an A3 most: starting with the solution, a current condition in adjectives, a goal after the causes or with no date, “human error” as a cause, countermeasures tied to no cause and never tested, a follow-up on another measure, and nothing standardised. An auditor usually asks for: the goal and the date it was written, the evidence for each cause, each countermeasure tied to its cause, the follow-up result on the same measure, the revised document, and the CAPA record when a nonconformity is involved. The tool checks this automatically in the Audit tab.",
+       "ar": "إرشاد تطبيقي من خبرة الكاتب، وليس نصاً معيارياً: أكثر ما يضعف صفحة A3: البدء بالحل، والوضع الحالي بالصفات، والهدف بعد الأسباب أو بلا تاريخ، و«الخطأ البشري» سبباً، وإجراءات لا ترتبط بسبب ولا تُختبر، ومتابعة بمقياس آخر، وغياب ما وُحّد. ويطلب المدقق عادةً: الهدف وتاريخ كتابته، والدليل على كل سبب، وربط كل إجراء بسببه، ونتيجة المتابعة بالمقياس نفسه، والوثيقة المعدلة، وسجل CAPA عندما توجد حالة عدم مطابقة. الأداة تفحص هذا آلياً في تبويب التدقيق."
+      },
+      "ex": {
+       "en": "Illustrative example, not real data: the automatic audit on the lifting A3: every check passes up to the plan, and the follow-up does not apply yet because its period has not ended.",
+       "ar": "مثال توضيحي، وليس بيانات حقيقية: فحص التدقيق الآلي على صفحة الرفع: كل الفحوص ناجحة حتى الخطة، والمتابعة لا تنطبق بعد لأن فترتها لم تنتهِ."
+      },
+      "how": [
+       {
+        "en": "Check the Audit tab before the coach's review",
+        "ar": "راجع تبويب التدقيق قبل مراجعة الموجّه"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The automatic audit result for each A3",
+        "ar": "نتيجة التدقيق الآلي لكل صفحة"
+       }
+      ],
+      "gaps": [
+       {
+        "en": "A good-looking page with no evidence",
+        "ar": "صفحة جميلة الشكل بلا دليل"
+       }
+      ],
+      "tips": [],
+      "owner": {
+       "en": "Internal auditor",
+       "ar": "المدقق الداخلي"
+      },
+      "kpi": {
+       "en": "Audit pass rate",
+       "ar": "نسبة الفحوص الناجحة"
+      }
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "id": "form",
+    "q": {
+     "en": "Is an A3 just a form?",
+     "ar": "هل A3 مجرد نموذج؟"
+    },
+    "a": {
+     "en": "No. **The one-page limit is a discipline, not a format**: it makes you tell the whole story clearly, from why the problem matters to whether you reached the goal. A page filled in to send up to management solves nothing. What makes it a real A3: one owner who writes it, a current condition in numbers rather than adjectives, a goal written before the causes are known, proved causes, countermeasures tied to them and tested, a follow-up on the same measure, and a coach who reviews it through questions. Details in the [[tab:explain-std]].",
+     "ar": "لا. **حدّ الصفحة الواحدة انضباط، لا شكل**: يجبرك على أن تقول القصة كلها بوضوح، من لماذا تهم المشكلة إلى هل وصلنا إلى الهدف. الصفحة التي تُملأ لتُرفع إلى الإدارة لا تحل شيئاً. ما يجعلها A3 حقيقية: مالك واحد يكتبها بنفسه، ووضع حالي بالأرقام لا بالصفات، وهدف مكتوب قبل معرفة الأسباب، وأسباب مثبتة، وإجراءات مرتبطة بها ومختبرة، ومتابعة بالمقياس نفسه، وموجّه يراجعها بالأسئلة. التفاصيل في [[tab:explain-std]]."
+    }
+   },
+   {
+    "id": "which",
+    "q": {
+     "en": "A3, RCA or PDCA — which one?",
+     "ar": "A3 أم RCA أم PDCA: أيها أستخدم؟"
+    },
+    "a": {
+     "en": "They are not alternatives. **PDCA is the cycle**: plan, do, check, act. **An A3 is the story of one cycle on one page** for a given problem, owned by one person and coached. **RCA is the full investigation of causes** when the problem is severe or complex; the A3 takes its proved root causes into the analysis block. Pareto frames the gap, Fishbone and 5 Whys look for the causes, and CAPA carries the corrective actions when a nonconformity is involved. Pick the causes by analysis id in the [[tab:tools]].",
+     "ar": "هي ليست بدائل. **PDCA هي الدورة**: خطط، نفّذ، تحقق، تصرف. و**A3 هي قصة دورة واحدة على صفحة واحدة** لمشكلة محددة، يملكها شخص ويوجّهه موجّه. و**RCA هو التحقيق الكامل في الأسباب** عندما تكون المشكلة جسيمة أو معقدة؛ تأخذ صفحة A3 أسبابه الجذرية المثبتة إلى كتلة التحليل. وباريتو يؤطر الفجوة، وعظمة السمكة ولماذا الخمس تبحثان عن الأسباب، وCAPA يحمل الإجراءات التصحيحية عندما توجد حالة عدم مطابقة. اختر الأسباب برقم التحليل في [[tab:tools]]."
+    }
+   },
+   {
+    "id": "goal",
+    "q": {
+     "en": "Why set the goal before the causes?",
+     "ar": "لماذا يُكتب الهدف قبل الأسباب؟"
+    },
+    "a": {
+     "en": "Because a goal written after the causes are known gets fitted to what we know we can do, not to what the problem needs. The goal says what **must** happen (below 3% rejected loads by 31 August); the analysis says **why** it does not. That is why the tool compares the date the goal was written with the date the analysis started, and warns when the goal came later. ISO 9001:2026 6.2.1 asks for objectives that are measurable and monitored.",
+     "ar": "لأن الهدف المكتوب بعد معرفة الأسباب يُكيَّف مع ما نعرف أننا نستطيع فعله، لا مع ما تحتاجه المشكلة. الهدف يقول ما **يجب** أن يحدث (أقل من 3% شحنات مرفوضة بحلول 31 أغسطس)، والتحليل يقول **لماذا** لا يحدث. لذلك تقارن الأداة تاريخ كتابة الهدف بتاريخ بدء التحليل، وتنبّه إذا جاء الهدف بعده. وISO 9001:2026 تطلب في 6.2.1 أن تكون الأهداف قابلة للقياس ومرصودة."
+    }
+   },
+   {
+    "id": "coach",
+    "q": {
+     "en": "What does the coach do?",
+     "ar": "ما دور الموجّه في A3؟"
+    },
+    "a": {
+     "en": "The coach **asks, and does not sign off**. The coach does not write the page or dictate the solution, but asks until the owner sees the gap: what does the number say? How do you know this is the cause? Which cause does this countermeasure address? How will you know it worked? The tool records each review with its date, the questions and what changed afterwards, requires the coach to be someone other than the owner, and a review after the follow-up. This builds the awareness ISO 9001:2026 clause 7.3 speaks of.",
+     "ar": "الموجّه **يسأل ولا يوقّع**. لا يكتب الصفحة ولا يملي الحل، بل يسأل حتى يرى المالك الفجوة بنفسه: ما الذي يقوله الرقم؟ كيف تعرف أن هذا هو السبب؟ أي سبب يعالجه هذا الإجراء؟ كيف ستعرف أنه نجح؟ وتسجّل الأداة كل مراجعة بتاريخها والأسئلة وما تغيّر بعدها، وتطلب أن يكون الموجّه غير المالك، ومراجعة بعد المتابعة. هذا يبني الوعي الذي يذكره البند 7.3 من ISO 9001:2026."
+    }
+   },
+   {
+    "id": "change",
+    "q": {
+     "en": "Can I change the goal?",
+     "ar": "هل يمكن تعديل الهدف؟"
+    },
+    "a": {
+     "en": "Yes, for a real reason only (the requirement or the customer changed, or the baseline was measured wrongly); it is not changed to fit the result. In the tool the first target stays written under “First target (if changed)” with the reason; a change with no reason is recorded as a gap in the [[tab:audit]].",
+     "ar": "نعم، لسبب حقيقي فقط (تغيّر المتطلب أو العميل أو ظهر خطأ في القياس الأساسي)، ولا يُعدَّل ليناسب النتيجة. في الأداة يبقى الهدف الأول مكتوباً في «الهدف الأول (إن عُدّل)» ومعه سبب التعديل؛ وتعديل دون سبب يُسجَّل ثغرة في [[tab:audit]]."
+    }
+   },
+   {
+    "id": "notmet",
+    "q": {
+     "en": "What if the goal is not met?",
+     "ar": "ماذا لو لم يتحقق الهدف؟"
+    },
+    "a": {
+     "en": "That is an honest result, not a failure of the page. Record the result as it is (partly met or not met), standardise what worked, write what is left open, then start a next A3 or PDCA cycle on the same measure. In the concrete example rejections fell from 9.2% to 6% against a goal below 3%: the pour window was standardised, and the chilled-water clause moved to the second cycle in PD-EX-03.",
+     "ar": "هذه نتيجة صادقة، وليست فشلاً للصفحة. سجّل النتيجة كما هي (تحقق جزئياً أو لم يتحقق)، ووحّد ما نجح، واكتب ما بقي مفتوحاً، ثم ابدأ صفحة A3 تالية أو دورة PDCA بالمقياس نفسه. في مثال الخرسانة انخفض الرفض من 9.2% إلى 6% والهدف أقل من 3%: وُحّدت نافذة الصب، وانتقل شرط تبريد الماء إلى الدورة الثانية في PD-EX-03."
+    }
+   }
+  ],
+  "competencies": [
+   "QM-03",
+   "LDR-01"
+  ],
+  "ecosystem": "quality"
+ }
+}

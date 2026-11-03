@@ -1,0 +1,81 @@
+{
+  "schema": "cia.seed.v1",
+  "collection": "proficiency_levels",
+  "phase": 2,
+  "generated": "2026-09-28",
+  "author": "مدثر سلامه",
+  "items": [
+    {
+      "level": 0,
+      "name": {
+        "ar": "لم يُقيَّم",
+        "en": "Not assessed"
+      },
+      "descriptor": {
+        "ar": "لم تُقيَّم أي أدلة بعد. هذه الحالة تختلف عن المستوى 1.",
+        "en": "No evidence has been evaluated yet. This is not the same as Level 1."
+      },
+      "is_assessed": false
+    },
+    {
+      "level": 1,
+      "name": {
+        "ar": "إدراك",
+        "en": "Awareness"
+      },
+      "descriptor": {
+        "ar": "يتعرّف على المفهوم والغرض منه، ويحتاج إلى توجيه لتطبيقه.",
+        "en": "Recognises the concept and its purpose; needs guidance to apply it."
+      },
+      "is_assessed": true
+    },
+    {
+      "level": 2,
+      "name": {
+        "ar": "أساسي",
+        "en": "Foundation"
+      },
+      "descriptor": {
+        "ar": "يشرح المفهوم بشكل صحيح ويطبّقه في الحالات البسيطة والروتينية بدعم.",
+        "en": "Explains the concept correctly and applies it to simple, routine cases with support."
+      },
+      "is_assessed": true
+    },
+    {
+      "level": 3,
+      "name": {
+        "ar": "عملي",
+        "en": "Working"
+      },
+      "descriptor": {
+        "ar": "يطبّقه باستقلالية في العمل المعتاد وبنتائج مقبولة.",
+        "en": "Applies it independently in normal work with acceptable results."
+      },
+      "is_assessed": true
+    },
+    {
+      "level": 4,
+      "name": {
+        "ar": "متقدم",
+        "en": "Advanced"
+      },
+      "descriptor": {
+        "ar": "يتعامل مع الحالات المعقدة وغير الروتينية، ويكيّف الأساليب، ويوجّه الآخرين.",
+        "en": "Handles complex or non-routine cases, adapts methods and guides others."
+      },
+      "is_assessed": true
+    },
+    {
+      "level": 5,
+      "name": {
+        "ar": "خبير / قيادي",
+        "en": "Expert / Leadership"
+      },
+      "descriptor": {
+        "ar": "يوجّه الممارسة على مستوى المنظمة، ويضع الاتجاه، ويُعد مرجعًا للآخرين.",
+        "en": "Shapes practice across the organisation, sets direction and is a reference for others."
+      },
+      "is_assessed": true
+    }
+  ]
+}

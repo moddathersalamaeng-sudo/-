@@ -2,7 +2,7 @@
    The installed app opens from the device: every page and tool already opened is served from the cache at once
    and refreshed from the network in the background, so the next launch shows the latest copy.
    Offline, everything opened before keeps working. User data never passes through here (it stays in localStorage). */
-const VERSION = "1.0.0-2026-10-22-29d3e230";
+const VERSION = "1.0.1-2026-11-03-academy";
 const CACHE = "cia-" + VERSION;
 const FONTS = "cia-fonts";
 const PREV = "cia-prev";   /* pages kept from the previous release: used only when the network is unavailable */
@@ -59,6 +59,8 @@ button{justify-self:start;border:0;border-radius:999px;background:var(--ink);col
 const offlinePage = () => new Response(OFFLINE_HTML, { status: 503, headers: { "Content-Type": "text/html; charset=utf-8" } });
 
 const sameOrigin = url => url.origin === self.location.origin;
+/* The Academy (./academy/) changes more often than the hub: network first, cache only as the offline fallback (D-19). */
+const isAcademy = url => sameOrigin(url) && url.pathname.includes("/academy/");
 const isFont = url => url.hostname === "fonts.googleapis.com" || url.hostname === "fonts.gstatic.com";
 
 /* the page is the same whatever the query (?lang=, ?source=pwa): one cache entry per path */
@@ -97,6 +99,22 @@ async function staleWhileRevalidate(event) {
   }
 }
 
+async function networkFirst(event) {
+  const { request } = event;
+  const cache = await caches.open(CACHE);
+  const key = keyFor(request);
+  try {
+    const pre = event.preloadResponse ? await event.preloadResponse : null;
+    const res = pre || await fetch(request);
+    if (res && res.ok && res.type === "basic") await cache.put(key, res.clone());
+    return res;
+  } catch (e) {
+    const hit = (await cache.match(key)) || (await (await caches.open(PREV)).match(key));
+    if (hit) return hit;
+    throw e;
+  }
+}
+
 async function fontCacheFirst(request) {
   const cache = await caches.open(FONTS);
   const cached = await cache.match(request);
@@ -110,6 +128,7 @@ self.addEventListener("fetch", event => {
   const { request } = event;
   if (request.method !== "GET") return;
   const url = new URL(request.url);
+  if (isAcademy(url)) { event.respondWith(networkFirst(event)); return; }
   if (sameOrigin(url)) { event.respondWith(staleWhileRevalidate(event)); return; }
   if (isFont(url)) event.respondWith(fontCacheFirst(request));
 });

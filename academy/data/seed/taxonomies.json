@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "courseStatus": [
+    "cia_internal",
+    "exam_prep",
+    "accreditation_pending",
+    "externally_accredited",
+    "official_partner"
+  ],
+  "courseStatusRequiresEvidence": [
+    "externally_accredited",
+    "official_partner"
+  ],
+  "certificateType": [
+    "attendance",
+    "completion",
+    "assessment_passed",
+    "platform_credential",
+    "professional_certification",
+    "externally_accredited"
+  ],
+  "certificateTypeRequiresEvidence": [
+    "externally_accredited"
+  ],
+  "governanceStates": [
+    "draft",
+    "needs_review",
+    "in_review",
+    "approved",
+    "published",
+    "archived"
+  ],
+  "competencyLevels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

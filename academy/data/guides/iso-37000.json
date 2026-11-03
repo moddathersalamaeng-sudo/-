@@ -1,0 +1,2861 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-37000",
+  "slug": "iso-37000",
+  "kind": "standard",
+  "module": "iso37000",
+  "standard_id": null,
+  "title": {
+   "en": "ISO 37000:2021 — Governance Maturity",
+   "ar": "ISO 37000:2021 — نضج الحوكمة المؤسسية"
+  },
+  "subtitle": {
+   "en": "Governance of organizations — Guidance",
+   "ar": "حوكمة المنظمات — إرشادات"
+  },
+  "lede": {
+   "en": "The eleven principles and three governance outcomes of ISO 37000 explained in clear professional language, with a worked example from a Saudi group preparing to list, application steps and evidence of good practice; plus a five-level maturity assessment and a governance studio covering board and committee evaluation, the delegation of authority matrix, the conflict of interest register, the board's risk oversight dashboard and a board report.",
+   "ar": "المبادئ الإحدى عشرة في ISO 37000 ونواتج الحوكمة الثلاثة، بشرح مهني واضح ومثال من مجموعة سعودية تستعد للإدراج، وخطوات التطبيق وأدلة الممارسة الجيدة؛ مع تقييم نضج بخمسة مستويات، واستوديو للحوكمة يشمل تقييم المجلس ولجانه ومصفوفة الصلاحيات وسجل تعارض المصالح ولوحة إشراف المجلس على المخاطر وتقرير المجلس."
+  },
+  "author": "مدثر سلامه",
+  "clauses": [
+   {
+    "id": "6P",
+    "phase": "prim",
+    "title": {
+     "en": "Primary principle: Purpose",
+     "ar": "المبدأ الأساسي: الغاية"
+    },
+    "intro": {
+     "en": "Purpose is the primary principle of ISO 37000: the reason the organization exists and the value it intends to generate, for whom. The governing body sets the purpose and values, and the foundational and enabling principles are built on them. An organization without an agreed purpose is governed by habit or by the strongest interests, not by a clear reference point.",
+     "ar": "الغاية هي المبدأ الأساسي في ISO 37000؛ فهي سبب وجود المنظمة والقيمة التي تنوي توليدها ولصالح من. تُحدد الجهة الحاكمة الغاية والقيم، ثم تُبنى عليها المبادئ الأساسية والتمكينية. منظمة بلا غاية متفق عليها تُحكم بالعادة أو بمصالح الأقوى، لا بمرجعية واضحة."
+    },
+    "items": [
+     {
+      "ref": "6.1",
+      "status": "new",
+      "page": 13,
+      "title": {
+       "en": "Purpose (primary principle)",
+       "ar": "الغاية (المبدأ الأساسي)"
+      },
+      "req": {
+       "en": "The governing body ensures the organization's reason for existing is clearly defined as its organizational purpose, together with organizational values that guide how it is achieved. The purpose states the value the organization intends to generate and for whom, and it becomes the reference point for strategy, decisions and accountability. It is the primary principle: every other principle serves it.",
+       "ar": "تضمن الجهة الحاكمة أن سبب وجود المنظمة محدد بوضوح في صورة «غاية المنظمة»، ومعها قيم تحكم طريقة تحقيقها. تبيّن الغاية القيمة التي تنوي المنظمة توليدها ولصالح من، وتصبح المرجع الذي تُقاس عليه الاستراتيجية والقرارات والمساءلة. وهي المبدأ الأساسي؛ فكل المبادئ الأخرى تخدمها."
+      },
+      "ex": {
+       "en": "Al-Riyada Energy Group, a family-founded closed joint-stock company in Riyadh, had a vision statement on the lobby wall but no agreed purpose. While preparing to list on the Saudi Exchange, the board held two workshops with shareholders, employees and two key clients, then approved a purpose: 'Powering Saudi communities safely and reliably, while building national engineering capability', with four values: safety first, integrity, ownership and local talent. Every board paper now carries a line on how the proposal serves the purpose.",
+       "ar": "كانت «مجموعة الريادة للطاقة» (شركة مساهمة مقفلة عائلية في الرياض) تعلّق رؤية على جدار الاستقبال دون غاية متفق عليها. ومع التحضير للإدراج في السوق المالية، عقد المجلس ورشتين مع المساهمين والموظفين وعميلين رئيسيين، ثم اعتمد غاية: «نوصل الطاقة للمجتمعات السعودية بأمان وموثوقية، ونبني قدرات هندسية وطنية»، ومعها أربع قيم: السلامة أولاً، والنزاهة، والملكية، وتمكين الكفاءات المحلية. وأصبح كل عرض يُقدَّم للمجلس يتضمن سطراً يوضح كيف يخدم الغاية."
+      },
+      "how": [
+       {
+        "en": "Engage key stakeholders to define what value the organization exists to generate, and for whom.",
+        "ar": "أشرك أصحاب المصلحة الرئيسيين في تحديد القيمة التي وُجدت المنظمة لتوليدها ولصالح من."
+       },
+       {
+        "en": "Have the governing body approve a short purpose statement and a few values, each with the behaviours that show it.",
+        "ar": "اعتمد من الجهة الحاكمة بيان غاية مختصراً وعدداً محدوداً من القيم مع وصف السلوكيات الدالة على كل قيمة."
+       },
+       {
+        "en": "Embed the purpose in the board charter, the strategy, the board paper template and remuneration criteria.",
+        "ar": "ادمج الغاية في ميثاق المجلس والاستراتيجية ونموذج عروض المجلس ومعايير المكافآت."
+       },
+       {
+        "en": "Review the purpose after any material change in context, and at least once per strategy cycle.",
+        "ar": "راجع الغاية عند أي تغير جوهري في السياق، وفي كل دورة استراتيجية على الأقل."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Board-approved purpose and values statement",
+        "ar": "بيان غاية وقيم معتمد من المجلس"
+       },
+       {
+        "en": "Board paper template with a purpose-alignment section",
+        "ar": "نموذج عرض للمجلس يتضمن قسم التوافق مع الغاية"
+       },
+       {
+        "en": "Minutes showing decisions tested against purpose",
+        "ar": "محاضر تُظهر اختبار القرارات مقابل الغاية"
+       },
+       {
+        "en": "Staff survey results on understanding of purpose",
+        "ar": "نتائج استبيان الموظفين عن فهم الغاية"
+       }
+      ],
+      "tip": {
+       "en": "Quick test: ask three directors and three front-line staff why the organization exists. If the answers don't converge, the purpose exists on paper only.",
+       "ar": "اختبار سريع: اسأل ثلاثة أعضاء مجلس وثلاثة موظفين في الميدان: لماذا توجد هذه المنظمة؟ إذا تباعدت الإجابات، فالغاية موجودة على الورق فقط."
+      },
+      "checks": [
+       {
+        "ar": "ما بيان الغاية المعتمد، ومتى اعتمده المجلس، ومن شارك في صياغته؟",
+        "en": "What is the approved purpose statement, when did the board approve it, and who helped shape it?"
+       },
+       {
+        "ar": "كيف تُترجم القيم إلى سلوكيات في مدونة السلوك وتقييم الأداء؟",
+        "en": "How are the values turned into behaviours in the code of conduct and performance appraisals?"
+       },
+       {
+        "ar": "أعطني مثالاً على قرار للمجلس اختُبر مقابل الغاية فتغيّر.",
+        "en": "Give an example of a board decision that was tested against the purpose and changed as a result."
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "الغاية تحدد القيمة المقصودة ولمن.",
+          "en": "Purpose defines the intended value and for whom."
+         }
+        },
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "الاستراتيجية طريق تحقيق الغاية.",
+          "en": "Strategy is the route to the purpose."
+         }
+        },
+        {
+         "ref": "6.7",
+         "why": {
+          "ar": "القيم توجه سلوك القيادة وثقافتها.",
+          "en": "Values guide leadership behaviour and culture."
+         }
+        },
+        {
+         "ref": "5c",
+         "why": {
+          "ar": "القيم أساس السلوك الأخلاقي.",
+          "en": "Values are the basis of ethical behaviour."
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "6F",
+    "phase": "found",
+    "title": {
+     "en": "Foundational principles",
+     "ar": "المبادئ التأسيسية"
+    },
+    "intro": {
+     "en": "Four foundational principles turn purpose into real governance: value generation defines what the purpose means for each stakeholder, strategy directs resources to achieve it, oversight checks performance, and accountability ensures everyone given authority answers for how they used it.",
+     "ar": "أربعة مبادئ تأسيسية تحوّل الغاية إلى حوكمة فعلية: توليد القيمة يحدد ما تعنيه الغاية لكل صاحب مصلحة، والاستراتيجية توجّه الموارد لتحقيقها، والإشراف يتحقق من الأداء، والمساءلة تضمن أن كل من فُوّض إليه يُسأل عن استخدام صلاحياته."
+    },
+    "items": [
+     {
+      "ref": "6.2",
+      "status": "new",
+      "page": 15,
+      "title": {
+       "en": "Value generation",
+       "ar": "توليد القيمة"
+      },
+      "req": {
+       "en": "The governing body defines the organization's approach to generating value through a value model: what value is created, preserved or eroded, for which stakeholders, and how. Value is broader than financial return. It covers customers, employees, the community and the environment, and the trade-offs between them are made explicit rather than left implicit.",
+       "ar": "تحدد الجهة الحاكمة نهج المنظمة في توليد القيمة عبر «نموذج قيمة» يبيّن القيمة التي تُخلق أو تُحفظ أو تتآكل، ولأي أصحاب مصلحة، وكيف. والقيمة أوسع من العائد المالي: تشمل قيمة العملاء والموظفين والمجتمع والبيئة، مع توضيح المفاضلات بينها صراحةً بدلاً من تركها ضمنية."
+      },
+      "ex": {
+       "en": "Al-Riyada mapped its value model on one page: revenue and margin for shareholders; reliable grid connections for the Saudi Electricity Company and industrial clients; 1,200 jobs at 38% Saudization; a graduate engineering programme. It also listed the value eroded: generator emissions and workers' heat-stress exposure. The board set a target for each item and now reviews an 'integrated value dashboard' twice a year, not the financial statements alone.",
+       "ar": "رسمت «الريادة» نموذج قيمتها في صفحة واحدة: الإيرادات والهامش للمساهمين، وتوصيلات كهربائية موثوقة للشركة السعودية للكهرباء والعملاء الصناعيين، و1,200 وظيفة بنسبة توطين 38%، وبرنامج خريجين هندسي؛ ومعها القيمة المتآكلة: انبعاثات المولدات وتعرّض العاملين للإجهاد الحراري. حدد المجلس مستهدفاً لكل عنصر، وأصبح يراجع «لوحة القيمة المتكاملة» مرتين سنوياً بدلاً من القوائم المالية وحدها."
+      },
+      "how": [
+       {
+        "en": "For each stakeholder, identify the value the organization creates, preserves or erodes.",
+        "ar": "حدد لكل صاحب مصلحة القيمة التي تخلقها المنظمة أو تحفظها أو تُضعفها."
+       },
+       {
+        "en": "Approve the value model and the trade-off principles for when interests conflict (e.g. safety is never traded).",
+        "ar": "اعتمد نموذج القيمة ومبادئ المفاضلة عند تعارض المصالح (مثلاً: لا يُقايَض على السلامة)."
+       },
+       {
+        "en": "Set a measure and target for each value stream and link it to the strategy.",
+        "ar": "ضع مقياساً ومستهدفاً لكل مسار قيمة، واربطه بالاستراتيجية."
+       },
+       {
+        "en": "Report integrated value internally and externally, not financial performance alone.",
+        "ar": "افصح عن القيمة المتكاملة داخلياً وخارجياً، وليس الأداء المالي فقط."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Approved value model",
+        "ar": "نموذج قيمة معتمد"
+       },
+       {
+        "en": "Integrated value dashboard presented to the board",
+        "ar": "لوحة قيمة متكاملة تُعرض على المجلس"
+       },
+       {
+        "en": "Board decisions that document trade-offs",
+        "ar": "قرارات مجلس توثق المفاضلات"
+       },
+       {
+        "en": "Materiality assessment",
+        "ar": "تقييم الموضوعات الجوهرية"
+       }
+      ],
+      "tip": {
+       "en": "Include value eroded, not only value created. A value model with no negatives is marketing, not governance.",
+       "ar": "أدرج القيمة المتآكلة لا المخلوقة فقط. نموذج قيمة بلا سلبيات هو تسويق لا حوكمة."
+      },
+      "checks": [
+       {
+        "ar": "هل يوجد نموذج قيمة يبيّن القيمة المخلوقة والمحفوظة والمتآكلة لكل صاحب مصلحة؟",
+        "en": "Is there a value model showing value created, preserved and eroded for each stakeholder?"
+       },
+       {
+        "ar": "ما مبادئ المفاضلة عند تعارض مصالح أصحاب المصلحة؟",
+        "en": "What trade-off principles apply when stakeholder interests conflict?"
+       },
+       {
+        "ar": "كيف يراجع المجلس القيمة المتكاملة، المالية وغير المالية؟",
+        "en": "How does the board review integrated value, financial and non-financial?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "نموذج القيمة يحدد خيارات الاستراتيجية.",
+          "en": "The value model shapes strategic choices."
+         }
+        },
+        {
+         "ref": "6.6",
+         "why": {
+          "ar": "القيمة تُحدد لكل صاحب مصلحة.",
+          "en": "Value is defined for each stakeholder."
+         }
+        },
+        {
+         "ref": "6.11",
+         "why": {
+          "ar": "القيمة يجب أن تستمر عبر الزمن.",
+          "en": "Value has to last over time."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1",
+         "why": {
+          "ar": "الغاية تحدد القيمة المقصودة ولمن.",
+          "en": "Purpose defines the intended value and for whom."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.3",
+      "status": "",
+      "page": 17,
+      "title": {
+       "en": "Strategy",
+       "ar": "الاستراتيجية"
+      },
+      "req": {
+       "en": "The governing body leads strategic direction: it directs and engages with management to build a strategy consistent with the purpose and the value model, approves it, and ensures resources, risk appetite and performance measures are aligned with it. Management develops and executes; the board directs, challenges and approves.",
+       "ar": "تقود الجهة الحاكمة التوجه الاستراتيجي: توجّه الإدارة وتتفاعل معها لبناء استراتيجية متسقة مع الغاية ونموذج القيمة، ثم تعتمدها، وتضمن مواءمة الموارد والرغبة في المخاطر ومقاييس الأداء معها. الإدارة تُعِدّ وتنفّذ؛ والمجلس يوجّه ويتحدى ويعتمد."
+      },
+      "ex": {
+       "en": "In Al-Riyada's previous cycle, management presented a finished five-year plan for approval in an hour. The board now holds an annual strategy day in two stages: first it sets direction (markets, appetite for the solar venture, capital limits), then it challenges management's options before approving them. The solar expansion was approved with a cap on the size of the first project, linked to the risk appetite.",
+       "ar": "في الدورة السابقة كانت إدارة «الريادة» تعرض خطة خمسية جاهزة لاعتمادها في ساعة. أصبح المجلس يعقد يوماً استراتيجياً سنوياً على مرحلتين: الأولى يحدد فيها التوجه (الأسواق، والرغبة في مشروع الطاقة الشمسية، وحدود رأس المال)، والثانية يتحدى فيها بدائل الإدارة قبل الاعتماد. وأُقرّ التوسع في الطاقة الشمسية بسقف لحجم المشروع الأول مرتبط بالرغبة في المخاطر."
+      },
+      "how": [
+       {
+        "en": "Hold an annual strategy session that sets direction before options are presented.",
+        "ar": "اعقد جلسة استراتيجية سنوية تبدأ بتحديد التوجه قبل عرض البدائل."
+       },
+       {
+        "en": "Test each strategic option against the purpose, the value model and the risk appetite.",
+        "ar": "اختبر كل بديل استراتيجي مقابل الغاية ونموذج القيمة والرغبة في المخاطر."
+       },
+       {
+        "en": "Approve the strategy with objectives, KPIs, resources and milestones.",
+        "ar": "اعتمد الاستراتيجية مع الأهداف والمؤشرات والموارد والمراحل الرئيسية."
+       },
+       {
+        "en": "Monitor execution quarterly and revisit the assumptions when the context changes.",
+        "ar": "تابع تنفيذ الاستراتيجية ربع سنوياً، وراجع افتراضاتها عند تغير السياق."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Strategy day agenda and minutes",
+        "ar": "جدول أعمال ومحاضر اليوم الاستراتيجي"
+       },
+       {
+        "en": "Approved strategy with objectives and KPIs",
+        "ar": "استراتيجية معتمدة بأهداف ومؤشرات"
+       },
+       {
+        "en": "Strategic risk assessment",
+        "ar": "تقييم المخاطر الاستراتيجية"
+       },
+       {
+        "en": "Quarterly strategy execution reports",
+        "ar": "تقارير ربع سنوية عن تنفيذ الاستراتيجية"
+       }
+      ],
+      "tip": {
+       "en": "If the board sees the strategy only at the approval meeting, it is ratifying it, not directing it.",
+       "ar": "إذا لم يرَ المجلس الاستراتيجية إلا في جلسة الاعتماد، فهو يصادق عليها ولا يوجّهها."
+      },
+      "checks": [
+       {
+        "ar": "كيف يوجّه المجلس الاستراتيجية قبل أن تُعرض عليه للاعتماد؟",
+        "en": "How does the board direct the strategy before it comes for approval?"
+       },
+       {
+        "ar": "هل ترتبط الأهداف الاستراتيجية بمؤشرات وموارد ورغبة في المخاطر؟",
+        "en": "Are strategic objectives linked to KPIs, resources and risk appetite?"
+       },
+       {
+        "ar": "كم من وقت المجلس خُصص للاستراتيجية والمستقبل خلال العام الماضي؟",
+        "en": "How much board time went to strategy and the future over the past year?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.9",
+         "why": {
+          "ar": "الاستراتيجية تحدد المخاطر المقبولة.",
+          "en": "Strategy sets the risks worth taking."
+         }
+        },
+        {
+         "ref": "6.4",
+         "why": {
+          "ar": "الإشراف يتابع تنفيذ الاستراتيجية.",
+          "en": "Oversight tracks strategy execution."
+         }
+        },
+        {
+         "ref": "5a",
+         "why": {
+          "ar": "الاستراتيجية المنفذة تنتج الأداء.",
+          "en": "Executed strategy produces performance."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1",
+         "why": {
+          "ar": "الاستراتيجية طريق تحقيق الغاية.",
+          "en": "Strategy is the route to the purpose."
+         }
+        },
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "نموذج القيمة يحدد خيارات الاستراتيجية.",
+          "en": "The value model shapes strategic choices."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.4",
+      "status": "",
+      "page": 19,
+      "title": {
+       "en": "Oversight",
+       "ar": "الإشراف"
+      },
+      "req": {
+       "en": "The governing body oversees organizational performance to make sure expectations are met: it sets up an oversight system of internal control, assurance and reporting, monitors performance against the strategy and obligations, and acts when performance falls short. Oversight rests on independent assurance (internal and external audit, risk and compliance functions), not on management's reports alone.",
+       "ar": "تشرف الجهة الحاكمة على أداء المنظمة لضمان تحقيق التوقعات: تبني منظومة إشراف تشمل الرقابة الداخلية والتأكيد والتقارير، وتتابع الأداء مقابل الاستراتيجية والالتزامات، وتتدخل عند القصور. ويعتمد الإشراف على تأكيد مستقل (التدقيق الداخلي والخارجي ووظائف المخاطر والامتثال)، لا على تقارير الإدارة وحدها."
+      },
+      "ex": {
+       "en": "Al-Riyada's audit committee used to receive the financial statements only. It approved an internal audit charter with a direct reporting line to the committee, a risk-based three-year audit plan and a combined assurance map showing which risks are covered by management, by risk and compliance, and by internal audit. The first map showed no assurance at all over project cost-to-complete estimates, the largest judgement in the accounts.",
+       "ar": "كانت لجنة المراجعة في «الريادة» تتسلّم القوائم المالية فقط. فاعتمدت ميثاقاً للتدقيق الداخلي بخط تبعية مباشر للجنة، وخطة تدقيق ثلاثية مبنية على المخاطر، وخريطة «تأكيد مشترك» تبيّن أي المخاطر يغطيها خط الإدارة، وأيها المخاطر والامتثال، وأيها التدقيق الداخلي. وكشفت الخريطة الأولى غياب أي تأكيد على تقديرات تكلفة الإنجاز للمشاريع، وهي أكبر تقدير في القوائم."
+      },
+      "how": [
+       {
+        "en": "Define the oversight structure: committees, their charters and their reporting to the board.",
+        "ar": "حدد هيكل الإشراف: اللجان ومواثيقها وتقاريرها للمجلس."
+       },
+       {
+        "en": "Approve the internal control framework and a combined assurance map.",
+        "ar": "اعتمد إطار الرقابة الداخلية وخريطة التأكيد المشترك."
+       },
+       {
+        "en": "Ensure internal audit is independent and reports functionally to the audit committee.",
+        "ar": "اضمن استقلال التدقيق الداخلي وتبعيته الوظيفية للجنة المراجعة."
+       },
+       {
+        "en": "Define performance and exception reporting, and track audit findings to closure.",
+        "ar": "حدد تقارير الأداء والاستثناءات، وتابع إغلاق ملاحظات التدقيق."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Committee charters",
+        "ar": "مواثيق اللجان"
+       },
+       {
+        "en": "Internal audit charter and plan",
+        "ar": "ميثاق التدقيق الداخلي وخطته"
+       },
+       {
+        "en": "Combined assurance map",
+        "ar": "خريطة التأكيد المشترك"
+       },
+       {
+        "en": "Committee minutes following audit findings to closure",
+        "ar": "محاضر لجان تتابع ملاحظات التدقيق حتى الإغلاق"
+       }
+      ],
+      "tip": {
+       "en": "Ask for the list of overdue audit actions at every committee meeting; it is the fastest test of whether oversight has teeth.",
+       "ar": "اطلب قائمة إجراءات التدقيق المتأخرة في كل اجتماع للجنة؛ فهي أسرع اختبار لجدية الإشراف."
+      },
+      "checks": [
+       {
+        "ar": "ما اللجان القائمة، وهل لكل منها ميثاق معتمد وتقرير دوري للمجلس؟",
+        "en": "Which committees exist, and does each have an approved charter and report regularly to the board?"
+       },
+       {
+        "ar": "لمن يتبع التدقيق الداخلي وظيفياً، وهل خطته مبنية على المخاطر؟",
+        "en": "To whom does internal audit report functionally, and is its plan risk-based?"
+       },
+       {
+        "ar": "كيف تُتابع ملاحظات التدقيق وقرارات المجلس حتى الإغلاق؟",
+        "en": "How are audit findings and board actions tracked to closure?"
+       },
+       {
+        "ar": "هل توجد خريطة تأكيد مشترك تغطي المخاطر الرئيسية؟",
+        "en": "Is there a combined assurance map covering the principal risks?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.5",
+         "why": {
+          "ar": "الإشراف يولّد معلومات المساءلة.",
+          "en": "Oversight produces the information for accountability."
+         }
+        },
+        {
+         "ref": "6.9",
+         "why": {
+          "ar": "الإشراف يشمل المخاطر والرقابة الداخلية.",
+          "en": "Oversight covers risk and internal control."
+         }
+        },
+        {
+         "ref": "5b",
+         "why": {
+          "ar": "الإشراف يحمي موارد المنظمة.",
+          "en": "Oversight protects the organization's resources."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "الإشراف يتابع تنفيذ الاستراتيجية.",
+          "en": "Oversight tracks strategy execution."
+         }
+        },
+        {
+         "ref": "6.7",
+         "why": {
+          "ar": "القيادة الفعالة تطرح التحدي البنّاء.",
+          "en": "Effective leadership brings constructive challenge."
+         }
+        },
+        {
+         "ref": "6.8",
+         "why": {
+          "ar": "المعلومات الموثوقة شرط الإشراف.",
+          "en": "Reliable information is a condition for oversight."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.5",
+      "status": "",
+      "page": 22,
+      "title": {
+       "en": "Accountability",
+       "ar": "المساءلة"
+      },
+      "req": {
+       "en": "The governing body is accountable to stakeholders for the organization as a whole, and it holds to account those to whom it delegates authority. This needs a clear delegation framework (who may decide what, up to which limit), regular reporting on the use of delegated authority, and transparent disclosure of how the governing body discharged its duties.",
+       "ar": "الجهة الحاكمة مسؤولة أمام أصحاب المصلحة عن المنظمة ككل، وتُسائل من فوّضت إليهم الصلاحيات. ويتطلب ذلك إطار تفويض واضحاً: من يقرر ماذا وإلى أي حد، مع تقارير دورية عن استخدام الصلاحيات المفوضة، وإفصاح شفاف عن كيفية أداء الجهة الحاكمة لواجباتها."
+      },
+      "ex": {
+       "en": "Al-Riyada's CEO approved a SAR 14 million subcontract that exceeded his limit because the delegation matrix had not been updated after a restructuring. The board adopted a new delegation of authority matrix with thresholds per decision type, a schedule of matters reserved to the board and to the general assembly, and a quarterly report of decisions taken under delegation.",
+       "ar": "اعتمد الرئيس التنفيذي في «الريادة» عقد مقاول باطن بقيمة 14 مليون ريال يتجاوز صلاحيته، لأن مصفوفة الصلاحيات لم تُحدَّث بعد إعادة الهيكلة. فاعتمد المجلس مصفوفة تفويض جديدة بحدود لكل نوع قرار، وقائمة بالمسائل المحجوزة للمجلس وللجمعية العامة، وتقريراً ربع سنوي بالقرارات المتخذة بموجب التفويض."
+      },
+      "how": [
+       {
+        "en": "Approve the matters reserved to the general assembly and to the board, and a delegation matrix with limits per decision.",
+        "ar": "اعتمد المسائل المحجوزة للجمعية العامة وللمجلس، ومصفوفة تفويض بحدود مالية لكل قرار."
+       },
+       {
+        "en": "Make sure each decision type has exactly one approver, and nobody approves what they recommend.",
+        "ar": "تأكد أن لكل نوع قرار جهة اعتماد واحدة، وأن من يوصي لا يعتمد قراره بنفسه."
+       },
+       {
+        "en": "Require regular reporting on decisions taken under delegation and on exceptions.",
+        "ar": "اطلب تقارير دورية عن القرارات المتخذة بموجب التفويض والاستثناءات."
+       },
+       {
+        "en": "Disclose in the annual governance report how the board and its committees discharged their duties.",
+        "ar": "افصح في تقرير الحوكمة السنوي عن كيفية أداء المجلس ولجانه لمسؤولياتهم."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Delegation of authority matrix",
+        "ar": "مصفوفة تفويض الصلاحيات"
+       },
+       {
+        "en": "Schedule of reserved matters",
+        "ar": "قائمة المسائل المحجوزة"
+       },
+       {
+        "en": "Reports on delegated decisions",
+        "ar": "تقارير القرارات المفوضة"
+       },
+       {
+        "en": "Annual governance report",
+        "ar": "تقرير الحوكمة السنوي"
+       }
+      ],
+      "tip": {
+       "en": "Each decision type needs exactly one 'A' (approve). Two approvers means nobody is accountable; none means the matrix has a hole.",
+       "ar": "كل نوع قرار يحتاج «A» واحدة فقط (اعتماد). جهتا اعتماد تعنيان أن لا أحد مساءل، وغياب الجهة يعني ثغرة في المصفوفة."
+      },
+      "checks": [
+       {
+        "ar": "اعرض مصفوفة تفويض الصلاحيات ومتى حُدّثت آخر مرة.",
+        "en": "Show the delegation of authority matrix and when it was last updated."
+       },
+       {
+        "ar": "ما المسائل المحجوزة للجمعية العامة وللمجلس؟",
+        "en": "Which matters are reserved to the general assembly and to the board?"
+       },
+       {
+        "ar": "كيف يُبلَّغ المجلس بالقرارات المتخذة بموجب التفويض وبالاستثناءات؟",
+        "en": "How is the board informed of decisions taken under delegation and of exceptions?"
+       },
+       {
+        "ar": "هل يُفصَح سنوياً عن أداء المجلس ولجانه في تقرير حوكمة؟",
+        "en": "Is the performance of the board and its committees disclosed annually in a governance report?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.6",
+         "why": {
+          "ar": "المجلس مساءَل أمام أصحاب الحق.",
+          "en": "The board answers to member stakeholders."
+         }
+        },
+        {
+         "ref": "5b",
+         "why": {
+          "ar": "المساءلة أساس الإشراف الأمين.",
+          "en": "Accountability underpins responsible stewardship."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.4",
+         "why": {
+          "ar": "الإشراف يولّد معلومات المساءلة.",
+          "en": "Oversight produces the information for accountability."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "6E",
+    "phase": "enab",
+    "title": {
+     "en": "Enabling principles",
+     "ar": "المبادئ التمكينية"
+    },
+    "intro": {
+     "en": "Six principles enable the foundational ones to work: stakeholder engagement, ethical and effective leadership, data and decisions, risk governance, social responsibility, and viability and performance over time. All eleven principles are applied together and concurrently, not one after another.",
+     "ar": "ستة مبادئ تمكّن المبادئ التأسيسية من العمل: إشراك أصحاب المصلحة، والقيادة الأخلاقية الفعالة، والبيانات والقرارات، وحوكمة المخاطر، والمسؤولية المجتمعية، والاستدامة والأداء عبر الزمن. تُطبق المبادئ الإحدى عشرة معاً وبالتزامن، لا بالتتابع."
+    },
+    "items": [
+     {
+      "ref": "6.6",
+      "status": "new",
+      "page": 24,
+      "title": {
+       "en": "Stakeholder engagement",
+       "ar": "إشراك أصحاب المصلحة"
+      },
+      "req": {
+       "en": "The governing body ensures the organization identifies its stakeholders, understands their legitimate needs and expectations, engages with them meaningfully and considers their views in decisions, especially the views of those materially affected. Engagement runs both ways and its results reach the board.",
+       "ar": "تضمن الجهة الحاكمة أن تحدد المنظمة أصحاب المصلحة، وتفهم احتياجاتهم وتوقعاتهم المشروعة، وتتفاعل معهم تفاعلاً حقيقياً، وتأخذ آراءهم في الاعتبار عند القرار، خصوصاً من يتأثرون جوهرياً. الإشراك باتجاهين، وتصل نتائجه إلى المجلس."
+      },
+      "ex": {
+       "en": "Al-Riyada's board mapped eleven stakeholder groups and named, for each, an executive owner and a board-level lens (for example the nomination and remuneration committee for employees). An annual employee pulse survey, a client roundtable and a community open day in Al-Kharj now feed a stakeholder report to the board. The client roundtable raised outage response times, which became a strategic KPI.",
+       "ar": "رسم مجلس «الريادة» خريطة لأحد عشر فئة من أصحاب المصلحة، وحدد لكل فئة مسؤولاً تنفيذياً وعدسة على مستوى المجلس (مثلاً لجنة الترشيحات والمكافآت للموظفين). وأصبح استبيان نبض الموظفين السنوي، وطاولة مستديرة للعملاء، ويوم مفتوح للمجتمع في الخرج تنتج تقريراً لأصحاب المصلحة يُعرض على المجلس. وأثارت طاولة العملاء زمن الاستجابة للانقطاعات، فأصبح مؤشراً استراتيجياً."
+      },
+      "how": [
+       {
+        "en": "Identify stakeholders and prioritize them by influence and by how much they are affected.",
+        "ar": "حدد أصحاب المصلحة ورتّبهم حسب التأثير والتأثر."
+       },
+       {
+        "en": "Assign an owner, a method and a frequency to each group.",
+        "ar": "عيّن لكل فئة مسؤولاً وطريقة تواصل وتكراراً."
+       },
+       {
+        "en": "Bring a summary of stakeholder views to the board regularly.",
+        "ar": "اعرض ملخص آراء أصحاب المصلحة على المجلس دورياً."
+       },
+       {
+        "en": "Tell stakeholders what changed as a result of their feedback.",
+        "ar": "أبلغ أصحاب المصلحة بما تغيّر نتيجة ملاحظاتهم."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Stakeholder map and engagement plan",
+        "ar": "خريطة أصحاب المصلحة وخطة الإشراك"
+       },
+       {
+        "en": "Stakeholder reports to the board",
+        "ar": "تقارير أصحاب المصلحة للمجلس"
+       },
+       {
+        "en": "Minutes showing decisions influenced by stakeholder views",
+        "ar": "محاضر تُظهر قرارات تأثرت بآرائهم"
+       },
+       {
+        "en": "Feedback to stakeholders",
+        "ar": "تغذية راجعة لأصحاب المصلحة"
+       }
+      ],
+      "tip": {
+       "en": "Record at least one board decision a year that changed because of stakeholder input; otherwise engagement is only communication.",
+       "ar": "وثّق قراراً واحداً على الأقل في السنة تغيّر بسبب مدخلات أصحاب المصلحة؛ وإلا فالإشراك مجرد اتصال."
+      },
+      "checks": [
+       {
+        "ar": "ما خريطة أصحاب المصلحة، ومن مالك العلاقة مع كل فئة؟",
+        "en": "What is the stakeholder map, and who owns the relationship with each group?"
+       },
+       {
+        "ar": "كيف تصل آراء أصحاب المصلحة إلى المجلس؟",
+        "en": "How do stakeholder views reach the board?"
+       },
+       {
+        "ar": "أعطني مثالاً على قرار تغيّر بسبب ملاحظات أصحاب المصلحة.",
+        "en": "Give an example of a decision that changed because of stakeholder feedback."
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.10",
+         "why": {
+          "ar": "فهم توقعات الأطراف يحدد المسؤولية المجتمعية.",
+          "en": "Stakeholder expectations shape social responsibility."
+         }
+        },
+        {
+         "ref": "6.8",
+         "why": {
+          "ar": "مدخلات الأطراف بيانات للقرار.",
+          "en": "Stakeholder input is data for decisions."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "القيمة تُحدد لكل صاحب مصلحة.",
+          "en": "Value is defined for each stakeholder."
+         }
+        },
+        {
+         "ref": "6.5",
+         "why": {
+          "ar": "المجلس مساءَل أمام أصحاب الحق.",
+          "en": "The board answers to member stakeholders."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.7",
+      "status": "",
+      "page": 25,
+      "title": {
+       "en": "Leadership",
+       "ar": "القيادة"
+      },
+      "req": {
+       "en": "The governing body leads the organization ethically and effectively: it sets the tone for an ethical culture, models the values, and makes sure its own composition, competence, independence, diversity and dynamics are adequate. The chair leads the board; directors act with integrity, declare and manage conflicts of interest, and evaluate their own effectiveness.",
+       "ar": "تقود الجهة الحاكمة المنظمة بأخلاقية وفعالية: تضبط «النبرة من القمة» لثقافة أخلاقية، وتجسّد القيم، وتضمن كفاية تشكيلها وكفاءتها واستقلاليتها وتنوعها وديناميكية عملها. يقود الرئيس المجلس، ويتصرف الأعضاء بنزاهة، ويفصحون عن تعارض المصالح ويديرونه، ويقيّمون فعاليتهم."
+      },
+      "ex": {
+       "en": "Al-Riyada's board had five family members and one executive director. Ahead of listing it appointed three independent directors (finance, grid engineering and digital), separated the chair and CEO roles, adopted a directors' code of conduct with an annual conflict-of-interest declaration, and commissioned its first externally facilitated board evaluation. The evaluation showed too little board time on talent and succession.",
+       "ar": "كان مجلس «الريادة» يضم خمسة من أفراد العائلة ومديراً تنفيذياً واحداً. وقبل الإدراج عيّن ثلاثة أعضاء مستقلين (مالية، وهندسة شبكات، وتحول رقمي)، وفصل دور الرئيس عن الرئيس التنفيذي، واعتمد مدونة سلوك للأعضاء مع إفصاح سنوي عن تعارض المصالح، وكلّف جهة خارجية بأول تقييم للمجلس. وأظهر التقييم أن الوقت المخصص للمواهب والتعاقب القيادي غير كافٍ."
+      },
+      "how": [
+       {
+        "en": "Build a board skills matrix and appoint independent directors to close the gaps.",
+        "ar": "أعدّ مصفوفة مهارات للمجلس، وعيّن أعضاء مستقلين لسد الفجوات."
+       },
+       {
+        "en": "Separate the chair's and the CEO's responsibilities in writing.",
+        "ar": "افصل مسؤوليات رئيس المجلس عن الرئيس التنفيذي كتابياً."
+       },
+       {
+        "en": "Adopt a directors' code of conduct and a conflict-of-interest policy with an annual declaration.",
+        "ar": "اعتمد مدونة سلوك للأعضاء وسياسة تعارض مصالح مع إفصاح سنوي."
+       },
+       {
+        "en": "Evaluate the board and its committees every year, with an external facilitator every three years.",
+        "ar": "قيّم المجلس ولجانه سنوياً، وبمُيسّر خارجي كل ثلاث سنوات."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Board skills matrix",
+        "ar": "مصفوفة مهارات المجلس"
+       },
+       {
+        "en": "Code of conduct and annual conflict-of-interest declarations",
+        "ar": "مدونة السلوك وإفصاحات تعارض المصالح السنوية"
+       },
+       {
+        "en": "Board evaluation report and action plan",
+        "ar": "تقرير تقييم المجلس وخطة التحسين"
+       },
+       {
+        "en": "Director induction and development records",
+        "ar": "سجلات التهيئة والتطوير للأعضاء"
+       }
+      ],
+      "tip": {
+       "en": "The tone at the top is measured by what the board tolerates, not by what it says. Review how the last integrity breach by a senior person was handled.",
+       "ar": "تُقاس النبرة من القمة بما يتسامح معه المجلس لا بما يقوله؛ راجع كيف عولجت آخر مخالفة نزاهة من مسؤول كبير."
+      },
+      "checks": [
+       {
+        "ar": "اعرض مصفوفة مهارات المجلس وعدد الأعضاء المستقلين.",
+        "en": "Show the board skills matrix and the number of independent directors."
+       },
+       {
+        "ar": "كيف تُدار إفصاحات تعارض المصالح والتعاملات مع الأطراف ذات العلاقة؟",
+        "en": "How are conflict-of-interest declarations and related-party transactions handled?"
+       },
+       {
+        "ar": "متى قُيّم المجلس آخر مرة، وما الذي تغيّر بعد التقييم؟",
+        "en": "When was the board last evaluated, and what changed afterwards?"
+       },
+       {
+        "ar": "كيف يُهيَّأ الأعضاء الجدد ويُطوَّر الأعضاء الحاليون؟",
+        "en": "How are new directors inducted and existing directors developed?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.4",
+         "why": {
+          "ar": "القيادة الفعالة تطرح التحدي البنّاء.",
+          "en": "Effective leadership brings constructive challenge."
+         }
+        },
+        {
+         "ref": "5c",
+         "why": {
+          "ar": "النبرة من القمة تصنع الثقافة.",
+          "en": "Tone at the top shapes culture."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.1",
+         "why": {
+          "ar": "القيم توجه سلوك القيادة وثقافتها.",
+          "en": "Values guide leadership behaviour and culture."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.8",
+      "status": "new",
+      "page": 28,
+      "title": {
+       "en": "Data and decisions",
+       "ar": "البيانات والقرارات"
+      },
+      "req": {
+       "en": "The governing body treats data as a valuable resource and ensures the organization uses data and information strategically and responsibly: reliable, timely and relevant information for decisions, with data governance, protection and ethics in place. The board's own decisions are well informed, documented and traceable.",
+       "ar": "تعامل الجهة الحاكمة البيانات بوصفها مورداً قيّماً، وتضمن أن تستخدم المنظمة البيانات والمعلومات استخداماً استراتيجياً ومسؤولاً: معلومات موثوقة وفي وقتها وذات صلة لدعم القرار، مع حوكمة للبيانات وحماية لها وأخلاقيات لاستخدامها. وقرارات المجلس نفسها مستنيرة وموثقة وقابلة للتتبع."
+      },
+      "ex": {
+       "en": "Al-Riyada's board packs ran to 400 pages and arrived two days before meetings. The company secretary introduced a standard board paper (purpose, decision required, options, risks, data sources and quality, recommendation), a seven-day distribution rule and a 15-KPI dashboard in which every indicator has a named data owner who owns its definition. The board also approved a data governance policy aligned with the national Personal Data Protection Law.",
+       "ar": "كانت ملفات اجتماعات مجلس «الريادة» تتجاوز 400 صفحة وتُرسل قبل يومين. فاعتمد أمين سر المجلس نموذج عرض موحداً (الغرض، والقرار المطلوب، والبدائل، والمخاطر، ومصادر البيانات وجودتها، والتوصية)، وقاعدة إرسال قبل سبعة أيام، ولوحة من 15 مؤشراً لكل منها مالك بيانات معتمد لتعريفه. كما اعتمد المجلس سياسة حوكمة بيانات متوافقة مع نظام حماية البيانات الشخصية."
+      },
+      "how": [
+       {
+        "en": "Adopt a board paper template that states the decision required, the data sources and the assumptions.",
+        "ar": "اعتمد نموذج عرض للمجلس يذكر القرار المطلوب ومصادر البيانات والافتراضات."
+       },
+       {
+        "en": "Define data governance roles: data owners and data stewards.",
+        "ar": "حدد أدوار حوكمة البيانات: ملاك البيانات وأمناؤها."
+       },
+       {
+        "en": "Adopt a data protection and data ethics policy (including AI use) aligned with national regulation.",
+        "ar": "اعتمد سياسة لحماية البيانات وأخلاقيات استخدامها (ومنها الذكاء الاصطناعي) متوافقة مع الأنظمة الوطنية."
+       },
+       {
+        "en": "Keep a board decision log and track implementation.",
+        "ar": "احتفظ بسجل قرارات المجلس ومتابعة تنفيذها."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Decision paper template",
+        "ar": "نموذج عرض القرار"
+       },
+       {
+        "en": "Data governance policy and data owners",
+        "ar": "سياسة حوكمة البيانات وملاكها"
+       },
+       {
+        "en": "Board decision log with follow-up",
+        "ar": "سجل قرارات المجلس ومتابعتها"
+       },
+       {
+        "en": "Information quality assessed in the board evaluation",
+        "ar": "تقييم جودة المعلومات ضمن تقييم المجلس"
+       }
+      ],
+      "tip": {
+       "en": "Track the share of papers that arrive on time and state the decision on page one; both are early signals of decision quality.",
+       "ar": "تابع نسبة العروض التي تصل في موعدها وتذكر القرار المطلوب في الصفحة الأولى؛ كلاهما مؤشر مبكر على جودة القرار."
+      },
+      "checks": [
+       {
+        "ar": "هل للعروض المقدمة للمجلس نموذج موحد يذكر القرار المطلوب ومصادر البيانات؟",
+        "en": "Do board papers follow a standard format stating the decision required and the data sources?"
+       },
+       {
+        "ar": "قبل كم يوماً تصل ملفات الاجتماع إلى الأعضاء عادة؟",
+        "en": "How many days before a meeting do directors usually receive the papers?"
+       },
+       {
+        "ar": "من يشرف على حوكمة البيانات وحماية البيانات الشخصية وأخلاقيات الذكاء الاصطناعي؟",
+        "en": "Who oversees data governance, personal data protection and AI ethics?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.4",
+         "why": {
+          "ar": "المعلومات الموثوقة شرط الإشراف.",
+          "en": "Reliable information is a condition for oversight."
+         }
+        },
+        {
+         "ref": "6.9",
+         "why": {
+          "ar": "البيانات تكشف المخاطر مبكراً.",
+          "en": "Data reveals risks early."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.6",
+         "why": {
+          "ar": "مدخلات الأطراف بيانات للقرار.",
+          "en": "Stakeholder input is data for decisions."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.9",
+      "status": "",
+      "page": 30,
+      "title": {
+       "en": "Risk governance",
+       "ar": "حوكمة المخاطر"
+      },
+      "req": {
+       "en": "The governing body ensures risk is considered in setting and achieving the purpose: it sets risk appetite, makes sure an effective risk management framework (such as ISO 31000) is in place, oversees principal and emerging risks, and ensures decisions are taken within appetite. Risk governance is the board's role; risk management is management's.",
+       "ar": "تضمن الجهة الحاكمة مراعاة المخاطر عند وضع الغاية وتحقيقها: تحدد الرغبة في المخاطر، وتتأكد من وجود إطار فعال لإدارة المخاطر (مثل ISO 31000)، وتشرف على المخاطر الرئيسية والناشئة، وتضمن اتخاذ القرارات ضمن الرغبة. حوكمة المخاطر دور المجلس، وإدارة المخاطر دور الإدارة."
+      },
+      "ex": {
+       "en": "Al-Riyada's board approved a risk appetite statement across nine categories (averse for safety and compliance, open for strategic growth), set up a risk committee and now receives a quarterly principal-risk dashboard comparing residual risk with appetite. When the long-lead transformer risk rose above appetite, the committee asked management for a second-source plan within 60 days.",
+       "ar": "اعتمد مجلس «الريادة» بيان رغبة في المخاطر عبر تسع فئات (متجنبة للسلامة والامتثال، ومنفتحة للنمو الاستراتيجي)، وأنشأ لجنة مخاطر، وأصبح يتسلّم لوحة ربع سنوية للمخاطر الرئيسية تقارن الخطر المتبقي بالرغبة. وعندما ارتفع خطر تأخر المحولات طويلة التوريد فوق الرغبة، طلبت اللجنة من الإدارة خطة مصدر ثانٍ خلال 60 يوماً."
+      },
+      "how": [
+       {
+        "en": "Approve the risk appetite for each main category, with measurable limits.",
+        "ar": "اعتمد الرغبة في المخاطر لكل فئة رئيسية بحدود قابلة للقياس."
+       },
+       {
+        "en": "Assign each principal risk to the board or a named committee for oversight.",
+        "ar": "أسند كل خطر رئيسي إلى المجلس أو لجنة محددة للإشراف عليه."
+       },
+       {
+        "en": "Receive a regular dashboard comparing residual risk with appetite, and decide on every risk above it.",
+        "ar": "تسلّم لوحة دورية تقارن الخطر المتبقي بالرغبة، وقرر في كل خطر فوقها."
+       },
+       {
+        "en": "Review the effectiveness of the risk management framework every year.",
+        "ar": "راجع فعالية إطار إدارة المخاطر سنوياً."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Risk appetite statement",
+        "ar": "بيان الرغبة في المخاطر"
+       },
+       {
+        "en": "Principal risk dashboard",
+        "ar": "لوحة المخاطر الرئيسية"
+       },
+       {
+        "en": "Minutes with decisions on risks above appetite",
+        "ar": "محاضر قرارات بشأن المخاطر فوق الرغبة"
+       },
+       {
+        "en": "Annual framework effectiveness review",
+        "ar": "مراجعة سنوية لفعالية الإطار"
+       }
+      ],
+      "tip": {
+       "en": "Use the same appetite scale as the ISO 31000 studio so the board and management speak one language.",
+       "ar": "استخدم مقياس الرغبة نفسه المستخدم في استوديو ISO 31000، ليتحدث المجلس والإدارة لغة واحدة."
+      },
+      "checks": [
+       {
+        "ar": "اعرض بيان الرغبة في المخاطر المعتمد وحدوده.",
+        "en": "Show the approved risk appetite statement and its limits."
+       },
+       {
+        "ar": "كيف يرى المجلس المخاطر المتبقية مقارنة بالرغبة، وكم مرة؟",
+        "en": "How, and how often, does the board see residual risk compared with appetite?"
+       },
+       {
+        "ar": "ما القرارات المتخذة بشأن المخاطر التي تجاوزت الرغبة خلال العام؟",
+        "en": "What decisions were taken on risks above appetite during the year?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "6.11",
+         "why": {
+          "ar": "حوكمة المخاطر تحمي الاستمرارية.",
+          "en": "Risk governance protects viability."
+         }
+        },
+        {
+         "ref": "5b",
+         "why": {
+          "ar": "حوكمة المخاطر تحمي الموارد.",
+          "en": "Risk governance protects resources."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "الاستراتيجية تحدد المخاطر المقبولة.",
+          "en": "Strategy sets the risks worth taking."
+         }
+        },
+        {
+         "ref": "6.4",
+         "why": {
+          "ar": "الإشراف يشمل المخاطر والرقابة الداخلية.",
+          "en": "Oversight covers risk and internal control."
+         }
+        },
+        {
+         "ref": "6.8",
+         "why": {
+          "ar": "البيانات تكشف المخاطر مبكراً.",
+          "en": "Data reveals risks early."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.10",
+      "status": "",
+      "page": 33,
+      "title": {
+       "en": "Social responsibility",
+       "ar": "المسؤولية المجتمعية"
+      },
+      "req": {
+       "en": "The governing body ensures decisions are transparent and in line with broader societal expectations: the organization considers its impacts on society, the economy and the environment, respects the law and international norms of behaviour, and contributes to sustainable development. Social responsibility is built into strategy and decisions, not run as separate philanthropy.",
+       "ar": "تضمن الجهة الحاكمة أن تكون القرارات شفافة ومتسقة مع التوقعات المجتمعية الأوسع: تراعي المنظمة آثارها على المجتمع والاقتصاد والبيئة، وتحترم الأنظمة والمعايير الدولية للسلوك، وتسهم في التنمية المستدامة. وتُدمج المسؤولية المجتمعية في الاستراتيجية والقرار، لا تُعامل كعمل خيري منفصل."
+      },
+      "ex": {
+       "en": "Al-Riyada's social responsibility used to mean Ramadan donations. The board adopted a social responsibility policy built on the core subjects of ISO 26000, set targets for local content, Saudization, heat-stress protection and community skills programmes, required a social impact section in every investment above SAR 20 million, and now publishes an annual sustainability report.",
+       "ar": "كانت المسؤولية المجتمعية في «الريادة» تبرعات رمضانية. فاعتمد المجلس سياسة مسؤولية مجتمعية مبنية على الموضوعات الجوهرية في ISO 26000، ووضع مستهدفات للمحتوى المحلي والتوطين والحماية من الإجهاد الحراري وبرامج المهارات المجتمعية، واشترط قسماً للأثر المجتمعي في كل استثمار يتجاوز 20 مليون ريال، وأصبح ينشر تقرير استدامة سنوياً."
+      },
+      "how": [
+       {
+        "en": "Identify the organization's significant impacts on society, the economy and the environment.",
+        "ar": "حدد الآثار الجوهرية للمنظمة على المجتمع والاقتصاد والبيئة."
+       },
+       {
+        "en": "Adopt a social responsibility policy with measurable targets.",
+        "ar": "اعتمد سياسة مسؤولية مجتمعية بمستهدفات قابلة للقياس."
+       },
+       {
+        "en": "Include social and environmental impact assessment in major investment decisions.",
+        "ar": "أدرج تقييم الأثر المجتمعي والبيئي في قرارات الاستثمار الكبرى."
+       },
+       {
+        "en": "Disclose transparently in an annual sustainability report.",
+        "ar": "افصح بشفافية في تقرير استدامة سنوي."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Materiality assessment",
+        "ar": "تقييم الموضوعات الجوهرية"
+       },
+       {
+        "en": "Social responsibility policy and targets",
+        "ar": "سياسة ومستهدفات المسؤولية المجتمعية"
+       },
+       {
+        "en": "Investment papers with an impact section",
+        "ar": "عروض استثمار تتضمن قسم الأثر"
+       },
+       {
+        "en": "Sustainability report",
+        "ar": "تقرير الاستدامة"
+       }
+      ],
+      "tip": {
+       "en": "Ask which decision the board rejected or changed because of its social or environmental impact. If there is no example, social responsibility sits outside decision-making.",
+       "ar": "اسأل: أي قرار رفضه المجلس أو عدّله بسبب أثره المجتمعي أو البيئي؟ غياب المثال يعني أن المسؤولية المجتمعية خارج القرار."
+      },
+      "checks": [
+       {
+        "ar": "ما الآثار المجتمعية والبيئية الجوهرية للمنظمة وكيف حُددت؟",
+        "en": "What are the organization's material social and environmental impacts, and how were they identified?"
+       },
+       {
+        "ar": "هل تتضمن قرارات الاستثمار الكبرى تقييماً للأثر المجتمعي والبيئي؟",
+        "en": "Do major investment decisions include a social and environmental impact assessment?"
+       },
+       {
+        "ar": "هل يُنشر تقرير استدامة أو إفصاح بيئي واجتماعي وحوكمي؟",
+        "en": "Is a sustainability or ESG disclosure published?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "5c",
+         "why": {
+          "ar": "المسؤولية المجتمعية سلوك أخلاقي تجاه المجتمع.",
+          "en": "Social responsibility is ethical conduct towards society."
+         }
+        },
+        {
+         "ref": "6.11",
+         "why": {
+          "ar": "الأثر المجتمعي والبيئي جزء من الاستدامة.",
+          "en": "Social and environmental impact are part of viability."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.6",
+         "why": {
+          "ar": "فهم توقعات الأطراف يحدد المسؤولية المجتمعية.",
+          "en": "Stakeholder expectations shape social responsibility."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "6.11",
+      "status": "new",
+      "page": 34,
+      "title": {
+       "en": "Viability and performance over time",
+       "ar": "الاستدامة والأداء عبر الزمن"
+      },
+      "req": {
+       "en": "The governing body ensures the organization stays viable and performs well over time, balancing short-term results with long-term value and without compromising the ability of future generations to meet their needs. This covers financial resilience, succession, renewal of capabilities, business continuity and adapting the business model to long-term trends.",
+       "ar": "تضمن الجهة الحاكمة أن تبقى المنظمة قادرة على الاستمرار وتؤدي أداءً جيداً عبر الزمن، بموازنة النتائج قصيرة الأجل مع القيمة طويلة الأجل، ودون الإضرار بقدرة الأجيال القادمة على تلبية احتياجاتها. ويشمل ذلك المتانة المالية، والتعاقب القيادي، وتجديد القدرات، واستمرارية الأعمال، وتكييف نموذج العمل مع الاتجاهات طويلة الأجل."
+      },
+      "ex": {
+       "en": "Al-Riyada's board adopted a ten-year viability outlook: liquidity stress tests (two major clients paying 120 days late), succession plans for the CEO and critical roles, a capability plan for grid digitalization, and a business continuity programme for its control centre based on ISO 22301. Executive incentives now defer 40% of the bonus over three years and include long-term measures.",
+       "ar": "اعتمد مجلس «الريادة» منظوراً للاستمرارية لعشر سنوات: اختبارات ضغط للسيولة (تأخر عميلين كبيرين 120 يوماً)، وخطط تعاقب للرئيس التنفيذي والوظائف الحرجة، وخطة قدرات لرقمنة الشبكات، وبرنامج استمرارية أعمال لمركز التحكم وفق ISO 22301. وأصبحت حوافز التنفيذيين تؤجل 40% من المكافأة على ثلاث سنوات وتتضمن مؤشرات طويلة الأجل."
+      },
+      "how": [
+       {
+        "en": "Carry out a long-term viability assessment with stress tests of severe but plausible scenarios.",
+        "ar": "أجرِ تقييماً للاستمرارية طويلة الأجل مع اختبارات ضغط لسيناريوهات شديدة ومعقولة."
+       },
+       {
+        "en": "Approve succession plans for the CEO, critical roles and board members.",
+        "ar": "اعتمد خطط تعاقب للرئيس التنفيذي والوظائف الحرجة وأعضاء المجلس."
+       },
+       {
+        "en": "Link remuneration to long-term measures and defer part of it.",
+        "ar": "اربط المكافآت بمؤشرات طويلة الأجل مع تأجيل جزء منها."
+       },
+       {
+        "en": "Oversee resilience and business continuity for critical services.",
+        "ar": "أشرف على المرونة واستمرارية الأعمال للخدمات الحرجة."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Viability statement and its assumptions",
+        "ar": "بيان الاستمرارية وافتراضاته"
+       },
+       {
+        "en": "Stress test results",
+        "ar": "نتائج اختبارات الضغط"
+       },
+       {
+        "en": "Succession plans",
+        "ar": "خطط التعاقب"
+       },
+       {
+        "en": "Remuneration policy with deferral and long-term measures",
+        "ar": "سياسة مكافآت بتأجيل ومؤشرات طويلة الأجل"
+       }
+      ],
+      "tip": {
+       "en": "If every measure in management's incentive plan is annual, the organization is being run for next year, not the next decade.",
+       "ar": "إذا كانت كل مؤشرات حوافز الإدارة سنوية، فالمنظمة تُدار للعام القادم لا للعقد القادم."
+      },
+      "checks": [
+       {
+        "ar": "هل يراجع المجلس تقييماً للاستمرارية طويلة الأجل مع اختبارات ضغط؟",
+        "en": "Does the board review a long-term viability assessment with stress tests?"
+       },
+       {
+        "ar": "ما خطط التعاقب للرئيس التنفيذي والوظائف الحرجة؟",
+        "en": "What succession plans exist for the CEO and critical roles?"
+       },
+       {
+        "ar": "هل تتضمن الحوافز مؤشرات طويلة الأجل وتأجيلاً لجزء من المكافأة؟",
+        "en": "Do incentives include long-term measures and deferral of part of the award?"
+       }
+      ],
+      "links": {
+       "out": [
+        {
+         "ref": "5a",
+         "why": {
+          "ar": "الأداء الفعال أداء مستدام عبر الزمن.",
+          "en": "Effective performance is performance that lasts."
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "6.2",
+         "why": {
+          "ar": "القيمة يجب أن تستمر عبر الزمن.",
+          "en": "Value has to last over time."
+         }
+        },
+        {
+         "ref": "6.9",
+         "why": {
+          "ar": "حوكمة المخاطر تحمي الاستمرارية.",
+          "en": "Risk governance protects viability."
+         }
+        },
+        {
+         "ref": "6.10",
+         "why": {
+          "ar": "الأثر المجتمعي والبيئي جزء من الاستدامة.",
+          "en": "Social and environmental impact are part of viability."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "5",
+    "phase": "out",
+    "title": {
+     "en": "Governance outcomes",
+     "ar": "نواتج الحوكمة"
+    },
+    "intro": {
+     "en": "When the governing body applies the principles, it can expect three key governance outcomes: effective performance, responsible stewardship and ethical behaviour. These outcomes, not the number of policies and committees, are the test of good governance.",
+     "ar": "عندما تطبق الجهة الحاكمة المبادئ، تتوقع ثلاثة نواتج رئيسية للحوكمة: أداء فعال، وإشراف أمين على الموارد، وسلوك أخلاقي. هذه النواتج هي معيار الحكم على جودة الحوكمة، لا عدد السياسات واللجان."
+    },
+    "items": [
+     {
+      "ref": "5a",
+      "status": "",
+      "page": 9,
+      "title": {
+       "en": "Effective performance",
+       "ar": "الأداء الفعال"
+      },
+      "req": {
+       "en": "The first outcome of good governance: the organization fulfils its purpose and achieves its intended results efficiently, adapting to a changing context. It is measured by balanced performance against the strategy and the value model, financial and non-financial, not by profit alone.",
+       "ar": "أول نواتج الحوكمة الجيدة: أن تحقق المنظمة غايتها ونتائجها المقصودة بكفاءة، وأن تتكيف مع سياقها المتغير. يُقاس ذلك بأداء متوازن يشمل النتائج المالية وغير المالية مقابل الاستراتيجية ونموذج القيمة، لا بالأرباح وحدها."
+      },
+      "ex": {
+       "en": "Al-Riyada tracks a balanced scorecard of 15 measures linked to its purpose: reliability, on-time delivery, safety, margin, Saudization and client satisfaction. Each quarter the board reviews the trend, not just the number, and asks for analysis of any measure that stays red for two quarters.",
+       "ar": "تتابع «الريادة» بطاقة أداء متوازنة من 15 مؤشراً مرتبطة بالغاية: الموثوقية والتسليم في الموعد والسلامة والهامش والتوطين ورضا العملاء. ويراجع المجلس كل ربع سنة الاتجاه لا الرقم وحده، ويطلب تحليلاً لكل مؤشر أحمر لربعين متتاليين."
+      },
+      "how": [
+       {
+        "en": "Link performance measures to the purpose, the value model and the strategy.",
+        "ar": "اربط مؤشرات الأداء بالغاية ونموذج القيمة والاستراتيجية."
+       },
+       {
+        "en": "Balance financial and non-financial, leading and lagging measures.",
+        "ar": "وازن بين المؤشرات المالية وغير المالية والقائدة والمتأخرة."
+       },
+       {
+        "en": "Review trends and the causes of variance, not the numbers alone.",
+        "ar": "راجع الاتجاهات وأسباب الانحراف، لا الأرقام وحدها."
+       },
+       {
+        "en": "Assess every year whether governance itself is contributing to performance.",
+        "ar": "قيّم سنوياً ما إذا كانت الحوكمة نفسها تسهم في الأداء."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Approved balanced scorecard",
+        "ar": "بطاقة أداء متوازنة معتمدة"
+       },
+       {
+        "en": "Quarterly performance reports to the board",
+        "ar": "تقارير أداء ربع سنوية للمجلس"
+       },
+       {
+        "en": "Variance analysis",
+        "ar": "تحليل أسباب الانحرافات"
+       },
+       {
+        "en": "Annual report on fulfilment of purpose",
+        "ar": "تقرير سنوي عن تحقيق الغاية"
+       }
+      ],
+      "tip": {
+       "en": "Effective performance is not the highest profit this year; it is fulfilling the purpose with balanced performance that can be sustained.",
+       "ar": "الأداء الفعال لا يعني أعلى ربح هذا العام؛ بل تحقيق الغاية بأداء متوازن يمكن الاستمرار عليه."
+      },
+      "checks": [
+       {
+        "ar": "ما مؤشرات الأداء المتوازن المرتبطة بالغاية، وما اتجاهها؟",
+        "en": "Which balanced performance measures are linked to the purpose, and what is their trend?"
+       },
+       {
+        "ar": "كيف يتعامل المجلس مع المؤشرات الحمراء المتكررة؟",
+        "en": "How does the board deal with measures that stay red?"
+       },
+       {
+        "ar": "هل يقيّم المجلس إسهام الحوكمة نفسها في الأداء؟",
+        "en": "Does the board assess how governance itself contributes to performance?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "6.3",
+         "why": {
+          "ar": "الاستراتيجية المنفذة تنتج الأداء.",
+          "en": "Executed strategy produces performance."
+         }
+        },
+        {
+         "ref": "6.11",
+         "why": {
+          "ar": "الأداء الفعال أداء مستدام عبر الزمن.",
+          "en": "Effective performance is performance that lasts."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "5b",
+      "status": "",
+      "page": 9,
+      "title": {
+       "en": "Responsible stewardship",
+       "ar": "الإشراف الأمين على الموارد"
+      },
+      "req": {
+       "en": "The second outcome: the organization's resources (financial, human, natural, intellectual and relationships) are used responsibly and are preserved and developed for stakeholders and future generations. The board acts as a steward of what has been entrusted to it, not as an owner free to do as it pleases.",
+       "ar": "الناتج الثاني: أن تُستخدم موارد المنظمة (المالية والبشرية والطبيعية والفكرية والعلاقات) بمسؤولية، وأن تُحفظ وتُنمّى لصالح أصحاب المصلحة والأجيال القادمة. المجلس أمين على ما عُهد إليه، لا مالك يتصرف كما يشاء."
+      },
+      "ex": {
+       "en": "Al-Riyada adopted a critical asset register and an equipment replacement plan, a site energy and water policy, and a knowledge-transfer programme from retiring engineers. Every year the board reviews a 'resource balance sheet' showing what was added to and consumed from each resource.",
+       "ar": "تبنّت «الريادة» سجلاً للأصول الحرجة وخطة لاستبدال المعدات القديمة، وسياسة لاستخدام الطاقة والمياه في المواقع، وبرنامجاً لنقل المعرفة من المهندسين المتقاعدين. ويراجع المجلس سنوياً «ميزانية الموارد» التي تبيّن ما أضيف وما استُهلك من كل مورد."
+      },
+      "how": [
+       {
+        "en": "Identify the main resources entrusted to the organization, including human and natural ones.",
+        "ar": "حدد الموارد الرئيسية التي عُهد بها إلى المنظمة، بما فيها البشرية والطبيعية."
+       },
+       {
+        "en": "Adopt policies to protect and develop resources, including assets and knowledge.",
+        "ar": "اعتمد سياسات لحماية الموارد وتنميتها، ومنها الأصول والمعرفة."
+       },
+       {
+        "en": "Monitor resource efficiency and erosion.",
+        "ar": "راقب كفاءة استخدام الموارد وتآكلها."
+       },
+       {
+        "en": "Disclose stewardship of resources in annual reporting.",
+        "ar": "افصح عن الإشراف على الموارد في التقارير السنوية."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Critical asset register",
+        "ar": "سجل الأصول الحرجة"
+       },
+       {
+        "en": "Replacement and knowledge-transfer plans",
+        "ar": "خطط الاستبدال ونقل المعرفة"
+       },
+       {
+        "en": "Resource efficiency indicators",
+        "ar": "مؤشرات كفاءة الموارد"
+       },
+       {
+        "en": "Annual resource disclosure",
+        "ar": "إفصاح سنوي عن الموارد"
+       }
+      ],
+      "tip": {
+       "en": "Ask whether we are leaving the organization and its resources in better shape than we found them. That is the stewardship test.",
+       "ar": "اسأل: هل تركنا المنظمة ومواردها في حال أفضل مما استلمناها؟ هذا هو معيار الأمانة."
+      },
+      "checks": [
+       {
+        "ar": "ما الموارد الحرجة المعهود بها إلى المنظمة، وكيف تُحفظ وتُنمّى؟",
+        "en": "Which critical resources are entrusted to the organization, and how are they preserved and developed?"
+       },
+       {
+        "ar": "هل توجد مؤشرات لكفاءة استخدام الموارد وتآكلها؟",
+        "en": "Are there indicators for resource efficiency and erosion?"
+       },
+       {
+        "ar": "كيف يُفصح عن الإشراف على الموارد؟",
+        "en": "How is stewardship of resources disclosed?"
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "6.4",
+         "why": {
+          "ar": "الإشراف يحمي موارد المنظمة.",
+          "en": "Oversight protects the organization's resources."
+         }
+        },
+        {
+         "ref": "6.5",
+         "why": {
+          "ar": "المساءلة أساس الإشراف الأمين.",
+          "en": "Accountability underpins responsible stewardship."
+         }
+        },
+        {
+         "ref": "6.9",
+         "why": {
+          "ar": "حوكمة المخاطر تحمي الموارد.",
+          "en": "Risk governance protects resources."
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "5c",
+      "status": "",
+      "page": 9,
+      "title": {
+       "en": "Ethical behaviour",
+       "ar": "السلوك الأخلاقي"
+      },
+      "req": {
+       "en": "The third outcome: the organization and those who act on its behalf behave ethically, in line with its values, the law and societal expectations. This needs a code of conduct, safe channels for raising concerns (ISO 37002) and fair, firm handling of misconduct whatever the seniority of the person involved.",
+       "ar": "الناتج الثالث: أن تتصرف المنظمة ومن يعمل باسمها بأخلاقية وفق قيمها والأنظمة والتوقعات المجتمعية. ويتطلب ذلك مدونة سلوك، وقنوات آمنة للإبلاغ عن المخالفات (ISO 37002)، ومعالجة عادلة وحازمة للمخالفات بصرف النظر عن رتبة المخالف."
+      },
+      "ex": {
+       "en": "Al-Riyada launched an independent speak-up channel open to employees and contractors, with protection against retaliation and quarterly reporting to the audit committee. When a project manager was found to have accepted gifts from a supplier, the same sanction applied to any employee was applied, and anonymized lessons were shared.",
+       "ar": "أطلقت «الريادة» قناة إبلاغ مستقلة متاحة للموظفين والمقاولين، مع حماية المبلّغين من الانتقام، ورفع تقارير فصلية إلى لجنة المراجعة. وعندما ثبت أن مدير مشروع قبل هدايا من مورد، طُبّقت العقوبة ذاتها المقررة لأي موظف، ونُشرت الدروس المستفادة دون أسماء."
+      },
+      "how": [
+       {
+        "en": "Adopt a code of conduct that turns the values into behaviours, and train everyone on it, including the board.",
+        "ar": "اعتمد مدونة سلوك تترجم القيم إلى سلوكيات، ودرّب عليها الجميع بمن فيهم المجلس."
+       },
+       {
+        "en": "Provide safe, independent reporting channels with protection against retaliation.",
+        "ar": "وفّر قنوات إبلاغ آمنة ومستقلة مع حماية من الانتقام."
+       },
+       {
+        "en": "Apply consistent consequences for misconduct regardless of seniority.",
+        "ar": "طبّق عواقب متسقة على المخالفات بصرف النظر عن الرتبة."
+       },
+       {
+        "en": "Measure ethical culture regularly through surveys and speak-up indicators.",
+        "ar": "قس الثقافة الأخلاقية دورياً عبر الاستبيانات ومؤشرات الإبلاغ."
+       }
+      ],
+      "ev": [
+       {
+        "en": "Code of conduct and training records",
+        "ar": "مدونة السلوك وسجلات التدريب"
+       },
+       {
+        "en": "Speak-up procedure and reports",
+        "ar": "إجراءات قناة الإبلاغ وتقاريرها"
+       },
+       {
+        "en": "Misconduct case log",
+        "ar": "سجل معالجة المخالفات"
+       },
+       {
+        "en": "Ethical culture survey results",
+        "ar": "نتائج قياس الثقافة الأخلاقية"
+       }
+      ],
+      "tip": {
+       "en": "Zero reports is not evidence of integrity; it usually means people don't trust the channel.",
+       "ar": "انخفاض البلاغات إلى الصفر ليس دليلاً على النزاهة؛ غالباً يعني أن الناس لا يثقون بالقناة."
+      },
+      "checks": [
+       {
+        "ar": "اعرض مدونة السلوك وسجلات التدريب عليها، بما فيها المجلس.",
+        "en": "Show the code of conduct and training records, including for the board."
+       },
+       {
+        "ar": "كيف تعمل قناة الإبلاغ، ومن يتسلّم تقاريرها، وكيف يُحمى المبلّغون؟",
+        "en": "How does the speak-up channel work, who receives its reports, and how are reporters protected?"
+       },
+       {
+        "ar": "أعطني مثالاً على مخالفة من مسؤول كبير وكيف عولجت.",
+        "en": "Give an example of misconduct by a senior person and how it was handled."
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "6.1",
+         "why": {
+          "ar": "القيم أساس السلوك الأخلاقي.",
+          "en": "Values are the basis of ethical behaviour."
+         }
+        },
+        {
+         "ref": "6.7",
+         "why": {
+          "ar": "النبرة من القمة تصنع الثقافة.",
+          "en": "Tone at the top shapes culture."
+         }
+        },
+        {
+         "ref": "6.10",
+         "why": {
+          "ar": "المسؤولية المجتمعية سلوك أخلاقي تجاه المجتمع.",
+          "en": "Social responsibility is ethical conduct towards society."
+         }
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "changes": [
+   {
+    "title": {
+     "en": "Purpose as the primary principle",
+     "ar": "الغاية مبدأً أساسياً"
+    },
+    "text": {
+     "en": "ISO 37000 puts purpose at the centre: every other principle serves it, and decisions are tested against it. Most traditional governance codes start from board structure and committees; ISO 37000 starts from why the organization exists.",
+     "ar": "تضع ISO 37000 الغاية في المركز: كل المبادئ الأخرى تخدمها، والقرارات تُختبر مقابلها. معظم أدلة الحوكمة التقليدية تبدأ بهيكل المجلس ولجانه، أما هنا فتبدأ بسبب وجود المنظمة."
+    },
+    "refs": [
+     "6.1"
+    ]
+   },
+   {
+    "title": {
+     "en": "A value model, not only financial return",
+     "ar": "نموذج قيمة لا عائد مالي فقط"
+    },
+    "text": {
+     "en": "Principle 6.2 asks for a value model showing what is created, preserved and eroded for each stakeholder, with explicit trade-offs. This is broader than maximizing shareholder value.",
+     "ar": "يطلب المبدأ 6.2 نموذج قيمة يبيّن ما يُخلق ويُحفظ ويتآكل لكل صاحب مصلحة، مع مفاضلات صريحة. وهذا أوسع من تعظيم قيمة المساهمين."
+    },
+    "refs": [
+     "6.2"
+    ]
+   },
+   {
+    "title": {
+     "en": "One benchmark for every type of organization",
+     "ar": "مرجع واحد لكل أنواع المنظمات"
+    },
+    "text": {
+     "en": "It applies to listed and family companies, government bodies, non-profits and small enterprises. That is why it speaks of the 'governing body' and 'governing groups' rather than only the 'board of directors'.",
+     "ar": "تنطبق على الشركات المدرجة والعائلية والجهات الحكومية وغير الربحية والمنشآت الصغيرة. لذلك تستخدم مصطلحي «الجهة الحاكمة» و«المجموعة الحاكمة» بدلاً من «مجلس الإدارة» وحده."
+    },
+    "refs": [
+     "3"
+    ]
+   },
+   {
+    "title": {
+     "en": "Stakeholder engagement as a governance duty",
+     "ar": "إشراك أصحاب المصلحة واجب حوكمة"
+    },
+    "text": {
+     "en": "Stakeholder engagement is a principle in its own right (6.6) at board level, not a public relations activity. Views must reach decisions, and stakeholders should hear what changed.",
+     "ar": "إشراك أصحاب المصلحة مبدأ مستقل (6.6) على مستوى المجلس، وليس نشاط علاقات عامة. والمطلوب أن تصل آراؤهم إلى القرار وأن يُبلَّغوا بما تغيّر."
+    },
+    "refs": [
+     "6.6"
+    ]
+   },
+   {
+    "title": {
+     "en": "Data as a strategic resource",
+     "ar": "البيانات مورد استراتيجي"
+    },
+    "text": {
+     "en": "Principle 6.8 makes data and decisions a board responsibility: information quality, data governance, protection and ethics (including AI), and documented board decisions.",
+     "ar": "المبدأ 6.8 يجعل البيانات والقرار مسؤولية المجلس: جودة المعلومات، وحوكمة البيانات وحمايتها وأخلاقيات استخدامها، ومنها الذكاء الاصطناعي، وتوثيق قرارات المجلس."
+    },
+    "refs": [
+     "6.8"
+    ]
+   },
+   {
+    "title": {
+     "en": "Risk governance, not risk management",
+     "ar": "حوكمة المخاطر لا إدارتها"
+    },
+    "text": {
+     "en": "Principle 6.9 separates the board's role (appetite, oversight, deciding within appetite) from management's (running a framework such as ISO 31000). ISO 37000 and ISO 31000 complement each other.",
+     "ar": "يفرّق المبدأ 6.9 بين دور المجلس (الرغبة والإشراف والقرار ضمن الرغبة) ودور الإدارة (تطبيق إطار مثل ISO 31000). وتكمل ISO 37000 وISO 31000 بعضهما."
+    },
+    "refs": [
+     "6.9"
+    ]
+   },
+   {
+    "title": {
+     "en": "Viability over time and future generations",
+     "ar": "الاستمرارية عبر الزمن والأجيال القادمة"
+    },
+    "text": {
+     "en": "Principle 6.11 asks for short-term results to be balanced with the long term and for future generations to be considered: stress tests, succession, long-term incentives and resilience.",
+     "ar": "يطلب المبدأ 6.11 موازنة الأجل القصير مع الطويل، ومراعاة الأجيال القادمة: اختبارات ضغط، وتعاقب قيادي، وحوافز طويلة الأجل، ومرونة."
+    },
+    "refs": [
+     "6.11"
+    ]
+   },
+   {
+    "title": {
+     "en": "Three clear governance outcomes",
+     "ar": "ثلاثة نواتج واضحة للحوكمة"
+    },
+    "text": {
+     "en": "The standard defines what good governance produces: effective performance, responsible stewardship and ethical behaviour. These outcomes are the basis for maturity assessment.",
+     "ar": "تحدد المواصفة ما تعنيه الحوكمة الجيدة كنتيجة: أداء فعال، وإشراف أمين على الموارد، وسلوك أخلاقي. وهذه النواتج أساس تقييم النضج."
+    },
+    "refs": [
+     "5a",
+     "5b",
+     "5c"
+    ]
+   },
+   {
+    "title": {
+     "en": "Guidance measured by maturity, not certificates",
+     "ar": "إرشادات تُقاس بالنضج لا بالشهادة"
+    },
+    "text": {
+     "en": "ISO 37000 is guidance written as 'should' statements with no requirements, so there is no certification against it. It is used as a benchmark for governance maturity, complemented by certifiable standards such as ISO 37301 and ISO 37001.",
+     "ar": "ISO 37000 إرشادية بصيغة «ينبغي» ولا تتضمن متطلبات، فلا يوجد إشهاد عليها. تُستخدم مرجعاً لتقييم نضج الحوكمة، وتكمّلها مواصفات قابلة للإشهاد مثل ISO 37301 وISO 37001."
+    },
+    "refs": [
+     "6.4",
+     "6.5"
+    ]
+   }
+  ],
+  "terms": [
+   {
+    "no": "37000 · 3",
+    "en": "Governance of organizations",
+    "ar": "حوكمة المنظمات",
+    "def": {
+     "ar": "المنظومة البشرية التي تُوجَّه بها المنظمة ويُشرف عليها وتُساءل عن تحقيق غايتها المحددة. تشمل وضع الغاية والقيم، ونهج توليد القيمة، والتوجيه الاستراتيجي، والإشراف، والمساءلة.",
+     "en": "The people-based system through which an organization is directed, overseen and held to account for fulfilling its defined purpose. It covers setting purpose and values, the approach to value generation, strategic direction, oversight and accountability."
+    }
+   },
+   {
+    "no": "37000 · 3",
+    "en": "Governing body",
+    "ar": "الجهة الحاكمة",
+    "def": {
+     "ar": "الشخص أو المجموعة المسؤولة في النهاية عن المنظمة ككل: مجلس الإدارة، أو مجلس الأمناء، أو مجلس المديرين، أو المالك في المنشأة الصغيرة.",
+     "en": "The person or group ultimately accountable for the whole organization: a board of directors, board of trustees, council, or the owner in a small business."
+    }
+   },
+   {
+    "no": "37000 · 3",
+    "en": "Governing group",
+    "ar": "المجموعة الحاكمة",
+    "def": {
+     "ar": "مجموعة تمارس جزءاً من مهام الحوكمة بتفويض أو بحكم الأنظمة، مثل لجان المجلس أو مجالس الشركات التابعة أو اللجنة التنفيذية.",
+     "en": "A group that carries out part of the governance role by delegation or by law, such as board committees, subsidiary boards or an executive committee."
+    }
+   },
+   {
+    "no": "37000 · 3",
+    "en": "Organizational purpose",
+    "ar": "غاية المنظمة",
+    "def": {
+     "ar": "سبب وجود المنظمة، معبراً عنه بالقيمة التي تنوي توليدها ولصالح أي أصحاب مصلحة.",
+     "en": "The organization's reason for existing, expressed as the value it intends to generate and for which stakeholders."
+    }
+   },
+   {
+    "no": "37000 · 3",
+    "en": "Organizational values",
+    "ar": "قيم المنظمة",
+    "def": {
+     "ar": "المعتقدات والمبادئ التي تحدد كيف تسعى المنظمة إلى تحقيق غايتها، وتترجم إلى سلوكيات متوقعة.",
+     "en": "The beliefs and principles that determine how the organization pursues its purpose, translated into expected behaviours."
+    }
+   },
+   {
+    "no": "37000 · 6.2",
+    "en": "Value model",
+    "ar": "نموذج القيمة",
+    "def": {
+     "ar": "وصف لكيفية خلق المنظمة للقيمة وحفظها، وما قد تُضعفه، لكل فئة من أصحاب المصلحة، مع المفاضلات بينها.",
+     "en": "A description of how the organization creates and preserves value, and what it may erode, for each stakeholder group, with the trade-offs between them."
+    }
+   },
+   {
+    "no": "37000 · 3",
+    "en": "Stakeholder",
+    "ar": "صاحب المصلحة",
+    "def": {
+     "ar": "شخص أو منظمة يمكن أن يؤثر في قرار أو نشاط أو يتأثر به أو يرى أنه متأثر به.",
+     "en": "A person or organization that can affect, be affected by, or perceive itself to be affected by a decision or activity."
+    }
+   },
+   {
+    "no": "37000 · 6.4",
+    "en": "Oversight",
+    "ar": "الإشراف",
+    "def": {
+     "ar": "متابعة الجهة الحاكمة لأداء المنظمة وسلوكها وامتثالها، عبر الرقابة الداخلية والتأكيد والتقارير، والتدخل عند الحاجة.",
+     "en": "The governing body's monitoring of the organization's performance, conduct and compliance through internal control, assurance and reporting, and intervening when needed."
+    }
+   },
+   {
+    "no": "37000 · 6.5",
+    "en": "Accountability",
+    "ar": "المساءلة",
+    "def": {
+     "ar": "الالتزام بتقديم الحساب عن القرارات والأنشطة وآثارها لمن يحق له السؤال. يمكن تفويض المسؤولية، أما المساءلة النهائية فتبقى لدى الجهة الحاكمة.",
+     "en": "The obligation to answer for decisions, activities and their effects to those entitled to ask. Responsibility can be delegated; ultimate accountability stays with the governing body."
+    }
+   },
+   {
+    "no": "Practice",
+    "en": "Delegation of authority (DoA)",
+    "ar": "تفويض الصلاحيات",
+    "def": {
+     "ar": "منح صلاحية اتخاذ قرارات محددة ضمن حدود معلومة لشخص أو جهة، مع بقاء المفوِّض مسؤولاً عن الإشراف على استخدامها.",
+     "en": "Granting a person or body the power to take specified decisions within defined limits, while the delegator remains responsible for overseeing how that power is used."
+    }
+   },
+   {
+    "no": "Practice",
+    "en": "Reserved matters",
+    "ar": "المسائل المحجوزة",
+    "def": {
+     "ar": "قرارات لا تُفوَّض ويختص بها المجلس أو الجمعية العامة، مثل اعتماد الاستراتيجية والميزانية وتعيين الرئيس التنفيذي والتعاملات الكبرى مع الأطراف ذات العلاقة.",
+     "en": "Decisions that are not delegated and remain with the board or the general assembly, such as approving strategy and budget, appointing the CEO and major related-party transactions."
+    }
+   },
+   {
+    "no": "Practice",
+    "en": "Independent director",
+    "ar": "العضو المستقل",
+    "def": {
+     "ar": "عضو مجلس لا تربطه بالمنظمة أو إدارتها أو كبار مساهميها علاقات تؤثر في استقلال حكمه. وتحدد الأنظمة الوطنية معايير الاستقلال تفصيلاً.",
+     "en": "A director with no relationship to the organization, its management or major shareholders that could affect independent judgement. National regulations set the detailed criteria."
+    }
+   },
+   {
+    "no": "37009",
+    "en": "Conflict of interest",
+    "ar": "تعارض المصالح",
+    "def": {
+     "ar": "حالة تتعارض فيها مصلحة شخصية أو مهنية لشخص مع واجبه تجاه المنظمة، أو يُحتمل أن تبدو كذلك. تُدار بالإفصاح والامتناع عن التصويت والاعتماد المستقل.",
+     "en": "A situation where a person's personal or professional interest conflicts, or could appear to conflict, with their duty to the organization. Managed by disclosure, recusal and independent approval."
+    }
+   },
+   {
+    "no": "Practice",
+    "en": "Related-party transaction",
+    "ar": "التعامل مع طرف ذي علاقة",
+    "def": {
+     "ar": "تعامل بين المنظمة وعضو مجلس أو تنفيذي أو كبير مساهم أو من تربطهم به صلة. يتطلب عادةً إفصاحاً واعتماداً من المجلس أو الجمعية العامة وفق الأنظمة.",
+     "en": "A transaction between the organization and a director, executive, major shareholder or their connected persons. It usually needs disclosure and approval by the board or general assembly under applicable regulations."
+    }
+   },
+   {
+    "no": "37000 · 6.9",
+    "en": "Risk governance",
+    "ar": "حوكمة المخاطر",
+    "def": {
+     "ar": "دور الجهة الحاكمة في تحديد الرغبة في المخاطر والإشراف على المخاطر الرئيسية والتأكد من فعالية إدارة المخاطر، تمييزاً عن إدارة المخاطر اليومية التي تتولاها الإدارة.",
+     "en": "The governing body's role in setting risk appetite, overseeing principal risks and making sure risk management is effective, as distinct from day-to-day risk management by management."
+    }
+   },
+   {
+    "no": "31000 / Practice",
+    "en": "Risk appetite",
+    "ar": "الرغبة في المخاطر",
+    "def": {
+     "ar": "مقدار ونوع المخاطر التي تقبل المنظمة تحمّلها سعياً لأهدافها، ويُعبَّر عنه لكل فئة بحدود قابلة للقياس.",
+     "en": "The amount and type of risk the organization is willing to take in pursuit of its objectives, expressed per category with measurable limits."
+    }
+   },
+   {
+    "no": "Practice",
+    "en": "Assurance",
+    "ar": "التأكيد",
+    "def": {
+     "ar": "تقييم موضوعي يمنح الجهة الحاكمة ثقة في أن المخاطر مُدارة والضوابط فعالة، من الإدارة أو وظائف المخاطر والامتثال أو التدقيق الداخلي والخارجي.",
+     "en": "An objective assessment that gives the governing body confidence that risks are managed and controls work, provided by management, risk and compliance functions, or internal and external audit."
+    }
+   },
+   {
+    "no": "Practice",
+    "en": "Combined assurance map",
+    "ar": "خريطة التأكيد المشترك",
+    "def": {
+     "ar": "مصفوفة تبيّن لكل خطر رئيسي من يقدم التأكيد عليه وبأي مستوى، فتكشف الفجوات والتكرار.",
+     "en": "A matrix showing, for each principal risk, who provides assurance over it and to what level, revealing gaps and duplication."
+    }
+   },
+   {
+    "no": "37000 · 5",
+    "en": "Responsible stewardship",
+    "ar": "الإشراف الأمين",
+    "def": {
+     "ar": "استخدام الموارد المعهود بها إلى المنظمة بمسؤولية، وحفظها وتنميتها لصالح أصحاب المصلحة والأجيال القادمة.",
+     "en": "Using the resources entrusted to the organization responsibly, and preserving and developing them for stakeholders and future generations."
+    }
+   },
+   {
+    "no": "26000",
+    "en": "Social responsibility",
+    "ar": "المسؤولية المجتمعية",
+    "def": {
+     "ar": "مسؤولية المنظمة عن آثار قراراتها وأنشطتها على المجتمع والبيئة، عبر سلوك شفاف وأخلاقي يسهم في التنمية المستدامة.",
+     "en": "An organization's responsibility for the impacts of its decisions and activities on society and the environment, through transparent and ethical behaviour that contributes to sustainable development."
+    }
+   },
+   {
+    "no": "37000 · 6.11",
+    "en": "Viability",
+    "ar": "الاستمرارية (قابلية البقاء)",
+    "def": {
+     "ar": "قدرة المنظمة على مواصلة تحقيق غايتها عبر الزمن، مالياً وتشغيلياً واستراتيجياً، دون الإضرار بقدرة الأجيال القادمة.",
+     "en": "The organization's ability to go on fulfilling its purpose over time, financially, operationally and strategically, without compromising future generations."
+    }
+   },
+   {
+    "no": "Practice",
+    "en": "Board evaluation",
+    "ar": "تقييم أداء المجلس",
+    "def": {
+     "ar": "مراجعة منهجية دورية لفعالية المجلس ولجانه وأعضائه، تنتهي بخطة تحسين. يُنصح بمُيسّر خارجي دورياً.",
+     "en": "A periodic, structured review of the effectiveness of the board, its committees and directors, ending in an improvement plan. An external facilitator is advisable from time to time."
+    }
+   },
+   {
+    "no": "37004",
+    "en": "Governance maturity",
+    "ar": "نضج الحوكمة",
+    "def": {
+     "ar": "مدى رسوخ ممارسات الحوكمة وفعاليتها وتحسينها المستمر. تقدم ISO 37004:2023 نموذج نضج إرشادياً مبنياً على ISO 37000.",
+     "en": "How well established, effective and continually improving governance practices are. ISO 37004:2023 provides a guidance maturity model built on ISO 37000."
+    }
+   },
+   {
+    "no": "37301",
+    "en": "Compliance",
+    "ar": "الامتثال",
+    "def": {
+     "ar": "الوفاء بكل الالتزامات التنظيمية والتعاقدية والطوعية للمنظمة. تتولى الإدارة نظام الامتثال، وتشرف الجهة الحاكمة على فعاليته.",
+     "en": "Meeting all of the organization's regulatory, contractual and voluntary obligations. Management runs the compliance system; the governing body oversees its effectiveness."
+    }
+   }
+  ],
+  "pairs": [
+   {
+    "title": {
+     "en": "Governance or management?",
+     "ar": "الحوكمة أم الإدارة؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الحوكمة",
+       "en": "Governance"
+      },
+      "meaning": {
+       "ar": "توجّه وتشرف وتُساءل: تحدد الغاية والرغبة وتعتمد الاستراتيجية وتتابع الأداء.",
+       "en": "Directs, oversees and holds to account: sets purpose and appetite, approves strategy, monitors performance."
+      }
+     },
+     {
+      "term": {
+       "ar": "الإدارة",
+       "en": "Management"
+      },
+      "meaning": {
+       "ar": "تخطط وتنفذ وتُبلغ: تُعدّ الاستراتيجية وتدير العمليات والمخاطر وتقدم التقارير.",
+       "en": "Plans, executes and reports: develops the strategy, runs operations and risk, and reports back."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Accountability or responsibility?",
+     "ar": "المساءلة أم المسؤولية؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "المساءلة",
+       "en": "Accountability"
+      },
+      "meaning": {
+       "ar": "لا تُفوَّض؛ تبقى لدى الجهة الحاكمة التي تُسأل عن النتائج أمام أصحاب المصلحة.",
+       "en": "Cannot be delegated; it stays with the governing body, which answers for results to stakeholders."
+      }
+     },
+     {
+      "term": {
+       "ar": "المسؤولية",
+       "en": "Responsibility"
+      },
+      "meaning": {
+       "ar": "تُفوَّض لمن ينفّذ العمل ضمن حدود محددة، ويبقى المفوِّض مشرفاً.",
+       "en": "Delegated to those who do the work within defined limits, while the delegator keeps oversight."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Oversight, control or assurance?",
+     "ar": "الإشراف أم الرقابة أم التأكيد؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الإشراف",
+       "en": "Oversight"
+      },
+      "meaning": {
+       "ar": "دور المجلس: يطرح الأسئلة ويتابع ويتدخل عند القصور.",
+       "en": "The board's role: asking questions, monitoring and intervening when things fall short."
+      }
+     },
+     {
+      "term": {
+       "ar": "الرقابة الداخلية",
+       "en": "Internal control"
+      },
+      "meaning": {
+       "ar": "مسؤولية الإدارة: الضوابط اليومية التي تضمن تحقيق الأهداف.",
+       "en": "Management's responsibility: the day-to-day controls that keep objectives on track."
+      }
+     },
+     {
+      "term": {
+       "ar": "التأكيد",
+       "en": "Assurance"
+      },
+      "meaning": {
+       "ar": "رأي موضوعي، خصوصاً من التدقيق الداخلي، بأن الضوابط تعمل.",
+       "en": "An objective opinion, especially from internal audit, that controls work."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Governing body or governing group?",
+     "ar": "الجهة الحاكمة أم المجموعة الحاكمة؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الجهة الحاكمة",
+       "en": "Governing body"
+      },
+      "meaning": {
+       "ar": "المسؤولة في النهاية عن المنظمة ككل، مثل مجلس الإدارة.",
+       "en": "Ultimately accountable for the whole organization, such as the board of directors."
+      }
+     },
+     {
+      "term": {
+       "ar": "المجموعة الحاكمة",
+       "en": "Governing group"
+      },
+      "meaning": {
+       "ar": "تمارس جزءاً من الحوكمة بتفويض، مثل لجنة المراجعة أو مجلس شركة تابعة.",
+       "en": "Carries out part of governance by delegation, such as the audit committee or a subsidiary board."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Purpose, vision or mission?",
+     "ar": "الغاية أم الرؤية أم الرسالة؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "الغاية",
+       "en": "Purpose"
+      },
+      "meaning": {
+       "ar": "لماذا نوجد، وأي قيمة نولّد ولمن. ثابتة نسبياً.",
+       "en": "Why we exist and what value we generate, for whom. Relatively stable."
+      }
+     },
+     {
+      "term": {
+       "ar": "الرؤية",
+       "en": "Vision"
+      },
+      "meaning": {
+       "ar": "المستقبل الذي نطمح إليه خلال أفق زمني.",
+       "en": "The future we aspire to over a time horizon."
+      }
+     },
+     {
+      "term": {
+       "ar": "الرسالة",
+       "en": "Mission"
+      },
+      "meaning": {
+       "ar": "ما نفعله وكيف نخدم عملاءنا اليوم.",
+       "en": "What we do and how we serve our clients today."
+      }
+     }
+    ]
+   },
+   {
+    "title": {
+     "en": "Risk governance or risk management?",
+     "ar": "حوكمة المخاطر أم إدارة المخاطر؟"
+    },
+    "items": [
+     {
+      "term": {
+       "ar": "حوكمة المخاطر",
+       "en": "Risk governance"
+      },
+      "meaning": {
+       "ar": "المجلس يحدد الرغبة ويشرف على المخاطر الرئيسية ويقرر فيما يتجاوزها (ISO 37000، 6.9).",
+       "en": "The board sets appetite, oversees principal risks and decides on anything above it (ISO 37000, 6.9)."
+      }
+     },
+     {
+      "term": {
+       "ar": "إدارة المخاطر",
+       "en": "Risk management"
+      },
+      "meaning": {
+       "ar": "الإدارة تحدد المخاطر وتحللها وتعالجها وتراقبها وفق إطار مثل ISO 31000.",
+       "en": "Management identifies, analyses, treats and monitors risk under a framework such as ISO 31000."
+      }
+     }
+    ]
+   }
+  ],
+  "timeline": [
+   {
+    "date": {
+     "ar": "أكتوبر 2016",
+     "en": "October 2016"
+    },
+    "text": {
+     "ar": "نشر ISO 37001:2016 لأنظمة إدارة مكافحة الرشوة، أول مواصفة في عائلة الحوكمة التي تتولاها اللجنة ISO/TC 309.",
+     "en": "ISO 37001:2016 on anti-bribery management systems published, the first standard in the governance family now under ISO/TC 309."
+    }
+   },
+   {
+    "date": {
+     "ar": "2021",
+     "en": "2021"
+    },
+    "text": {
+     "ar": "نشر ISO 37301:2021 للامتثال وISO 37002:2021 للإبلاغ عن المخالفات، ثم في سبتمبر 2021 الإصدار الأول من ISO 37000:2021 إرشادات حوكمة المنظمات.",
+     "en": "ISO 37301:2021 (compliance) and ISO 37002:2021 (whistleblowing) published, then in September 2021 the first edition of ISO 37000:2021, guidance on the governance of organizations."
+    }
+   },
+   {
+    "date": {
+     "ar": "2023",
+     "en": "2023"
+    },
+    "text": {
+     "ar": "نشر ISO 37004:2023 نموذج نضج الحوكمة، وISO/TS 37008:2023 للتحقيقات الداخلية.",
+     "en": "ISO 37004:2023 (governance maturity model) and ISO/TS 37008:2023 (internal investigations) published."
+    }
+   },
+   {
+    "date": {
+     "ar": "2024 – 2025",
+     "en": "2024 – 2025"
+    },
+    "text": {
+     "ar": "نشر ISO 37005:2024 لمؤشرات الحوكمة، وISO 37009:2025 لتعارض المصالح، والإصدار الثاني ISO 37001:2025.",
+     "en": "ISO 37005:2024 (governance indicators), ISO 37009:2025 (conflict of interest) and the second edition, ISO 37001:2025, published."
+    }
+   },
+   {
+    "date": {
+     "ar": "يناير – أغسطس 2026",
+     "en": "January – August 2026"
+    },
+    "text": {
+     "ar": "خضعت ISO 37000:2021 للمراجعة الدورية الخمسية (بدأت يناير 2026 وأُغلقت يونيو 2026)، ثم أُكّدت في 4 أغسطس 2026، فتبقى الإصدار الساري دون تعديل. مشاريع مكملة قيد التطوير مثل ISO 37011 للمنظمات القائمة على الغاية وISO 37006 لمؤشرات الحوكمة.",
+     "en": "ISO 37000:2021 went through its five-year systematic review (opened January 2026, closed June 2026) and was confirmed on 4 August 2026, so it remains the current edition unchanged. Companion projects such as ISO 37011 (purpose-driven organizations) and ISO 37006 (governance indicators) are in development."
+    }
+   }
+  ],
+  "threads": [
+   {
+    "id": "val",
+    "chain": [
+     "6.1",
+     "6.2",
+     "6.3",
+     "5a"
+    ],
+    "title": {
+     "en": "From purpose to performance",
+     "ar": "من الغاية إلى الأداء"
+    },
+    "text": {
+     "en": "Purpose defines value, value shapes strategy, and executed strategy produces effective performance.",
+     "ar": "الغاية تحدد القيمة، والقيمة تحدد الاستراتيجية، والاستراتيجية المنفذة تنتج الأداء الفعال."
+    }
+   },
+   {
+    "id": "acc",
+    "chain": [
+     "6.3",
+     "6.4",
+     "6.5",
+     "5b"
+    ],
+    "title": {
+     "en": "Direct, oversee, account",
+     "ar": "وجّه، أشرف، حاسب"
+    },
+    "text": {
+     "en": "The board directs through strategy, oversees execution and holds and is held to account, producing responsible stewardship.",
+     "ar": "المجلس يوجّه بالاستراتيجية، ويشرف على التنفيذ، ويُسأل ويحاسب، فيتحقق الإشراف الأمين على الموارد."
+    }
+   },
+   {
+    "id": "risk",
+    "chain": [
+     "6.8",
+     "6.9",
+     "6.4",
+     "6.11"
+    ],
+    "title": {
+     "en": "From data to viability",
+     "ar": "من البيانات إلى الاستدامة"
+    },
+    "text": {
+     "en": "Reliable data reveals risk, the board governs it through appetite and oversees it, and the organization stays viable.",
+     "ar": "بيانات موثوقة تكشف المخاطر، والمجلس يحكمها بالرغبة ويشرف عليها، فتستمر المنظمة عبر الزمن."
+    }
+   },
+   {
+    "id": "eth",
+    "chain": [
+     "6.1",
+     "6.7",
+     "6.6",
+     "6.10",
+     "5c"
+    ],
+    "title": {
+     "en": "From values to ethical behaviour",
+     "ar": "من القيم إلى السلوك الأخلاقي"
+    },
+    "text": {
+     "en": "Values guide leadership, leadership listens to stakeholders, and the organization acts responsibly and ethically.",
+     "ar": "القيم توجه القيادة، والقيادة تستمع للأطراف، فتتحمل المنظمة مسؤوليتها المجتمعية وتتصرف بأخلاق."
+    }
+   }
+  ],
+  "scale": [
+   {
+    "level": 0,
+    "meaning": {
+     "en": "Nothing exists: no practice, no document, no owner.",
+     "ar": "لا ممارسة ولا وثيقة ولا مسؤول."
+    },
+    "look": {
+     "en": "'We haven't thought about it yet', and nobody is responsible.",
+     "ar": "«لم نفكر في ذلك بعد»، ولا أحد مسؤول."
+    },
+    "evidence": {
+     "en": "Nothing.",
+     "ar": "لا شيء."
+    }
+   },
+   {
+    "level": 1,
+    "meaning": {
+     "en": "An informal practice that depends on people and habit.",
+     "ar": "ممارسة غير رسمية تعتمد على الأشخاص وعاداتهم."
+    },
+    "look": {
+     "en": "It happens sometimes at the chair's initiative, with no method or record.",
+     "ar": "يحدث أحياناً بمبادرة رئيس المجلس، دون منهج أو توثيق."
+    },
+    "evidence": {
+     "en": "Scattered emails or notes.",
+     "ar": "رسائل أو ملاحظات متفرقة."
+    }
+   },
+   {
+    "level": 2,
+    "meaning": {
+     "en": "Partly documented or partly applied, or a key element is missing.",
+     "ar": "موثق جزئياً أو مطبق جزئياً، أو ينقصه عنصر أساسي."
+    },
+    "look": {
+     "en": "A template or policy exists but is applied irregularly or not to everyone.",
+     "ar": "يوجد نموذج أو سياسة لكن التطبيق غير منتظم أو لا يشمل الجميع."
+    },
+    "evidence": {
+     "en": "An approved document and a one-off or partial application.",
+     "ar": "وثيقة معتمدة وتطبيق لمرة أو جزء."
+    }
+   },
+   {
+    "level": 3,
+    "meaning": {
+     "en": "Documented and applied consistently, with records and evidence.",
+     "ar": "موثق ومطبق باتساق مع سجلات وأدلة."
+    },
+    "look": {
+     "en": "It happens every cycle as planned and can be proven.",
+     "ar": "يحدث كل دورة كما هو مخطط، ويمكن إثباته."
+    },
+    "evidence": {
+     "en": "Recurring records, minutes and follow-up.",
+     "ar": "سجلات متكررة، ومحاضر، ومتابعة."
+    }
+   },
+   {
+    "level": 4,
+    "meaning": {
+     "en": "Achieves its results, measured and continually improved.",
+     "ar": "يحقق نتائجه، ويُقاس أثره، ويُحسَّن باستمرار."
+    },
+    "look": {
+     "en": "We know it works, we improve it and benchmark it.",
+     "ar": "نعرف أنه يعمل ونطوره، ويُقارن بأفضل الممارسات."
+    },
+    "evidence": {
+     "en": "Effectiveness indicators, independent review and documented improvements.",
+     "ar": "مؤشرات فعالية، ومراجعة مستقلة، وتحسينات موثقة."
+    }
+   }
+  ],
+  "faq": [
+   {
+    "id": "whatis",
+    "q": {
+     "en": "What is ISO 37000:2021?",
+     "ar": "ما هي ISO 37000:2021؟"
+    },
+    "a": {
+     "en": "ISO 37000:2021 gives **guidance on the governance of organizations**, published in **September 2021** by ISO/TC 309. It applies to any organization: listed or family company, government entity or non-profit.\n\n- **Purpose (6.1):** the primary principle every other principle serves.\n- **Four foundational principles (6.2–6.5):** value generation, strategy, oversight, accountability.\n- **Six enabling principles (6.6–6.11):** stakeholder engagement, leadership, data and decisions, risk governance, social responsibility, viability and performance over time.\n- **Three outcomes:** effective performance, responsible stewardship, ethical behaviour.\n\nStart with [[tab:clauses]] or the [[tab:assess]].",
+     "ar": "ISO 37000:2021 هي **إرشادات حوكمة المنظمات** الصادرة في **سبتمبر 2021** عن اللجنة الفنية ISO/TC 309، وتنطبق على أي منظمة: شركة مدرجة أو عائلية، جهة حكومية، أو جهة غير ربحية.\n\n- **الغاية (6.1):** المبدأ الأساسي الذي تخدمه كل المبادئ.\n- **أربعة مبادئ تأسيسية (6.2–6.5):** توليد القيمة، والاستراتيجية، والإشراف، والمساءلة.\n- **ستة مبادئ تمكينية (6.6–6.11):** إشراك الأطراف، والقيادة، والبيانات والقرارات، وحوكمة المخاطر، والمسؤولية المجتمعية، والاستدامة والأداء عبر الزمن.\n- **ثلاثة نواتج:** أداء فعال، وإشراف أمين على الموارد، وسلوك أخلاقي.\n\nابدأ بـ [[tab:clauses]] أو [[tab:assess]]."
+    }
+   },
+   {
+    "id": "cert",
+    "q": {
+     "en": "Can we get ISO 37000 certified?",
+     "ar": "هل يمكن الحصول على شهادة ISO 37000؟"
+    },
+    "a": {
+     "en": "**No.** ISO 37000 is **guidance** written as 'should' statements, not 'shall' requirements, so there is no accredited certification, no certification audit and no transition period. Any 'ISO 37000 certificate' on offer is not accredited certification to the standard.\n\nWhat you can do:\n- A **governance maturity assessment** against the principles (ISO 37004 gives a maturity model) — [[tab:assess]].\n- An **independent review** of board and committee effectiveness.\n- Certify related, certifiable systems such as **ISO 37301** (compliance), **ISO 37001** (anti-bribery) and **ISO 22301** (continuity).\n\nISO 37000 also does not replace binding national law such as company law and corporate governance regulations.",
+     "ar": "**لا.** ISO 37000 **إرشادات** مكتوبة بصيغة «ينبغي» لا متطلبات بصيغة «يجب»، فلا توجد شهادة معتمدة عليها ولا تدقيق إشهاد ولا فترة انتقال. أي «شهادة ISO 37000» تُعرض عليك ليست إشهاداً معتمداً على المواصفة.\n\nما يمكن فعله:\n- **تقييم نضج** الحوكمة مقابل المبادئ (انظر ISO 37004 لنموذج النضج) — [[tab:assess]].\n- **مراجعة مستقلة** لفعالية المجلس ولجانه.\n- الإشهاد على أنظمة إدارة مرتبطة قابلة للإشهاد مثل **ISO 37301** (الامتثال) و**ISO 37001** (مكافحة الرشوة) و**ISO 22301** (الاستمرارية).\n\nكما أن ISO 37000 لا تحل محل الأنظمة الوطنية الملزمة مثل نظام الشركات ولوائح حوكمة الشركات."
+    }
+   },
+   {
+    "id": "principles",
+    "q": {
+     "en": "What are the eleven principles and how do they fit together?",
+     "ar": "ما المبادئ الإحدى عشرة وكيف ترتبط؟"
+    },
+    "a": {
+     "en": "The principles apply **together**, not one by one:\n\n- **Primary:** purpose (6.1) — why the organization exists and what value it intends to generate, for whom.\n- **Foundational:** value generation (6.2), strategy (6.3), oversight (6.4), accountability (6.5). They turn purpose into real governance: what we generate, how we get there, how we check, and to whom we answer.\n- **Enabling:** stakeholder engagement (6.6), leadership (6.7), data and decisions (6.8), risk governance (6.9), social responsibility (6.10), viability and performance over time (6.11).\n\nIn the standard each principle has the principle, its rationale and key aspects of practice. The interactive diagram is in [[tab:clauses]].",
+     "ar": "المبادئ تُطبق **معاً** لا منفردة:\n\n- **الأساسي:** الغاية (6.1) — سبب الوجود والقيمة المقصودة ولمن.\n- **التأسيسية:** توليد القيمة (6.2)، الاستراتيجية (6.3)، الإشراف (6.4)، المساءلة (6.5). هذه تحوّل الغاية إلى حوكمة فعلية: ماذا نولّد، وكيف نصل، وكيف نتحقق، ولمن نُسأل.\n- **التمكينية:** إشراك الأطراف (6.6)، القيادة (6.7)، البيانات والقرارات (6.8)، حوكمة المخاطر (6.9)، المسؤولية المجتمعية (6.10)، الاستدامة والأداء عبر الزمن (6.11).\n\nلكل مبدأ في المواصفة: المبدأ، والأساس المنطقي، والجوانب الرئيسية للممارسة. الرسم التفاعلي في [[tab:clauses]]."
+    }
+   },
+   {
+    "id": "purpose",
+    "q": {
+     "en": "How do we define the organizational purpose?",
+     "ar": "كيف نصوغ غاية المنظمة؟"
+    },
+    "a": {
+     "en": "Purpose is not a marketing vision; it is **the ultimate value the organization intends to generate, and for whom**.\n\n1. Gather input from shareholders, management, staff and key clients.\n2. Write it in one sentence: what we generate, for whom, and what makes our way distinctive.\n3. Set 3–5 values that govern how it is achieved and turn them into behaviours.\n4. Approve it by board resolution and add a 'purpose test' to decision papers.\n5. Review it yearly and when ownership or context changes.\n\nReady template: [[tpl:purpose]].",
+     "ar": "الغاية ليست رؤية تسويقية؛ هي **القيمة النهائية التي تنوي المنظمة توليدها ولصالح من**.\n\n1. اجمع مدخلات المساهمين والإدارة والموظفين وعملاء رئيسيين.\n2. صغها في جملة واحدة: ماذا نولّد، ولمن، وبأي طريقة تميزنا.\n3. حدد 3–5 قيم تحكم طريقة التحقيق، وترجمها إلى سلوكيات.\n4. اعتمدها بقرار من المجلس، وأضف «اختبار الغاية» إلى أوراق القرارات.\n5. راجعها سنوياً وعند تغير الملكية أو السياق.\n\nالنموذج الجاهز: [[tpl:purpose]]."
+    }
+   },
+   {
+    "id": "govmgmt",
+    "q": {
+     "en": "What is the difference between governance and management?",
+     "ar": "ما الفرق بين الحوكمة والإدارة؟"
+    },
+    "a": {
+     "en": "**Governance** directs, oversees and holds to account: purpose, strategy, risk appetite, appointing and holding the CEO to account.\n**Management** plans, executes and runs resources day to day within delegated authority.\n\nSigns they are mixed up:\n- A board spending more than half its time on operational detail.\n- Directors instructing staff directly, bypassing the CEO.\n- Management approving matters reserved for the board because there is no delegation matrix.\n\nThe fix: a board charter with clear roles, reserved matters and a delegation matrix — [[tpl:charter]] and [[tpl:doa]].",
+     "ar": "**الحوكمة** توجّه وتشرف وتحاسب: الغاية، والاستراتيجية، والرغبة في المخاطر، وتعيين الرئيس التنفيذي ومحاسبته.\n**الإدارة** تخطط وتنفذ وتدير الموارد يومياً ضمن الصلاحيات المفوضة.\n\nعلامات الخلط:\n- مجلس يقضي أكثر من نصف وقته في تفاصيل تشغيلية.\n- أعضاء يوجهون الموظفين مباشرة متجاوزين الرئيس التنفيذي.\n- إدارة تعتمد قرارات محجوزة للمجلس لغياب مصفوفة صلاحيات.\n\nالعلاج: ميثاق مجلس بأدوار واضحة، وقائمة أمور محجوزة، ومصفوفة تفويض — [[tpl:charter]] و[[tpl:doa]]."
+    }
+   },
+   {
+    "id": "doa",
+    "q": {
+     "en": "How do we build a delegation of authority matrix?",
+     "ar": "كيف نبني مصفوفة تفويض الصلاحيات؟"
+    },
+    "a": {
+     "en": "1. Start with the list of **matters reserved** for the board and the general assembly.\n2. Group decisions: strategic, financial, contracts and procurement, people, legal.\n3. For each decision set the levels — general assembly, board, committee, CEO, CFO, head of function — with **one approver (A)**, who recommends (R), who is consulted (C) and who is informed (I).\n4. Set clear numeric limits (e.g. in SAR) and conditions (within or outside budget).\n5. Attach a **reporting-back** duty to every delegation, and review the use of authority yearly.\n\nThe live matrix with a 'one approver per decision' check is in the [[tab:annexa]]; the template is [[tpl:doa]].",
+     "ar": "1. ابدأ بقائمة **الأمور المحجوزة** للمجلس والجمعية العامة.\n2. رتّب القرارات بالفئات: استراتيجية، مالية، عقود ومشتريات، موارد بشرية، قانونية.\n3. لكل قرار حدد مستويات: الجمعية، المجلس، اللجنة، الرئيس التنفيذي، المدير المالي، رئيس الإدارة، مع **معتمد واحد (A)** ومن يوصي (R) ومن يُستشار (C) ومن يُبلَّغ (I).\n4. ضع حدوداً رقمية واضحة (مثلاً بالريال) وشروطاً (ضمن الموازنة أو خارجها).\n5. ألزم كل تفويض **بالإبلاغ** إلى الجهة الأعلى، وراجع استخدام الصلاحيات سنوياً.\n\nالمصفوفة الحية مع فحص «معتمد واحد لكل قرار» في [[tab:annexa]]، والنموذج في [[tpl:doa]]."
+    }
+   },
+   {
+    "id": "boardeval",
+    "q": {
+     "en": "How do we evaluate the board and its committees?",
+     "ar": "كيف نقيّم أداء المجلس ولجانه؟"
+    },
+    "a": {
+     "en": "- **Yearly** with a structured self-evaluation, and **every three years** with an independent external facilitator.\n- Cover: purpose and strategy, composition, skills and independence, clarity of roles, meeting and information quality, constructive challenge, risk oversight, follow-up of decisions, stakeholders, ethics and conflicts.\n- Evaluate the **board, each committee** and the chair, then individual directors as maturity grows.\n- More important than the score: an **improvement plan** with owners and dates, tracked by the chair.\n\nThe evaluation studio with the score matrix and priorities is in the [[tab:annexa]]; the template is [[tpl:evaluation]].",
+     "ar": "- **سنوياً** بتقييم ذاتي منظم، و**كل ثلاث سنوات** بميسّر خارجي مستقل.\n- غطِّ المحاور: الغاية والاستراتيجية، والتشكيل والمهارات والاستقلال، ووضوح الأدوار، وجودة الاجتماعات والمعلومات، والتحدي البنّاء، والإشراف على المخاطر، ومتابعة القرارات، والأطراف المعنية، والأخلاقيات وتعارض المصالح.\n- قيّم **المجلس وكل لجنة** والرئيس، ثم الأعضاء فرادى عند النضج.\n- الأهم من الدرجة: **خطة تحسين** بمالك وموعد يتابعها رئيس المجلس.\n\nاستوديو التقييم مع مصفوفة الدرجات والأولويات في [[tab:annexa]]، والنموذج في [[tpl:evaluation]]."
+    }
+   },
+   {
+    "id": "coi",
+    "q": {
+     "en": "How do we manage conflicts of interest?",
+     "ar": "كيف ندير تعارض المصالح؟"
+    },
+    "a": {
+     "en": "1. An approved policy defining conflict types: financial interest, family tie, other position, related-party dealing, gifts.\n2. An **annual declaration** from every director and executive, and immediate disclosure when a new conflict arises.\n3. A **register** showing for each case the action (recusal, independence, general assembly approval, divestment), who approved it and the review date.\n4. Record recusals in the minutes, and handle related-party dealings under the law and the articles of association.\n\nGuidance reference: **ISO 37009:2025** on conflict of interest. The live register is in the [[tab:annexa]] and the declaration template is [[tpl:coi]].",
+     "ar": "1. سياسة معتمدة تعرّف أنواع التعارض: مصلحة مالية، علاقة عائلية، منصب آخر، تعامل مع طرف ذي علاقة، هدايا.\n2. **إفصاح سنوي** من كل عضو ومسؤول تنفيذي، وإفصاح فوري عند نشوء تعارض جديد.\n3. **سجل** يوضح لكل حالة: الإجراء (امتناع عن التصويت، استقلالية، موافقة الجمعية، تخارج)، ومن اعتمده، وموعد المراجعة.\n4. تسجيل الامتناع في المحضر، والتعاملات مع الأطراف ذات العلاقة وفق النظام والنظام الأساسي.\n\nالمرجع الإرشادي: **ISO 37009:2025** لتعارض المصالح. السجل الحي في [[tab:annexa]] ونموذج الإفصاح في [[tpl:coi]]."
+    }
+   },
+   {
+    "id": "stake",
+    "q": {
+     "en": "What are member stakeholders and reference stakeholders?",
+     "ar": "ما الفرق بين أصحاب الحق والأطراف المرجعية؟"
+    },
+    "a": {
+     "en": "- **Member stakeholders** have a legal or defined right to make decisions concerning the governing body, which accounts to them — e.g. shareholders at the general assembly, or members of a non-profit.\n- **Reference stakeholders** are those the board decides to account to when making decisions about purpose, without being members — e.g. a key client, the local community, or parents of pupils at a school.\n- **Other stakeholders:** everyone else who affects or is affected.\n\nThe distinction clarifies **to whom the board answers and to whom it listens**. Engagement plan: [[tpl:stakeholders]].",
+     "ar": "- **أصحاب الحق (member stakeholders):** لهم حق قانوني أو محدد في قرارات تخص جهاز الحوكمة، ويحاسبونه — مثل المساهمين في الجمعية العامة أو أعضاء الجمعية في جهة غير ربحية.\n- **الأطراف المرجعية (reference stakeholders):** يقرر المجلس أن يأخذ مصالحهم في الحسبان عند القرارات المتعلقة بالغاية، دون أن يكونوا أصحاب حق — مثل العميل الرئيسي أو المجتمع المحيط أو أولياء أمور الطلاب في مدرسة.\n- **بقية الأطراف:** كل من يتأثر أو يؤثر.\n\nالتمييز يوضح **لمن يُسأل المجلس ولمن يستمع**. خطة الإشراك: [[tpl:stakeholders]]."
+    }
+   },
+   {
+    "id": "riskgov",
+    "q": {
+     "en": "What is the difference between risk governance and risk management?",
+     "ar": "ما الفرق بين حوكمة المخاطر وإدارة المخاطر؟"
+    },
+    "a": {
+     "en": "- **Risk governance (ISO 37000, 6.9):** the board decides **how much** risk to accept (appetite and tolerance), makes sure the framework works, considers risk in its decisions and obtains independent assurance.\n- **Risk management (ISO 31000):** management identifies, analyses, evaluates, treats and monitors risk day to day.\n\nIn this platform, appetite and the risk register live in the **ISO 31000 studio**, and the **governance studio** here uses the same categories and limits to show the board's oversight dashboard: what is above appetite, who oversees it and what decision is needed — [[tab:annexa]].",
+     "ar": "- **حوكمة المخاطر (ISO 37000، 6.9):** المجلس يقرر **كم** من المخاطر نقبل (الرغبة وحدود التحمل)، ويتأكد أن الإطار فعال، ويراعي المخاطر في قراراته، ويحصل على تأكيد مستقل.\n- **إدارة المخاطر (ISO 31000):** الإدارة تحدد المخاطر وتحللها وتقيّمها وتعالجها وتراقبها يومياً.\n\nفي هذه المنصة: تُضبط الرغبة وسجل المخاطر في **استوديو ISO 31000**، ويستخدم **استوديو الحوكمة** هنا الفئات والحدود نفسها لعرض لوحة إشراف المجلس: ما فوق الرغبة، ومن يشرف، وما القرار المطلوب — [[tab:annexa]]."
+    }
+   },
+   {
+    "id": "saudi",
+    "q": {
+     "en": "How does ISO 37000 relate to governance rules in Saudi Arabia?",
+     "ar": "ما علاقة ISO 37000 بلوائح الحوكمة في السعودية؟"
+    },
+    "a": {
+     "en": "ISO 37000 **does not replace** binding rules; it complements them:\n\n- The **Companies Law** and the Capital Market Authority's **Corporate Governance Regulations** set what **must** happen (board composition, mandatory committees, disclosure, related parties) for the companies they cover.\n- ISO 37000 gives the **why and how to do it effectively**: purpose, value model, quality of oversight, a culture of accountability, and governance of data and risk.\n\nPractical approach: comply with the law first, then use ISO 37000 and this assessment to raise governance **effectiveness** above the regulatory minimum. Always check the current legal texts with your legal adviser.",
+     "ar": "ISO 37000 **لا تحل محل** الأنظمة الملزمة؛ بل تكملها:\n\n- **نظام الشركات** و**لائحة حوكمة الشركات** الصادرة عن هيئة السوق المالية تحدد ما **يجب** (تشكيل المجلس، اللجان الإلزامية، الإفصاح، الأطراف ذات العلاقة) للشركات المعنية.\n- ISO 37000 تقدم **لماذا وكيف بفعالية**: الغاية، ونموذج القيمة، وجودة الإشراف، وثقافة المساءلة، وحوكمة البيانات والمخاطر.\n\nالنهج العملي: التزم بالنظام أولاً، واستخدم ISO 37000 وهذا التقييم لرفع **فعالية** الحوكمة فوق الحد الأدنى النظامي. راجع دائماً النصوص النظامية السارية مع مستشارك القانوني."
+    }
+   },
+   {
+    "id": "family",
+    "q": {
+     "en": "How can a family business apply ISO 37000?",
+     "ar": "كيف تطبق الشركات العائلية ISO 37000؟"
+    },
+    "a": {
+     "en": "Family businesses gain a lot, because their biggest risks are governance risks:\n\n- **Separate family and company:** a family charter or family council keeps ownership matters apart from board and management matters.\n- **A real board, not a formal one:** independent directors with the skills the strategy needs — [[tpl:charter]].\n- **A delegation matrix** ending reliance on the founder's signature for everything — [[tpl:doa]].\n- **Conflicts of interest** between the company and family members' other businesses — [[tpl:coi]].\n- **Succession** for both the CEO role and ownership (6.7).\n\nStart the self-assessment with the starting point 'no formal governance framework' — [[tab:assess]].",
+     "ar": "الشركات العائلية تستفيد كثيراً لأن مخاطرها الأكبر حوكمية:\n\n- **فصل العائلة عن الشركة:** ميثاق عائلي أو مجلس عائلة يفصل شؤون الملكية عن شؤون المجلس والإدارة.\n- **مجلس فعلي لا شكلي:** أعضاء مستقلون بمهارات تحتاجها الاستراتيجية — [[tpl:charter]].\n- **مصفوفة صلاحيات** تنهي الاعتماد على توقيع المؤسس في كل شيء — [[tpl:doa]].\n- **تعارض المصالح** بين الشركة وأعمال أفراد العائلة الأخرى — [[tpl:coi]].\n- **التعاقب** للرئيس التنفيذي والملكية معاً (6.7).\n\nابدأ بالتقييم الذاتي بنقطة البداية «لا إطار حوكمة رسمي» — [[tab:assess]]."
+    }
+   },
+   {
+    "id": "public",
+    "q": {
+     "en": "Does it apply to government and non-profit entities?",
+     "ar": "هل تنطبق على الجهات الحكومية وغير الربحية؟"
+    },
+    "a": {
+     "en": "**Yes.** ISO 37000 is written for all organizations, whatever their type, size or ownership.\n\n- **Government entities:** purpose is tied to public service, member stakeholders may be the parent authority or ministry, and accountability covers public funds and transparency.\n- **Non-profits and endowments:** the board of trustees is the governing body, purpose is social impact, and value is measured by impact rather than profit.\n\nOnly the vocabulary changes (board, general assembly, trustees); the principles are the same.",
+     "ar": "**نعم.** ISO 37000 مكتوبة لكل المنظمات مهما كان نوعها أو حجمها أو ملكيتها.\n\n- **الجهات الحكومية:** الغاية مرتبطة بالخدمة العامة، وأصحاب الحق قد يكونون الجهة المرجعية أو الوزارة، والمساءلة تشمل الأموال العامة والشفافية.\n- **غير الربحية والأوقاف:** مجلس الأمناء أو النظارة هو جهاز الحوكمة، والغاية هي الأثر الاجتماعي، والقيمة تُقاس بالأثر لا بالربح.\n\nعدّل المصطلحات فقط (المجلس، الجمعية العمومية، الأمناء)؛ المبادئ نفسها تنطبق."
+    }
+   },
+   {
+    "id": "related",
+    "q": {
+     "en": "How does it relate to ISO 37301, 37001, 37002, 31000 and 22301?",
+     "ar": "ما علاقتها بـ ISO 37301 و37001 و37002 و31000 و22301؟"
+    },
+    "a": {
+     "en": "ISO 37000 is the **umbrella**; the other standards are tools the board oversees:\n\n- **ISO 31000:** risk management — supports risk governance (6.9).\n- **ISO 37301:** compliance management system (certifiable) — supports oversight and accountability.\n- **ISO 37001:** anti-bribery management system (certifiable) — supports ethical behaviour.\n- **ISO 37002:** whistleblowing management guidelines — a safe speak-up channel that reaches the board.\n- **ISO 22301:** business continuity (certifiable) — supports viability and resilience (6.11).\n- **ISO 37004 / 37005 / 37009:** governance maturity model, governance indicators, conflict of interest.\n\nRecommendations tailored to you are in the [[tab:report]].",
+     "ar": "ISO 37000 هي **المظلة**؛ والمواصفات الأخرى أدوات يشرف عليها المجلس:\n\n- **ISO 31000:** إدارة المخاطر — تدعم حوكمة المخاطر (6.9).\n- **ISO 37301:** نظام إدارة الامتثال (قابل للإشهاد) — يدعم الإشراف والمساءلة.\n- **ISO 37001:** نظام مكافحة الرشوة (قابل للإشهاد) — يدعم السلوك الأخلاقي.\n- **ISO 37002:** إرشادات أنظمة الإبلاغ عن المخالفات — قناة للتحدث بأمان تصل للمجلس.\n- **ISO 22301:** استمرارية الأعمال (قابل للإشهاد) — يدعم الاستدامة والمرونة (6.11).\n- **ISO 37004 / 37005 / 37009:** نموذج نضج الحوكمة، ومؤشرات الحوكمة، وتعارض المصالح.\n\nالتوصيات المخصصة لجهتك في [[tab:report]]."
+    }
+   },
+   {
+    "id": "start",
+    "q": {
+     "en": "Where do I start applying ISO 37000?",
+     "ar": "من أين أبدأ في تطبيق ISO 37000؟"
+    },
+    "a": {
+     "en": "A practical six-step path:\n\n1. **Assess maturity** with the 40 questions — [[tab:assess]].\n2. **Approve purpose and values** — [[tpl:purpose]].\n3. **Board charter and reserved matters** — [[tpl:charter]].\n4. **Delegation of authority matrix** — [[tpl:doa]].\n5. **Committees and the conflict of interest register** — [[tpl:committees]] and [[tpl:coi]].\n6. **Evaluate the board and link its oversight to risk appetite** — [[tab:annexa]].\n\nThen reassess after 6–12 months and measure progress.",
+     "ar": "مسار عملي من ست خطوات:\n\n1. **قيّم النضج** بالإجابة عن 40 سؤالاً — [[tab:assess]].\n2. **اعتمد الغاية والقيم** — [[tpl:purpose]].\n3. **ميثاق المجلس والأمور المحجوزة** — [[tpl:charter]].\n4. **مصفوفة تفويض الصلاحيات** — [[tpl:doa]].\n5. **اللجان وسجل تعارض المصالح** — [[tpl:committees]] و[[tpl:coi]].\n6. **قيّم المجلس واربط إشرافه بالرغبة في المخاطر** — [[tab:annexa]].\n\nثم أعد التقييم بعد 6–12 شهراً وقِس التقدم."
+    }
+   },
+   {
+    "id": "docs",
+    "q": {
+     "en": "What are the core governance documents?",
+     "ar": "ما وثائق الحوكمة الأساسية؟"
+    },
+    "a": {
+     "en": "The practical minimum for a governance framework:\n\n- Purpose and values statement, and code of conduct (6.1)\n- Board charter and schedule of reserved matters (6.5)\n- Committee charters (6.4)\n- Delegation of authority matrix (6.5)\n- Conflict of interest policy and register (6.7)\n- Nomination and remuneration policy, and succession plan (6.7)\n- Risk appetite statement (6.9)\n- Disclosure and data governance policies (6.8)\n- Whistleblowing policy (ISO 37002)\n- Stakeholder engagement plan (6.6) and annual governance report\n\nReady templates are in [[tab:templates]].",
+     "ar": "الحد الأدنى العملي لإطار حوكمة:\n\n- بيان الغاية والقيم ومدونة السلوك (6.1)\n- ميثاق المجلس وقائمة الأمور المحجوزة (6.5)\n- مواثيق اللجان (6.4)\n- مصفوفة تفويض الصلاحيات (6.5)\n- سياسة تعارض المصالح وسجلها (6.7)\n- سياسة الترشيح والمكافآت وخطة التعاقب (6.7)\n- بيان الرغبة في المخاطر (6.9)\n- سياسة الإفصاح وحوكمة البيانات (6.8)\n- سياسة الإبلاغ عن المخالفات (ISO 37002)\n- خطة إشراك الأطراف (6.6) وتقرير الحوكمة السنوي\n\nالنماذج الجاهزة في [[tab:templates]]."
+    }
+   },
+   {
+    "id": "howuse",
+    "q": {
+     "en": "How do I use this toolkit?",
+     "ar": "كيف أستخدم هذه الأداة؟"
+    },
+    "a": {
+     "en": "- **Principles:** select any part of the diagram for the explanation, example, steps and evidence — [[tab:clauses]].\n- **Maturity assessment:** 40 questions on five levels — [[tab:assess]].\n- **Report:** maturity, radar, roadmap and recommendations, with PDF — [[tab:report]].\n- **Governance studio:** board evaluation, delegation, conflicts, risk oversight and a board PDF — [[tab:annexa]].\n- **Checklist and templates:** for review and implementation — [[tab:checklist]] and [[tab:templates]].",
+     "ar": "- **المبادئ:** اضغط أي جزء من الرسم لشرح المبدأ ومثاله وخطواته وأدلته — [[tab:clauses]].\n- **تقييم النضج:** 40 سؤالاً على خمسة مستويات — [[tab:assess]].\n- **التقرير:** النضج والرادار وخارطة التحسين والتوصيات، مع PDF — [[tab:report]].\n- **استوديو الحوكمة:** تقييم المجلس، والصلاحيات، وتعارض المصالح، والإشراف على المخاطر، وتقرير المجلس PDF — [[tab:annexa]].\n- **قائمة المراجعة والنماذج:** للمراجعة والتطبيق — [[tab:checklist]] و[[tab:templates]]."
+    }
+   },
+   {
+    "id": "data",
+    "q": {
+     "en": "Where is my data kept?",
+     "ar": "أين تُحفظ بياناتي؟"
+    },
+    "a": {
+     "en": "All your answers, studio data and templates are **kept in this browser only**; nothing is sent to a server. If you change browser or clear its data they are lost, so download the reports (PDF or CSV) to keep a copy.",
+     "ar": "كل إجاباتك وبيانات الاستوديو والنماذج **محفوظة في هذا المتصفح فقط**؛ لا تُرسل إلى أي خادم. إذا غيرت المتصفح أو مسحت بياناته تُفقد، لذا نزّل التقارير (PDF أو CSV) للاحتفاظ بنسخة."
+    }
+   },
+   {
+    "id": "export",
+    "q": {
+     "en": "How do I download the reports?",
+     "ar": "كيف أنزّل التقارير؟"
+    },
+    "a": {
+     "en": "- Maturity report **PDF** and roadmap **CSV** — [[tab:report]].\n- The full **board report PDF** (evaluation, delegation, conflicts, risk oversight) and **CSV** — [[tab:annexa]].\n- Checklist report **PDF/CSV** — [[tab:checklist]].\n- Every template as **PDF/CSV** — [[tab:templates]].",
+     "ar": "- تقرير النضج **PDF** وخارطة التحسين **CSV** — [[tab:report]].\n- **تقرير المجلس PDF** الشامل (التقييم، الصلاحيات، التعارض، الإشراف على المخاطر) و**CSV** — [[tab:annexa]].\n- تقرير قائمة المراجعة **PDF/CSV** — [[tab:checklist]].\n- كل نموذج **PDF/CSV** — [[tab:templates]]."
+    }
+   },
+   {
+    "id": "official",
+    "q": {
+     "en": "Where do I get the official text?",
+     "ar": "أين أجد النص الرسمي للمواصفة؟"
+    },
+    "a": {
+     "en": "This tool is an **explanation**, not a translation or substitute. Get the official copy from the ISO store (also available in Arabic) or from SASO — links in [[tab:standard]].",
+     "ar": "هذه الأداة **شرح** لا ترجمة ولا بديل. النسخة الرسمية من متجر ISO (متوفرة بالعربية أيضاً) أو من الهيئة السعودية للمواصفات والمقاييس والجودة — الروابط في [[tab:standard]]."
+    }
+   },
+   {
+    "id": "contact",
+    "q": {
+     "en": "How do I contact مدثر سلامه?",
+     "ar": "كيف أتواصل مع مدثر سلامه؟"
+    },
+    "a": {
+     "en": "For consulting (governance maturity assessment, board evaluation, frameworks, charters and delegation matrices) and training, email **مدثر سلامه**: moddathersalama.eng@gmail.com",
+     "ar": "للاستشارات (تقييم نضج الحوكمة، تقييم المجلس، بناء الأطر والمواثيق ومصفوفات الصلاحيات) والتدريب، راسل **مدثر سلامه**: moddathersalama.eng@gmail.com"
+    }
+   }
+  ],
+  "templates": [
+   {
+    "id": "purpose",
+    "ref": "6.1 / 6.2",
+    "title": {
+     "en": "Purpose, values and value model",
+     "ar": "الغاية والقيم ونموذج القيمة"
+    },
+    "purpose": {
+     "en": "The purpose and values statement, and the value created, preserved or eroded for each stakeholder, with a measure for each element.",
+     "ar": "بيان الغاية والقيم، والقيمة التي تُخلق أو تُحفظ أو تتآكل لكل صاحب مصلحة، مع مقياس لكل عنصر."
+    },
+    "tips": [
+     {
+      "en": "Write the purpose in one sentence: what we generate and for whom.",
+      "ar": "اكتب الغاية في جملة واحدة: ماذا نولّد ولمن."
+     },
+     {
+      "en": "Include value eroded honestly, not only value created.",
+      "ar": "أدرج القيمة المتآكلة بصدق، لا المخلوقة فقط."
+     },
+     {
+      "en": "Link each element to a measure and an owner, and have the board approve the model.",
+      "ar": "اربط كل عنصر بمقياس ومالك، واعتمد النموذج من المجلس."
+     }
+    ]
+   },
+   {
+    "id": "charter",
+    "ref": "6.5 / 6.7",
+    "title": {
+     "en": "Board charter",
+     "ar": "ميثاق مجلس الإدارة"
+    },
+    "purpose": {
+     "en": "The core sections of a board charter: purpose and authority, composition, roles, reserved matters, meetings, committees, conflicts and evaluation.",
+     "ar": "الأقسام الأساسية لميثاق المجلس: الغرض والصلاحيات والتشكيل والأدوار والمسائل المحجوزة والاجتماعات واللجان والتعارض والتقييم."
+    },
+    "tips": [
+     {
+      "en": "Link each section to the relevant law or regulation in your jurisdiction.",
+      "ar": "اربط كل قسم بالنظام أو اللائحة ذات الصلة في بلدك."
+     },
+     {
+      "en": "Make the reserved matters an explicit list, not general wording.",
+      "ar": "اجعل المسائل المحجوزة قائمة صريحة لا عبارات عامة."
+     },
+     {
+      "en": "Review the charter every year after the board evaluation.",
+      "ar": "راجع الميثاق سنوياً بعد تقييم المجلس."
+     }
+    ]
+   },
+   {
+    "id": "committees",
+    "ref": "6.4",
+    "title": {
+     "en": "Committee charters summary",
+     "ar": "ملخص مواثيق اللجان"
+    },
+    "purpose": {
+     "en": "Mandate, composition, independence, meeting frequency and key outputs for each board committee.",
+     "ar": "التفويض والتشكيل والاستقلال وعدد الاجتماعات والمخرجات الرئيسية لكل لجنة من لجان المجلس."
+    },
+    "tips": [
+     {
+      "en": "Don't create a committee without a clear mandate and a report to the board.",
+      "ar": "لا تنشئ لجنة بلا تفويض واضح وتقرير للمجلس."
+     },
+     {
+      "en": "Make sure the audit committee is independent as regulations require.",
+      "ar": "تأكد أن لجنة المراجعة مستقلة وفق الأنظمة."
+     },
+     {
+      "en": "Check for overlapping remits between committees.",
+      "ar": "راجع تداخل الاختصاصات بين اللجان."
+     }
+    ]
+   },
+   {
+    "id": "doa",
+    "ref": "6.5",
+    "title": {
+     "en": "Delegation of authority matrix",
+     "ar": "مصفوفة تفويض الصلاحيات"
+    },
+    "purpose": {
+     "en": "For each decision type: the limit, and who recommends, is consulted, approves and is informed. The tool checks that every decision has exactly one approver.",
+     "ar": "لكل نوع قرار: الحد، ومن يوصي ومن يُستشار ومن يعتمد ومن يُبلَّغ. تتحقق الأداة أن لكل قرار جهة اعتماد واحدة."
+    },
+    "tips": [
+     {
+      "en": "One approver (A) per row; the tool warns you when it is missing or duplicated.",
+      "ar": "جهة اعتماد واحدة (A) لكل صف؛ الأداة تنبهك عند غيابها أو تكرارها."
+     },
+     {
+      "en": "Whoever recommends (R) does not approve their own recommendation.",
+      "ar": "من يوصي (R) لا يعتمد قراره بنفسه."
+     },
+     {
+      "en": "Update the matrix after every restructuring and have the board approve it.",
+      "ar": "حدّث المصفوفة بعد كل إعادة هيكلة واعتمدها من المجلس."
+     }
+    ]
+   },
+   {
+    "id": "evaluation",
+    "ref": "6.7",
+    "title": {
+     "en": "Board evaluation questionnaire",
+     "ar": "استبيان تقييم أداء المجلس"
+    },
+    "purpose": {
+     "en": "Board evaluation questions by area, with a 1–5 rating, evidence and an improvement action. The rating label is calculated automatically.",
+     "ar": "أسئلة تقييم المجلس حسب المحاور، مع تقدير من 1 إلى 5 والدليل وإجراء التحسين. يُحسب التصنيف تلقائياً."
+    },
+    "tips": [
+     {
+      "en": "Ask each director to answer individually, then discuss the average and the spread.",
+      "ar": "اطلب من كل عضو الإجابة منفرداً، ثم ناقش المتوسط والتباين."
+     },
+     {
+      "en": "Every rating of 2 or below needs an improvement action with an owner and a date.",
+      "ar": "كل تقدير 2 أو أقل يحتاج إجراء تحسين بمالك وموعد."
+     },
+     {
+      "en": "Use an external facilitator every three years.",
+      "ar": "استخدم مُيسّراً خارجياً كل ثلاث سنوات."
+     }
+    ]
+   },
+   {
+    "id": "stakeholders",
+    "ref": "6.6",
+    "title": {
+     "en": "Stakeholder engagement plan",
+     "ar": "خطة إشراك أصحاب المصلحة"
+    },
+    "purpose": {
+     "en": "For each group: expectations, influence and impact, engagement method and frequency, owner, and how results reach the board.",
+     "ar": "لكل فئة: التوقعات، والتأثير والتأثر، وطريقة الإشراك وتكراره، والمالك، وكيف تصل النتائج إلى المجلس."
+    },
+    "tips": [
+     {
+      "en": "Prioritize groups by both influence and impact, not influence alone.",
+      "ar": "رتّب الفئات بالتأثير والتأثر معاً، لا بالتأثير فقط."
+     },
+     {
+      "en": "Give each group an executive owner and a board-level lens.",
+      "ar": "لكل فئة مالك تنفيذي وعدسة على مستوى المجلس."
+     },
+     {
+      "en": "Close the loop: tell stakeholders what changed.",
+      "ar": "أغلق الحلقة: أبلغ أصحاب المصلحة بما تغيّر."
+     }
+    ]
+   },
+   {
+    "id": "coi",
+    "ref": "6.7 / ISO 37009",
+    "title": {
+     "en": "Conflict of interest declarations",
+     "ar": "سجل إفصاحات تعارض المصالح"
+    },
+    "purpose": {
+     "en": "Annual and event-driven declarations by directors and executives, the type of interest, the action taken and who approved it.",
+     "ar": "الإفصاح السنوي والطارئ لأعضاء المجلس والتنفيذيين، ونوع المصلحة، والإجراء المتخذ، وجهة الاعتماد."
+    },
+    "tips": [
+     {
+      "en": "Collect declarations every year and whenever something changes.",
+      "ar": "اجمع الإفصاحات سنوياً وعند أي تغيير."
+     },
+     {
+      "en": "Every interest needs an action: recusal, independent approval or divestment.",
+      "ar": "لكل مصلحة إجراء: امتناع عن التصويت، أو اعتماد مستقل، أو تخارج."
+     },
+     {
+      "en": "Related-party transactions follow the statutory approval requirements.",
+      "ar": "التعاملات مع الأطراف ذات العلاقة تتبع متطلبات الاعتماد النظامية."
+     }
+    ]
+   },
+   {
+    "id": "workplan",
+    "ref": "6.3 / 6.4",
+    "title": {
+     "en": "Annual board work plan",
+     "ar": "خطة عمل المجلس السنوية"
+    },
+    "purpose": {
+     "en": "Agenda items across the four quarters, with the linked principle, paper owner and item type, to balance strategy and oversight.",
+     "ar": "توزيع بنود جدول الأعمال على الأرباع، مع المبدأ المرتبط ومالك العرض ونوع البند، لضمان التوازن بين الاستراتيجية والإشراف."
+    },
+    "tips": [
+     {
+      "en": "Give at least a third of the time to strategy and the future.",
+      "ar": "خصص ثلث الوقت على الأقل للاستراتيجية والمستقبل."
+     },
+     {
+      "en": "Spread recurring items (accounts, risk, evaluation) across the year.",
+      "ar": "وزّع البنود الثابتة (القوائم، المخاطر، التقييم) على العام."
+     },
+     {
+      "en": "Link every item to an ISO 37000 principle to reveal neglected ones.",
+      "ar": "اربط كل بند بمبدأ من ISO 37000 لتكشف المبادئ المهملة."
+     }
+    ]
+   },
+   {
+    "id": "appetite",
+    "ref": "6.9",
+    "title": {
+     "en": "Board risk appetite statement",
+     "ar": "بيان الرغبة في المخاطر للمجلس"
+    },
+    "purpose": {
+     "en": "Appetite level, statement, measurable limit, indicator and overseeing committee for each category, on the same scale as the ISO 31000 studio.",
+     "ar": "مستوى الرغبة لكل فئة، والبيان، والحد القابل للقياس، والمؤشر، واللجنة المشرفة. بالمقياس نفسه المستخدم في استوديو ISO 31000."
+    },
+    "tips": [
+     {
+      "en": "Use the same five appetite levels in every tool across the organization.",
+      "ar": "استخدم مستويات الرغبة الخمسة ذاتها في كل أدوات المنظمة."
+     },
+     {
+      "en": "Give each category a numeric limit and an indicator, not just general wording.",
+      "ar": "لكل فئة حد رقمي ومؤشر، لا عبارة عامة فقط."
+     },
+     {
+      "en": "Assign each category to an overseeing committee and approve the statement every year.",
+      "ar": "أسند كل فئة إلى لجنة مشرفة، واعتمد البيان سنوياً."
+     }
+    ]
+   },
+   {
+    "id": "kpis",
+    "ref": "5a / 6.2",
+    "title": {
+     "en": "Governance and integrated value indicators",
+     "ar": "مؤشرات الحوكمة والقيمة المتكاملة"
+    },
+    "purpose": {
+     "en": "Indicators the board follows to measure governance outcomes and integrated value, with target, actual and status.",
+     "ar": "مؤشرات يتابعها المجلس لقياس نواتج الحوكمة والقيمة المتكاملة، مع المستهدف والفعلي والحالة."
+    },
+    "tips": [
+     {
+      "en": "Choose indicators that measure outcomes, not just the number of meetings.",
+      "ar": "اختر مؤشرات تقيس النواتج لا عدد الاجتماعات فقط."
+     },
+     {
+      "en": "Give each indicator a definition, an owner and a data source.",
+      "ar": "اجعل لكل مؤشر تعريفاً ومالكاً ومصدر بيانات."
+     },
+     {
+      "en": "Analyse the causes of any indicator that stays red for two quarters.",
+      "ar": "راجع المؤشرات الحمراء لربعين متتاليين بتحليل للأسباب."
+     }
+    ]
+   },
+   {
+    "id": "decision",
+    "ref": "6.8",
+    "title": {
+     "en": "Board decision paper checklist",
+     "ar": "قائمة تحقق عرض القرار للمجلس"
+    },
+    "purpose": {
+     "en": "The elements every paper asking the board for a decision must contain, with the status of each.",
+     "ar": "العناصر التي يجب أن يتضمنها كل عرض يطلب قراراً من المجلس، مع حالة كل عنصر."
+    },
+    "tips": [
+     {
+      "en": "State the decision required on page one.",
+      "ar": "اكتب القرار المطلوب في الصفحة الأولى."
+     },
+     {
+      "en": "Name the data sources, their quality and the assumptions.",
+      "ar": "اذكر مصادر البيانات وجودتها وافتراضاتها."
+     },
+     {
+      "en": "Send the paper at least seven days ahead.",
+      "ar": "أرسل العرض قبل سبعة أيام على الأقل."
+     }
+    ]
+   },
+   {
+    "id": "swot",
+    "ref": "6.3",
+    "title": {
+     "en": "Governance SWOT",
+     "ar": "تحليل SWOT للحوكمة"
+    },
+    "purpose": {
+     "en": "Strengths and weaknesses of the governance system, and the external opportunities and threats affecting it.",
+     "ar": "نقاط القوة والضعف في منظومة الحوكمة، والفرص والتهديدات الخارجية المؤثرة فيها."
+    },
+    "tips": [
+     {
+      "en": "Focus on governance, not the business in general.",
+      "ar": "ركّز على الحوكمة لا على الأعمال عموماً."
+     },
+     {
+      "en": "Link each weakness to an action in the improvement roadmap.",
+      "ar": "اربط كل ضعف بإجراء في خارطة التحسين."
+     },
+     {
+      "en": "Update the analysis after every board evaluation.",
+      "ar": "حدّث التحليل بعد كل تقييم للمجلس."
+     }
+    ]
+   }
+  ],
+  "official": [
+   {
+    "url": "https://www.iso.org/standard/65036.html",
+    "name": {
+     "ar": "المنظمة الدولية للتقييس ISO",
+     "en": "ISO — International Organization for Standardization"
+    },
+    "note": {
+     "ar": "صفحة ISO 37000:2021 ومتجر النسخة الرسمية",
+     "en": "The ISO 37000:2021 page and official store"
+    }
+   },
+   {
+    "url": "https://committee.iso.org/home/tc309",
+    "name": {
+     "ar": "اللجنة الفنية ISO/TC 309",
+     "en": "ISO/TC 309 committee"
+    },
+    "note": {
+     "ar": "عائلة مواصفات الحوكمة والمشاريع الجارية",
+     "en": "The governance family of standards and ongoing projects"
+    }
+   },
+   {
+    "url": "https://cma.gov.sa",
+    "name": {
+     "ar": "هيئة السوق المالية",
+     "en": "Capital Market Authority (CMA)"
+    },
+    "note": {
+     "ar": "لائحة حوكمة الشركات للشركات المدرجة في المملكة",
+     "en": "Corporate Governance Regulations for listed companies in Saudi Arabia"
+    }
+   },
+   {
+    "url": "https://www.saso.gov.sa",
+    "name": {
+     "ar": "الهيئة السعودية للمواصفات والمقاييس والجودة",
+     "en": "Saudi Standards, Metrology and Quality Org. (SASO)"
+    },
+    "note": {
+     "ar": "النسخ الوطنية المعتمدة من المواصفات",
+     "en": "National adoptions of standards"
+    }
+   }
+  ],
+  "readiness_questions": 40,
+  "competencies": [
+   "GOV-01",
+   "GOV-02",
+   "LDR-02"
+  ],
+  "ecosystem": "governance"
+ }
+}

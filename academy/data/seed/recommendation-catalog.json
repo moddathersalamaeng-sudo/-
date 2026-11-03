@@ -1,0 +1,1675 @@
+{
+  "schema": "cia.recommendation-catalog.v1",
+  "items": [
+    {
+      "id": "REC-AUD-READ",
+      "recommendation_type": "knowledge",
+      "target_id": "KA-010",
+      "title": {
+        "en": "Audit and Finding Basics",
+        "ar": "أساسيات التدقيق والنتائج"
+      },
+      "competencies": [
+        "AUD-01",
+        "AUD-03"
+      ],
+      "domains": [
+        "AUD"
+      ],
+      "roles": [
+        "ROLE-IA",
+        "ROLE-LA"
+      ],
+      "level": 1,
+      "estimated_effort": "25 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "audit",
+        "تدقيق"
+      ]
+    },
+    {
+      "id": "REC-AUD-ASSESS",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-READY-ISO-001",
+      "title": {
+        "en": "ISO & Audit Readiness Assessment",
+        "ar": "تقييم جاهزية ISO والتدقيق"
+      },
+      "competencies": [
+        "ISO-01",
+        "AUD-01",
+        "AUD-02"
+      ],
+      "domains": [
+        "ISO",
+        "AUD"
+      ],
+      "roles": [
+        "ROLE-IA",
+        "ROLE-LA"
+      ],
+      "level": 2,
+      "estimated_effort": "15 min",
+      "prerequisites": []
+    },
+    {
+      "id": "REC-ISO-FOUND",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-101",
+      "title": {
+        "en": "ISO Management Systems Foundations",
+        "ar": "أساسيات نظم إدارة ISO"
+      },
+      "competencies": [
+        "ISO-01",
+        "ISO-02",
+        "RSK-01",
+        "QM-03"
+      ],
+      "domains": [
+        "ISO",
+        "QM",
+        "RSK"
+      ],
+      "roles": [
+        "ROLE-HSEQM",
+        "ROLE-IA",
+        "ROLE-QE",
+        "ROLE-QMGR"
+      ],
+      "level": 1,
+      "estimated_effort": "9 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "أيزو"
+      ],
+      "certification_keywords": [],
+      "standard_ids": [
+        "STD-9001",
+        "STD-14001",
+        "STD-45001",
+        "STD-27001"
+      ],
+      "suppress_if_mastered": [
+        "ISO-01",
+        "ISO-02"
+      ]
+    },
+    {
+      "id": "REC-AUD-PRACT",
+      "recommendation_type": "practice_activity",
+      "target_id": "ASM-PRACT-001",
+      "title": {
+        "en": "Audit Practical Assessment",
+        "ar": "التقييم العملي للتدقيق"
+      },
+      "competencies": [
+        "AUD-02",
+        "AUD-03"
+      ],
+      "domains": [
+        "AUD"
+      ],
+      "roles": [
+        "ROLE-IA",
+        "ROLE-LA"
+      ],
+      "level": 2,
+      "estimated_effort": "45 min",
+      "prerequisites": [
+        {
+          "target_id": "ASM-READY-ISO-001",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "REC-PM-FOUND",
+      "recommendation_type": "course",
+      "target_id": "CRS-PM-101",
+      "title": {
+        "en": "Project Management & Value Delivery Foundations",
+        "ar": "أساسيات إدارة المشاريع وتحقيق القيمة"
+      },
+      "competencies": [
+        "PM-01",
+        "PM-02",
+        "PM-03"
+      ],
+      "domains": [
+        "PM"
+      ],
+      "roles": [
+        "ROLE-PMOA"
+      ],
+      "level": 1,
+      "estimated_effort": "10 h",
+      "prerequisites": [],
+      "certification_keywords": [
+        "pmp"
+      ]
+    },
+    {
+      "id": "REC-PMO-FOUND",
+      "recommendation_type": "course",
+      "target_id": "CRS-P3O-101",
+      "title": {
+        "en": "Portfolio, Programme & Project Offices Foundations",
+        "ar": "أساسيات مكاتب المحافظ والبرامج والمشاريع"
+      },
+      "competencies": [
+        "PMO-01",
+        "PMO-02",
+        "GOV-01",
+        "PERF-01"
+      ],
+      "domains": [
+        "PMO",
+        "GOV",
+        "PERF"
+      ],
+      "roles": [
+        "ROLE-PMOA"
+      ],
+      "level": 2,
+      "estimated_effort": "8 h",
+      "prerequisites": [
+        {
+          "target_id": "CRS-PM-101",
+          "required": false
+        }
+      ],
+      "certification_keywords": [
+        "pmo",
+        "p3o"
+      ]
+    },
+    {
+      "id": "REC-PMO-READ",
+      "recommendation_type": "knowledge",
+      "target_id": "KA-012",
+      "title": {
+        "en": "PMO Types",
+        "ar": "أنواع مكاتب إدارة المشاريع"
+      },
+      "competencies": [
+        "PMO-01"
+      ],
+      "domains": [
+        "PMO"
+      ],
+      "roles": [
+        "ROLE-PMOA"
+      ],
+      "level": 1,
+      "estimated_effort": "20 min",
+      "prerequisites": []
+    },
+    {
+      "id": "REC-PERF-ACTION",
+      "recommendation_type": "competency_development",
+      "target_id": "PERF-DEV-01",
+      "title": {
+        "en": "KPI & Performance Development Action",
+        "ar": "إجراء تطوير مؤشرات وإدارة الأداء"
+      },
+      "competencies": [
+        "PERF-01",
+        "PERF-02"
+      ],
+      "domains": [
+        "PERF"
+      ],
+      "roles": [
+        "ROLE-PMOA",
+        "ROLE-QMGR"
+      ],
+      "level": 2,
+      "estimated_effort": "2 h",
+      "prerequisites": []
+    },
+    {
+      "id": "REC-QMS",
+      "recommendation_type": "course",
+      "target_id": "CRS-QMS-201",
+      "title": {
+        "en": "Quality, QA & QC Professional Practice",
+        "ar": "الممارسة المهنية للجودة وضمان ومراقبة الجودة"
+      },
+      "competencies": [
+        "QM-01",
+        "QM-02",
+        "QM-03"
+      ],
+      "domains": [
+        "QM"
+      ],
+      "roles": [
+        "ROLE-QE",
+        "ROLE-QMGR"
+      ],
+      "level": 2,
+      "estimated_effort": "12 h",
+      "prerequisites": [
+        {
+          "target_id": "CRS-ISO-101",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-READ",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-READ",
+      "title": {
+        "en": "How to Read ISO Standards",
+        "ar": "كيف تقرأ مواصفات ISO"
+      },
+      "competencies": [
+        "ISO-01",
+        "AUD-02"
+      ],
+      "domains": [
+        "AUD",
+        "ISO"
+      ],
+      "roles": [
+        "ROLE-IA",
+        "ROLE-LA",
+        "ROLE-QE"
+      ],
+      "level": 1,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "أيزو"
+      ],
+      "certification_keywords": [],
+      "standard_ids": [
+        "STD-9001",
+        "STD-14001",
+        "STD-45001",
+        "STD-27001"
+      ],
+      "suppress_if_mastered": [
+        "ISO-01"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-AUD",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-AUD",
+      "title": {
+        "en": "Auditing Fundamentals for Management Systems",
+        "ar": "أساسيات تدقيق نظم الإدارة"
+      },
+      "competencies": [
+        "AUD-01",
+        "AUD-02",
+        "AUD-03"
+      ],
+      "domains": [
+        "AUD"
+      ],
+      "roles": [
+        "ROLE-HSEQM",
+        "ROLE-IA",
+        "ROLE-LA"
+      ],
+      "level": 2,
+      "estimated_effort": "10 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "أيزو",
+        "audit",
+        "تدقيق"
+      ],
+      "certification_keywords": [],
+      "standard_ids": [
+        "STD-9001",
+        "STD-14001",
+        "STD-45001",
+        "STD-27001"
+      ],
+      "suppress_if_mastered": [
+        "AUD-01",
+        "AUD-02",
+        "AUD-03"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-IMS",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-IMS",
+      "title": {
+        "en": "Integrated Management Systems (Quality, Environment, OH&S, Information Security)",
+        "ar": "النظم المتكاملة (الجودة والبيئة والسلامة وأمن المعلومات)"
+      },
+      "competencies": [
+        "ISO-03",
+        "AUD-01",
+        "LDR-01"
+      ],
+      "domains": [
+        "AUD",
+        "ISO",
+        "LDR"
+      ],
+      "roles": [
+        "ROLE-HSEQM",
+        "ROLE-QMGR"
+      ],
+      "level": 3,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [
+        {
+          "target_id": "CRS-ISO-101",
+          "required": true
+        }
+      ],
+      "interest_keywords": [
+        "iso",
+        "أيزو",
+        "ims",
+        "integrated",
+        "متكامل"
+      ],
+      "certification_keywords": [],
+      "standard_ids": [
+        "STD-9001",
+        "STD-14001",
+        "STD-45001",
+        "STD-27001"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-9001-F",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-9001-F",
+      "title": {
+        "en": "ISO 9001:2026 Foundation",
+        "ar": "أساسيات ISO 9001:2026"
+      },
+      "competencies": [
+        "ISO-01",
+        "ISO-02",
+        "QM-04"
+      ],
+      "domains": [
+        "ISO",
+        "QM"
+      ],
+      "roles": [
+        "ROLE-IA",
+        "ROLE-QE",
+        "ROLE-QMGR"
+      ],
+      "level": 1,
+      "estimated_effort": "6 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "أيزو"
+      ],
+      "certification_keywords": [
+        "9001",
+        "ISO 9001"
+      ],
+      "standard_ids": [
+        "STD-9001"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-14001-F",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-14001-F",
+      "title": {
+        "en": "ISO 14001:2026 Foundation",
+        "ar": "أساسيات ISO 14001:2026"
+      },
+      "competencies": [
+        "ISO-01",
+        "ISO-02",
+        "CMP-01",
+        "RSK-01"
+      ],
+      "domains": [
+        "CMP",
+        "ISO",
+        "RSK"
+      ],
+      "roles": [
+        "ROLE-HSEQM",
+        "ROLE-QE"
+      ],
+      "level": 1,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "أيزو"
+      ],
+      "certification_keywords": [
+        "14001",
+        "ISO 14001"
+      ],
+      "standard_ids": [
+        "STD-14001"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-45001-F",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-45001-F",
+      "title": {
+        "en": "ISO 45001:2018 Foundation (with Amendment 1:2024)",
+        "ar": "أساسيات ISO 45001:2018 (مع التعديل 1:2024)"
+      },
+      "competencies": [
+        "ISO-01",
+        "RSK-01",
+        "RSK-02",
+        "LDR-01"
+      ],
+      "domains": [
+        "ISO",
+        "LDR",
+        "RSK"
+      ],
+      "roles": [
+        "ROLE-HSEQM",
+        "ROLE-QE"
+      ],
+      "level": 1,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "أيزو"
+      ],
+      "certification_keywords": [
+        "45001",
+        "ISO 45001"
+      ],
+      "standard_ids": [
+        "STD-45001"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-27001-F",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-27001-F",
+      "title": {
+        "en": "ISO/IEC 27001:2022 Foundation",
+        "ar": "أساسيات ISO/IEC 27001:2022"
+      },
+      "competencies": [
+        "ISA-01",
+        "ISA-02",
+        "ISO-01",
+        "RSK-01"
+      ],
+      "domains": [
+        "ISA",
+        "ISO",
+        "RSK"
+      ],
+      "roles": [
+        "ROLE-HSEQM",
+        "ROLE-QE"
+      ],
+      "level": 1,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "أيزو"
+      ],
+      "certification_keywords": [
+        "27001",
+        "ISO 27001"
+      ],
+      "standard_ids": [
+        "STD-27001"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-NC",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-NC",
+      "title": {
+        "en": "Nonconformity, Correction and Corrective Action",
+        "ar": "عدم المطابقة والتصحيح والإجراء التصحيحي"
+      },
+      "competencies": [
+        "QM-03",
+        "AUD-03"
+      ],
+      "domains": [
+        "AUD",
+        "QM"
+      ],
+      "roles": [
+        "ROLE-HSEQM",
+        "ROLE-IA",
+        "ROLE-QE",
+        "ROLE-QMGR"
+      ],
+      "level": 2,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "أيزو"
+      ],
+      "certification_keywords": [],
+      "standard_ids": [
+        "STD-9001",
+        "STD-14001",
+        "STD-45001",
+        "STD-27001"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-RISK",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-RISK",
+      "title": {
+        "en": "Risk-Based Thinking for Management Systems",
+        "ar": "التفكير القائم على المخاطر لنظم الإدارة"
+      },
+      "competencies": [
+        "RSK-01",
+        "RSK-02",
+        "ISO-02"
+      ],
+      "domains": [
+        "ISO",
+        "RSK"
+      ],
+      "roles": [
+        "ROLE-HSEQM",
+        "ROLE-QE",
+        "ROLE-QMGR"
+      ],
+      "level": 2,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "أيزو"
+      ],
+      "certification_keywords": [],
+      "standard_ids": [
+        "STD-9001",
+        "STD-14001",
+        "STD-45001",
+        "STD-27001"
+      ],
+      "suppress_if_mastered": [
+        "RSK-01",
+        "RSK-02"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-9001-IMP",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-9001-IMP",
+      "title": {
+        "en": "ISO 9001:2026 Implementer",
+        "ar": "مطبق ISO 9001:2026"
+      },
+      "competencies": [
+        "ISO-02",
+        "QM-01",
+        "PERF-01",
+        "AUD-01"
+      ],
+      "domains": [
+        "AUD",
+        "ISO",
+        "PERF",
+        "QM"
+      ],
+      "roles": [
+        "ROLE-QE",
+        "ROLE-QMGR"
+      ],
+      "level": 2,
+      "estimated_effort": "10.5 h",
+      "prerequisites": [
+        {
+          "target_id": "CRS-ISO-9001-F",
+          "required": true
+        }
+      ],
+      "interest_keywords": [
+        "iso",
+        "أيزو"
+      ],
+      "certification_keywords": [
+        "9001",
+        "ISO 9001"
+      ],
+      "standard_ids": [
+        "STD-9001"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-9001-AUD",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-9001-AUD",
+      "title": {
+        "en": "ISO 9001:2026 Internal Auditor",
+        "ar": "المدقق الداخلي ISO 9001:2026"
+      },
+      "competencies": [
+        "AUD-01",
+        "AUD-02",
+        "AUD-03",
+        "ISO-01"
+      ],
+      "domains": [
+        "AUD",
+        "ISO"
+      ],
+      "roles": [
+        "ROLE-IA",
+        "ROLE-LA",
+        "ROLE-QMGR"
+      ],
+      "level": 2,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [
+        {
+          "target_id": "CRS-ISO-AUD",
+          "required": true
+        }
+      ],
+      "interest_keywords": [
+        "iso",
+        "أيزو",
+        "audit",
+        "تدقيق"
+      ],
+      "certification_keywords": [
+        "9001",
+        "ISO 9001"
+      ],
+      "standard_ids": [
+        "STD-9001"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-14001-AUD",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-14001-AUD",
+      "title": {
+        "en": "ISO 14001:2026 Internal Auditor",
+        "ar": "المدقق الداخلي ISO 14001:2026"
+      },
+      "competencies": [
+        "AUD-01",
+        "AUD-02",
+        "AUD-03",
+        "CMP-01"
+      ],
+      "domains": [
+        "AUD",
+        "CMP"
+      ],
+      "roles": [
+        "ROLE-HSEQM",
+        "ROLE-IA"
+      ],
+      "level": 2,
+      "estimated_effort": "7 h",
+      "prerequisites": [
+        {
+          "target_id": "CRS-ISO-AUD",
+          "required": true
+        },
+        {
+          "target_id": "CRS-ISO-14001-F",
+          "required": true
+        }
+      ],
+      "interest_keywords": [
+        "iso",
+        "أيزو",
+        "audit",
+        "تدقيق"
+      ],
+      "certification_keywords": [
+        "14001",
+        "ISO 14001"
+      ],
+      "standard_ids": [
+        "STD-14001"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-45001-AUD",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-45001-AUD",
+      "title": {
+        "en": "ISO 45001 Internal Auditor",
+        "ar": "المدقق الداخلي ISO 45001"
+      },
+      "competencies": [
+        "AUD-01",
+        "AUD-02",
+        "AUD-03",
+        "RSK-02"
+      ],
+      "domains": [
+        "AUD",
+        "RSK"
+      ],
+      "roles": [
+        "ROLE-HSEQM",
+        "ROLE-IA"
+      ],
+      "level": 2,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [
+        {
+          "target_id": "CRS-ISO-AUD",
+          "required": true
+        },
+        {
+          "target_id": "CRS-ISO-45001-F",
+          "required": true
+        }
+      ],
+      "interest_keywords": [
+        "iso",
+        "أيزو",
+        "audit",
+        "تدقيق"
+      ],
+      "certification_keywords": [
+        "45001",
+        "ISO 45001"
+      ],
+      "standard_ids": [
+        "STD-45001"
+      ]
+    },
+    {
+      "id": "REC-CRS-ISO-27001-AUD",
+      "recommendation_type": "course",
+      "target_id": "CRS-ISO-27001-AUD",
+      "title": {
+        "en": "ISO/IEC 27001:2022 Internal Auditor",
+        "ar": "المدقق الداخلي ISO/IEC 27001:2022"
+      },
+      "competencies": [
+        "AUD-01",
+        "AUD-02",
+        "AUD-03",
+        "ISA-01"
+      ],
+      "domains": [
+        "AUD",
+        "ISA"
+      ],
+      "roles": [
+        "ROLE-HSEQM",
+        "ROLE-IA"
+      ],
+      "level": 2,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [
+        {
+          "target_id": "CRS-ISO-AUD",
+          "required": true
+        },
+        {
+          "target_id": "CRS-ISO-27001-F",
+          "required": true
+        }
+      ],
+      "interest_keywords": [
+        "iso",
+        "أيزو",
+        "audit",
+        "تدقيق"
+      ],
+      "certification_keywords": [
+        "27001",
+        "ISO 27001"
+      ],
+      "standard_ids": [
+        "STD-27001"
+      ]
+    },
+    {
+      "id": "REC-ASM-ISO-9001-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-ISO-9001-DIAG",
+      "title": {
+        "en": "ISO 9001 applied diagnostic",
+        "ar": "تقييم تطبيقي ISO 9001"
+      },
+      "competencies": [
+        "AUD-02",
+        "ISO-01",
+        "ISO-02",
+        "QM-03",
+        "QM-04"
+      ],
+      "domains": [
+        "AUD",
+        "ISO",
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "9001"
+      ],
+      "certification_keywords": [
+        "ISO 9001",
+        "9001"
+      ],
+      "standard_ids": [
+        "STD-9001"
+      ]
+    },
+    {
+      "id": "REC-ASM-ISO-14001-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-ISO-14001-DIAG",
+      "title": {
+        "en": "ISO 14001 applied diagnostic",
+        "ar": "تقييم تطبيقي ISO 14001"
+      },
+      "competencies": [
+        "AUD-02",
+        "CMP-01",
+        "ISO-01",
+        "ISO-02",
+        "RSK-02"
+      ],
+      "domains": [
+        "AUD",
+        "CMP",
+        "ISO",
+        "RSK"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "14001"
+      ],
+      "certification_keywords": [
+        "ISO 14001",
+        "14001"
+      ],
+      "standard_ids": [
+        "STD-14001"
+      ]
+    },
+    {
+      "id": "REC-ASM-ISO-45001-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-ISO-45001-DIAG",
+      "title": {
+        "en": "ISO 45001 applied diagnostic",
+        "ar": "تقييم تطبيقي ISO 45001"
+      },
+      "competencies": [
+        "AUD-02",
+        "ISO-01",
+        "ISO-02",
+        "QM-03",
+        "RSK-02"
+      ],
+      "domains": [
+        "AUD",
+        "ISO",
+        "QM",
+        "RSK"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "45001"
+      ],
+      "certification_keywords": [
+        "ISO 45001",
+        "45001"
+      ],
+      "standard_ids": [
+        "STD-45001"
+      ]
+    },
+    {
+      "id": "REC-ASM-ISO-27001-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-ISO-27001-DIAG",
+      "title": {
+        "en": "ISO 27001 applied diagnostic",
+        "ar": "تقييم تطبيقي ISO 27001"
+      },
+      "competencies": [
+        "AUD-02",
+        "ISA-01",
+        "ISA-02",
+        "ISO-01",
+        "ISO-02"
+      ],
+      "domains": [
+        "AUD",
+        "ISA",
+        "ISO"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "iso",
+        "27001"
+      ],
+      "certification_keywords": [
+        "ISO 27001",
+        "27001"
+      ],
+      "standard_ids": [
+        "STD-27001"
+      ]
+    },
+    {
+      "id": "REC-CRS-G-9001",
+      "recommendation_type": "course",
+      "target_id": "CRS-G-9001",
+      "title": {
+        "en": "ISO 9001:2026: the requirements explained, clause by clause",
+        "ar": "ISO 9001:2026: المتطلبات مشروحة بندًا بندًا"
+      },
+      "competencies": [
+        "ISO-01",
+        "ISO-02",
+        "QM-01",
+        "QM-04",
+        "AUD-02"
+      ],
+      "domains": [
+        "AUD",
+        "ISO",
+        "QM"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "18 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "9001",
+        "iso 9001"
+      ],
+      "certification_keywords": [
+        "ISO 9001",
+        "9001"
+      ],
+      "standard_ids": [
+        "STD-9001"
+      ]
+    },
+    {
+      "id": "REC-CRS-G-14001",
+      "recommendation_type": "course",
+      "target_id": "CRS-G-14001",
+      "title": {
+        "en": "ISO 14001:2026: the requirements explained, clause by clause",
+        "ar": "ISO 14001:2026: المتطلبات مشروحة بندًا بندًا"
+      },
+      "competencies": [
+        "ISO-01",
+        "ISO-02",
+        "CMP-01",
+        "AUD-02"
+      ],
+      "domains": [
+        "AUD",
+        "CMP",
+        "ISO"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "11 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "14001",
+        "iso 14001"
+      ],
+      "certification_keywords": [
+        "ISO 14001",
+        "14001"
+      ],
+      "standard_ids": [
+        "STD-14001"
+      ]
+    },
+    {
+      "id": "REC-CRS-G-45001",
+      "recommendation_type": "course",
+      "target_id": "CRS-G-45001",
+      "title": {
+        "en": "ISO 45001:2018: the requirements explained, clause by clause",
+        "ar": "ISO 45001:2018: المتطلبات مشروحة بندًا بندًا"
+      },
+      "competencies": [
+        "ISO-01",
+        "ISO-02",
+        "RSK-01",
+        "AUD-02"
+      ],
+      "domains": [
+        "AUD",
+        "ISO",
+        "RSK"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "12 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "45001",
+        "iso 45001"
+      ],
+      "certification_keywords": [
+        "ISO 45001",
+        "45001"
+      ],
+      "standard_ids": [
+        "STD-45001"
+      ]
+    },
+    {
+      "id": "REC-CRS-G-27001",
+      "recommendation_type": "course",
+      "target_id": "CRS-G-27001",
+      "title": {
+        "en": "ISO/IEC 27001:2022: the requirements explained, clause by clause",
+        "ar": "ISO/IEC 27001:2022: المتطلبات مشروحة بندًا بندًا"
+      },
+      "competencies": [
+        "ISO-01",
+        "ISO-02",
+        "ISA-01",
+        "RSK-01",
+        "AUD-02"
+      ],
+      "domains": [
+        "AUD",
+        "ISA",
+        "ISO",
+        "RSK"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "9.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "27001",
+        "iso 27001"
+      ],
+      "certification_keywords": [
+        "ISO 27001",
+        "27001"
+      ],
+      "standard_ids": [
+        "STD-27001"
+      ]
+    },
+    {
+      "id": "REC-CRS-G-22301",
+      "recommendation_type": "course",
+      "target_id": "CRS-G-22301",
+      "title": {
+        "en": "ISO 22301:2019: the requirements explained, clause by clause",
+        "ar": "ISO 22301:2019: المتطلبات مشروحة بندًا بندًا"
+      },
+      "competencies": [
+        "ISO-01",
+        "ISO-02",
+        "BC-01",
+        "BC-02"
+      ],
+      "domains": [
+        "BC",
+        "ISO"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "10 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "22301",
+        "iso 22301"
+      ],
+      "certification_keywords": [
+        "ISO 22301",
+        "22301"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-G-31000",
+      "recommendation_type": "course",
+      "target_id": "CRS-G-31000",
+      "title": {
+        "en": "ISO 31000:2018: the requirements explained, clause by clause",
+        "ar": "ISO 31000:2018: المتطلبات مشروحة بندًا بندًا"
+      },
+      "competencies": [
+        "RSK-01",
+        "RSK-02",
+        "ISO-01"
+      ],
+      "domains": [
+        "ISO",
+        "RSK"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "9 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "31000",
+        "iso 31000"
+      ],
+      "certification_keywords": [
+        "ISO 31000",
+        "31000"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-G-37000",
+      "recommendation_type": "course",
+      "target_id": "CRS-G-37000",
+      "title": {
+        "en": "ISO 37000:2021: the requirements explained, clause by clause",
+        "ar": "ISO 37000:2021: المتطلبات مشروحة بندًا بندًا"
+      },
+      "competencies": [
+        "GOV-01",
+        "GOV-02",
+        "LDR-02"
+      ],
+      "domains": [
+        "GOV",
+        "LDR"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "5.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "37000",
+        "iso 37000"
+      ],
+      "certification_keywords": [
+        "ISO 37000",
+        "37000"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-G-37001",
+      "recommendation_type": "course",
+      "target_id": "CRS-G-37001",
+      "title": {
+        "en": "ISO 37001:2025: the requirements explained, clause by clause",
+        "ar": "ISO 37001:2025: المتطلبات مشروحة بندًا بندًا"
+      },
+      "competencies": [
+        "CMP-02",
+        "CMP-01",
+        "ISO-01",
+        "ISO-02"
+      ],
+      "domains": [
+        "CMP",
+        "ISO"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "11 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "37001",
+        "iso 37001"
+      ],
+      "certification_keywords": [
+        "ISO 37001",
+        "37001"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-G-37301",
+      "recommendation_type": "course",
+      "target_id": "CRS-G-37301",
+      "title": {
+        "en": "ISO 37301:2021: the requirements explained, clause by clause",
+        "ar": "ISO 37301:2021: المتطلبات مشروحة بندًا بندًا"
+      },
+      "competencies": [
+        "CMP-01",
+        "GOV-02",
+        "ISO-01",
+        "ISO-02"
+      ],
+      "domains": [
+        "CMP",
+        "GOV",
+        "ISO"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "11 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "37301",
+        "iso 37301"
+      ],
+      "certification_keywords": [
+        "ISO 37301",
+        "37301"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-RCA",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-RCA",
+      "title": {
+        "en": "Root Cause Analysis — Investigation: the method step by step",
+        "ar": "تحليل السبب الجذري — التحقيق: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "QM-03",
+        "QM-02"
+      ],
+      "domains": [
+        "QM"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "5.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "rca",
+        "rca"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-WHY5",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-WHY5",
+      "title": {
+        "en": "5 Whys — Root cause analysis: the method step by step",
+        "ar": "لماذا الخمس — تحليل السبب الجذري: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "QM-03"
+      ],
+      "domains": [
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "why5",
+        "five whys"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-FISH",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-FISH",
+      "title": {
+        "en": "Fishbone — Cause and effect analysis: the method step by step",
+        "ar": "عظمة السمكة — تحليل السبب والنتيجة: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "QM-03",
+        "QM-02"
+      ],
+      "domains": [
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "fish",
+        "fishbone"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-CAPA",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-CAPA",
+      "title": {
+        "en": "CAPA — Corrective action: the method step by step",
+        "ar": "CAPA — الإجراءات التصحيحية: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "QM-03",
+        "AUD-03"
+      ],
+      "domains": [
+        "AUD",
+        "QM"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "6 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "capa",
+        "capa"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-PARETO",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-PARETO",
+      "title": {
+        "en": "Pareto — Vital few analysis: the method step by step",
+        "ar": "باريتو — تحليل القلة الحيوية: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "QM-02",
+        "OE-02"
+      ],
+      "domains": [
+        "OE",
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "pareto",
+        "pareto"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-PDCA",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-PDCA",
+      "title": {
+        "en": "PDCA — Plan-Do-Check-Act: the method step by step",
+        "ar": "PDCA — دورة التحسين المستمر: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "QM-03",
+        "OE-02"
+      ],
+      "domains": [
+        "OE",
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "4 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "pdca",
+        "pdca"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-A3",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-A3",
+      "title": {
+        "en": "A3 Problem Solving: the method step by step",
+        "ar": "حل المشكلات بأسلوب A3: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "QM-03",
+        "LDR-01"
+      ],
+      "domains": [
+        "LDR",
+        "QM"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "6 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "a3",
+        "a3"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-DMAIC",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-DMAIC",
+      "title": {
+        "en": "DMAIC Improvement Project: the method step by step",
+        "ar": "مشروع التحسين بمنهج DMAIC: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "QM-02",
+        "QM-03",
+        "OE-02"
+      ],
+      "domains": [
+        "OE",
+        "QM"
+      ],
+      "roles": [],
+      "level": 3,
+      "estimated_effort": "7 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "dmaic",
+        "dmaic"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-FMEA",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-FMEA",
+      "title": {
+        "en": "Failure Mode and Effects Analysis (FMEA): the method step by step",
+        "ar": "تحليل أنماط الفشل وآثارها (FMEA): المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "RSK-01",
+        "RSK-02",
+        "QM-02"
+      ],
+      "domains": [
+        "QM",
+        "RSK"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "fmea",
+        "fmea"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-SWOT",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-SWOT",
+      "title": {
+        "en": "SWOT analysis: the method step by step",
+        "ar": "تحليل SWOT: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "LDR-02",
+        "RSK-01"
+      ],
+      "domains": [
+        "LDR",
+        "RSK"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "swot",
+        "swot"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-PESTLE",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-PESTLE",
+      "title": {
+        "en": "PESTLE analysis: the method step by step",
+        "ar": "تحليل PESTLE: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "LDR-02",
+        "RSK-01"
+      ],
+      "domains": [
+        "LDR",
+        "RSK"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "7 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "pestle",
+        "pestle"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-STAKE",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-STAKE",
+      "title": {
+        "en": "Stakeholder analysis: the method step by step",
+        "ar": "تحليل الأطراف المعنية: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "PM-02",
+        "LDR-02"
+      ],
+      "domains": [
+        "LDR",
+        "PM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "stake",
+        "stakeholders"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-LESSONS",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-LESSONS",
+      "title": {
+        "en": "Lessons learned: the method step by step",
+        "ar": "الدروس المستفادة: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "OE-02",
+        "QM-03"
+      ],
+      "domains": [
+        "OE",
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "7 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "lessons",
+        "lessons learned"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-M-10009",
+      "recommendation_type": "course",
+      "target_id": "CRS-M-10009",
+      "title": {
+        "en": "Quality management — Guidance for quality tools and their application: the method step by step",
+        "ar": "إدارة الجودة — إرشاد لأدوات الجودة وتطبيقها: المنهجية خطوة بخطوة"
+      },
+      "competencies": [
+        "QM-02",
+        "QM-01"
+      ],
+      "domains": [
+        "QM"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "18.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "10009",
+        "iso 10009"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    }
+  ]
+}
