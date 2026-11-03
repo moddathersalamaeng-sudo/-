@@ -1,5 +1,5 @@
 /**
- * Continual Improvement Academy — bootstrap (Phase 1 foundation, extended through Phase 7).
+ * Continual Improvement Academy — bootstrap (Phase 1 foundation, extended through Phase 8).
  * Mounted at /academy/ beside the live CIA hub (index.html) and its toolkits (modules/).
  * Views are plain functions (ctx, match) → Node; routes are declared once in ROUTES below.
  * © 2026 Modather Salama — Continual Improvement Academy. All rights reserved.
@@ -30,6 +30,7 @@ import { recommendationsView, learningPathView } from './views/recommendations.j
 import { isoAcademyView, isoStandardView } from './views/iso.js';
 import { knowledgeIndexView, ecosystemView, articleView, libraryView, libraryItemView, myLibraryView } from './views/knowledge.js';
 import { guidesIndexView, guideView, guideItemView } from './views/guides.js';
+import { pmiAcademyView, certificationsView, certificationView } from './views/pmi.js';
 
 const ROUTES = [
   { path: '/', view: homeView, titleKey: 'home.title' },
@@ -45,6 +46,9 @@ const ROUTES = [
   { path: '/academy/courses/:slug/:lesson', view: lessonView, titleKey: 'p7.lesson.title' },
   { path: '/academy/iso', view: isoAcademyView, titleKey: 'nav.items.isoAcademy' },
   { path: '/academy/iso/:slug', view: isoStandardView, titleKey: 'nav.items.isoAcademy' },
+  { path: '/academy/pmi', view: pmiAcademyView, titleKey: 'nav.items.pmiAcademy' },
+  { path: '/academy/pmi/certifications', view: certificationsView, titleKey: 'nav.items.certification' },
+  { path: '/academy/pmi/certifications/:slug', view: certificationView, titleKey: 'nav.items.certification' },
   { path: '/academy/programs', view: programsView, titleKey: 'programs.title' },
   { path: '/recommendations', view: recommendationsView, titleKey: 'recommendations.title' },
   { path: '/learning-path', view: learningPathView, titleKey: 'learningPath.title' },
@@ -119,6 +123,7 @@ async function boot() {
       guides: new ContentRepository({ adapter: guideContent, collection: 'index' }),
       lessonGuideMap: new CollectionRepository({ adapter: content, collection: 'lesson-guide-map' }),
       isoStandards: new ContentRepository({ adapter: content, collection: 'iso-standards' }),
+      certifications: new ContentRepository({ adapter: content, collection: 'certifications' }),
       programs: new ContentRepository({ adapter: content, collection: 'programs' }),
       competencies: new ContentRepository({ adapter: competencyContent, collection: 'competencies' }),
       targetRoles: new ContentRepository({ adapter: competencyContent, collection: 'target-roles' }),

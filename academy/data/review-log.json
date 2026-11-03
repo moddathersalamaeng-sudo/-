@@ -12,6 +12,30 @@
       "approved": 1075,
       "changes_requested": 0,
       "skipped": 0
+    },
+    {
+      "applied_at": "2026-11-03T17:02:30+00:00",
+      "file": "cia-review-decisions-2026-11-03-owner-approval.json",
+      "sha256": "2208869f7a5aa27645b354f587353a6f24c55e24d1b3aa6611c440d947c71d4e",
+      "reviewer": {
+        "name": "مدثر سلامه",
+        "role": "Platform owner"
+      },
+      "approved": 319,
+      "changes_requested": 0,
+      "skipped": 0
+    },
+    {
+      "applied_at": "2026-11-03T17:02:53+00:00",
+      "file": "cia-review-decisions-2026-11-03-owner-approval.json",
+      "sha256": "2208869f7a5aa27645b354f587353a6f24c55e24d1b3aa6611c440d947c71d4e",
+      "reviewer": {
+        "name": "مدثر سلامه",
+        "role": "Platform owner"
+      },
+      "approved": 319,
+      "changes_requested": 0,
+      "skipped": 0
     }
   ]
 }

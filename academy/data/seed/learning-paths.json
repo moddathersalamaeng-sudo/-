@@ -164,7 +164,8 @@
           "effort": "2 h",
           "skip_if_completed": true
         }
-      ]
+      ],
+      "superseded_by": "ROUTE-PMO"
     },
     {
       "id": "ROUTE-AWARE",
@@ -935,6 +936,668 @@
         "drafted_by": "ai_draft",
         "approval_basis": "owner_approval_after_ai_prereview",
         "approved_hash": "844b7acdc8da05d95a3c432c91c3040d4fd7b7edd3a7c5b2c9dc97a2f209ceee"
+      }
+    },
+    {
+      "id": "ROUTE-PM-FOUND",
+      "kind": "pm_route",
+      "roles": [],
+      "certification_ids": [
+        "CERT-CAPM"
+      ],
+      "title": {
+        "en": "Project foundations",
+        "ar": "مسار أساسيات المشاريع"
+      },
+      "goal": {
+        "en": "Understand how projects are governed and planned, and deliver with risk and stakeholders under control.",
+        "ar": "فهم كيف تُحوكم المشاريع وتُخطط، والتسليم مع ضبط المخاطر وأصحاب المصلحة."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "knowledge",
+          "target_id": "KA-011",
+          "title": {
+            "en": "Project vs programme vs portfolio",
+            "ar": "المشروع والبرنامج والمحفظة"
+          },
+          "dependency": "recommended",
+          "effort": "10 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "assessment",
+          "target_id": "ASM-READY-PM-001",
+          "title": {
+            "en": "Project management readiness diagnostic",
+            "ar": "التقييم التشخيصي لجاهزية إدارة المشاريع"
+          },
+          "dependency": "recommended",
+          "effort": "20 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-PM-101",
+          "title": {
+            "en": "Project Management Foundations: from idea to value",
+            "ar": "أساسيات إدارة المشاريع: من الفكرة إلى القيمة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PM-01",
+            "PM-02",
+            "PM-03"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-PM-SSC",
+          "title": {
+            "en": "Scope, Schedule and Cost Integration",
+            "ar": "تكامل النطاق والجدول والتكلفة"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PM-01"
+          ]
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-PM-RISK",
+          "title": {
+            "en": "Risk in Projects",
+            "ar": "المخاطر في المشاريع"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "RSK-01",
+            "RSK-02"
+          ]
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-PM-STAKE",
+          "title": {
+            "en": "Stakeholders and Communication",
+            "ar": "أصحاب المصلحة والتواصل"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PM-02"
+          ]
+        },
+        {
+          "order": 7,
+          "type": "course",
+          "target_id": "CRS-P-21500",
+          "title": {
+            "en": "ISO 21500 series: project, programme, portfolio and governance practices explained",
+            "ar": "سلسلة ISO 21500: ممارسات المشاريع والبرامج والمحافظ والحوكمة مشروحة"
+          },
+          "dependency": "recommended",
+          "effort": "15.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 8,
+          "type": "final_assessment",
+          "target_id": "ASM-PM-SSC-FINAL",
+          "title": {
+            "en": "Scope, Schedule and Cost Integration — final assessment",
+            "ar": "تكامل النطاق والجدول والتكلفة — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e06eaf65dc3a8e7fda90d1a62d0d905782413f04c5d549af4dd1e344d11a2b0f"
+      }
+    },
+    {
+      "id": "ROUTE-PMP",
+      "kind": "pm_route",
+      "roles": [
+        "ROLE-PM"
+      ],
+      "certification_ids": [
+        "CERT-PMP"
+      ],
+      "title": {
+        "en": "PMP® preparation",
+        "ar": "مسار الإعداد لـ PMP®"
+      },
+      "goal": {
+        "en": "Close your gaps across People, Process and Business Environment, then prepare the application and the exam with a study plan. CIA internal route; exam-preparation label only.",
+        "ar": "سد فجواتك في الأفراد والعمليات وبيئة الأعمال، ثم إعداد الطلب والاختبار بخطة مذاكرة. مسار داخلي من CIA؛ بوسم إعداد للاختبار فقط."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-PM-PMP-DIAG",
+          "title": {
+            "en": "Route diagnostic — PMP® preparation",
+            "ar": "التقييم التشخيصي للمسار — الإعداد لـ PMP®"
+          },
+          "dependency": "recommended",
+          "effort": "15 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-PM-101",
+          "title": {
+            "en": "Project Management Foundations: from idea to value",
+            "ar": "أساسيات إدارة المشاريع: من الفكرة إلى القيمة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PM-01",
+            "PM-02",
+            "PM-03"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-PM-SSC",
+          "title": {
+            "en": "Scope, Schedule and Cost Integration",
+            "ar": "تكامل النطاق والجدول والتكلفة"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PM-01"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-PM-RISK",
+          "title": {
+            "en": "Risk in Projects",
+            "ar": "المخاطر في المشاريع"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "RSK-01",
+            "RSK-02"
+          ]
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-PM-STAKE",
+          "title": {
+            "en": "Stakeholders and Communication",
+            "ar": "أصحاب المصلحة والتواصل"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PM-02"
+          ]
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-PM-AGILE",
+          "title": {
+            "en": "Agile and Hybrid Delivery",
+            "ar": "التسليم الرشيق والهجين"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PM-03"
+          ]
+        },
+        {
+          "order": 7,
+          "type": "course",
+          "target_id": "CRS-PMP-PREP",
+          "title": {
+            "en": "PMP® Preparation: understanding the exam and building your study plan",
+            "ar": "الإعداد لشهادة PMP®: فهم الاختبار وبناء خطة المذاكرة"
+          },
+          "dependency": "required",
+          "effort": "6.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 8,
+          "type": "final_assessment",
+          "target_id": "ASM-PMP-PREP-FINAL",
+          "title": {
+            "en": "PMP® Preparation: understanding the exam and building your study plan — final assessment",
+            "ar": "الإعداد لشهادة PMP®: فهم الاختبار وبناء خطة المذاكرة — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "49753c555fc47cb49531b499e0114c9809ca34a84fee08ecdcc059a116616bb8"
+      }
+    },
+    {
+      "id": "ROUTE-PMO",
+      "kind": "pm_route",
+      "roles": [
+        "ROLE-PMOA"
+      ],
+      "certification_ids": [
+        "CERT-PMI-PMOCP"
+      ],
+      "title": {
+        "en": "PMO set-up and maturity",
+        "ar": "مسار إنشاء مكتب المشاريع ونضجه"
+      },
+      "goal": {
+        "en": "Design a PMO that customers use, measure its maturity and value honestly, and plan the next level.",
+        "ar": "تصميم مكتب مشاريع يستخدمه العملاء، وقياس نضجه وقيمته بصدق، وتخطيط المستوى التالي."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-PM-PMO-DIAG",
+          "title": {
+            "en": "Route diagnostic — PMO set-up and maturity",
+            "ar": "التقييم التشخيصي للمسار — إنشاء مكتب المشاريع ونضجه"
+          },
+          "dependency": "recommended",
+          "effort": "15 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-PM-101",
+          "title": {
+            "en": "Project Management Foundations: from idea to value",
+            "ar": "أساسيات إدارة المشاريع: من الفكرة إلى القيمة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PM-01",
+            "PM-02",
+            "PM-03"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-PMO-DESIGN",
+          "title": {
+            "en": "PMO Design and Services",
+            "ar": "تصميم مكتب إدارة المشاريع وخدماته"
+          },
+          "dependency": "required",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PMO-01"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-PMO-KPI",
+          "title": {
+            "en": "PMO Maturity and KPIs",
+            "ar": "نضج مكتب المشاريع ومؤشراته"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PMO-02",
+            "OE-01"
+          ]
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-P3O-101",
+          "title": {
+            "en": "P3O® Model Overview: portfolio, programme and project offices",
+            "ar": "نظرة عامة على نموذج P3O®: مكاتب المحافظ والبرامج والمشاريع"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-P-P3M3",
+          "title": {
+            "en": "P3M3®: the seven perspectives and how maturity grows",
+            "ar": "P3M3®: المنظورات السبعة وكيف ينمو النضج"
+          },
+          "dependency": "recommended",
+          "effort": "5.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 7,
+          "type": "course",
+          "target_id": "CRS-P-PMX",
+          "title": {
+            "en": "PMO Excellence: fourteen domains through three lenses",
+            "ar": "تميّز مكاتب المشاريع: أربعة عشر مجالًا بثلاث زوايا"
+          },
+          "dependency": "recommended",
+          "effort": "12 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 8,
+          "type": "practice",
+          "target_id": "ASM-PMO-KPI-PRACT",
+          "title": {
+            "en": "PMO Maturity and KPIs — practical task",
+            "ar": "نضج مكتب المشاريع ومؤشراته — المهمة العملية"
+          },
+          "dependency": "recommended",
+          "effort": "120 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "f4e111aa7902e33fc26e6ba721e496cfc5171751cfbe0fc9f4af951cdaea0f05"
+      }
+    },
+    {
+      "id": "ROUTE-PORTFOLIO",
+      "kind": "pm_route",
+      "roles": [],
+      "certification_ids": [
+        "CERT-PFMP",
+        "CERT-PGMP"
+      ],
+      "title": {
+        "en": "Portfolio and programme (P3O-informed)",
+        "ar": "مسار المحافظ والبرامج (مستنير بـ P3O)"
+      },
+      "goal": {
+        "en": "Choose and balance the right initiatives, govern them through gates and track the benefits they deliver.",
+        "ar": "اختيار المبادرات الصحيحة وموازنتها، وحوكمتها عبر البوابات، ومتابعة المنافع التي تحققها."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-PM-PORTFOLIO-DIAG",
+          "title": {
+            "en": "Route diagnostic — Portfolio and programme",
+            "ar": "التقييم التشخيصي للمسار — المحافظ والبرامج"
+          },
+          "dependency": "recommended",
+          "effort": "15 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-PM-101",
+          "title": {
+            "en": "Project Management Foundations: from idea to value",
+            "ar": "أساسيات إدارة المشاريع: من الفكرة إلى القيمة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PM-01",
+            "PM-02",
+            "PM-03"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-PFM-PRIOR",
+          "title": {
+            "en": "Portfolio Prioritisation",
+            "ar": "ترتيب أولويات المحفظة"
+          },
+          "dependency": "required",
+          "effort": "7.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-P3O-101",
+          "title": {
+            "en": "P3O® Model Overview: portfolio, programme and project offices",
+            "ar": "نظرة عامة على نموذج P3O®: مكاتب المحافظ والبرامج والمشاريع"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PMO-01"
+          ]
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-P-21500",
+          "title": {
+            "en": "ISO 21500 series: project, programme, portfolio and governance practices explained",
+            "ar": "سلسلة ISO 21500: ممارسات المشاريع والبرامج والمحافظ والحوكمة مشروحة"
+          },
+          "dependency": "recommended",
+          "effort": "15.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "final_assessment",
+          "target_id": "ASM-PFM-PRIOR-FINAL",
+          "title": {
+            "en": "Portfolio Prioritisation — final assessment",
+            "ar": "ترتيب أولويات المحفظة — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "a15cdae610de71031088a807c4fa83be49d1c958a471521b2be9dd865e1e6585"
+      }
+    },
+    {
+      "id": "ROUTE-AGILE",
+      "kind": "pm_route",
+      "roles": [],
+      "certification_ids": [
+        "CERT-PMI-ACP"
+      ],
+      "title": {
+        "en": "Agile delivery foundations",
+        "ar": "مسار أساسيات التسليم الرشيق"
+      },
+      "goal": {
+        "en": "Choose the right delivery approach, run Scrum or Kanban well, tailor hybrid plans and govern agile work by outcomes.",
+        "ar": "اختيار نهج التسليم المناسب، وإدارة Scrum أو Kanban جيدًا، وتكييف الخطط الهجينة، وحوكمة العمل الرشيق بالنتائج."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "knowledge",
+          "target_id": "KA-013",
+          "title": {
+            "en": "Predictive, agile and hybrid",
+            "ar": "التنبؤي والرشيق والهجين"
+          },
+          "dependency": "recommended",
+          "effort": "10 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "assessment",
+          "target_id": "ASM-PM-AGILE-DIAG",
+          "title": {
+            "en": "Route diagnostic — Agile delivery foundations",
+            "ar": "التقييم التشخيصي للمسار — أساسيات التسليم الرشيق"
+          },
+          "dependency": "recommended",
+          "effort": "15 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-PM-101",
+          "title": {
+            "en": "Project Management Foundations: from idea to value",
+            "ar": "أساسيات إدارة المشاريع: من الفكرة إلى القيمة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PM-01",
+            "PM-02",
+            "PM-03"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-PM-AGILE",
+          "title": {
+            "en": "Agile and Hybrid Delivery",
+            "ar": "التسليم الرشيق والهجين"
+          },
+          "dependency": "required",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PM-03"
+          ]
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-PM-STAKE",
+          "title": {
+            "en": "Stakeholders and Communication",
+            "ar": "أصحاب المصلحة والتواصل"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PM-02"
+          ]
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-PM-RISK",
+          "title": {
+            "en": "Risk in Projects",
+            "ar": "المخاطر في المشاريع"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "RSK-01",
+            "RSK-02"
+          ]
+        },
+        {
+          "order": 7,
+          "type": "final_assessment",
+          "target_id": "ASM-PM-AGILE-FINAL",
+          "title": {
+            "en": "Agile and Hybrid Delivery — final assessment",
+            "ar": "التسليم الرشيق والهجين — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "834375d77d81f041d3b78e8aa2666065725cb765ef7d083a6024bdd7bde86218"
       }
     }
   ]

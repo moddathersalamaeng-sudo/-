@@ -4,7 +4,7 @@
 This is NOT an expert review and never changes governance. It runs mechanical checks a reviewer would otherwise do by
 hand, writes findings, and lists the records that pass every blocking check (the candidates the owner may approve).
 
-  python3 tools/pre_review.py [--out DIR]          default DIR: ../../deliverables/phase-07/closure
+  python3 tools/pre_review.py [--out DIR]          default DIR: ../../deliverables/phase-08/review
 
 Blocking checks (a record that fails one is NOT a candidate):
   B1 claims        no accreditation / certification / CPD / PDU / "approved by" claim unless explicitly negated
@@ -14,7 +14,9 @@ Blocking checks (a record that fails one is NOT a candidate):
   B5 bilingual     every text field has Arabic and English; neither side is empty or under 25 % of the other's length
   B6 ambiguity     generated check questions: no distractor shares content words with the item's own evidence/gaps,
                    and no distractor is generic evidence listed under 3+ other clauses
-  B7 scope         future-phase records (PMI, EFQM, P3O, generic demos) stay drafts until their phase is built
+  B7 scope         future-phase records (Phase 9 quality, Phase 10 EFQM, the Phase 5 demo items and assessments) stay drafts
+  B8 certification facts (Phase 8): official PMI URL, dated verification, existing sources; a "pending" fact group carries no figures;
+                   domain weights add up to 100; and no PMI partner / PDU / "PMI-approved" claim (also checked by B1)
 Advisory checks (reported, not blocking): duplicate prompts, very long options, answer-key position balance.
 """
 import json
@@ -25,16 +27,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SEED = ROOT / "data" / "seed"
-OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-07" / "closure"
+OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-08" / "review"
 load = lambda n: json.loads((SEED / f"{n}.json").read_text(encoding="utf-8"))["items"]  # noqa: E731
 guides = {g["slug"]: json.loads((ROOT / "data" / "guides" / f"{g['slug']}.json").read_text(encoding="utf-8"))["guide"]
           for g in json.loads((ROOT / "data" / "guides" / "index.json").read_text(encoding="utf-8"))["items"]}
 
 COLL = {"courses": "courses", "questions": "questions", "assessments": "assessments", "iso-standards": "iso-standards", "learning-paths": "learning-paths",
         "ecosystems": "ecosystems", "programs": "programs", "sources": "sources", "competency/competencies": "competency/competencies",
-        "competency/target-roles": "competency/target-roles", "competency/domains": "competency/domains"}
+        "competency/target-roles": "competency/target-roles", "competency/domains": "competency/domains", "certifications": "certifications"}
 data = {k: load(v) for k, v in COLL.items()}
-FUTURE_COURSES = {"CRS-QMS-201", "CRS-PM-101", "CRS-EFQM-101", "CRS-P3O-101"}
+FUTURE_COURSES = {"CRS-QMS-201", "CRS-EFQM-101"}  # CRS-PM-101 and CRS-P3O-101 are Phase 8 courses since 3 Nov 2026
 FUTURE_Q = {"Q-QMS-001", "Q-PM-001", "Q-RISK-001", "Q-PMO-001", "Q-EFQM-001", "Q-GOV-001", "Q-AI-001"}
 FUTURE_A = {"ASM-DIAG-001", "ASM-QUIZ-001", "ASM-SCEN-001", "ASM-PRACT-001"}
 FUTURE_PROGRAMS = {"PRG-CIA-FOUNDATIONS"}
@@ -62,8 +64,9 @@ def texts(o, path=""):
             yield from texts(v, f"{path}[{i}]")
 
 
-CLAIM_EN = re.compile(r"\b(accredit\w*|CPD|PDUs?|CEUs?|IRCA[- ]approved|Exemplar Global|certified (?:by|course)|approved (?:by|course)|official(?:ly)? (?:recogni[sz]ed|certified))\b", re.I)
-CLAIM_AR = re.compile(r"(معتمدة? من|اعتماد(?:ها)? من|ساعات التطوير المهني|شهادة معتمدة|معترف بها رسميًا)")
+CLAIM_EN = re.compile(r"\b(accredit\w*|CPD|PDUs?|CEUs?|IRCA[- ]approved|Exemplar Global|certified (?:by|course)|approved (?:by|course)|official(?:ly)? (?:recogni[sz]ed|certified)"
+                      r"|ATP|Authori[sz]ed Training Partner|PMI[- ](?:approved|endorsed|accredited)|Registered Education Provider|contact[- ]hours? certificate)\b", re.I)
+CLAIM_AR = re.compile(r"(معتمدة? من|اعتماد(?:ها)? من|ساعات التطوير المهني|شهادة معتمدة|معترف بها رسميًا|شريك تدريب معتمد|وحدات? PDU|شهادة ساعات)")
 NEG = re.compile(r"(not|no|never|without|nor|isn't|does not|doesn't|cannot|غير|لا |ليس|ليست|دون|لم |بلا)", re.I)
 QUOTE = re.compile(r"[“\"«]([^”\"»]{120,})[”\"»]")
 SHALL = re.compile(r"\bThe organi[sz]ation shall\b")
@@ -97,7 +100,7 @@ def scope_of(coll, r):
 drafts = [(coll, r) for coll, items in data.items() for r in items if r.get("governance") and r["governance"].get("content_status") != "published"]
 for coll, r in drafts:
     if scope_of(coll, r) == "future":
-        flag(coll, r["id"], "B7", "future-phase record (built in Phases 8–10); stays a draft")
+        flag(coll, r["id"], "B7", "future-phase record (Phases 9–12 or a Phase 5 type example); stays a draft")
         continue
     for path, v in texts(r):
         en, ar = v["en"].strip(), v["ar"].strip()
@@ -207,6 +210,30 @@ for q in data["questions"]:
         if len(o["text"]["en"].split()) <= 1:
             flag("questions", q["id"], "B6", f"distractor {o['id']} is a single word")
 
+# ------------------------------------------------------------------ B6 practice questions (Phase 8): a distractor must share no content word with the practice
+for q in data["questions"]:
+    m = re.match(r"guide:([a-z0-9-]+)#(.+)$", q.get("reference", ""))
+    if not m or q["type"] != "single_choice" or guides[m.group(1)]["kind"] != "practice": continue
+    g = guides[m.group(1)]
+    item = next(i for c in g["clauses"] for i in c["items"] if i["ref"] == m.group(2))
+    own = words(item["title"]["en"], item["req"]["en"], *[x["en"] for x in item["how"]])
+    for o in q["options"]:
+        if o["id"] != q["correct_answer"] and words(o["text"]["en"]) & own:
+            flag("questions", q["id"], "B6", f"practice distractor {o['id']} shares “{', '.join(sorted(words(o['text']['en']) & own))}” with the practice")
+
+# ------------------------------------------------------------------ B8 certification facts (Phase 8)
+for c in data.get("certifications", []):
+    st = c.get("facts_status", {})
+    if not re.match(r"^https://(www\.)?pmi\.org/", c.get("official_url", "")): flag("certifications", c["id"], "B8", "official URL is not a pmi.org page")
+    if not re.match(r"^\d{4}-\d{2}-\d{2}$", c.get("verified_date") or ""): flag("certifications", c["id"], "B8", "no verification date")
+    for s in c.get("source_ids", []):
+        if s not in {x["id"] for x in data["sources"]}: flag("certifications", c["id"], "B8", f"unknown source {s}")
+    for grp in ("exam", "fee", "renewal"):
+        if st.get(grp) != "verified" and c.get(grp): flag("certifications", c["id"], "B8", f"{grp} is pending but carries figures")
+        if st.get(grp) == "verified" and not c.get(grp): flag("certifications", c["id"], "B8", f"{grp} verified but empty")
+    if st.get("domains") == "verified" and sum(d["weight"] for d in c.get("domains", [])) != 100:
+        flag("certifications", c["id"], "B8", "domain weights do not add up to 100")
+
 # ------------------------------------------------------------------ advisory
 prompts = Counter(q["prompt"]["en"].strip().lower() for q in data["questions"])
 for p_, n in prompts.items():
@@ -238,6 +265,25 @@ REVIEWED = {
     ("questions:Q-G-37000-L01", "B1"): "“statement approved by the board” is evidence wording from the owner's guide.",
     ("questions:Q-G-37000-L10", "B1"): "Same: board-approved statement is evidence wording.",
     ("learning-paths:ROUTE-LA", "B1"): "Says lead-auditor certification needs a separate externally certified course — a disclaimer, not a claim.",
+    # Phase 8 (3 Nov 2026) — each finding below was read in the record and judged a false positive.
+    ("courses:CRS-P3O-101", "B2"): "Quoted text is an original CIA model sentence or sample wording written for the exercise (a status line, a charter clause, a board argument), not a quotation from any publication.",
+    ("courses:CRS-PM-SSC", "B2"): "Quoted text is an original CIA model sentence or sample wording written for the exercise (a status line, a charter clause, a board argument), not a quotation from any publication.",
+    ("courses:CRS-PM-RISK", "B2"): "Quoted text is an original CIA model sentence or sample wording written for the exercise (a status line, a charter clause, a board argument), not a quotation from any publication.",
+    ("courses:CRS-PM-STAKE", "B2"): "Quoted text is an original CIA model sentence or sample wording written for the exercise (a status line, a charter clause, a board argument), not a quotation from any publication.",
+    ("courses:CRS-PMO-DESIGN", "B2"): "Quoted text is an original CIA model sentence or sample wording written for the exercise (a status line, a charter clause, a board argument), not a quotation from any publication.",
+    ("courses:CRS-PMO-KPI", "B2"): "Quoted text is an original CIA model sentence or sample wording written for the exercise (a status line, a charter clause, a board argument), not a quotation from any publication.",
+    ("courses:CRS-PFM-PRIOR", "B2"): "Quoted text is an original CIA model sentence or sample wording written for the exercise (a status line, a charter clause, a board argument), not a quotation from any publication.",
+    ("courses:CRS-PMP-PREP", "B2"): "Quoted text is an original CIA model sentence or sample wording written for the exercise (a status line, a charter clause, a board argument), not a quotation from any publication.",
+    ("courses:CRS-PM-SSC", "B1"): "«اعتماد من المستوى المناسب» means approval of a change request at the right authority level, not accreditation.",
+    ("questions:Q-P-21500-L50", "B1"): "Owner guide wording: a governance framework approved by the board — governance approval, not an accreditation claim.",
+    ("questions:Q-P-P3O-L01", "B1"): "Owner guide wording: the sponsor approves the office value case — not an accreditation claim.",
+    ("questions:Q-P-PMX-L21", "B1"): "Owner guide wording: a priority list approved by the investment committee — governance approval, not a claim.",
+    ("questions:Q-P-PMX-L26", "B1"): "Same owner guide wording as Q-P-PMX-L21 — governance approval, not a claim.",
+    ("certifications:CERT-PMI-ACP", "B1"): "PMI's own eligibility wording (GAC-accredited degree programme) or the name of PMI's credential (\"certified by PMI\" describes PMI's certification, not CIA); the record states CIA is not a PMI partner and awards no PDUs.",
+    ("certifications:CERT-PMI-RMP", "B1"): "PMI's own eligibility wording (GAC-accredited degree programme) or the name of PMI's credential (\"certified by PMI\" describes PMI's certification, not CIA); the record states CIA is not a PMI partner and awards no PDUs.",
+    ("certifications:CERT-PFMP", "B1"): "PMI's own eligibility wording (GAC-accredited degree programme) or the name of PMI's credential (\"certified by PMI\" describes PMI's certification, not CIA); the record states CIA is not a PMI partner and awards no PDUs.",
+    ("certifications:CERT-PMI-PBA", "B1"): "PMI's own eligibility wording (GAC-accredited degree programme) or the name of PMI's credential (\"certified by PMI\" describes PMI's certification, not CIA); the record states CIA is not a PMI partner and awards no PDUs.",
+    ("certifications:CERT-PMI-PMOCP", "B1"): "PMI's own eligibility wording (GAC-accredited degree programme) or the name of PMI's credential (\"certified by PMI\" describes PMI's certification, not CIA); the record states CIA is not a PMI partner and awards no PDUs.",
 }
 cleared = defaultdict(list)
 for key, fs in list(findings.items()):

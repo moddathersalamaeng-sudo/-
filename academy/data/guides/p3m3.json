@@ -1,0 +1,3078 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-P3M3",
+  "slug": "p3m3",
+  "kind": "practice",
+  "module": "pmo",
+  "standard_id": null,
+  "title": {
+   "en": "P3M3 Maturity Assessment",
+   "ar": "تقييم النضج وفق P3M3"
+  },
+  "subtitle": {
+   "en": "Portfolio · Programme · Project",
+   "ar": "المحافظ · البرامج · المشاريع"
+  },
+  "lede": {
+   "en": "The P3M3®‎ structure as it is: three models (portfolio, programme, project), seven perspectives and five maturity levels. Three scores per question (self, evidence, validated), a maturity matrix per model, a transformation roadmap, a PMO studio and ready templates with a Saudi worked example.",
+   "ar": "هيكل P3M3®‎ كما هو: ثلاثة نماذج (المحفظة، البرنامج، المشروع)، وسبعة منظورات، وخمسة مستويات نضج. لكل سؤال ثلاث درجات (ذاتي، بالأدلة، معتمد)، ومصفوفة نضج لكل نموذج، وخارطة تحوّل، واستوديو لمكتب المشاريع، ونماذج جاهزة بمثال سعودي."
+  },
+  "author": "مدثر سلامه",
+  "note": {
+   "en": "Shown for the project model: the toolkit applies the same questions to portfolios and programmes.",
+   "ar": "معروضة لنموذج المشاريع: تطبّق الأداة الأسئلة نفسها على المحافظ والبرامج."
+  },
+  "clauses": [
+   {
+    "id": "gov",
+    "phase": null,
+    "title": {
+     "en": "Organizational governance",
+     "ar": "الحوكمة المؤسسية"
+    },
+    "short": {
+     "en": "Governance",
+     "ar": "الحوكمة"
+    },
+    "intro": {
+     "en": "Are the right initiatives being run? Strategic alignment, start and close controls, decision structures.",
+     "ar": "هل تُدار المبادرات الصحيحة؟ المواءمة مع الاستراتيجية، وضوابط البدء والإغلاق، وهياكل القرار."
+    },
+    "clause": "",
+    "items": [
+     {
+      "ref": "gov",
+      "clause": "",
+      "title": {
+       "en": "Organizational governance",
+       "ar": "الحوكمة المؤسسية"
+      },
+      "short": {
+       "en": "Governance",
+       "ar": "الحوكمة"
+      },
+      "req": {
+       "en": "Are the right initiatives being run? Strategic alignment, start and close controls, decision structures.",
+       "ar": "هل تُدار المبادرات الصحيحة؟ المواءمة مع الاستراتيجية، وضوابط البدء والإغلاق، وهياكل القرار."
+      },
+      "ex": null,
+      "topics": {
+       "en": "Strategic alignment · control points · decision structures · compliance & ethics · assurance & audit · accountability",
+       "ar": "المواءمة الاستراتيجية · نقاط التحكم · هياكل القرار · الامتثال والأخلاقيات · الضمان والتدقيق · المساءلة"
+      },
+      "how": [
+       {
+        "en": "Approve the PMO charter and a governance model linking every initiative to the strategic plan",
+        "ar": "اعتماد ميثاق المكتب ونموذج حوكمة يربط كل مبادرة بالخطة الاستراتيجية"
+       },
+       {
+        "en": "Apply control points (G0–G5 gates) and a delegation matrix to every in-scope initiative",
+        "ar": "تطبيق نقاط التحكم (بوابات G0–G5) ومصفوفة الصلاحيات على كل المبادرات ضمن النطاق"
+       },
+       {
+        "en": "Independent assurance reviews and a yearly review of governance effectiveness and alignment",
+        "ar": "مراجعات ضمان مستقلة ومراجعة سنوية لفعالية الحوكمة والمواءمة الاستراتيجية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Charter and governance model approved and published",
+        "ar": "الميثاق ونموذج الحوكمة معتمدان ومنشوران"
+       },
+       {
+        "en": "≥ 90% of initiatives pass the gates",
+        "ar": "≥ 90% من المبادرات تمر بالبوابات"
+       },
+       {
+        "en": "Assurance covers ≥ 80% of high-risk initiatives",
+        "ar": "الضمان يغطي ≥ 80% من المبادرات عالية المخاطر"
+       }
+      ],
+      "ladder": false,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "PMO head + executive sponsor",
+       "ar": "رئيس المكتب + الراعي التنفيذي"
+      },
+      "kpi": null,
+      "questions": [
+       {
+        "q": {
+         "en": "Each of the projects is linked to strategic objectives and is started and closed through defined organizational controls.",
+         "ar": "ترتبط المشاريع بالأهداف الاستراتيجية، وتبدأ وتُغلق عبر ضوابط تنظيمية محددة."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Some projects start with a business case that shows their strategic fit",
+           "ar": "بعض المشاريع تبدأ بدراسة جدوى توضح صلتها بالاستراتيجية"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common governance model links all projects to the strategic plan and is applied to all",
+           "ar": "نموذج حوكمة موحد يربط كل المشاريع بالخطة الاستراتيجية ويُطبَّق على الجميع"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Strategic alignment is measured at control points; what loses it is stopped or redirected",
+           "ar": "المواءمة الاستراتيجية تُقاس عند نقاط التحكم، ويُوقف أو يُعاد توجيه ما يفقدها"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Governance arrangements improve from results analysis and comparison with other organizations",
+           "ar": "ترتيبات الحوكمة تتحسن من تحليل النتائج والمقارنة مع جهات أخرى"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Decision structures, authority and individual accountability for the success of projects are clear and documented.",
+         "ar": "هياكل القرار والصلاحيات والمساءلة الفردية عن نجاح المشاريع واضحة وموثقة."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Steering boards exist for some large projects",
+           "ar": "لجان توجيه لبعض المشاريع الكبيرة"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "Terms of reference and a delegation matrix apply to all in-scope projects",
+           "ar": "شروط مرجعية ومصفوفة صلاحيات مطبقة على كل المشاريع ضمن النطاق"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Board decisions are logged; decision lead time and compliance with authority are measured",
+           "ar": "قرارات اللجان مسجلة، ويُقاس زمن القرار والالتزام بالصلاحيات"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Decision structures are tailored periodically by risk, complexity and review findings",
+           "ar": "هياكل القرار تُكيَّف دورياً حسب المخاطر والتعقيد ونتائج المراجعات"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Stage control points, assurance and audit keep organizational control over projects.",
+         "ar": "نقاط تحكم مرحلية ومراجعات ضمان وتدقيق تحافظ على الرقابة التنظيمية على المشاريع."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Go/no-go reviews at some key points",
+           "ar": "مراجعات استمرار أو توقف في بعض النقاط الرئيسية"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common gate and assurance model with written criteria for all in-scope projects",
+           "ar": "نموذج بوابات وضمان موحد بمعايير مكتوبة لكل المشاريع ضمن النطاق"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Gate and assurance results are analysed and used for stop and re-scope decisions",
+           "ar": "نتائج البوابات والضمان تُحلَّل وتُستخدم في قرارات الإيقاف وإعادة النطاق"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Gate and assurance criteria improve from lessons and organizational results",
+           "ar": "معايير البوابات والضمان تتحسن من الدروس ونتائج المنشأة"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Organizational standards (safety, sustainability, compliance, ethics) apply to projects, and leaders model them.",
+         "ar": "المعايير التنظيمية (السلامة، الاستدامة، الامتثال، الأخلاقيات) تُطبَّق على المشاريع، والقيادة تتبناها قولاً وفعلاً."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Compliance with standards depends on individual managers",
+           "ar": "الالتزام بالمعايير يعتمد على اجتهاد بعض المديرين"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "Compliance requirements and an ethics framework are part of the approved method",
+           "ar": "متطلبات الامتثال وإطار الأخلاقيات جزء من المنهجية المعتمدة"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Compliance is tracked with indicators and deviations are handled through a set procedure",
+           "ar": "الامتثال يُرصد بمؤشرات، والانحرافات تُعالج بإجراء موثق"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Leaders set the example and standards are updated ahead of lessons and external change",
+           "ar": "القيادة قدوة، والمعايير تُحدَّث استباقياً من الدروس والتغيرات الخارجية"
+          }
+         }
+        ]
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "ctl",
+    "phase": null,
+    "title": {
+     "en": "Management control",
+     "ar": "الرقابة الإدارية"
+    },
+    "short": {
+     "en": "Control",
+     "ar": "الرقابة"
+    },
+    "intro": {
+     "en": "Are initiatives run the right way? Scope, lifecycle, planning, progress, quality and information.",
+     "ar": "هل تُدار المبادرات بالطريقة الصحيحة؟ النطاق، ودورة الحياة، والتخطيط، والتقدم، والجودة، والمعلومات."
+    },
+    "clause": "",
+    "items": [
+     {
+      "ref": "ctl",
+      "clause": "",
+      "title": {
+       "en": "Management control",
+       "ar": "الرقابة الإدارية"
+      },
+      "short": {
+       "en": "Control",
+       "ar": "الرقابة"
+      },
+      "req": {
+       "en": "Are initiatives run the right way? Scope, lifecycle, planning, progress, quality and information.",
+       "ar": "هل تُدار المبادرات بالطريقة الصحيحة؟ النطاق، ودورة الحياة، والتخطيط، والتقدم، والجودة، والمعلومات."
+      },
+      "ex": null,
+      "topics": {
+       "en": "Scope definition · change control · lifecycle & stages · issue management · quality & verification · information & configuration control · roles",
+       "ar": "تعريف النطاق · ضبط التغيير · دورة الحياة والمراحل · إدارة المشكلات · الجودة والتحقق · ضبط المعلومات والتهيئة · الأدوار"
+      },
+      "how": [
+       {
+        "en": "A lightweight common method: lifecycle, scope definition, change control, tolerances",
+        "ar": "منهجية مختصرة موحدة: دورة حياة، تعريف نطاق، ضبط تغيير، حدود تحمّل"
+       },
+       {
+        "en": "A standard monthly status report, issue log and written RAG criteria",
+        "ar": "تقرير حالة شهري موحد وسجل مشكلات ومعايير RAG مكتوبة"
+       },
+       {
+        "en": "Quantitative performance (SPI, CPI, estimate accuracy) with automatic escalation beyond tolerance",
+        "ar": "قياس الأداء كمياً (SPI وCPI ودقة التقدير) وتصعيد تلقائي عند تجاوز حدود التحمّل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Method approved and published",
+        "ar": "المنهجية معتمدة ومنشورة"
+       },
+       {
+        "en": "≥ 95% of reports on time",
+        "ar": "≥ 95% من التقارير تصل في موعدها"
+       },
+       {
+        "en": "100% of initiatives with quantitative indicators",
+        "ar": "100% من المبادرات بمؤشرات كمية"
+       }
+      ],
+      "ladder": false,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Methodology lead",
+       "ar": "مسؤول المنهجية"
+      },
+      "kpi": null,
+      "questions": [
+       {
+        "q": {
+         "en": "Objectives and scope of projects are documented, and every change goes through formal control with an impact assessment.",
+         "ar": "أهداف المشاريع ونطاقها موثقة، وأي تغيير يمر بإجراء ضبط رسمي مع تقييم أثره."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Scope documents and change control exist on some projects",
+           "ar": "وثائق نطاق وضبط تغيير لدى بعض المشاريع"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common procedure for scope definition and change control, with tolerances",
+           "ar": "إجراء موحد لتعريف النطاق وضبط التغيير مع حدود تحمّل"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "The impact of changes is measured and trends are analysed to improve estimating",
+           "ar": "أثر التغييرات يُقاس، واتجاهاتها تُحلَّل لتحسين التقدير"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Control procedures improve continuously from data and lessons",
+           "ar": "إجراءات الضبط تتحسن باستمرار من البيانات والدروس"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "A staged lifecycle with end-stage reviews lets a directing body decide to continue or stop.",
+         "ar": "دورة حياة بمراحل ومراجعات نهاية مرحلة تتيح لهيئة موجِّهة قرار الاستمرار أو الإيقاف."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Some teams use a lifecycle",
+           "ar": "دورة حياة تستخدمها بعض الفرق"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common staged lifecycle with reviews and a directing body for all in-scope projects",
+           "ar": "دورة حياة موحدة بمراحل ومراجعات وهيئة موجِّهة لكل المشاريع ضمن النطاق"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Stage decisions rest on performance data against written tolerances",
+           "ar": "قرارات المراحل مبنية على بيانات أداء مقابل حدود تحمّل مكتوبة"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "The lifecycle is improved from stage performance analysis across the organization",
+           "ar": "دورة الحياة تُحسَّن من تحليل أداء المراحل عبر المنشأة"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Plans, progress and issues are managed through approved plans, regular reports and an issue log.",
+         "ar": "الخطط والتقدم والمشكلات تُدار بخطط معتمدة وتقارير منتظمة وسجل مشكلات."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Plans and reports vary in form and timing",
+           "ar": "خطط وتقارير متفاوتة في الشكل والتوقيت"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "Plans, status reports and an issue log in a common format for all projects",
+           "ar": "خطط وتقارير حالة وسجل مشكلات بصيغة موحدة لكل المشاريع"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Quantitative progress indicators (schedule and cost) with escalation beyond tolerance",
+           "ar": "مؤشرات تقدم كمية (جدول وتكلفة) مع تصعيد عند تجاوز حدود التحمّل"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Planning and forecasting accuracy is measured and improves across the organization",
+           "ar": "دقة التخطيط والتنبؤ تُقاس وتتحسن عبر المنشأة"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Roles, quality planning and information control (versions and configuration) are defined, and those applying them are competent.",
+         "ar": "الأدوار وتخطيط الجودة وضبط المعلومات (الإصدارات والتهيئة) محددة، ومن يطبقونها أكفاء."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Roles and responsibilities are implicitly understood within teams",
+           "ar": "أدوار ومسؤوليات مفهومة ضمنياً داخل الفرق"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "Common role descriptions, a quality plan and document control for all projects",
+           "ar": "أوصاف أدوار موحدة وخطة جودة وضبط وثائق لكل المشاريع"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Quality and verification results are measured and role competence is assessed",
+           "ar": "نتائج الجودة والتحقق تُقاس، وكفاءة الأدوار تُقيَّم"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Roles, quality and information controls improve from errors and feedback",
+           "ar": "الأدوار وضوابط الجودة والمعلومات تُحسَّن من الأخطاء والتغذية الراجعة"
+          }
+         }
+        ]
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "ben",
+    "phase": null,
+    "title": {
+     "en": "Benefits management",
+     "ar": "إدارة المنافع"
+    },
+    "short": {
+     "en": "Benefits",
+     "ar": "المنافع"
+    },
+    "intro": {
+     "en": "Does the organization know the value it expects from its investment, and does it realize it after delivery?",
+     "ar": "هل تعرف المنشأة القيمة التي تتوقعها من استثمارها، وهل تحققها فعلاً بعد التسليم؟"
+    },
+    "clause": "",
+    "items": [
+     {
+      "ref": "ben",
+      "clause": "",
+      "title": {
+       "en": "Benefits management",
+       "ar": "إدارة المنافع"
+      },
+      "short": {
+       "en": "Benefits",
+       "ar": "المنافع"
+      },
+      "req": {
+       "en": "Does the organization know the value it expects from its investment, and does it realize it after delivery?",
+       "ar": "هل تعرف المنشأة القيمة التي تتوقعها من استثمارها، وهل تحققها فعلاً بعد التسليم؟"
+      },
+      "ex": null,
+      "topics": {
+       "en": "Benefit identification & analysis · categorization & estimation · realization planning · business change · accounting & review · value management",
+       "ar": "تحديد المنافع وتحليلها · تصنيفها وتقديرها · تخطيط التحقيق · إدارة التغيير في الأعمال · المحاسبة والمراجعة · إدارة القيمة"
+      },
+      "how": [
+       {
+        "en": "A common benefit definition and categories; business cases must carry measurable benefits",
+        "ar": "تعريف موحد للمنفعة وتصنيفها، وإلزام دراسة الجدوى بمنافع قابلة للقياس"
+       },
+       {
+        "en": "A benefits register with owners, baselines and realization plans that run past closure",
+        "ar": "سجل منافع بمالكين وخطوط أساس وخطط تحقيق تمتد بعد الإغلاق"
+       },
+       {
+        "en": "Post-delivery benefit reviews and accounting, linked to investment decisions",
+        "ar": "مراجعة المنافع بعد التسليم ومحاسبتها وربط النتائج بقرارات الاستثمار"
+       }
+      ],
+      "ev": [
+       {
+        "en": "100% of new initiatives with measured benefits",
+        "ar": "100% من المبادرات الجديدة بمنافع مقاسة"
+       },
+       {
+        "en": "Every benefit has an owner and KPI",
+        "ar": "كل منفعة لها مالك ومؤشر"
+       },
+       {
+        "en": "Benefit review for ≥ 80% of closed initiatives",
+        "ar": "مراجعة منافع لـ ≥ 80% من المبادرات المغلقة"
+       }
+      ],
+      "ladder": false,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Benefits manager",
+       "ar": "مدير المنافع"
+      },
+      "kpi": null,
+      "questions": [
+       {
+        "q": {
+         "en": "Benefits are identified, categorized and estimated in the business case before projects are approved.",
+         "ar": "المنافع تُحدَّد وتُصنَّف وتُقدَّر في دراسة الجدوى قبل اعتماد المشاريع."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Some business cases mention general benefits",
+           "ar": "بعض دراسات الجدوى تذكر منافع عامة"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common benefit definition and categories; business cases require measurable benefits",
+           "ar": "تعريف موحد للمنفعة وتصنيفها، ودراسة الجدوى تشترط منافع قابلة للقياس"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Benefit estimates are reviewed and compared with what was realized to improve accuracy",
+           "ar": "تقديرات المنافع تُراجع وتُقارن بالمتحقق لتحسين الدقة"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Benefit estimating improves continuously and is benchmarked with peers",
+           "ar": "تقدير المنافع يتحسن باستمرار ويُقارن مع جهات مماثلة"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Every benefit has an owner, KPI, baseline and realization plan, and tracking continues after the project closes.",
+         "ar": "لكل منفعة مالك ومؤشر وخط أساس وخطة تحقيق، ومتابعتها تستمر بعد إغلاق المشروع."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Some benefits have an informal owner",
+           "ar": "بعض المنافع لها مالك غير رسمي"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common benefits register with owner, KPI, baseline and realization plan",
+           "ar": "سجل منافع موحد بالمالك والمؤشر وخط الأساس وخطة التحقيق"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Benefit realization is measured periodically after handover and reported to management",
+           "ar": "تحقق المنافع يُقاس دورياً بعد التسليم ويُبلَّغ للإدارة"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Realization plans are adjusted from data and benefits are managed as a value portfolio",
+           "ar": "خطط التحقيق تُعدَّل من البيانات، والمنافع تُدار كمحفظة قيمة"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Business change and the transition to operations are planned so that benefits are realized.",
+         "ar": "التغيير في الأعمال والانتقال إلى التشغيل مخططان لضمان تحقيق المنافع."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Handover to operations happens without a clear transition plan",
+           "ar": "التسليم للتشغيل يتم دون خطة انتقال واضحة"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A transition and business-change plan with roles for all in-scope projects",
+           "ar": "خطة انتقال وتغيير في الأعمال بأدوار ومسؤوليات لكل المشاريع ضمن النطاق"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Operational readiness and change adoption are measured with indicators",
+           "ar": "جاهزية التشغيل وتبنّي التغيير يُقاسان بمؤشرات"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "The change approach improves from adoption results across the organization",
+           "ar": "منهج إدارة التغيير يتحسن من نتائج التبنّي عبر المنشأة"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "The effectiveness of benefits management is reviewed, and realized-versus-planned results inform future investment decisions.",
+         "ar": "فعالية إدارة المنافع تُراجع، ومقارنة المتحقق بالمخطط تغذي قرارات الاستثمار القادمة."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Ad-hoc reviews of some benefits",
+           "ar": "مراجعات ظرفية لبعض المنافع"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "Planned benefit reviews at closure and at a set time after",
+           "ar": "مراجعة منافع مخططة عند الإغلاق وبعده بفترة محددة"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Benefit accounting (realized vs planned) is used when approving new initiatives",
+           "ar": "محاسبة المنافع (المتحقق مقابل المخطط) تُستخدم في اعتماد المبادرات الجديدة"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Benefits management is evaluated and improved against good practice",
+           "ar": "إدارة المنافع تُقيَّم وتُحسَّن مقابل أفضل الممارسات"
+          }
+         }
+        ]
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "risk",
+    "phase": null,
+    "title": {
+     "en": "Risk management",
+     "ar": "إدارة المخاطر"
+    },
+    "short": {
+     "en": "Risk",
+     "ar": "المخاطر"
+    },
+    "intro": {
+     "en": "How the organization handles the threats and opportunities its initiatives face, and with what discipline.",
+     "ar": "كيف تتعامل المنشأة مع التهديدات والفرص التي تواجه مبادراتها، وبأي درجة من الانضباط؟"
+    },
+    "clause": "",
+    "items": [
+     {
+      "ref": "risk",
+      "clause": "",
+      "title": {
+       "en": "Risk management",
+       "ar": "إدارة المخاطر"
+      },
+      "short": {
+       "en": "Risk",
+       "ar": "المخاطر"
+      },
+      "req": {
+       "en": "How the organization handles the threats and opportunities its initiatives face, and with what discipline.",
+       "ar": "كيف تتعامل المنشأة مع التهديدات والفرص التي تواجه مبادراتها، وبأي درجة من الانضباط؟"
+      },
+      "ex": null,
+      "topics": {
+       "en": "Risk identification · qualitative & quantitative analysis · opportunities & threats · planning & budget · early warning · roles · effectiveness review",
+       "ar": "تحديد المخاطر · التحليل النوعي والكمي · الفرص والتهديدات · التخطيط والميزانية · مؤشرات الإنذار المبكر · الأدوار · مراجعة الفعالية"
+      },
+      "how": [
+       {
+        "en": "A common risk and issue log on a 5×5 scale covering threats and opportunities",
+        "ar": "سجل مخاطر وقضايا موحد بمقياس 5×5 يغطي التهديدات والفرص"
+       },
+       {
+        "en": "Risk owners, escalation route and contingency, linked to the enterprise register",
+        "ar": "مالكو المخاطر ومسار التصعيد واحتياطي المخاطر، وربطها بالسجل المؤسسي"
+       },
+       {
+        "en": "Early-warning indicators, quantitative analysis of major risks and a yearly effectiveness review",
+        "ar": "مؤشرات إنذار مبكر وتحليل كمي للمخاطر الكبرى ومراجعة فعالية سنوية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "100% of initiatives with a log updated monthly",
+        "ar": "100% من المبادرات بسجل محدث شهرياً"
+       },
+       {
+        "en": "Top risks escalated within 48 hours",
+        "ar": "المخاطر العليا مصعَّدة خلال 48 ساعة"
+       },
+       {
+        "en": "Early-warning indicators for every high risk",
+        "ar": "مؤشرات إنذار لكل خطر عالٍ"
+       }
+      ],
+      "ladder": false,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "PMO + risk management",
+       "ar": "المكتب + إدارة المخاطر"
+      },
+      "kpi": null,
+      "questions": [
+       {
+        "q": {
+         "en": "A common risk process covers identifying, analysing, treating and reviewing threats and opportunities in projects.",
+         "ar": "عملية مخاطر موحدة تغطي التحديد والتحليل والمعالجة والمراجعة للتهديدات والفرص في المشاريع."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Risk logs exist on some projects in different formats",
+           "ar": "سجلات مخاطر لدى بعض المشاريع بصيغ مختلفة"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common risk method with a shared scale applied to all projects",
+           "ar": "منهجية مخاطر موحدة بمقياس مشترك تُطبَّق على كل المشاريع"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Major risks are analysed quantitatively and the effect of treatments is measured",
+           "ar": "تحليل كمي للمخاطر الكبرى، وأثر المعالجات يُقاس"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "The process improves from analysis of actual events and benchmarking",
+           "ar": "العملية تتحسن من تحليل الأحداث الفعلية والمقارنة المرجعية"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Risk roles, escalation routes and risk contingency are defined and linked to enterprise risk.",
+         "ar": "أدوار المخاطر ومسار تصعيدها واحتياطي المخاطر محددة، ومرتبطة بالمخاطر المؤسسية."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Escalation happens personally without a defined route",
+           "ar": "التصعيد يتم شخصياً دون مسار محدد"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "An owner for every risk, a defined escalation route and limits, and a risk contingency in the budget",
+           "ar": "مالك لكل خطر، ومسار تصعيد وحدود محددة، واحتياطي مخاطر في الميزانية"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Top risks escalate automatically to the enterprise register; contingency use is tracked",
+           "ar": "المخاطر العليا تُصعَّد تلقائياً إلى السجل المؤسسي، واستخدام الاحتياطي يُتابع"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Risk appetite and escalation limits are reviewed periodically across the organization",
+           "ar": "شهية المخاطر وحدود التصعيد تُراجع دورياً على مستوى المنشأة"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Early-warning indicators, checklists and periodic reviews surface risks before they occur.",
+         "ar": "مؤشرات إنذار مبكر وقوائم تحقق ومراجعات دورية تكشف المخاطر قبل وقوعها."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Risks are usually discovered once they become issues",
+           "ar": "المخاطر تُكتشف غالباً بعد تحولها إلى مشكلات"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "Risk checklists and periodic reviews on fixed dates",
+           "ar": "قوائم تحقق ومراجعات مخاطر دورية بتواريخ ثابتة"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Early-warning indicators with thresholds that trigger set actions",
+           "ar": "مؤشرات إنذار مبكر بحدود تُطلق إجراءات محددة"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Indicators are calibrated from historical data and improve",
+           "ar": "المؤشرات تُعايَر من البيانات التاريخية وتتحسن"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "The effectiveness of risk management is evaluated, and the culture encourages early disclosure.",
+         "ar": "فعالية إدارة المخاطر تُقيَّم، والثقافة تشجع الإفصاح المبكر عن المخاطر."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Disclosing risks depends on individual courage",
+           "ar": "الإفصاح عن المخاطر يعتمد على شجاعة الأفراد"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "Defined risk competences and basic training for those managing projects",
+           "ar": "كفاءات مخاطر محددة وتدريب أساسي لمديري المشاريع"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Risk management effectiveness is evaluated yearly with indicators",
+           "ar": "فعالية إدارة المخاطر تُقيَّم سنوياً بمؤشرات"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "An established disclosure culture that rewards early detection",
+           "ar": "ثقافة إفصاح راسخة ومكافأة الاكتشاف المبكر"
+          }
+         }
+        ]
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "stk",
+    "phase": null,
+    "title": {
+     "en": "Stakeholder management",
+     "ar": "إدارة أصحاب المصلحة"
+    },
+    "short": {
+     "en": "Stakeholders",
+     "ar": "أصحاب المصلحة"
+    },
+    "intro": {
+     "en": "How the organization analyses, engages and communicates with stakeholders inside and outside to meet objectives.",
+     "ar": "كيف تحلل المنشأة أصحاب المصلحة داخلها وخارجها وتشركهم وتتواصل معهم لتحقيق الأهداف."
+    },
+    "clause": "",
+    "items": [
+     {
+      "ref": "stk",
+      "clause": "",
+      "title": {
+       "en": "Stakeholder management",
+       "ar": "إدارة أصحاب المصلحة"
+      },
+      "short": {
+       "en": "Stakeholders",
+       "ar": "أصحاب المصلحة"
+      },
+      "req": {
+       "en": "How the organization analyses, engages and communicates with stakeholders inside and outside to meet objectives.",
+       "ar": "كيف تحلل المنشأة أصحاب المصلحة داخلها وخارجها وتشركهم وتتواصل معهم لتحقيق الأهداف."
+      },
+      "ex": null,
+      "topics": {
+       "en": "Stakeholder identification & analysis · categorization · communication planning · channels & budget · feedback & early warning · competences · effectiveness review",
+       "ar": "تحديد أصحاب المصلحة وتحليلهم · التصنيف · تخطيط الاتصال · القنوات والميزانية · الملاحظات والإنذار المبكر · الكفاءات · مراجعة الفعالية"
+      },
+      "how": [
+       {
+        "en": "Stakeholder analysis and a communication plan for every in-scope initiative",
+        "ar": "تحليل أصحاب المصلحة وخطة اتصال لكل مبادرة ضمن النطاق"
+       },
+       {
+        "en": "Common channels, a monthly management dashboard and a stakeholder feedback log",
+        "ar": "قنوات اتصال موحدة ولوحة شهرية للإدارة وتسجيل ملاحظات أصحاب المصلحة"
+       },
+       {
+        "en": "A periodic sponsor and stakeholder survey, improving communication from the results",
+        "ar": "استبيان دوري لرضا الرعاة وأصحاب المصلحة وتحسين الاتصال حسب النتائج"
+       }
+      ],
+      "ev": [
+       {
+        "en": "100% of initiatives with a communication plan",
+        "ar": "100% من المبادرات بخطة اتصال"
+       },
+       {
+        "en": "Monthly dashboard issued on time",
+        "ar": "اللوحة الشهرية تصدر في موعدها"
+       },
+       {
+        "en": "Sponsor satisfaction ≥ 4 of 5",
+        "ar": "رضا الرعاة ≥ 4 من 5"
+       }
+      ],
+      "ladder": false,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Initiative managers",
+       "ar": "مديرو المبادرات"
+      },
+      "kpi": null,
+      "questions": [
+       {
+        "q": {
+         "en": "Stakeholders are identified, analysed and categorized, and the analysis is updated as the project progresses.",
+         "ar": "أصحاب المصلحة يُحدَّدون ويُحلَّلون ويُصنَّفون، ويُحدَّث التحليل مع تقدم المشروع."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "An informal list of key stakeholders",
+           "ar": "قائمة غير رسمية بأصحاب المصلحة الرئيسيين"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common stakeholder analysis (interest and influence) for all projects",
+           "ar": "تحليل أصحاب المصلحة (الاهتمام والتأثير) بصيغة موحدة لكل المشاريع"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Stakeholder attitudes are tracked with indicators and reviewed at each stage",
+           "ar": "مواقف أصحاب المصلحة تُرصد بمؤشرات وتُراجع في كل مرحلة"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Analysis and engagement techniques improve from organizational results",
+           "ar": "أساليب التحليل والإشراك تتحسن من نتائج المنشأة"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "A communication plan with suitable channels, budget and assigned responsibilities exists for each of the projects.",
+         "ar": "خطة اتصال بقنوات مناسبة وميزانية ومسؤوليات محددة لكل المشروع."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Communication happens when needed, at the manager's initiative",
+           "ar": "التواصل يتم عند الحاجة وحسب مبادرة المدير"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common communication plan with channels and responsibilities for all in-scope projects",
+           "ar": "خطة اتصال موحدة بقنوات ومسؤوليات لكل المشاريع ضمن النطاق"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Message reach and effectiveness are measured, and the communication budget is managed",
+           "ar": "وصول الرسائل وفعاليتها يُقاسان، وميزانية الاتصال تُدار"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Channels and messages adapt continuously from analysis",
+           "ar": "القنوات والرسائل تُكيَّف باستمرار من التحليل"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Stakeholder feedback and signs of dissatisfaction are collected and handled early.",
+         "ar": "ملاحظات أصحاب المصلحة وإشارات عدم الرضا تُجمع وتُعالج في وقت مبكر."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Feedback arrives irregularly",
+           "ar": "الملاحظات تصل بشكل غير منتظم"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common channel to log feedback and track responses",
+           "ar": "قناة موحدة لتسجيل الملاحظات ومتابعة الرد عليها"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Early-warning indicators for stakeholder attitudes with set actions",
+           "ar": "مؤشرات إنذار مبكر لمواقف أصحاب المصلحة مع إجراءات محددة"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Feedback analysis feeds improvement of the method and service",
+           "ar": "تحليل الملاحظات يغذي تحسين المنهجية والخدمة"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Engagement and communication effectiveness is evaluated, and staff hold stakeholder-management competences.",
+         "ar": "فعالية الإشراك والاتصال تُقيَّم، والعاملون يملكون كفاءات إدارة أصحاب المصلحة."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "There is no evaluation of communication effectiveness",
+           "ar": "لا يوجد تقييم لفعالية التواصل"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "Stakeholder competences are defined in role descriptions",
+           "ar": "كفاءات أصحاب المصلحة محددة ضمن أوصاف الأدوار"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "A periodic survey of sponsor and stakeholder satisfaction with measured results",
+           "ar": "استبيان دوري لرضا الرعاة وأصحاب المصلحة بنتائج مقاسة"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Satisfaction results are benchmarked and drive improvement",
+           "ar": "نتائج الرضا تُقارن مرجعياً وتقود التحسين"
+          }
+         }
+        ]
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "fin",
+    "phase": null,
+    "title": {
+     "en": "Finance management",
+     "ar": "الإدارة المالية"
+    },
+    "short": {
+     "en": "Finance",
+     "ar": "المالية"
+    },
+    "intro": {
+     "en": "Are the cost and value of initiatives assessed before starting and controlled across the investment lifecycle, with finance involved?",
+     "ar": "هل تُقيَّم تكلفة المبادرات وقيمتها قبل البدء، وتُضبط طوال دورة الاستثمار بمشاركة المالية؟"
+    },
+    "clause": "",
+    "items": [
+     {
+      "ref": "fin",
+      "clause": "",
+      "title": {
+       "en": "Finance management",
+       "ar": "الإدارة المالية"
+      },
+      "short": {
+       "en": "Finance",
+       "ar": "المالية"
+      },
+      "req": {
+       "en": "Are the cost and value of initiatives assessed before starting and controlled across the investment lifecycle, with finance involved?",
+       "ar": "هل تُقيَّم تكلفة المبادرات وقيمتها قبل البدء، وتُضبط طوال دورة الاستثمار بمشاركة المالية؟"
+      },
+      "ex": null,
+      "topics": {
+       "en": "Business case & costs · budgeting & costing · cash flow · funding sources · reporting & forecasting · financial expertise · effectiveness review",
+       "ar": "دراسة الجدوى والتكاليف · الموازنة وحساب التكلفة · التدفق النقدي · مصادر التمويل · التقارير والتنبؤ · الخبرة المالية · مراجعة الفعالية"
+      },
+      "how": [
+       {
+        "en": "A common business case with financially appraised options and set approval levels",
+        "ar": "نموذج دراسة جدوى موحد بخيارات مقيَّمة مالياً ومستويات موافقة محددة"
+       },
+       {
+        "en": "Link initiative budgets and cash flow to the finance system, with a monthly financial report",
+        "ar": "ربط موازنات المبادرات وتدفقها النقدي بالنظام المالي، وتقرير أداء مالي شهري"
+       },
+       {
+        "en": "Reallocate funding quarterly by performance and strategic value",
+        "ar": "إعادة تخصيص التمويل ربعياً حسب الأداء والقيمة الاستراتيجية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "100% of new initiatives with an approved business case",
+        "ar": "100% من المبادرات الجديدة بدراسة جدوى معتمدة"
+       },
+       {
+        "en": "Forecast variance ≤ 10%",
+        "ar": "انحراف التنبؤ ≤ 10%"
+       },
+       {
+        "en": "Quarterly funding review held",
+        "ar": "مراجعة تمويل ربعية منعقدة"
+       }
+      ],
+      "ladder": false,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "PMO + finance",
+       "ar": "المكتب + المالية"
+      },
+      "kpi": null,
+      "questions": [
+       {
+        "q": {
+         "en": "A business case with financially appraised options precedes approval of projects, and approvals follow the organization's financial hierarchy.",
+         "ar": "دراسة جدوى بخيارات مقيَّمة مالياً تسبق اعتماد المشاريع، والموافقات تمر عبر التسلسل المالي للمنشأة."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Some projects have a cost estimate without an options appraisal",
+           "ar": "بعض المشاريع لها تقدير تكلفة دون تقييم للخيارات"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common business case with financial options appraisal and set approval levels",
+           "ar": "نموذج دراسة جدوى موحد بتقييم مالي للخيارات ومستويات موافقة محددة"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Financial assumptions are reviewed at control points; the case is revisited if value changes",
+           "ar": "الافتراضات المالية تُراجع عند نقاط التحكم، والمبادرة تُعاد إن تغيرت قيمتها"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Financial estimate accuracy is measured and improves across the organization",
+           "ar": "دقة التقديرات المالية تُقاس وتتحسن عبر المنشأة"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "A common approach to budgeting, costing, cash flow and funding sources applies across projects.",
+         "ar": "نهج موحد للموازنة وحساب التكاليف وإدارة التدفق النقدي ومصادر التمويل في المشاريع."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Each team tracks its own costs its own way",
+           "ar": "كل فريق يتابع تكاليفه بطريقته"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common cost and budget structure linked to the finance system",
+           "ar": "هيكل تكاليف وموازنة موحد مرتبط بالنظام المالي"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Cash flow is forecast monthly and variances are analysed",
+           "ar": "التدفق النقدي يُتنبأ به شهرياً والانحرافات تُحلَّل"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Budgets are managed dynamically across investments by performance",
+           "ar": "الموازنة تُدار ديناميكياً عبر الاستثمارات حسب الأداء"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Financial performance reporting and spend forecasts align with corporate spending plans.",
+         "ar": "تقارير الأداء المالي والتنبؤ بالإنفاق متسقة مع خطط الإنفاق المؤسسية."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Irregular financial reports to management",
+           "ar": "تقارير مالية غير منتظمة للإدارة"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A standard monthly financial performance report for all projects",
+           "ar": "تقرير أداء مالي شهري موحد لكل المشاريع"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Earned value and forecast accuracy indicators are used in decisions",
+           "ar": "مؤشرات القيمة المكتسبة ودقة التنبؤ تُستخدم في القرارات"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Financial forecasting is integrated with corporate planning and improves continuously",
+           "ar": "التنبؤ المالي متكامل مع تخطيط المنشأة ويتحسن باستمرار"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Financial expertise is available to projects teams, finance effectiveness is reviewed and funding is reallocated by value.",
+         "ar": "الخبرة المالية متاحة لفرق المشاريع، وفعالية الإدارة المالية تُراجع، والتمويل يُعاد تخصيصه حسب القيمة."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Finance gets involved only when problems arise",
+           "ar": "المالية تتدخل عند المشكلات فقط"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A named finance partner and financial responsibilities for each role",
+           "ar": "شريك مالي محدد ومسؤوليات مالية لكل دور"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Finance management effectiveness is evaluated and funding reviewed quarterly",
+           "ar": "فعالية الإدارة المالية تُقيَّم، والتمويل يُراجع ربعياً"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Funding is continuously reallocated toward the highest strategic value",
+           "ar": "التمويل يُعاد تخصيصه باستمرار نحو أعلى قيمة استراتيجية"
+          }
+         }
+        ]
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "res",
+    "phase": null,
+    "title": {
+     "en": "Resource management",
+     "ar": "إدارة الموارد"
+    },
+    "short": {
+     "en": "Resources",
+     "ar": "الموارد"
+    },
+    "intro": {
+     "en": "How the organization identifies, acquires, allocates and develops the resources it needs: people, assets, tools and suppliers.",
+     "ar": "كيف تحدد المنشأة الموارد اللازمة (أفراد، أصول، أدوات، موردون) وتحصل عليها وتوزعها وتطورها."
+    },
+    "clause": "",
+    "items": [
+     {
+      "ref": "res",
+      "clause": "",
+      "title": {
+       "en": "Resource management",
+       "ar": "إدارة الموارد"
+      },
+      "short": {
+       "en": "Resources",
+       "ar": "الموارد"
+      },
+      "req": {
+       "en": "How the organization identifies, acquires, allocates and develops the resources it needs: people, assets, tools and suppliers.",
+       "ar": "كيف تحدد المنشأة الموارد اللازمة (أفراد، أصول، أدوات، موردون) وتحصل عليها وتوزعها وتطورها."
+      },
+      "ex": null,
+      "topics": {
+       "en": "Resource identification & planning · acquisition & sourcing · capacity & demand · prioritization · utilization & performance · competence & training · effectiveness review",
+       "ar": "تحديد الموارد وتخطيطها · الحصول والتوريد · السعة والطلب · الأولويات · قياس الاستخدام والأداء · الكفاءات والتدريب · مراجعة الفعالية"
+      },
+      "how": [
+       {
+        "en": "A resource and role inventory with defined responsibilities per role",
+        "ar": "قائمة موارد وأدوار بمسؤوليات محددة لكل دور"
+       },
+       {
+        "en": "A monthly capacity map; no new initiative approved without a capacity check",
+        "ar": "خريطة سعة شهرية، ولا اعتماد لمبادرة جديدة دون فحص السعة"
+       },
+       {
+        "en": "Competence framework, training curriculum and community of practice; internal and external resource performance measured",
+        "ar": "إطار كفاءات ومنهج تدريب ومجتمع ممارسة، وقياس أداء الموارد الداخلية والخارجية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Role descriptions approved",
+        "ar": "أوصاف أدوار معتمدة"
+       },
+       {
+        "en": "Utilization between 75% and 90%",
+        "ar": "الاستغلال بين 75% و90%"
+       },
+       {
+        "en": "≥ 80% of initiative managers trained",
+        "ar": "≥ 80% من مديري المبادرات مدربون"
+       }
+      ],
+      "ladder": false,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "PMO + HR",
+       "ar": "المكتب + الموارد البشرية"
+      },
+      "kpi": null,
+      "questions": [
+       {
+        "q": {
+         "en": "The resources projects need (people, assets, tools, suppliers) are identified, planned and acquired through a clear process.",
+         "ar": "الموارد اللازمة لـالمشاريع (أفراد، أصول، أدوات، موردون) تُحدَّد وتُخطَّط ويُحصل عليها بعملية واضحة."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Resources are requested when needed without prior planning",
+           "ar": "الموارد تُطلب عند الحاجة دون تخطيط مسبق"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common resource plan and a defined staffing and sourcing process for all projects",
+           "ar": "خطة موارد موحدة وعملية توظيف وتوريد محددة لكل المشاريع"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Resource plans are compared with actuals and gaps are addressed",
+           "ar": "خطط الموارد تُقارن بالفعلي والانحرافات تُعالج"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Resource and sourcing strategy improves from performance data",
+           "ar": "استراتيجية الموارد والتوريد تتحسن من بيانات الأداء"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Capacity and demand are managed across projects, and no new initiative is approved before an available-capacity check.",
+         "ar": "السعة والطلب يُداران عبر المشاريع، ولا تُعتمد مبادرة جديدة قبل فحص السعة المتاحة."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Resource conflicts are settled by personal negotiation",
+           "ar": "التعارض على الموارد يُحل بالتفاوض الشخصي"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A common capacity map and a written prioritization rule",
+           "ar": "خريطة سعة موحدة وقاعدة أولويات مكتوبة"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Utilization is measured monthly and used in approval decisions",
+           "ar": "الاستغلال يُقاس شهرياً ويُستخدم في قرارات الاعتماد"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Capacity planning is predictive and integrated with workforce planning",
+           "ar": "تخطيط السعة تنبؤي ومتكامل مع تخطيط القوى العاملة"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "The performance and productivity of internal and external resources are measured and reported.",
+         "ar": "أداء الموارد الداخلية والخارجية وإنتاجيتها يُقاسان ويُبلَّغ عنهما."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Resource performance is not measured",
+           "ar": "لا يوجد قياس لأداء الموارد"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "Common utilization and performance reports for resources and suppliers",
+           "ar": "تقارير استخدام وأداء موحدة للموارد والموردين"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Resource and supplier indicators drive allocation and renewal decisions",
+           "ar": "مؤشرات أداء الموارد والموردين تقود قرارات التوزيع والتجديد"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Team and individual performance improvement is planned, measured and benchmarked",
+           "ar": "تحسين أداء الفرق والأفراد مخطط ومقاس ومقارن مرجعياً"
+          }
+         }
+        ]
+       },
+       {
+        "q": {
+         "en": "Competences for {m} are defined, and training and professional development are planned and tied to the organization's method.",
+         "ar": "كفاءات {m} محددة، والتدريب والتطوير المهني مخططان ومرتبطان بمنهجية المنشأة."
+        },
+        "levels": [
+         {
+          "level": 2,
+          "text": {
+           "en": "Training is individual, at the employee's initiative",
+           "ar": "التدريب فردي حسب رغبة الموظف"
+          }
+         },
+         {
+          "level": 3,
+          "text": {
+           "en": "A competence framework, role descriptions and a common training curriculum",
+           "ar": "إطار كفاءات وأوصاف أدوار ومنهج تدريب موحد"
+          }
+         },
+         {
+          "level": 4,
+          "text": {
+           "en": "Competence gaps are measured and training is evaluated by its effect on performance",
+           "ar": "فجوات الكفاءة تُقاس، والتدريب يُقيَّم بأثره على الأداء"
+          }
+         },
+         {
+          "level": 5,
+          "text": {
+           "en": "Communities of practice and career paths develop capability continuously",
+           "ar": "مجتمعات ممارسة ومسارات مهنية تطور القدرات باستمرار"
+          }
+         }
+        ]
+       }
+      ],
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   }
+  ],
+  "changes": [],
+  "pairs": [],
+  "timeline": [],
+  "threads": [],
+  "official": [],
+  "readiness_questions": 0,
+  "terms": [
+   {
+    "no": "P3M3®",
+    "en": "Project management office (PMO)",
+    "ar": "مكتب إدارة المشاريع (PMO)",
+    "def": {
+     "ar": "وحدة تنظيمية تضع المعايير والحوكمة والتقارير وتدعم تنفيذ المشاريع والبرامج والمحافظ.",
+     "en": "An organizational unit that sets standards, governance and reporting and supports delivery of projects, programmes and portfolios."
+    }
+   },
+   {
+    "no": "P3M3® · Governance",
+    "en": "Enterprise PMO (EPMO)",
+    "ar": "مكتب المشاريع المؤسسي (EPMO)",
+    "def": {
+     "ar": "مكتب على مستوى المنشأة يربط الاستراتيجية بالتنفيذ ويملك معايير المحفظة.",
+     "en": "An enterprise-level office linking strategy to execution and owning portfolio standards."
+    }
+   },
+   {
+    "no": "P3M3® · Control",
+    "en": "Project",
+    "ar": "المشروع",
+    "def": {
+     "ar": "جهد مؤقت فريد لتحقيق أهداف محددة ضمن قيود.",
+     "en": "A temporary, unique endeavour to achieve defined objectives within constraints."
+    }
+   },
+   {
+    "no": "P3M3® · Benefits",
+    "en": "Programme",
+    "ar": "البرنامج",
+    "def": {
+     "ar": "مجموعة مكونات مترابطة تُدار بتنسيق لتحقيق نتائج ومنافع لا تتحقق بإدارتها منفردة.",
+     "en": "Related components managed in a coordinated way to achieve outcomes and benefits not obtainable individually."
+    }
+   },
+   {
+    "no": "P3M3® · Governance",
+    "en": "Portfolio",
+    "ar": "المحفظة",
+    "def": {
+     "ar": "مجموعة مشاريع وبرامج وأعمال أخرى تُدار معاً لتحقيق الأهداف الاستراتيجية.",
+     "en": "A collection of projects, programmes and other work managed together to achieve strategic objectives."
+    }
+   },
+   {
+    "no": "P3M3®‎",
+    "en": "Maturity",
+    "ar": "النضج",
+    "def": {
+     "ar": "درجة رسوخ الممارسات ومنهجيتها وقابليتها للقياس والتحسين.",
+     "en": "The degree to which practices are established, systematic, measured and improved."
+    }
+   },
+   {
+    "no": "P3M3®‎",
+    "en": "Perspective",
+    "ar": "المنظور",
+    "def": {
+     "ar": "مجموعة عمليات مترابطة تُقيَّم عبر المستويات الخمسة في P3M3 (سبعة منظورات).",
+     "en": "A group of related processes assessed across the five levels in P3M3 (seven perspectives)."
+    }
+   },
+   {
+    "no": "—",
+    "en": "Self-assessed score",
+    "ar": "التقييم الذاتي",
+    "def": {
+     "ar": "درجة يعطيها الفريق لنفسه بناءً على تصوره.",
+     "en": "The score the team gives itself based on its perception."
+    }
+   },
+   {
+    "no": "—",
+    "en": "Evidence-based score",
+    "ar": "الدرجة المبنية على الأدلة",
+    "def": {
+     "ar": "أعلى مستوى تثبته الأدلة المعاينة (سُلّم أدلة من المستوى 2 إلى 5).",
+     "en": "The highest level proven by sampled evidence (evidence ladder from level 2 to 5)."
+    }
+   },
+   {
+    "no": "—",
+    "en": "Validated score",
+    "ar": "الدرجة المعتمدة",
+    "def": {
+     "ar": "الدرجة النهائية التي يعتمدها المقيّم بعد المعاينة والمقابلات والمعايرة؛ هي التي تقود النتائج.",
+     "en": "The final score confirmed by the assessor after evidence, interviews and calibration; it drives the results."
+    }
+   },
+   {
+    "no": "P3M3® · Control",
+    "en": "Stage gate",
+    "ar": "بوابة المرحلة",
+    "def": {
+     "ar": "نقطة قرار رسمية للاستمرار أو التوقف أو إعادة التوجيه.",
+     "en": "A formal decision point to continue, stop or redirect."
+    }
+   },
+   {
+    "no": "P3M3® · Finance",
+    "en": "Business case",
+    "ar": "دراسة الجدوى",
+    "def": {
+     "ar": "مبرر الاستثمار: البدائل والتكاليف والمنافع والمخاطر.",
+     "en": "Justification for investment: options, costs, benefits and risks."
+    }
+   },
+   {
+    "no": "P3M3® · Benefits",
+    "en": "Benefit",
+    "ar": "المنفعة",
+    "def": {
+     "ar": "تحسن قابل للقياس ينتج عن مخرج ويراه صاحب مصلحة ذا قيمة.",
+     "en": "A measurable improvement resulting from an outcome and perceived as valuable by a stakeholder."
+    }
+   },
+   {
+    "no": "P3M3® · Benefits",
+    "en": "Dis-benefit",
+    "ar": "المنفعة السلبية",
+    "def": {
+     "ar": "نتيجة يراها صاحب مصلحة سلبية.",
+     "en": "An outcome perceived as negative by a stakeholder."
+    }
+   },
+   {
+    "no": "P3M3® · Benefits",
+    "en": "Benefit owner",
+    "ar": "مالك المنفعة",
+    "def": {
+     "ar": "المسؤول عن تحقيق المنفعة في التشغيل بعد التسليم.",
+     "en": "The person accountable for realizing the benefit in operations after handover."
+    }
+   },
+   {
+    "no": "P3M3® · Governance",
+    "en": "Project sponsor",
+    "ar": "الراعي التنفيذي",
+    "def": {
+     "ar": "المسؤول الأول عن نجاح المشروع وتحقيق منافعه.",
+     "en": "The individual accountable for the project's success and benefits."
+    }
+   },
+   {
+    "no": "P3M3® · Control",
+    "en": "Work breakdown structure (WBS)",
+    "ar": "هيكل تجزئة العمل (WBS)",
+    "def": {
+     "ar": "تجزئة هرمية لكامل نطاق العمل.",
+     "en": "A hierarchical decomposition of the total scope of work."
+    }
+   },
+   {
+    "no": "P3M3® · Control",
+    "en": "Baseline",
+    "ar": "الخط الأساسي",
+    "def": {
+     "ar": "نسخة معتمدة من الخطة تُقاس عليها الانحرافات.",
+     "en": "An approved version of the plan against which variance is measured."
+    }
+   },
+   {
+    "no": "P3M3® · Finance",
+    "en": "Earned value (EV)",
+    "ar": "القيمة المكتسبة (EV)",
+    "def": {
+     "ar": "قيمة العمل المنجز فعلاً بميزانيته المعتمدة.",
+     "en": "The budgeted value of work actually performed."
+    }
+   },
+   {
+    "no": "P3M3® · Finance",
+    "en": "Schedule performance index (SPI)",
+    "ar": "مؤشر أداء الجدول (SPI)",
+    "def": {
+     "ar": "القيمة المكتسبة ÷ القيمة المخططة. أقل من 1 = متأخر.",
+     "en": "EV ÷ planned value. Below 1 = behind schedule."
+    }
+   },
+   {
+    "no": "P3M3® · Finance",
+    "en": "Cost performance index (CPI)",
+    "ar": "مؤشر أداء التكلفة (CPI)",
+    "def": {
+     "ar": "القيمة المكتسبة ÷ التكلفة الفعلية. أقل من 1 = تجاوز تكلفة.",
+     "en": "EV ÷ actual cost. Below 1 = over cost."
+    }
+   },
+   {
+    "no": "P3M3® · Finance",
+    "en": "Estimate at completion (EAC)",
+    "ar": "التكلفة المتوقعة عند الإنجاز (EAC)",
+    "def": {
+     "ar": "التنبؤ الحالي بالتكلفة الكلية للمشروع.",
+     "en": "The current forecast of total project cost."
+    }
+   },
+   {
+    "no": "—",
+    "en": "RAG status",
+    "ar": "حالة RAG",
+    "def": {
+     "ar": "أحمر/كهرماني/أخضر لتلخيص الصحة مقابل حدود تحمّل مكتوبة.",
+     "en": "Red/Amber/Green summarizing health against written tolerances."
+    }
+   },
+   {
+    "no": "P3M3® · Control",
+    "en": "Tolerance",
+    "ar": "حدود التحمّل",
+    "def": {
+     "ar": "الانحراف المسموح قبل التصعيد للمستوى الأعلى.",
+     "en": "Permitted deviation before escalation to the next level."
+    }
+   },
+   {
+    "no": "P3M3® · Control",
+    "en": "Change request",
+    "ar": "طلب التغيير",
+    "def": {
+     "ar": "مقترح رسمي لتعديل خط أساسي معتمد.",
+     "en": "A formal proposal to modify an approved baseline."
+    }
+   },
+   {
+    "no": "—",
+    "en": "RACI matrix",
+    "ar": "مصفوفة RACI",
+    "def": {
+     "ar": "مسؤول، مساءل، مستشار، مُعلَم لكل نشاط.",
+     "en": "Responsible, Accountable, Consulted, Informed for each activity."
+    }
+   },
+   {
+    "no": "P3M3® · Resources",
+    "en": "Capacity",
+    "ar": "السعة",
+    "def": {
+     "ar": "الموارد المتاحة للعمل خلال فترة.",
+     "en": "Resources available for work in a period."
+    }
+   },
+   {
+    "no": "P3M3® · Governance",
+    "en": "Assurance",
+    "ar": "الضمان",
+    "def": {
+     "ar": "مراجعة مستقلة تمنح الثقة بأن العمل يسير كما ينبغي.",
+     "en": "Independent review giving confidence that work is on track."
+    }
+   },
+   {
+    "no": "P3M3® · Control",
+    "en": "Lessons learned",
+    "ar": "الدروس المستفادة",
+    "def": {
+     "ar": "معرفة مكتسبة من الخبرة تُستخدم لتحسين المستقبل.",
+     "en": "Knowledge gained from experience used to improve future work."
+    }
+   },
+   {
+    "no": "P3M3® · Control",
+    "en": "Tailoring",
+    "ar": "التكييف",
+    "def": {
+     "ar": "مواءمة المنهجية مع حجم المشروع وتعقيده ومخاطره.",
+     "en": "Adapting the method to project size, complexity and risk."
+    }
+   },
+   {
+    "no": "—",
+    "en": "PPM system",
+    "ar": "نظام PPM",
+    "def": {
+     "ar": "نظام إدارة المحافظ والمشاريع: بيانات وجداول وموارد وتقارير.",
+     "en": "Project and portfolio management system: data, schedules, resources and reporting."
+    }
+   },
+   {
+    "no": "KSA",
+    "en": "EXPRO",
+    "ar": "هيئة كفاءة الإنفاق والمشروعات الحكومية",
+    "def": {
+     "ar": "الجهة السعودية المعنية برفع كفاءة الإنفاق والمشروعات الحكومية؛ راجع أدلتها المطبقة على جهتك.",
+     "en": "The Saudi authority for spending and government project efficiency; check the guidance that applies to your entity."
+    }
+   }
+  ],
+  "scale": [
+   {
+    "level": 0,
+    "meaning": {
+     "en": "The process is recognised but practised informally and depends on individuals, with no common approach or tracking.",
+     "ar": "المنشأة تعرف العملية، لكنها تُمارَس بشكل غير رسمي وتعتمد على أفراد بعينهم، دون نهج موحد أو تتبع."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 1,
+    "meaning": {
+     "en": "Each initiative runs its own procedures to minimum standards, with limited consistency between initiatives.",
+     "ar": "كل مبادرة تُدار بإجراءاتها الخاصة وفق حد أدنى من المعايير، مع تنسيق محدود بين المبادرات."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 2,
+    "meaning": {
+     "en": "Processes are documented, standard and centrally owned, applied to every initiative with controlled tailoring.",
+     "ar": "العمليات موثقة وموحدة ومملوكة مركزياً، وتُطبَّق على كل المبادرات مع مرونة تكييف مضبوطة."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 3,
+    "meaning": {
+     "en": "Performance is measured quantitatively, decisions rest on data and deviations are corrected early.",
+     "ar": "الأداء يُقاس كمياً، والقرارات تُبنى على البيانات، والانحرافات تُعالج قبل أن تتفاقم."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 4,
+    "meaning": {
+     "en": "Continual improvement from feedback and benchmarking; the organization learns and adapts quickly.",
+     "ar": "تحسين مستمر من التغذية الراجعة والمقارنة المرجعية، والمنشأة تتعلم وتتكيف بسرعة."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   }
+  ],
+  "templates": [
+   {
+    "id": "pmoch",
+    "ref": "P3M3® · Organizational governance",
+    "no": "PMO-01",
+    "title": {
+     "en": "PMO charter",
+     "ar": "ميثاق مكتب إدارة المشاريع"
+    },
+    "purpose": {
+     "en": "Sets the PMO's purpose, mandate, services, governance and KPIs. Approved by the executive sponsor.",
+     "ar": "يحدد غرض المكتب وتفويضه وخدماته وحوكمته ومؤشراته. يُعتمد من الراعي التنفيذي."
+    },
+    "tips": [],
+    "fields": [
+     {
+      "label": {
+       "en": "Purpose",
+       "ar": "الغرض"
+      },
+      "example": {
+       "en": "Ensure Al-Masar National Infrastructure Co.'s project portfolio delivers its strategic objectives and investment value, on time, within cost, quality and HSE requirements.",
+       "ar": "ضمان تنفيذ محفظة مشاريع شركة المسار الوطني للبنية التحتية بما يحقق أهدافها الاستراتيجية وقيمة الاستثمار، ضمن الوقت والتكلفة والجودة ومتطلبات السلامة."
+      }
+     },
+     {
+      "label": {
+       "en": "PMO type and scope",
+       "ar": "نوع المكتب ونطاقه"
+      },
+      "example": {
+       "en": "Enterprise PMO (EPMO) covering every project above SAR 2 million or spanning more than one department, in the Central and Western regions.",
+       "ar": "مكتب مشاريع مؤسسي (EPMO) يغطي كل المشاريع التي تتجاوز ميزانيتها 2 مليون ريال أو تمس أكثر من إدارة، في المنطقتين الوسطى والغربية."
+      }
+     },
+     {
+      "label": {
+       "en": "Services",
+       "ar": "الخدمات"
+      },
+      "example": {
+       "en": "Method and templates; G0–G5 gate governance; portfolio register and monthly reporting; schedule control and earned value; risk and benefits management; capacity planning; training and coaching.",
+       "ar": "المنهجية والنماذج؛ حوكمة البوابات G0–G5؛ سجل المحفظة وتقاريرها الشهرية؛ ضبط الجداول والقيمة المكتسبة؛ إدارة المخاطر والمنافع؛ تخطيط السعة؛ التدريب والدعم."
+      }
+     },
+     {
+      "label": {
+       "en": "Authority",
+       "ar": "الصلاحيات"
+      },
+      "example": {
+       "en": "The PMO recommends go/stop/redirect decisions to the Investment Committee and may call an assurance review for any project red for two consecutive months.",
+       "ar": "يرفع المكتب توصيات «استمرار/إيقاف/إعادة توجيه» إلى لجنة الاستثمار، ويحق له طلب مراجعة ضمان لأي مشروع أحمر لشهرين متتاليين."
+      }
+     },
+     {
+      "label": {
+       "en": "Governance",
+       "ar": "الحوكمة"
+      },
+      "example": {
+       "en": "Investment Committee (monthly, chaired by the CEO); project boards (fortnightly); portfolio review (quarterly).",
+       "ar": "لجنة الاستثمار (شهرياً، يرأسها الرئيس التنفيذي)؛ مجالس المشاريع (كل أسبوعين)؛ مراجعة المحفظة (ربعياً)."
+      }
+     },
+     {
+      "label": {
+       "en": "KPIs",
+       "ar": "مؤشرات الأداء"
+      },
+      "example": {
+       "en": "≥ 80% of projects green or amber; SPI and CPI ≥ 0.95; ≥ 70% of planned benefits realized within 12 months; sponsor satisfaction ≥ 4/5; monthly dashboard by working day 5.",
+       "ar": "≥ 80% من المشاريع خضراء أو صفراء؛ SPI وCPI ≥ 0.95؛ ≥ 70% من المنافع المخططة متحققة خلال 12 شهراً؛ رضا الرعاة ≥ 4/5؛ اللوحة الشهرية بحلول اليوم 5."
+      }
+     },
+     {
+      "label": {
+       "en": "Approval",
+       "ar": "الاعتماد"
+      },
+      "example": {
+       "en": "Approved by: Chief Operating Officer — Date: ____ — Review: annually",
+       "ar": "اعتمده: الرئيس التنفيذي للعمليات — التاريخ: ____ — المراجعة: سنوياً"
+      }
+     }
+    ]
+   },
+   {
+    "id": "prjch",
+    "ref": "P3M3® · Management control",
+    "no": "PMO-02",
+    "title": {
+     "en": "Project charter",
+     "ar": "ميثاق المشروع"
+    },
+    "purpose": {
+     "en": "Formally authorizes the project and the project manager's authority. Approved at gate G2.",
+     "ar": "يعتمد المشروع رسمياً ويمنح مدير المشروع الصلاحية. يُعتمد عند البوابة G2."
+    },
+    "tips": [],
+    "fields": [
+     {
+      "label": {
+       "en": "Project",
+       "ar": "المشروع"
+      },
+      "example": {
+       "en": "PRJ-03 — Customer digital portal (Nafath integration)",
+       "ar": "PRJ-03 — بوابة العملاء الرقمية (تكامل نفاذ)"
+      }
+     },
+     {
+      "label": {
+       "en": "Objectives",
+       "ar": "الأهداف"
+      },
+      "example": {
+       "en": "Launch a self-service portal with Nafath single sign-on within 9 months and raise digital transactions from 20% to 70%.",
+       "ar": "إطلاق بوابة خدمة ذاتية بتسجيل دخول عبر نفاذ خلال 9 أشهر، ورفع المعاملات الرقمية من 20% إلى 70%."
+      }
+     },
+     {
+      "label": {
+       "en": "Scope / out of scope",
+       "ar": "النطاق / خارج النطاق"
+      },
+      "example": {
+       "en": "In scope: billing, service requests, complaints, SADAD payment. Out of scope: mobile app (phase 2).",
+       "ar": "داخل النطاق: الفواتير، طلبات الخدمة، الشكاوى، الدفع عبر سداد. خارج النطاق: تطبيق الجوال (المرحلة 2)."
+      }
+     },
+     {
+      "label": {
+       "en": "Budget and milestones",
+       "ar": "الميزانية والمعالم"
+      },
+      "example": {
+       "en": "SAR 14 million; design M2, pilot M6, go-live M9.",
+       "ar": "14 مليون ريال؛ التصميم م2، الإطلاق التجريبي م6، الإطلاق العام م9."
+      }
+     },
+     {
+      "label": {
+       "en": "Roles",
+       "ar": "الأدوار"
+      },
+      "example": {
+       "en": "Sponsor: Chief Digital Officer; PM: Fahad Al-Dosari; benefit owner: Customer Experience Director.",
+       "ar": "الراعي: مدير التحول الرقمي؛ مدير المشروع: فهد الدوسري؛ مالك المنافع: مدير تجربة العملاء."
+      }
+     },
+     {
+      "label": {
+       "en": "Key risks and assumptions",
+       "ar": "المخاطر والافتراضات الرئيسية"
+      },
+      "example": {
+       "en": "Cybersecurity approvals against NCA ECC controls; timely availability of Nafath interfaces.",
+       "ar": "اعتماد متطلبات الأمن السيبراني من الهيئة الوطنية للأمن السيبراني (NCA ECC)؛ توافر واجهات نفاذ في موعدها."
+      }
+     },
+     {
+      "label": {
+       "en": "Tolerances",
+       "ar": "حدود التحمّل"
+      },
+      "example": {
+       "en": "Schedule ±2 weeks; cost ±5%; any breach escalates to the project board.",
+       "ar": "الجدول ±2 أسبوع؛ التكلفة ±5%؛ أي تجاوز يُصعَّد إلى مجلس المشروع."
+      }
+     },
+     {
+      "label": {
+       "en": "Approval",
+       "ar": "الاعتماد"
+      },
+      "example": {
+       "en": "Sponsor: ____ — PMO: ____ — Date: ____",
+       "ar": "الراعي: ____ — مكتب المشاريع: ____ — التاريخ: ____"
+      }
+     }
+    ]
+   },
+   {
+    "id": "raci",
+    "ref": "P3M3® · Management control",
+    "no": "PMO-03",
+    "title": {
+     "en": "RACI matrix",
+     "ar": "مصفوفة RACI"
+    },
+    "purpose": {
+     "en": "Assigns Responsible, Accountable, Consulted and Informed for each activity. Exactly one A per activity.",
+     "ar": "توزع المسؤولية (R) والمساءلة (A) والاستشارة (C) والإعلام (I) لكل نشاط. واحد A فقط لكل نشاط."
+    },
+    "tips": [],
+    "fields": []
+   },
+   {
+    "id": "risk",
+    "ref": "P3M3® · Risk management · ISO 31000:2018",
+    "no": "PMO-04",
+    "title": {
+     "en": "Risk & issue log",
+     "ar": "سجل المخاطر والقضايا"
+    },
+    "purpose": {
+     "en": "One log using a 5×5 scale. Score = likelihood × impact. For the full enterprise register use the ISO 31000 Risk Studio.",
+     "ar": "سجل موحد بمقياس 5×5. الدرجة = الاحتمال × الأثر. للسجل المؤسسي الكامل استخدم استوديو المخاطر ISO 31000."
+    },
+    "tips": [],
+    "fields": []
+   },
+   {
+    "id": "cr",
+    "ref": "P3M3® · Management control",
+    "no": "PMO-05",
+    "title": {
+     "en": "Change request",
+     "ar": "طلب تغيير"
+    },
+    "purpose": {
+     "en": "Documents a proposed change and its impact on scope, schedule, cost, risk and benefits, and the authority level needed.",
+     "ar": "يوثق التغيير المقترح وأثره على النطاق والجدول والتكلفة والمخاطر والمنافع، ومستوى الصلاحية المطلوب."
+    },
+    "tips": [],
+    "fields": [
+     {
+      "label": {
+       "en": "Request no. / project",
+       "ar": "رقم الطلب / المشروع"
+      },
+      "example": {
+       "en": "CR-017 / PRJ-01 ERP rollout",
+       "ar": "CR-017 / PRJ-01 تطبيق ERP"
+      }
+     },
+     {
+      "label": {
+       "en": "Description",
+       "ar": "وصف التغيير"
+      },
+      "example": {
+       "en": "Add the contract management module to phase 1 at the request of procurement.",
+       "ar": "إضافة وحدة إدارة العقود إلى نطاق المرحلة الأولى بطلب من إدارة المشتريات."
+      }
+     },
+     {
+      "label": {
+       "en": "Justification",
+       "ar": "المبرر"
+      },
+      "example": {
+       "en": "Internal audit requirement to unify contract control before financial year-end.",
+       "ar": "متطلب تدقيق داخلي لتوحيد ضبط العقود قبل نهاية السنة المالية."
+      }
+     },
+     {
+      "label": {
+       "en": "Impact (scope/schedule/cost/risk/benefits)",
+       "ar": "الأثر (النطاق/الجدول/التكلفة/المخاطر/المنافع)"
+      },
+      "example": {
+       "en": "+6 weeks; +SAR 2.4 M (5% of budget); developer capacity risk; benefit: 100% of contracts controlled in system.",
+       "ar": "+6 أسابيع؛ +2.4 مليون ريال (5% من الميزانية)؛ خطر ضغط موارد المطورين؛ منفعة: ضبط 100% من العقود نظامياً."
+      }
+     },
+     {
+      "label": {
+       "en": "Options",
+       "ar": "البدائل"
+      },
+      "example": {
+       "en": "(1) Reject; (2) Accept now; (3) Defer to phase 2 — recommended: option 3 with an interim workaround.",
+       "ar": "(1) الرفض؛ (2) القبول الآن؛ (3) تأجيلها للمرحلة 2 — موصى به: الخيار 3 مع حل مؤقت."
+      }
+     },
+     {
+      "label": {
+       "en": "Authority level",
+       "ar": "مستوى الصلاحية"
+      },
+      "example": {
+       "en": "Exceeds PM tolerance (±5%) — escalate to the project board.",
+       "ar": "يتجاوز حد مدير المشروع (±5%) — يُرفع إلى مجلس المشروع."
+      }
+     },
+     {
+      "label": {
+       "en": "Decision",
+       "ar": "القرار"
+      },
+      "example": {
+       "en": "Approved / rejected / deferred — by: ____ — date: ____",
+       "ar": "معتمد / مرفوض / مؤجل — بواسطة: ____ — التاريخ: ____"
+      }
+     }
+    ]
+   },
+   {
+    "id": "ll",
+    "ref": "P3M3® · Management control",
+    "no": "PMO-06",
+    "title": {
+     "en": "Lessons learned log",
+     "ar": "سجل الدروس المستفادة"
+    },
+    "purpose": {
+     "en": "Captures what worked, what didn't and the recommendation. Reviewed at G0 of new projects.",
+     "ar": "يوثق ما نجح وما لم ينجح والتوصية. يُراجع عند G0 للمشاريع الجديدة."
+    },
+    "tips": [],
+    "fields": []
+   },
+   {
+    "id": "status",
+    "ref": "P3M3® · Management control",
+    "no": "PMO-07",
+    "title": {
+     "en": "Status report",
+     "ar": "تقرير الحالة"
+    },
+    "purpose": {
+     "en": "Standard monthly report for the project board and portfolio dashboard. Honest RAG with decisions required.",
+     "ar": "تقرير شهري موحد لمجلس المشروع ولوحة المحفظة. حالة RAG صادقة مع قرارات مطلوبة."
+    },
+    "tips": [],
+    "fields": [
+     {
+      "label": {
+       "en": "Project / period",
+       "ar": "المشروع / الفترة"
+      },
+      "example": {
+       "en": "PRJ-02 380 kV substation — September 2026",
+       "ar": "PRJ-02 محطة تحويل 380 ك.ف — سبتمبر 2026"
+      }
+     },
+     {
+      "label": {
+       "en": "Overall status",
+       "ar": "الحالة العامة"
+      },
+      "example": {
+       "en": "Amber — schedule slightly ahead (SPI 1.04), cost within tolerance (CPI 0.97), but transformer supply risk is high.",
+       "ar": "أصفر — الجدول متقدم قليلاً (SPI 1.04) والتكلفة ضمن الحدود (CPI 0.97)، لكن خطر توريد المحولات مرتفع."
+      }
+     },
+     {
+      "label": {
+       "en": "Achievements this period",
+       "ar": "إنجازات الفترة"
+      },
+      "example": {
+       "en": "Main building civil works complete; switchgear factory acceptance tests passed.",
+       "ar": "اكتمال الأعمال المدنية للمبنى الرئيسي؛ اختبارات المصنع للمفاتيح الكهربائية ناجحة."
+      }
+     },
+     {
+      "label": {
+       "en": "Next period",
+       "ar": "أعمال الفترة القادمة"
+      },
+      "example": {
+       "en": "Erect line structures; weekly follow-up with the transformer factory.",
+       "ar": "تركيب هياكل الخط؛ متابعة أسبوعية مع مصنع المحولات."
+      }
+     },
+     {
+      "label": {
+       "en": "Key risks and issues",
+       "ar": "المخاطر والقضايا الرئيسية"
+      },
+      "example": {
+       "en": "R-01 transformer delay (20); R-04 steel prices (6, closed).",
+       "ar": "R-01 تأخر المحولات (20)؛ R-04 أسعار الحديد (6، مغلق)."
+      }
+     },
+     {
+      "label": {
+       "en": "Decisions required",
+       "ar": "قرارات مطلوبة"
+      },
+      "example": {
+       "en": "Approve SAR 3.1 M contingency purchase from the alternate supplier.",
+       "ar": "اعتماد الشراء من المورد البديل بقيمة 3.1 مليون ريال كإجراء احتياطي."
+      }
+     },
+     {
+      "label": {
+       "en": "HSE and quality",
+       "ar": "السلامة والجودة"
+      },
+      "example": {
+       "en": "Zero lost-time injuries; 2 non-conformities closed.",
+       "ar": "صفر إصابات مضيعة للوقت؛ 2 عدم مطابقة مغلقة."
+      }
+     }
+    ]
+   },
+   {
+    "id": "brp",
+    "ref": "P3M3® · Benefits management",
+    "no": "PMO-08",
+    "title": {
+     "en": "Benefits realization plan",
+     "ar": "خطة تحقيق المنافع"
+    },
+    "purpose": {
+     "en": "For each benefit: KPI, baseline, target, owner, when and how measured, and the business change needed.",
+     "ar": "تحدد لكل منفعة: المؤشر وخط الأساس والمستهدف والمالك ومتى وكيف تُقاس والتغيير المطلوب لتحقيقها."
+    },
+    "tips": [],
+    "fields": []
+   }
+  ],
+  "faq": [
+   {
+    "id": "p3m3",
+    "q": {
+     "en": "What is P3M3?",
+     "ar": "ما هو نموذج P3M3؟"
+    },
+    "a": {
+     "en": "**P3M3®‎** is the Portfolio, Programme and Project Management Maturity Model from **AXELOS** (part of the PeopleCert group). Version 3 has **three models** (portfolio, programme, project), **seven perspectives** (organizational governance, management control, benefits, risk, stakeholder, finance, resource) and **five levels** from awareness to optimized.\n\n- This tool applies that structure as it is, with independently worded questions and evidence; it is not an official AXELOS assessment.\n\nDetails in [[tab:refs]].",
+     "ar": "**P3M3®‎** نموذج نضج لإدارة المحافظ والبرامج والمشاريع من **AXELOS** (ضمن مجموعة PeopleCert). الإصدار الثالث يضم **ثلاثة نماذج** (محفظة، برنامج، مشروع) و**سبعة منظورات** (الحوكمة المؤسسية، الرقابة الإدارية، المنافع، المخاطر، أصحاب المصلحة، المالية، الموارد) و**خمسة مستويات** من الوعي إلى التحسين.\n\n- هذه الأداة تطبق هذا الهيكل كما هو، بأسئلة وأدلة مصاغة بشكل مستقل، وليست تقييماً رسمياً من AXELOS.\n\nالتفاصيل في [[tab:refs]]."
+    }
+   },
+   {
+    "id": "cert",
+    "q": {
+     "en": "Is this assessment a certification?",
+     "ar": "هل هذا التقييم شهادة؟"
+    },
+    "a": {
+     "en": "**No.** P3M3 is a maturity model, not a requirements standard. Formal assessments are run by accredited assessors and give a **maturity level**, not a certificate.\n\n- Use this tool's results for internal improvement, management reporting and a baseline before a formal assessment.",
+     "ar": "**لا.** P3M3 نموذج نضج وليس مواصفة متطلبات. التقييم الرسمي يجريه مقيّمون معتمدون ويُصدر **مستوى نضج** لا شهادة.\n\n- استخدم نتائج هذه الأداة للتحسين الداخلي وتقارير الإدارة وتحديد نقطة البداية قبل تقييم رسمي."
+    }
+   },
+   {
+    "id": "guide",
+    "q": {
+     "en": "Where can I read about the model, its perspectives and levels?",
+     "ar": "أين أجد شرح النموذج ومنظوراته ومستوياته؟"
+    },
+    "a": {
+     "en": "In two tabs:\n\n- [[tab:standard]]: what P3M3 is and why, the roles, a map of the model, where to find the official material, and how it sits with the ISO 21500, P3O and excellence tools.\n- [[tab:clauses]]: a matrix of the seven perspectives across the three models, and the five levels. Each of the tool's questions has a plain explanation, an example, steps to move up and the evidence for each level.\n\nThe guide is interpretive, not the model's text.",
+     "ar": "في تبويبين:\n\n- [[tab:standard]]: ما هو P3M3 ولماذا، والأدوار، وخريطة النموذج، وأين تجد المادة الرسمية، وعلاقته بأدوات ISO 21500 وP3O والتميّز.\n- [[tab:clauses]]: مصفوفة المنظورات السبعة في النماذج الثلاثة، والمستويات الخمسة. لكل سؤال من أسئلة الأداة شرح بسيط ومثال وخطوات للارتقاء والأدلة لكل مستوى.\n\nالشرح تفسيري، وليس نص النموذج."
+    }
+   },
+   {
+    "id": "lvl3",
+    "q": {
+     "en": "How do I know a perspective has really reached level 3?",
+     "ar": "كيف أعرف أن منظوراً وصل فعلاً إلى المستوى 3؟"
+    },
+    "a": {
+     "en": "Signs of level 3:\n\n- One method that is **approved and published**, with a named owner.\n- **Every** initiative in scope uses it, with tailoring under written rules.\n- People are trained on it and senior management supports it consistently.\n\nTake a sample of at least 3 initiatives: if the way of working differs between them, the perspective is at level 2. Details in [[tab:clauses]].",
+     "ar": "علامات المستوى 3:\n\n- منهجية واحدة **معتمدة ومنشورة** لها مالك محدد.\n- **كل** المبادرات ضمن النطاق تطبقها، والتكييف بقواعد مكتوبة.\n- الناس مدربون عليها، والإدارة العليا تدعمها باستمرار.\n\nخذ عيّنة من 3 مبادرات على الأقل: إن اختلفت الطريقة بينها فالمنظور في المستوى 2. التفاصيل في [[tab:clauses]]."
+    }
+   },
+   {
+    "id": "owner",
+    "q": {
+     "en": "Who owns P3M3 today, and is there a new version?",
+     "ar": "من يملك P3M3 اليوم، وهل صدر إصدار جديد؟"
+    },
+    "a": {
+     "en": "It is owned by **PeopleCert**, which acquired AXELOS in 2021, and is now marketed as **PRINCE2 P3M3**. The current version is **version 3** (2015), with an overview updated in July 2021, and no new version had been announced as of 8 October 2026. Accredited assessments are run by PeopleCert Accredited Consulting Partners. Details in [[tab:standard]].",
+     "ar": "تملكه **PeopleCert** بعد استحواذها على AXELOS في 2021، وتعرضه اليوم باسم **PRINCE2 P3M3**. الإصدار الساري هو **الإصدار 3** (2015) مع نظرة عامة محدثة في يوليو 2021، ولم يُعلن إصدار جديد حتى 8 أكتوبر 2026. التقييم المعتمد يجريه الشركاء الاستشاريون المعتمدون من PeopleCert. التفاصيل في [[tab:standard]]."
+    }
+   },
+   {
+    "id": "assessbtn",
+    "q": {
+     "en": "What do the Explain and Assess this buttons do?",
+     "ar": "ماذا يفعل زرا «اشرح» و«قيّم هذا في الأداة»؟"
+    },
+    "a": {
+     "en": "- In [[tab:clauses]], each question has an **Assess this in the tool** button that opens the same question in [[tab:assess]], in the model you picked under Focus on a model, or the model on screen if you picked All three.\n- Matrix cells open the perspective as it looks in that model, and their button takes you to that perspective in the assessment.\n- In the assessment, an **Explain** button next to each question and perspective heading brings you back to the guide.\n- If the model is out of scope, a note appears with a link to [[tab:profile]].",
+     "ar": "- في [[tab:clauses]] تحت كل سؤال زر **«قيّم هذا في الأداة»** يفتح السؤال نفسه في [[tab:assess]]، على النموذج الذي اخترته في «ركّز على نموذج»، أو النموذج المعروض حالياً إن اخترت «الثلاثة».\n- خلايا المصفوفة تفتح شرح المنظور في ذلك النموذج، وزرها ينقلك إلى المنظور نفسه في التقييم.\n- في التقييم زر **«اشرح»** بجانب كل سؤال وعنوان كل منظور يعيدك إلى الشرح.\n- إن كان النموذج خارج النطاق تظهر ملاحظة ورابط إلى [[tab:profile]]."
+    }
+   },
+   {
+    "id": "models",
+    "q": {
+     "en": "Which model do we assess: portfolio, programme or project?",
+     "ar": "أي نموذج نقيّم: المحفظة أم البرنامج أم المشروع؟"
+    },
+    "a": {
+     "en": "Assess the model that reflects your real work:\n\n- **Project (PjM3)** if you run separate projects.\n- **Programme (PgM3)** if you coordinate related projects toward shared benefits.\n- **Portfolio (PfM3)** if you select and balance investments against strategy.\n\nYou can pick more than one in [[tab:profile]]; an overall organizational rating needs all three.",
+     "ar": "قيّم النموذج الذي يمثل عملك الفعلي:\n\n- **المشروع (PjM3)** إن كانت المنشأة تدير مشاريع منفصلة.\n- **البرنامج (PgM3)** إن كانت تنسّق مشاريع مترابطة نحو منافع مشتركة.\n- **المحفظة (PfM3)** إن كانت تختار الاستثمارات وتوازنها مقابل الاستراتيجية.\n\nيمكن اختيار أكثر من نموذج في [[tab:profile]]، لكن التصنيف الشامل للمنشأة يحتاج النماذج الثلاثة."
+    }
+   },
+   {
+    "id": "achieved",
+    "q": {
+     "en": "Why is the achieved level lower than the average?",
+     "ar": "لماذا المستوى المحقق أقل من المتوسط؟"
+    },
+    "a": {
+     "en": "The average shows the overall trend; the **achieved level** is the lowest among the seven perspectives, because an organization is not at a level until every perspective reaches it. Lift the weakest perspective first to raise the result. The matrix is in [[tab:results]].",
+     "ar": "المتوسط يوضح الاتجاه العام، أما **المستوى المحقق** فهو أدنى مستوى بين المنظورات السبعة، لأن المنشأة لا تُعد في مستوى معين قبل أن تبلغه كل المنظورات. ارفع أضعف منظور أولاً لترتفع النتيجة فعلاً. المصفوفة في [[tab:results]]."
+    }
+   },
+   {
+    "id": "levels",
+    "q": {
+     "en": "What do the five levels mean?",
+     "ar": "ماذا تعني المستويات الخمسة؟"
+    },
+    "a": {
+     "en": "1. **Awareness** — undocumented, person-dependent practices.\n2. **Repeatable** — documented plans within some projects.\n3. **Defined** — a standard, approved method for all projects.\n4. **Managed** — quantitative measurement and data-driven decisions.\n5. **Optimized** — continual improvement and benchmarking.\n\nNot every organization needs level 5; many meet their goals at level 3.",
+     "ar": "1. **الوعي** — ممارسات غير موثقة تعتمد على الأفراد.\n2. **قابل للتكرار** — خطط موثقة داخل بعض المشاريع.\n3. **مُعرَّف** — منهجية موحدة ومعتمدة لكل المشاريع.\n4. **مُدار** — قياس كمي وقرارات بالبيانات.\n5. **مُحسَّن** — تحسين مستمر ومقارنات مرجعية.\n\nليس مطلوباً من كل منشأة بلوغ المستوى 5؛ كثير منها يحقق هدفه بالمستوى 3."
+    }
+   },
+   {
+    "id": "three",
+    "q": {
+     "en": "Why three scores per question?",
+     "ar": "لماذا ثلاث درجات لكل سؤال؟"
+    },
+    "a": {
+     "en": "- **Self**: what the team believes.\n- **Evidence**: the highest level the sampled evidence ladder proves (levels 2→5 in order).\n- **Validated**: the assessor's decision after evidence, interviews and calibration — **this drives the results**.\n\nThe self-vs-validated gap shows over- or under-statement; the evidence-vs-validated gap shows missing or ineffective evidence.",
+     "ar": "- **الذاتي**: ما يعتقده الفريق.\n- **بالأدلة**: أعلى مستوى يثبته سُلّم الأدلة المعاينة (المستويات 2→5 بالترتيب).\n- **المعتمد**: قرار المقيّم بعد المعاينة والمقابلات والمعايرة — **وهو الذي يقود النتائج**.\n\nالفجوة بين الذاتي والمعتمد تكشف التضخيم أو التواضع، والفجوة بين الأدلة والمعتمد تكشف أدلة ناقصة أو غير فعالة."
+    }
+   },
+   {
+    "id": "valid",
+    "q": {
+     "en": "Who validates, and when is a score provisional?",
+     "ar": "من يعتمد الدرجة ومتى تكون «مؤقتة»؟"
+    },
+    "a": {
+     "en": "An **assessor independent** of the PMO (internal audit/quality or external). If a question is not yet validated, the tool uses the evidence score as a **provisional result** and shows validation coverage in [[tab:results]]. Self scores never drive results.",
+     "ar": "يعتمدها **مقيّم مستقل** عن المكتب (داخلي من المراجعة/الجودة أو خارجي). إذا لم يُعتمد السؤال بعد، تستخدم الأداة درجة الأدلة **كنتيجة مؤقتة** وتظهر نسبة الاعتماد في [[tab:results]]. لا تُستخدم الدرجة الذاتية أبداً في النتائج."
+    }
+   },
+   {
+    "id": "evidence",
+    "q": {
+     "en": "What counts as evidence?",
+     "ar": "ما الذي يُعد دليلاً؟"
+    },
+    "a": {
+     "en": "Approved documents, real records (board minutes, decision logs, monthly reports), system data and consistent interviews. Rule of thumb: **sample at least 3 projects** per question; evidence must be **in use**, not just exist.",
+     "ar": "وثائق معتمدة، سجلات فعلية (محاضر لجان، سجلات قرارات، تقارير شهرية)، بيانات من الأنظمة، ومقابلات متسقة. قاعدة عملية: **عيّنة من 3 مشاريع على الأقل** لكل سؤال، والدليل يجب أن يكون **مستخدماً** لا موجوداً فقط."
+    }
+   },
+   {
+    "id": "target",
+    "q": {
+     "en": "What target level should we set?",
+     "ar": "ما المستوى المستهدف المناسب؟"
+    },
+    "a": {
+     "en": "Set targets by **PMO type and business need**, not ambition: level 3 suits most PMOs; level 4 fits large portfolios and high-risk entities. The \"by PMO type\" button in [[tab:results]] sets suggested values. Rule of thumb: plan **one level per perspective** in 12 to 18 months.",
+     "ar": "اختر المستهدف حسب **نوع المكتب واحتياج العمل** لا حسب الطموح: المستوى 3 مناسب لمعظم المكاتب، والمستوى 4 للمحافظ الكبيرة والجهات عالية المخاطر. زر «حسب نوع المكتب» في [[tab:results]] يضبط قيماً مقترحة. قاعدة عملية: خطط لرفع **مستوى واحد لكل منظور** خلال 12 إلى 18 شهراً."
+    }
+   },
+   {
+    "id": "types",
+    "q": {
+     "en": "Which PMO type do we need?",
+     "ar": "ما نوع المكتب الذي نحتاجه؟"
+    },
+    "a": {
+     "en": "- **Project PMO**: method support and reporting for a group of projects.\n- **Programme PMO**: coordinating related projects toward shared benefits.\n- **Portfolio PMO**: selecting and balancing investments.\n- **EPMO**: linking strategy to execution enterprise-wide.\n\nSet it in [[tab:profile]].",
+     "ar": "- **مكتب مشاريع**: دعم منهجي وتقارير لمجموعة مشاريع.\n- **مكتب برنامج**: تنسيق مشاريع مترابطة نحو منافع مشتركة.\n- **مكتب محفظة**: اختيار الاستثمارات وموازنتها.\n- **EPMO**: ربط الاستراتيجية بالتنفيذ على مستوى المنشأة.\n\nحدده في [[tab:profile]]."
+    }
+   },
+   {
+    "id": "start",
+    "q": {
+     "en": "Where do we start the PMO transformation?",
+     "ar": "من أين نبدأ تحوّل مكتب المشاريع؟"
+    },
+    "a": {
+     "en": "1. Approve the **charter** and sponsor.\n2. Build **one portfolio register** and RAG criteria.\n3. Run the three-score assessment and validate results.\n4. Deliver the **quick wins** (0–3 months) in [[tab:roadmap]].\n\nReady templates are in [[tab:templates]].",
+     "ar": "1. اعتمد **الميثاق** والراعي.\n2. ابنِ **سجل محفظة واحد** ومعايير RAG.\n3. أجرِ التقييم بالدرجات الثلاث واعتمد النتائج.\n4. نفّذ **المكاسب السريعة** (0–3 أشهر) في [[tab:roadmap]].\n\nالنماذج الجاهزة في [[tab:templates]]."
+    }
+   },
+   {
+    "id": "kpi",
+    "q": {
+     "en": "Which PMO KPIs do you suggest?",
+     "ar": "ما مؤشرات أداء مكتب المشاريع المقترحة؟"
+    },
+    "a": {
+     "en": "- % projects green/amber, SPI and CPI.\n- % benefits realized vs plan.\n- Decision lead time at gates.\n- Estimate accuracy at closure.\n- Capacity utilisation (75–90%).\n- Sponsor rating of PMO value.\n\nThey appear automatically in the [[tab:studio]] dashboard.",
+     "ar": "- % المشاريع الخضراء/الصفراء، وSPI وCPI.\n- % المنافع المتحققة مقابل المخطط.\n- زمن اتخاذ القرار عند البوابات.\n- دقة التقدير عند الإغلاق.\n- استغلال السعة (75–90%).\n- رضا الرعاة عن قيمة المكتب.\n\nتظهر آلياً في لوحة [[tab:studio]]."
+    }
+   },
+   {
+    "id": "rag",
+    "q": {
+     "en": "How is RAG calculated in the register?",
+     "ar": "كيف تُحسب حالة RAG في السجل؟"
+    },
+    "a": {
+     "en": "SPI = actual % ÷ planned %, CPI = (actual % × budget) ÷ spent. **Green** if both ≥ 0.95, **Amber** between 0.85 and 0.95, **Red** below 0.85. You can override manually in the status column.",
+     "ar": "SPI = الإنجاز الفعلي ÷ المخطط، وCPI = (الإنجاز الفعلي × الميزانية) ÷ المصروف. **أخضر** إذا كان كلاهما ≥ 0.95، **كهرماني** بين 0.85 و0.95، **أحمر** أقل من 0.85. يمكنك تجاوز الحساب يدوياً بعمود «الحالة»."
+    }
+   },
+   {
+    "id": "evm",
+    "q": {
+     "en": "What are SPI and CPI?",
+     "ar": "ما هما SPI وCPI؟"
+    },
+    "a": {
+     "en": "**Earned value** indices: **SPI** = EV ÷ planned value (schedule), **CPI** = EV ÷ actual cost (cost). 1 means on plan; below 1 means behind or over.",
+     "ar": "مؤشرا **القيمة المكتسبة**: **SPI** = القيمة المكتسبة ÷ المخططة (أداء الجدول)، و**CPI** = القيمة المكتسبة ÷ التكلفة الفعلية (أداء التكلفة). القيمة 1 تعني وفق الخطة، وأقل من 1 تعني تأخراً أو تجاوزاً."
+    }
+   },
+   {
+    "id": "gate",
+    "q": {
+     "en": "What are stage gates G0–G5?",
+     "ar": "ما هي بوابات المراحل G0–G5؟"
+    },
+    "a": {
+     "en": "Formal decision points: G0 idea, G1 business case, G2 baseline, G3 execution readiness, G4 handover, G5 closure & benefits. Checklists per gate are in [[tab:studio]].",
+     "ar": "نقاط قرار رسمية: G0 الفكرة، G1 دراسة الجدوى، G2 الخط الأساسي، G3 جاهزية التنفيذ، G4 التسليم، G5 الإغلاق والمنافع. قائمة التحقق لكل بوابة في [[tab:studio]]."
+    }
+   },
+   {
+    "id": "risk31000",
+    "q": {
+     "en": "How does this link to the ISO 31000 studio?",
+     "ar": "كيف يرتبط هذا باستوديو ISO 31000؟"
+    },
+    "a": {
+     "en": "The risk & issue log here uses the same **5×5** scale as the Enterprise Risk Studio (ISO 31000). Escalate top project risks to the enterprise register there, using the same risk appetite. The link is in the risk management perspective and in [[tab:templates]].",
+     "ar": "سجل المخاطر والقضايا هنا يستخدم مقياس **5×5** نفسه المستخدم في استوديو المخاطر المؤسسية (ISO 31000). صعّد مخاطر المشاريع العليا إلى السجل المؤسسي هناك، واستخدم شهية المخاطر نفسها. الرابط في منظور إدارة المخاطر وفي [[tab:templates]]."
+    }
+   },
+   {
+    "id": "saudi",
+    "q": {
+     "en": "What is the Saudi context for PMOs?",
+     "ar": "ما السياق السعودي لمكاتب المشاريع؟"
+    },
+    "a": {
+     "en": "Government entities link portfolios to **Vision 2030 realization programme** KPIs, and **EXPRO** works on spending and project efficiency — check the guidance that applies to your entity. In the private sector, benefits often link to localization and local content. The Saudi example is loaded in every template.",
+     "ar": "في الجهات الحكومية تُربط المحافظ بمؤشرات **برامج تحقيق رؤية 2030**، وتعمل **هيئة كفاءة الإنفاق والمشروعات الحكومية (EXPRO)** على كفاءة الإنفاق والمشروعات — راجع أدلتها المطبقة على جهتك. في القطاع الخاص يبرز ربط المنافع بالتوطين والمحتوى المحلي. المثال السعودي محمّل في كل النماذج."
+    }
+   },
+   {
+    "id": "dur",
+    "q": {
+     "en": "How long will the transformation take?",
+     "ar": "كم تستغرق خارطة التحول؟"
+    },
+    "a": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "id": "myres",
+    "q": {
+     "en": "Explain my result and next steps",
+     "ar": "اشرح نتيجتي والخطوات التالية"
+    },
+    "a": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "id": "gaps",
+    "q": {
+     "en": "Where are the gaps between the three scores?",
+     "ar": "أين الفجوات بين الدرجات الثلاث؟"
+    },
+    "a": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "id": "data",
+    "q": {
+     "en": "Where is my data saved?",
+     "ar": "أين تُحفظ بياناتي؟"
+    },
+    "a": {
+     "en": "In **your browser only** (local storage private to this page). Nothing is sent to a server. Export CSV or PDF to keep or share a copy.",
+     "ar": "في **متصفحك فقط** (تخزين محلي خاص بهذه الصفحة). لا تُرسل إلى أي خادم. صدّر CSV أو PDF للاحتفاظ بنسخة أو مشاركتها."
+    }
+   },
+   {
+    "id": "pdf",
+    "q": {
+     "en": "How do I export reports?",
+     "ar": "كيف أصدّر التقارير؟"
+    },
+    "a": {
+     "en": "Every tab has a branded **PDF** button and a **CSV** button. The full assessment report is in [[tab:results]], the roadmap in [[tab:roadmap]] and the monthly PMO dashboard in [[tab:studio]].",
+     "ar": "كل تبويب فيه زر **PDF** بعلامة الأكاديمية وزر **CSV**. تقرير التقييم الكامل في [[tab:results]]، والخارطة في [[tab:roadmap]]، ولوحة المكتب الشهرية في [[tab:studio]]."
+    }
+   }
+  ],
+  "levers": [
+   {
+    "title": {
+     "en": "Do the right projects first",
+     "ar": "الاختيار الصحيح قبل التنفيذ الصحيح"
+    },
+    "text": {
+     "en": "The biggest PMO value comes from stopping or deferring weak projects early through gates and prioritization.",
+     "ar": "أكبر قيمة للمكتب تأتي من إيقاف أو تأجيل المشاريع الضعيفة مبكراً عبر البوابات وترتيب الأولويات."
+    }
+   },
+   {
+    "title": {
+     "en": "One trusted data set",
+     "ar": "بيانات واحدة موثوقة"
+    },
+    "text": {
+     "en": "One portfolio register and written RAG criteria end debates about numbers and speed up decisions.",
+     "ar": "سجل محفظة واحد ومعايير RAG مكتوبة تلغي الجدل حول الأرقام وتسرّع القرار."
+    }
+   },
+   {
+    "title": {
+     "en": "Benefits, not outputs",
+     "ar": "المنافع لا المخرجات"
+    },
+    "text": {
+     "en": "Linking every project to owned, measured benefits turns the PMO from report collector into value partner.",
+     "ar": "ربط كل مشروع بمنافع لها مالك ومؤشر يحوّل المكتب من «جامع تقارير» إلى شريك قيمة."
+    }
+   },
+   {
+    "title": {
+     "en": "Capacity before approval",
+     "ar": "السعة قبل الموافقة"
+    },
+    "text": {
+     "en": "Approving projects against available capacity cuts multitasking and delay more than any scheduling tool.",
+     "ar": "اعتماد المشاريع حسب السعة المتاحة يقلل التعدد والتأخير أكثر من أي أداة جدولة."
+    }
+   }
+  ],
+  "pitfalls": [
+   {
+    "title": {
+     "en": "A bureaucratic PMO",
+     "ar": "مكتب بيروقراطي"
+    },
+    "text": {
+     "en": "Start with minimum templates, tailor by tier and measure PMO value with sponsors.",
+     "ar": "ابدأ بالحد الأدنى من النماذج وكيّف حسب فئة المشروع؛ قِس قيمة المكتب لدى الرعاة."
+    }
+   },
+   {
+    "title": {
+     "en": "Inflated self-assessment",
+     "ar": "تضخيم التقييم الذاتي"
+    },
+    "text": {
+     "en": "Rely only on evidence-validated scores; a self-vs-validated gap of 2 or more triggers a calibration workshop.",
+     "ar": "لا تعتمد إلا الدرجة المعتمدة بالأدلة؛ فجوة ≥ 2 بين الذاتي والمعتمد تستدعي ورشة معايرة."
+    }
+   },
+   {
+    "title": {
+     "en": "Skipping levels",
+     "ar": "القفز على المستويات"
+    },
+    "text": {
+     "en": "Secure level 3 (a standard method) before investing in level 4–5 predictive analytics.",
+     "ar": "ثبّت المستوى 3 (منهجية موحدة) قبل الاستثمار في التحليلات التنبؤية للمستوى 4–5."
+    }
+   },
+   {
+    "title": {
+     "en": "Tool before process",
+     "ar": "الأداة قبل العملية"
+    },
+    "text": {
+     "en": "Don't buy a PPM platform before standardizing data and criteria; a tool automates chaos if it comes first.",
+     "ar": "لا تشترِ منصة PPM قبل توحيد البيانات والمعايير؛ الأداة تؤتمت الفوضى إن سبقت العملية."
+    }
+   },
+   {
+    "title": {
+     "en": "Absent sponsorship",
+     "ar": "غياب الراعي"
+    },
+    "text": {
+     "en": "Without an active executive sponsor gates lose force; make sponsor attendance a KPI.",
+     "ar": "بدون راعٍ تنفيذي فاعل تفقد البوابات قوتها؛ اجعل حضور الرعاة مؤشراً."
+    }
+   }
+  ],
+  "checklist": [
+   {
+    "group": {
+     "en": "Mandate & sponsorship",
+     "ar": "التفويض والرعاية"
+    },
+    "items": [
+     {
+      "en": "PMO charter approved and published",
+      "ar": "ميثاق مكتب المشاريع معتمد ومنشور"
+     },
+     {
+      "en": "Executive sponsor for the PMO with decision authority",
+      "ar": "راعٍ تنفيذي للمكتب بصلاحية قرار"
+     },
+     {
+      "en": "PMO type (project/programme/portfolio/enterprise) chosen and justified",
+      "ar": "نوع المكتب (مشاريع/برنامج/محفظة/مؤسسي) محدد ومبرر"
+     },
+     {
+      "en": "In-scope projects defined by clear thresholds",
+      "ar": "نطاق المشاريع الخاضعة للمكتب محدد بحدود واضحة"
+     },
+     {
+      "en": "PMO value KPIs agreed with top management",
+      "ar": "مؤشرات قيمة المكتب متفق عليها مع الإدارة العليا"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "Governance & method",
+     "ar": "الحوكمة والمنهجية"
+    },
+    "items": [
+     {
+      "en": "Investment/portfolio committee with terms of reference",
+      "ar": "لجنة استثمار/محفظة بشروط مرجعية"
+     },
+     {
+      "en": "G0–G5 gate model with criteria",
+      "ar": "نموذج بوابات G0–G5 بمعايير"
+     },
+     {
+      "en": "Delegation of authority for change and funding",
+      "ar": "مصفوفة تفويض صلاحيات للتغيير والتمويل"
+     },
+     {
+      "en": "Approved method with tailoring guidance",
+      "ar": "منهجية معتمدة مع إرشادات تكييف"
+     },
+     {
+      "en": "Change control procedure and tolerances",
+      "ar": "إجراء ضبط التغيير وحدود التحمّل"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "Data, tools & reporting",
+     "ar": "البيانات والأدوات والتقارير"
+    },
+    "items": [
+     {
+      "en": "One authoritative portfolio register",
+      "ar": "سجل محفظة واحد ومعتمد"
+     },
+     {
+      "en": "Written, common RAG criteria",
+      "ar": "معايير RAG موحدة ومكتوبة"
+     },
+     {
+      "en": "Monthly executive dashboard with a fixed issue date",
+      "ar": "لوحة تنفيذية شهرية بتاريخ إصدار ثابت"
+     },
+     {
+      "en": "Common risk & issue log linked to the ISO 31000 method",
+      "ar": "سجل مخاطر وقضايا موحد مرتبط بمنهجية ISO 31000"
+     },
+     {
+      "en": "Controlled repository and retention rules",
+      "ar": "مستودع وثائق مضبوط وقواعد احتفاظ"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "People & culture",
+     "ar": "الأفراد والثقافة"
+    },
+    "items": [
+     {
+      "en": "Role descriptions and competence framework",
+      "ar": "أوصاف أدوار وإطار كفاءات"
+     },
+     {
+      "en": "Training curriculum for PMs and sponsors",
+      "ar": "منهج تدريبي لمديري المشاريع والرعاة"
+     },
+     {
+      "en": "Project management community of practice",
+      "ar": "مجتمع ممارسة لإدارة المشاريع"
+     },
+     {
+      "en": "Lessons-learned review at G0",
+      "ar": "مراجعة الدروس المستفادة عند G0"
+     },
+     {
+      "en": "Honest reporting culture (no punishment for red)",
+      "ar": "ثقافة إبلاغ صادقة (لا عقاب على الأحمر)"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "Assessment integrity (three scores)",
+     "ar": "نزاهة التقييم (الدرجات الثلاث)"
+    },
+    "items": [
+     {
+      "en": "Assessment scope and the models in scope (portfolio/programme/project) defined",
+      "ar": "نطاق التقييم والنماذج المشمولة (محفظة/برنامج/مشروع) محددان"
+     },
+     {
+      "en": "Evidence sampled for every question (documents, records, systems)",
+      "ar": "أدلة مُعاينة لكل سؤال (وثائق، سجلات، أنظمة)"
+     },
+     {
+      "en": "Interviews with sponsors, PMs and finance",
+      "ar": "مقابلات مع الرعاة ومديري المشاريع والمالية"
+     },
+     {
+      "en": "Assessor independent of the PMO being assessed",
+      "ar": "المقيّم مستقل عن المكتب الذي يُقيَّم"
+     },
+     {
+      "en": "Calibration workshop to validate final scores",
+      "ar": "ورشة معايرة لاعتماد الدرجات النهائية"
+     }
+    ]
+   }
+  ],
+  "references": [
+   {
+    "code": "P3M3®‎ v3",
+    "kind": "",
+    "title": {
+     "en": "Portfolio, Programme and Project Management Maturity Model",
+     "ar": "نموذج نضج إدارة المحافظ والبرامج والمشاريع"
+    },
+    "status": {
+     "en": "AXELOS — Overview July 2021",
+     "ar": "AXELOS — نظرة عامة يوليو 2021"
+    },
+    "note": {
+     "en": "Three models, seven perspectives, five levels and shared threads. Formal assessment is through accredited assessors and gives a maturity level, not a certificate.",
+     "ar": "ثلاثة نماذج وسبعة منظورات وخمسة مستويات ومحاور مشتركة. التقييم الرسمي عبر مقيّمين معتمدين، ونتيجته مستوى نضج لا شهادة."
+    }
+   },
+   {
+    "code": "P3M3®‎ · PfM3 / PgM3 / PjM3",
+    "kind": "",
+    "title": {
+     "en": "The three models",
+     "ar": "النماذج الثلاثة"
+    },
+    "status": {
+     "en": "Assessed together or separately",
+     "ar": "تُقيَّم معاً أو كلٌّ على حدة"
+    },
+    "note": {
+     "en": "An overall maturity rating needs all three models to be assessed.",
+     "ar": "لا يُعطى تصنيف نضج شامل للمنشأة إلا بعد تقييم النماذج الثلاثة."
+    }
+   },
+   {
+    "code": "P3M3®‎ · Self / Full",
+    "kind": "",
+    "title": {
+     "en": "Assessment options",
+     "ar": "خيارات التقييم"
+    },
+    "status": {
+     "en": "Self or independent",
+     "ar": "ذاتي أو مستقل"
+    },
+    "note": {
+     "en": "A self-assessment builds awareness and shows general weaknesses; a full assessment is run by an accredited consultant with detailed criteria per perspective and level.",
+     "ar": "التقييم الذاتي يرفع الوعي ويكشف نقاط الضعف العامة، والتقييم الكامل يجريه مستشار معتمد بمعايير تفصيلية لكل منظور ومستوى."
+    }
+   },
+   {
+    "code": "ISO 31000:2018",
+    "kind": "",
+    "title": {
+     "en": "Risk management — Guidelines",
+     "ar": "إدارة المخاطر — إرشادات"
+    },
+    "status": {
+     "en": "Current",
+     "ar": "سارية"
+    },
+    "note": {
+     "en": "Enterprise risk method; linked to the academy's Risk Studio and the risk perspective here.",
+     "ar": "منهجية المخاطر المؤسسية؛ مرتبطة باستوديو المخاطر في الأكاديمية ومنظور إدارة المخاطر هنا."
+    }
+   }
+  ],
+  "models": [
+   {
+    "key": "pf",
+    "name": {
+     "en": "Portfolio management model",
+     "ar": "نموذج إدارة المحافظ"
+    },
+    "short": {
+     "en": "Portfolio",
+     "ar": "المحفظة"
+    },
+    "text": {
+     "en": "How the organization selects, balances and monitors its change investments against strategy.",
+     "ar": "كيف تختار المنشأة استثماراتها في التغيير وتوازنها وتراقب قيمتها مقابل الاستراتيجية."
+    },
+    "when": null
+   },
+   {
+    "key": "pg",
+    "name": {
+     "en": "Programme management model",
+     "ar": "نموذج إدارة البرامج"
+    },
+    "short": {
+     "en": "Programme",
+     "ar": "البرنامج"
+    },
+    "text": {
+     "en": "How the organization coordinates related projects to deliver outcomes and benefits not achievable separately.",
+     "ar": "كيف تنسّق المنشأة مشاريع مترابطة لتحقيق نتائج ومنافع لا تتحقق بإدارتها منفردة."
+    },
+    "when": null
+   },
+   {
+    "key": "pj",
+    "name": {
+     "en": "Project management model",
+     "ar": "نموذج إدارة المشاريع"
+    },
+    "short": {
+     "en": "Project",
+     "ar": "المشروع"
+    },
+    "text": {
+     "en": "How the organization delivers its projects to agreed time, cost and quality.",
+     "ar": "كيف تسلّم المنشأة مشاريعها ضمن الوقت والتكلفة والجودة المتفق عليها."
+    },
+    "when": null
+   }
+  ],
+  "roles": [
+   {
+    "name": {
+     "en": "Commissioner",
+     "ar": "مفوِّض"
+    },
+    "text": {
+     "en": "Buys delivery from suppliers. Focus on governance, management control and resource management at suppliers.",
+     "ar": "يسند التنفيذ لموردين عبر المشتريات. ركّز على الحوكمة والرقابة الإدارية وإدارة الموارد لدى الموردين."
+    }
+   },
+   {
+    "name": {
+     "en": "Deliverer",
+     "ar": "منفِّذ"
+    },
+    "text": {
+     "en": "Supplies project management and deliverables to a client or other parts of the organization. Focus on management control and stakeholder communication.",
+     "ar": "يقدم إدارة المشاريع وتسليماتها لعميل أو لأجزاء أخرى من المنشأة. ركّز على الرقابة الإدارية والتواصل مع أصحاب المصلحة."
+    }
+   },
+   {
+    "name": {
+     "en": "Commissioner and deliverer",
+     "ar": "مفوِّض ومنفِّذ"
+    },
+    "text": {
+     "en": "Delivers itself and uses suppliers when needed, so every perspective applies.",
+     "ar": "ينفذ بنفسه ويستعين بموردين عند الحاجة، فكل المنظورات تنطبق عليه."
+    }
+   }
+  ],
+  "competencies": [
+   "PMO-02",
+   "OE-01",
+   "GOV-01"
+  ],
+  "ecosystem": "pmo"
+ }
+}

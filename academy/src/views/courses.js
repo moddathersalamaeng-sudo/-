@@ -20,6 +20,7 @@ import { L, srHeading, notAvailable, pageHead, govBadge, previewBanner, linkBtn,
 import { lessonGuideRefs, findItem } from '../domain/guides.mjs';
 import { guideItemBody, guideApply, guideRefsPanel, guideHref } from './guides.js';
 import { LevelMeter } from '../ui/charts.js';
+import { studyWeeks } from '../domain/pmi.mjs';
 
 const STATUS_KEY = { 'CIA INTERNAL COURSE': 'cia_internal', 'EXAM PREPARATION COURSE': 'exam_prep', 'EXTERNAL ACCREDITATION PENDING': 'accreditation_pending', 'EXTERNALLY ACCREDITED': 'externally_accredited', 'OFFICIAL PARTNER COURSE': 'official_partner' };
 export const courseStatusLabel = (ctx, c) => {
@@ -30,6 +31,53 @@ const stateBadge = (ctx, st) => Badge({ label: ctx.t('p7.course.state.' + st.sta
 const lessonKey = (course, lesson) => lesson.id.startsWith(course.id + '-') ? lesson.id.slice(course.id.length + 1) : lesson.id;
 const lessonHref = (course, lesson) => `#/academy/courses/${course.slug}/${encodeURIComponent(lessonKey(course, lesson))}`;
 const langName = (ctx, l) => ctx.t('pf.lng' + l[0].toUpperCase() + l.slice(1));
+/** A course-page section whose heading carries an icon (Phase 8). */
+const isec = (id, iconName, title, ...kids) => h('section', { class: 'section', 'aria-labelledby': id }, h('h2', { id }, icon(iconName), ' ', title), ...kids);
+
+/** "At a glance": the course in eight facts with icons. */
+function glance(ctx, c, lessons) {
+  const { t, i18n } = ctx;
+  const n = (k, v) => h('li', null, icon(k), h('strong', null, v[0]), h('span', null, v[1]));
+  const asm = ['quiz', 'final', 'practical'].filter(k => c.assessments?.[k]).length;
+  return h('ul', { class: 'glance', 'aria-label': t('p8.course.glance') },
+    n('gauge', [t('p7.level', { n: i18n.digitize(c.level) }), t('p8.course.levelName.' + Math.min(5, Math.max(1, c.level || 1)))]),
+    n('clock', [hours(ctx, c.training_hours), c.duration_days ? t('p7.days', { n: i18n.number(c.duration_days) }) : '']),
+    n('layers', [i18n.number((c.modules || []).length), t('p8.course.modules')]),
+    n('book', [i18n.number(lessons.length), t('p8.course.lessons')]),
+    n('question', [i18n.number(asm), t('p8.course.assessmentsN')]),
+    c.practical_task ? n('clipboard', [t('p8.course.practicalYes'), t('p7.course.humanReview')]) : null,
+    n('globe', [(c.languages || []).map(l => langName(ctx, l)).join(' · '), t('p7.course.languages')]),
+    n('award', [t('labels.certificateType.' + c.certificate_type), t('p7.course.notClaimed')]));
+}
+
+/** "How to study this course": the method, and a personal weekly plan at the learner's weekly hours (profile). */
+function studyPanel(ctx, c, learner) {
+  const { t, i18n } = ctx;
+  const weekly = Number(learner.profile?.weekly_hours) || 4;
+  const weeks = studyWeeks(c, weekly);
+  const steps = ['prep', 'read', 'apply', 'check', 'tool', 'final'];
+  const ICON = { prep: 'target', read: 'book', apply: 'bulb', check: 'question', tool: 'grid', final: 'award' };
+  return isec('c-study', 'route', t('p8.course.studyTitle'),
+    h('ol', { class: 'howto-steps' }, steps.map(k => h('li', null, icon(ICON[k]), ' ', h('strong', null, t('p8.course.study.' + k + '.t')), ' — ', t('p8.course.study.' + k + '.d' + (c.guide && k === 'read' ? 'Guide' : ''))))),
+    h('details', { class: 'panel weekplan', dataset: { weeks: String(weeks.length) } },
+      h('summary', null, icon('calendar'), ' ', t('p8.course.weekPlan', { weeks: i18n.number(weeks.length), hours: i18n.number(weekly) })),
+      h('p', { class: 'note' }, learner.profile?.weekly_hours ? t('p8.course.weekPlanFromProfile') : t('p8.course.weekPlanDefault'), ' ', h('a', { href: '#/profile' }, t('p8.course.changeHours'))),
+      h('ol', { class: 'weeks' }, weeks.map(w => h('li', null, h('strong', null, t('p8.course.week', { n: i18n.number(w.week) })), ' · ', minutes(ctx, w.minutes), ' — ',
+        w.items.map((x, j) => [j ? ' · ' : '', x.id === 'final' ? t('p8.course.finalAndPractical') : L(ctx, x.title)]))))));
+}
+
+/** Certifications this course supports (from the explorer) and the guides it draws on. */
+function linkedPanel(ctx, c, content) {
+  const { t } = ctx;
+  const certs = (content.certifications || []).filter(x => x.id === c.related_certification || (x.cia_courses || []).includes(c.id));
+  const guides = (c.related_guides || []).map(slug => (content.guides || []).find(g => g.slug === slug)).filter(Boolean);
+  if (!certs.length && !guides.length) return null;
+  return isec('c-links', 'link', t('p8.course.linked'),
+    certs.length ? h('div', null, h('h3', null, icon('award'), ' ', t('p8.course.certs')), h('p', { class: 'note' }, t(c.status_label === 'EXAM PREPARATION COURSE' ? 'p8.course.certsNotePrep' : 'p8.course.certsNote')),
+      h('ul', { class: 'chips' }, certs.map(x => h('li', null, h('a', { href: `#/academy/pmi/certifications/${x.slug}` }, x.code, ' ', L(ctx, x.name)))))) : null,
+    guides.length ? h('div', null, h('h3', null, icon('ladder'), ' ', t('p8.course.guides')), h('p', { class: 'note' }, t('p8.course.guidesNote')),
+      h('ul', { class: 'chips' }, guides.map(g => h('li', null, h('a', { href: guideHref(g.slug) }, L(ctx, g.title)))))) : null);
+}
 
 /* ------------------------------------------------------------------ catalog */
 
@@ -51,7 +99,7 @@ export function courseCatalogView(ctx, match) {
   const region = dataRegion({ t, load: () => loadAll(ctx), render: ({ content, learner }) => {
     if (!content.courses.length) return EmptyState({ title: t('courses.empty'), body: t('p7.course.pendingBody'), iconName: 'lock', action: linkBtn('#/knowledge', t('knowledge.title')) });
     const standards = [...new Set(content.courses.flatMap(c => c.standard_ids || []))].map(id => content.standards.find(s => s.id === id) || { id, name: id });
-    const routes = content.paths.filter(p => p.kind === 'iso_route');
+    const routes = content.paths.filter(p => p.kind === 'iso_route' || p.kind === 'pm_route');
     const levels = [...new Set(content.courses.map(c => c.level))].sort();
     const deliveries = [...new Set(content.courses.flatMap(c => c.delivery_modes || []))];
     const list = h('div', { class: 'cards', id: 'course-list' });
@@ -246,30 +294,33 @@ function courseDetail(ctx, c, content, learner, region, guides = {}) {
   return h('article', { class: 'course', dataset: { course: c.id } },
     previewBanner(ctx, [c]),
     head,
+    glance(ctx, c, lessons),
     h('div', { class: 'split' }, progressPanel, h('section', { class: 'panel', 'aria-label': t('p7.course.summary') }, summary)),
-    c.why_it_matters ? section('c-why', t('p7.course.why'), h('p', null, L(ctx, c.why_it_matters)), c.professional_relevance ? h('p', { class: 'note' }, L(ctx, c.professional_relevance)) : null) : null,
-    section('c-aud', t('p7.course.audience'), chips((c.target_audience || []).map(a => L(ctx, a)))),
-    section('c-pre', t('p7.course.prerequisites'), prereqList(ctx, c, content, learner.completed)),
-    section('c-out', t('p7.course.outcomes'), h('ol', null, (c.learning_outcomes || []).map(o => h('li', null, L(ctx, o))))),
-    comps.length ? section('c-comp', t('p7.course.competencies'), h('ul', { class: 'plain comps' }, comps)) : null,
-    section('c-cur', t('p7.course.curriculum'), curriculum),
-    section('c-day', t('p7.course.dayPlan'), h('p', { class: 'note' }, t('p7.course.dayPlanNote')), dayPlan(ctx, c)),
-    section('c-asm', t('p7.course.assessments'), c.assessment_methodology ? h('p', null, L(ctx, c.assessment_methodology)) : null, assessmentRows(ctx, c, content, learner),
+    c.why_it_matters ? isec('c-why', 'bulb', t('p7.course.why'), h('p', null, L(ctx, c.why_it_matters)), c.professional_relevance ? h('p', { class: 'note' }, L(ctx, c.professional_relevance)) : null) : null,
+    isec('c-aud', 'users', t('p7.course.audience'), chips((c.target_audience || []).map(a => L(ctx, a)))),
+    isec('c-pre', 'flag', t('p7.course.prerequisites'), prereqList(ctx, c, content, learner.completed)),
+    isec('c-out', 'target', t('p7.course.outcomes'), h('ol', null, (c.learning_outcomes || []).map(o => h('li', null, L(ctx, o))))),
+    comps.length ? isec('c-comp', 'gauge', t('p7.course.competencies'), h('ul', { class: 'plain comps' }, comps)) : null,
+    studyPanel(ctx, c, learner),
+    linkedPanel(ctx, c, content),
+    isec('c-cur', 'layers', t('p7.course.curriculum'), curriculum),
+    isec('c-day', 'calendar', t('p7.course.dayPlan'), h('p', { class: 'note' }, t('p7.course.dayPlanNote')), dayPlan(ctx, c)),
+    isec('c-asm', 'question', t('p7.course.assessments'), c.assessment_methodology ? h('p', null, L(ctx, c.assessment_methodology)) : null, assessmentRows(ctx, c, content, learner),
       c.passing_criteria ? h('p', { class: 'note' }, L(ctx, c.passing_criteria)) : null),
-    c.practical_task ? section('c-pt', t('p7.course.practical'),
+    c.practical_task ? isec('c-pt', 'clipboard', t('p7.course.practical'),
       h('p', null, L(ctx, c.practical_task.brief)),
       facts([[t('p7.course.deliverable'), L(ctx, c.practical_task.deliverable)], [t('p7.course.time'), minutes(ctx, c.practical_task.minutes)], [t('p7.course.reviewedBy'), t('p7.course.humanReview')]]),
       c.practical_task.rubric?.length ? rubricTable(ctx, c.practical_task.rubric, t('p7.course.rubric')) : null) : null,
-    section('c-res', t('p7.course.resources'),
+    isec('c-res', 'book', t('p7.course.resources'),
       h('div', { class: 'split' },
         h('div', null, h('h3', null, t('p7.course.knowledge')), articles.length ? h('ul', { class: 'plain' }, articles.map(a => h('li', null, h('a', { href: `#/knowledge/${a.ecosystem}/${a.slug}` }, L(ctx, a.title))))) : h('p', { class: 'note' }, t('p7.none'))),
         h('div', null, h('h3', null, t('p7.course.tools')), tools.length ? h('ul', { class: 'tools-mini' }, tools.map(m => h('li', null, toolLink(ctx, m)))) : h('p', { class: 'note' }, t('p7.none')),
           sims.length ? h('ul', { class: 'plain' }, sims.map(x => h('li', null, h('a', { href: `#/library/${x.id}` }, L(ctx, x.title))))) : null,
           templates.length ? h('ul', { class: 'plain' }, templates.map(x => h('li', null, h('a', { href: `#/library/${x.id}` }, L(ctx, x.title))))) : null))),
     guideCoverage(ctx, c, content, guides),
-    section('c-src', t('p7.sources.title'), sourceList(ctx, c.source_references, content), h('p', { class: 'note' }, t('p7.sources.noCopy'))),
-    nextCourse ? section('c-next', t('p7.course.next'), courseCard(ctx, nextCourse, learner)) : null,
-    section('c-team', t('gd.requestTitle'), h('p', null, t('gd.requestBody')),
+    isec('c-src', 'doc', t('p7.sources.title'), sourceList(ctx, c.source_references, content), h('p', { class: 'note' }, t('p7.sources.noCopy'))),
+    nextCourse ? isec('c-next', 'chevron', t('p7.course.next'), courseCard(ctx, nextCourse, learner)) : null,
+    isec('c-team', 'users', t('gd.requestTitle'), h('p', null, t('gd.requestBody')),
       h('a', { class: 'btn btn-secondary', href: platformHref(ctx, '../#request'), 'aria-describedby': 'ext-note', 'data-action': 'request-course' }, t('gd.requestCta'), ' ', icon('external'))),
     isReviewer(ctx) ? governanceFooter(ctx, c) : null);
 }

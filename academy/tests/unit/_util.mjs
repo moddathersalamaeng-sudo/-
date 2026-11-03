@@ -29,8 +29,27 @@ export class MockStorage {
  * and a change note that it is not an independent expert review. Future-phase records stay drafts.
  */
 export const OWNER = 'مدثر سلامه';
-export const FUTURE_DRAFTS = new Set(['CRS-QMS-201', 'CRS-PM-101', 'CRS-EFQM-101', 'CRS-P3O-101', 'Q-QMS-001', 'Q-PM-001', 'Q-RISK-001', 'Q-PMO-001',
+export const FUTURE_DRAFTS = new Set(['CRS-QMS-201', 'CRS-EFQM-101', 'Q-QMS-001', 'Q-PM-001', 'Q-RISK-001', 'Q-PMO-001',
   'Q-EFQM-001', 'Q-GOV-001', 'Q-AI-001', 'ASM-DIAG-001', 'ASM-QUIZ-001', 'ASM-SCEN-001', 'ASM-PRACT-001', 'PRG-CIA-FOUNDATIONS']);
+/*
+ * Phase 8 (PMI / PMO / P3O): records are drafts (needs_review, no reviewer) until a person approves them through
+ * tools/apply_review_decisions.py — then they must carry the full approval record. CRS-PM-101 and CRS-P3O-101 left the
+ * future-draft set: they are Phase 8 courses now.
+ */
+export const PHASE8_ID = /^(CRS-(P|PM|PMO|PFM|P3O|PMP)-|Q-(P|PM|PMO|PFM|P3O|PMP|AGL)-|ASM-(P|PM|PMO|PFM|P3O|PMP)-|ASM-READY-PM-|CERT-|ROUTE-(PM-FOUND|PMP|PMO|PORTFOLIO|AGILE)$|ROLE-PM$|SRC-PMI-|SRC-CIA-PM$)/;
+export const isPhase8 = r => PHASE8_ID.test(r.id) && !FUTURE_DRAFTS.has(r.id);
+export function governedPhase8(assert, r, draftedBy) {
+  const g = r.governance;
+  if (g.content_status === 'published') { ownerOrExpertApproved(assert, r, draftedBy); return; }
+  assert.equal(g.content_status, 'needs_review', r.id);
+  assert.equal(g.reviewer, null, r.id);
+  if (draftedBy) assert.ok([].concat(draftedBy).includes(g.content_source), `${r.id}: source ${g.content_source}`);
+}
+export function ownerOrExpertApproved(assert, r, draftedBy) {
+  const g = r.governance;
+  if (g.approval_basis === 'expert_review') { assert.equal(g.content_status, 'published', r.id); assert.ok(g.reviewer, r.id); assert.match(g.approved_hash || '', /^[0-9a-f]{64}$/, r.id); return; }
+  ownerApproved(assert, r, draftedBy);
+}
 export function ownerApproved(assert, r, draftedBy) {
   const g = r.governance;
   assert.equal(g.content_status, 'published', r.id);

@@ -3,7 +3,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { createCompetencyCore, emptyProfile, SCHEMA_VERSION } from "../../src/domain/competency-core.mjs";
-import { ownerApproved } from "./_util.mjs";
+import { ownerApproved, isPhase8, governedPhase8 } from "./_util.mjs";
 const J = f => JSON.parse(readFileSync(new URL("../../data/seed/competency/" + f, import.meta.url)));
 const levels = J("levels.json").items, domains = J("domains.json").items, competencies = J("competencies.json").items,
       roles = J("target-roles.json").items, evidence = J("evidence-types.json"),
@@ -87,8 +87,8 @@ test("content: bilingual, 5 descriptors, ≥2 sub-competencies with valid dimens
     for(const s of c.sub_competencies) assert.ok(["K","S","A","E"].includes(s.primary_dimension), s.id);
   }
 });
-test("roles: 4–6 roles with full 0–5 target vectors", () => {
-  assert.ok(roles.length >= 4 && roles.length <= 6);
+test("roles: 4–7 roles with full 0–5 target vectors (Phase 8 adds Project Manager)", () => {
+  assert.ok(roles.length >= 4 && roles.length <= 7);
   for(const r of roles){ assert.equal(Object.keys(r.targets).length, competencies.length, r.id);
     for(const v of Object.values(r.targets)) assert.ok(Number.isInteger(v) && v >= 0 && v <= 5, r.id); }
 });
@@ -104,7 +104,7 @@ test("relationships (ADD-17): typed, resolvable", () => {
   }
 });
 test("governance: the framework is published only on the owner's recorded approval (drafted by AI)", () => {
-  for(const r of [...competencies, ...roles, ...domains]) ownerApproved(assert, r, "ai_draft");
+  for(const r of [...competencies, ...roles, ...domains]) isPhase8(r) ? governedPhase8(assert, r, "ai_draft") : ownerApproved(assert, r, "ai_draft");
   assert.equal(competencies.filter(c => core.isPublished(c, {})).length, competencies.length);
 });
 test("governance: gate downgrades incomplete approvals", () => {

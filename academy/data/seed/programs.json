@@ -16,27 +16,25 @@
       "stages": [
         {
           "order": 1,
-          "course_id": "CRS-ISO-101",
-          "mandatory": true
+          "course_id": "CRS-ISO-101"
         },
         {
           "order": 2,
-          "course_id": "CRS-QMS-201",
-          "mandatory": true
+          "course_id": "CRS-PM-101"
         },
         {
           "order": 3,
-          "course_id": "CRS-PM-101",
-          "mandatory": false
+          "course_id": "CRS-ISO-RISK"
         }
       ],
       "version": "1.0",
       "governance": {
         "content_status": "needs_review",
         "content_source": "ai_draft",
-        "version": "1.0",
+        "version": "0.9.0",
         "reviewer": null,
-        "review_date": null
+        "review_date": null,
+        "change_note": "Phase 8 decision: restaged to ISO foundations → Project Management Foundations → Risk-based thinking (CRS-QMS-201 waits for Phase 9). Draft until reviewed."
       }
     }
   ]

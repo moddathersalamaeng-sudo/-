@@ -10,6 +10,8 @@
  * guide stays the single source of truth. Pure functions only (no DOM, no fetch).
  */
 
+export const GUIDE_KINDS = ['standard', 'method', 'practice'];
+
 /** All items of a guide in reading order, each with its section. */
 export function guideItems(guide) {
   return (guide?.clauses || []).flatMap(c => (c.items || []).map(i => ({ ...i, section: c })));
@@ -32,16 +34,17 @@ export function searchItems(guide, q = '') {
   const qq = n(q).trim();
   const all = guideItems(guide);
   if (!qq) return all;
-  return all.filter(i => n([i.ref, i.title?.en, i.title?.ar, i.req?.en, i.req?.ar, i.ex?.en, i.ex?.ar].join(' ')).includes(qq));
+  return all.filter(i => n([i.ref, i.title?.en, i.title?.ar, i.req?.en, i.req?.ar, i.ex?.en, i.ex?.ar, i.clause, ...(i.how || []).flatMap(x => [x.en, x.ar])].join(' ')).includes(qq));
 }
 
 /** Which tabs a guide can show (only those with data). */
 export function guideTabs(guide) {
   const tabs = ['items'];
   if (guide?.kind === 'method' && guide.steps?.length) tabs.unshift('steps');
-  for (const [k, ok] of [['changes', guide?.changes?.length], ['threads', guide?.threads?.length], ['terms', guide?.terms?.length], ['pairs', guide?.pairs?.length],
-    ['scale', guide?.scale?.length], ['roles', guide?.roles?.length], ['related', guide?.related?.length || guide?.serves?.length], ['faq', guide?.faq?.length],
-    ['templates', guide?.templates?.length], ['timeline', guide?.timeline?.length], ['official', guide?.official?.length]]) if (ok) tabs.push(k);
+  for (const [k, ok] of [['changes', guide?.changes?.length], ['threads', guide?.threads?.length], ['models', guide?.models?.length], ['terms', guide?.terms?.length], ['pairs', guide?.pairs?.length],
+    ['scale', guide?.scale?.length], ['roles', guide?.roles?.length], ['related', guide?.related?.length || guide?.serves?.length], ['levers', guide?.levers?.length || guide?.pitfalls?.length],
+    ['checklist', guide?.checklist?.length], ['faq', guide?.faq?.length], ['templates', guide?.templates?.length], ['timeline', guide?.timeline?.length],
+    ['references', guide?.references?.length], ['official', guide?.official?.length]]) if (ok) tabs.push(k);
   return tabs;
 }
 
@@ -70,13 +73,15 @@ export function itemTeachable(item, kind) {
   const bi = v => v && typeof v.en === 'string' && v.en.trim() && typeof v.ar === 'string' && v.ar.trim();
   if (!item || !bi(item.title) || !bi(item.req) || !item.how?.length || !item.how.every(bi)) return false;
   if (kind === 'method') return (item.gaps?.length > 0 || item.tips?.length > 0) && [...(item.gaps || []), ...(item.tips || [])].every(bi);
+  if (kind === 'practice') return (item.ev?.length > 0 || item.questions?.length > 0) && (item.ev || []).every(bi)
+    && (item.questions || []).every(q => bi(q.q) && q.levels?.length > 0 && q.levels.every(l => Number.isInteger(l.level) && bi(l.text)));
   return item.ev?.length > 0 && item.ev.every(bi);
 }
 
 /** Validates a guide file; returns problems (empty = valid). */
 export function validateGuide(guide) {
   const e = [];
-  if (!guide?.id || !guide.slug || !['standard', 'method'].includes(guide.kind)) e.push('missing_identity');
+  if (!guide?.id || !guide.slug || !GUIDE_KINDS.includes(guide.kind)) e.push('missing_identity');
   if (!guide?.title?.en || !guide?.title?.ar) e.push('missing_title');
   const items = guideItems(guide);
   if (!items.length) e.push('no_items');
@@ -89,5 +94,22 @@ export function validateGuide(guide) {
     if (!itemTeachable(i, guide.kind)) e.push('incomplete_item:' + i.ref);
   }
   for (const i of items) for (const l of [...(i.links?.out || []), ...(i.links?.in || [])]) if (!refs.has(l.ref)) e.push(`dangling_link:${i.ref}->${l.ref}`);
+  for (const t of guide?.templates || []) if ((t.fields || []).some(f => !f?.label?.en || !f?.label?.ar)) e.push('template_field_label:' + t.id);
   return e;
+}
+
+/**
+ * Cross-guide links (PMO Excellence items point at the P3M3, ISO 21500 and P3O items they integrate).
+ * `known` maps guide slug → Set of refs; returns the links that do not resolve.
+ */
+export function danglingCrossLinks(guide, known = {}) {
+  const out = [];
+  for (const i of guideItems(guide)) for (const x of i.cross || []) if (!known[x.guide]?.has(x.ref)) out.push(`${i.ref}->${x.guide}#${x.ref}`);
+  return out;
+}
+
+/** Position of a rung in an evidence ladder: 'lowest' | 'middle' | 'highest' (the ladder runs from first to last). */
+export function ladderRung(index, length) {
+  if (length <= 1) return 'highest';
+  return index === 0 ? 'lowest' : index === length - 1 ? 'highest' : 'middle';
 }

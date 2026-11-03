@@ -34,7 +34,7 @@
       "knowledge": "Knowledge Hub",
       "library": "Professional Library",
       "academy": "Courses",
-      "certification": "Certification Center",
+      "certification": "Certification Explorer",
       "assessments": "Assessments",
       "labs": "Practice Labs",
       "tools": "Tools & Templates",
@@ -54,7 +54,8 @@
       "learningPath": "Learning Path",
       "isoAcademy": "ISO Academy",
       "review": "Expert review",
-      "guides": "Guides"
+      "guides": "Guides",
+      "pmiAcademy": "PMI / PMO Academy"
     },
     "phase": "Phase {phase}",
     "backToHub": "Back to the platform hub",
@@ -1297,7 +1298,12 @@
       "faq": "Questions",
       "templates": "Templates",
       "timeline": "Transition timeline",
-      "official": "Official sources"
+      "official": "Official sources",
+      "itemsPractice": "Practices",
+      "models": "Office models",
+      "levers": "Levers & pitfalls",
+      "checklist": "Before you assess",
+      "references": "Standards & references"
     },
     "search": "Search this guide",
     "searchCount": "{n} matching items",
@@ -1327,7 +1333,11 @@
       "level": "Level",
       "meaning": "What it means",
       "look": "What it looks like",
-      "evidence": "Evidence"
+      "evidence": "Evidence",
+      "code": "Reference",
+      "title": "Title",
+      "status": "Status",
+      "note": "Note"
     },
     "item": {
       "req": "What it asks",
@@ -1344,7 +1354,21 @@
       "owner": "Owner",
       "kpi": "Indicator",
       "clause": "Requirement served",
-      "tips": "Points to watch"
+      "tips": "Points to watch",
+      "reqPractice": "What good practice looks like",
+      "actions": "Actions that lift it one rung",
+      "ladder": "Evidence ladder",
+      "ladderNote": "Read from the first rung to the last: find the highest rung you can prove with records today. That is your starting point.",
+      "questions": "Maturity questions",
+      "questionsNote": "For each question, the level descriptions run from 2 to 5. Your level is the highest one every part of which you can evidence.",
+      "roadmap": "Roadmap activities",
+      "topics": "Topics covered:",
+      "clauseRef": "Reference in the source",
+      "cross": "The same practice in the other guides",
+      "crossNote": "This practice integrates items from the P3M3, ISO 21500 and P3O guides. Open them to see each lens.",
+      "deps": "Depends on and enables",
+      "dependsOn": "Depends on:",
+      "enables": "Enables:"
     },
     "position": "No. {n} of {total}",
     "prev": "Previous item",
@@ -1364,7 +1388,11 @@
       "modelStd": "A complete answer names an owner, points to these records and lists what is missing with an action:",
       "modelMethod": "Check your answer against the common gaps:",
       "checkTitle": "Check your answer",
-      "modelTips": "Check your answer against the guide's advice:"
+      "modelTips": "Check your answer against the guide's advice:",
+      "practice": "Place your organisation on the evidence ladder of “{title}”: which rung can you prove today, with which records, and which action would lift it one rung?",
+      "maturity": "Answer the maturity questions of “{title}” for one portfolio, programme or project you know: which level can you evidence for each, and what is the weakest?",
+      "modelPractice": "A complete answer names the rung, the records that prove it and one action with an owner. The ladder, lowest to highest:",
+      "modelMaturity": "A complete answer gives a level per question with its evidence, and plans one roadmap activity for the weakest. The activities:"
     },
     "coverage": "Requirements this course covers",
     "coverageNote": "Each lesson links to the matching item in the requirement guides, so you can read the plain-words explanation and the evidence an auditor expects.",
@@ -1384,6 +1412,293 @@
     "openGame": "Open the game",
     "libOwner": "Published by the platform owner on the hub. The Academy links to it and does not change it.",
     "honesty": "Guides help you understand and apply requirements. Reading them is not a certification, and they do not replace the official standard.",
-    "sourceNote": "Source: the platform owner's published toolkit (version {version}). The Academy explains requirements in its own words and does not reproduce standard text."
+    "sourceNote": "Source: the platform owner's published toolkit (version {version}). The Academy explains requirements in its own words and does not reproduce standard text.",
+    "practices": "Project, programme, portfolio and PMO guides",
+    "practicesNote": "Practice-by-practice explanations from the platform's PMO toolkits: what each practice means, how evidence matures rung by rung, the actions that lift it, and who owns it.",
+    "countsPractice": "{sections} areas · {items} practices",
+    "kindPractice": "Practice guide",
+    "whenFits": "When it fits:",
+    "modelsNote": "The models the toolkit compares. Pick the one that fits your size and spread, not the most elaborate.",
+    "levers": "What moves results most",
+    "pitfalls": "Pitfalls to avoid",
+    "checklistNote": "Check these before you start the assessment in the toolkit, so the scores rest on agreed scope and evidence.",
+    "referencesNote": "The publications behind this guide, with their status as recorded by the owner. Check the publisher's page before relying on an edition.",
+    "scaleNotePractice": "The scale the toolkit uses to score each practice. A score describes evidence you can show, not intentions.",
+    "tplNotePractice": "Templates the toolkit generates, each with a worked example from a Saudi organisation. Open the toolkit to fill them in.",
+    "tplExample": "See the worked example ({n} fields)",
+    "rung": {
+      "lowest": "Starting",
+      "middle": "Defined",
+      "highest": "Managed"
+    },
+    "levelN": "Level {n}",
+    "howto": {
+      "title": "How to read this page",
+      "rule": "Reading a guide builds understanding; it is not a certification. Prove each point with your organisation's own records.",
+      "kind": {
+        "standard": "Requirement guides (ISO standards)",
+        "practice": "Practice guides (projects, portfolios, PMOs)",
+        "method": "Method guides (tools and techniques)"
+      },
+      "intro": {
+        "standard": "Each page explains one clause in plain words. Read it in this order, then look for the same thing in your own organisation.",
+        "practice": "Each page explains one practice and how its evidence matures. Read it in this order to find where you stand and what to do next.",
+        "method": "Each page explains one step of a method. Read it in this order, then try it on a real case in the toolkit."
+      },
+      "step": {
+        "standard": {
+          "req": {
+            "t": "What it asks",
+            "d": "the intent of the clause in plain words. Ask: what result must exist, and who decides?"
+          },
+          "ex": {
+            "t": "Worked example",
+            "d": "the requirement applied in a real setting, so you can recognise it at work."
+          },
+          "how": {
+            "t": "How to apply it",
+            "d": "the steps to put it in place, in the order you would do them."
+          },
+          "ev": {
+            "t": "Evidence to show",
+            "d": "the records an auditor expects. If you cannot show it, it is not yet in place."
+          },
+          "checks": {
+            "t": "Auditor questions",
+            "d": "rehearse your answers with facts and records, not intentions."
+          },
+          "links": {
+            "t": "Connected requirements",
+            "d": "follow the links: no clause works alone."
+          }
+        },
+        "practice": {
+          "req": {
+            "t": "What good practice looks like",
+            "d": "the statement the practice is scored against, with its reference in the source."
+          },
+          "ladder": {
+            "t": "Evidence ladder",
+            "d": "three rungs from starting to managed. Your rung is the highest one you can prove today."
+          },
+          "how": {
+            "t": "Actions",
+            "d": "the moves that lift the practice one rung — choose one, do not start them all."
+          },
+          "owner": {
+            "t": "Owner and KPI",
+            "d": "who should own the improvement and how you will know it worked."
+          },
+          "links": {
+            "t": "Dependencies and other lenses",
+            "d": "fix what a practice depends on first; open the same practice in the other guides."
+          },
+          "tool": {
+            "t": "Use the tool",
+            "d": "score the practice in the toolkit with your evidence and get the improvement roadmap."
+          }
+        },
+        "method": {
+          "req": {
+            "t": "What to do",
+            "d": "the purpose of the step and its expected output."
+          },
+          "how": {
+            "t": "How to apply it",
+            "d": "the actions, in order."
+          },
+          "ev": {
+            "t": "Evidence",
+            "d": "what shows the step was done properly."
+          },
+          "gaps": {
+            "t": "Common gaps",
+            "d": "the mistakes that make the method fail — check your own work against them."
+          },
+          "tool": {
+            "t": "Use the tool",
+            "d": "complete a real record in the toolkit."
+          }
+        }
+      }
+    }
+  },
+  "pmi": {
+    "eyebrow": "PMI · PMO · P3O Academy",
+    "title": "Project, programme, portfolio and PMO learning",
+    "lede": "Start from what you can already show, follow a route that skips what you have demonstrated, read every practice of the ISO 21500, P3O, P3M3 and PMO Excellence guides, and plan your PMI certification with facts checked on PMI's own pages.",
+    "statsLabel": "The academy in numbers",
+    "statCourses": "courses",
+    "statPractices": "practices explained",
+    "statCerts": "PMI certifications",
+    "statRoutes": "learning routes",
+    "takeReadiness": "Take the 20-minute readiness check",
+    "readFundamentals": "Read the project fundamentals",
+    "exploreCerts": "Explore PMI certifications",
+    "startEyebrow": "Your starting point",
+    "startPending": "The recommended step is still under review. Meanwhile, the published fundamentals are open to you.",
+    "factor": {
+      "pm_evidence": "Lowest assessed project foundation (PM-01 to PM-03): {value}%",
+      "pmo_evidence": "PMO design evidence (PMO-01): {value}%",
+      "foundation_completed": "You completed Project Management Foundations",
+      "target_role": "Target role: {value}",
+      "intent": "Your stated aim: {value}"
+    },
+    "intent": {
+      "pmo": "PMO work",
+      "portfolio": "portfolio and programme work",
+      "agile": "agile delivery",
+      "pmp": "PMP® certification"
+    },
+    "routes": "Learning routes",
+    "routesNote": "Each route skips a course when an assessment shows you have already mastered its competencies.",
+    "routesPending": "Routes are under review",
+    "routeCerts": "Supports:",
+    "certs": "PMI certifications",
+    "certsNote": "Eligibility, exam format, fees and renewal come only from PMI's pages, with the date they were checked. Where a fact could not be confirmed, the page sends you to PMI instead.",
+    "certsPending": "The certification explorer is under review",
+    "compareCerts": "Compare certifications",
+    "courses": "Courses",
+    "coursesNote": "Original CIA courses: four lessons each with worked examples, scenarios, an exercise with a model answer, a knowledge check, a final assessment and a human-reviewed practical task.",
+    "coursesPending": "Courses are under review",
+    "guidesNote": "Every practice explained with its evidence ladder, actions, owner and KPI — the same content as the hub's PMO toolkits.",
+    "learnBody": "Courses build understanding step by step, with checks and a practical task.",
+    "useBody": "The toolkits assess a real office, portfolio or project and produce the roadmap and templates (free account on the hub).",
+    "honesty": "CIA is not a PMI Authorized Training Partner and awards no PDUs. CIA courses are internal courses; the PMP® preparation course carries an exam-preparation label only. PMP®, CAPM®, PMI-ACP®, PMI-RMP®, PgMP®, PfMP®, PMI-PBA® and PMBOK® are marks of PMI; P3O® and P3M3® are marks of PeopleCert.",
+    "qShort": "{n} questions",
+    "pdusShort": "{n} PDUs / {y} years",
+    "checkPmi": "Check on PMI",
+    "stage": {
+      "entry": "Entry",
+      "practitioner": "Practitioner",
+      "specialist": "Specialist",
+      "senior": "Senior"
+    },
+    "area": {
+      "project": "Projects",
+      "agile": "Agile",
+      "risk": "Risk",
+      "pmo": "PMO",
+      "programme": "Programmes",
+      "portfolio": "Portfolios",
+      "analysis": "Business analysis"
+    },
+    "explorerTitle": "PMI certification explorer",
+    "explorerLede": "Eight PMI certifications: who each is for, what PMI requires, how the exam is built, and which CIA route and courses help you prepare.",
+    "explorerNote": "Facts checked on PMI's official pages on {date}. PMI can change requirements at any time — confirm on PMI's site before you apply.",
+    "certCount": "{n} certifications",
+    "filterStage": "Career stage",
+    "filterArea": "Area",
+    "compareTitle": "Compare at a glance",
+    "compareCaption": "Verified exam facts by certification",
+    "compareNote": "“Check on PMI” means the fact was not confirmed on PMI's page on the check date; nothing is guessed.",
+    "col": {
+      "cert": "Certification",
+      "questions": "Questions",
+      "minutes": "Minutes",
+      "renewal": "Renewal",
+      "fee": "Fee (member / non-member)",
+      "domain": "Domain",
+      "weight": "Weight",
+      "hours": "Study hours"
+    },
+    "verifiedOn": "Verified {date}",
+    "pending": "Not confirmed — check PMI",
+    "pendingBody": "This fact could not be confirmed on PMI's page on the check date, so the Academy does not state it.",
+    "openPmi": "Open PMI's page",
+    "studyPlan": "A 10-week study plan",
+    "studyPlanNote": "A CIA plan for about {weeks} weeks at {hours} hours a week, weighted by the outline. Adjust it after your diagnostic.",
+    "weeks": "Week {w}",
+    "certNotFound": "Certification not found",
+    "whoFor": "For:",
+    "followRoute": "Follow the CIA route",
+    "scored": "({n} scored)",
+    "eligibility": "Eligibility",
+    "exam": "Exam format",
+    "fee": "Exam fee",
+    "member": "PMI member",
+    "nonMember": "Non-member",
+    "renewal": "Renewal",
+    "renewalText": "{n} professional development units (PDUs) every {y} years.",
+    "noPdus": "CIA courses do not award PDUs.",
+    "domains": "What the exam covers",
+    "domainsNote": "Domain names and weights from PMI's outline. Read the task wording in the official outline; the Academy does not reproduce it.",
+    "alsoKnow": "Also good to know",
+    "howToPrepare": "How to prepare",
+    "plannerTitle": "Plan your study hours by domain",
+    "plannerNote": "Enter your total study budget; the planner keeps about one sixth for timed practice and splits the rest by the outline's weights.",
+    "plannerLabel": "Total study hours",
+    "plannerHint": "Between 20 and 400 hours.",
+    "plannerInvalid": "Enter a number between 20 and 400.",
+    "plannerCaption": "Study hours for a {n}-hour budget",
+    "practiceReserve": "Timed practice and error review",
+    "ciaCourses": "CIA courses that help",
+    "ciaCoursesNote": "CIA internal courses mapped to this certification's content. They are not PMI-approved and do not guarantee eligibility or a result.",
+    "nextCerts": "Where it can lead",
+    "sourcesNote": "Every figure above comes from these pages, opened on the date shown."
+  },
+  "p8": {
+    "course": {
+      "glance": "The course at a glance",
+      "levelName": {
+        "1": "Foundation",
+        "2": "Practitioner",
+        "3": "Advanced",
+        "4": "Expert",
+        "5": "Leader"
+      },
+      "modules": "modules",
+      "lessons": "lessons",
+      "assessmentsN": "assessments",
+      "practicalYes": "Practical task",
+      "studyTitle": "How to study this course",
+      "study": {
+        "prep": {
+          "t": "Check where you start",
+          "d": "read the prerequisites and, if you are unsure, take the related diagnostic — demonstrated content can be skipped."
+        },
+        "read": {
+          "t": "Read each lesson in order",
+          "d": "concept, worked example, scenario, common mistake and evidence; then try the exercise before you open the model answer.",
+          "dGuide": "each lesson is one item of the guide: what it asks, how to apply it, the evidence and the common gaps; then try the “Apply it” exercise."
+        },
+        "apply": {
+          "t": "Apply it to your organisation",
+          "d": "write your answer in the private notes box; it is saved with your progress on this device only."
+        },
+        "check": {
+          "t": "Check your understanding",
+          "d": "answer the knowledge check; choose “I don't know” rather than guessing."
+        },
+        "tool": {
+          "t": "Use the toolkit",
+          "d": "open the linked hub toolkit and do the same thing on a real case."
+        },
+        "final": {
+          "t": "Finish with the final and the practical task",
+          "d": "70% in the final completes the course; the practical task is scored by a person."
+        }
+      },
+      "weekPlan": "Your weekly plan: {weeks} week(s) at {hours} h a week",
+      "weekPlanFromProfile": "Based on the weekly study hours in your profile.",
+      "weekPlanDefault": "Based on 4 hours a week. Add your weekly hours to your profile for a personal plan.",
+      "changeHours": "Change in your profile",
+      "week": "Week {n}",
+      "finalAndPractical": "Practical task and final assessment",
+      "linked": "Connected certifications and guides",
+      "certs": "Certifications this course supports",
+      "certsNote": "The course covers part of the content of these certifications. It is a CIA internal course: it does not award PDUs or contact-hour certificates.",
+      "certsNotePrep": "Exam-preparation label: the course helps you plan and study. It is not PMI-approved and does not award PDUs or contact-hour certificates.",
+      "guides": "Guides this course draws on",
+      "guidesNote": "Each lesson links to the practices it teaches; open the guide to read them all."
+    },
+    "home": {
+      "academies": "Academies",
+      "isoBody": "Management-system standards: foundations, implementation, auditing and integrated systems.",
+      "pmiBody": "Projects, programmes, portfolios and PMOs, with a PMI certification explorer and study plans.",
+      "guidesBody": "Clause-by-clause, practice-by-practice and step-by-step explanations from the hub's toolkits.",
+      "courses": "{n} courses open to you",
+      "guides": "{n} guides"
+    }
   }
 }

@@ -48,7 +48,9 @@
     {
       "id": "8",
       "weight": 7,
-      "status": "planned"
+      "status": "in_progress",
+      "note": "PMI / PMO / P3O Academy built (3 Nov 2026): 4 practice guides, 14 courses, explorer of 8 PMI certifications, 5 routes. Content awaits review / owner approval.",
+      "partial": null
     },
     {
       "id": "9",

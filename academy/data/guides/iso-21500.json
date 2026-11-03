@@ -1,0 +1,5856 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-21500",
+  "slug": "iso-21500",
+  "kind": "practice",
+  "module": "iso21500",
+  "standard_id": null,
+  "title": {
+   "en": "ISO 21500 Series Conformity Assessment",
+   "ar": "تقييم المطابقة وفق سلسلة ISO 21500"
+  },
+  "subtitle": {
+   "en": "Project · Programme · Portfolio · Governance",
+   "ar": "المشاريع · البرامج · المحافظ · الحوكمة"
+  },
+  "lede": {
+   "en": "An assessment built on the clause structure of ISO 21502, ISO 21503, ISO 21504 and ISO 21505: fifty-eight practices on a 0–5 conformity scale with an evidence ladder each, three scores (self, evidence, validated), conformity % per standard and practice area, a 0–12 month improvement roadmap and eight templates with a Saudi worked example.",
+   "ar": "تقييم مبني على هيكل بنود ISO 21502 وISO 21503 وISO 21504 وISO 21505: ثمانٍ وخمسون ممارسة بمقياس مطابقة من 0 إلى 5 وسُلّم أدلة لكل ممارسة، وثلاث درجات (ذاتي، بالأدلة، معتمد)، ونسبة مطابقة لكل مواصفة ومجال، وخارطة تحسين 0–12 شهراً، وثمانية نماذج بمثال سعودي."
+  },
+  "author": "مدثر سلامه",
+  "note": null,
+  "clauses": [
+   {
+    "id": "pj.gov",
+    "phase": "ISO 21502:2020",
+    "title": {
+     "en": "ISO 21502:2020 · Governance & organization",
+     "ar": "ISO 21502:2020 · الحوكمة والتنظيم"
+    },
+    "short": {
+     "en": "Governance",
+     "ar": "الحوكمة"
+    },
+    "intro": {
+     "en": "How the organization governs and manages its projects through the life cycle, integrated practices and the eighteen management practices.",
+     "ar": "كيف تُحوكم المنشأة مشاريعها وتديرها عبر دورة الحياة والممارسات المتكاملة وممارسات الإدارة الثماني عشرة."
+    },
+    "clause": "4.3–4.6 · 5",
+    "items": [
+     {
+      "ref": "pj.gf",
+      "clause": "4.3.1 · 6.3",
+      "title": {
+       "en": "Project governance framework",
+       "ar": "إطار حوكمة المشروع"
+      },
+      "short": {
+       "en": "Project governance",
+       "ar": "حوكمة المشروع"
+      },
+      "req": {
+       "en": "A governance framework sets decision rights, accountability, control points and escalation for every project, consistent with organizational governance.",
+       "ar": "إطار حوكمة يحدد لكل مشروع صلاحيات القرار والمساءلة ونقاط التحكم ومسار التصعيد، ومتسق مع حوكمة المنشأة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Name a sponsor and a project board with written decision rights for every in-scope project",
+        "ar": "تسمية راعٍ ومجلس مشروع بصلاحيات مكتوبة لكل مشروع ضمن النطاق"
+       },
+       {
+        "en": "Publish the project governance framework: roles, delegated authority, control points and escalation",
+        "ar": "نشر إطار حوكمة المشاريع: الأدوار، والتفويض، ونقاط التحكم، والتصعيد"
+       },
+       {
+        "en": "Independent assurance for high-risk projects and a yearly review of governance effectiveness",
+        "ar": "ضمان مستقل للمشاريع عالية المخاطر ومراجعة سنوية لفعالية الحوكمة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Some projects have a named sponsor and a steering board",
+        "ar": "بعض المشاريع لها راعٍ ومجلس توجيه"
+       },
+       {
+        "en": "A documented governance framework (sponsor, board, decision rights, escalation, assurance) applies to every in-scope project",
+        "ar": "إطار حوكمة موثق (الراعي، المجلس، الصلاحيات، التصعيد، الضمان) مطبق على كل مشروع ضمن النطاق"
+       },
+       {
+        "en": "Board decisions and escalations are logged; decision lead time and assurance findings are reviewed",
+        "ar": "قرارات المجالس والتصعيدات مسجلة، ويُراجع زمن القرار ونتائج الضمان"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "PMO head + executive sponsor",
+       "ar": "رئيس مكتب المشاريع + الراعي التنفيذي"
+      },
+      "kpi": {
+       "en": "100% of in-scope projects have a sponsor and board",
+       "ar": "100% من المشاريع ضمن النطاق لها راعٍ ومجلس"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pj.bc",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "pj.in",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "pj.bc",
+      "clause": "4.3.2 · 6.2 · 6.6.2",
+      "title": {
+       "en": "Business case & continued justification",
+       "ar": "دراسة الجدوى والتبرير المستمر"
+      },
+      "short": {
+       "en": "Business case",
+       "ar": "دراسة الجدوى"
+      },
+      "req": {
+       "en": "Each project is justified by a business case approved before investment is committed, and its viability is re-confirmed at each phase.",
+       "ar": "كل مشروع مبرَّر بدراسة جدوى تُعتمد قبل الالتزام بالاستثمار، ويُعاد تأكيد جدواها عند كل مرحلة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Adopt a one-page business case: options, cost, benefits and key risks",
+        "ar": "اعتماد نموذج دراسة جدوى من صفحة واحدة: البدائل والتكلفة والمنافع والمخاطر"
+       },
+       {
+        "en": "Require a refreshed business case at every phase gate (progressive justification)",
+        "ar": "اشتراط تحديث دراسة الجدوى عند كل بوابة مرحلة (التبرير التدريجي)"
+       },
+       {
+        "en": "Compare actual with forecast business cases at closure to improve estimating",
+        "ar": "مقارنة الجدوى الفعلية بالمتوقعة عند الإغلاق لتحسين التقدير"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Business cases exist for large projects but are not updated after approval",
+        "ar": "دراسات جدوى للمشاريع الكبيرة لا تُحدَّث بعد اعتمادها"
+       },
+       {
+        "en": "A standard business case (options, costs, benefits, risks) is approved before initiation and refreshed at every gate",
+        "ar": "دراسة جدوى موحدة (بدائل، تكاليف، منافع، مخاطر) تُعتمد قبل البدء وتُحدَّث عند كل بوابة"
+       },
+       {
+        "en": "Viability is checked at each gate; projects that lose it are stopped or re-scoped",
+        "ar": "الجدوى تُفحص عند كل بوابة، ويُوقف أو يُعاد نطاق ما يفقد جدواه"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "PMO + finance",
+       "ar": "المكتب + المالية"
+      },
+      "kpi": {
+       "en": "100% of new projects with an approved business case",
+       "ar": "100% من المشاريع الجديدة بدراسة جدوى معتمدة"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pj.bn",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "pj.gf",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pj.lc",
+      "clause": "4.4 · 6.6.4",
+      "title": {
+       "en": "Life cycle & phases",
+       "ar": "دورة الحياة والمراحل"
+      },
+      "short": {
+       "en": "Life cycle",
+       "ar": "دورة الحياة"
+      },
+      "req": {
+       "en": "A defined life cycle, tailored to the delivery approach (predictive, iterative, agile or hybrid), splits each project into phases with start and close decisions.",
+       "ar": "دورة حياة معرَّفة ومكيَّفة حسب نهج التسليم (تنبؤي، تكراري، رشيق، هجين) تقسم المشروع إلى مراحل بقرارات بدء وإغلاق."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Publish a common life cycle with gates and entry/exit criteria",
+        "ar": "نشر دورة حياة موحدة ببوابات ومعايير دخول وخروج"
+       },
+       {
+        "en": "Add tailoring guidance for predictive, agile and hybrid projects and record tailoring decisions",
+        "ar": "إضافة إرشادات تكييف للمشاريع التنبؤية والرشيقة والهجينة وتسجيل قرارات التكييف"
+       },
+       {
+        "en": "Analyse phase performance across projects and refine gate criteria",
+        "ar": "تحليل أداء المراحل عبر المشاريع وتحسين معايير البوابات"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Each team uses its own phase names and gates",
+        "ar": "كل فريق يستخدم مسميات مراحل وبوابات خاصة به"
+       },
+       {
+        "en": "A common life cycle with tailoring rules and phase start/close criteria applies to every project",
+        "ar": "دورة حياة موحدة بقواعد تكييف ومعايير بدء وإغلاق لكل مرحلة، مطبقة على كل المشاريع"
+       },
+       {
+        "en": "Phase decisions use performance data against tolerances; tailoring decisions are recorded",
+        "ar": "قرارات المراحل مبنية على بيانات أداء مقابل حدود تحمّل، وقرارات التكييف مسجلة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Methodology lead",
+       "ar": "مسؤول المنهجية"
+      },
+      "kpi": {
+       "en": "≥ 90% of phase gates held on time",
+       "ar": "≥ 90% من البوابات تُعقد في موعدها"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "pj.or",
+      "clause": "4.5 · 4.6 · 5.2",
+      "title": {
+       "en": "Organization, roles & competence",
+       "ar": "التنظيم والأدوار والكفاءات"
+      },
+      "short": {
+       "en": "Roles & competence",
+       "ar": "الأدوار والكفاءات"
+      },
+      "req": {
+       "en": "Project roles (sponsor, board, manager, assurance, project office, work-package leaders) are defined, and the people in them are competent.",
+       "ar": "أدوار المشروع (الراعي، المجلس، المدير، الضمان، مكتب المشروع، قادة حزم العمل) معرَّفة، ومن يشغلونها أكفاء."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Publish role descriptions for sponsor, board, project manager and project office",
+        "ar": "نشر أوصاف أدوار الراعي والمجلس ومدير المشروع ومكتب المشروع"
+       },
+       {
+        "en": "Define a competence profile per role and assess current project managers against it",
+        "ar": "ملف كفاءة لكل دور وتقييم مديري المشاريع الحاليين مقابله"
+       },
+       {
+        "en": "Link competence development to career paths and a community of practice",
+        "ar": "ربط تطوير الكفاءات بمسارات مهنية ومجتمع ممارسة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Roles are understood informally within teams",
+        "ar": "الأدوار مفهومة ضمنياً داخل الفرق"
+       },
+       {
+        "en": "Role descriptions and a competence profile exist for every role; appointments are recorded",
+        "ar": "أوصاف أدوار وملف كفاءة لكل دور، وتعيينات موثقة"
+       },
+       {
+        "en": "Competence gaps are assessed and closed through development plans; role performance is reviewed",
+        "ar": "فجوات الكفاءة تُقيَّم وتُغلق بخطط تطوير، وأداء الأدوار يُراجع"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "PMO + HR",
+       "ar": "المكتب + الموارد البشرية"
+      },
+      "kpi": {
+       "en": "≥ 80% of project managers assessed against the profile",
+       "ar": "≥ 80% من مديري المشاريع مقيَّمون مقابل ملف الكفاءة"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "pj.int",
+    "phase": "ISO 21502:2020",
+    "title": {
+     "en": "ISO 21502:2020 · Integrated practices",
+     "ar": "ISO 21502:2020 · الممارسات المتكاملة"
+    },
+    "short": {
+     "en": "Integrated",
+     "ar": "المتكاملة"
+    },
+    "intro": {
+     "en": "How the organization governs and manages its projects through the life cycle, integrated practices and the eighteen management practices.",
+     "ar": "كيف تُحوكم المنشأة مشاريعها وتديرها عبر دورة الحياة والممارسات المتكاملة وممارسات الإدارة الثماني عشرة."
+    },
+    "clause": "6",
+    "items": [
+     {
+      "ref": "pj.in",
+      "clause": "6.2 · 6.4 · 6.5",
+      "title": {
+       "en": "Pre-project, initiating & directing",
+       "ar": "ما قبل المشروع والبدء والتوجيه"
+      },
+      "short": {
+       "en": "Initiating & directing",
+       "ar": "البدء والتوجيه"
+      },
+      "req": {
+       "en": "Pre-project work, initiation (team mobilization, management approach, initial plan) and direction by the sponsor and board happen before major resources are committed.",
+       "ar": "أنشطة ما قبل المشروع والبدء (تعبئة الفريق، نهج الإدارة، الخطة الأولية) وتوجيه الراعي والمجلس تتم قبل الالتزام بالموارد الرئيسية."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Make an approved project charter mandatory before mobilization",
+        "ar": "اعتماد نموذج ميثاق المشروع وجعله شرطاً قبل التعبئة"
+       },
+       {
+        "en": "Standardize initiation: management approach, initial plan and mobilization checklist",
+        "ar": "توحيد مرحلة البدء: نهج الإدارة، الخطة الأولية، قائمة التعبئة"
+       },
+       {
+        "en": "Measure initiation lead time and rework and improve the start-up kit",
+        "ar": "قياس زمن البدء وإعادة العمل وتحسين حقيبة الانطلاق"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Work starts before initiation is complete",
+        "ar": "العمل يبدأ قبل اكتمال مرحلة البدء"
+       },
+       {
+        "en": "An initiation stage produces a charter, management approach and initial plan approved by the sponsor before execution",
+        "ar": "مرحلة بدء تُنتج ميثاقاً ونهج إدارة وخطة أولية يعتمدها الراعي قبل التنفيذ"
+       },
+       {
+        "en": "Initiation quality is reviewed at the gate; start-up delays and rework are measured",
+        "ar": "جودة البدء تُراجع عند البوابة، ويُقاس تأخر الانطلاق وإعادة العمل"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "PMO + project managers",
+       "ar": "المكتب + مديرو المشاريع"
+      },
+      "kpi": {
+       "en": "100% of projects start execution with an approved charter",
+       "ar": "100% من المشاريع تبدأ التنفيذ بميثاق معتمد"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pj.pl",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "pj.gf",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pj.ct",
+      "clause": "6.6 · 6.7",
+      "title": {
+       "en": "Controlling & managing delivery",
+       "ar": "الضبط وإدارة التسليم"
+      },
+      "short": {
+       "en": "Control & delivery",
+       "ar": "الضبط والتسليم"
+      },
+      "req": {
+       "en": "Project performance, phases and work packages are controlled against the baseline, and delivery is managed through authorized work packages.",
+       "ar": "أداء المشروع ومراحله وحزم عمله يُضبط مقابل الخط الأساسي، والتسليم يُدار عبر حزم عمل مفوَّضة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Set time, cost and scope tolerances and an escalation route for every project",
+        "ar": "تحديد حدود تحمّل للوقت والتكلفة والنطاق ومسار تصعيد لكل مشروع"
+       },
+       {
+        "en": "Authorize and track work packages against the baseline with monthly performance reviews",
+        "ar": "تفويض حزم العمل ومتابعتها مقابل الخط الأساسي بمراجعة أداء شهرية"
+       },
+       {
+        "en": "Use earned value and forecasts to trigger corrective action automatically",
+        "ar": "استخدام القيمة المكتسبة والتنبؤ لإطلاق الإجراءات التصحيحية تلقائياً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Progress is followed verbally in meetings",
+        "ar": "التقدم يُتابع شفهياً في الاجتماعات"
+       },
+       {
+        "en": "Work packages are authorized and tracked; performance is reviewed against the baseline at set intervals",
+        "ar": "حزم العمل مفوَّضة ومتابعة، والأداء يُراجع مقابل الخط الأساسي بدورية ثابتة"
+       },
+       {
+        "en": "Quantitative indicators (SPI, CPI, forecasts) trigger escalation beyond tolerance",
+        "ar": "مؤشرات أداء كمية (SPI وCPI والتنبؤ) تُطلق التصعيد عند تجاوز حدود التحمّل"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Project controls lead",
+       "ar": "مسؤول ضبط المشاريع"
+      },
+      "kpi": {
+       "en": "100% of projects with tolerances and monthly performance reviews",
+       "ar": "100% من المشاريع بحدود تحمّل ومراجعة أداء شهرية"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "pj.sc",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "pj.sd",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pj.cl",
+      "clause": "6.8 · 6.9",
+      "title": {
+       "en": "Closing & post-project",
+       "ar": "الإغلاق وما بعد المشروع"
+      },
+      "short": {
+       "en": "Closure",
+       "ar": "الإغلاق"
+      },
+      "req": {
+       "en": "Projects are closed or terminated in a controlled way (handover, contractual and financial close, release of resources), and post-project activities are planned.",
+       "ar": "المشاريع تُغلق أو تُنهى بطريقة مضبوطة (التسليم، الإقفال التعاقدي والمالي، تحرير الموارد)، وتُخطَّط أنشطة ما بعد المشروع."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Introduce a closure checklist and an end-project report",
+        "ar": "قائمة إغلاق ونموذج تقرير نهاية المشروع"
+       },
+       {
+        "en": "Plan post-project evaluation and benefit reviews in line with ISO 21513",
+        "ar": "تخطيط تقييم ما بعد المشروع ومراجعة المنافع وفق ISO 21513"
+       },
+       {
+        "en": "Feed evaluation findings into portfolio decisions and the method",
+        "ar": "تغذية نتائج التقييم في قرارات المحفظة وتحديث المنهجية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Closure is informal; documents and open items are scattered",
+        "ar": "الإغلاق غير رسمي والوثائق والبنود المفتوحة مبعثرة"
+       },
+       {
+        "en": "A closure checklist, end-project report and signed handover and acceptance for every project",
+        "ar": "قائمة إغلاق وتقرير نهاية مشروع، وتسليم وقبول موقَّعان لكل مشروع"
+       },
+       {
+        "en": "Post-project evaluation (ISO 21513) and benefit reviews are scheduled and completed",
+        "ar": "تقييم ما بعد المشروع (ISO 21513) ومراجعات المنافع مجدولة ومنجزة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Project managers + PMO",
+       "ar": "مديرو المشاريع + المكتب"
+      },
+      "kpi": {
+       "en": "100% of closed projects with a signed closure report",
+       "ar": "100% من المشاريع المغلقة بتقرير إغلاق موقَّع"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "pj.plc",
+    "phase": "ISO 21502:2020",
+    "title": {
+     "en": "ISO 21502:2020 · Planning & control",
+     "ar": "ISO 21502:2020 · التخطيط والضبط"
+    },
+    "short": {
+     "en": "Planning",
+     "ar": "التخطيط"
+    },
+    "intro": {
+     "en": "How the organization governs and manages its projects through the life cycle, integrated practices and the eighteen management practices.",
+     "ar": "كيف تُحوكم المنشأة مشاريعها وتديرها عبر دورة الحياة والممارسات المتكاملة وممارسات الإدارة الثماني عشرة."
+    },
+    "clause": "7.2 · 7.4 · 7.6 · 7.7 · 7.10 · 7.15",
+    "items": [
+     {
+      "ref": "pj.pl",
+      "clause": "7.2",
+      "title": {
+       "en": "Planning",
+       "ar": "التخطيط"
+      },
+      "short": {
+       "en": "Planning",
+       "ar": "التخطيط"
+      },
+      "req": {
+       "en": "An integrated project plan (scope, schedule, cost, resources, risk, quality, communication) is developed, approved and kept current.",
+       "ar": "خطة مشروع متكاملة (النطاق، الجدول، التكلفة، الموارد، المخاطر، الجودة، الاتصال) تُعد وتُعتمد وتُحدَّث."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Adopt an integrated project plan template",
+        "ar": "اعتماد نموذج خطة مشروع متكاملة"
+       },
+       {
+        "en": "Baseline the plan on approval and re-plan only through change control",
+        "ar": "اعتماد الخطة خطاً أساسياً وربط إعادة التخطيط بضبط التغيير"
+       },
+       {
+        "en": "Measure planning accuracy at closure and update estimating norms",
+        "ar": "قياس دقة التخطيط عند الإغلاق وتحديث معايير التقدير"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Plans exist for some projects in different formats",
+        "ar": "خطط لبعض المشاريع بصيغ مختلفة"
+       },
+       {
+        "en": "A standard integrated plan is baselined on approval and re-planned only through change control",
+        "ar": "خطة متكاملة موحدة تُعتمد كخط أساسي، ولا يُعاد التخطيط إلا عبر ضبط التغيير"
+       },
+       {
+        "en": "Planning accuracy (forecast vs actual) is measured and used to improve planning",
+        "ar": "دقة التخطيط (المتوقع مقابل الفعلي) تُقاس وتُستخدم لتحسين التخطيط"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Project managers",
+       "ar": "مديرو المشاريع"
+      },
+      "kpi": {
+       "en": "100% of projects with an approved baseline plan",
+       "ar": "100% من المشاريع بخطة أساسية معتمدة"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "pj.in",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pj.sc",
+      "clause": "7.4 · ISO 21511",
+      "title": {
+       "en": "Scope management & WBS",
+       "ar": "إدارة النطاق وهيكل تجزئة العمل"
+      },
+      "short": {
+       "en": "Scope",
+       "ar": "النطاق"
+      },
+      "req": {
+       "en": "Scope is defined through a work breakdown structure and requirements, controlled, and its delivery confirmed by formal acceptance.",
+       "ar": "النطاق يُعرَّف بهيكل تجزئة عمل ومتطلبات، ويُضبط، ويُؤكَّد تسليمه بقبول رسمي."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Require a WBS and scope statement for every project",
+        "ar": "اشتراط هيكل تجزئة عمل وبيان نطاق لكل مشروع"
+       },
+       {
+        "en": "Standardize the WBS dictionary and formal deliverable acceptance",
+        "ar": "قاموس هيكل التجزئة وإجراء قبول رسمي للمخرجات"
+       },
+       {
+        "en": "Track scope changes and rework and build a reusable WBS library",
+        "ar": "متابعة تغييرات النطاق وإعادة العمل، وبناء مكتبة هياكل تجزئة قابلة لإعادة الاستخدام"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Scope is described in contracts or emails, with no WBS",
+        "ar": "النطاق موصوف في العقود أو المراسلات دون هيكل تجزئة"
+       },
+       {
+        "en": "Every project has a WBS (ISO 21511) and scope statement; changes go through change control; deliverables are formally accepted",
+        "ar": "لكل مشروع هيكل تجزئة عمل (ISO 21511) وبيان نطاق، والتغييرات عبر ضبط التغيير، والمخرجات تُقبل رسمياً"
+       },
+       {
+        "en": "Scope creep and acceptance rework are measured and reviewed",
+        "ar": "زحف النطاق وإعادة العمل عند القبول يُقاسان ويُراجعان"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Project managers",
+       "ar": "مديرو المشاريع"
+      },
+      "kpi": {
+       "en": "100% of projects with an approved WBS",
+       "ar": "100% من المشاريع بهيكل تجزئة عمل معتمد"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pj.ct",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "pj.sd",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "pj.sd",
+      "clause": "7.6",
+      "title": {
+       "en": "Schedule management",
+       "ar": "إدارة الجدول الزمني"
+      },
+      "short": {
+       "en": "Schedule",
+       "ar": "الجدول"
+      },
+      "req": {
+       "en": "Activity durations are estimated, the schedule is developed and baselined, and it is controlled against actual progress.",
+       "ar": "مدد الأنشطة تُقدَّر، والجدول يُعد ويُعتمد خطاً أساسياً، ويُضبط مقابل التقدم الفعلي."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Baseline every project schedule with logic links and key milestones",
+        "ar": "اعتماد جدول أساسي مترابط بالمعالم الرئيسية لكل مشروع"
+       },
+       {
+        "en": "Set a fixed update cycle and critical-path review",
+        "ar": "دورة تحديث ثابتة للجدول ومراجعة المسار الحرج"
+       },
+       {
+        "en": "Track schedule indices and milestone hit rate across the portfolio",
+        "ar": "متابعة مؤشرات الجدول ونسبة المعالم المحققة عبر المحفظة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Bar charts exist but are not baselined or updated",
+        "ar": "مخططات أعمدة غير معتمدة ولا تُحدَّث"
+       },
+       {
+        "en": "A baselined, logic-linked schedule with a critical path is updated at set intervals",
+        "ar": "جدول أساسي مترابط منطقياً بمسار حرج يُحدَّث بدورية ثابتة"
+       },
+       {
+        "en": "Schedule performance (SPI, float erosion, milestone hit rate) is measured and forecast",
+        "ar": "أداء الجدول (SPI، تآكل الفائض، نسبة المعالم المحققة) يُقاس ويُتنبأ به"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Planning & project controls",
+       "ar": "التخطيط وضبط المشاريع"
+      },
+      "kpi": {
+       "en": "Milestone hit rate ≥ 85%",
+       "ar": "نسبة المعالم المحققة ≥ 85%"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pj.ct",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "pj.co",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "pj.pr",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "pj.sc",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pj.co",
+      "clause": "7.7 · ISO 21508",
+      "title": {
+       "en": "Cost management & earned value",
+       "ar": "إدارة التكلفة والقيمة المكتسبة"
+      },
+      "short": {
+       "en": "Cost",
+       "ar": "التكلفة"
+      },
+      "req": {
+       "en": "Costs are estimated, a time-phased budget is developed and costs are controlled, including with earned value where appropriate.",
+       "ar": "التكاليف تُقدَّر، وتُعد ميزانية موزعة زمنياً، وتُضبط التكاليف، بما في ذلك بالقيمة المكتسبة حيث يناسب."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Set a time-phased cost baseline for every project",
+        "ar": "خط أساس تكلفة موزع زمنياً لكل مشروع"
+       },
+       {
+        "en": "Introduce monthly cost reporting linked to the finance system",
+        "ar": "تقرير تكلفة شهري مربوط بالنظام المالي"
+       },
+       {
+        "en": "Implement earned value per ISO 21508 and ISO 21512 on major projects",
+        "ar": "تطبيق القيمة المكتسبة وفق ISO 21508 وISO 21512 على المشاريع الكبرى"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The budget is tracked only as total spend",
+        "ar": "الميزانية تُتابع كإجمالي إنفاق فقط"
+       },
+       {
+        "en": "Cost estimates, a time-phased budget and a cost baseline exist; actuals are compared monthly",
+        "ar": "تقديرات تكلفة وميزانية موزعة زمنياً وخط أساس للتكلفة، والفعلي يُقارن شهرياً"
+       },
+       {
+        "en": "Earned value (ISO 21508) gives CPI, EAC and variance at completion used in decisions",
+        "ar": "القيمة المكتسبة (ISO 21508) تعطي CPI وEAC والانحراف عند الإنجاز وتُستخدم في القرار"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Project controls + finance",
+       "ar": "ضبط المشاريع + المالية"
+      },
+      "kpi": {
+       "en": "Variance at completion forecast ≤ 10%",
+       "ar": "انحراف التنبؤ عند الإنجاز ≤ 10%"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "pj.sd",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pj.cc",
+      "clause": "7.10",
+      "title": {
+       "en": "Change control",
+       "ar": "ضبط التغيير"
+      },
+      "short": {
+       "en": "Change control",
+       "ar": "ضبط التغيير"
+      },
+      "req": {
+       "en": "A change control framework identifies, assesses, approves and implements changes to baselines with defined authority levels.",
+       "ar": "إطار لضبط التغيير يحدد التغييرات على الخطوط الأساسية ويقيّمها ويعتمدها وينفذها بمستويات صلاحية محددة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Start a change log and change request form on every project",
+        "ar": "بدء سجل تغيير ونموذج طلب تغيير في كل مشروع"
+       },
+       {
+        "en": "Set change authority levels by tolerance",
+        "ar": "مستويات صلاحية للتغيير مرتبطة بحدود التحمّل"
+       },
+       {
+        "en": "Analyse change trends to improve estimating and scope definition",
+        "ar": "تحليل اتجاهات التغيير لتحسين التقدير وتعريف النطاق"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Changes are agreed verbally or by email",
+        "ar": "التغييرات تُتفق شفهياً أو بالبريد"
+       },
+       {
+        "en": "A change log and change request with impact assessment and authority levels on every project",
+        "ar": "سجل تغيير ونموذج طلب تغيير بتقييم أثر ومستويات صلاحية في كل مشروع"
+       },
+       {
+        "en": "Change volume, cycle time and impact are measured and analysed",
+        "ar": "حجم التغييرات وزمن دورتها وأثرها تُقاس وتُحلَّل"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Project managers + PMO",
+       "ar": "مديرو المشاريع + المكتب"
+      },
+      "kpi": {
+       "en": "100% of baseline changes approved before implementation",
+       "ar": "100% من تغييرات الخط الأساسي معتمدة قبل التنفيذ"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "pj.rp",
+      "clause": "7.15",
+      "title": {
+       "en": "Reporting",
+       "ar": "التقارير"
+      },
+      "short": {
+       "en": "Reporting",
+       "ar": "التقارير"
+      },
+      "req": {
+       "en": "Reporting is planned, managed and delivered to meet stakeholder and governance needs, with honest status.",
+       "ar": "التقارير تُخطَّط وتُدار وتُقدَّم بما يلبي احتياجات أصحاب المصلحة والحوكمة، بحالة صادقة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Issue a standard monthly status report with written RAG criteria",
+        "ar": "تقرير حالة شهري موحد بمعايير RAG مكتوبة"
+       },
+       {
+        "en": "Set a reporting calendar aligned with governance meetings",
+        "ar": "تقويم تقارير متوافق مع اجتماعات الحوكمة"
+       },
+       {
+        "en": "Automate reporting from one data set and measure accuracy",
+        "ar": "أتمتة التقارير من مصدر بيانات واحد وقياس دقتها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Reports differ between projects in form and timing",
+        "ar": "التقارير تختلف بين المشاريع في الشكل والتوقيت"
+       },
+       {
+        "en": "A common reporting calendar and status report with written RAG criteria",
+        "ar": "تقويم تقارير موحد وتقرير حالة بمعايير RAG مكتوبة"
+       },
+       {
+        "en": "Report timeliness and accuracy are measured; decisions are traced to reports",
+        "ar": "دقة التقارير والتزام مواعيدها يُقاسان، والقرارات مربوطة بها"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "PMO analyst",
+       "ar": "محلل المكتب"
+      },
+      "kpi": {
+       "en": "≥ 95% of reports on time",
+       "ar": "≥ 95% من التقارير في موعدها"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "pj.brq",
+    "phase": "ISO 21502:2020",
+    "title": {
+     "en": "ISO 21502:2020 · Benefits, risk & quality",
+     "ar": "ISO 21502:2020 · المنافع والمخاطر والجودة"
+    },
+    "short": {
+     "en": "Benefits & risk",
+     "ar": "المنافع والمخاطر"
+    },
+    "intro": {
+     "en": "How the organization governs and manages its projects through the life cycle, integrated practices and the eighteen management practices.",
+     "ar": "كيف تُحوكم المنشأة مشاريعها وتديرها عبر دورة الحياة والممارسات المتكاملة وممارسات الإدارة الثماني عشرة."
+    },
+    "clause": "7.3 · 7.8 · 7.9 · 7.11",
+    "items": [
+     {
+      "ref": "pj.bn",
+      "clause": "7.3",
+      "title": {
+       "en": "Benefit management",
+       "ar": "إدارة المنافع"
+      },
+      "short": {
+       "en": "Benefits",
+       "ar": "المنافع"
+      },
+      "req": {
+       "en": "Benefits are identified, analysed, monitored and maintained, with owners and measures that continue after handover.",
+       "ar": "المنافع تُحدَّد وتُحلَّل وتُرصد وتُصان بمالكين ومقاييس، وتستمر متابعتها بعد التسليم."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Add measurable benefits with owners to every business case",
+        "ar": "إضافة منافع قابلة للقياس بمالكين إلى كل دراسة جدوى"
+       },
+       {
+        "en": "Keep a benefits register and realization plan that runs past closure",
+        "ar": "سجل منافع وخطة تحقيق تمتد بعد الإغلاق"
+       },
+       {
+        "en": "Review benefits after handover and use results in investment decisions",
+        "ar": "مراجعة المنافع بعد التسليم واستخدام النتائج في قرارات الاستثمار"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Benefits are stated in general terms in business cases",
+        "ar": "المنافع مذكورة بعبارات عامة في دراسات الجدوى"
+       },
+       {
+        "en": "A benefits register (owner, KPI, baseline, target) and realization plan for every project",
+        "ar": "سجل منافع (المالك، المؤشر، خط الأساس، المستهدف) وخطة تحقيق لكل مشروع"
+       },
+       {
+        "en": "Benefit realization is measured after handover and reported to governance",
+        "ar": "تحقق المنافع يُقاس بعد التسليم ويُرفع للحوكمة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Benefit owners + PMO",
+       "ar": "مالكو المنافع + المكتب"
+      },
+      "kpi": {
+       "en": "Every benefit has an owner and KPI",
+       "ar": "كل منفعة لها مالك ومؤشر"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pj.oc",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "pj.bc",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pj.rk",
+      "clause": "7.8",
+      "title": {
+       "en": "Risk management",
+       "ar": "إدارة المخاطر"
+      },
+      "short": {
+       "en": "Risk",
+       "ar": "المخاطر"
+      },
+      "req": {
+       "en": "Risks (threats and opportunities) are identified, assessed, treated and controlled throughout the project.",
+       "ar": "المخاطر (التهديدات والفرص) تُحدَّد وتُقيَّم وتُعالج وتُضبط طوال المشروع."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Start a common 5×5 risk register on every project",
+        "ar": "سجل مخاطر موحد بمقياس 5×5 لكل مشروع"
+       },
+       {
+        "en": "Assign risk owners and contingency; escalate top risks to the enterprise register",
+        "ar": "مالكو مخاطر واحتياطي وتصعيد المخاطر العليا للسجل المؤسسي"
+       },
+       {
+        "en": "Quantitative analysis of major risks and a yearly effectiveness review",
+        "ar": "تحليل كمي للمخاطر الكبرى ومراجعة فعالية سنوية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Risk logs exist on some projects",
+        "ar": "سجلات مخاطر في بعض المشاريع"
+       },
+       {
+        "en": "A common risk process and scale (consistent with ISO 31000) with owners and responses on every project",
+        "ar": "عملية ومقياس مخاطر موحدان (متسقان مع ISO 31000) بمالكين واستجابات في كل مشروع"
+       },
+       {
+        "en": "Risk exposure, treatment effectiveness and contingency use are tracked",
+        "ar": "التعرض للمخاطر وفعالية المعالجة واستخدام الاحتياطي تُتابع"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Risk manager + project managers",
+       "ar": "مدير المخاطر + مديرو المشاريع"
+      },
+      "kpi": {
+       "en": "100% of projects with a monthly-updated risk register",
+       "ar": "100% من المشاريع بسجل مخاطر محدث شهرياً"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "pj.is",
+      "clause": "7.9",
+      "title": {
+       "en": "Issues management",
+       "ar": "إدارة المشكلات"
+      },
+      "short": {
+       "en": "Issues",
+       "ar": "المشكلات"
+      },
+      "req": {
+       "en": "Issues are identified, logged, assigned and resolved within set timeframes, with escalation.",
+       "ar": "المشكلات تُحدَّد وتُسجَّل وتُسند وتُحل في أطر زمنية محددة مع تصعيد."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Keep an issue log with owners and due dates",
+        "ar": "سجل مشكلات بمالكين ومواعيد"
+       },
+       {
+        "en": "Set escalation rules by severity and age",
+        "ar": "قواعد تصعيد حسب الخطورة والعمر"
+       },
+       {
+        "en": "Analyse recurring issues and feed lessons learned",
+        "ar": "تحليل المشكلات المتكررة وتغذية الدروس المستفادة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Issues are handled in meetings without a log",
+        "ar": "المشكلات تُعالج في الاجتماعات دون سجل"
+       },
+       {
+        "en": "An issue log with owners, due dates and escalation rules on every project",
+        "ar": "سجل مشكلات بمالكين ومواعيد وقواعد تصعيد في كل مشروع"
+       },
+       {
+        "en": "Issue ageing and resolution time are measured",
+        "ar": "عمر المشكلات وزمن حلها يُقاسان"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Project managers",
+       "ar": "مديرو المشاريع"
+      },
+      "kpi": {
+       "en": "Median issue resolution ≤ 14 days",
+       "ar": "متوسط زمن حل المشكلة ≤ 14 يوماً"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "pj.qa",
+      "clause": "7.11",
+      "title": {
+       "en": "Quality management",
+       "ar": "إدارة الجودة"
+      },
+      "short": {
+       "en": "Quality",
+       "ar": "الجودة"
+      },
+      "req": {
+       "en": "Quality is planned, assured and controlled so deliverables meet requirements and acceptance criteria.",
+       "ar": "الجودة تُخطَّط وتُضمن وتُضبط لتلبي المخرجات المتطلبات ومعايير القبول."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Define acceptance criteria and a quality plan per project",
+        "ar": "معايير قبول وخطة جودة لكل مشروع"
+       },
+       {
+        "en": "Link project quality plans to the ISO 9001 QMS and inspection & test plans",
+        "ar": "ربط خطط جودة المشاريع بنظام ISO 9001 وخطط الفحص والاختبار"
+       },
+       {
+        "en": "Track first-pass acceptance and non-conformities across projects",
+        "ar": "متابعة القبول من أول مرة وحالات عدم المطابقة عبر المشاريع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Inspection happens at the end only",
+        "ar": "الفحص في النهاية فقط"
+       },
+       {
+        "en": "A quality plan (criteria, reviews, tests, responsibilities) for every project, linked to the QMS",
+        "ar": "خطة جودة (معايير، مراجعات، اختبارات، مسؤوليات) لكل مشروع مربوطة بنظام الجودة"
+       },
+       {
+        "en": "Quality results (defects, non-conformities, first-pass acceptance) are measured and acted on",
+        "ar": "نتائج الجودة (العيوب، حالات عدم المطابقة، القبول من أول مرة) تُقاس ويُتصرف بناءً عليها"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Quality manager",
+       "ar": "مدير الجودة"
+      },
+      "kpi": {
+       "en": "First-pass acceptance ≥ 90%",
+       "ar": "القبول من أول مرة ≥ 90%"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "pj.ppl",
+    "phase": "ISO 21502:2020",
+    "title": {
+     "en": "ISO 21502:2020 · Resources, people & stakeholders",
+     "ar": "ISO 21502:2020 · الموارد والأفراد وأصحاب المصلحة"
+    },
+    "short": {
+     "en": "People",
+     "ar": "الأفراد"
+    },
+    "intro": {
+     "en": "How the organization governs and manages its projects through the life cycle, integrated practices and the eighteen management practices.",
+     "ar": "كيف تُحوكم المنشأة مشاريعها وتديرها عبر دورة الحياة والممارسات المتكاملة وممارسات الإدارة الثماني عشرة."
+    },
+    "clause": "7.5 · 7.12–7.14",
+    "items": [
+     {
+      "ref": "pj.rs",
+      "clause": "7.5",
+      "title": {
+       "en": "Resource management",
+       "ar": "إدارة الموارد"
+      },
+      "short": {
+       "en": "Resources",
+       "ar": "الموارد"
+      },
+      "req": {
+       "en": "The project organization is planned, the team is established, developed and managed, and physical and material resources are planned and controlled.",
+       "ar": "تنظيم المشروع يُخطَّط، والفريق يُشكَّل ويُطوَّر ويُدار، والموارد المادية تُخطَّط وتُضبط."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Build a resource plan for every project",
+        "ar": "خطة موارد لكل مشروع"
+       },
+       {
+        "en": "Set team onboarding, development and performance review",
+        "ar": "تهيئة الفريق وخطة تطويره وتقييم أدائه"
+       },
+       {
+        "en": "Portfolio capacity planning linked to workforce planning",
+        "ar": "تخطيط سعة على مستوى المحفظة مربوط بتخطيط القوى العاملة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Resources are requested when needed",
+        "ar": "الموارد تُطلب عند الحاجة"
+       },
+       {
+        "en": "A resource plan (people, equipment, materials) and team onboarding on every project",
+        "ar": "خطة موارد (أفراد، معدات، مواد) وتهيئة للفريق في كل مشروع"
+       },
+       {
+        "en": "Resource use and availability are tracked; conflicts are settled by portfolio rules",
+        "ar": "استغلال الموارد وتوافرها يُتابعان، والتعارضات تُحل بقواعد المحفظة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "PMO + HR",
+       "ar": "المكتب + الموارد البشرية"
+      },
+      "kpi": {
+       "en": "Resource utilization between 75% and 90%",
+       "ar": "استغلال الموارد بين 75% و90%"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "pj.sh",
+      "clause": "7.12",
+      "title": {
+       "en": "Stakeholder engagement",
+       "ar": "إشراك أصحاب المصلحة"
+      },
+      "short": {
+       "en": "Stakeholders",
+       "ar": "أصحاب المصلحة"
+      },
+      "req": {
+       "en": "Stakeholders are identified, analysed and engaged in line with their interest and influence.",
+       "ar": "أصحاب المصلحة يُحدَّدون ويُحلَّلون ويُشركون بما يتناسب مع اهتمامهم وتأثيرهم."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Build a stakeholder register and analysis for every project",
+        "ar": "سجل أصحاب المصلحة وتحليلهم لكل مشروع"
+       },
+       {
+        "en": "Adopt a common engagement plan and update it each phase",
+        "ar": "خطة إشراك موحدة وتحديثها عند كل مرحلة"
+       },
+       {
+        "en": "Run a periodic sponsor and stakeholder survey",
+        "ar": "استبيان دوري لرضا الرعاة وأصحاب المصلحة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "An informal list of key stakeholders",
+        "ar": "قائمة غير رسمية بأصحاب المصلحة الرئيسيين"
+       },
+       {
+        "en": "A stakeholder register, interest/influence analysis and engagement plan for every project",
+        "ar": "سجل أصحاب مصلحة وتحليل الاهتمام والتأثير وخطة إشراك لكل مشروع"
+       },
+       {
+        "en": "Stakeholder attitudes and satisfaction are tracked at each phase",
+        "ar": "مواقف أصحاب المصلحة ورضاهم يُرصدان عند كل مرحلة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Project managers",
+       "ar": "مديرو المشاريع"
+      },
+      "kpi": {
+       "en": "Sponsor satisfaction ≥ 4 of 5",
+       "ar": "رضا الرعاة ≥ 4 من 5"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pj.cm",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "pj.cm",
+      "clause": "7.13",
+      "title": {
+       "en": "Communication management",
+       "ar": "إدارة الاتصال"
+      },
+      "short": {
+       "en": "Communication",
+       "ar": "الاتصال"
+      },
+      "req": {
+       "en": "Communication is planned, information is distributed and the impact of communication is monitored.",
+       "ar": "الاتصال يُخطَّط، والمعلومات تُوزَّع، وأثر الاتصال يُرصد."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A short communication plan for every project",
+        "ar": "خطة اتصال مختصرة لكل مشروع"
+       },
+       {
+        "en": "Common channels and a communication calendar tied to reporting",
+        "ar": "قنوات موحدة وتقويم اتصال مرتبط بالتقارير"
+       },
+       {
+        "en": "Measure communication impact and adapt messages",
+        "ar": "قياس أثر الاتصال وتكييف الرسائل"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Communication happens when needed, at the manager's initiative",
+        "ar": "التواصل عند الحاجة وبمبادرة المدير"
+       },
+       {
+        "en": "A communication plan (audience, message, channel, timing, owner) for every project",
+        "ar": "خطة اتصال (الجمهور، الرسالة، القناة، التوقيت، المسؤول) لكل مشروع"
+       },
+       {
+        "en": "Message reach and impact are measured and communication is adjusted",
+        "ar": "وصول الرسائل وأثرها يُقاسان ويُعدَّل الاتصال بناءً عليه"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Project managers + corporate communications",
+       "ar": "مديرو المشاريع + الاتصال المؤسسي"
+      },
+      "kpi": {
+       "en": "100% of projects with a communication plan",
+       "ar": "100% من المشاريع بخطة اتصال"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "pj.sh",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pj.oc",
+      "clause": "7.14",
+      "title": {
+       "en": "Organizational & societal change",
+       "ar": "إدارة التغيير المؤسسي والمجتمعي"
+      },
+      "short": {
+       "en": "Organizational change",
+       "ar": "التغيير المؤسسي"
+      },
+      "req": {
+       "en": "The need for organizational and societal change arising from the project is identified, and the change is implemented so benefits are realized.",
+       "ar": "الحاجة إلى التغيير المؤسسي والمجتمعي الناتج عن المشروع تُحدَّد، ويُنفَّذ التغيير بحيث تتحقق المنافع."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Analyse change impact on people and processes before handover",
+        "ar": "تحليل أثر التغيير على الأفراد والعمليات قبل التسليم"
+       },
+       {
+        "en": "Transition plan, operational readiness and change champions",
+        "ar": "خطة انتقال وجاهزية تشغيل وسفراء تغيير"
+       },
+       {
+        "en": "Measure adoption and link it to benefit realization",
+        "ar": "قياس التبني وربطه بتحقق المنافع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Handover to operations happens without a transition plan",
+        "ar": "التسليم للتشغيل دون خطة انتقال"
+       },
+       {
+        "en": "A change impact analysis, transition plan and operational readiness for every impactful project",
+        "ar": "تحليل أثر التغيير وخطة انتقال وجاهزية تشغيل لكل مشروع مؤثر"
+       },
+       {
+        "en": "Change adoption and operational readiness are measured with indicators",
+        "ar": "تبنّي التغيير وجاهزية التشغيل يُقاسان بمؤشرات"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Business owners + PMO",
+       "ar": "مالكو الأعمال + المكتب"
+      },
+      "kpi": {
+       "en": "Operational readiness signed before every handover",
+       "ar": "جاهزية التشغيل موقعة قبل كل تسليم"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "pj.bn",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "pj.inf",
+    "phase": "ISO 21502:2020",
+    "title": {
+     "en": "ISO 21502:2020 · Information, procurement & learning",
+     "ar": "ISO 21502:2020 · المعلومات والتوريد والتعلّم"
+    },
+    "short": {
+     "en": "Info & learning",
+     "ar": "المعلومات والتعلّم"
+    },
+    "intro": {
+     "en": "How the organization governs and manages its projects through the life cycle, integrated practices and the eighteen management practices.",
+     "ar": "كيف تُحوكم المنشأة مشاريعها وتديرها عبر دورة الحياة والممارسات المتكاملة وممارسات الإدارة الثماني عشرة."
+    },
+    "clause": "7.16–7.18",
+    "items": [
+     {
+      "ref": "pj.id",
+      "clause": "7.16",
+      "title": {
+       "en": "Information & documentation management",
+       "ar": "إدارة المعلومات والوثائق"
+      },
+      "short": {
+       "en": "Information & documents",
+       "ar": "المعلومات والوثائق"
+      },
+      "req": {
+       "en": "The information to be managed is identified, stored, retrieved and version-controlled securely.",
+       "ar": "المعلومات الواجب إدارتها تُحدَّد، وتُخزَّن وتُسترجع وتُضبط إصداراتها بطريقة آمنة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Set up a common project repository with naming rules",
+        "ar": "مستودع مشروع موحد وقواعد تسمية"
+       },
+       {
+        "en": "Version control, retention rules and access rights",
+        "ar": "ضبط الإصدارات وقواعد الاحتفاظ والصلاحيات"
+       },
+       {
+        "en": "Periodic records audit linked to the document management system",
+        "ar": "تدقيق دوري للسجلات وربطها بنظام إدارة الوثائق"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Documents sit in personal email and folders",
+        "ar": "الوثائق في بريد الأفراد ومجلداتهم"
+       },
+       {
+        "en": "A controlled repository with naming, versioning and retention rules for every project",
+        "ar": "مستودع مضبوط وقواعد تسمية وإصدارات واحتفاظ لكل مشروع"
+       },
+       {
+        "en": "Record completeness and retrieval are audited",
+        "ar": "اكتمال السجلات وسرعة استرجاعها يُدققان"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Document controller + PMO",
+       "ar": "ضابط الوثائق + المكتب"
+      },
+      "kpi": {
+       "en": "100% of approved documents in the repository",
+       "ar": "100% من الوثائق المعتمدة في المستودع"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "pj.pr",
+      "clause": "7.17",
+      "title": {
+       "en": "Procurement",
+       "ar": "المشتريات"
+      },
+      "short": {
+       "en": "Procurement",
+       "ar": "المشتريات"
+      },
+      "req": {
+       "en": "Procurement is planned, suppliers are evaluated and selected, and contracts are administered and closed to serve project objectives.",
+       "ar": "المشتريات تُخطَّط، والموردون يُقيَّمون ويُختارون، والعقود تُدار وتُغلق بما يخدم أهداف المشروع."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A procurement plan tied to the schedule for every project",
+        "ar": "خطة مشتريات مرتبطة بالجدول لكل مشروع"
+       },
+       {
+        "en": "Supplier evaluation criteria and contract performance tracking",
+        "ar": "معايير تقييم موردين ومتابعة أداء العقود"
+       },
+       {
+        "en": "Link supplier evaluation to prequalification and a performance record",
+        "ar": "ربط تقييم الموردين بالتأهيل المسبق وسجل الأداء"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Buying happens when needed without a procurement plan",
+        "ar": "الشراء يتم عند الحاجة دون خطة مشتريات"
+       },
+       {
+        "en": "A procurement plan, supplier evaluation criteria and contract administration for every project",
+        "ar": "خطة مشتريات ومعايير تقييم موردين وإدارة عقود لكل مشروع"
+       },
+       {
+        "en": "Supplier performance and contract claims are measured and feed the next selection",
+        "ar": "أداء الموردين ومطالبات العقود يُقاسان ويُغذيان الاختيار القادم"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Procurement + project managers",
+       "ar": "المشتريات + مديرو المشاريع"
+      },
+      "kpi": {
+       "en": "Critical deliveries on time ≥ 90%",
+       "ar": "التوريدات الحرجة في موعدها ≥ 90%"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "pj.sd",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pj.ll",
+      "clause": "7.18",
+      "title": {
+       "en": "Lessons learned",
+       "ar": "الدروس المستفادة"
+      },
+      "short": {
+       "en": "Lessons learned",
+       "ar": "الدروس المستفادة"
+      },
+      "req": {
+       "en": "Lessons are identified during the project and at closure, disseminated and applied to later projects.",
+       "ar": "الدروس تُحدَّد طوال المشروع وعند إغلاقه، وتُنشر وتُطبق في المشاريع اللاحقة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A common lessons log for every project",
+        "ar": "سجل دروس موحد لكل مشروع"
+       },
+       {
+        "en": "Review lessons at the start gate of every new project",
+        "ar": "مراجعة الدروس عند بوابة البدء لكل مشروع جديد"
+       },
+       {
+        "en": "A searchable lessons library and measured application rate",
+        "ar": "مكتبة دروس قابلة للبحث وقياس نسبة التطبيق"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Lessons are mentioned verbally at the last meeting",
+        "ar": "دروس تُذكر شفهياً في الاجتماع الأخير"
+       },
+       {
+        "en": "A common lessons log updated each phase and reviewed when new projects start",
+        "ar": "سجل دروس موحد يُحدَّث في كل مرحلة ويُراجع عند بدء المشاريع الجديدة"
+       },
+       {
+        "en": "The share of lessons actually applied is measured",
+        "ar": "نسبة الدروس المطبقة فعلاً تُقاس"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "PMO",
+       "ar": "المكتب"
+      },
+      "kpi": {
+       "en": "≥ 70% of approved lessons applied",
+       "ar": "≥ 70% من الدروس المعتمدة مطبقة"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "pg.fnd",
+    "phase": "ISO 21503:2022",
+    "title": {
+     "en": "ISO 21503:2022 · Programme foundations",
+     "ar": "ISO 21503:2022 · أسس البرنامج"
+    },
+    "short": {
+     "en": "Foundations",
+     "ar": "الأسس"
+    },
+    "intro": {
+     "en": "How the organization establishes, governs and integrates programmes to deliver benefits not achievable by managing projects separately.",
+     "ar": "كيف تُنشئ المنشأة برامجها وتحوكمها وتدمج مكوناتها لتحقيق منافع لا تتحقق بإدارة المشاريع منفردة."
+    },
+    "clause": "4.2 · 5.2 · 5.3 · 6.2",
+    "items": [
+     {
+      "ref": "pg.nd",
+      "clause": "5.2 · 6.2",
+      "title": {
+       "en": "Need evaluation & establishment",
+       "ar": "تقييم الحاجة وإنشاء البرنامج"
+      },
+      "short": {
+       "en": "Establishment",
+       "ar": "إنشاء البرنامج"
+      },
+      "req": {
+       "en": "The need for programme management is evaluated, and each programme is established with a mandate, a target-state vision and a roadmap.",
+       "ar": "الحاجة إلى إدارة برامج تُقيَّم، ويُنشأ كل برنامج بتفويض ورؤية للحالة المستهدفة وخارطة طريق."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Write a mandate for every current programme",
+        "ar": "تفويض مكتوب لكل برنامج قائم"
+       },
+       {
+        "en": "Target-state vision and a tranche roadmap",
+        "ar": "رؤية الحالة المستهدفة وخارطة طريق بالشرائح"
+       },
+       {
+        "en": "Review programme viability at the end of each tranche",
+        "ar": "مراجعة جدوى البرنامج في نهاية كل شريحة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Programmes are announced as groups of projects without a mandate",
+        "ar": "البرامج تُعلن كمجموعات مشاريع دون تفويض"
+       },
+       {
+        "en": "An approved mandate, vision and roadmap for every programme",
+        "ar": "تفويض برنامج ورؤية وخارطة طريق معتمدة لكل برنامج"
+       },
+       {
+        "en": "Programme viability is reviewed periodically against strategy",
+        "ar": "جدوى البرنامج تُراجع دورياً مقابل الاستراتيجية"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Programme sponsor",
+       "ar": "راعي البرنامج"
+      },
+      "kpi": {
+       "en": "100% of programmes with an approved mandate and roadmap",
+       "ar": "100% من البرامج بتفويض وخارطة معتمدين"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pg.al",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "pg.al",
+      "clause": "4.2.5 · 4.2.6",
+      "title": {
+       "en": "Alignment & structure",
+       "ar": "المواءمة والهيكلة"
+      },
+      "short": {
+       "en": "Alignment",
+       "ar": "المواءمة"
+      },
+      "req": {
+       "en": "The programme is aligned with organizational strategy and structured into components (projects, sub-programmes, other work) with clear relationships.",
+       "ar": "البرنامج متوائم مع استراتيجية المنشأة ومهيكل في مكونات (مشاريع، برامج فرعية، أعمال أخرى) بعلاقات واضحة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Map programme components to objectives",
+        "ar": "خريطة مكونات البرنامج وربطها بالأهداف"
+       },
+       {
+        "en": "Rules for adding and stopping components",
+        "ar": "قواعد إضافة المكونات وإيقافها"
+       },
+       {
+        "en": "Quarterly alignment check with the portfolio office",
+        "ar": "فحص المواءمة ربعياً مع مكتب المحفظة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Components are known but not linked to objectives",
+        "ar": "المكونات معروفة دون ربط بالأهداف"
+       },
+       {
+        "en": "A component map links every component to a strategic objective and benefit",
+        "ar": "خريطة مكونات تربط كل مكون بهدف استراتيجي ومنفعة"
+       },
+       {
+        "en": "Alignment is checked whenever a component is added or stopped",
+        "ar": "المواءمة تُفحص عند إضافة أو إيقاف أي مكون"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Programme manager",
+       "ar": "مدير البرنامج"
+      },
+      "kpi": {
+       "en": "100% of components linked to an objective",
+       "ar": "100% من المكونات مربوطة بهدف"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pg.ig",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "pg.bn",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "pg.nd",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pg.im",
+      "clause": "5.3",
+      "title": {
+       "en": "Implementing programme management",
+       "ar": "تطبيق إدارة البرامج في المنشأة"
+      },
+      "short": {
+       "en": "Programme method",
+       "ar": "منهجية البرامج"
+      },
+      "req": {
+       "en": "Programme management is implemented in the organization with a clear approach and tools, integrated with portfolio and project management.",
+       "ar": "إدارة البرامج مطبقة في المنشأة بنهج وأدوات واضحة، ومتكاملة مع إدارة المحافظ والمشاريع."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A short programme management guide",
+        "ar": "دليل مختصر لإدارة البرامج"
+       },
+       {
+        "en": "Link the method to the project method and templates",
+        "ar": "ربط المنهجية بمنهجية المشاريع ونماذجها"
+       },
+       {
+        "en": "Periodic method compliance audit",
+        "ar": "تدقيق دوري لتطبيق المنهجية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Each programme is run in its manager's own way",
+        "ar": "كل برنامج يُدار بأسلوب مديره"
+       },
+       {
+        "en": "A common programme method linked to the project and portfolio methods",
+        "ar": "منهجية برامج موحدة مرتبطة بمنهجية المشاريع والمحفظة"
+       },
+       {
+        "en": "Method compliance is audited and measured",
+        "ar": "تطبيق المنهجية يُدقق ويُقاس"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Enterprise PMO",
+       "ar": "مكتب المشاريع المؤسسي"
+      },
+      "kpi": {
+       "en": "Programme guide approved and applied",
+       "ar": "دليل البرامج معتمد ومطبق"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "pg.gvr",
+    "phase": "ISO 21503:2022",
+    "title": {
+     "en": "ISO 21503:2022 · Governance & roles",
+     "ar": "ISO 21503:2022 · الحوكمة والأدوار"
+    },
+    "short": {
+     "en": "Governance",
+     "ar": "الحوكمة"
+    },
+    "intro": {
+     "en": "How the organization establishes, governs and integrates programmes to deliver benefits not achievable by managing projects separately.",
+     "ar": "كيف تُنشئ المنشأة برامجها وتحوكمها وتدمج مكوناتها لتحقيق منافع لا تتحقق بإدارة المشاريع منفردة."
+    },
+    "clause": "4.2.7 · 5.4 · 5.5",
+    "items": [
+     {
+      "ref": "pg.gv",
+      "clause": "5.4",
+      "title": {
+       "en": "Programme governance",
+       "ar": "حوكمة البرامج"
+      },
+      "short": {
+       "en": "Programme governance",
+       "ar": "حوكمة البرنامج"
+      },
+      "req": {
+       "en": "Each programme has a governing body with defined authority, decisions and review points, consistent with organizational and portfolio governance.",
+       "ar": "لكل برنامج هيئة حوكمة بصلاحيات وقرارات ونقاط مراجعة محددة، تتسق مع حوكمة المنشأة والمحفظة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Terms of reference for every programme board",
+        "ar": "شروط مرجعية لمجلس كل برنامج"
+       },
+       {
+        "en": "Review points at the end of each tranche",
+        "ar": "نقاط مراجعة عند نهاية كل شريحة"
+       },
+       {
+        "en": "Independent assurance and board effectiveness review",
+        "ar": "ضمان مستقل وتقييم فعالية المجلس"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Irregular management meetings for the programme",
+        "ar": "اجتماعات إدارة غير منتظمة للبرنامج"
+       },
+       {
+        "en": "A programme board with terms of reference, authority and review points",
+        "ar": "مجلس برنامج بشروط مرجعية وصلاحيات ونقاط مراجعة"
+       },
+       {
+        "en": "Board decisions are logged; independent assurance runs at tranche ends",
+        "ar": "قرارات المجلس مسجلة، والضمان المستقل يُجرى عند نهاية الشرائح"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Programme sponsor",
+       "ar": "راعي البرنامج"
+      },
+      "kpi": {
+       "en": "Programme board meets monthly with minutes",
+       "ar": "مجلس البرنامج ينعقد شهرياً بمحضر"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "pg.ro",
+      "clause": "5.5",
+      "title": {
+       "en": "Roles & responsibilities",
+       "ar": "الأدوار والمسؤوليات"
+      },
+      "short": {
+       "en": "Programme roles",
+       "ar": "أدوار البرنامج"
+      },
+      "req": {
+       "en": "The roles of programme sponsor, programme manager, programme team and business change owners are defined and understood.",
+       "ar": "أدوار راعي البرنامج ومديره وفريقه ومالكي التغيير في الأعمال محددة ومفهومة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Name a sponsor and manager for every programme",
+        "ar": "تسمية راعٍ ومدير لكل برنامج"
+       },
+       {
+        "en": "RACI and programme team role descriptions",
+        "ar": "مصفوفة RACI وأوصاف أدوار فريق البرنامج"
+       },
+       {
+        "en": "Yearly review of role performance",
+        "ar": "مراجعة أداء الأدوار سنوياً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The sponsor is unclear or inactive",
+        "ar": "الراعي غير واضح أو غير فاعل"
+       },
+       {
+        "en": "Programme role descriptions and a RACI are approved",
+        "ar": "أوصاف أدوار البرنامج ومصفوفة RACI معتمدة"
+       },
+       {
+        "en": "Role performance and the sponsor's committed time are reviewed",
+        "ar": "أداء الأدوار ووقت الراعي المخصص يُراجعان"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "HR + PMO",
+       "ar": "الموارد البشرية + المكتب"
+      },
+      "kpi": {
+       "en": "Every programme with a named sponsor and manager",
+       "ar": "كل برنامج براعٍ ومدير معيَّنين"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "pg.sh",
+      "clause": "4.2.7 · 6.4",
+      "title": {
+       "en": "Programme stakeholders",
+       "ar": "أصحاب المصلحة في البرنامج"
+      },
+      "short": {
+       "en": "Stakeholders",
+       "ar": "أصحاب المصلحة"
+      },
+      "req": {
+       "en": "Programme stakeholders are identified and engaged at programme level, consistent with project-level engagement.",
+       "ar": "أصحاب مصلحة البرنامج يُحدَّدون ويُشركون على مستوى البرنامج بما يتسق مع إشراك المشاريع."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Map programme stakeholders",
+        "ar": "خريطة أصحاب مصلحة البرنامج"
+       },
+       {
+        "en": "One engagement and communication plan for the programme",
+        "ar": "خطة إشراك واتصال موحدة للبرنامج"
+       },
+       {
+        "en": "Track stakeholder attitudes each tranche",
+        "ar": "رصد مواقف أصحاب المصلحة عند كل شريحة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Each project communicates separately",
+        "ar": "كل مشروع يتواصل منفرداً"
+       },
+       {
+        "en": "A programme-level stakeholder map and engagement plan",
+        "ar": "خريطة أصحاب مصلحة وخطة إشراك على مستوى البرنامج"
+       },
+       {
+        "en": "Key stakeholder attitudes are tracked at each tranche",
+        "ar": "مواقف أصحاب المصلحة الرئيسيين تُرصد عند كل شريحة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Programme manager",
+       "ar": "مدير البرنامج"
+      },
+      "kpi": {
+       "en": "Key stakeholder satisfaction ≥ 4/5",
+       "ar": "رضا أصحاب المصلحة الرئيسيين ≥ 4/5"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "pg.mng",
+    "phase": "ISO 21503:2022",
+    "title": {
+     "en": "ISO 21503:2022 · Managing the programme",
+     "ar": "ISO 21503:2022 · إدارة البرنامج"
+    },
+    "short": {
+     "en": "Managing",
+     "ar": "الإدارة"
+    },
+    "intro": {
+     "en": "How the organization establishes, governs and integrates programmes to deliver benefits not achievable by managing projects separately.",
+     "ar": "كيف تُنشئ المنشأة برامجها وتحوكمها وتدمج مكوناتها لتحقيق منافع لا تتحقق بإدارة المشاريع منفردة."
+    },
+    "clause": "6.3–6.5",
+    "items": [
+     {
+      "ref": "pg.ig",
+      "clause": "6.3",
+      "title": {
+       "en": "Integration & dependencies",
+       "ar": "تكامل البرنامج والاعتماديات"
+      },
+      "short": {
+       "en": "Integration",
+       "ar": "التكامل"
+      },
+      "req": {
+       "en": "Dependencies and interfaces between programme components are managed, and shared resources and risks are coordinated.",
+       "ar": "الاعتماديات والواجهات بين مكونات البرنامج تُدار، والموارد والمخاطر المشتركة تُنسَّق."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Build a dependency register across components",
+        "ar": "سجل اعتماديات بين المكونات"
+       },
+       {
+        "en": "A programme master schedule linking component milestones",
+        "ar": "جدول رئيسي للبرنامج يربط معالم المكونات"
+       },
+       {
+        "en": "Monthly dependency impact analysis",
+        "ar": "تحليل شهري لأثر الاعتماديات"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Dependencies are found when delays happen",
+        "ar": "الاعتماديات تُكتشف عند حدوث التأخير"
+       },
+       {
+        "en": "A dependency and interface register and a programme master schedule",
+        "ar": "سجل اعتماديات وواجهات وجدول رئيسي للبرنامج"
+       },
+       {
+        "en": "The effect of dependencies on the programme critical path is analysed monthly",
+        "ar": "أثر الاعتماديات على المسار الحرج للبرنامج يُحلَّل شهرياً"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Programme office",
+       "ar": "مكتب البرنامج"
+      },
+      "kpi": {
+       "en": "100% of critical dependencies have an owner",
+       "ar": "100% من الاعتماديات الحرجة لها مالك"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "pg.al",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pg.mp",
+      "clause": "6.4",
+      "title": {
+       "en": "Programme management practices",
+       "ar": "ممارسات الإدارة على مستوى البرنامج"
+      },
+      "short": {
+       "en": "Programme practices",
+       "ar": "ممارسات البرنامج"
+      },
+      "req": {
+       "en": "Planning, risk, issues, resources, finance and change are managed at programme level, not only per project.",
+       "ar": "التخطيط والمخاطر والمشكلات والموارد والمالية والتغيير تُدار على مستوى البرنامج لا المشروع فقط."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Programme-level risk and issue log",
+        "ar": "سجل مخاطر ومشكلات على مستوى البرنامج"
+       },
+       {
+        "en": "Programme plan, budget and change control",
+        "ar": "خطة برنامج وموازنة وضبط تغيير على مستواه"
+       },
+       {
+        "en": "Roll up component indicators in one dashboard",
+        "ar": "تجميع المؤشرات من المكونات في لوحة واحدة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Practices run only inside projects",
+        "ar": "الممارسات تُطبق داخل المشاريع فقط"
+       },
+       {
+        "en": "A programme plan and programme-level risk, issue and change logs",
+        "ar": "خطة برنامج وسجلات مخاطر ومشكلات وتغيير على مستوى البرنامج"
+       },
+       {
+        "en": "Programme cost and schedule indicators roll up from components and are analysed",
+        "ar": "مؤشرات البرنامج المالية والزمنية تُجمع من المكونات وتُحلَّل"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Programme manager",
+       "ar": "مدير البرنامج"
+      },
+      "kpi": {
+       "en": "Monthly programme dashboard issued on time",
+       "ar": "لوحة برنامج شهرية تصدر في موعدها"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pg.ct",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "pg.ct",
+      "clause": "6.5",
+      "title": {
+       "en": "Programme control",
+       "ar": "ضبط البرنامج"
+      },
+      "short": {
+       "en": "Control",
+       "ar": "ضبط البرنامج"
+      },
+      "req": {
+       "en": "Programme and component performance is monitored against the plan and benefits, with re-planning or redirection when needed.",
+       "ar": "أداء البرنامج ومكوناته يُرصد مقابل الخطة والمنافع، ويُعاد التخطيط أو التوجيه عند الحاجة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Set programme-level tolerances",
+        "ar": "حدود تحمّل على مستوى البرنامج"
+       },
+       {
+        "en": "Monthly performance review of the programme and components",
+        "ar": "مراجعة أداء شهرية للبرنامج ومكوناته"
+       },
+       {
+        "en": "End-of-tranche review with a continue or redirect decision",
+        "ar": "مراجعة نهاية الشريحة بقرار استمرار أو إعادة توجيه"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Monitoring happens project by project",
+        "ar": "المتابعة على مستوى كل مشروع منفرد"
+       },
+       {
+        "en": "Periodic programme performance reviews with written tolerances",
+        "ar": "مراجعات أداء دورية للبرنامج بحدود تحمّل مكتوبة"
+       },
+       {
+        "en": "Redirection decisions use aggregated performance and benefit data",
+        "ar": "قرارات إعادة التوجيه تُبنى على بيانات أداء ومنافع مجمعة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Programme board",
+       "ar": "مجلس البرنامج"
+      },
+      "kpi": {
+       "en": "End-of-tranche review held",
+       "ar": "مراجعة نهاية كل شريحة منعقدة"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "pg.mp",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "pg.bcl",
+    "phase": "ISO 21503:2022",
+    "title": {
+     "en": "ISO 21503:2022 · Benefits, life cycle & closure",
+     "ar": "ISO 21503:2022 · المنافع ودورة الحياة والإغلاق"
+    },
+    "short": {
+     "en": "Benefits & closure",
+     "ar": "المنافع والإغلاق"
+    },
+    "intro": {
+     "en": "How the organization establishes, governs and integrates programmes to deliver benefits not achievable by managing projects separately.",
+     "ar": "كيف تُنشئ المنشأة برامجها وتحوكمها وتدمج مكوناتها لتحقيق منافع لا تتحقق بإدارة المشاريع منفردة."
+    },
+    "clause": "4.3.4 · 6.6 · 6.7",
+    "items": [
+     {
+      "ref": "pg.bn",
+      "clause": "6.6",
+      "title": {
+       "en": "Programme benefit management",
+       "ar": "إدارة منافع البرنامج"
+      },
+      "short": {
+       "en": "Programme benefits",
+       "ar": "منافع البرنامج"
+      },
+      "req": {
+       "en": "Programme benefits are identified, planned, realized and sustained, linking component outputs to outcomes and benefits.",
+       "ar": "منافع البرنامج تُحدَّد وتُخطَّط وتُحقق وتُصان، مع ربط مخرجات المكونات بالنتائج والمنافع."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Map programme benefits from outputs to objectives",
+        "ar": "خريطة منافع البرنامج من المخرجات إلى الأهداف"
+       },
+       {
+        "en": "Benefits register with owners and a realization plan",
+        "ar": "سجل منافع بمالكين وخطة تحقيق"
+       },
+       {
+        "en": "Benefit reviews after each tranche and after closure",
+        "ar": "مراجعة المنافع بعد كل شريحة وبعد الإغلاق"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Benefits are measured project by project",
+        "ar": "المنافع تُقاس لكل مشروع على حدة"
+       },
+       {
+        "en": "A programme benefits map, register and realization plan",
+        "ar": "خريطة منافع وسجل وخطة تحقيق على مستوى البرنامج"
+       },
+       {
+        "en": "Benefit realization is measured after each tranche and reported to the board",
+        "ar": "تحقق المنافع يُقاس بعد كل شريحة ويُرفع للمجلس"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Benefit owners",
+       "ar": "مالكو المنافع"
+      },
+      "kpi": {
+       "en": "≥ 70% of planned benefits realized on time",
+       "ar": "≥ 70% من المنافع المخططة متحققة في موعدها"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "pg.al",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pg.lc",
+      "clause": "4.3.4",
+      "title": {
+       "en": "Programme life cycle & tranches",
+       "ar": "دورة حياة البرنامج والشرائح"
+      },
+      "short": {
+       "en": "Life cycle",
+       "ar": "دورة الحياة"
+      },
+      "req": {
+       "en": "The programme life cycle is defined in tranches that deliver successive capabilities and benefits, with a review at the end of each.",
+       "ar": "دورة حياة البرنامج معرَّفة بشرائح تقدم قدرات ومنافع متتابعة، مع مراجعة عند نهاية كل شريحة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Split the programme into tranches",
+        "ar": "تقسيم البرنامج إلى شرائح"
+       },
+       {
+        "en": "End-of-tranche criteria linked to funding",
+        "ar": "معايير نهاية الشريحة وربطها بالتمويل"
+       },
+       {
+        "en": "Improve tranche design from previous programmes",
+        "ar": "تحسين تصميم الشرائح من نتائج البرامج السابقة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "No tranches: the programme is one block",
+        "ar": "لا توجد شرائح؛ البرنامج كتلة واحدة"
+       },
+       {
+        "en": "Tranches defined with capabilities, benefits and end criteria",
+        "ar": "شرائح معرَّفة بقدرات ومنافع ومعايير نهاية"
+       },
+       {
+        "en": "Each tranche's results are assessed before the next is funded",
+        "ar": "نتائج كل شريحة تُقيَّم قبل تمويل التالية"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Programme manager",
+       "ar": "مدير البرنامج"
+      },
+      "kpi": {
+       "en": "Next-tranche funding conditional on review",
+       "ar": "تمويل الشريحة التالية مشروط بالمراجعة"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "pg.cl",
+      "clause": "6.7",
+      "title": {
+       "en": "Programme closure",
+       "ar": "إغلاق البرنامج"
+      },
+      "short": {
+       "en": "Closure",
+       "ar": "إغلاق البرنامج"
+      },
+      "req": {
+       "en": "The programme closes when its objectives are met or its justification ends, transferring remaining benefits and planning post-programme evaluation.",
+       "ar": "البرنامج يُغلق حين تتحقق أهدافه أو تزول مبرراته، مع نقل مسؤولية المنافع المتبقية وتقييم ما بعد البرنامج."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Set closure criteria for every programme",
+        "ar": "معايير إغلاق لكل برنامج"
+       },
+       {
+        "en": "End-programme report and benefits transfer",
+        "ar": "تقرير نهاية برنامج ونقل المنافع"
+       },
+       {
+        "en": "Post-programme evaluation per ISO 21513",
+        "ar": "تقييم ما بعد البرنامج وفق ISO 21513"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Programmes carry on with no closure decision",
+        "ar": "البرامج تستمر دون قرار إغلاق"
+       },
+       {
+        "en": "Closure criteria, an end-programme report and transfer of benefits to owners",
+        "ar": "معايير إغلاق وتقرير نهاية برنامج ونقل المنافع لمالكيها"
+       },
+       {
+        "en": "Post-programme evaluation (ISO 21513) scheduled and completed",
+        "ar": "تقييم ما بعد البرنامج (ISO 21513) مجدول ومنجز"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Programme sponsor",
+       "ar": "راعي البرنامج"
+      },
+      "kpi": {
+       "en": "100% of closed programmes with report and evaluation",
+       "ar": "100% من البرامج المغلقة بتقرير وتقييم"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "pf.prn",
+    "phase": "ISO 21504:2022",
+    "title": {
+     "en": "ISO 21504:2022 · Principles & roles",
+     "ar": "ISO 21504:2022 · المبادئ والأدوار"
+    },
+    "short": {
+     "en": "Principles",
+     "ar": "المبادئ"
+    },
+    "intro": {
+     "en": "How the organization selects, balances and monitors its portfolio components against strategic objectives and available capacity.",
+     "ar": "كيف تختار المنشأة مكونات محفظتها وتوازنها وتراقب أداءها ومنافعها مقابل الأهداف الاستراتيجية والقدرة المتاحة."
+    },
+    "clause": "4",
+    "items": [
+     {
+      "ref": "pf.cc",
+      "clause": "4.2.3 · 4.2.4",
+      "title": {
+       "en": "Capabilities, constraints, opportunities & threats",
+       "ar": "القدرات والقيود والفرص والتهديدات"
+      },
+      "short": {
+       "en": "Capacity & constraints",
+       "ar": "القدرة والقيود"
+      },
+      "req": {
+       "en": "The organization's capabilities and constraints (financial, human, regulatory) and its opportunities and threats are understood and shape the portfolio.",
+       "ar": "قدرات المنشأة وقيودها (مالية، بشرية، تنظيمية) والفرص والتهديدات مفهومة وتُراعى في تكوين المحفظة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Analyse portfolio capacity and constraints",
+        "ar": "تحليل القدرة والقيود للمحفظة"
+       },
+       {
+        "en": "Link the capacity analysis to the annual planning cycle",
+        "ar": "ربط تحليل القدرة بدورة التخطيط السنوي"
+       },
+       {
+        "en": "A predictive portfolio capacity model",
+        "ar": "نموذج سعة تنبؤي للمحفظة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Capacity is judged by instinct",
+        "ar": "القدرة تُقدَّر حدسياً"
+       },
+       {
+        "en": "A documented analysis of capacity, constraints, opportunities and threats updated yearly",
+        "ar": "تحليل موثق للقدرة والقيود والفرص والتهديدات يُحدَّث سنوياً"
+       },
+       {
+        "en": "Capacity limits are applied numerically when approving components",
+        "ar": "حدود القدرة تُستخدم رقمياً عند اعتماد المكونات"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio analyst",
+       "ar": "محلل المحفظة"
+      },
+      "kpi": {
+       "en": "Capacity analysis updated yearly",
+       "ar": "تحليل القدرة محدث سنوياً"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "pf.dr",
+      "clause": "4.3",
+      "title": {
+       "en": "Roles & decision rights",
+       "ar": "الأدوار وصلاحيات القرار"
+      },
+      "short": {
+       "en": "Decision rights",
+       "ar": "صلاحيات القرار"
+      },
+      "req": {
+       "en": "Roles, responsibilities and decision rights over portfolio content are defined for who selects, stops and redirects components.",
+       "ar": "الأدوار والمسؤوليات وصلاحيات القرار على محتوى المحفظة محددة لمن يختار ويوقف ويعيد توجيه المكونات."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Set up a portfolio committee with terms of reference",
+        "ar": "تشكيل لجنة محفظة بشروط مرجعية"
+       },
+       {
+        "en": "Delegation matrix for selecting and stopping components",
+        "ar": "مصفوفة صلاحيات لاختيار المكونات وإيقافها"
+       },
+       {
+        "en": "Portfolio decision log and effectiveness review",
+        "ar": "سجل قرارات المحفظة ومراجعة فعاليتها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Decisions are taken individually outside any committee",
+        "ar": "القرارات تُتخذ فردياً خارج أي لجنة"
+       },
+       {
+        "en": "A portfolio committee with written authority and a delegation matrix",
+        "ar": "لجنة محفظة بصلاحيات مكتوبة ومصفوفة تفويض"
+       },
+       {
+        "en": "Portfolio decisions are logged, justified and timed",
+        "ar": "قرارات المحفظة مسجلة ومبررة وزمنها يُقاس"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "CEO + portfolio office",
+       "ar": "الرئيس التنفيذي + مكتب المحفظة"
+      },
+      "kpi": {
+       "en": "Every portfolio decision logged and justified",
+       "ar": "كل قرار محفظة مسجل ومبرر"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pf.cr",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "pf.sh",
+      "clause": "4.4",
+      "title": {
+       "en": "Stakeholder engagement",
+       "ar": "إشراك أصحاب المصلحة"
+      },
+      "short": {
+       "en": "Stakeholders",
+       "ar": "أصحاب المصلحة"
+      },
+      "req": {
+       "en": "Portfolio stakeholders are identified and engaged in setting priorities and decisions.",
+       "ar": "أصحاب مصلحة المحفظة يُحدَّدون ويُشركون في تحديد الأولويات والقرارات."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Map portfolio stakeholders",
+        "ar": "خريطة أصحاب مصلحة المحفظة"
+       },
+       {
+        "en": "Annual prioritization workshop with them",
+        "ar": "ورشة سنوية لتحديد الأولويات بمشاركتهم"
+       },
+       {
+        "en": "Survey confidence in portfolio decisions",
+        "ar": "استبيان ثقة بقرارات المحفظة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Departments compete for priority without a channel",
+        "ar": "الإدارات تتنافس على الأولويات دون قناة"
+       },
+       {
+        "en": "A portfolio stakeholder map and a channel for input to prioritization",
+        "ar": "خريطة أصحاب مصلحة المحفظة وقناة مشاركة في تحديد الأولويات"
+       },
+       {
+        "en": "Stakeholder confidence in prioritization is measured",
+        "ar": "رضا أصحاب المصلحة عن عدالة الأولويات يُقاس"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio office",
+       "ar": "مكتب المحفظة"
+      },
+      "kpi": {
+       "en": "Stakeholder confidence in priorities ≥ 4/5",
+       "ar": "ثقة أصحاب المصلحة بالأولويات ≥ 4/5"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "pf.pre",
+    "phase": "ISO 21504:2022",
+    "title": {
+     "en": "ISO 21504:2022 · Prerequisites",
+     "ar": "ISO 21504:2022 · متطلبات إدارة المحافظ المسبقة"
+    },
+    "short": {
+     "en": "Prerequisites",
+     "ar": "الممكِّنات"
+    },
+    "intro": {
+     "en": "How the organization selects, balances and monitors its portfolio components against strategic objectives and available capacity.",
+     "ar": "كيف تختار المنشأة مكونات محفظتها وتوازنها وتراقب أداءها ومنافعها مقابل الأهداف الاستراتيجية والقدرة المتاحة."
+    },
+    "clause": "5",
+    "items": [
+     {
+      "ref": "pf.fw",
+      "clause": "5.2 · 5.3 · 5.6",
+      "title": {
+       "en": "Portfolio framework & justification",
+       "ar": "إطار إدارة المحفظة ومبرراته"
+      },
+      "short": {
+       "en": "Portfolio framework",
+       "ar": "إطار المحفظة"
+      },
+      "req": {
+       "en": "The case for portfolio management is agreed and a documented framework sets processes and tools, integrated with planning, budgeting and organizational systems.",
+       "ar": "مبرر إدارة المحفظة معتمد، وإطار موثق يحدد العمليات والأدوات ويتكامل مع التخطيط والموازنة وأنظمة المنشأة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A short portfolio guide defining the annual cycle",
+        "ar": "دليل محفظة مختصر يحدد الدورة السنوية"
+       },
+       {
+        "en": "Link the framework to budgeting and strategic planning",
+        "ar": "ربط الإطار بالموازنة والتخطيط الاستراتيجي"
+       },
+       {
+        "en": "Yearly framework compliance audit",
+        "ar": "تدقيق سنوي لتطبيق الإطار"
+       }
+      ],
+      "ev": [
+       {
+        "en": "No framework: just a list of projects",
+        "ar": "لا يوجد إطار؛ قائمة مشاريع فقط"
+       },
+       {
+        "en": "A documented portfolio framework linked to the planning and budget cycle",
+        "ar": "إطار محفظة موثق مربوط بدورة التخطيط والموازنة"
+       },
+       {
+        "en": "Framework compliance is audited and its effect on decisions measured",
+        "ar": "تطبيق الإطار يُدقق، وأثره على القرارات يُقاس"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio office",
+       "ar": "مكتب المحفظة"
+      },
+      "kpi": {
+       "en": "Portfolio guide approved and applied",
+       "ar": "دليل المحفظة معتمد ومطبق"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pf.ob",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "pf.cr",
+      "clause": "5.4 · 5.5",
+      "title": {
+       "en": "Component types, selection & priority criteria",
+       "ar": "أنواع المكونات ومعايير الاختيار والأولوية"
+      },
+      "short": {
+       "en": "Selection criteria",
+       "ar": "معايير الاختيار"
+      },
+      "req": {
+       "en": "Portfolio component types and weighted criteria for selecting and prioritizing them (value, alignment, risk, capacity) are approved and published.",
+       "ar": "أنواع مكونات المحفظة ومعايير موزونة لاختيارها وترتيب أولويتها (قيمة، مواءمة، مخاطر، قدرة) معتمدة ومنشورة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Approve weighted selection and priority criteria",
+        "ar": "اعتماد معايير اختيار وأولوية موزونة"
+       },
+       {
+        "en": "Apply the scoring model to every new proposal",
+        "ar": "تطبيق نموذج التقييم على كل مقترح جديد"
+       },
+       {
+        "en": "Calibrate weights from realized value",
+        "ar": "معايرة الأوزان من القيمة المتحققة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Priority goes to whoever pushes hardest",
+        "ar": "الأولوية لمن يرفع صوته أكثر"
+       },
+       {
+        "en": "A common weighted scoring model for every proposed component",
+        "ar": "نموذج تقييم موزون وموحد لكل المكونات المقترحة"
+       },
+       {
+        "en": "Scoring accuracy is reviewed against realized value",
+        "ar": "دقة التقييم تُراجع مقارنة بالقيمة المتحققة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio committee",
+       "ar": "لجنة المحفظة"
+      },
+      "kpi": {
+       "en": "100% of proposals scored with the model",
+       "ar": "100% من المقترحات مقيَّمة بالنموذج"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pf.id",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "pf.dr",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pf.vs",
+      "clause": "5.7 · 5.8",
+      "title": {
+       "en": "Visibility & performance reporting structure",
+       "ar": "رؤية المحفظة وهيكل تقارير الأداء"
+      },
+      "short": {
+       "en": "Visibility & reporting",
+       "ar": "الرؤية والتقارير"
+      },
+      "req": {
+       "en": "The whole portfolio is visible in one register, and the performance reporting structure sets who sees what and when.",
+       "ar": "المحفظة كاملة مرئية في سجل واحد، وهيكل تقارير الأداء محدد لمن يرى ماذا ومتى."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "One portfolio register with every component",
+        "ar": "سجل محفظة واحد بكل المكونات"
+       },
+       {
+        "en": "Monthly portfolio dashboard with a defined reporting structure",
+        "ar": "لوحة محفظة شهرية بهيكل تقارير محدد"
+       },
+       {
+        "en": "Measure data quality and move to a PPM system",
+        "ar": "قياس جودة البيانات والانتقال إلى نظام PPM"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Portfolio data sits in scattered spreadsheets",
+        "ar": "بيانات المحفظة في جداول متفرقة"
+       },
+       {
+        "en": "One authoritative portfolio register and a periodic management dashboard",
+        "ar": "سجل محفظة واحد معتمد ولوحة دورية للإدارة"
+       },
+       {
+        "en": "Register data quality is measured and audited",
+        "ar": "جودة بيانات السجل تُقاس وتُدقق"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio analyst",
+       "ar": "محلل المحفظة"
+      },
+      "kpi": {
+       "en": "Register covers 100% of components",
+       "ar": "سجل المحفظة يغطي 100% من المكونات"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pf.pm",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "pf.gv",
+      "clause": "5.9 · 5.10",
+      "title": {
+       "en": "Portfolio governance & improvement",
+       "ar": "حوكمة المحافظ وتحسين إدارتها"
+      },
+      "short": {
+       "en": "Portfolio governance",
+       "ar": "حوكمة المحفظة"
+      },
+      "req": {
+       "en": "Portfolio governance is defined within organizational governance, and portfolio management is reviewed and improved periodically.",
+       "ar": "حوكمة المحفظة محددة ضمن حوكمة المنشأة، وإدارة المحفظة تُراجع وتُحسَّن دورياً."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Document portfolio governance within organizational governance",
+        "ar": "توثيق حوكمة المحفظة ضمن حوكمة المنشأة"
+       },
+       {
+        "en": "Yearly portfolio framework review",
+        "ar": "مراجعة سنوية لإطار المحفظة"
+       },
+       {
+        "en": "Portfolio effectiveness indicators and benchmarking",
+        "ar": "مؤشرات فعالية المحفظة ومقارنتها مرجعياً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Portfolio management is never reviewed",
+        "ar": "لا مراجعة لطريقة إدارة المحفظة"
+       },
+       {
+        "en": "Portfolio governance documented, with a yearly framework review",
+        "ar": "حوكمة المحفظة موثقة ومراجعة سنوية للإطار"
+       },
+       {
+        "en": "Portfolio effectiveness indicators (value, early stops, speed) are tracked",
+        "ar": "مؤشرات فعالية المحفظة (القيمة، الإيقاف المبكر، السرعة) تُتابع"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Board / executive committee",
+       "ar": "مجلس الإدارة / اللجنة التنفيذية"
+      },
+      "kpi": {
+       "en": "Yearly review held and minuted",
+       "ar": "مراجعة سنوية منعقدة ومحضرها معتمد"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "pf.mng",
+    "phase": "ISO 21504:2022",
+    "title": {
+     "en": "ISO 21504:2022 · Managing portfolios",
+     "ar": "ISO 21504:2022 · إدارة المحافظ"
+    },
+    "short": {
+     "en": "Managing",
+     "ar": "الإدارة"
+    },
+    "intro": {
+     "en": "How the organization selects, balances and monitors its portfolio components against strategic objectives and available capacity.",
+     "ar": "كيف تختار المنشأة مكونات محفظتها وتوازنها وتراقب أداءها ومنافعها مقابل الأهداف الاستراتيجية والقدرة المتاحة."
+    },
+    "clause": "6",
+    "items": [
+     {
+      "ref": "pf.ob",
+      "clause": "6.2 · 6.4",
+      "title": {
+       "en": "Portfolio objectives & plan",
+       "ar": "أهداف المحفظة وخطتها"
+      },
+      "short": {
+       "en": "Objectives & plan",
+       "ar": "الأهداف والخطة"
+      },
+      "req": {
+       "en": "Portfolio objectives derive from strategy, and the portfolio plan sets components, resources and timing.",
+       "ar": "أهداف المحفظة مشتقة من الاستراتيجية، وخطة المحفظة تحدد المكونات والموارد والتوقيت."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Derive portfolio objectives from the strategic plan",
+        "ar": "اشتقاق أهداف المحفظة من الخطة الاستراتيجية"
+       },
+       {
+        "en": "Annual portfolio plan with resources and timing",
+        "ar": "خطة محفظة سنوية بالموارد والتوقيت"
+       },
+       {
+        "en": "Quarterly plan review",
+        "ar": "مراجعة ربعية للخطة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The portfolio is built from requests without objectives",
+        "ar": "المحفظة تُبنى من الطلبات دون أهداف"
+       },
+       {
+        "en": "Approved portfolio objectives and an annual portfolio plan",
+        "ar": "أهداف محفظة معتمدة وخطة محفظة سنوية"
+       },
+       {
+        "en": "The plan is reviewed quarterly against objectives and capacity",
+        "ar": "الخطة تُراجع ربعياً مقابل الأهداف والقدرة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio office + strategy",
+       "ar": "مكتب المحفظة + الاستراتيجية"
+      },
+      "kpi": {
+       "en": "Portfolio objectives approved yearly",
+       "ar": "أهداف المحفظة معتمدة سنوياً"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pf.va",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "pf.fw",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pf.id",
+      "clause": "6.3 · 6.5",
+      "title": {
+       "en": "Identifying, assessing & selecting components",
+       "ar": "تحديد المكونات وتقييمها واختيارها"
+      },
+      "short": {
+       "en": "Selection",
+       "ar": "الاختيار"
+      },
+      "req": {
+       "en": "Potential components are identified, assessed against the criteria and the current state, and the best are selected.",
+       "ar": "المكونات المحتملة تُحدَّد وتُقيَّم مقابل المعايير والحالة الراهنة، ويُختار الأنسب منها."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A single intake for proposals",
+        "ar": "نافذة استقبال مقترحات موحدة"
+       },
+       {
+        "en": "Score proposals and compare them together",
+        "ar": "تقييم المقترحات بالمعايير ومقارنتها معاً"
+       },
+       {
+        "en": "Review the quality of selection decisions",
+        "ar": "مراجعة جودة قرارات الاختيار"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Projects are approved one by one when requested",
+        "ar": "المشاريع تُعتمد فرادى عند طلبها"
+       },
+       {
+        "en": "A common intake window and scoring against criteria before approval",
+        "ar": "نافذة استقبال مقترحات موحدة وتقييم بالمعايير قبل الاعتماد"
+       },
+       {
+        "en": "Selection outcomes are reviewed against component performance",
+        "ar": "نتائج الاختيار تُراجع مقابل الأداء الفعلي للمكونات"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio committee",
+       "ar": "لجنة المحفظة"
+      },
+      "kpi": {
+       "en": "0 components approved outside the selection cycle",
+       "ar": "0 مكونات معتمدة خارج دورة الاختيار"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "pf.cr",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pf.va",
+      "clause": "6.6",
+      "title": {
+       "en": "Validating strategic alignment",
+       "ar": "التحقق من المواءمة الاستراتيجية"
+      },
+      "short": {
+       "en": "Alignment",
+       "ar": "المواءمة"
+      },
+      "req": {
+       "en": "Portfolio alignment with strategy, risk tolerance and resource capacity is validated, documented and evaluated periodically.",
+       "ar": "مواءمة المحفظة مع الاستراتيجية وتحمّل المخاطر وقدرة الموارد تُتحقق وتُوثَّق وتُقيَّم دورياً."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "An alignment matrix between components and objectives",
+        "ar": "مصفوفة مواءمة بين المكونات والأهداف"
+       },
+       {
+        "en": "Check risk tolerance and capacity at every review",
+        "ar": "فحص تحمّل المخاطر والقدرة في كل مراجعة"
+       },
+       {
+        "en": "Measure the aligned investment share",
+        "ar": "قياس نسبة الاستثمار المتوائم"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Alignment is assumed, not checked",
+        "ar": "المواءمة تُفترض ولا تُفحص"
+       },
+       {
+        "en": "A documented alignment check against strategy, risk appetite and capacity at each review",
+        "ar": "فحص مواءمة موثق مع الاستراتيجية وشهية المخاطر والقدرة عند كل مراجعة"
+       },
+       {
+        "en": "The share of aligned investment is measured and reported",
+        "ar": "نسبة الاستثمار المتوائم تُقاس وتُعلن للإدارة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio office",
+       "ar": "مكتب المحفظة"
+      },
+      "kpi": {
+       "en": "≥ 90% of investment aligned with an objective",
+       "ar": "≥ 90% من الاستثمار متوائم مع هدف"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "pf.bo",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "pf.ob",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pf.pm",
+      "clause": "6.7",
+      "title": {
+       "en": "Portfolio performance & benefit integration",
+       "ar": "أداء المحفظة وتكامل المنافع"
+      },
+      "short": {
+       "en": "Performance & benefits",
+       "ar": "الأداء والمنافع"
+      },
+      "req": {
+       "en": "A portfolio performance baseline is set, performance is managed and reported, and component benefits are integrated at portfolio level.",
+       "ar": "خط أساس لأداء المحفظة يُحدَّد، والأداء يُدار ويُبلَّغ عنه، ومنافع المكونات تُدمج على مستوى المحفظة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Portfolio KPIs and baseline",
+        "ar": "مؤشرات أداء المحفظة وخط أساسها"
+       },
+       {
+        "en": "Combined portfolio performance and benefits report",
+        "ar": "تقرير أداء ومنافع مجمع للمحفظة"
+       },
+       {
+        "en": "Analyse realized value and use it in rebalancing",
+        "ar": "تحليل القيمة المتحققة واستخدامه في إعادة الموازنة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Performance is measured per project without an overall view",
+        "ar": "الأداء يُقاس لكل مشروع دون صورة كلية"
+       },
+       {
+        "en": "A portfolio performance baseline and periodic report combining progress and benefits",
+        "ar": "خط أساس أداء المحفظة وتقرير دوري يجمع التقدم والمنافع"
+       },
+       {
+        "en": "Realized versus planned value is analysed and drives decisions",
+        "ar": "القيمة المتحققة مقابل المخطط تُحلَّل وتغذي القرارات"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio analyst + benefit owners",
+       "ar": "محلل المحفظة + مالكو المنافع"
+      },
+      "kpi": {
+       "en": "Quarterly portfolio performance report",
+       "ar": "تقرير أداء المحفظة ربعياً"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "pf.vs",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "pf.bo",
+      "clause": "6.8",
+      "title": {
+       "en": "Balancing & optimizing the portfolio",
+       "ar": "موازنة المحفظة وتحسينها"
+      },
+      "short": {
+       "en": "Balancing",
+       "ar": "الموازنة"
+      },
+      "req": {
+       "en": "The portfolio is balanced and optimized: components and resources optimized, portfolio risks managed and changes to its content controlled.",
+       "ar": "المحفظة تُوازن وتُحسَّن: تحسين المكونات والموارد، وإدارة مخاطر المحفظة، وضبط التغيير في محتواها."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Quarterly portfolio balancing review",
+        "ar": "مراجعة موازنة ربعية للمحفظة"
+       },
+       {
+        "en": "Portfolio risk register and content change control",
+        "ar": "سجل مخاطر المحفظة وضبط تغيير محتواها"
+       },
+       {
+        "en": "Scenario analysis before rebalancing",
+        "ar": "تحليل سيناريوهات قبل إعادة الموازنة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The portfolio never changes once approved",
+        "ar": "المحفظة لا تتغير بعد اعتمادها"
+       },
+       {
+        "en": "A quarterly balancing review that adds, stops and redirects components",
+        "ar": "مراجعة موازنة ربعية تضيف وتوقف وتعيد توجيه المكونات"
+       },
+       {
+        "en": "Optimization scenarios (value/risk/capacity) are compared before deciding",
+        "ar": "سيناريوهات تحسين (قيمة/مخاطر/قدرة) تُقارن قبل القرار"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio committee",
+       "ar": "لجنة المحفظة"
+      },
+      "kpi": {
+       "en": "Low-value components stopped each quarter",
+       "ar": "مكونات منخفضة القيمة موقوفة كل ربع"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "pf.va",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "gv.prn",
+    "phase": "ISO 21505:2017",
+    "title": {
+     "en": "ISO 21505:2017 · Values, principles & framework",
+     "ar": "ISO 21505:2017 · القيم والمبادئ والإطار"
+    },
+    "short": {
+     "en": "Framework",
+     "ar": "الإطار"
+    },
+    "intro": {
+     "en": "How governing bodies direct, oversee and hold to account projects, programmes and portfolios, with a clear line between governance and management.",
+     "ar": "كيف توجّه مجالس الإدارة والهيئات الحاكمة المشاريع والبرامج والمحافظ وتشرف عليها وتساءل عنها، بفصل واضح بين الحوكمة والإدارة."
+    },
+    "clause": "4 · 5.2 · 5.3 · 5.5",
+    "items": [
+     {
+      "ref": "gv.vp",
+      "clause": "4.3 · 5.2 · 5.3",
+      "title": {
+       "en": "Values, principles & governance vs management",
+       "ar": "القيم والمبادئ والفصل بين الحوكمة والإدارة"
+      },
+      "short": {
+       "en": "Values & principles",
+       "ar": "القيم والمبادئ"
+      },
+      "req": {
+       "en": "Values and principles for governing projects, programmes and portfolios are adopted, and the line between who governs and who manages is clear.",
+       "ar": "قيم ومبادئ حوكمة المشاريع والبرامج والمحافظ معتمدة، والفصل بين من يحوكم ومن يدير واضح."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Adopt principles for governing projects, programmes and portfolios",
+        "ar": "اعتماد مبادئ حوكمة المشاريع والبرامج والمحافظ"
+       },
+       {
+        "en": "Document the split between governance and management roles",
+        "ar": "توثيق الفصل بين أدوار الحوكمة والإدارة"
+       },
+       {
+        "en": "Include the principles in governing body evaluations",
+        "ar": "تضمين المبادئ في تقييم الهيئات الحاكمة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Governance and management overlap in people and meetings",
+        "ar": "الحوكمة والإدارة متداخلتان في الأشخاص والاجتماعات"
+       },
+       {
+        "en": "Adopted governance principles and a documented split between governance and management roles",
+        "ar": "مبادئ حوكمة معتمدة وتمييز موثق بين أدوار الحوكمة والإدارة"
+       },
+       {
+        "en": "Adherence to principles is reviewed in governing body evaluations",
+        "ar": "الالتزام بالمبادئ يُراجع في تقييم فعالية الهيئات"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Board secretary + PMO",
+       "ar": "أمين سر المجلس + المكتب"
+      },
+      "kpi": {
+       "en": "Governance principles approved by the board",
+       "ar": "مبادئ الحوكمة معتمدة من المجلس"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "gv.fw",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "gv.fw",
+      "clause": "5.5.1 · 5.5.2",
+      "title": {
+       "en": "Governance framework & interfaces",
+       "ar": "إطار الحوكمة وواجهاته"
+      },
+      "short": {
+       "en": "Governance framework",
+       "ar": "إطار الحوكمة"
+      },
+      "req": {
+       "en": "A governance framework links project, programme and portfolio governance to organizational governance, with clear interfaces to risk, finance and audit.",
+       "ar": "إطار حوكمة يربط حوكمة المشاريع والبرامج والمحافظ بحوكمة المنشأة، بواجهات واضحة مع المخاطر والمالية والتدقيق."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Map governance levels and interfaces",
+        "ar": "رسم مستويات الحوكمة وواجهاتها"
+       },
+       {
+        "en": "A documented framework approved by the board",
+        "ar": "إطار حوكمة موثق معتمد من المجلس"
+       },
+       {
+        "en": "Review interface effectiveness with risk and audit",
+        "ar": "مراجعة فعالية الواجهات مع المخاطر والتدقيق"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Project governance is separate from organizational governance",
+        "ar": "حوكمة المشاريع منفصلة عن حوكمة المنشأة"
+       },
+       {
+        "en": "A documented framework with levels and interfaces to risk, finance and internal audit",
+        "ar": "إطار موثق بمستويات وواجهات مع المخاطر والمالية والتدقيق الداخلي"
+       },
+       {
+        "en": "Interface effectiveness is reviewed (risk escalation, financial reporting, audit findings)",
+        "ar": "فعالية الواجهات تُراجع (تصعيد المخاطر، التقارير المالية، نتائج التدقيق)"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Board secretary + EPMO",
+       "ar": "أمين سر المجلس + المكتب المؤسسي"
+      },
+      "kpi": {
+       "en": "Framework approved and published",
+       "ar": "الإطار معتمد ومنشور"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "gv.im",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "gv.mp",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "gv.pj",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "gv.pg",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "gv.pb",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "gv.vp",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "gv.im",
+      "clause": "5.5.3 · Annex A",
+      "title": {
+       "en": "Implementing, sustaining & improving the framework",
+       "ar": "تطبيق الإطار وصيانته وتحسينه"
+      },
+      "short": {
+       "en": "Framework upkeep",
+       "ar": "تطبيق الإطار"
+      },
+      "req": {
+       "en": "The governance framework is implemented, sustained and continually improved, with periodic review of its effectiveness.",
+       "ar": "إطار الحوكمة يُطبق ويُصان ويُحسَّن باستمرار، مع مراجعة دورية لفعاليته."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Framework implementation plan with owners",
+        "ar": "خطة تطبيق للإطار بمالكين"
+       },
+       {
+        "en": "Yearly framework review",
+        "ar": "مراجعة سنوية للإطار"
+       },
+       {
+        "en": "Independent governance effectiveness review every two years",
+        "ar": "تقييم مستقل لفعالية الحوكمة كل سنتين"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The framework is a document that is never reviewed",
+        "ar": "الإطار وثيقة لا تُراجع"
+       },
+       {
+        "en": "An implementation plan and a scheduled periodic review",
+        "ar": "خطة تطبيق للإطار ومراجعة دورية مجدولة"
+       },
+       {
+        "en": "Independent evaluation of governance effectiveness with indicators",
+        "ar": "تقييم مستقل لفعالية الحوكمة بمؤشرات"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Internal audit",
+       "ar": "المراجعة الداخلية"
+      },
+      "kpi": {
+       "en": "Framework review held yearly",
+       "ar": "مراجعة الإطار منعقدة سنوياً"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "gv.fw",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "gv.gdl",
+    "phase": "ISO 21505:2017",
+    "title": {
+     "en": "ISO 21505:2017 · Governance guidelines",
+     "ar": "ISO 21505:2017 · إرشادات الحوكمة"
+    },
+    "short": {
+     "en": "Guidelines",
+     "ar": "الإرشادات"
+    },
+    "intro": {
+     "en": "How governing bodies direct, oversee and hold to account projects, programmes and portfolios, with a clear line between governance and management.",
+     "ar": "كيف توجّه مجالس الإدارة والهيئات الحاكمة المشاريع والبرامج والمحافظ وتشرف عليها وتساءل عنها، بفصل واضح بين الحوكمة والإدارة."
+    },
+    "clause": "5.4",
+    "items": [
+     {
+      "ref": "gv.pf",
+      "clause": "5.4.2 · 5.4.3",
+      "title": {
+       "en": "Oversight of performance",
+       "ar": "الإشراف على الأداء"
+      },
+      "short": {
+       "en": "Performance oversight",
+       "ar": "الإشراف على الأداء"
+      },
+      "req": {
+       "en": "Governing bodies oversee project, programme and portfolio performance against objectives and benefits and intervene in time.",
+       "ar": "الهيئات الحاكمة تشرف على أداء المشاريع والبرامج والمحافظ مقابل الأهداف والمنافع، وتتدخل في الوقت المناسب."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Periodic exception report to the board",
+        "ar": "تقرير استثناءات دوري للمجلس"
+       },
+       {
+        "en": "Standing agenda item on portfolio performance and benefits",
+        "ar": "جدول أعمال ثابت لأداء المحفظة والمنافع"
+       },
+       {
+        "en": "Track interventions and their effect",
+        "ar": "متابعة التدخلات وأثرها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The board hears about problems once they escalate",
+        "ar": "المجلس يسمع عن المشاكل بعد تفاقمها"
+       },
+       {
+        "en": "A periodic report to the governing body on performance, benefits and exceptions",
+        "ar": "تقرير دوري للهيئة الحاكمة بالأداء والمنافع والاستثناءات"
+       },
+       {
+        "en": "Governing body interventions are tracked to closure and their effect measured",
+        "ar": "تدخلات الهيئة تُتابع حتى إغلاقها ويُقاس أثرها"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Board secretary",
+       "ar": "أمين سر المجلس"
+      },
+      "kpi": {
+       "en": "Portfolio report a standing item at every meeting",
+       "ar": "تقرير المحفظة بند ثابت في كل اجتماع"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "gv.se",
+      "clause": "5.4.4",
+      "title": {
+       "en": "Sustainability & ethics",
+       "ar": "الاستدامة والأخلاقيات"
+      },
+      "short": {
+       "en": "Sustainability & ethics",
+       "ar": "الاستدامة والأخلاقيات"
+      },
+      "req": {
+       "en": "Sustainability, ethical conduct and compliance are part of governance decisions on projects, programmes and portfolios.",
+       "ar": "الاستدامة والسلوك الأخلاقي والامتثال جزء من قرارات حوكمة المشاريع والبرامج والمحافظ."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Add sustainability and ethics criteria to the business case",
+        "ar": "إضافة معايير الاستدامة والأخلاقيات إلى دراسة الجدوى"
+       },
+       {
+        "en": "Compliance check at gates",
+        "ar": "فحص الامتثال عند البوابات"
+       },
+       {
+        "en": "Portfolio-level sustainability indicators",
+        "ar": "مؤشرات استدامة على مستوى المحفظة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Sustainability and ethics are left to managers' judgement",
+        "ar": "الاستدامة والأخلاقيات تُترك لتقدير المديرين"
+       },
+       {
+        "en": "Sustainability, ethics and compliance criteria in business cases and gate decisions",
+        "ar": "معايير استدامة وأخلاقيات وامتثال ضمن دراسات الجدوى وقرارات البوابات"
+       },
+       {
+        "en": "Sustainability and compliance indicators are tracked at portfolio level",
+        "ar": "مؤشرات الاستدامة والامتثال تُتابع على مستوى المحفظة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Compliance + sustainability",
+       "ar": "الامتثال + الاستدامة"
+      },
+      "kpi": {
+       "en": "100% of business cases with a sustainability check",
+       "ar": "100% من دراسات الجدوى بتقييم استدامة"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "gv.sk",
+      "clause": "5.4.5",
+      "title": {
+       "en": "Stakeholders in governance",
+       "ar": "أصحاب المصلحة في الحوكمة"
+      },
+      "short": {
+       "en": "Stakeholders",
+       "ar": "أصحاب المصلحة"
+      },
+      "req": {
+       "en": "Governing bodies consider stakeholder interests and ensure they are engaged and informed transparently.",
+       "ar": "الهيئات الحاكمة تراعي مصالح أصحاب المصلحة وتضمن إشراكهم والإفصاح لهم بشفافية."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Identify key stakeholders at governance level",
+        "ar": "تحديد أصحاب المصلحة الرئيسيين على مستوى الحوكمة"
+       },
+       {
+        "en": "Disclosure and engagement policy",
+        "ar": "سياسة إفصاح وإشراك"
+       },
+       {
+        "en": "Report stakeholder feedback to the governing body periodically",
+        "ar": "عرض ملاحظات أصحاب المصلحة على الهيئة دورياً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Stakeholders are considered only in a crisis",
+        "ar": "أصحاب المصلحة يُذكرون عند الأزمات فقط"
+       },
+       {
+        "en": "Stakeholder engagement and disclosure requirements are part of the framework",
+        "ar": "متطلبات إشراك أصحاب المصلحة والإفصاح ضمن الإطار"
+       },
+       {
+        "en": "Key stakeholder feedback reaches the governing body and is followed up",
+        "ar": "ملاحظات أصحاب المصلحة الرئيسيين تُعرض على الهيئة وتُتابع"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Corporate communications",
+       "ar": "الاتصال المؤسسي"
+      },
+      "kpi": {
+       "en": "Stakeholder feedback reported quarterly",
+       "ar": "ملاحظات أصحاب المصلحة تُعرض ربعياً"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "gv.mp",
+      "clause": "5.4.6",
+      "title": {
+       "en": "Management policies",
+       "ar": "سياسات الإدارة"
+      },
+      "short": {
+       "en": "Management policies",
+       "ar": "سياسات الإدارة"
+      },
+      "req": {
+       "en": "Governing bodies approve policies that direct project, programme and portfolio management (delegation, risk, resources, assurance).",
+       "ar": "الهيئات الحاكمة تعتمد سياسات تحكم إدارة المشاريع والبرامج والمحافظ (التفويض، المخاطر، الموارد، الضمان)."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Delegation policy for projects and portfolios",
+        "ar": "سياسة تفويض الصلاحيات للمشاريع والمحافظ"
+       },
+       {
+        "en": "Risk, resource and assurance policies",
+        "ar": "سياسات المخاطر والموارد والضمان"
+       },
+       {
+        "en": "Audit policy compliance",
+        "ar": "تدقيق الالتزام بالسياسات"
+       }
+      ],
+      "ev": [
+       {
+        "en": "No written policies; inherited practice",
+        "ar": "لا سياسات مكتوبة؛ ممارسات متوارثة"
+       },
+       {
+        "en": "Approved policies for delegation, risk, resources and assurance",
+        "ar": "سياسات معتمدة للتفويض والمخاطر والموارد والضمان"
+       },
+       {
+        "en": "Policy compliance is audited and reported to the governing body",
+        "ar": "الالتزام بالسياسات يُدقق ويُبلَّغ للهيئة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Executive committee",
+       "ar": "اللجنة التنفيذية"
+      },
+      "kpi": {
+       "en": "Policies approved and reviewed yearly",
+       "ar": "السياسات معتمدة ومراجعة سنوياً"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "gv.fw",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "gv.gbd",
+    "phase": "ISO 21505:2017",
+    "title": {
+     "en": "ISO 21505:2017 · Governing bodies",
+     "ar": "ISO 21505:2017 · الهيئات الحاكمة"
+    },
+    "short": {
+     "en": "Bodies",
+     "ar": "الهيئات"
+    },
+    "intro": {
+     "en": "How governing bodies direct, oversee and hold to account projects, programmes and portfolios, with a clear line between governance and management.",
+     "ar": "كيف توجّه مجالس الإدارة والهيئات الحاكمة المشاريع والبرامج والمحافظ وتشرف عليها وتساءل عنها، بفصل واضح بين الحوكمة والإدارة."
+    },
+    "clause": "4.2 · 6 · 7 · 8",
+    "items": [
+     {
+      "ref": "gv.pj",
+      "clause": "6",
+      "title": {
+       "en": "Governance of projects",
+       "ar": "حوكمة المشاريع"
+      },
+      "short": {
+       "en": "Project governance",
+       "ar": "حوكمة المشاريع"
+      },
+      "req": {
+       "en": "Each project has a governing body (project board or sponsor) that applies governance guidelines within a clear framework.",
+       "ar": "لكل مشروع هيئة حاكمة (مجلس المشروع أو الراعي) تطبق إرشادات الحوكمة ضمن إطار واضح."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Terms of reference for project boards",
+        "ar": "شروط مرجعية لمجالس المشاريع"
+       },
+       {
+        "en": "Train sponsors and board members",
+        "ar": "تدريب الرعاة وأعضاء المجالس"
+       },
+       {
+        "en": "Evaluate project board effectiveness",
+        "ar": "تقييم فعالية مجالس المشاريع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Project boards are nominal or absent",
+        "ar": "مجالس مشاريع شكلية أو غائبة"
+       },
+       {
+        "en": "Project boards with terms of reference apply the governance guidelines",
+        "ar": "مجالس مشاريع بشروط مرجعية تطبق إرشادات الحوكمة"
+       },
+       {
+        "en": "Project board effectiveness is evaluated periodically",
+        "ar": "فعالية مجالس المشاريع تُقيَّم دورياً"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "EPMO",
+       "ar": "المكتب المؤسسي"
+      },
+      "kpi": {
+       "en": "100% of major projects with an active board",
+       "ar": "100% من المشاريع الكبرى بمجلس فاعل"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "gv.fw",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "gv.pg",
+      "clause": "7",
+      "title": {
+       "en": "Governance of programmes",
+       "ar": "حوكمة البرامج"
+      },
+      "short": {
+       "en": "Programme governance",
+       "ar": "حوكمة البرامج"
+      },
+      "req": {
+       "en": "Each programme has a governing body that steers it toward its benefits and oversees its components.",
+       "ar": "لكل برنامج هيئة حاكمة توجه البرنامج نحو منافعه وتشرف على مكوناته."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A board for every current programme",
+        "ar": "مجلس لكل برنامج قائم"
+       },
+       {
+        "en": "Board authority over components and funding",
+        "ar": "صلاحيات المجلس على المكونات والتمويل"
+       },
+       {
+        "en": "Tie board decisions to benefit realization",
+        "ar": "ربط قرارات المجلس بتحقق المنافع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Programmes are governed as separate projects",
+        "ar": "البرامج تُحوكم كمشاريع منفصلة"
+       },
+       {
+        "en": "Programme boards with authority over components and benefits",
+        "ar": "مجالس برامج بصلاحيات على المكونات والمنافع"
+       },
+       {
+        "en": "Programme board decisions are tied to benefit results",
+        "ar": "قرارات مجالس البرامج مربوطة بنتائج المنافع"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Programme sponsors",
+       "ar": "رعاة البرامج"
+      },
+      "kpi": {
+       "en": "Every programme with an approved board",
+       "ar": "كل برنامج بمجلس معتمد"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "gv.fw",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "gv.pb",
+      "clause": "8",
+      "title": {
+       "en": "Governance of portfolios",
+       "ar": "حوكمة المحافظ"
+      },
+      "short": {
+       "en": "Portfolio governance",
+       "ar": "حوكمة المحافظ"
+      },
+      "req": {
+       "en": "A portfolio governing body directs investment in change, balances the portfolio and holds management to account for realized value.",
+       "ar": "هيئة حاكمة للمحفظة توجه الاستثمار في التغيير، وتوازن المحفظة، وتساءل عن القيمة المتحققة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Set up an investment/portfolio committee",
+        "ar": "تشكيل لجنة استثمار/محفظة"
+       },
+       {
+        "en": "Quarterly portfolio review by the committee",
+        "ar": "مراجعة ربعية للمحفظة من اللجنة"
+       },
+       {
+        "en": "Yearly accountability for realized value",
+        "ar": "مساءلة سنوية عن القيمة المتحققة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Investment decisions are spread across departments",
+        "ar": "قرارات الاستثمار موزعة بين الإدارات"
+       },
+       {
+        "en": "An investment or portfolio committee with terms of reference oversees all components",
+        "ar": "لجنة استثمار أو محفظة بشروط مرجعية تشرف على كل المكونات"
+       },
+       {
+        "en": "The committee holds management to account for realized vs planned value yearly",
+        "ar": "اللجنة تساءل عن القيمة المتحققة مقابل المخطط سنوياً"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "CEO",
+       "ar": "الرئيس التنفيذي"
+      },
+      "kpi": {
+       "en": "Committee reviews the portfolio quarterly",
+       "ar": "مراجعة المحفظة ربعياً من اللجنة"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "gv.fw",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "changes": [],
+  "pairs": [],
+  "timeline": [],
+  "threads": [],
+  "official": [],
+  "readiness_questions": 0,
+  "terms": [
+   {
+    "no": "ISO 21506",
+    "en": "Project",
+    "ar": "المشروع",
+    "def": {
+     "ar": "جهد مؤقت فريد يُنجز لتحقيق أهداف محددة ضمن قيود.",
+     "en": "A temporary, unique endeavour undertaken to achieve defined objectives within constraints."
+    }
+   },
+   {
+    "no": "ISO 21506 · 21503",
+    "en": "Programme",
+    "ar": "البرنامج",
+    "def": {
+     "ar": "مجموعة مكونات مترابطة تُدار بتنسيق لتحقيق نتائج ومنافع لا تتحقق بإدارتها منفردة.",
+     "en": "Related components managed together to achieve outcomes and benefits not obtainable by managing them separately."
+    }
+   },
+   {
+    "no": "ISO 21506 · 21504",
+    "en": "Portfolio",
+    "ar": "المحفظة",
+    "def": {
+     "ar": "مجموعة مشاريع وبرامج وأعمال أخرى تُدار معاً لتحقيق أهداف استراتيجية.",
+     "en": "A collection of projects, programmes and other work managed together to meet strategic objectives."
+    }
+   },
+   {
+    "no": "ISO 21504",
+    "en": "Portfolio component",
+    "ar": "مكوّن المحفظة",
+    "def": {
+     "ar": "مشروع أو برنامج أو محفظة فرعية أو عمل آخر داخل المحفظة.",
+     "en": "A project, programme, sub-portfolio or other work within a portfolio."
+    }
+   },
+   {
+    "no": "ISO 21505",
+    "en": "Governance",
+    "ar": "الحوكمة",
+    "def": {
+     "ar": "منظومة التوجيه والإشراف والمساءلة التي تضمن تحقيق الأهداف بطريقة مسؤولة.",
+     "en": "The system of direction, oversight and accountability that makes sure objectives are met responsibly."
+    }
+   },
+   {
+    "no": "ISO 21505",
+    "en": "Governing body",
+    "ar": "الهيئة الحاكمة",
+    "def": {
+     "ar": "الشخص أو المجموعة المسؤولة عن توجيه المبادرة والإشراف عليها ومساءلة إدارتها.",
+     "en": "The person or group accountable for directing, overseeing and holding management of an initiative to account."
+    }
+   },
+   {
+    "no": "ISO 21502 · 4.5.4",
+    "en": "Sponsor",
+    "ar": "الراعي",
+    "def": {
+     "ar": "المسؤول عن تبرير المبادرة وتوجيهها وضمان تحقق منافعها.",
+     "en": "The person accountable for justifying and directing the initiative and ensuring its benefits are realized."
+    }
+   },
+   {
+    "no": "ISO 21502 · 4.5.3",
+    "en": "Project board",
+    "ar": "مجلس المشروع",
+    "def": {
+     "ar": "هيئة تتخذ قرارات المشروع الرئيسية وتوجهه نيابة عن المنشأة.",
+     "en": "A body that takes the key project decisions and directs it on behalf of the organization."
+    }
+   },
+   {
+    "no": "ISO 21502 · 4.5.7",
+    "en": "Project office / PMO",
+    "ar": "مكتب المشروع / مكتب إدارة المشاريع",
+    "def": {
+     "ar": "وحدة تدعم المشاريع والبرامج والمحافظ بالمنهجية والتقارير والضمان.",
+     "en": "A unit that supports projects, programmes and portfolios with method, reporting and assurance."
+    }
+   },
+   {
+    "no": "ISO 21502 · 4.3.2",
+    "en": "Business case",
+    "ar": "دراسة الجدوى",
+    "def": {
+     "ar": "مبرر الاستثمار: البدائل والتكاليف والمنافع والمخاطر والتوصية.",
+     "en": "The justification for investment: options, costs, benefits, risks and recommendation."
+    }
+   },
+   {
+    "no": "ISO 21506",
+    "en": "Output",
+    "ar": "المخرج",
+    "def": {
+     "ar": "ما يسلمه المشروع من منتج أو خدمة أو نتيجة.",
+     "en": "The product, service or result a project delivers."
+    }
+   },
+   {
+    "no": "ISO 21506",
+    "en": "Outcome",
+    "ar": "النتيجة",
+    "def": {
+     "ar": "التغيير الذي يحدث باستخدام المخرجات.",
+     "en": "The change that results from using the outputs."
+    }
+   },
+   {
+    "no": "ISO 21502 · 7.3",
+    "en": "Benefit",
+    "ar": "المنفعة",
+    "def": {
+     "ar": "تحسن قابل للقياس ينتج عن نتيجة ويراه صاحب مصلحة ذا قيمة.",
+     "en": "A measurable improvement from an outcome that a stakeholder sees as valuable."
+    }
+   },
+   {
+    "no": "ISO 21506",
+    "en": "Dis-benefit",
+    "ar": "المنفعة السلبية",
+    "def": {
+     "ar": "نتيجة يراها صاحب مصلحة سلبية.",
+     "en": "An outcome a stakeholder sees as negative."
+    }
+   },
+   {
+    "no": "ISO 21502 · 4.4",
+    "en": "Life cycle",
+    "ar": "دورة الحياة",
+    "def": {
+     "ar": "تتابع المراحل من البدء حتى الإغلاق.",
+     "en": "The sequence of phases from start to closure."
+    }
+   },
+   {
+    "no": "ISO 21502 · 6.6.4",
+    "en": "Phase",
+    "ar": "المرحلة",
+    "def": {
+     "ar": "جزء من دورة الحياة يُبدأ ويُغلق بقرار.",
+     "en": "A part of the life cycle started and closed by a decision."
+    }
+   },
+   {
+    "no": "ISO 21503",
+    "en": "Tranche",
+    "ar": "الشريحة",
+    "def": {
+     "ar": "مجموعة مكونات في البرنامج تقدم معاً قدرة ومنافع.",
+     "en": "A group of programme components that together deliver a capability and benefits."
+    }
+   },
+   {
+    "no": "ISO 21502 · 7.2",
+    "en": "Baseline",
+    "ar": "الخط الأساسي",
+    "def": {
+     "ar": "نسخة معتمدة من الخطة تُقاس عليها الانحرافات ولا تتغير إلا بضبط التغيير.",
+     "en": "An approved version of the plan against which variance is measured, changed only through change control."
+    }
+   },
+   {
+    "no": "ISO 21511",
+    "en": "Work breakdown structure (WBS)",
+    "ar": "هيكل تجزئة العمل",
+    "def": {
+     "ar": "تجزئة هرمية لكامل نطاق العمل إلى عناصر قابلة للإدارة.",
+     "en": "A hierarchical decomposition of the total scope into manageable elements."
+    }
+   },
+   {
+    "no": "ISO 21511",
+    "en": "Work package",
+    "ar": "حزمة العمل",
+    "def": {
+     "ar": "أدنى مستوى في هيكل التجزئة يُخطط ويُسند ويُضبط.",
+     "en": "The lowest WBS level that is planned, assigned and controlled."
+    }
+   },
+   {
+    "no": "ISO 21508",
+    "en": "Control account",
+    "ar": "حساب الضبط",
+    "def": {
+     "ar": "نقطة إدارة تُدمج فيها الميزانية والجدول والتكلفة الفعلية لقياس الأداء.",
+     "en": "A management point where budget, schedule and actual cost are integrated to measure performance."
+    }
+   },
+   {
+    "no": "ISO 21502 · 6.6",
+    "en": "Tolerance",
+    "ar": "حدود التحمّل",
+    "def": {
+     "ar": "الانحراف المسموح قبل التصعيد للمستوى الأعلى.",
+     "en": "Permitted deviation before escalation to the next level."
+    }
+   },
+   {
+    "no": "ISO 21502 · 7.10",
+    "en": "Change control",
+    "ar": "ضبط التغيير",
+    "def": {
+     "ar": "إجراء لتسجيل التغييرات على الخطوط الأساسية وتقييمها واعتمادها.",
+     "en": "The process to log, assess and approve changes to baselines."
+    }
+   },
+   {
+    "no": "ISO 21502 · 7.9",
+    "en": "Issue",
+    "ar": "المشكلة",
+    "def": {
+     "ar": "حدث وقع ويحتاج إلى معالجة.",
+     "en": "Something that has happened and needs to be resolved."
+    }
+   },
+   {
+    "no": "ISO 21502 · 7.8 · ISO 31000",
+    "en": "Risk",
+    "ar": "الخطر",
+    "def": {
+     "ar": "أثر عدم اليقين على الأهداف؛ قد يكون تهديداً أو فرصة.",
+     "en": "The effect of uncertainty on objectives; it may be a threat or an opportunity."
+    }
+   },
+   {
+    "no": "ISO 21502 · 7.12",
+    "en": "Stakeholder",
+    "ar": "صاحب المصلحة",
+    "def": {
+     "ar": "من يؤثر في المبادرة أو يتأثر بها أو يرى أنه متأثر.",
+     "en": "Anyone who affects, is affected by, or sees themselves as affected by an initiative."
+    }
+   },
+   {
+    "no": "ISO 21502 · 5",
+    "en": "Tailoring",
+    "ar": "التكييف",
+    "def": {
+     "ar": "مواءمة المنهجية مع حجم المبادرة وتعقيدها ونهج تسليمها.",
+     "en": "Adapting the method to an initiative's size, complexity and delivery approach."
+    }
+   },
+   {
+    "no": "ISO 21502 · 4.5.5",
+    "en": "Assurance",
+    "ar": "الضمان",
+    "def": {
+     "ar": "مراجعة مستقلة تمنح الثقة بأن المبادرة تسير كما ينبغي.",
+     "en": "An independent review that gives confidence the initiative is on track."
+    }
+   },
+   {
+    "no": "ISO 21502 · 7.18",
+    "en": "Lessons learned",
+    "ar": "الدروس المستفادة",
+    "def": {
+     "ar": "معرفة مكتسبة من التجربة تُطبق لتحسين الأعمال اللاحقة.",
+     "en": "Knowledge gained from experience and applied to improve later work."
+    }
+   },
+   {
+    "no": "ISO 21513",
+    "en": "Post-project evaluation",
+    "ar": "تقييم ما بعد المشروع",
+    "def": {
+     "ar": "تقييم بعد الإغلاق لتحقق الأهداف والمنافع وفعالية الحوكمة والإدارة.",
+     "en": "An evaluation after closure of objectives, benefits and the effectiveness of governance and management."
+    }
+   },
+   {
+    "no": "ISO 21508",
+    "en": "Planned value (PV)",
+    "ar": "القيمة المخططة (PV)",
+    "def": {
+     "ar": "الميزانية المعتمدة للعمل المجدول حتى تاريخ الحالة.",
+     "en": "The approved budget for work scheduled up to the status date."
+    }
+   },
+   {
+    "no": "ISO 21508",
+    "en": "Earned value (EV)",
+    "ar": "القيمة المكتسبة (EV)",
+    "def": {
+     "ar": "الميزانية المعتمدة للعمل المنجز فعلاً حتى تاريخ الحالة.",
+     "en": "The approved budget for work actually done up to the status date."
+    }
+   },
+   {
+    "no": "ISO 21508",
+    "en": "Actual cost (AC)",
+    "ar": "التكلفة الفعلية (AC)",
+    "def": {
+     "ar": "التكلفة المتكبدة للعمل المنجز حتى تاريخ الحالة.",
+     "en": "The cost incurred for the work done up to the status date."
+    }
+   },
+   {
+    "no": "ISO 21508",
+    "en": "Budget at completion (BAC)",
+    "ar": "الميزانية عند الإنجاز (BAC)",
+    "def": {
+     "ar": "مجموع الميزانية المعتمدة للعمل كله.",
+     "en": "The total approved budget for all the work."
+    }
+   },
+   {
+    "no": "ISO 21508",
+    "en": "Schedule performance index (SPI)",
+    "ar": "مؤشر أداء الجدول (SPI)",
+    "def": {
+     "ar": "EV ÷ PV. أقل من 1 يعني تأخراً عن الخطة.",
+     "en": "EV ÷ PV. Below 1 means behind plan."
+    }
+   },
+   {
+    "no": "ISO 21508",
+    "en": "Cost performance index (CPI)",
+    "ar": "مؤشر أداء التكلفة (CPI)",
+    "def": {
+     "ar": "EV ÷ AC. أقل من 1 يعني تجاوزاً في التكلفة.",
+     "en": "EV ÷ AC. Below 1 means over cost."
+    }
+   },
+   {
+    "no": "ISO 21508",
+    "en": "Estimate at completion (EAC)",
+    "ar": "التقدير عند الإنجاز (EAC)",
+    "def": {
+     "ar": "التنبؤ الحالي بالتكلفة الكلية؛ الصيغة الشائعة BAC ÷ CPI.",
+     "en": "The current forecast of total cost; the common form is BAC ÷ CPI."
+    }
+   },
+   {
+    "no": "ISO 21508",
+    "en": "Estimate to complete (ETC)",
+    "ar": "التقدير للإنجاز (ETC)",
+    "def": {
+     "ar": "EAC − AC: التكلفة المتوقعة للعمل المتبقي.",
+     "en": "EAC − AC: the expected cost of the remaining work."
+    }
+   },
+   {
+    "no": "ISO 21508",
+    "en": "Variance at completion (VAC)",
+    "ar": "الانحراف عند الإنجاز (VAC)",
+    "def": {
+     "ar": "BAC − EAC. السالب يعني تجاوزاً متوقعاً.",
+     "en": "BAC − EAC. Negative means a forecast overrun."
+    }
+   },
+   {
+    "no": "ISO 21508",
+    "en": "To-complete performance index (TCPI)",
+    "ar": "مؤشر الأداء المطلوب (TCPI)",
+    "def": {
+     "ar": "(BAC − EV) ÷ (BAC − AC): الكفاءة المطلوبة لإنهاء العمل ضمن الميزانية.",
+     "en": "(BAC − EV) ÷ (BAC − AC): the efficiency needed to finish within budget."
+    }
+   },
+   {
+    "no": "—",
+    "en": "Conformity score",
+    "ar": "درجة المطابقة",
+    "def": {
+     "ar": "درجة من 0 إلى 5 تبين مدى تطبيق الممارسة كما يرشد إليها المعيار؛ 3 خط التوافق.",
+     "en": "A 0–5 score showing how far a practice is applied as the guidance describes; 3 is the conformity baseline."
+    }
+   },
+   {
+    "no": "—",
+    "en": "Validated score",
+    "ar": "الدرجة المعتمدة",
+    "def": {
+     "ar": "الدرجة النهائية التي يعتمدها المقيّم بعد المعاينة والمقابلات والمعايرة؛ هي التي تقود النتائج.",
+     "en": "The final score confirmed by the assessor after evidence, interviews and calibration; it drives the results."
+    }
+   },
+   {
+    "no": "KSA",
+    "en": "EXPRO",
+    "ar": "هيئة كفاءة الإنفاق والمشروعات الحكومية",
+    "def": {
+     "ar": "الجهة السعودية المعنية برفع كفاءة الإنفاق والمشروعات الحكومية؛ راجع أدلتها المطبقة على جهتك.",
+     "en": "The Saudi authority for spending and government project efficiency; check the guidance that applies to your entity."
+    }
+   }
+  ],
+  "scale": [
+   {
+    "level": 0,
+    "meaning": {
+     "en": "There is no evidence that the practice exists.",
+     "ar": "لا يوجد دليل على أن الممارسة موجودة."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 1,
+    "meaning": {
+     "en": "Practised when needed and dependent on individuals, without documentation or consistency.",
+     "ar": "تُمارَس عند الحاجة وتعتمد على اجتهاد أفراد، دون توثيق أو اتساق."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 2,
+    "meaning": {
+     "en": "Documented or applied on some initiatives only, or covering part of the guidance.",
+     "ar": "موثقة أو مطبقة على بعض المبادرات فقط، أو تغطي جزءاً من الإرشاد."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 3,
+    "meaning": {
+     "en": "Defined, documented and applied consistently to everything in scope — the baseline for conformity with the guidance.",
+     "ar": "معرَّفة وموثقة ومطبقة باتساق على كل ما يقع ضمن النطاق — هذا هو خط التوافق مع الإرشاد."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 4,
+    "meaning": {
+     "en": "Monitored, measured and reviewed for effectiveness; deviations are corrected in time.",
+     "ar": "تُرصد وتُقاس وتُراجع فعاليتها، والانحرافات تُعالج في وقتها."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 5,
+    "meaning": {
+     "en": "Integrated with organizational systems and continually improved from lessons, evaluation and benchmarking.",
+     "ar": "مدمجة في أنظمة المنشأة وتتحسن باستمرار من الدروس والتقييم والمقارنة."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   }
+  ],
+  "templates": [
+   {
+    "id": "chr",
+    "ref": "ISO 21502:2020 · 4.3 · 6.5",
+    "no": "21500-01",
+    "title": {
+     "en": "Project charter",
+     "ar": "ميثاق المشروع"
+    },
+    "purpose": {
+     "en": "Formally authorizes the project and sets its objectives, scope, justification, governance and tolerances. Approved before mobilization under the initiating practice.",
+     "ar": "يعتمد المشروع رسمياً ويحدد أهدافه ونطاقه ومبرره وحوكمته وحدود تحمّله. يُعتمد قبل التعبئة وفق ممارسة البدء."
+    },
+    "tips": [],
+    "fields": [
+     {
+      "label": {
+       "en": "Project",
+       "ar": "المشروع"
+      },
+      "example": {
+       "en": "PRJ-07 — 50 MW solar PV plant, Al-Jouf (EPC delivery)",
+       "ar": "PRJ-07 — محطة طاقة شمسية كهروضوئية 50 ميجاواط — الجوف (تنفيذ EPC)"
+      }
+     },
+     {
+      "label": {
+       "en": "Justification & alignment",
+       "ar": "المبرر والمواءمة"
+      },
+      "example": {
+       "en": "Supports the renewable energy mix target under Vision 2030 and the company's clean energy plan; the approved business case (BC-07 v2) shows a 9.8% internal rate of return.",
+       "ar": "يدعم مستهدف مزيج الطاقة المتجددة ضمن رؤية 2030 وخطة الشركة للطاقة النظيفة؛ دراسة الجدوى المعتمدة (BC-07 v2) تُظهر عائداً داخلياً 9.8%."
+      }
+     },
+     {
+      "label": {
+       "en": "Objectives & success criteria",
+       "ar": "الأهداف ومعايير النجاح"
+      },
+      "example": {
+       "en": "Commercial operation within 14 months of notice to proceed; budget SAR 200 M (+10 contingency); performance ratio ≥ 80%; zero lost-time injuries.",
+       "ar": "تشغيل تجاري خلال 14 شهراً من أمر المباشرة؛ الميزانية 200 مليون ريال (+10 احتياطي)؛ معامل أداء ≥ 80%؛ صفر إصابات مضيعة للوقت."
+      }
+     },
+     {
+      "label": {
+       "en": "Scope / out of scope",
+       "ar": "النطاق / خارج النطاق"
+      },
+      "example": {
+       "en": "In scope: design, procurement, civil works, installation, 33 kV substation, 132 kV grid line, testing and commissioning. Out of scope: operation and maintenance after taking-over (separate contract).",
+       "ar": "داخل النطاق: التصميم، التوريد، الأعمال المدنية، التركيب، محطة 33 ك.ف، خط ربط 132 ك.ف، الاختبار والتشغيل. خارج النطاق: التشغيل والصيانة بعد الاستلام (عقد منفصل)."
+      }
+     },
+     {
+      "label": {
+       "en": "Key deliverables & milestones",
+       "ar": "المخرجات الرئيسية والمعالم"
+      },
+      "example": {
+       "en": "Approved design (M3); modules on site (M6); installation complete (M11); grid connection (M13); commercial operation (M14).",
+       "ar": "التصميم المعتمد (ش3)؛ وصول الألواح (ش6)؛ اكتمال التركيب (ش11)؛ الربط بالشبكة (ش13)؛ التشغيل التجاري (ش14)."
+      }
+     },
+     {
+      "label": {
+       "en": "Governance & roles",
+       "ar": "الحوكمة والأدوار"
+      },
+      "example": {
+       "en": "Sponsor: Chief Operating Officer; project board: sponsor, CFO, head of engineering, user representative; project manager: Eng. Sarah Al-Qahtani; assurance: enterprise PMO.",
+       "ar": "الراعي: الرئيس التنفيذي للعمليات؛ مجلس المشروع: الراعي، المدير المالي، مدير الهندسة، ممثل المستخدم؛ مدير المشروع: م. سارة القحطاني؛ الضمان: مكتب المشاريع المؤسسي."
+      }
+     },
+     {
+      "label": {
+       "en": "Tolerances & escalation",
+       "ar": "حدود التحمّل والتصعيد"
+      },
+      "example": {
+       "en": "Schedule ±3 weeks; cost ±5%; any breach escalates to the project board within 48 hours, and above 10% to the investment committee.",
+       "ar": "الجدول ±3 أسابيع؛ التكلفة ±5%؛ أي تجاوز يُصعَّد إلى مجلس المشروع خلال 48 ساعة، وما يتجاوز 10% إلى لجنة الاستثمار."
+      }
+     },
+     {
+      "label": {
+       "en": "Key risks & assumptions",
+       "ar": "المخاطر والافتراضات الرئيسية"
+      },
+      "example": {
+       "en": "Late module supply from overseas; grid operator connection requirements; sandstorms during installation; assumption: land available under a signed lease.",
+       "ar": "تأخر توريد الألواح من الخارج؛ اشتراطات الربط من مشغل الشبكة؛ العواصف الرملية أثناء التركيب؛ الافتراض: توفر الأرض بعقد إيجار موقَّع."
+      }
+     },
+     {
+      "label": {
+       "en": "Approval",
+       "ar": "الاعتماد"
+      },
+      "example": {
+       "en": "Sponsor: ____ — Enterprise PMO: ____ — Date: ____",
+       "ar": "الراعي: ____ — مكتب المشاريع المؤسسي: ____ — التاريخ: ____"
+      }
+     }
+    ]
+   },
+   {
+    "id": "wbs",
+    "ref": "ISO 21511:2018 · ISO 21502:2020 · 7.4",
+    "no": "21500-02",
+    "title": {
+     "en": "Work breakdown structure",
+     "ar": "هيكل تجزئة العمل"
+    },
+    "purpose": {
+     "en": "A hierarchical breakdown of the full scope down to work packages, with deliverable, owner and budget. All scope is inside the structure and nothing outside it (100% rule).",
+     "ar": "تجزئة هرمية لكامل نطاق العمل حتى مستوى حزم العمل، مع المخرج والمالك والميزانية. كل النطاق داخل الهيكل ولا شيء خارجه (قاعدة 100%)."
+    },
+    "tips": [],
+    "fields": []
+   },
+   {
+    "id": "sch",
+    "ref": "ISO 21502:2020 · 7.6",
+    "no": "21500-03",
+    "title": {
+     "en": "Schedule baseline",
+     "ar": "الجدول الزمني الأساسي"
+    },
+    "purpose": {
+     "en": "Main activities with durations, dates, logic links and critical activities. Baselined on approval and changed only through change control.",
+     "ar": "الأنشطة الرئيسية بمددها وتواريخها وعلاقاتها المنطقية، والأنشطة الحرجة. يُعتمد خطاً أساسياً ولا يتغير إلا عبر ضبط التغيير."
+    },
+    "tips": [],
+    "fields": []
+   },
+   {
+    "id": "evm",
+    "ref": "ISO 21508:2026 · ISO 21512:2024 · ISO 21502:2020 · 7.7",
+    "no": "21500-04",
+    "title": {
+     "en": "Earned value report",
+     "ar": "تقرير القيمة المكتسبة"
+    },
+    "purpose": {
+     "en": "Compares planned value, earned value and actual cost per control account, with variances, indices and the forecast at completion. Edit the figures and the indicators recalculate instantly.",
+     "ar": "مقارنة القيمة المخططة والمكتسبة والتكلفة الفعلية لكل حساب ضبط، مع الانحرافات والمؤشرات والتنبؤ عند الإنجاز. عدّل الأرقام وتُحسب المؤشرات فوراً."
+    },
+    "tips": [],
+    "fields": []
+   },
+   {
+    "id": "chg",
+    "ref": "ISO 21502:2020 · 7.10",
+    "no": "21500-05",
+    "title": {
+     "en": "Change log",
+     "ar": "سجل التغيير"
+    },
+    "purpose": {
+     "en": "Records every change request to the baseline with its time and cost impact, authority level and decision. No change is implemented before approval.",
+     "ar": "يسجل كل طلب تغيير على الخط الأساسي بأثره على الوقت والتكلفة ومستوى الصلاحية والقرار. لا يُنفَّذ تغيير قبل اعتماده."
+    },
+    "tips": [],
+    "fields": []
+   },
+   {
+    "id": "ppe",
+    "ref": "ISO 21513:2026 · ISO 21502:2020 · 6.9 · 7.18",
+    "no": "21500-06",
+    "title": {
+     "en": "Lessons & post-project evaluation",
+     "ar": "مراجعة الدروس وتقييم ما بعد المشروع"
+    },
+    "purpose": {
+     "en": "An evaluation after closure: were objectives, outcomes and benefits achieved, how effective were governance and management, and what lessons and recommendations apply to future projects.",
+     "ar": "تقييم بعد إغلاق المشروع: هل تحققت الأهداف والنتائج والمنافع، وما مدى فعالية الحوكمة والإدارة، وما الدروس والتوصيات للمشاريع القادمة."
+    },
+    "tips": [],
+    "fields": [
+     {
+      "label": {
+       "en": "Evaluation scope & timing",
+       "ar": "نطاق التقييم وتوقيته"
+      },
+      "example": {
+       "en": "PRJ-05 Localization academy — evaluation 6 months after closure; covers objectives, benefits, governance and management; evaluator: internal audit with the enterprise PMO.",
+       "ar": "PRJ-05 أكاديمية التوطين — تقييم بعد 6 أشهر من الإغلاق؛ يغطي الأهداف والمنافع والحوكمة والإدارة؛ المقيّم: المراجعة الداخلية بالتعاون مع مكتب المشاريع المؤسسي."
+      }
+     },
+     {
+      "label": {
+       "en": "Achievement of objectives",
+       "ar": "تحقق الأهداف"
+      },
+      "example": {
+       "en": "120 Saudi technicians qualified (target 120); budget SAR 8.8 M of 9 M; one-month delay from late curriculum approval.",
+       "ar": "تأهيل 120 فنياً سعودياً (المستهدف 120)؛ الميزانية 8.8 من 9 ملايين ريال؛ تأخر شهر واحد بسبب تأخر اعتماد المنهج."
+      }
+     },
+     {
+      "label": {
+       "en": "Outcomes & benefits realized",
+       "ar": "النتائج والمنافع المتحققة"
+      },
+      "example": {
+       "en": "Localization in technical roles at 49% against a 55% target by end-2026; foreign contractor cost down SAR 2.1 M a year.",
+       "ar": "نسبة التوطين في الوظائف الفنية 49% مقابل مستهدف 55% بنهاية 2026؛ انخفاض تكلفة المقاولين الأجانب 2.1 مليون ريال سنوياً."
+      }
+     },
+     {
+      "label": {
+       "en": "Governance & management effectiveness",
+       "ar": "فعالية الحوكمة والإدارة"
+      },
+      "example": {
+       "en": "Project board met monthly with 90% attendance; no delegate sponsor delayed scope decisions; status reports were regular and honest.",
+       "ar": "مجلس المشروع انعقد شهرياً بحضور 90%؛ ضعف في تحديد نائب للراعي أخّر قرارات النطاق؛ تقارير الحالة منتظمة وصادقة."
+      }
+     },
+     {
+      "label": {
+       "en": "Lessons learned",
+       "ar": "الدروس المستفادة"
+      },
+      "example": {
+       "en": "(1) A two-week onboarding cut drop-out from 20% to 6%; (2) curriculum approval needs a contractual review period; (3) name a delegate sponsor in the charter.",
+       "ar": "(1) برنامج تهيئة أسبوعين خفّض الانسحاب من 20% إلى 6%؛ (2) اعتماد المنهج يحتاج مدة تعاقدية محددة؛ (3) تسمية نائب للراعي في الميثاق."
+      }
+     },
+     {
+      "label": {
+       "en": "Recommendations & owners",
+       "ar": "التوصيات والمالكون"
+      },
+      "example": {
+       "en": "Add a delegate sponsor field to the charter (PMO — M1); include a 10-working-day review period in contracts (procurement — M2); review benefits again after 12 months (HR).",
+       "ar": "إضافة حقل «نائب الراعي» لنموذج الميثاق (المكتب — ش1)؛ إدراج مدة اعتماد 10 أيام عمل في العقود (المشتريات — ش2)؛ مراجعة المنافع مجدداً بعد 12 شهراً (الموارد البشرية)."
+      }
+     },
+     {
+      "label": {
+       "en": "Sign-off",
+       "ar": "الاعتماد"
+      },
+      "example": {
+       "en": "Evaluator: ____ — Sponsor: ____ — Date: ____",
+       "ar": "المقيّم: ____ — الراعي: ____ — التاريخ: ____"
+      }
+     }
+    ]
+   },
+   {
+    "id": "cls",
+    "ref": "ISO 21502:2020 · 6.8",
+    "no": "21500-07",
+    "title": {
+     "en": "Project closure report",
+     "ar": "تقرير إغلاق المشروع"
+    },
+    "purpose": {
+     "en": "Confirms deliverables are complete and accepted, contracts and finances are closed, benefits and open items are handed to owners and resources are released.",
+     "ar": "يؤكد اكتمال المخرجات وقبولها، والإقفال التعاقدي والمالي، وتسليم المنافع والبنود المفتوحة لمالكيها، وتحرير الموارد."
+    },
+    "tips": [],
+    "fields": [
+     {
+      "label": {
+       "en": "Project & closure date",
+       "ar": "المشروع وتاريخ الإغلاق"
+      },
+      "example": {
+       "en": "PRJ-05 Localization & talent academy — 30 June 2026",
+       "ar": "PRJ-05 أكاديمية التوطين وتأهيل الكوادر — 30 يونيو 2026"
+      }
+     },
+     {
+      "label": {
+       "en": "Deliverables & acceptance",
+       "ar": "المخرجات والقبول"
+      },
+      "example": {
+       "en": "Curriculum, training lab and 120 qualification certificates — accepted and signed by the CHRO.",
+       "ar": "المنهج، ومعمل التدريب، و120 شهادة تأهيل — مقبولة وموقعة من مدير الموارد البشرية."
+      }
+     },
+     {
+      "label": {
+       "en": "Financial & contractual close",
+       "ar": "الإقفال المالي والتعاقدي"
+      },
+      "example": {
+       "en": "Spent SAR 8.8 M of 9 M; training provider and lab supplier contracts closed with no claims.",
+       "ar": "المصروف 8.8 مليون ريال من 9؛ عقدا مزود التدريب ومورد المعمل مغلقان دون مطالبات."
+      }
+     },
+     {
+      "label": {
+       "en": "Benefits handover",
+       "ar": "تسليم المنافع"
+      },
+      "example": {
+       "en": "Benefits realization plan handed to the CHRO; benefit reviews scheduled at 6 and 12 months.",
+       "ar": "خطة تحقيق المنافع مسلّمة لمدير الموارد البشرية؛ مراجعة المنافع مجدولة بعد 6 و12 شهراً."
+      }
+     },
+     {
+      "label": {
+       "en": "Open items",
+       "ar": "البنود المفتوحة"
+      },
+      "example": {
+       "en": "Update two curriculum modules (owner: academy — M2); renew the simulation software licence (owner: IT).",
+       "ar": "تحديث وحدتين في المنهج (المالك: الأكاديمية — ش2)؛ تجديد رخصة برنامج المحاكاة (المالك: تقنية المعلومات)."
+      }
+     },
+     {
+      "label": {
+       "en": "Resources & records",
+       "ar": "تحرير الموارد والسجلات"
+      },
+      "example": {
+       "en": "Team returned to line; documents archived in the project repository under retention rules.",
+       "ar": "الفريق مُعاد لإداراته؛ الوثائق مؤرشفة في مستودع المشاريع وفق قواعد الاحتفاظ."
+      }
+     },
+     {
+      "label": {
+       "en": "Approval",
+       "ar": "الاعتماد"
+      },
+      "example": {
+       "en": "Sponsor: ____ — Enterprise PMO: ____ — Date: ____",
+       "ar": "الراعي: ____ — مكتب المشاريع المؤسسي: ____ — التاريخ: ____"
+      }
+     }
+    ]
+   },
+   {
+    "id": "tor",
+    "ref": "ISO 21505:2017 · 5 · 8",
+    "no": "21500-08",
+    "title": {
+     "en": "Governance terms of reference",
+     "ar": "الشروط المرجعية للجنة الحوكمة"
+    },
+    "purpose": {
+     "en": "Sets the purpose, membership, authority, meetings, inputs and effectiveness review of the portfolio governing body, clearly separate from management.",
+     "ar": "تحدد غرض هيئة حوكمة المحفظة وعضويتها وصلاحياتها واجتماعاتها ومدخلاتها وتقييم فعاليتها، مع فصل واضح عن الإدارة."
+    },
+    "tips": [],
+    "fields": [
+     {
+      "label": {
+       "en": "Purpose",
+       "ar": "الغرض"
+      },
+      "example": {
+       "en": "Direct Al-Waha's investment in projects and programmes, keep the portfolio aligned with strategy and hold management to account for realized value.",
+       "ar": "توجيه استثمار شركة الواحة في المشاريع والبرامج، وضمان مواءمة المحفظة مع الاستراتيجية، والمساءلة عن القيمة المتحققة."
+      }
+     },
+     {
+      "label": {
+       "en": "Membership & quorum",
+       "ar": "العضوية والنصاب"
+      },
+      "example": {
+       "en": "CEO (chair), COO, CFO, head of strategy, chief risk officer; EPMO head as non-voting secretary; quorum of 4 members.",
+       "ar": "الرئيس التنفيذي (رئيساً)، الرئيس التنفيذي للعمليات، المدير المالي، مدير الاستراتيجية، مدير المخاطر؛ رئيس المكتب المؤسسي أميناً للسر دون تصويت؛ النصاب 4 أعضاء."
+      }
+     },
+     {
+      "label": {
+       "en": "Authority & reserved decisions",
+       "ar": "الصلاحيات والقرارات المحفوظة"
+      },
+      "example": {
+       "en": "Approve components above SAR 10 M; stop or redirect any component; approve changes above 10% of budget; approve portfolio risk tolerance.",
+       "ar": "اعتماد المكونات فوق 10 ملايين ريال؛ إيقاف أو إعادة توجيه أي مكون؛ اعتماد التغييرات فوق 10% من الميزانية؛ اعتماد تحمّل المخاطر للمحفظة."
+      }
+     },
+     {
+      "label": {
+       "en": "Meetings",
+       "ar": "الاجتماعات"
+      },
+      "example": {
+       "en": "Monthly; portfolio balancing review quarterly; an extraordinary meeting within 5 working days of a red escalation.",
+       "ar": "شهرياً؛ مراجعة موازنة المحفظة ربعياً؛ اجتماع استثنائي خلال 5 أيام عمل عند تصعيد أحمر."
+      }
+     },
+     {
+      "label": {
+       "en": "Inputs & reports",
+       "ar": "المدخلات والتقارير"
+      },
+      "example": {
+       "en": "Monthly portfolio dashboard, exception report, benefits register, top portfolio risks, assurance and audit results.",
+       "ar": "لوحة المحفظة الشهرية، تقرير الاستثناءات، سجل المنافع، أعلى مخاطر المحفظة، نتائج الضمان والتدقيق."
+      }
+     },
+     {
+      "label": {
+       "en": "Governance vs management",
+       "ar": "الفصل بين الحوكمة والإدارة"
+      },
+      "example": {
+       "en": "The committee decides and oversees; it does not manage components. Day-to-day management rests with sponsors and project and programme managers.",
+       "ar": "اللجنة تقرر وتشرف ولا تدير المكونات؛ الإدارة اليومية مسؤولية الرعاة ومديري المشاريع والبرامج."
+      }
+     },
+     {
+      "label": {
+       "en": "Effectiveness review",
+       "ar": "تقييم الفعالية والمراجعة"
+      },
+      "example": {
+       "en": "Yearly self-evaluation of the committee and an independent review every two years by internal audit; terms of reference reviewed yearly.",
+       "ar": "تقييم ذاتي سنوي للجنة، وتقييم مستقل كل سنتين من المراجعة الداخلية؛ مراجعة الشروط المرجعية سنوياً."
+      }
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "id": "what",
+    "q": {
+     "en": "What is the ISO 21500 series?",
+     "ar": "ما هي سلسلة ISO 21500؟"
+    },
+    "a": {
+     "en": "A set of standards from **ISO/TC 258** for project, programme and portfolio management:\n\n- **21500:2021** context and concepts.\n- **21502:2020** guidance on project management.\n- **21503:2022** programmes, **21504:2022** portfolios and **21505:2017** governance.\n- Supporting: 21506 vocabulary, 21508 and 21512 earned value, 21511 WBS, 21513 post-project evaluation.\n\nEditions and status are in [[tab:refs]].",
+     "ar": "مجموعة مواصفات من اللجنة الفنية **ISO/TC 258** لإدارة المشاريع والبرامج والمحافظ:\n\n- **21500:2021** السياق والمفاهيم.\n- **21502:2020** إرشادات إدارة المشاريع.\n- **21503:2022** البرامج، و**21504:2022** المحافظ، و**21505:2017** الحوكمة.\n- داعمة: 21506 المفردات، 21508 و21512 القيمة المكتسبة، 21511 هيكل التجزئة، 21513 تقييم ما بعد المشروع.\n\nالتفاصيل والإصدارات في [[tab:refs]]."
+    }
+   },
+   {
+    "id": "cert",
+    "q": {
+     "en": "Can we get ISO 21500 certified?",
+     "ar": "هل يمكن الحصول على شهادة ISO 21500؟"
+    },
+    "a": {
+     "en": "**Not today.** Every published standard in the series is **guidance** (\"should\") with no auditable requirements, so no accredited certificate exists.\n\n- The requirements standard **ISO/WD 21514** is at the preparatory stage; the committee page expects a committee draft by October 2026, and the proposed certification covers the **organization's capability**, not individual projects.\n- This tool's result is an **internal conformity level** for improvement and management reporting, not a certificate.",
+     "ar": "**ليس اليوم.** كل مواصفات السلسلة المنشورة **إرشادية** (\"should\") ولا تحتوي متطلبات قابلة للتدقيق، لذلك لا توجد شهادة معتمدة عليها.\n\n- مواصفة المتطلبات **ISO/WD 21514** في مرحلة تحضيرية، وتشير صفحة اللجنة إلى مسودة لجنة متوقعة بحلول أكتوبر 2026، والإشهاد المقترح يخص **قدرة المنشأة** لا المشاريع منفردة.\n- نتيجة هذه الأداة **مستوى مطابقة داخلي** للتحسين وتقارير الإدارة، وليست شهادة."
+    }
+   },
+   {
+    "id": "diff",
+    "q": {
+     "en": "What is the difference between 21500 and 21502?",
+     "ar": "ما الفرق بين 21500 و21502؟"
+    },
+    "a": {
+     "en": "**21500:2021** explains the shared context and concepts for projects, programmes and portfolios and has no assessable practices. **21502:2020** is the actual project management guidance with its practices, so projects are assessed here against 21502 and 21500 serves as the concept reference.",
+     "ar": "**21500:2021** يشرح السياق والمفاهيم المشتركة للمشاريع والبرامج والمحافظ ولا يحتوي ممارسات قابلة للتقييم. **21502:2020** هو دليل إدارة المشاريع الفعلي بممارساته، ولذلك تُقيَّم المشاريع هنا مقابل 21502 ويُستخدم 21500 مرجعاً للمفاهيم."
+    }
+   },
+   {
+    "id": "which",
+    "q": {
+     "en": "Which standards do we assess?",
+     "ar": "أي المواصفات نقيّم؟"
+    },
+    "a": {
+     "en": "Pick the levels that match your work in [[tab:profile]]:\n\n- **Projects** → 21502.\n- **Programmes** → 21503 if you coordinate related projects toward shared benefits.\n- **Portfolios** → 21504 if you select and balance investments.\n- **Governance** → 21505 for boards and governing committees.\n\nAn enterprise PMO usually assesses all four.",
+     "ar": "اختر المستويات التي تمثل عملك في [[tab:profile]]:\n\n- **المشاريع** ← 21502.\n- **البرامج** ← 21503 إن كنتم تنسقون مشاريع مترابطة نحو منافع مشتركة.\n- **المحافظ** ← 21504 إن كنتم تختارون الاستثمارات وتوازنونها.\n- **الحوكمة** ← 21505 لمجالس الإدارة واللجان الحاكمة.\n\nمكتب المشاريع المؤسسي عادة يقيّم الأربعة."
+    }
+   },
+   {
+    "id": "p3m3",
+    "q": {
+     "en": "How is this different from the P3M3 assessment?",
+     "ar": "ما الفرق بين هذا التقييم وتقييم P3M3؟"
+    },
+    "a": {
+     "en": "**P3M3** measures **maturity** (awareness to optimized) across seven perspectives. This tool measures **conformity with the ISO 21500 guidance**, practice by practice. They complement each other: conformity shows what is missing against the guidance; maturity shows how embedded it is. The P3M3 tool always appears among the suggested tools in [[tab:results]].",
+     "ar": "**P3M3** يقيس **النضج** (من الوعي إلى التحسين) على سبعة منظورات. أما هذه الأداة فتقيس **المطابقة مع إرشادات ISO 21500** ممارسةً ممارسة. الأداتان متكاملتان: المطابقة تخبرك بما ينقص مقابل الإرشاد، والنضج يخبرك بمدى رسوخه. تظهر أداة P3M3 دائماً ضمن الأدوات المقترحة في [[tab:results]]."
+    }
+   },
+   {
+    "id": "scale",
+    "q": {
+     "en": "What does the 0–5 scale mean?",
+     "ar": "ماذا يعني مقياس 0–5؟"
+    },
+    "a": {
+     "en": "0 **Not in place** · 1 **Informal** · 2 **Partly in place** · 3 **Established** (the conformity baseline) · 4 **Managed & effective** · 5 **Embedded & improving**.\n\nConformity % = average score ÷ 5. A practice counts as conforming at 3 or above.",
+     "ar": "0 **غير مطبّقة** · 1 **غير رسمية** · 2 **مطبّقة جزئياً** · 3 **مطبّقة ومُعرَّفة** (خط التوافق مع الإرشاد) · 4 **مُدارة وفعّالة** · 5 **راسخة وتتحسن**.\n\nنسبة المطابقة = متوسط الدرجات ÷ 5. الممارسة تُعد متوافقة عند 3 فأكثر."
+    }
+   },
+   {
+    "id": "three",
+    "q": {
+     "en": "Why three scores per practice?",
+     "ar": "لماذا ثلاث درجات لكل ممارسة؟"
+    },
+    "a": {
+     "en": "- **Self**: what the team believes.\n- **Evidence**: the highest level the sampled evidence ladder proves (levels 1→5 in order).\n- **Validated**: the assessor's decision after evidence, interviews and calibration — **this drives the results**.\n\nUnvalidated practices use the evidence score as a flagged provisional result; self scores never enter the results.",
+     "ar": "- **الذاتي**: ما يعتقده الفريق.\n- **بالأدلة**: أعلى مستوى يثبته سُلّم الأدلة المعاينة (المستويات 1→5 بالترتيب).\n- **المعتمد**: قرار المقيّم بعد المعاينة والمقابلات والمعايرة — **وهو الذي يقود النتائج**.\n\nغير المعتمد يستخدم درجة الأدلة كنتيجة مؤقتة معلَّمة؛ والذاتي لا يدخل النتائج أبداً."
+    }
+   },
+   {
+    "id": "evidence",
+    "q": {
+     "en": "What counts as evidence?",
+     "ar": "ما الذي يُعد دليلاً؟"
+    },
+    "a": {
+     "en": "Approved documents, real records (minutes, decision, change and risk logs, monthly reports), system data and consistent interviews. Rule of thumb: **sample at least 3 initiatives** per practice; evidence must be **in use**, not just exist.",
+     "ar": "وثائق معتمدة، وسجلات فعلية (محاضر، سجلات قرارات وتغيير ومخاطر، تقارير شهرية)، وبيانات أنظمة، ومقابلات متسقة. قاعدة عملية: **عيّنة من 3 مبادرات على الأقل** لكل ممارسة، والدليل يجب أن يكون **مستخدماً** لا موجوداً فقط."
+    }
+   },
+   {
+    "id": "target",
+    "q": {
+     "en": "What target should we set per practice?",
+     "ar": "ما المستهدف المناسب لكل ممارسة؟"
+    },
+    "a": {
+     "en": "Level **3** means conformity with the guidance and suits most organizations. Aim for **4** on critical practices (governance, risk, cost, portfolio selection) in large or high-risk entities. The \"by PMO type\" button in [[tab:results]] sets suggested values.",
+     "ar": "المستوى **3** يعني التوافق مع الإرشاد ويكفي معظم المنشآت. استهدف **4** للممارسات الحرجة (الحوكمة، المخاطر، التكلفة، اختيار المحفظة) في الجهات الكبيرة أو عالية المخاطر. زر «حسب نوع المكتب» في [[tab:results]] يضبط قيماً مقترحة."
+    }
+   },
+   {
+    "id": "start",
+    "q": {
+     "en": "Where do we start?",
+     "ar": "من أين نبدأ؟"
+    },
+    "a": {
+     "en": "1. Fix **governance**: a sponsor and board per project and a portfolio committee (21505).\n2. Baseline the **charter, WBS and schedule** (21502).\n3. Run the three-score assessment and validate results.\n4. Deliver the **quick wins** in [[tab:roadmap]].\n\nReady templates are in [[tab:templates]].",
+     "ar": "1. ثبّت **الحوكمة**: راعٍ ومجلس لكل مشروع ولجنة محفظة (21505).\n2. اعتمد **الميثاق وهيكل التجزئة والجدول** كخط أساسي (21502).\n3. أجرِ التقييم بالدرجات الثلاث واعتمد النتائج.\n4. نفّذ **المكاسب السريعة** في [[tab:roadmap]].\n\nالنماذج الجاهزة في [[tab:templates]]."
+    }
+   },
+   {
+    "id": "evm",
+    "q": {
+     "en": "What are the earned value formulas?",
+     "ar": "ما معادلات القيمة المكتسبة؟"
+    },
+    "a": {
+     "en": "- **SV = EV − PV** and **CV = EV − AC**.\n- **SPI = EV ÷ PV** and **CPI = EV ÷ AC** (below 1 = behind or over).\n- **EAC = BAC ÷ CPI** (or AC + (BAC − EV) ÷ (CPI × SPI) when schedule drives cost).\n- **ETC = EAC − AC** and **VAC = BAC − EAC**.\n- **TCPI = (BAC − EV) ÷ (BAC − AC)**.\n\nThey calculate automatically in template 21500-04 in [[tab:templates]].",
+     "ar": "- **SV = EV − PV** و**CV = EV − AC**.\n- **SPI = EV ÷ PV** و**CPI = EV ÷ AC** (أقل من 1 = تأخر أو تجاوز).\n- **EAC = BAC ÷ CPI** (أو AC + (BAC − EV) ÷ (CPI × SPI) عندما يؤثر الجدول على التكلفة).\n- **ETC = EAC − AC** و**VAC = BAC − EAC**.\n- **TCPI = (BAC − EV) ÷ (BAC − AC)**.\n\nتُحسب تلقائياً في نموذج 21500-04 في [[tab:templates]]."
+    }
+   },
+   {
+    "id": "wbs",
+    "q": {
+     "en": "What is the WBS 100% rule?",
+     "ar": "ما قاعدة 100% في هيكل التجزئة؟"
+    },
+    "a": {
+     "en": "All the scope must be inside the WBS and nothing outside scope may enter it; child elements add up to their parent. This is what **ISO 21511** guides, and it is a precondition for accurate earned value. The example is in [[tab:templates]].",
+     "ar": "كل النطاق يجب أن يكون داخل هيكل تجزئة العمل، ولا يدخل فيه ما ليس من النطاق؛ ومجموع العناصر الفرعية يساوي العنصر الأب. هذا ما ترشد إليه **ISO 21511**، وهو شرط لقياس القيمة المكتسبة بدقة. المثال في [[tab:templates]]."
+    }
+   },
+   {
+    "id": "ppe",
+    "q": {
+     "en": "What is post-project evaluation (ISO 21513)?",
+     "ar": "ما تقييم ما بعد المشروع وفق ISO 21513؟"
+    },
+    "a": {
+     "en": "**ISO 21513:2026** (January 2026) guides evaluating a project or programme **after closure**: were objectives, outcomes and benefits achieved, how effective were governance and management, and what are the lessons. It does not cover evaluation before start or during delivery. Template 21500-06 is in [[tab:templates]].",
+     "ar": "**ISO 21513:2026** (يناير 2026) ترشد إلى تقييم المشروع أو البرنامج **بعد إغلاقه**: هل تحققت الأهداف والنتائج والمنافع، وما مدى فعالية الحوكمة والإدارة، وما الدروس. لا تغطي التقييم قبل البدء أو أثناء التنفيذ. نموذج 21500-06 في [[tab:templates]]."
+    }
+   },
+   {
+    "id": "gov37000",
+    "q": {
+     "en": "How does 21505 relate to ISO 37000?",
+     "ar": "ما علاقة 21505 بمواصفة ISO 37000؟"
+    },
+    "a": {
+     "en": "**ISO 37000** guides whole-organization governance at board level; **ISO 21505** applies governance to projects, programmes and portfolios within that frame. If governance gaps appear here, the tool suggests the ISO 37000 Governance Maturity assessment.",
+     "ar": "**ISO 37000** ترشد حوكمة المنشأة كلها على مستوى المجلس، و**ISO 21505** تطبّق الحوكمة على المشاريع والبرامج والمحافظ ضمن ذلك الإطار. إذا ظهرت فجوات في الحوكمة هنا، تقترح الأداة تقييم نضج الحوكمة ISO 37000."
+    }
+   },
+   {
+    "id": "saudi",
+    "q": {
+     "en": "What is the Saudi context?",
+     "ar": "ما السياق السعودي؟"
+    },
+    "a": {
+     "en": "Government entities link portfolios to **Vision 2030 realization programme** KPIs, and **EXPRO** works on spending and project efficiency — check the guidance that applies to your entity. In the private sector, benefits often link to localization and local content. The Saudi example is loaded in every template.",
+     "ar": "في الجهات الحكومية تُربط المحافظ بمؤشرات **برامج تحقيق رؤية 2030**، وتعمل **هيئة كفاءة الإنفاق والمشروعات الحكومية (EXPRO)** على كفاءة الإنفاق والمشروعات — راجع أدلتها المطبقة على جهتك. في القطاع الخاص يبرز ربط المنافع بالتوطين والمحتوى المحلي. المثال السعودي محمّل في كل النماذج."
+    }
+   },
+   {
+    "id": "dur",
+    "q": {
+     "en": "How long will the improvement plan take?",
+     "ar": "كم تستغرق خارطة التحسين؟"
+    },
+    "a": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "id": "myres",
+    "q": {
+     "en": "Explain my result and next steps",
+     "ar": "اشرح نتيجتي والخطوات التالية"
+    },
+    "a": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "id": "gaps",
+    "q": {
+     "en": "Where are the gaps between the three scores?",
+     "ar": "أين الفجوات بين الدرجات الثلاث؟"
+    },
+    "a": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "id": "data",
+    "q": {
+     "en": "Where is my data saved?",
+     "ar": "أين تُحفظ بياناتي؟"
+    },
+    "a": {
+     "en": "In **your browser only** (local storage private to this page). Nothing is sent to a server. Export CSV or PDF to keep or share a copy.",
+     "ar": "في **متصفحك فقط** (تخزين محلي خاص بهذه الصفحة). لا تُرسل إلى أي خادم. صدّر CSV أو PDF للاحتفاظ بنسخة أو مشاركتها."
+    }
+   },
+   {
+    "id": "guideuse",
+    "q": {
+     "en": "What is in the 'series explained' and 'practices guide' tabs?",
+     "ar": "ماذا أجد في تبويبي «شرح السلسلة» و«دليل الممارسات»؟"
+    },
+    "a": {
+     "en": "- **The series explained**: what the series is and why it is used, the roles, the map of documents and their status, and where to find the official copies.\n- **Practices guide**: every practice across the four documents in plain words, with an example, how to implement it, the evidence and common gaps.\n\nThe explanation is interpretive, in independent wording, and changes no answer or result in the tool.",
+     "ar": "- **شرح السلسلة**: ما هي السلسلة ولماذا تُستخدم، والأدوار، وخريطة الوثائق وحالتها، وأين تجد النسخ الرسمية.\n- **دليل الممارسات**: كل ممارسة في الوثائق الأربع بكلمات بسيطة، مع مثال وطريقة التنفيذ والأدلة والفجوات الشائعة.\n\nالشرح تفسيري وبكلمات مستقلة، ولا يغيّر أي إجابة أو نتيجة في الأداة."
+    }
+   },
+   {
+    "id": "assesslink",
+    "q": {
+     "en": "What does the 'Assess this clause' button do?",
+     "ar": "ما الذي يفعله زر «قيّم هذا البند في التقييم»؟"
+    },
+    "a": {
+     "en": "It takes you to the same question in the assessment of the chosen standard, opens its group and brings the practice into view. It changes no answer, score or result. If the standard is outside your organization's scope, a note points you to the organization profile.",
+     "ar": "ينقلك إلى السؤال نفسه في تقييم المواصفة المختارة، ويفتح مجموعته، ويضع الممارسة في الواجهة. لا يغيّر أي إجابة أو درجة أو نتيجة. وإذا كانت المواصفة خارج نطاق منشأتك يظهر تنبيه يحيلك إلى ملف المنشأة."
+    }
+   },
+   {
+    "id": "copies",
+    "q": {
+     "en": "Where can I get the official copies of the series?",
+     "ar": "أين أحصل على النسخ الرسمية لوثائق السلسلة؟"
+    },
+    "a": {
+     "en": "From the ISO store, or from the Saudi Standards, Metrology and Quality Organization (SASO). Official copies are paid. Check each document's status on the ISO/TC 258 committee page before buying, because some are under revision or at draft stage.",
+     "ar": "من متجر ISO، أو من الهيئة السعودية للمواصفات والمقاييس SASO. النسخ مدفوعة. تحقق من حالة كل وثيقة في صفحة لجنة ISO/TC 258 قبل الشراء، لأن بعضها قيد المراجعة أو في مرحلة المسودة."
+    }
+   },
+   {
+    "id": "pdf",
+    "q": {
+     "en": "How do I export reports?",
+     "ar": "كيف أصدّر التقارير؟"
+    },
+    "a": {
+     "en": "Every tab has a branded **PDF** button and a **CSV** button. The full assessment report is in [[tab:results]], the roadmap in [[tab:roadmap]] and each template in [[tab:templates]].",
+     "ar": "كل تبويب فيه زر **PDF** بعلامة الأكاديمية وزر **CSV**. تقرير التقييم الكامل في [[tab:results]]، والخارطة في [[tab:roadmap]]، وكل نموذج في [[tab:templates]]."
+    }
+   }
+  ],
+  "levers": [
+   {
+    "title": {
+     "en": "Governance before templates",
+     "ar": "الحوكمة قبل النماذج"
+    },
+    "text": {
+     "en": "Clarity on who decides and when (21505) lifts every other practice more than any extra template.",
+     "ar": "وضوح من يقرر ومتى (21505) يرفع جودة كل الممارسات الأخرى أكثر من أي نموذج إضافي."
+    }
+   },
+   {
+    "title": {
+     "en": "One baseline, strict change control",
+     "ar": "خط أساسي واحد وضبط تغيير صارم"
+    },
+    "text": {
+     "en": "Scope, schedule and cost baselined together under change control make earned value possible and credible.",
+     "ar": "النطاق والجدول والتكلفة المعتمدة معاً مع ضبط التغيير تجعل القيمة المكتسبة ممكنة وموثوقة."
+    }
+   },
+   {
+    "title": {
+     "en": "Benefits after closure",
+     "ar": "المنافع بعد الإغلاق"
+    },
+    "text": {
+     "en": "Following benefits and evaluating after closure (21513) turns projects from outputs into value.",
+     "ar": "متابعة المنافع وتقييم ما بعد المشروع (21513) تحوّل المشاريع من مخرجات إلى قيمة."
+    }
+   },
+   {
+    "title": {
+     "en": "The portfolio decides capacity",
+     "ar": "المحفظة تقرر القدرة"
+    },
+    "text": {
+     "en": "Selecting components with weighted criteria and a capacity check (21504) cuts multitasking and delay.",
+     "ar": "اختيار المكونات بمعايير موزونة وفحص القدرة (21504) يقلل التعدد والتأخير."
+    }
+   }
+  ],
+  "pitfalls": [
+   {
+    "title": {
+     "en": "Treating guidance as a certification checklist",
+     "ar": "معاملة الإرشاد كقائمة إشهاد"
+    },
+    "text": {
+     "en": "The series is guidance: assess real application and effectiveness, and don't chase an \"ISO 21500 certificate\" that doesn't exist today.",
+     "ar": "السلسلة إرشادية: قيّم التطبيق الفعلي والفعالية، ولا تطارد «شهادة ISO 21500» غير موجودة اليوم."
+    }
+   },
+   {
+    "title": {
+     "en": "Inflated self-assessment",
+     "ar": "تضخيم التقييم الذاتي"
+    },
+    "text": {
+     "en": "Rely only on evidence-validated scores; a self-vs-validated gap of 2 or more triggers a calibration workshop.",
+     "ar": "لا تعتمد إلا الدرجة المعتمدة بالأدلة؛ فجوة ≥ 2 بين الذاتي والمعتمد تستدعي ورشة معايرة."
+    }
+   },
+   {
+    "title": {
+     "en": "Strong projects, weak portfolio",
+     "ar": "مشاريع ممتازة ومحفظة ضعيفة"
+    },
+    "text": {
+     "en": "Good project management does not make up for choosing the wrong projects; assess 21504 and 21505 alongside 21502.",
+     "ar": "إدارة المشاريع الجيدة لا تعوض اختيار مشاريع خاطئة؛ قيّم 21504 و21505 مع 21502."
+    }
+   },
+   {
+    "title": {
+     "en": "Earned value without a baseline",
+     "ar": "القيمة المكتسبة دون خط أساس"
+    },
+    "text": {
+     "en": "Don't calculate SPI and CPI before the WBS, schedule and budget are baselined together.",
+     "ar": "لا تحسب SPI وCPI قبل اعتماد هيكل التجزئة والجدول والميزانية معاً."
+    }
+   },
+   {
+    "title": {
+     "en": "Copying templates without tailoring",
+     "ar": "نسخ النماذج دون تكييف"
+    },
+    "text": {
+     "en": "Scale documentation by project tier and delivery approach, as 21502 advises.",
+     "ar": "كيّف حجم التوثيق حسب فئة المشروع ونهج تسليمه كما ترشد 21502."
+    }
+   }
+  ],
+  "checklist": [
+   {
+    "group": {
+     "en": "Scope & applicability",
+     "ar": "النطاق وقابلية التطبيق"
+    },
+    "items": [
+     {
+      "en": "Assessment levels (project/programme/portfolio/governance) defined and justified",
+      "ar": "مستويات التقييم (مشروع/برنامج/محفظة/حوكمة) محددة ومبررة"
+     },
+     {
+      "en": "Delivery approaches in scope (predictive/agile/hybrid) identified",
+      "ar": "نُهج التسليم ضمن النطاق (تنبؤي/رشيق/هجين) محددة"
+     },
+     {
+      "en": "Editions in use confirmed (21502:2020, 21503:2022, 21504:2022, 21505:2017)",
+      "ar": "إصدارات المواصفات المعتمدة مؤكدة (21502:2020، 21503:2022، 21504:2022، 21505:2017)"
+     },
+     {
+      "en": "Top management understands the series is guidance and the result is not a certificate",
+      "ar": "الإدارة العليا تدرك أن السلسلة إرشادية وأن النتيجة ليست شهادة"
+     },
+     {
+      "en": "Sample of initiatives defined (at least 3 per practice)",
+      "ar": "عيّنة المبادرات المقيَّمة محددة (3 على الأقل لكل ممارسة)"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "Governance (ISO 21505)",
+     "ar": "الحوكمة (ISO 21505)"
+    },
+    "items": [
+     {
+      "en": "Governing bodies for projects, programmes and portfolios identified",
+      "ar": "الهيئات الحاكمة للمشاريع والبرامج والمحافظ محددة"
+     },
+     {
+      "en": "Governance principles adopted and the split from management documented",
+      "ar": "مبادئ الحوكمة معتمدة والفصل عن الإدارة موثق"
+     },
+     {
+      "en": "Delegation matrix for decisions, change and funding",
+      "ar": "مصفوفة تفويض للقرارات والتغيير والتمويل"
+     },
+     {
+      "en": "Independent assurance planned for high-risk initiatives",
+      "ar": "الضمان المستقل مخطط للمبادرات عالية المخاطر"
+     },
+     {
+      "en": "Terms of reference for every governing body",
+      "ar": "شروط مرجعية لكل هيئة حاكمة"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "Method & templates (21502 · 21503 · 21504)",
+     "ar": "المنهجية والنماذج (21502 · 21503 · 21504)"
+    },
+    "items": [
+     {
+      "en": "Life cycle and gates with entry and exit criteria",
+      "ar": "دورة حياة وبوابات بمعايير دخول وخروج"
+     },
+     {
+      "en": "Charter, WBS, schedule, change and closure templates approved",
+      "ar": "نماذج الميثاق وهيكل التجزئة والجدول والتغيير والإغلاق معتمدة"
+     },
+     {
+      "en": "Tailoring guidance by size, complexity and delivery approach",
+      "ar": "إرشادات تكييف حسب الحجم والتعقيد ونهج التسليم"
+     },
+     {
+      "en": "Roadmap and benefits map for every programme",
+      "ar": "خارطة طريق وخريطة منافع لكل برنامج"
+     },
+     {
+      "en": "Weighted portfolio selection and priority criteria",
+      "ar": "معايير اختيار وأولوية موزونة للمحفظة"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "Data & measurement (21508 · 21511 · 21513)",
+     "ar": "البيانات والقياس (21508 · 21511 · 21513)"
+    },
+    "items": [
+     {
+      "en": "One authoritative portfolio register",
+      "ar": "سجل محفظة واحد معتمد"
+     },
+     {
+      "en": "Earned value applied on major projects",
+      "ar": "القيمة المكتسبة مطبقة على المشاريع الكبرى"
+     },
+     {
+      "en": "A WBS for every project in line with ISO 21511",
+      "ar": "هيكل تجزئة عمل لكل مشروع وفق ISO 21511"
+     },
+     {
+      "en": "A benefits register that runs past closure",
+      "ar": "سجل منافع يمتد بعد الإغلاق"
+     },
+     {
+      "en": "A post-project evaluation plan in line with ISO 21513",
+      "ar": "خطة تقييم ما بعد المشروع وفق ISO 21513"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "Assessment integrity (three scores)",
+     "ar": "نزاهة التقييم (الدرجات الثلاث)"
+    },
+    "items": [
+     {
+      "en": "Evidence sampled for every practice (documents, records, systems)",
+      "ar": "أدلة معاينة لكل ممارسة (وثائق، سجلات، أنظمة)"
+     },
+     {
+      "en": "Interviews with sponsors and project, programme and portfolio managers",
+      "ar": "مقابلات مع الرعاة ومديري المشاريع والبرامج والمحفظة"
+     },
+     {
+      "en": "Assessor independent of the office being assessed",
+      "ar": "المقيّم مستقل عن المكتب المقيَّم"
+     },
+     {
+      "en": "An evidence note recorded for every validated practice",
+      "ar": "ملاحظة دليل مسجلة لكل ممارسة معتمدة"
+     },
+     {
+      "en": "Calibration workshop to validate final scores",
+      "ar": "ورشة معايرة لاعتماد الدرجات النهائية"
+     }
+    ]
+   }
+  ],
+  "references": [
+   {
+    "code": "ISO 21500:2021",
+    "kind": "core",
+    "title": {
+     "en": "Project, programme and portfolio management — Context and concepts",
+     "ar": "إدارة المشاريع والبرامج والمحافظ — السياق والمفاهيم"
+    },
+    "status": {
+     "en": "Published · under revision",
+     "ar": "منشورة · قيد المراجعة"
+    },
+    "note": {
+     "en": "Second edition (March 2021), replacing 21500:2012. The conceptual reference for the whole series; a new edition is at committee draft (CD) stage.",
+     "ar": "الإصدار الثاني (مارس 2021) حل محل 21500:2012. المرجع المفاهيمي للسلسلة كلها؛ مسودة لجنة (CD) لإصدار جديد قيد الإعداد."
+    }
+   },
+   {
+    "code": "ISO 21502:2020",
+    "kind": "core",
+    "title": {
+     "en": "Guidance on project management",
+     "ar": "إرشادات إدارة المشاريع"
+    },
+    "status": {
+     "en": "Published · to be revised",
+     "ar": "منشورة · مقرر مراجعتها"
+    },
+    "note": {
+     "en": "First edition (December 2020). Project governance, life cycle, integrated practices and eighteen management practices; applies to predictive, iterative, agile and hybrid approaches. The systematic review decided to revise it.",
+     "ar": "الإصدار الأول (ديسمبر 2020). حوكمة المشروع ودورة حياته والممارسات المتكاملة وثماني عشرة ممارسة إدارة؛ تنطبق على النهج التنبؤي والتكراري والرشيق والهجين. قررت المراجعة الدورية تنقيحها."
+    }
+   },
+   {
+    "code": "ISO 21503:2022",
+    "kind": "core",
+    "title": {
+     "en": "Guidance on programme management",
+     "ar": "إرشادات إدارة البرامج"
+    },
+    "status": {
+     "en": "Published",
+     "ar": "منشورة"
+    },
+    "note": {
+     "en": "Second edition (2022), replacing 21503:2017. Programme concepts, prerequisites, governance and roles, integration, control, benefits and closure.",
+     "ar": "الإصدار الثاني (2022) حل محل 21503:2017. مفاهيم البرامج، والمتطلبات المسبقة، والحوكمة والأدوار، والتكامل والضبط والمنافع والإغلاق."
+    }
+   },
+   {
+    "code": "ISO 21504:2022",
+    "kind": "core",
+    "title": {
+     "en": "Guidance on portfolio management",
+     "ar": "إرشادات إدارة المحافظ"
+    },
+    "status": {
+     "en": "Published",
+     "ar": "منشورة"
+    },
+    "note": {
+     "en": "Second edition (2022), replacing 21504:2015. Portfolio principles, prerequisites, selection, alignment, performance and balancing.",
+     "ar": "الإصدار الثاني (2022) حل محل 21504:2015. مبادئ المحافظ، والمتطلبات المسبقة، والاختيار والمواءمة والأداء والموازنة."
+    }
+   },
+   {
+    "code": "ISO 21505:2017",
+    "kind": "core",
+    "title": {
+     "en": "Guidance on governance",
+     "ar": "إرشادات الحوكمة"
+    },
+    "status": {
+     "en": "Published · confirmed 2022",
+     "ar": "منشورة · مؤكدة 2022"
+    },
+    "note": {
+     "en": "First edition (March 2017). Context, values, principles, guidelines and framework, then governance of projects, programmes and portfolios. Confirmed at the 2022 systematic review.",
+     "ar": "الإصدار الأول (مارس 2017). السياق والقيم والمبادئ والإرشادات والإطار، ثم حوكمة المشاريع والبرامج والمحافظ. أُكدت في المراجعة الدورية 2022."
+    }
+   },
+   {
+    "code": "ISO 21506:2024",
+    "kind": "sup",
+    "title": {
+     "en": "Vocabulary",
+     "ar": "المفردات"
+    },
+    "status": {
+     "en": "Published · amendment in progress",
+     "ar": "منشورة · تعديل قيد الإعداد"
+    },
+    "note": {
+     "en": "An International Standard replacing the technical report ISO/TR 21506:2018; Amendment 1 is in progress. This tool's glossary is independently worded.",
+     "ar": "مواصفة دولية حلت محل التقرير الفني ISO/TR 21506:2018؛ التعديل 1 قيد الإعداد. مسرد هذه الأداة بصياغة مستقلة."
+    }
+   },
+   {
+    "code": "ISO 21508:2026",
+    "kind": "sup",
+    "title": {
+     "en": "Earned value management",
+     "ar": "إدارة القيمة المكتسبة"
+    },
+    "status": {
+     "en": "Published February 2026",
+     "ar": "منشورة فبراير 2026"
+    },
+    "note": {
+     "en": "Second edition (February 2026), replacing 21508:2018. Purpose and benefits of earned value, its integration with project, programme and portfolio management, and system requirements; basis of template 21500-04.",
+     "ar": "الإصدار الثاني (فبراير 2026) حل محل 21508:2018. غرض القيمة المكتسبة ومنافعها وتكاملها مع إدارة المشاريع والبرامج والمحافظ ومتطلبات النظام؛ أساس نموذج 21500-04."
+    }
+   },
+   {
+    "code": "ISO 21511:2018",
+    "kind": "sup",
+    "title": {
+     "en": "Work breakdown structures for project and programme management",
+     "ar": "هياكل تجزئة العمل لإدارة المشاريع والبرامج"
+    },
+    "status": {
+     "en": "Published · 2nd edition in progress",
+     "ar": "منشورة · إصدار ثانٍ قيد الإعداد"
+    },
+    "note": {
+     "en": "WBS principles and the 100% rule; basis of template 21500-02. A second edition is under development in TC 258.",
+     "ar": "مبادئ هيكل تجزئة العمل وقاعدة 100%؛ أساس نموذج 21500-02. إصدار ثانٍ قيد الإعداد في اللجنة TC 258."
+    }
+   },
+   {
+    "code": "ISO 21512:2024",
+    "kind": "sup",
+    "title": {
+     "en": "Earned value management implementation guidance",
+     "ar": "إرشادات تطبيق إدارة القيمة المكتسبة"
+    },
+    "status": {
+     "en": "Published · amendment in progress",
+     "ar": "منشورة · تعديل قيد الإعداد"
+    },
+    "note": {
+     "en": "Practical steps for implementing an earned value system; Amendment 1 is in progress.",
+     "ar": "خطوات عملية لتطبيق نظام القيمة المكتسبة؛ التعديل 1 قيد الإعداد."
+    }
+   },
+   {
+    "code": "ISO 21513:2026",
+    "kind": "sup",
+    "title": {
+     "en": "Guidance on post-project and post-programme evaluation",
+     "ar": "إرشادات تقييم ما بعد المشروع والبرنامج"
+    },
+    "status": {
+     "en": "Published January 2026",
+     "ar": "منشورة يناير 2026"
+    },
+    "note": {
+     "en": "First edition (January 2026). Evaluating objectives, outcomes, benefits and the effectiveness of governance and management after closure; basis of template 21500-06.",
+     "ar": "الإصدار الأول (يناير 2026). تقييم تحقق الأهداف والنتائج والمنافع وفعالية الحوكمة والإدارة بعد الإغلاق؛ أساس نموذج 21500-06."
+    }
+   },
+   {
+    "code": "ISO/WD 21514",
+    "kind": "dev",
+    "title": {
+     "en": "Requirements",
+     "ar": "المتطلبات"
+    },
+    "status": {
+     "en": "Preparatory stage",
+     "ar": "مرحلة تحضيرية"
+    },
+    "note": {
+     "en": "A requirements standard under development, designed for conformity assessment; the proposed certification covers the organization's ability to manage and govern its project environment, not individual projects. The committee page expects a committee draft by October 2026 — no certificate is available today.",
+     "ar": "مواصفة متطلبات قيد الإعداد مصممة لتقييم المطابقة؛ الإشهاد المقترح يشمل قدرة المنشأة على إدارة وحوكمة بيئة المشاريع لا المشاريع منفردة. تشير صفحة اللجنة إلى مسودة لجنة متوقعة بحلول أكتوبر 2026 — لا شهادة متاحة اليوم."
+    }
+   },
+   {
+    "code": "ISO 21515",
+    "kind": "dev",
+    "title": {
+     "en": "Competency framework for professionals",
+     "ar": "إطار الكفاءات للمهنيين"
+    },
+    "status": {
+     "en": "Project approved January 2026",
+     "ar": "اعتُمد المشروع يناير 2026"
+    },
+    "note": {
+     "en": "A competency framework for project, programme and portfolio professionals and governance roles; publication expected within 36 months of approval.",
+     "ar": "إطار كفاءات لمهنيي المشاريع والبرامج والمحافظ وأدوار الحوكمة؛ النشر متوقع خلال 36 شهراً من الاعتماد."
+    }
+   },
+   {
+    "code": "ISO 31000:2018",
+    "kind": "rel",
+    "title": {
+     "en": "Risk management — Guidelines",
+     "ar": "إدارة المخاطر — إرشادات"
+    },
+    "status": {
+     "en": "Current",
+     "ar": "سارية"
+    },
+    "note": {
+     "en": "The enterprise risk method the 21502 risk practice aligns with; linked to the academy's Risk Studio.",
+     "ar": "منهجية المخاطر المؤسسية التي تتسق معها ممارسة المخاطر في 21502؛ مرتبطة باستوديو المخاطر في الأكاديمية."
+    }
+   }
+  ],
+  "models": [],
+  "roles": [],
+  "competencies": [
+   "PM-01",
+   "PM-02",
+   "PM-03",
+   "GOV-01",
+   "PMO-02"
+  ],
+  "ecosystem": "pmi"
+ }
+}

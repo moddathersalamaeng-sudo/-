@@ -92,6 +92,24 @@
       "route": "/academy/iso"
     },
     {
+      "id": "pmiAcademy",
+      "labelKey": "nav.items.pmiAcademy",
+      "group": "learn",
+      "kind": "route",
+      "phase": 8,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "route": "/academy/pmi"
+    },
+    {
       "id": "academy",
       "labelKey": "nav.items.academy",
       "group": "learn",
@@ -115,7 +133,7 @@
       "group": "learn",
       "kind": "route",
       "phase": 8,
-      "status": "coming",
+      "status": "active",
       "roles": [
         "learner",
         "instructor",
@@ -124,7 +142,8 @@
         "company_admin"
       ],
       "requiredTier": "free",
-      "primary": false
+      "primary": false,
+      "route": "/academy/pmi/certifications"
     },
     {
       "id": "assessments",

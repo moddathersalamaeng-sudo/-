@@ -39,8 +39,10 @@
         "content_source": "ai_draft",
         "version": "1.0",
         "reviewer": null,
-        "review_date": null
-      }
+        "review_date": null,
+        "change_note": "Phase 5 demo assessment kept as a draft: its PMI items were rewritten in Phase 8 and are now used by the PM readiness and route diagnostics; the cross-domain demo itself is reconsidered with the career diagnostic in Phase 12. Not shown to learners."
+      },
+      "planned_phase": 12
     },
     {
       "id": "ASM-READY-ISO-001",
@@ -143,8 +145,10 @@
         "content_source": "ai_draft",
         "version": "1.0",
         "reviewer": null,
-        "review_date": null
-      }
+        "review_date": null,
+        "change_note": "Phase 5 demo assessment kept as a draft: its PMI items were rewritten in Phase 8 and are now used by the PM readiness and route diagnostics; the cross-domain demo itself is reconsidered with the career diagnostic in Phase 12. Not shown to learners."
+      },
+      "planned_phase": 12
     },
     {
       "id": "ASM-SCEN-001",
@@ -181,8 +185,10 @@
         "content_source": "ai_draft",
         "version": "1.0",
         "reviewer": null,
-        "review_date": null
-      }
+        "review_date": null,
+        "change_note": "Phase 5 demo assessment kept as a draft: its PMI items were rewritten in Phase 8 and are now used by the PM readiness and route diagnostics; the cross-domain demo itself is reconsidered with the career diagnostic in Phase 12. Not shown to learners."
+      },
+      "planned_phase": 12
     },
     {
       "id": "ASM-PRACT-001",
@@ -218,8 +224,10 @@
         "content_source": "ai_draft",
         "version": "1.0",
         "reviewer": null,
-        "review_date": null
-      }
+        "review_date": null,
+        "change_note": "Phase 5 demo assessment kept as a draft: its PMI items were rewritten in Phase 8 and are now used by the PM readiness and route diagnostics; the cross-domain demo itself is reconsidered with the career diagnostic in Phase 12. Not shown to learners."
+      },
+      "planned_phase": 12
     },
     {
       "id": "ASM-FINAL-001",
@@ -2935,6 +2943,1931 @@
         "drafted_by": "ai_draft",
         "approval_basis": "owner_approval_after_ai_prereview",
         "approved_hash": "1cfb70f88f4b003e36f686daab0aff713375597ba40ff3357219be326caf8df2"
+      }
+    },
+    {
+      "id": "ASM-PM-101-QUIZ",
+      "slug": "project-value-quiz",
+      "title": {
+        "en": "Project Management Foundations: from idea to value — knowledge checks",
+        "ar": "أساسيات إدارة المشاريع: من الفكرة إلى القيمة — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-PM-101",
+      "question_ids": [
+        "Q-PM-101-L01",
+        "Q-PM-101-L02",
+        "Q-PM-101-L03",
+        "Q-PM-101-L04"
+      ],
+      "competencies": [
+        "GOV-01",
+        "PM-01",
+        "PM-03"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "17fbdd73da39abf607f6fdaa7d7d04a7003c214197ae7d55ef0184cf9723bd83"
+      }
+    },
+    {
+      "id": "ASM-PM-101-FINAL",
+      "slug": "project-value-final",
+      "title": {
+        "en": "Project Management Foundations: from idea to value — final assessment",
+        "ar": "أساسيات إدارة المشاريع: من الفكرة إلى القيمة — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-PM-101",
+      "question_ids": [
+        "Q-PM-101-SCN",
+        "Q-PM-101-L01",
+        "Q-PM-101-L02",
+        "Q-PM-101-L03",
+        "Q-PM-101-L04"
+      ],
+      "competencies": [
+        "GOV-01",
+        "PM-01",
+        "PM-03"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not PMI exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبار PMI). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "bef335c623f8ff59e8a423a586262bb4b80fa224163166832e1abe7d82e77ad2"
+      }
+    },
+    {
+      "id": "ASM-PM-101-PRACT",
+      "slug": "project-value-practical",
+      "title": {
+        "en": "Project Management Foundations: from idea to value — practical task",
+        "ar": "أساسيات إدارة المشاريع: من الفكرة إلى القيمة — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-PM-101",
+      "question_ids": [
+        "Q-PM-101-PT"
+      ],
+      "competencies": [
+        "PM-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 90,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "60ed1b305cc26b928a08197b7843c283d0854b9fe74d72898c5bbe980f055f74"
+      }
+    },
+    {
+      "id": "ASM-PM-SSC-QUIZ",
+      "slug": "scope-schedule-cost-quiz",
+      "title": {
+        "en": "Scope, Schedule and Cost Integration — knowledge checks",
+        "ar": "تكامل النطاق والجدول والتكلفة — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-PM-SSC",
+      "question_ids": [
+        "Q-PM-SSC-L01",
+        "Q-PM-SSC-L02",
+        "Q-PM-SSC-L03",
+        "Q-PM-SSC-L04"
+      ],
+      "competencies": [
+        "PM-01"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "c4d2017247d4b031488e25e1933d13c9170ad73b6652aa2f04ba16596d677266"
+      }
+    },
+    {
+      "id": "ASM-PM-SSC-FINAL",
+      "slug": "scope-schedule-cost-final",
+      "title": {
+        "en": "Scope, Schedule and Cost Integration — final assessment",
+        "ar": "تكامل النطاق والجدول والتكلفة — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-PM-SSC",
+      "question_ids": [
+        "Q-PM-SSC-SCN",
+        "Q-PM-SSC-L01",
+        "Q-PM-SSC-L02",
+        "Q-PM-SSC-L03",
+        "Q-PM-SSC-L04"
+      ],
+      "competencies": [
+        "PM-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not PMI exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبار PMI). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "9ff3825e59d2042db0b1cef62654dc4ada5d172b86638851960ee8001e273aba"
+      }
+    },
+    {
+      "id": "ASM-PM-SSC-PRACT",
+      "slug": "scope-schedule-cost-practical",
+      "title": {
+        "en": "Scope, Schedule and Cost Integration — practical task",
+        "ar": "تكامل النطاق والجدول والتكلفة — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-PM-SSC",
+      "question_ids": [
+        "Q-PM-SSC-PT"
+      ],
+      "competencies": [
+        "PM-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "873e920ca862e7d2f956c687d2f8b8ae468b0aa055828fc213f99bfb65725c8d"
+      }
+    },
+    {
+      "id": "ASM-PM-RISK-QUIZ",
+      "slug": "project-risk-quiz",
+      "title": {
+        "en": "Risk in Projects — knowledge checks",
+        "ar": "المخاطر في المشاريع — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-PM-RISK",
+      "question_ids": [
+        "Q-PM-RISK-L01",
+        "Q-PM-RISK-L02",
+        "Q-PM-RISK-L03",
+        "Q-PM-RISK-L04"
+      ],
+      "competencies": [
+        "RSK-01",
+        "RSK-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "5a7cf265ff4fb9fd13684c065aa6b0a144dddce36cd7d60427c7410663a160ff"
+      }
+    },
+    {
+      "id": "ASM-PM-RISK-FINAL",
+      "slug": "project-risk-final",
+      "title": {
+        "en": "Risk in Projects — final assessment",
+        "ar": "المخاطر في المشاريع — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-PM-RISK",
+      "question_ids": [
+        "Q-PM-RISK-SCN",
+        "Q-PM-RISK-L01",
+        "Q-PM-RISK-L02",
+        "Q-PM-RISK-L03",
+        "Q-PM-RISK-L04"
+      ],
+      "competencies": [
+        "RSK-01",
+        "RSK-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not PMI exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبار PMI). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "16650e230e6768dd3a947ae2f1a2a2bf3f1c5bb43286aed887b625e30afb0c85"
+      }
+    },
+    {
+      "id": "ASM-PM-RISK-PRACT",
+      "slug": "project-risk-practical",
+      "title": {
+        "en": "Risk in Projects — practical task",
+        "ar": "المخاطر في المشاريع — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-PM-RISK",
+      "question_ids": [
+        "Q-PM-RISK-PT"
+      ],
+      "competencies": [
+        "RSK-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "52be0750ecc9ba4b4e9abbc4fe19b0780bee2129dd10c9bd9e63145e7801dd9b"
+      }
+    },
+    {
+      "id": "ASM-PM-STAKE-QUIZ",
+      "slug": "stakeholders-communication-quiz",
+      "title": {
+        "en": "Stakeholders and Communication — knowledge checks",
+        "ar": "أصحاب المصلحة والتواصل — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-PM-STAKE",
+      "question_ids": [
+        "Q-PM-STAKE-L01",
+        "Q-PM-STAKE-L02",
+        "Q-PM-STAKE-L03",
+        "Q-PM-STAKE-L04"
+      ],
+      "competencies": [
+        "PM-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "3ced622e899be66386aa530249c0276e3dc4a812080d3b31715d5b4cc67b165f"
+      }
+    },
+    {
+      "id": "ASM-PM-STAKE-FINAL",
+      "slug": "stakeholders-communication-final",
+      "title": {
+        "en": "Stakeholders and Communication — final assessment",
+        "ar": "أصحاب المصلحة والتواصل — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-PM-STAKE",
+      "question_ids": [
+        "Q-PM-STAKE-SCN",
+        "Q-PM-STAKE-L01",
+        "Q-PM-STAKE-L02",
+        "Q-PM-STAKE-L03",
+        "Q-PM-STAKE-L04"
+      ],
+      "competencies": [
+        "PM-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not PMI exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبار PMI). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "aa0e72ec0d22b8ab13f0b2583d15f77033b0f24db67b4d53b02ad49367011ab5"
+      }
+    },
+    {
+      "id": "ASM-PM-STAKE-PRACT",
+      "slug": "stakeholders-communication-practical",
+      "title": {
+        "en": "Stakeholders and Communication — practical task",
+        "ar": "أصحاب المصلحة والتواصل — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-PM-STAKE",
+      "question_ids": [
+        "Q-PM-STAKE-PT"
+      ],
+      "competencies": [
+        "PM-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 100,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "3388822458a051bf2d7c7b0514fb6bac71a3a7fa63cb414c0b1cac2ca575b966"
+      }
+    },
+    {
+      "id": "ASM-PMO-DESIGN-QUIZ",
+      "slug": "pmo-design-services-quiz",
+      "title": {
+        "en": "PMO Design and Services — knowledge checks",
+        "ar": "تصميم مكتب إدارة المشاريع وخدماته — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-PMO-DESIGN",
+      "question_ids": [
+        "Q-PMO-DESIGN-L01",
+        "Q-PMO-DESIGN-L02",
+        "Q-PMO-DESIGN-L03",
+        "Q-PMO-DESIGN-L04"
+      ],
+      "competencies": [
+        "PMO-01",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "1db368a9055e22df0660bb49e2fbfc67a90a89c34caebcf60149ab9c983323b1"
+      }
+    },
+    {
+      "id": "ASM-PMO-DESIGN-FINAL",
+      "slug": "pmo-design-services-final",
+      "title": {
+        "en": "PMO Design and Services — final assessment",
+        "ar": "تصميم مكتب إدارة المشاريع وخدماته — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-PMO-DESIGN",
+      "question_ids": [
+        "Q-PMO-DESIGN-SCN",
+        "Q-PMO-DESIGN-L01",
+        "Q-PMO-DESIGN-L02",
+        "Q-PMO-DESIGN-L03",
+        "Q-PMO-DESIGN-L04"
+      ],
+      "competencies": [
+        "PMO-01",
+        "PMO-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not PMI exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبار PMI). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "c0c47d29677eddcd08653c03283ff5846d29e63d9e4d5ef5ba6d4a4abd57f505"
+      }
+    },
+    {
+      "id": "ASM-PMO-DESIGN-PRACT",
+      "slug": "pmo-design-services-practical",
+      "title": {
+        "en": "PMO Design and Services — practical task",
+        "ar": "تصميم مكتب إدارة المشاريع وخدماته — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-PMO-DESIGN",
+      "question_ids": [
+        "Q-PMO-DESIGN-PT"
+      ],
+      "competencies": [
+        "PMO-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "fa54e83fc755f6f32ba79553ccbcf146870cf5b21eb146bf88afc94c7341d7f4"
+      }
+    },
+    {
+      "id": "ASM-PMO-KPI-QUIZ",
+      "slug": "pmo-maturity-kpis-quiz",
+      "title": {
+        "en": "PMO Maturity and KPIs — knowledge checks",
+        "ar": "نضج مكتب المشاريع ومؤشراته — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-PMO-KPI",
+      "question_ids": [
+        "Q-PMO-KPI-L01",
+        "Q-PMO-KPI-L02",
+        "Q-PMO-KPI-L03",
+        "Q-PMO-KPI-L04"
+      ],
+      "competencies": [
+        "OE-01",
+        "OE-02",
+        "PERF-01",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "1855e807c6dd9ed1e34b38995562a31c1543a70a412edf83f10dae61ad48a9d1"
+      }
+    },
+    {
+      "id": "ASM-PMO-KPI-FINAL",
+      "slug": "pmo-maturity-kpis-final",
+      "title": {
+        "en": "PMO Maturity and KPIs — final assessment",
+        "ar": "نضج مكتب المشاريع ومؤشراته — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-PMO-KPI",
+      "question_ids": [
+        "Q-PMO-KPI-SCN",
+        "Q-PMO-KPI-L01",
+        "Q-PMO-KPI-L02",
+        "Q-PMO-KPI-L03",
+        "Q-PMO-KPI-L04"
+      ],
+      "competencies": [
+        "OE-01",
+        "OE-02",
+        "PERF-01",
+        "PMO-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not PMI exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبار PMI). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "4a1ad2e61891a9ba0e610eb333e22a106d6de0938e4445690d5a557477cb456b"
+      }
+    },
+    {
+      "id": "ASM-PMO-KPI-PRACT",
+      "slug": "pmo-maturity-kpis-practical",
+      "title": {
+        "en": "PMO Maturity and KPIs — practical task",
+        "ar": "نضج مكتب المشاريع ومؤشراته — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-PMO-KPI",
+      "question_ids": [
+        "Q-PMO-KPI-PT"
+      ],
+      "competencies": [
+        "PMO-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "23ef01879b7515a179143699175d5c290b6cc86a2c8917996f921cd3b3bc5709"
+      }
+    },
+    {
+      "id": "ASM-PFM-PRIOR-QUIZ",
+      "slug": "portfolio-prioritisation-quiz",
+      "title": {
+        "en": "Portfolio Prioritisation — knowledge checks",
+        "ar": "ترتيب أولويات المحفظة — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-PFM-PRIOR",
+      "question_ids": [
+        "Q-PFM-PRIOR-L01",
+        "Q-PFM-PRIOR-L02",
+        "Q-PFM-PRIOR-L03",
+        "Q-PFM-PRIOR-L04"
+      ],
+      "competencies": [
+        "GOV-01",
+        "LDR-02",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "83ba0ac098f8d9f242829881a1340eac0ac8f7c19779f2c847722223ef3d51be"
+      }
+    },
+    {
+      "id": "ASM-PFM-PRIOR-FINAL",
+      "slug": "portfolio-prioritisation-final",
+      "title": {
+        "en": "Portfolio Prioritisation — final assessment",
+        "ar": "ترتيب أولويات المحفظة — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-PFM-PRIOR",
+      "question_ids": [
+        "Q-PFM-PRIOR-SCN",
+        "Q-PFM-PRIOR-L01",
+        "Q-PFM-PRIOR-L02",
+        "Q-PFM-PRIOR-L03",
+        "Q-PFM-PRIOR-L04"
+      ],
+      "competencies": [
+        "GOV-01",
+        "LDR-02",
+        "PMO-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not PMI exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبار PMI). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "d238b2cbfc935edb06622c31cc5837d3d6dcf45fad33bf0ef93976d02224c5ab"
+      }
+    },
+    {
+      "id": "ASM-PFM-PRIOR-PRACT",
+      "slug": "portfolio-prioritisation-practical",
+      "title": {
+        "en": "Portfolio Prioritisation — practical task",
+        "ar": "ترتيب أولويات المحفظة — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-PFM-PRIOR",
+      "question_ids": [
+        "Q-PFM-PRIOR-PT"
+      ],
+      "competencies": [
+        "PMO-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "b6774a9b515ec90780db9f65088f2df693a766ecb7d4e29032ec3f88f10fe144"
+      }
+    },
+    {
+      "id": "ASM-P3O-101-QUIZ",
+      "slug": "p3o-foundations-quiz",
+      "title": {
+        "en": "P3O® Model Overview: portfolio, programme and project offices — knowledge checks",
+        "ar": "نظرة عامة على نموذج P3O®: مكاتب المحافظ والبرامج والمشاريع — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-P3O-101",
+      "question_ids": [
+        "Q-P3O-101-L01",
+        "Q-P3O-101-L02",
+        "Q-P3O-101-L03",
+        "Q-P3O-101-L04"
+      ],
+      "competencies": [
+        "PMO-01"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "445b143f85453d24b46f1b4e17c2823ea89045681db4c1a2f673629bbbcf1365"
+      }
+    },
+    {
+      "id": "ASM-P3O-101-FINAL",
+      "slug": "p3o-foundations-final",
+      "title": {
+        "en": "P3O® Model Overview: portfolio, programme and project offices — final assessment",
+        "ar": "نظرة عامة على نموذج P3O®: مكاتب المحافظ والبرامج والمشاريع — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-P3O-101",
+      "question_ids": [
+        "Q-P3O-101-SCN",
+        "Q-P3O-101-L01",
+        "Q-P3O-101-L02",
+        "Q-P3O-101-L03",
+        "Q-P3O-101-L04"
+      ],
+      "competencies": [
+        "PMO-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not PMI exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبار PMI). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "05ffa7903f252e58c1cf20f0a5526c08600b64ae4af87fc6f35b8ad5b1810445"
+      }
+    },
+    {
+      "id": "ASM-P3O-101-PRACT",
+      "slug": "p3o-foundations-practical",
+      "title": {
+        "en": "P3O® Model Overview: portfolio, programme and project offices — practical task",
+        "ar": "نظرة عامة على نموذج P3O®: مكاتب المحافظ والبرامج والمشاريع — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-P3O-101",
+      "question_ids": [
+        "Q-P3O-101-PT"
+      ],
+      "competencies": [
+        "PMO-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "1032572e6d3eca3e1cd3141cfe165f604b48b0461acd0ef30094abd88a86137d"
+      }
+    },
+    {
+      "id": "ASM-PM-AGILE-QUIZ",
+      "slug": "agile-hybrid-delivery-quiz",
+      "title": {
+        "en": "Agile and Hybrid Delivery — knowledge checks",
+        "ar": "التسليم الرشيق والهجين — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-PM-AGILE",
+      "question_ids": [
+        "Q-PM-AGILE-L01",
+        "Q-PM-AGILE-L02",
+        "Q-PM-AGILE-L03",
+        "Q-PM-AGILE-L04"
+      ],
+      "competencies": [
+        "PM-03"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "57ba77baf6f0476e15ec1bd3d27ebc6043b7b15154c8159621fdc05359def430"
+      }
+    },
+    {
+      "id": "ASM-PM-AGILE-FINAL",
+      "slug": "agile-hybrid-delivery-final",
+      "title": {
+        "en": "Agile and Hybrid Delivery — final assessment",
+        "ar": "التسليم الرشيق والهجين — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-PM-AGILE",
+      "question_ids": [
+        "Q-PM-AGILE-SCN",
+        "Q-PM-AGILE-L01",
+        "Q-PM-AGILE-L02",
+        "Q-PM-AGILE-L03",
+        "Q-PM-AGILE-L04"
+      ],
+      "competencies": [
+        "PM-03"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not PMI exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبار PMI). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ec7b1343065614211f02b356727846c950f42d89393c177ac21fbc8eabdd2396"
+      }
+    },
+    {
+      "id": "ASM-PM-AGILE-PRACT",
+      "slug": "agile-hybrid-delivery-practical",
+      "title": {
+        "en": "Agile and Hybrid Delivery — practical task",
+        "ar": "التسليم الرشيق والهجين — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-PM-AGILE",
+      "question_ids": [
+        "Q-PM-AGILE-PT"
+      ],
+      "competencies": [
+        "PM-03"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 100,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "78e0abd7e363a904b61d2bf38d78e6be35f263732ddfe90485f40e662220d6bd"
+      }
+    },
+    {
+      "id": "ASM-PMP-PREP-QUIZ",
+      "slug": "pmp-study-strategy-quiz",
+      "title": {
+        "en": "PMP® Preparation: understanding the exam and building your study plan — knowledge checks",
+        "ar": "الإعداد لشهادة PMP®: فهم الاختبار وبناء خطة المذاكرة — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-PMP-PREP",
+      "question_ids": [
+        "Q-PMP-PREP-L01",
+        "Q-PMP-PREP-L02",
+        "Q-PMP-PREP-L03",
+        "Q-PMP-PREP-L04"
+      ],
+      "competencies": [
+        "PM-01",
+        "PM-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "0635d0ee856bd86adccfc21b97475dbb0dd5d0009b92a28b958793ca4e86e55d"
+      }
+    },
+    {
+      "id": "ASM-PMP-PREP-FINAL",
+      "slug": "pmp-study-strategy-final",
+      "title": {
+        "en": "PMP® Preparation: understanding the exam and building your study plan — final assessment",
+        "ar": "الإعداد لشهادة PMP®: فهم الاختبار وبناء خطة المذاكرة — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-PMP-PREP",
+      "question_ids": [
+        "Q-PMP-PREP-SCN",
+        "Q-PMP-PREP-L01",
+        "Q-PMP-PREP-L02",
+        "Q-PMP-PREP-L03",
+        "Q-PMP-PREP-L04",
+        "Q-PM-SSC-SCN",
+        "Q-PM-STAKE-SCN",
+        "Q-PM-RISK-SCN",
+        "Q-PM-AGILE-SCN"
+      ],
+      "competencies": [
+        "PM-01",
+        "PM-02",
+        "PM-03",
+        "RSK-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not PMI exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبار PMI). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "c23b388924d7a3269dcf70e5ecc43747bb9f67899410ca04f099d9a732e1be7f"
+      }
+    },
+    {
+      "id": "ASM-PMP-PREP-PRACT",
+      "slug": "pmp-study-strategy-practical",
+      "title": {
+        "en": "PMP® Preparation: understanding the exam and building your study plan — practical task",
+        "ar": "الإعداد لشهادة PMP®: فهم الاختبار وبناء خطة المذاكرة — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-PMP-PREP",
+      "question_ids": [
+        "Q-PMP-PREP-PT"
+      ],
+      "competencies": [
+        "PM-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 90,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "bbea51e7cc09cd1d3affe8e142143b8d341d5e4fef632473157d5596ec3c4945"
+      }
+    },
+    {
+      "id": "ASM-READY-PM-001",
+      "slug": "pm-readiness",
+      "title": {
+        "en": "Project management readiness diagnostic",
+        "ar": "التقييم التشخيصي لجاهزية إدارة المشاريع"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-PM-RD-01",
+        "Q-PM-RD-02",
+        "Q-PM-RD-03",
+        "Q-PM-RD-04",
+        "Q-PM-RD-05",
+        "Q-PM-RD-06",
+        "Q-PM-RD-07",
+        "Q-PM-RD-08",
+        "Q-PM-RD-09",
+        "Q-PM-RD-10",
+        "Q-PM-RD-11",
+        "Q-PM-RD-12"
+      ],
+      "competencies": [
+        "GOV-01",
+        "PM-01",
+        "PM-02",
+        "PM-03",
+        "PMO-01",
+        "PMO-02",
+        "RSK-01",
+        "RSK-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "Twelve original CIA items across projects, risk, governance and PMOs. Choose “I don't know” rather than guessing — it makes your starting point more accurate. The result is not a professional qualification and years of experience are not used as evidence.",
+        "ar": "اثنا عشر سؤالًا أصليًا من CIA في المشاريع والمخاطر والحوكمة ومكاتب المشاريع. اختر «لا أعرف» بدل التخمين لتكون نقطة بدايتك أدق. والنتيجة ليست مؤهلًا مهنيًا، ولا تُستخدم سنوات الخبرة دليلًا."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "4aefd77dea0a79c81b863cb401d5c1a683b11c14f33ec9171ca1ba680dd5cd86"
+      }
+    },
+    {
+      "id": "ASM-PM-FOUND-DIAG",
+      "slug": "pm-route-found-diagnostic",
+      "title": {
+        "en": "Route diagnostic — Project foundations",
+        "ar": "التقييم التشخيصي للمسار — أساسيات المشاريع"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-PM-FOUND-RD-01",
+        "Q-PM-101-L01",
+        "Q-PM-101-L03",
+        "Q-PM-SSC-L01",
+        "Q-PM-SSC-L03",
+        "Q-PM-RISK-L01",
+        "Q-PM-RISK-L03",
+        "Q-PM-STAKE-L01",
+        "Q-PM-STAKE-L03"
+      ],
+      "competencies": [
+        "PM-01",
+        "PM-02",
+        "PM-03",
+        "RSK-01",
+        "RSK-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "42310d00814923da75a29840dc3e43d2aeb5f8311af45612504eeeaec9cdb1a5"
+      }
+    },
+    {
+      "id": "ASM-PM-PMP-DIAG",
+      "slug": "pm-route-pmp-diagnostic",
+      "title": {
+        "en": "Route diagnostic — PMP® preparation",
+        "ar": "التقييم التشخيصي للمسار — الإعداد لـ PMP®"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-PM-SSC-L01",
+        "Q-PM-SSC-L03",
+        "Q-PM-RISK-L01",
+        "Q-PM-RISK-L03",
+        "Q-PM-STAKE-L01",
+        "Q-PM-STAKE-L03",
+        "Q-PM-AGILE-L01",
+        "Q-PM-AGILE-L03",
+        "Q-PMP-PREP-L01",
+        "Q-PMP-PREP-L03"
+      ],
+      "competencies": [
+        "PM-01",
+        "PM-02",
+        "PM-03",
+        "RSK-01",
+        "RSK-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "724e5e48de65deb7ec37eeb76c28d22dbe62a2cbf217de655b686962acd88ebe"
+      }
+    },
+    {
+      "id": "ASM-PM-PMO-DIAG",
+      "slug": "pm-route-pmo-diagnostic",
+      "title": {
+        "en": "Route diagnostic — PMO set-up and maturity",
+        "ar": "التقييم التشخيصي للمسار — إنشاء مكتب المشاريع ونضجه"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-PMO-RD-01",
+        "Q-PMO-RD-02",
+        "Q-PMO-DESIGN-L01",
+        "Q-PMO-DESIGN-L03",
+        "Q-PMO-KPI-L01",
+        "Q-PMO-KPI-L03",
+        "Q-P3O-101-L01",
+        "Q-P3O-101-L03"
+      ],
+      "competencies": [
+        "GOV-02",
+        "PERF-01",
+        "PMO-01",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "df1f8026bbbc72ad10547e8580ddbdc1ce0cf349d003d3ce5240bd2848ef0c27"
+      }
+    },
+    {
+      "id": "ASM-PM-PORTFOLIO-DIAG",
+      "slug": "pm-route-portfolio-diagnostic",
+      "title": {
+        "en": "Route diagnostic — Portfolio and programme",
+        "ar": "التقييم التشخيصي للمسار — المحافظ والبرامج"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-PFM-RD-01",
+        "Q-PFM-RD-02",
+        "Q-PFM-PRIOR-L01",
+        "Q-PFM-PRIOR-L03",
+        "Q-P3O-101-L01",
+        "Q-P3O-101-L03"
+      ],
+      "competencies": [
+        "LDR-02",
+        "PMO-01",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e8a1ff51242b6148d8afafdf930c171c2ae95ebe2d4476c67b894f847ae4ae3b"
+      }
+    },
+    {
+      "id": "ASM-PM-AGILE-DIAG",
+      "slug": "pm-route-agile-diagnostic",
+      "title": {
+        "en": "Route diagnostic — Agile delivery foundations",
+        "ar": "التقييم التشخيصي للمسار — أساسيات التسليم الرشيق"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-AGL-RD-01",
+        "Q-PM-AGILE-L01",
+        "Q-PM-AGILE-L03",
+        "Q-PM-STAKE-L01",
+        "Q-PM-STAKE-L03"
+      ],
+      "competencies": [
+        "PM-02",
+        "PM-03"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "d9ace05798bbe99b1d135d1c5773eb959629df908e6a32e6bcdf49e8e64b7ac8"
       }
     },
     {
@@ -7173,6 +9106,742 @@
       },
       "competencies": [
         "QM-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 90,
+      "description": {
+        "en": "A practical task in the toolkit, reviewed by a person.",
+        "ar": "مهمة عملية في الأداة يراجعها شخص."
+      }
+    },
+    {
+      "id": "ASM-P-21500-QUIZ",
+      "slug": "iso-21500-practices-quiz",
+      "title": {
+        "en": "ISO 21500 Series Conformity Assessment — knowledge check",
+        "ar": "تقييم المطابقة وفق سلسلة ISO 21500 — اختبار معرفي"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-P-21500",
+      "question_ids": [
+        "Q-P-21500-L01",
+        "Q-P-21500-L04",
+        "Q-P-21500-L08",
+        "Q-P-21500-L12",
+        "Q-P-21500-L16",
+        "Q-P-21500-L20",
+        "Q-P-21500-L24",
+        "Q-P-21500-L28",
+        "Q-P-21500-L31",
+        "Q-P-21500-L35",
+        "Q-P-21500-L39",
+        "Q-P-21500-L43",
+        "Q-P-21500-L47",
+        "Q-P-21500-L51",
+        "Q-P-21500-L55"
+      ],
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: system. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "system",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "2d78c076f41078ee05f239bb045d4c4cd0cf0ae2c53a44ca21cd0f16eb4172c7"
+      },
+      "competencies": [
+        "GOV-01",
+        "PM-01",
+        "PM-02",
+        "PM-03",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Questions assembled from the owner's guide. Choose “I don't know” rather than guessing.",
+        "ar": "أسئلة مبنية من دليل المالك. اختر «لا أعرف» بدل التخمين."
+      }
+    },
+    {
+      "id": "ASM-P-21500-FINAL",
+      "slug": "iso-21500-practices-final",
+      "title": {
+        "en": "ISO 21500 Series Conformity Assessment — final assessment",
+        "ar": "تقييم المطابقة وفق سلسلة ISO 21500 — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-P-21500",
+      "question_ids": [
+        "Q-P-21500-L01",
+        "Q-P-21500-L03",
+        "Q-P-21500-L06",
+        "Q-P-21500-L08",
+        "Q-P-21500-L10",
+        "Q-P-21500-L13",
+        "Q-P-21500-L15",
+        "Q-P-21500-L17",
+        "Q-P-21500-L20",
+        "Q-P-21500-L22",
+        "Q-P-21500-L24",
+        "Q-P-21500-L27",
+        "Q-P-21500-L29",
+        "Q-P-21500-L31",
+        "Q-P-21500-L33",
+        "Q-P-21500-L36",
+        "Q-P-21500-L38",
+        "Q-P-21500-L40",
+        "Q-P-21500-L43",
+        "Q-P-21500-L45",
+        "Q-P-21500-L47",
+        "Q-P-21500-L50",
+        "Q-P-21500-L52",
+        "Q-P-21500-L54",
+        "Q-P-21500-L57"
+      ],
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": 3,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: system. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "system",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "d6e833bde48dc5a7ca7ff412efd6dbe8054e2273d1ec64e8fb9d46c75d829a8e"
+      },
+      "competencies": [
+        "GOV-01",
+        "PM-01",
+        "PM-02",
+        "PM-03",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Questions assembled from the owner's guide. Choose “I don't know” rather than guessing.",
+        "ar": "أسئلة مبنية من دليل المالك. اختر «لا أعرف» بدل التخمين."
+      }
+    },
+    {
+      "id": "ASM-P-21500-PRACT",
+      "slug": "iso-21500-practices-pract",
+      "title": {
+        "en": "ISO 21500 Series Conformity Assessment — practical task",
+        "ar": "تقييم المطابقة وفق سلسلة ISO 21500 — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-P-21500",
+      "question_ids": [
+        "Q-P-21500-PT"
+      ],
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": 3,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: system. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "system",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "691e1db3f2acfd681b774aaefe19512d55a793353616a5b111e9369ef1b6c0b2"
+      },
+      "competencies": [
+        "PM-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 90,
+      "description": {
+        "en": "A practical task in the toolkit, reviewed by a person.",
+        "ar": "مهمة عملية في الأداة يراجعها شخص."
+      }
+    },
+    {
+      "id": "ASM-P-P3O-QUIZ",
+      "slug": "p3o-practices-quiz",
+      "title": {
+        "en": "P3O® Office Design & Capability Assessment — knowledge check",
+        "ar": "تصميم مكاتب P3O® وتقييم قدرتها — اختبار معرفي"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-P-P3O",
+      "question_ids": [
+        "Q-P-P3O-L01",
+        "Q-P-P3O-L03",
+        "Q-P-P3O-L06",
+        "Q-P-P3O-L09",
+        "Q-P-P3O-L12",
+        "Q-P-P3O-L15",
+        "Q-P-P3O-L17",
+        "Q-P-P3O-L20",
+        "Q-P-P3O-L23",
+        "Q-P-P3O-L26",
+        "Q-P-P3O-L29",
+        "Q-P-P3O-L31",
+        "Q-P-P3O-L34",
+        "Q-P-P3O-L37",
+        "Q-P-P3O-L40"
+      ],
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: system. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "system",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "2c86c146d46cb2da17d7e8aba9a099ded4dfb5f657b489062fc8afcb84c1f4b2"
+      },
+      "competencies": [
+        "GOV-01",
+        "PMO-01",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Questions assembled from the owner's guide. Choose “I don't know” rather than guessing.",
+        "ar": "أسئلة مبنية من دليل المالك. اختر «لا أعرف» بدل التخمين."
+      }
+    },
+    {
+      "id": "ASM-P-P3O-FINAL",
+      "slug": "p3o-practices-final",
+      "title": {
+        "en": "P3O® Office Design & Capability Assessment — final assessment",
+        "ar": "تصميم مكاتب P3O® وتقييم قدرتها — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-P-P3O",
+      "question_ids": [
+        "Q-P-P3O-L01",
+        "Q-P-P3O-L03",
+        "Q-P-P3O-L04",
+        "Q-P-P3O-L06",
+        "Q-P-P3O-L08",
+        "Q-P-P3O-L09",
+        "Q-P-P3O-L11",
+        "Q-P-P3O-L13",
+        "Q-P-P3O-L14",
+        "Q-P-P3O-L16",
+        "Q-P-P3O-L18",
+        "Q-P-P3O-L19",
+        "Q-P-P3O-L21",
+        "Q-P-P3O-L23",
+        "Q-P-P3O-L25",
+        "Q-P-P3O-L26",
+        "Q-P-P3O-L28",
+        "Q-P-P3O-L30",
+        "Q-P-P3O-L31",
+        "Q-P-P3O-L33",
+        "Q-P-P3O-L35",
+        "Q-P-P3O-L36",
+        "Q-P-P3O-L38",
+        "Q-P-P3O-L40",
+        "Q-P-P3O-L41"
+      ],
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": 3,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: system. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "system",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "c3067a5b9c303316cbf72671cd29c993d773947b6df83a8a246810948d72068b"
+      },
+      "competencies": [
+        "GOV-01",
+        "PMO-01",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Questions assembled from the owner's guide. Choose “I don't know” rather than guessing.",
+        "ar": "أسئلة مبنية من دليل المالك. اختر «لا أعرف» بدل التخمين."
+      }
+    },
+    {
+      "id": "ASM-P-P3O-PRACT",
+      "slug": "p3o-practices-pract",
+      "title": {
+        "en": "P3O® Office Design & Capability Assessment — practical task",
+        "ar": "تصميم مكاتب P3O® وتقييم قدرتها — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-P-P3O",
+      "question_ids": [
+        "Q-P-P3O-PT"
+      ],
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": 3,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: system. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "system",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "57e2403ff6979d16706f9494d356e8562ca02a6714f12b026e8b59b9bdfd5487"
+      },
+      "competencies": [
+        "PMO-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 90,
+      "description": {
+        "en": "A practical task in the toolkit, reviewed by a person.",
+        "ar": "مهمة عملية في الأداة يراجعها شخص."
+      }
+    },
+    {
+      "id": "ASM-P-P3M3-QUIZ",
+      "slug": "p3m3-practices-quiz",
+      "title": {
+        "en": "P3M3 Maturity Assessment — knowledge check",
+        "ar": "تقييم النضج وفق P3M3 — اختبار معرفي"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-P-P3M3",
+      "question_ids": [
+        "Q-P-P3M3-L01",
+        "Q-P-P3M3-L02",
+        "Q-P-P3M3-L03",
+        "Q-P-P3M3-L04",
+        "Q-P-P3M3-L05",
+        "Q-P-P3M3-L06",
+        "Q-P-P3M3-L07"
+      ],
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: system. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "system",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "31ad419c3d2db810308c2c9dc838e6a14146e52bd4fcafe111cbec2d3933e64a"
+      },
+      "competencies": [
+        "GOV-01",
+        "OE-01",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 10,
+      "description": {
+        "en": "Questions assembled from the owner's guide. Choose “I don't know” rather than guessing.",
+        "ar": "أسئلة مبنية من دليل المالك. اختر «لا أعرف» بدل التخمين."
+      }
+    },
+    {
+      "id": "ASM-P-P3M3-FINAL",
+      "slug": "p3m3-practices-final",
+      "title": {
+        "en": "P3M3 Maturity Assessment — final assessment",
+        "ar": "تقييم النضج وفق P3M3 — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-P-P3M3",
+      "question_ids": [
+        "Q-P-P3M3-L01",
+        "Q-P-P3M3-L02",
+        "Q-P-P3M3-L03",
+        "Q-P-P3M3-L04",
+        "Q-P-P3M3-L05",
+        "Q-P-P3M3-L06",
+        "Q-P-P3M3-L07"
+      ],
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": 3,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: system. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "system",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e46fde85765794f23a366ab844f7f1d89ffcab2f02f8d29a93ecee8c58083272"
+      },
+      "competencies": [
+        "GOV-01",
+        "OE-01",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Questions assembled from the owner's guide. Choose “I don't know” rather than guessing.",
+        "ar": "أسئلة مبنية من دليل المالك. اختر «لا أعرف» بدل التخمين."
+      }
+    },
+    {
+      "id": "ASM-P-P3M3-PRACT",
+      "slug": "p3m3-practices-pract",
+      "title": {
+        "en": "P3M3 Maturity Assessment — practical task",
+        "ar": "تقييم النضج وفق P3M3 — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-P-P3M3",
+      "question_ids": [
+        "Q-P-P3M3-PT"
+      ],
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": 3,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: system. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "system",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "60565105b7610739e245d7661182b75c2f822ef7d79c573e1096054fd689bbcd"
+      },
+      "competencies": [
+        "PMO-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 90,
+      "description": {
+        "en": "A practical task in the toolkit, reviewed by a person.",
+        "ar": "مهمة عملية في الأداة يراجعها شخص."
+      }
+    },
+    {
+      "id": "ASM-P-PMX-QUIZ",
+      "slug": "pmo-excellence-practices-quiz",
+      "title": {
+        "en": "PMO Excellence Assessment — knowledge check",
+        "ar": "تقييم التميّز في مكاتب إدارة المشاريع — اختبار معرفي"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-P-PMX",
+      "question_ids": [
+        "Q-P-PMX-L01",
+        "Q-P-PMX-L03",
+        "Q-P-PMX-L06",
+        "Q-P-PMX-L09",
+        "Q-P-PMX-L12",
+        "Q-P-PMX-L15",
+        "Q-P-PMX-L17",
+        "Q-P-PMX-L20",
+        "Q-P-PMX-L23",
+        "Q-P-PMX-L26",
+        "Q-P-PMX-L29",
+        "Q-P-PMX-L31",
+        "Q-P-PMX-L34",
+        "Q-P-PMX-L37",
+        "Q-P-PMX-L40"
+      ],
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: system. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "system",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "52cb60d34c95ab5130e943e942c20caa51e4ba42abbfbc6a618ecd52e6af75c9"
+      },
+      "competencies": [
+        "OE-01",
+        "PERF-01",
+        "PMO-01",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Questions assembled from the owner's guide. Choose “I don't know” rather than guessing.",
+        "ar": "أسئلة مبنية من دليل المالك. اختر «لا أعرف» بدل التخمين."
+      }
+    },
+    {
+      "id": "ASM-P-PMX-FINAL",
+      "slug": "pmo-excellence-practices-final",
+      "title": {
+        "en": "PMO Excellence Assessment — final assessment",
+        "ar": "تقييم التميّز في مكاتب إدارة المشاريع — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-P-PMX",
+      "question_ids": [
+        "Q-P-PMX-L01",
+        "Q-P-PMX-L03",
+        "Q-P-PMX-L04",
+        "Q-P-PMX-L06",
+        "Q-P-PMX-L08",
+        "Q-P-PMX-L09",
+        "Q-P-PMX-L11",
+        "Q-P-PMX-L13",
+        "Q-P-PMX-L14",
+        "Q-P-PMX-L16",
+        "Q-P-PMX-L18",
+        "Q-P-PMX-L19",
+        "Q-P-PMX-L21",
+        "Q-P-PMX-L23",
+        "Q-P-PMX-L25",
+        "Q-P-PMX-L26",
+        "Q-P-PMX-L28",
+        "Q-P-PMX-L30",
+        "Q-P-PMX-L31",
+        "Q-P-PMX-L33",
+        "Q-P-PMX-L35",
+        "Q-P-PMX-L36",
+        "Q-P-PMX-L38",
+        "Q-P-PMX-L40",
+        "Q-P-PMX-L41"
+      ],
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": 3,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: system. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "system",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "a8460b02e2e52a14a01c2912ced6be66f5ef5b0ebdbe52f26b9cfa60f6bb978e"
+      },
+      "competencies": [
+        "OE-01",
+        "PERF-01",
+        "PMO-01",
+        "PMO-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Questions assembled from the owner's guide. Choose “I don't know” rather than guessing.",
+        "ar": "أسئلة مبنية من دليل المالك. اختر «لا أعرف» بدل التخمين."
+      }
+    },
+    {
+      "id": "ASM-P-PMX-PRACT",
+      "slug": "pmo-excellence-practices-pract",
+      "title": {
+        "en": "PMO Excellence Assessment — practical task",
+        "ar": "تقييم التميّز في مكاتب إدارة المشاريع — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-P-PMX",
+      "question_ids": [
+        "Q-P-PMX-PT"
+      ],
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": 3,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: system. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "system",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ac1df1c7548db5df7d1014bed5b304298247b3f999f684b258ac53fd11053292"
+      },
+      "competencies": [
+        "PMO-01"
       ],
       "allow_unknown": false,
       "estimated_minutes": 90,

@@ -1,0 +1,1484 @@
+{
+  "schema": "cia.certification.v1",
+  "items": [
+    {
+      "id": "CERT-CAPM",
+      "slug": "capm",
+      "code": "CAPM®",
+      "body": "PMI",
+      "name": {
+        "en": "Certified Associate in Project Management",
+        "ar": "مشارك معتمد في إدارة المشاريع"
+      },
+      "stage": "entry",
+      "area": "project",
+      "summary": {
+        "en": "An entry-level credential for people starting a project career. It tests fundamentals, predictive and agile methods and business-analysis basics; no project experience is required.",
+        "ar": "شهادة للمبتدئين في مسار المشاريع. تختبر الأساسيات والمنهجيات التنبؤية والرشيقة وأساسيات تحليل الأعمال؛ ولا تتطلب خبرة في المشاريع."
+      },
+      "who": {
+        "en": "Students, graduates, coordinators and team members without the experience PMP® needs.",
+        "ar": "الطلاب والخريجون والمنسقون وأعضاء الفرق الذين لا يملكون الخبرة التي تتطلبها PMP®."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Requirement",
+            "ar": "المتطلب"
+          },
+          "items": [
+            {
+              "en": "A secondary degree (high school diploma, GED or global equivalent)",
+              "ar": "شهادة ثانوية (أو ما يعادلها دوليًا)"
+            },
+            {
+              "en": "23 hours of project-management education before the exam",
+              "ar": "23 ساعة من تعليم إدارة المشاريع قبل الاختبار"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 150,
+        "scored": 135,
+        "minutes": 180,
+        "note": null
+      },
+      "fee": null,
+      "renewal": {
+        "pdus": 15,
+        "years": 3
+      },
+      "domains": [
+        {
+          "name": {
+            "en": "Project Management Fundamentals and Core Concepts",
+            "ar": "أساسيات إدارة المشاريع ومفاهيمها الجوهرية"
+          },
+          "weight": 36
+        },
+        {
+          "name": {
+            "en": "Predictive, Plan-Based Methodologies",
+            "ar": "المنهجيات التنبؤية القائمة على الخطة"
+          },
+          "weight": 17
+        },
+        {
+          "name": {
+            "en": "Agile Frameworks/Methodologies",
+            "ar": "الأطر والمنهجيات الرشيقة"
+          },
+          "weight": 20
+        },
+        {
+          "name": {
+            "en": "Business Analysis Frameworks",
+            "ar": "أطر تحليل الأعمال"
+          },
+          "weight": 27
+        }
+      ],
+      "languages": null,
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "pending",
+        "renewal": "verified",
+        "domains": "verified"
+      },
+      "verified_date": "2026-11-03",
+      "source_ids": [
+        "SRC-PMI-CAPM"
+      ],
+      "official_url": "https://www.pmi.org/capm",
+      "cia_routes": [
+        "ROUTE-PM-FOUND"
+      ],
+      "cia_courses": [
+        "CRS-PM-101",
+        "CRS-PM-SSC",
+        "CRS-PM-AGILE",
+        "CRS-PM-STAKE"
+      ],
+      "competencies": [
+        "PM-01",
+        "PM-02",
+        "PM-03"
+      ],
+      "toolkits": [
+        "iso21500"
+      ],
+      "next": [
+        "CERT-PMP"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Start with the foundations",
+            "ar": "ابدأ بالأساسيات"
+          },
+          "text": {
+            "en": "Complete Project Management Foundations, then Scope-Schedule-Cost Integration and Agile and Hybrid Delivery.",
+            "ar": "أكمل أساسيات إدارة المشاريع، ثم تكامل النطاق والجدول والتكلفة، والتسليم الرشيق والهجين."
+          }
+        },
+        {
+          "title": {
+            "en": "Cover business analysis",
+            "ar": "غطِّ تحليل الأعمال"
+          },
+          "text": {
+            "en": "Business analysis carries about a quarter of the weight; study requirements, stakeholders and value.",
+            "ar": "يحمل تحليل الأعمال نحو ربع الوزن؛ فذاكر المتطلبات وأصحاب المصلحة والقيمة."
+          }
+        },
+        {
+          "title": {
+            "en": "Document your 23 hours",
+            "ar": "وثّق ساعاتك الـ 23"
+          },
+          "text": {
+            "en": "PMI decides which education counts; keep certificates and syllabi.",
+            "ar": "PMI تحدد التعليم المحتسب؛ فاحتفظ بالشهادات والمناهج."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not a PMI Authorized Training Partner. CIA courses do not award PDUs or PMI contact-hour certificates, and completing them does not guarantee eligibility or an exam result. Always confirm requirements on PMI's site before applying.",
+        "ar": "CIA ليست شريك تدريب معتمدًا من PMI. ولا تمنح دورات CIA وحدات PDU ولا شهادات ساعات تعليمية من PMI، وإكمالها لا يضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع PMI قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "5017ded533d63ba13d4a53334882c3195439b6f4cda821284c0fa54281cb2a9c"
+      }
+    },
+    {
+      "id": "CERT-PMP",
+      "slug": "pmp",
+      "code": "PMP®",
+      "body": "PMI",
+      "name": {
+        "en": "Project Management Professional",
+        "ar": "محترف إدارة المشاريع"
+      },
+      "stage": "practitioner",
+      "area": "project",
+      "summary": {
+        "en": "The best-known project-management credential. It tests leading people, running the process with predictive, agile and hybrid approaches, and managing the business environment of a project. The exam was updated in July 2026, with much more weight on the business environment.",
+        "ar": "أشهر شهادات إدارة المشاريع. تختبر قيادة الأفراد وإدارة العمليات بالنُّهج التنبؤية والرشيقة والهجينة وإدارة بيئة الأعمال المحيطة بالمشروع. وحُدِّث الاختبار في يوليو 2026 مع وزن أكبر بكثير لبيئة الأعمال."
+      },
+      "who": {
+        "en": "Practitioners who already lead projects and can show the required months of experience.",
+        "ar": "الممارسون الذين يقودون المشاريع بالفعل ويستطيعون إثبات أشهر الخبرة المطلوبة."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Option 1",
+            "ar": "الخيار 1"
+          },
+          "items": [
+            {
+              "en": "Four-year degree",
+              "ar": "شهادة جامعية من أربع سنوات"
+            },
+            {
+              "en": "36 months of experience leading projects within the past eight years",
+              "ar": "36 شهرًا من الخبرة في قيادة المشاريع خلال السنوات الثماني الماضية"
+            },
+            {
+              "en": "35 hours of project-management education or training, or a CAPM® certification",
+              "ar": "35 ساعة من تعليم أو تدريب إدارة المشاريع، أو شهادة CAPM®"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Option 2",
+            "ar": "الخيار 2"
+          },
+          "items": [
+            {
+              "en": "High school diploma or associate's degree",
+              "ar": "شهادة ثانوية أو دبلوم مشارك"
+            },
+            {
+              "en": "60 months of experience leading projects within the past eight years",
+              "ar": "60 شهرًا من الخبرة في قيادة المشاريع خلال السنوات الثماني الماضية"
+            },
+            {
+              "en": "35 hours of project-management education or training, or a CAPM® certification",
+              "ar": "35 ساعة من تعليم أو تدريب إدارة المشاريع، أو شهادة CAPM®"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 180,
+        "scored": 170,
+        "minutes": 240,
+        "note": {
+          "en": "Two 10-minute breaks; question types include case or scenario, multiple-response, matching, graphic-based and point-and-click items (July 2026 outline).",
+          "ar": "استراحتان كل منهما 10 دقائق؛ وتشمل أنواع الأسئلة الحالة أو السيناريو، والإجابات المتعددة، والمطابقة، والأسئلة المعتمدة على الرسوم، والنقر على الموضع (مخطط يوليو 2026)."
+        }
+      },
+      "fee": {
+        "member": 405,
+        "non_member": 555,
+        "currency": "USD",
+        "note": {
+          "en": "Bundling the exam with PMI membership reduces the exam fee (PMI page).",
+          "ar": "دمج الاختبار مع عضوية PMI يخفض رسوم الاختبار (صفحة PMI)."
+        }
+      },
+      "renewal": null,
+      "domains": [
+        {
+          "name": {
+            "en": "People",
+            "ar": "الأفراد"
+          },
+          "weight": 33
+        },
+        {
+          "name": {
+            "en": "Process",
+            "ar": "العمليات"
+          },
+          "weight": 41
+        },
+        {
+          "name": {
+            "en": "Business Environment",
+            "ar": "بيئة الأعمال"
+          },
+          "weight": 26
+        }
+      ],
+      "languages": null,
+      "extra": [
+        {
+          "en": "Previous weights (before July 2026): People 42%, Process 50%, Business Environment 8%.",
+          "ar": "الأوزان السابقة (قبل يوليو 2026): الأفراد 42%، والعمليات 50%، وبيئة الأعمال 8%."
+        },
+        {
+          "en": "The July 2026 outline lists 8 tasks in People, 10 in Process and 8 in Business Environment; read their wording in the official outline.",
+          "ar": "يذكر مخطط يوليو 2026 ثماني مهام في الأفراد وعشرًا في العمليات وثماني في بيئة الأعمال؛ فاقرأ صياغتها في المخطط الرسمي."
+        }
+      ],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "verified",
+        "renewal": "pending",
+        "domains": "verified"
+      },
+      "verified_date": "2026-11-03",
+      "source_ids": [
+        "SRC-PMI-PMP",
+        "SRC-PMI-PMP-NEW",
+        "SRC-PMI-PMP-ECO-2026"
+      ],
+      "official_url": "https://www.pmi.org/certifications/project-management-pmp",
+      "cia_routes": [
+        "ROUTE-PMP"
+      ],
+      "cia_courses": [
+        "CRS-PM-101",
+        "CRS-PM-SSC",
+        "CRS-PM-RISK",
+        "CRS-PM-STAKE",
+        "CRS-PM-AGILE",
+        "CRS-PMP-PREP",
+        "CRS-P-21500"
+      ],
+      "competencies": [
+        "PM-01",
+        "PM-02",
+        "PM-03",
+        "RSK-01",
+        "RSK-02",
+        "GOV-01"
+      ],
+      "toolkits": [
+        "iso21500",
+        "stakeholders",
+        "fmea"
+      ],
+      "next": [
+        "CERT-PMI-RMP",
+        "CERT-PGMP",
+        "CERT-PMI-PMOCP"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Check eligibility first",
+            "ar": "تحقق من الأهلية أولًا"
+          },
+          "text": {
+            "en": "Count calendar months of project leadership (overlaps count once) and gather evidence for the 35 hours before you apply.",
+            "ar": "احسب الأشهر التقويمية لقيادة المشاريع (التداخل يُحتسب مرة واحدة) واجمع أدلة الساعات الخمس والثلاثين قبل التقديم."
+          }
+        },
+        {
+          "title": {
+            "en": "Plan by weight",
+            "ar": "خطط حسب الوزن"
+          },
+          "text": {
+            "en": "Use the outline's weights and your diagnostic to split study hours; Business Environment now needs real time.",
+            "ar": "استخدم أوزان المخطط وتقييمك التشخيصي لتوزيع ساعات المذاكرة؛ وبيئة الأعمال تحتاج الآن إلى وقت حقيقي."
+          }
+        },
+        {
+          "title": {
+            "en": "Practise reasoning, not recall",
+            "ar": "تدرّب على التفكير لا الحفظ"
+          },
+          "text": {
+            "en": "Most items describe a situation. Use the five-step method of the PMP Preparation course and keep an error log.",
+            "ar": "معظم الأسئلة تصف موقفًا. استخدم منهج الخطوات الخمس في دورة الإعداد لـ PMP واحتفظ بسجل أخطاء."
+          }
+        },
+        {
+          "title": {
+            "en": "Book when stable",
+            "ar": "احجز عند الاستقرار"
+          },
+          "text": {
+            "en": "Book the exam when timed practice results are stable across two or three attempts, not on a fixed hope date.",
+            "ar": "احجز الاختبار عندما تستقر نتائج التدريب الموقوت عبر محاولتين أو ثلاث، لا في موعد قائم على الأمل."
+          }
+        }
+      ],
+      "study_plan": {
+        "weeks": 10,
+        "hours_per_week": 10,
+        "phases": [
+          {
+            "weeks": "1",
+            "title": {
+              "en": "Diagnose and plan",
+              "ar": "التشخيص والتخطيط"
+            },
+            "text": {
+              "en": "Take the PM readiness diagnostic and the PMP® route diagnostic; download the current outline from PMI; fix your exam window and weekly hours.",
+              "ar": "أدِّ التقييم التشخيصي للجاهزية وتقييم مسار PMP®؛ ونزّل المخطط الحالي من PMI؛ وحدّد نافذة الاختبار وساعاتك الأسبوعية."
+            },
+            "courses": [
+              "CRS-PMP-PREP"
+            ],
+            "domain": null
+          },
+          {
+            "weeks": "2–3",
+            "title": {
+              "en": "People (33%)",
+              "ar": "الأفراد (33%)"
+            },
+            "text": {
+              "en": "Stakeholders, communication, conflict, team leadership. Practise scenario reasoning daily.",
+              "ar": "أصحاب المصلحة والتواصل والنزاع وقيادة الفريق. وتدرّب يوميًا على التفكير في السيناريوهات."
+            },
+            "courses": [
+              "CRS-PM-STAKE",
+              "CRS-PM-101"
+            ],
+            "domain": 0
+          },
+          {
+            "weeks": "4–6",
+            "title": {
+              "en": "Process (41%)",
+              "ar": "العمليات (41%)"
+            },
+            "text": {
+              "en": "Scope, schedule, cost, earned value, quality, resources, procurement and closure; predictive and agile delivery side by side.",
+              "ar": "النطاق والجدول والتكلفة والقيمة المكتسبة والجودة والموارد والمشتريات والإغلاق؛ والتسليم التنبؤي والرشيق جنبًا إلى جنب."
+            },
+            "courses": [
+              "CRS-PM-SSC",
+              "CRS-PM-AGILE"
+            ],
+            "domain": 1
+          },
+          {
+            "weeks": "7–8",
+            "title": {
+              "en": "Business Environment (26%)",
+              "ar": "بيئة الأعمال (26%)"
+            },
+            "text": {
+              "en": "Governance, compliance, change control, risk, organisational change and external factors.",
+              "ar": "الحوكمة والامتثال وضبط التغيير والمخاطر والتغيير المؤسسي والعوامل الخارجية."
+            },
+            "courses": [
+              "CRS-PM-RISK",
+              "CRS-P-21500"
+            ],
+            "domain": 2
+          },
+          {
+            "weeks": "9",
+            "title": {
+              "en": "Mixed timed practice",
+              "ar": "تدريب موقوت مختلط"
+            },
+            "text": {
+              "en": "Timed mixed sets; review every error in your log; re-study the weakest domain.",
+              "ar": "مجموعات موقوتة مختلطة؛ ومراجعة كل خطأ في سجلك؛ وإعادة مذاكرة المجال الأضعف."
+            },
+            "courses": [
+              "CRS-PMP-PREP"
+            ],
+            "domain": null
+          },
+          {
+            "weeks": "10",
+            "title": {
+              "en": "Full rehearsal and rest",
+              "ar": "بروفة كاملة وراحة"
+            },
+            "text": {
+              "en": "One full-length timed practice in exam conditions, final error-log review, rest the day before.",
+              "ar": "اختبار تجريبي كامل موقوت في ظروف الاختبار، ومراجعة نهائية لسجل الأخطاء، وراحة في اليوم السابق."
+            },
+            "courses": [],
+            "domain": null
+          }
+        ]
+      },
+      "claims": {
+        "en": "CIA is not a PMI Authorized Training Partner. CIA courses do not award PDUs or PMI contact-hour certificates, and completing them does not guarantee eligibility or an exam result. Always confirm requirements on PMI's site before applying.",
+        "ar": "CIA ليست شريك تدريب معتمدًا من PMI. ولا تمنح دورات CIA وحدات PDU ولا شهادات ساعات تعليمية من PMI، وإكمالها لا يضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع PMI قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "6e3f3f4ddddacab00d4ecc3f5d03af7e40f0e73e3d5ae06a84b7125e7ca351f1"
+      }
+    },
+    {
+      "id": "CERT-PMI-ACP",
+      "slug": "pmi-acp",
+      "code": "PMI-ACP®",
+      "body": "PMI",
+      "name": {
+        "en": "PMI Agile Certified Practitioner",
+        "ar": "ممارس رشيق معتمد من PMI"
+      },
+      "stage": "specialist",
+      "area": "agile",
+      "summary": {
+        "en": "A credential for agile practitioners across frameworks: mindset, leadership, product and delivery. The current outline dates from November 2024.",
+        "ar": "شهادة للممارسين الرشيقين عبر الأطر: العقلية والقيادة والمنتج والتسليم. ويعود المخطط الحالي إلى نوفمبر 2024."
+      },
+      "who": {
+        "en": "Scrum Masters, product owners, agile team leads and project managers working in agile or hybrid settings.",
+        "ar": "Scrum Masters ومالكو المنتجات وقادة الفرق الرشيقة ومديرو المشاريع في البيئات الرشيقة أو الهجينة."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Requirements",
+            "ar": "المتطلبات"
+          },
+          "items": [
+            {
+              "en": "A secondary diploma or global equivalent",
+              "ar": "شهادة ثانوية أو ما يعادلها دوليًا"
+            },
+            {
+              "en": "21 hours of agile training completed before applying",
+              "ar": "21 ساعة تدريب رشيق قبل التقديم"
+            },
+            {
+              "en": "Experience: 2 years of agile experience within the past 5 years; or 1 year with a GAC-accredited degree; or 1 year with a current third-party agile certification held for more than a year; or an active PMP®",
+              "ar": "الخبرة: سنتان من الخبرة الرشيقة خلال السنوات الخمس الماضية؛ أو سنة مع شهادة جامعية من برنامج معتمد من GAC؛ أو سنة مع شهادة رشيقة سارية من جهة أخرى مضى عليها أكثر من سنة؛ أو شهادة PMP® سارية"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 120,
+        "scored": 100,
+        "minutes": 180,
+        "note": {
+          "en": "One 10-minute break after the first 60 items (exam outline).",
+          "ar": "استراحة واحدة 10 دقائق بعد أول 60 سؤالًا (مخطط الاختبار)."
+        }
+      },
+      "fee": null,
+      "renewal": null,
+      "domains": [
+        {
+          "name": {
+            "en": "Mindset",
+            "ar": "العقلية"
+          },
+          "weight": 28
+        },
+        {
+          "name": {
+            "en": "Leadership",
+            "ar": "القيادة"
+          },
+          "weight": 25
+        },
+        {
+          "name": {
+            "en": "Product",
+            "ar": "المنتج"
+          },
+          "weight": 19
+        },
+        {
+          "name": {
+            "en": "Delivery",
+            "ar": "التسليم"
+          },
+          "weight": 28
+        }
+      ],
+      "languages": null,
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "pending",
+        "renewal": "pending",
+        "domains": "verified"
+      },
+      "verified_date": "2026-11-03",
+      "source_ids": [
+        "SRC-PMI-ACP-ECO"
+      ],
+      "official_url": "https://www.pmi.org/certifications/agile-acp",
+      "cia_routes": [
+        "ROUTE-AGILE"
+      ],
+      "cia_courses": [
+        "CRS-PM-AGILE",
+        "CRS-PM-STAKE",
+        "CRS-PM-RISK"
+      ],
+      "competencies": [
+        "PM-03",
+        "PM-02",
+        "LDR-01"
+      ],
+      "toolkits": [
+        "lessons",
+        "stakeholders"
+      ],
+      "next": [
+        "CERT-PMP"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Build hands-on experience",
+            "ar": "ابنِ خبرة عملية"
+          },
+          "text": {
+            "en": "The exam assumes real agile work; join or run sprints and keep evidence.",
+            "ar": "يفترض الاختبار عملًا رشيقًا حقيقيًا؛ شارك في الدورات أو أدرها واحتفظ بالأدلة."
+          }
+        },
+        {
+          "title": {
+            "en": "Study across frameworks",
+            "ar": "ذاكر عبر الأطر"
+          },
+          "text": {
+            "en": "Scrum, Kanban, lean and hybrid tailoring all appear; the Agile and Hybrid Delivery course is the starting point.",
+            "ar": "يظهر Scrum وKanban واللين والتكييف الهجين؛ ودورة التسليم الرشيق والهجين نقطة البداية."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not a PMI Authorized Training Partner. CIA courses do not award PDUs or PMI contact-hour certificates, and completing them does not guarantee eligibility or an exam result. Always confirm requirements on PMI's site before applying.",
+        "ar": "CIA ليست شريك تدريب معتمدًا من PMI. ولا تمنح دورات CIA وحدات PDU ولا شهادات ساعات تعليمية من PMI، وإكمالها لا يضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع PMI قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "690827c5a0b092a954bb70d3c9e1b7e5f91a639cd2c1f563e2094d5d260369e2"
+      }
+    },
+    {
+      "id": "CERT-PMI-RMP",
+      "slug": "pmi-rmp",
+      "code": "PMI-RMP®",
+      "body": "PMI",
+      "name": {
+        "en": "PMI Risk Management Professional",
+        "ar": "محترف إدارة المخاطر من PMI"
+      },
+      "stage": "specialist",
+      "area": "risk",
+      "summary": {
+        "en": "A specialist credential for people who lead project risk management: strategy, identification, analysis, response and monitoring.",
+        "ar": "شهادة تخصصية لمن يقودون إدارة مخاطر المشاريع: الاستراتيجية والتحديد والتحليل والاستجابة والمتابعة."
+      },
+      "who": {
+        "en": "Risk managers and analysts, project controls staff, and project managers in high-risk sectors.",
+        "ar": "مديرو ومحللو المخاطر، وموظفو ضبط المشاريع، ومديرو المشاريع في القطاعات عالية المخاطر."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Set A",
+            "ar": "المجموعة أ"
+          },
+          "items": [
+            {
+              "en": "Secondary diploma or global equivalent",
+              "ar": "شهادة ثانوية أو ما يعادلها"
+            },
+            {
+              "en": "36 months of project risk management experience within the last 5 years",
+              "ar": "36 شهرًا من الخبرة في إدارة مخاطر المشاريع خلال السنوات الخمس الماضية"
+            },
+            {
+              "en": "40 hours of project risk management education",
+              "ar": "40 ساعة من تعليم إدارة مخاطر المشاريع"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Set B",
+            "ar": "المجموعة ب"
+          },
+          "items": [
+            {
+              "en": "Bachelor's degree or higher",
+              "ar": "بكالوريوس أو أعلى"
+            },
+            {
+              "en": "24 months of experience within the last 5 years",
+              "ar": "24 شهرًا من الخبرة خلال السنوات الخمس الماضية"
+            },
+            {
+              "en": "30 hours of education",
+              "ar": "30 ساعة من التعليم"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Set C",
+            "ar": "المجموعة ج"
+          },
+          "items": [
+            {
+              "en": "Bachelor's degree or higher from a GAC-accredited programme",
+              "ar": "بكالوريوس أو أعلى من برنامج معتمد من GAC"
+            },
+            {
+              "en": "12 months of experience within the past 5 years",
+              "ar": "12 شهرًا من الخبرة خلال السنوات الخمس الماضية"
+            },
+            {
+              "en": "30 hours of education",
+              "ar": "30 ساعة من التعليم"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 115,
+        "scored": null,
+        "minutes": 150,
+        "note": null
+      },
+      "fee": null,
+      "renewal": {
+        "pdus": 30,
+        "years": 3
+      },
+      "domains": [
+        {
+          "name": {
+            "en": "Risk Strategy and Planning",
+            "ar": "استراتيجية المخاطر وتخطيطها"
+          },
+          "weight": 22
+        },
+        {
+          "name": {
+            "en": "Risk Identification",
+            "ar": "تحديد المخاطر"
+          },
+          "weight": 23
+        },
+        {
+          "name": {
+            "en": "Risk Analysis",
+            "ar": "تحليل المخاطر"
+          },
+          "weight": 23
+        },
+        {
+          "name": {
+            "en": "Risk Response",
+            "ar": "الاستجابة للمخاطر"
+          },
+          "weight": 13
+        },
+        {
+          "name": {
+            "en": "Monitor and Close Risk",
+            "ar": "متابعة المخاطر وإغلاقها"
+          },
+          "weight": 19
+        }
+      ],
+      "languages": null,
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "pending",
+        "renewal": "verified",
+        "domains": "verified"
+      },
+      "verified_date": "2026-11-03",
+      "source_ids": [
+        "SRC-PMI-RMP"
+      ],
+      "official_url": "https://www.pmi.org/certifications/risk-management-rmp",
+      "cia_routes": [
+        "ROUTE-PM-FOUND"
+      ],
+      "cia_courses": [
+        "CRS-PM-RISK",
+        "CRS-ISO-RISK"
+      ],
+      "competencies": [
+        "RSK-01",
+        "RSK-02"
+      ],
+      "toolkits": [
+        "fmea",
+        "iso31000"
+      ],
+      "next": [
+        "CERT-PMP"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Deepen quantitative risk",
+            "ar": "عمّق تحليل المخاطر الكمي"
+          },
+          "text": {
+            "en": "Expected value, simulation and reserves are core; Risk in Projects is the starting course, ISO 31000 guides add the enterprise view.",
+            "ar": "القيمة المتوقعة والمحاكاة والاحتياطيات جوهرية؛ ودورة المخاطر في المشاريع هي البداية، وتضيف أدلة ISO 31000 المنظور المؤسسي."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not a PMI Authorized Training Partner. CIA courses do not award PDUs or PMI contact-hour certificates, and completing them does not guarantee eligibility or an exam result. Always confirm requirements on PMI's site before applying.",
+        "ar": "CIA ليست شريك تدريب معتمدًا من PMI. ولا تمنح دورات CIA وحدات PDU ولا شهادات ساعات تعليمية من PMI، وإكمالها لا يضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع PMI قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ac617800c6c44be32c922c7af51007390691308290d2b00c988f42de1e091e2b"
+      }
+    },
+    {
+      "id": "CERT-PMI-PMOCP",
+      "slug": "pmi-pmocp",
+      "code": "PMI-PMOCP",
+      "body": "PMI",
+      "name": {
+        "en": "PMI PMO Certified Professional",
+        "ar": "محترف مكاتب إدارة المشاريع المعتمد من PMI"
+      },
+      "stage": "specialist",
+      "area": "pmo",
+      "summary": {
+        "en": "A credential for PMO professionals: aligning the PMO with the organisation, its strategy, design, operation, improvement and people. One of the few PMI exams offered in Arabic.",
+        "ar": "شهادة لمحترفي مكاتب المشاريع: مواءمة المكتب مع المنظمة واستراتيجيته وتصميمه وتشغيله وتحسينه وأفراده. وهي من اختبارات PMI القليلة المتاحة بالعربية."
+      },
+      "who": {
+        "en": "PMO analysts, officers and heads, and project managers who support portfolios.",
+        "ar": "محللو مكاتب المشاريع وموظفوها ورؤساؤها، ومديرو المشاريع الذين يدعمون المحافظ."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Requirements",
+            "ar": "المتطلبات"
+          },
+          "items": [
+            {
+              "en": "A secondary degree (high school diploma, GED or global equivalent)",
+              "ar": "شهادة ثانوية (أو ما يعادلها دوليًا)"
+            },
+            {
+              "en": "3 years of project-related experience within the last 8 years, or a PMP® in good standing",
+              "ar": "3 سنوات من الخبرة المتعلقة بالمشاريع خلال السنوات الثماني الماضية، أو شهادة PMP® سارية"
+            },
+            {
+              "en": "10 hours of PMO education",
+              "ar": "10 ساعات من تعليم مكاتب المشاريع"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 120,
+        "scored": null,
+        "minutes": 165,
+        "note": null
+      },
+      "fee": null,
+      "renewal": {
+        "pdus": 30,
+        "years": 3
+      },
+      "domains": [
+        {
+          "name": {
+            "en": "Organizational Development and Alignment",
+            "ar": "التطوير والمواءمة المؤسسية"
+          },
+          "weight": 16
+        },
+        {
+          "name": {
+            "en": "PMO Strategic Elements",
+            "ar": "العناصر الاستراتيجية للمكتب"
+          },
+          "weight": 18
+        },
+        {
+          "name": {
+            "en": "PMO Design and Structuring",
+            "ar": "تصميم المكتب وهيكلته"
+          },
+          "weight": 18
+        },
+        {
+          "name": {
+            "en": "PMO Operation and Performance",
+            "ar": "تشغيل المكتب وأداؤه"
+          },
+          "weight": 15
+        },
+        {
+          "name": {
+            "en": "PMO Enhancement and Effectiveness",
+            "ar": "تحسين المكتب وفاعليته"
+          },
+          "weight": 18
+        },
+        {
+          "name": {
+            "en": "People",
+            "ar": "الأفراد"
+          },
+          "weight": 15
+        }
+      ],
+      "languages": {
+        "en": "The PMI page lists English, Brazilian Portuguese, Chinese (Simplified and Traditional), Spanish, Arabic, French, German, Japanese and Korean, but its summary says “4 languages” — confirm your language when booking.",
+        "ar": "تذكر صفحة PMI الإنجليزية والبرتغالية البرازيلية والصينية (المبسطة والتقليدية) والإسبانية والعربية والفرنسية والألمانية واليابانية والكورية، لكن ملخصها يقول «4 لغات» — تأكد من لغتك عند الحجز."
+      },
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "pending",
+        "renewal": "verified",
+        "domains": "verified"
+      },
+      "verified_date": "2026-11-03",
+      "source_ids": [
+        "SRC-PMI-PMOCP"
+      ],
+      "official_url": "https://www.pmi.org/certifications/pmo-certified-professional-pmi-pmocp",
+      "cia_routes": [
+        "ROUTE-PMO"
+      ],
+      "cia_courses": [
+        "CRS-PMO-DESIGN",
+        "CRS-PMO-KPI",
+        "CRS-P3O-101",
+        "CRS-PFM-PRIOR",
+        "CRS-P-P3O",
+        "CRS-P-PMX"
+      ],
+      "competencies": [
+        "PMO-01",
+        "PMO-02",
+        "GOV-01",
+        "PERF-01"
+      ],
+      "toolkits": [
+        "p3o",
+        "pmo",
+        "pmoexc"
+      ],
+      "next": [
+        "CERT-PFMP"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Design before you operate",
+            "ar": "صمّم قبل أن تشغّل"
+          },
+          "text": {
+            "en": "Start with PMO Design and Services, then Maturity and KPIs; use the P3O and PMO Excellence toolkits on a real office.",
+            "ar": "ابدأ بتصميم المكتب وخدماته ثم النضج والمؤشرات؛ واستخدم أداتي P3O وتميّز مكاتب المشاريع على مكتب حقيقي."
+          }
+        },
+        {
+          "title": {
+            "en": "Use your Arabic advantage",
+            "ar": "استفد من ميزة العربية"
+          },
+          "text": {
+            "en": "If you sit the exam in Arabic, study the Academy's bilingual terms side by side so both vocabularies are familiar.",
+            "ar": "إن أديت الاختبار بالعربية، فذاكر مصطلحات الأكاديمية ثنائية اللغة جنبًا إلى جنب لتألف المفردتين."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not a PMI Authorized Training Partner. CIA courses do not award PDUs or PMI contact-hour certificates, and completing them does not guarantee eligibility or an exam result. Always confirm requirements on PMI's site before applying.",
+        "ar": "CIA ليست شريك تدريب معتمدًا من PMI. ولا تمنح دورات CIA وحدات PDU ولا شهادات ساعات تعليمية من PMI، وإكمالها لا يضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع PMI قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "83580de16ae9e03b46709b1970275c256d2301cf769af6836dc49113d21764f5"
+      }
+    },
+    {
+      "id": "CERT-PGMP",
+      "slug": "pgmp",
+      "code": "PgMP®",
+      "body": "PMI",
+      "name": {
+        "en": "Program Management Professional",
+        "ar": "محترف إدارة البرامج"
+      },
+      "stage": "senior",
+      "area": "programme",
+      "summary": {
+        "en": "A senior credential for people who lead programmes of related projects to deliver benefits. Its full eligibility and exam details could not be read on 3 November 2026; the explorer shows only what was verified.",
+        "ar": "شهادة متقدمة لمن يقودون برامج من المشاريع المترابطة لتحقيق المنافع. ولم تُقرأ تفاصيل أهليتها واختبارها كاملة في 3 نوفمبر 2026؛ ويعرض المستكشف ما تم التحقق منه فقط."
+      },
+      "who": {
+        "en": "Experienced programme managers and senior project managers coordinating several projects.",
+        "ar": "مديرو البرامج ذوو الخبرة وكبار مديري المشاريع الذين ينسقون عدة مشاريع."
+      },
+      "eligibility": [],
+      "exam": null,
+      "fee": null,
+      "renewal": {
+        "pdus": 60,
+        "years": 3
+      },
+      "domains": [],
+      "languages": null,
+      "extra": [
+        {
+          "en": "PMI states the exam is available in English only and that it does not endorse specific review courses; its reference list includes The Standard for Program Management (Fifth Edition).",
+          "ar": "تذكر PMI أن الاختبار متاح بالإنجليزية فقط وأنها لا تعتمد دورات مراجعة بعينها؛ وتتضمن قائمة مراجعها «معيار إدارة البرامج» (الإصدار الخامس)."
+        }
+      ],
+      "facts_status": {
+        "eligibility": "pending",
+        "exam": "pending",
+        "fee": "pending",
+        "renewal": "verified",
+        "domains": "pending"
+      },
+      "verified_date": "2026-11-03",
+      "source_ids": [
+        "SRC-PMI-PGMP",
+        "SRC-PMI-PGMP-PREP"
+      ],
+      "official_url": "https://www.pmi.org/certifications/program-management-pgmp",
+      "cia_routes": [
+        "ROUTE-PORTFOLIO"
+      ],
+      "cia_courses": [
+        "CRS-PM-101",
+        "CRS-PFM-PRIOR",
+        "CRS-P-21500",
+        "CRS-PM-STAKE"
+      ],
+      "competencies": [
+        "PM-02",
+        "GOV-01",
+        "PMO-02",
+        "LDR-02"
+      ],
+      "toolkits": [
+        "iso21500"
+      ],
+      "next": [
+        "CERT-PFMP"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Think benefits, not deliverables",
+            "ar": "فكّر بالمنافع لا المخرجات"
+          },
+          "text": {
+            "en": "Programmes exist for benefits; the business-case and benefits lessons and the ISO 21503 practices of the ISO 21500 guide are the base.",
+            "ar": "توجد البرامج من أجل المنافع؛ ودروس دراسة الجدوى والمنافع وممارسات ISO 21503 في دليل ISO 21500 هي الأساس."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not a PMI Authorized Training Partner. CIA courses do not award PDUs or PMI contact-hour certificates, and completing them does not guarantee eligibility or an exam result. Always confirm requirements on PMI's site before applying.",
+        "ar": "CIA ليست شريك تدريب معتمدًا من PMI. ولا تمنح دورات CIA وحدات PDU ولا شهادات ساعات تعليمية من PMI، وإكمالها لا يضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع PMI قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ebdb4350e588be6907b705687f1a190b9c3323b99fae880d919fd446696093da"
+      }
+    },
+    {
+      "id": "CERT-PFMP",
+      "slug": "pfmp",
+      "code": "PfMP®",
+      "body": "PMI",
+      "name": {
+        "en": "Portfolio Management Professional",
+        "ar": "محترف إدارة المحافظ"
+      },
+      "stage": "senior",
+      "area": "portfolio",
+      "summary": {
+        "en": "A senior credential for portfolio managers who align investment in change with strategy, govern it and manage portfolio performance and risk. Eligibility is reviewed by a panel of experts before the exam.",
+        "ar": "شهادة متقدمة لمديري المحافظ الذين يوائمون الاستثمار في التغيير مع الاستراتيجية ويحوكمونه ويديرون أداء المحفظة ومخاطرها. وتُراجع الأهلية من لجنة خبراء قبل الاختبار."
+      },
+      "who": {
+        "en": "Portfolio managers, heads of portfolio offices and strategy executives with long portfolio experience.",
+        "ar": "مديرو المحافظ ورؤساء مكاتبها وتنفيذيو الاستراتيجية ذوو الخبرة الطويلة في المحافظ."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Set A",
+            "ar": "المجموعة أ"
+          },
+          "items": [
+            {
+              "en": "Secondary diploma or global equivalent",
+              "ar": "شهادة ثانوية أو ما يعادلها"
+            },
+            {
+              "en": "96 months of professional business experience within the past 15 years",
+              "ar": "96 شهرًا من الخبرة المهنية في الأعمال خلال السنوات الخمس عشرة الماضية"
+            },
+            {
+              "en": "84 months of portfolio management experience within the past 15 years",
+              "ar": "84 شهرًا من الخبرة في إدارة المحافظ خلال السنوات الخمس عشرة الماضية"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Set B",
+            "ar": "المجموعة ب"
+          },
+          "items": [
+            {
+              "en": "Bachelor's degree or higher",
+              "ar": "بكالوريوس أو أعلى"
+            },
+            {
+              "en": "96 months of professional business experience within the past 15 years",
+              "ar": "96 شهرًا من الخبرة المهنية في الأعمال خلال السنوات الخمس عشرة الماضية"
+            },
+            {
+              "en": "48 months of portfolio management experience within the past 15 years",
+              "ar": "48 شهرًا من الخبرة في إدارة المحافظ خلال السنوات الخمس عشرة الماضية"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Set C",
+            "ar": "المجموعة ج"
+          },
+          "items": [
+            {
+              "en": "Bachelor's degree or higher from a GAC-accredited programme",
+              "ar": "بكالوريوس أو أعلى من برنامج معتمد من GAC"
+            },
+            {
+              "en": "96 months of professional business experience within the past 15 years",
+              "ar": "96 شهرًا من الخبرة المهنية في الأعمال خلال السنوات الخمس عشرة الماضية"
+            },
+            {
+              "en": "36 months of portfolio management experience within the past 15 years",
+              "ar": "36 شهرًا من الخبرة في إدارة المحافظ خلال السنوات الخمس عشرة الماضية"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 170,
+        "scored": null,
+        "minutes": 240,
+        "note": {
+          "en": "A panel of portfolio-management experts reviews your experience after you pay the fee; you schedule the exam after passing the panel review. English only.",
+          "ar": "تراجع لجنة من خبراء إدارة المحافظ خبرتك بعد دفع الرسوم؛ وتجدول الاختبار بعد اجتياز مراجعة اللجنة. بالإنجليزية فقط."
+        }
+      },
+      "fee": null,
+      "renewal": {
+        "pdus": 60,
+        "years": 3
+      },
+      "domains": [
+        {
+          "name": {
+            "en": "Strategic Alignment",
+            "ar": "المواءمة الاستراتيجية"
+          },
+          "weight": 25
+        },
+        {
+          "name": {
+            "en": "Governance",
+            "ar": "الحوكمة"
+          },
+          "weight": 20
+        },
+        {
+          "name": {
+            "en": "Portfolio Performance",
+            "ar": "أداء المحفظة"
+          },
+          "weight": 25
+        },
+        {
+          "name": {
+            "en": "Portfolio Risk Management",
+            "ar": "إدارة مخاطر المحفظة"
+          },
+          "weight": 15
+        },
+        {
+          "name": {
+            "en": "Communications Management",
+            "ar": "إدارة الاتصالات"
+          },
+          "weight": 15
+        }
+      ],
+      "languages": null,
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "pending",
+        "renewal": "verified",
+        "domains": "verified"
+      },
+      "verified_date": "2026-11-03",
+      "source_ids": [
+        "SRC-PMI-PFMP"
+      ],
+      "official_url": "https://www.pmi.org/certifications/portfolio-management-pfmp",
+      "cia_routes": [
+        "ROUTE-PORTFOLIO"
+      ],
+      "cia_courses": [
+        "CRS-PFM-PRIOR",
+        "CRS-P3O-101",
+        "CRS-P-21500",
+        "CRS-PMO-KPI"
+      ],
+      "competencies": [
+        "PMO-02",
+        "LDR-02",
+        "GOV-01",
+        "PERF-02"
+      ],
+      "toolkits": [
+        "iso21500",
+        "pmoexc",
+        "str"
+      ],
+      "next": [],
+      "prepare": [
+        {
+          "title": {
+            "en": "Write your experience as decisions",
+            "ar": "اكتب خبرتك كقرارات"
+          },
+          "text": {
+            "en": "The panel looks for portfolio-level work: selection, balancing, governance and performance. Describe decisions you led and their effect.",
+            "ar": "تبحث اللجنة عن عمل على مستوى المحفظة: الاختيار والموازنة والحوكمة والأداء. صف القرارات التي قدتها وأثرها."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not a PMI Authorized Training Partner. CIA courses do not award PDUs or PMI contact-hour certificates, and completing them does not guarantee eligibility or an exam result. Always confirm requirements on PMI's site before applying.",
+        "ar": "CIA ليست شريك تدريب معتمدًا من PMI. ولا تمنح دورات CIA وحدات PDU ولا شهادات ساعات تعليمية من PMI، وإكمالها لا يضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع PMI قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "0d35e68d3b2a8524bc5046e1ca3ea7802c6469cbfc973034836d89e08454e220"
+      }
+    },
+    {
+      "id": "CERT-PMI-PBA",
+      "slug": "pmi-pba",
+      "code": "PMI-PBA®",
+      "body": "PMI",
+      "name": {
+        "en": "PMI Professional in Business Analysis",
+        "ar": "محترف تحليل الأعمال من PMI"
+      },
+      "stage": "specialist",
+      "area": "analysis",
+      "summary": {
+        "en": "A credential for business analysts working with projects and programmes: needs assessment, planning, analysis, traceability and evaluation.",
+        "ar": "شهادة لمحللي الأعمال العاملين مع المشاريع والبرامج: تقييم الاحتياجات والتخطيط والتحليل والتتبع والتقييم."
+      },
+      "who": {
+        "en": "Business analysts, product and requirements specialists, and project managers who own requirements.",
+        "ar": "محللو الأعمال ومتخصصو المنتجات والمتطلبات، ومديرو المشاريع الذين يملكون المتطلبات."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Set A",
+            "ar": "المجموعة أ"
+          },
+          "items": [
+            {
+              "en": "Secondary degree (high school diploma, associate's or equivalent)",
+              "ar": "شهادة ثانوية (أو دبلوم مشارك أو ما يعادله)"
+            },
+            {
+              "en": "60 months of business analysis experience earned in the last 8 years",
+              "ar": "60 شهرًا من الخبرة في تحليل الأعمال خلال السنوات الثماني الماضية"
+            },
+            {
+              "en": "35 contact hours in business analysis practices",
+              "ar": "35 ساعة تعليمية في ممارسات تحليل الأعمال"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Set B",
+            "ar": "المجموعة ب"
+          },
+          "items": [
+            {
+              "en": "Bachelor's or higher degree",
+              "ar": "بكالوريوس أو أعلى"
+            },
+            {
+              "en": "36 months of business analysis experience earned in the last 8 years",
+              "ar": "36 شهرًا من الخبرة في تحليل الأعمال خلال السنوات الثماني الماضية"
+            },
+            {
+              "en": "35 contact hours in business analysis practices",
+              "ar": "35 ساعة تعليمية في ممارسات تحليل الأعمال"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Set C",
+            "ar": "المجموعة ج"
+          },
+          "items": [
+            {
+              "en": "Bachelor's or postgraduate degree from a GAC-accredited programme",
+              "ar": "بكالوريوس أو دراسات عليا من برنامج معتمد من GAC"
+            },
+            {
+              "en": "24 months of unique, non-overlapping business analysis experience",
+              "ar": "24 شهرًا من الخبرة الفريدة غير المتداخلة في تحليل الأعمال"
+            },
+            {
+              "en": "35 contact hours of formal education",
+              "ar": "35 ساعة تعليمية رسمية"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 200,
+        "scored": null,
+        "minutes": 240,
+        "note": null
+      },
+      "fee": null,
+      "renewal": {
+        "pdus": 60,
+        "years": 3
+      },
+      "domains": [
+        {
+          "name": {
+            "en": "Needs Assessment",
+            "ar": "تقييم الاحتياجات"
+          },
+          "weight": 18
+        },
+        {
+          "name": {
+            "en": "Planning",
+            "ar": "التخطيط"
+          },
+          "weight": 22
+        },
+        {
+          "name": {
+            "en": "Analysis",
+            "ar": "التحليل"
+          },
+          "weight": 35
+        },
+        {
+          "name": {
+            "en": "Traceability and Monitoring",
+            "ar": "التتبع والمتابعة"
+          },
+          "weight": 15
+        },
+        {
+          "name": {
+            "en": "Evaluation",
+            "ar": "التقييم"
+          },
+          "weight": 10
+        }
+      ],
+      "languages": null,
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "pending",
+        "renewal": "verified",
+        "domains": "verified"
+      },
+      "verified_date": "2026-11-03",
+      "source_ids": [
+        "SRC-PMI-PBA"
+      ],
+      "official_url": "https://www.pmi.org/certifications/business-analysis-pba",
+      "cia_routes": [
+        "ROUTE-PM-FOUND"
+      ],
+      "cia_courses": [
+        "CRS-PM-101",
+        "CRS-PM-STAKE",
+        "CRS-PM-AGILE"
+      ],
+      "competencies": [
+        "PM-02",
+        "PM-01"
+      ],
+      "toolkits": [
+        "stakeholders"
+      ],
+      "next": [
+        "CERT-PMP"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Connect requirements to value",
+            "ar": "اربط المتطلبات بالقيمة"
+          },
+          "text": {
+            "en": "The business-case, benefits and stakeholder lessons give the base; analysis carries over a third of the weight.",
+            "ar": "تعطي دروس دراسة الجدوى والمنافع وأصحاب المصلحة الأساس؛ ويحمل التحليل أكثر من ثلث الوزن."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not a PMI Authorized Training Partner. CIA courses do not award PDUs or PMI contact-hour certificates, and completing them does not guarantee eligibility or an exam result. Always confirm requirements on PMI's site before applying.",
+        "ar": "CIA ليست شريك تدريب معتمدًا من PMI. ولا تمنح دورات CIA وحدات PDU ولا شهادات ساعات تعليمية من PMI، وإكمالها لا يضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع PMI قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "28007e79c6603a3e28cfb614db6162ef841e6051e94977d1e854d8134bcaba9d"
+      }
+    }
+  ]
+}

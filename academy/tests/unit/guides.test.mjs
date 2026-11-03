@@ -4,7 +4,7 @@
  */
 import test from 'node:test'; import assert from 'node:assert/strict';
 import { readdirSync } from 'node:fs';
-import { json, text, ownerApproved } from './_util.mjs';
+import { json, text, ownerApproved, isPhase8, governedPhase8 } from './_util.mjs';
 import { validateGuide, guideItems, findItem, itemNeighbours, searchItems, guideTabs, lessonsForItem, lessonGuideRefs, itemTeachable } from '../../src/domain/guides.mjs';
 import { courseCompleteness, validateCourse } from '../../src/domain/courses.mjs';
 import { validateQuestion, validateAssessment } from '../../src/domain/assessments.mjs';
@@ -94,14 +94,15 @@ test('generated courses: one per guide, valid, complete, every lesson resolves t
 
 test('generated courses claim no accreditation and are published only on the owner\'s recorded approval', () => {
   for (const c of genCourses) {
-    ownerApproved(assert, c, 'system');
+    if (isPhase8(c)) governedPhase8(assert, c, 'system'); else ownerApproved(assert, c, 'system');
     assert.equal(c.external_accreditation_status, 'not_claimed', c.id);
     assert.equal(c.cpd_status, 'not_claimed', c.id);
     assert.equal(c.certificate_type, 'completion', c.id);
-    assert.equal(isVisible(c, ['learner']), true, c.id);
   }
-  for (const id of genCourses.flatMap(c => Object.values(c.assessments))) ownerApproved(assert, assessments.find(a => a.id === id), 'system');
+  for (const c of genCourses) if (!isPhase8(c)) assert.equal(isVisible(c, ['learner']), true, c.id);
+  for (const id of genCourses.flatMap(c => Object.values(c.assessments))) { const a = assessments.find(x => x.id === id); isPhase8(a) ? governedPhase8(assert, a, 'system') : ownerApproved(assert, a, 'system'); }
   for (const q of questions.filter(q => /^Q-(G|M)-/.test(q.id))) ownerApproved(assert, q, 'system');
+  for (const q of questions.filter(q => /^Q-P-/.test(q.id))) governedPhase8(assert, q, 'system');
 });
 
 test('generated courses: hours, day plan, assessments, references and catalog entries are consistent', () => {
@@ -136,8 +137,9 @@ test('generated check questions: valid, four distinct options, the key comes fro
     assert.equal(new Set(q.options.map(o => n(o.text.en))).size, 4, `${q.id}: duplicate options`);
     assert.ok(q.options.every(o => o.text.ar && o.text.en && o.why?.en && o.why?.ar), `${q.id}: bilingual text and rationale`);
     const g = guides[l.source.guide], it = findItem(g, l.source.ref);
-    // Standard items ask for evidence; method items for a common gap — or, when an item has tips but no gaps, for the guide's advice.
-    const keyList = (g.kind === 'standard' ? it.ev : it.gaps.length ? it.gaps : it.tips).map(x => n(x.en));
+    // Standard items ask for evidence; method items for a common gap — or, when an item has tips but no gaps, for the guide's advice;
+    // practice items (Phase 8) for one of the actions the guide recommends for that practice.
+    const keyList = (g.kind === 'standard' ? it.ev : g.kind === 'practice' ? it.how : it.gaps.length ? it.gaps : it.tips).map(x => n(x.en));
     const correct = q.options.find(o => o.id === q.correct_answer);
     assert.ok(keyList.includes(n(correct.text.en)), `${q.id}: key not from the item`);
     for (const o of q.options.filter(o => o.id !== q.correct_answer)) assert.ok(!keyList.includes(n(o.text.en)), `${q.id}: distractor ${o.id} is also a right answer`);

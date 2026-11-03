@@ -96,10 +96,24 @@ export function homeView(ctx) {
         h('div', { class: 'btnrow' }, linkBtn('#/guides', t('gd.openAll'), 'primary'), linkBtn('#/guides/iso-9001', 'ISO 9001')));
     } }));
 
+  // Phase 8: the academies (ISO, PMI / PMO / P3O) as entry points, with live counts of what a learner can open.
+  const academies = h('section', { class: 'section', 'aria-labelledby': 'acad-h' },
+    h('h2', { id: 'acad-h' }, t('p8.home.academies')),
+    dataRegion({ t, load: learnerData, render: ({ content }) => {
+      const n = eco => content.courses.filter(c => eco.includes(c.ecosystem) || eco.includes(c.category)).length;
+      const card = (href, iconName, title, body, count) => h('article', { class: 'card acad-card' },
+        h('h3', null, icon(iconName), ' ', h('a', { href }, title)), h('p', null, body), h('p', { class: 'meta' }, icon('book'), ' ', count));
+      return h('div', { class: 'cards' },
+        card('#/academy/iso', 'shield', t('nav.items.isoAcademy'), t('p8.home.isoBody'), t('p8.home.courses', { n: i18n.number(n(['iso'])) })),
+        card('#/academy/pmi', 'briefcase', t('nav.items.pmiAcademy'), t('p8.home.pmiBody'), t('p8.home.courses', { n: i18n.number(n(['pmi', 'pmo', 'p3o'])) })),
+        card('#/guides', 'ladder', t('gd.title'), t('p8.home.guidesBody'), t('p8.home.guides', { n: i18n.number((content.guides || []).length) })));
+    } }));
+
   return h('div', null,
     h('div', { class: 'phead' }, h('h1', null, t('home.greeting')), h('p', null, t('home.lede'))),
     rail,
     h('div', { class: 'dash' }, progress, next, activity),
+    academies,
     guides,
     tools);
 }

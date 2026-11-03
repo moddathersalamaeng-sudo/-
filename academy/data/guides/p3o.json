@@ -1,0 +1,4781 @@
+{
+ "schema": "cia.guide.v1",
+ "guide": {
+  "id": "GUIDE-P3O",
+  "slug": "p3o",
+  "kind": "practice",
+  "module": "p3o",
+  "standard_id": null,
+  "title": {
+   "en": "P3O® Office Design & Capability Assessment",
+   "ar": "تصميم مكاتب P3O® وتقييم قدرتها"
+  },
+  "subtitle": {
+   "en": "Portfolio, Programme & Project Offices",
+   "ar": "مكاتب المحافظ والبرامج والمشاريع"
+  },
+  "lede": {
+   "en": "An independent assessment built on the structure of the P3O® guidance: eight areas and forty-two practices on a 0–5 capability scale with an evidence ladder each, three scores (self, evidence, validated), office-model fit, and a design studio that generates the service catalogue, organization, value matrix and implementation plan, plus eight templates with a Saudi worked example.",
+   "ar": "تقييم مستقل مبني على هيكل إرشادات P3O®: ثمانية مجالات واثنتان وأربعون ممارسة بمقياس قدرة من 0 إلى 5 وسُلّم أدلة لكل ممارسة، وثلاث درجات (ذاتي، بالأدلة، معتمد)، وملاءمة نموذج المكتب، واستوديو تصميم يولّد كتالوج الخدمات والهيكل ومصفوفة القيمة وخطة التنفيذ، وثمانية نماذج بمثال سعودي."
+  },
+  "author": "مدثر سلامه",
+  "note": null,
+  "clauses": [
+   {
+    "id": "val",
+    "phase": "P3O®",
+    "title": {
+     "en": "Why a P3O: value case",
+     "ar": "لماذا المكتب: القيمة ودراسة الجدوى"
+    },
+    "short": {
+     "en": "Value",
+     "ar": "القيمة"
+    },
+    "intro": {
+     "en": "",
+     "ar": ""
+    },
+    "clause": "Ch. 2",
+    "items": [
+     {
+      "ref": "v.case",
+      "clause": "V1",
+      "title": {
+       "en": "P3O value case",
+       "ar": "دراسة جدوى المكتب"
+      },
+      "short": {
+       "en": "Value case",
+       "ar": "دراسة الجدوى"
+      },
+      "req": {
+       "en": "The office has an approved value case that links its services to the organization's problems, its cost and the benefits expected from it.",
+       "ar": "للمكتب دراسة جدوى معتمدة تربط خدماته بمشكلات المنشأة وتكلفته والمنافع المتوقعة منه."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Write a one-page value case: pain points, services, cost and expected benefits",
+        "ar": "كتابة دراسة جدوى من صفحة واحدة: المشكلات، الخدمات، التكلفة، المنافع المتوقعة"
+       },
+       {
+        "en": "Have the sponsor approve it and set a yearly review",
+        "ar": "اعتمادها من الراعي وتحديد موعد مراجعة سنوي"
+       },
+       {
+        "en": "Measure the office's realized value against the case and refresh it",
+        "ar": "قياس القيمة المتحققة من المكتب مقابل الدراسة وتحديثها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A general justification exists in a presentation or memo, without figures",
+        "ar": "مبرر عام للمكتب في عرض أو مذكرة، دون أرقام"
+       },
+       {
+        "en": "An approved value case — problems, options, services, cost, benefits, measures — reviewed yearly",
+        "ar": "دراسة جدوى معتمدة: المشكلات، البدائل، الخدمات، التكلفة، المنافع، المقاييس — تُراجع سنوياً"
+       },
+       {
+        "en": "Benefits in the case are measured and reported to the sponsor; the case is refreshed when the portfolio changes",
+        "ar": "المنافع الواردة في الدراسة تُقاس وتُرفع للراعي، والدراسة تُحدَّث عند تغير المحفظة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O + sponsor",
+       "ar": "رئيس المكتب + الراعي"
+      },
+      "kpi": {
+       "en": "Value case approved and reviewed within 12 months",
+       "ar": "دراسة جدوى معتمدة ومراجَعة خلال 12 شهراً"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "v.kpi",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "v.spn",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "v.kpi",
+      "clause": "V2",
+      "title": {
+       "en": "Office KPIs",
+       "ar": "مؤشرات أداء المكتب"
+      },
+      "short": {
+       "en": "Office KPIs",
+       "ar": "مؤشرات المكتب"
+      },
+      "req": {
+       "en": "The office measures its own performance with a small set of KPIs agreed with its customers, such as report timeliness, forecast accuracy, customer satisfaction and benefits tracked.",
+       "ar": "يقيس المكتب أداءه بمجموعة صغيرة من المؤشرات المتفق عليها مع عملائه، مثل التزام مواعيد التقارير ودقة التنبؤ ورضا العملاء والمنافع المتابَعة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Pick six office KPIs and record the baseline",
+        "ar": "اختيار 6 مؤشرات للمكتب وتسجيل خط الأساس"
+       },
+       {
+        "en": "A quarterly office scorecard presented to the sponsor",
+        "ar": "بطاقة أداء ربعية للمكتب تُعرض على الراعي"
+       },
+       {
+        "en": "Tie KPIs to decisions to add or retire services",
+        "ar": "ربط المؤشرات بقرارات إضافة الخدمات أو إيقافها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Only activity counts are reported (reports issued, meetings held)",
+        "ar": "يُرفع عدد الأنشطة فقط (تقارير صدرت، اجتماعات عُقدت)"
+       },
+       {
+        "en": "6–10 balanced KPIs with baseline, target and owner, reported quarterly",
+        "ar": "6–10 مؤشرات متوازنة بخط أساس ومستهدف ومالك، تُرفع ربعياً"
+       },
+       {
+        "en": "KPI trends are used to adjust services; customer satisfaction is surveyed yearly",
+        "ar": "اتجاهات المؤشرات تُستخدم لتعديل الخدمات، ورضا العملاء يُقاس سنوياً"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O",
+       "ar": "رئيس المكتب"
+      },
+      "kpi": {
+       "en": "≥ 80% of office KPIs on target",
+       "ar": "≥ 80% من مؤشرات المكتب محققة"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "v.mat",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "v.case",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "v.mat",
+      "clause": "V3",
+      "title": {
+       "en": "P3O value matrix",
+       "ar": "مصفوفة القيمة"
+      },
+      "short": {
+       "en": "Value matrix",
+       "ar": "مصفوفة القيمة"
+      },
+      "req": {
+       "en": "Every office service is traced to the KPI it moves and the business value it supports.",
+       "ar": "كل خدمة من خدمات المكتب مربوطة بالمؤشر الذي تحركه والقيمة التي تدعمها للمنشأة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Draft a value matrix from the design studio",
+        "ar": "إعداد مصفوفة قيمة أولية من استوديو التصميم"
+       },
+       {
+        "en": "Agree it with the sponsor and main customers",
+        "ar": "اعتمادها مع الراعي وأهم العملاء"
+       },
+       {
+        "en": "Review it yearly with the value case",
+        "ar": "مراجعتها سنوياً مع دراسة الجدوى"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Services are listed without the value they bring",
+        "ar": "الخدمات مسرودة دون بيان قيمتها"
+       },
+       {
+        "en": "A value matrix maps every service to a KPI and value driver, agreed with the sponsor",
+        "ar": "مصفوفة قيمة تربط كل خدمة بمؤشر ومحرك قيمة، معتمدة مع الراعي"
+       },
+       {
+        "en": "The matrix is used to prioritize, add and retire services",
+        "ar": "المصفوفة تُستخدم لترتيب الخدمات وإضافتها وإيقافها"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O",
+       "ar": "رئيس المكتب"
+      },
+      "kpi": {
+       "en": "100% of services traced to a KPI and value",
+       "ar": "100% من الخدمات مربوطة بمؤشر وقيمة"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "v.kpi",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "v.spn",
+      "clause": "V4",
+      "title": {
+       "en": "Executive sponsorship & mandate",
+       "ar": "الرعاية التنفيذية والتفويض"
+      },
+      "short": {
+       "en": "Sponsorship & mandate",
+       "ar": "الرعاية والتفويض"
+      },
+      "req": {
+       "en": "A senior executive sponsors the office, and a written mandate sets its purpose, authority, scope and reporting line.",
+       "ar": "للمكتب راعٍ من الإدارة العليا، وتفويض مكتوب يحدد غرضه وصلاحياته ونطاقه وخط تبعيته."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Name an executive sponsor and draft the mandate",
+        "ar": "تسمية راعٍ تنفيذي وكتابة مسودة التفويض"
+       },
+       {
+        "en": "Approve and publish the office charter",
+        "ar": "اعتماد ميثاق المكتب ونشره"
+       },
+       {
+        "en": "Review the mandate and reporting line yearly",
+        "ar": "مراجعة سنوية للتفويض وخط التبعية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A manager set up the office without a formal mandate",
+        "ar": "المكتب أنشأه مدير دون تفويض رسمي"
+       },
+       {
+        "en": "An approved mandate (charter) and a named executive sponsor; the office reports at executive level",
+        "ar": "تفويض (ميثاق) معتمد وراعٍ تنفيذي مسمى، والمكتب يتبع مستوى تنفيذياً"
+       },
+       {
+        "en": "The mandate is reviewed yearly with the sponsor; authority matches the decisions the office supports",
+        "ar": "التفويض يُراجع سنوياً مع الراعي، والصلاحيات تطابق القرارات التي يدعمها المكتب"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Executive sponsor",
+       "ar": "الراعي التنفيذي"
+      },
+      "kpi": {
+       "en": "Charter approved; sponsor reviews the office twice a year",
+       "ar": "ميثاق معتمد ومراجعة الراعي مرتين سنوياً"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "v.case",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "m.sel",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "r.hd",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "g.brd",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "v.cus",
+      "clause": "V5",
+      "title": {
+       "en": "Customers & their satisfaction",
+       "ar": "العملاء ورضاهم"
+      },
+      "short": {
+       "en": "Customer satisfaction",
+       "ar": "رضا العملاء"
+      },
+      "req": {
+       "en": "The office's customers (board, executives, programme and project managers, functions) are known, their needs understood and their satisfaction measured.",
+       "ar": "عملاء المكتب (المجلس، التنفيذيون، مديرو البرامج والمشاريع، الإدارات) معروفون، واحتياجاتهم مفهومة، ورضاهم يُقاس."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "List the office's customers and their needs on one page",
+        "ar": "حصر عملاء المكتب واحتياجاتهم في صفحة واحدة"
+       },
+       {
+        "en": "Run a short yearly satisfaction survey",
+        "ar": "استبيان رضا سنوي قصير"
+       },
+       {
+        "en": "Act on survey results with a plan reviewed quarterly",
+        "ar": "خطة تحسين من نتائج الاستبيان تُتابع ربعياً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Feedback arrives informally",
+        "ar": "الملاحظات تصل بشكل عابر"
+       },
+       {
+        "en": "A customer map with needs per group and a yearly satisfaction survey",
+        "ar": "خريطة عملاء واحتياجات لكل فئة، واستبيان رضا سنوي"
+       },
+       {
+        "en": "Survey results drive service changes; satisfaction is trending up",
+        "ar": "نتائج الاستبيان تقود تغييرات الخدمات، والرضا في تحسن"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O",
+       "ar": "رئيس المكتب"
+      },
+      "kpi": {
+       "en": "Customer satisfaction ≥ 4 out of 5",
+       "ar": "رضا العملاء ≥ 4 من 5"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "mdl",
+    "phase": "P3O®",
+    "title": {
+     "en": "P3O model & fit",
+     "ar": "نموذج المكتب وملاءمته"
+    },
+    "short": {
+     "en": "Model",
+     "ar": "النموذج"
+    },
+    "intro": {
+     "en": "",
+     "ar": ""
+    },
+    "clause": "Ch. 3",
+    "items": [
+     {
+      "ref": "m.sel",
+      "clause": "M1",
+      "title": {
+       "en": "Model selection & rationale",
+       "ar": "اختيار النموذج ومبرره"
+      },
+      "short": {
+       "en": "Model choice",
+       "ar": "اختيار النموذج"
+      },
+      "req": {
+       "en": "The office model (single permanent office, hub-and-spoke, virtual or temporary offices) was chosen on purpose for the size, spread and maturity of the change portfolio, and the rationale is recorded.",
+       "ar": "نموذج المكتب (مكتب دائم واحد، محور وأطراف، افتراضي، مكاتب مؤقتة) اختير بقصد وفق حجم المحفظة وانتشارها ونضجها، والمبرر مسجل."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Compare the four models in the design studio",
+        "ar": "مقارنة النماذج الأربعة في استوديو التصميم"
+       },
+       {
+        "en": "Approve the model and its rationale in the office charter",
+        "ar": "اعتماد النموذج ومبرره في ميثاق المكتب"
+       },
+       {
+        "en": "Review model fit at every major change",
+        "ar": "مراجعة ملاءمة النموذج مع كل تغير كبير"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The office structure grew without design",
+        "ar": "شكل المكتب نشأ تدريجياً دون تصميم"
+       },
+       {
+        "en": "A documented options analysis; the model is approved by the sponsor",
+        "ar": "تحليل بدائل موثق والنموذج معتمد من الراعي"
+       },
+       {
+        "en": "Model fit is reviewed every two years or when the portfolio changes significantly",
+        "ar": "ملاءمة النموذج تُراجع كل سنتين أو عند تغير كبير في المحفظة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O + sponsor",
+       "ar": "رئيس المكتب + الراعي"
+      },
+      "kpi": {
+       "en": "Approved model with a written rationale",
+       "ar": "نموذج معتمد بمبرر مكتوب"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "m.hub",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "m.spk",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "m.siz",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "v.spn",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "m.hub",
+      "clause": "M2",
+      "title": {
+       "en": "Portfolio office (hub)",
+       "ar": "مكتب المحفظة (المحور)"
+      },
+      "short": {
+       "en": "Portfolio office",
+       "ar": "مكتب المحفظة"
+      },
+      "req": {
+       "en": "A permanent portfolio-level office supports investment decisions, consolidated reporting and standards for the whole organization, where the model calls for one.",
+       "ar": "مكتب دائم على مستوى المحفظة يدعم قرارات الاستثمار والتقارير الموحدة والمعايير للمنشأة كلها، حين يتطلب النموذج ذلك."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Assign a small team to the consolidated portfolio report",
+        "ar": "تكليف فريق صغير بتقرير المحفظة الموحد"
+       },
+       {
+        "en": "Set up the portfolio office with defined services and roles",
+        "ar": "إنشاء مكتب المحفظة بخدمات وأدوار محددة"
+       },
+       {
+        "en": "Make the hub the single source of portfolio data",
+        "ar": "اعتماد المحور مصدراً وحيداً لبيانات المحفظة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Portfolio reports are pulled together on request by finance or strategy",
+        "ar": "تقارير المحفظة تُجمع عند الطلب من المالية أو الاستراتيجية"
+       },
+       {
+        "en": "A permanent portfolio office with defined services and staff",
+        "ar": "مكتب محفظة دائم بخدمات وموظفين محددين"
+       },
+       {
+        "en": "Hub services are measured, and the hub is the single trusted data source",
+        "ar": "خدمات المحور تُقاس، والمحور مصدر البيانات الوحيد المعتمد"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O",
+       "ar": "رئيس المكتب"
+      },
+      "kpi": {
+       "en": "One portfolio report from one source",
+       "ar": "تقرير محفظة واحد من مصدر واحد"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "m.sel",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "m.spk",
+      "clause": "M3",
+      "title": {
+       "en": "Spokes & temporary offices",
+       "ar": "الأطراف والمكاتب المؤقتة"
+      },
+      "short": {
+       "en": "Spokes & temporary",
+       "ar": "الأطراف والمؤقتة"
+      },
+      "req": {
+       "en": "Programme and project offices (permanent spokes or temporary offices) are set up, staffed and closed in a standard way, and work to the hub's standards.",
+       "ar": "مكاتب البرامج والمشاريع (أطراف دائمة أو مكاتب مؤقتة) تُنشأ وتُزوَّد بالموظفين وتُغلق بطريقة موحدة، وتعمل بمعايير المحور."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A set-up and closure checklist for programme and project offices",
+        "ar": "قائمة إنشاء وإغلاق لمكاتب البرامج والمشاريع"
+       },
+       {
+        "en": "A RACI between the hub and the spokes",
+        "ar": "مصفوفة RACI بين المحور والأطراف"
+       },
+       {
+        "en": "Review spoke performance and lessons from closed offices",
+        "ar": "مراجعة أداء الأطراف ودروس المكاتب المغلقة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Each programme builds its own office its own way",
+        "ar": "كل برنامج يبني مكتبه بطريقته"
+       },
+       {
+        "en": "A standard set-up kit and closure checklist; spokes use common standards and report to the hub",
+        "ar": "حقيبة إنشاء موحدة وقائمة إغلاق، والأطراف تعمل بالمعايير المشتركة وترفع للمحور"
+       },
+       {
+        "en": "Spoke performance is compared; lessons from closed offices feed the set-up kit",
+        "ar": "أداء الأطراف يُقارن، ودروس المكاتب المغلقة تُغذّي حقيبة الإنشاء"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O + programme managers",
+       "ar": "رئيس المكتب + مديرو البرامج"
+      },
+      "kpi": {
+       "en": "100% of new offices set up with the kit",
+       "ar": "100% من المكاتب الجديدة بحقيبة الإنشاء"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "r.sup",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "m.sel",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "m.coe",
+      "clause": "M4",
+      "title": {
+       "en": "Centre of excellence",
+       "ar": "مركز التميّز"
+      },
+      "short": {
+       "en": "Centre of excellence",
+       "ar": "مركز التميّز"
+      },
+      "req": {
+       "en": "A centre of excellence function owns methods, standards, capability building and assurance, whether it is a team or a distributed role.",
+       "ar": "وظيفة مركز تميّز تملك المنهجيات والمعايير وبناء القدرات والضمان، سواء كانت فريقاً أو دوراً موزعاً."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Name a method owner",
+        "ar": "تسمية مالك للمنهجية"
+       },
+       {
+        "en": "A yearly work plan for the centre of excellence",
+        "ar": "خطة عمل سنوية لمركز التميّز"
+       },
+       {
+        "en": "Measure method adoption and training impact",
+        "ar": "قياس تبني المنهجية وأثر التدريب"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Methods have no owner",
+        "ar": "المنهجيات بلا مالك"
+       },
+       {
+        "en": "A named centre-of-excellence role or team owns the method and has a yearly work plan",
+        "ar": "دور أو فريق مركز تميّز مسمى بملكية المنهجية وخطة عمل سنوية"
+       },
+       {
+        "en": "The centre of excellence is measured by method adoption and capability growth",
+        "ar": "مركز التميّز يُقاس بتبني المنهجية ونمو القدرات"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "COE lead",
+       "ar": "قائد مركز التميّز"
+      },
+      "kpi": {
+       "en": "Method adoption ≥ 85% of initiatives",
+       "ar": "تبني المنهجية ≥ 85% من المبادرات"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "c.cch",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "c.std",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "r.coe",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "m.siz",
+      "clause": "M5",
+      "title": {
+       "en": "Sizing & scalability",
+       "ar": "الحجم وقابلية التوسع"
+      },
+      "short": {
+       "en": "Sizing",
+       "ar": "الحجم والتوسع"
+      },
+      "req": {
+       "en": "The office's size and cost are set against the size of the change portfolio and can scale up or down with demand.",
+       "ar": "حجم المكتب وتكلفته محسوبان مقابل حجم محفظة التغيير، ويمكن توسيعه أو تقليصه مع الطلب."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Compare current FTE with the size of the portfolio",
+        "ar": "حساب الوظائف المكافئة الحالية مقابل حجم المحفظة"
+       },
+       {
+        "en": "Approve a staffing model per size tier",
+        "ar": "اعتماد نموذج توظيف لكل فئة حجم"
+       },
+       {
+        "en": "Review cost per service yearly",
+        "ar": "مراجعة سنوية لتكلفة الخدمة الواحدة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Headcount follows past budgets",
+        "ar": "عدد الموظفين يتبع ميزانيات السنوات السابقة"
+       },
+       {
+        "en": "A staffing model per size tier (FTE by portfolio size and services) is approved",
+        "ar": "نموذج توظيف لكل فئة حجم (الوظائف المكافئة حسب المحفظة والخدمات) معتمد"
+       },
+       {
+        "en": "Capacity and cost per service are reviewed; the office scales with demand",
+        "ar": "سعة المكتب وتكلفة كل خدمة تُراجع، والمكتب يتوسع مع الطلب"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O + finance",
+       "ar": "رئيس المكتب + المالية"
+      },
+      "kpi": {
+       "en": "Office cost ≤ 3% of portfolio value",
+       "ar": "تكلفة المكتب ≤ 3% من قيمة المحفظة"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "r.pa",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "m.sel",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "svp",
+    "phase": "P3O®",
+    "title": {
+     "en": "Services: planning & control",
+     "ar": "الخدمات: التخطيط والضبط"
+    },
+    "short": {
+     "en": "Control services",
+     "ar": "خدمات الضبط"
+    },
+    "intro": {
+     "en": "",
+     "ar": ""
+    },
+    "clause": "Ch. 3 · 5",
+    "items": [
+     {
+      "ref": "s.pln",
+      "clause": "S1",
+      "title": {
+       "en": "Planning & estimating support",
+       "ar": "دعم التخطيط والتقدير"
+      },
+      "short": {
+       "en": "Planning & estimating",
+       "ar": "التخطيط والتقدير"
+      },
+      "req": {
+       "en": "The office supports plans, schedules and estimates and tracks dependencies between initiatives, using shared estimating norms.",
+       "ar": "يدعم المكتب إعداد الخطط والجداول والتقديرات، ويتابع الاعتماديات بين المبادرات بمعايير تقدير مشتركة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "One dependency log for the major initiatives",
+        "ar": "سجل اعتماديات واحد للمبادرات الكبرى"
+       },
+       {
+        "en": "A planning service with templates and estimating norms",
+        "ar": "خدمة تخطيط بنماذج ومعايير تقدير"
+       },
+       {
+        "en": "Measure estimating accuracy at closure",
+        "ar": "قياس دقة التقدير عند الإغلاق"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Plans are built inside each project without support",
+        "ar": "الخطط تُعد داخل كل مشروع دون دعم"
+       },
+       {
+        "en": "A planning service with standard templates and a cross-initiative dependency log",
+        "ar": "خدمة تخطيط بنماذج موحدة وسجل اعتماديات بين المبادرات"
+       },
+       {
+        "en": "Estimating accuracy (planned vs actual) is measured and norms are updated",
+        "ar": "دقة التقدير (المخطط مقابل الفعلي) تُقاس وتُحدَّث معايير التقدير"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Planning & capacity lead",
+       "ar": "محلل التخطيط والسعة"
+      },
+      "kpi": {
+       "en": "Schedule variance at completion ≤ 10%",
+       "ar": "انحراف الجدول عند الإنجاز ≤ 10%"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "s.rcm",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "s.rep",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "s.ric",
+      "clause": "S2",
+      "title": {
+       "en": "Risk, issue & change control",
+       "ar": "ضبط المخاطر والمشكلات والتغيير"
+      },
+      "short": {
+       "en": "Risk & change",
+       "ar": "المخاطر والتغيير"
+      },
+      "req": {
+       "en": "The office runs the risk, issue and change procedures and registers, consolidates them at portfolio level and escalates when needed.",
+       "ar": "يدير المكتب إجراءات المخاطر والمشكلات والتغيير وسجلاتها، ويجمعها على مستوى المحفظة ويصعّد ما يلزم."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A common risk and issue register for all initiatives",
+        "ar": "سجل مخاطر ومشكلات موحد لكل المبادرات"
+       },
+       {
+        "en": "A monthly review of the top 10 portfolio risks",
+        "ar": "مراجعة شهرية لأعلى 10 مخاطر في المحفظة"
+       },
+       {
+        "en": "Link the portfolio register to the enterprise register under ISO 31000",
+        "ar": "ربط سجل المحفظة بالسجل المؤسسي وفق ISO 31000"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Scattered logs on some projects",
+        "ar": "سجلات متفرقة في بعض المشاريع"
+       },
+       {
+        "en": "Common registers on one scale and a monthly review of top portfolio risks",
+        "ar": "سجلات موحدة بمقياس واحد، ومراجعة شهرية لأعلى المخاطر على مستوى المحفظة"
+       },
+       {
+        "en": "Risk exposure, issue resolution time and change impact are measured",
+        "ar": "التعرض للمخاطر وزمن حل المشكلات وأثر التغييرات تُقاس"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio analyst",
+       "ar": "محلل المحفظة"
+      },
+      "kpi": {
+       "en": "100% of initiatives with a monthly-updated register",
+       "ar": "100% من المبادرات بسجل محدَّث شهرياً"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "g.rsk",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "s.ben",
+      "clause": "S3",
+      "title": {
+       "en": "Benefits management support",
+       "ar": "دعم إدارة المنافع"
+      },
+      "short": {
+       "en": "Benefits",
+       "ar": "المنافع"
+      },
+      "req": {
+       "en": "Benefits are tracked from business case to realization with owners, measures and review dates, supported by the office.",
+       "ar": "تُتابع المنافع من دراسة الجدوى حتى تحققها بمالكين ومقاييس ومواعيد مراجعة، بدعم من المكتب."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A benefits register for major initiatives",
+        "ar": "سجل منافع للمبادرات الكبرى"
+       },
+       {
+        "en": "Benefit maps and realization plans with owners",
+        "ar": "خرائط منافع وخطط تحقيق مع المالكين"
+       },
+       {
+        "en": "Post-handover benefit reviews at the investment committee",
+        "ar": "مراجعة المنافع بعد التسليم في لجنة الاستثمار"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Benefits appear only in business cases",
+        "ar": "المنافع مذكورة في دراسات الجدوى فقط"
+       },
+       {
+        "en": "A portfolio benefits register with owner, KPI, baseline and target",
+        "ar": "سجل منافع للمحفظة بمالك ومؤشر وخط أساس ومستهدف"
+       },
+       {
+        "en": "Benefit realization is measured after handover and reported to governance",
+        "ar": "تحقق المنافع يُقاس بعد التسليم ويُرفع للحوكمة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Benefits & performance lead",
+       "ar": "قائد المنافع والأداء"
+      },
+      "kpi": {
+       "en": "≥ 80% of benefits with an owner and KPI",
+       "ar": "≥ 80% من المنافع لها مالك ومؤشر"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "s.fin",
+      "clause": "S4",
+      "title": {
+       "en": "Financial tracking",
+       "ar": "المتابعة المالية"
+      },
+      "short": {
+       "en": "Finance",
+       "ar": "المالية"
+      },
+      "req": {
+       "en": "Initiative budgets, forecasts and actuals are tracked with finance, and funding is released at gates.",
+       "ar": "ميزانيات المبادرات وتنبؤاتها وفعلياتها تُتابع مع المالية، والإفراج عن التمويل مرتبط بالبوابات."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A standard monthly financial report for initiatives",
+        "ar": "تقرير مالي شهري موحد للمبادرات"
+       },
+       {
+        "en": "Reconcile monthly with the finance system",
+        "ar": "مطابقة شهرية مع النظام المالي"
+       },
+       {
+        "en": "Tie funding releases to gates",
+        "ar": "ربط الإفراج عن التمويل بالبوابات"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Finance sees total spend only",
+        "ar": "المالية ترى الإنفاق الإجمالي فقط"
+       },
+       {
+        "en": "A monthly financial report per initiative (budget, forecast, actual) reconciled with the finance system",
+        "ar": "تقرير مالي شهري لكل مبادرة (ميزانية، تنبؤ، فعلي) مطابق للنظام المالي"
+       },
+       {
+        "en": "Funding is released at gates; forecast accuracy is measured",
+        "ar": "التمويل يُفرج عنه عند البوابات، ودقة التنبؤ تُقاس"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio analyst + finance",
+       "ar": "محلل المحفظة + المالية"
+      },
+      "kpi": {
+       "en": "Financial forecast accuracy ±5%",
+       "ar": "دقة التنبؤ المالي ±5%"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "g.fin",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "g.fin",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "s.rcm",
+      "clause": "S5",
+      "title": {
+       "en": "Resource & capacity management",
+       "ar": "إدارة الموارد والسعة"
+      },
+      "short": {
+       "en": "Resources & capacity",
+       "ar": "الموارد والسعة"
+      },
+      "req": {
+       "en": "Demand for and supply of key people and skills are visible across initiatives; conflicts are resolved and capacity informs priorities.",
+       "ar": "الطلب على الموارد والمهارات الرئيسية والمعروض منها مرئيان عبر المبادرات، والتعارضات تُحل، والسعة تُراعى في الأولويات."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "List critical skills and where they are deployed",
+        "ar": "حصر المهارات الحرجة وتوزيعها الحالي"
+       },
+       {
+        "en": "A monthly capacity plan for critical skills",
+        "ar": "خطة سعة شهرية للمهارات الحرجة"
+       },
+       {
+        "en": "A capacity check before approving any new initiative",
+        "ar": "فحص السعة قبل اعتماد أي مبادرة جديدة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Conflicts are settled by personal escalation",
+        "ar": "التعارضات تُحل بالتصعيد الشخصي"
+       },
+       {
+        "en": "A capacity plan for critical skills updated monthly",
+        "ar": "خطة سعة للمهارات الحرجة تُحدَّث شهرياً"
+       },
+       {
+        "en": "New initiative approvals pass a capacity check",
+        "ar": "قرارات قبول مبادرات جديدة تمر بفحص السعة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Planning & capacity lead",
+       "ar": "محلل التخطيط والسعة"
+      },
+      "kpi": {
+       "en": "Critical-skill utilization ≤ 90%",
+       "ar": "استغلال المهارات الحرجة ≤ 90%"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "t.cap",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "s.pln",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "s.rep",
+      "clause": "S6",
+      "title": {
+       "en": "Reporting & information management",
+       "ar": "التقارير وإدارة المعلومات"
+      },
+      "short": {
+       "en": "Reporting & information",
+       "ar": "التقارير والمعلومات"
+      },
+      "req": {
+       "en": "One reporting cycle and one data set give portfolio, programme and project status, and the office manages the information (repository, document and version control).",
+       "ar": "دورة تقارير واحدة ومجموعة بيانات واحدة تعطيان حالة المحفظة والبرامج والمشاريع، ويدير المكتب المعلومات (المستودع، وضبط الوثائق والإصدارات)."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A standard monthly status report with written RAG rules",
+        "ar": "تقرير حالة شهري موحد بمعايير RAG مكتوبة"
+       },
+       {
+        "en": "One document repository with naming and version rules",
+        "ar": "مستودع وثائق واحد بقواعد تسمية وإصدارات"
+       },
+       {
+        "en": "Automate reports from one data source",
+        "ar": "أتمتة التقارير من مصدر بيانات واحد"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Each initiative reports in its own format",
+        "ar": "كل مبادرة ترفع تقريرها بشكل مختلف"
+       },
+       {
+        "en": "A common reporting calendar, written RAG rules and one document repository",
+        "ar": "تقويم تقارير موحد ومعايير RAG مكتوبة ومستودع وثائق واحد"
+       },
+       {
+        "en": "Report accuracy and timeliness are measured; decisions are traced to reports",
+        "ar": "دقة التقارير والتزام مواعيدها يُقاسان، والقرارات تُتتبع إليها"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Information & reporting lead",
+       "ar": "قائد المعلومات والتقارير"
+      },
+      "kpi": {
+       "en": "≥ 95% of reports on time",
+       "ar": "≥ 95% من التقارير في موعدها"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "s.pln",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "t.dsh",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "t.too",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     }
+    ]
+   },
+   {
+    "id": "svc",
+    "phase": "P3O®",
+    "title": {
+     "en": "Services: capability & assurance",
+     "ar": "الخدمات: القدرات والضمان"
+    },
+    "short": {
+     "en": "Capability services",
+     "ar": "خدمات القدرات"
+    },
+    "intro": {
+     "en": "",
+     "ar": ""
+    },
+    "clause": "Ch. 3 · 5",
+    "items": [
+     {
+      "ref": "c.qa",
+      "clause": "C1",
+      "title": {
+       "en": "Assurance & quality reviews",
+       "ar": "الضمان ومراجعات الجودة"
+      },
+      "short": {
+       "en": "Assurance",
+       "ar": "الضمان"
+      },
+      "req": {
+       "en": "Independent health checks, gate reviews and quality assurance of initiatives, scaled to risk.",
+       "ar": "فحوص صحة مستقلة ومراجعات بوابات وضمان جودة للمبادرات، بحجم يتناسب مع مخاطرها."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A checklist for gate reviews",
+        "ar": "قائمة تحقق لمراجعات البوابات"
+       },
+       {
+        "en": "A yearly assurance plan by risk tier",
+        "ar": "خطة ضمان سنوية حسب فئة المخاطر"
+       },
+       {
+        "en": "Track assurance recommendations and measure their impact",
+        "ar": "متابعة توصيات الضمان وقياس أثرها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Reviews happen only when something goes wrong",
+        "ar": "مراجعات عند حدوث مشكلة فقط"
+       },
+       {
+        "en": "A yearly assurance plan by risk tier and gate reviews with checklists",
+        "ar": "خطة ضمان سنوية حسب فئة المخاطر، ومراجعات بوابات بقوائم تحقق"
+       },
+       {
+        "en": "Assurance recommendations are tracked to closure and their effectiveness evaluated",
+        "ar": "توصيات الضمان تُتابع حتى الإغلاق، وفعاليتها تُقيَّم"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Assurance lead",
+       "ar": "قائد الضمان"
+      },
+      "kpi": {
+       "en": "100% of high-risk initiatives independently reviewed",
+       "ar": "100% من المبادرات عالية المخاطر بمراجعة مستقلة"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "g.aud",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "g.aud",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "c.cch",
+      "clause": "C2",
+      "title": {
+       "en": "Consultancy, coaching & facilitation",
+       "ar": "الاستشارة والتوجيه والتيسير"
+      },
+      "short": {
+       "en": "Coaching & facilitation",
+       "ar": "التوجيه والتيسير"
+      },
+      "req": {
+       "en": "The office offers expert help: coaching managers, facilitating start-up, planning and risk workshops, and recovering troubled initiatives.",
+       "ar": "يقدم المكتب دعماً خبيراً: توجيه المديرين، وتيسير ورش البدء والتخطيط والمخاطر، وإنقاذ المبادرات المتعثرة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A facilitated start-up workshop for every major initiative",
+        "ar": "ورشة بدء ميسّرة لكل مبادرة كبرى"
+       },
+       {
+        "en": "Publish the coaching services and how to request them",
+        "ar": "إعلان خدمات التوجيه وطريقة طلبها"
+       },
+       {
+        "en": "Measure coaching impact on initiative performance",
+        "ar": "قياس أثر التوجيه على أداء المبادرات"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Help on request from volunteers",
+        "ar": "دعم عند الطلب من أشخاص متطوعين"
+       },
+       {
+        "en": "A published list of facilitation and coaching services with a request route and timing",
+        "ar": "قائمة خدمات تيسير وتوجيه معلنة، بطلب وتوقيت محددين"
+       },
+       {
+        "en": "Coaching impact is measured (initiatives recovered, satisfaction)",
+        "ar": "أثر التوجيه يُقاس (مشاريع مستعادة، رضا المستفيدين)"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Centre of excellence",
+       "ar": "مركز التميّز"
+      },
+      "kpi": {
+       "en": "100% of major initiatives with a start-up workshop",
+       "ar": "100% من المبادرات الكبرى بورشة بدء"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "m.coe",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "c.knw",
+      "clause": "C3",
+      "title": {
+       "en": "Knowledge & lessons management",
+       "ar": "إدارة المعرفة والدروس"
+      },
+      "short": {
+       "en": "Knowledge & lessons",
+       "ar": "المعرفة والدروس"
+      },
+      "req": {
+       "en": "Lessons, good practice and templates are captured, curated and reused through a knowledge base.",
+       "ar": "الدروس والممارسات الجيدة والنماذج تُجمع وتُنقّح وتُعاد الاستفادة منها عبر قاعدة معرفة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "One categorized lessons log",
+        "ar": "سجل دروس واحد مصنّف"
+       },
+       {
+        "en": "Make a lessons check part of the start gate",
+        "ar": "جعل مراجعة الدروس جزءاً من بوابة البدء"
+       },
+       {
+        "en": "Turn recurring lessons into method updates",
+        "ar": "تحويل الدروس المتكررة إلى تحديثات منهجية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Lessons are written in closure reports and not used",
+        "ar": "الدروس تُكتب في تقارير الإغلاق ولا تُستخدم"
+       },
+       {
+        "en": "A categorized lessons log, checked at the start of every initiative",
+        "ar": "سجل دروس مصنّف ومراجعة للدروس عند بدء كل مبادرة"
+       },
+       {
+        "en": "Recurring lessons become updates to the method",
+        "ar": "الدروس المتكررة تتحول إلى تحديثات في المنهجية"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Information & reporting lead",
+       "ar": "قائد المعلومات والتقارير"
+      },
+      "kpi": {
+       "en": "≥ 3 method updates a year from lessons",
+       "ar": "≥ 3 تحديثات منهجية سنوياً من الدروس"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "t.km",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "c.std",
+      "clause": "C4",
+      "title": {
+       "en": "Standards & methods",
+       "ar": "المعايير والمنهجيات"
+      },
+      "short": {
+       "en": "Standards & methods",
+       "ar": "المعايير والمنهجيات"
+      },
+      "req": {
+       "en": "The office owns and tailors the organization's portfolio, programme and project methods, templates and guidance, and keeps them current.",
+       "ar": "يملك المكتب منهجيات إدارة المحافظ والبرامج والمشاريع ونماذجها وإرشاداتها، ويكيّفها ويبقيها محدَّثة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Publish a core template pack (charter, plan, status report, closure)",
+        "ar": "نشر حزمة نماذج أساسية (ميثاق، خطة، تقرير حالة، إغلاق)"
+       },
+       {
+        "en": "A method guide with tailoring rules by tier",
+        "ar": "دليل منهجية بقواعد تكييف حسب الفئة"
+       },
+       {
+        "en": "A yearly method review and adoption measure",
+        "ar": "مراجعة سنوية للمنهجية وقياس تبنيها"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Scattered templates with no owner",
+        "ar": "نماذج متفرقة دون مالك"
+       },
+       {
+        "en": "A common method with tailoring rules by size and risk, and one approved version",
+        "ar": "منهجية موحدة بقواعد تكييف حسب الحجم والمخاطر، ونسخة واحدة معتمدة"
+       },
+       {
+        "en": "Method adoption is measured and the method is reviewed yearly",
+        "ar": "تبني المنهجية يُقاس، والمنهجية تُراجع سنوياً"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "COE lead",
+       "ar": "قائد مركز التميّز"
+      },
+      "kpi": {
+       "en": "Method adoption ≥ 85%",
+       "ar": "تبني المنهجية ≥ 85%"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "m.coe",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "c.com",
+      "clause": "C5",
+      "title": {
+       "en": "Commercial & contract support",
+       "ar": "الدعم التجاري والتعاقدي"
+      },
+      "short": {
+       "en": "Commercial support",
+       "ar": "الدعم التجاري"
+      },
+      "req": {
+       "en": "Initiatives get commercial expertise on procurement strategy, supplier management and contract management.",
+       "ar": "تُدعم المبادرات في استراتيجية الشراء وإدارة الموردين والعقود بخبرة تجارية."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Name a commercial contact for every major initiative",
+        "ar": "تسمية نقطة اتصال تجارية لكل مبادرة كبرى"
+       },
+       {
+        "en": "A service agreement with procurement and contract management",
+        "ar": "اتفاق خدمة مع المشتريات وإدارة العقود"
+       },
+       {
+        "en": "A portfolio-level supplier performance view",
+        "ar": "لوحة أداء الموردين على مستوى المحفظة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Procurement works separately from initiatives",
+        "ar": "المشتريات تعمل منفصلة عن المبادرات"
+       },
+       {
+        "en": "A defined commercial service with procurement for every major initiative",
+        "ar": "خدمة تجارية معرّفة مع المشتريات لكل مبادرة كبرى"
+       },
+       {
+        "en": "Supplier performance and claims are tracked across the portfolio",
+        "ar": "أداء الموردين والمطالبات تُتابع عبر المحفظة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Procurement + P3O",
+       "ar": "المشتريات + المكتب"
+      },
+      "kpi": {
+       "en": "No unforeseen contract claims on major initiatives",
+       "ar": "0 مطالبات تعاقدية غير متوقعة في المبادرات الكبرى"
+      },
+      "links": {
+       "out": [],
+       "in": []
+      }
+     },
+     {
+      "ref": "c.trn",
+      "clause": "C6",
+      "title": {
+       "en": "Training & competence development",
+       "ar": "التدريب وتطوير الكفاءات"
+      },
+      "short": {
+       "en": "Training & competence",
+       "ar": "التدريب والكفاءات"
+      },
+      "req": {
+       "en": "The office runs a competence framework and learning plan (induction, certification, community of practice) for initiative managers and office staff.",
+       "ar": "يدير المكتب إطار كفاءات وخطة تعلّم (تهيئة، شهادات، مجتمع ممارسة) لمديري المبادرات وفرق المكتب."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A method induction for new managers",
+        "ar": "برنامج تهيئة للمنهجية للمديرين الجدد"
+       },
+       {
+        "en": "A yearly training plan built on the competence framework",
+        "ar": "خطة تدريب سنوية على إطار الكفاءات"
+       },
+       {
+        "en": "A community of practice and training impact measurement",
+        "ar": "مجتمع ممارسة وقياس أثر التدريب"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Occasional courses on request",
+        "ar": "دورات متفرقة حسب الطلب"
+       },
+       {
+        "en": "A yearly training plan based on a competence framework and certification paths",
+        "ar": "خطة تدريب سنوية مبنية على إطار كفاءات ومسارات شهادات"
+       },
+       {
+        "en": "Training impact is measured and a community of practice is active",
+        "ar": "أثر التدريب يُقاس، ومجتمع ممارسة نشط"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "COE + HR",
+       "ar": "مركز التميّز + الموارد البشرية"
+      },
+      "kpi": {
+       "en": "≥ 80% of managers on track in the competence path",
+       "ar": "≥ 80% من المديرين أكملوا مسار الكفاءة"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "r.cmp",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "rol",
+    "phase": "P3O®",
+    "title": {
+     "en": "Roles & competence",
+     "ar": "الأدوار والكفاءات"
+    },
+    "short": {
+     "en": "Roles",
+     "ar": "الأدوار"
+    },
+    "intro": {
+     "en": "",
+     "ar": ""
+    },
+    "clause": "Ch. 3",
+    "items": [
+     {
+      "ref": "r.hd",
+      "clause": "R1",
+      "title": {
+       "en": "Head of P3O",
+       "ar": "رئيس المكتب"
+      },
+      "short": {
+       "en": "Head of office",
+       "ar": "رئيس المكتب"
+      },
+      "req": {
+       "en": "A head of office with the authority, seniority and competence to lead the office and advise the executive.",
+       "ar": "رئيس مكتب بصلاحية وأقدمية وكفاءة تكفي لقيادة المكتب وتقديم المشورة للإدارة التنفيذية."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Appoint a head of office with written authority",
+        "ar": "تعيين رئيس للمكتب بتفويض مكتوب"
+       },
+       {
+        "en": "A role description and grade that match the scope",
+        "ar": "وصف دور ومستوى وظيفي متناسب مع النطاق"
+       },
+       {
+        "en": "Tie appraisal to office KPIs",
+        "ar": "ربط تقييم الأداء بمؤشرات المكتب"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Leading the office is an extra task for a manager",
+        "ar": "رئاسة المكتب مهمة إضافية لمدير"
+       },
+       {
+        "en": "A full-time head of office with a role description at a fitting grade",
+        "ar": "رئيس مكتب متفرغ بوصف دور ومستوى وظيفي مناسب"
+       },
+       {
+        "en": "The head of office is appraised on office KPIs and customer satisfaction",
+        "ar": "أداء رئيس المكتب يُقيَّم بمؤشرات المكتب ورضا العملاء"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Executive sponsor",
+       "ar": "الراعي التنفيذي"
+      },
+      "kpi": {
+       "en": "A named full-time head of office",
+       "ar": "رئيس مكتب متفرغ ومسمى"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "v.spn",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "r.pa",
+      "clause": "R2",
+      "title": {
+       "en": "Portfolio roles",
+       "ar": "أدوار المحفظة"
+      },
+      "short": {
+       "en": "Portfolio roles",
+       "ar": "أدوار المحفظة"
+      },
+      "req": {
+       "en": "Portfolio roles (portfolio analyst, planning and capacity lead, benefits lead, information lead) are defined and filled.",
+       "ar": "أدوار المحفظة (محلل المحفظة، قائد التخطيط والسعة، قائد المنافع، قائد المعلومات) معرّفة ومشغولة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Name an owner for the portfolio report",
+        "ar": "تحديد مسؤول لتقرير المحفظة"
+       },
+       {
+        "en": "Fill portfolio roles per the staffing model",
+        "ar": "تعيين أدوار المحفظة حسب نموذج التوظيف"
+       },
+       {
+        "en": "Review roles yearly with the service catalogue",
+        "ar": "مراجعة الأدوار سنوياً مع كتالوج الخدمات"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Portfolio tasks are done by whoever is free",
+        "ar": "مهام المحفظة يؤديها أي متاح"
+       },
+       {
+        "en": "Portfolio roles defined and filled per the staffing model",
+        "ar": "أدوار محفظة معرّفة ومشغولة حسب نموذج التوظيف"
+       },
+       {
+        "en": "Roles are revisited as services change; post-holders are appraised",
+        "ar": "الأدوار تُراجع مع تغير الخدمات، وأداء شاغليها يُقيَّم"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O",
+       "ar": "رئيس المكتب"
+      },
+      "kpi": {
+       "en": "100% of hub roles filled",
+       "ar": "100% من أدوار المحور مشغولة"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "m.siz",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "r.sup",
+      "clause": "R3",
+      "title": {
+       "en": "Programme & project support roles",
+       "ar": "أدوار دعم البرامج والمشاريع"
+      },
+      "short": {
+       "en": "Support roles",
+       "ar": "أدوار الدعم"
+      },
+      "req": {
+       "en": "Programme and project office managers and support officers are defined, filled and deployed to initiatives by tier.",
+       "ar": "مديرو مكاتب البرامج والمشاريع وموظفو الدعم معرّفون ومشغولون ويُوزَّعون على المبادرات حسب فئتها."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Standard descriptions for project support officer and programme office manager",
+        "ar": "أوصاف موحدة لموظف دعم المشروع ومدير مكتب البرنامج"
+       },
+       {
+        "en": "Support allocation rules by tier",
+        "ar": "قواعد توزيع الدعم حسب الفئة"
+       },
+       {
+        "en": "Monthly review of allocation against demand",
+        "ar": "مراجعة شهرية للتوزيع مقابل الطلب"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Only large projects get support, with no rules",
+        "ar": "الدعم يُعطى للمشاريع الكبرى فقط وبلا معايير"
+       },
+       {
+        "en": "Support allocation rules by initiative tier and standard role descriptions",
+        "ar": "قواعد توزيع دعم حسب فئة المبادرة، وأوصاف أدوار موحدة"
+       },
+       {
+        "en": "Support allocation is reviewed against demand monthly",
+        "ar": "توزيع الدعم يُراجع مقابل الطلب شهرياً"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O + programme managers",
+       "ar": "رئيس المكتب + مديرو البرامج"
+      },
+      "kpi": {
+       "en": "100% of tier-1 initiatives with office support",
+       "ar": "100% من مبادرات الفئة 1 بدعم مكتب"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "m.spk",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "r.coe",
+      "clause": "R4",
+      "title": {
+       "en": "COE & specialist roles",
+       "ar": "أدوار مركز التميّز والتخصص"
+      },
+      "short": {
+       "en": "Specialist roles",
+       "ar": "أدوار التخصص"
+      },
+      "req": {
+       "en": "Method owners, trainers and coaches, assurance and commercial specialists are defined, in the hub or on call.",
+       "ar": "مالكو المنهجية والمدربون والموجّهون ومختصو الضمان والتجارة معرّفون، في المحور أو عند الطلب."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "List the available expertise and who holds it",
+        "ar": "قائمة بالخبرات المتاحة وأصحابها"
+       },
+       {
+        "en": "Define specialist roles and their sources",
+        "ar": "تعريف أدوار التخصص ومصادرها"
+       },
+       {
+        "en": "A capacity plan for specialist roles",
+        "ar": "خطة سعة لأدوار التخصص"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Expertise sits with individuals without roles",
+        "ar": "الخبرة موجودة لدى أفراد دون أدوار"
+       },
+       {
+        "en": "Specialist roles defined with named holders or on-call sources",
+        "ar": "أدوار تخصص معرّفة ومسمى شاغلوها أو مصادرها عند الطلب"
+       },
+       {
+        "en": "Specialist capacity matches expected demand",
+        "ar": "سعة أدوار التخصص تُطابق الطلب المتوقع"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "COE lead",
+       "ar": "قائد مركز التميّز"
+      },
+      "kpi": {
+       "en": "Every specialist service has a named source",
+       "ar": "كل خدمة تخصصية لها مصدر مسمى"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "m.coe",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "r.cmp",
+      "clause": "R5",
+      "title": {
+       "en": "Role descriptions, competence & career path",
+       "ar": "أوصاف الأدوار والكفاءات والمسار المهني"
+      },
+      "short": {
+       "en": "Competence & career",
+       "ar": "الكفاءات والمسار"
+      },
+      "req": {
+       "en": "Every office role has a description, a competence profile and a development path, and staff are assessed against them.",
+       "ar": "لكل دور في المكتب وصف وملف كفاءات ومسار تطوير، والموظفون يُقيَّمون مقابلها."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A short competence profile per role",
+        "ar": "ملف كفاءة مختصر لكل دور"
+       },
+       {
+        "en": "A yearly competence assessment and individual development plans",
+        "ar": "تقييم سنوي للكفاءات وخطط تطوير فردية"
+       },
+       {
+        "en": "A job family and career path agreed with HR",
+        "ar": "عائلة وظائف ومسار مهني مع الموارد البشرية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Generic job descriptions from HR",
+        "ar": "أوصاف وظيفية عامة من الموارد البشرية"
+       },
+       {
+        "en": "A competence profile per role and a yearly assessment of staff against it",
+        "ar": "ملف كفاءة لكل دور وتقييم سنوي للموظفين مقابله"
+       },
+       {
+        "en": "A career path for the office job family; competence gaps closed through development plans",
+        "ar": "مسار مهني لعائلة وظائف المكتب، وفجوات الكفاءة تُغلق بخطط تطوير"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O + HR",
+       "ar": "رئيس المكتب + الموارد البشرية"
+      },
+      "kpi": {
+       "en": "100% of office staff assessed yearly",
+       "ar": "100% من موظفي المكتب مقيَّمون سنوياً"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "c.trn",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        },
+        {
+         "ref": "g.hr",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "g.hr",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "tt",
+    "phase": "P3O®",
+    "title": {
+     "en": "Tools & techniques",
+     "ar": "الأدوات والتقنيات"
+    },
+    "short": {
+     "en": "Tools",
+     "ar": "الأدوات"
+    },
+    "intro": {
+     "en": "",
+     "ar": ""
+    },
+    "clause": "Ch. 5",
+    "items": [
+     {
+      "ref": "t.pri",
+      "clause": "T1",
+      "title": {
+       "en": "Portfolio prioritization & balancing",
+       "ar": "ترتيب أولويات المحفظة وموازنتها"
+      },
+      "short": {
+       "en": "Prioritization",
+       "ar": "الأولويات والموازنة"
+      },
+      "req": {
+       "en": "Weighted criteria, scoring and balancing techniques (such as strategic contribution against risk) support investment decisions.",
+       "ar": "معايير موزونة وتقييم بالنقاط وتقنيات موازنة (مثل المساهمة الاستراتيجية مقابل المخاطر) تدعم قرارات الاستثمار."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Five weighted priority criteria",
+        "ar": "معايير أولوية موزونة من 5 عناصر"
+       },
+       {
+        "en": "Apply them to every new request and show the ranking to the committee",
+        "ar": "تطبيقها على كل طلب جديد وعرض الترتيب على اللجنة"
+       },
+       {
+        "en": "Quarterly balancing and model calibration",
+        "ar": "موازنة ربعية ومعايرة النموذج"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Priorities are set by discussion or by who asks",
+        "ar": "الأولويات تُحدد بالنقاش أو بأقدمية الطالب"
+       },
+       {
+        "en": "An approved weighted scoring model applied to every new request",
+        "ar": "نموذج نقاط موزون معتمد يُطبق على كل طلب جديد"
+       },
+       {
+        "en": "The portfolio is balanced quarterly and the model is calibrated against actual results",
+        "ar": "المحفظة تُوازن ربعياً والنموذج يُعاير بالنتائج الفعلية"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Portfolio analyst",
+       "ar": "محلل المحفظة"
+      },
+      "kpi": {
+       "en": "100% of new initiatives scored",
+       "ar": "100% من المبادرات الجديدة مقيَّمة بالنقاط"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "g.brd",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "t.dsh",
+      "clause": "T2",
+      "title": {
+       "en": "Dashboards",
+       "ar": "لوحات المعلومات"
+      },
+      "short": {
+       "en": "Dashboards",
+       "ar": "اللوحات"
+      },
+      "req": {
+       "en": "Standard dashboards for board, portfolio and programme levels, with written RAG rules and drill-down.",
+       "ar": "لوحات موحدة للمجلس والمحفظة والبرامج بقواعد RAG مكتوبة وإمكانية التعمق في التفاصيل."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A one-page monthly portfolio dashboard",
+        "ar": "لوحة محفظة شهرية من صفحة واحدة"
+       },
+       {
+        "en": "Dashboard specifications per level (template P3O-06)",
+        "ar": "مواصفات لوحات لكل مستوى (نموذج P3O-06)"
+       },
+       {
+        "en": "Automatic refresh from one tool",
+        "ar": "تحديث تلقائي من أداة واحدة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Slides built by hand every month",
+        "ar": "عروض تقديمية تُعد يدوياً كل شهر"
+       },
+       {
+        "en": "Approved dashboard specifications per level and written RAG rules",
+        "ar": "مواصفات لوحات معتمدة لكل مستوى وقواعد RAG مكتوبة"
+       },
+       {
+        "en": "Dashboards refresh automatically from one source and their use in decisions is tracked",
+        "ar": "اللوحات تُحدَّث تلقائياً من مصدر واحد، واستخدامها في القرارات يُتابع"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Information & reporting lead",
+       "ar": "قائد المعلومات والتقارير"
+      },
+      "kpi": {
+       "en": "Portfolio dashboard ready within 5 working days of month end",
+       "ar": "لوحة المحفظة جاهزة خلال 5 أيام عمل من نهاية الشهر"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "s.rep",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "t.cap",
+      "clause": "T3",
+      "title": {
+       "en": "Capacity planning technique",
+       "ar": "تقنية تخطيط السعة"
+      },
+      "short": {
+       "en": "Capacity planning",
+       "ar": "تخطيط السعة"
+      },
+      "req": {
+       "en": "A capacity planning technique (demand against supply by skill and period) is used to test portfolio plans.",
+       "ar": "تُستخدم تقنية لتخطيط السعة (الطلب مقابل المعروض حسب المهارة والفترة) لاختبار خطط المحفظة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A simple capacity sheet for critical skills",
+        "ar": "جدول سعة بسيط للمهارات الحرجة"
+       },
+       {
+        "en": "A monthly capacity model linked to initiative plans",
+        "ar": "نموذج سعة شهري مربوط بخطط المبادرات"
+       },
+       {
+        "en": "Test scenarios before approving the annual portfolio",
+        "ar": "اختبار السيناريوهات قبل اعتماد المحفظة السنوية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Capacity is guessed",
+        "ar": "السعة تُقدَّر حدسياً"
+       },
+       {
+        "en": "A capacity model by skill and month for key skills",
+        "ar": "نموذج سعة بالمهارة والشهر لأهم المهارات"
+       },
+       {
+        "en": "Capacity scenarios are tested before portfolio decisions",
+        "ar": "سيناريوهات السعة تُختبر قبل قرارات المحفظة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Planning & capacity lead",
+       "ar": "محلل التخطيط والسعة"
+      },
+      "kpi": {
+       "en": "A capacity check for every portfolio decision",
+       "ar": "فحص سعة لكل قرار محفظة"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "s.rcm",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "t.km",
+      "clause": "T4",
+      "title": {
+       "en": "Knowledge & collaboration portal",
+       "ar": "بوابة المعرفة والتعاون"
+      },
+      "short": {
+       "en": "Knowledge portal",
+       "ar": "بوابة المعرفة"
+      },
+      "req": {
+       "en": "One portal holds methods, templates, lessons, registers and collaboration spaces.",
+       "ar": "بوابة واحدة تجمع المنهجيات والنماذج والدروس والسجلات ومساحات التعاون."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "One shared space for templates and the method",
+        "ar": "مساحة مشتركة واحدة للنماذج والمنهجية"
+       },
+       {
+        "en": "An organized portal with an owner and content rules",
+        "ar": "بوابة منظمة بمالك وقواعد محتوى"
+       },
+       {
+        "en": "Measure use and review content quarterly",
+        "ar": "قياس الاستخدام ومراجعة المحتوى ربعياً"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Files are spread across email and personal folders",
+        "ar": "الملفات موزعة على البريد والمجلدات الشخصية"
+       },
+       {
+        "en": "One organized portal with an owner and content rules",
+        "ar": "بوابة واحدة منظمة بمالك وقواعد محتوى"
+       },
+       {
+        "en": "Portal use is measured and content reviewed regularly",
+        "ar": "استخدام البوابة يُقاس ومحتواها يُراجع دورياً"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Information & reporting lead",
+       "ar": "قائد المعلومات والتقارير"
+      },
+      "kpi": {
+       "en": "≥ 90% of approved documents on the portal",
+       "ar": "≥ 90% من الوثائق المعتمدة على البوابة"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "c.knw",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "t.too",
+      "clause": "T5",
+      "title": {
+       "en": "Integrated P3M tooling",
+       "ar": "أدوات إدارة المحافظ والبرامج والمشاريع المتكاملة"
+      },
+      "short": {
+       "en": "P3M tooling",
+       "ar": "الأدوات المتكاملة"
+      },
+      "req": {
+       "en": "An integrated tool (or tool set) holds schedules, costs, resources, risks and benefits on one data model.",
+       "ar": "أداة متكاملة (أو مجموعة أدوات) تحفظ الجداول والتكاليف والموارد والمخاطر والمنافع بنموذج بيانات واحد."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A common data model in shared sheets",
+        "ar": "نموذج بيانات موحد في جداول مشتركة"
+       },
+       {
+        "en": "Select an integrated tool and roll it out to major initiatives",
+        "ar": "اختيار أداة متكاملة وتطبيقها على المبادرات الكبرى"
+       },
+       {
+        "en": "Integrate the tool with finance and HR systems",
+        "ar": "ربط الأداة بالأنظمة المالية والموارد البشرية"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Separate spreadsheets per initiative",
+        "ar": "جداول بيانات منفصلة لكل مبادرة"
+       },
+       {
+        "en": "An approved tool or tool set with one data model for all initiatives",
+        "ar": "أداة أو مجموعة أدوات معتمدة بنموذج بيانات موحد لكل المبادرات"
+       },
+       {
+        "en": "Data quality is measured; the tool is linked to finance and HR systems",
+        "ar": "جودة البيانات تُقاس، والأداة مربوطة بالنظام المالي والموارد البشرية"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O + IT",
+       "ar": "رئيس المكتب + تقنية المعلومات"
+      },
+      "kpi": {
+       "en": "100% of tier-1 initiatives on the tool",
+       "ar": "100% من مبادرات الفئة 1 على الأداة"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "s.rep",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "imp",
+    "phase": "P3O®",
+    "title": {
+     "en": "Implementation & re-energizing",
+     "ar": "دورة التنفيذ وإعادة التنشيط"
+    },
+    "short": {
+     "en": "Implementation",
+     "ar": "التنفيذ"
+    },
+    "intro": {
+     "en": "",
+     "ar": ""
+    },
+    "clause": "Ch. 4",
+    "items": [
+     {
+      "ref": "i.idn",
+      "clause": "I1",
+      "title": {
+       "en": "Identify",
+       "ar": "التحديد"
+      },
+      "short": {
+       "en": "Identify",
+       "ar": "التحديد"
+      },
+      "req": {
+       "en": "Before investing, the organization identifies the need, the current office landscape and its maturity, and the sponsor.",
+       "ar": "قبل الاستثمار تحدد المنشأة الحاجة، وخريطة المكاتب الحالية ونضجها، والراعي."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "List every existing office and its services",
+        "ar": "حصر كل المكاتب القائمة وخدماتها"
+       },
+       {
+        "en": "Assess capability and maturity on evidence",
+        "ar": "تقييم القدرة والنضج بالأدلة"
+       },
+       {
+        "en": "Repeat the analysis before each improvement cycle",
+        "ar": "إعادة التحليل قبل كل دورة تحسين"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The decision to set up or change was taken without analysis",
+        "ar": "قرار الإنشاء أو التغيير اتُّخذ دون تحليل"
+       },
+       {
+        "en": "An analysis of the current state (existing offices, maturity, customer pain points) approved by the sponsor",
+        "ar": "تحليل الوضع الحالي (المكاتب القائمة، النضج، مشكلات العملاء) معتمد من الراعي"
+       },
+       {
+        "en": "The analysis rests on an evidence-based assessment (P3M3 or this tool) and is refreshed before each cycle",
+        "ar": "التحليل مبني على تقييم بالأدلة (P3M3 أو هذه الأداة) ويُحدَّث قبل كل دورة"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Sponsor + head of P3O",
+       "ar": "الراعي + رئيس المكتب"
+      },
+      "kpi": {
+       "en": "Approved current-state report",
+       "ar": "تقرير وضع حالي معتمد"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "i.def",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": []
+      }
+     },
+     {
+      "ref": "i.def",
+      "clause": "I2",
+      "title": {
+       "en": "Define (blueprint)",
+       "ar": "التعريف (المخطط التفصيلي)"
+      },
+      "short": {
+       "en": "Define",
+       "ar": "التعريف"
+      },
+      "req": {
+       "en": "A blueprint defines the target model, services, organization, processes and tools, with a costed implementation plan.",
+       "ar": "مخطط تفصيلي يحدد النموذج المستهدف والخدمات والتنظيم والإجراءات والأدوات، مع خطة تنفيذ مقدَّرة التكلفة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Generate a first design in the design studio",
+        "ar": "توليد تصميم أولي من استوديو التصميم"
+       },
+       {
+        "en": "Approve the blueprint and implementation plan",
+        "ar": "اعتماد المخطط التفصيلي وخطة التنفيذ"
+       },
+       {
+        "en": "Review the blueprint at the end of each tranche",
+        "ar": "مراجعة المخطط عند نهاية كل شريحة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "A general concept of the office in a slide deck",
+        "ar": "تصور عام للمكتب في عرض تقديمي"
+       },
+       {
+        "en": "An approved blueprint: model, services, roles, tools, plan and cost",
+        "ar": "مخطط تفصيلي معتمد: النموذج، الخدمات، الأدوار، الأدوات، الخطة، التكلفة"
+       },
+       {
+        "en": "The blueprint is revisited at each tranche and updated with what was learned",
+        "ar": "المخطط يُراجع عند كل شريحة تنفيذ ويُحدَّث بما تعلمناه"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O",
+       "ar": "رئيس المكتب"
+      },
+      "kpi": {
+       "en": "Blueprint approved before delivery",
+       "ar": "مخطط معتمد قبل التنفيذ"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "i.dlv",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "i.idn",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "i.dlv",
+      "clause": "I3",
+      "title": {
+       "en": "Deliver",
+       "ar": "التسليم"
+      },
+      "short": {
+       "en": "Deliver",
+       "ar": "التسليم"
+      },
+      "req": {
+       "en": "The office is delivered as a managed project or programme, with tranches, quick wins and stakeholder engagement.",
+       "ar": "يُنفَّذ المكتب كمشروع أو برنامج مُدار بشرائح ومكاسب سريعة وإشراك لأصحاب المصلحة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Three quick wins within 90 days",
+        "ar": "ثلاثة مكاسب سريعة خلال 90 يوماً"
+       },
+       {
+        "en": "A delivery plan with tranches and milestones",
+        "ar": "خطة تنفيذ بشرائح ومعالم"
+       },
+       {
+        "en": "A monthly progress report to the sponsor",
+        "ar": "تقرير تقدم شهري للراعي"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Delivery happens on the side without a plan",
+        "ar": "التنفيذ يتم بجهود جانبية دون خطة"
+       },
+       {
+        "en": "A delivery plan with tranches, milestones, quick wins and a communication plan",
+        "ar": "خطة تنفيذ بشرائح ومعالم ومكاسب سريعة وخطة اتصال"
+       },
+       {
+        "en": "Delivery progress and quick wins are measured and reported to the sponsor",
+        "ar": "تقدم التنفيذ والمكاسب السريعة تُقاس وتُرفع للراعي"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O",
+       "ar": "رئيس المكتب"
+      },
+      "kpi": {
+       "en": "Quick wins delivered within 90 days",
+       "ar": "المكاسب السريعة مسلّمة خلال 90 يوماً"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "i.trn",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "i.def",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "i.trn",
+      "clause": "I4",
+      "title": {
+       "en": "Transition & run",
+       "ar": "الانتقال والتشغيل"
+      },
+      "short": {
+       "en": "Transition & run",
+       "ar": "الانتقال والتشغيل"
+      },
+      "req": {
+       "en": "Services move into operation with handover, service levels and trained staff, and the office is run as a service.",
+       "ar": "تنتقل الخدمات إلى التشغيل بتسليم ومستويات خدمة وموظفين مدربين، ويُدار المكتب كخدمة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Set a simple service level per service",
+        "ar": "تحديد مستوى خدمة بسيط لكل خدمة"
+       },
+       {
+        "en": "Transition criteria and team training",
+        "ar": "معايير انتقال للتشغيل وتدريب الفريق"
+       },
+       {
+        "en": "A quarterly service-level review",
+        "ar": "مراجعة ربعية لمستويات الخدمة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Services start without service levels",
+        "ar": "الخدمات تبدأ دون مستويات خدمة"
+       },
+       {
+        "en": "Transition criteria and service levels for every service, with training before go-live",
+        "ar": "معايير انتقال ومستويات خدمة لكل خدمة، وتدريب قبل التشغيل"
+       },
+       {
+        "en": "Services are run to measured service levels with a quarterly review",
+        "ar": "الخدمات تُدار بمستويات خدمة مقاسة ومراجعة ربعية"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O",
+       "ar": "رئيس المكتب"
+      },
+      "kpi": {
+       "en": "≥ 90% of services within service level",
+       "ar": "≥ 90% من الخدمات ضمن مستوى الخدمة"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "i.sus",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "i.dlv",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "i.sus",
+      "clause": "I5",
+      "title": {
+       "en": "Sustain & re-energize",
+       "ar": "الاستدامة وإعادة التنشيط"
+      },
+      "short": {
+       "en": "Sustain & re-energize",
+       "ar": "الاستدامة وإعادة التنشيط"
+      },
+      "req": {
+       "en": "Regular health checks detect decline, and a re-energizing plan resets the mandate, services or model when value drops.",
+       "ar": "فحوص صحة دورية تكشف تراجع المكتب، وخطة إعادة تنشيط تعيد ضبط التفويض أو الخدمات أو النموذج عند تراجع القيمة."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A first office health check (template P3O-08)",
+        "ar": "فحص صحة أولي للمكتب (نموذج P3O-08)"
+       },
+       {
+        "en": "Re-energizing triggers in the office charter",
+        "ar": "محفزات إعادة التنشيط في ميثاق المكتب"
+       },
+       {
+        "en": "A yearly re-energizing plan that is tracked",
+        "ar": "خطة إعادة تنشيط سنوية تُتابع"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The office is restructured only after a crisis",
+        "ar": "المكتب يُعاد هيكلته بعد أزمة فقط"
+       },
+       {
+        "en": "A yearly health check and written re-energizing triggers",
+        "ar": "فحص صحة سنوي ومحفزات إعادة تنشيط مكتوبة"
+       },
+       {
+        "en": "Health-check results drive a re-energizing plan that is delivered and measured",
+        "ar": "نتائج الفحص تقود خطة إعادة تنشيط تُنفذ وتُقاس"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Sponsor + head of P3O",
+       "ar": "الراعي + رئيس المكتب"
+      },
+      "kpi": {
+       "en": "Yearly health check completed",
+       "ar": "فحص صحة سنوي منجز"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "i.trn",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "gov",
+    "phase": "P3O®",
+    "title": {
+     "en": "Governance interfaces",
+     "ar": "واجهات الحوكمة"
+    },
+    "short": {
+     "en": "Governance",
+     "ar": "الحوكمة"
+    },
+    "intro": {
+     "en": "",
+     "ar": ""
+    },
+    "clause": "Ch. 2 · 3 · 5",
+    "items": [
+     {
+      "ref": "g.brd",
+      "clause": "G1",
+      "title": {
+       "en": "Board & executive decision support",
+       "ar": "دعم قرارات المجلس والإدارة التنفيذية"
+      },
+      "short": {
+       "en": "Decision support",
+       "ar": "دعم القرار"
+      },
+      "req": {
+       "en": "The office prepares decisions for the board or investment committee (options, ranked portfolio, exceptions) and records the decisions.",
+       "ar": "يُعد المكتب قرارات المجلس أو لجنة الاستثمار (البدائل، المحفظة المرتبة، الاستثناءات) ويسجل القرارات."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A decision log for the investment committee",
+        "ar": "سجل قرارات للجنة الاستثمار"
+       },
+       {
+        "en": "A standard decision pack with options and a recommendation",
+        "ar": "حزمة قرار موحدة بالبدائل والتوصية"
+       },
+       {
+        "en": "Measure decision lead time and follow-through",
+        "ar": "قياس زمن القرار ومتابعة التنفيذ"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The office sends reports without asking for decisions",
+        "ar": "المكتب يرسل تقارير دون طلب قرار"
+       },
+       {
+        "en": "A standard decision pack for each meeting and a decision log",
+        "ar": "حزمة قرار موحدة لكل اجتماع وسجل قرارات"
+       },
+       {
+        "en": "Decision lead time and decision follow-through are measured",
+        "ar": "زمن القرار وتنفيذ القرارات يُقاسان"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O",
+       "ar": "رئيس المكتب"
+      },
+      "kpi": {
+       "en": "Median decision time ≤ 10 working days",
+       "ar": "متوسط زمن القرار ≤ 10 أيام عمل"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "t.pri",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "v.spn",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "g.fin",
+      "clause": "G2",
+      "title": {
+       "en": "Finance interface",
+       "ar": "الواجهة مع المالية"
+      },
+      "short": {
+       "en": "Finance",
+       "ar": "المالية"
+      },
+      "req": {
+       "en": "Office processes are built into the budgeting, capital allocation and financial reporting cycles.",
+       "ar": "إجراءات المكتب مدمجة مع دورات الموازنة وتوزيع رأس المال والتقارير المالية."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "A monthly reconciliation meeting with finance",
+        "ar": "اجتماع مطابقة شهري مع المالية"
+       },
+       {
+        "en": "A written interface agreement with finance",
+        "ar": "اتفاقية واجهة مكتوبة مع المالية"
+       },
+       {
+        "en": "Link the annual budget to the portfolio ranking",
+        "ar": "ربط الموازنة السنوية بترتيب المحفظة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The office and finance work with different numbers",
+        "ar": "المكتب والمالية يعملان بأرقام مختلفة"
+       },
+       {
+        "en": "A shared calendar with finance and common cost and forecast definitions",
+        "ar": "تقويم مشترك مع المالية وتعريفات موحدة للتكلفة والتنبؤ"
+       },
+       {
+        "en": "The budget cycle uses the portfolio ranking; figures reconcile monthly",
+        "ar": "دورة الموازنة تستخدم ترتيب المحفظة، والأرقام متطابقة شهرياً"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O + CFO",
+       "ar": "رئيس المكتب + المدير المالي"
+      },
+      "kpi": {
+       "en": "Zero difference between office and finance figures",
+       "ar": "فرق أرقام المكتب والمالية = 0"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "s.fin",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "s.fin",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "g.hr",
+      "clause": "G3",
+      "title": {
+       "en": "HR interface",
+       "ar": "الواجهة مع الموارد البشرية"
+      },
+      "short": {
+       "en": "HR",
+       "ar": "الموارد البشرية"
+      },
+      "req": {
+       "en": "The office works with HR on role families, recruitment, performance and project-management career paths.",
+       "ar": "يعمل المكتب مع الموارد البشرية على عائلات الأدوار والتوظيف والأداء والمسارات المهنية في إدارة المشاريع."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Share the office role descriptions with HR",
+        "ar": "مشاركة أوصاف أدوار المكتب مع الموارد البشرية"
+       },
+       {
+        "en": "An approved job family and career path",
+        "ar": "عائلة وظائف ومسار مهني معتمدان"
+       },
+       {
+        "en": "A succession plan for critical roles",
+        "ar": "خطة تعاقب للأدوار الحرجة"
+       }
+      ],
+      "ev": [
+       {
+        "en": "HR does not know the office roles",
+        "ar": "الموارد البشرية لا تعرف أدوار المكتب"
+       },
+       {
+        "en": "A job family and career path agreed with HR",
+        "ar": "عائلة وظائف ومسار مهني متفق عليهما مع الموارد البشرية"
+       },
+       {
+        "en": "Succession planning and retention are tracked",
+        "ar": "تخطيط التعاقب والاحتفاظ بالكفاءات يُتابع"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O + HR",
+       "ar": "رئيس المكتب + الموارد البشرية"
+      },
+      "kpi": {
+       "en": "Office staff turnover ≤ 10% a year",
+       "ar": "دوران موظفي المكتب ≤ 10% سنوياً"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "r.cmp",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "r.cmp",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "g.rsk",
+      "clause": "G4",
+      "title": {
+       "en": "Risk interface",
+       "ar": "الواجهة مع إدارة المخاطر"
+      },
+      "short": {
+       "en": "Enterprise risk",
+       "ar": "المخاطر المؤسسية"
+      },
+      "req": {
+       "en": "Portfolio risks feed the enterprise risk register using the same scales and appetite.",
+       "ar": "مخاطر المحفظة تغذي سجل المخاطر المؤسسي بنفس المقاييس وشهية المخاطر."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Adopt the enterprise risk scale in the office",
+        "ar": "اعتماد مقياس المخاطر المؤسسي في المكتب"
+       },
+       {
+        "en": "Escalation rules for top portfolio risks",
+        "ar": "قواعد تصعيد لأعلى مخاطر المحفظة"
+       },
+       {
+        "en": "Tie initiative selection to risk appetite",
+        "ar": "ربط اختيار المبادرات بشهية المخاطر"
+       }
+      ],
+      "ev": [
+       {
+        "en": "The portfolio register is separate from the enterprise register",
+        "ar": "سجل المحفظة منفصل عن السجل المؤسسي"
+       },
+       {
+        "en": "A common scale and escalation rules for top portfolio risks into the enterprise register",
+        "ar": "مقياس مشترك وقواعد تصعيد لأعلى مخاطر المحفظة إلى السجل المؤسسي"
+       },
+       {
+        "en": "Portfolio risks are in board risk reports; appetite governs selection",
+        "ar": "مخاطر المحفظة ضمن تقارير المخاطر للمجلس، وشهية المخاطر تحكم الاختيار"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Head of P3O + CRO",
+       "ar": "رئيس المكتب + مدير المخاطر"
+      },
+      "kpi": {
+       "en": "100% of high portfolio risks in the enterprise register",
+       "ar": "100% من المخاطر العالية في السجل المؤسسي"
+      },
+      "links": {
+       "out": [],
+       "in": [
+        {
+         "ref": "s.ric",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "ref": "g.aud",
+      "clause": "G5",
+      "title": {
+       "en": "Internal audit interface",
+       "ar": "الواجهة مع المراجعة الداخلية"
+      },
+      "short": {
+       "en": "Internal audit",
+       "ar": "المراجعة الداخلية"
+      },
+      "req": {
+       "en": "The office's assurance is coordinated with internal audit (three lines) without duplication, and audit findings are tracked.",
+       "ar": "ضمان المكتب منسق مع المراجعة الداخلية (خطوط الدفاع الثلاثة) دون ازدواج، وملاحظات المراجعة تُتابع."
+      },
+      "ex": null,
+      "how": [
+       {
+        "en": "Exchange the yearly assurance plan with internal audit",
+        "ar": "تبادل خطة الضمان السنوية مع المراجعة الداخلية"
+       },
+       {
+        "en": "A shared assurance map",
+        "ar": "خريطة ضمان مشتركة"
+       },
+       {
+        "en": "Track audit findings to closure",
+        "ar": "متابعة ملاحظات المراجعة حتى الإغلاق"
+       }
+      ],
+      "ev": [
+       {
+        "en": "Internal audit and the office review the same things without coordination",
+        "ar": "المراجعة الداخلية والمكتب يراجعان نفس الأشياء دون تنسيق"
+       },
+       {
+        "en": "A shared assurance map and exchange of annual plans",
+        "ar": "خريطة ضمان مشتركة وتبادل للخطط السنوية"
+       },
+       {
+        "en": "Audit findings on initiatives are closed on time and root causes analysed",
+        "ar": "ملاحظات المراجعة على المبادرات تُغلق في موعدها وتُحلل أسبابها"
+       }
+      ],
+      "ladder": true,
+      "gaps": [],
+      "tips": [],
+      "owner": {
+       "en": "Assurance lead + internal audit",
+       "ar": "قائد الضمان + المراجعة الداخلية"
+      },
+      "kpi": {
+       "en": "≥ 90% of audit findings closed on time",
+       "ar": "≥ 90% من ملاحظات المراجعة مغلقة في موعدها"
+      },
+      "links": {
+       "out": [
+        {
+         "ref": "c.qa",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ],
+       "in": [
+        {
+         "ref": "c.qa",
+         "why": {
+          "en": "",
+          "ar": ""
+         }
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "changes": [],
+  "pairs": [],
+  "timeline": [],
+  "threads": [],
+  "official": [],
+  "readiness_questions": 0,
+  "terms": [
+   {
+    "no": "P3O®",
+    "en": "Portfolio, programme and project offices (P3O)",
+    "ar": "مكتب المحافظ والبرامج والمشاريع (P3O)",
+    "def": {
+     "ar": "هيكل الدعم الذي يقدمه مكتب أو مجموعة مكاتب لقرارات الاستثمار في التغيير وتنفيذه، على مستوى المحفظة والبرامج والمشاريع.",
+     "en": "The support structure one office or a set of offices provides for decisions on, and delivery of, change at portfolio, programme and project level."
+    }
+   },
+   {
+    "no": "P3O®",
+    "en": "Portfolio office",
+    "ar": "مكتب المحفظة",
+    "def": {
+     "ar": "مكتب دائم يدعم إدارة المحفظة كلها: الأولويات والموازنة والتقارير الموحدة والمعايير.",
+     "en": "A permanent office supporting management of the whole portfolio: priorities, balancing, consolidated reporting and standards."
+    }
+   },
+   {
+    "no": "P3O®",
+    "en": "Programme office",
+    "ar": "مكتب البرنامج",
+    "def": {
+     "ar": "مكتب يدعم برنامجاً واحداً، دائماً أو مؤقتاً، ويعمل بمعايير المحور إن وُجد.",
+     "en": "An office supporting one programme, permanent or temporary, working to the hub's standards where there is one."
+    }
+   },
+   {
+    "no": "P3O® · ISO 21502",
+    "en": "Project office",
+    "ar": "مكتب المشروع",
+    "def": {
+     "ar": "مكتب مؤقت يدعم مشروعاً كبيراً ويُغلق بانتهائه.",
+     "en": "A temporary office supporting one large project and closed when it ends."
+    }
+   },
+   {
+    "no": "P3O®",
+    "en": "Permanent office",
+    "ar": "مكتب دائم",
+    "def": {
+     "ar": "مكتب مستمر لا يرتبط عمره بمبادرة بعينها، مثل مكتب المحفظة أو مركز التميّز.",
+     "en": "An ongoing office not tied to one initiative, such as the portfolio office or the centre of excellence."
+    }
+   },
+   {
+    "no": "P3O®",
+    "en": "Temporary office",
+    "ar": "مكتب مؤقت",
+    "def": {
+     "ar": "مكتب يُنشأ لبرنامج أو مشروع ويُغلق عند انتهائه.",
+     "en": "An office set up for a programme or project and closed when it ends."
+    }
+   },
+   {
+    "no": "P3O®",
+    "en": "Hub-and-spoke",
+    "ar": "نموذج المحور والأطراف",
+    "def": {
+     "ar": "مكتب مركزي (المحور) يملك المعايير والتقارير الموحدة، ومكاتب أطراف في البرامج أو الإدارات أو المناطق تعمل بمعاييره.",
+     "en": "A central office (hub) owning standards and consolidated reporting, with spoke offices in programmes, divisions or regions working to its standards."
+    }
+   },
+   {
+    "no": "P3O®",
+    "en": "Virtual office",
+    "ar": "المكتب الافتراضي",
+    "def": {
+     "ar": "تقديم خدمات المكتب عبر إدارات قائمة ومنسق وأدوات مشتركة، دون وحدة تنظيمية مستقلة.",
+     "en": "Delivering office services through existing functions, a coordinator and shared tools, without a standalone unit."
+    }
+   },
+   {
+    "no": "P3O®",
+    "en": "Centre of excellence (COE)",
+    "ar": "مركز التميّز",
+    "def": {
+     "ar": "الوظيفة التي تملك المنهجيات والمعايير وبناء القدرات والضمان.",
+     "en": "The function that owns methods, standards, capability building and assurance."
+    }
+   },
+   {
+    "no": "P3O®",
+    "en": "P3O sponsor",
+    "ar": "راعي المكتب",
+    "def": {
+     "ar": "عضو الإدارة العليا الذي يملك المكتب ويضمن دعمه وتفويضه.",
+     "en": "The senior executive who owns the office and secures its support and mandate."
+    }
+   },
+   {
+    "no": "P3O®",
+    "en": "Head of P3O",
+    "ar": "رئيس المكتب",
+    "def": {
+     "ar": "قائد المكتب المسؤول عن خدماته وفريقه وعلاقته بالعملاء.",
+     "en": "The leader accountable for the office's services, team and customer relationships."
+    }
+   },
+   {
+    "no": "P3O® · Ch. 2",
+    "en": "P3O value case",
+    "ar": "دراسة جدوى المكتب",
+    "def": {
+     "ar": "مبرر الاستثمار في المكتب: المشكلات والبدائل والخدمات والتكلفة والمنافع.",
+     "en": "The justification for investing in the office: problems, options, services, cost and benefits."
+    }
+   },
+   {
+    "no": "P3O® · Ch. 2",
+    "en": "Value matrix",
+    "ar": "مصفوفة القيمة",
+    "def": {
+     "ar": "ربط كل خدمة من خدمات المكتب بالمؤشر الذي تحركه والقيمة التي تدعمها.",
+     "en": "A mapping of every office service to the KPI it moves and the value it supports."
+    }
+   },
+   {
+    "no": "P3O® · Ch. 3",
+    "en": "Service catalogue",
+    "ar": "كتالوج الخدمات",
+    "def": {
+     "ar": "قائمة خدمات المكتب مع عملائها ومقدّمها ومستوى خدمتها ونطاقها.",
+     "en": "The list of office services with their customers, provider, service level and scope."
+    }
+   },
+   {
+    "no": "—",
+    "en": "Service level",
+    "ar": "مستوى الخدمة",
+    "def": {
+     "ar": "الالتزام القابل للقياس في خدمة ما، مثل زمن الاستجابة أو موعد التقرير.",
+     "en": "The measurable commitment for a service, such as response time or report deadline."
+    }
+   },
+   {
+    "no": "P3O® · Ch. 4",
+    "en": "Blueprint",
+    "ar": "المخطط التفصيلي",
+    "def": {
+     "ar": "وصف المكتب المستهدف: النموذج والخدمات والتنظيم والإجراءات والأدوات والمعلومات.",
+     "en": "A description of the target office: model, services, organization, processes, tools and information."
+    }
+   },
+   {
+    "no": "P3O® · Ch. 4",
+    "en": "Tranche",
+    "ar": "الشريحة",
+    "def": {
+     "ar": "مجموعة من أعمال التنفيذ تسلّم معاً قدرة جديدة وتنتهي بمراجعة.",
+     "en": "A group of delivery work that together delivers a new capability and ends with a review."
+    }
+   },
+   {
+    "no": "P3O® · Ch. 4",
+    "en": "Re-energizing",
+    "ar": "إعادة التنشيط",
+    "def": {
+     "ar": "إعادة ضبط مكتب قائم تراجعت قيمته: تفويضه أو خدماته أو نموذجه أو فريقه.",
+     "en": "Resetting an existing office whose value has dropped: its mandate, services, model or team."
+    }
+   },
+   {
+    "no": "P3O® · Ch. 4",
+    "en": "Health check",
+    "ar": "فحص الصحة",
+    "def": {
+     "ar": "مراجعة دورية لحالة المكتب على أبعاد ثابتة لكشف التراجع مبكراً.",
+     "en": "A periodic review of the office on fixed dimensions to catch decline early."
+    }
+   },
+   {
+    "no": "P3O® · Ch. 5",
+    "en": "Portfolio prioritization",
+    "ar": "ترتيب أولويات المحفظة",
+    "def": {
+     "ar": "ترتيب المبادرات بمعايير موزونة لتوجيه الاستثمار.",
+     "en": "Ranking initiatives with weighted criteria to direct investment."
+    }
+   },
+   {
+    "no": "P3O® · Ch. 5",
+    "en": "Portfolio balancing",
+    "ar": "موازنة المحفظة",
+    "def": {
+     "ar": "ضبط مزيج المحفظة بين المخاطر والعائد والفترة الزمنية والسعة.",
+     "en": "Adjusting the portfolio mix across risk, return, timing and capacity."
+    }
+   },
+   {
+    "no": "P3O® · Ch. 5",
+    "en": "Capacity planning",
+    "ar": "تخطيط السعة",
+    "def": {
+     "ar": "مقارنة الطلب على الموارد والمهارات بالمعروض منها حسب الفترة.",
+     "en": "Comparing demand for resources and skills with supply by period."
+    }
+   },
+   {
+    "no": "P3O® · Ch. 5",
+    "en": "Dashboard",
+    "ar": "لوحة المعلومات",
+    "def": {
+     "ar": "عرض مختصر لمؤشرات المحفظة أو البرنامج بقواعد حالة مكتوبة.",
+     "en": "A compact view of portfolio or programme indicators with written status rules."
+    }
+   },
+   {
+    "no": "—",
+    "en": "RAG status",
+    "ar": "حالة RAG",
+    "def": {
+     "ar": "أحمر/كهرماني/أخضر وفق قواعد مكتوبة مسبقاً، لا حسب تقدير الكاتب.",
+     "en": "Red/amber/green according to pre-agreed written rules, not the writer's judgement."
+    }
+   },
+   {
+    "no": "P3O®",
+    "en": "Knowledge management",
+    "ar": "إدارة المعرفة",
+    "def": {
+     "ar": "جمع الدروس والممارسات الجيدة والنماذج وتنقيحها وإعادة استخدامها.",
+     "en": "Capturing, curating and reusing lessons, good practice and templates."
+    }
+   },
+   {
+    "no": "P3O® · ISO 21502",
+    "en": "Assurance",
+    "ar": "الضمان",
+    "def": {
+     "ar": "مراجعة مستقلة تمنح الثقة بأن المبادرة تسير كما ينبغي.",
+     "en": "An independent review that gives confidence the initiative is on track."
+    }
+   },
+   {
+    "no": "P3O®",
+    "en": "Gate review",
+    "ar": "مراجعة البوابة",
+    "def": {
+     "ar": "نقطة قرار بين مراحل المبادرة تُراجع فيها الجدوى والجاهزية.",
+     "en": "A decision point between phases where viability and readiness are reviewed."
+    }
+   },
+   {
+    "no": "—",
+    "en": "Full-time equivalent (FTE)",
+    "ar": "الوظيفة المكافئة (FTE)",
+    "def": {
+     "ar": "وحدة قياس جهد العاملين؛ 1 = موظف متفرغ.",
+     "en": "A unit of staff effort; 1 = one full-time person."
+    }
+   },
+   {
+    "no": "P3O®",
+    "en": "Decision support",
+    "ar": "دعم القرار",
+    "def": {
+     "ar": "تحضير المعلومات والبدائل والتوصيات لقرارات المجلس أو لجنة الاستثمار.",
+     "en": "Preparing information, options and recommendations for board or investment committee decisions."
+    }
+   },
+   {
+    "no": "IIA",
+    "en": "Three lines",
+    "ar": "خطوط الدفاع الثلاثة",
+    "def": {
+     "ar": "تقسيم الأدوار بين الإدارة (الخط الأول) والوظائف الرقابية (الثاني) والمراجعة الداخلية (الثالث).",
+     "en": "The split of roles between management (first line), oversight functions (second) and internal audit (third)."
+    }
+   },
+   {
+    "no": "PeopleCert",
+    "en": "P3M3®",
+    "ar": "P3M3®",
+    "def": {
+     "ar": "نموذج نضج إدارة المحافظ والبرامج والمشاريع على خمسة مستويات.",
+     "en": "The five-level maturity model for portfolio, programme and project management."
+    }
+   },
+   {
+    "no": "—",
+    "en": "Capability score",
+    "ar": "درجة القدرة",
+    "def": {
+     "ar": "درجة من 0 إلى 5 تبين مدى قدرة المكتب على ممارسة ما؛ 3 خط القدرة المطلوب.",
+     "en": "A 0–5 score showing how capable the office is in a practice; 3 is the capability baseline."
+    }
+   },
+   {
+    "no": "—",
+    "en": "Validated score",
+    "ar": "الدرجة المعتمدة",
+    "def": {
+     "ar": "الدرجة النهائية التي يعتمدها المقيّم بعد المعاينة والمقابلات والمعايرة؛ هي التي تقود النتائج.",
+     "en": "The final score confirmed by the assessor after evidence, interviews and calibration; it drives the results."
+    }
+   },
+   {
+    "no": "KSA",
+    "en": "EXPRO",
+    "ar": "هيئة كفاءة الإنفاق والمشروعات الحكومية",
+    "def": {
+     "ar": "الجهة السعودية المعنية برفع كفاءة الإنفاق والمشروعات الحكومية؛ راجع أدلتها المطبقة على جهتك.",
+     "en": "The Saudi authority for spending and government project efficiency; check the guidance that applies to your entity."
+    }
+   }
+  ],
+  "scale": [
+   {
+    "level": 0,
+    "meaning": {
+     "en": "The office does not provide this capability and there is no evidence of it.",
+     "ar": "لا يقدّم المكتب هذه القدرة، ولا يوجد دليل عليها."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 1,
+    "meaning": {
+     "en": "Provided on request and dependent on particular people, without definition or consistency.",
+     "ar": "تُقدَّم عند الطلب وتعتمد على أشخاص بعينهم، دون تعريف أو اتساق."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 2,
+    "meaning": {
+     "en": "Defined, or applied for some customers or initiatives only.",
+     "ar": "معرَّفة أو مطبقة لبعض العملاء أو المبادرات فقط."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 3,
+    "meaning": {
+     "en": "Defined, documented and applied consistently across the whole scope — the capability baseline.",
+     "ar": "معرَّفة وموثقة ومطبقة باتساق على كل النطاق — هذا هو خط القدرة المطلوب."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 4,
+    "meaning": {
+     "en": "Measured with KPIs and service levels, reviewed for effectiveness, with deviations corrected in time.",
+     "ar": "تُقاس بمؤشرات ومستويات خدمة، وتُراجع فعاليتها، والانحرافات تُعالج في وقتها."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "level": 5,
+    "meaning": {
+     "en": "Built into how the organization is run and continually improved from customer feedback, lessons and benchmarking.",
+     "ar": "مدمجة في إدارة المنشأة وتتحسن باستمرار من ملاحظات العملاء والدروس والمقارنة."
+    },
+    "look": {
+     "en": "",
+     "ar": ""
+    },
+    "evidence": {
+     "en": "",
+     "ar": ""
+    }
+   }
+  ],
+  "templates": [
+   {
+    "id": "vcs",
+    "ref": "P3O® (2013) · Ch. 2 · Ch. 4",
+    "no": "P3O-01",
+    "title": {
+     "en": "P3O value case",
+     "ar": "دراسة جدوى المكتب"
+    },
+    "purpose": {
+     "en": "Justifies investing in the office or re-energizing it: problems, options, the proposed model and services, cost and measurable benefits.",
+     "ar": "تبرر الاستثمار في المكتب أو إعادة تنشيطه: المشكلات، والبدائل، والنموذج والخدمات المقترحة، والتكلفة، والمنافع القابلة للقياس."
+    },
+    "tips": [],
+    "fields": [
+     {
+      "label": {
+       "en": "Current problems",
+       "ar": "المشكلات الحالية"
+      },
+      "example": {
+       "en": "18 projects and 4 programmes worth SAR 3.2 bn run three different ways; the portfolio report takes 15 working days; 7 of 18 projects are more than 3 months late; nobody knows the capacity of protection and telecom engineers shared across programmes.",
+       "ar": "18 مشروعاً و4 برامج بقيمة 3.2 مليار ريال تُدار بثلاث طرق مختلفة؛ تقرير المحفظة يستغرق 15 يوم عمل؛ 7 من 18 مشروعاً متأخرة أكثر من 3 أشهر؛ لا أحد يعرف سعة مهندسي الحماية والاتصالات المشتركة بين البرامج."
+      }
+     },
+     {
+      "label": {
+       "en": "Options considered",
+       "ar": "البدائل المدروسة"
+      },
+      "example": {
+       "en": "(1) Do nothing; (2) one permanent office; (3) hub-and-spoke: enterprise portfolio office + programme offices for renewables, grid and digital transformation; (4) a virtual office inside the strategy function.",
+       "ar": "(1) إبقاء الوضع؛ (2) مكتب دائم واحد؛ (3) محور وأطراف: مكتب محفظة مؤسسي + مكاتب برامج الطاقة المتجددة والشبكات والتحول الرقمي؛ (4) مكتب افتراضي داخل إدارة الاستراتيجية."
+      }
+     },
+     {
+      "label": {
+       "en": "Recommendation: model & services",
+       "ar": "التوصية: النموذج والخدمات"
+      },
+      "example": {
+       "en": "Option (3) hub-and-spoke: the hub owns prioritization, reporting, standards and the centre of excellence; spokes provide planning, registers and reports for their programmes. 12 services, 10 in phase 1.",
+       "ar": "البديل (3) محور وأطراف: المحور يملك الأولويات والتقارير والمعايير ومركز التميّز؛ الأطراف تقدم التخطيط والسجلات والتقارير لبرامجها. 12 خدمة، منها 10 في المرحلة الأولى."
+      }
+     },
+     {
+      "label": {
+       "en": "Cost & resources",
+       "ar": "التكلفة والموارد"
+      },
+      "example": {
+       "en": "16 FTE (7 in the hub, 3 in the COE, 6 in the spokes); yearly cost about SAR 9.6 M (0.3% of portfolio value); an integrated tool at SAR 1.2 M one-off.",
+       "ar": "16 وظيفة مكافئة (7 في المحور، 3 في مركز التميّز، 6 في الأطراف)؛ التكلفة السنوية نحو 9.6 مليون ريال (0.3% من قيمة المحفظة)؛ أداة متكاملة 1.2 مليون ريال لمرة واحدة."
+      }
+     },
+     {
+      "label": {
+       "en": "Expected benefits (measurable)",
+       "ar": "المنافع المتوقعة (قابلة للقياس)"
+      },
+      "example": {
+       "en": "Portfolio report in 5 days instead of 15; late projects down from 7 to 3 within 18 months; estimated avoided delay cost of SAR 35 M a year; financial forecast accuracy ±5%.",
+       "ar": "تقرير المحفظة خلال 5 أيام بدلاً من 15؛ خفض المشاريع المتأخرة من 7 إلى 3 خلال 18 شهراً؛ تجنب تكلفة تأخير تقديرية 35 مليون ريال سنوياً؛ دقة التنبؤ المالي ±5%."
+      }
+     },
+     {
+      "label": {
+       "en": "Key risks",
+       "ar": "المخاطر الرئيسية"
+      },
+      "example": {
+       "en": "Programme managers resisting hub standards; difficulty hiring experienced Saudi portfolio analysts; weak data quality at the start.",
+       "ar": "مقاومة مديري البرامج لمعايير المحور؛ صعوبة استقطاب محللي محافظ سعوديين ذوي خبرة؛ ضعف جودة البيانات في البداية."
+      }
+     },
+     {
+      "label": {
+       "en": "Success measures",
+       "ar": "مقاييس النجاح"
+      },
+      "example": {
+       "en": "Customer satisfaction ≥ 4 out of 5; ≥ 95% of reports on time; ≥ 80% of benefits with an owner and KPI; method adoption ≥ 85%.",
+       "ar": "رضا العملاء ≥ 4 من 5؛ ≥ 95% من التقارير في موعدها؛ ≥ 80% من المنافع بمالك ومؤشر؛ تبني المنهجية ≥ 85%."
+      }
+     },
+     {
+      "label": {
+       "en": "Approval",
+       "ar": "الاعتماد"
+      },
+      "example": {
+       "en": "Executive sponsor: ____ — CFO: ____ — Date: ____",
+       "ar": "الراعي التنفيذي: ____ — المدير المالي: ____ — التاريخ: ____"
+      }
+     }
+    ]
+   },
+   {
+    "id": "chr",
+    "ref": "P3O® (2013) · Ch. 3 · Ch. 4",
+    "no": "P3O-02",
+    "title": {
+     "en": "Office charter & mandate",
+     "ar": "ميثاق المكتب وتفويضه"
+    },
+    "purpose": {
+     "en": "Sets the office's purpose, scope, authority, reporting line, services, KPIs and review triggers. Approved by the sponsor and published to customers.",
+     "ar": "يحدد غرض المكتب ونطاقه وصلاحياته وخط تبعيته وخدماته ومؤشراته ومحفزات مراجعته. يعتمده الراعي وينشر للعملاء."
+    },
+    "tips": [],
+    "fields": [
+     {
+      "label": {
+       "en": "Purpose",
+       "ar": "الغرض"
+      },
+      "example": {
+       "en": "Help Al-Waha choose the right initiatives, deliver them well and realize their benefits, through trusted information, common standards and expert support.",
+       "ar": "مساعدة شركة الواحة على اختيار المبادرات الصحيحة وتنفيذها بنجاح وتحقيق منافعها، عبر معلومات موثوقة ومعايير مشتركة ودعم خبير."
+      }
+     },
+     {
+      "label": {
+       "en": "Scope",
+       "ar": "النطاق"
+      },
+      "example": {
+       "en": "In scope: all capital and digital projects above SAR 5 M and their programmes. Out of scope: routine maintenance and operational purchasing.",
+       "ar": "داخل النطاق: كل المشاريع الرأسمالية والرقمية فوق 5 ملايين ريال وبرامجها. خارج النطاق: أعمال الصيانة الروتينية والمشتريات التشغيلية."
+      }
+     },
+     {
+      "label": {
+       "en": "Authority",
+       "ar": "الصلاحيات"
+      },
+      "example": {
+       "en": "Sets binding standards for reporting and gates; recommends stopping or redirecting any initiative; may request any data from initiatives; does not take investment decisions (reserved to the investment committee).",
+       "ar": "يضع المعايير الملزمة للتقارير والبوابات؛ يوصي بإيقاف أو إعادة توجيه أي مبادرة؛ يطلب أي بيانات من المبادرات؛ لا يتخذ قرارات الاستثمار (محفوظة للجنة الاستثمار)."
+      }
+     },
+     {
+      "label": {
+       "en": "Reporting line & sponsor",
+       "ar": "خط التبعية والراعي"
+      },
+      "example": {
+       "en": "Reports to the Chief Operating Officer (sponsor); secretary to the investment committee; quarterly report to the executive committee.",
+       "ar": "يتبع الرئيس التنفيذي للعمليات (الراعي)؛ أمين سر لجنة الاستثمار؛ تقرير ربعي للجنة التنفيذية."
+      }
+     },
+     {
+      "label": {
+       "en": "Model",
+       "ar": "النموذج"
+      },
+      "example": {
+       "en": "Hub-and-spoke: an enterprise portfolio office (hub) and centre of excellence, three programme offices (renewables, grid, digital transformation) and temporary offices for major projects.",
+       "ar": "محور وأطراف: مكتب محفظة مؤسسي (المحور) ومركز تميّز، وثلاثة مكاتب برامج (الطاقة المتجددة، الشبكات، التحول الرقمي)، ومكاتب مؤقتة للمشاريع الكبرى."
+      }
+     },
+     {
+      "label": {
+       "en": "Services",
+       "ar": "الخدمات"
+      },
+      "example": {
+       "en": "As per the service catalogue P3O-03: 10 services in phase 1; commercial support and advanced training in phase 2.",
+       "ar": "وفق كتالوج الخدمات P3O-03: 10 خدمات في المرحلة الأولى، والدعم التجاري والتدريب المتقدم في المرحلة الثانية."
+      }
+     },
+     {
+      "label": {
+       "en": "KPIs",
+       "ar": "المؤشرات"
+      },
+      "example": {
+       "en": "As per the office KPI scorecard P3O-07, reported quarterly to the sponsor.",
+       "ar": "وفق بطاقة مؤشرات المكتب P3O-07، تُرفع ربعياً للراعي."
+      }
+     },
+     {
+      "label": {
+       "en": "Review & re-energizing triggers",
+       "ar": "المراجعة ومحفزات إعادة التنشيط"
+      },
+      "example": {
+       "en": "Yearly charter review; yearly health check (P3O-08); re-energize if customer satisfaction falls below 3.5, fewer than 60% of KPIs are met for two quarters in a row, or the organization structure changes.",
+       "ar": "مراجعة سنوية للميثاق؛ فحص صحة سنوي (P3O-08)؛ إعادة تنشيط إذا انخفض رضا العملاء عن 3.5 أو تحققت أقل من 60% من المؤشرات لربعين متتاليين أو تغير هيكل المنشأة."
+      }
+     },
+     {
+      "label": {
+       "en": "Approval",
+       "ar": "الاعتماد"
+      },
+      "example": {
+       "en": "Executive sponsor: ____ — Head of P3O: ____ — Date: ____",
+       "ar": "الراعي التنفيذي: ____ — رئيس المكتب: ____ — التاريخ: ____"
+      }
+     }
+    ]
+   },
+   {
+    "id": "cat",
+    "ref": "P3O® (2013) · Ch. 3",
+    "no": "P3O-03",
+    "title": {
+     "en": "Service catalogue",
+     "ar": "كتالوج الخدمات"
+    },
+    "purpose": {
+     "en": "Each service with its description, customers, provider, service level and scope. The design studio also generates it automatically for the chosen model.",
+     "ar": "كل خدمة بوصفها وعملائها ومقدّمها ومستوى الخدمة ونطاقها. يُولَّد أيضاً تلقائياً في استوديو التصميم حسب النموذج المختار."
+    },
+    "tips": [],
+    "fields": []
+   },
+   {
+    "id": "rd",
+    "ref": "P3O® (2013) · Ch. 3",
+    "no": "P3O-04",
+    "title": {
+     "en": "Role descriptions",
+     "ar": "أوصاف الأدوار"
+    },
+    "purpose": {
+     "en": "Purpose, responsibilities, competences and preferred certifications for each office role, with FTE and reporting line.",
+     "ar": "الغرض والمسؤوليات والكفاءات والشهادات المفضلة لكل دور في المكتب، مع عدد الوظائف المكافئة وخط التبعية."
+    },
+    "tips": [],
+    "fields": []
+   },
+   {
+    "id": "raci",
+    "ref": "P3O® (2013) · Ch. 3",
+    "no": "P3O-05",
+    "title": {
+     "en": "Hub–spoke RACI",
+     "ar": "مصفوفة RACI بين المحور والأطراف"
+    },
+    "purpose": {
+     "en": "Who is Responsible, Accountable, Consulted and Informed for the main office activities across the hub, spokes, centre of excellence, sponsor and initiative manager. One Accountable per activity.",
+     "ar": "من المسؤول (R) ومن المساءل (A) ومن يُستشار (C) ومن يُبلَّغ (I) في أنشطة المكتب الرئيسية بين المحور والأطراف ومركز التميّز والراعي ومدير المبادرة. مساءل واحد لكل نشاط."
+    },
+    "tips": [],
+    "fields": []
+   },
+   {
+    "id": "dsh",
+    "ref": "P3O® (2013) · Ch. 5",
+    "no": "P3O-06",
+    "title": {
+     "en": "Portfolio dashboard specification",
+     "ar": "مواصفات لوحة المحفظة"
+    },
+    "purpose": {
+     "en": "What each dashboard shows, to whom, where its data comes from, how often it refreshes, and the written RAG rule for each measure.",
+     "ar": "ما تعرضه كل لوحة ولمن ومن أين تأتي بياناتها وكم مرة تُحدَّث، وقاعدة RAG المكتوبة لكل مقياس."
+    },
+    "tips": [],
+    "fields": []
+   },
+   {
+    "id": "kpi",
+    "ref": "P3O® (2013) · Ch. 2 · Ch. 5",
+    "no": "P3O-07",
+    "title": {
+     "en": "Office KPI scorecard",
+     "ar": "بطاقة مؤشرات المكتب"
+    },
+    "purpose": {
+     "en": "The office's own KPIs with baseline, target and actual. Achievement and status calculate automatically (green ≥ 100% of the distance to target, amber ≥ 60%).",
+     "ar": "مؤشرات أداء المكتب نفسه بخط الأساس والمستهدف والفعلي. تُحسب نسبة الإنجاز والحالة تلقائياً (أخضر ≥ 100% من المسافة للمستهدف، كهرماني ≥ 60%)."
+    },
+    "tips": [],
+    "fields": []
+   },
+   {
+    "id": "hc",
+    "ref": "P3O® (2013) · Ch. 4",
+    "no": "P3O-08",
+    "title": {
+     "en": "Office health check & re-energizing plan",
+     "ar": "فحص صحة المكتب وخطة إعادة التنشيط"
+    },
+    "purpose": {
+     "en": "A periodic check of the office's health on fixed dimensions, with a re-energizing action, owner and month for every amber or red dimension.",
+     "ar": "تقييم دوري لصحة المكتب على أبعاد ثابتة، مع إجراء إعادة تنشيط ومالك وشهر لكل بعد كهرماني أو أحمر."
+    },
+    "tips": [],
+    "fields": []
+   }
+  ],
+  "faq": [
+   {
+    "id": "what",
+    "q": {
+     "en": "What is P3O®?",
+     "ar": "ما هو P3O®؟"
+    },
+    "a": {
+     "en": "**P3O®** (Portfolio, Programme and Project Offices) is best-practice guidance on designing the support structures that help an organization choose the right change initiatives and deliver them well. It covers:\n\n- **Why** an organization needs an office and its value.\n- **Designing the model**: permanent office, hub-and-spoke, virtual, temporary offices, plus services and roles.\n- **Implementing or re-energizing** through a life cycle.\n- **Operating** it: tools and techniques.\n\nThe current guidance is the 2nd edition (2013). Details are in [[tab:refs]].",
+     "ar": "**P3O®** (مكاتب المحافظ والبرامج والمشاريع) إرشادات أفضل ممارسة لتصميم هياكل الدعم التي تساعد المنشأة على اختيار مبادرات التغيير الصحيحة وتنفيذها بنجاح. تغطي:\n\n- **لماذا** تحتاج المنشأة مكتباً وقيمته.\n- **تصميم النموذج**: مكتب دائم، محور وأطراف، افتراضي، مكاتب مؤقتة، والخدمات والأدوار.\n- **التنفيذ أو إعادة التنشيط** عبر دورة حياة.\n- **التشغيل**: الأدوات والتقنيات.\n\nالإصدار الساري الثاني (2013). التفاصيل في [[tab:refs]]."
+    }
+   },
+   {
+    "id": "cert",
+    "q": {
+     "en": "Can our office or organization be P3O certified?",
+     "ar": "هل يمكن اعتماد مكتبنا أو منشأتنا على P3O؟"
+    },
+    "a": {
+     "en": "**No.** P3O® is guidance, not a requirements standard, and there is no official certification or accreditation of an office or organization against it.\n\n- Certifications are for **individuals only**: P3O® Foundation and P3O® Practitioner from PeopleCert (offered today as PRINCE2® Project, Programme, Portfolio Office Management).\n- This tool's result is an **internal self-assessment** of office capability, not an official rating.",
+     "ar": "**لا.** P3O® إرشادات وليست مواصفة متطلبات، ولا يوجد إشهاد أو اعتماد رسمي لمكتب أو منشأة عليها.\n\n- الشهادات المتاحة **للأفراد فقط**: P3O® Foundation وP3O® Practitioner من PeopleCert (تُعرض اليوم باسم PRINCE2® Project, Programme, Portfolio Office Management).\n- نتيجة هذه الأداة **تقييم ذاتي داخلي** لقدرة المكتب، وليست تصنيفاً رسمياً."
+    }
+   },
+   {
+    "id": "ed",
+    "q": {
+     "en": "What is the current P3O edition?",
+     "ar": "ما الإصدار الحالي من P3O؟"
+    },
+    "a": {
+     "en": "The **2nd edition (2013)**, published by TSO for AXELOS, replacing the 2008 first edition. After **PeopleCert** acquired AXELOS on 1 July 2021 the manual was reissued by PeopleCert and is sold as the 'Latest Version'. As of 30 September 2026 we found no announcement of a third edition with new content.",
+     "ar": "الإصدار **الثاني (2013)** الصادر عن TSO لصالح AXELOS، وقد حل محل الإصدار الأول (2008). بعد استحواذ **PeopleCert** على AXELOS في 1 يوليو 2021 أُعيد إصدار الدليل من PeopleCert ويُعرض باسم «Latest Version». لم نجد حتى 30 سبتمبر 2026 إعلاناً عن إصدار ثالث بمحتوى جديد."
+    }
+   },
+   {
+    "id": "p3m3",
+    "q": {
+     "en": "How does this differ from P3M3 and ISO 21500?",
+     "ar": "ما الفرق بين هذه الأداة وP3M3 وISO 21500؟"
+    },
+    "a": {
+     "en": "Three angles on the same system:\n\n- **P3M3®** measures the **maturity** of portfolio, programme and project management across the organization.\n- **ISO 21500** measures **conformity** of the practices with international guidance.\n- **P3O®** (this tool) measures the **capability of the office** that supports those practices: its value, model, services, roles, tools and governance.\n\nThe other two tools are always suggested in [[tab:results]], and the 'PMO Excellence Assessment' combines all three into one index and one improvement roadmap.",
+     "ar": "ثلاث زوايا لنفس المنظومة:\n\n- **P3M3®** يقيس **نضج** إدارة المحافظ والبرامج والمشاريع في المنشأة كلها.\n- **ISO 21500** يقيس **مطابقة** الممارسات مع الإرشادات الدولية.\n- **P3O®** (هذه الأداة) يقيس **قدرة المكتب** الذي يدعم تلك الممارسات: قيمته ونموذجه وخدماته وأدواره وأدواته وحوكمته.\n\nالأداتان الأخريان مقترحتان دائماً في [[tab:results]]، ويجمعها «تقييم التميّز في مكاتب إدارة المشاريع» في مؤشر واحد وخارطة تحسين واحدة."
+    }
+   },
+   {
+    "id": "model",
+    "q": {
+     "en": "Which office model suits us?",
+     "ar": "أي نموذج مكتب يناسبنا؟"
+    },
+    "a": {
+     "en": "It depends on the **size, spread and maturity** of the portfolio:\n\n- **Temporary offices**: one large programme or a few initiatives.\n- **Virtual office**: a small portfolio in a mature organization with strong functions.\n- **Single permanent office**: a mid-sized portfolio and few business units.\n- **Hub-and-spoke**: a large portfolio or several divisions and regions.\n\nEnter the portfolio data in [[tab:profile]] to see the fit score of each model in [[tab:results]] and the [[tab:studio]].",
+     "ar": "يعتمد على **حجم المحفظة وانتشارها ونضجها**:\n\n- **مكاتب مؤقتة**: برنامج كبير واحد أو مبادرات قليلة.\n- **مكتب افتراضي**: محفظة صغيرة في منشأة ناضجة بوظائف قوية.\n- **مكتب دائم واحد**: محفظة متوسطة وعدد محدود من وحدات الأعمال.\n- **محور وأطراف**: محفظة كبيرة أو إدارات ومناطق متعددة.\n\nأدخل بيانات المحفظة في [[tab:profile]] لترى درجة الملاءمة لكل نموذج في [[tab:results]] و[[tab:studio]]."
+    }
+   },
+   {
+    "id": "fit",
+    "q": {
+     "en": "How is model fit calculated?",
+     "ar": "كيف تُحسب ملاءمة النموذج؟"
+    },
+    "a": {
+     "en": "An independent, transparent rule (not from the manual) combining **portfolio size** (projects + 3 × programmes, and portfolio value), the **number of business units or regions** running change, and **maturity** (your average result here). Each model gets a score out of 100; the highest is recommended. Compare it with your current office and with the model you pick in the studio.",
+     "ar": "قاعدة مستقلة وشفافة (ليست من الدليل) تجمع أربعة عوامل: **حجم المحفظة** (المشاريع + 3 × البرامج، وقيمة المحفظة)، و**عدد وحدات الأعمال أو المناطق** التي تدير تغييراً، و**النضج** (متوسط نتيجتك هنا). كل نموذج يأخذ درجة من 100، والأعلى هو الموصى به. قارن النموذج الموصى به بمكتبكم الحالي وبالنموذج الذي تختاره في الاستوديو."
+    }
+   },
+   {
+    "id": "coe",
+    "q": {
+     "en": "What is the centre of excellence?",
+     "ar": "ما هو مركز التميّز في المكتب؟"
+    },
+    "a": {
+     "en": "A function that owns **methods, standards, capability building and assurance**. It may be a team in the hub, a single role in a small organization, or shared across functions in a virtual model. What matters is that the method has a **named owner** and a yearly work plan.",
+     "ar": "وظيفة تملك **المنهجيات والمعايير وبناء القدرات والضمان**. قد تكون فريقاً داخل المحور، أو دوراً واحداً في منشأة صغيرة، أو موزعة بين إدارات في النموذج الافتراضي. المهم أن يكون للمنهجية **مالك مسمى** وخطة عمل سنوية."
+    }
+   },
+   {
+    "id": "vm",
+    "q": {
+     "en": "What is the value matrix?",
+     "ar": "ما مصفوفة القيمة؟"
+    },
+    "a": {
+     "en": "A table linking **each office service** to the **KPI** it moves and the **value** it supports (e.g. reporting service → reports on time → faster decisions). The tool generates it automatically in the [[tab:studio]] for in-scope services.",
+     "ar": "جدول يربط **كل خدمة** من خدمات المكتب **بالمؤشر** الذي تحركه و**القيمة** التي تدعمها للمنشأة (مثلاً: خدمة التقارير ← تقارير في موعدها ← قرارات أسرع). تولّدها الأداة تلقائياً في [[tab:studio]] للخدمات داخل النطاق."
+    }
+   },
+   {
+    "id": "size",
+    "q": {
+     "en": "How many staff does the office need?",
+     "ar": "كم موظفاً يحتاج المكتب؟"
+    },
+    "a": {
+     "en": "The studio calculates **FTE** from the portfolio size tier (small, medium, large, very large) and the chosen model: virtual counts roles at half-time inside functions, temporary has no permanent hub. Rule of thumb: office cost between **1% and 3%** of yearly portfolio value. The figures are a starting point for discussion, not a norm.",
+     "ar": "يحسب الاستوديو **الوظائف المكافئة** حسب فئة حجم المحفظة (صغيرة، متوسطة، كبيرة، كبيرة جداً) والنموذج المختار: الافتراضي يحسب الأدوار بنصف وقت داخل الإدارات، والمؤقت دون محور دائم. قاعدة عملية: تكلفة المكتب بين **1% و3%** من قيمة المحفظة السنوية. الأرقام نقطة بداية للنقاش وليست معياراً."
+    }
+   },
+   {
+    "id": "reen",
+    "q": {
+     "en": "When should we re-energize the office?",
+     "ar": "متى نعيد تنشيط المكتب؟"
+    },
+    "a": {
+     "en": "When **written triggers** appear, such as falling customer satisfaction, most office KPIs missed for two quarters, a change in structure or strategy, or the sponsor leaving. Start with a health check (template P3O-08), then reset the mandate, services or model. Practice I5 in the [[tab:assess]].",
+     "ar": "عند ظهور **محفزات مكتوبة** مثل: انخفاض رضا العملاء، أو عدم تحقق معظم مؤشرات المكتب لربعين، أو تغير هيكل المنشأة أو استراتيجيتها، أو رحيل الراعي. ابدأ بفحص صحة (نموذج P3O-08) ثم أعد ضبط التفويض أو الخدمات أو النموذج. الممارسة I5 في [[tab:assess]]."
+    }
+   },
+   {
+    "id": "scale",
+    "q": {
+     "en": "What does the 0–5 scale mean?",
+     "ar": "ماذا يعني مقياس 0–5؟"
+    },
+    "a": {
+     "en": "0 **Absent** · 1 **Ad hoc** · 2 **Partial** · 3 **Established** (the capability baseline) · 4 **Managed & effective** · 5 **Optimized**.\n\nCapability % = average score ÷ 5. A practice counts as established at 3 or above.",
+     "ar": "0 **غير موجودة** · 1 **عشوائية** · 2 **جزئية** · 3 **قائمة ومُعرَّفة** (خط القدرة) · 4 **مُدارة وفعّالة** · 5 **راسخة وتتحسن**.\n\nنسبة القدرة = متوسط الدرجات ÷ 5. الممارسة تُعد قائمة عند 3 فأكثر."
+    }
+   },
+   {
+    "id": "three",
+    "q": {
+     "en": "Why three scores per practice?",
+     "ar": "لماذا ثلاث درجات لكل ممارسة؟"
+    },
+    "a": {
+     "en": "- **Self**: what the office team believes.\n- **Evidence**: the highest level the sampled evidence ladder proves (levels 1→5 in order).\n- **Validated**: the assessor's decision after evidence, customer interviews and calibration — **this drives the results**.\n\nUnvalidated practices use the evidence score as a flagged provisional result; self scores never enter the results.",
+     "ar": "- **الذاتي**: ما يعتقده فريق المكتب.\n- **بالأدلة**: أعلى مستوى يثبته سُلّم الأدلة المعاينة (المستويات 1→5 بالترتيب).\n- **المعتمد**: قرار المقيّم بعد المعاينة ومقابلة العملاء والمعايرة — **وهو الذي يقود النتائج**.\n\nغير المعتمد يستخدم درجة الأدلة كنتيجة مؤقتة معلَّمة؛ والذاتي لا يدخل النتائج أبداً."
+    }
+   },
+   {
+    "id": "evidence",
+    "q": {
+     "en": "What counts as evidence?",
+     "ar": "ما الذي يُعد دليلاً؟"
+    },
+    "a": {
+     "en": "Approved documents (charter, service catalogue, role descriptions), real records (monthly reports, decision log, scorecard, survey results), system data, and **interviews with the office's customers**, not only its staff. Evidence must be **in use**, not just exist.",
+     "ar": "وثائق معتمدة (الميثاق، كتالوج الخدمات، أوصاف الأدوار)، وسجلات فعلية (تقارير شهرية، سجل قرارات، بطاقة مؤشرات، نتائج استبيان)، وبيانات أنظمة، و**مقابلات مع عملاء المكتب** لا مع فريقه فقط. الدليل يجب أن يكون **مستخدماً** لا موجوداً فقط."
+    }
+   },
+   {
+    "id": "target",
+    "q": {
+     "en": "How are targets set?",
+     "ar": "كيف تُحدد المستهدفات؟"
+    },
+    "a": {
+     "en": "Each office model has suggested targets per area (for example hub-and-spoke aims for 4 on services and roles; temporary offices don't need a portfolio office). Pick the target model in [[tab:profile]] or the [[tab:studio]], use the preset buttons in [[tab:results]], then adjust any practice by hand.",
+     "ar": "لكل نموذج مكتب مستهدفات مقترحة لكل مجال (مثلاً: المحور والأطراف يستهدف 4 في الخدمات والأدوار؛ المكاتب المؤقتة لا تحتاج مكتب محفظة). اختر النموذج المستهدف في [[tab:profile]] أو [[tab:studio]]، واستخدم أزرار الإعداد المسبق في [[tab:results]]، ثم عدّل أي ممارسة يدوياً."
+    }
+   },
+   {
+    "id": "start",
+    "q": {
+     "en": "Where do we start?",
+     "ar": "من أين نبدأ؟"
+    },
+    "a": {
+     "en": "1. Secure the **sponsor and mandate** (V4).\n2. Assess current capability with the three scores.\n3. Choose the **model** and generate the design in the [[tab:studio]].\n4. Deliver **three quick wins** within 90 days (one portfolio register, a monthly dashboard, RAG rules).\n\nReady templates are in [[tab:templates]].",
+     "ar": "1. ثبّت **الراعي والتفويض** (V4).\n2. قيّم القدرة الحالية بالدرجات الثلاث.\n3. اختر **النموذج** وولّد التصميم في [[tab:studio]].\n4. سلّم **ثلاثة مكاسب سريعة** خلال 90 يوماً (سجل محفظة واحد، لوحة شهرية، قواعد RAG).\n\nالنماذج الجاهزة في [[tab:templates]]."
+    }
+   },
+   {
+    "id": "saudi",
+    "q": {
+     "en": "What is the Saudi context?",
+     "ar": "ما السياق السعودي؟"
+    },
+    "a": {
+     "en": "Government entities link portfolios to **Vision 2030 realization programme** KPIs, and many have realization or strategy management offices acting as a hub; **EXPRO** works on spending and project efficiency — check the guidance that applies to your entity. In the private sector, benefits often link to localization and local content. The Saudi example is loaded in every template.",
+     "ar": "في الجهات الحكومية تُربط المحافظ بمؤشرات **برامج تحقيق رؤية 2030**، وكثير من الجهات لديها مكاتب تحقيق الرؤية أو مكاتب إدارة استراتيجية تعمل كمحور؛ وتعمل **هيئة كفاءة الإنفاق والمشروعات الحكومية (EXPRO)** على كفاءة الإنفاق والمشروعات — راجع أدلتها المطبقة على جهتك. في القطاع الخاص يبرز ربط المنافع بالتوطين والمحتوى المحلي. المثال السعودي محمّل في كل النماذج."
+    }
+   },
+   {
+    "id": "guideuse",
+    "q": {
+     "en": "What is in the 'P3O explained' and 'Office design guide' tabs?",
+     "ar": "ماذا أجد في تبويبي «شرح P3O» و«دليل تصميم المكتب»؟"
+    },
+    "a": {
+     "en": "- **P3O explained**: what the guidance is, why an organization needs it, the editions and certificates, and how it relates to P3M3 and ISO 21500.\n- **Office design guide**: the four models, the services and roles, implementation and governance, with each of the 42 practices explained.\n\nThe explanation is interpretive, in independent wording, and changes no answer or result in the tool.",
+     "ar": "- **شرح P3O**: ما هي الإرشادات، ولماذا تحتاجها المنشأة، والنسخ والشهادات، وعلاقتها بـ P3M3 وISO 21500.\n- **دليل تصميم المكتب**: النماذج الأربعة، والخدمات والأدوار، والتنفيذ والحوكمة، مع شرح كل ممارسة من الـ42.\n\nالشرح تفسيري وبكلمات مستقلة، ولا يغيّر أي إجابة أو نتيجة في الأداة."
+    }
+   },
+   {
+    "id": "hubspoke",
+    "q": {
+     "en": "How does a hub-and-spoke office work in practice?",
+     "ar": "كيف يعمل نموذج المحور والأطراف عملياً؟"
+    },
+    "a": {
+     "en": "There is a **hub office** at portfolio level that sets the standards and method and gathers reports, and **spoke offices** for business units or regions that deliver services locally within that framework. It suits large, spread-out organizations. Practices M2 and M3 explain it in the design guide, and the assessment tab scores them.",
+     "ar": "يوجد **مكتب محور** على مستوى المحفظة يضع المعايير والمنهجية ويجمع التقارير، و**مكاتب أطراف** لوحدات الأعمال أو المناطق تنفّذ الخدمات محلياً داخل هذا الإطار. يناسب المنشآت الكبيرة المتفرقة. الممارستان M2 وM3 تشرحانه في دليل التصميم، ويقيّمهما تبويب التقييم."
+    }
+   },
+   {
+    "id": "assesslink",
+    "q": {
+     "en": "What does the 'Assess this practice' button do?",
+     "ar": "ما الذي يفعله زر «قيّم هذه الممارسة»؟"
+    },
+    "a": {
+     "en": "It takes you to the same question in the office assessment, opens its area and brings the practice into view. It changes no answer, score or result.",
+     "ar": "ينقلك إلى السؤال نفسه داخل تقييم المكتب، ويفتح مجاله، ويضع الممارسة في الواجهة. لا يغيّر أي إجابة أو درجة أو نتيجة."
+    }
+   },
+   {
+    "id": "buy",
+    "q": {
+     "en": "Where do I buy the P3O guidance and training?",
+     "ar": "أين أشتري إرشادات P3O والتدريب عليها؟"
+    },
+    "a": {
+     "en": "From PeopleCert or its accredited training partners. Certificates are for individuals only, and courses are now listed as PRINCE2® Project, Programme, Portfolio Office Management. Prices and links change, so check them before buying.",
+     "ar": "من PeopleCert أو من شركائه المعتمدين في التدريب. الشهادات للأفراد فقط، وتُعرض الدورات اليوم باسم PRINCE2® Project, Programme, Portfolio Office Management. الأسعار والروابط تتغير، فتحقق منها قبل الشراء."
+    }
+   },
+   {
+    "id": "dur",
+    "q": {
+     "en": "How long will the improvement plan take?",
+     "ar": "كم تستغرق خارطة التحسين؟"
+    },
+    "a": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "id": "myres",
+    "q": {
+     "en": "Explain my result and next steps",
+     "ar": "اشرح نتيجتي والخطوات التالية"
+    },
+    "a": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "id": "gaps",
+    "q": {
+     "en": "Where are the gaps between the three scores?",
+     "ar": "أين الفجوات بين الدرجات الثلاث؟"
+    },
+    "a": {
+     "en": "",
+     "ar": ""
+    }
+   },
+   {
+    "id": "data",
+    "q": {
+     "en": "Where is my data saved?",
+     "ar": "أين تُحفظ بياناتي؟"
+    },
+    "a": {
+     "en": "In **your browser only** (local storage private to this page). Nothing is sent to a server. Export CSV or PDF to keep or share a copy.",
+     "ar": "في **متصفحك فقط** (تخزين محلي خاص بهذه الصفحة). لا تُرسل إلى أي خادم. صدّر CSV أو PDF للاحتفاظ بنسخة أو مشاركتها."
+    }
+   },
+   {
+    "id": "pdf",
+    "q": {
+     "en": "How do I export reports?",
+     "ar": "كيف أصدّر التقارير؟"
+    },
+    "a": {
+     "en": "Every tab has a branded **PDF** button and a **CSV** button. The full assessment report is in [[tab:results]], the office design pack in the [[tab:studio]], the roadmap in [[tab:roadmap]] and each template in [[tab:templates]].",
+     "ar": "كل تبويب فيه زر **PDF** بعلامة الأكاديمية وزر **CSV**. تقرير التقييم الكامل في [[tab:results]]، وحزمة تصميم المكتب في [[tab:studio]]، والخارطة في [[tab:roadmap]]، وكل نموذج في [[tab:templates]]."
+    }
+   }
+  ],
+  "levers": [
+   {
+    "title": {
+     "en": "Start with the customer, not the structure",
+     "ar": "ابدأ بالعميل لا بالهيكل"
+    },
+    "text": {
+     "en": "Offices that start from their customers' problems and measure their satisfaction last longer than those that start with structure and standards.",
+     "ar": "المكاتب التي تبدأ بمشكلات عملائها وتقيس رضاهم تعيش أطول من التي تبدأ بالهيكل والمعايير."
+    }
+   },
+   {
+    "title": {
+     "en": "Fewer services, done well",
+     "ar": "خدمات أقل بجودة أعلى"
+    },
+    "text": {
+     "en": "Ten services with measured service levels beat twenty on paper; launch the rest in phase 2.",
+     "ar": "عشر خدمات بمستويات خدمة مقاسة أنفع من عشرين خدمة على الورق؛ أطلق الباقي في مرحلة ثانية."
+    }
+   },
+   {
+    "title": {
+     "en": "The office supports decisions, it doesn't take them",
+     "ar": "المكتب يدعم القرار ولا يتخذه"
+    },
+    "text": {
+     "en": "Being clear that decisions belong to the investment committee and sponsor avoids the 'police' image and builds trust.",
+     "ar": "وضوح أن القرار للجنة الاستثمار والراعي يمنع صورة «الرقيب» ويبني الثقة."
+    }
+   },
+   {
+    "title": {
+     "en": "Re-energize before it breaks",
+     "ar": "أعد التنشيط قبل الانهيار"
+    },
+    "text": {
+     "en": "A yearly health check and written triggers catch decline before management decides to close the office.",
+     "ar": "فحص صحة سنوي ومحفزات مكتوبة تكشف التراجع قبل أن تقرر الإدارة إغلاق المكتب."
+    }
+   }
+  ],
+  "pitfalls": [
+   {
+    "title": {
+     "en": "A reporting-only office",
+     "ar": "مكتب تقارير فقط"
+    },
+    "text": {
+     "en": "If all the office does is collect reports it will be seen as a cost. Add decision support, facilitation and capacity.",
+     "ar": "إذا كان كل ما يقدمه المكتب جمع التقارير فسيُرى تكلفة. أضف دعم القرار والتيسير والسعة."
+    }
+   },
+   {
+    "title": {
+     "en": "Copying another organization's model",
+     "ar": "نسخ نموذج منشأة أخرى"
+    },
+    "text": {
+     "en": "Choose the model for your portfolio's size, spread and maturity, not because it worked elsewhere.",
+     "ar": "اختر النموذج وفق حجم محفظتك وانتشارها ونضجها، لا لأنه نجح عند غيرك."
+    }
+   },
+   {
+    "title": {
+     "en": "Inflated self-assessment",
+     "ar": "تضخيم التقييم الذاتي"
+    },
+    "text": {
+     "en": "Rely only on evidence-validated scores; a self-vs-validated gap of 2 or more calls for a calibration workshop.",
+     "ar": "لا تعتمد إلا الدرجة المعتمدة بالأدلة؛ فجوة ≥ 2 بين الذاتي والمعتمد تستدعي ورشة معايرة."
+    }
+   },
+   {
+    "title": {
+     "en": "Hiring before defining services",
+     "ar": "تعيين الموظفين قبل تحديد الخدمات"
+    },
+    "text": {
+     "en": "Define the service catalogue and service levels first, then derive the FTE from them.",
+     "ar": "حدد كتالوج الخدمات ومستوياتها أولاً، ثم احسب الوظائف المكافئة منها."
+    }
+   },
+   {
+    "title": {
+     "en": "Confusing individual and organizational certification",
+     "ar": "الخلط بين شهادة الأفراد وشهادة المنشأة"
+    },
+    "text": {
+     "en": "P3O certifications are for individuals only; don't present this tool's result as a 'P3O accreditation' of the office.",
+     "ar": "شهادات P3O للأفراد فقط؛ لا تقدّم نتيجة هذه الأداة على أنها «اعتماد P3O» للمكتب."
+    }
+   }
+  ],
+  "checklist": [
+   {
+    "group": {
+     "en": "Scope & mandate",
+     "ar": "النطاق والتفويض"
+    },
+    "items": [
+     {
+      "en": "A named executive sponsor has agreed to the assessment",
+      "ar": "راعٍ تنفيذي مسمى وموافق على التقييم"
+     },
+     {
+      "en": "A draft office charter or mandate is available",
+      "ar": "مسودة ميثاق أو تفويض للمكتب متاحة"
+     },
+     {
+      "en": "Every existing office is listed (project, programme, portfolio, COE)",
+      "ar": "كل المكاتب القائمة محصورة (مشاريع، برامج، محفظة، مركز تميّز)"
+     },
+     {
+      "en": "Portfolio size data is available (projects, programmes, value, business units)",
+      "ar": "بيانات حجم المحفظة متاحة (مشاريع، برامج، قيمة، وحدات أعمال)"
+     },
+     {
+      "en": "Interview and evidence sample defined for every area",
+      "ar": "عيّنة المقابلات والأدلة محددة لكل مجال"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "Design",
+     "ar": "التصميم"
+    },
+    "items": [
+     {
+      "en": "The four model options analysed and the choice justified in writing",
+      "ar": "بدائل النموذج الأربعة محللة ومبرر الاختيار مكتوب"
+     },
+     {
+      "en": "Service catalogue agreed with the main customers",
+      "ar": "كتالوج الخدمات متفق عليه مع العملاء الرئيسيين"
+     },
+     {
+      "en": "Organization and FTE approved",
+      "ar": "التنظيم والوظائف المكافئة معتمدة"
+     },
+     {
+      "en": "Value matrix and office KPIs approved",
+      "ar": "مصفوفة القيمة ومؤشرات المكتب معتمدة"
+     },
+     {
+      "en": "Hub–spoke RACI agreed",
+      "ar": "RACI بين المحور والأطراف متفق عليها"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "Implementation",
+     "ar": "التنفيذ"
+    },
+    "items": [
+     {
+      "en": "An implementation plan with tranches and milestones",
+      "ar": "خطة تنفيذ بشرائح ومعالم"
+     },
+     {
+      "en": "Three quick wins set for the first 90 days",
+      "ar": "ثلاثة مكاسب سريعة محددة لأول 90 يوماً"
+     },
+     {
+      "en": "The tool and portal decision is made",
+      "ar": "قرار الأداة والبوابة متخذ"
+     },
+     {
+      "en": "A communication and stakeholder engagement plan",
+      "ar": "خطة اتصال وإشراك لأصحاب المصلحة"
+     },
+     {
+      "en": "Transition criteria and service levels defined",
+      "ar": "معايير الانتقال للتشغيل ومستويات الخدمة محددة"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "Sustaining the office",
+     "ar": "الاستدامة"
+    },
+    "items": [
+     {
+      "en": "The office scorecard is reported quarterly",
+      "ar": "بطاقة مؤشرات المكتب تُرفع ربعياً"
+     },
+     {
+      "en": "A yearly customer satisfaction survey",
+      "ar": "استبيان رضا العملاء سنوي"
+     },
+     {
+      "en": "A yearly health check is scheduled",
+      "ar": "فحص صحة سنوي مجدول"
+     },
+     {
+      "en": "Re-energizing triggers written into the charter",
+      "ar": "محفزات إعادة التنشيط مكتوبة في الميثاق"
+     },
+     {
+      "en": "Lessons are turned into service and method updates",
+      "ar": "الدروس تُحوَّل إلى تحديثات في الخدمات والمنهجية"
+     }
+    ]
+   },
+   {
+    "group": {
+     "en": "Assessment integrity (three scores)",
+     "ar": "نزاهة التقييم (الدرجات الثلاث)"
+    },
+    "items": [
+     {
+      "en": "Evidence sampled for every practice (documents, records, systems)",
+      "ar": "أدلة معاينة لكل ممارسة (وثائق، سجلات، أنظمة)"
+     },
+     {
+      "en": "Interviews with office customers: executives and programme and project managers",
+      "ar": "مقابلات مع عملاء المكتب: تنفيذيون ومديرو برامج ومشاريع"
+     },
+     {
+      "en": "The assessor is independent of the office being assessed",
+      "ar": "المقيّم مستقل عن المكتب المقيَّم"
+     },
+     {
+      "en": "An evidence note recorded for every validated practice",
+      "ar": "ملاحظة دليل مسجلة لكل ممارسة معتمدة"
+     },
+     {
+      "en": "A calibration workshop to validate the final scores",
+      "ar": "ورشة معايرة لاعتماد الدرجات النهائية"
+     }
+    ]
+   }
+  ],
+  "references": [
+   {
+    "code": "P3O® — 2nd edition (2013)",
+    "kind": "core",
+    "title": {
+     "en": "Portfolio, Programme and Project Offices",
+     "ar": "مكاتب المحافظ والبرامج والمشاريع (Portfolio, Programme and Project Offices)"
+    },
+    "status": {
+     "en": "Current guidance",
+     "ar": "الإرشاد الساري"
+    },
+    "note": {
+     "en": "Second edition, published by TSO for AXELOS in September 2013 (232 pages, ISBN 978-0-11-331422-5), replacing the 2008 first edition from OGC. It covers why an organization needs an office, how to design its model, how to implement or re-energize it and how to operate it. This tool is built on the structure of those themes.",
+     "ar": "الإصدار الثاني، نشرته TSO لصالح AXELOS في سبتمبر 2013 (232 صفحة، ISBN 978-0-11-331422-5)، وحل محل الإصدار الأول الصادر عن OGC عام 2008. يشرح لماذا تحتاج المنشأة مكتباً، وكيف تصمم نموذجه، وكيف تنفذه أو تعيد تنشيطه، وكيف تشغّله. هذه الأداة مبنية على هيكل هذه الموضوعات."
+    }
+   },
+   {
+    "code": "P3O® manual — PeopleCert",
+    "kind": "core",
+    "title": {
+     "en": "PeopleCert reissue of the manual",
+     "ar": "إعادة إصدار الدليل من PeopleCert"
+    },
+    "status": {
+     "en": "Available · 'latest version'",
+     "ar": "متاح · «أحدث إصدار»"
+    },
+    "note": {
+     "en": "Listed by booksellers as 'P3O® – Portfolio, Programmes and Project Offices (Latest Version)' with PeopleCert as publisher (ISBN 978-9925-60037-3), following PeopleCert's acquisition of AXELOS. As of 30 September 2026 we found no announcement of a third edition with new content; check the PeopleCert store before buying.",
+     "ar": "تعرضه منافذ البيع باسم «P3O® – Portfolio, Programmes and Project Offices (Latest Version)» بناشر PeopleCert (ISBN 978-9925-60037-3)، بعد استحواذ PeopleCert على AXELOS. لم نجد حتى 30 سبتمبر 2026 إعلاناً عن إصدار ثالث بمحتوى جديد؛ تحقق من متجر PeopleCert قبل الشراء."
+    }
+   },
+   {
+    "code": "P3O® Foundation",
+    "kind": "cert",
+    "title": {
+     "en": "Individual certification — Foundation",
+     "ar": "شهادة الأفراد — المستوى التأسيسي"
+    },
+    "status": {
+     "en": "Individuals only",
+     "ar": "للأفراد فقط"
+    },
+    "note": {
+     "en": "Offered by PeopleCert today under the title 'PRINCE2® Project, Programme, Portfolio Office Management' (formerly P3O). 70 multiple-choice questions, 60 minutes, closed book, 50% pass mark. Valid for 3 years, renewed with 60 CPD points.",
+     "ar": "تقدمها PeopleCert اليوم تحت اسم «PRINCE2® Project, Programme, Portfolio Office Management» (المعروفة سابقاً بـP3O). 70 سؤال اختيار من متعدد، 60 دقيقة، كتاب مغلق، النجاح 50%. صالحة 3 سنوات وتُجدَّد بـ60 نقطة تطوير مهني."
+    }
+   },
+   {
+    "code": "P3O® Practitioner",
+    "kind": "cert",
+    "title": {
+     "en": "Individual certification — Practitioner",
+     "ar": "شهادة الأفراد — مستوى الممارس"
+    },
+    "status": {
+     "en": "Individuals only",
+     "ar": "للأفراد فقط"
+    },
+    "note": {
+     "en": "Requires the Foundation. Four multi-part scenario questions (80 marks), 150 minutes, open book, 50% pass mark. Valid for 3 years.",
+     "ar": "تتطلب اجتياز المستوى التأسيسي. 4 أسئلة سيناريو متعددة الأجزاء (80 درجة)، 150 دقيقة، كتاب مفتوح، النجاح 50%. صالحة 3 سنوات."
+    }
+   },
+   {
+    "code": "No organizational P3O® certification",
+    "kind": "cert",
+    "title": {
+     "en": "No P3O certification for organizations",
+     "ar": "لا توجد شهادة P3O للمنشآت"
+    },
+    "status": {
+     "en": "Guidance, not a standard",
+     "ar": "إرشاد وليس مواصفة"
+    },
+    "note": {
+     "en": "P3O® is best-practice guidance, not a requirements standard; there is no official certification or accreditation of an office or organization against P3O. Certifications are for individuals only. This tool's result is an internal self-assessment.",
+     "ar": "P3O® إرشادات أفضل ممارسة وليست مواصفة متطلبات؛ لا يوجد إشهاد أو اعتماد رسمي لمكتب أو منشأة على P3O. الشهادات للأفراد فقط. نتيجة هذه الأداة تقييم ذاتي داخلي."
+    }
+   },
+   {
+    "code": "AXELOS / PeopleCert",
+    "kind": "own",
+    "title": {
+     "en": "Ownership & trade marks",
+     "ar": "الملكية والعلامات التجارية"
+    },
+    "status": {
+     "en": "PeopleCert group since 1 July 2021",
+     "ar": "ضمن مجموعة PeopleCert منذ 1 يوليو 2021"
+    },
+    "note": {
+     "en": "PeopleCert completed its acquisition of AXELOS on 1 July 2021. P3O®, P3M3® and PRINCE2® are registered trade marks of the PeopleCert group (AXELOS Limited). This tool is independent, is not endorsed by PeopleCert or AXELOS, and reproduces no text from the manual.",
+     "ar": "أكملت PeopleCert الاستحواذ على AXELOS في 1 يوليو 2021. P3O® وP3M3® وPRINCE2® علامات تجارية مسجلة لمجموعة PeopleCert (AXELOS Limited). هذه الأداة مستقلة، ولا تحمل تأييداً من PeopleCert أو AXELOS، ولا تنقل نصاً من الدليل."
+    }
+   },
+   {
+    "code": "P3M3® (v3)",
+    "kind": "rel",
+    "title": {
+     "en": "Portfolio, Programme and Project Management Maturity Model",
+     "ar": "نموذج نضج إدارة المحافظ والبرامج والمشاريع"
+    },
+    "status": {
+     "en": "Related — academy tool",
+     "ar": "مرتبط — أداة في الأكاديمية"
+    },
+    "note": {
+     "en": "Measures maturity on five levels across seven perspectives. P3O uses a maturity assessment in the identify stage to choose the model and starting services.",
+     "ar": "يقيس النضج على خمسة مستويات عبر سبعة منظورات. P3O يستخدم تقييم النضج في مرحلة التحديد لاختيار النموذج وخدمات البداية."
+    }
+   },
+   {
+    "code": "ISO 21500 series",
+    "kind": "rel",
+    "title": {
+     "en": "ISO 21500 series (21500:2021, 21502:2020, 21503:2022, 21504:2022, 21505:2017)",
+     "ar": "سلسلة ISO 21500 (21500:2021، 21502:2020، 21503:2022، 21504:2022، 21505:2017)"
+    },
+    "status": {
+     "en": "Related — academy tool",
+     "ar": "مرتبط — أداة في الأكاديمية"
+    },
+    "note": {
+     "en": "International guidance on project, programme and portfolio management and governance; ISO 21502 names the project office among governance roles. Conformity with it measures the practices the office supports.",
+     "ar": "إرشادات دولية لإدارة المشاريع والبرامج والمحافظ وحوكمتها؛ ISO 21502 يذكر مكتب المشروع ضمن أدوار الحوكمة. المطابقة معها تقيس الممارسات التي يدعمها المكتب."
+    }
+   },
+   {
+    "code": "ISO 31000:2018",
+    "kind": "rel",
+    "title": {
+     "en": "Risk management — Guidelines",
+     "ar": "إدارة المخاطر — إرشادات"
+    },
+    "status": {
+     "en": "Current",
+     "ar": "سارية"
+    },
+    "note": {
+     "en": "The reference for linking portfolio risk to the enterprise register (practices S2 and G4).",
+     "ar": "المرجع لربط مخاطر المحفظة بالسجل المؤسسي (الممارستان S2 وG4)."
+    }
+   }
+  ],
+  "models": [
+   {
+    "key": "sp",
+    "name": {
+     "en": "Single permanent office",
+     "ar": "مكتب دائم واحد"
+    },
+    "short": {
+     "en": "Single office",
+     "ar": "مكتب واحد"
+    },
+    "text": {
+     "en": "One permanent office (usually a portfolio or enterprise office) provides every service to the organization, including initiative support and the centre of excellence.",
+     "ar": "مكتب دائم واحد (عادة مكتب محفظة أو مكتب مؤسسي) يقدم كل الخدمات للمنشأة، ويضم فريق دعم المبادرات ومركز التميّز."
+    },
+    "when": {
+     "en": "Fits a mid-sized portfolio in an organization with few business units.",
+     "ar": "مناسب لمحفظة متوسطة في منشأة بعدد محدود من وحدات الأعمال."
+    }
+   },
+   {
+    "key": "hs",
+    "name": {
+     "en": "Hub-and-spoke",
+     "ar": "محور وأطراف"
+    },
+    "short": {
+     "en": "Hub-and-spoke",
+     "ar": "محور وأطراف"
+    },
+    "text": {
+     "en": "A central portfolio office (the hub) owns standards, consolidated reporting and the centre of excellence, with permanent or temporary spoke offices in programmes, divisions or regions.",
+     "ar": "مكتب محفظة مركزي (المحور) يملك المعايير والتقارير الموحدة ومركز التميّز، ومكاتب أطراف دائمة أو مؤقتة في البرامج والإدارات والمناطق."
+    },
+    "when": {
+     "en": "Fits a large portfolio or an organization with several divisions or regions.",
+     "ar": "مناسب لمحفظة كبيرة أو منشأة متعددة الإدارات أو المناطق."
+    }
+   },
+   {
+    "key": "vt",
+    "name": {
+     "en": "Virtual office",
+     "ar": "مكتب افتراضي"
+    },
+    "short": {
+     "en": "Virtual",
+     "ar": "افتراضي"
+    },
+    "text": {
+     "en": "No standalone office: existing functions (strategy, finance, quality, IT) deliver the office services, coordinated by one lead with shared tools.",
+     "ar": "لا يوجد مكتب مستقل: خدمات المكتب تقدمها إدارات قائمة (الاستراتيجية، المالية، الجودة، تقنية المعلومات) بتنسيق من منسق واحد وأدوات مشتركة."
+    },
+    "when": {
+     "en": "Fits a small portfolio in a mature organization with strong functions.",
+     "ar": "مناسب لمحفظة صغيرة في منشأة ناضجة لها وظائف قوية."
+    }
+   },
+   {
+    "key": "tp",
+    "name": {
+     "en": "Temporary offices",
+     "ar": "مكاتب مؤقتة"
+    },
+    "short": {
+     "en": "Temporary",
+     "ar": "مؤقتة"
+    },
+    "text": {
+     "en": "Programme or project offices set up for a specific initiative and closed when it ends, with no permanent portfolio office.",
+     "ar": "مكاتب برامج أو مشاريع تُنشأ لمبادرة بعينها وتُغلق بانتهائها، دون مكتب محفظة دائم."
+    },
+    "when": {
+     "en": "Fits one large programme or a handful of initiatives.",
+     "ar": "مناسب لبرنامج كبير واحد أو عدد قليل من المبادرات."
+    }
+   }
+  ],
+  "roles": [
+   {
+    "name": {
+     "en": "Executive sponsor",
+     "ar": "الراعي التنفيذي"
+    },
+    "text": {
+     "en": "Owns the office and chairs portfolio decisions (part-time role)",
+     "ar": "يملك المكتب ويرأس قرارات المحفظة (دور جزئي)"
+    }
+   },
+   {
+    "name": {
+     "en": "Head of P3O",
+     "ar": "رئيس المكتب"
+    },
+    "text": {
+     "en": "Leads the office and advises the executive",
+     "ar": "يقود المكتب ويقدم المشورة للإدارة التنفيذية"
+    }
+   },
+   {
+    "name": {
+     "en": "Portfolio analyst",
+     "ar": "محلل المحفظة"
+    },
+    "text": {
+     "en": "Prioritization, balancing, financial reporting and decision packs",
+     "ar": "الأولويات والموازنة والتقارير المالية وحزم القرار"
+    }
+   },
+   {
+    "name": {
+     "en": "Planning & capacity lead",
+     "ar": "قائد التخطيط والسعة"
+    },
+    "text": {
+     "en": "Integrated plans, dependencies and the capacity plan",
+     "ar": "الخطط الموحدة والاعتماديات وخطة السعة"
+    }
+   },
+   {
+    "name": {
+     "en": "Benefits & performance lead",
+     "ar": "قائد المنافع والأداء"
+    },
+    "text": {
+     "en": "Benefits register, portfolio and office KPIs",
+     "ar": "سجل المنافع ومؤشرات المحفظة والمكتب"
+    }
+   },
+   {
+    "name": {
+     "en": "Information & reporting lead",
+     "ar": "قائد المعلومات والتقارير"
+    },
+    "text": {
+     "en": "Dashboards, repository, tool and portal",
+     "ar": "اللوحات والمستودع والأداة والبوابة"
+    }
+   },
+   {
+    "name": {
+     "en": "COE lead (method owner)",
+     "ar": "قائد مركز التميّز (مالك المنهجية)"
+    },
+    "text": {
+     "en": "Method, standards and tailoring rules",
+     "ar": "المنهجية والمعايير وقواعد التكييف"
+    }
+   },
+   {
+    "name": {
+     "en": "Trainer & coach",
+     "ar": "مدرب وموجّه"
+    },
+    "text": {
+     "en": "Induction, training, coaching and facilitation",
+     "ar": "التهيئة والتدريب والتوجيه والتيسير"
+    }
+   },
+   {
+    "name": {
+     "en": "Assurance lead",
+     "ar": "قائد الضمان"
+    },
+    "text": {
+     "en": "Gate reviews, health checks and the assurance map",
+     "ar": "مراجعات البوابات وفحوص الصحة وخريطة الضمان"
+    }
+   },
+   {
+    "name": {
+     "en": "Commercial specialist",
+     "ar": "مختص تجاري"
+    },
+    "text": {
+     "en": "Procurement strategy and contract management for major initiatives",
+     "ar": "استراتيجية الشراء وإدارة العقود للمبادرات الكبرى"
+    }
+   },
+   {
+    "name": {
+     "en": "Programme office manager",
+     "ar": "مدير مكتب برنامج"
+    },
+    "text": {
+     "en": "Runs a programme office to the hub's standards",
+     "ar": "يدير مكتب البرنامج ويطبق معايير المحور"
+    }
+   },
+   {
+    "name": {
+     "en": "Project support officer",
+     "ar": "موظف دعم المشاريع"
+    },
+    "text": {
+     "en": "Schedules, registers and reports for projects",
+     "ar": "الجداول والسجلات والتقارير للمشاريع"
+    }
+   }
+  ],
+  "competencies": [
+   "PMO-01",
+   "PMO-02",
+   "GOV-01"
+  ],
+  "ecosystem": "p3o"
+ }
+}

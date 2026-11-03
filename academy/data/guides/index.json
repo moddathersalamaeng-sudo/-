@@ -977,6 +977,189 @@
     "review_date": "2026-10-28",
     "change_note": "Mirrored word for word from modules/iso10009.html (live commit db802aa) by tools/build_toolkit_courses.py."
    }
+  },
+  {
+   "id": "GUIDE-21500",
+   "slug": "iso-21500",
+   "kind": "practice",
+   "code": "21500",
+   "module": "iso21500",
+   "standard_id": null,
+   "title": {
+    "en": "ISO 21500 Series Conformity Assessment",
+    "ar": "تقييم المطابقة وفق سلسلة ISO 21500"
+   },
+   "subtitle": {
+    "en": "Project · Programme · Portfolio · Governance",
+    "ar": "المشاريع · البرامج · المحافظ · الحوكمة"
+   },
+   "lede": {
+    "en": "An assessment built on the clause structure of ISO 21502, ISO 21503, ISO 21504 and ISO 21505: fifty-eight practices on a 0–5 conformity scale with an evidence ladder each, three scores (self, evidence, validated), conformity % per standard and practice area, a 0–12 month improvement roadmap and eight templates with a Saudi worked example.",
+    "ar": "تقييم مبني على هيكل بنود ISO 21502 وISO 21503 وISO 21504 وISO 21505: ثمانٍ وخمسون ممارسة بمقياس مطابقة من 0 إلى 5 وسُلّم أدلة لكل ممارسة، وثلاث درجات (ذاتي، بالأدلة، معتمد)، ونسبة مطابقة لكل مواصفة ومجال، وخارطة تحسين 0–12 شهراً، وثمانية نماذج بمثال سعودي."
+   },
+   "ecosystem": "pmi",
+   "competencies": [
+    "PM-01",
+    "PM-02",
+    "PM-03",
+    "GOV-01",
+    "PMO-02"
+   ],
+   "level": 2,
+   "counts": {
+    "sections": 16,
+    "items": 58,
+    "checks": 0,
+    "questions": 0,
+    "terms": 43,
+    "faq": 23,
+    "templates": 8
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/iso21500.html (live commit db802aa) by tools/build_toolkit_courses.py (Phase 8)."
+   }
+  },
+  {
+   "id": "GUIDE-P3O",
+   "slug": "p3o",
+   "kind": "practice",
+   "code": "P3O",
+   "module": "p3o",
+   "standard_id": null,
+   "title": {
+    "en": "P3O® Office Design & Capability Assessment",
+    "ar": "تصميم مكاتب P3O® وتقييم قدرتها"
+   },
+   "subtitle": {
+    "en": "Portfolio, Programme & Project Offices",
+    "ar": "مكاتب المحافظ والبرامج والمشاريع"
+   },
+   "lede": {
+    "en": "An independent assessment built on the structure of the P3O® guidance: eight areas and forty-two practices on a 0–5 capability scale with an evidence ladder each, three scores (self, evidence, validated), office-model fit, and a design studio that generates the service catalogue, organization, value matrix and implementation plan, plus eight templates with a Saudi worked example.",
+    "ar": "تقييم مستقل مبني على هيكل إرشادات P3O®: ثمانية مجالات واثنتان وأربعون ممارسة بمقياس قدرة من 0 إلى 5 وسُلّم أدلة لكل ممارسة، وثلاث درجات (ذاتي، بالأدلة، معتمد)، وملاءمة نموذج المكتب، واستوديو تصميم يولّد كتالوج الخدمات والهيكل ومصفوفة القيمة وخطة التنفيذ، وثمانية نماذج بمثال سعودي."
+   },
+   "ecosystem": "p3o",
+   "competencies": [
+    "PMO-01",
+    "PMO-02",
+    "GOV-01"
+   ],
+   "level": 2,
+   "counts": {
+    "sections": 8,
+    "items": 42,
+    "checks": 0,
+    "questions": 0,
+    "terms": 34,
+    "faq": 25,
+    "templates": 8
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/p3o.html (live commit db802aa) by tools/build_toolkit_courses.py (Phase 8)."
+   }
+  },
+  {
+   "id": "GUIDE-P3M3",
+   "slug": "p3m3",
+   "kind": "practice",
+   "code": "P3M3",
+   "module": "pmo",
+   "standard_id": null,
+   "title": {
+    "en": "P3M3 Maturity Assessment",
+    "ar": "تقييم النضج وفق P3M3"
+   },
+   "subtitle": {
+    "en": "Portfolio · Programme · Project",
+    "ar": "المحافظ · البرامج · المشاريع"
+   },
+   "lede": {
+    "en": "The P3M3®‎ structure as it is: three models (portfolio, programme, project), seven perspectives and five maturity levels. Three scores per question (self, evidence, validated), a maturity matrix per model, a transformation roadmap, a PMO studio and ready templates with a Saudi worked example.",
+    "ar": "هيكل P3M3®‎ كما هو: ثلاثة نماذج (المحفظة، البرنامج، المشروع)، وسبعة منظورات، وخمسة مستويات نضج. لكل سؤال ثلاث درجات (ذاتي، بالأدلة، معتمد)، ومصفوفة نضج لكل نموذج، وخارطة تحوّل، واستوديو لمكتب المشاريع، ونماذج جاهزة بمثال سعودي."
+   },
+   "ecosystem": "pmo",
+   "competencies": [
+    "PMO-02",
+    "OE-01",
+    "GOV-01"
+   ],
+   "level": 3,
+   "counts": {
+    "sections": 7,
+    "items": 7,
+    "checks": 0,
+    "questions": 28,
+    "terms": 32,
+    "faq": 26,
+    "templates": 8
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/pmo-maturity.html (live commit db802aa) by tools/build_toolkit_courses.py (Phase 8)."
+   }
+  },
+  {
+   "id": "GUIDE-PMX",
+   "slug": "pmo-excellence",
+   "kind": "practice",
+   "code": "PMX",
+   "module": "pmoexc",
+   "standard_id": null,
+   "title": {
+    "en": "PMO Excellence Assessment",
+    "ar": "تقييم التميّز في مكاتب إدارة المشاريع"
+   },
+   "subtitle": {
+    "en": "P3M3®‎ · ISO 21500 · P3O®‎ — one index",
+    "ar": "P3M3®‎ · ISO 21500 · P3O®‎ — مؤشر واحد"
+   },
+   "lede": {
+    "en": "14 excellence domains and 42 integrated questions, each linked to P3M3®‎ items, ISO 21500 series practices and P3O®‎ practices. Answer once or import the three tools' results to get maturity, conformity and capability per domain, an excellence index from 0 to 100, the disagreement patterns between lenses, the office-model fit, one improvement roadmap, an executive report and a board brief.",
+    "ar": "14 مجال تميّز و42 سؤالاً متكاملاً، كل سؤال مربوط بعناصر P3M3®‎ وممارسات سلسلة ISO 21500 وممارسات P3O®‎. تجيب مرة واحدة أو تستورد نتائج الأدوات الثلاث، فتحصل على نسب النضج والمطابقة والقدرة لكل مجال، ومؤشر تميّز من 0 إلى 100، وأنماط الاختلاف بين الزوايا، وملاءمة نموذج المكتب، وخارطة تحسين واحدة، وتقرير تنفيذي وموجز للمجلس."
+   },
+   "ecosystem": "pmo",
+   "competencies": [
+    "PMO-01",
+    "PMO-02",
+    "OE-01",
+    "PERF-01"
+   ],
+   "level": 3,
+   "counts": {
+    "sections": 14,
+    "items": 42,
+    "checks": 0,
+    "questions": 0,
+    "terms": 28,
+    "faq": 20,
+    "templates": 8
+   },
+   "version": "1.0.0 · 2026-10-22",
+   "governance": {
+    "content_status": "published",
+    "content_source": "owner",
+    "version": "1.0.0",
+    "reviewer": "Owner publication (live toolkit)",
+    "review_date": "2026-10-28",
+    "change_note": "Mirrored word for word from modules/pmo-excellence.html (live commit db802aa) by tools/build_toolkit_courses.py (Phase 8)."
+   }
   }
  ]
 }

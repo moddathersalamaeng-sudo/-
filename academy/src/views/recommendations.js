@@ -12,7 +12,11 @@ import { h } from '../core/dom.js';
 import { dataRegion, EmptyState, Badge, Button, ProgressBar, Table, toast } from '../ui/components.js';
 import { calculateGaps, generateRecommendations, buildLearningPath, nextBestAction, suppressDemonstrated } from '../domain/recommendations.mjs';
 import { percentMap } from '../domain/learner-model.mjs';
-import { ROLE_ROUTE } from '../domain/iso.mjs';
+import { ROLE_ROUTE as ISO_ROLE_ROUTE } from '../domain/iso.mjs';
+import { PM_ROLE_ROUTE } from '../domain/pmi.mjs';
+
+/* Phase 8: PMO analysts default to the PMO route, project managers to the PMP® route; the other roles keep their ISO route. */
+const ROLE_ROUTE = { ...ISO_ROLE_ROUTE, ...PM_ROLE_ROUTE };
 import { loadAll } from '../data/learner-state.js';
 import { L, pageHead, previewBanner, linkBtn, section, setHashQuery, targetHref, effortLabel } from '../ui/academy.js';
 
@@ -35,7 +39,7 @@ export async function buildRecommendationModel(ctx, routeId = null) {
       .filter(r => !dismissed.has(r.id))
       .map(r => ({ ...r, user_state: saved.find(x => x.id === r.id)?.status || 'generated', href: targetHref({ type: r.recommendation_type, target_id: r.target_id }, content) }))
     : [];
-  const pathChoices = content.paths;
+  const pathChoices = content.paths.filter(p => !p.superseded_by);
   const defaultRoute = ROLE_ROUTE[profile?.target_role];
   const template = pathChoices.find(p => p.id === routeId) || pathChoices.find(p => p.id === defaultRoute) || pathChoices.find(p => (p.roles || []).includes(profile?.target_role)) || null;
   const path = template ? buildLearningPath(structuredClone(template), { completedIds: learner.completed, recommendations: recs, mastered: learner.mastered }) : null;

@@ -352,6 +352,62 @@
         "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md",
         "approved_hash": "1d156c80dfd5bf77f48bbbc817a7b61b37e3261f81196c71eedf4ee4acd38490"
       }
+    },
+    {
+      "type": "target_role",
+      "id": "ROLE-PM",
+      "name": {
+        "en": "Project Manager",
+        "ar": "مدير مشروع"
+      },
+      "description": {
+        "en": "Leads projects end to end: scope, schedule, cost, risk, stakeholders and delivery approach.",
+        "ar": "يقود المشاريع من البداية إلى النهاية: النطاق والجدول والتكلفة والمخاطر وأصحاب المصلحة ونهج التسليم."
+      },
+      "targets": {
+        "QM-01": 1,
+        "QM-02": 0,
+        "QM-03": 0,
+        "QM-04": 0,
+        "ISO-01": 1,
+        "ISO-02": 0,
+        "ISO-03": 0,
+        "AUD-01": 0,
+        "AUD-02": 0,
+        "AUD-03": 0,
+        "PM-01": 4,
+        "PM-02": 4,
+        "PM-03": 3,
+        "RSK-01": 3,
+        "RSK-02": 3,
+        "PMO-01": 0,
+        "PMO-02": 2,
+        "OE-01": 0,
+        "OE-02": 0,
+        "LDR-01": 3,
+        "LDR-02": 2,
+        "GOV-01": 2,
+        "GOV-02": 0,
+        "CMP-01": 1,
+        "CMP-02": 0,
+        "BC-01": 0,
+        "BC-02": 0,
+        "ISA-01": 0,
+        "ISA-02": 0,
+        "PERF-01": 2,
+        "PERF-02": 2
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-03",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "4f25a73c5c051736cc181491a072e45c827bde867d0688659a1c0ce0de25e4d0"
+      }
     }
   ]
 }

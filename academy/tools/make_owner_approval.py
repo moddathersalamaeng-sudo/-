@@ -4,7 +4,7 @@ AI-assisted pre-review cleared. It records exactly what happened: the platform o
 after the pre-review; it is not an independent expert review.
 
   python3 tools/pre_review.py                                   # findings + candidates
-  python3 tools/make_owner_approval.py "<owner name>" YYYY-MM-DD [--out FILE]
+  python3 tools/make_owner_approval.py "<owner name>" YYYY-MM-DD [--dir PRE_REVIEW_DIR] [--out FILE]   (default dir: deliverables/phase-08/review)
   python3 tools/apply_review_decisions.py FILE                  # dry run, then --apply
 
 Only candidates (no unresolved blocking finding) are included; future-phase records are never included.
@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CLOSURE = ROOT.parent.parent / "deliverables" / "phase-07" / "closure"
+CLOSURE = Path(sys.argv[sys.argv.index("--dir") + 1]) if "--dir" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-08" / "review"
 if len(sys.argv) < 3:
     print(__doc__)
     sys.exit(2)
@@ -29,7 +29,7 @@ for coll, ids in findings["candidates"].items():
         decisions.append({"collection": coll, "record_id": rid, "version": g["version"], "decision": "approve", "basis": "owner_approval",
                           "checklist": ["facts", "noCopy", "noClaims", "bilingual", "answers"], "reviewer": owner,
                           "reviewer_role": "Platform owner", "review_date": date,
-                          "comment": "Pre-review: deliverables/phase-07/closure/PRE_REVIEW_REPORT.md"})
+                          "comment": f"Pre-review: {CLOSURE.relative_to(ROOT.parent.parent)}/pre-review-findings.json"})
 doc = {"schema": "cia.review-decisions.v1", "app": "cia-academy", "exported_at": f"{date}T00:00:00Z",
        "reviewer": {"name": owner, "role": "Platform owner"}, "basis": "owner_approval",
        "note": "Owner approval of publication after the AI-assisted pre-review (tools/pre_review.py). Not an independent expert review.",

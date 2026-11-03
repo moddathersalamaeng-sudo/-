@@ -698,6 +698,570 @@
           "ref": "10.2"
         }
       ]
+    },
+    {
+      "id": "CRS-PM-101-L01",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pg.nd"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pf.cr"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-101-L02",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.gf"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pj.or"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "gov.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-101-L03",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.lc"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pj.in"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-101-L04",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.bc"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pj.bn"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "bcb.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-SSC-L01",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.sc"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pj.pl"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-SSC-L02",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.sd"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-SSC-L03",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.co"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "fin.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-SSC-L04",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.co"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pj.cc"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pj.rp"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-RISK-L01",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.rk"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pj.is"
+        },
+        {
+          "guide": "fmea",
+          "ref": "s4-1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-RISK-L02",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.rk"
+        },
+        {
+          "guide": "fmea",
+          "ref": "s2-3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-RISK-L03",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.rk"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "ric.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-RISK-L04",
+      "refs": [
+        {
+          "guide": "pmo-excellence",
+          "ref": "ric.2"
+        },
+        {
+          "guide": "p3m3",
+          "ref": "risk"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-STAKE-L01",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.sh"
+        },
+        {
+          "guide": "stakeholders",
+          "ref": "s3-2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-STAKE-L02",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.sh"
+        },
+        {
+          "guide": "stakeholders",
+          "ref": "s3-3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-STAKE-L03",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.cm"
+        },
+        {
+          "guide": "stakeholders",
+          "ref": "s6-2"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "stk.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-STAKE-L04",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.is"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "stk.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-AGILE-L01",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.lc"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "mth.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-AGILE-L02",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.ct"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-AGILE-L03",
+      "refs": [
+        {
+          "guide": "pmo-excellence",
+          "ref": "mth.2"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "plc.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PM-AGILE-L04",
+      "refs": [
+        {
+          "guide": "pmo-excellence",
+          "ref": "fin.3"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pj.bn"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PMP-PREP-L01",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.gf"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pj.lc"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PMP-PREP-L02",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.or"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PMP-PREP-L03",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.ll"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PMP-PREP-L04",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pj.is"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pj.sh"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PMO-DESIGN-L01",
+      "refs": [
+        {
+          "guide": "p3o",
+          "ref": "m.sel"
+        },
+        {
+          "guide": "p3o",
+          "ref": "v.cus"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PMO-DESIGN-L02",
+      "refs": [
+        {
+          "guide": "p3o",
+          "ref": "v.spn"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "gov.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PMO-DESIGN-L03",
+      "refs": [
+        {
+          "guide": "p3o",
+          "ref": "s.rep"
+        },
+        {
+          "guide": "p3o",
+          "ref": "v.cus"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "val.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PMO-DESIGN-L04",
+      "refs": [
+        {
+          "guide": "pmo-excellence",
+          "ref": "mth.2"
+        },
+        {
+          "guide": "p3o",
+          "ref": "c.std"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "inf.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PMO-KPI-L01",
+      "refs": [
+        {
+          "guide": "p3m3",
+          "ref": "gov"
+        },
+        {
+          "guide": "p3m3",
+          "ref": "ben"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PMO-KPI-L02",
+      "refs": [
+        {
+          "guide": "p3m3",
+          "ref": "ctl"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "qa.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PMO-KPI-L03",
+      "refs": [
+        {
+          "guide": "p3o",
+          "ref": "v.kpi"
+        },
+        {
+          "guide": "p3o",
+          "ref": "v.mat"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "val.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PMO-KPI-L04",
+      "refs": [
+        {
+          "guide": "p3m3",
+          "ref": "res"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "knw.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PFM-PRIOR-L01",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pf.va"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pf.ob"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "str.1"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PFM-PRIOR-L02",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pf.id"
+        },
+        {
+          "guide": "p3o",
+          "ref": "t.pri"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "str.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PFM-PRIOR-L03",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pf.bo"
+        },
+        {
+          "guide": "iso-21500",
+          "ref": "pf.cc"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "res.2"
+        }
+      ]
+    },
+    {
+      "id": "CRS-PFM-PRIOR-L04",
+      "refs": [
+        {
+          "guide": "iso-21500",
+          "ref": "pf.pm"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "fin.3"
+        },
+        {
+          "guide": "pmo-excellence",
+          "ref": "bcb.3"
+        }
+      ]
+    },
+    {
+      "id": "CRS-P3O-101-L01",
+      "refs": [
+        {
+          "guide": "p3o",
+          "ref": "m.hub"
+        },
+        {
+          "guide": "p3o",
+          "ref": "m.spk"
+        },
+        {
+          "guide": "p3o",
+          "ref": "m.coe"
+        }
+      ]
+    },
+    {
+      "id": "CRS-P3O-101-L02",
+      "refs": [
+        {
+          "guide": "p3o",
+          "ref": "m.sel"
+        },
+        {
+          "guide": "p3o",
+          "ref": "m.siz"
+        }
+      ]
+    },
+    {
+      "id": "CRS-P3O-101-L03",
+      "refs": [
+        {
+          "guide": "p3o",
+          "ref": "r.hd"
+        },
+        {
+          "guide": "p3o",
+          "ref": "r.cmp"
+        },
+        {
+          "guide": "p3o",
+          "ref": "t.too"
+        }
+      ]
+    },
+    {
+      "id": "CRS-P3O-101-L04",
+      "refs": [
+        {
+          "guide": "p3o",
+          "ref": "v.case"
+        },
+        {
+          "guide": "p3o",
+          "ref": "i.idn"
+        },
+        {
+          "guide": "p3o",
+          "ref": "i.sus"
+        }
+      ]
     }
   ]
 }

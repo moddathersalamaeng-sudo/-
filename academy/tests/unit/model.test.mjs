@@ -46,7 +46,8 @@ test('seed relationships are valid and every endpoint exists', () => {
   const ids = (file, type) => json(file).items.map(x => `${type}:${x.id}`);
   const known = new Set([...ids('data/seed/ecosystems.json', 'ecosystem'), ...ids('data/seed/platform-modules.json', 'platform_module'), ...ids('data/seed/knowledge-articles.json', 'article'),
     ...ids('data/seed/courses.json', 'course'), ...ids('data/seed/iso-standards.json', 'standard_family'), ...ids('data/seed/assessments.json', 'assessment'),
-    ...ids('data/seed/learning-paths.json', 'learning_path'), ...ids('data/seed/library-items.json', 'library_resource'), ...ids('data/seed/competency/competencies.json', 'competency')]);
+    ...ids('data/seed/learning-paths.json', 'learning_path'), ...ids('data/seed/library-items.json', 'library_resource'), ...ids('data/seed/competency/competencies.json', 'competency'),
+    ...ids('data/seed/certifications.json', 'certification')]);  // Phase 8: courses prepare for / relate to PMI certifications
   const idx = new RelationshipIndex(rels);
   assert.equal(idx.items.length, rels.length); assert.deepEqual(idx.dangling(known), []);
 });

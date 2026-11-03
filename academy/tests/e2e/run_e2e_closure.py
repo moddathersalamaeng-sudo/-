@@ -73,8 +73,9 @@ with sync_playwright() as p:
     roles = page.evaluate('() => { try { return JSON.parse(localStorage.getItem("cia:v1:session") || "{}").roles || ["learner"]; } catch (e) { return ["learner"]; } }')
     go(page, '/academy/courses')
     n_courses = page.locator('#course-list [data-course]').count()
-    hidden = all(page.locator(f'#course-list [data-course="{cid}"]').count() == 0 for cid in ('CRS-PM-101', 'CRS-EFQM-101', 'CRS-P3O-101', 'CRS-QMS-201'))
-    record(f'learner (roles {roles}) sees the {n_courses} published courses; the 4 future-phase drafts stay hidden', roles == ['learner'] and n_courses == 38 and hidden, f'{roles} {n_courses} {hidden}')
+    hidden = all(page.locator(f'#course-list [data-course="{cid}"]').count() == 0 for cid in ('CRS-EFQM-101', 'CRS-QMS-201'))
+    n_pub = sum(1 for c in COURSES.values() if c['governance']['content_status'] == 'published')
+    record(f'learner (roles {roles}) sees the {n_courses} published courses; the 2 future-phase shells (Phases 9–10) stay hidden', roles == ['learner'] and n_courses == n_pub == 52 and hidden, f'{roles} {n_courses} {hidden}')
 
     go(page, '/academy/courses/read-iso-standards')
     facts = page.inner_text('section[aria-label] dl.facts') if page.locator('section[aria-label] dl.facts').count() else ''
@@ -135,7 +136,7 @@ with sync_playwright() as p:
     record('learner sees the published competency framework (gap view is no longer empty)', page.locator('main .state.empty').count() == 0 and rows > 0, rows)
 
     # future-phase draft stays unavailable even by direct link
-    slug = COURSES['CRS-PM-101']['slug']
+    slug = COURSES['CRS-QMS-201']['slug']
     go(page, f'/academy/courses/{slug}')
     record('a future-phase draft is not reachable by direct link (honest "not available" page)', page.locator('[data-unavailable]').count() == 1, slug)
     keys = page.evaluate('Object.keys(localStorage)')

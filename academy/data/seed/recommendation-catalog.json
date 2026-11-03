@@ -130,25 +130,40 @@
       "recommendation_type": "course",
       "target_id": "CRS-PM-101",
       "title": {
-        "en": "Project Management & Value Delivery Foundations",
-        "ar": "أساسيات إدارة المشاريع وتحقيق القيمة"
+        "en": "Project Management Foundations: from idea to value",
+        "ar": "أساسيات إدارة المشاريع: من الفكرة إلى القيمة"
       },
       "competencies": [
         "PM-01",
-        "PM-02",
-        "PM-03"
+        "PM-03",
+        "GOV-01",
+        "PM-02"
       ],
       "domains": [
+        "GOV",
         "PM"
       ],
       "roles": [
-        "ROLE-PMOA"
+        "ROLE-PM"
       ],
       "level": 1,
-      "estimated_effort": "10 h",
+      "estimated_effort": "6.5 h",
       "prerequisites": [],
+      "interest_keywords": [
+        "project",
+        "pmi",
+        "مشروع",
+        "مشاريع"
+      ],
       "certification_keywords": [
-        "pmp"
+        "CAPM",
+        "PMP"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "PM-01",
+        "PM-02",
+        "PM-03"
       ]
     },
     {
@@ -156,34 +171,36 @@
       "recommendation_type": "course",
       "target_id": "CRS-P3O-101",
       "title": {
-        "en": "Portfolio, Programme & Project Offices Foundations",
-        "ar": "أساسيات مكاتب المحافظ والبرامج والمشاريع"
+        "en": "P3O® Model Overview: portfolio, programme and project offices",
+        "ar": "نظرة عامة على نموذج P3O®: مكاتب المحافظ والبرامج والمشاريع"
       },
       "competencies": [
         "PMO-01",
         "PMO-02",
-        "GOV-01",
-        "PERF-01"
+        "GOV-01"
       ],
       "domains": [
-        "PMO",
         "GOV",
-        "PERF"
+        "PMO"
       ],
       "roles": [
         "ROLE-PMOA"
       ],
       "level": 2,
-      "estimated_effort": "8 h",
-      "prerequisites": [
-        {
-          "target_id": "CRS-PM-101",
-          "required": false
-        }
+      "estimated_effort": "7 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "p3o",
+        "pmo",
+        "مكتب"
       ],
       "certification_keywords": [
-        "pmo",
-        "p3o"
+        "P3O"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "PMO-01",
+        "PMO-02"
       ]
     },
     {
@@ -995,6 +1012,509 @@
       ]
     },
     {
+      "id": "REC-CRS-PM-SSC",
+      "recommendation_type": "course",
+      "target_id": "CRS-PM-SSC",
+      "title": {
+        "en": "Scope, Schedule and Cost Integration",
+        "ar": "تكامل النطاق والجدول والتكلفة"
+      },
+      "competencies": [
+        "PM-01",
+        "PERF-02",
+        "RSK-02"
+      ],
+      "domains": [
+        "PERF",
+        "PM",
+        "RSK"
+      ],
+      "roles": [
+        "ROLE-PM"
+      ],
+      "level": 2,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "project",
+        "pmi",
+        "مشروع",
+        "مشاريع"
+      ],
+      "certification_keywords": [
+        "PMP",
+        "CAPM"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "PM-01"
+      ]
+    },
+    {
+      "id": "REC-CRS-PM-RISK",
+      "recommendation_type": "course",
+      "target_id": "CRS-PM-RISK",
+      "title": {
+        "en": "Risk in Projects",
+        "ar": "المخاطر في المشاريع"
+      },
+      "competencies": [
+        "RSK-01",
+        "RSK-02",
+        "PERF-02"
+      ],
+      "domains": [
+        "PERF",
+        "RSK"
+      ],
+      "roles": [
+        "ROLE-PM"
+      ],
+      "level": 2,
+      "estimated_effort": "7 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "project",
+        "pmi",
+        "مشروع",
+        "مشاريع",
+        "risk",
+        "مخاطر"
+      ],
+      "certification_keywords": [
+        "PMI-RMP",
+        "RMP"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "RSK-01",
+        "RSK-02"
+      ]
+    },
+    {
+      "id": "REC-CRS-PM-STAKE",
+      "recommendation_type": "course",
+      "target_id": "CRS-PM-STAKE",
+      "title": {
+        "en": "Stakeholders and Communication",
+        "ar": "أصحاب المصلحة والتواصل"
+      },
+      "competencies": [
+        "PM-02",
+        "LDR-01"
+      ],
+      "domains": [
+        "LDR",
+        "PM"
+      ],
+      "roles": [
+        "ROLE-PM"
+      ],
+      "level": 2,
+      "estimated_effort": "7 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "project",
+        "pmi",
+        "مشروع",
+        "مشاريع"
+      ],
+      "certification_keywords": [
+        "PMP"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "PM-02"
+      ]
+    },
+    {
+      "id": "REC-CRS-PMO-DESIGN",
+      "recommendation_type": "course",
+      "target_id": "CRS-PMO-DESIGN",
+      "title": {
+        "en": "PMO Design and Services",
+        "ar": "تصميم مكتب إدارة المشاريع وخدماته"
+      },
+      "competencies": [
+        "PMO-01",
+        "PMO-02",
+        "GOV-01"
+      ],
+      "domains": [
+        "GOV",
+        "PMO"
+      ],
+      "roles": [
+        "ROLE-PMOA"
+      ],
+      "level": 2,
+      "estimated_effort": "7 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "pmo",
+        "مكتب",
+        "portfolio",
+        "محفظة"
+      ],
+      "certification_keywords": [
+        "PMOCP",
+        "PMO"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "PMO-01"
+      ]
+    },
+    {
+      "id": "REC-CRS-PMO-KPI",
+      "recommendation_type": "course",
+      "target_id": "CRS-PMO-KPI",
+      "title": {
+        "en": "PMO Maturity and KPIs",
+        "ar": "نضج مكتب المشاريع ومؤشراته"
+      },
+      "competencies": [
+        "PMO-02",
+        "OE-01",
+        "PERF-01",
+        "OE-02"
+      ],
+      "domains": [
+        "OE",
+        "PERF",
+        "PMO"
+      ],
+      "roles": [
+        "ROLE-PMOA"
+      ],
+      "level": 3,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "pmo",
+        "مكتب",
+        "portfolio",
+        "محفظة"
+      ],
+      "certification_keywords": [
+        "PMOCP",
+        "P3M3"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "PMO-02",
+        "OE-01"
+      ]
+    },
+    {
+      "id": "REC-CRS-PFM-PRIOR",
+      "recommendation_type": "course",
+      "target_id": "CRS-PFM-PRIOR",
+      "title": {
+        "en": "Portfolio Prioritisation",
+        "ar": "ترتيب أولويات المحفظة"
+      },
+      "competencies": [
+        "PMO-02",
+        "LDR-02",
+        "GOV-01",
+        "PERF-02"
+      ],
+      "domains": [
+        "GOV",
+        "LDR",
+        "PERF",
+        "PMO"
+      ],
+      "roles": [],
+      "level": 3,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "pmo",
+        "مكتب",
+        "portfolio",
+        "محفظة"
+      ],
+      "certification_keywords": [
+        "PfMP",
+        "portfolio"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-PM-AGILE",
+      "recommendation_type": "course",
+      "target_id": "CRS-PM-AGILE",
+      "title": {
+        "en": "Agile and Hybrid Delivery",
+        "ar": "التسليم الرشيق والهجين"
+      },
+      "competencies": [
+        "PM-03",
+        "PERF-01",
+        "LDR-01"
+      ],
+      "domains": [
+        "LDR",
+        "PERF",
+        "PM"
+      ],
+      "roles": [
+        "ROLE-PM"
+      ],
+      "level": 2,
+      "estimated_effort": "7 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "project",
+        "pmi",
+        "مشروع",
+        "مشاريع",
+        "agile",
+        "رشيق",
+        "scrum"
+      ],
+      "certification_keywords": [
+        "PMI-ACP",
+        "ACP",
+        "agile"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "PM-03"
+      ]
+    },
+    {
+      "id": "REC-CRS-PMP-PREP",
+      "recommendation_type": "course",
+      "target_id": "CRS-PMP-PREP",
+      "title": {
+        "en": "PMP® Preparation: understanding the exam and building your study plan",
+        "ar": "الإعداد لشهادة PMP®: فهم الاختبار وبناء خطة المذاكرة"
+      },
+      "competencies": [
+        "PM-01",
+        "PM-02",
+        "PM-03"
+      ],
+      "domains": [
+        "PM"
+      ],
+      "roles": [
+        "ROLE-PM"
+      ],
+      "level": 3,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "project",
+        "pmi",
+        "مشروع",
+        "مشاريع"
+      ],
+      "certification_keywords": [
+        "PMP",
+        "بي إم بي"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-READY-PM-001",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-READY-PM-001",
+      "title": {
+        "en": "Project management readiness diagnostic",
+        "ar": "التقييم التشخيصي لجاهزية إدارة المشاريع"
+      },
+      "competencies": [
+        "GOV-01",
+        "PM-01",
+        "PM-02",
+        "PM-03",
+        "PMO-01",
+        "PMO-02",
+        "RSK-01",
+        "RSK-02"
+      ],
+      "domains": [
+        "GOV",
+        "PM",
+        "PMO",
+        "RSK"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "20 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "project",
+        "pmi",
+        "pmo",
+        "مشاريع"
+      ],
+      "certification_keywords": [
+        "PMP",
+        "CAPM",
+        "PMOCP"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-PM-FOUND-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-PM-FOUND-DIAG",
+      "title": {
+        "en": "Route diagnostic — Project foundations",
+        "ar": "التقييم التشخيصي للمسار — أساسيات المشاريع"
+      },
+      "competencies": [
+        "PM-01",
+        "PM-02",
+        "PM-03",
+        "RSK-01",
+        "RSK-02"
+      ],
+      "domains": [
+        "PM",
+        "RSK"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "project",
+        "pmi",
+        "pmo",
+        "مشاريع"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-PM-PMP-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-PM-PMP-DIAG",
+      "title": {
+        "en": "Route diagnostic — PMP® preparation",
+        "ar": "التقييم التشخيصي للمسار — الإعداد لـ PMP®"
+      },
+      "competencies": [
+        "PM-01",
+        "PM-02",
+        "PM-03",
+        "RSK-01",
+        "RSK-02"
+      ],
+      "domains": [
+        "PM",
+        "RSK"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "project",
+        "pmi",
+        "pmo",
+        "مشاريع"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-PM-PMO-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-PM-PMO-DIAG",
+      "title": {
+        "en": "Route diagnostic — PMO set-up and maturity",
+        "ar": "التقييم التشخيصي للمسار — إنشاء مكتب المشاريع ونضجه"
+      },
+      "competencies": [
+        "GOV-02",
+        "PERF-01",
+        "PMO-01",
+        "PMO-02"
+      ],
+      "domains": [
+        "GOV",
+        "PERF",
+        "PMO"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "project",
+        "pmi",
+        "pmo",
+        "مشاريع"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-PM-PORTFOLIO-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-PM-PORTFOLIO-DIAG",
+      "title": {
+        "en": "Route diagnostic — Portfolio and programme",
+        "ar": "التقييم التشخيصي للمسار — المحافظ والبرامج"
+      },
+      "competencies": [
+        "LDR-02",
+        "PMO-01",
+        "PMO-02"
+      ],
+      "domains": [
+        "LDR",
+        "PMO"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "project",
+        "pmi",
+        "pmo",
+        "مشاريع"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-PM-AGILE-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-PM-AGILE-DIAG",
+      "title": {
+        "en": "Route diagnostic — Agile delivery foundations",
+        "ar": "التقييم التشخيصي للمسار — أساسيات التسليم الرشيق"
+      },
+      "competencies": [
+        "PM-02",
+        "PM-03"
+      ],
+      "domains": [
+        "PM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "project",
+        "pmi",
+        "pmo",
+        "مشاريع"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
       "id": "REC-CRS-G-9001",
       "recommendation_type": "course",
       "target_id": "CRS-G-9001",
@@ -1669,6 +2189,138 @@
         "iso 10009"
       ],
       "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-P-21500",
+      "recommendation_type": "course",
+      "target_id": "CRS-P-21500",
+      "title": {
+        "en": "ISO 21500 series: project, programme, portfolio and governance practices explained",
+        "ar": "سلسلة ISO 21500: ممارسات المشاريع والبرامج والمحافظ والحوكمة مشروحة"
+      },
+      "competencies": [
+        "PM-01",
+        "PM-02",
+        "PM-03",
+        "GOV-01",
+        "PMO-02"
+      ],
+      "domains": [
+        "GOV",
+        "PM",
+        "PMO"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "15.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "21500",
+        "iso 21500"
+      ],
+      "certification_keywords": [
+        "ISO 21500",
+        "21502",
+        "PMP"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-P-P3O",
+      "recommendation_type": "course",
+      "target_id": "CRS-P-P3O",
+      "title": {
+        "en": "P3O®: office design and capability practices explained",
+        "ar": "P3O®: ممارسات تصميم المكتب وقدرته مشروحة"
+      },
+      "competencies": [
+        "PMO-01",
+        "PMO-02",
+        "GOV-01"
+      ],
+      "domains": [
+        "GOV",
+        "PMO"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "12 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "p3o",
+        "p3o"
+      ],
+      "certification_keywords": [
+        "P3O",
+        "PMI-PMOCP",
+        "PMOCP"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-P-P3M3",
+      "recommendation_type": "course",
+      "target_id": "CRS-P-P3M3",
+      "title": {
+        "en": "P3M3®: the seven perspectives and how maturity grows",
+        "ar": "P3M3®: المنظورات السبعة وكيف ينمو النضج"
+      },
+      "competencies": [
+        "PMO-02",
+        "OE-01",
+        "GOV-01"
+      ],
+      "domains": [
+        "GOV",
+        "OE",
+        "PMO"
+      ],
+      "roles": [],
+      "level": 3,
+      "estimated_effort": "5.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "p3m3",
+        "p3m3"
+      ],
+      "certification_keywords": [
+        "P3M3",
+        "PMOCP"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-P-PMX",
+      "recommendation_type": "course",
+      "target_id": "CRS-P-PMX",
+      "title": {
+        "en": "PMO Excellence: fourteen domains through three lenses",
+        "ar": "تميّز مكاتب المشاريع: أربعة عشر مجالًا بثلاث زوايا"
+      },
+      "competencies": [
+        "PMO-01",
+        "PMO-02",
+        "OE-01",
+        "PERF-01"
+      ],
+      "domains": [
+        "OE",
+        "PERF",
+        "PMO"
+      ],
+      "roles": [],
+      "level": 3,
+      "estimated_effort": "12 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "pmx",
+        "pmo excellence"
+      ],
+      "certification_keywords": [
+        "PMOCP",
+        "PMO"
+      ],
       "standard_ids": []
     }
   ]

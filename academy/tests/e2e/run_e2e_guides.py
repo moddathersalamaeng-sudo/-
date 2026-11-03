@@ -68,7 +68,7 @@ with sync_playwright() as p:
     go(page, '/guides')
     cards = page.locator('[data-guide]').count()
     std = page.locator('#gd-std ~ .cards [data-guide], section[aria-labelledby=gd-std] [data-guide]').count()
-    record('learner: Guides in the navigation and on home; the index lists all 23 published guides (9 standards + 14 methods)', nav_ok and home_teaser and cards == 23 and std == 9, f'{nav_ok} {home_teaser} {cards} {std}')
+    record('learner: Guides in the navigation and on home; the index lists all 27 published guides (9 standards + 4 practice guides + 14 methods; Phase 8 added the practice guides)', nav_ok and home_teaser and cards == 27 and std == 9, f'{nav_ok} {home_teaser} {cards} {std}')
 
     go(page, '/guides/iso-9001')
     items = page.locator('.gitems li').count()

@@ -15,18 +15,20 @@ import { assessmentEvidence, masteredCompetencies, completedTargets } from '../d
 export async function loadContent(ctx) {
   const roles = ctx.session.roles;
   const r = ctx.repos;
-  const [courses, assessments, questions, articles, standards, library, tools, ecosystems, competencies, rolesAll, domains, pathsRaw, catalog, sources, programs, guides, lessonMap] = await Promise.all([
+  const [courses, assessments, questions, articles, standards, library, tools, ecosystems, competencies, rolesAll, domains, pathsRaw, catalog, sources, programs, guides, lessonMap, certifications] = await Promise.all([
     r.courses.listVisible(roles), r.assessments.listVisible(roles), r.questions.listVisible(roles), r.articles.listVisible(roles),
     r.isoStandards.listVisible(roles), r.library.listVisible(roles), r.platformModules.listVisible(roles).catch(() => []), r.ecosystems.listAll(),
     r.competencies.listVisible(roles), r.targetRoles.listAll(), r.domains.listAll(), r.learningPaths.list(), r.recCatalog.list(),
     r.sources.list(), r.programs.listVisible(roles),
     /* Guides and the lesson→guide map are enrichment: if they fail to load, courses still render. */
-    r.guides ? r.guides.listVisible(roles).catch(() => []) : [], r.lessonGuideMap ? r.lessonGuideMap.list().catch(() => []) : []
+    r.guides ? r.guides.listVisible(roles).catch(() => []) : [], r.lessonGuideMap ? r.lessonGuideMap.list().catch(() => []) : [],
+    /* Phase 8: the certification explorer is enrichment too. */
+    r.certifications ? r.certifications.listVisible(roles).catch(() => []) : []
   ]);
   const paths = pathsRaw.filter(p => !p.governance || isVisible(p, roles));
   const visibleIds = new Set([...courses, ...assessments, ...articles, ...library].map(x => x.id));
   return {
-    courses, assessments, questions, articles, standards, library, tools, ecosystems, competencies, domains, paths, catalog, sources, programs, guides, lessonMap,
+    courses, assessments, questions, articles, standards, library, tools, ecosystems, competencies, domains, paths, catalog, sources, programs, guides, lessonMap, certifications,
     rolesAll, roles: rolesAll.filter(x => isVisible(x, roles)), visibleIds,
     byId: (list, id) => list.find(x => x.id === id) || null
   };

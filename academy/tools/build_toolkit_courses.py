@@ -244,6 +244,107 @@ for module, slug, code, comps, eco, level in METHODS:
                   "version": toolkit_version(module),
                   "governance": owner_gov("1.0.0", f"Mirrored word for word from modules/{module}.html (live commit {LIVE_COMMIT}) by tools/build_toolkit_courses.py.")})
 
+# ===================================================================================== practice guides (Phase 8)
+# The project, programme, portfolio and PMO toolkits share the "explain-kit / STDS" shape: areas (groups) → practices, each with
+# a plain-words statement (q), an evidence ladder (ev3, lowest to highest), recommended actions (a), an owner (o), a KPI and
+# dependencies (dep). The P3M3 toolkit uses perspectives → question templates with a {x} placeholder and four maturity levels.
+PRACTICES = [  # module, slug, code, competencies, ecosystem, level
+    ("iso21500", "iso-21500", "21500", ["PM-01", "PM-02", "PM-03", "GOV-01", "PMO-02"], "pmi", 2),
+    ("p3o", "p3o", "P3O", ["PMO-01", "PMO-02", "GOV-01"], "p3o", 2),
+    ("pmo-maturity", "p3m3", "P3M3", ["PMO-02", "OE-01", "GOV-01"], "pmo", 3),
+    ("pmo-excellence", "pmo-excellence", "PMX", ["PMO-01", "PMO-02", "OE-01", "PERF-01"], "pmo", 3),
+]
+PRACTICE_SLUG = {"iso21500": "iso-21500", "p3o": "p3o", "pmo-maturity": "p3m3", "pmo-excellence": "pmo-excellence"}
+
+
+def practice_item(p, extra=None):
+    deps = [x for x in p.get("dep", []) if isinstance(x, str)]
+    return {"ref": p["k"], "clause": p.get("cl", ""), "title": bi(p.get("n")), "short": bi(p.get("sh") or p.get("n")), "req": bi(p.get("q")),
+            "ex": None, "how": bilist(p.get("a")), "ev": bilist(p.get("ev3")), "ladder": True, "gaps": [], "tips": [],
+            "owner": bi(p["o"]) if p.get("o") else None, "kpi": bi(p["kpi"]) if p.get("kpi") else None,
+            "links": {"out": [], "in": [{"ref": x, "why": {"en": "", "ar": ""}} for x in deps]}, **(extra or {})}
+
+
+def practice_common(d):
+    """Guide-level material shared by the practice toolkits."""
+    tpl = [{"id": t.get("id"), "ref": t.get("ref") or t.get("no"), "no": t.get("no"), "title": bi(t.get("t")), "purpose": bi(t.get("p")), "tips": [],
+            "fields": [{"label": bi(f[1]), "example": bi(f[2])} for f in t.get("f", []) if isinstance(f, list) and len(f) >= 3]} for t in d.get("TPL", [])]
+    pair = lambda x: {"title": bi(x[0]), "text": bi(x[1])}  # noqa: E731
+    return {
+        "terms": [{"no": t[4] if len(t) > 4 else "", "en": t[1], "ar": t[0], "def": {"ar": t[2], "en": t[3]}} for t in d.get("TERMS", []) if len(t) >= 4],
+        "scale": [{"level": i, "meaning": bi(x), "look": {"en": "", "ar": ""}, "evidence": {"en": "", "ar": ""}} for i, x in enumerate(d.get("LVD", []))],
+        "templates": tpl,
+        "faq": faq_list(d.get("KB", {})),
+        "levers": [pair(x) for x in d.get("LEVERS", []) if len(x) >= 2],
+        "pitfalls": [pair(x) for x in d.get("PITFALLS", []) if len(x) >= 2],
+        "checklist": [{"group": bi(c.get("g")), "items": bilist(c.get("it"))} for c in d.get("CKL", [])],
+        "references": [{"code": r.get("c", ""), "kind": r.get("k", ""), "title": bi(r.get("t")), "status": bi(r.get("s")), "note": bi(r.get("n"))} for r in d.get("REFS", [])],
+        "models": [{"key": m.get("k"), "name": bi(m.get("n")), "short": bi(m.get("s") or m.get("sh") or m.get("n")), "text": bi(m.get("d")),
+                    "when": bi(m.get("when")) if m.get("when") else None} for m in d.get("MODELS", [])],
+        "roles": [{"name": bi(r.get("n")), "text": bi(r.get("d"))} for r in d.get("ROLES", []) if r.get("n") and r.get("d")],
+    }
+
+
+for module, slug, code, comps, eco, level in PRACTICES:
+    d = ext(module)
+    ui = d["UI"]
+    sections = []
+    if "STDS" in d:  # ISO 21500 series (four standards) and P3O® (one framework)
+        multi = len(d["STDS"]) > 1
+        for s in d["STDS"]:
+            for g in s["groups"]:
+                title = bi(g.get("n"))
+                if multi:
+                    title = {"en": f"{s['code']} · {title['en']}", "ar": f"{s['code']} · {title['ar']}"}
+                sections.append({"id": f"{s['k']}.{g['k']}" if multi else g["k"], "phase": s["code"], "title": title, "short": bi(g.get("sh") or g.get("n")),
+                                 "intro": bi(s.get("d")) if multi else {"en": "", "ar": ""}, "clause": g.get("cl", ""), "items": [practice_item(p) for p in g["ps"]]})
+    elif "DOMS" in d:  # PMO Excellence: 14 domains, each question linked to the P3M3, ISO 21500 and P3O items it integrates
+        for dm in d["DOMS"]:
+            items = []
+            for q in dm["qs"]:
+                ln = q.get("ln", {})
+                cross = [{"guide": "p3m3", "ref": re.sub(r"\d+$", "", r)} for r in ln.get("m", [])] + \
+                        [{"guide": "iso-21500", "ref": r} for r in ln.get("c", [])] + [{"guide": "p3o", "ref": r} for r in ln.get("k", [])]
+                items.append(practice_item(q, {"cross": [dict(t) for t in {tuple(sorted(x.items())) for x in cross}]}))
+                items[-1]["cross"].sort(key=lambda x: (x["guide"], x["ref"]))
+            sections.append({"id": dm["k"], "phase": dm.get("code"), "title": bi(dm.get("n")), "short": bi(dm.get("sh")), "intro": bi(dm.get("d")), "clause": dm.get("code", ""), "items": items})
+    else:  # P3M3: seven perspectives; the question templates are shown for the project model ({x} = "projects")
+        pj = next(m for m in d["MODELS"] if m["k"] == "pj")
+        fill = lambda s, lang: s.replace("{x1}", pj["x1"][lang]).replace("{x}", pj["x"][lang])  # noqa: E731
+        for p in d["PERSP"]:
+            acts = [a for a in d.get("ACTS", []) if a.get("d") == p["k"]]
+            qs = [{"q": {"en": fill(q["q"]["en"], "en"), "ar": fill(q["q"]["ar"], "ar")},
+                   "levels": [{"level": i + 2, "text": {"en": fill(e["en"], "en"), "ar": fill(e["ar"], "ar")}} for i, e in enumerate(q.get("ev", []))]} for q in p["qs"]]
+            item = {"ref": p["k"], "clause": "", "title": bi(p.get("n")), "short": bi(p.get("sh")), "req": bi(p.get("fo")), "ex": None,
+                    "topics": bi(p.get("tp")), "how": [bi(a["t"]) for a in acts], "ev": [bi(a["k"]) for a in acts if a.get("k")], "ladder": False,
+                    "gaps": [], "tips": [], "owner": bi(acts[0]["o"]) if acts and acts[0].get("o") else None, "kpi": None,
+                    "questions": qs, "links": {"out": [], "in": []}}
+            sections.append({"id": p["k"], "phase": None, "title": bi(p.get("n")), "short": bi(p.get("sh")), "intro": bi(p.get("fo")), "clause": "", "items": [item]})
+    # dependencies → "comes from" (in) and the reverse "leads to" (out)
+    refs = {i["ref"]: i for s in sections for i in s["items"]}
+    for i in list(refs.values()):
+        i["links"]["in"] = [l for l in i["links"]["in"] if l["ref"] in refs]
+        for l in i["links"]["in"]:
+            refs[l["ref"]]["links"]["out"].append({"ref": i["ref"], "why": {"en": "", "ar": ""}})
+    common = practice_common(d)
+    guide = {
+        "id": f"GUIDE-{code}", "slug": slug, "kind": "practice", "module": modules[module]["id"], "standard_id": None,
+        "title": bi(ui and {"en": ui["en"]["brand"], "ar": ui["ar"]["brand"]}), "subtitle": {"en": ui["en"].get("sub", ""), "ar": ui["ar"].get("sub", "")},
+        "lede": {"en": ui["en"].get("lede", ""), "ar": ui["ar"].get("lede", "")}, "author": "مدثر سلامه",
+        "note": {"en": "Shown for the project model: the toolkit applies the same questions to portfolios and programmes.",
+                 "ar": "معروضة لنموذج المشاريع: تطبّق الأداة الأسئلة نفسها على المحافظ والبرامج."} if module == "pmo-maturity" else None,
+        "clauses": sections, "changes": [], "pairs": [], "timeline": [], "threads": [], "official": [], "readiness_questions": 0,
+        **common, "competencies": comps, "ecosystem": eco,
+    }
+    guide_files[slug] = guide
+    n_items = sum(len(s["items"]) for s in sections)
+    index.append({"id": guide["id"], "slug": slug, "kind": "practice", "code": code, "module": guide["module"], "standard_id": None,
+                  "title": guide["title"], "subtitle": guide["subtitle"], "lede": guide["lede"], "ecosystem": eco, "competencies": comps, "level": level,
+                  "counts": {"sections": len(sections), "items": n_items, "checks": 0, "questions": sum(len(i.get("questions", [])) for s in sections for i in s["items"]),
+                             "terms": len(guide["terms"]), "faq": len(guide["faq"]), "templates": len(guide["templates"])},
+                  "version": toolkit_version(module),
+                  "governance": owner_gov("1.0.0", f"Mirrored word for word from modules/{module}.html (live commit {LIVE_COMMIT}) by tools/build_toolkit_courses.py (Phase 8).")})
+
 for slug, g in guide_files.items():
     (GUIDES / f"{slug}.json").parent.mkdir(parents=True, exist_ok=True)
     (GUIDES / f"{slug}.json").write_text(json.dumps({"schema": "cia.guide.v1", "guide": g}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
@@ -281,6 +382,29 @@ MAP = {
     "CRS-ISO-27001-AUD-L01": [("iso-27001", "9.2.2")], "CRS-ISO-27001-AUD-L02": [("iso-27001", "6.1.2"), ("iso-27001", "6.1.3")],
     "CRS-ISO-27001-AUD-L03": [("iso-27001", "7.2"), ("iso-27001", "8.1")], "CRS-ISO-27001-AUD-L04": [("iso-27001", "9.1"), ("iso-27001", "10.2")],
 }
+# Phase 8: hand-authored PMI / PMO / P3O lessons → the practice guides (and two method guides) they teach.
+MAP.update({
+    "CRS-PM-101-L01": [("iso-21500", "pg.nd"), ("iso-21500", "pf.cr")], "CRS-PM-101-L02": [("iso-21500", "pj.gf"), ("iso-21500", "pj.or"), ("pmo-excellence", "gov.2")],
+    "CRS-PM-101-L03": [("iso-21500", "pj.lc"), ("iso-21500", "pj.in")], "CRS-PM-101-L04": [("iso-21500", "pj.bc"), ("iso-21500", "pj.bn"), ("pmo-excellence", "bcb.2")],
+    "CRS-PM-SSC-L01": [("iso-21500", "pj.sc"), ("iso-21500", "pj.pl")], "CRS-PM-SSC-L02": [("iso-21500", "pj.sd")],
+    "CRS-PM-SSC-L03": [("iso-21500", "pj.co"), ("pmo-excellence", "fin.1")], "CRS-PM-SSC-L04": [("iso-21500", "pj.co"), ("iso-21500", "pj.cc"), ("iso-21500", "pj.rp")],
+    "CRS-PM-RISK-L01": [("iso-21500", "pj.rk"), ("iso-21500", "pj.is"), ("fmea", "s4-1")], "CRS-PM-RISK-L02": [("iso-21500", "pj.rk"), ("fmea", "s2-3")],
+    "CRS-PM-RISK-L03": [("iso-21500", "pj.rk"), ("pmo-excellence", "ric.1")], "CRS-PM-RISK-L04": [("pmo-excellence", "ric.2"), ("p3m3", "risk")],
+    "CRS-PM-STAKE-L01": [("iso-21500", "pj.sh"), ("stakeholders", "s3-2")], "CRS-PM-STAKE-L02": [("iso-21500", "pj.sh"), ("stakeholders", "s3-3")],
+    "CRS-PM-STAKE-L03": [("iso-21500", "pj.cm"), ("stakeholders", "s6-2"), ("pmo-excellence", "stk.2")], "CRS-PM-STAKE-L04": [("iso-21500", "pj.is"), ("pmo-excellence", "stk.3")],
+    "CRS-PM-AGILE-L01": [("iso-21500", "pj.lc"), ("pmo-excellence", "mth.2")], "CRS-PM-AGILE-L02": [("iso-21500", "pj.ct")],
+    "CRS-PM-AGILE-L03": [("pmo-excellence", "mth.2"), ("pmo-excellence", "plc.3")], "CRS-PM-AGILE-L04": [("pmo-excellence", "fin.3"), ("iso-21500", "pj.bn")],
+    "CRS-PMP-PREP-L01": [("iso-21500", "pj.gf"), ("iso-21500", "pj.lc")], "CRS-PMP-PREP-L02": [("iso-21500", "pj.or")],
+    "CRS-PMP-PREP-L03": [("iso-21500", "pj.ll")], "CRS-PMP-PREP-L04": [("iso-21500", "pj.is"), ("iso-21500", "pj.sh")],
+    "CRS-PMO-DESIGN-L01": [("p3o", "m.sel"), ("p3o", "v.cus")], "CRS-PMO-DESIGN-L02": [("p3o", "v.spn"), ("pmo-excellence", "gov.2")],
+    "CRS-PMO-DESIGN-L03": [("p3o", "s.rep"), ("p3o", "v.cus"), ("pmo-excellence", "val.2")], "CRS-PMO-DESIGN-L04": [("pmo-excellence", "mth.2"), ("p3o", "c.std"), ("pmo-excellence", "inf.1")],
+    "CRS-PMO-KPI-L01": [("p3m3", "gov"), ("p3m3", "ben")], "CRS-PMO-KPI-L02": [("p3m3", "ctl"), ("pmo-excellence", "qa.3")],
+    "CRS-PMO-KPI-L03": [("p3o", "v.kpi"), ("p3o", "v.mat"), ("pmo-excellence", "val.2")], "CRS-PMO-KPI-L04": [("p3m3", "res"), ("pmo-excellence", "knw.3")],
+    "CRS-PFM-PRIOR-L01": [("iso-21500", "pf.va"), ("iso-21500", "pf.ob"), ("pmo-excellence", "str.1")], "CRS-PFM-PRIOR-L02": [("iso-21500", "pf.id"), ("p3o", "t.pri"), ("pmo-excellence", "str.2")],
+    "CRS-PFM-PRIOR-L03": [("iso-21500", "pf.bo"), ("iso-21500", "pf.cc"), ("pmo-excellence", "res.2")], "CRS-PFM-PRIOR-L04": [("iso-21500", "pf.pm"), ("pmo-excellence", "fin.3"), ("pmo-excellence", "bcb.3")],
+    "CRS-P3O-101-L01": [("p3o", "m.hub"), ("p3o", "m.spk"), ("p3o", "m.coe")], "CRS-P3O-101-L02": [("p3o", "m.sel"), ("p3o", "m.siz")],
+    "CRS-P3O-101-L03": [("p3o", "r.hd"), ("p3o", "r.cmp"), ("p3o", "t.too")], "CRS-P3O-101-L04": [("p3o", "v.case"), ("p3o", "i.idn"), ("p3o", "i.sus")],
+})
 missing = [(lid, r) for lid, refs in MAP.items() for r in refs if r not in item_of]
 assert not missing, f"lesson map points at unknown guide items: {missing}"
 (SEED / "lesson-guide-map.json").write_text(json.dumps({"schema": "cia.lesson-guide-map.v1", "items": [
@@ -288,12 +412,16 @@ assert not missing, f"lesson map points at unknown guide items: {missing}"
 
 # ===================================================================================== generated courses
 courses_doc, q_doc, a_doc = load("courses"), load("questions"), load("assessments")
-courses = [c for c in courses_doc["items"] if not c["id"].startswith(("CRS-G-", "CRS-M-"))]
-questions = [q for q in q_doc["items"] if not q["id"].startswith(("Q-G-", "Q-M-"))]
-assessments = [a for a in a_doc["items"] if not a["id"].startswith(("ASM-G-", "ASM-M-"))]
+courses = [c for c in courses_doc["items"] if not c["id"].startswith(("CRS-G-", "CRS-M-", "CRS-P-"))]
+questions = [q for q in q_doc["items"] if not q["id"].startswith(("Q-G-", "Q-M-", "Q-P-"))]
+assessments = [a for a in a_doc["items"] if not a["id"].startswith(("ASM-G-", "ASM-M-", "ASM-P-"))]
 
 AUD_STD = T("Practitioners, implementers, internal auditors and managers who work with this standard",
             "الممارسون والمطبّقون والمدققون الداخليون والمديرون الذين يعملون بهذه المواصفة")
+AUD_PRAC = T("PMO heads, analysts and portfolio, programme and project managers who assess or improve how change is governed and delivered",
+             "رؤساء مكاتب المشاريع ومحللوها ومديرو المحافظ والبرامج والمشاريع الذين يقيّمون طريقة حوكمة التغيير وتسليمه أو يحسّنونها")
+AUD_PRAC2 = T("Sponsors, governance and strategy teams, and consultants who prepare an evidence-based assessment",
+              "الرعاة وفرق الحوكمة والاستراتيجية والاستشاريون الذين يعدّون تقييمًا قائمًا على الأدلة")
 GEN_PT = {
     "standard": (T("Open the toolkit and complete its readiness self-assessment for your organisation (or for a realistic case you know well). Submit the five largest gaps, "
                    "the evidence you checked for each, and one proportionate action per gap with an owner and date.",
@@ -306,6 +434,60 @@ GEN_PT = {
                  "لأهم القرارات التي اتخذتها والأدلة التي استندت إليها."),
                T("The completed toolkit record (PDF or export) plus a 150-word explanation.", "السجل المكتمل من الأداة (PDF أو تصدير) مع شرح في 150 كلمة.")),
 }
+GEN_PT["practice"] = (
+    T("Open the toolkit and assess one real office, portfolio, programme or project you know well (or a realistic case). For the five practices with the lowest validated "
+      "score, submit the rung you placed it on, the records you checked, and one action from the guide that lifts it one rung, with an owner, a date and a KPI.",
+      "افتح الأداة وقيّم مكتبًا أو محفظة أو برنامجًا أو مشروعًا حقيقيًا تعرفه جيدًا (أو حالة واقعية). للممارسات الخمس ذات أدنى درجة مُتحقَّق منها، سلّم الدرجة التي وضعتها عليها، "
+      "والسجلات التي فحصتها، وإجراءً واحدًا من الدليل يرفعها درجة واحدة، مع المسؤول والموعد ومؤشر الأداء."),
+    T("Five-row practice table (rung, evidence, action, owner, date, KPI) plus a 150-word summary for the sponsor.",
+      "جدول ممارسات من خمسة صفوف (الدرجة، الدليل، الإجراء، المسؤول، الموعد، المؤشر) مع ملخص في 150 كلمة للراعي."))
+PRACTICE_TITLES = {
+    "21500": T("ISO 21500 series: project, programme, portfolio and governance practices explained", "سلسلة ISO 21500: ممارسات المشاريع والبرامج والمحافظ والحوكمة مشروحة"),
+    "P3O": T("P3O®: office design and capability practices explained", "P3O®: ممارسات تصميم المكتب وقدرته مشروحة"),
+    "P3M3": T("P3M3®: the seven perspectives and how maturity grows", "P3M3®: المنظورات السبعة وكيف ينمو النضج"),
+    "PMX": T("PMO Excellence: fourteen domains through three lenses", "تميّز مكاتب المشاريع: أربعة عشر مجالًا بثلاث زوايا"),
+}
+PRACTICE_BODY = {"21500": "ISO", "P3O": "PeopleCert (AXELOS)", "P3M3": "PeopleCert (AXELOS)", "PMX": None}
+PRACTICE_ROUTES = {"21500": ["ROUTE-PM-FOUND", "ROUTE-PORTFOLIO"], "P3O": ["ROUTE-PMO", "ROUTE-PORTFOLIO"], "P3M3": ["ROUTE-PMO"], "PMX": ["ROUTE-PMO"]}
+PRACTICE_PREREQ = {
+    "21500": ("CRS-PM-101", T("The foundations course introduces the project, programme and portfolio vocabulary used here.", "تقدّم دورة الأساسيات مفردات المشروع والبرنامج والمحفظة المستخدمة هنا.")),
+    "P3O": ("CRS-PMO-DESIGN", T("PMO design and services comes first; this course goes deeper into office models and capability.", "تأتي دورة تصميم المكتب وخدماته أولًا؛ وتتعمق هذه الدورة في نماذج المكاتب وقدرتها.")),
+    "P3M3": ("CRS-PMO-KPI", T("PMO maturity and KPIs explains maturity levels before the full model.", "تشرح دورة نضج المكتب ومؤشراته مستويات النضج قبل النموذج الكامل.")),
+    "PMX": ("CRS-PMO-KPI", T("Read the maturity and KPI course first; the excellence index combines maturity, conformity and capability.", "اقرأ دورة النضج والمؤشرات أولًا؛ فمؤشر التميّز يجمع النضج والمطابقة والقدرة.")),
+}
+PRACTICE_CERT_KW = {"21500": ["ISO 21500", "21502", "PMP"], "P3O": ["P3O", "PMI-PMOCP", "PMOCP"], "P3M3": ["P3M3", "PMOCP"], "PMX": ["PMOCP", "PMO"]}
+
+
+def practice_question(g, sec, it, qid, course_id, module_id, comp, pool):
+    """'Which action does the guide recommend for …' — distractors are actions recommended for practices in other areas that share no
+    content word with the target practice's title, statement or actions, so a distractor cannot also be a fair answer (pre-review B6)."""
+    correct = it["how"][h(qid) % len(it["how"])]
+    near = words(it["title"]["en"], it["req"]["en"], *[x["en"] for x in it["how"]])
+    own = {norm(x["en"]) for x in it["how"]}
+    cands = [(s2, i2, x) for (s2, i2, x) in pool if s2["id"] != sec["id"] and norm(x["en"]) not in own and len(x["en"].split()) > 3]
+    far = [c for c in cands if not (words(c[2]["en"]) & near)]
+    cands = far if len({norm(c[2]["en"]) for c in far}) >= 3 else cands
+    cands.sort(key=lambda x: h(qid + x[2]["en"]))
+    wrongs, seen = [], set()
+    for s2, i2, x in cands:
+        if norm(x["en"]) in seen:
+            continue
+        seen.add(norm(x["en"]))
+        wrongs.append({"text": x, "why": T(f"Recommended for “{i2['title']['en']}” ({s2['short']['en']}), not for this practice.",
+                                           f"موصى به لـ«{i2['title']['ar']}» ({s2['short']['ar']})، وليس لهذه الممارسة.")})
+        if len(wrongs) == 3:
+            break
+    options, key = opts_shuffle(qid, {"text": correct, "why": T("The guide recommends this action for this practice.", "يوصي الدليل بهذا الإجراء لهذه الممارسة.")}, wrongs)
+    noun = T("perspective", "المنظور") if it.get("questions") else T("practice", "الممارسة")
+    return {"id": qid, "category": "pmo", "course_id": course_id, "module_id": module_id, "competency": comp,
+            "difficulty": "medium", "type": "single_choice", "format": "knowledge",
+            "prompt": T(f"{g['title']['en']}: which action does the guide recommend for the {noun['en']} “{it['title']['en']}”?",
+                        f"{g['title']['ar']}: أي إجراء يوصي به الدليل لـ{noun['ar']} «{it['title']['ar']}»؟"),
+            "options": options, "correct_answer": key,
+            "explanation": T("The guide's actions here: " + "; ".join(x["en"] for x in it["how"]) + ".", "إجراءات الدليل هنا: " + "؛ ".join(x["ar"] for x in it["how"]) + "."),
+            "reference": f"guide:{g['slug']}#{it['ref']}", "weight": 1, "version": "1.0.0", "status": "active", "governance": dict(system_gov)}
+
+
 RUBRIC = [
     (T("Follows the guide", "الالتزام بالدليل"), 25, T("Every step the guide sets out is done in order.", "كل الخطوات التي يحددها الدليل منفذة بالترتيب."),
      T("One or two steps are thin or skipped.", "خطوة أو خطوتان ناقصتان أو متجاوزتان."), T("Steps are missing or out of order.", "خطوات مفقودة أو غير مرتبة.")),
@@ -467,10 +649,10 @@ src_doc = load("sources")
 for entry in index:
     g = guide_files[entry["slug"]]
     is_std = g["kind"] == "standard"
+    is_prac = g["kind"] == "practice"
     code = entry["code"]
-    cid = f"CRS-G-{code}" if is_std else f"CRS-M-{code}"
-    qpre = f"Q-G-{code}" if is_std else f"Q-M-{code}"
-    apre = f"ASM-G-{code}" if is_std else f"ASM-M-{code}"
+    pfx = "G" if is_std else ("P" if is_prac else "M")
+    cid, qpre, apre = f"CRS-{pfx}-{code}", f"Q-{pfx}-{code}", f"ASM-{pfx}-{code}"
     tool = next(m for m in modules.values() if m["id"] == g["module"])
     sid = f"SRC-TK-{code}"
     gen_src.append({"id": sid, "source_id": sid, "organization": "Continual Improvement Academy — owner toolkit", "title": g["title"]["en"],
@@ -486,18 +668,18 @@ for entry in index:
         mid = f"{cid}-M{mi + 1:02d}"
         lessons = []
         for it in c["items"]:
-            ok = (it["req"]["en"] and it.get("how") and (it["ev"] if is_std else (it["gaps"] or it.get("tips"))))
+            ok = (it["req"]["en"] and it.get("how") and (it["ev"] if is_std else ((it["ev"] or it.get("questions")) if is_prac else (it["gaps"] or it.get("tips")))))
             if not ok:
                 continue
             n += 1
             lid = f"{cid}-L{n:02d}"
             qid = f"{qpre}-L{n:02d}"
             comp = comp_cycle[(n - 1) % len(comp_cycle)]
-            q = guide_question(g, c, it, qid, cid, mid, comp, pool) if is_std else method_question(g, c, it, qid, cid, mid, comp, pool)
+            q = guide_question(g, c, it, qid, cid, mid, comp, pool) if is_std else (practice_question(g, c, it, qid, cid, mid, comp, pool) if is_prac else method_question(g, c, it, qid, cid, mid, comp, pool))
             if len(q["options"]) < 4:
                 continue
             gen_q.append(q)
-            minutes = 15 if is_std else 12
+            minutes = 15 if is_std else (30 if is_prac and it.get("questions") else (14 if is_prac else 12))
             lesson = {"id": lid, "order": len(lessons) + 1, "title": T(f"{it['ref']} {it['title']['en']}" if is_std else it["title"]["en"],
                                                                          f"{it['ref']} {it['title']['ar']}" if is_std else it["title"]["ar"]),
                       "estimated_minutes": minutes, "source": {"guide": g["slug"], "ref": it["ref"]}, "check_question_id": qid,
@@ -507,14 +689,14 @@ for entry in index:
             mods.append({"id": mid, "order": len(mods) + 1, "title": c["title"], "summary": c["intro"], "lessons": lessons})
     total = sum(l["estimated_minutes"] for l in lessons_flat)
     pt_id = f"{qpre}-PT"
-    brief, deliverable = GEN_PT["standard" if is_std else "method"]
-    gen_q.append({"id": pt_id, "category": "iso" if is_std else "quality", "course_id": cid, "module_id": None, "competency": g["competencies"][0],
+    brief, deliverable = GEN_PT["standard" if is_std else ("practice" if is_prac else "method")]
+    gen_q.append({"id": pt_id, "category": "iso" if is_std else ("pmo" if is_prac else "quality"), "course_id": cid, "module_id": None, "competency": g["competencies"][0],
                   "difficulty": "hard", "type": "practical_assignment", "format": "practical", "prompt": brief, "deliverable": deliverable,
                   "rubric": rubric, "explanation": T("Scored by a named human reviewer against the rubric.", "يقيّمها مراجع بشري مسمى وفق سلم التقدير."),
                   "reference": f"guide:{g['slug']}", "weight": 4, "version": "1.0.0", "status": "active", "governance": dict(system_gov)})
     lesson_qs = [l["check_question_id"] for l in lessons_flat]
     quiz_ids, final_ids = spread(lesson_qs, 15, 0), spread(lesson_qs, 25, 0.5)  # the quiz is formative; the final samples the whole course
-    slug_base = g["slug"] + ("-requirements" if is_std else "-method")
+    slug_base = g["slug"] + ("-requirements" if is_std else ("-practices" if is_prac else "-method"))
     for kind, ids, passing, minutes, suffix, title in [
         ("knowledge_quiz", quiz_ids, 70, max(10, len(quiz_ids)), "QUIZ", T("knowledge check", "اختبار معرفي")),
         ("final", final_ids, 70, max(15, round(len(final_ids) * 1.2)), "FINAL", T("final assessment", "التقييم الختامي")),
@@ -540,6 +722,14 @@ for entry in index:
         why = T("This course follows the platform's interactive guide item by item: each lesson is one requirement, with a worked example, "
                 "the steps to apply it, the evidence to show and the questions an auditor may ask.",
                 "تتبع هذه الدورة دليل المنصة التفاعلي بندًا بندًا: كل درس متطلب واحد، مع مثال تطبيقي، وخطوات تطبيقه، والأدلة التي تُعرض، والأسئلة التي قد يطرحها المدقق.")
+    elif is_prac:
+        ctitle = PRACTICE_TITLES[code]
+        outcomes = [T("Explain each practice in plain words and why it matters to delivery and governance.", "شرح كل ممارسة بلغة واضحة وسبب أهميتها للتسليم والحوكمة."),
+                    T("Place your organisation on the evidence ladder of each practice, from the lowest rung to the highest, using records you can show.", "تحديد موقع منظمتك على سلّم الأدلة لكل ممارسة، من الدرجة الأدنى إلى الأعلى، بسجلات يمكنك عرضها."),
+                    T("Choose the recommended actions that lift a practice one rung, with an owner and a KPI.", "اختيار الإجراءات الموصى بها لرفع الممارسة درجة واحدة، مع مسؤول ومؤشر أداء."),
+                    T("Trace how practices depend on each other, and on the other PMO guides, before planning improvement.", "تتبّع اعتماد الممارسات بعضها على بعض، وعلى أدلة مكاتب المشاريع الأخرى، قبل تخطيط التحسين."),
+                    T("Complete the toolkit's assessment for a real office or portfolio and defend the scores with evidence.", "إكمال تقييم الأداة لمكتب أو محفظة حقيقية والدفاع عن الدرجات بالأدلة.")]
+        why = g["lede"]
     else:
         ctitle = T(f"{g['title']['en']}: the method step by step", f"{g['title']['ar']}: المنهجية خطوة بخطوة")
         outcomes = [T(f"Explain the purpose of {g['title']['en']} and when to use it.", f"شرح غرض {g['title']['ar']} ومتى يُستخدم."),
@@ -550,13 +740,15 @@ for entry in index:
     sched = schedule(lessons_flat)
     hours = round(sum(d["minutes"] for d in sched) / 60 * 2) / 2  # lessons + practical task + final assessment
     course = {
-        "id": cid, "code": cid, "slug": slug_base, "title": ctitle, "category": "iso" if is_std else "quality", "ecosystem": g["ecosystem"],
-        "professional_body_reference": "ISO" if is_std else None, "standard_ids": [g["standard_id"]] if is_std and g.get("standard_id") else [], "route_ids": [],
+        "id": cid, "code": cid, "slug": slug_base, "title": ctitle, "category": "iso" if is_std else ("pmo" if is_prac else "quality"), "ecosystem": g["ecosystem"],
+        "professional_body_reference": "ISO" if is_std else (PRACTICE_BODY.get(code) if is_prac else None), "standard_ids": [g["standard_id"]] if is_std and g.get("standard_id") else [],
+        "route_ids": PRACTICE_ROUTES.get(code, []) if is_prac else [],
         "guide": g["slug"], "generated_from": f"modules/{next(k for k, m in modules.items() if m['id'] == g['module'])}.html",
         "level": 2 if is_std else entry.get("level", 2), "duration": f"{len(sched)} day(s) · {hours:g} h", "duration_days": len(sched), "training_hours": hours,
         "delivery_modes": ["self_paced", "instructor_led"], "languages": ["ar", "en"],
-        "target_audience": [AUD_STD] if is_std else ([g["who"]] if g.get("who") else [AUD_STD]),
-        "prerequisites": [{"type": "course", "course_id": "CRS-ISO-101", "required": False, "reason": T("The ISO foundations make the clause language easier.", "تسهّل أساسيات ISO فهم لغة البنود.")}] if is_std else [],
+        "target_audience": [AUD_STD] if is_std else ([AUD_PRAC, AUD_PRAC2] if is_prac else ([g["who"]] if g.get("who") else [AUD_STD])),
+        "prerequisites": [{"type": "course", "course_id": "CRS-ISO-101", "required": False, "reason": T("The ISO foundations make the clause language easier.", "تسهّل أساسيات ISO فهم لغة البنود.")}] if is_std else (
+            [{"type": "course", "course_id": PRACTICE_PREREQ[code][0], "required": False, "reason": PRACTICE_PREREQ[code][1]}] if is_prac else []),
         "learning_outcomes": outcomes[:6], "overview": g["lede"] if g["lede"]["en"] else why, "why_it_matters": why,
         "professional_relevance": T("Built from the toolkit you will use at work, so learning and application share the same language and records.",
                                     "مبنية من الأداة التي ستستخدمها في العمل، فيشترك التعلم والتطبيق في اللغة نفسها والسجلات نفسها."),
@@ -570,7 +762,7 @@ for entry in index:
         "modules": mods, "daily_schedule": sched,
         "practical_task": {"id": f"PT-{code}", "brief": brief, "deliverable": deliverable, "minutes": 90, "rubric": rubric, "review": "human", "question_id": pt_id},
         "recommended_next_course": None, "related_certification": None, "related_knowledge_pages": [],
-        "competency_mappings": [{"competency": cp, "target_level": 3 if is_std else 2} for cp in g["competencies"]],
+        "competency_mappings": [{"competency": cp, "target_level": 3 if (is_std or is_prac) else 2} for cp in g["competencies"]],
         "version": "1.0.0", "content_owner": "مدثر سلامه", "reviewer": None, "source_references": [sid] + EDITION_SRC.get(code, []), "review_date": None,
         "governance": dict(system_gov),
     }
@@ -578,7 +770,7 @@ for entry in index:
     domains = sorted({COMP_DOMAIN[c] for c in g["competencies"] if c in COMP_DOMAIN})
     gen_rec.append({"id": f"REC-{cid}", "recommendation_type": "course", "target_id": cid, "title": ctitle, "competencies": g["competencies"], "domains": domains, "roles": [],
                     "level": course["level"], "estimated_effort": f"{hours:g} h", "prerequisites": [], "interest_keywords": [code.lower(), g["slug"].replace("-", " ")],
-                    "certification_keywords": [f"ISO {code}", code] if is_std else [], "standard_ids": course["standard_ids"]})
+                    "certification_keywords": [f"ISO {code}", code] if is_std else (PRACTICE_CERT_KW.get(code, []) if is_prac else []), "standard_ids": course["standard_ids"]})
 
 # next-course chain: each standard's requirements course follows its foundation course; methods follow the RCA/CAPA order
 for c in gen_courses:
@@ -595,7 +787,7 @@ save("courses", courses_doc); save("questions", q_doc); save("assessments", a_do
 src_doc["items"] = [s for s in src_doc["items"] if not s["id"].startswith("SRC-TK-")] + gen_src
 save("sources", src_doc)
 cat = load("recommendation-catalog")
-cat["items"] = [r for r in cat["items"] if not r["id"].startswith(("REC-CRS-G-", "REC-CRS-M-"))] + gen_rec
+cat["items"] = [r for r in cat["items"] if not r["id"].startswith(("REC-CRS-G-", "REC-CRS-M-", "REC-CRS-P-"))] + gen_rec
 save("recommendation-catalog", cat)
 
 # ===================================================================================== Quality Mission (the owner's audit-day game) in the library
