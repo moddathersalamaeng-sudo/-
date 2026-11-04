@@ -4871,6 +4871,1861 @@
       }
     },
     {
+      "id": "ASM-QMS-201-QUIZ",
+      "slug": "quality-practice-quiz",
+      "title": {
+        "en": "Quality Management Foundations: QA, QC and the quality system — knowledge checks",
+        "ar": "أساسيات إدارة الجودة: ضمان الجودة وضبطها ونظام الجودة — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-QMS-201",
+      "question_ids": [
+        "Q-QMS-201-L01",
+        "Q-QMS-201-L02",
+        "Q-QMS-201-L03",
+        "Q-QMS-201-L04"
+      ],
+      "competencies": [
+        "QM-01",
+        "QM-04"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "2cbeec3dd3eec80a2198de9ae809ab67599b5fd1118311f1a493955412c033e6"
+      }
+    },
+    {
+      "id": "ASM-QMS-201-FINAL",
+      "slug": "quality-practice-final",
+      "title": {
+        "en": "Quality Management Foundations: QA, QC and the quality system — final assessment",
+        "ar": "أساسيات إدارة الجودة: ضمان الجودة وضبطها ونظام الجودة — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-QMS-201",
+      "question_ids": [
+        "Q-QMS-201-SCN",
+        "Q-QMS-201-L01",
+        "Q-QMS-201-L02",
+        "Q-QMS-201-L03",
+        "Q-QMS-201-L04"
+      ],
+      "competencies": [
+        "QM-01",
+        "QM-04"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not ASQ exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبارات ASQ). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "960798b2506228b25a3224acfaa70522f3952311782d132d33a4eb790aafb468"
+      }
+    },
+    {
+      "id": "ASM-QMS-201-PRACT",
+      "slug": "quality-practice-practical",
+      "title": {
+        "en": "Quality Management Foundations: QA, QC and the quality system — practical task",
+        "ar": "أساسيات إدارة الجودة: ضمان الجودة وضبطها ونظام الجودة — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-QMS-201",
+      "question_ids": [
+        "Q-QMS-201-PT"
+      ],
+      "competencies": [
+        "QM-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 90,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "2f5a45ef13c713209871371bff9b1f7b440082b5a878818c7d55a48ed64a0155"
+      }
+    },
+    {
+      "id": "ASM-Q-TOOLS-QUIZ",
+      "slug": "quality-tools-data-quiz",
+      "title": {
+        "en": "Quality Tools and Data Analysis — knowledge checks",
+        "ar": "أدوات الجودة وتحليل البيانات — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-Q-TOOLS",
+      "question_ids": [
+        "Q-Q-TOOLS-L01",
+        "Q-Q-TOOLS-L02",
+        "Q-Q-TOOLS-L03",
+        "Q-Q-TOOLS-L04"
+      ],
+      "competencies": [
+        "QM-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ce1d8fb15b4f017dcba1d2c315113653be97d29d604d1dbdddf2ea416a9fa866"
+      }
+    },
+    {
+      "id": "ASM-Q-TOOLS-FINAL",
+      "slug": "quality-tools-data-final",
+      "title": {
+        "en": "Quality Tools and Data Analysis — final assessment",
+        "ar": "أدوات الجودة وتحليل البيانات — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-Q-TOOLS",
+      "question_ids": [
+        "Q-Q-TOOLS-SCN",
+        "Q-Q-TOOLS-L01",
+        "Q-Q-TOOLS-L02",
+        "Q-Q-TOOLS-L03",
+        "Q-Q-TOOLS-L04"
+      ],
+      "competencies": [
+        "QM-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not ASQ exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبارات ASQ). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "c3db61326cddba1253d6788d448abadf8eb919b166cff74fe244e90d71281eb3"
+      }
+    },
+    {
+      "id": "ASM-Q-TOOLS-PRACT",
+      "slug": "quality-tools-data-practical",
+      "title": {
+        "en": "Quality Tools and Data Analysis — practical task",
+        "ar": "أدوات الجودة وتحليل البيانات — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-Q-TOOLS",
+      "question_ids": [
+        "Q-Q-TOOLS-PT"
+      ],
+      "competencies": [
+        "QM-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e5c76ffabf89c50a6196843090516b375907b911a02dd26c2261d7cc201b31c1"
+      }
+    },
+    {
+      "id": "ASM-Q-CAPA-QUIZ",
+      "slug": "problem-solving-capa-quiz",
+      "title": {
+        "en": "Problem Solving and CAPA — knowledge checks",
+        "ar": "حل المشكلات والإجراءات التصحيحية والوقائية — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-Q-CAPA",
+      "question_ids": [
+        "Q-Q-CAPA-L01",
+        "Q-Q-CAPA-L02",
+        "Q-Q-CAPA-L03",
+        "Q-Q-CAPA-L04"
+      ],
+      "competencies": [
+        "QM-03"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "5ce712ec51d5fffa108e0c95caebb568505c82ba84ae92de7fc1f2c504431534"
+      }
+    },
+    {
+      "id": "ASM-Q-CAPA-FINAL",
+      "slug": "problem-solving-capa-final",
+      "title": {
+        "en": "Problem Solving and CAPA — final assessment",
+        "ar": "حل المشكلات والإجراءات التصحيحية والوقائية — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-Q-CAPA",
+      "question_ids": [
+        "Q-Q-CAPA-SCN",
+        "Q-Q-CAPA-L01",
+        "Q-Q-CAPA-L02",
+        "Q-Q-CAPA-L03",
+        "Q-Q-CAPA-L04"
+      ],
+      "competencies": [
+        "QM-03"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not ASQ exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبارات ASQ). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "dbbe54a292ed7b6344a77bb70152126ab30c0ca18f2e01f0a65324ef0e0e96cb"
+      }
+    },
+    {
+      "id": "ASM-Q-CAPA-PRACT",
+      "slug": "problem-solving-capa-practical",
+      "title": {
+        "en": "Problem Solving and CAPA — practical task",
+        "ar": "حل المشكلات والإجراءات التصحيحية والوقائية — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-Q-CAPA",
+      "question_ids": [
+        "Q-Q-CAPA-PT"
+      ],
+      "competencies": [
+        "QM-03"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "1aaed19db6bd19677553bf3aa22bb9186bb4062c04cdc675392b3cb28ca1f115"
+      }
+    },
+    {
+      "id": "ASM-Q-SPC-QUIZ",
+      "slug": "spc-basics-quiz",
+      "title": {
+        "en": "Statistical Process Control Basics — knowledge checks",
+        "ar": "أساسيات الضبط الإحصائي للعمليات — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-Q-SPC",
+      "question_ids": [
+        "Q-Q-SPC-L01",
+        "Q-Q-SPC-L02",
+        "Q-Q-SPC-L03",
+        "Q-Q-SPC-L04"
+      ],
+      "competencies": [
+        "QM-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "77434dbb37232e4eef44a8c3eee64d3d752ebe1d79b07e569c3c453866c15565"
+      }
+    },
+    {
+      "id": "ASM-Q-SPC-FINAL",
+      "slug": "spc-basics-final",
+      "title": {
+        "en": "Statistical Process Control Basics — final assessment",
+        "ar": "أساسيات الضبط الإحصائي للعمليات — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-Q-SPC",
+      "question_ids": [
+        "Q-Q-SPC-SCN",
+        "Q-Q-SPC-L01",
+        "Q-Q-SPC-L02",
+        "Q-Q-SPC-L03",
+        "Q-Q-SPC-L04"
+      ],
+      "competencies": [
+        "QM-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not ASQ exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبارات ASQ). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "a639885a8300f894f750fb7de7e1924ec5717aa9871943c1dc74b60be3139a23"
+      }
+    },
+    {
+      "id": "ASM-Q-SPC-PRACT",
+      "slug": "spc-basics-practical",
+      "title": {
+        "en": "Statistical Process Control Basics — practical task",
+        "ar": "أساسيات الضبط الإحصائي للعمليات — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-Q-SPC",
+      "question_ids": [
+        "Q-Q-SPC-PT"
+      ],
+      "competencies": [
+        "QM-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "53fb539b38ba3eab255753dd89427741f5293863627c720b0655ca976e39ded5"
+      }
+    },
+    {
+      "id": "ASM-Q-AUDIT-QUIZ",
+      "slug": "quality-auditing-quiz",
+      "title": {
+        "en": "Quality Auditing: process, product and system audits (ASQ-informed) — knowledge checks",
+        "ar": "تدقيق الجودة: تدقيق العمليات والمنتجات والأنظمة (مستنير بمنهج ASQ) — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-Q-AUDIT",
+      "question_ids": [
+        "Q-Q-AUDIT-L01",
+        "Q-Q-AUDIT-L02",
+        "Q-Q-AUDIT-L03",
+        "Q-Q-AUDIT-L04"
+      ],
+      "competencies": [
+        "AUD-01",
+        "AUD-02",
+        "AUD-03"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "17be971e137a8313a485bcc1f61fdcf9001b834ebf9ec0ab575610f444864c8c"
+      }
+    },
+    {
+      "id": "ASM-Q-AUDIT-FINAL",
+      "slug": "quality-auditing-final",
+      "title": {
+        "en": "Quality Auditing: process, product and system audits (ASQ-informed) — final assessment",
+        "ar": "تدقيق الجودة: تدقيق العمليات والمنتجات والأنظمة (مستنير بمنهج ASQ) — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-Q-AUDIT",
+      "question_ids": [
+        "Q-Q-AUDIT-SCN",
+        "Q-Q-AUDIT-L01",
+        "Q-Q-AUDIT-L02",
+        "Q-Q-AUDIT-L03",
+        "Q-Q-AUDIT-L04"
+      ],
+      "competencies": [
+        "AUD-01",
+        "AUD-02",
+        "AUD-03"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not ASQ exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبارات ASQ). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "7fbd47474c466be2b7699a4f24d65fb1529c3e6ac559842c8fcb0fbb52e1955b"
+      }
+    },
+    {
+      "id": "ASM-Q-AUDIT-PRACT",
+      "slug": "quality-auditing-practical",
+      "title": {
+        "en": "Quality Auditing: process, product and system audits (ASQ-informed) — practical task",
+        "ar": "تدقيق الجودة: تدقيق العمليات والمنتجات والأنظمة (مستنير بمنهج ASQ) — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-Q-AUDIT",
+      "question_ids": [
+        "Q-Q-AUDIT-PT"
+      ],
+      "competencies": [
+        "AUD-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 150,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "4405be97ca0bcf4cba285aa5830bdc3060a689bd1eef84e98bf7e33097669f3f"
+      }
+    },
+    {
+      "id": "ASM-LSS-GB-QUIZ",
+      "slug": "lean-six-sigma-green-belt-quiz",
+      "title": {
+        "en": "Lean Six Sigma Green Belt Foundations — knowledge checks",
+        "ar": "أساسيات الحزام الأخضر في لين ستة سيجما — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-LSS-GB",
+      "question_ids": [
+        "Q-LSS-GB-L01",
+        "Q-LSS-GB-L02",
+        "Q-LSS-GB-L03",
+        "Q-LSS-GB-L04"
+      ],
+      "competencies": [
+        "OE-02",
+        "QM-02",
+        "QM-03"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "524560389a3c184d97f1856c28d9bde24274e28755441ef009b0ddaf4903600e"
+      }
+    },
+    {
+      "id": "ASM-LSS-GB-FINAL",
+      "slug": "lean-six-sigma-green-belt-final",
+      "title": {
+        "en": "Lean Six Sigma Green Belt Foundations — final assessment",
+        "ar": "أساسيات الحزام الأخضر في لين ستة سيجما — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-LSS-GB",
+      "question_ids": [
+        "Q-LSS-GB-SCN",
+        "Q-LSS-GB-L01",
+        "Q-LSS-GB-L02",
+        "Q-LSS-GB-L03",
+        "Q-LSS-GB-L04"
+      ],
+      "competencies": [
+        "OE-02",
+        "QM-02",
+        "QM-03"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not ASQ exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبارات ASQ). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "5d5ddc3fc4f69c37788e8c52fdefb4164c61408783c7c91361190ecb4aa53a60"
+      }
+    },
+    {
+      "id": "ASM-LSS-GB-PRACT",
+      "slug": "lean-six-sigma-green-belt-practical",
+      "title": {
+        "en": "Lean Six Sigma Green Belt Foundations — practical task",
+        "ar": "أساسيات الحزام الأخضر في لين ستة سيجما — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-LSS-GB",
+      "question_ids": [
+        "Q-LSS-GB-PT"
+      ],
+      "competencies": [
+        "QM-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 180,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "d24bbb2ed7cf008b10e5c54db700a8052dfc6ffcd8e82ac01b7df58ccee1e0ea"
+      }
+    },
+    {
+      "id": "ASM-CMQOE-PREP-QUIZ",
+      "slug": "quality-leadership-strategy-quiz",
+      "title": {
+        "en": "Quality Leadership and Strategy (CMQ/OE preparation) — knowledge checks",
+        "ar": "قيادة الجودة والاستراتيجية (إعداد لشهادة CMQ/OE) — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-CMQOE-PREP",
+      "question_ids": [
+        "Q-CMQOE-PREP-L01",
+        "Q-CMQOE-PREP-L02",
+        "Q-CMQOE-PREP-L03",
+        "Q-CMQOE-PREP-L04"
+      ],
+      "competencies": [
+        "LDR-01",
+        "LDR-02",
+        "QM-04"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "705a932e6d082ae8f479043a19d55542971048094473933ced2342a41d2a90f0"
+      }
+    },
+    {
+      "id": "ASM-CMQOE-PREP-FINAL",
+      "slug": "quality-leadership-strategy-final",
+      "title": {
+        "en": "Quality Leadership and Strategy (CMQ/OE preparation) — final assessment",
+        "ar": "قيادة الجودة والاستراتيجية (إعداد لشهادة CMQ/OE) — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-CMQOE-PREP",
+      "question_ids": [
+        "Q-CMQOE-PREP-SCN",
+        "Q-CMQOE-PREP-L01",
+        "Q-CMQOE-PREP-L02",
+        "Q-CMQOE-PREP-L03",
+        "Q-CMQOE-PREP-L04"
+      ],
+      "competencies": [
+        "LDR-01",
+        "LDR-02",
+        "QM-04"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not ASQ exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبارات ASQ). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "9db1858a4d91cd05fa39e6d2086c6604151fe709134c2cc0ba519918563641a0"
+      }
+    },
+    {
+      "id": "ASM-CMQOE-PREP-PRACT",
+      "slug": "quality-leadership-strategy-practical",
+      "title": {
+        "en": "Quality Leadership and Strategy (CMQ/OE preparation) — practical task",
+        "ar": "قيادة الجودة والاستراتيجية (إعداد لشهادة CMQ/OE) — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-CMQOE-PREP",
+      "question_ids": [
+        "Q-CMQOE-PREP-PT"
+      ],
+      "competencies": [
+        "LDR-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "820ac1952c8f1ca7e2a2a1d74787a7ba89517e78e82e11df5af3a26f75587f00"
+      }
+    },
+    {
+      "id": "ASM-Q-COQ-QUIZ",
+      "slug": "cost-of-quality-quiz",
+      "title": {
+        "en": "Cost of Quality — knowledge checks",
+        "ar": "تكلفة الجودة — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-Q-COQ",
+      "question_ids": [
+        "Q-Q-COQ-L01",
+        "Q-Q-COQ-L02",
+        "Q-Q-COQ-L03",
+        "Q-Q-COQ-L04"
+      ],
+      "competencies": [
+        "OE-02",
+        "PERF-01",
+        "QM-01"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "cf05bb9993b5f1207b30c940d37f973b3a9d27498c29e301928abdfad9ab514e"
+      }
+    },
+    {
+      "id": "ASM-Q-COQ-FINAL",
+      "slug": "cost-of-quality-final",
+      "title": {
+        "en": "Cost of Quality — final assessment",
+        "ar": "تكلفة الجودة — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-Q-COQ",
+      "question_ids": [
+        "Q-Q-COQ-SCN",
+        "Q-Q-COQ-L01",
+        "Q-Q-COQ-L02",
+        "Q-Q-COQ-L03",
+        "Q-Q-COQ-L04"
+      ],
+      "competencies": [
+        "OE-02",
+        "PERF-01",
+        "QM-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not ASQ exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبارات ASQ). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "d6a7eac02018332128ef33130e99ee740bc61df390879ddbac668d7b888079ad"
+      }
+    },
+    {
+      "id": "ASM-Q-COQ-PRACT",
+      "slug": "cost-of-quality-practical",
+      "title": {
+        "en": "Cost of Quality — practical task",
+        "ar": "تكلفة الجودة — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-Q-COQ",
+      "question_ids": [
+        "Q-Q-COQ-PT"
+      ],
+      "competencies": [
+        "PERF-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 150,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "518a3a0cfeb8e412ae136f3c4ad27fa4b13393fa1fdc6a90c342b234f69ba886"
+      }
+    },
+    {
+      "id": "ASM-Q-SUPPLIER-QUIZ",
+      "slug": "supplier-quality-quiz",
+      "title": {
+        "en": "Supplier Quality Management — knowledge checks",
+        "ar": "إدارة جودة الموردين — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-Q-SUPPLIER",
+      "question_ids": [
+        "Q-Q-SUPPLIER-L01",
+        "Q-Q-SUPPLIER-L02",
+        "Q-Q-SUPPLIER-L03",
+        "Q-Q-SUPPLIER-L04"
+      ],
+      "competencies": [
+        "QM-04"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "5f5043faf52e44e43e30d16449ea8b5aee0e5118ba706e71560d7e316ef647cf"
+      }
+    },
+    {
+      "id": "ASM-Q-SUPPLIER-FINAL",
+      "slug": "supplier-quality-final",
+      "title": {
+        "en": "Supplier Quality Management — final assessment",
+        "ar": "إدارة جودة الموردين — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-Q-SUPPLIER",
+      "question_ids": [
+        "Q-Q-SUPPLIER-SCN",
+        "Q-Q-SUPPLIER-L01",
+        "Q-Q-SUPPLIER-L02",
+        "Q-Q-SUPPLIER-L03",
+        "Q-Q-SUPPLIER-L04"
+      ],
+      "competencies": [
+        "QM-04"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not ASQ exam questions). 70% completes the course; completion is a CIA certificate of completion, not a professional certification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست أسئلة من اختبارات ASQ). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس شهادة مهنية."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "454affa9cf9be0839e04c74e76443c4846be848611bdfe2244daf4322d1c280a"
+      }
+    },
+    {
+      "id": "ASM-Q-SUPPLIER-PRACT",
+      "slug": "supplier-quality-practical",
+      "title": {
+        "en": "Supplier Quality Management — practical task",
+        "ar": "إدارة جودة الموردين — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-Q-SUPPLIER",
+      "question_ids": [
+        "Q-Q-SUPPLIER-PT"
+      ],
+      "competencies": [
+        "QM-04"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 150,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "408aefc29e2a9ec4e30759c364e2f355baeb9573a7bfea45c24d20d001253072"
+      }
+    },
+    {
+      "id": "ASM-READY-Q-001",
+      "slug": "quality-readiness",
+      "title": {
+        "en": "Quality readiness diagnostic",
+        "ar": "التقييم التشخيصي لجاهزية الجودة"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-Q-RD-01",
+        "Q-Q-RD-02",
+        "Q-Q-RD-03",
+        "Q-Q-RD-04",
+        "Q-Q-RD-05",
+        "Q-Q-RD-06",
+        "Q-Q-RD-07",
+        "Q-Q-RD-08",
+        "Q-Q-RD-09",
+        "Q-Q-RD-10",
+        "Q-Q-RD-11",
+        "Q-Q-RD-12"
+      ],
+      "competencies": [
+        "AUD-02",
+        "LDR-02",
+        "OE-02",
+        "PERF-01",
+        "QM-01",
+        "QM-02",
+        "QM-03",
+        "QM-04"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "Twelve original CIA items across quality foundations, tools, problem solving, auditing, cost and suppliers. Choose “I don't know” rather than guessing — it makes your starting point more accurate. The result is not a professional qualification and years of experience are not used as evidence.",
+        "ar": "اثنا عشر سؤالًا أصليًا من CIA في أسس الجودة وأدواتها وحل المشكلات والتدقيق والتكلفة والموردين. اختر «لا أعرف» بدل التخمين لتكون نقطة بدايتك أدق. والنتيجة ليست مؤهلًا مهنيًا، ولا تُستخدم سنوات الخبرة دليلًا."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "0841e0701f51afa75fc5b30c8dafe0a3187d8863d9c73dbf7597a4582598405e"
+      }
+    },
+    {
+      "id": "ASM-Q-FOUND-DIAG",
+      "slug": "quality-route-found-diagnostic",
+      "title": {
+        "en": "Route diagnostic — Quality foundations",
+        "ar": "التقييم التشخيصي للمسار — أساسيات الجودة"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-QF-RD-01",
+        "Q-QMS-201-L01",
+        "Q-QMS-201-L03",
+        "Q-Q-TOOLS-L01",
+        "Q-Q-TOOLS-L03",
+        "Q-Q-CAPA-L01",
+        "Q-Q-CAPA-L03",
+        "Q-Q-COQ-L01",
+        "Q-Q-COQ-L03"
+      ],
+      "competencies": [
+        "PERF-01",
+        "QM-01",
+        "QM-02",
+        "QM-03",
+        "QM-04"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "9731ef4b4530893824109028da44c081e1056a0bb34f5b3ae716710dd1d3c78e"
+      }
+    },
+    {
+      "id": "ASM-Q-ENGINEER-DIAG",
+      "slug": "quality-route-engineer-diagnostic",
+      "title": {
+        "en": "Route diagnostic — Quality engineer",
+        "ar": "التقييم التشخيصي للمسار — مهندس الجودة"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-QE-RD-01",
+        "Q-QMS-201-L01",
+        "Q-QMS-201-L03",
+        "Q-Q-TOOLS-L01",
+        "Q-Q-TOOLS-L03",
+        "Q-Q-SPC-L01",
+        "Q-Q-SPC-L03",
+        "Q-Q-CAPA-L01",
+        "Q-Q-CAPA-L03",
+        "Q-Q-SUPPLIER-L01"
+      ],
+      "competencies": [
+        "QM-01",
+        "QM-02",
+        "QM-03",
+        "QM-04"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "2233894ab47407b26b9db78813709501e793c012daf1ced27c30815b5fc39531"
+      }
+    },
+    {
+      "id": "ASM-Q-AUDITOR-DIAG",
+      "slug": "quality-route-auditor-diagnostic",
+      "title": {
+        "en": "Route diagnostic — Quality auditor (ASQ-informed)",
+        "ar": "التقييم التشخيصي للمسار — مدقق الجودة (مستنير بمنهج ASQ)"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-QA-RD-01",
+        "Q-QMS-201-L01",
+        "Q-QMS-201-L03",
+        "Q-Q-AUDIT-L01",
+        "Q-Q-AUDIT-L03",
+        "Q-Q-SUPPLIER-L01",
+        "Q-Q-SUPPLIER-L03"
+      ],
+      "competencies": [
+        "AUD-01",
+        "AUD-02",
+        "QM-01",
+        "QM-04"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "bd23846185a84b2db8b841c7713101351b04b2c4694dbe30d2c7d3f594ddf89f"
+      }
+    },
+    {
+      "id": "ASM-Q-SSGB-DIAG",
+      "slug": "quality-route-ssgb-diagnostic",
+      "title": {
+        "en": "Route diagnostic — Six Sigma Green Belt",
+        "ar": "التقييم التشخيصي للمسار — الحزام الأخضر في ستة سيجما"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-QS-RD-01",
+        "Q-Q-TOOLS-L01",
+        "Q-Q-TOOLS-L03",
+        "Q-Q-SPC-L01",
+        "Q-Q-SPC-L03",
+        "Q-LSS-GB-L01",
+        "Q-LSS-GB-L03",
+        "Q-Q-CAPA-L01",
+        "Q-Q-CAPA-L03"
+      ],
+      "competencies": [
+        "OE-02",
+        "QM-02",
+        "QM-03"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "21329b27e9164376ff5cdb9d93ce5d5296a65caf384359e5e93a1e846795b970"
+      }
+    },
+    {
+      "id": "ASM-Q-CMQOE-DIAG",
+      "slug": "quality-route-cmqoe-diagnostic",
+      "title": {
+        "en": "Route diagnostic — Quality manager (CMQ/OE preparation)",
+        "ar": "التقييم التشخيصي للمسار — مدير الجودة (إعداد لشهادة CMQ/OE)"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-QMS-201-L01",
+        "Q-QMS-201-L03",
+        "Q-Q-COQ-L01",
+        "Q-Q-COQ-L03",
+        "Q-Q-SUPPLIER-L01",
+        "Q-Q-SUPPLIER-L03",
+        "Q-CMQOE-PREP-L01",
+        "Q-CMQOE-PREP-L03"
+      ],
+      "competencies": [
+        "LDR-01",
+        "PERF-01",
+        "QM-01",
+        "QM-04"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "4102dc71887025bdeaa4e7c059bd72fff17d688faeca1daa8be434db784820c6"
+      }
+    },
+    {
+      "id": "ASM-CMQOE-DIAG",
+      "slug": "cmqoe-center-diagnostic",
+      "title": {
+        "en": "CMQ/OE Center diagnostic",
+        "ar": "التقييم التشخيصي لمركز CMQ/OE"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-CMQ-D-01",
+        "Q-CMQ-D-02",
+        "Q-CMQ-D-03",
+        "Q-CMQ-D-04",
+        "Q-CMQ-D-05",
+        "Q-CMQ-D-06",
+        "Q-CMQ-D-07",
+        "Q-CMQ-D-08",
+        "Q-CMQ-D-09",
+        "Q-CMQ-D-10",
+        "Q-CMQ-D-11",
+        "Q-CMQ-D-12",
+        "Q-CMQ-D-13",
+        "Q-CMQ-D-14"
+      ],
+      "competencies": [
+        "LDR-01",
+        "LDR-02",
+        "OE-01",
+        "OE-02",
+        "PERF-01",
+        "PM-01",
+        "QM-02",
+        "QM-04"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 25,
+      "description": {
+        "en": "Fourteen original CIA items, two for each major area of the CMQ/OE Body of Knowledge (area names from ASQ; no BoK text and no ASQ exam questions). Results show your weak areas in the CMQ/OE Center. It is a study signal, not a prediction of an exam result.",
+        "ar": "أربعة عشر سؤالًا أصليًا من CIA، سؤالان لكل مجال رئيسي من مجالات معرفة CMQ/OE (أسماء المجالات من ASQ؛ دون نص المجالات ودون أسئلة اختبارات ASQ). وتُظهر النتائج مواطن ضعفك في مركز CMQ/OE. وهي إشارة للمذاكرة لا تنبؤ بنتيجة الاختبار."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e9dda85a4387f07417db994774b9b39162a2e41a2ff6e4840126259a1e748863"
+      },
+      "certification_id": "CERT-CMQOE",
+      "bok_areas": {
+        "Q-CMQ-D-01": 0,
+        "Q-CMQ-D-02": 0,
+        "Q-CMQ-D-03": 1,
+        "Q-CMQ-D-04": 1,
+        "Q-CMQ-D-05": 2,
+        "Q-CMQ-D-06": 2,
+        "Q-CMQ-D-07": 3,
+        "Q-CMQ-D-08": 3,
+        "Q-CMQ-D-09": 4,
+        "Q-CMQ-D-10": 4,
+        "Q-CMQ-D-11": 5,
+        "Q-CMQ-D-12": 5,
+        "Q-CMQ-D-13": 6,
+        "Q-CMQ-D-14": 6
+      }
+    },
+    {
       "id": "ASM-G-9001-QUIZ",
       "slug": "iso-9001-requirements-quiz",
       "title": {

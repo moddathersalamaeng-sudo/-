@@ -21,6 +21,9 @@ import { lessonGuideRefs, findItem } from '../domain/guides.mjs';
 import { guideItemBody, guideApply, guideRefsPanel, guideHref } from './guides.js';
 import { LevelMeter } from '../ui/charts.js';
 import { studyWeeks } from '../domain/pmi.mjs';
+import { courseCover, familyOf } from '../ui/art.js';
+import { Figure } from '../ui/figures.js';
+import { courseFigures, lessonFigures } from '../domain/figures.mjs';
 
 const STATUS_KEY = { 'CIA INTERNAL COURSE': 'cia_internal', 'EXAM PREPARATION COURSE': 'exam_prep', 'EXTERNAL ACCREDITATION PENDING': 'accreditation_pending', 'EXTERNALLY ACCREDITED': 'externally_accredited', 'OFFICIAL PARTNER COURSE': 'official_partner' };
 export const courseStatusLabel = (ctx, c) => {
@@ -73,8 +76,8 @@ function linkedPanel(ctx, c, content) {
   const guides = (c.related_guides || []).map(slug => (content.guides || []).find(g => g.slug === slug)).filter(Boolean);
   if (!certs.length && !guides.length) return null;
   return isec('c-links', 'link', t('p8.course.linked'),
-    certs.length ? h('div', null, h('h3', null, icon('award'), ' ', t('p8.course.certs')), h('p', { class: 'note' }, t(c.status_label === 'EXAM PREPARATION COURSE' ? 'p8.course.certsNotePrep' : 'p8.course.certsNote')),
-      h('ul', { class: 'chips' }, certs.map(x => h('li', null, h('a', { href: `#/academy/pmi/certifications/${x.slug}` }, x.code, ' ', L(ctx, x.name)))))) : null,
+    certs.length ? h('div', null, h('h3', null, icon('award'), ' ', t('p8.course.certs')), h('p', { class: 'note' }, t(c.professional_body_reference === 'ASQ' ? (c.status_label === 'EXAM PREPARATION COURSE' ? 'q9.courseCertsNotePrep' : 'q9.courseCertsNote') : c.status_label === 'EXAM PREPARATION COURSE' ? 'p8.course.certsNotePrep' : 'p8.course.certsNote')),
+      h('ul', { class: 'chips' }, certs.map(x => h('li', null, h('a', { href: `#/academy/${x.body === 'ASQ' ? 'quality' : 'pmi'}/certifications/${x.slug}` }, x.code, ' ', L(ctx, x.name)))))) : null,
     guides.length ? h('div', null, h('h3', null, icon('ladder'), ' ', t('p8.course.guides')), h('p', { class: 'note' }, t('p8.course.guidesNote')),
       h('ul', { class: 'chips' }, guides.map(g => h('li', null, h('a', { href: guideHref(g.slug) }, L(ctx, g.title)))))) : null);
 }
@@ -84,13 +87,51 @@ function linkedPanel(ctx, c, content) {
 export function courseCard(ctx, c, learner) {
   const { t, i18n } = ctx;
   const st = courseStatus(c, learner.progress, learner.attempts);
-  return h('article', { class: 'card ccard', dataset: { course: c.id } },
-    h('p', { class: 'eyebrow' }, t('p7.level', { n: i18n.digitize(c.level) }), ' · ', hours(ctx, c.training_hours), c.duration_days ? ' · ' + t('p7.days', { n: i18n.number(c.duration_days) }) : null),
-    h('h3', null, h('a', { href: `#/academy/courses/${c.slug}` }, L(ctx, c.title))),
-    h('p', null, L(ctx, c.overview)),
-    h('div', { class: 'badges' }, courseStatusLabel(ctx, c), stateBadge(ctx, st), isReviewer(ctx) ? govBadge(ctx, c) : null),
-    st.percent ? ProgressBar({ value: st.done, max: st.total, label: t('courses.progress'), valueText: t('p7.course.lessonsDone', { done: i18n.number(st.done), total: i18n.number(st.total) }) }) : null);
+  const fam = familyOf(c);
+  const nLessons = (c.modules || []).reduce((a, m) => a + (m.lessons || []).length, 0);
+  return h('article', { class: 'card ccard', dataset: { course: c.id, family: fam } },
+    h('div', { class: 'cover' }, courseCover(c), h('span', { class: 'chip-fam' }, t('p9.family.' + fam)), h('span', { class: 'chip-level' }, t('p7.level', { n: i18n.digitize(c.level) }))),
+    h('div', { class: 'ccard-body' },
+      h('p', { class: 'eyebrow' }, t('p7.level', { n: i18n.digitize(c.level) }), ' · ', hours(ctx, c.training_hours), c.duration_days ? ' · ' + t('p7.days', { n: i18n.number(c.duration_days) }) : null),
+      h('h3', null, h('a', { href: `#/academy/courses/${c.slug}` }, L(ctx, c.title))),
+      h('p', { class: 'lede-clamp' }, L(ctx, c.overview)),
+      h('ul', { class: 'meta-row', 'aria-label': t('p8.course.glance') },
+        h('li', null, icon('book'), ' ', t('p9.card.lessons', { n: i18n.number(nLessons) })),
+        h('li', null, icon('clipboard'), ' ', t(c.practical_task ? 'p9.card.practical' : 'p9.card.checks')),
+        c.related_certification || c.status_label === 'EXAM PREPARATION COURSE' ? h('li', null, icon('award'), ' ', t('p9.card.examPrep')) : null),
+      h('div', { class: 'badges' }, courseStatusLabel(ctx, c), stateBadge(ctx, st), isReviewer(ctx) ? govBadge(ctx, c) : null),
+      st.percent ? ProgressBar({ value: st.done, max: st.total, label: t('courses.progress'), valueText: t('p7.course.lessonsDone', { done: i18n.number(st.done), total: i18n.number(st.total) }) }) : null));
 }
+
+/** Marketing hero of a course page: title, promise, actions and the cover, with the key facts (Phase 9). */
+function courseHero(ctx, c, st, lessons, actions) {
+  const { t, i18n } = ctx;
+  const fam = familyOf(c);
+  return h('header', { class: 'phead chero', dataset: { family: fam } },
+    h('div', { class: 'chero-text' },
+      h('div', { class: 'badges' }, courseStatusLabel(ctx, c), stateBadge(ctx, st), isReviewer(ctx) ? govBadge(ctx, c) : null),
+      h('p', { class: 'eyebrow' }, t('p9.family.' + fam), ' · ', t('courses.eyebrow')),
+      h('h1', null, L(ctx, c.title)),
+      h('p', { class: 'lede' }, L(ctx, c.overview)),
+      actions.length ? h('div', { class: 'btnrow' }, actions) : null,
+      h('ul', { class: 'hero-facts' },
+        h('li', null, icon('clock'), ' ', h('strong', null, hours(ctx, c.training_hours))),
+        h('li', null, icon('book'), ' ', h('strong', null, i18n.number(lessons.length)), ' ', t('p8.course.lessons')),
+        h('li', null, icon('gauge'), ' ', h('strong', null, t('p8.course.levelName.' + Math.min(5, Math.max(1, c.level || 1))))),
+        h('li', null, icon('globe'), ' ', (c.languages || []).map(l => langName(ctx, l)).join(' · ')))),
+    h('div', { class: 'cover' }, courseCover(c)));
+}
+
+/** "Why this course": four value points, each with an icon — facts about how CIA courses work, never claims. */
+function valueStrip(ctx, c) {
+  const { t } = ctx;
+  const items = [['bulb', 'original'], ['image', 'visual'], ['clipboard', c.practical_task ? 'practical' : 'checks'], ['grid', (c.tools || []).length ? 'tools' : 'bilingual']];
+  return h('ul', { class: 'valuestrip', 'aria-label': t('p9.value.label') }, items.map(([ic, k]) => h('li', { dataset: { value: k } },
+    h('span', { class: 'vico' }, icon(ic)), h('strong', null, t('p9.value.' + k + '.t')), h('span', { class: 'd' }, t('p9.value.' + k + '.d')))));
+}
+
+const OUT_ICONS = ['target', 'bulb', 'chart', 'shield', 'users', 'award', 'cycle', 'magnify'];
+const AUD_ICONS = ['users', 'briefcase', 'hardhat', 'crown', 'magnify', 'cog'];
 
 export function courseCatalogView(ctx, match) {
   const { t } = ctx;
@@ -255,8 +296,8 @@ function courseDetail(ctx, c, content, learner, region, guides = {}) {
     c.guide && content.guides.some(g => g.slug === c.guide) ? linkBtn(guideHref(c.guide), t('gd.readGuide')) : null
   ].filter(Boolean);
 
-  const head = pageHead(ctx, { eyebrow: t('courses.eyebrow'), title: L(ctx, c.title), lede: L(ctx, c.overview), actions });
-  head.prepend(h('div', { class: 'badges' }, courseStatusLabel(ctx, c), stateBadge(ctx, st), isReviewer(ctx) ? govBadge(ctx, c) : null));
+  const head = courseHero(ctx, c, st, lessons, actions);
+  const figs = courseFigures(c, content.figures, content.lessonFigures);
 
   const progressPanel = h('section', { class: 'panel feature', 'aria-labelledby': 'cp-h' },
     h('h2', { id: 'cp-h' }, t('courses.progress')),
@@ -294,12 +335,15 @@ function courseDetail(ctx, c, content, learner, region, guides = {}) {
   return h('article', { class: 'course', dataset: { course: c.id } },
     previewBanner(ctx, [c]),
     head,
+    valueStrip(ctx, c),
     glance(ctx, c, lessons),
     h('div', { class: 'split' }, progressPanel, h('section', { class: 'panel', 'aria-label': t('p7.course.summary') }, summary)),
     c.why_it_matters ? isec('c-why', 'bulb', t('p7.course.why'), h('p', null, L(ctx, c.why_it_matters)), c.professional_relevance ? h('p', { class: 'note' }, L(ctx, c.professional_relevance)) : null) : null,
-    isec('c-aud', 'users', t('p7.course.audience'), chips((c.target_audience || []).map(a => L(ctx, a)))),
+    isec('c-aud', 'users', t('p7.course.audience'), h('ul', { class: 'personas' }, (c.target_audience || []).map((a, i) => h('li', null, h('span', { class: 'pav' }, icon(AUD_ICONS[i % AUD_ICONS.length])), h('span', null, L(ctx, a)))))),
     isec('c-pre', 'flag', t('p7.course.prerequisites'), prereqList(ctx, c, content, learner.completed)),
-    isec('c-out', 'target', t('p7.course.outcomes'), h('ol', null, (c.learning_outcomes || []).map(o => h('li', null, L(ctx, o))))),
+    isec('c-out', 'target', t('p7.course.outcomes'), h('ol', { class: 'outcards' }, (c.learning_outcomes || []).map((o, i) => h('li', null, icon(OUT_ICONS[i % OUT_ICONS.length]), L(ctx, o))))),
+    figs.length ? isec('c-vis', 'image', t('p9.fig.courseTitle'), h('p', { class: 'note' }, t('p9.fig.courseNote', { n: i18n.number(figs.length) })),
+      h('div', { class: 'vis-strip' }, figs.slice(0, 8).map(f => Figure(ctx, f, { compact: true })))) : null,
     comps.length ? isec('c-comp', 'gauge', t('p7.course.competencies'), h('ul', { class: 'plain comps' }, comps)) : null,
     studyPanel(ctx, c, learner),
     linkedPanel(ctx, c, content),
@@ -392,6 +436,12 @@ function lessonPlayer(ctx, c, lessons, i, content, learner, guides = {}) {
     ? (srcItem ? guideItemBody(ctx, srcGuide, srcItem, { compact: true }) : [h('p', { class: 'banner banner-warn', role: 'note' }, t('gd.sourceMissing'))])
     : blocks.map(b => h('section', { class: ['lblock', 'lblock-' + b.type], dataset: { block: b.type } },
       h('h2', null, t('p7.block.' + (LESSON_BLOCKS.includes(b.type) ? b.type : 'other'))), h('p', null, L(ctx, b.text))));
+  /* Explanatory figures (Phase 9): placed after the first block, numbered within the lesson. */
+  const lfigs = lessonFigures(l, c, content.figures, content.lessonFigures);
+  if (lfigs.length) {
+    const figEls = lfigs.map((f, j) => Figure(ctx, f, { number: j + 1 }));
+    if (Array.isArray(blockEls)) blockEls.splice(Math.min(1, blockEls.length), 0, ...figEls);
+  }
   const apply = srcItem ? guideApply(ctx, srcGuide, srcItem) : null;
   const exPrompt = apply ? apply.prompt : L(ctx, l.exercise?.prompt);
   const exModel = apply ? apply.model : h('p', null, L(ctx, l.exercise?.model_answer));

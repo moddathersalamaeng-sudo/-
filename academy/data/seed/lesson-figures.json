@@ -1,0 +1,1106 @@
+{
+  "schema": "cia.lesson-figures.v1",
+  "items": [
+    {
+      "id": "CRS-QMS-201-L01",
+      "figures": [
+        "FIG-Q-QAQC",
+        "FIG-Q-ICEBERG"
+      ]
+    },
+    {
+      "id": "CRS-QMS-201-L02",
+      "figures": [
+        "FIG-Q-SIPOC"
+      ]
+    },
+    {
+      "id": "CRS-LSS-GB-L02",
+      "figures": [
+        "FIG-Q-SIPOC",
+        "FIG-Q-DMAIC"
+      ]
+    },
+    {
+      "id": "CRS-QMS-201-L03",
+      "figures": [
+        "FIG-Q-KANO",
+        "FIG-Q-7TOOLS"
+      ]
+    },
+    {
+      "id": "CRS-CMQOE-PREP-L03",
+      "figures": [
+        "FIG-Q-KANO",
+        "FIG-Q-VOC"
+      ]
+    },
+    {
+      "id": "CRS-QMS-201-L04",
+      "figures": [
+        "FIG-Q-OBJ",
+        "FIG-Q-CAPA"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-IMP-L04",
+      "figures": [
+        "FIG-Q-OBJ"
+      ]
+    },
+    {
+      "id": "CRS-Q-TOOLS-L01",
+      "figures": [
+        "FIG-Q-7TOOLS"
+      ]
+    },
+    {
+      "id": "guide:iso-10009",
+      "figures": [
+        "FIG-Q-7TOOLS"
+      ]
+    },
+    {
+      "id": "CRS-Q-TOOLS-L02",
+      "figures": [
+        "FIG-Q-PARETO"
+      ]
+    },
+    {
+      "id": "guide:pareto",
+      "figures": [
+        "FIG-Q-PARETO"
+      ]
+    },
+    {
+      "id": "CRS-Q-COQ-L04",
+      "figures": [
+        "FIG-Q-PARETO"
+      ]
+    },
+    {
+      "id": "CRS-Q-TOOLS-L03",
+      "figures": [
+        "FIG-Q-HIST",
+        "FIG-Q-SCATTER"
+      ]
+    },
+    {
+      "id": "CRS-Q-TOOLS-L04",
+      "figures": [
+        "FIG-Q-STRATA"
+      ]
+    },
+    {
+      "id": "CRS-Q-CAPA-L01",
+      "figures": [
+        "FIG-Q-ISNOT"
+      ]
+    },
+    {
+      "id": "CRS-Q-CAPA-L02",
+      "figures": [
+        "FIG-Q-FISH",
+        "FIG-Q-5WHY"
+      ]
+    },
+    {
+      "id": "guide:fishbone",
+      "figures": [
+        "FIG-Q-FISH"
+      ]
+    },
+    {
+      "id": "CRS-ISO-NC-L03",
+      "figures": [
+        "FIG-Q-FISH"
+      ]
+    },
+    {
+      "id": "guide:five-whys",
+      "figures": [
+        "FIG-Q-5WHY"
+      ]
+    },
+    {
+      "id": "CRS-Q-CAPA-L03",
+      "figures": [
+        "FIG-Q-CAPA"
+      ]
+    },
+    {
+      "id": "guide:capa",
+      "figures": [
+        "FIG-Q-CAPA"
+      ]
+    },
+    {
+      "id": "CRS-ISO-NC-L01",
+      "figures": [
+        "FIG-Q-CAPA"
+      ]
+    },
+    {
+      "id": "CRS-ISO-NC-L02",
+      "figures": [
+        "FIG-Q-CAPA"
+      ]
+    },
+    {
+      "id": "CRS-Q-CAPA-L04",
+      "figures": [
+        "FIG-Q-EFFECT"
+      ]
+    },
+    {
+      "id": "CRS-ISO-NC-L04",
+      "figures": [
+        "FIG-Q-EFFECT"
+      ]
+    },
+    {
+      "id": "CRS-Q-SPC-L01",
+      "figures": [
+        "FIG-Q-VARIATION"
+      ]
+    },
+    {
+      "id": "CRS-Q-SPC-L02",
+      "figures": [
+        "FIG-Q-CTRL",
+        "FIG-Q-CHARTPICK"
+      ]
+    },
+    {
+      "id": "CRS-Q-SPC-L03",
+      "figures": [
+        "FIG-Q-CTRL"
+      ]
+    },
+    {
+      "id": "CRS-Q-SPC-L04",
+      "figures": [
+        "FIG-Q-CAP"
+      ]
+    },
+    {
+      "id": "CRS-Q-AUDIT-L01",
+      "figures": [
+        "FIG-Q-AUDTYPES"
+      ]
+    },
+    {
+      "id": "CRS-Q-AUDIT-L02",
+      "figures": [
+        "FIG-Q-TURTLE"
+      ]
+    },
+    {
+      "id": "CRS-Q-AUDIT-L03",
+      "figures": [
+        "FIG-Q-EVID"
+      ]
+    },
+    {
+      "id": "CRS-ISO-AUD-L03",
+      "figures": [
+        "FIG-Q-EVID"
+      ]
+    },
+    {
+      "id": "CRS-Q-AUDIT-L04",
+      "figures": [
+        "FIG-Q-FINDING"
+      ]
+    },
+    {
+      "id": "CRS-ISO-AUD-L05",
+      "figures": [
+        "FIG-Q-FINDING"
+      ]
+    },
+    {
+      "id": "CRS-LSS-GB-L01",
+      "figures": [
+        "FIG-Q-WASTE",
+        "FIG-Q-VSM"
+      ]
+    },
+    {
+      "id": "guide:dmaic",
+      "figures": [
+        "FIG-Q-DMAIC"
+      ]
+    },
+    {
+      "id": "course:CRS-LSS-GB",
+      "figures": [
+        "FIG-Q-DMAIC"
+      ]
+    },
+    {
+      "id": "CRS-LSS-GB-L04",
+      "figures": [
+        "FIG-Q-SIGMA"
+      ]
+    },
+    {
+      "id": "CRS-LSS-GB-L03",
+      "figures": [
+        "FIG-Q-PILOT"
+      ]
+    },
+    {
+      "id": "CRS-CMQOE-PREP-L01",
+      "figures": [
+        "FIG-Q-SITLEAD"
+      ]
+    },
+    {
+      "id": "CRS-CMQOE-PREP-L02",
+      "figures": [
+        "FIG-Q-HOSHIN",
+        "FIG-Q-BSC"
+      ]
+    },
+    {
+      "id": "CRS-CMQOE-PREP-L04",
+      "figures": [
+        "FIG-Q-TRAIN",
+        "FIG-Q-CMQBOK"
+      ]
+    },
+    {
+      "id": "course:CRS-CMQOE-PREP",
+      "figures": [
+        "FIG-Q-CMQBOK"
+      ]
+    },
+    {
+      "id": "CRS-Q-COQ-L01",
+      "figures": [
+        "FIG-Q-PAF"
+      ]
+    },
+    {
+      "id": "course:CRS-Q-COQ",
+      "figures": [
+        "FIG-Q-PAF"
+      ]
+    },
+    {
+      "id": "CRS-Q-COQ-L02",
+      "figures": [
+        "FIG-Q-COQDATA"
+      ]
+    },
+    {
+      "id": "CRS-Q-COQ-L03",
+      "figures": [
+        "FIG-Q-ICEBERG"
+      ]
+    },
+    {
+      "id": "CRS-Q-SUPPLIER-L01",
+      "figures": [
+        "FIG-Q-SUPSEG",
+        "FIG-Q-SUPLIFE"
+      ]
+    },
+    {
+      "id": "course:CRS-Q-SUPPLIER",
+      "figures": [
+        "FIG-Q-SUPLIFE"
+      ]
+    },
+    {
+      "id": "CRS-Q-SUPPLIER-L02",
+      "figures": [
+        "FIG-Q-INSPECT"
+      ]
+    },
+    {
+      "id": "CRS-Q-SUPPLIER-L03",
+      "figures": [
+        "FIG-Q-SCORE"
+      ]
+    },
+    {
+      "id": "CRS-Q-SUPPLIER-L04",
+      "figures": [
+        "FIG-Q-SCAR"
+      ]
+    },
+    {
+      "id": "guide:pdca",
+      "figures": [
+        "FIG-M-PDCA"
+      ]
+    },
+    {
+      "id": "course:CRS-QMS-201",
+      "figures": [
+        "FIG-M-PDCA"
+      ]
+    },
+    {
+      "id": "guide:rca",
+      "figures": [
+        "FIG-M-RCA"
+      ]
+    },
+    {
+      "id": "guide:a3",
+      "figures": [
+        "FIG-M-A3"
+      ]
+    },
+    {
+      "id": "guide:fmea",
+      "figures": [
+        "FIG-M-FMEA"
+      ]
+    },
+    {
+      "id": "guide:swot",
+      "figures": [
+        "FIG-M-SWOT"
+      ]
+    },
+    {
+      "id": "guide:pestle",
+      "figures": [
+        "FIG-M-PESTLE"
+      ]
+    },
+    {
+      "id": "guide:lessons-learned",
+      "figures": [
+        "FIG-M-LESSONS"
+      ]
+    },
+    {
+      "id": "CRS-PM-STAKE-L01",
+      "figures": [
+        "FIG-PM-STAKE"
+      ]
+    },
+    {
+      "id": "guide:stakeholders",
+      "figures": [
+        "FIG-PM-STAKE"
+      ]
+    },
+    {
+      "id": "CRS-ISO-101-L01",
+      "figures": [
+        "FIG-ISO-CHAIN"
+      ]
+    },
+    {
+      "id": "CRS-ISO-101-L02",
+      "figures": [
+        "FIG-ISO-ROLES"
+      ]
+    },
+    {
+      "id": "CRS-ISO-101-L03",
+      "figures": [
+        "FIG-ISO-HLS"
+      ]
+    },
+    {
+      "id": "CRS-ISO-IMS-L01",
+      "figures": [
+        "FIG-ISO-HLS",
+        "FIG-ISO-IMS"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-F-L01",
+      "figures": [
+        "FIG-ISO-HLS"
+      ]
+    },
+    {
+      "id": "course:CRS-ISO-101",
+      "figures": [
+        "FIG-ISO-HLS"
+      ]
+    },
+    {
+      "id": "CRS-ISO-101-L04",
+      "figures": [
+        "FIG-ISO-CONTEXT"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-IMP-L02",
+      "figures": [
+        "FIG-ISO-CONTEXT"
+      ]
+    },
+    {
+      "id": "CRS-ISO-101-L06",
+      "figures": [
+        "FIG-ISO-IMPROVE"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-F-L04",
+      "figures": [
+        "FIG-ISO-IMPROVE"
+      ]
+    },
+    {
+      "id": "CRS-ISO-READ-L01",
+      "figures": [
+        "FIG-ISO-ANATOMY"
+      ]
+    },
+    {
+      "id": "CRS-ISO-READ-L02",
+      "figures": [
+        "FIG-ISO-ANATOMY"
+      ]
+    },
+    {
+      "id": "CRS-ISO-READ-L03",
+      "figures": [
+        "FIG-ISO-VERBS"
+      ]
+    },
+    {
+      "id": "CRS-ISO-READ-L04",
+      "figures": [
+        "FIG-ISO-EVIDCHAIN"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-IMP-L03",
+      "figures": [
+        "FIG-ISO-EVIDCHAIN"
+      ]
+    },
+    {
+      "id": "CRS-ISO-AUD-L01",
+      "figures": [
+        "FIG-ISO-AUDCYCLE"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-AUD-L01",
+      "figures": [
+        "FIG-ISO-AUDCYCLE"
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-AUD-L01",
+      "figures": [
+        "FIG-ISO-AUDCYCLE"
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-AUD-L01",
+      "figures": [
+        "FIG-ISO-AUDCYCLE"
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-AUD-L01",
+      "figures": [
+        "FIG-ISO-AUDCYCLE"
+      ]
+    },
+    {
+      "id": "course:CRS-Q-AUDIT",
+      "figures": [
+        "FIG-ISO-AUDCYCLE"
+      ]
+    },
+    {
+      "id": "course:CRS-ISO-AUD",
+      "figures": [
+        "FIG-ISO-AUDCYCLE"
+      ]
+    },
+    {
+      "id": "CRS-ISO-AUD-L02",
+      "figures": [
+        "FIG-ISO-PLAN1"
+      ]
+    },
+    {
+      "id": "CRS-ISO-AUD-L04",
+      "figures": [
+        "FIG-ISO-SAMPLE"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-AUD-L02",
+      "figures": [
+        "FIG-ISO-SAMPLE"
+      ]
+    },
+    {
+      "id": "CRS-ISO-AUD-L06",
+      "figures": [
+        "FIG-ISO-CLOSE"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-AUD-L04",
+      "figures": [
+        "FIG-ISO-CLOSE"
+      ]
+    },
+    {
+      "id": "CRS-ISO-RISK-L02",
+      "figures": [
+        "FIG-ISO-RISKMAT"
+      ]
+    },
+    {
+      "id": "CRS-PM-RISK-L02",
+      "figures": [
+        "FIG-ISO-RISKMAT"
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-F-L02",
+      "figures": [
+        "FIG-ISO-RISKMAT"
+      ]
+    },
+    {
+      "id": "guide:iso-31000",
+      "figures": [
+        "FIG-ISO-RISKMAT"
+      ]
+    },
+    {
+      "id": "CRS-ISO-RISK-L03",
+      "figures": [
+        "FIG-ISO-RISKACT"
+      ]
+    },
+    {
+      "id": "CRS-PM-RISK-L03",
+      "figures": [
+        "FIG-ISO-RISKACT"
+      ]
+    },
+    {
+      "id": "CRS-ISO-RISK-L04",
+      "figures": [
+        "FIG-ISO-RISKINT"
+      ]
+    },
+    {
+      "id": "CRS-ISO-RISK-L01",
+      "figures": [
+        "FIG-ISO-RISKINT"
+      ]
+    },
+    {
+      "id": "CRS-ISO-101-L05",
+      "figures": [
+        "FIG-ISO-RISKINT"
+      ]
+    },
+    {
+      "id": "CRS-ISO-IMS-L02",
+      "figures": [
+        "FIG-ISO-IMS"
+      ]
+    },
+    {
+      "id": "CRS-ISO-IMS-L03",
+      "figures": [
+        "FIG-ISO-IMS"
+      ]
+    },
+    {
+      "id": "course:CRS-ISO-IMS",
+      "figures": [
+        "FIG-ISO-IMS"
+      ]
+    },
+    {
+      "id": "CRS-ISO-IMS-L04",
+      "figures": [
+        "FIG-ISO-IMSROAD"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-F-L02",
+      "figures": [
+        "FIG-9001-CUST"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-F-L03",
+      "figures": [
+        "FIG-9001-CUST"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-AUD-L03",
+      "figures": [
+        "FIG-9001-CUST"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-IMP-L01",
+      "figures": [
+        "FIG-9001-IMP"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-IMP-L05",
+      "figures": [
+        "FIG-9001-IMP"
+      ]
+    },
+    {
+      "id": "CRS-ISO-9001-IMP-L06",
+      "figures": [
+        "FIG-9001-IMP"
+      ]
+    },
+    {
+      "id": "course:CRS-ISO-9001-IMP",
+      "figures": [
+        "FIG-9001-IMP"
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-F-L02",
+      "figures": [
+        "FIG-14001-ASP"
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-AUD-L02",
+      "figures": [
+        "FIG-14001-ASP"
+      ]
+    },
+    {
+      "id": "course:CRS-ISO-14001-F",
+      "figures": [
+        "FIG-14001-ASP"
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-F-L03",
+      "figures": [
+        "FIG-14001-COMP"
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-AUD-L03",
+      "figures": [
+        "FIG-14001-COMP"
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-F-L04",
+      "figures": [
+        "FIG-14001-COMP"
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-AUD-L04",
+      "figures": [
+        "FIG-14001-COMP"
+      ]
+    },
+    {
+      "id": "CRS-ISO-14001-F-L01",
+      "figures": [
+        "FIG-14001-ED"
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-F-L03",
+      "figures": [
+        "FIG-45001-HOC"
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-AUD-L02",
+      "figures": [
+        "FIG-45001-HOC"
+      ]
+    },
+    {
+      "id": "course:CRS-ISO-45001-F",
+      "figures": [
+        "FIG-45001-HOC"
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-F-L01",
+      "figures": [
+        "FIG-45001-PART"
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-AUD-L03",
+      "figures": [
+        "FIG-45001-PART"
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-F-L04",
+      "figures": [
+        "FIG-45001-INC"
+      ]
+    },
+    {
+      "id": "CRS-ISO-45001-AUD-L04",
+      "figures": [
+        "FIG-45001-INC"
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-F-L01",
+      "figures": [
+        "FIG-27001-CIA"
+      ]
+    },
+    {
+      "id": "course:CRS-ISO-27001-F",
+      "figures": [
+        "FIG-27001-CIA"
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-F-L02",
+      "figures": [
+        "FIG-27001-RISK"
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-F-L03",
+      "figures": [
+        "FIG-27001-RISK"
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-AUD-L02",
+      "figures": [
+        "FIG-27001-RISK"
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-F-L04",
+      "figures": [
+        "FIG-27001-OPS"
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-AUD-L03",
+      "figures": [
+        "FIG-27001-OPS"
+      ]
+    },
+    {
+      "id": "CRS-ISO-27001-AUD-L04",
+      "figures": [
+        "FIG-27001-OPS"
+      ]
+    },
+    {
+      "id": "CRS-PM-101-L01",
+      "figures": [
+        "FIG-PM-PPP"
+      ]
+    },
+    {
+      "id": "course:CRS-PM-101",
+      "figures": [
+        "FIG-PM-PPP"
+      ]
+    },
+    {
+      "id": "CRS-P3O-101-L01",
+      "figures": [
+        "FIG-PM-PPP"
+      ]
+    },
+    {
+      "id": "CRS-PM-101-L02",
+      "figures": [
+        "FIG-PM-GOV"
+      ]
+    },
+    {
+      "id": "CRS-PM-101-L03",
+      "figures": [
+        "FIG-PM-LIFE"
+      ]
+    },
+    {
+      "id": "CRS-PFM-PRIOR-L04",
+      "figures": [
+        "FIG-PM-LIFE"
+      ]
+    },
+    {
+      "id": "CRS-PM-101-L04",
+      "figures": [
+        "FIG-PM-BEN"
+      ]
+    },
+    {
+      "id": "CRS-P3O-101-L04",
+      "figures": [
+        "FIG-PM-BEN"
+      ]
+    },
+    {
+      "id": "CRS-PM-SSC-L01",
+      "figures": [
+        "FIG-PM-WBS"
+      ]
+    },
+    {
+      "id": "course:CRS-PM-SSC",
+      "figures": [
+        "FIG-PM-WBS",
+        "FIG-PM-EVM"
+      ]
+    },
+    {
+      "id": "CRS-PM-SSC-L02",
+      "figures": [
+        "FIG-PM-CPM"
+      ]
+    },
+    {
+      "id": "CRS-PM-SSC-L03",
+      "figures": [
+        "FIG-PM-RES"
+      ]
+    },
+    {
+      "id": "CRS-PM-SSC-L04",
+      "figures": [
+        "FIG-PM-EVM"
+      ]
+    },
+    {
+      "id": "CRS-PM-RISK-L01",
+      "figures": [
+        "FIG-PM-RISKST"
+      ]
+    },
+    {
+      "id": "course:CRS-PM-RISK",
+      "figures": [
+        "FIG-PM-RISKST"
+      ]
+    },
+    {
+      "id": "CRS-PM-RISK-L04",
+      "figures": [
+        "FIG-PM-RREV"
+      ]
+    },
+    {
+      "id": "CRS-PM-STAKE-L02",
+      "figures": [
+        "FIG-PM-ENGAGE"
+      ]
+    },
+    {
+      "id": "CRS-PM-STAKE-L04",
+      "figures": [
+        "FIG-PM-ENGAGE"
+      ]
+    },
+    {
+      "id": "CRS-PM-STAKE-L03",
+      "figures": [
+        "FIG-PM-RACI"
+      ]
+    },
+    {
+      "id": "CRS-PMO-DESIGN-L03",
+      "figures": [
+        "FIG-PM-RACI"
+      ]
+    },
+    {
+      "id": "CRS-PMO-DESIGN-L01",
+      "figures": [
+        "FIG-PMO-TYPES"
+      ]
+    },
+    {
+      "id": "course:CRS-PMO-DESIGN",
+      "figures": [
+        "FIG-PMO-TYPES"
+      ]
+    },
+    {
+      "id": "CRS-PMO-DESIGN-L02",
+      "figures": [
+        "FIG-PMO-CHARTER"
+      ]
+    },
+    {
+      "id": "CRS-PMO-DESIGN-L04",
+      "figures": [
+        "FIG-PMO-CHARTER"
+      ]
+    },
+    {
+      "id": "CRS-P3O-101-L02",
+      "figures": [
+        "FIG-P3O-HUB"
+      ]
+    },
+    {
+      "id": "CRS-P3O-101-L03",
+      "figures": [
+        "FIG-P3O-HUB"
+      ]
+    },
+    {
+      "id": "guide:p3o",
+      "figures": [
+        "FIG-P3O-HUB"
+      ]
+    },
+    {
+      "id": "course:CRS-P3O-101",
+      "figures": [
+        "FIG-P3O-HUB"
+      ]
+    },
+    {
+      "id": "CRS-PMO-KPI-L01",
+      "figures": [
+        "FIG-PMO-MAT"
+      ]
+    },
+    {
+      "id": "CRS-PMO-KPI-L04",
+      "figures": [
+        "FIG-PMO-MAT"
+      ]
+    },
+    {
+      "id": "guide:p3m3",
+      "figures": [
+        "FIG-PMO-MAT"
+      ]
+    },
+    {
+      "id": "course:CRS-PMO-KPI",
+      "figures": [
+        "FIG-PMO-MAT"
+      ]
+    },
+    {
+      "id": "CRS-PMO-KPI-L02",
+      "figures": [
+        "FIG-PMO-KPI"
+      ]
+    },
+    {
+      "id": "CRS-PMO-KPI-L03",
+      "figures": [
+        "FIG-PMO-KPI"
+      ]
+    },
+    {
+      "id": "CRS-PFM-PRIOR-L01",
+      "figures": [
+        "FIG-PFM-FUN"
+      ]
+    },
+    {
+      "id": "course:CRS-PFM-PRIOR",
+      "figures": [
+        "FIG-PFM-FUN"
+      ]
+    },
+    {
+      "id": "CRS-PFM-PRIOR-L02",
+      "figures": [
+        "FIG-PFM-SCORE"
+      ]
+    },
+    {
+      "id": "CRS-PFM-PRIOR-L03",
+      "figures": [
+        "FIG-PFM-SCORE"
+      ]
+    },
+    {
+      "id": "CRS-PM-AGILE-L01",
+      "figures": [
+        "FIG-AGL-APPROACH"
+      ]
+    },
+    {
+      "id": "CRS-PM-AGILE-L03",
+      "figures": [
+        "FIG-AGL-APPROACH"
+      ]
+    },
+    {
+      "id": "course:CRS-PM-AGILE",
+      "figures": [
+        "FIG-AGL-APPROACH"
+      ]
+    },
+    {
+      "id": "CRS-PM-AGILE-L02",
+      "figures": [
+        "FIG-AGL-SCRUM",
+        "FIG-AGL-KANBAN"
+      ]
+    },
+    {
+      "id": "CRS-PM-AGILE-L04",
+      "figures": [
+        "FIG-AGL-KANBAN"
+      ]
+    },
+    {
+      "id": "CRS-PMP-PREP-L01",
+      "figures": [
+        "FIG-PMP-DOM"
+      ]
+    },
+    {
+      "id": "course:CRS-PMP-PREP",
+      "figures": [
+        "FIG-PMP-DOM"
+      ]
+    },
+    {
+      "id": "CRS-PMP-PREP-L03",
+      "figures": [
+        "FIG-PMP-PLAN"
+      ]
+    },
+    {
+      "id": "CRS-PMP-PREP-L02",
+      "figures": [
+        "FIG-PMP-PLAN"
+      ]
+    },
+    {
+      "id": "CRS-PMP-PREP-L04",
+      "figures": [
+        "FIG-PMP-REASON"
+      ]
+    }
+  ]
+}

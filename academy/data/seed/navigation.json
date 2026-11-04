@@ -110,6 +110,24 @@
       "route": "/academy/pmi"
     },
     {
+      "id": "qualityAcademy",
+      "labelKey": "nav.items.qualityAcademy",
+      "group": "learn",
+      "kind": "route",
+      "phase": 9,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "route": "/academy/quality"
+    },
+    {
       "id": "academy",
       "labelKey": "nav.items.academy",
       "group": "learn",

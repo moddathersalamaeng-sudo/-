@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "method": "Weighted by estimated phase effort (weights below, total 112). Complete = 100 %, in progress = 50 %, otherwise 0 %.",
   "phases": [
     {
@@ -48,14 +48,16 @@
     {
       "id": "8",
       "weight": 7,
-      "status": "in_progress",
-      "note": "PMI / PMO / P3O Academy built (3 Nov 2026): 4 practice guides, 14 courses, explorer of 8 PMI certifications, 5 routes. Content awaits review / owner approval.",
+      "status": "complete",
+      "note": "PMI / PMO / P3O Academy published on owner approval after AI pre-review (3 Nov 2026): 4 practice guides, 14 courses, 8 PMI certifications, 5 routes.",
       "partial": null
     },
     {
       "id": "9",
       "weight": 7,
-      "status": "planned"
+      "status": "complete",
+      "partial": null,
+      "note": "Quality (ASQ-informed) Academy published on owner approval after AI pre-review (4 Nov 2026): 9 courses, 9 ASQ certifications, CMQ/OE Center, 5 routes; course covers and 102 explanatory figures across the Academy."
     },
     {
       "id": "10",

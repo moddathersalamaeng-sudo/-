@@ -9,6 +9,7 @@
  * The Academy never reproduces standard text; it links to the official pages.
  */
 import { h, icon } from '../core/dom.js';
+import { academyBanner } from '../ui/art.js';
 import { dataRegion, EmptyState, Badge } from '../ui/components.js';
 import { isoStartingPoint, standardBundle, ROLE_ROUTE } from '../domain/iso.mjs';
 import { courseStatus } from '../domain/learner-model.mjs';
@@ -105,7 +106,7 @@ export function isoAcademyView(ctx) {
   const { t } = ctx;
   const region = dataRegion({ t, load: () => loadAll(ctx), render: ({ content, learner }) => {
     const ready = content.byId(content.assessments, 'ASM-READY-ISO-001');
-    const hero = h('header', { class: 'iso-hero' },
+    const hero = h('header', { class: 'iso-hero' }, academyBanner('iso', 'shield'),
       h('p', { class: 'eyebrow' }, t('p7.iso.eyebrow')), h('h1', null, t('p7.iso.title')), h('p', null, t('p7.iso.lede')),
       h('div', { class: 'btnrow' }, linkBtn('#/knowledge/iso', t('p7.iso.readFundamentals'), 'primary'), ready ? linkBtn(`#/assessments/${ready.slug}`, t('p7.iso.takeReadiness')) : null));
     const routes = content.paths.filter(p => p.kind === 'iso_route');
@@ -156,7 +157,7 @@ function standardPage(ctx, s, content, learner) {
   const guide = (content.guides || []).find(g => g.standard_id === s.id);
   const guideCourse = guide ? content.courses.find(c => c.guide === guide.slug) : null;
 
-  const hero = h('header', { class: 'iso-hero' },
+  const hero = h('header', { class: 'iso-hero' }, academyBanner('iso', 'book', s.id || 'std'),
     h('p', { class: 'eyebrow' }, L(ctx, s.theme)), h('h1', null, L(ctx, s.name)), h('p', null, L(ctx, s.purpose)),
     h('div', { class: 'btnrow' },
       keyCourses[0] ? linkBtn(`#/academy/courses/${keyCourses[0][1].slug}`, t('p7.iso.learnCta'), 'primary') : null,

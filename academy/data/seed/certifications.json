@@ -1009,36 +1009,145 @@
       "stage": "senior",
       "area": "programme",
       "summary": {
-        "en": "A senior credential for people who lead programmes of related projects to deliver benefits. Its full eligibility and exam details could not be read on 3 November 2026; the explorer shows only what was verified.",
-        "ar": "شهادة متقدمة لمن يقودون برامج من المشاريع المترابطة لتحقيق المنافع. ولم تُقرأ تفاصيل أهليتها واختبارها كاملة في 3 نوفمبر 2026؛ ويعرض المستكشف ما تم التحقق منه فقط."
+        "en": "A senior credential for people who lead programmes of related projects to deliver benefits aligned with strategy. Eligibility needs years of both project and programme experience.",
+        "ar": "شهادة متقدمة لمن يقودون برامج من المشاريع المترابطة لتحقيق منافع متوائمة مع الاستراتيجية. وتتطلب الأهلية سنوات من الخبرة في المشاريع والبرامج معًا."
       },
       "who": {
         "en": "Experienced programme managers and senior project managers coordinating several projects.",
         "ar": "مديرو البرامج ذوو الخبرة وكبار مديري المشاريع الذين ينسقون عدة مشاريع."
       },
-      "eligibility": [],
-      "exam": null,
+      "eligibility": [
+        {
+          "label": {
+            "en": "Set A",
+            "ar": "المجموعة أ"
+          },
+          "items": [
+            {
+              "en": "High school diploma or global equivalent",
+              "ar": "شهادة ثانوية أو ما يعادلها دوليًا"
+            },
+            {
+              "en": "48 months of project management experience or a PMP® within the past 15 years",
+              "ar": "48 شهرًا من الخبرة في إدارة المشاريع أو شهادة PMP® خلال السنوات الخمس عشرة الماضية"
+            },
+            {
+              "en": "84 months of program management experience within the past 15 years",
+              "ar": "84 شهرًا من الخبرة في إدارة البرامج خلال السنوات الخمس عشرة الماضية"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Set B",
+            "ar": "المجموعة ب"
+          },
+          "items": [
+            {
+              "en": "Bachelor's degree or higher, or global equivalent",
+              "ar": "بكالوريوس أو أعلى أو ما يعادله دوليًا"
+            },
+            {
+              "en": "48 months of project management experience or a PMP® within the past 15 years",
+              "ar": "48 شهرًا من الخبرة في إدارة المشاريع أو شهادة PMP® خلال السنوات الخمس عشرة الماضية"
+            },
+            {
+              "en": "48 months of program management experience within the past 15 years",
+              "ar": "48 شهرًا من الخبرة في إدارة البرامج خلال السنوات الخمس عشرة الماضية"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Set C",
+            "ar": "المجموعة ج"
+          },
+          "items": [
+            {
+              "en": "Bachelor's degree or higher from a GAC-accredited programme",
+              "ar": "بكالوريوس أو أعلى من برنامج معتمد من GAC"
+            },
+            {
+              "en": "36 months of project management experience or a PMP® within the past 15 years",
+              "ar": "36 شهرًا من الخبرة في إدارة المشاريع أو شهادة PMP® خلال السنوات الخمس عشرة الماضية"
+            },
+            {
+              "en": "36 months of program management experience within the past 15 years",
+              "ar": "36 شهرًا من الخبرة في إدارة البرامج خلال السنوات الخمس عشرة الماضية"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 170,
+        "scored": null,
+        "minutes": 240,
+        "note": null
+      },
       "fee": null,
       "renewal": {
         "pdus": 60,
         "years": 3
       },
-      "domains": [],
-      "languages": null,
+      "domains": [
+        {
+          "name": {
+            "en": "Program Life Cycle Management",
+            "ar": "إدارة دورة حياة البرنامج"
+          },
+          "weight": 44
+        },
+        {
+          "name": {
+            "en": "Stakeholder Engagement",
+            "ar": "إشراك أصحاب المصلحة"
+          },
+          "weight": 16
+        },
+        {
+          "name": {
+            "en": "Strategic Program Alignment",
+            "ar": "المواءمة الاستراتيجية للبرنامج"
+          },
+          "weight": 15
+        },
+        {
+          "name": {
+            "en": "Governance",
+            "ar": "الحوكمة"
+          },
+          "weight": 14
+        },
+        {
+          "name": {
+            "en": "Business Alignment",
+            "ar": "مواءمة الأعمال"
+          },
+          "weight": 11
+        }
+      ],
+      "languages": {
+        "en": "English and Simplified Chinese (PMI page, 4 Nov 2026).",
+        "ar": "الإنجليزية والصينية المبسطة (صفحة PMI، 4 نوفمبر 2026)."
+      },
       "extra": [
         {
-          "en": "PMI states the exam is available in English only and that it does not endorse specific review courses; its reference list includes The Standard for Program Management (Fifth Edition).",
-          "ar": "تذكر PMI أن الاختبار متاح بالإنجليزية فقط وأنها لا تعتمد دورات مراجعة بعينها؛ وتتضمن قائمة مراجعها «معيار إدارة البرامج» (الإصدار الخامس)."
+          "en": "PMI states that it does not endorse specific review courses; its reference list includes The Standard for Program Management (Fifth Edition).",
+          "ar": "تذكر PMI أنها لا تعتمد دورات مراجعة بعينها؛ وتتضمن قائمة مراجعها «معيار إدارة البرامج» (الإصدار الخامس)."
+        },
+        {
+          "en": "The fee is paid after PMI accepts the application; the page does not list it.",
+          "ar": "تُدفع الرسوم بعد قبول PMI للطلب؛ ولا تذكرها الصفحة."
         }
       ],
       "facts_status": {
-        "eligibility": "pending",
-        "exam": "pending",
+        "eligibility": "verified",
+        "exam": "verified",
         "fee": "pending",
         "renewal": "verified",
-        "domains": "pending"
+        "domains": "verified"
       },
-      "verified_date": "2026-11-03",
+      "verified_date": "2026-11-04",
       "source_ids": [
         "SRC-PMI-PGMP",
         "SRC-PMI-PGMP-PREP"
@@ -1087,11 +1196,11 @@
         "content_source": "owner",
         "version": "1.0.0",
         "reviewer": "مدثر سلامه",
-        "review_date": "2026-11-03",
-        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-03) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-03-owner-approval.json — Pre-review: deliverables/phase-08/review/pre-review-findings.json",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
         "drafted_by": "external_public",
         "approval_basis": "owner_approval_after_ai_prereview",
-        "approved_hash": "ebdb4350e588be6907b705687f1a190b9c3323b99fae880d919fd446696093da"
+        "approved_hash": "ba29eec87026a949a4e4bdbd9a793bcf2bce74ebded5c5a39b0b7a31c41bb06a"
       }
     },
     {
@@ -1478,6 +1587,1822 @@
         "drafted_by": "external_public",
         "approval_basis": "owner_approval_after_ai_prereview",
         "approved_hash": "28007e79c6603a3e28cfb614db6162ef841e6051e94977d1e854d8134bcaba9d"
+      }
+    },
+    {
+      "id": "CERT-CMQOE",
+      "slug": "cmq-oe",
+      "code": "CMQ/OE",
+      "body": "ASQ",
+      "name": {
+        "en": "Certified Manager of Quality/Organizational Excellence",
+        "ar": "مدير معتمد للجودة/التميز المؤسسي"
+      },
+      "stage": "senior",
+      "area": "management",
+      "summary": {
+        "en": "ASQ's credential for leaders of quality and organisational excellence: leadership, strategy, management methods, quality tools, customers, the supply chain and training. A new Body of Knowledge has been tested since July 2026.",
+        "ar": "شهادة ASQ لقادة الجودة والتميز المؤسسي: القيادة والاستراتيجية وأساليب الإدارة وأدوات الجودة والعملاء وسلسلة الإمداد والتدريب. ويُختبر بمجالات معرفة جديدة منذ يوليو 2026."
+      },
+      "who": {
+        "en": "Quality managers, heads of excellence and senior professionals with long experience in decision-making roles.",
+        "ar": "مديرو الجودة ورؤساء التميز والمحترفون الكبار ذوو الخبرة الطويلة في أدوار صنع القرار."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Experience",
+            "ar": "الخبرة"
+          },
+          "items": [
+            {
+              "en": "10 years of on-the-job experience in one or more areas of the BoK",
+              "ar": "10 سنوات من الخبرة العملية في مجال أو أكثر من مجالات المعرفة"
+            },
+            {
+              "en": "5 of those years in a decision-making position",
+              "ar": "5 سنوات منها في موقع صنع قرار"
+            },
+            {
+              "en": "Full-time, paid role",
+              "ar": "دور بدوام كامل مدفوع الأجر"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Education waivers (one only)",
+            "ar": "إعفاءات التعليم (واحد فقط)"
+          },
+          "items": [
+            {
+              "en": "Technical or trade school diploma: 1 year",
+              "ar": "دبلوم مدرسة فنية أو مهنية: سنة واحدة"
+            },
+            {
+              "en": "Associate degree: 2 years",
+              "ar": "دبلوم مشارك: سنتان"
+            },
+            {
+              "en": "Bachelor's degree: 4 years",
+              "ar": "بكالوريوس: 4 سنوات"
+            },
+            {
+              "en": "Master's or doctorate: 5 years",
+              "ar": "ماجستير أو دكتوراه: 5 سنوات"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 180,
+        "scored": 165,
+        "minutes": 258,
+        "note": {
+          "en": "Computer-based, English, one part; 4.5-hour appointment. Open book; an on-screen calculator is provided.",
+          "ar": "حاسوبي، بالإنجليزية، جزء واحد؛ ومدة الموعد 4.5 ساعات. بكتاب مفتوح؛ وتُوفر آلة حاسبة على الشاشة."
+        }
+      },
+      "fee": {
+        "member": 485,
+        "non_member": 585,
+        "retake": 385,
+        "currency": "USD",
+        "note": {
+          "en": "ASQ members save $100 on the initial exam fee; the retake rate applies within two years of an attempt. Prices are subject to change.",
+          "ar": "يوفر أعضاء ASQ مئة دولار من رسوم الاختبار الأول؛ وتنطبق رسوم الإعادة خلال سنتين من المحاولة. والأسعار عرضة للتغيير."
+        }
+      },
+      "renewal": {
+        "units": 18,
+        "unit": "RU",
+        "years": 3
+      },
+      "domains": [
+        {
+          "name": {
+            "en": "Leadership",
+            "ar": "القيادة"
+          },
+          "questions": 28,
+          "weight": 17.0
+        },
+        {
+          "name": {
+            "en": "Strategic Plan Development and Deployment",
+            "ar": "وضع الخطة الاستراتيجية ونشرها"
+          },
+          "questions": 23,
+          "weight": 13.9
+        },
+        {
+          "name": {
+            "en": "Management Elements and Methods",
+            "ar": "عناصر الإدارة وأساليبها"
+          },
+          "questions": 26,
+          "weight": 15.8
+        },
+        {
+          "name": {
+            "en": "Quality Management Tools",
+            "ar": "أدوات إدارة الجودة"
+          },
+          "questions": 31,
+          "weight": 18.8
+        },
+        {
+          "name": {
+            "en": "Customer-Focused Organizations",
+            "ar": "المنظمات المتمحورة حول العميل"
+          },
+          "questions": 22,
+          "weight": 13.3
+        },
+        {
+          "name": {
+            "en": "Supply Chain Management",
+            "ar": "إدارة سلسلة الإمداد"
+          },
+          "questions": 19,
+          "weight": 11.5
+        },
+        {
+          "name": {
+            "en": "Training and Development",
+            "ar": "التدريب والتطوير"
+          },
+          "questions": 16,
+          "weight": 9.7
+        }
+      ],
+      "domain_unit": "questions",
+      "bok_version": "2026",
+      "languages": null,
+      "extra": [
+        {
+          "en": "A paper-based version (165 questions, 4 hours) is offered in certain locations, also in Mandarin.",
+          "ar": "تُقدم نسخة ورقية (165 سؤالًا، 4 ساعات) في مواقع معينة، وبالماندرين أيضًا."
+        }
+      ],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "verified",
+        "renewal": "verified",
+        "domains": "secondary"
+      },
+      "verified_date": "2026-11-04",
+      "source_ids": [
+        "SRC-ASQ-CMQOE",
+        "SRC-ASQ-RECERT",
+        "SRC-ASQ-FEES",
+        "SRC-QG-CMQOE-2026"
+      ],
+      "official_url": "https://www.asq.org/cert/manager-of-quality",
+      "cia_routes": [
+        "ROUTE-Q-CMQOE"
+      ],
+      "cia_courses": [
+        "CRS-CMQOE-PREP",
+        "CRS-QMS-201",
+        "CRS-Q-TOOLS",
+        "CRS-Q-COQ",
+        "CRS-Q-SUPPLIER",
+        "CRS-Q-CAPA"
+      ],
+      "competencies": [
+        "LDR-01",
+        "LDR-02",
+        "QM-01",
+        "QM-02",
+        "QM-04",
+        "OE-02",
+        "PERF-01"
+      ],
+      "toolkits": [
+        "swot",
+        "pestle",
+        "stakeholders",
+        "exc"
+      ],
+      "next": [],
+      "prepare": [
+        {
+          "title": {
+            "en": "Check your experience honestly",
+            "ar": "تحقق من خبرتك بأمانة"
+          },
+          "text": {
+            "en": "Count decision-making years separately and apply only one education waiver; keep evidence of each role.",
+            "ar": "احسب سنوات صنع القرار منفصلة وطبّق إعفاء تعليم واحدًا فقط؛ واحتفظ بأدلة كل دور."
+          }
+        },
+        {
+          "title": {
+            "en": "Use the CMQ/OE Center",
+            "ar": "استخدم مركز CMQ/OE"
+          },
+          "text": {
+            "en": "Take the Center's diagnostic; it shows your weak areas against the seven major BoK areas.",
+            "ar": "أدِّ تقييم المركز التشخيصي؛ فهو يُظهر مواطن ضعفك مقابل المجالات الرئيسية السبعة."
+          }
+        },
+        {
+          "title": {
+            "en": "Plan by weight and weakness",
+            "ar": "خطط حسب الوزن والضعف"
+          },
+          "text": {
+            "en": "Quality management tools carry the most questions; but your weakest areas need extra time.",
+            "ar": "تحمل أدوات إدارة الجودة أكثر الأسئلة؛ لكن أضعف مجالاتك تحتاج إلى وقت إضافي."
+          }
+        },
+        {
+          "title": {
+            "en": "Prepare your references",
+            "ar": "حضّر مراجعك"
+          },
+          "text": {
+            "en": "Open book means a few well-indexed references, not many; practise finding answers fast.",
+            "ar": "الكتاب المفتوح يعني مراجع قليلة مفهرسة جيدًا، لا كثيرة؛ وتدرّب على إيجاد الإجابات بسرعة."
+          }
+        }
+      ],
+      "study_plan": {
+        "weeks": 12,
+        "hours_per_week": 8,
+        "phases": [
+          {
+            "weeks": "1",
+            "title": {
+              "en": "Diagnose and plan",
+              "ar": "التشخيص والتخطيط"
+            },
+            "text": {
+              "en": "Take the CMQ/OE Center diagnostic, download the current BoK from ASQ, choose your testing window and fix weekly hours.",
+              "ar": "أدِّ تقييم مركز CMQ/OE التشخيصي، ونزّل مجالات المعرفة الحالية من ASQ، واختر نافذة الاختبار وحدّد ساعاتك الأسبوعية."
+            },
+            "courses": [
+              "CRS-CMQOE-PREP"
+            ],
+            "domain": null
+          },
+          {
+            "weeks": "2–3",
+            "title": {
+              "en": "Leadership; training and development",
+              "ar": "القيادة؛ والتدريب والتطوير"
+            },
+            "text": {
+              "en": "Leadership styles, change, teams, and training needs and evaluation.",
+              "ar": "أساليب القيادة والتغيير والفرق، واحتياجات التدريب وتقييمه."
+            },
+            "courses": [
+              "CRS-CMQOE-PREP"
+            ],
+            "domain": 0
+          },
+          {
+            "weeks": "4–5",
+            "title": {
+              "en": "Strategy and management methods",
+              "ar": "الاستراتيجية وأساليب الإدارة"
+            },
+            "text": {
+              "en": "Environmental analysis, deployment, balanced measures; project and process management and the financial case.",
+              "ar": "تحليل البيئة والنشر والمقاييس المتوازنة؛ وإدارة المشاريع والعمليات والحالة المالية."
+            },
+            "courses": [
+              "CRS-CMQOE-PREP",
+              "CRS-Q-COQ",
+              "CRS-PM-101"
+            ],
+            "domain": 1
+          },
+          {
+            "weeks": "6–7",
+            "title": {
+              "en": "Quality management tools",
+              "ar": "أدوات إدارة الجودة"
+            },
+            "text": {
+              "en": "Basic and management tools, problem solving, SPC basics and improvement methods — the largest area by question count.",
+              "ar": "الأدوات الأساسية والإدارية وحل المشكلات وأساسيات الضبط الإحصائي وأساليب التحسين — أكبر مجال من حيث عدد الأسئلة."
+            },
+            "courses": [
+              "CRS-Q-TOOLS",
+              "CRS-Q-CAPA",
+              "CRS-Q-SPC"
+            ],
+            "domain": 3
+          },
+          {
+            "weeks": "8–9",
+            "title": {
+              "en": "Customers and supply chain",
+              "ar": "العملاء وسلسلة الإمداد"
+            },
+            "text": {
+              "en": "Voice of the customer, complaints and loyalty; supplier selection, performance and development.",
+              "ar": "صوت العميل والشكاوى والولاء؛ واختيار الموردين وأداؤهم وتطويرهم."
+            },
+            "courses": [
+              "CRS-QMS-201",
+              "CRS-Q-SUPPLIER"
+            ],
+            "domain": 4
+          },
+          {
+            "weeks": "10–11",
+            "title": {
+              "en": "Mixed timed practice",
+              "ar": "تدريب موقوت مختلط"
+            },
+            "text": {
+              "en": "Timed mixed sets with your indexed references; review every error and re-study the weakest area from the Center.",
+              "ar": "مجموعات موقوتة مختلطة مع مراجعك المفهرسة؛ وراجع كل خطأ وأعد مذاكرة أضعف مجال من المركز."
+            },
+            "courses": [],
+            "domain": null
+          },
+          {
+            "weeks": "12",
+            "title": {
+              "en": "Rehearsal and rest",
+              "ar": "بروفة وراحة"
+            },
+            "text": {
+              "en": "One full-length timed rehearsal in exam conditions, final error-log review, rest the day before.",
+              "ar": "بروفة كاملة موقوتة في ظروف الاختبار، ومراجعة نهائية لسجل الأخطاء، وراحة في اليوم السابق."
+            },
+            "courses": [],
+            "domain": null
+          }
+        ]
+      },
+      "claims": {
+        "en": "CIA is not an ASQ partner and its courses are not ASQ-approved. CIA courses award no recertification units (RUs), do not reproduce the ASQ Body of Knowledge or exam questions, and do not guarantee eligibility or an exam result. Always confirm requirements on ASQ's site before applying.",
+        "ar": "CIA ليست شريكًا لـ ASQ، ودوراتها ليست معتمدة من ASQ. ولا تمنح دورات CIA وحدات إعادة اعتماد (RUs)، ولا تستنسخ مجالات المعرفة الخاصة بـ ASQ أو أسئلة اختباراتها، ولا تضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع ASQ قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "c7358c512c94ebff30ea0935444194f87c695775e5edeb30328475035e39b455"
+      }
+    },
+    {
+      "id": "CERT-CQA",
+      "slug": "cqa",
+      "code": "CQA",
+      "body": "ASQ",
+      "name": {
+        "en": "Certified Quality Auditor",
+        "ar": "مدقق جودة معتمد"
+      },
+      "stage": "practitioner",
+      "area": "auditing",
+      "summary": {
+        "en": "ASQ's credential for professional auditors: auditing fundamentals, the audit process, auditor competencies, audit programme management and quality tools. A new Body of Knowledge has been tested since April 2026.",
+        "ar": "شهادة ASQ للمدققين المحترفين: أساسيات التدقيق وعملية التدقيق وكفاءات المدقق وإدارة برنامج التدقيق وأدوات الجودة. ويُختبر بمجالات معرفة جديدة منذ أبريل 2026."
+      },
+      "who": {
+        "en": "Internal, supplier and lead auditors who want an auditing credential beyond a single standard.",
+        "ar": "المدققون الداخليون ومدققو الموردين والمدققون الرئيسيون الذين يريدون شهادة تدقيق تتجاوز معيارًا واحدًا."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Experience",
+            "ar": "الخبرة"
+          },
+          "items": [
+            {
+              "en": "8 years of on-the-job experience in one or more areas of the BoK",
+              "ar": "8 سنوات من الخبرة العملية في مجال أو أكثر من مجالات المعرفة"
+            },
+            {
+              "en": "3 of those years in a decision-making position",
+              "ar": "3 سنوات منها في موقع صنع قرار"
+            },
+            {
+              "en": "Full-time, paid role",
+              "ar": "دور بدوام كامل مدفوع الأجر"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Education waivers (one only)",
+            "ar": "إعفاءات التعليم (واحد فقط)"
+          },
+          "items": [
+            {
+              "en": "Technical or trade school diploma: 1 year",
+              "ar": "دبلوم مدرسة فنية أو مهنية: سنة واحدة"
+            },
+            {
+              "en": "Associate degree: 2 years",
+              "ar": "دبلوم مشارك: سنتان"
+            },
+            {
+              "en": "Bachelor's degree: 4 years",
+              "ar": "بكالوريوس: 4 سنوات"
+            },
+            {
+              "en": "Master's or doctorate: 5 years",
+              "ar": "ماجستير أو دكتوراه: 5 سنوات"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 165,
+        "scored": 150,
+        "minutes": 318,
+        "note": {
+          "en": "Computer-based, English, one part; 5.5-hour appointment. Open book; case studies are about 10–15% of the test.",
+          "ar": "حاسوبي، بالإنجليزية، جزء واحد؛ ومدة الموعد 5.5 ساعات. بكتاب مفتوح؛ ودراسات الحالة نحو 10–15% من الاختبار."
+        }
+      },
+      "fee": {
+        "member": 450,
+        "non_member": 550,
+        "retake": 350,
+        "currency": "USD",
+        "note": {
+          "en": "ASQ members save $100 on the initial exam fee; the retake rate applies within two years of an attempt. Prices are subject to change.",
+          "ar": "يوفر أعضاء ASQ مئة دولار من رسوم الاختبار الأول؛ وتنطبق رسوم الإعادة خلال سنتين من المحاولة. والأسعار عرضة للتغيير."
+        }
+      },
+      "renewal": {
+        "units": 18,
+        "unit": "RU",
+        "years": 3
+      },
+      "domains": [
+        {
+          "name": {
+            "en": "Auditing Fundamentals",
+            "ar": "أساسيات التدقيق"
+          },
+          "questions": 37,
+          "weight": 24.7
+        },
+        {
+          "name": {
+            "en": "Audit Process",
+            "ar": "عملية التدقيق"
+          },
+          "questions": 45,
+          "weight": 30.0
+        },
+        {
+          "name": {
+            "en": "Auditor Competencies",
+            "ar": "كفاءات المدقق"
+          },
+          "questions": 30,
+          "weight": 20.0
+        },
+        {
+          "name": {
+            "en": "Audit Program Management and Business Applications",
+            "ar": "إدارة برنامج التدقيق وتطبيقاته في الأعمال"
+          },
+          "questions": 23,
+          "weight": 15.3
+        },
+        {
+          "name": {
+            "en": "Quality Tools and Techniques",
+            "ar": "أدوات الجودة وتقنياتها"
+          },
+          "questions": 15,
+          "weight": 10.0
+        }
+      ],
+      "domain_unit": "questions",
+      "bok_version": "2026",
+      "languages": null,
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "verified",
+        "renewal": "verified",
+        "domains": "secondary"
+      },
+      "verified_date": "2026-11-04",
+      "source_ids": [
+        "SRC-ASQ-CQA",
+        "SRC-ASQ-RECERT",
+        "SRC-ASQ-FEES",
+        "SRC-QG-CQA-2026"
+      ],
+      "official_url": "https://asq.org/cert/quality-auditor",
+      "cia_routes": [
+        "ROUTE-Q-AUDITOR"
+      ],
+      "cia_courses": [
+        "CRS-Q-AUDIT",
+        "CRS-ISO-AUD",
+        "CRS-ISO-9001-AUD",
+        "CRS-Q-SUPPLIER",
+        "CRS-Q-TOOLS"
+      ],
+      "competencies": [
+        "AUD-01",
+        "AUD-02",
+        "AUD-03",
+        "QM-03"
+      ],
+      "toolkits": [
+        "aud",
+        "oec",
+        "capa"
+      ],
+      "next": [
+        "CERT-CMQOE"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Combine ISO and ASQ views",
+            "ar": "اجمع منظوري ISO وASQ"
+          },
+          "text": {
+            "en": "Take the Quality Auditing course with the ISO auditing fundamentals course: process, product and system audits, evidence and reporting.",
+            "ar": "خذ دورة تدقيق الجودة مع دورة أساسيات التدقيق في أكاديمية ISO: تدقيق العمليات والمنتجات والأنظمة والأدلة والتقارير."
+          }
+        },
+        {
+          "title": {
+            "en": "Practise case studies",
+            "ar": "تدرّب على دراسات الحالة"
+          },
+          "text": {
+            "en": "Case studies are a share of the exam; practise reading a situation and choosing the auditor's correct action.",
+            "ar": "دراسات الحالة جزء من الاختبار؛ فتدرّب على قراءة الموقف واختيار الإجراء الصحيح للمدقق."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an ASQ partner and its courses are not ASQ-approved. CIA courses award no recertification units (RUs), do not reproduce the ASQ Body of Knowledge or exam questions, and do not guarantee eligibility or an exam result. Always confirm requirements on ASQ's site before applying.",
+        "ar": "CIA ليست شريكًا لـ ASQ، ودوراتها ليست معتمدة من ASQ. ولا تمنح دورات CIA وحدات إعادة اعتماد (RUs)، ولا تستنسخ مجالات المعرفة الخاصة بـ ASQ أو أسئلة اختباراتها، ولا تضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع ASQ قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "110b3652a6fad3f976a2f922848b4784fdb9322266f2817dc409f3fb3701fa72"
+      }
+    },
+    {
+      "id": "CERT-CQE",
+      "slug": "cqe",
+      "code": "CQE",
+      "body": "ASQ",
+      "name": {
+        "en": "Certified Quality Engineer",
+        "ar": "مهندس جودة معتمد"
+      },
+      "stage": "practitioner",
+      "area": "engineering",
+      "summary": {
+        "en": "ASQ's credential for quality engineers: management and leadership, the quality system, product and process design, process control, continuous improvement, quantitative methods and risk management.",
+        "ar": "شهادة ASQ لمهندسي الجودة: الإدارة والقيادة، ونظام الجودة، وتصميم المنتجات والعمليات، وضبط العمليات، والتحسين المستمر، والأساليب الكمية، وإدارة المخاطر."
+      },
+      "who": {
+        "en": "Quality and process engineers with several years of hands-on experience.",
+        "ar": "مهندسو الجودة والعمليات ذوو سنوات من الخبرة العملية."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Experience",
+            "ar": "الخبرة"
+          },
+          "items": [
+            {
+              "en": "8 years of on-the-job experience in one or more areas of the BoK",
+              "ar": "8 سنوات من الخبرة العملية في مجال أو أكثر من مجالات المعرفة"
+            },
+            {
+              "en": "3 of those years in a decision-making position",
+              "ar": "3 سنوات منها في موقع صنع قرار"
+            },
+            {
+              "en": "Full-time, paid role",
+              "ar": "دور بدوام كامل مدفوع الأجر"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Education waivers (one only)",
+            "ar": "إعفاءات التعليم (واحد فقط)"
+          },
+          "items": [
+            {
+              "en": "Technical or trade school diploma: 1 year",
+              "ar": "دبلوم مدرسة فنية أو مهنية: سنة واحدة"
+            },
+            {
+              "en": "Associate degree: 2 years",
+              "ar": "دبلوم مشارك: سنتان"
+            },
+            {
+              "en": "Bachelor's degree: 4 years",
+              "ar": "بكالوريوس: 4 سنوات"
+            },
+            {
+              "en": "Master's or doctorate: 5 years",
+              "ar": "ماجستير أو دكتوراه: 5 سنوات"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 175,
+        "scored": 160,
+        "minutes": 318,
+        "note": {
+          "en": "Computer-based, one part; 5.5-hour appointment. English and bilingual forms (English with German, Spanish, Mandarin, Polish, Czech or Slovak). Open book.",
+          "ar": "حاسوبي، جزء واحد؛ ومدة الموعد 5.5 ساعات. بالإنجليزية ونماذج ثنائية اللغة (الإنجليزية مع الألمانية أو الإسبانية أو الماندرين أو البولندية أو التشيكية أو السلوفاكية). بكتاب مفتوح."
+        }
+      },
+      "fee": {
+        "member": 450,
+        "non_member": 550,
+        "retake": 350,
+        "currency": "USD",
+        "note": {
+          "en": "ASQ members save $100 on the initial exam fee; the retake rate applies within two years of an attempt. Prices are subject to change.",
+          "ar": "يوفر أعضاء ASQ مئة دولار من رسوم الاختبار الأول؛ وتنطبق رسوم الإعادة خلال سنتين من المحاولة. والأسعار عرضة للتغيير."
+        }
+      },
+      "renewal": {
+        "units": 18,
+        "unit": "RU",
+        "years": 3
+      },
+      "domains": [
+        {
+          "name": {
+            "en": "Management and Leadership",
+            "ar": "الإدارة والقيادة"
+          },
+          "questions": 17,
+          "weight": 10.6
+        },
+        {
+          "name": {
+            "en": "The Quality System",
+            "ar": "نظام الجودة"
+          },
+          "questions": 18,
+          "weight": 11.2
+        },
+        {
+          "name": {
+            "en": "Product, Process, and Service Design",
+            "ar": "تصميم المنتجات والعمليات والخدمات"
+          },
+          "questions": 21,
+          "weight": 13.1
+        },
+        {
+          "name": {
+            "en": "Product and Process Control",
+            "ar": "ضبط المنتجات والعمليات"
+          },
+          "questions": 23,
+          "weight": 14.4
+        },
+        {
+          "name": {
+            "en": "Continuous Improvement",
+            "ar": "التحسين المستمر"
+          },
+          "questions": 26,
+          "weight": 16.2
+        },
+        {
+          "name": {
+            "en": "Quantitative Methods and Tools",
+            "ar": "الأساليب والأدوات الكمية"
+          },
+          "questions": 34,
+          "weight": 21.2
+        },
+        {
+          "name": {
+            "en": "Risk Management",
+            "ar": "إدارة المخاطر"
+          },
+          "questions": 21,
+          "weight": 13.1
+        }
+      ],
+      "domain_unit": "questions",
+      "bok_version": "2022",
+      "languages": null,
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "verified",
+        "renewal": "verified",
+        "domains": "secondary"
+      },
+      "verified_date": "2026-11-04",
+      "source_ids": [
+        "SRC-ASQ-CQE",
+        "SRC-ASQ-RECERT",
+        "SRC-ASQ-FEES",
+        "SRC-QG-CQE-2022"
+      ],
+      "official_url": "https://www.asq.org/cert/quality-engineer",
+      "cia_routes": [
+        "ROUTE-Q-ENGINEER"
+      ],
+      "cia_courses": [
+        "CRS-QMS-201",
+        "CRS-Q-TOOLS",
+        "CRS-Q-SPC",
+        "CRS-Q-CAPA",
+        "CRS-Q-SUPPLIER",
+        "CRS-M-FMEA",
+        "CRS-ISO-RISK"
+      ],
+      "competencies": [
+        "QM-02",
+        "QM-03",
+        "QM-04",
+        "RSK-01",
+        "PERF-01"
+      ],
+      "toolkits": [
+        "fmea",
+        "dmaic",
+        "iso10009"
+      ],
+      "next": [
+        "CERT-CSSBB",
+        "CERT-CMQOE"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Quantitative methods first",
+            "ar": "الأساليب الكمية أولًا"
+          },
+          "text": {
+            "en": "Quantitative methods carry the most questions; the SPC and Quality Tools courses are the base, then deeper statistics.",
+            "ar": "تحمل الأساليب الكمية أكثر الأسئلة؛ ودورتا الضبط الإحصائي وأدوات الجودة الأساس، ثم إحصاء أعمق."
+          }
+        },
+        {
+          "title": {
+            "en": "Practise calculations with your calculator",
+            "ar": "تدرّب على الحسابات بآلتك الحاسبة"
+          },
+          "text": {
+            "en": "Many items need calculation; practise with the calculator type you will use.",
+            "ar": "تحتاج أسئلة كثيرة إلى حساب؛ فتدرّب بنوع الآلة الحاسبة الذي ستستخدمه."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an ASQ partner and its courses are not ASQ-approved. CIA courses award no recertification units (RUs), do not reproduce the ASQ Body of Knowledge or exam questions, and do not guarantee eligibility or an exam result. Always confirm requirements on ASQ's site before applying.",
+        "ar": "CIA ليست شريكًا لـ ASQ، ودوراتها ليست معتمدة من ASQ. ولا تمنح دورات CIA وحدات إعادة اعتماد (RUs)، ولا تستنسخ مجالات المعرفة الخاصة بـ ASQ أو أسئلة اختباراتها، ولا تضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع ASQ قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "bfe0dde4fa49b66527bad748aec32e37377a387713a7013919db50b7efd586ac"
+      }
+    },
+    {
+      "id": "CERT-CSSGB",
+      "slug": "cssgb",
+      "code": "CSSGB",
+      "body": "ASQ",
+      "name": {
+        "en": "Certified Six Sigma Green Belt",
+        "ar": "حزام أخضر معتمد في ستة سيجما"
+      },
+      "stage": "practitioner",
+      "area": "improvement",
+      "summary": {
+        "en": "ASQ's Green Belt credential: the DMAIC phases and Six Sigma's place in the organisation. It is a lifetime certification with no recertification requirement.",
+        "ar": "شهادة الحزام الأخضر من ASQ: مراحل DMAIC ومكانة ستة سيجما في المنظمة. وهي شهادة مدى الحياة بلا متطلب لإعادة الاعتماد."
+      },
+      "who": {
+        "en": "Engineers, analysts and team leaders who work on or lead improvement projects.",
+        "ar": "المهندسون والمحللون وقادة الفرق الذين يعملون في مشاريع التحسين أو يقودونها."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Experience",
+            "ar": "الخبرة"
+          },
+          "items": [
+            {
+              "en": "3 years of on-the-job experience in one or more areas of the BoK",
+              "ar": "3 سنوات من الخبرة العملية في مجال أو أكثر من مجالات المعرفة"
+            },
+            {
+              "en": "Full-time, paid role",
+              "ar": "دور بدوام كامل مدفوع الأجر"
+            },
+            {
+              "en": "No education waivers for this exam",
+              "ar": "لا إعفاءات تعليمية لهذا الاختبار"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 110,
+        "scored": 100,
+        "minutes": 258,
+        "note": {
+          "en": "Computer-based, English, one part; 4.5-hour appointment. Open book.",
+          "ar": "حاسوبي، بالإنجليزية، جزء واحد؛ ومدة الموعد 4.5 ساعات. بكتاب مفتوح."
+        }
+      },
+      "fee": {
+        "member": 383,
+        "non_member": 483,
+        "retake": 283,
+        "currency": "USD",
+        "note": {
+          "en": "ASQ members save $100 on the initial exam fee; the retake rate applies within two years of an attempt. Prices are subject to change.",
+          "ar": "يوفر أعضاء ASQ مئة دولار من رسوم الاختبار الأول؛ وتنطبق رسوم الإعادة خلال سنتين من المحاولة. والأسعار عرضة للتغيير."
+        }
+      },
+      "renewal": {
+        "lifetime": true
+      },
+      "domains": [
+        {
+          "name": {
+            "en": "Overview: Six Sigma and the Organization",
+            "ar": "نظرة عامة: ستة سيجما والمنظمة"
+          },
+          "questions": 11,
+          "weight": 11.0
+        },
+        {
+          "name": {
+            "en": "Define Phase",
+            "ar": "مرحلة التعريف"
+          },
+          "questions": 20,
+          "weight": 20.0
+        },
+        {
+          "name": {
+            "en": "Measure Phase",
+            "ar": "مرحلة القياس"
+          },
+          "questions": 20,
+          "weight": 20.0
+        },
+        {
+          "name": {
+            "en": "Analyze Phase",
+            "ar": "مرحلة التحليل"
+          },
+          "questions": 18,
+          "weight": 18.0
+        },
+        {
+          "name": {
+            "en": "Improve Phase",
+            "ar": "مرحلة التحسين"
+          },
+          "questions": 16,
+          "weight": 16.0
+        },
+        {
+          "name": {
+            "en": "Control Phase",
+            "ar": "مرحلة التحكم"
+          },
+          "questions": 15,
+          "weight": 15.0
+        }
+      ],
+      "domain_unit": "questions",
+      "bok_version": "2022",
+      "languages": null,
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "verified",
+        "renewal": "verified",
+        "domains": "secondary"
+      },
+      "verified_date": "2026-11-04",
+      "source_ids": [
+        "SRC-ASQ-CSSGB",
+        "SRC-ASQ-RECERT",
+        "SRC-ASQ-FEES",
+        "SRC-QG-CSSGB-2022"
+      ],
+      "official_url": "https://www.asq.org/cert/six-sigma-green-belt",
+      "cia_routes": [
+        "ROUTE-Q-SSGB"
+      ],
+      "cia_courses": [
+        "CRS-LSS-GB",
+        "CRS-Q-TOOLS",
+        "CRS-Q-SPC",
+        "CRS-Q-CAPA",
+        "CRS-M-DMAIC"
+      ],
+      "competencies": [
+        "QM-02",
+        "QM-03",
+        "OE-02"
+      ],
+      "toolkits": [
+        "dmaic",
+        "a3",
+        "fmea"
+      ],
+      "next": [
+        "CERT-CSSBB"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Follow DMAIC end to end",
+            "ar": "تتبّع DMAIC من البداية إلى النهاية"
+          },
+          "text": {
+            "en": "Take the Green Belt Foundations course and run one small project with the platform's DMAIC toolkit.",
+            "ar": "خذ دورة أساسيات الحزام الأخضر ونفّذ مشروعًا صغيرًا بأداة DMAIC في المنصة."
+          }
+        },
+        {
+          "title": {
+            "en": "Measure and Define carry the most",
+            "ar": "التعريف والقياس يحملان أكثر"
+          },
+          "text": {
+            "en": "Define and Measure together are 40 of 100 scored items in the 2022 BoK counts; check the current BoK on ASQ.",
+            "ar": "التعريف والقياس معًا 40 من 100 سؤال محتسب في أعداد مجالات 2022؛ وتحقق من المجالات الحالية على ASQ."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an ASQ partner and its courses are not ASQ-approved. CIA courses award no recertification units (RUs), do not reproduce the ASQ Body of Knowledge or exam questions, and do not guarantee eligibility or an exam result. Always confirm requirements on ASQ's site before applying.",
+        "ar": "CIA ليست شريكًا لـ ASQ، ودوراتها ليست معتمدة من ASQ. ولا تمنح دورات CIA وحدات إعادة اعتماد (RUs)، ولا تستنسخ مجالات المعرفة الخاصة بـ ASQ أو أسئلة اختباراتها، ولا تضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع ASQ قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "cb3e3c9febc18cf13870d247a76e97ee8feb236915f7d4020e17f66c8b877e10"
+      }
+    },
+    {
+      "id": "CERT-CSSBB",
+      "slug": "cssbb",
+      "code": "CSSBB",
+      "body": "ASQ",
+      "name": {
+        "en": "Certified Six Sigma Black Belt",
+        "ar": "حزام أسود معتمد في ستة سيجما"
+      },
+      "stage": "senior",
+      "area": "improvement",
+      "summary": {
+        "en": "ASQ's Black Belt credential for people who lead improvement projects and teams: deployment, process management, team management, DMAIC in depth and design for Six Sigma. A completed project with a signed affidavit is required.",
+        "ar": "شهادة الحزام الأسود من ASQ لمن يقودون مشاريع التحسين وفرقها: النشر وإدارة العمليات وإدارة الفرق وDMAIC بعمق والتصميم لستة سيجما. ويُشترط مشروع مكتمل بإقرار موقّع."
+      },
+      "who": {
+        "en": "Green Belts and improvement leads who have completed real projects.",
+        "ar": "أصحاب الحزام الأخضر وقادة التحسين الذين أكملوا مشاريع حقيقية."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Option 1",
+            "ar": "الخيار 1"
+          },
+          "items": [
+            {
+              "en": "Two completed Six Sigma projects with signed affidavits",
+              "ar": "مشروعان مكتملان في ستة سيجما بإقرارات موقّعة"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Option 2",
+            "ar": "الخيار 2"
+          },
+          "items": [
+            {
+              "en": "One completed Six Sigma project with a signed affidavit",
+              "ar": "مشروع مكتمل واحد في ستة سيجما بإقرار موقّع"
+            },
+            {
+              "en": "3 years of on-the-job experience in one or more areas of the BoK",
+              "ar": "3 سنوات من الخبرة العملية في مجال أو أكثر من مجالات المعرفة"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "For both",
+            "ar": "للخيارين"
+          },
+          "items": [
+            {
+              "en": "Full-time, paid role",
+              "ar": "دور بدوام كامل مدفوع الأجر"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 165,
+        "scored": 150,
+        "minutes": 258,
+        "note": {
+          "en": "Computer-based, English, one part; 4.5-hour appointment. Open book; programmable calculators are not allowed.",
+          "ar": "حاسوبي، بالإنجليزية، جزء واحد؛ ومدة الموعد 4.5 ساعات. بكتاب مفتوح؛ ولا يُسمح بالآلات الحاسبة القابلة للبرمجة."
+        }
+      },
+      "fee": {
+        "member": 485,
+        "non_member": 585,
+        "retake": 385,
+        "currency": "USD",
+        "note": {
+          "en": "ASQ members save $100 on the initial exam fee; the retake rate applies within two years of an attempt. Prices are subject to change.",
+          "ar": "يوفر أعضاء ASQ مئة دولار من رسوم الاختبار الأول؛ وتنطبق رسوم الإعادة خلال سنتين من المحاولة. والأسعار عرضة للتغيير."
+        }
+      },
+      "renewal": {
+        "units": 18,
+        "unit": "RU",
+        "years": 3
+      },
+      "domains": [
+        {
+          "name": {
+            "en": "Organization-wide Planning and Deployment",
+            "ar": "التخطيط والنشر على مستوى المنظمة"
+          },
+          "questions": 12,
+          "weight": 8.0
+        },
+        {
+          "name": {
+            "en": "Organizational Process Management and Measures",
+            "ar": "إدارة العمليات المؤسسية ومقاييسها"
+          },
+          "questions": 12,
+          "weight": 8.0
+        },
+        {
+          "name": {
+            "en": "Team Management",
+            "ar": "إدارة الفرق"
+          },
+          "questions": 15,
+          "weight": 10.0
+        },
+        {
+          "name": {
+            "en": "Define Phase",
+            "ar": "مرحلة التعريف"
+          },
+          "questions": 20,
+          "weight": 13.3
+        },
+        {
+          "name": {
+            "en": "Measure Phase",
+            "ar": "مرحلة القياس"
+          },
+          "questions": 25,
+          "weight": 16.7
+        },
+        {
+          "name": {
+            "en": "Analyze Phase",
+            "ar": "مرحلة التحليل"
+          },
+          "questions": 22,
+          "weight": 14.7
+        },
+        {
+          "name": {
+            "en": "Improve Phase",
+            "ar": "مرحلة التحسين"
+          },
+          "questions": 21,
+          "weight": 14.0
+        },
+        {
+          "name": {
+            "en": "Control Phase",
+            "ar": "مرحلة التحكم"
+          },
+          "questions": 17,
+          "weight": 11.3
+        },
+        {
+          "name": {
+            "en": "Design for Six Sigma (DFSS) Framework and Methodologies",
+            "ar": "إطار التصميم لستة سيجما وأساليبه"
+          },
+          "questions": 6,
+          "weight": 4.0
+        }
+      ],
+      "domain_unit": "questions",
+      "bok_version": "2022",
+      "languages": null,
+      "extra": [
+        {
+          "en": "ASQ's requirements table pairs the number of completed projects with the experience requirement; read it on the page before applying.",
+          "ar": "يقرن جدول متطلبات ASQ عدد المشاريع المكتملة بمتطلب الخبرة؛ فاقرأه على الصفحة قبل التقديم."
+        }
+      ],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "verified",
+        "renewal": "verified",
+        "domains": "secondary"
+      },
+      "verified_date": "2026-11-04",
+      "source_ids": [
+        "SRC-ASQ-CSSBB",
+        "SRC-ASQ-RECERT",
+        "SRC-ASQ-FEES",
+        "SRC-QG-CSSBB-2022"
+      ],
+      "official_url": "https://www.asq.org/cert/six-sigma-black-belt",
+      "cia_routes": [
+        "ROUTE-Q-SSGB"
+      ],
+      "cia_courses": [
+        "CRS-LSS-GB",
+        "CRS-Q-SPC",
+        "CRS-M-DMAIC",
+        "CRS-M-FMEA",
+        "CRS-CMQOE-PREP"
+      ],
+      "competencies": [
+        "QM-02",
+        "QM-03",
+        "OE-02",
+        "LDR-01"
+      ],
+      "toolkits": [
+        "dmaic",
+        "fmea",
+        "a3"
+      ],
+      "next": [
+        "CERT-CMQOE"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Document your projects",
+            "ar": "وثّق مشاريعك"
+          },
+          "text": {
+            "en": "Write each project as a DMAIC storyboard with data and a signed affidavit from the sponsor.",
+            "ar": "اكتب كل مشروع لوحة قصة DMAIC بالبيانات وإقرار موقّع من الراعي."
+          }
+        },
+        {
+          "title": {
+            "en": "Deepen Measure and Analyze",
+            "ar": "عمّق القياس والتحليل"
+          },
+          "text": {
+            "en": "Measure and Analyze carry the most items in the 2022 counts; statistics needs real practice.",
+            "ar": "يحمل القياس والتحليل أكثر الأسئلة في أعداد 2022؛ والإحصاء يحتاج إلى تدريب حقيقي."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an ASQ partner and its courses are not ASQ-approved. CIA courses award no recertification units (RUs), do not reproduce the ASQ Body of Knowledge or exam questions, and do not guarantee eligibility or an exam result. Always confirm requirements on ASQ's site before applying.",
+        "ar": "CIA ليست شريكًا لـ ASQ، ودوراتها ليست معتمدة من ASQ. ولا تمنح دورات CIA وحدات إعادة اعتماد (RUs)، ولا تستنسخ مجالات المعرفة الخاصة بـ ASQ أو أسئلة اختباراتها، ولا تضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع ASQ قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "90badf7294853f41e06e44a4ac9a8ea1d25f1bfd1de11a30d3bc099d567e020f"
+      }
+    },
+    {
+      "id": "CERT-CCQM",
+      "slug": "ccqm",
+      "code": "CCQM",
+      "body": "ASQ",
+      "name": {
+        "en": "Certified Construction Quality Manager",
+        "ar": "مدير جودة إنشاءات معتمد"
+      },
+      "stage": "practitioner",
+      "area": "construction",
+      "summary": {
+        "en": "ASQ's credential for quality managers in design and construction projects.",
+        "ar": "شهادة ASQ لمديري الجودة في مشاريع التصميم والإنشاء."
+      },
+      "who": {
+        "en": "Quality managers and engineers on construction, infrastructure and EPC projects — common in Saudi giga-projects and utilities.",
+        "ar": "مديرو الجودة ومهندسوها في مشاريع الإنشاءات والبنية التحتية ومشاريع الهندسة والتوريد والإنشاء — الشائعة في المشاريع السعودية الكبرى والمرافق."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Experience",
+            "ar": "الخبرة"
+          },
+          "items": [
+            {
+              "en": "8 years of on-the-job experience in one or more areas of the BoK",
+              "ar": "8 سنوات من الخبرة العملية في مجال أو أكثر من مجالات المعرفة"
+            },
+            {
+              "en": "3 of those years in a decision-making position",
+              "ar": "3 سنوات منها في موقع صنع قرار"
+            },
+            {
+              "en": "Up to 1 year may come from an internship or apprenticeship",
+              "ar": "يمكن أن تأتي سنة واحدة كحد أقصى من تدريب داخلي أو تلمذة مهنية"
+            },
+            {
+              "en": "Full-time, paid role",
+              "ar": "دور بدوام كامل مدفوع الأجر"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Education waivers (one only)",
+            "ar": "إعفاءات التعليم (واحد فقط)"
+          },
+          "items": [
+            {
+              "en": "Technical or trade school diploma: 1 year",
+              "ar": "دبلوم مدرسة فنية أو مهنية: سنة واحدة"
+            },
+            {
+              "en": "Associate degree: 2 years",
+              "ar": "دبلوم مشارك: سنتان"
+            },
+            {
+              "en": "Bachelor's degree: 4 years",
+              "ar": "بكالوريوس: 4 سنوات"
+            },
+            {
+              "en": "Master's or doctorate: 5 years",
+              "ar": "ماجستير أو دكتوراه: 5 سنوات"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 165,
+        "scored": 150,
+        "minutes": 258,
+        "note": {
+          "en": "Computer-based, English, one part; 4.5-hour appointment. Open book.",
+          "ar": "حاسوبي، بالإنجليزية، جزء واحد؛ ومدة الموعد 4.5 ساعات. بكتاب مفتوح."
+        }
+      },
+      "fee": {
+        "member": 450,
+        "non_member": 550,
+        "retake": 350,
+        "currency": "USD",
+        "note": {
+          "en": "ASQ members save $100 on the initial exam fee; the retake rate applies within two years of an attempt. Prices are subject to change.",
+          "ar": "يوفر أعضاء ASQ مئة دولار من رسوم الاختبار الأول؛ وتنطبق رسوم الإعادة خلال سنتين من المحاولة. والأسعار عرضة للتغيير."
+        }
+      },
+      "renewal": {
+        "units": 18,
+        "unit": "RU",
+        "years": 3
+      },
+      "domains": [],
+      "domain_unit": "questions",
+      "bok_version": null,
+      "languages": null,
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "verified",
+        "renewal": "verified",
+        "domains": "pending"
+      },
+      "verified_date": "2026-11-04",
+      "source_ids": [
+        "SRC-ASQ-CCQM",
+        "SRC-ASQ-RECERT",
+        "SRC-ASQ-FEES"
+      ],
+      "official_url": "https://www.asq.org/cert/construction-quality",
+      "cia_routes": [
+        "ROUTE-Q-CMQOE"
+      ],
+      "cia_courses": [
+        "CRS-QMS-201",
+        "CRS-Q-AUDIT",
+        "CRS-Q-SUPPLIER",
+        "CRS-Q-CAPA",
+        "CRS-Q-COQ"
+      ],
+      "competencies": [
+        "QM-01",
+        "QM-03",
+        "QM-04",
+        "AUD-02"
+      ],
+      "toolkits": [
+        "capa",
+        "iso9001"
+      ],
+      "next": [
+        "CERT-CMQOE"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Map the BoK to your project",
+            "ar": "اربط مجالات المعرفة بمشروعك"
+          },
+          "text": {
+            "en": "Download the CCQM BoK from ASQ and map each area to your project's quality plan, inspections and supplier controls.",
+            "ar": "نزّل مجالات معرفة CCQM من ASQ واربط كل مجال بخطة جودة مشروعك وعمليات الفحص وضوابط الموردين."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an ASQ partner and its courses are not ASQ-approved. CIA courses award no recertification units (RUs), do not reproduce the ASQ Body of Knowledge or exam questions, and do not guarantee eligibility or an exam result. Always confirm requirements on ASQ's site before applying.",
+        "ar": "CIA ليست شريكًا لـ ASQ، ودوراتها ليست معتمدة من ASQ. ولا تمنح دورات CIA وحدات إعادة اعتماد (RUs)، ولا تستنسخ مجالات المعرفة الخاصة بـ ASQ أو أسئلة اختباراتها، ولا تضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع ASQ قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "a12fe44cf9f6064daf4bd7a957c31a212a0d63e0c6c4cdaa8c075381bc0d7d37"
+      }
+    },
+    {
+      "id": "CERT-CQIA",
+      "slug": "cqia",
+      "code": "CQIA",
+      "body": "ASQ",
+      "name": {
+        "en": "Certified Quality Improvement Associate",
+        "ar": "مشارك معتمد في تحسين الجودة"
+      },
+      "stage": "entry",
+      "area": "foundations",
+      "summary": {
+        "en": "ASQ's entry-level credential in quality basics, teams and continuous-improvement tools. It is a lifetime certification with no recertification requirement.",
+        "ar": "شهادة ASQ للمبتدئين في أساسيات الجودة والفرق وأدوات التحسين المستمر. وهي شهادة مدى الحياة بلا متطلب لإعادة الاعتماد."
+      },
+      "who": {
+        "en": "Team members, coordinators and graduates starting in quality.",
+        "ar": "أعضاء الفرق والمنسقون والخريجون المبتدئون في الجودة."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Requirement",
+            "ar": "المتطلب"
+          },
+          "items": [
+            {
+              "en": "Two years of work experience, or an associate degree, or two years of equivalent higher education",
+              "ar": "سنتان من الخبرة العملية، أو دبلوم مشارك، أو سنتان من التعليم العالي المكافئ"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 110,
+        "scored": 100,
+        "minutes": 198,
+        "note": {
+          "en": "Computer-based, English, one part; 3.5-hour appointment. Open book.",
+          "ar": "حاسوبي، بالإنجليزية، جزء واحد؛ ومدة الموعد 3.5 ساعات. بكتاب مفتوح."
+        }
+      },
+      "fee": null,
+      "renewal": {
+        "lifetime": true
+      },
+      "domains": [],
+      "domain_unit": "questions",
+      "bok_version": null,
+      "languages": null,
+      "extra": [
+        {
+          "en": "Two ASQ pages showed different CQIA fees on 4 November 2026, so the fee is not stated here — check ASQ.",
+          "ar": "أظهرت صفحتان من ASQ رسومًا مختلفة لـ CQIA في 4 نوفمبر 2026، لذا لا تُذكر الرسوم هنا — تحقق من ASQ."
+        }
+      ],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "pending",
+        "renewal": "verified",
+        "domains": "pending"
+      },
+      "verified_date": "2026-11-04",
+      "source_ids": [
+        "SRC-ASQ-CQIA",
+        "SRC-ASQ-RECERT",
+        "SRC-ASQ-FEES"
+      ],
+      "official_url": "https://asq.org/cert/quality-improvement-associate",
+      "cia_routes": [
+        "ROUTE-Q-FOUND"
+      ],
+      "cia_courses": [
+        "CRS-QMS-201",
+        "CRS-Q-TOOLS",
+        "CRS-Q-CAPA",
+        "CRS-M-PDCA"
+      ],
+      "competencies": [
+        "QM-01",
+        "QM-02",
+        "QM-03"
+      ],
+      "toolkits": [
+        "pdca",
+        "pareto",
+        "fish"
+      ],
+      "next": [
+        "CERT-CSSGB",
+        "CERT-CQT"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Start with the foundations route",
+            "ar": "ابدأ بمسار الأساسيات"
+          },
+          "text": {
+            "en": "Quality Management Foundations, Quality Tools and Problem Solving cover most of what a first credential needs.",
+            "ar": "تغطي أساسيات إدارة الجودة وأدوات الجودة وحل المشكلات معظم ما تحتاجه أول شهادة."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an ASQ partner and its courses are not ASQ-approved. CIA courses award no recertification units (RUs), do not reproduce the ASQ Body of Knowledge or exam questions, and do not guarantee eligibility or an exam result. Always confirm requirements on ASQ's site before applying.",
+        "ar": "CIA ليست شريكًا لـ ASQ، ودوراتها ليست معتمدة من ASQ. ولا تمنح دورات CIA وحدات إعادة اعتماد (RUs)، ولا تستنسخ مجالات المعرفة الخاصة بـ ASQ أو أسئلة اختباراتها، ولا تضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع ASQ قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "84389820a052d731b14fe7078b45551cc09a007d74b1ffcdf4232ed531e85c95"
+      }
+    },
+    {
+      "id": "CERT-CQT",
+      "slug": "cqt",
+      "code": "CQT",
+      "body": "ASQ",
+      "name": {
+        "en": "Certified Quality Technician",
+        "ar": "فني جودة معتمد"
+      },
+      "stage": "entry",
+      "area": "inspection",
+      "summary": {
+        "en": "ASQ's credential for quality technicians who analyse problems, prepare inspection plans, support audits and apply statistical process control. Lifetime certification.",
+        "ar": "شهادة ASQ لفنيي الجودة الذين يحللون المشكلات ويعدّون خطط الفحص ويدعمون التدقيق ويطبقون الضبط الإحصائي. شهادة مدى الحياة."
+      },
+      "who": {
+        "en": "Quality technicians and senior inspectors.",
+        "ar": "فنيو الجودة وكبار المفتشين."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Experience",
+            "ar": "الخبرة"
+          },
+          "items": [
+            {
+              "en": "4 years of on-the-job experience in one or more areas of the BoK",
+              "ar": "4 سنوات من الخبرة العملية في مجال أو أكثر من مجالات المعرفة"
+            },
+            {
+              "en": "Full-time, paid role",
+              "ar": "دور بدوام كامل مدفوع الأجر"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Education waivers (one only)",
+            "ar": "إعفاءات التعليم (واحد فقط)"
+          },
+          "items": [
+            {
+              "en": "Quality technology certificate: 1 year",
+              "ar": "شهادة في تقنية الجودة: سنة واحدة"
+            },
+            {
+              "en": "Associate degree: 2 years",
+              "ar": "دبلوم مشارك: سنتان"
+            },
+            {
+              "en": "Bachelor's, master's or doctorate: 3 years",
+              "ar": "بكالوريوس أو ماجستير أو دكتوراه: 3 سنوات"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 110,
+        "scored": 100,
+        "minutes": 258,
+        "note": {
+          "en": "Computer-based, English, one part; 4.5-hour appointment. Open book.",
+          "ar": "حاسوبي، بالإنجليزية، جزء واحد؛ ومدة الموعد 4.5 ساعات. بكتاب مفتوح."
+        }
+      },
+      "fee": {
+        "member": 360,
+        "non_member": 460,
+        "retake": 260,
+        "currency": "USD",
+        "note": {
+          "en": "ASQ members save $100 on the initial exam fee; the retake rate applies within two years of an attempt. Prices are subject to change.",
+          "ar": "يوفر أعضاء ASQ مئة دولار من رسوم الاختبار الأول؛ وتنطبق رسوم الإعادة خلال سنتين من المحاولة. والأسعار عرضة للتغيير."
+        }
+      },
+      "renewal": {
+        "lifetime": true
+      },
+      "domains": [],
+      "domain_unit": "questions",
+      "bok_version": null,
+      "languages": null,
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "verified",
+        "renewal": "verified",
+        "domains": "pending"
+      },
+      "verified_date": "2026-11-04",
+      "source_ids": [
+        "SRC-ASQ-CQT",
+        "SRC-ASQ-RECERT",
+        "SRC-ASQ-FEES"
+      ],
+      "official_url": "https://www.asq.org/cert/quality-technician",
+      "cia_routes": [
+        "ROUTE-Q-ENGINEER"
+      ],
+      "cia_courses": [
+        "CRS-Q-TOOLS",
+        "CRS-Q-SPC",
+        "CRS-Q-CAPA",
+        "CRS-Q-SUPPLIER"
+      ],
+      "competencies": [
+        "QM-02",
+        "QM-03"
+      ],
+      "toolkits": [
+        "pareto",
+        "iso10009"
+      ],
+      "next": [
+        "CERT-CQE"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Tools and SPC",
+            "ar": "الأدوات والضبط الإحصائي"
+          },
+          "text": {
+            "en": "Quality Tools and SPC Basics are the core; practise reading charts and calculating with your calculator.",
+            "ar": "أدوات الجودة وأساسيات الضبط الإحصائي هي الجوهر؛ وتدرّب على قراءة الخرائط والحساب بآلتك الحاسبة."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an ASQ partner and its courses are not ASQ-approved. CIA courses award no recertification units (RUs), do not reproduce the ASQ Body of Knowledge or exam questions, and do not guarantee eligibility or an exam result. Always confirm requirements on ASQ's site before applying.",
+        "ar": "CIA ليست شريكًا لـ ASQ، ودوراتها ليست معتمدة من ASQ. ولا تمنح دورات CIA وحدات إعادة اعتماد (RUs)، ولا تستنسخ مجالات المعرفة الخاصة بـ ASQ أو أسئلة اختباراتها، ولا تضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع ASQ قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "53d7fdfc08f5d66fba9f43081677a8a9be94ec470a9dfd57b2dcf07f7e497085"
+      }
+    },
+    {
+      "id": "CERT-CQI",
+      "slug": "cqi",
+      "code": "CQI",
+      "body": "ASQ",
+      "name": {
+        "en": "Certified Quality Inspector",
+        "ar": "مفتش جودة معتمد"
+      },
+      "stage": "entry",
+      "area": "inspection",
+      "summary": {
+        "en": "ASQ's credential for inspectors who check products and documentation, measure process performance and report results. Lifetime certification.",
+        "ar": "شهادة ASQ للمفتشين الذين يفحصون المنتجات والمستندات ويقيسون أداء العمليات ويرفعون النتائج. شهادة مدى الحياة."
+      },
+      "who": {
+        "en": "Inspectors and test technicians in manufacturing and construction.",
+        "ar": "المفتشون وفنيو الاختبار في الصناعة والإنشاءات."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Experience",
+            "ar": "الخبرة"
+          },
+          "items": [
+            {
+              "en": "3 years of on-the-job experience in one or more areas of the BoK",
+              "ar": "3 سنوات من الخبرة العملية في مجال أو أكثر من مجالات المعرفة"
+            },
+            {
+              "en": "Full-time, paid role",
+              "ar": "دور بدوام كامل مدفوع الأجر"
+            },
+            {
+              "en": "A technical, military or trade diploma, or a degree, waives 2 years (one waiver)",
+              "ar": "دبلوم فني أو عسكري أو مهني، أو شهادة جامعية، يعفي من سنتين (إعفاء واحد)"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "questions": 110,
+        "scored": 100,
+        "minutes": 258,
+        "note": {
+          "en": "Computer-based, English, one part; 4.5-hour appointment. Open book.",
+          "ar": "حاسوبي، بالإنجليزية، جزء واحد؛ ومدة الموعد 4.5 ساعات. بكتاب مفتوح."
+        }
+      },
+      "fee": {
+        "member": 360,
+        "non_member": 460,
+        "retake": 260,
+        "currency": "USD",
+        "note": {
+          "en": "ASQ members save $100 on the initial exam fee; the retake rate applies within two years of an attempt. Prices are subject to change.",
+          "ar": "يوفر أعضاء ASQ مئة دولار من رسوم الاختبار الأول؛ وتنطبق رسوم الإعادة خلال سنتين من المحاولة. والأسعار عرضة للتغيير."
+        }
+      },
+      "renewal": {
+        "lifetime": true
+      },
+      "domains": [],
+      "domain_unit": "questions",
+      "bok_version": null,
+      "languages": null,
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "verified",
+        "renewal": "verified",
+        "domains": "pending"
+      },
+      "verified_date": "2026-11-04",
+      "source_ids": [
+        "SRC-ASQ-CQI",
+        "SRC-ASQ-RECERT",
+        "SRC-ASQ-FEES"
+      ],
+      "official_url": "https://www.asq.org/cert/quality-inspector",
+      "cia_routes": [
+        "ROUTE-Q-FOUND"
+      ],
+      "cia_courses": [
+        "CRS-QMS-201",
+        "CRS-Q-TOOLS",
+        "CRS-Q-SUPPLIER"
+      ],
+      "competencies": [
+        "QM-02",
+        "QM-04"
+      ],
+      "toolkits": [
+        "pareto"
+      ],
+      "next": [
+        "CERT-CQT"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Measurement and sampling",
+            "ar": "القياس والمعاينة"
+          },
+          "text": {
+            "en": "Focus on measurement, sampling and inspection planning; the Supplier Quality course covers incoming inspection.",
+            "ar": "ركّز على القياس والمعاينة وتخطيط الفحص؛ وتغطي دورة جودة الموردين الفحص عند الاستلام."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an ASQ partner and its courses are not ASQ-approved. CIA courses award no recertification units (RUs), do not reproduce the ASQ Body of Knowledge or exam questions, and do not guarantee eligibility or an exam result. Always confirm requirements on ASQ's site before applying.",
+        "ar": "CIA ليست شريكًا لـ ASQ، ودوراتها ليست معتمدة من ASQ. ولا تمنح دورات CIA وحدات إعادة اعتماد (RUs)، ولا تستنسخ مجالات المعرفة الخاصة بـ ASQ أو أسئلة اختباراتها، ولا تضمن الأهلية ولا نتيجة الاختبار. تحقق دائمًا من المتطلبات على موقع ASQ قبل التقديم."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "be4cfb9b49cb6006c2ed4d8722fe2e51276f22e202f69dc84ed484741ea0cef9"
       }
     }
   ]

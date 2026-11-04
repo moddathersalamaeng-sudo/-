@@ -1,4 +1,5 @@
 /** Academy home / dashboard shell. No fake data: every widget shows a real empty state. */
+import { academyBanner } from '../ui/art.js';
 import { h, icon } from '../core/dom.js';
 import { EmptyState, ProgressBar, Button, dataRegion } from '../ui/components.js';
 import { loadAll } from '../data/learner-state.js';
@@ -101,12 +102,14 @@ export function homeView(ctx) {
     h('h2', { id: 'acad-h' }, t('p8.home.academies')),
     dataRegion({ t, load: learnerData, render: ({ content }) => {
       const n = eco => content.courses.filter(c => eco.includes(c.ecosystem) || eco.includes(c.category)).length;
-      const card = (href, iconName, title, body, count) => h('article', { class: 'card acad-card' },
-        h('h3', null, icon(iconName), ' ', h('a', { href }, title)), h('p', null, body), h('p', { class: 'meta' }, icon('book'), ' ', count));
-      return h('div', { class: 'cards' },
-        card('#/academy/iso', 'shield', t('nav.items.isoAcademy'), t('p8.home.isoBody'), t('p8.home.courses', { n: i18n.number(n(['iso'])) })),
-        card('#/academy/pmi', 'briefcase', t('nav.items.pmiAcademy'), t('p8.home.pmiBody'), t('p8.home.courses', { n: i18n.number(n(['pmi', 'pmo', 'p3o'])) })),
-        card('#/guides', 'ladder', t('gd.title'), t('p8.home.guidesBody'), t('p8.home.guides', { n: i18n.number((content.guides || []).length) })));
+      const card = (href, fam, iconName, title, body, count) => h('article', { class: 'acad-tile acad-card', dataset: { family: fam } },
+        h('div', { class: 'cover' }, academyBanner(fam, iconName, href)),
+        h('div', { class: 'acad-body' }, h('h3', null, icon(iconName), ' ', h('a', { href }, title)), h('p', null, body), h('p', { class: 'meta' }, icon('book'), ' ', count)));
+      return h('div', { class: 'acad-tiles' },
+        card('#/academy/iso', 'iso', 'shield', t('nav.items.isoAcademy'), t('p8.home.isoBody'), t('p8.home.courses', { n: i18n.number(n(['iso'])) })),
+        card('#/academy/pmi', 'pmi', 'briefcase', t('nav.items.pmiAcademy'), t('p8.home.pmiBody'), t('p8.home.courses', { n: i18n.number(n(['pmi', 'pmo', 'p3o'])) })),
+        card('#/academy/quality', 'quality', 'award', t('nav.items.qualityAcademy'), t('p9.home.qualityBody'), t('p8.home.courses', { n: i18n.number(content.courses.filter(c => c.ecosystem === 'quality' && !c.guide).length) })),
+        card('#/guides', 'method', 'ladder', t('gd.title'), t('p8.home.guidesBody'), t('p8.home.guides', { n: i18n.number((content.guides || []).length) })));
     } }));
 
   return h('div', null,

@@ -69,10 +69,10 @@ with sync_playwright() as p:
     go(page, '/academy/iso')
     start = page.get_attribute('[data-start]', 'data-start'); cta = page.get_attribute('[data-action=start-point]', 'href')
     record('learner without profile: ISO starting point is "explore" and links to a published article', start == 'explore' and cta == '#/knowledge/iso/what-is-iso', f'{start} {cta}')
-    # After the Phase 7 closure the ISO slice is published; future-phase drafts (Phase 8 published the PMI courses; CRS-QMS-201 stays a draft) stay hidden.
+    # After the Phase 7 closure the ISO slice is published; future-phase drafts (Phases 8 and 9 published the PMI and Quality courses; CRS-EFQM-101 stays a draft) stay hidden.
     go(page, '/academy/courses')
-    published_courses = page.locator('#course-list [data-course]').count() > 0 and page.locator('#course-list [data-course="CRS-QMS-201"]').count() == 0
-    go(page, '/academy/courses/' + next(c['slug'] for c in SEED('courses.json') if c['id'] == 'CRS-QMS-201'))
+    published_courses = page.locator('#course-list [data-course]').count() > 0 and page.locator('#course-list [data-course="CRS-EFQM-101"]').count() == 0
+    go(page, '/academy/courses/' + next(c['slug'] for c in SEED('courses.json') if c['id'] == 'CRS-EFQM-101'))
     unavailable = page.locator('[data-unavailable]').count() == 1 and page.locator('main h1').count() == 1
     go(page, '/assessments/' + DIAG_SLUG); asm_hidden = page.locator('[data-unavailable]').count() == 1
     go(page, '/review'); review_forbidden = page.evaluate('document.querySelector("[data-status]")?.dataset.status') == '403'
@@ -107,7 +107,7 @@ with sync_playwright() as p:
     go(page, '/academy/iso')
     sp = page.get_attribute('[data-start]', 'data-start'); href = page.get_attribute('[data-action=start-point]', 'href')
     no_banner = page.locator('[data-preview]').count() == 0
-    go(page, '/academy/courses/' + next(c['slug'] for c in SEED('courses.json') if c['id'] == 'CRS-QMS-201')); banner = page.locator('[data-preview]').count() == 1  # Phase 9 shell (still a draft)
+    go(page, '/academy/courses/' + next(c['slug'] for c in SEED('courses.json') if c['id'] == 'CRS-EFQM-101')); banner = page.locator('[data-preview]').count() == 1  # Phase 10 shell (still a draft)
     go(page, '/academy/iso')
     record('reviewer: no preview banner where everything is published, a preview banner on a future-phase draft; starting point "assess" links to the readiness check', sp == 'assess' and href == '#/assessments/iso-readiness' and no_banner and banner, f'{sp} {href} {no_banner} {banner}')
 

@@ -1,13 +1,14 @@
 {
   "name": "cia-academy",
-  "version": "1.8.0-phase8",
+  "version": "1.9.0-phase9",
   "private": true,
-  "description": "Continual Improvement Academy — Academy module (Phases 1–8 complete, integrated with the hub toolkits). © 2026 Modather Salama.",
+  "description": "Continual Improvement Academy — Academy module (Phases 1–9 built, integrated with the hub toolkits). © 2026 Modather Salama.",
   "type": "module",
   "scripts": {
     "serve": "cd .. && python3 -m http.server 8765",
     "test": "node --test tests/unit/*.test.mjs",
-    "test:e2e": "python3 tests/e2e/run_e2e.py && python3 tests/e2e/run_e2e_phase7.py && python3 tests/e2e/run_e2e_guides.py && python3 tests/e2e/run_e2e_closure.py && python3 tests/e2e/run_e2e_phase8.py",
+    "test:e2e": "python3 tests/e2e/run_e2e.py && python3 tests/e2e/run_e2e_phase7.py && python3 tests/e2e/run_e2e_guides.py && python3 tests/e2e/run_e2e_closure.py && python3 tests/e2e/run_e2e_phase8.py && python3 tests/e2e/run_e2e_phase9.py",
+    "build:phase9": "python3 tools/build_phase9.py",
     "sync:modules": "python3 tools/sync_platform_modules.py",
     "build:content": "python3 tools/build_phase7.py",
     "extract:toolkits": "npm install --no-save acorn@8.12.1 && node tools/extract_toolkit_content.mjs",

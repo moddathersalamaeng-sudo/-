@@ -75,8 +75,31 @@ const ICONS = {
   search: 'M11 4a7 7 0 100 14 7 7 0 000-14zm9 16l-4-4',
   steps: 'M3 20h6v-5h6v-5h6',
   doc: 'M6 3h9l4 4v14H6zM15 3v4h4M9 12h6M9 16h4',
-  grid: 'M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z'
+  grid: 'M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z',
+  /* Phase 9 — quality, visuals and marketing icons (original line drawings, 24×24 grid). */
+  cycle: 'M20 12a8 8 0 01-13.7 5.6M4 12a8 8 0 0113.7-5.6M18 3v4h-4M6 21v-4h4',
+  fish: 'M3 12h14M17 12l4-3v6zM7 12L5 7M11 12L9 7M7 12l-2 5M11 12l-2 5M14 12l-1.5-4M14 12l-1.5 4',
+  trend: 'M3 17l6-6 4 4 8-8M15 7h6v6',
+  control: 'M3 6h18M3 18h18M3 12h2l2-3 2 5 2-4 2 3 2-2 2 1 2-1',
+  funnel: 'M3 4h18l-7 8v6l-4 2v-8z',
+  sigma: 'M18 5H6l6 7-6 7h12',
+  cog: 'M12 9a3 3 0 100 6 3 3 0 000-6zm0-6v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1M5.6 18.4l2.1-2.1m8.6-8.6l2.1-2.1',
+  ruler: 'M3 17L17 3l4 4L7 21zM7 13l2 2M10 10l2 2M13 7l2 2',
+  truck: 'M3 6h11v10H3zM14 10h4l3 3v3h-7M7 19a2 2 0 100-4 2 2 0 000 4zm10 0a2 2 0 100-4 2 2 0 000 4z',
+  coins: 'M12 4c4 0 7 1.3 7 3s-3 3-7 3-7-1.3-7-3 3-3 7-3zM5 7v5c0 1.7 3 3 7 3s7-1.3 7-3V7M5 12v5c0 1.7 3 3 7 3s7-1.3 7-3v-5',
+  crown: 'M3 8l4 4 5-7 5 7 4-4-2 11H5z',
+  eye: 'M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12zm10-3a3 3 0 100 6 3 3 0 000-6z',
+  magnify: 'M10 4a6 6 0 100 12 6 6 0 000-12zm10 16l-5.5-5.5M7.5 10h5M10 7.5v5',
+  hardhat: 'M4 17h16M6 17v-3a6 6 0 0112 0v3M10 8V5h4v3M3 20h18',
+  medal: 'M8 3l4 6 4-6M12 9a6 6 0 100 12 6 6 0 000-12zm0 3l1.2 2.4 2.6.4-1.9 1.8.5 2.6-2.4-1.3-2.4 1.3.5-2.6-1.9-1.8 2.6-.4z',
+  spark: 'M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6',
+  image: 'M4 5h16v14H4zM4 16l5-5 4 4 3-3 4 4M15 9a1 1 0 100-2 1 1 0 000 2z',
+  pie: 'M12 3v9h9a9 9 0 11-9-9zm3-.5A9 9 0 0121.5 9H15z',
+  scale: 'M12 3v18M7 21h10M4 7h16M6 7l-3 7h6zM18 7l-3 7h6z',
+  handshake: 'M2 11l4-4 4 2 4-2 4 2 4 2-3 3M9 9l-3 3 3 3 2-2 2 2 2-2 2 2M2 11l4 4'
 };
+export const ICON_NAMES = () => Object.keys(ICONS);
+export const iconPath = name => ICONS[name] || ICONS.info;
 export function icon(name, label) {
   const ns = 'http://www.w3.org/2000/svg';
   const svg = document.createElementNS(ns, 'svg');

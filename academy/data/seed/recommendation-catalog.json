@@ -252,28 +252,39 @@
       "recommendation_type": "course",
       "target_id": "CRS-QMS-201",
       "title": {
-        "en": "Quality, QA & QC Professional Practice",
-        "ar": "الممارسة المهنية للجودة وضمان ومراقبة الجودة"
+        "en": "Quality Management Foundations: QA, QC and the quality system",
+        "ar": "أساسيات إدارة الجودة: ضمان الجودة وضبطها ونظام الجودة"
       },
       "competencies": [
         "QM-01",
         "QM-02",
-        "QM-03"
+        "QM-04",
+        "PERF-01"
       ],
       "domains": [
+        "PERF",
         "QM"
       ],
       "roles": [
         "ROLE-QE",
         "ROLE-QMGR"
       ],
-      "level": 2,
-      "estimated_effort": "12 h",
-      "prerequisites": [
-        {
-          "target_id": "CRS-ISO-101",
-          "required": false
-        }
+      "level": 1,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
+      ],
+      "certification_keywords": [
+        "CQIA",
+        "CQI"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "QM-01"
       ]
     },
     {
@@ -1510,6 +1521,584 @@
         "pmi",
         "pmo",
         "مشاريع"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-Q-TOOLS",
+      "recommendation_type": "course",
+      "target_id": "CRS-Q-TOOLS",
+      "title": {
+        "en": "Quality Tools and Data Analysis",
+        "ar": "أدوات الجودة وتحليل البيانات"
+      },
+      "competencies": [
+        "QM-02",
+        "QM-03",
+        "PERF-02"
+      ],
+      "domains": [
+        "PERF",
+        "QM"
+      ],
+      "roles": [
+        "ROLE-CIS",
+        "ROLE-QE",
+        "ROLE-QMGR"
+      ],
+      "level": 2,
+      "estimated_effort": "7 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
+      ],
+      "certification_keywords": [
+        "CQIA",
+        "CQT",
+        "CSSGB"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "QM-02"
+      ]
+    },
+    {
+      "id": "REC-CRS-Q-CAPA",
+      "recommendation_type": "course",
+      "target_id": "CRS-Q-CAPA",
+      "title": {
+        "en": "Problem Solving and CAPA",
+        "ar": "حل المشكلات والإجراءات التصحيحية والوقائية"
+      },
+      "competencies": [
+        "QM-03",
+        "QM-02",
+        "PERF-02"
+      ],
+      "domains": [
+        "PERF",
+        "QM"
+      ],
+      "roles": [
+        "ROLE-CIS",
+        "ROLE-QE"
+      ],
+      "level": 2,
+      "estimated_effort": "7 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
+      ],
+      "certification_keywords": [
+        "CQE",
+        "CQA"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "QM-03"
+      ]
+    },
+    {
+      "id": "REC-CRS-Q-SPC",
+      "recommendation_type": "course",
+      "target_id": "CRS-Q-SPC",
+      "title": {
+        "en": "Statistical Process Control Basics",
+        "ar": "أساسيات الضبط الإحصائي للعمليات"
+      },
+      "competencies": [
+        "QM-02",
+        "PERF-01",
+        "QM-03"
+      ],
+      "domains": [
+        "PERF",
+        "QM"
+      ],
+      "roles": [
+        "ROLE-CIS",
+        "ROLE-QE"
+      ],
+      "level": 2,
+      "estimated_effort": "7 h",
+      "prerequisites": [
+        {
+          "target_id": "CRS-Q-TOOLS",
+          "required": true
+        }
+      ],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
+      ],
+      "certification_keywords": [
+        "CQE",
+        "CQT",
+        "SPC"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "QM-02",
+        "PERF-01"
+      ]
+    },
+    {
+      "id": "REC-CRS-Q-AUDIT",
+      "recommendation_type": "course",
+      "target_id": "CRS-Q-AUDIT",
+      "title": {
+        "en": "Quality Auditing: process, product and system audits (ASQ-informed)",
+        "ar": "تدقيق الجودة: تدقيق العمليات والمنتجات والأنظمة (مستنير بمنهج ASQ)"
+      },
+      "competencies": [
+        "AUD-01",
+        "AUD-02",
+        "AUD-03",
+        "PERF-02"
+      ],
+      "domains": [
+        "AUD",
+        "PERF"
+      ],
+      "roles": [],
+      "level": 2,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة",
+        "audit",
+        "تدقيق"
+      ],
+      "certification_keywords": [
+        "CQA",
+        "auditor"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "AUD-01",
+        "AUD-02",
+        "AUD-03"
+      ]
+    },
+    {
+      "id": "REC-CRS-LSS-GB",
+      "recommendation_type": "course",
+      "target_id": "CRS-LSS-GB",
+      "title": {
+        "en": "Lean Six Sigma Green Belt Foundations",
+        "ar": "أساسيات الحزام الأخضر في لين ستة سيجما"
+      },
+      "competencies": [
+        "QM-02",
+        "QM-03",
+        "OE-02",
+        "PERF-01"
+      ],
+      "domains": [
+        "OE",
+        "PERF",
+        "QM"
+      ],
+      "roles": [
+        "ROLE-CIS"
+      ],
+      "level": 3,
+      "estimated_effort": "8.5 h",
+      "prerequisites": [
+        {
+          "target_id": "CRS-Q-TOOLS",
+          "required": true
+        }
+      ],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة",
+        "six sigma",
+        "lean",
+        "سيجما"
+      ],
+      "certification_keywords": [
+        "CSSGB",
+        "Green Belt",
+        "Six Sigma",
+        "CSSBB"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "QM-02",
+        "QM-03",
+        "OE-02"
+      ]
+    },
+    {
+      "id": "REC-CRS-CMQOE-PREP",
+      "recommendation_type": "course",
+      "target_id": "CRS-CMQOE-PREP",
+      "title": {
+        "en": "Quality Leadership and Strategy (CMQ/OE preparation)",
+        "ar": "قيادة الجودة والاستراتيجية (إعداد لشهادة CMQ/OE)"
+      },
+      "competencies": [
+        "LDR-01",
+        "LDR-02",
+        "QM-01",
+        "QM-04",
+        "OE-02",
+        "PERF-02"
+      ],
+      "domains": [
+        "LDR",
+        "OE",
+        "PERF",
+        "QM"
+      ],
+      "roles": [
+        "ROLE-QMGR"
+      ],
+      "level": 4,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
+      ],
+      "certification_keywords": [
+        "CMQ/OE",
+        "CMQ",
+        "quality manager"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-Q-COQ",
+      "recommendation_type": "course",
+      "target_id": "CRS-Q-COQ",
+      "title": {
+        "en": "Cost of Quality",
+        "ar": "تكلفة الجودة"
+      },
+      "competencies": [
+        "PERF-01",
+        "QM-01",
+        "OE-02"
+      ],
+      "domains": [
+        "OE",
+        "PERF",
+        "QM"
+      ],
+      "roles": [
+        "ROLE-QMGR"
+      ],
+      "level": 2,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
+      ],
+      "certification_keywords": [
+        "CMQ/OE"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "PERF-01"
+      ]
+    },
+    {
+      "id": "REC-CRS-Q-SUPPLIER",
+      "recommendation_type": "course",
+      "target_id": "CRS-Q-SUPPLIER",
+      "title": {
+        "en": "Supplier Quality Management",
+        "ar": "إدارة جودة الموردين"
+      },
+      "competencies": [
+        "QM-04",
+        "AUD-01",
+        "QM-03",
+        "PERF-02"
+      ],
+      "domains": [
+        "AUD",
+        "PERF",
+        "QM"
+      ],
+      "roles": [
+        "ROLE-QE",
+        "ROLE-QMGR"
+      ],
+      "level": 2,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة",
+        "supplier",
+        "مورد"
+      ],
+      "certification_keywords": [
+        "CQE",
+        "CSQP"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "QM-04"
+      ]
+    },
+    {
+      "id": "REC-ASM-READY-Q-001",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-READY-Q-001",
+      "title": {
+        "en": "Quality readiness diagnostic",
+        "ar": "التقييم التشخيصي لجاهزية الجودة"
+      },
+      "competencies": [
+        "AUD-02",
+        "LDR-02",
+        "OE-02",
+        "PERF-01",
+        "QM-01",
+        "QM-02",
+        "QM-03",
+        "QM-04"
+      ],
+      "domains": [
+        "AUD",
+        "LDR",
+        "OE",
+        "PERF",
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "20 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
+      ],
+      "certification_keywords": [
+        "CQIA",
+        "CQE",
+        "CQA"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-CMQOE-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-CMQOE-DIAG",
+      "title": {
+        "en": "CMQ/OE Center diagnostic",
+        "ar": "التقييم التشخيصي لمركز CMQ/OE"
+      },
+      "competencies": [
+        "LDR-01",
+        "LDR-02",
+        "OE-01",
+        "OE-02",
+        "PERF-01",
+        "PM-01",
+        "QM-02",
+        "QM-04"
+      ],
+      "domains": [
+        "LDR",
+        "OE",
+        "PERF",
+        "PM",
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "25 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
+      ],
+      "certification_keywords": [
+        "CMQ/OE"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-Q-FOUND-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-Q-FOUND-DIAG",
+      "title": {
+        "en": "Route diagnostic — Quality foundations",
+        "ar": "التقييم التشخيصي للمسار — أساسيات الجودة"
+      },
+      "competencies": [
+        "PERF-01",
+        "QM-01",
+        "QM-02",
+        "QM-03",
+        "QM-04"
+      ],
+      "domains": [
+        "PERF",
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-Q-ENGINEER-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-Q-ENGINEER-DIAG",
+      "title": {
+        "en": "Route diagnostic — Quality engineer",
+        "ar": "التقييم التشخيصي للمسار — مهندس الجودة"
+      },
+      "competencies": [
+        "QM-01",
+        "QM-02",
+        "QM-03",
+        "QM-04"
+      ],
+      "domains": [
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-Q-AUDITOR-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-Q-AUDITOR-DIAG",
+      "title": {
+        "en": "Route diagnostic — Quality auditor (ASQ-informed)",
+        "ar": "التقييم التشخيصي للمسار — مدقق الجودة (مستنير بمنهج ASQ)"
+      },
+      "competencies": [
+        "AUD-01",
+        "AUD-02",
+        "QM-01",
+        "QM-04"
+      ],
+      "domains": [
+        "AUD",
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-Q-SSGB-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-Q-SSGB-DIAG",
+      "title": {
+        "en": "Route diagnostic — Six Sigma Green Belt",
+        "ar": "التقييم التشخيصي للمسار — الحزام الأخضر في ستة سيجما"
+      },
+      "competencies": [
+        "OE-02",
+        "QM-02",
+        "QM-03"
+      ],
+      "domains": [
+        "OE",
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-Q-CMQOE-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-Q-CMQOE-DIAG",
+      "title": {
+        "en": "Route diagnostic — Quality manager (CMQ/OE preparation)",
+        "ar": "التقييم التشخيصي للمسار — مدير الجودة (إعداد لشهادة CMQ/OE)"
+      },
+      "competencies": [
+        "LDR-01",
+        "PERF-01",
+        "QM-01",
+        "QM-04"
+      ],
+      "domains": [
+        "LDR",
+        "PERF",
+        "QM"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "quality",
+        "جودة",
+        "asq",
+        "الجودة"
       ],
       "certification_keywords": [],
       "standard_ids": []

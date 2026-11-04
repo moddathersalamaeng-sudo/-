@@ -55,7 +55,8 @@
       "isoAcademy": "ISO Academy",
       "review": "Expert review",
       "guides": "Guides",
-      "pmiAcademy": "PMI / PMO Academy"
+      "pmiAcademy": "PMI / PMO Academy",
+      "qualityAcademy": "Quality Academy"
     },
     "phase": "Phase {phase}",
     "backToHub": "Back to the platform hub",
@@ -1700,5 +1701,232 @@
       "courses": "{n} courses open to you",
       "guides": "{n} guides"
     }
+  },
+  "p9": {
+    "family": {
+      "iso": "ISO",
+      "pmi": "Projects",
+      "pmo": "PMO & portfolio",
+      "quality": "Quality",
+      "method": "Method",
+      "excellence": "Excellence",
+      "guide": "Standard"
+    },
+    "card": {
+      "lessons": "{n} lessons",
+      "practical": "Practical task",
+      "checks": "Knowledge checks",
+      "examPrep": "Certification-linked"
+    },
+    "value": {
+      "label": "Why this course",
+      "original": {
+        "t": "Original, practical content",
+        "d": "Written for working professionals, with Saudi and regional worked examples — no copied standards text."
+      },
+      "visual": {
+        "t": "Explained with visuals",
+        "d": "Diagrams with a “how to read it” note beside the lessons, so concepts stick."
+      },
+      "practical": {
+        "t": "A practical task, reviewed by a person",
+        "d": "Apply it to your own work; a named reviewer scores it against a rubric."
+      },
+      "checks": {
+        "t": "Check yourself as you go",
+        "d": "A knowledge check after every lesson, with “I don't know” instead of guessing."
+      },
+      "tools": {
+        "t": "Linked to real toolkits",
+        "d": "Do the same thing on a real case in the platform's toolkits."
+      },
+      "bilingual": {
+        "t": "Arabic and English",
+        "d": "Every lesson in both languages; switch at any time."
+      }
+    },
+    "fig": {
+      "number": "Figure {n}.",
+      "howToRead": "How to read this figure",
+      "courseTitle": "Learn with visuals",
+      "courseNote": "{n} explanatory figures in this course. Each opens with a note on how to read it."
+    },
+    "home": {
+      "qualityBody": "Quality management, tools, SPC, auditing, Lean Six Sigma, cost of quality, suppliers and the CMQ/OE Center."
+    }
+  },
+  "q9": {
+    "eyebrow": "Quality Academy · ASQ-informed",
+    "title": "Quality management, engineering and excellence",
+    "lede": "From QA and QC to SPC, auditing, Lean Six Sigma and quality leadership: start from what you can already show, follow a route that skips what you have demonstrated, and plan your ASQ certification with facts checked on ASQ's own pages.",
+    "statsLabel": "The academy in numbers",
+    "statCourses": "courses",
+    "statFigures": "explanatory figures",
+    "statCerts": "ASQ certifications",
+    "statRoutes": "learning routes",
+    "takeReadiness": "Take the 20-minute readiness check",
+    "readFundamentals": "Read the quality fundamentals",
+    "exploreCerts": "Explore ASQ certifications",
+    "openCenter": "Open the CMQ/OE Center",
+    "startEyebrow": "Your starting point",
+    "startPending": "The recommended step is still under review. Meanwhile, the published fundamentals and method guides are open to you.",
+    "factor": {
+      "q_evidence": "Lowest assessed quality foundation (QM-01 to QM-03): {value}%",
+      "foundation_completed": "You completed Quality Management Foundations",
+      "target_role": "Target role: {value}",
+      "intent": "Your stated aim: {value}"
+    },
+    "intent": {
+      "cmqoe": "quality management (CMQ/OE)",
+      "ssgb": "Lean Six Sigma",
+      "auditor": "quality auditing",
+      "engineer": "quality engineering"
+    },
+    "routes": "Learning routes",
+    "routesNote": "Each route skips a course when an assessment shows you have already mastered its competencies.",
+    "routesPending": "Routes are under review",
+    "routeCerts": "Supports:",
+    "certs": "ASQ certifications",
+    "certsNote": "Eligibility, exam format, fees and recertification come only from ASQ's pages, with the date they were checked. Where a fact could not be confirmed, the page sends you to ASQ instead.",
+    "certsPending": "The certification explorer is under review",
+    "compareCerts": "Compare certifications",
+    "courses": "Courses",
+    "coursesNote": "Original CIA courses: four lessons each with worked examples, scenarios, explanatory figures, an exercise with a model answer, a knowledge check, a final assessment and a human-reviewed practical task.",
+    "coursesPending": "Courses are under review",
+    "methods": "Method guides you can use today",
+    "methodsNote": "The fourteen quality method guides published from the hub's toolkits — each step explained, with the course built from it.",
+    "learnBody": "Courses build understanding step by step, with figures, checks and a practical task.",
+    "useBody": "The toolkits apply each method to a real case and produce the record (free account on the hub).",
+    "honesty": "CIA is not an ASQ partner, its courses are not ASQ-approved and award no recertification units (RUs). The CMQ/OE course carries an exam-preparation label only. CMQ/OE, CQA, CQE, CSSGB, CSSBB, CQIA, CCQM, CQT and CQI are ASQ certification names, used only to identify them.",
+    "qShort": "{n} questions",
+    "pdusShort": "{n} RUs / {y} years",
+    "lifetime": "Lifetime",
+    "checkPmi": "Check on ASQ",
+    "stage": {
+      "entry": "Entry",
+      "practitioner": "Practitioner",
+      "specialist": "Specialist",
+      "senior": "Senior"
+    },
+    "area": {
+      "management": "Management",
+      "auditing": "Auditing",
+      "engineering": "Engineering",
+      "improvement": "Improvement",
+      "construction": "Construction",
+      "foundations": "Foundations",
+      "inspection": "Inspection"
+    },
+    "explorerTitle": "ASQ certification explorer",
+    "explorerLede": "Nine ASQ certifications: who each is for, what ASQ requires, how the exam is built, and which CIA route and courses help you prepare.",
+    "explorerNote": "Facts checked on ASQ's official pages on {date}. ASQ can change requirements and prices at any time — confirm on ASQ's site before you apply.",
+    "certCount": "{n} certifications",
+    "filterStage": "Career stage",
+    "filterArea": "Area",
+    "compareTitle": "Compare at a glance",
+    "compareCaption": "Verified exam facts by certification",
+    "compareNote": "“Check on ASQ” means the fact was not confirmed on ASQ's page on the check date; nothing is guessed.",
+    "col": {
+      "cert": "Certification",
+      "questions": "Questions",
+      "minutes": "Minutes",
+      "renewal": "Recertification",
+      "fee": "Fee (member / non-member)",
+      "domain": "Body of Knowledge area",
+      "weight": "Share",
+      "hours": "Study hours"
+    },
+    "verifiedOn": "Verified {date}",
+    "pending": "Not confirmed — check ASQ",
+    "pendingBody": "This fact could not be confirmed on ASQ's page on the check date, so the Academy does not state it.",
+    "openPmi": "Open ASQ's page",
+    "secondary": "From a provider's summary — confirm on ASQ",
+    "secondaryBody": "ASQ publishes the Body of Knowledge as a download. The area names and question counts below come from a training provider's dated summary of it; confirm them in ASQ's file.",
+    "studyPlan": "A 12-week study plan",
+    "studyPlanNote": "A CIA plan for about {weeks} weeks at {hours} hours a week, weighted by the Body of Knowledge. Adjust it after the CMQ/OE Center diagnostic.",
+    "weeks": "Week {w}",
+    "certNotFound": "Certification not found",
+    "whoFor": "For:",
+    "followRoute": "Follow the CIA route",
+    "scored": "({n} scored)",
+    "eligibility": "Eligibility",
+    "exam": "Exam format",
+    "fee": "Exam fee",
+    "member": "ASQ member",
+    "nonMember": "Non-member",
+    "retake": "Retake",
+    "renewal": "Recertification",
+    "renewalText": "{n} recertification units (RUs) in each {y}-year period, or retake the exam.",
+    "lifetimeText": "Lifetime certification — ASQ sets no recertification requirement.",
+    "noPdus": "CIA courses do not award RUs.",
+    "domains": "What the exam covers",
+    "domainsNote": "Body of Knowledge major area names and question counts. Read the full BoK in ASQ's download; the Academy does not reproduce it.",
+    "questionsN": "{n} questions",
+    "alsoKnow": "Also good to know",
+    "howToPrepare": "How to prepare",
+    "plannerTitle": "Plan your study hours by area",
+    "plannerNote": "Enter your total study budget; the planner keeps about one sixth for timed practice and splits the rest by each area's share of questions.",
+    "plannerLabel": "Total study hours",
+    "plannerHint": "Between 20 and 400 hours.",
+    "plannerInvalid": "Enter a number between 20 and 400.",
+    "plannerCaption": "Study hours for a {n}-hour budget",
+    "practiceReserve": "Timed practice and error review",
+    "ciaCourses": "CIA courses that help",
+    "ciaCoursesNote": "CIA internal courses mapped to this certification's content. They are not ASQ-approved and do not guarantee eligibility or a result.",
+    "nextCerts": "Where it can lead",
+    "sourcesNote": "Every figure above comes from these pages, opened on the date shown.",
+    "center": {
+      "eyebrow": "CMQ/OE Center",
+      "title": "Prepare for CMQ/OE with your own evidence",
+      "lede": "Diagnose yourself against the seven major Body of Knowledge areas, see your weak areas, get study hours by weight and weakness, and follow a 12-week plan mapped to CIA courses.",
+      "diagTitle": "1 · Diagnose",
+      "diagBody": "Fourteen original items, two per area. Choose “I don't know” rather than guessing.",
+      "takeDiag": "Take the CMQ/OE diagnostic",
+      "retakeDiag": "Retake the diagnostic",
+      "lastAttempt": "Latest attempt: {date} · {score}% overall",
+      "noAttempt": "No attempt yet. Your results will appear here after the diagnostic.",
+      "readinessTitle": "2 · Readiness",
+      "readiness": "Readiness index",
+      "readinessNote": "Your area results weighted by each area's share of exam questions. A study signal only — not a prediction of an exam result.",
+      "readinessNone": "Available once every area has a result.",
+      "readinessBand": {
+        "low": "Build foundations first",
+        "mid": "Close the gaps",
+        "high": "Move to timed practice"
+      },
+      "areasTitle": "3 · Weak areas",
+      "areasNote": "Areas below 60% are weak; 70% and above are demonstrated. Each card links to the CIA courses that teach the area.",
+      "areaState": {
+        "ok": "Demonstrated",
+        "mid": "Close",
+        "weak": "Weak",
+        "none": "Not assessed"
+      },
+      "areaQ": "{n} exam questions · {s}% of the exam",
+      "areaResult": "Your result: {p}%",
+      "weakest": "Start with: {list}",
+      "noWeak": "No weak area in your latest attempt.",
+      "planTitle": "4 · Study hours by weight and weakness",
+      "planNote": "Weak areas get 1.5×, close areas 1.2× their share of questions; one sixth is kept for timed practice.",
+      "competenciesTitle": "Competencies this certification draws on",
+      "practiceTitle": "5 · Practice",
+      "practiceBody": "Original CIA items — never ASQ exam questions. Use the course finals as timed mixed practice.",
+      "progressTitle": "Your progress on the CMQ/OE route",
+      "progressNote": "Reading progress and CIA results are study signals, not a certification.",
+      "planTitle12": "6 · The 12-week plan",
+      "certLink": "CMQ/OE facts in the explorer",
+      "routeLink": "Follow the CMQ/OE route",
+      "areaCourses": {
+        "0": "Leadership",
+        "1": "Strategy",
+        "2": "Management methods",
+        "3": "Quality tools",
+        "4": "Customers",
+        "5": "Supply chain",
+        "6": "Training"
+      }
+    },
+    "courseCertsNote": "The course covers part of the content of these certifications. It is a CIA internal course: it awards no ASQ recertification units and is not ASQ-approved.",
+    "courseCertsNotePrep": "An exam-preparation course for this certification. It does not reproduce the ASQ Body of Knowledge or exam questions, awards no RUs and does not predict a result."
   }
 }

@@ -12,7 +12,7 @@ import { validateGovernance, isVisible } from '../../src/data/governance.js';
 
 const seed = n => json(`data/seed/${n}.json`).items;
 const courses = seed('courses'), questions = seed('questions'), assessments = seed('assessments'), paths = seed('learning-paths'), catalog = seed('recommendation-catalog');
-const certs = seed('certifications'), sources = seed('sources'), nav = seed('navigation'), rels = seed('relationships');
+const certs = seed('certifications').filter(c => (c.body || 'PMI') === 'PMI'), sources = seed('sources'), nav = seed('navigation'), rels = seed('relationships');
 const comps = json('data/seed/competency/competencies.json').items, roles = json('data/seed/competency/target-roles.json').items;
 const index = json('data/guides/index.json').items;
 const guides = Object.fromEntries(index.map(g => [g.slug, json(`data/guides/${g.slug}.json`).guide]));
@@ -38,11 +38,11 @@ test('Phase 8 hand-authored courses: ten, each meets the Phase 7 completeness co
   }
 });
 
-test('replaced shells: CRS-PM-101 and CRS-P3O-101 are full courses; CRS-QMS-201 and CRS-EFQM-101 wait for Phases 9 and 10', () => {
-  for (const id of ['CRS-PM-101', 'CRS-P3O-101']) assert.ok(byId(courses, id).modules.flatMap(m => m.lessons).every(l => l.content_blocks?.length === 5), id);
-  assert.equal(byId(courses, 'CRS-QMS-201').planned_phase, 9);
+test('replaced shells: CRS-PM-101, CRS-P3O-101 and (Phase 9) CRS-QMS-201 are full courses; CRS-EFQM-101 waits for Phase 10', () => {
+  for (const id of ['CRS-PM-101', 'CRS-P3O-101', 'CRS-QMS-201']) assert.ok(byId(courses, id).modules.flatMap(m => m.lessons).every(l => l.content_blocks?.length === 5), id);
+  assert.equal(byId(courses, 'CRS-QMS-201').planned_phase, undefined);
   assert.equal(byId(courses, 'CRS-EFQM-101').planned_phase, 10);
-  for (const id of ['CRS-QMS-201', 'CRS-EFQM-101']) assert.equal(isVisible(byId(courses, id), ['learner']), false, id);
+  assert.equal(isVisible(byId(courses, 'CRS-EFQM-101'), ['learner']), false);
 });
 
 test('labels and claims: internal or exam-prep label only, nothing claimed, completion is not a credential', () => {
@@ -130,7 +130,8 @@ test('certification explorer: eight PMI certifications, valid, dated, sourced on
   assert.equal(pmp.exam.questions, 180); assert.equal(pmp.exam.minutes, 240);
   assert.deepEqual([pmp.fee.member, pmp.fee.non_member], [405, 555]);
   assert.equal(certFactState(pmp).renewal, 'pending'); assert.equal(pmp.renewal, null);
-  assert.equal(certFactState(byId(certs, 'CERT-PGMP')).exam, 'pending');
+  assert.equal(certFactState(byId(certs, 'CERT-PGMP')).exam, 'verified'); /* rechecked on PMI's page, 4 Nov 2026 */
+  assert.equal(byId(certs, 'CERT-PGMP').exam.questions, 170); assert.equal(certFactState(byId(certs, 'CERT-PGMP')).fee, 'pending');
   const bad = structuredClone(pmp); bad.facts_status.fee = 'pending';
   assert.ok(validateCertification(bad).includes('pending_fee_has_figures'));
   bad.official_url = 'https://example.com/pmp';

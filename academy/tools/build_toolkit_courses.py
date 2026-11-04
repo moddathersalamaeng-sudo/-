@@ -405,6 +405,27 @@ MAP.update({
     "CRS-P3O-101-L01": [("p3o", "m.hub"), ("p3o", "m.spk"), ("p3o", "m.coe")], "CRS-P3O-101-L02": [("p3o", "m.sel"), ("p3o", "m.siz")],
     "CRS-P3O-101-L03": [("p3o", "r.hd"), ("p3o", "r.cmp"), ("p3o", "t.too")], "CRS-P3O-101-L04": [("p3o", "v.case"), ("p3o", "i.idn"), ("p3o", "i.sus")],
 })
+# Phase 9: Quality (ASQ-informed) lessons → the method guides and ISO 9001 / ISO 10009 items they teach.
+MAP.update({
+    "CRS-QMS-201-L01": [("iso-9001", "8.6"), ("iso-10009", "s10-3")], "CRS-QMS-201-L02": [("iso-10009", "s4-1"), ("iso-10009", "s4-2")],
+    "CRS-QMS-201-L03": [("iso-9001", "8.2.2"), ("iso-10009", "s7-3"), ("iso-10009", "s11-6")], "CRS-QMS-201-L04": [("pdca", "s1-1"), ("pdca", "s3-1")],
+    "CRS-Q-TOOLS-L01": [("iso-10009", "s2-3"), ("iso-10009", "s11-1")], "CRS-Q-TOOLS-L02": [("pareto", "s1-2"), ("pareto", "s1-5"), ("iso-10009", "s11-7")],
+    "CRS-Q-TOOLS-L03": [("iso-10009", "s11-2"), ("pareto", "s1-6")], "CRS-Q-TOOLS-L04": [("pareto", "s1-6"), ("pareto", "s4-1")],
+    "CRS-Q-CAPA-L01": [("rca", "s1-2"), ("iso-10009", "s12-6"), ("capa", "s1-1")], "CRS-Q-CAPA-L02": [("fishbone", "s1-5"), ("five-whys", "s1-3"), ("rca", "s2-3")],
+    "CRS-Q-CAPA-L03": [("capa", "s2-4"), ("capa", "s7-1"), ("rca", "s2-4")], "CRS-Q-CAPA-L04": [("capa", "s2-6"), ("rca", "s3-2"), ("capa", "s4-1")],
+    "CRS-Q-SPC-L01": [("iso-10009", "s11-1")], "CRS-Q-SPC-L02": [("iso-10009", "s11-5"), ("iso-9001", "9.1.1")],
+    "CRS-Q-SPC-L03": [("dmaic", "s5-2"), ("iso-10009", "s4-3")], "CRS-Q-SPC-L04": [("dmaic", "s4-1"), ("iso-9001", "9.1.3")],
+    "CRS-Q-AUDIT-L01": [("iso-9001", "9.2.2")], "CRS-Q-AUDIT-L02": [("iso-10009", "s4-2"), ("iso-9001", "9.2.1")],
+    "CRS-Q-AUDIT-L03": [("iso-9001", "9.2.1")], "CRS-Q-AUDIT-L04": [("iso-9001", "9.2.2"), ("capa", "s7-2")],
+    "CRS-LSS-GB-L01": [("iso-10009", "s8-2"), ("iso-10009", "s8-3")], "CRS-LSS-GB-L02": [("dmaic", "s2-1"), ("dmaic", "s2-3"), ("dmaic", "s3-2")],
+    "CRS-LSS-GB-L03": [("dmaic", "s4-2"), ("dmaic", "s5-1"), ("fmea", "s4-1")], "CRS-LSS-GB-L04": [("dmaic", "s5-2"), ("dmaic", "s6-3"), ("iso-10009", "s14-1")],
+    "CRS-CMQOE-PREP-L01": [("stakeholders", "s3-3"), ("iso-10009", "s13-3")], "CRS-CMQOE-PREP-L02": [("iso-10009", "s6-2"), ("swot", "s5-2"), ("pestle", "s3-3")],
+    "CRS-CMQOE-PREP-L03": [("iso-9001", "9.1.2"), ("stakeholders", "s4-5"), ("iso-9001", "8.4.1")], "CRS-CMQOE-PREP-L04": [("iso-10009", "s2-4")],
+    "CRS-Q-COQ-L01": [("iso-10009", "s10-3")], "CRS-Q-COQ-L02": [("iso-10009", "s10-3"), ("pareto", "s1-4")],
+    "CRS-Q-COQ-L03": [("iso-10009", "s10-3")], "CRS-Q-COQ-L04": [("pareto", "s2-1"), ("iso-10009", "s11-7")],
+    "CRS-Q-SUPPLIER-L01": [("iso-9001", "8.4.1"), ("iso-9001", "8.4.2")], "CRS-Q-SUPPLIER-L02": [("iso-9001", "8.4.3"), ("iso-9001", "8.4.2")],
+    "CRS-Q-SUPPLIER-L03": [("iso-9001", "8.4.1"), ("iso-9001", "9.1.3")], "CRS-Q-SUPPLIER-L04": [("capa", "s2-1"), ("rca", "s5-1")],
+})
 missing = [(lid, r) for lid, refs in MAP.items() for r in refs if r not in item_of]
 assert not missing, f"lesson map points at unknown guide items: {missing}"
 (SEED / "lesson-guide-map.json").write_text(json.dumps({"schema": "cia.lesson-guide-map.v1", "items": [

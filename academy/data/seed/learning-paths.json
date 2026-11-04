@@ -1599,6 +1599,659 @@
         "approval_basis": "owner_approval_after_ai_prereview",
         "approved_hash": "834375d77d81f041d3b78e8aa2666065725cb765ef7d083a6024bdd7bde86218"
       }
+    },
+    {
+      "id": "ROUTE-Q-FOUND",
+      "kind": "quality_route",
+      "roles": [],
+      "certification_ids": [
+        "CERT-CQIA",
+        "CERT-CQI"
+      ],
+      "title": {
+        "en": "Quality foundations",
+        "ar": "مسار أساسيات الجودة"
+      },
+      "goal": {
+        "en": "Speak the language of quality, use the basic tools with data, solve problems so they stay solved and put a number on poor quality.",
+        "ar": "التحدث بلغة الجودة، واستخدام الأدوات الأساسية بالبيانات، وحل المشكلات بحيث تبقى محلولة، ووضع رقم لضعف الجودة."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "knowledge",
+          "target_id": "KA-015",
+          "title": {
+            "en": "Quality, QA and QC",
+            "ar": "الجودة وضمانها وضبطها"
+          },
+          "dependency": "recommended",
+          "effort": "10 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "assessment",
+          "target_id": "ASM-READY-Q-001",
+          "title": {
+            "en": "Quality readiness diagnostic",
+            "ar": "التقييم التشخيصي لجاهزية الجودة"
+          },
+          "dependency": "recommended",
+          "effort": "20 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-QMS-201",
+          "title": {
+            "en": "Quality Management Foundations: QA, QC and the quality system",
+            "ar": "أساسيات إدارة الجودة: ضمان الجودة وضبطها ونظام الجودة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-01"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-Q-TOOLS",
+          "title": {
+            "en": "Quality Tools and Data Analysis",
+            "ar": "أدوات الجودة وتحليل البيانات"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-02"
+          ]
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-Q-CAPA",
+          "title": {
+            "en": "Problem Solving and CAPA",
+            "ar": "حل المشكلات والإجراءات التصحيحية والوقائية"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-03"
+          ]
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-Q-COQ",
+          "title": {
+            "en": "Cost of Quality",
+            "ar": "تكلفة الجودة"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PERF-01"
+          ]
+        },
+        {
+          "order": 7,
+          "type": "course",
+          "target_id": "CRS-M-PDCA",
+          "title": {
+            "en": "PDCA — Plan-Do-Check-Act: the method step by step",
+            "ar": "PDCA — دورة التحسين المستمر: المنهجية خطوة بخطوة"
+          },
+          "dependency": "recommended",
+          "effort": "4 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 8,
+          "type": "final_assessment",
+          "target_id": "ASM-Q-CAPA-FINAL",
+          "title": {
+            "en": "Problem Solving and CAPA — final assessment",
+            "ar": "حل المشكلات والإجراءات التصحيحية والوقائية — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "6c5cc7bbb85e0a8db5649dababa2b8a28f3cbc881cdbe0f911889c5f4230b4b9"
+      }
+    },
+    {
+      "id": "ROUTE-Q-ENGINEER",
+      "kind": "quality_route",
+      "roles": [
+        "ROLE-QE"
+      ],
+      "certification_ids": [
+        "CERT-CQE",
+        "CERT-CQT"
+      ],
+      "title": {
+        "en": "Quality engineer",
+        "ar": "مسار مهندس الجودة"
+      },
+      "goal": {
+        "en": "Control processes with data: tools, SPC and capability, verified root causes, risk with FMEA and supplier quality.",
+        "ar": "ضبط العمليات بالبيانات: الأدوات والضبط الإحصائي والقدرة، والأسباب الجذرية المتحقق منها، والمخاطر بتحليل FMEA، وجودة الموردين."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-Q-ENGINEER-DIAG",
+          "title": {
+            "en": "Route diagnostic — Quality engineer",
+            "ar": "التقييم التشخيصي للمسار — مهندس الجودة"
+          },
+          "dependency": "recommended",
+          "effort": "15 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-QMS-201",
+          "title": {
+            "en": "Quality Management Foundations: QA, QC and the quality system",
+            "ar": "أساسيات إدارة الجودة: ضمان الجودة وضبطها ونظام الجودة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-01"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-Q-TOOLS",
+          "title": {
+            "en": "Quality Tools and Data Analysis",
+            "ar": "أدوات الجودة وتحليل البيانات"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-02"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-Q-SPC",
+          "title": {
+            "en": "Statistical Process Control Basics",
+            "ar": "أساسيات الضبط الإحصائي للعمليات"
+          },
+          "dependency": "required",
+          "effort": "7 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-Q-CAPA",
+          "title": {
+            "en": "Problem Solving and CAPA",
+            "ar": "حل المشكلات والإجراءات التصحيحية والوقائية"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-03"
+          ]
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-M-FMEA",
+          "title": {
+            "en": "Failure Mode and Effects Analysis (FMEA): the method step by step",
+            "ar": "تحليل أنماط الفشل وآثارها (FMEA): المنهجية خطوة بخطوة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 7,
+          "type": "course",
+          "target_id": "CRS-Q-SUPPLIER",
+          "title": {
+            "en": "Supplier Quality Management",
+            "ar": "إدارة جودة الموردين"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-04"
+          ]
+        },
+        {
+          "order": 8,
+          "type": "final_assessment",
+          "target_id": "ASM-Q-SPC-FINAL",
+          "title": {
+            "en": "Statistical Process Control Basics — final assessment",
+            "ar": "أساسيات الضبط الإحصائي للعمليات — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "d22d2cd8a0b8ac9d8f7389c815edbf19a400b8f368f402c2cb2ab48b86c36c1d"
+      }
+    },
+    {
+      "id": "ROUTE-Q-AUDITOR",
+      "kind": "quality_route",
+      "roles": [],
+      "certification_ids": [
+        "CERT-CQA"
+      ],
+      "title": {
+        "en": "Quality auditor (ASQ-informed)",
+        "ar": "مسار مدقق الجودة (مستنير بمنهج ASQ)"
+      },
+      "goal": {
+        "en": "Audit processes, products and systems with evidence that stands up, and report findings that management acts on.",
+        "ar": "تدقيق العمليات والمنتجات والأنظمة بأدلة متماسكة، ورفع ملاحظات تتصرف بناءً عليها الإدارة."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-Q-AUDITOR-DIAG",
+          "title": {
+            "en": "Route diagnostic — Quality auditor (ASQ-informed)",
+            "ar": "التقييم التشخيصي للمسار — مدقق الجودة (مستنير بمنهج ASQ)"
+          },
+          "dependency": "recommended",
+          "effort": "15 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-QMS-201",
+          "title": {
+            "en": "Quality Management Foundations: QA, QC and the quality system",
+            "ar": "أساسيات إدارة الجودة: ضمان الجودة وضبطها ونظام الجودة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-01"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-ISO-AUD",
+          "title": {
+            "en": "Auditing Fundamentals for Management Systems",
+            "ar": "أساسيات تدقيق نظم الإدارة"
+          },
+          "dependency": "recommended",
+          "effort": "10 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "AUD-01"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-Q-AUDIT",
+          "title": {
+            "en": "Quality Auditing: process, product and system audits (ASQ-informed)",
+            "ar": "تدقيق الجودة: تدقيق العمليات والمنتجات والأنظمة (مستنير بمنهج ASQ)"
+          },
+          "dependency": "required",
+          "effort": "7.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-ISO-9001-AUD",
+          "title": {
+            "en": "ISO 9001:2026 Internal Auditor",
+            "ar": "المدقق الداخلي ISO 9001:2026"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-Q-SUPPLIER",
+          "title": {
+            "en": "Supplier Quality Management",
+            "ar": "إدارة جودة الموردين"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-04"
+          ]
+        },
+        {
+          "order": 7,
+          "type": "practice",
+          "target_id": "ASM-Q-AUDIT-PRACT",
+          "title": {
+            "en": "Quality Auditing: process, product and system audits (ASQ-informed) — practical task",
+            "ar": "تدقيق الجودة: تدقيق العمليات والمنتجات والأنظمة (مستنير بمنهج ASQ) — المهمة العملية"
+          },
+          "dependency": "recommended",
+          "effort": "150 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "6a1744367e052b28bb8514d169dd9f903d99ed19dea4f0a4f193a76eadf2c496"
+      }
+    },
+    {
+      "id": "ROUTE-Q-SSGB",
+      "kind": "quality_route",
+      "roles": [
+        "ROLE-CIS"
+      ],
+      "certification_ids": [
+        "CERT-CSSGB",
+        "CERT-CSSBB"
+      ],
+      "title": {
+        "en": "Six Sigma Green Belt",
+        "ar": "مسار الحزام الأخضر في ستة سيجما"
+      },
+      "goal": {
+        "en": "Lead data-driven improvement projects: tools, SPC, DMAIC with trusted measurement and verified causes, and control plans that last.",
+        "ar": "قيادة مشاريع تحسين قائمة على البيانات: الأدوات والضبط الإحصائي وDMAIC بقياس موثوق وأسباب متحقق منها، وخطط ضبط تدوم."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-Q-SSGB-DIAG",
+          "title": {
+            "en": "Route diagnostic — Six Sigma Green Belt",
+            "ar": "التقييم التشخيصي للمسار — الحزام الأخضر في ستة سيجما"
+          },
+          "dependency": "recommended",
+          "effort": "15 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-Q-TOOLS",
+          "title": {
+            "en": "Quality Tools and Data Analysis",
+            "ar": "أدوات الجودة وتحليل البيانات"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-02"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-Q-SPC",
+          "title": {
+            "en": "Statistical Process Control Basics",
+            "ar": "أساسيات الضبط الإحصائي للعمليات"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PERF-01"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-LSS-GB",
+          "title": {
+            "en": "Lean Six Sigma Green Belt Foundations",
+            "ar": "أساسيات الحزام الأخضر في لين ستة سيجما"
+          },
+          "dependency": "required",
+          "effort": "8.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-M-DMAIC",
+          "title": {
+            "en": "DMAIC Improvement Project: the method step by step",
+            "ar": "مشروع التحسين بمنهج DMAIC: المنهجية خطوة بخطوة"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-Q-CAPA",
+          "title": {
+            "en": "Problem Solving and CAPA",
+            "ar": "حل المشكلات والإجراءات التصحيحية والوقائية"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-03"
+          ]
+        },
+        {
+          "order": 7,
+          "type": "final_assessment",
+          "target_id": "ASM-LSS-GB-FINAL",
+          "title": {
+            "en": "Lean Six Sigma Green Belt Foundations — final assessment",
+            "ar": "أساسيات الحزام الأخضر في لين ستة سيجما — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "2fcc21946c4ea5e8d323ab0f121fb3a5858dda9e200798f0bc58a0d299c0baef"
+      }
+    },
+    {
+      "id": "ROUTE-Q-CMQOE",
+      "kind": "quality_route",
+      "roles": [
+        "ROLE-QMGR"
+      ],
+      "certification_ids": [
+        "CERT-CMQOE",
+        "CERT-CCQM"
+      ],
+      "title": {
+        "en": "Quality manager (CMQ/OE preparation)",
+        "ar": "مسار مدير الجودة (إعداد لشهادة CMQ/OE)"
+      },
+      "goal": {
+        "en": "Lead quality and organisational excellence: the financial case, suppliers, strategy, leadership and a CMQ/OE study plan from your own diagnostic. CIA internal route; exam-preparation label only.",
+        "ar": "قيادة الجودة والتميز المؤسسي: الحالة المالية والموردون والاستراتيجية والقيادة وخطة مذاكرة لشهادة CMQ/OE من تقييمك التشخيصي. مسار داخلي من CIA؛ بوسم إعداد للاختبار فقط."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-CMQOE-DIAG",
+          "title": {
+            "en": "CMQ/OE Center diagnostic",
+            "ar": "التقييم التشخيصي لمركز CMQ/OE"
+          },
+          "dependency": "recommended",
+          "effort": "25 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-QMS-201",
+          "title": {
+            "en": "Quality Management Foundations: QA, QC and the quality system",
+            "ar": "أساسيات إدارة الجودة: ضمان الجودة وضبطها ونظام الجودة"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-01"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-Q-TOOLS",
+          "title": {
+            "en": "Quality Tools and Data Analysis",
+            "ar": "أدوات الجودة وتحليل البيانات"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-02"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-Q-COQ",
+          "title": {
+            "en": "Cost of Quality",
+            "ar": "تكلفة الجودة"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "PERF-01"
+          ]
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-Q-SUPPLIER",
+          "title": {
+            "en": "Supplier Quality Management",
+            "ar": "إدارة جودة الموردين"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "QM-04"
+          ]
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-CMQOE-PREP",
+          "title": {
+            "en": "Quality Leadership and Strategy (CMQ/OE preparation)",
+            "ar": "قيادة الجودة والاستراتيجية (إعداد لشهادة CMQ/OE)"
+          },
+          "dependency": "required",
+          "effort": "7.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 7,
+          "type": "final_assessment",
+          "target_id": "ASM-CMQOE-PREP-FINAL",
+          "title": {
+            "en": "Quality Leadership and Strategy (CMQ/OE preparation) — final assessment",
+            "ar": "قيادة الجودة والاستراتيجية (إعداد لشهادة CMQ/OE) — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "67325f0aa10a90db11678a72285d6b29f6f6ee0b22a708c33f85add1153fcd8d"
+      }
     }
   ]
 }

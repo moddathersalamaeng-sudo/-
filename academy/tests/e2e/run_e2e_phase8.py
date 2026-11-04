@@ -192,7 +192,7 @@ try:
     record(f'learner: the PMI landing shows only published courses ({len(pub_courses)}) and honest empty states otherwise; one h1, no preview banner',
            shown == len([c for c in pub_courses if not c.get('guide')]) and layout(page)['h1'] == 1 and page.locator('[data-preview]').count() == 0, f'{shown}')
     go(page, '/academy/pmi/certifications')
-    pub_certs = [c for c in CERTS if PUBLISHED(c)]
+    pub_certs = [c for c in CERTS if PUBLISHED(c) and c.get('body', 'PMI') == 'PMI']
     record('learner: the explorer shows published certifications only, with one h1', page.locator('#cert-list [data-cert]').count() == len(pub_certs) and layout(page)['h1'] == 1)
     draft_course = next((c for c in COURSES.values() if c['id'].startswith('CRS-PM') and not PUBLISHED(c)), None)
     if draft_course:

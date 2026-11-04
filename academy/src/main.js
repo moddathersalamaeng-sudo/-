@@ -31,6 +31,7 @@ import { isoAcademyView, isoStandardView } from './views/iso.js';
 import { knowledgeIndexView, ecosystemView, articleView, libraryView, libraryItemView, myLibraryView } from './views/knowledge.js';
 import { guidesIndexView, guideView, guideItemView } from './views/guides.js';
 import { pmiAcademyView, certificationsView, certificationView } from './views/pmi.js';
+import { qualityAcademyView, cmqoeCenterView } from './views/quality.js';
 
 const ROUTES = [
   { path: '/', view: homeView, titleKey: 'home.title' },
@@ -49,6 +50,10 @@ const ROUTES = [
   { path: '/academy/pmi', view: pmiAcademyView, titleKey: 'nav.items.pmiAcademy' },
   { path: '/academy/pmi/certifications', view: certificationsView, titleKey: 'nav.items.certification' },
   { path: '/academy/pmi/certifications/:slug', view: certificationView, titleKey: 'nav.items.certification' },
+  { path: '/academy/quality', view: qualityAcademyView, titleKey: 'nav.items.qualityAcademy' },
+  { path: '/academy/quality/certifications', view: (ctx, m) => certificationsView(ctx, m, 'ASQ'), titleKey: 'nav.items.certification' },
+  { path: '/academy/quality/certifications/:slug', view: (ctx, m) => certificationView(ctx, m, 'ASQ'), titleKey: 'nav.items.certification' },
+  { path: '/academy/quality/cmqoe', view: cmqoeCenterView, titleKey: 'q9.center.eyebrow' },
   { path: '/academy/programs', view: programsView, titleKey: 'programs.title' },
   { path: '/recommendations', view: recommendationsView, titleKey: 'recommendations.title' },
   { path: '/learning-path', view: learningPathView, titleKey: 'learningPath.title' },
@@ -124,6 +129,9 @@ async function boot() {
       lessonGuideMap: new CollectionRepository({ adapter: content, collection: 'lesson-guide-map' }),
       isoStandards: new ContentRepository({ adapter: content, collection: 'iso-standards' }),
       certifications: new ContentRepository({ adapter: content, collection: 'certifications' }),
+      /* Phase 9: explanatory figures (governed) and where they appear (plain map). Enrichment: failures never blank a page. */
+      figures: new ContentRepository({ adapter: content, collection: 'figures' }),
+      lessonFigures: new CollectionRepository({ adapter: content, collection: 'lesson-figures' }),
       programs: new ContentRepository({ adapter: content, collection: 'programs' }),
       competencies: new ContentRepository({ adapter: competencyContent, collection: 'competencies' }),
       targetRoles: new ContentRepository({ adapter: competencyContent, collection: 'target-roles' }),

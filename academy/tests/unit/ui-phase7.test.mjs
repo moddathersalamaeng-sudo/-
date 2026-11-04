@@ -69,11 +69,11 @@ function sandbox() {
   cpSync(join(ROOT, 'tools'), join(dir, 'tools'), { recursive: true });
   return dir;
 }
-/* After Phase 8 the PMI courses are published; the Phase 9/10 shells and the Phase 5 demo items are still drafts, so the workflow is exercised on them. */
-const decision = (o) => ({ collection: 'courses', record_id: 'CRS-QMS-201', version: DRAFT_VERSION, decision: 'approve', comment: '', checklist: [], reviewer: 'Dr. Example Reviewer', reviewer_role: 'Lead Auditor', review_date: '2026-10-26', ...o });
-const DRAFT_VERSION = json('data/seed/courses.json').items.find(x => x.id === 'CRS-QMS-201').governance.version;
-const EFQM_VERSION = json('data/seed/courses.json').items.find(x => x.id === 'CRS-EFQM-101').governance.version;
-const QMS_Q_VERSION = json('data/seed/questions.json').items.find(x => x.id === 'Q-QMS-001').governance.version;
+/* After Phase 9 the Quality courses are published too; the Phase 10 shell and the remaining Phase 5 demo items are still drafts, so the workflow is exercised on them. */
+const decision = (o) => ({ collection: 'courses', record_id: 'CRS-EFQM-101', version: DRAFT_VERSION, decision: 'approve', comment: '', checklist: [], reviewer: 'Dr. Example Reviewer', reviewer_role: 'Lead Auditor', review_date: '2026-10-26', ...o });
+const DRAFT_VERSION = json('data/seed/courses.json').items.find(x => x.id === 'CRS-EFQM-101').governance.version;
+const EFQM_Q_VERSION = json('data/seed/questions.json').items.find(x => x.id === 'Q-EFQM-001').governance.version;
+const QMS_Q_VERSION = json('data/seed/questions.json').items.find(x => x.id === 'Q-GOV-001').governance.version;
 const Q_VERSION = json('data/seed/questions.json').items.find(x => x.id === 'Q-PM-001').governance.version;
 
 test('apply_review_decisions: dry run changes nothing; --apply publishes through the gate (expert review or owner approval) and skips unsafe decisions', () => {
@@ -82,11 +82,11 @@ test('apply_review_decisions: dry run changes nothing; --apply publishes through
     const file = join(dir, 'decisions.json');
     writeFileSync(file, JSON.stringify({ schema: 'cia.review-decisions.v1', app: 'cia-academy', reviewer: { name: 'Dr. Example Reviewer' }, decisions: [
       decision({}),
-      decision({ record_id: 'CRS-EFQM-101', version: EFQM_VERSION, basis: 'owner_approval', reviewer: 'مدثر سلامه', reviewer_role: 'Platform owner', review_date: '2026-11-03' }),
+      decision({ collection: 'questions', record_id: 'Q-EFQM-001', version: EFQM_Q_VERSION, basis: 'owner_approval', reviewer: 'مدثر سلامه', reviewer_role: 'Platform owner', review_date: '2026-11-03' }),
       decision({ collection: 'questions', record_id: 'Q-PM-001', version: Q_VERSION, decision: 'changes_requested', comment: 'Tighten option c.' }),
-      decision({ collection: 'questions', record_id: 'Q-QMS-001', version: '0.0.1' }),
-      decision({ collection: 'questions', record_id: 'Q-QMS-001', version: QMS_Q_VERSION, reviewer: '' }),
-      decision({ collection: 'questions', record_id: 'Q-QMS-001', version: QMS_Q_VERSION, basis: 'rubber_stamp' }),
+      decision({ collection: 'questions', record_id: 'Q-GOV-001', version: '0.0.1' }),
+      decision({ collection: 'questions', record_id: 'Q-GOV-001', version: QMS_Q_VERSION, reviewer: '' }),
+      decision({ collection: 'questions', record_id: 'Q-GOV-001', version: QMS_Q_VERSION, basis: 'rubber_stamp' }),
       decision({ collection: 'users', record_id: 'x' })
     ] }));
     const before = readFileSync(join(dir, 'data/seed/courses.json'), 'utf8');
@@ -95,14 +95,14 @@ test('apply_review_decisions: dry run changes nothing; --apply publishes through
     const out = execFileSync('python3', ['-I', join(dir, 'tools/apply_review_decisions.py'), file, '--apply'], { encoding: 'utf8' });
     assert.match(out, /approved: 2/); assert.match(out, /changes_requested: 1/); assert.match(out, /skipped: 4/);
     const courses = JSON.parse(readFileSync(join(dir, 'data/seed/courses.json'), 'utf8')).items;
-    const c = courses.find(x => x.id === 'CRS-QMS-201');
+    const c = courses.find(x => x.id === 'CRS-EFQM-101');
     assert.deepEqual(validateGovernance(c), []); assert.equal(isVisible(c, ['learner']), true);
     assert.equal(c.governance.content_source, 'sme'); assert.equal(c.governance.approval_basis, 'expert_review');
     assert.equal(c.governance.reviewer, 'Dr. Example Reviewer'); assert.ok(c.governance.approved_hash);
-    const o = courses.find(x => x.id === 'CRS-EFQM-101');
+    const o = JSON.parse(readFileSync(join(dir, 'data/seed/questions.json'), 'utf8')).items.find(x => x.id === 'Q-EFQM-001');
     assert.equal(o.governance.content_source, 'owner'); assert.equal(o.governance.drafted_by, 'ai_draft');
     assert.equal(o.governance.approval_basis, 'owner_approval_after_ai_prereview'); assert.match(o.governance.change_note, /not an independent expert review/);
-    assert.equal(JSON.parse(readFileSync(join(dir, 'data/seed/questions.json'), 'utf8')).items.find(x => x.id === 'Q-QMS-001').governance.content_status, 'needs_review');
+    assert.equal(JSON.parse(readFileSync(join(dir, 'data/seed/questions.json'), 'utf8')).items.find(x => x.id === 'Q-GOV-001').governance.content_status, 'needs_review');
     const q = JSON.parse(readFileSync(join(dir, 'data/seed/questions.json'), 'utf8')).items.find(x => x.id === 'Q-PM-001');
     assert.equal(q.governance.content_status, 'needs_review'); assert.equal(q.review_comments[0].comment, 'Tighten option c.');
     const log = JSON.parse(readFileSync(join(dir, 'data/review-log.json'), 'utf8')).items;

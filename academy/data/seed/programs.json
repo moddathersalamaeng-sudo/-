@@ -20,21 +20,28 @@
         },
         {
           "order": 2,
-          "course_id": "CRS-PM-101"
+          "course_id": "CRS-QMS-201"
         },
         {
           "order": 3,
+          "course_id": "CRS-PM-101"
+        },
+        {
+          "order": 4,
           "course_id": "CRS-ISO-RISK"
         }
       ],
       "version": "1.0",
       "governance": {
-        "content_status": "needs_review",
-        "content_source": "ai_draft",
-        "version": "0.9.0",
-        "reviewer": null,
-        "review_date": null,
-        "change_note": "Phase 8 decision: restaged to ISO foundations → Project Management Foundations → Risk-based thinking (CRS-QMS-201 waits for Phase 9). Draft until reviewed."
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "fa742a63ef772b5935cea80d8c0dbb13ebc5604495cd51631e3aff54c4845e8b"
       }
     }
   ]

@@ -15,8 +15,10 @@ Blocking checks (a record that fails one is NOT a candidate):
   B6 ambiguity     generated check questions: no distractor shares content words with the item's own evidence/gaps,
                    and no distractor is generic evidence listed under 3+ other clauses
   B7 scope         future-phase records (Phase 9 quality, Phase 10 EFQM, the Phase 5 demo items and assessments) stay drafts
-  B8 certification facts (Phase 8): official PMI URL, dated verification, existing sources; a "pending" fact group carries no figures;
-                   domain weights add up to 100; and no PMI partner / PDU / "PMI-approved" claim (also checked by B1)
+  B8 certification facts (Phase 8, extended in Phase 9 to ASQ): official URL on the body's own site (pmi.org / asq.org), dated
+                   verification, existing sources; a "pending" group carries no figures; "secondary" only for BoK counts, with a labelled
+                   provider source; PMI weights add up to 100, ASQ question counts add up to the scored items; no partner / PDU / RU claim
+  B9 figures (Phase 9): known template, bilingual caption and "how to read it", labels in both languages; illustrative numbers say so
 Advisory checks (reported, not blocking): duplicate prompts, very long options, answer-key position balance.
 """
 import json
@@ -27,19 +29,20 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SEED = ROOT / "data" / "seed"
-OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-08" / "review"
+OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-09" / "review"
 load = lambda n: json.loads((SEED / f"{n}.json").read_text(encoding="utf-8"))["items"]  # noqa: E731
 guides = {g["slug"]: json.loads((ROOT / "data" / "guides" / f"{g['slug']}.json").read_text(encoding="utf-8"))["guide"]
           for g in json.loads((ROOT / "data" / "guides" / "index.json").read_text(encoding="utf-8"))["items"]}
 
 COLL = {"courses": "courses", "questions": "questions", "assessments": "assessments", "iso-standards": "iso-standards", "learning-paths": "learning-paths",
         "ecosystems": "ecosystems", "programs": "programs", "sources": "sources", "competency/competencies": "competency/competencies",
-        "competency/target-roles": "competency/target-roles", "competency/domains": "competency/domains", "certifications": "certifications"}
+        "competency/target-roles": "competency/target-roles", "competency/domains": "competency/domains", "certifications": "certifications",
+        "figures": "figures"}
 data = {k: load(v) for k, v in COLL.items()}
-FUTURE_COURSES = {"CRS-QMS-201", "CRS-EFQM-101"}  # CRS-PM-101 and CRS-P3O-101 are Phase 8 courses since 3 Nov 2026
-FUTURE_Q = {"Q-QMS-001", "Q-PM-001", "Q-RISK-001", "Q-PMO-001", "Q-EFQM-001", "Q-GOV-001", "Q-AI-001"}
+FUTURE_COURSES = {"CRS-EFQM-101"}  # CRS-QMS-201 is a Phase 9 course since 4 Nov 2026  # CRS-PM-101 and CRS-P3O-101 are Phase 8 courses since 3 Nov 2026
+FUTURE_Q = {"Q-PM-001", "Q-RISK-001", "Q-PMO-001", "Q-EFQM-001", "Q-GOV-001", "Q-AI-001"}
 FUTURE_A = {"ASM-DIAG-001", "ASM-QUIZ-001", "ASM-SCEN-001", "ASM-PRACT-001"}
-FUTURE_PROGRAMS = {"PRG-CIA-FOUNDATIONS"}
+FUTURE_PROGRAMS = set()  # PRG-CIA-FOUNDATIONS completed in Phase 9 (QMS-201 stage added)
 
 findings = defaultdict(list)       # key "collection:id" -> [(code, detail)]
 advisory = []
@@ -65,8 +68,9 @@ def texts(o, path=""):
 
 
 CLAIM_EN = re.compile(r"\b(accredit\w*|CPD|PDUs?|CEUs?|IRCA[- ]approved|Exemplar Global|certified (?:by|course)|approved (?:by|course)|official(?:ly)? (?:recogni[sz]ed|certified)"
-                      r"|ATP|Authori[sz]ed Training Partner|PMI[- ](?:approved|endorsed|accredited)|Registered Education Provider|contact[- ]hours? certificate)\b", re.I)
-CLAIM_AR = re.compile(r"(معتمدة? من|اعتماد(?:ها)? من|ساعات التطوير المهني|شهادة معتمدة|معترف بها رسميًا|شريك تدريب معتمد|وحدات? PDU|شهادة ساعات)")
+                      r"|ATP|Authori[sz]ed Training Partner|PMI[- ](?:approved|endorsed|accredited)|Registered Education Provider|contact[- ]hours? certificate"
+                      r"|ASQ[- ](?:approved|endorsed|accredited|partner)|certified by ASQ|RUs?|recertification units?)\b", re.I)
+CLAIM_AR = re.compile(r"(وحدات? إعادة (?:ال)?اعتماد|معتمدة? من|اعتماد(?:ها)? من|ساعات التطوير المهني|شهادة معتمدة|معترف بها رسميًا|شريك تدريب معتمد|وحدات? PDU|شهادة ساعات)")
 NEG = re.compile(r"(not|no|never|without|nor|isn't|does not|doesn't|cannot|غير|لا |ليس|ليست|دون|لم |بلا)", re.I)
 QUOTE = re.compile(r"[“\"«]([^”\"»]{120,})[”\"»]")
 SHALL = re.compile(r"\bThe organi[sz]ation shall\b")
@@ -221,18 +225,37 @@ for q in data["questions"]:
         if o["id"] != q["correct_answer"] and words(o["text"]["en"]) & own:
             flag("questions", q["id"], "B6", f"practice distractor {o['id']} shares “{', '.join(sorted(words(o['text']['en']) & own))}” with the practice")
 
-# ------------------------------------------------------------------ B8 certification facts (Phase 8)
+# ------------------------------------------------------------------ B8 certification facts (Phase 8, ASQ in Phase 9)
+SITE = {"PMI": r"^https://(www\.)?pmi\.org/", "ASQ": r"^https://(www\.)?asq\.org/"}
+src_by = {x["id"]: x for x in data["sources"]}
 for c in data.get("certifications", []):
-    st = c.get("facts_status", {})
-    if not re.match(r"^https://(www\.)?pmi\.org/", c.get("official_url", "")): flag("certifications", c["id"], "B8", "official URL is not a pmi.org page")
+    st = c.get("facts_status", {}); body = c.get("body", "PMI")
+    if not re.match(SITE.get(body, SITE["PMI"]), c.get("official_url", "")): flag("certifications", c["id"], "B8", f"official URL is not a {body.lower()}.org page")
     if not re.match(r"^\d{4}-\d{2}-\d{2}$", c.get("verified_date") or ""): flag("certifications", c["id"], "B8", "no verification date")
-    for s in c.get("source_ids", []):
-        if s not in {x["id"] for x in data["sources"]}: flag("certifications", c["id"], "B8", f"unknown source {s}")
+    for s_ in c.get("source_ids", []):
+        if s_ not in src_by: flag("certifications", c["id"], "B8", f"unknown source {s_}")
     for grp in ("exam", "fee", "renewal"):
         if st.get(grp) != "verified" and c.get(grp): flag("certifications", c["id"], "B8", f"{grp} is pending but carries figures")
         if st.get(grp) == "verified" and not c.get(grp): flag("certifications", c["id"], "B8", f"{grp} verified but empty")
-    if st.get("domains") == "verified" and sum(d["weight"] for d in c.get("domains", [])) != 100:
-        flag("certifications", c["id"], "B8", "domain weights do not add up to 100")
+    if st.get("domains") == "secondary" and not any(src_by.get(x, {}).get("source_type") == "secondary_summary_of_official" for x in c.get("source_ids", [])):
+        flag("certifications", c["id"], "B8", "secondary domains without a labelled provider source")
+    if st.get("domains") not in ("verified", "secondary") and c.get("domains"): flag("certifications", c["id"], "B8", "domains pending but carry figures")
+    if st.get("domains") in ("verified", "secondary") and c.get("domains"):
+        if c.get("domain_unit") == "questions":
+            if (c.get("exam") or {}).get("scored") and sum(d["questions"] for d in c["domains"]) != c["exam"]["scored"]:
+                flag("certifications", c["id"], "B8", "BoK question counts do not add up to the scored items")
+        elif sum(d["weight"] for d in c["domains"]) != 100:
+            flag("certifications", c["id"], "B8", "domain weights do not add up to 100")
+
+# ------------------------------------------------------------------ B9 figures (Phase 9)
+TEMPLATES = {"cycle", "flow", "matrix", "ladder", "nested", "pareto", "histogram", "control", "scatter", "scurve", "fishbone", "iceberg", "tree", "kanban", "table", "triad", "hub", "funnel", "tiles", "spectrum", "bars"}
+for f in data.get("figures", []):
+    if f.get("template") not in TEMPLATES: flag("figures", f["id"], "B9", f"unknown template {f.get('template')}")
+    for k in ("caption", "read"):
+        if not (f.get(k) or {}).get("en") or not (f.get(k) or {}).get("ar"): flag("figures", f["id"], "B9", f"{k} missing in one language")
+    if f.get("template") in ("pareto", "histogram", "control", "scatter", "scurve", "bars") and "lesson example" not in f["read"]["en"].lower() and "illustrative" not in f["read"]["en"].lower() \
+            and "lesson example" not in json.dumps(f.get("xLabel", {})).lower() and not re.search(r"\b(PMI|ASQ)\b", f["read"]["en"] + f["caption"]["en"]):
+        flag("figures", f["id"], "B9", "chart numbers are not marked as illustrative, a lesson example or a sourced fact")
 
 # ------------------------------------------------------------------ advisory
 prompts = Counter(q["prompt"]["en"].strip().lower() for q in data["questions"])
@@ -284,6 +307,13 @@ REVIEWED = {
     ("certifications:CERT-PFMP", "B1"): "PMI's own eligibility wording (GAC-accredited degree programme) or the name of PMI's credential (\"certified by PMI\" describes PMI's certification, not CIA); the record states CIA is not a PMI partner and awards no PDUs.",
     ("certifications:CERT-PMI-PBA", "B1"): "PMI's own eligibility wording (GAC-accredited degree programme) or the name of PMI's credential (\"certified by PMI\" describes PMI's certification, not CIA); the record states CIA is not a PMI partner and awards no PDUs.",
     ("certifications:CERT-PMI-PMOCP", "B1"): "PMI's own eligibility wording (GAC-accredited degree programme) or the name of PMI's credential (\"certified by PMI\" describes PMI's certification, not CIA); the record states CIA is not a PMI partner and awards no PDUs.",
+    # Phase 9 (4 Nov 2026) — read and judged acceptable:
+    ("courses:CRS-QMS-201", "B2"): "The quoted text is CIA's own worked example (a rewritten quality objective), not a quotation from a source.",
+    ("courses:CRS-Q-CAPA", "B2"): "The quoted text is CIA's own worked example (a problem statement), not a quotation from a source.",
+    ("courses:CRS-Q-AUDIT", "B2"): "The quoted text is CIA's own worked example of a weak and a strong audit finding; QP-07 is a fictional procedure.",
+    ("courses:CRS-LSS-GB", "B2"): "The quoted text is CIA's own model answer (a rewritten problem statement), not a quotation from a source.",
+    ("certifications:CERT-PGMP", "B1"): "PMI's own eligibility wording (GAC-accredited degree programme), rechecked on PMI's page on 4 Nov 2026; the record states CIA is not a PMI partner and awards no PDUs.",
+    ("figures:FIG-ISO-CHAIN", "B1"): "The figure explains what accreditation is (the accreditation body checks the certification body), as the published ISO foundations lesson does; it claims nothing for CIA.",
 }
 cleared = defaultdict(list)
 for key, fs in list(findings.items()):
@@ -300,7 +330,7 @@ for coll, r in drafts:
     key = f"{coll}:{r['id']}"
     (blocked if findings.get(key) else candidates)[coll].append(r["id"])
 OUT.mkdir(parents=True, exist_ok=True)
-result = {"schema": "cia.pre-review.v1", "date": "2026-11-03", "drafts": len(drafts), "generated_questions_checked": gen_checked,
+result = {"schema": "cia.pre-review.v1", "date": "2026-11-04", "drafts": len(drafts), "generated_questions_checked": gen_checked,
           "candidates": candidates, "blocked": {k: {i: findings[f"{k}:{i}"] for i in v} for k, v in blocked.items()},
           "cleared_after_reading": {k: v for k, v in cleared.items() if v}, "advisory": advisory}
 (OUT / "pre-review-findings.json").write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")

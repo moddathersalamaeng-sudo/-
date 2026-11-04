@@ -67,7 +67,7 @@ domain_of = {c["id"]: c["domain"] for c in comp_doc["items"]}
 courses_doc = load("courses")
 upsert(courses_doc["items"], COURSES)
 for c in courses_doc["items"]:
-    if c["id"] in ("CRS-QMS-201", "CRS-EFQM-101"):  # future-phase shells: say so in the record
+    if c["id"] == "CRS-EFQM-101":  # future-phase shell: say so in the record (CRS-QMS-201 is a full course since Phase 9)
         c["planned_phase"] = 9 if c["id"] == "CRS-QMS-201" else 10
         c["governance"]["change_note"] = (f"Phase 4 shell kept as a draft for Phase {c['planned_phase']} "
                                           f"({'ASQ / Quality' if c['planned_phase'] == 9 else 'EFQM / Excellence'}); not shown to learners.")
@@ -97,7 +97,7 @@ for q in q_doc["items"]:
         q["governance"]["change_note"] = (f"Phase 5 example of the '{q['type']}' type, reworked in Phase 8: competency {comp}, linked to {cid}; scored only by a named human reviewer "
                                           f"(the engine never auto- or AI-marks this type). Its auto-scored twin for diagnostics is {twin}. Draft until reviewed.")
 for q in q_doc["items"]:  # future-phase demo items: valid competency ids and an explicit phase
-    if q["id"] == "Q-QMS-001":
+    if q["id"] == "Q-QMS-001" and q.get("course_id") != "CRS-QMS-201":  # Phase 9 owns this item once tools/build_phase9.py has run
         q.update({"competency": "QM-03", "planned_phase": 9})
         q["governance"]["change_note"] = "Phase 5 demo item kept as a draft for Phase 9 (ASQ / Quality); competency id corrected to QM-03."
     if q["id"] == "Q-EFQM-001":
@@ -178,7 +178,8 @@ src_ids = {s["id"] for s in s_doc["items"]}
 for c in COURSES:
     for s in c["source_references"]:
         assert s in src_ids, (c["id"], s)
-cert_doc = {"schema": "cia.certification.v1", "items": certs.CERTS}
+cert_doc = load("certifications") if (SEED / "certifications.json").exists() else {"schema": "cia.certification.v1", "items": []}
+upsert(cert_doc["items"], certs.CERTS)  # Phase 9 adds ASQ records to the same collection: never drop them
 for x in certs.CERTS:
     for s in x["source_ids"]:
         assert s in src_ids, (x["id"], s)
@@ -187,7 +188,7 @@ for x in certs.CERTS:
 save("certifications", cert_doc)
 for c in courses_doc["items"]:
     if c.get("related_certification"):
-        assert any(x["id"] == c["related_certification"] for x in certs.CERTS), c["id"]
+        assert any(x["id"] == c["related_certification"] for x in cert_doc["items"]), c["id"]
 
 # ------------------------------------------------------------------ target role: Project Manager (framework gap)
 roles_path = SEED / "competency" / "target-roles.json"
@@ -288,7 +289,7 @@ save("recommendation-catalog", r_doc)
 # ------------------------------------------------------------------ programme decision
 pr_doc = load("programs")
 for p in pr_doc["items"]:
-    if p["id"] == "PRG-CIA-FOUNDATIONS":
+    if p["id"] == "PRG-CIA-FOUNDATIONS" and not any(st.get("course_id") == "CRS-QMS-201" for st in p.get("stages", [])):  # Phase 9 completed it
         p["stages"] = [{"order": 1, "course_id": "CRS-ISO-101"}, {"order": 2, "course_id": "CRS-PM-101"}, {"order": 3, "course_id": "CRS-ISO-RISK"}]
         p["governance"].update({"content_status": "needs_review", "version": "0.9.0", "change_note":
                                 "Phase 8 decision: restaged to ISO foundations → Project Management Foundations → Risk-based thinking (CRS-QMS-201 waits for Phase 9). Draft until reviewed."})

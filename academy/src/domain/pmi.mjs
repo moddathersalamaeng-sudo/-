@@ -79,34 +79,48 @@ export function pmiStartingPoint({ profile = null, evidence = {}, completed = []
     reason: T('Your foundations are demonstrated. The PMP® route skips what you have shown and ends with the study-strategy course; check PMI’s eligibility before applying.', 'أساسياتك مثبتة. يتجاوز مسار PMP® ما أثبتّه وينتهي بدورة استراتيجية المذاكرة؛ وتحقق من أهلية PMI قبل التقديم.') };
 }
 
-/** Which fact groups of a certification may be shown as facts (verified) and which must send the learner to PMI (pending). */
+/** Which fact groups may be shown as facts: verified (official page), secondary (domains only, from a dated provider summary) or pending. */
 export function certFactState(cert) {
   const s = cert?.facts_status || {};
   const out = {};
-  for (const g of FACT_GROUPS) out[g] = s[g] === 'verified' ? 'verified' : 'pending';
+  for (const g of FACT_GROUPS) out[g] = s[g] === 'verified' ? 'verified' : (g === 'domains' && s[g] === 'secondary') ? 'secondary' : 'pending';
   return out;
 }
+export const showsFacts = state => state === 'verified' || state === 'secondary';
 
-/** Problems with a certification record (empty = valid): verified groups must carry data; domain weights must add to 100. */
+/** Official site of each professional body (certification records must point there). */
+export const BODY_SITES = { PMI: /^https:\/\/(www\.)?pmi\.org\//, ASQ: /^https:\/\/(www\.)?asq\.org\// };
+/** Renewal in plain numbers, whatever the body calls the unit (PDUs for PMI, RUs for ASQ), or lifetime. */
+export const renewalUnits = r => (r?.lifetime ? 0 : (r?.pdus ?? r?.units ?? null));
+
+/** Problems with a certification record (empty = valid): verified groups must carry data; pending groups carry none; weights add up. */
 export function validateCertification(c) {
   const e = [];
+  const body = c?.body || 'PMI';
   if (!c?.id || !c.slug || !c.name?.en || !c.name?.ar) e.push('missing_identity');
-  if (!c?.official_url || !/^https:\/\/(www\.)?pmi\.org\//.test(c.official_url)) e.push('official_url_not_pmi');
+  if (!c?.official_url || !(BODY_SITES[body] || BODY_SITES.PMI).test(c.official_url)) e.push('official_url_not_' + body.toLowerCase());
   if (!c?.verified_date || !/^\d{4}-\d{2}-\d{2}$/.test(c.verified_date)) e.push('missing_verified_date');
   if (!c?.source_ids?.length) e.push('missing_sources');
   const st = certFactState(c);
   if (st.eligibility === 'verified' && !c.eligibility?.length) e.push('verified_without_eligibility');
   if (st.exam === 'verified' && !(c.exam?.questions > 0 && c.exam?.minutes > 0)) e.push('verified_without_exam');
   if (st.fee === 'verified' && !(c.fee?.member > 0 && c.fee?.non_member > 0)) e.push('verified_without_fee');
-  if (st.renewal === 'verified' && !(c.renewal?.pdus > 0 && c.renewal?.years > 0)) e.push('verified_without_renewal');
-  if (st.domains === 'verified') {
-    const sum = (c.domains || []).reduce((a, d) => a + (d.weight || 0), 0);
-    if (sum !== 100) e.push('domain_weights_not_100:' + sum);
+  if (st.renewal === 'verified' && !(c.renewal?.lifetime === true || (renewalUnits(c.renewal) > 0 && c.renewal?.years > 0))) e.push('verified_without_renewal');
+  if (showsFacts(st.domains)) {
+    if (!c.domains?.length) e.push('domains_missing');
+    else if (c.domain_unit === 'questions') {
+      const q = c.domains.reduce((a, d) => a + (d.questions || 0), 0);
+      if (st.exam === 'verified' && c.exam?.scored && q !== c.exam.scored) e.push('domain_questions_not_scored:' + q);
+    } else {
+      const sum = c.domains.reduce((a, d) => a + (d.weight || 0), 0);
+      if (sum !== 100) e.push('domain_weights_not_100:' + sum);
+    }
   }
   /* Pending groups must not carry figures that the page did not confirm. */
   if (st.fee === 'pending' && c.fee) e.push('pending_fee_has_figures');
   if (st.exam === 'pending' && c.exam) e.push('pending_exam_has_figures');
   if (st.renewal === 'pending' && c.renewal) e.push('pending_renewal_has_figures');
+  if (st.domains === 'pending' && c.domains?.length) e.push('pending_domains_have_figures');
   return e;
 }
 

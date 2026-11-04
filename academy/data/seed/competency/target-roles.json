@@ -408,6 +408,62 @@
         "approval_basis": "owner_approval_after_ai_prereview",
         "approved_hash": "4f25a73c5c051736cc181491a072e45c827bde867d0688659a1c0ce0de25e4d0"
       }
+    },
+    {
+      "type": "target_role",
+      "id": "ROLE-CIS",
+      "name": {
+        "en": "Continuous Improvement Specialist (Lean Six Sigma)",
+        "ar": "أخصائي التحسين المستمر (لين ستة سيجما)"
+      },
+      "description": {
+        "en": "Leads data-driven improvement projects with Lean and DMAIC, coaches teams and sustains results with control plans.",
+        "ar": "يقود مشاريع تحسين قائمة على البيانات بمنهجي اللين وDMAIC، ويدرّب الفرق، ويستديم النتائج بخطط الضبط."
+      },
+      "targets": {
+        "QM-01": 2,
+        "QM-02": 4,
+        "QM-03": 4,
+        "QM-04": 2,
+        "ISO-01": 1,
+        "ISO-02": 0,
+        "ISO-03": 0,
+        "AUD-01": 0,
+        "AUD-02": 0,
+        "AUD-03": 0,
+        "PM-01": 2,
+        "PM-02": 2,
+        "PM-03": 0,
+        "RSK-01": 2,
+        "RSK-02": 0,
+        "PMO-01": 0,
+        "PMO-02": 0,
+        "OE-01": 2,
+        "OE-02": 3,
+        "LDR-01": 2,
+        "LDR-02": 0,
+        "GOV-01": 0,
+        "GOV-02": 0,
+        "CMP-01": 0,
+        "CMP-02": 0,
+        "BC-01": 0,
+        "BC-02": 0,
+        "ISA-01": 0,
+        "ISA-02": 0,
+        "PERF-01": 3,
+        "PERF-02": 2
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.9.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-04",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-04) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-04-owner-approval.json — Pre-review: deliverables/phase-09/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "6a2b1db8a14064884ec44d85c6b577d831996c345e21088a4be2af2a42e7c9cb"
+      }
     }
   ]
 }

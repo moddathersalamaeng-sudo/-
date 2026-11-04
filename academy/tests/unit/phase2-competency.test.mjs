@@ -87,8 +87,8 @@ test("content: bilingual, 5 descriptors, ≥2 sub-competencies with valid dimens
     for(const s of c.sub_competencies) assert.ok(["K","S","A","E"].includes(s.primary_dimension), s.id);
   }
 });
-test("roles: 4–7 roles with full 0–5 target vectors (Phase 8 adds Project Manager)", () => {
-  assert.ok(roles.length >= 4 && roles.length <= 7);
+test("roles: 4–8 roles with full 0–5 target vectors (Phase 8 adds Project Manager, Phase 9 Continuous Improvement Specialist)", () => {
+  assert.ok(roles.length >= 4 && roles.length <= 8);
   for(const r of roles){ assert.equal(Object.keys(r.targets).length, competencies.length, r.id);
     for(const v of Object.values(r.targets)) assert.ok(Number.isInteger(v) && v >= 0 && v <= 5, r.id); }
 });
