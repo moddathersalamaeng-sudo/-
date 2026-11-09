@@ -19,19 +19,24 @@ import { courseCard, sourceList } from './courses.js';
 import { effortMinutes } from './iso.js';
 import { academyBanner } from '../ui/art.js';
 
-const STAGE_ICON = { entry: 'flag', practitioner: 'briefcase', specialist: 'target', senior: 'award' };
+const STAGE_ICON = { entry: 'flag', practitioner: 'briefcase', specialist: 'target', senior: 'award', advanced: 'star', top: 'crown', professional: 'users' };
 const AREA_ICON = { project: 'briefcase', agile: 'refresh', risk: 'shield', pmo: 'grid', programme: 'layers', portfolio: 'chart', analysis: 'search',
-  management: 'crown', auditing: 'magnify', engineering: 'cog', improvement: 'sigma', construction: 'hardhat', foundations: 'book', inspection: 'ruler' };
+  management: 'crown', auditing: 'magnify', engineering: 'cog', improvement: 'sigma', construction: 'hardhat', foundations: 'book', inspection: 'ruler', recognition: 'star', award: 'medal', assessor: 'magnify' };
 /** Professional bodies served by the certification explorer (Phase 9): base route, landing and the i18n namespace of their strings. */
 export const BODIES = {
   PMI: { base: '/academy/pmi/certifications', landing: '/academy/pmi', ns: 'pmi', landingKey: 'nav.items.pmiAcademy' },
-  ASQ: { base: '/academy/quality/certifications', landing: '/academy/quality', ns: 'q9', landingKey: 'nav.items.qualityAcademy' }
+  ASQ: { base: '/academy/quality/certifications', landing: '/academy/quality', ns: 'q9', landingKey: 'nav.items.qualityAcademy' },
+  /* Phase 10: EFQM recognition options. Their "exam" group is a list of label/value rows (how the assessment works) and their
+     "domains" are names only (dimensions or criterion names), so cards, the comparison table and the page render those instead. */
+  EFQM: { base: '/academy/excellence/recognition', landing: '/academy/excellence', ns: 'ex10', landingKey: 'nav.items.excellenceAcademy', family: 'excellence', rows: true }
 };
 const bodyOf = c => BODIES[c?.body] || BODIES.PMI;
 const tk = (ctx, B, key, vars) => ctx.t(B.ns + '.' + key, vars);
 export const certsOf = (content, body) => (content.certifications || []).filter(c => (c.body || 'PMI') === body);
 const isPmCourse = c => ['pmi', 'pmo', 'p3o'].includes(c.ecosystem);
 export const certHref = c => `#${bodyOf(c).base}/${c.slug}`;
+/** The short code before a name (PMP®, CMQ/OE…), left out when the English name already contains it (EFQM options). */
+const codeChip = c => (c.code && !String(c.name?.en || '').toLowerCase().includes(String(c.code).toLowerCase()) ? [h('span', { class: 'code' }, c.code), ' '] : null);
 
 export function stat(iconName, value, label) {
   return h('li', { class: 'stat' }, icon(iconName), h('strong', null, value), h('span', null, label));
@@ -83,12 +88,13 @@ export function certCard(ctx, c) {
   const { t, i18n } = ctx;
   const B = bodyOf(c);
   const st = certFactState(c);
-  const quick = [
+  const rowVal = key => L(ctx, (c.exam?.rows || []).find(r => r.label.en === key)?.value);
+  const quick = B.rows ? [st.exam === 'verified' && c.exam ? [icon('clock'), ' ', rowVal('Duration') || rowVal('Applications') || '—', ' · ', icon('star'), ' ', rowVal('Outcome') || rowVal('Ratings') || '—'] : [icon('external'), ' ', tk(ctx, B, 'checkPmi')]] : [
     st.exam === 'verified' && c.exam ? [icon('question'), ' ', tk(ctx, B, 'qShort', { n: i18n.number(c.exam.questions) }), ' · ', icon('clock'), ' ', t('p7.minutes', { n: i18n.number(c.exam.minutes) })] : [icon('external'), ' ', tk(ctx, B, 'checkPmi')],
     st.renewal === 'verified' && c.renewal ? [' · ', icon('refresh'), ' ', renewalShort(ctx, B, c)] : null];
   return h('article', { class: 'card cert-card', dataset: { cert: c.id, stage: c.stage, area: c.area, body: c.body || 'PMI' } },
     h('p', { class: 'eyebrow' }, icon(STAGE_ICON[c.stage] || 'award'), ' ', tk(ctx, B, 'stage.' + c.stage), ' · ', icon(AREA_ICON[c.area] || 'briefcase'), ' ', tk(ctx, B, 'area.' + c.area)),
-    h('h3', null, h('a', { href: certHref(c) }, h('span', { class: 'code' }, c.code), ' ', L(ctx, c.name))),
+    h('h3', null, h('a', { href: certHref(c) }, codeChip(c), L(ctx, c.name))),
     h('p', null, L(ctx, c.summary)),
     h('p', { class: 'meta' }, quick),
     isReviewer(ctx) ? govBadge(ctx, c) : null);
@@ -168,7 +174,14 @@ export function certificationsView(ctx, match, body = 'PMI') {
     const filters = h('form', { class: 'filters', role: 'search', 'aria-label': t('p7.course.filters'), onsubmit: e => e.preventDefault() },
       sel('stage', tk(ctx, B, 'filterStage'), stages, 'stage.'), sel('area', tk(ctx, B, 'filterArea'), areas, 'area.'));
     const cell = (c, g, fn) => certFactState(c)[g] === 'verified' ? fn() : h('a', { href: c.official_url, target: '_blank', rel: 'noopener', class: 'pending' }, tk(ctx, B, 'checkPmi'));
-    const compare = Table({ caption: tk(ctx, B, 'compareCaption'), columns: [{ key: 'c', label: tk(ctx, B, 'col.cert') }, { key: 'q', label: tk(ctx, B, 'col.questions'), num: true }, { key: 'm', label: tk(ctx, B, 'col.minutes'), num: true },
+    const rowOf = (c, key) => L(ctx, (c.exam?.rows || []).find(r => r.label.en === key)?.value) || '—';
+    const compare = B.rows ? Table({ caption: tk(ctx, B, 'compareCaption'), columns: [{ key: 'c', label: tk(ctx, B, 'col.cert') }, { key: 'd', label: tk(ctx, B, 'col.duration') },
+      { key: 'o', label: tk(ctx, B, 'col.outcome') }, { key: 'r', label: tk(ctx, B, 'col.renewal') }, { key: 'f', label: tk(ctx, B, 'col.fee') }],
+    rows: all.map(c => ({ c: h('a', { href: certHref(c) }, c.code),
+      d: cell(c, 'exam', () => rowOf(c, 'Duration') !== '—' ? rowOf(c, 'Duration') : rowOf(c, 'Applications')),
+      o: cell(c, 'exam', () => rowOf(c, 'Outcome') !== '—' ? rowOf(c, 'Outcome') : rowOf(c, 'Ratings')),
+      r: cell(c, 'renewal', () => tk(ctx, B, 'renewalText', { n: i18n.number(c.renewal?.validity_years || 0) })),
+      f: cell(c, 'fee', () => '—') })) }) : Table({ caption: tk(ctx, B, 'compareCaption'), columns: [{ key: 'c', label: tk(ctx, B, 'col.cert') }, { key: 'q', label: tk(ctx, B, 'col.questions'), num: true }, { key: 'm', label: tk(ctx, B, 'col.minutes'), num: true },
       { key: 'r', label: tk(ctx, B, 'col.renewal') }, { key: 'f', label: tk(ctx, B, 'col.fee') }],
     rows: all.map(c => ({ c: h('a', { href: certHref(c) }, c.code),
       q: cell(c, 'exam', () => i18n.number(c.exam.questions)), m: cell(c, 'exam', () => i18n.number(c.exam.minutes)),
@@ -263,19 +276,19 @@ function certPage(ctx, c, content, learner) {
   const next = (c.next || []).map(id => content.certifications.find(x => x.id === id)).filter(Boolean);
   const comps = (c.competencies || []).map(id => content.byId(content.competencies, id)).filter(Boolean);
   const center = c.id === 'CERT-CMQOE' ? linkBtn('#/academy/quality/cmqoe', t('q9.openCenter'), 'secondary', { 'data-action': 'open-center' }) : null;
-  const hero = h('header', { class: ['iso-hero', 'pmi-hero', c.body === 'ASQ' && 'q-hero'] }, academyBanner(c.body === 'ASQ' ? 'quality' : 'pmi', 'award', c.id),
+  const hero = h('header', { class: ['iso-hero', 'pmi-hero', c.body === 'ASQ' && 'q-hero', c.body === 'EFQM' && 'ex-hero'] }, academyBanner(B.family || (c.body === 'ASQ' ? 'quality' : 'pmi'), 'award', c.id),
     h('p', { class: 'eyebrow' }, icon(STAGE_ICON[c.stage] || 'award'), ' ', tk(ctx, B, 'stage.' + c.stage), ' · ', tk(ctx, B, 'area.' + c.area), ' · ', c.body || 'PMI'),
-    h('h1', null, h('span', { class: 'code' }, c.code), ' ', L(ctx, c.name)),
+    h('h1', null, codeChip(c), L(ctx, c.name)),
     h('p', null, L(ctx, c.summary)),
     h('p', { class: 'note' }, icon('users'), ' ', h('strong', null, tk(ctx, B, 'whoFor')), ' ', L(ctx, c.who)),
     h('div', { class: 'btnrow' }, h('a', { class: 'btn btn-primary', href: c.official_url, target: '_blank', rel: 'noopener' }, tk(ctx, B, 'openPmi'), ' ', icon('external')),
       center, routes[0] ? linkBtn(`#/learning-path?route=${routes[0].id}`, tk(ctx, B, 'followRoute')) : null, linkBtn('#' + B.base, tk(ctx, B, 'explorerTitle'))));
-  const exam = () => h('div', null, facts([[tk(ctx, B, 'col.questions'), i18n.number(c.exam.questions) + (c.exam.scored ? ' ' + tk(ctx, B, 'scored', { n: i18n.number(c.exam.scored) }) : '')],
+  const exam = () => B.rows ? h('div', null, facts((c.exam.rows || []).map(r => [L(ctx, r.label), L(ctx, r.value)])), c.exam.note ? h('p', { class: 'note' }, L(ctx, c.exam.note)) : null) : h('div', null, facts([[tk(ctx, B, 'col.questions'), i18n.number(c.exam.questions) + (c.exam.scored ? ' ' + tk(ctx, B, 'scored', { n: i18n.number(c.exam.scored) }) : '')],
     [tk(ctx, B, 'col.minutes'), t('p7.minutes', { n: i18n.number(c.exam.minutes) })]]), c.exam.note ? h('p', { class: 'note' }, L(ctx, c.exam.note)) : null,
   c.languages ? h('p', { class: 'note' }, icon('globe'), ' ', L(ctx, c.languages)) : null);
   const feeRows = () => [[tk(ctx, B, 'member'), `${c.fee.currency} ${i18n.number(c.fee.member)}`], [tk(ctx, B, 'nonMember'), `${c.fee.currency} ${i18n.number(c.fee.non_member)}`],
     c.fee.retake ? [tk(ctx, B, 'retake'), `${c.fee.currency} ${i18n.number(c.fee.retake)}`] : null].filter(Boolean);
-  const renewal = () => h('p', null, c.renewal.lifetime ? tk(ctx, B, 'lifetimeText') : tk(ctx, B, 'renewalText', { n: i18n.number(renewalUnits(c.renewal)), y: i18n.number(c.renewal.years) }), ' ', h('span', { class: 'note' }, tk(ctx, B, 'noPdus')));
+  const renewal = () => B.rows ? h('p', null, tk(ctx, B, 'renewalText', { n: i18n.number(c.renewal.validity_years) }), ' ', h('span', { class: 'note' }, tk(ctx, B, 'noPdus'))) : h('p', null, c.renewal.lifetime ? tk(ctx, B, 'lifetimeText') : tk(ctx, B, 'renewalText', { n: i18n.number(renewalUnits(c.renewal)), y: i18n.number(c.renewal.years) }), ' ', h('span', { class: 'note' }, tk(ctx, B, 'noPdus')));
   return h('article', { class: 'cert', dataset: { cert: c.id, body: c.body || 'PMI' } },
     previewBanner(ctx, [c]), hero,
     h('p', { class: 'banner banner-warn', role: 'note', dataset: { claims: 'true' } }, icon('shield'), ' ', L(ctx, c.claims)),
@@ -285,11 +298,13 @@ function certPage(ctx, c, content, learner) {
       factBlock(ctx, c, 'exam', tk(ctx, B, 'exam'), 'question', exam),
       factBlock(ctx, c, 'fee', tk(ctx, B, 'fee'), 'coins', () => h('div', null, facts(feeRows()), c.fee.note ? h('p', { class: 'note' }, L(ctx, c.fee.note)) : null)),
       factBlock(ctx, c, 'renewal', tk(ctx, B, 'renewal'), 'refresh', renewal)),
-    factBlock(ctx, c, 'domains', tk(ctx, B, 'domains'), 'chart', () => h('div', null, domainBars(ctx, c), h('p', { class: 'note' }, tk(ctx, B, 'domainsNote')))),
+    factBlock(ctx, c, 'domains', tk(ctx, B, 'domains'), 'chart', () => h('div', null, c.domain_unit === 'names'
+      ? h('ol', { class: 'name-list' }, c.domains.map(d => h('li', { dataset: d.group ? { group: d.group } : null }, L(ctx, d.name), d.group ? h('span', { class: 'note' }, ' · ', tk(ctx, B, 'group.' + d.group)) : null)))
+      : domainBars(ctx, c), h('p', { class: 'note' }, tk(ctx, B, 'domainsNote')))),
     c.extra?.length ? section('cert-extra', tk(ctx, B, 'alsoKnow'), h('ul', null, c.extra.map(x => h('li', null, L(ctx, x))))) : null,
     section('cert-prep', tk(ctx, B, 'howToPrepare'), h('ol', { class: 'howto-steps big' }, c.prepare.map(p => h('li', null, h('h3', null, icon('bulb'), ' ', L(ctx, p.title)), h('p', null, L(ctx, p.text)))))),
     studyPlan(ctx, c, content),
-    showsFacts(certFactState(c).domains) && c.domains.length ? section('cert-hours', tk(ctx, B, 'plannerTitle'), h('p', { class: 'note' }, tk(ctx, B, 'plannerNote')), hoursPlanner(ctx, c)) : null,
+    showsFacts(certFactState(c).domains) && c.domains.length && c.domain_unit !== 'names' ? section('cert-hours', tk(ctx, B, 'plannerTitle'), h('p', { class: 'note' }, tk(ctx, B, 'plannerNote')), hoursPlanner(ctx, c)) : null,
     routes.length ? section('cert-routes', tk(ctx, B, 'routes'), h('div', { class: 'cards' }, routes.map(p => routeCard(ctx, p, content, learner)))) : null,
     courses.length ? section('cert-courses', tk(ctx, B, 'ciaCourses'), h('p', { class: 'note' }, tk(ctx, B, 'ciaCoursesNote')), h('div', { class: 'cards' }, courses.map(cc => courseCard(ctx, cc, learner)))) : null,
     comps.length ? section('cert-comps', t('p7.course.competencies'), h('ul', { class: 'chips' }, comps.map(x => h('li', null, h('a', { href: '#/competencies' }, x.id, ' ', L(ctx, x.name)))))) : null,

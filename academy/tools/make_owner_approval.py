@@ -4,7 +4,7 @@ AI-assisted pre-review cleared. It records exactly what happened: the platform o
 after the pre-review; it is not an independent expert review.
 
   python3 tools/pre_review.py                                   # findings + candidates
-  python3 tools/make_owner_approval.py "<owner name>" YYYY-MM-DD [--dir PRE_REVIEW_DIR] [--out FILE]   (default dir: deliverables/phase-09/review)
+  python3 tools/make_owner_approval.py "<owner name>" YYYY-MM-DD [--dir PRE_REVIEW_DIR] [--out FILE]   (default dir: deliverables/phase-10/review)
   python3 tools/apply_review_decisions.py FILE                  # dry run, then --apply
 
 Only candidates (no unresolved blocking finding) are included; future-phase records are never included.
@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CLOSURE = Path(sys.argv[sys.argv.index("--dir") + 1]) if "--dir" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-09" / "review"
+CLOSURE = Path(sys.argv[sys.argv.index("--dir") + 1]) if "--dir" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-10" / "review"
 if len(sys.argv) < 3:
     print(__doc__)
     sys.exit(2)

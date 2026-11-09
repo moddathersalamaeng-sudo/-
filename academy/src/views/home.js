@@ -109,6 +109,7 @@ export function homeView(ctx) {
         card('#/academy/iso', 'iso', 'shield', t('nav.items.isoAcademy'), t('p8.home.isoBody'), t('p8.home.courses', { n: i18n.number(n(['iso'])) })),
         card('#/academy/pmi', 'pmi', 'briefcase', t('nav.items.pmiAcademy'), t('p8.home.pmiBody'), t('p8.home.courses', { n: i18n.number(n(['pmi', 'pmo', 'p3o'])) })),
         card('#/academy/quality', 'quality', 'award', t('nav.items.qualityAcademy'), t('p9.home.qualityBody'), t('p8.home.courses', { n: i18n.number(content.courses.filter(c => c.ecosystem === 'quality' && !c.guide).length) })),
+        card('#/academy/excellence', 'excellence', 'star', t('nav.items.excellenceAcademy'), t('p10.home.excellenceBody'), t('p8.home.courses', { n: i18n.number(content.courses.filter(c => c.ecosystem === 'efqm' && !c.guide).length) })),
         card('#/guides', 'method', 'ladder', t('gd.title'), t('p8.home.guidesBody'), t('p8.home.guides', { n: i18n.number((content.guides || []).length) })));
     } }));
 

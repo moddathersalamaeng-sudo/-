@@ -464,6 +464,62 @@
         "approval_basis": "owner_approval_after_ai_prereview",
         "approved_hash": "6a2b1db8a14064884ec44d85c6b577d831996c345e21088a4be2af2a42e7c9cb"
       }
+    },
+    {
+      "type": "target_role",
+      "id": "ROLE-OEL",
+      "name": {
+        "en": "Organisational Excellence Lead",
+        "ar": "قائد التميز المؤسسي"
+      },
+      "description": {
+        "en": "Leads the organisation's excellence and self-assessment cycle: facilitates assessments, turns findings into owned priorities, prepares for external recognition and embeds improvement in the management cycle.",
+        "ar": "يقود دورة التميز والتقييم الذاتي في المنظمة: ييسّر التقييمات، ويحوّل الملاحظات إلى أولويات مملوكة، ويستعد للاعتراف الخارجي، ويدمج التحسين في الدورة الإدارية."
+      },
+      "targets": {
+        "QM-01": 2,
+        "QM-02": 0,
+        "QM-03": 2,
+        "QM-04": 0,
+        "ISO-01": 1,
+        "ISO-02": 0,
+        "ISO-03": 0,
+        "AUD-01": 0,
+        "AUD-02": 0,
+        "AUD-03": 0,
+        "PM-01": 0,
+        "PM-02": 0,
+        "PM-03": 0,
+        "RSK-01": 1,
+        "RSK-02": 0,
+        "PMO-01": 0,
+        "PMO-02": 0,
+        "OE-01": 4,
+        "OE-02": 4,
+        "LDR-01": 3,
+        "LDR-02": 3,
+        "GOV-01": 2,
+        "GOV-02": 0,
+        "CMP-01": 0,
+        "CMP-02": 0,
+        "BC-01": 0,
+        "BC-02": 0,
+        "ISA-01": 0,
+        "ISA-02": 0,
+        "PERF-01": 3,
+        "PERF-02": 3
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "0ea74fd97648d102f80f349af467f25b3d3c40e0093bfd498ef50468ee708b24"
+      }
     }
   ]
 }

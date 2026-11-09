@@ -6822,6 +6822,2011 @@
         "approval_basis": "owner_approval_after_ai_prereview",
         "approved_hash": "9b2836f9785566fcf299c59b4ee82dd81e3901098b4dc55c9d22dde8e2078219"
       }
+    },
+    {
+      "id": "FIG-EX-LENS",
+      "template": "table",
+      "caption": {
+        "en": "Three lenses: compliance, a standard and an excellence model",
+        "ar": "ثلاث عدسات: الامتثال والمعيار ونموذج التميز"
+      },
+      "read": {
+        "en": "Read each row across. Compliance and a standard ask whether requirements are met; an excellence model asks how good the whole organisation is and whether it is improving. They work together.",
+        "ar": "اقرأ كل صف أفقيًا. يسأل الامتثال والمعيار هل المتطلبات مستوفاة؛ ويسأل نموذج التميز ما مدى جودة المنظمة كلها وهل تتحسن. وهي تعمل معًا."
+      },
+      "cols": [
+        {
+          "en": "Compliance",
+          "ar": "الامتثال"
+        },
+        {
+          "en": "Standard",
+          "ar": "المعيار"
+        },
+        {
+          "en": "Excellence",
+          "ar": "التميز"
+        }
+      ],
+      "rows": [
+        {
+          "t": {
+            "en": "Question",
+            "ar": "السؤال"
+          },
+          "cells": [
+            {
+              "en": "Rules met?",
+              "ar": "القواعد؟"
+            },
+            {
+              "en": "Requirements?",
+              "ar": "المتطلبات؟"
+            },
+            {
+              "en": "How good?",
+              "ar": "ما الجودة؟"
+            }
+          ]
+        },
+        {
+          "t": {
+            "en": "Nature",
+            "ar": "الطبيعة"
+          },
+          "cells": [
+            {
+              "en": "Mandatory",
+              "ar": "إلزامي"
+            },
+            {
+              "en": "Certifiable",
+              "ar": "قابل للمنح"
+            },
+            {
+              "en": "Framework",
+              "ar": "إطار"
+            }
+          ]
+        },
+        {
+          "t": {
+            "en": "Scope",
+            "ar": "النطاق"
+          },
+          "cells": [
+            {
+              "en": "Legal duties",
+              "ar": "الواجبات"
+            },
+            {
+              "en": "One system",
+              "ar": "نظام واحد"
+            },
+            {
+              "en": "Whole body",
+              "ar": "المنظمة كلها"
+            }
+          ]
+        },
+        {
+          "t": {
+            "en": "Output",
+            "ar": "المُخرَج"
+          },
+          "cells": [
+            {
+              "en": "Pass / fail",
+              "ar": "نجاح / إخفاق"
+            },
+            {
+              "en": "Certificate",
+              "ar": "شهادة"
+            },
+            {
+              "en": "Priorities",
+              "ar": "أولويات"
+            }
+          ]
+        }
+      ],
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "9f9a71835cdd00be5c9150488ed944528c9323c39eed3d90bb0faf9fec855d88"
+      }
+    },
+    {
+      "id": "FIG-EX-STAKE",
+      "template": "hub",
+      "caption": {
+        "en": "Purpose at the centre, stakeholders around it",
+        "ar": "الغاية في المركز وأصحاب المصلحة حولها"
+      },
+      "read": {
+        "en": "Each box is a stakeholder group. For each, leaders should be able to state the promise, the measure that shows it is kept, and the action where it is not.",
+        "ar": "كل مربع فئة من أصحاب المصلحة. ولكلٍّ منها ينبغي أن يستطيع القادة ذكر الوعد، والمقياس الذي يُظهر الوفاء به، والإجراء حيث لا يُوفى به."
+      },
+      "center": {
+        "en": "Purpose",
+        "ar": "الغاية"
+      },
+      "spokes": [
+        {
+          "en": "Customers",
+          "ar": "العملاء"
+        },
+        {
+          "en": "People",
+          "ar": "الموظفون"
+        },
+        {
+          "en": "Owners / funders",
+          "ar": "الملاك / الممولون"
+        },
+        {
+          "en": "Partners & suppliers",
+          "ar": "الشركاء والموردون"
+        },
+        {
+          "en": "Society",
+          "ar": "المجتمع"
+        },
+        {
+          "en": "Regulators",
+          "ar": "الجهات التنظيمية"
+        }
+      ],
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "a5b61bad81c8fbe33646dd62f9b670698548ddfab4fbbffed356cdc19c1ba1a6"
+      }
+    },
+    {
+      "id": "FIG-EX-DER",
+      "template": "flow",
+      "caption": {
+        "en": "The chain: Direction, Execution, Results",
+        "ar": "السلسلة: التوجه والتنفيذ والنتائج"
+      },
+      "read": {
+        "en": "Read left to right, then follow the dashed arrow back: results tell leaders whether to keep, change or stop what they do. A gap anywhere breaks the chain.",
+        "ar": "اقرأ من البداية إلى النهاية، ثم اتبع السهم المتقطع عائدًا: تخبر النتائج القادة هل يستمرون فيما يفعلون أو يغيّرونه أو يوقفونه. وأي فجوة في أي موضع تكسر السلسلة."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Direction",
+            "ar": "التوجه"
+          },
+          "d": {
+            "en": "Why, where to, culture",
+            "ar": "لماذا وإلى أين والثقافة"
+          },
+          "tag": {
+            "en": "1",
+            "ar": "1"
+          }
+        },
+        {
+          "t": {
+            "en": "Execution",
+            "ar": "التنفيذ"
+          },
+          "d": {
+            "en": "Stakeholders, value, change",
+            "ar": "أصحاب المصلحة والقيمة والتغيير"
+          },
+          "tag": {
+            "en": "2",
+            "ar": "2"
+          }
+        },
+        {
+          "t": {
+            "en": "Results",
+            "ar": "النتائج"
+          },
+          "d": {
+            "en": "Perceptions, performance",
+            "ar": "التصورات والأداء"
+          },
+          "tag": {
+            "en": "3",
+            "ar": "3"
+          }
+        }
+      ],
+      "highlight": 2,
+      "loop": true,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "65864707d5ad25a832a90291c27874ebfb4e6c2e19364f1cafe77ed2db6d4129"
+      }
+    },
+    {
+      "id": "FIG-EX-MODEL",
+      "template": "tree",
+      "caption": {
+        "en": "The seven criteria of the EFQM Model 2025 (shortened names)",
+        "ar": "المعايير السبعة لنموذج EFQM 2025 (أسماء مختصرة)"
+      },
+      "read": {
+        "en": "Two criteria set the direction, three describe execution and two show results. The names are EFQM's, shortened to fit (the full names are in the lesson and the recognition explorer); how each criterion is defined is in EFQM's own publication.",
+        "ar": "معياران يحددان التوجه، وثلاثة تصف التنفيذ، واثنان يُظهران النتائج. والأسماء من EFQM مختصرةً لتتسع (الأسماء الكاملة في الدرس وفي مستكشف الاعتراف)؛ وتعريف كل معيار في إصدار EFQM نفسه."
+      },
+      "root": {
+        "en": "EFQM Model 2025",
+        "ar": "نموذج EFQM 2025"
+      },
+      "children": [
+        {
+          "t": {
+            "en": "Direction",
+            "ar": "التوجه"
+          },
+          "children": [
+            {
+              "en": "1 Purpose, Vision & Strategy",
+              "ar": "1 الغاية والرؤية والاستراتيجية"
+            },
+            {
+              "en": "2 Culture & Leadership",
+              "ar": "2 الثقافة والقيادة"
+            }
+          ]
+        },
+        {
+          "t": {
+            "en": "Execution",
+            "ar": "التنفيذ"
+          },
+          "children": [
+            {
+              "en": "3 Engaging Stakeholders",
+              "ar": "3 إشراك أصحاب المصلحة"
+            },
+            {
+              "en": "4 Sustainable Value",
+              "ar": "4 القيمة المستدامة"
+            },
+            {
+              "en": "5 Performance & Transformation",
+              "ar": "5 الأداء والتحول"
+            }
+          ]
+        },
+        {
+          "t": {
+            "en": "Results",
+            "ar": "النتائج"
+          },
+          "children": [
+            {
+              "en": "6 Stakeholder Perceptions",
+              "ar": "6 تصورات أصحاب المصلحة"
+            },
+            {
+              "en": "7 Strategic & Operational",
+              "ar": "7 الاستراتيجي والتشغيلي"
+            }
+          ]
+        }
+      ],
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "03744d6274fa8da0ddb378f282ffa823d473068841348ae7876bbf849c010fff"
+      }
+    },
+    {
+      "id": "FIG-EX-RADAR",
+      "template": "cycle",
+      "caption": {
+        "en": "The RADAR loop, starting from the results you need",
+        "ar": "حلقة RADAR بدءًا من النتائج التي تحتاجها"
+      },
+      "read": {
+        "en": "Start at the top with required results, then move round: approaches are designed to deliver them, deployed where needed, then assessed and refined — which updates the results you aim for.",
+        "ar": "ابدأ من الأعلى بالنتائج المطلوبة، ثم تقدّم في الدائرة: تُصمم الأساليب لتحقيقها، وتُطبق حيث تلزم، ثم تُقيَّم وتُحسَّن — فتتحدث النتائج التي تستهدفها."
+      },
+      "center": {
+        "en": "RADAR",
+        "ar": "RADAR"
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Results",
+            "ar": "النتائج"
+          },
+          "d": {
+            "en": "Required, linked to strategy",
+            "ar": "مطلوبة ومرتبطة بالاستراتيجية"
+          }
+        },
+        {
+          "t": {
+            "en": "Approaches",
+            "ar": "الأساليب"
+          },
+          "d": {
+            "en": "Planned and developed",
+            "ar": "مخططة ومطوَّرة"
+          }
+        },
+        {
+          "t": {
+            "en": "Deployment",
+            "ar": "التطبيق"
+          },
+          "d": {
+            "en": "Systematic, where needed",
+            "ar": "منهجي حيث يلزم"
+          }
+        },
+        {
+          "t": {
+            "en": "Assess & refine",
+            "ar": "التقييم والتحسين"
+          },
+          "d": {
+            "en": "Measure, learn, improve",
+            "ar": "قِس وتعلّم وحسّن"
+          }
+        }
+      ],
+      "highlight": 0,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "a0174f3373889505bfdec23bb2670a473b3d774d4b9d9267dadb5fb224f7a7f2"
+      }
+    },
+    {
+      "id": "FIG-EX-APPROACH",
+      "template": "triad",
+      "caption": {
+        "en": "Three tests of an approach",
+        "ar": "ثلاثة اختبارات للأسلوب"
+      },
+      "read": {
+        "en": "A sound approach passes all three: a clear rationale focused on results, a design people can follow, and links to strategy and other approaches.",
+        "ar": "الأسلوب السليم يجتاز الثلاثة: مبرر واضح يركز على النتائج، وتصميم يستطيع الناس اتباعه، وصلات بالاستراتيجية والأساليب الأخرى."
+      },
+      "corners": [
+        {
+          "en": "Rationale",
+          "ar": "المبرر"
+        },
+        {
+          "en": "Design",
+          "ar": "التصميم"
+        },
+        {
+          "en": "Integration",
+          "ar": "التكامل"
+        }
+      ],
+      "center": {
+        "en": "Sound approach",
+        "ar": "أسلوب سليم"
+      },
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "5eb07490a546b1592d1833e897a1e780272b1b4a6011c36d170634b1620ee4f4"
+      }
+    },
+    {
+      "id": "FIG-EX-DEPLOY",
+      "template": "matrix",
+      "caption": {
+        "en": "A deployment matrix: approaches by unit",
+        "ar": "مصفوفة التطبيق: الأساليب حسب الوحدة"
+      },
+      "read": {
+        "en": "Each row is an approach and each column a unit. Ask for evidence in every cell, not one showcase; empty cells become interview questions. Example values are illustrative.",
+        "ar": "كل صف أسلوب وكل عمود وحدة. اطلب دليلًا في كل خلية لا نموذجًا استعراضيًا واحدًا؛ والخلايا الفارغة تصبح أسئلة مقابلة. والقيم توضيحية."
+      },
+      "rows": 3,
+      "cols": 3,
+      "cells": [
+        [
+          {
+            "en": "Full",
+            "ar": "كامل"
+          },
+          {
+            "en": "Full",
+            "ar": "كامل"
+          },
+          {
+            "en": "Partial",
+            "ar": "جزئي"
+          }
+        ],
+        [
+          {
+            "en": "Full",
+            "ar": "كامل"
+          },
+          {
+            "en": "Not shown",
+            "ar": "لم يُعرض"
+          },
+          {
+            "en": "Partial",
+            "ar": "جزئي"
+          }
+        ],
+        [
+          {
+            "en": "Partial",
+            "ar": "جزئي"
+          },
+          {
+            "en": "Partial",
+            "ar": "جزئي"
+          },
+          {
+            "en": "Not yet",
+            "ar": "لم يبدأ"
+          }
+        ]
+      ],
+      "highlight": [
+        [
+          1,
+          1
+        ]
+      ],
+      "yLabel": {
+        "en": "Approaches",
+        "ar": "الأساليب"
+      },
+      "xLabel": {
+        "en": "Units: head office · region A · region B",
+        "ar": "الوحدات: المقر · المنطقة أ · المنطقة ب"
+      },
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "a9a8836d88187c3ec141618fc2aa77d4048a03c5bf26b10385e99742008a33bd"
+      }
+    },
+    {
+      "id": "FIG-EX-RESULTS",
+      "template": "scurve",
+      "caption": {
+        "en": "A strong result: trend, target and comparison",
+        "ar": "نتيجة قوية: اتجاه ومستهدف ومقارنة"
+      },
+      "read": {
+        "en": "Follow the result line across four years and compare it with the target and a peer. Strong results improve, mostly meet targets, compare well and have an explained cause (the marked change). Values are illustrative.",
+        "ar": "تتبّع خط النتيجة عبر أربع سنوات وقارنه بالمستهدف وبنظير. فالنتائج القوية تتحسن، وتحقق المستهدفات غالبًا، وتُقارن جيدًا، ولها سبب مفسَّر (التغيير المعلَّم). والقيم توضيحية."
+      },
+      "series": [
+        {
+          "t": {
+            "en": "Result",
+            "ar": "النتيجة"
+          },
+          "values": [
+            71,
+            74,
+            79,
+            84
+          ]
+        },
+        {
+          "t": {
+            "en": "Target",
+            "ar": "المستهدف"
+          },
+          "values": [
+            72,
+            75,
+            78,
+            82
+          ]
+        },
+        {
+          "t": {
+            "en": "Peer",
+            "ar": "النظير"
+          },
+          "values": [
+            73,
+            74,
+            75,
+            77
+          ]
+        }
+      ],
+      "now": 1,
+      "nowLabel": {
+        "en": "New process",
+        "ar": "عملية جديدة"
+      },
+      "yLabel": {
+        "en": "Satisfaction %",
+        "ar": "الرضا %"
+      },
+      "xLabel": {
+        "en": "Years 1–4",
+        "ar": "السنوات 1–4"
+      },
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e1ce216aea92915909034d1b65cbaed485028c0a7757c59227402401684796c3"
+      }
+    },
+    {
+      "id": "FIG-EX-LADDER",
+      "template": "ladder",
+      "caption": {
+        "en": "The evidence ladder",
+        "ar": "سلّم الأدلة"
+      },
+      "read": {
+        "en": "Read from the bottom up. Each rung is stronger evidence than the one below; good assessors climb with follow-up questions instead of stopping at a document.",
+        "ar": "اقرأ من الأسفل إلى الأعلى. كل درجة دليل أقوى من التي تحتها؛ والمقيّم الجيد يصعد بأسئلة المتابعة بدل التوقف عند وثيقة."
+      },
+      "levels": [
+        {
+          "t": {
+            "en": "Sustained, linked results",
+            "ar": "نتائج مستدامة مرتبطة"
+          },
+          "d": {
+            "en": "Trend + cause",
+            "ar": "اتجاه + سبب"
+          }
+        },
+        {
+          "t": {
+            "en": "Systematic and measured",
+            "ar": "منهجي ومقاس"
+          },
+          "d": {
+            "en": "Across the scope",
+            "ar": "عبر النطاق"
+          }
+        },
+        {
+          "t": {
+            "en": "Records in some places",
+            "ar": "سجلات في بعض المواضع"
+          },
+          "d": {
+            "en": "Partial practice",
+            "ar": "ممارسة جزئية"
+          }
+        },
+        {
+          "t": {
+            "en": "Document",
+            "ar": "وثيقة"
+          },
+          "d": {
+            "en": "It should be done",
+            "ar": "ينبغي أن يُفعل"
+          }
+        },
+        {
+          "t": {
+            "en": "Assertion",
+            "ar": "ادعاء"
+          },
+          "d": {
+            "en": "“We do this”",
+            "ar": "«نحن نفعل هذا»"
+          }
+        }
+      ],
+      "highlight": 0,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "8ecb6767faca31c5d62ad43bfa9d6a987d474af85974fe8803235ab2e7285414"
+      }
+    },
+    {
+      "id": "FIG-EX-MATURITY",
+      "template": "ladder",
+      "caption": {
+        "en": "Five maturity stages (CIA scale, not an EFQM score)",
+        "ar": "مراحل النضج الخمس (مقياس CIA، وليس درجة EFQM)"
+      },
+      "read": {
+        "en": "Read from the bottom up. Place an approach by its weakest essential element; the next rung up is your next improvement step.",
+        "ar": "اقرأ من الأسفل إلى الأعلى. ضع الأسلوب في المرحلة بحسب أضعف عنصر جوهري فيه؛ والدرجة التالية هي خطوة التحسين التالية."
+      },
+      "levels": [
+        {
+          "t": {
+            "en": "5 Leading",
+            "ar": "5 رائد"
+          },
+          "d": {
+            "en": "Others learn from it",
+            "ar": "يتعلم منه الآخرون"
+          }
+        },
+        {
+          "t": {
+            "en": "4 Measured & refined",
+            "ar": "4 مقاس ومحسَّن"
+          },
+          "d": {
+            "en": "Improved for reasons",
+            "ar": "يُحسَّن لأسباب"
+          }
+        },
+        {
+          "t": {
+            "en": "3 Deployed",
+            "ar": "3 مطبق"
+          },
+          "d": {
+            "en": "Across the scope",
+            "ar": "عبر النطاق"
+          }
+        },
+        {
+          "t": {
+            "en": "2 Defined",
+            "ar": "2 معرَّف"
+          },
+          "d": {
+            "en": "Designed, owned",
+            "ar": "مصمم ومملوك"
+          }
+        },
+        {
+          "t": {
+            "en": "1 Reactive",
+            "ar": "1 تفاعلي"
+          },
+          "d": {
+            "en": "When pushed",
+            "ar": "حين يُدفع"
+          }
+        }
+      ],
+      "highlight": 2,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "891b3d764a868892a47e26706d56a22ad1e5cc1605d5084c6ace9ebb2af497be"
+      }
+    },
+    {
+      "id": "FIG-EX-STRENGTH",
+      "template": "flow",
+      "caption": {
+        "en": "The four parts of a well-written strength",
+        "ar": "الأجزاء الأربعة لنقطة قوة مكتوبة جيدًا"
+      },
+      "read": {
+        "en": "A strength names what is done, where and since when, how it is reviewed, and the evidence of effect. Missing parts turn it into a compliment.",
+        "ar": "تسمّي نقطة القوة ما يُفعل، وأين ومنذ متى، وكيف يُراجع، ودليل الأثر. والأجزاء الناقصة تحولها إلى مجاملة."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Approach",
+            "ar": "الأسلوب"
+          },
+          "d": {
+            "en": "What is done",
+            "ar": "ماذا يُفعل"
+          }
+        },
+        {
+          "t": {
+            "en": "Deployment",
+            "ar": "التطبيق"
+          },
+          "d": {
+            "en": "Where, since when",
+            "ar": "أين ومنذ متى"
+          }
+        },
+        {
+          "t": {
+            "en": "Review",
+            "ar": "المراجعة"
+          },
+          "d": {
+            "en": "How it improves",
+            "ar": "كيف يتحسن"
+          }
+        },
+        {
+          "t": {
+            "en": "Effect",
+            "ar": "الأثر"
+          },
+          "d": {
+            "en": "Evidence of results",
+            "ar": "دليل النتائج"
+          }
+        }
+      ],
+      "highlight": 3,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "6c7cd5fa897a35795730126757af952e3fc66f2b1461965534684f525313898a"
+      }
+    },
+    {
+      "id": "FIG-EX-AFI",
+      "template": "tiles",
+      "caption": {
+        "en": "Four qualities of a useful area for improvement",
+        "ar": "أربع صفات لمجال تحسين مفيد"
+      },
+      "read": {
+        "en": "Check each AFI against the four tiles. If one is missing — for example it prescribes a solution — rewrite it before the report.",
+        "ar": "افحص كل مجال تحسين مقابل المربعات الأربعة. وإن نقصت صفة — مثل أن يفرض حلًا — فأعد كتابته قبل التقرير."
+      },
+      "items": [
+        {
+          "icon": "target",
+          "t": {
+            "en": "Specific: what gap",
+            "ar": "محدد: أي فجوة"
+          }
+        },
+        {
+          "icon": "map",
+          "t": {
+            "en": "Located: where",
+            "ar": "مُحدَّد الموضع: أين"
+          }
+        },
+        {
+          "icon": "alert",
+          "t": {
+            "en": "Consequential: why it matters",
+            "ar": "مبيّن الأثر: لماذا يهم"
+          }
+        },
+        {
+          "icon": "puzzle",
+          "t": {
+            "en": "Open: owners decide how",
+            "ar": "مفتوح: المالكون يقررون الحل"
+          }
+        }
+      ],
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "84936870886e7adc94bab20805b754183bd424908219a1ca0d2f73ce59e60b34"
+      }
+    },
+    {
+      "id": "FIG-EX-SAMODES",
+      "template": "spectrum",
+      "caption": {
+        "en": "Self-assessment approaches from light to rigorous",
+        "ar": "أساليب التقييم الذاتي من الخفيف إلى الصارم"
+      },
+      "read": {
+        "en": "Moving right adds evidence and rigour but also cost. Most organisations start on the left and move one step right each cycle.",
+        "ar": "التحرك يمينًا يضيف الأدلة والصرامة لكنه يضيف التكلفة أيضًا. وتبدأ معظم المنظمات من اليسار وتتقدم خطوة في كل دورة."
+      },
+      "from": {
+        "en": "Light, quick",
+        "ar": "خفيف وسريع"
+      },
+      "to": {
+        "en": "Rigorous, costly",
+        "ar": "صارم ومكلف"
+      },
+      "marks": [
+        {
+          "t": {
+            "en": "Questionnaire",
+            "ar": "استبيان"
+          },
+          "d": {
+            "en": "Perceptions",
+            "ar": "تصورات"
+          }
+        },
+        {
+          "t": {
+            "en": "Workshop",
+            "ar": "ورشة"
+          },
+          "d": {
+            "en": "Leaders + data",
+            "ar": "القادة + البيانات"
+          }
+        },
+        {
+          "t": {
+            "en": "Pro-forma",
+            "ar": "نموذج معد"
+          },
+          "d": {
+            "en": "Page per criterion",
+            "ar": "صفحة لكل معيار"
+          }
+        },
+        {
+          "t": {
+            "en": "Simulation",
+            "ar": "محاكاة"
+          },
+          "d": {
+            "en": "Document + visit",
+            "ar": "وثيقة + زيارة"
+          }
+        }
+      ],
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "33756d01f7ab89a7d85d5e1b4224f170bd4a488adde88e6956faa18470dfd2cb"
+      }
+    },
+    {
+      "id": "FIG-EX-SAPLAN",
+      "template": "flow",
+      "caption": {
+        "en": "A self-assessment cycle in six steps",
+        "ar": "دورة التقييم الذاتي في ست خطوات"
+      },
+      "read": {
+        "en": "Read in order. The cycle ends with a leadership decision, not with the report; the decision feeds the improvement plan.",
+        "ar": "اقرأ بالترتيب. تنتهي الدورة بقرار قيادي لا بالتقرير؛ والقرار يغذي خطة التحسين."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Brief",
+            "ar": "الإحاطة"
+          },
+          "tag": {
+            "en": "1",
+            "ar": "1"
+          }
+        },
+        {
+          "t": {
+            "en": "Evidence",
+            "ar": "الأدلة"
+          },
+          "tag": {
+            "en": "2",
+            "ar": "2"
+          }
+        },
+        {
+          "t": {
+            "en": "Review",
+            "ar": "المراجعة"
+          },
+          "tag": {
+            "en": "3",
+            "ar": "3"
+          }
+        },
+        {
+          "t": {
+            "en": "Consensus",
+            "ar": "الإجماع"
+          },
+          "tag": {
+            "en": "4",
+            "ar": "4"
+          }
+        },
+        {
+          "t": {
+            "en": "Report",
+            "ar": "التقرير"
+          },
+          "tag": {
+            "en": "5",
+            "ar": "5"
+          }
+        },
+        {
+          "t": {
+            "en": "Decide",
+            "ar": "القرار"
+          },
+          "tag": {
+            "en": "6",
+            "ar": "6"
+          }
+        }
+      ],
+      "highlight": 5,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "5877a27de2d49f27cec1a0c2e3e5beda0b8cb640187759cd117817bf3f74316d"
+      }
+    },
+    {
+      "id": "FIG-EX-CONSENSUS",
+      "template": "funnel",
+      "caption": {
+        "en": "Consensus: facts first, ratings last",
+        "ar": "الإجماع: الوقائع أولًا والتقديرات أخيرًا"
+      },
+      "read": {
+        "en": "Read from the top. Individual reviews narrow to agreed facts, then agreed findings, and only then agreed ratings. Skipping a layer turns consensus into negotiation.",
+        "ar": "اقرأ من الأعلى. تضيق المراجعات الفردية إلى وقائع متفق عليها، ثم ملاحظات متفق عليها، وعندها فقط تقديرات متفق عليها. وتخطي طبقة يحوّل الإجماع إلى مساومة."
+      },
+      "stages": [
+        {
+          "en": "Individual reviews",
+          "ar": "المراجعات الفردية"
+        },
+        {
+          "en": "Agreed facts (evidence)",
+          "ar": "وقائع متفق عليها (الأدلة)"
+        },
+        {
+          "en": "Agreed findings",
+          "ar": "ملاحظات متفق عليها"
+        },
+        {
+          "en": "Agreed ratings",
+          "ar": "تقديرات متفق عليها"
+        }
+      ],
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "86b6b93a75f0aaaa5504a86f6323ec95bc6ddea2addc153036d4f59b6cc1acc6"
+      }
+    },
+    {
+      "id": "FIG-EX-REPORT",
+      "template": "tiles",
+      "caption": {
+        "en": "What a short self-assessment report contains",
+        "ar": "محتوى تقرير التقييم الذاتي القصير"
+      },
+      "read": {
+        "en": "Five parts, ending with recommended priorities. Self-ratings are labelled as internal and indicative — not an official score.",
+        "ar": "خمسة أجزاء، تنتهي بالأولويات الموصى بها. وتُوسم التقديرات الذاتية بأنها داخلية واسترشادية — وليست درجة رسمية."
+      },
+      "items": [
+        {
+          "icon": "chart",
+          "t": {
+            "en": "Profile",
+            "ar": "الملف"
+          }
+        },
+        {
+          "icon": "star",
+          "t": {
+            "en": "Strengths",
+            "ar": "نقاط القوة"
+          }
+        },
+        {
+          "icon": "layers",
+          "t": {
+            "en": "AFI themes",
+            "ar": "محاور التحسين"
+          }
+        },
+        {
+          "icon": "gauge",
+          "t": {
+            "en": "Self-ratings (internal)",
+            "ar": "تقديرات ذاتية (داخلية)"
+          }
+        },
+        {
+          "icon": "flag",
+          "t": {
+            "en": "Priorities",
+            "ar": "الأولويات"
+          }
+        }
+      ],
+      "highlight": 4,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "38af57f6578c65c04078f73efa6d159c83dc3e2792d55b720a2e15e1aa1dd5d7"
+      }
+    },
+    {
+      "id": "FIG-EX-CLUSTER",
+      "template": "funnel",
+      "caption": {
+        "en": "From many findings to a few priorities",
+        "ar": "من ملاحظات كثيرة إلى أولويات قليلة"
+      },
+      "read": {
+        "en": "Read from the top: dozens of areas for improvement cluster into a handful of themes with causes, and only a few become funded priorities. Numbers are from the lesson example.",
+        "ar": "اقرأ من الأعلى: عشرات من مجالات التحسين تتجمع في محاور قليلة بأسبابها، ولا يصبح إلا القليل منها أولويات ممولة. والأرقام من مثال الدرس."
+      },
+      "stages": [
+        {
+          "en": "52 areas for improvement",
+          "ar": "52 مجالًا للتحسين"
+        },
+        {
+          "en": "7 themes with causes",
+          "ar": "7 محاور بأسبابها"
+        },
+        {
+          "en": "3 priorities, owned and funded",
+          "ar": "3 أولويات مملوكة وممولة"
+        }
+      ],
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "8ce3475131ef29b8f0ea37ac5f5cbc1e333f56a4e826743e73430ad86449ab34"
+      }
+    },
+    {
+      "id": "FIG-EX-PRIORITY",
+      "template": "matrix",
+      "caption": {
+        "en": "The impact–ease prioritisation matrix",
+        "ar": "مصفوفة ترتيب الأولويات حسب الأثر والسهولة"
+      },
+      "read": {
+        "en": "Place each theme by impact (up) and ease (across). Top right: quick wins; top left: major projects to plan and resource; bottom right: fill-ins; bottom left: reconsider.",
+        "ar": "ضع كل محور بحسب الأثر (إلى الأعلى) والسهولة (أفقيًا، من الأصعب يمينًا إلى الأسهل يسارًا). أعلى اليسار: مكاسب سريعة؛ وأعلى اليمين: مشاريع كبيرة تُخطط ويُوفَّر لها الموارد؛ وأسفل اليسار: مهام مكمّلة؛ وأسفل اليمين: أعد النظر."
+      },
+      "rows": 2,
+      "cols": 2,
+      "cells": [
+        [
+          {
+            "en": "Major projects",
+            "ar": "مشاريع كبيرة"
+          },
+          {
+            "en": "Quick wins",
+            "ar": "مكاسب سريعة"
+          }
+        ],
+        [
+          {
+            "en": "Reconsider",
+            "ar": "أعد النظر"
+          },
+          {
+            "en": "Fill-ins",
+            "ar": "مهام مكمّلة"
+          }
+        ]
+      ],
+      "highlight": [
+        [
+          0,
+          1
+        ]
+      ],
+      "yLabel": {
+        "en": "Impact",
+        "ar": "الأثر"
+      },
+      "xLabel": {
+        "en": "Ease (harder → easier)",
+        "ar": "السهولة (أصعب ← أسهل)"
+      },
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "52e439c79c0582f3071b825ef744444042580fa6868af9b651eaccb2884a52a2"
+      }
+    },
+    {
+      "id": "FIG-EX-CHARTER",
+      "template": "hub",
+      "caption": {
+        "en": "A one-page improvement charter",
+        "ar": "ميثاق تحسين من صفحة واحدة"
+      },
+      "read": {
+        "en": "Every priority needs all six parts. Without a baseline and target nobody can show it worked; without a named owner it drifts.",
+        "ar": "كل أولوية تحتاج الأجزاء الستة. فدون خط أساس ومستهدف لا يستطيع أحد إثبات نجاحها؛ ودون مالك مسمّى تنجرف."
+      },
+      "center": {
+        "en": "Charter",
+        "ar": "الميثاق"
+      },
+      "spokes": [
+        {
+          "en": "Problem & evidence",
+          "ar": "المشكلة والدليل"
+        },
+        {
+          "en": "Objective",
+          "ar": "الهدف"
+        },
+        {
+          "en": "Baseline → target",
+          "ar": "خط الأساس ← المستهدف"
+        },
+        {
+          "en": "Owner & sponsor",
+          "ar": "المالك والراعي"
+        },
+        {
+          "en": "Scope & method",
+          "ar": "النطاق والمنهجية"
+        },
+        {
+          "en": "Milestones & risks",
+          "ar": "المعالم والمخاطر"
+        }
+      ],
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "37038bd444c0b6d6dee9b1c9aeb8e81d8d4c8c8db7d13681e7217100a9f4e010"
+      }
+    },
+    {
+      "id": "FIG-EX-ROADMAP",
+      "template": "flow",
+      "caption": {
+        "en": "A 12-month improvement roadmap",
+        "ar": "خارطة طريق تحسين لاثني عشر شهرًا"
+      },
+      "read": {
+        "en": "Quick wins land in the first quarter, major projects run across several quarters, and the re-assessment at the end feeds the next cycle (dashed arrow).",
+        "ar": "تقع المكاسب السريعة في الربع الأول، وتمتد المشاريع الكبيرة عبر أرباع عدة، وإعادة التقييم في النهاية تغذي الدورة التالية (السهم المتقطع)."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Quick wins",
+            "ar": "مكاسب سريعة"
+          },
+          "d": {
+            "en": "First 90 days",
+            "ar": "أول 90 يومًا"
+          },
+          "tag": {
+            "en": "Q1",
+            "ar": "Q1"
+          }
+        },
+        {
+          "t": {
+            "en": "Major project 1",
+            "ar": "مشروع كبير 1"
+          },
+          "d": {
+            "en": "Phased milestones",
+            "ar": "معالم مرحلية"
+          },
+          "tag": {
+            "en": "Q1–Q3",
+            "ar": "Q1–Q3"
+          }
+        },
+        {
+          "t": {
+            "en": "Major project 2",
+            "ar": "مشروع كبير 2"
+          },
+          "d": {
+            "en": "Phased milestones",
+            "ar": "معالم مرحلية"
+          },
+          "tag": {
+            "en": "Q2–Q4",
+            "ar": "Q2–Q4"
+          }
+        },
+        {
+          "t": {
+            "en": "Re-assess",
+            "ar": "إعادة التقييم"
+          },
+          "d": {
+            "en": "Same method",
+            "ar": "المنهجية نفسها"
+          },
+          "tag": {
+            "en": "Q4",
+            "ar": "Q4"
+          }
+        }
+      ],
+      "highlight": 3,
+      "loop": true,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "3c221dfe0a29e95b0ea38e6d916ec881dc6517fbd01a85fdb6a97f6b00f453c7"
+      }
+    },
+    {
+      "id": "FIG-EX-PATHWAYS",
+      "template": "table",
+      "caption": {
+        "en": "EFQM's two assessment pathways (efqm.org, checked 6 Nov 2026)",
+        "ar": "مسارا التقييم لدى EFQM (efqm.org، بالاطلاع في 6 نوفمبر 2026)"
+      },
+      "read": {
+        "en": "Compare the rows. Rapid is a short first external view; Advanced is the full model with a submission document and a score out of 1,000. Check EFQM's current pages before planning.",
+        "ar": "قارن الصفوف. التقييم السريع نظرة خارجية أولى قصيرة؛ والمتقدم هو النموذج كاملًا بوثيقة مشاركة ودرجة من 1000. وتحقق من صفحات EFQM الحالية قبل التخطيط."
+      },
+      "cols": [
+        {
+          "en": "Rapid",
+          "ar": "السريع"
+        },
+        {
+          "en": "Advanced",
+          "ar": "المتقدم"
+        }
+      ],
+      "rows": [
+        {
+          "t": {
+            "en": "Model",
+            "ar": "النموذج"
+          },
+          "cells": [
+            {
+              "en": "Condensed",
+              "ar": "مختصر"
+            },
+            {
+              "en": "Full",
+              "ar": "كامل"
+            }
+          ]
+        },
+        {
+          "t": {
+            "en": "Duration",
+            "ar": "المدة"
+          },
+          "cells": [
+            {
+              "en": "~1 week",
+              "ar": "~أسبوع"
+            },
+            {
+              "en": "4–6 months",
+              "ar": "4–6 أشهر"
+            }
+          ]
+        },
+        {
+          "t": {
+            "en": "Preparation",
+            "ar": "الإعداد"
+          },
+          "cells": [
+            {
+              "en": "Minimal",
+              "ar": "قليل"
+            },
+            {
+              "en": "Document",
+              "ar": "وثيقة"
+            }
+          ]
+        },
+        {
+          "t": {
+            "en": "Outcome",
+            "ar": "المُخرَج"
+          },
+          "cells": [
+            {
+              "en": "1–2 stars",
+              "ar": "1–2 نجمة"
+            },
+            {
+              "en": "3+ stars",
+              "ar": "3+ نجوم"
+            }
+          ]
+        }
+      ],
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "f557cfd319eb5998d40952c61b7950c5bfabb41926d7fb94bacc691a860c239f"
+      }
+    },
+    {
+      "id": "FIG-EX-READY",
+      "template": "tiles",
+      "caption": {
+        "en": "Five readiness questions before applying",
+        "ar": "خمسة أسئلة للجاهزية قبل التقدم"
+      },
+      "read": {
+        "en": "Answer each tile with evidence. Several “no” answers suggest a lighter recognition step or another self-assessment cycle first.",
+        "ar": "أجب عن كل مربع بالأدلة. وتعدد الإجابات بـ«لا» يوحي بخطوة اعتراف أخف أو دورة تقييم ذاتي أخرى أولًا."
+      },
+      "items": [
+        {
+          "icon": "check",
+          "t": {
+            "en": "Self-assessed and acted",
+            "ar": "قيّمنا وتصرفنا"
+          }
+        },
+        {
+          "icon": "trend",
+          "t": {
+            "en": "3+ years of trends",
+            "ar": "اتجاهات 3 سنوات+"
+          }
+        },
+        {
+          "icon": "layers",
+          "t": {
+            "en": "Deployed across scope",
+            "ar": "مطبق عبر النطاق"
+          }
+        },
+        {
+          "icon": "users",
+          "t": {
+            "en": "Leaders sponsor",
+            "ar": "القادة يرعون"
+          }
+        },
+        {
+          "icon": "clock",
+          "t": {
+            "en": "Capacity to prepare",
+            "ar": "طاقة للإعداد"
+          }
+        }
+      ],
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e496f5e538e9e3ca5147d8b47ec5edf790f480b1c9b6ebf4fd94474de10f52f6"
+      }
+    },
+    {
+      "id": "FIG-EX-DOC",
+      "template": "flow",
+      "caption": {
+        "en": "How each area of a submission document reads",
+        "ar": "كيف يُقرأ كل مجال في وثيقة المشاركة"
+      },
+      "read": {
+        "en": "Each area tells the same story: what is done and why, where it is used, how it is measured and improved, and the results it produces — all verifiable on site.",
+        "ar": "كل مجال يروي القصة نفسها: ماذا يُفعل ولماذا، وأين يُستخدم، وكيف يُقاس ويُحسَّن، والنتائج التي يُنتجها — وكلها قابلة للتحقق في الموقع."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Approach",
+            "ar": "الأسلوب"
+          },
+          "d": {
+            "en": "What and why",
+            "ar": "ماذا ولماذا"
+          }
+        },
+        {
+          "t": {
+            "en": "Deployment",
+            "ar": "التطبيق"
+          },
+          "d": {
+            "en": "Where, since when",
+            "ar": "أين ومنذ متى"
+          }
+        },
+        {
+          "t": {
+            "en": "Refinement",
+            "ar": "التحسين"
+          },
+          "d": {
+            "en": "Dated changes",
+            "ar": "تغييرات مؤرخة"
+          }
+        },
+        {
+          "t": {
+            "en": "Results",
+            "ar": "النتائج"
+          },
+          "d": {
+            "en": "Trends, targets",
+            "ar": "اتجاهات ومستهدفات"
+          }
+        }
+      ],
+      "highlight": 3,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ef6d7085b73df08289e6bf18de04bd8bf2cf9e532157333571e1f9b3c425a6b1"
+      }
+    },
+    {
+      "id": "FIG-EX-VISIT",
+      "template": "cycle",
+      "caption": {
+        "en": "Site visit and feedback as a learning cycle",
+        "ar": "الزيارة الميدانية والتغذية الراجعة دورة تعلم"
+      },
+      "read": {
+        "en": "Follow the cycle: honest briefing, the visit, the feedback report and the improvement plan, which leads to the next self-assessment. The award result sits outside the loop.",
+        "ar": "تتبّع الدورة: إحاطة صادقة، ثم الزيارة، ثم تقرير التغذية الراجعة، ثم خطة التحسين التي تقود إلى التقييم الذاتي التالي. ونتيجة الجائزة خارج الحلقة."
+      },
+      "center": {
+        "en": "Learning",
+        "ar": "التعلم"
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Brief people",
+            "ar": "أحِط الناس"
+          },
+          "d": {
+            "en": "No scripts",
+            "ar": "دون تلقين"
+          }
+        },
+        {
+          "t": {
+            "en": "Site visit",
+            "ar": "الزيارة"
+          },
+          "d": {
+            "en": "Verify, explore",
+            "ar": "تحقق واستكشاف"
+          }
+        },
+        {
+          "t": {
+            "en": "Feedback report",
+            "ar": "تقرير التغذية"
+          },
+          "d": {
+            "en": "Strengths, AFIs",
+            "ar": "قوة ومجالات تحسين"
+          }
+        },
+        {
+          "t": {
+            "en": "Improvement plan",
+            "ar": "خطة التحسين"
+          },
+          "d": {
+            "en": "Owned priorities",
+            "ar": "أولويات مملوكة"
+          }
+        }
+      ],
+      "highlight": 2,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "0ba6100fb180d8185fdcc9e7793ff0c58af33b93fcf7872a1000942598c08d7a"
+      }
+    },
+    {
+      "id": "FIG-EX-ANNUAL",
+      "template": "cycle",
+      "caption": {
+        "en": "Excellence inside the annual management cycle",
+        "ar": "التميز داخل الدورة الإدارية السنوية"
+      },
+      "read": {
+        "en": "Each step feeds the next: strategy sets objectives, self-assessment shows gaps against them, priorities enter the budget, delivery is reviewed in normal meetings, and results feed the next strategy review.",
+        "ar": "كل خطوة تغذي التالية: الاستراتيجية تحدد الأهداف، والتقييم الذاتي يُظهر الفجوات مقابلها، والأولويات تدخل الميزانية، والتنفيذ يُراجع في الاجتماعات المعتادة، والنتائج تغذي مراجعة الاستراتيجية التالية."
+      },
+      "center": {
+        "en": "One cycle",
+        "ar": "دورة واحدة"
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Strategy review",
+            "ar": "مراجعة الاستراتيجية"
+          },
+          "d": {
+            "en": "Objectives",
+            "ar": "الأهداف"
+          }
+        },
+        {
+          "t": {
+            "en": "Self-assessment",
+            "ar": "التقييم الذاتي"
+          },
+          "d": {
+            "en": "Gaps",
+            "ar": "الفجوات"
+          }
+        },
+        {
+          "t": {
+            "en": "Prioritise & budget",
+            "ar": "الترتيب والميزانية"
+          },
+          "d": {
+            "en": "Funded",
+            "ar": "ممولة"
+          }
+        },
+        {
+          "t": {
+            "en": "Deliver & review",
+            "ar": "التنفيذ والمراجعة"
+          },
+          "d": {
+            "en": "Monthly, quarterly",
+            "ar": "شهريًا وربع سنويًا"
+          }
+        }
+      ],
+      "highlight": 1,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "40dfd01f2291b10751d321b2c5f1163e237ec145c427a642ee45f57162e02b70"
+      }
+    },
+    {
+      "id": "FIG-EX-BENCH",
+      "template": "flow",
+      "caption": {
+        "en": "Benchmarking that changes something",
+        "ar": "مقارنة مرجعية تغيّر شيئًا"
+      },
+      "read": {
+        "en": "Read in order. Knowing your own process and data comes first; the visit is only useful with prepared questions, and the value comes from adapting and measuring.",
+        "ar": "اقرأ بالترتيب. معرفة عمليتك وبياناتك تأتي أولًا؛ والزيارة لا تفيد إلا بأسئلة معدة، والقيمة تأتي من التكييف والقياس."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Know yourself",
+            "ar": "اعرف نفسك"
+          },
+          "tag": {
+            "en": "1",
+            "ar": "1"
+          }
+        },
+        {
+          "t": {
+            "en": "Choose partner",
+            "ar": "اختر الشريك"
+          },
+          "tag": {
+            "en": "2",
+            "ar": "2"
+          }
+        },
+        {
+          "t": {
+            "en": "Visit with questions",
+            "ar": "زُر بأسئلة"
+          },
+          "tag": {
+            "en": "3",
+            "ar": "3"
+          }
+        },
+        {
+          "t": {
+            "en": "Adapt",
+            "ar": "كيّف"
+          },
+          "tag": {
+            "en": "4",
+            "ar": "4"
+          }
+        },
+        {
+          "t": {
+            "en": "Measure",
+            "ar": "قِس"
+          },
+          "tag": {
+            "en": "5",
+            "ar": "5"
+          }
+        }
+      ],
+      "highlight": 4,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "fbbe28e1aefcac74c35653156456d7695e7c1deb8800ba1dc2d2ebafc5684946"
+      }
+    },
+    {
+      "id": "FIG-EX-CULTURE",
+      "template": "triad",
+      "caption": {
+        "en": "Culture follows leaders' attention",
+        "ar": "الثقافة تتبع اهتمام القادة"
+      },
+      "read": {
+        "en": "What leaders pay attention to shapes behaviours; a few indicators make the culture visible so leaders can discuss and act on it.",
+        "ar": "ما يهتم به القادة يشكّل السلوكيات؛ ومؤشرات قليلة تجعل الثقافة ظاهرة ليناقشها القادة ويتصرفوا بشأنها."
+      },
+      "corners": [
+        {
+          "en": "Leaders' attention",
+          "ar": "اهتمام القادة"
+        },
+        {
+          "en": "Behaviours",
+          "ar": "السلوكيات"
+        },
+        {
+          "en": "Indicators",
+          "ar": "المؤشرات"
+        }
+      ],
+      "center": {
+        "en": "Culture",
+        "ar": "الثقافة"
+      },
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "037028d46e5f2a16ac049a5376cd9d170a4719c3ac2916c9b7c5c31b0c4be58b"
+      }
+    },
+    {
+      "id": "FIG-EX-CHASE",
+      "template": "scurve",
+      "caption": {
+        "en": "Warning sign: ratings rise while results stay flat",
+        "ar": "علامة إنذار: التقديرات ترتفع والنتائج ثابتة"
+      },
+      "read": {
+        "en": "Compare the two lines over four cycles. When internal ratings climb but the key result does not move, check method, team and writing before celebrating. Values are illustrative.",
+        "ar": "قارن الخطين عبر أربع دورات. حين ترتفع التقديرات الداخلية ولا تتحرك النتيجة الرئيسية، تحقق من المنهجية والفريق والكتابة قبل الاحتفال. والقيم توضيحية."
+      },
+      "series": [
+        {
+          "t": {
+            "en": "Internal rating",
+            "ar": "التقدير الداخلي"
+          },
+          "values": [
+            38,
+            44,
+            53,
+            62
+          ]
+        },
+        {
+          "t": {
+            "en": "Key result",
+            "ar": "النتيجة الرئيسية"
+          },
+          "values": [
+            50,
+            51,
+            50,
+            51
+          ]
+        }
+      ],
+      "now": 2,
+      "nowLabel": {
+        "en": "New team",
+        "ar": "فريق جديد"
+      },
+      "yLabel": {
+        "en": "Index",
+        "ar": "المؤشر"
+      },
+      "xLabel": {
+        "en": "Assessment cycles 1–4",
+        "ar": "دورات التقييم 1–4"
+      },
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "a8db84391e12ad5aa996fcef88611aef3d76fef89ab63b0e782fe37a47ab1094"
+      }
+    },
+    {
+      "id": "FIG-EX-LABFLOW",
+      "template": "flow",
+      "caption": {
+        "en": "How the EFQM Assessment Lab works",
+        "ar": "كيف يعمل مختبر تقييم EFQM"
+      },
+      "read": {
+        "en": "Work left to right for each criterion: record evidence, write strengths and areas for improvement, self-rate with the guidance, then build and export the plan. It is a self-assessment aid, not an EFQM assessment.",
+        "ar": "اعمل من البداية إلى النهاية لكل معيار: سجّل الأدلة، واكتب نقاط القوة ومجالات التحسين، وقدّر ذاتيًا بالإرشادات، ثم ابنِ الخطة وصدّرها. وهو أداة مساعدة للتقييم الذاتي، وليس تقييمًا من EFQM."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Evidence",
+            "ar": "الأدلة"
+          },
+          "tag": {
+            "en": "1",
+            "ar": "1"
+          }
+        },
+        {
+          "t": {
+            "en": "Findings",
+            "ar": "الملاحظات"
+          },
+          "tag": {
+            "en": "2",
+            "ar": "2"
+          }
+        },
+        {
+          "t": {
+            "en": "Self-rating",
+            "ar": "التقدير الذاتي"
+          },
+          "tag": {
+            "en": "3",
+            "ar": "3"
+          }
+        },
+        {
+          "t": {
+            "en": "Plan",
+            "ar": "الخطة"
+          },
+          "tag": {
+            "en": "4",
+            "ar": "4"
+          }
+        },
+        {
+          "t": {
+            "en": "Export",
+            "ar": "التصدير"
+          },
+          "tag": {
+            "en": "5",
+            "ar": "5"
+          }
+        }
+      ],
+      "highlight": 2,
+      "owner_phase": 10,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "6247e8d0dc7d4d062d8b2ff7dac04ad7aff640af8aa9d4e76b40904d35b1ba2a"
+      }
     }
   ]
 }

@@ -402,8 +402,8 @@
     },
     {
       "id": "Q-EFQM-001",
-      "category": "organizational_excellence",
-      "course_id": null,
+      "category": "excellence",
+      "course_id": "CRS-EX-EVID",
       "module_id": null,
       "competency": "OE-01",
       "difficulty": "medium",
@@ -413,20 +413,23 @@
         "ar": "راجع ادعاء تحسين مدعوم فقط بشريحة عرض. ما الأدلة الإضافية التي تقوي التقييم؟"
       },
       "explanation": {
-        "en": "CIA original learning item; review the linked concept and evidence.",
-        "ar": "سؤال تعليمي أصلي من الأكاديمية؛ راجع المفهوم والدليل المرتبط."
+        "en": "Strong evidence for an improvement claim combines a sustained trend in the result, records showing the approach was deployed where it should be, and a credible link between the change and the result. A slide alone is an assertion.",
+        "ar": "الدليل القوي على ادعاء تحسين يجمع اتجاهًا مستدامًا في النتيجة، وسجلات تُظهر تطبيق الأسلوب حيث ينبغي، وصلة مقنعة بين التغيير والنتيجة. والشريحة وحدها ادعاء."
       },
-      "reference": "CIA-MASTER",
+      "reference": "SRC-CIA-EX",
       "weight": 3,
       "version": "1.0",
       "status": "active",
       "governance": {
-        "content_status": "needs_review",
-        "content_source": "ai_draft",
+        "content_status": "published",
+        "content_source": "owner",
         "version": "1.0",
-        "reviewer": null,
-        "review_date": null,
-        "change_note": "Phase 5 demo item kept as a draft for Phase 10 (EFQM); competency id corrected to OE-01."
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "d21bf074702f18b323865c421d7c90a4aefc65b5308da3cbffb405af589ce6fa"
       },
       "rubric": [
         {
@@ -442,7 +445,7 @@
           "ar": "أدلة أصحاب المصلحة أو العملية"
         }
       ],
-      "planned_phase": 10
+      "auto_scored_twin": "Q-EX-RD-03"
     },
     {
       "id": "Q-GOV-001",
@@ -26011,6 +26014,5295 @@
         "drafted_by": "ai_draft",
         "approval_basis": "owner_approval_after_ai_prereview",
         "approved_hash": "e977df3e36f1d1231128d5281c3b28822af7ee7fd0ae8fbc4c689983cc2157b9"
+      }
+    },
+    {
+      "id": "Q-EX-RD-01",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "easy",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "What best distinguishes an excellence model from a management-system standard such as ISO 9001?",
+        "ar": "ما الذي يميز نموذج التميز على النحو الأفضل عن معيار نظام إدارة مثل ISO 9001؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "An excellence model is a non-prescriptive framework for judging how well the whole organisation creates value; a standard sets requirements to conform to",
+            "ar": "نموذج التميز إطار غير إلزامي للحكم على مدى جودة صنع المنظمة كلها للقيمة؛ والمعيار يضع متطلبات تجب المطابقة لها"
+          },
+          "why": {
+            "en": "Right: one judges maturity, the other checks conformity.",
+            "ar": "صحيح: أحدهما يحكم على النضج والآخر يتحقق من المطابقة."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "An excellence model is a stricter certification standard",
+            "ar": "نموذج التميز معيار منح أكثر صرامة"
+          },
+          "why": {
+            "en": "It is not a certification standard.",
+            "ar": "ليس معيار منح."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "They are the same thing with different names",
+            "ar": "هما الشيء نفسه بأسماء مختلفة"
+          },
+          "why": {
+            "en": "Their purpose and use differ.",
+            "ar": "غرضهما واستخدامهما مختلفان."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "An excellence model only covers customer satisfaction",
+            "ar": "نموذج التميز يغطي رضا العملاء فقط"
+          },
+          "why": {
+            "en": "It covers the whole organisation and all stakeholders.",
+            "ar": "يغطي المنظمة كلها وجميع أصحاب المصلحة."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "Standards define requirements to conform to; an excellence model is a framework to judge and improve overall maturity.",
+        "ar": "تحدد المعايير متطلبات للمطابقة؛ ونموذج التميز إطار للحكم على النضج الكلي وتحسينه."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "1f73cecdf5c37c575b9c054a3dca9ff6b451a0d5bcaf073367c66bff4817274a"
+      }
+    },
+    {
+      "id": "Q-EX-RD-02",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "In the Direction–Execution–Results logic, what should Results show?",
+        "ar": "في منطق التوجه والتنفيذ والنتائج، ماذا ينبغي أن تُظهر النتائج؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Only financial results for shareholders",
+            "ar": "النتائج المالية للمساهمين فقط"
+          },
+          "why": {
+            "en": "Results cover all key stakeholders.",
+            "ar": "النتائج تشمل جميع أصحاب المصلحة الرئيسيين."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "What the strategy and the way it was executed actually achieved, for the stakeholders that matter",
+            "ar": "ما حققته الاستراتيجية وطريقة تنفيذها فعلًا، لأصحاب المصلحة المهمين"
+          },
+          "why": {
+            "en": "Right: results close the loop on direction and execution.",
+            "ar": "صحيح: النتائج تغلق الحلقة على التوجه والتنفيذ."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "A list of activities completed this year",
+            "ar": "قائمة الأنشطة المنجزة هذا العام"
+          },
+          "why": {
+            "en": "Activities are not results.",
+            "ar": "الأنشطة ليست نتائج."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "The number of policies approved",
+            "ar": "عدد السياسات المعتمدة"
+          },
+          "why": {
+            "en": "Policies are approaches, not results.",
+            "ar": "السياسات أساليب لا نتائج."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "Results show what was achieved, so leaders can see whether direction and execution work.",
+        "ar": "تُظهر النتائج ما تحقق، ليرى القادة هل يعمل التوجه والتنفيذ."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "b64ce34dc1c2f63e33be6cc57adc3437491b93f5364c91142c1bd417af662994"
+      }
+    },
+    {
+      "id": "Q-EX-RD-03",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "A department claims a major improvement but shows only one presentation slide. What evidence would strengthen the claim most?",
+        "ar": "تدّعي إدارة تحسنًا كبيرًا لكنها تعرض شريحة عرض واحدة فقط. أي دليل يقوّي الادعاء أكثر؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "A second slide with more colour",
+            "ar": "شريحة ثانية بألوان أكثر"
+          },
+          "why": {
+            "en": "Presentation is not evidence.",
+            "ar": "العرض ليس دليلًا."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "A statement from the department head",
+            "ar": "إفادة من رئيس الإدارة"
+          },
+          "why": {
+            "en": "An assertion is the weakest evidence.",
+            "ar": "الادعاء أضعف الأدلة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Trend data over several periods, records showing the approach was deployed, and a link between the change and the result",
+            "ar": "بيانات اتجاه عبر فترات عدة، وسجلات تُظهر تطبيق الأسلوب، وربط بين التغيير والنتيجة"
+          },
+          "why": {
+            "en": "Right: results, deployment and cause together.",
+            "ar": "صحيح: النتائج والتطبيق والسبب معًا."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "A benchmark from another industry only",
+            "ar": "مقارنة من قطاع آخر فقط"
+          },
+          "why": {
+            "en": "A comparison without your own trend proves little.",
+            "ar": "المقارنة دون اتجاهك الخاص لا تثبت شيئًا يُذكر."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "Strong evidence combines a sustained trend, proof of deployment and a credible cause–effect link.",
+        "ar": "الدليل القوي يجمع اتجاهًا مستدامًا وإثباتًا للتطبيق وصلة سببية مقنعة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "3b33e6e0fae9730967192ca63b5dfe0d871fed4ed1f17b823c169142ca400d1c"
+      }
+    },
+    {
+      "id": "Q-EX-RD-04",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "Which statement describes the RADAR logic in your own working terms?",
+        "ar": "أي عبارة تصف منطق RADAR بمصطلحات عملك؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Rate every department and rank them",
+            "ar": "قيّم كل إدارة ورتّبها"
+          },
+          "why": {
+            "en": "Ranking is not the logic.",
+            "ar": "الترتيب ليس هو المنطق."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Report all activities, then decide on results",
+            "ar": "اعرض كل الأنشطة ثم قرر النتائج"
+          },
+          "why": {
+            "en": "It starts from the results you need.",
+            "ar": "يبدأ من النتائج التي تحتاجها."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Audit documents against requirements",
+            "ar": "دقّق الوثائق مقابل المتطلبات"
+          },
+          "why": {
+            "en": "That is conformity auditing.",
+            "ar": "هذا تدقيق المطابقة."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Decide the results you need, plan approaches to get them, deploy them, then assess and refine both",
+            "ar": "حدد النتائج التي تحتاجها، وخطط الأساليب لتحقيقها، وطبّقها، ثم قيّم وحسّن الاثنين"
+          },
+          "why": {
+            "en": "Right: a closed improvement loop.",
+            "ar": "صحيح: حلقة تحسين مغلقة."
+          }
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": {
+        "en": "RADAR is a results-first improvement loop: required results → approaches → deployment → assessment and refinement.",
+        "ar": "منطق RADAR حلقة تحسين تبدأ بالنتائج: النتائج المطلوبة ← الأساليب ← التطبيق ← التقييم والتحسين."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "c9da0ac7daae5355f89b4cb54041ed93b5957ccaccea7d8971ee0ded503ebc1f"
+      }
+    },
+    {
+      "id": "Q-EX-RD-05",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "Which is a well-written strength?",
+        "ar": "أي مما يلي قوة مكتوبة جيدًا؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "“Customer complaints are handled through a defined process, used in all six branches since 2024, reviewed quarterly; resolution time fell from 9 to 4 days.”",
+            "ar": "«تُعالج شكاوى العملاء بعملية محددة، مطبقة في الفروع الستة منذ 2024، وتُراجع ربع سنويًا؛ وانخفض زمن الحل من 9 إلى 4 أيام.»"
+          },
+          "why": {
+            "en": "Right: approach, deployment, review and result.",
+            "ar": "صحيح: الأسلوب والتطبيق والمراجعة والنتيجة."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "“The company is excellent at customer service.”",
+            "ar": "«الشركة ممتازة في خدمة العملاء.»"
+          },
+          "why": {
+            "en": "An opinion, not a finding.",
+            "ar": "رأي وليس ملاحظة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "“Many staff care about customers.”",
+            "ar": "«كثير من الموظفين يهتمون بالعملاء.»"
+          },
+          "why": {
+            "en": "No evidence or scope.",
+            "ar": "بلا دليل ولا نطاق."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "“Complaints are better than last year.”",
+            "ar": "«الشكاوى أفضل من العام الماضي.»"
+          },
+          "why": {
+            "en": "No measure or approach.",
+            "ar": "بلا مقياس ولا أسلوب."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "A strength names the approach, how widely and how long it is used, how it is reviewed and the evidence of effect.",
+        "ar": "القوة تسمّي الأسلوب ومدى تطبيقه ومدته وطريقة مراجعته ودليل أثره."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "a330b47d664b9a11b653db182b4ba9d81fb8e447faa5f1e72700d589076977cf"
+      }
+    },
+    {
+      "id": "Q-EX-RD-06",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "An area for improvement (AFI) should be written so that…",
+        "ar": "ينبغي أن يُكتب مجال التحسين بحيث…"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "It names who is to blame",
+            "ar": "يسمّي من يُلام"
+          },
+          "why": {
+            "en": "AFIs describe gaps, not people.",
+            "ar": "مجالات التحسين تصف فجوات لا أشخاصًا."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "It is as short as possible, e.g. “improve HR”",
+            "ar": "يكون أقصر ما يمكن، مثل «حسّن الموارد البشرية»"
+          },
+          "why": {
+            "en": "Too vague to act on.",
+            "ar": "غامض جدًا للتصرف بناءً عليه."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "It states the gap, where it applies and why it matters, without prescribing the solution",
+            "ar": "يذكر الفجوة وموضعها وأهميتها، دون أن يفرض الحل"
+          },
+          "why": {
+            "en": "Right: specific, located, consequential, non-prescriptive.",
+            "ar": "صحيح: محدد ومُحدَّد الموضع ومبيّن الأثر وغير فارض للحل."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "It copies the wording of the model",
+            "ar": "ينسخ صياغة النموذج"
+          },
+          "why": {
+            "en": "Findings describe your organisation, not the model.",
+            "ar": "الملاحظات تصف منظمتك لا النموذج."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "A useful AFI is specific about the gap and its consequence and leaves the solution to the owners.",
+        "ar": "مجال التحسين المفيد محدد في الفجوة وأثرها ويترك الحل للمالكين."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "dbf25a4568adc8bee9b8eebdf0abd80d8ceb7b2dde6eeef0b353854a67311750"
+      }
+    },
+    {
+      "id": "Q-EX-RD-07",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "OE-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "A self-assessment produced 46 areas for improvement. What do you do next?",
+        "ar": "أنتج تقييم ذاتي 46 مجالًا للتحسين. ماذا تفعل بعد ذلك؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Launch 46 projects at once",
+            "ar": "إطلاق 46 مشروعًا في آن واحد"
+          },
+          "why": {
+            "en": "Capacity and focus are lost.",
+            "ar": "تضيع الطاقة والتركيز."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Cluster them into themes, score impact and ease against the strategy, and fund the few that matter most",
+            "ar": "تجميعها في محاور، وتقدير الأثر والسهولة مقابل الاستراتيجية، وتمويل القليل الأهم"
+          },
+          "why": {
+            "en": "Right: cluster, prioritise, focus.",
+            "ar": "صحيح: جمّع ورتّب وركّز."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Pick the easiest ones only",
+            "ar": "اختيار الأسهل فقط"
+          },
+          "why": {
+            "en": "Ease without impact wastes effort.",
+            "ar": "السهولة بلا أثر تهدر الجهد."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "File the report until next year",
+            "ar": "حفظ التقرير حتى العام القادم"
+          },
+          "why": {
+            "en": "Then the assessment changes nothing.",
+            "ar": "عندها لا يغيّر التقييم شيئًا."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "Prioritisation turns a long list into a few funded, owned improvements aligned with strategy.",
+        "ar": "يحوّل الترتيب قائمة طويلة إلى تحسينات قليلة ممولة ومملوكة ومتسقة مع الاستراتيجية."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "602b4573ac24f0c86a6095fb19c9299158d5ce473d620caaf7a347f5a9d85931"
+      }
+    },
+    {
+      "id": "Q-EX-RD-08",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "OE-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "On an impact–ease matrix, high impact and hard to do means…",
+        "ar": "في مصفوفة الأثر والسهولة، الأثر المرتفع مع الصعوبة يعني…"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Drop it",
+            "ar": "تجاهله"
+          },
+          "why": {
+            "en": "High impact deserves a plan.",
+            "ar": "الأثر المرتفع يستحق خطة."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "A quick win",
+            "ar": "مكسبًا سريعًا"
+          },
+          "why": {
+            "en": "Quick wins are high impact and easy.",
+            "ar": "المكاسب السريعة أثرها مرتفع وسهلة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Do it this afternoon",
+            "ar": "نفّذه بعد الظهر"
+          },
+          "why": {
+            "en": "Hard items need a project.",
+            "ar": "البنود الصعبة تحتاج مشروعًا."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "A major project: plan it, resource it and phase it",
+            "ar": "مشروعًا كبيرًا: خطط له ووفّر الموارد وجزّئه على مراحل"
+          },
+          "why": {
+            "en": "Right.",
+            "ar": "صحيح."
+          }
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": {
+        "en": "High-impact, hard items become planned projects; high-impact, easy ones are quick wins.",
+        "ar": "البنود عالية الأثر الصعبة تصبح مشاريع مخططة؛ والسهلة منها مكاسب سريعة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e4b0c88e31642c17af0f91887afc54c6ce5ab07a37b4cb57c076a6c83939bf1f"
+      }
+    },
+    {
+      "id": "Q-EX-RD-09",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "LDR-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "Leaders want the self-assessment to “look good for the award”. What is the main risk?",
+        "ar": "يريد القادة أن «يبدو التقييم الذاتي جيدًا للجائزة». ما الخطر الرئيسي؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Inflated scores hide real gaps, so the organisation improves less",
+            "ar": "الدرجات المضخمة تخفي الفجوات الحقيقية فيقل تحسن المنظمة"
+          },
+          "why": {
+            "en": "Right: the purpose is learning.",
+            "ar": "صحيح: الغرض هو التعلم."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "The report will be too long",
+            "ar": "سيكون التقرير طويلًا جدًا"
+          },
+          "why": {
+            "en": "Length is not the main risk.",
+            "ar": "الطول ليس الخطر الرئيسي."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Assessors will need more days",
+            "ar": "سيحتاج المقيّمون أيامًا أكثر"
+          },
+          "why": {
+            "en": "Not the core issue.",
+            "ar": "ليست القضية الجوهرية."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Staff will take holidays",
+            "ar": "سيأخذ الموظفون إجازات"
+          },
+          "why": {
+            "en": "Unrelated.",
+            "ar": "لا علاقة له."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "A self-assessment is a learning tool; honest scores protect its value.",
+        "ar": "التقييم الذاتي أداة تعلم؛ والدرجات الصادقة تحمي قيمته."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "fa97d843e058ff1376ba34be3297b1db55958d1434a469da4f27740a6db401a3"
+      }
+    },
+    {
+      "id": "Q-EX-RD-10",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "LDR-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "Which choice best links an excellence programme to strategy?",
+        "ar": "أي خيار يربط برنامج التميز بالاستراتيجية على النحو الأفضل؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Run excellence as a separate project owned by the quality team",
+            "ar": "إدارة التميز مشروعًا منفصلًا يملكه فريق الجودة"
+          },
+          "why": {
+            "en": "This isolates it from strategy.",
+            "ar": "هذا يعزله عن الاستراتيجية."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Count the number of awards won",
+            "ar": "عدّ الجوائز المحققة"
+          },
+          "why": {
+            "en": "Awards are a by-product.",
+            "ar": "الجوائز نتيجة جانبية."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Select improvement priorities that close gaps in strategic objectives and review them in the strategy cycle",
+            "ar": "اختيار أولويات تحسين تسد فجوات الأهداف الاستراتيجية ومراجعتها في دورة الاستراتيجية"
+          },
+          "why": {
+            "en": "Right.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Translate the model into a policy manual",
+            "ar": "ترجمة النموذج إلى دليل سياسات"
+          },
+          "why": {
+            "en": "A manual does not link priorities to strategy.",
+            "ar": "الدليل لا يربط الأولويات بالاستراتيجية."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "Excellence works when its priorities serve strategic objectives and are reviewed where strategy is reviewed.",
+        "ar": "ينجح التميز حين تخدم أولوياته الأهداف الاستراتيجية وتُراجع حيث تُراجع الاستراتيجية."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "78237c1d17674687e4816a30566be1e2b544ed734827c8042ebfa489b76279da"
+      }
+    },
+    {
+      "id": "Q-EX-RD-11",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "PERF-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "A results chart shows three years of improving trend. What else would make it strong evidence?",
+        "ar": "يُظهر مخطط نتائج اتجاهًا متحسنًا لثلاث سنوات. ما الذي يجعله دليلًا قويًا أيضًا؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "A bigger font",
+            "ar": "خط أكبر"
+          },
+          "why": {
+            "en": "Presentation only.",
+            "ar": "عرض فقط."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Targets that were met, comparisons with relevant others, and an explanation of what caused the change",
+            "ar": "مستهدفات تحققت، ومقارنات بجهات مناسبة، وتفسير لما سبب التغيير"
+          },
+          "why": {
+            "en": "Right: trend + targets + comparisons + causes.",
+            "ar": "صحيح: اتجاه ومستهدفات ومقارنات وأسباب."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Removing the first year to make the line steeper",
+            "ar": "حذف السنة الأولى ليبدو الخط أشد ميلًا"
+          },
+          "why": {
+            "en": "That distorts the evidence.",
+            "ar": "هذا يشوه الدليل."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Adding unrelated indicators",
+            "ar": "إضافة مؤشرات لا صلة لها"
+          },
+          "why": {
+            "en": "Relevance matters.",
+            "ar": "الصلة مهمة."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "Strong results show trends, targets, comparisons and causes, on measures that matter to the strategy.",
+        "ar": "النتائج القوية تُظهر الاتجاهات والمستهدفات والمقارنات والأسباب، على مقاييس مهمة للاستراتيجية."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "c721976b431c694d9763e75c3cb0b5fa2832e58e1f8cba54006cc278349bd3db"
+      }
+    },
+    {
+      "id": "Q-EX-RD-12",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "GOV-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "Who should own an improvement priority chosen after a self-assessment?",
+        "ar": "من ينبغي أن يملك أولوية تحسين اختيرت بعد تقييم ذاتي؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "The external consultant",
+            "ar": "المستشار الخارجي"
+          },
+          "why": {
+            "en": "Ownership must stay inside.",
+            "ar": "يجب أن تبقى الملكية داخلية."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Everyone equally",
+            "ar": "الجميع بالتساوي"
+          },
+          "why": {
+            "en": "Shared ownership often means none.",
+            "ar": "الملكية المشتركة تعني غالبًا لا أحد."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "The excellence office alone",
+            "ar": "مكتب التميز وحده"
+          },
+          "why": {
+            "en": "It coordinates; line leaders deliver.",
+            "ar": "ينسق؛ وقادة الخطوط ينفذون."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "A named leader with authority over the process, reporting progress in the regular governance cycle",
+            "ar": "قائد مسمّى له صلاحية على العملية، ويرفع التقدم في دورة الحوكمة المعتادة"
+          },
+          "why": {
+            "en": "Right.",
+            "ar": "صحيح."
+          }
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": {
+        "en": "Named ownership and a governance reporting line keep priorities alive.",
+        "ar": "الملكية المسماة وخط رفع في الحوكمة يبقيان الأولويات حية."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "01f1d73c608e489f935efaba1272f9a0e9d6dd68d3ed28d0a19445eece19b581"
+      }
+    },
+    {
+      "id": "Q-EX-RF-01",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "Why do organisations use an excellence model in addition to ISO certificates?",
+        "ar": "لماذا تستخدم المنظمات نموذج تميز بالإضافة إلى شهادات ISO؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Because certificates expire",
+            "ar": "لأن الشهادات تنتهي"
+          },
+          "why": {
+            "en": "Not the reason.",
+            "ar": "ليس السبب."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Because a model is mandatory by law",
+            "ar": "لأن النموذج إلزامي قانونًا"
+          },
+          "why": {
+            "en": "It is voluntary.",
+            "ar": "إنه طوعي."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "To see how well the whole organisation performs and improves, beyond meeting requirements",
+            "ar": "لرؤية مدى جودة أداء المنظمة كلها وتحسنها، بما يتجاوز الوفاء بالمتطلبات"
+          },
+          "why": {
+            "en": "Right.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "To replace the quality management system",
+            "ar": "ليحل محل نظام إدارة الجودة"
+          },
+          "why": {
+            "en": "It complements, not replaces.",
+            "ar": "يكمّل ولا يحل محل."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "Certificates prove conformity; an excellence model shows overall maturity and where to improve.",
+        "ar": "الشهادات تثبت المطابقة؛ ونموذج التميز يُظهر النضج الكلي ومواضع التحسين."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "4d513f4ffcae8bfda7179052a802c8bcb1e9998c1f19ff1845d134e5fdb3f656"
+      }
+    },
+    {
+      "id": "Q-EX-RF-02",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "PERF-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "Which pair is a result rather than an approach?",
+        "ar": "أي مما يلي نتيجة وليس أسلوبًا؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "A new onboarding procedure",
+            "ar": "إجراء تأهيل جديد"
+          },
+          "why": {
+            "en": "That is an approach.",
+            "ar": "هذا أسلوب."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Staff turnover down from 18% to 11% in two years",
+            "ar": "انخفاض دوران الموظفين من 18% إلى 11% خلال سنتين"
+          },
+          "why": {
+            "en": "Right: a measured outcome.",
+            "ar": "صحيح: مُخرَج مقاس."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "A quarterly engagement survey",
+            "ar": "استبيان ارتباط ربع سنوي"
+          },
+          "why": {
+            "en": "A measurement approach.",
+            "ar": "أسلوب قياس."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "A leadership training plan",
+            "ar": "خطة تدريب قيادي"
+          },
+          "why": {
+            "en": "An approach.",
+            "ar": "أسلوب."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "Results are measured outcomes; procedures, plans and surveys are approaches.",
+        "ar": "النتائج مخرجات مقاسة؛ والإجراءات والخطط والاستبيانات أساليب."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "350113e194471a29fd7d4b64533970a5c126d470729c1b76a19a7e1fe295ee0b"
+      }
+    },
+    {
+      "id": "Q-EX-RS-01",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "Assessors disagree by 30 points on one criterion. What should the facilitator do first?",
+        "ar": "يختلف المقيّمون بثلاثين نقطة في معيار واحد. ماذا يفعل الميسّر أولًا؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Average the scores",
+            "ar": "حساب متوسط الدرجات"
+          },
+          "why": {
+            "en": "Averaging hides the reason for the gap.",
+            "ar": "المتوسط يخفي سبب الفجوة."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Ask each assessor which evidence led to their score and agree on the facts before scoring again",
+            "ar": "سؤال كل مقيّم عن الدليل الذي قاده لدرجته والاتفاق على الوقائع قبل إعادة التقدير"
+          },
+          "why": {
+            "en": "Right: consensus on evidence first.",
+            "ar": "صحيح: الإجماع على الدليل أولًا."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Take the highest score",
+            "ar": "أخذ أعلى درجة"
+          },
+          "why": {
+            "en": "Inflates.",
+            "ar": "يضخّم."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Let the most senior assessor decide",
+            "ar": "ترك القرار لأقدم مقيّم"
+          },
+          "why": {
+            "en": "Seniority is not evidence.",
+            "ar": "الأقدمية ليست دليلًا."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "Score gaps usually reflect different evidence; agree the facts, then the score.",
+        "ar": "فجوات الدرجات تعكس غالبًا أدلة مختلفة؛ اتفق على الوقائع ثم على الدرجة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "075bf41e1c3f7dc8d893d8efee4d4006ebfb55949b3501a19037b4aefe1cc2bf"
+      }
+    },
+    {
+      "id": "Q-EX-RS-02",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "LDR-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "Which self-assessment approach suits a first cycle with little time and no trained assessors?",
+        "ar": "أي أسلوب تقييم ذاتي يناسب دورة أولى بوقت قليل ودون مقيّمين مدربين؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "A full award-style submission document",
+            "ar": "وثيقة مشاركة كاملة على نمط الجوائز"
+          },
+          "why": {
+            "en": "Heavy for a first cycle.",
+            "ar": "ثقيلة على دورة أولى."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "A mock site visit by external assessors",
+            "ar": "زيارة ميدانية تجريبية بمقيّمين خارجيين"
+          },
+          "why": {
+            "en": "Needs trained assessors.",
+            "ar": "تحتاج مقيّمين مدربين."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "A facilitated workshop with leaders using a structured question set and real evidence",
+            "ar": "ورشة عمل ميسّرة مع القادة بمجموعة أسئلة منظمة وأدلة حقيقية"
+          },
+          "why": {
+            "en": "Right: light, engaging, evidence-based.",
+            "ar": "صحيح: خفيفة ومشاركة وقائمة على الأدلة."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "No assessment until everything is documented",
+            "ar": "لا تقييم حتى يُوثّق كل شيء"
+          },
+          "why": {
+            "en": "Waiting delays learning.",
+            "ar": "الانتظار يؤخر التعلم."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "Start with a facilitated workshop; move to heavier approaches as maturity grows.",
+        "ar": "ابدأ بورشة ميسّرة؛ وانتقل إلى أساليب أثقل مع نمو النضج."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "f4e78c3a2bea333a9efd5ba3cff3394d773205e53e1f0b8a7a5bd8562c6d67d5"
+      }
+    },
+    {
+      "id": "Q-EX-RA-01",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "What is the strongest reason to apply for an external excellence award or recognition?",
+        "ar": "ما أقوى سبب للتقدم إلى جائزة أو اعتراف خارجي في التميز؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Independent feedback that sharpens the improvement agenda",
+            "ar": "تغذية راجعة مستقلة تشحذ أجندة التحسين"
+          },
+          "why": {
+            "en": "Right: learning is the main value.",
+            "ar": "صحيح: التعلم هو القيمة الرئيسية."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "A logo for marketing only",
+            "ar": "شعار للتسويق فقط"
+          },
+          "why": {
+            "en": "A by-product, not the purpose.",
+            "ar": "نتيجة جانبية لا غرض."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Because a competitor applied",
+            "ar": "لأن منافسًا تقدم"
+          },
+          "why": {
+            "en": "Not a sound reason.",
+            "ar": "ليس سببًا وجيهًا."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "To avoid internal self-assessment",
+            "ar": "لتجنب التقييم الذاتي الداخلي"
+          },
+          "why": {
+            "en": "External assessment builds on internal work.",
+            "ar": "التقييم الخارجي يبني على العمل الداخلي."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "External assessment is most valuable as independent feedback on top of your own self-assessment.",
+        "ar": "التقييم الخارجي أثمن ما يكون تغذية راجعة مستقلة فوق تقييمك الذاتي."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "7872b8a26f79f371fb4c783a0fce9fc490f78269b93878f6d39d8303d0056e91"
+      }
+    },
+    {
+      "id": "Q-EX-RA-02",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "PERF-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "In an award submission, a results section lists 60 indicators without trends or targets. What is the main weakness?",
+        "ar": "في وثيقة مشاركة بجائزة، يسرد قسم النتائج 60 مؤشرًا بلا اتجاهات أو مستهدفات. ما الضعف الرئيسي؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Too few indicators",
+            "ar": "مؤشرات قليلة جدًا"
+          },
+          "why": {
+            "en": "Quantity is not the issue.",
+            "ar": "الكمية ليست المشكلة."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "The fonts are inconsistent",
+            "ar": "الخطوط غير متسقة"
+          },
+          "why": {
+            "en": "Cosmetic.",
+            "ar": "شكلية."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "It lacks an executive summary only",
+            "ar": "ينقصه ملخص تنفيذي فقط"
+          },
+          "why": {
+            "en": "Not the main weakness.",
+            "ar": "ليس الضعف الرئيسي."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Assessors cannot judge performance without relevant measures, trends, targets and comparisons",
+            "ar": "لا يستطيع المقيّمون الحكم على الأداء دون مقاييس مناسبة واتجاهات ومستهدفات ومقارنات"
+          },
+          "why": {
+            "en": "Right.",
+            "ar": "صحيح."
+          }
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": {
+        "en": "Fewer, relevant indicators with trends, targets and comparisons beat long unexplained lists.",
+        "ar": "مؤشرات أقل ذات صلة باتجاهات ومستهدفات ومقارنات أفضل من قوائم طويلة غير مفسرة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "6659dd043aa28b4698111640770500bcdb6a2ef038bb3c17d3bc7e90e08d0ed0"
+      }
+    },
+    {
+      "id": "Q-EX-RP-01",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "OE-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "Two improvement ideas have equal impact. One supports a strategic objective that is off track. Which goes first?",
+        "ar": "لفكرتي تحسين أثر متساوٍ. إحداهما تدعم هدفًا استراتيجيًا متأخرًا. أيهما أولًا؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "The cheaper one, always",
+            "ar": "الأرخص دائمًا"
+          },
+          "why": {
+            "en": "Cost is one factor, not the rule.",
+            "ar": "التكلفة عامل لا قاعدة."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "The one supporting the off-track strategic objective",
+            "ar": "التي تدعم الهدف الاستراتيجي المتأخر"
+          },
+          "why": {
+            "en": "Right: strategic alignment breaks the tie.",
+            "ar": "صحيح: الاتساق الاستراتيجي يحسم التعادل."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Whichever the loudest manager wants",
+            "ar": "ما يريده أعلى المديرين صوتًا"
+          },
+          "why": {
+            "en": "Not a criterion.",
+            "ar": "ليس معيارًا."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Neither until next year",
+            "ar": "لا هذه ولا تلك حتى العام القادم"
+          },
+          "why": {
+            "en": "Delay without reason.",
+            "ar": "تأجيل بلا سبب."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "When impact is equal, strategic alignment and urgency decide.",
+        "ar": "عند تساوي الأثر يحسم الاتساق الاستراتيجي والإلحاح."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "2882be8b4da12bcda7b60305856203c6a862f28f51ebfadc68f181eecef1c77c"
+      }
+    },
+    {
+      "id": "Q-EX-RP-02",
+      "category": "excellence",
+      "course_id": null,
+      "module_id": null,
+      "competency": "PERF-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "diagnostic",
+      "prompt": {
+        "en": "An improvement project has no baseline measure. What is the risk?",
+        "ar": "مشروع تحسين بلا مقياس خط أساس. ما الخطر؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "No one can show whether it improved anything",
+            "ar": "لا يستطيع أحد إثبات أنه حسّن شيئًا"
+          },
+          "why": {
+            "en": "Right.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "It will finish too early",
+            "ar": "سينتهي مبكرًا جدًا"
+          },
+          "why": {
+            "en": "Not the risk.",
+            "ar": "ليس الخطر."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "It will cost less",
+            "ar": "ستكون تكلفته أقل"
+          },
+          "why": {
+            "en": "Unrelated.",
+            "ar": "لا علاقة له."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "It cannot have an owner",
+            "ar": "لا يمكن أن يكون له مالك"
+          },
+          "why": {
+            "en": "Ownership is separate.",
+            "ar": "الملكية مسألة منفصلة."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "Without a baseline, the effect of the improvement cannot be shown.",
+        "ar": "دون خط أساس لا يمكن إظهار أثر التحسين."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "6786b38a876924b460e2a777fee73b75031335d5cec7f8dbf45424402d29200c"
+      }
+    },
+    {
+      "id": "Q-EFQM-101-L01",
+      "category": "excellence",
+      "course_id": "CRS-EFQM-101",
+      "module_id": "CRS-EFQM-101-M01",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which statement about an excellence model is correct?",
+        "ar": "أي عبارة عن نموذج التميز صحيحة؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "It is a certification standard with mandatory requirements",
+            "ar": "هو معيار منح بمتطلبات إلزامية"
+          },
+          "why": {
+            "en": "It is not a certification standard.",
+            "ar": "ليس معيار منح."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "It replaces the need for a management system",
+            "ar": "يُغني عن نظام الإدارة"
+          },
+          "why": {
+            "en": "It builds on management systems.",
+            "ar": "يبني على أنظمة الإدارة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "It is a non-prescriptive framework for judging and improving overall maturity",
+            "ar": "إطار غير إلزامي للحكم على النضج الكلي وتحسينه"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "It applies only to large private companies",
+            "ar": "ينطبق على الشركات الخاصة الكبيرة فقط"
+          },
+          "why": {
+            "en": "Any organisation can use it.",
+            "ar": "يمكن لأي منظمة استخدامه."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "An excellence model does not prescribe procedures; it helps judge maturity across the whole organisation.",
+        "ar": "نموذج التميز لا يفرض إجراءات؛ بل يساعد في الحكم على النضج عبر المنظمة كلها."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "2ad3e8d951eefe730b041652d7b1229d4bb27d66ba5fba64d61fe9debbd0514a"
+      }
+    },
+    {
+      "id": "Q-EFQM-101-L02",
+      "category": "excellence",
+      "course_id": "CRS-EFQM-101",
+      "module_id": "CRS-EFQM-101-M01",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "What turns a purpose statement into something an organisation can manage?",
+        "ar": "ما الذي يحوّل بيان الغاية إلى شيء يمكن للمنظمة إدارته؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Promises to each key stakeholder group, with measures that leaders review",
+            "ar": "وعود لكل فئة رئيسية من أصحاب المصلحة، بمقاييس يراجعها القادة"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "A longer and more inspiring statement",
+            "ar": "بيان أطول وأكثر إلهامًا"
+          },
+          "why": {
+            "en": "Wording does not create management.",
+            "ar": "الصياغة لا تصنع الإدارة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Printing it on posters in every office",
+            "ar": "طباعته على ملصقات في كل مكتب"
+          },
+          "why": {
+            "en": "Visibility is not management.",
+            "ar": "الظهور ليس إدارة."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Approval by the legal department",
+            "ar": "اعتماده من الإدارة القانونية"
+          },
+          "why": {
+            "en": "Approval does not make it measurable.",
+            "ar": "الاعتماد لا يجعله قابلًا للقياس."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "Purpose becomes manageable when it is expressed as stakeholder promises with measures that leaders act on.",
+        "ar": "تصبح الغاية قابلة للإدارة حين تُعبَّر وعودًا لأصحاب المصلحة بمقاييس يتصرف القادة بناءً عليها."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "1948a28340ada98e8db29e78f8e7d837a15543bf491fbcdcd6ca16d5006715c3"
+      }
+    },
+    {
+      "id": "Q-EFQM-101-L03",
+      "category": "excellence",
+      "course_id": "CRS-EFQM-101",
+      "module_id": "CRS-EFQM-101-M02",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Results stay flat although the strategy is clear. Where does the Direction–Execution–Results logic tell you to look first?",
+        "ar": "تبقى النتائج ثابتة رغم وضوح الاستراتيجية. أين يوجهك منطق التوجه والتنفيذ والنتائج للنظر أولًا؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "At the vision wording",
+            "ar": "إلى صياغة الرؤية"
+          },
+          "why": {
+            "en": "The direction is already clear.",
+            "ar": "التوجه واضح بالفعل."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "At the colour of the dashboard",
+            "ar": "إلى ألوان لوحة المؤشرات"
+          },
+          "why": {
+            "en": "Cosmetic.",
+            "ar": "شكلي."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "At last year's awards",
+            "ar": "إلى جوائز العام الماضي"
+          },
+          "why": {
+            "en": "Irrelevant to the cause.",
+            "ar": "لا صلة له بالسبب."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "At execution: whether the approaches that should deliver the strategy are deployed and working",
+            "ar": "إلى التنفيذ: هل الأساليب التي يُفترض أن تحقق الاستراتيجية مطبقة وتعمل"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": {
+        "en": "If direction is clear and results do not move, the break is usually in execution.",
+        "ar": "إذا كان التوجه واضحًا والنتائج لا تتحرك، فالكسر غالبًا في التنفيذ."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "73dcf2ab35996a0bf3ed3eb8443c90b7200b32f8aef1a54253fc09fa7accfc22"
+      }
+    },
+    {
+      "id": "Q-EFQM-101-L04",
+      "category": "excellence",
+      "course_id": "CRS-EFQM-101",
+      "module_id": "CRS-EFQM-101-M02",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Survey results from customers and employees belong in which part of the model?",
+        "ar": "تنتمي نتائج استبيانات العملاء والموظفين إلى أي جزء من النموذج؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Direction",
+            "ar": "التوجه"
+          },
+          "why": {
+            "en": "Direction covers purpose, strategy, culture and leadership.",
+            "ar": "التوجه يشمل الغاية والاستراتيجية والثقافة والقيادة."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Results — Stakeholder Perceptions",
+            "ar": "النتائج — تصورات أصحاب المصلحة"
+          },
+          "why": {
+            "en": "Correct: what stakeholders say.",
+            "ar": "صحيح: ما يقوله أصحاب المصلحة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Execution — Creating Sustainable Value",
+            "ar": "التنفيذ — صنع قيمة مستدامة"
+          },
+          "why": {
+            "en": "That is about designing and delivering value.",
+            "ar": "يتعلق بتصميم القيمة وتقديمها."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "They are not used in an excellence model",
+            "ar": "لا تُستخدم في نموذج التميز"
+          },
+          "why": {
+            "en": "Perception results are central.",
+            "ar": "نتائج التصورات محورية."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "Perception results show what stakeholders think; performance results show what internal measures show.",
+        "ar": "نتائج التصورات تُظهر رأي أصحاب المصلحة؛ ونتائج الأداء تُظهر ما تبيّنه المقاييس الداخلية."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "3b1ab0df876563a208fef81ef0cac24fa957100606409051b0290982413ba553"
+      }
+    },
+    {
+      "id": "Q-EFQM-101-SCN",
+      "category": "excellence",
+      "course_id": "CRS-EFQM-101",
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "hard",
+      "type": "single_choice",
+      "format": "scenario",
+      "prompt": {
+        "en": "What is the most useful conclusion for leaders?",
+        "ar": "ما الاستنتاج الأكثر فائدة للقادة؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "The agency is already excellent because of the prize",
+            "ar": "الجهة متميزة بالفعل بسبب الجائزة"
+          },
+          "why": {
+            "en": "One strong result is not overall maturity.",
+            "ar": "نتيجة قوية واحدة ليست نضجًا كليًا."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Stop measuring service speed",
+            "ar": "التوقف عن قياس سرعة الخدمة"
+          },
+          "why": {
+            "en": "Strong results should be kept.",
+            "ar": "النتائج القوية يجب الحفاظ عليها."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Excellence covers all key stakeholders; build promises and measures for the groups that are not yet visible",
+            "ar": "التميز يشمل جميع أصحاب المصلحة الرئيسيين؛ فابنِ وعودًا ومقاييس للفئات غير الظاهرة بعد"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Hire a consultant to write the missing results",
+            "ar": "التعاقد مع مستشار لكتابة النتائج الناقصة"
+          },
+          "why": {
+            "en": "Results must come from real data.",
+            "ar": "النتائج يجب أن تأتي من بيانات حقيقية."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "An excellence view is balanced across stakeholders; gaps in visibility are themselves findings.",
+        "ar": "نظرة التميز متوازنة بين أصحاب المصلحة؛ وفجوات الرؤية ملاحظات بحد ذاتها."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "a344676e58eab1b6d1045b91c36d14ce1439c5b2c4d7bef8f5f0326b269c87aa"
+      },
+      "scenario": {
+        "en": "A government agency holds ISO 9001 and wins a customer-service prize. Its first excellence self-assessment shows strong results on service speed but no data on employee wellbeing, partner satisfaction or the environmental footprint of its fleet.",
+        "ar": "تحمل جهة حكومية شهادة ISO 9001 وتفوز بجائزة لخدمة العملاء. ويُظهر أول تقييم ذاتي للتميز لديها نتائج قوية في سرعة الخدمة، لكن لا بيانات عن رفاه الموظفين أو رضا الشركاء أو الأثر البيئي لأسطول مركباتها."
+      }
+    },
+    {
+      "id": "Q-EX-RADAR-L01",
+      "category": "excellence",
+      "course_id": "CRS-EX-RADAR",
+      "module_id": "CRS-EX-RADAR-M01",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "In the RADAR logic, what comes first?",
+        "ar": "في منطق RADAR، ما الذي يأتي أولًا؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Writing the procedure",
+            "ar": "كتابة الإجراء"
+          },
+          "why": {
+            "en": "The approach follows the required results.",
+            "ar": "الأسلوب يتبع النتائج المطلوبة."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Deciding the results the organisation needs",
+            "ar": "تحديد النتائج التي تحتاجها المنظمة"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Training everyone",
+            "ar": "تدريب الجميع"
+          },
+          "why": {
+            "en": "Training is part of deployment.",
+            "ar": "التدريب جزء من التطبيق."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Scoring the department",
+            "ar": "تقدير درجة الإدارة"
+          },
+          "why": {
+            "en": "Scoring is an assessor activity, not the start.",
+            "ar": "التقدير نشاط للمقيّم وليس البداية."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "RADAR is results-first: approaches are designed to deliver required results.",
+        "ar": "منطق RADAR يبدأ بالنتائج: تُصمم الأساليب لتحقيق النتائج المطلوبة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "f754067e2d0fff6b496677ed0d01301c4c38ed45267982c3e024cdc09181d285"
+      }
+    },
+    {
+      "id": "Q-EX-RADAR-L02",
+      "category": "excellence",
+      "course_id": "CRS-EX-RADAR",
+      "module_id": "CRS-EX-RADAR-M01",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which finding most weakens an approach's rating?",
+        "ar": "أي ملاحظة تُضعف تقدير الأسلوب أكثر؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "It is described on one page",
+            "ar": "موصوف في صفحة واحدة"
+          },
+          "why": {
+            "en": "Length is not quality.",
+            "ar": "الطول ليس جودة."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "It was designed by an internal team",
+            "ar": "صممه فريق داخلي"
+          },
+          "why": {
+            "en": "Internal design is fine.",
+            "ar": "التصميم الداخلي لا بأس به."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "It was reviewed last year",
+            "ar": "روجع العام الماضي"
+          },
+          "why": {
+            "en": "Review is a strength.",
+            "ar": "المراجعة قوة."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Nobody can explain why it was designed this way or which result it serves",
+            "ar": "لا يستطيع أحد تفسير سبب تصميمه بهذه الطريقة أو أي نتيجة يخدم"
+          },
+          "why": {
+            "en": "Correct: no rationale, no focus.",
+            "ar": "صحيح: لا مبرر ولا تركيز."
+          }
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": {
+        "en": "An approach without a rationale or a link to results is weak however well it is documented.",
+        "ar": "الأسلوب بلا مبرر أو صلة بالنتائج ضعيف مهما كان توثيقه جيدًا."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "47fb85f8950d3ca22666baf62ccf95ce070b7e024cc102089883ad624b0da0a9"
+      }
+    },
+    {
+      "id": "Q-EX-RADAR-L03",
+      "category": "excellence",
+      "course_id": "CRS-EX-RADAR",
+      "module_id": "CRS-EX-RADAR-M02",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which evidence best shows refinement?",
+        "ar": "أي دليل يُظهر التحسين على النحو الأفضل؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "A dated log of changes to the approach, each linked to measurement or learning",
+            "ar": "سجل مؤرخ لتغييرات الأسلوب، كلٌّ منها مرتبط بقياس أو تعلم"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "A statement that the approach is reviewed annually",
+            "ar": "عبارة أن الأسلوب يُراجع سنويًا"
+          },
+          "why": {
+            "en": "A claim without the changes made.",
+            "ar": "ادعاء دون التغييرات المجراة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "A new cover page on the procedure",
+            "ar": "صفحة غلاف جديدة للإجراء"
+          },
+          "why": {
+            "en": "Cosmetic.",
+            "ar": "شكلي."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "The number of copies printed",
+            "ar": "عدد النسخ المطبوعة"
+          },
+          "why": {
+            "en": "Not refinement.",
+            "ar": "ليس تحسينًا."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "Refinement is shown by changes actually made for reasons the organisation measured or learned.",
+        "ar": "يظهر التحسين بالتغييرات المجراة فعلًا لأسباب قاستها المنظمة أو تعلمتها."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "283bfcf49249e5f560723b8fcb7bee909fb7c7061f21b2bf0cbe70e87d364082"
+      }
+    },
+    {
+      "id": "Q-EX-RADAR-L04",
+      "category": "excellence",
+      "course_id": "CRS-EX-RADAR",
+      "module_id": "CRS-EX-RADAR-M02",
+      "competency": "PERF-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which result is the strongest evidence?",
+        "ar": "أي نتيجة هي أقوى دليل؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Thirty indicators, all green this year",
+            "ar": "ثلاثون مؤشرًا كلها خضراء هذا العام"
+          },
+          "why": {
+            "en": "No trend, targets, comparisons or causes.",
+            "ar": "بلا اتجاه ولا مستهدفات ولا مقارنات ولا أسباب."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "A single high value on a measure nobody uses",
+            "ar": "قيمة عالية وحيدة على مقياس لا يستخدمه أحد"
+          },
+          "why": {
+            "en": "Not relevant.",
+            "ar": "غير ذي صلة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "A key measure improving over four years, mostly meeting targets, comparing well, with the cause explained",
+            "ar": "مقياس رئيسي يتحسن عبر أربع سنوات، ويحقق المستهدفات غالبًا، ويُقارن جيدًا، مع تفسير السبب"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "An award logo on the results page",
+            "ar": "شعار جائزة على صفحة النتائج"
+          },
+          "why": {
+            "en": "Not a result.",
+            "ar": "ليس نتيجة."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "Relevance plus trends, targets, comparisons and causes make results convincing.",
+        "ar": "الصلة مع الاتجاهات والمستهدفات والمقارنات والأسباب تجعل النتائج مقنعة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "0dcac1d156745d7e37c43a107c15ee99def4aed319be7a4bce91bf9155ef7dcd"
+      }
+    },
+    {
+      "id": "Q-EX-RADAR-SCN",
+      "category": "excellence",
+      "course_id": "CRS-EX-RADAR",
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "hard",
+      "type": "single_choice",
+      "format": "scenario",
+      "prompt": {
+        "en": "Which judgement is most consistent with the RADAR logic?",
+        "ar": "أي حكم هو الأكثر اتساقًا مع منطق RADAR؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Approach strong; deployment partial; refinement weak; results strong but not shown for all segments",
+            "ar": "الأسلوب قوي؛ والتطبيق جزئي؛ والتحسين ضعيف؛ والنتائج قوية لكنها غير معروضة لكل الشرائح"
+          },
+          "why": {
+            "en": "Correct: each element judged on its own evidence.",
+            "ar": "صحيح: كل عنصر يُحكم عليه بدليله."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Everything strong because the approach is documented",
+            "ar": "كل شيء قوي لأن الأسلوب موثق"
+          },
+          "why": {
+            "en": "Documentation is not deployment or refinement.",
+            "ar": "التوثيق ليس تطبيقًا ولا تحسينًا."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Everything weak because two campuses have no data",
+            "ar": "كل شيء ضعيف لأن حرمين بلا بيانات"
+          },
+          "why": {
+            "en": "Over-penalises the strong elements.",
+            "ar": "يعاقب العناصر القوية أكثر مما يجب."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Cannot be judged without an external assessor",
+            "ar": "لا يمكن الحكم دون مقيّم خارجي"
+          },
+          "why": {
+            "en": "Self-assessment can judge it.",
+            "ar": "يمكن للتقييم الذاتي الحكم عليه."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "RADAR separates approach, deployment, refinement and results so that each finding is precise and actionable.",
+        "ar": "يفصل منطق RADAR بين الأسلوب والتطبيق والتحسين والنتائج لتكون كل ملاحظة دقيقة وقابلة للتنفيذ."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "d972f020e5687e6b123864b9a27830e618588ce3f8648145e0e94d5cd8cf7e1e"
+      },
+      "scenario": {
+        "en": "A university's student-support approach is well designed and documented and has strong satisfaction results in the main campus. The two new campuses opened in 2025 have no data, and the approach has not been changed since 2021.",
+        "ar": "أسلوب دعم الطلاب في جامعة مصمم وموثق جيدًا وله نتائج رضا قوية في الحرم الرئيسي. والحرمان الجديدان اللذان افتُتحا في 2025 بلا بيانات، ولم يتغير الأسلوب منذ 2021."
+      }
+    },
+    {
+      "id": "Q-EX-EVID-L01",
+      "category": "excellence",
+      "course_id": "CRS-EX-EVID",
+      "module_id": "CRS-EX-EVID-M01",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which is the strongest evidence that an approach works?",
+        "ar": "أي مما يلي أقوى دليل على أن الأسلوب يعمل؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "An approved procedure",
+            "ar": "إجراء معتمد"
+          },
+          "why": {
+            "en": "A document says it should be done.",
+            "ar": "الوثيقة تقول إنه ينبغي أن يُفعل."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "The manager's assurance",
+            "ar": "تأكيد المدير"
+          },
+          "why": {
+            "en": "An assertion.",
+            "ar": "ادعاء."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Records from one pilot site",
+            "ar": "سجلات من موقع تجريبي واحد"
+          },
+          "why": {
+            "en": "Partial deployment.",
+            "ar": "تطبيق جزئي."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Sustained results across the scope that can be linked to the approach",
+            "ar": "نتائج مستدامة عبر النطاق يمكن ربطها بالأسلوب"
+          },
+          "why": {
+            "en": "Correct: the top rung.",
+            "ar": "صحيح: أعلى درجة."
+          }
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": {
+        "en": "The ladder runs from assertion to sustained, linked results; climb it with follow-up questions.",
+        "ar": "يمتد السلّم من الادعاء إلى النتائج المستدامة المرتبطة؛ فاصعده بأسئلة المتابعة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e8005988f4d271314060bdc67ea110b1534d1beb87349c9af3dff891bdddde05"
+      }
+    },
+    {
+      "id": "Q-EX-EVID-L02",
+      "category": "excellence",
+      "course_id": "CRS-EX-EVID",
+      "module_id": "CRS-EX-EVID-M01",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "A well-designed approach is used in one of four regions and has never been measured. Which stage fits best?",
+        "ar": "أسلوب مصمم جيدًا يُستخدم في منطقة واحدة من أربع ولم يُقس قط. أي مرحلة تناسبه أكثر؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Leading",
+            "ar": "رائد"
+          },
+          "why": {
+            "en": "No results or comparisons.",
+            "ar": "لا نتائج ولا مقارنات."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Defined, moving to deployed",
+            "ar": "معرَّف، يتجه إلى التطبيق"
+          },
+          "why": {
+            "en": "Correct: designed, partly deployed, not measured.",
+            "ar": "صحيح: مصمم ومطبق جزئيًا وغير مقاس."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Measured and refined",
+            "ar": "مقاس ومحسَّن"
+          },
+          "why": {
+            "en": "It has never been measured.",
+            "ar": "لم يُقس قط."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Stage cannot be judged",
+            "ar": "لا يمكن تحديد المرحلة"
+          },
+          "why": {
+            "en": "The evidence is enough to judge.",
+            "ar": "الدليل كافٍ للحكم."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "Place maturity by the weakest essential element — here deployment and measurement.",
+        "ar": "حدد النضج بأضعف عنصر جوهري — وهنا التطبيق والقياس."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "fb4732655b3145970a1037f1afbc3d7faf08f6687abfee8c306b1fe5e865b011"
+      }
+    },
+    {
+      "id": "Q-EX-EVID-L03",
+      "category": "excellence",
+      "course_id": "CRS-EX-EVID",
+      "module_id": "CRS-EX-EVID-M02",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which element is missing from the strength “Our onboarding is used in all branches”?",
+        "ar": "أي عنصر ينقص نقطة القوة «يُستخدم أسلوب التأهيل لدينا في جميع الفروع»؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "The branch names",
+            "ar": "أسماء الفروع"
+          },
+          "why": {
+            "en": "Useful but not the key gap.",
+            "ar": "مفيدة لكنها ليست الفجوة الرئيسية."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "The author's name",
+            "ar": "اسم الكاتب"
+          },
+          "why": {
+            "en": "Irrelevant to the finding.",
+            "ar": "لا صلة لها بالملاحظة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "How it is reviewed and what effect it has, with evidence",
+            "ar": "كيف يُراجع وما أثره، بالأدلة"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "A comparison with the model text",
+            "ar": "مقارنة بنص النموذج"
+          },
+          "why": {
+            "en": "Findings describe the organisation, not the model.",
+            "ar": "الملاحظات تصف المنظمة لا النموذج."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "A strength names the approach, deployment, review and evidence of effect.",
+        "ar": "نقطة القوة تسمي الأسلوب والتطبيق والمراجعة ودليل الأثر."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "7f44bd0cd778d8b95d2ef9922c74dd45b1d009465356c4d49030f54863388aa9"
+      }
+    },
+    {
+      "id": "Q-EX-EVID-L04",
+      "category": "excellence",
+      "course_id": "CRS-EX-EVID",
+      "module_id": "CRS-EX-EVID-M02",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which is the best-written area for improvement?",
+        "ar": "أي مما يلي هو مجال التحسين الأفضل كتابة؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "“There is limited evidence that customer complaints are analysed for causes across branches, which may allow repeat complaints to persist.”",
+            "ar": "«الأدلة محدودة على أن شكاوى العملاء تُحلل لمعرفة أسبابها عبر الفروع، مما قد يسمح باستمرار الشكاوى المتكررة.»"
+          },
+          "why": {
+            "en": "Correct: specific, located, consequential, non-prescriptive.",
+            "ar": "صحيح: محدد ومُحدَّد الموضع ومبيّن الأثر وغير فارض للحل."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "“Buy a CRM system.”",
+            "ar": "«اشترِ نظام إدارة علاقات العملاء.»"
+          },
+          "why": {
+            "en": "Prescribes a solution.",
+            "ar": "يفرض حلًا."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "“The customer service manager is weak.”",
+            "ar": "«مدير خدمة العملاء ضعيف.»"
+          },
+          "why": {
+            "en": "Blames a person.",
+            "ar": "يلوم شخصًا."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "“Improve customer focus.”",
+            "ar": "«حسّن التركيز على العميل.»"
+          },
+          "why": {
+            "en": "Too vague.",
+            "ar": "غامض جدًا."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "Good AFIs describe the gap and its consequence and leave the solution to the owners.",
+        "ar": "مجالات التحسين الجيدة تصف الفجوة وأثرها وتترك الحل للمالكين."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "9f8b4d5f06c36c7a0c4d906a4011fdb7b3198826c8a60762184b0107b5c5369b"
+      }
+    },
+    {
+      "id": "Q-EX-EVID-SCN",
+      "category": "excellence",
+      "course_id": "CRS-EX-EVID",
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "hard",
+      "type": "single_choice",
+      "format": "scenario",
+      "prompt": {
+        "en": "How should the facilitator record it?",
+        "ar": "كيف ينبغي أن يسجلها الميسّر؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "As a strength, because the director is senior",
+            "ar": "نقطة قوة، لأن المدير رفيع المستوى"
+          },
+          "why": {
+            "en": "Seniority is not evidence.",
+            "ar": "الأقدمية ليست دليلًا."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Delete it from the assessment",
+            "ar": "حذفها من التقييم"
+          },
+          "why": {
+            "en": "The evidence still tells a useful story.",
+            "ar": "ما زال الدليل يروي قصة مفيدة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "As a strength with no evidence attached",
+            "ar": "نقطة قوة دون أدلة مرفقة"
+          },
+          "why": {
+            "en": "Unsupported findings undermine credibility.",
+            "ar": "الملاحظات غير المدعومة تُضعف المصداقية."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "As an approach at an early stage — defined, partly deployed, not yet measured — with an AFI on deployment and measurement",
+            "ar": "أسلوبًا في مرحلة مبكرة — معرَّف ومطبق جزئيًا وغير مقاس بعد — مع مجال تحسين في التطبيق والقياس"
+          },
+          "why": {
+            "en": "Correct: evidence decides.",
+            "ar": "صحيح: الدليل يحسم."
+          }
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": {
+        "en": "Findings follow the evidence; recording the stage and the next step is more useful than an unsupported strength.",
+        "ar": "تتبع الملاحظات الدليل؛ وتسجيل المرحلة والخطوة التالية أنفع من نقطة قوة غير مدعومة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "57a2955f23a35cd5f4220d679e1d0d4c0c2b5d67e3b7c4232138c42f23bc2285"
+      },
+      "scenario": {
+        "en": "During a self-assessment workshop, the operations director insists that “maintenance planning” be recorded as a strength. The evidence shows a new planning procedure (2026), records from one of three plants, and no measure of planned versus unplanned maintenance yet.",
+        "ar": "أثناء ورشة تقييم ذاتي، يصر مدير العمليات على تسجيل «تخطيط الصيانة» نقطة قوة. وتُظهر الأدلة إجراء تخطيط جديدًا (2026)، وسجلات من مصنع واحد من ثلاثة، ولا مقياس بعد للصيانة المخططة مقابل غير المخططة."
+      }
+    },
+    {
+      "id": "Q-EX-SA-L01",
+      "category": "excellence",
+      "course_id": "CRS-EX-SA",
+      "module_id": "CRS-EX-SA-M01",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which approach gives the most rigour and the best preparation for external assessment?",
+        "ar": "أي أسلوب يعطي أعلى صرامة وأفضل استعداد للتقييم الخارجي؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "A perception questionnaire",
+            "ar": "استبيان تصورات"
+          },
+          "why": {
+            "en": "Quick but little evidence.",
+            "ar": "سريع لكن بأدلة قليلة."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "A one-hour team discussion",
+            "ar": "نقاش فريق مدته ساعة"
+          },
+          "why": {
+            "en": "Too light.",
+            "ar": "خفيف جدًا."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "An award-style simulation with a written document and a site visit",
+            "ar": "محاكاة على نمط الجوائز بوثيقة مكتوبة وزيارة ميدانية"
+          },
+          "why": {
+            "en": "Correct, at the highest cost.",
+            "ar": "صحيح، بأعلى تكلفة."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Reading the model publication",
+            "ar": "قراءة إصدار النموذج"
+          },
+          "why": {
+            "en": "Reading is not assessing.",
+            "ar": "القراءة ليست تقييمًا."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "Rigour and cost rise together; choose by purpose and maturity.",
+        "ar": "ترتفع الصرامة والتكلفة معًا؛ فاختر بحسب الغرض والنضج."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "1944cb7f89d577bd115564e3f1286810a6f006e06e93c30db2d8372b26a8cab1"
+      }
+    },
+    {
+      "id": "Q-EX-SA-L02",
+      "category": "excellence",
+      "course_id": "CRS-EX-SA",
+      "module_id": "CRS-EX-SA-M01",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "What is the main purpose of the evidence call?",
+        "ar": "ما الغرض الرئيسي من طلب الأدلة؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "To collect as many documents as possible",
+            "ar": "جمع أكبر عدد ممكن من الوثائق"
+          },
+          "why": {
+            "en": "Volume is not the aim.",
+            "ar": "الكمية ليست الهدف."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "To make every team collect the same kinds of evidence in one register",
+            "ar": "جعل كل الفرق تجمع أنواع الأدلة نفسها في سجل واحد"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "To replace interviews",
+            "ar": "الاستغناء عن المقابلات"
+          },
+          "why": {
+            "en": "Interviews remain essential.",
+            "ar": "المقابلات تبقى أساسية."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "To prepare the award logo",
+            "ar": "إعداد شعار الجائزة"
+          },
+          "why": {
+            "en": "Unrelated.",
+            "ar": "لا علاقة له."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "A common evidence call and register make findings comparable and checkable.",
+        "ar": "طلب الأدلة والسجل المشتركان يجعلان الملاحظات قابلة للمقارنة والتحقق."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "29acca56216e97f411176aeee2affb0c54ffc022fff22fc5f43b5201afca3a06"
+      }
+    },
+    {
+      "id": "Q-EX-SA-L03",
+      "category": "excellence",
+      "course_id": "CRS-EX-SA",
+      "module_id": "CRS-EX-SA-M02",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "What is the correct order in a consensus meeting?",
+        "ar": "ما الترتيب الصحيح في اجتماع الإجماع؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Ratings, then findings, then facts",
+            "ar": "التقديرات ثم الملاحظات ثم الوقائع"
+          },
+          "why": {
+            "en": "Reversed.",
+            "ar": "معكوس."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Average the ratings, then write findings",
+            "ar": "متوسط التقديرات ثم كتابة الملاحظات"
+          },
+          "why": {
+            "en": "Averaging hides differences.",
+            "ar": "المتوسط يخفي الفروق."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Senior assessor decides, others confirm",
+            "ar": "يقرر المقيّم الأقدم ويؤكد الآخرون"
+          },
+          "why": {
+            "en": "Seniority is not evidence.",
+            "ar": "الأقدمية ليست دليلًا."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Facts, then findings, then ratings",
+            "ar": "الوقائع ثم الملاحظات ثم التقديرات"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": {
+        "en": "Agree the facts first; findings and ratings follow from them.",
+        "ar": "اتفق على الوقائع أولًا؛ والملاحظات والتقديرات تتبعها."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "8f06807b41a3d30926a0a5a724894c0dc8702bc84c3d8c863ba52aeb2954ded5"
+      }
+    },
+    {
+      "id": "Q-EX-SA-L04",
+      "category": "excellence",
+      "course_id": "CRS-EX-SA",
+      "module_id": "CRS-EX-SA-M02",
+      "competency": "OE-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "What should a self-assessment report lead to?",
+        "ar": "إلامَ ينبغي أن يؤدي تقرير التقييم الذاتي؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "A leadership decision on a few owned priorities",
+            "ar": "قرار قيادي بأولويات قليلة مملوكة"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "A public score",
+            "ar": "درجة معلنة"
+          },
+          "why": {
+            "en": "Self-ratings are internal and indicative.",
+            "ar": "التقديرات الذاتية داخلية واسترشادية."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "A longer report next year",
+            "ar": "تقرير أطول العام القادم"
+          },
+          "why": {
+            "en": "Length is not the goal.",
+            "ar": "الطول ليس الهدف."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "A list of people to replace",
+            "ar": "قائمة بأشخاص يجب استبدالهم"
+          },
+          "why": {
+            "en": "Assessments are about systems.",
+            "ar": "التقييمات تتعلق بالأنظمة."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "The report exists to support a decision on priorities; self-ratings stay internal.",
+        "ar": "يوجد التقرير لدعم قرار بالأولويات؛ والتقديرات الذاتية تبقى داخلية."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "474f3932a155b925e76792a5c7daef2d74718963383dd523ab9d63e8cb8d286e"
+      }
+    },
+    {
+      "id": "Q-EX-SA-SCN",
+      "category": "excellence",
+      "course_id": "CRS-EX-SA",
+      "module_id": null,
+      "competency": "LDR-01",
+      "difficulty": "hard",
+      "type": "single_choice",
+      "format": "scenario",
+      "prompt": {
+        "en": "What should the facilitator do?",
+        "ar": "ماذا ينبغي أن يفعل الميسّر؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Raise all ratings to keep the peace",
+            "ar": "رفع كل التقديرات حفاظًا على الهدوء"
+          },
+          "why": {
+            "en": "Inflation destroys the assessment's value.",
+            "ar": "التضخيم يدمر قيمة التقييم."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "End the meeting",
+            "ar": "إنهاء الاجتماع"
+          },
+          "why": {
+            "en": "Avoids the issue.",
+            "ar": "يتجنب المسألة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Acknowledge the concern, revisit any rating where he has evidence the team missed, and keep the others; explain that honest ratings protect the board's decisions",
+            "ar": "الإقرار بالقلق، وإعادة النظر في أي تقدير لديه دليل فات الفريق، والإبقاء على البقية؛ وشرح أن التقديرات الصادقة تحمي قرارات المجلس"
+          },
+          "why": {
+            "en": "Correct: evidence decides, respectfully.",
+            "ar": "صحيح: الدليل يحسم، باحترام."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Report him to the CEO",
+            "ar": "إبلاغ الرئيس التنفيذي عنه"
+          },
+          "why": {
+            "en": "Escalation before dialogue is premature.",
+            "ar": "التصعيد قبل الحوار متعجل."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "Ratings change only with evidence; the facilitator protects the assessment's honesty while respecting people.",
+        "ar": "التقديرات لا تتغير إلا بالدليل؛ والميسّر يحمي صدق التقييم مع احترام الناس."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ea250a7077e1e543d1065d3e0818768ffa2cb9f11d17a9b410a4da2e2c3e8eca"
+      },
+      "scenario": {
+        "en": "Halfway through a consensus meeting, the head of finance — the most senior person present — says the team is “too negative” and asks to raise all ratings by 15 points so the report “looks better for the board”.",
+        "ar": "في منتصف اجتماع إجماع، يقول رئيس المالية — أعلى الحاضرين منصبًا — إن الفريق «سلبي جدًا»، ويطلب رفع كل التقديرات 15 نقطة ليبدو التقرير «أفضل أمام مجلس الإدارة»."
+      }
+    },
+    {
+      "id": "Q-EX-PLAN-L01",
+      "category": "excellence",
+      "course_id": "CRS-EX-PLAN",
+      "module_id": "CRS-EX-PLAN-M01",
+      "competency": "OE-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Why cluster areas for improvement before planning?",
+        "ar": "لماذا تُجمّع مجالات التحسين قبل التخطيط؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Many AFIs are symptoms of a few underlying gaps that one owned project can address",
+            "ar": "كثير من المجالات أعراض لفجوات كامنة قليلة يمكن لمشروع مملوك واحد معالجتها"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "To make the list look shorter for the board",
+            "ar": "ليبدو العدد أقل أمام المجلس"
+          },
+          "why": {
+            "en": "Cosmetics are not the reason.",
+            "ar": "الشكل ليس السبب."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Because the model requires exactly seven themes",
+            "ar": "لأن النموذج يشترط سبعة محاور بالضبط"
+          },
+          "why": {
+            "en": "No such requirement.",
+            "ar": "لا يوجد شرط كهذا."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "To avoid assigning owners",
+            "ar": "لتجنب تعيين المالكين"
+          },
+          "why": {
+            "en": "Themes need owners.",
+            "ar": "المحاور تحتاج مالكين."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "Clustering addresses causes rather than symptoms and keeps the plan focused.",
+        "ar": "يعالج التجميع الأسباب لا الأعراض ويبقي الخطة مركزة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ae246cc66c27ec04d5be8340029dd03ef1a881cd1d885a41850b6c270c58e32f"
+      }
+    },
+    {
+      "id": "Q-EX-PLAN-L02",
+      "category": "excellence",
+      "course_id": "CRS-EX-PLAN",
+      "module_id": "CRS-EX-PLAN-M01",
+      "competency": "OE-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "A theme scores impact 2 and ease 1. What should usually happen?",
+        "ar": "حصل محور على أثر 2 وسهولة 1. ماذا ينبغي أن يحدث عادةً؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Start it now as a quick win",
+            "ar": "البدء فيه الآن مكسبًا سريعًا"
+          },
+          "why": {
+            "en": "It is neither high impact nor easy.",
+            "ar": "ليس عالي الأثر ولا سهلًا."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Make it the top major project",
+            "ar": "جعله المشروع الكبير الأول"
+          },
+          "why": {
+            "en": "Low impact.",
+            "ar": "أثر منخفض."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Reconsider or drop it",
+            "ar": "إعادة النظر فيه أو إسقاطه"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Assign it to every department",
+            "ar": "إسناده إلى كل الإدارات"
+          },
+          "why": {
+            "en": "Spreads effort on low value.",
+            "ar": "يوزع الجهد على قيمة منخفضة."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "Low-impact, hard items consume capacity for little benefit.",
+        "ar": "البنود منخفضة الأثر الصعبة تستهلك الطاقة بفائدة قليلة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "54592020112015cb95e91092a44ce4a6c50b8073837a1db6a5d6b957093b9b94"
+      }
+    },
+    {
+      "id": "Q-EX-PLAN-L03",
+      "category": "excellence",
+      "course_id": "CRS-EX-PLAN",
+      "module_id": "CRS-EX-PLAN-M02",
+      "competency": "OE-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which element is essential to show later that an improvement project worked?",
+        "ar": "أي عنصر ضروري لإظهار لاحقًا أن مشروع التحسين نجح؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "A large team",
+            "ar": "فريق كبير"
+          },
+          "why": {
+            "en": "Size does not show effect.",
+            "ar": "الحجم لا يُظهر الأثر."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "A baseline and a target for a result measure",
+            "ar": "خط أساس ومستهدف لمقياس نتائج"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "A launch event",
+            "ar": "حفل إطلاق"
+          },
+          "why": {
+            "en": "Not evidence of effect.",
+            "ar": "ليس دليلًا على الأثر."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "A long charter",
+            "ar": "ميثاق طويل"
+          },
+          "why": {
+            "en": "Length is not the point.",
+            "ar": "الطول ليس المقصود."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "Effect is shown by movement from a baseline towards a target on a relevant result.",
+        "ar": "يظهر الأثر بالتحرك من خط أساس نحو مستهدف على نتيجة ذات صلة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ef7af16b2321caaf15d314f83009b34cb5b7968de3820d1e1a50227f5a9c2c05"
+      }
+    },
+    {
+      "id": "Q-EX-PLAN-L04",
+      "category": "excellence",
+      "course_id": "CRS-EX-PLAN",
+      "module_id": "CRS-EX-PLAN-M02",
+      "competency": "OE-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Where should improvement progress be reviewed?",
+        "ar": "أين ينبغي أن يُراجع تقدم التحسين؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Only in a yearly excellence ceremony",
+            "ar": "في احتفال تميز سنوي فقط"
+          },
+          "why": {
+            "en": "Too late to act.",
+            "ar": "متأخر جدًا للتصرف."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Only by the excellence office",
+            "ar": "من قبل مكتب التميز فقط"
+          },
+          "why": {
+            "en": "Leaders must see it.",
+            "ar": "يجب أن يراه القادة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Nowhere; owners know their projects",
+            "ar": "لا مكان؛ فالمالكون يعرفون مشاريعهم"
+          },
+          "why": {
+            "en": "No accountability.",
+            "ar": "لا مساءلة."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "In the existing management and strategy reviews, monthly and quarterly",
+            "ar": "في مراجعات الإدارة والاستراتيجية القائمة، شهريًا وربع سنويًا"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": {
+        "en": "Embedding reviews in normal governance keeps improvement visible and owned.",
+        "ar": "إدخال المراجعات في الحوكمة المعتادة يبقي التحسين ظاهرًا ومملوكًا."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "b65562eb45cec547aed75e2281352bad6e3355dfcfdc97339f58b82bce0f14b8"
+      }
+    },
+    {
+      "id": "Q-EX-PLAN-SCN",
+      "category": "excellence",
+      "course_id": "CRS-EX-PLAN",
+      "module_id": null,
+      "competency": "OE-02",
+      "difficulty": "hard",
+      "type": "single_choice",
+      "format": "scenario",
+      "prompt": {
+        "en": "Which choice is most defensible?",
+        "ar": "أي اختيار هو الأكثر قابلية للدفاع عنه؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Start all five to show ambition",
+            "ar": "بدء الخمسة لإظهار الطموح"
+          },
+          "why": {
+            "en": "Exceeds capacity; all will slip.",
+            "ar": "يتجاوز الطاقة؛ فستتأخر جميعها."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "The two themes supporting the off-track objective, with the rest parked and a review date",
+            "ar": "المحوران الداعمان للهدف المتأخر، مع تأجيل البقية بتاريخ مراجعة"
+          },
+          "why": {
+            "en": "Correct: alignment and capacity decide.",
+            "ar": "صحيح: الاتساق والطاقة يحسمان."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "The CEO's interest first",
+            "ar": "اهتمام الرئيس التنفيذي أولًا"
+          },
+          "why": {
+            "en": "Not aligned with current objectives.",
+            "ar": "غير متسق مع الأهداف الحالية."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "The two cheapest, whatever they support",
+            "ar": "الأرخص اثنين، أيًا كان ما يدعمانه"
+          },
+          "why": {
+            "en": "Ignores strategic alignment.",
+            "ar": "يتجاهل الاتساق الاستراتيجي."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "With equal impact, strategic alignment and urgency break ties; capacity limits the number of major projects.",
+        "ar": "عند تساوي الأثر يحسم الاتساق الاستراتيجي والإلحاح؛ والطاقة تحد عدد المشاريع الكبيرة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "1ec8cee924861486201c386b16fda0803f4613a9221c7e5303d7343157fe77d6"
+      },
+      "scenario": {
+        "en": "After a self-assessment, the leadership team has budget and people for two major projects. Five themes score impact 5. Two of them support a strategic objective that is 30% behind target; one is the CEO's personal interest but supports no current objective.",
+        "ar": "بعد تقييم ذاتي، لدى فريق القيادة ميزانية وأفراد لمشروعين كبيرين. وحصلت خمسة محاور على أثر 5. اثنان منها يدعمان هدفًا استراتيجيًا متأخرًا 30% عن مستهدفه؛ وأحدها اهتمام شخصي للرئيس التنفيذي لكنه لا يدعم أي هدف حالي."
+      }
+    },
+    {
+      "id": "Q-EX-AWARD-L01",
+      "category": "excellence",
+      "course_id": "CRS-EX-AWARD",
+      "module_id": "CRS-EX-AWARD-M01",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "What is the safest source for the current levels and timeline of a recognition scheme?",
+        "ar": "ما المصدر الأكثر أمانًا لمستويات مخطط اعتراف وجدوله الزمني الحاليين؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "A training provider's old brochure",
+            "ar": "كتيب قديم لمقدم تدريب"
+          },
+          "why": {
+            "en": "May be outdated.",
+            "ar": "قد يكون قديمًا."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "The body's own current pages and applicant guide, with the date checked",
+            "ar": "صفحات الجهة نفسها الحالية ودليل المتقدمين، مع تاريخ الاطلاع"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "A colleague's memory",
+            "ar": "ذاكرة زميل"
+          },
+          "why": {
+            "en": "Unreliable.",
+            "ar": "غير موثوقة."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "A social-media post",
+            "ar": "منشور على وسائل التواصل"
+          },
+          "why": {
+            "en": "Not authoritative.",
+            "ar": "ليس مرجعيًا."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "Schemes change; use the body's own current pages and record when you checked them.",
+        "ar": "المخططات تتغير؛ فاستخدم صفحات الجهة الحالية وسجّل تاريخ اطلاعك عليها."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "fd373717ae1d0036fd307189aaf7e5929fe078facfae83aa57bd1679b368ab20"
+      }
+    },
+    {
+      "id": "Q-EX-AWARD-L02",
+      "category": "excellence",
+      "course_id": "CRS-EX-AWARD",
+      "module_id": "CRS-EX-AWARD-M01",
+      "competency": "OE-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which finding most suggests that the organisation is not ready for a high-stakes award application?",
+        "ar": "أي ملاحظة توحي أكثر بأن المنظمة ليست جاهزة لطلب جائزة عالي المخاطر؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Leaders sponsor the application",
+            "ar": "القادة يرعون الطلب"
+          },
+          "why": {
+            "en": "A readiness strength.",
+            "ar": "قوة في الجاهزية."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "A self-assessment was completed last year",
+            "ar": "أُنجز تقييم ذاتي العام الماضي"
+          },
+          "why": {
+            "en": "Positive.",
+            "ar": "إيجابي."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "A writing team is available",
+            "ar": "فريق كتابة متوفر"
+          },
+          "why": {
+            "en": "Helpful.",
+            "ar": "مفيد."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Most key results have no trends, targets or comparisons",
+            "ar": "معظم النتائج الرئيسية بلا اتجاهات ولا مستهدفات ولا مقارنات"
+          },
+          "why": {
+            "en": "Correct: results evidence is too thin.",
+            "ar": "صحيح: أدلة النتائج ضعيفة جدًا."
+          }
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": {
+        "en": "Without credible results evidence, external assessment will mostly confirm what a self-assessment could show more cheaply.",
+        "ar": "دون أدلة نتائج مقنعة سيؤكد التقييم الخارجي غالبًا ما كان التقييم الذاتي سيُظهره بتكلفة أقل."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "911749106f9d3547cf10d394ddfda1c206f2022bd10e10d6b515d8f8629c7e07"
+      }
+    },
+    {
+      "id": "Q-EX-AWARD-L03",
+      "category": "excellence",
+      "course_id": "CRS-EX-AWARD",
+      "module_id": "CRS-EX-AWARD-M02",
+      "competency": "OE-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which sentence belongs in a strong submission document?",
+        "ar": "أي جملة تنتمي إلى وثيقة مشاركة قوية؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "“Since 2024, all 14 plants use the same energy-review approach; consumption per tonne fell 11% in two years against a target of 8%.”",
+            "ar": "«منذ 2024 تستخدم المصانع الأربعة عشر كلها أسلوب مراجعة الطاقة نفسه؛ وانخفض الاستهلاك لكل طن 11% خلال سنتين مقابل مستهدف 8%.»"
+          },
+          "why": {
+            "en": "Correct: deployment, dates and results.",
+            "ar": "صحيح: تطبيق وتواريخ ونتائج."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "“We are passionate about sustainability.”",
+            "ar": "«نحن شغوفون بالاستدامة.»"
+          },
+          "why": {
+            "en": "No evidence.",
+            "ar": "بلا دليل."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "“Our approach fully meets the model's guidance.”",
+            "ar": "«أسلوبنا يفي تمامًا بإرشادات النموذج.»"
+          },
+          "why": {
+            "en": "A claim about the model, not evidence.",
+            "ar": "ادعاء عن النموذج لا دليل."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "“Many initiatives were launched.”",
+            "ar": "«أُطلقت مبادرات كثيرة.»"
+          },
+          "why": {
+            "en": "Vague.",
+            "ar": "غامض."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "Assessors look for verifiable facts about approach, deployment and results.",
+        "ar": "يبحث المقيّمون عن وقائع قابلة للتحقق عن الأسلوب والتطبيق والنتائج."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "29f681c3972741bcd0adb2caf0511742cf1f10f3b78787a374533f526874aeec"
+      }
+    },
+    {
+      "id": "Q-EX-AWARD-L04",
+      "category": "excellence",
+      "course_id": "CRS-EX-AWARD",
+      "module_id": "CRS-EX-AWARD-M02",
+      "competency": "LDR-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "What is the best use of an award feedback report?",
+        "ar": "ما أفضل استخدام لتقرير التغذية الراجعة من جائزة؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Frame the score and file the report",
+            "ar": "تأطير الدرجة وحفظ التقرير"
+          },
+          "why": {
+            "en": "The learning is lost.",
+            "ar": "يضيع التعلم."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Dispute every area for improvement",
+            "ar": "الطعن في كل مجال تحسين"
+          },
+          "why": {
+            "en": "Defensive.",
+            "ar": "دفاعي."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Feed its strengths and areas for improvement into the next improvement plan and track changes",
+            "ar": "إدخال نقاط قوته ومجالات تحسينه في خطة التحسين التالية وتتبع التغييرات"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Share it only with the excellence office",
+            "ar": "مشاركته مع مكتب التميز فقط"
+          },
+          "why": {
+            "en": "Leaders and staff need it.",
+            "ar": "القادة والموظفون يحتاجونه."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "Feedback is the main value of external assessment; it should drive the next cycle.",
+        "ar": "التغذية الراجعة هي القيمة الرئيسية للتقييم الخارجي؛ وينبغي أن تقود الدورة التالية."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "7923af70c819398bcfdc8717f803c20e08498da8fa63157b54831b8501cee375"
+      }
+    },
+    {
+      "id": "Q-EX-AWARD-SCN",
+      "category": "excellence",
+      "course_id": "CRS-EX-AWARD",
+      "module_id": null,
+      "competency": "OE-02",
+      "difficulty": "hard",
+      "type": "single_choice",
+      "format": "scenario",
+      "prompt": {
+        "en": "What is the most responsible advice?",
+        "ar": "ما النصيحة الأكثر مسؤولية؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Apply and describe the new approach as fully deployed",
+            "ar": "التقدم ووصف الأسلوب الجديد بأنه مطبق كليًا"
+          },
+          "why": {
+            "en": "Misleading assessors is unethical and visible on site.",
+            "ar": "تضليل المقيّمين غير أخلاقي ويظهر في الموقع."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Set out the options — apply now expecting useful but critical feedback, or strengthen results evidence and apply next cycle — with honest expected outcomes, and let leaders decide",
+            "ar": "عرض الخيارات — التقدم الآن مع توقع تغذية راجعة مفيدة لكنها ناقدة، أو تقوية أدلة النتائج والتقدم في الدورة التالية — مع النتائج المتوقعة بصدق، وترك القرار للقادة"
+          },
+          "why": {
+            "en": "Correct: transparent options, evidence-based.",
+            "ar": "صحيح: خيارات شفافة قائمة على الأدلة."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Refuse to work on any application",
+            "ar": "رفض العمل على أي طلب"
+          },
+          "why": {
+            "en": "Unhelpful.",
+            "ar": "غير مفيد."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Buy a ready-made document",
+            "ar": "شراء وثيقة جاهزة"
+          },
+          "why": {
+            "en": "Cannot describe this organisation and is not honest.",
+            "ar": "لا تصف هذه المنظمة وليست صادقة."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "The excellence lead's job is to give leaders honest options based on evidence; misrepresentation is never an option.",
+        "ar": "مهمة قائد التميز تقديم خيارات صادقة للقادة قائمة على الأدلة؛ والتحريف ليس خيارًا أبدًا."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "8f9b8f00c847d5dc6e9a01c108200dbd58513b81b32c866d503329a972b8d5ca"
+      },
+      "scenario": {
+        "en": "Three months before a national award deadline, an internal mock assessment finds that two of seven criteria have little results evidence and that one major approach was introduced only last month. The CEO still wants to apply this cycle.",
+        "ar": "قبل ثلاثة أشهر من موعد جائزة وطنية، يجد تقييم تجريبي داخلي أن معيارين من سبعة لهما أدلة نتائج قليلة، وأن أحد الأساليب الرئيسية لم يُطبق إلا الشهر الماضي. وما زال الرئيس التنفيذي يريد التقدم في هذه الدورة."
+      }
+    },
+    {
+      "id": "Q-EX-SUSTAIN-L01",
+      "category": "excellence",
+      "course_id": "CRS-EX-SUSTAIN",
+      "module_id": "CRS-EX-SUSTAIN-M01",
+      "competency": "OE-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which arrangement best sustains excellence?",
+        "ar": "أي ترتيب يُديم التميز على النحو الأفضل؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "A separate excellence programme with its own calendar",
+            "ar": "برنامج تميز منفصل بتقويم خاص"
+          },
+          "why": {
+            "en": "Disconnected from funding and strategy.",
+            "ar": "منفصل عن التمويل والاستراتيجية."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "An assessment only when applying for awards",
+            "ar": "تقييم فقط عند التقدم للجوائز"
+          },
+          "why": {
+            "en": "Episodic.",
+            "ar": "متقطع."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "A larger excellence office that owns all results",
+            "ar": "مكتب تميز أكبر يملك كل النتائج"
+          },
+          "why": {
+            "en": "Line leaders must own results.",
+            "ar": "يجب أن يملك قادة الخطوط النتائج."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Self-assessment and prioritisation built into the strategy and budget cycle",
+            "ar": "التقييم الذاتي والترتيب مدمجان في دورة الاستراتيجية والميزانية"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": {
+        "en": "Excellence lasts when assessment and priorities sit inside the normal management cycle.",
+        "ar": "يدوم التميز حين يكون التقييم والأولويات داخل الدورة الإدارية المعتادة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "d0758f07733b09f3efb645f7bb73cc69aa685f9bf32aed69ebaf6ab6b4133465"
+      }
+    },
+    {
+      "id": "Q-EX-SUSTAIN-L02",
+      "category": "excellence",
+      "course_id": "CRS-EX-SUSTAIN",
+      "module_id": "CRS-EX-SUSTAIN-M01",
+      "competency": "OE-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "What should happen before a process-benchmarking visit?",
+        "ar": "ماذا ينبغي أن يحدث قبل زيارة مقارنة مرجعية للعمليات؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Know your own process and data and prepare specific questions",
+            "ar": "معرفة عمليتك وبياناتك وإعداد أسئلة محددة"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Nothing; the partner will explain everything",
+            "ar": "لا شيء؛ فالشريك سيشرح كل شيء"
+          },
+          "why": {
+            "en": "Unprepared visits teach little.",
+            "ar": "الزيارات غير المعدة تعلّم قليلًا."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Decide to copy their process exactly",
+            "ar": "تقرير نسخ عمليتهم بالضبط"
+          },
+          "why": {
+            "en": "Adapt, do not copy.",
+            "ar": "كيّف ولا تنسخ."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Choose a partner in the same sector only",
+            "ar": "اختيار شريك من القطاع نفسه فقط"
+          },
+          "why": {
+            "en": "Other sectors may be better.",
+            "ar": "قطاعات أخرى قد تكون أفضل."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "Preparation — own data and focused questions — makes benchmarking useful.",
+        "ar": "الإعداد — البيانات الخاصة والأسئلة المركزة — يجعل المقارنة المرجعية مفيدة."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "6463e5f17d74679bc95b43caccc62f2e1582447136e568df4757dcaf116af4ef"
+      }
+    },
+    {
+      "id": "Q-EX-SUSTAIN-L03",
+      "category": "excellence",
+      "course_id": "CRS-EX-SUSTAIN",
+      "module_id": "CRS-EX-SUSTAIN-M02",
+      "competency": "LDR-01",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Which is the most common reason excellence fades after early success?",
+        "ar": "ما أشيع سبب لخفوت التميز بعد نجاح مبكر؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "The model publication changes",
+            "ar": "تغير إصدار النموذج"
+          },
+          "why": {
+            "en": "Organisations adapt to model updates.",
+            "ar": "تتكيف المنظمات مع تحديثات النموذج."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Too much data",
+            "ar": "كثرة البيانات"
+          },
+          "why": {
+            "en": "Not the usual cause.",
+            "ar": "ليس السبب المعتاد."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Leadership changes without induction into the excellence approach",
+            "ar": "تغير القيادة دون تأهيل على نهج التميز"
+          },
+          "why": {
+            "en": "Correct.",
+            "ar": "صحيح."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Staff become too engaged",
+            "ar": "زيادة ارتباط الموظفين"
+          },
+          "why": {
+            "en": "Not a risk.",
+            "ar": "ليس خطرًا."
+          }
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": {
+        "en": "Culture follows leaders; new leaders must be brought into the approach early.",
+        "ar": "الثقافة تتبع القادة؛ ويجب إدخال القادة الجدد في النهج مبكرًا."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "aa327e02c6eeec256cc40f91d5572968f2b1d41a3d58d20d20521b966201ed70"
+      }
+    },
+    {
+      "id": "Q-EX-SUSTAIN-L04",
+      "category": "excellence",
+      "course_id": "CRS-EX-SUSTAIN",
+      "module_id": "CRS-EX-SUSTAIN-M02",
+      "competency": "PERF-02",
+      "difficulty": "medium",
+      "type": "single_choice",
+      "format": "knowledge",
+      "prompt": {
+        "en": "Internal ratings jumped, but key results did not move. What is the most likely explanation?",
+        "ar": "قفزت التقديرات الداخلية، لكن النتائج الرئيسية لم تتحرك. ما التفسير الأرجح؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "The organisation improved dramatically",
+            "ar": "تحسنت المنظمة تحسنًا كبيرًا"
+          },
+          "why": {
+            "en": "Results would show it.",
+            "ar": "النتائج كانت ستُظهر ذلك."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Changes in method, team or writing rather than real improvement",
+            "ar": "تغيرات في المنهجية أو الفريق أو الكتابة لا تحسن حقيقي"
+          },
+          "why": {
+            "en": "Correct: check before celebrating.",
+            "ar": "صحيح: تحقق قبل الاحتفال."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Results always lag by ten years",
+            "ar": "النتائج تتأخر دائمًا عشر سنوات"
+          },
+          "why": {
+            "en": "Exaggerated.",
+            "ar": "مبالغ فيه."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "The model became easier",
+            "ar": "أصبح النموذج أسهل"
+          },
+          "why": {
+            "en": "Unfounded.",
+            "ar": "بلا أساس."
+          }
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": {
+        "en": "Rating gains need new evidence and moving results; otherwise suspect method or score-chasing.",
+        "ar": "زيادات التقدير تحتاج أدلة جديدة ونتائج تتحرك؛ وإلا فاشتبه في المنهجية أو مطاردة الدرجات."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "67f7500a7b0c3e37f2d6db73515adee8c499ea73bdf38994382a7e4218805968"
+      }
+    },
+    {
+      "id": "Q-EX-SUSTAIN-SCN",
+      "category": "excellence",
+      "course_id": "CRS-EX-SUSTAIN",
+      "module_id": null,
+      "competency": "LDR-02",
+      "difficulty": "hard",
+      "type": "single_choice",
+      "format": "scenario",
+      "prompt": {
+        "en": "What is the most effective first move?",
+        "ar": "ما الخطوة الأولى الأكثر فاعلية؟"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": {
+            "en": "Brief the new executives on how assessment and priorities connect to their strategy and budget, and re-embed the cycle in their calendar",
+            "ar": "إطلاع التنفيذيين الجدد على كيفية ارتباط التقييم والأولويات باستراتيجيتهم وميزانيتهم، وإعادة إدماج الدورة في تقويمهم"
+          },
+          "why": {
+            "en": "Correct: leadership and integration first.",
+            "ar": "صحيح: القيادة والإدماج أولًا."
+          }
+        },
+        {
+          "id": "b",
+          "text": {
+            "en": "Apply for another award immediately",
+            "ar": "التقدم لجائزة أخرى فورًا"
+          },
+          "why": {
+            "en": "Treats symptoms with another campaign.",
+            "ar": "يعالج الأعراض بحملة أخرى."
+          }
+        },
+        {
+          "id": "c",
+          "text": {
+            "en": "Hire five more excellence staff",
+            "ar": "توظيف خمسة موظفين إضافيين للتميز"
+          },
+          "why": {
+            "en": "Capacity without leadership ownership will not last.",
+            "ar": "الطاقة دون ملكية القيادة لن تدوم."
+          }
+        },
+        {
+          "id": "d",
+          "text": {
+            "en": "Wait for the next strategy period",
+            "ar": "انتظار فترة الاستراتيجية التالية"
+          },
+          "why": {
+            "en": "Loses momentum further.",
+            "ar": "يُفقد الزخم أكثر."
+          }
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": {
+        "en": "Sustainability depends on leaders seeing excellence as part of how they manage strategy and budget.",
+        "ar": "تعتمد الاستدامة على رؤية القادة للتميز جزءًا من طريقة إدارتهم للاستراتيجية والميزانية."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 1,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "13cb34235f2871b60e9c630e5d3aa099fc423c9da3fc9dd250757bf506fa81d7"
+      },
+      "scenario": {
+        "en": "Two years after national recognition, an organisation's improvement projects have slowed, the excellence office has shrunk to one person, and the new executive team sees excellence as “the award project that finished”.",
+        "ar": "بعد عامين من اعتراف وطني، تباطأت مشاريع التحسين في منظمة، وتقلص مكتب التميز إلى شخص واحد، ويرى الفريق التنفيذي الجديد التميز «مشروع الجائزة الذي انتهى»."
+      }
+    },
+    {
+      "id": "Q-EFQM-101-PT",
+      "category": "excellence",
+      "course_id": "CRS-EFQM-101",
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "hard",
+      "type": "practical_assignment",
+      "format": "practical",
+      "prompt": {
+        "en": "Prepare an excellence starting map for your organisation (or a unit): its purpose in one sentence; five stakeholder groups with one promise and one measure each; and a one-page table of the seven criteria showing, for each, two existing approaches or data sources and one probable gap. Write in your own words — no model text.",
+        "ar": "أعدّ خريطة انطلاق للتميز لمنظمتك (أو لوحدة فيها): غايتها في جملة واحدة؛ وخمس فئات من أصحاب المصلحة بوعد ومقياس لكلٍّ منها؛ وجدولًا من صفحة واحدة للمعايير السبعة يبيّن لكل معيار أسلوبين أو مصدرَي بيانات قائمين وفجوة محتملة واحدة. اكتب بكلماتك — دون نص النموذج."
+      },
+      "deliverable": {
+        "en": "Two-page excellence starting map (PDF or Word).",
+        "ar": "خريطة انطلاق للتميز من صفحتين (PDF أو Word)."
+      },
+      "rubric": [
+        {
+          "criterion": {
+            "en": "Purpose and stakeholders",
+            "ar": "الغاية وأصحاب المصلحة"
+          },
+          "weight": 30,
+          "levels": {
+            "meets": {
+              "en": "Purpose clear; five groups with measurable promises.",
+              "ar": "غاية واضحة؛ وخمس فئات بوعود قابلة للقياس."
+            },
+            "partial": {
+              "en": "Promises vague or measures missing.",
+              "ar": "وعود غامضة أو مقاييس ناقصة."
+            },
+            "not_yet": {
+              "en": "Groups listed only.",
+              "ar": "فئات مسرودة فقط."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Criteria map",
+            "ar": "خريطة المعايير"
+          },
+          "weight": 40,
+          "levels": {
+            "meets": {
+              "en": "All seven criteria with real approaches/data and a credible gap.",
+              "ar": "المعايير السبعة بأساليب وبيانات حقيقية وفجوة مقنعة."
+            },
+            "partial": {
+              "en": "Some criteria generic.",
+              "ar": "بعض المعايير عامة."
+            },
+            "not_yet": {
+              "en": "Copied or empty.",
+              "ar": "منسوخ أو فارغ."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Own words",
+            "ar": "الصياغة الذاتية"
+          },
+          "weight": 15,
+          "levels": {
+            "meets": {
+              "en": "Organisation-specific wording throughout.",
+              "ar": "صياغة خاصة بالمنظمة في كل الأجزاء."
+            },
+            "partial": {
+              "en": "Partly generic.",
+              "ar": "عامة جزئيًا."
+            },
+            "not_yet": {
+              "en": "Model text copied.",
+              "ar": "نص النموذج منسوخ."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Clarity",
+            "ar": "الوضوح"
+          },
+          "weight": 15,
+          "levels": {
+            "meets": {
+              "en": "Readable by a leadership team in five minutes.",
+              "ar": "يقرؤه فريق القيادة في خمس دقائق."
+            },
+            "partial": {
+              "en": "Readable with effort.",
+              "ar": "يُقرأ بجهد."
+            },
+            "not_yet": {
+              "en": "Unclear.",
+              "ar": "غير واضح."
+            }
+          }
+        }
+      ],
+      "explanation": {
+        "en": "Scored by a named human reviewer against the rubric. The result is recorded only after review; nothing is marked by AI.",
+        "ar": "يقيّمه مراجع بشري مسمّى وفق معيار التقييم، ولا تُسجَّل النتيجة إلا بعد المراجعة؛ ولا يُصحَّح شيء بالذكاء الاصطناعي."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 4,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "bce0c7527a07cbca42a9bf1da42d81289feb504b12dd1ab561f8626f33c6775f"
+      }
+    },
+    {
+      "id": "Q-EX-RADAR-PT",
+      "category": "excellence",
+      "course_id": "CRS-EX-RADAR",
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "hard",
+      "type": "practical_assignment",
+      "format": "practical",
+      "prompt": {
+        "en": "Apply the RADAR logic to one real area of your organisation (for example, complaint handling or employee onboarding). Write: the results that matter and their current trend; the approach and its rationale; a deployment matrix; evidence of assessment and refinement; and a self-rating for each element with one sentence of justification.",
+        "ar": "طبّق منطق RADAR على مجال حقيقي واحد في منظمتك (مثل معالجة الشكاوى أو تأهيل الموظفين الجدد). واكتب: النتائج المهمة واتجاهها الحالي؛ والأسلوب ومبرره؛ ومصفوفة تطبيق؛ وأدلة التقييم والتحسين؛ وتقديرًا ذاتيًا لكل عنصر بجملة تبرير واحدة."
+      },
+      "deliverable": {
+        "en": "Three-page RADAR review (PDF or Word).",
+        "ar": "مراجعة RADAR من ثلاث صفحات (PDF أو Word)."
+      },
+      "rubric": [
+        {
+          "criterion": {
+            "en": "Results",
+            "ar": "النتائج"
+          },
+          "weight": 25,
+          "levels": {
+            "meets": {
+              "en": "Relevant measures with trend, target and comparison.",
+              "ar": "مقاييس ذات صلة باتجاه ومستهدف ومقارنة."
+            },
+            "partial": {
+              "en": "Trend only.",
+              "ar": "اتجاه فقط."
+            },
+            "not_yet": {
+              "en": "No data.",
+              "ar": "بلا بيانات."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Approach",
+            "ar": "الأسلوب"
+          },
+          "weight": 25,
+          "levels": {
+            "meets": {
+              "en": "Rationale, design and links explained.",
+              "ar": "المبرر والتصميم والصلات مشروحة."
+            },
+            "partial": {
+              "en": "Described, rationale weak.",
+              "ar": "موصوف والمبرر ضعيف."
+            },
+            "not_yet": {
+              "en": "Named only.",
+              "ar": "مسمّى فقط."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Deployment and refinement",
+            "ar": "التطبيق والتحسين"
+          },
+          "weight": 30,
+          "levels": {
+            "meets": {
+              "en": "Matrix with dates; dated changes with reasons.",
+              "ar": "مصفوفة بتواريخ؛ وتغييرات مؤرخة بأسبابها."
+            },
+            "partial": {
+              "en": "Partial evidence.",
+              "ar": "أدلة جزئية."
+            },
+            "not_yet": {
+              "en": "Assertions only.",
+              "ar": "ادعاءات فقط."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Justified rating",
+            "ar": "تقدير مبرر"
+          },
+          "weight": 20,
+          "levels": {
+            "meets": {
+              "en": "Each rating follows from the evidence.",
+              "ar": "كل تقدير ينبع من الدليل."
+            },
+            "partial": {
+              "en": "Ratings loosely linked.",
+              "ar": "تقديرات بصلة ضعيفة."
+            },
+            "not_yet": {
+              "en": "Ratings unexplained.",
+              "ar": "تقديرات غير مفسرة."
+            }
+          }
+        }
+      ],
+      "explanation": {
+        "en": "Scored by a named human reviewer against the rubric. The result is recorded only after review; nothing is marked by AI.",
+        "ar": "يقيّمه مراجع بشري مسمّى وفق معيار التقييم، ولا تُسجَّل النتيجة إلا بعد المراجعة؛ ولا يُصحَّح شيء بالذكاء الاصطناعي."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 4,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "358e756e4de30baa8eab07d585a1f760d92923bd8e6d11625b2afda80f7e3e5a"
+      }
+    },
+    {
+      "id": "Q-EX-EVID-PT",
+      "category": "excellence",
+      "course_id": "CRS-EX-EVID",
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "hard",
+      "type": "practical_assignment",
+      "format": "practical",
+      "prompt": {
+        "en": "For one criterion of your choice, build an evidence register of at least eight items (title, source, date, owner, link, ladder rung), place two approaches on the five-stage maturity scale with reasons, and write three strengths and three areas for improvement using the patterns from the course.",
+        "ar": "لمعيار من اختيارك، ابنِ سجل أدلة من ثمانية عناصر على الأقل (العنوان والمصدر والتاريخ والمالك والرابط ودرجة السلّم)، وضع أسلوبين على مقياس النضج ذي المراحل الخمس بأسباب، واكتب ثلاث نقاط قوة وثلاثة مجالات تحسين باستخدام أنماط الدورة."
+      },
+      "deliverable": {
+        "en": "Evidence register and findings (spreadsheet + one page), or an export from the EFQM Assessment Lab.",
+        "ar": "سجل الأدلة والملاحظات (جدول بيانات + صفحة واحدة)، أو تصدير من مختبر تقييم EFQM."
+      },
+      "rubric": [
+        {
+          "criterion": {
+            "en": "Evidence register",
+            "ar": "سجل الأدلة"
+          },
+          "weight": 30,
+          "levels": {
+            "meets": {
+              "en": "Eight or more items, sourced, dated, owned, graded.",
+              "ar": "ثمانية عناصر أو أكثر، بمصادر وتواريخ ومالكين ودرجات."
+            },
+            "partial": {
+              "en": "Some fields missing.",
+              "ar": "بعض الحقول ناقصة."
+            },
+            "not_yet": {
+              "en": "Assertions only.",
+              "ar": "ادعاءات فقط."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Maturity",
+            "ar": "النضج"
+          },
+          "weight": 20,
+          "levels": {
+            "meets": {
+              "en": "Stage follows from the weakest element, next step clear.",
+              "ar": "المرحلة تنبع من أضعف عنصر، والخطوة التالية واضحة."
+            },
+            "partial": {
+              "en": "Stage stated, reasons thin.",
+              "ar": "المرحلة مذكورة والأسباب ضعيفة."
+            },
+            "not_yet": {
+              "en": "Unsupported stage.",
+              "ar": "مرحلة غير مدعومة."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Strengths",
+            "ar": "نقاط القوة"
+          },
+          "weight": 25,
+          "levels": {
+            "meets": {
+              "en": "Approach, deployment, review and effect.",
+              "ar": "الأسلوب والتطبيق والمراجعة والأثر."
+            },
+            "partial": {
+              "en": "Partly specific.",
+              "ar": "محددة جزئيًا."
+            },
+            "not_yet": {
+              "en": "Compliments.",
+              "ar": "مجاملات."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Areas for improvement",
+            "ar": "مجالات التحسين"
+          },
+          "weight": 25,
+          "levels": {
+            "meets": {
+              "en": "Specific, located, consequential, non-prescriptive.",
+              "ar": "محددة ومُحدَّدة الموضع ومبيّنة الأثر وغير فارضة للحل."
+            },
+            "partial": {
+              "en": "One quality missing.",
+              "ar": "تنقصها صفة واحدة."
+            },
+            "not_yet": {
+              "en": "Vague or prescriptive.",
+              "ar": "غامضة أو فارضة للحل."
+            }
+          }
+        }
+      ],
+      "explanation": {
+        "en": "Scored by a named human reviewer against the rubric. The result is recorded only after review; nothing is marked by AI.",
+        "ar": "يقيّمه مراجع بشري مسمّى وفق معيار التقييم، ولا تُسجَّل النتيجة إلا بعد المراجعة؛ ولا يُصحَّح شيء بالذكاء الاصطناعي."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 4,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "2adf098d484c77e1e87ee5ccfe9b9f507d6278273c99d2291f38a2bb9b130f86"
+      }
+    },
+    {
+      "id": "Q-EX-SA-PT",
+      "category": "excellence",
+      "course_id": "CRS-EX-SA",
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "hard",
+      "type": "practical_assignment",
+      "format": "practical",
+      "prompt": {
+        "en": "Plan and pilot a self-assessment of one criterion with two colleagues: write the plan (scope, sponsor, team, evidence call, timeline), record evidence and findings in the EFQM Assessment Lab, hold a 60-minute consensus session, and export a short report with three recommended priorities. Label it as a self-assessment aid.",
+        "ar": "خطط لتقييم ذاتي لمعيار واحد مع زميلين وجرّبه: اكتب الخطة (النطاق والراعي والفريق وطلب الأدلة والجدول الزمني)، وسجّل الأدلة والملاحظات في مختبر تقييم EFQM، وعقد جلسة إجماع مدتها 60 دقيقة، وصدّر تقريرًا قصيرًا بثلاث أولويات موصى بها. وسمِّه أداة مساعدة للتقييم الذاتي."
+      },
+      "deliverable": {
+        "en": "Plan (one page), Lab export (JSON or printed summary) and consensus notes.",
+        "ar": "الخطة (صفحة واحدة)، وتصدير المختبر (JSON أو ملخص مطبوع)، وملاحظات الإجماع."
+      },
+      "rubric": [
+        {
+          "criterion": {
+            "en": "Plan",
+            "ar": "الخطة"
+          },
+          "weight": 20,
+          "levels": {
+            "meets": {
+              "en": "All six questions answered realistically.",
+              "ar": "الأسئلة الستة مجابة بواقعية."
+            },
+            "partial": {
+              "en": "Some elements thin.",
+              "ar": "بعض العناصر ضعيفة."
+            },
+            "not_yet": {
+              "en": "No plan.",
+              "ar": "بلا خطة."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Evidence and findings",
+            "ar": "الأدلة والملاحظات"
+          },
+          "weight": 30,
+          "levels": {
+            "meets": {
+              "en": "Register complete; findings follow the patterns.",
+              "ar": "السجل مكتمل؛ والملاحظات تتبع الأنماط."
+            },
+            "partial": {
+              "en": "Partly evidenced.",
+              "ar": "مدعومة جزئيًا."
+            },
+            "not_yet": {
+              "en": "Assertions.",
+              "ar": "ادعاءات."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Consensus",
+            "ar": "الإجماع"
+          },
+          "weight": 25,
+          "levels": {
+            "meets": {
+              "en": "Facts → findings → ratings; gaps closed with evidence.",
+              "ar": "وقائع ← ملاحظات ← تقديرات؛ والفجوات تُغلق بالأدلة."
+            },
+            "partial": {
+              "en": "Order partly followed.",
+              "ar": "الترتيب متبع جزئيًا."
+            },
+            "not_yet": {
+              "en": "Averaged or imposed.",
+              "ar": "متوسط أو مفروض."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Report and priorities",
+            "ar": "التقرير والأولويات"
+          },
+          "weight": 25,
+          "levels": {
+            "meets": {
+              "en": "Short, labelled, three owned priorities.",
+              "ar": "قصير وموسوم وبثلاث أولويات مملوكة."
+            },
+            "partial": {
+              "en": "Long or priorities vague.",
+              "ar": "طويل أو أولويات غامضة."
+            },
+            "not_yet": {
+              "en": "No priorities.",
+              "ar": "بلا أولويات."
+            }
+          }
+        }
+      ],
+      "explanation": {
+        "en": "Scored by a named human reviewer against the rubric. The result is recorded only after review; nothing is marked by AI.",
+        "ar": "يقيّمه مراجع بشري مسمّى وفق معيار التقييم، ولا تُسجَّل النتيجة إلا بعد المراجعة؛ ولا يُصحَّح شيء بالذكاء الاصطناعي."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 4,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "0e79a45626e6d9919cae347a65edc9858d56aef66d2348a52fd873e6a8493673"
+      }
+    },
+    {
+      "id": "Q-EX-PLAN-PT",
+      "category": "excellence",
+      "course_id": "CRS-EX-PLAN",
+      "module_id": null,
+      "competency": "OE-02",
+      "difficulty": "hard",
+      "type": "practical_assignment",
+      "format": "practical",
+      "prompt": {
+        "en": "Take at least 20 real or realistic areas for improvement (for example from the EFQM Assessment Lab), cluster them into five to eight themes, score them on an impact–ease matrix with reasons, select priorities within a stated capacity, write two project charters and draw a 12-month roadmap with the review cadence.",
+        "ar": "خذ عشرين مجالًا للتحسين على الأقل، حقيقية أو واقعية (مثلًا من مختبر تقييم EFQM)، وجمّعها في خمسة إلى ثمانية محاور، وقدّرها على مصفوفة الأثر والسهولة بأسباب، واختر أولويات ضمن طاقة محددة، واكتب ميثاقَي مشروعين، وارسم خارطة طريق لاثني عشر شهرًا بإيقاع المراجعة."
+      },
+      "deliverable": {
+        "en": "Improvement plan pack: themes, matrix, two charters and roadmap (PDF, Word or the Lab export).",
+        "ar": "حزمة خطة التحسين: المحاور والمصفوفة وميثاقان وخارطة الطريق (PDF أو Word أو تصدير المختبر)."
+      },
+      "rubric": [
+        {
+          "criterion": {
+            "en": "Clustering",
+            "ar": "التجميع"
+          },
+          "weight": 20,
+          "levels": {
+            "meets": {
+              "en": "Themes with causes, traceable to AFIs.",
+              "ar": "محاور بأسباب، قابلة للتتبع إلى المجالات."
+            },
+            "partial": {
+              "en": "Themes are lists.",
+              "ar": "المحاور قوائم."
+            },
+            "not_yet": {
+              "en": "No clustering.",
+              "ar": "بلا تجميع."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Prioritisation",
+            "ar": "الترتيب"
+          },
+          "weight": 30,
+          "levels": {
+            "meets": {
+              "en": "Transparent scores, strategic tie-breakers, capacity respected.",
+              "ar": "درجات شفافة ومرجحات استراتيجية واحترام للطاقة."
+            },
+            "partial": {
+              "en": "Scores without reasons.",
+              "ar": "درجات بلا أسباب."
+            },
+            "not_yet": {
+              "en": "Everything is a priority.",
+              "ar": "كل شيء أولوية."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Charters",
+            "ar": "المواثيق"
+          },
+          "weight": 30,
+          "levels": {
+            "meets": {
+              "en": "Owner, sponsor, baseline, target, method.",
+              "ar": "المالك والراعي وخط الأساس والمستهدف والمنهجية."
+            },
+            "partial": {
+              "en": "One element missing.",
+              "ar": "ينقص عنصر واحد."
+            },
+            "not_yet": {
+              "en": "Activities only.",
+              "ar": "أنشطة فقط."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Roadmap and review",
+            "ar": "خارطة الطريق والمراجعة"
+          },
+          "weight": 20,
+          "levels": {
+            "meets": {
+              "en": "Phased, dependencies, embedded reviews.",
+              "ar": "مرحلية باعتماديات ومراجعات مدمجة."
+            },
+            "partial": {
+              "en": "Dates only.",
+              "ar": "تواريخ فقط."
+            },
+            "not_yet": {
+              "en": "None.",
+              "ar": "لا شيء."
+            }
+          }
+        }
+      ],
+      "explanation": {
+        "en": "Scored by a named human reviewer against the rubric. The result is recorded only after review; nothing is marked by AI.",
+        "ar": "يقيّمه مراجع بشري مسمّى وفق معيار التقييم، ولا تُسجَّل النتيجة إلا بعد المراجعة؛ ولا يُصحَّح شيء بالذكاء الاصطناعي."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 4,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "6f3f71f8f357c575cc80388dd2e5dd6e050ac8faf0d4bd3e7766cb00e760b911"
+      }
+    },
+    {
+      "id": "Q-EX-AWARD-PT",
+      "category": "excellence",
+      "course_id": "CRS-EX-AWARD",
+      "module_id": null,
+      "competency": "OE-01",
+      "difficulty": "hard",
+      "type": "practical_assignment",
+      "format": "practical",
+      "prompt": {
+        "en": "Prepare a readiness pack for an external assessment your organisation might pursue: an options table of two schemes with dated sources, a readiness check with evidence, a five-page sample of the submission document (overview plus one area with approach, deployment, refinement and linked results), and a site-visit preparation plan.",
+        "ar": "أعدّ حزمة جاهزية لتقييم خارجي قد تسعى إليه منظمتك: جدول خيارات لمخططين بمصادر مؤرخة، وفحص جاهزية بالأدلة، وعينة من خمس صفحات من وثيقة المشاركة (نظرة عامة ومجال واحد بالأسلوب والتطبيق والتحسين والنتائج المرتبطة)، وخطة استعداد للزيارة الميدانية."
+      },
+      "deliverable": {
+        "en": "Readiness pack (PDF or Word).",
+        "ar": "حزمة الجاهزية (PDF أو Word)."
+      },
+      "rubric": [
+        {
+          "criterion": {
+            "en": "Options and sources",
+            "ar": "الخيارات والمصادر"
+          },
+          "weight": 15,
+          "levels": {
+            "meets": {
+              "en": "Facts from the bodies' own pages, dated.",
+              "ar": "وقائع من صفحات الجهات نفسها، مؤرخة."
+            },
+            "partial": {
+              "en": "Some facts unsourced.",
+              "ar": "بعض الوقائع بلا مصدر."
+            },
+            "not_yet": {
+              "en": "Second-hand claims.",
+              "ar": "ادعاءات منقولة."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Readiness check",
+            "ar": "فحص الجاهزية"
+          },
+          "weight": 25,
+          "levels": {
+            "meets": {
+              "en": "Evidence per question and a reasoned recommendation.",
+              "ar": "دليل لكل سؤال وتوصية مبررة."
+            },
+            "partial": {
+              "en": "Answers without evidence.",
+              "ar": "إجابات بلا أدلة."
+            },
+            "not_yet": {
+              "en": "Ambition only.",
+              "ar": "طموح فقط."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Document sample",
+            "ar": "عينة الوثيقة"
+          },
+          "weight": 40,
+          "levels": {
+            "meets": {
+              "en": "Facts, dates, results with trends; own words; verifiable.",
+              "ar": "وقائع وتواريخ ونتائج باتجاهات؛ بكلمات المنظمة؛ قابلة للتحقق."
+            },
+            "partial": {
+              "en": "Partly descriptive.",
+              "ar": "وصفية جزئيًا."
+            },
+            "not_yet": {
+              "en": "Marketing prose or copied text.",
+              "ar": "نثر تسويقي أو نص منسوخ."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Site-visit plan",
+            "ar": "خطة الزيارة"
+          },
+          "weight": 20,
+          "levels": {
+            "meets": {
+              "en": "Briefing, logistics, evidence file, no scripting.",
+              "ar": "إحاطة وترتيبات وملف أدلة ودون تلقين."
+            },
+            "partial": {
+              "en": "Logistics only.",
+              "ar": "ترتيبات فقط."
+            },
+            "not_yet": {
+              "en": "Scripted answers.",
+              "ar": "إجابات ملقنة."
+            }
+          }
+        }
+      ],
+      "explanation": {
+        "en": "Scored by a named human reviewer against the rubric. The result is recorded only after review; nothing is marked by AI.",
+        "ar": "يقيّمه مراجع بشري مسمّى وفق معيار التقييم، ولا تُسجَّل النتيجة إلا بعد المراجعة؛ ولا يُصحَّح شيء بالذكاء الاصطناعي."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 4,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "5cbe4694b54d822a38c0d1a2a52c79c4c9d15679956ec23239df448d5697c315"
+      }
+    },
+    {
+      "id": "Q-EX-SUSTAIN-PT",
+      "category": "excellence",
+      "course_id": "CRS-EX-SUSTAIN",
+      "module_id": null,
+      "competency": "LDR-01",
+      "difficulty": "hard",
+      "type": "practical_assignment",
+      "format": "practical",
+      "prompt": {
+        "en": "Write a two-year sustaining plan for your organisation's excellence journey: an integrated annual calendar, one benchmarking project with partner choice and questions, three leadership-behaviour expectations with culture indicators, and a progress-measurement note that explains how ratings and results will be read honestly.",
+        "ar": "اكتب خطة استدامة لسنتين لمسيرة التميز في منظمتك: تقويمًا سنويًا متكاملًا، ومشروع مقارنة مرجعية واحدًا باختيار الشريك والأسئلة، وثلاثة توقعات للسلوك القيادي بمؤشرات ثقافة، ومذكرة قياس التقدم تشرح كيف ستُقرأ التقديرات والنتائج بصدق."
+      },
+      "deliverable": {
+        "en": "Sustaining plan (four pages, PDF or Word).",
+        "ar": "خطة الاستدامة (أربع صفحات، PDF أو Word)."
+      },
+      "rubric": [
+        {
+          "criterion": {
+            "en": "Integrated calendar",
+            "ar": "التقويم المتكامل"
+          },
+          "weight": 25,
+          "levels": {
+            "meets": {
+              "en": "Strategy, assessment, budget and reviews linked.",
+              "ar": "الاستراتيجية والتقييم والميزانية والمراجعات مترابطة."
+            },
+            "partial": {
+              "en": "Partly linked.",
+              "ar": "مترابطة جزئيًا."
+            },
+            "not_yet": {
+              "en": "Separate tracks.",
+              "ar": "مسارات منفصلة."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Benchmarking",
+            "ar": "المقارنة المرجعية"
+          },
+          "weight": 25,
+          "levels": {
+            "meets": {
+              "en": "Reasoned partner, prepared questions, adapt-and-measure plan.",
+              "ar": "شريك مبرر وأسئلة معدة وخطة تكييف وقياس."
+            },
+            "partial": {
+              "en": "Partner only.",
+              "ar": "الشريك فقط."
+            },
+            "not_yet": {
+              "en": "Tourism.",
+              "ar": "سياحة."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Leadership and culture",
+            "ar": "القيادة والثقافة"
+          },
+          "weight": 25,
+          "levels": {
+            "meets": {
+              "en": "Observable behaviours with indicators and reviews.",
+              "ar": "سلوكيات ملحوظة بمؤشرات ومراجعات."
+            },
+            "partial": {
+              "en": "Behaviours without indicators.",
+              "ar": "سلوكيات بلا مؤشرات."
+            },
+            "not_yet": {
+              "en": "Slogans.",
+              "ar": "شعارات."
+            }
+          }
+        },
+        {
+          "criterion": {
+            "en": "Honest measurement",
+            "ar": "القياس الصادق"
+          },
+          "weight": 25,
+          "levels": {
+            "meets": {
+              "en": "Stable method, results first, no rating targets.",
+              "ar": "منهجية ثابتة والنتائج أولًا ولا مستهدفات للتقديرات."
+            },
+            "partial": {
+              "en": "Partly.",
+              "ar": "جزئيًا."
+            },
+            "not_yet": {
+              "en": "Rating is the target.",
+              "ar": "التقدير هو المستهدف."
+            }
+          }
+        }
+      ],
+      "explanation": {
+        "en": "Scored by a named human reviewer against the rubric. The result is recorded only after review; nothing is marked by AI.",
+        "ar": "يقيّمه مراجع بشري مسمّى وفق معيار التقييم، ولا تُسجَّل النتيجة إلا بعد المراجعة؛ ولا يُصحَّح شيء بالذكاء الاصطناعي."
+      },
+      "reference": "SRC-CIA-EX",
+      "weight": 4,
+      "version": "0.10.0",
+      "status": "active",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "f57be3408d0dd0c85511563b0f26e55d1110032eb1f2a13e37f0d0fb29dee50e"
       }
     },
     {

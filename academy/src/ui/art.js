@@ -22,6 +22,9 @@ export const FAMILIES = {
 
 /** Topic → (motif, icon). Matched on id, slug, guide and category, most specific first. */
 const TOPICS = [
+  /* Phase 10 excellence courses (cover_topic "ex-…"), matched first so their covers differ from each other. */
+  [/\bex-radar\b/, 'loop', 'cycle'], [/\bex-evidence\b/, 'lines', 'magnify'], [/\bex-facilitation\b/, 'nodes', 'users'], [/\bex-roadmap\b/, 'gantt', 'flag'],
+  [/\bex-award\b/, 'steps', 'medal'], [/\bex-sustain\b/, 'waves', 'refresh'], [/\bex-foundations\b/, 'steps', 'star'],
   [/spc|control-chart/, 'control', 'control'], [/coq|cost-of-quality/, 'iceberg', 'coins'], [/supplier/, 'chain', 'truck'],
   [/lss|green-belt|dmaic|sigma/, 'hexes', 'sigma'], [/cmqoe|leadership-strategy|q-lead/, 'steps', 'crown'], [/q-audit|quality-audit/, 'rings', 'magnify'],
   [/capa|nonconformity|-nc\b|rca|five-whys|fishbone|why5/, 'loop', 'fish'], [/tools|pareto|qt-/, 'bars', 'chart'], [/qms|quality-practice|quality/, 'loop', 'cycle'],

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-04",
+  "updated": "2026-11-06",
   "method": "Weighted by estimated phase effort (weights below, total 112). Complete = 100 %, in progress = 50 %, otherwise 0 %.",
   "phases": [
     {
@@ -62,7 +62,9 @@
     {
       "id": "10",
       "weight": 5,
-      "status": "planned"
+      "status": "complete",
+      "partial": null,
+      "note": "Excellence (EFQM-informed) Academy published on owner approval after AI pre-review (9 Nov 2026): 7 courses, EFQM recognition explorer (5 options), EFQM Assessment Lab, 4 routes, 29 figures; full-width layout."
     },
     {
       "id": "11",

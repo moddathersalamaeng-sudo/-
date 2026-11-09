@@ -2252,6 +2252,482 @@
         "approval_basis": "owner_approval_after_ai_prereview",
         "approved_hash": "67325f0aa10a90db11678a72285d6b29f6f6ee0b22a708c33f85add1153fcd8d"
       }
+    },
+    {
+      "id": "ROUTE-EX-FOUND",
+      "kind": "excellence_route",
+      "roles": [],
+      "certification_ids": [
+        "CERT-EFQM-RAPID"
+      ],
+      "title": {
+        "en": "Excellence foundations",
+        "ar": "مسار أساسيات التميز"
+      },
+      "goal": {
+        "en": "Understand what an excellence model adds, read an organisation through Direction, Execution and Results, judge with RADAR and write findings people can act on.",
+        "ar": "فهم ما يضيفه نموذج التميز، وقراءة المنظمة عبر التوجه والتنفيذ والنتائج، والحكم بمنطق RADAR، وكتابة ملاحظات يمكن التصرف بناءً عليها."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "knowledge",
+          "target_id": "KA-019",
+          "title": {
+            "en": "Excellence vs quality",
+            "ar": "التميز والجودة"
+          },
+          "dependency": "recommended",
+          "effort": "10 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "assessment",
+          "target_id": "ASM-READY-EX-001",
+          "title": {
+            "en": "Excellence readiness diagnostic",
+            "ar": "التقييم التشخيصي لجاهزية التميز"
+          },
+          "dependency": "recommended",
+          "effort": "20 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-EFQM-101",
+          "title": {
+            "en": "Organisational Excellence Foundations",
+            "ar": "أساسيات التميز المؤسسي"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "OE-01"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-EX-RADAR",
+          "title": {
+            "en": "RADAR Logic: Judging Approaches, Deployment and Results",
+            "ar": "منطق RADAR: الحكم على الأساليب والتطبيق والنتائج"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "OE-01",
+            "PERF-02"
+          ]
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-EX-EVID",
+          "title": {
+            "en": "Evidence, Maturity, Strengths and Areas for Improvement",
+            "ar": "الأدلة والنضج ونقاط القوة ومجالات التحسين"
+          },
+          "dependency": "required",
+          "effort": "6.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "final_assessment",
+          "target_id": "ASM-EX-EVID-FINAL",
+          "title": {
+            "en": "Evidence, Maturity, Strengths and Areas for Improvement — final assessment",
+            "ar": "الأدلة والنضج ونقاط القوة ومجالات التحسين — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "6929de24872280540fe99b12d6a25662f98390c2690623bbaf018b07d2001e0e"
+      }
+    },
+    {
+      "id": "ROUTE-EX-SA",
+      "kind": "excellence_route",
+      "roles": [
+        "ROLE-OEL"
+      ],
+      "certification_ids": [
+        "CERT-EFQM-ADV",
+        "CERT-EFQM-ASSESSOR"
+      ],
+      "title": {
+        "en": "Self-assessment lead",
+        "ar": "مسار قائد التقييم الذاتي"
+      },
+      "goal": {
+        "en": "Plan and facilitate an evidence-based self-assessment, reach consensus on facts, findings and ratings, and turn the report into owned priorities — using the EFQM Assessment Lab.",
+        "ar": "تخطيط تقييم ذاتي قائم على الأدلة وتيسيره، والوصول إلى إجماع على الوقائع والملاحظات والتقديرات، وتحويل التقرير إلى أولويات مملوكة — باستخدام مختبر تقييم EFQM."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-EX-SA-DIAG",
+          "title": {
+            "en": "Route diagnostic — Self-assessment lead",
+            "ar": "التقييم التشخيصي للمسار — قائد التقييم الذاتي"
+          },
+          "dependency": "recommended",
+          "effort": "15 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-EFQM-101",
+          "title": {
+            "en": "Organisational Excellence Foundations",
+            "ar": "أساسيات التميز المؤسسي"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "OE-01"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-EX-RADAR",
+          "title": {
+            "en": "RADAR Logic: Judging Approaches, Deployment and Results",
+            "ar": "منطق RADAR: الحكم على الأساليب والتطبيق والنتائج"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "OE-01",
+            "PERF-02"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-EX-EVID",
+          "title": {
+            "en": "Evidence, Maturity, Strengths and Areas for Improvement",
+            "ar": "الأدلة والنضج ونقاط القوة ومجالات التحسين"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "OE-01",
+            "OE-02"
+          ]
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-EX-SA",
+          "title": {
+            "en": "Facilitating an Organisational Self-Assessment",
+            "ar": "تيسير التقييم الذاتي المؤسسي"
+          },
+          "dependency": "required",
+          "effort": "7.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-EX-PLAN",
+          "title": {
+            "en": "Improvement Planning and Prioritisation",
+            "ar": "تخطيط التحسين وترتيب الأولويات"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "OE-02"
+          ]
+        },
+        {
+          "order": 7,
+          "type": "practice",
+          "target_id": "ASM-EX-SA-PRACT",
+          "title": {
+            "en": "Facilitating an Organisational Self-Assessment — practical task",
+            "ar": "تيسير التقييم الذاتي المؤسسي — المهمة العملية"
+          },
+          "dependency": "recommended",
+          "effort": "150 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "218f9ac302a2f09e6790472d9660aa6bc6cd036f67987b5cba8121a4f22273f1"
+      }
+    },
+    {
+      "id": "ROUTE-EX-AWARD",
+      "kind": "excellence_route",
+      "roles": [],
+      "certification_ids": [
+        "CERT-EFQM-RAPID",
+        "CERT-EFQM-ADV",
+        "CERT-EFQM-GA"
+      ],
+      "title": {
+        "en": "Award and recognition preparation",
+        "ar": "مسار الاستعداد للجوائز والاعتراف"
+      },
+      "goal": {
+        "en": "Decide with evidence whether and when to apply, write a verifiable submission document, prepare people honestly for the site visit and use the feedback.",
+        "ar": "تقرير التقدم وتوقيته بالأدلة، وكتابة وثيقة مشاركة قابلة للتحقق، وإعداد الناس بصدق للزيارة الميدانية، والاستفادة من التغذية الراجعة."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-EX-AWARD-DIAG",
+          "title": {
+            "en": "Route diagnostic — Award and recognition preparation",
+            "ar": "التقييم التشخيصي للمسار — الاستعداد للجوائز والاعتراف"
+          },
+          "dependency": "recommended",
+          "effort": "15 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-EFQM-101",
+          "title": {
+            "en": "Organisational Excellence Foundations",
+            "ar": "أساسيات التميز المؤسسي"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "OE-01"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-EX-RADAR",
+          "title": {
+            "en": "RADAR Logic: Judging Approaches, Deployment and Results",
+            "ar": "منطق RADAR: الحكم على الأساليب والتطبيق والنتائج"
+          },
+          "dependency": "recommended",
+          "effort": "7 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "OE-01",
+            "PERF-02"
+          ]
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-EX-EVID",
+          "title": {
+            "en": "Evidence, Maturity, Strengths and Areas for Improvement",
+            "ar": "الأدلة والنضج ونقاط القوة ومجالات التحسين"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "OE-01",
+            "OE-02"
+          ]
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-EX-SA",
+          "title": {
+            "en": "Facilitating an Organisational Self-Assessment",
+            "ar": "تيسير التقييم الذاتي المؤسسي"
+          },
+          "dependency": "recommended",
+          "effort": "7.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "OE-01",
+            "LDR-01"
+          ]
+        },
+        {
+          "order": 6,
+          "type": "course",
+          "target_id": "CRS-EX-AWARD",
+          "title": {
+            "en": "Excellence Award and Recognition Preparation",
+            "ar": "الاستعداد لجوائز التميز والاعتراف به"
+          },
+          "dependency": "required",
+          "effort": "8 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 7,
+          "type": "final_assessment",
+          "target_id": "ASM-EX-AWARD-FINAL",
+          "title": {
+            "en": "Excellence Award and Recognition Preparation — final assessment",
+            "ar": "الاستعداد لجوائز التميز والاعتراف به — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "be1ac05b2e5c2f6136f577a2742558b4b138d069d45280642ed968705a532d8d"
+      }
+    },
+    {
+      "id": "ROUTE-EX-PLAN",
+      "kind": "excellence_route",
+      "roles": [],
+      "certification_ids": [
+        "CERT-EFQM-VALID"
+      ],
+      "title": {
+        "en": "Improvement planning",
+        "ar": "مسار تخطيط التحسين"
+      },
+      "goal": {
+        "en": "Turn assessment findings into a few owned, funded priorities with charters and a roadmap, and keep improvement going in the normal management cycle.",
+        "ar": "تحويل ملاحظات التقييم إلى أولويات قليلة مملوكة وممولة بمواثيق وخارطة طريق، ومواصلة التحسين في الدورة الإدارية المعتادة."
+      },
+      "steps": [
+        {
+          "order": 1,
+          "type": "assessment",
+          "target_id": "ASM-EX-PLAN-DIAG",
+          "title": {
+            "en": "Route diagnostic — Improvement planning",
+            "ar": "التقييم التشخيصي للمسار — تخطيط التحسين"
+          },
+          "dependency": "recommended",
+          "effort": "15 min",
+          "skip_if_completed": true
+        },
+        {
+          "order": 2,
+          "type": "course",
+          "target_id": "CRS-EX-EVID",
+          "title": {
+            "en": "Evidence, Maturity, Strengths and Areas for Improvement",
+            "ar": "الأدلة والنضج ونقاط القوة ومجالات التحسين"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "OE-01"
+          ]
+        },
+        {
+          "order": 3,
+          "type": "course",
+          "target_id": "CRS-EX-PLAN",
+          "title": {
+            "en": "Improvement Planning and Prioritisation",
+            "ar": "تخطيط التحسين وترتيب الأولويات"
+          },
+          "dependency": "required",
+          "effort": "7.5 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 4,
+          "type": "course",
+          "target_id": "CRS-M-A3",
+          "title": {
+            "en": "A3 Problem Solving: the method step by step",
+            "ar": "حل المشكلات بأسلوب A3: المنهجية خطوة بخطوة"
+          },
+          "dependency": "recommended",
+          "effort": "6 h",
+          "skip_if_completed": true
+        },
+        {
+          "order": 5,
+          "type": "course",
+          "target_id": "CRS-EX-SUSTAIN",
+          "title": {
+            "en": "Sustaining Excellence",
+            "ar": "استدامة التميز"
+          },
+          "dependency": "recommended",
+          "effort": "6.5 h",
+          "skip_if_completed": true,
+          "skip_if_mastered": [
+            "LDR-01",
+            "LDR-02"
+          ]
+        },
+        {
+          "order": 6,
+          "type": "final_assessment",
+          "target_id": "ASM-EX-PLAN-FINAL",
+          "title": {
+            "en": "Improvement Planning and Prioritisation — final assessment",
+            "ar": "تخطيط التحسين وترتيب الأولويات — التقييم الختامي"
+          },
+          "dependency": "recommended",
+          "effort": "30 min",
+          "skip_if_completed": true
+        }
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "8a1dc49c5c3b99bc4ab7a502b440d58a60d2c69a6cf9acc9b782d6b9b66738a3"
+      }
     }
   ]
 }

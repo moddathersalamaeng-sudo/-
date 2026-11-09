@@ -2104,6 +2104,473 @@
       "standard_ids": []
     },
     {
+      "id": "REC-CRS-EFQM-101",
+      "recommendation_type": "course",
+      "target_id": "CRS-EFQM-101",
+      "title": {
+        "en": "Organisational Excellence Foundations",
+        "ar": "أساسيات التميز المؤسسي"
+      },
+      "competencies": [
+        "OE-01",
+        "LDR-02",
+        "PERF-02"
+      ],
+      "domains": [
+        "LDR",
+        "OE",
+        "PERF"
+      ],
+      "roles": [
+        "ROLE-OEL"
+      ],
+      "level": 1,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "excellence",
+        "efqm",
+        "تميز",
+        "التميز",
+        "self-assessment",
+        "تقييم ذاتي"
+      ],
+      "certification_keywords": [
+        "EFQM",
+        "excellence"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "OE-01"
+      ]
+    },
+    {
+      "id": "REC-CRS-EX-RADAR",
+      "recommendation_type": "course",
+      "target_id": "CRS-EX-RADAR",
+      "title": {
+        "en": "RADAR Logic: Judging Approaches, Deployment and Results",
+        "ar": "منطق RADAR: الحكم على الأساليب والتطبيق والنتائج"
+      },
+      "competencies": [
+        "OE-01",
+        "PERF-01",
+        "PERF-02"
+      ],
+      "domains": [
+        "OE",
+        "PERF"
+      ],
+      "roles": [
+        "ROLE-OEL"
+      ],
+      "level": 2,
+      "estimated_effort": "7 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "excellence",
+        "efqm",
+        "تميز",
+        "التميز",
+        "self-assessment",
+        "تقييم ذاتي"
+      ],
+      "certification_keywords": [
+        "RADAR",
+        "EFQM",
+        "assessor"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "OE-01",
+        "PERF-02"
+      ]
+    },
+    {
+      "id": "REC-CRS-EX-EVID",
+      "recommendation_type": "course",
+      "target_id": "CRS-EX-EVID",
+      "title": {
+        "en": "Evidence, Maturity, Strengths and Areas for Improvement",
+        "ar": "الأدلة والنضج ونقاط القوة ومجالات التحسين"
+      },
+      "competencies": [
+        "OE-01",
+        "OE-02",
+        "PERF-02"
+      ],
+      "domains": [
+        "OE",
+        "PERF"
+      ],
+      "roles": [
+        "ROLE-OEL"
+      ],
+      "level": 2,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "excellence",
+        "efqm",
+        "تميز",
+        "التميز",
+        "self-assessment",
+        "تقييم ذاتي"
+      ],
+      "certification_keywords": [
+        "EFQM",
+        "assessor"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "OE-01",
+        "OE-02"
+      ]
+    },
+    {
+      "id": "REC-CRS-EX-SA",
+      "recommendation_type": "course",
+      "target_id": "CRS-EX-SA",
+      "title": {
+        "en": "Facilitating an Organisational Self-Assessment",
+        "ar": "تيسير التقييم الذاتي المؤسسي"
+      },
+      "competencies": [
+        "OE-01",
+        "LDR-01",
+        "OE-02",
+        "GOV-01"
+      ],
+      "domains": [
+        "GOV",
+        "LDR",
+        "OE"
+      ],
+      "roles": [
+        "ROLE-OEL"
+      ],
+      "level": 3,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [
+        {
+          "target_id": "CRS-EX-EVID",
+          "required": true
+        }
+      ],
+      "interest_keywords": [
+        "excellence",
+        "efqm",
+        "تميز",
+        "التميز",
+        "self-assessment",
+        "تقييم ذاتي"
+      ],
+      "certification_keywords": [
+        "EFQM",
+        "self-assessment",
+        "assessor"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-EX-PLAN",
+      "recommendation_type": "course",
+      "target_id": "CRS-EX-PLAN",
+      "title": {
+        "en": "Improvement Planning and Prioritisation",
+        "ar": "تخطيط التحسين وترتيب الأولويات"
+      },
+      "competencies": [
+        "OE-02",
+        "PERF-01",
+        "GOV-01",
+        "LDR-02"
+      ],
+      "domains": [
+        "GOV",
+        "LDR",
+        "OE",
+        "PERF"
+      ],
+      "roles": [
+        "ROLE-OEL"
+      ],
+      "level": 2,
+      "estimated_effort": "7.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "excellence",
+        "efqm",
+        "تميز",
+        "التميز",
+        "self-assessment",
+        "تقييم ذاتي",
+        "improvement plan",
+        "خطة تحسين",
+        "prioriti"
+      ],
+      "certification_keywords": [
+        "EFQM"
+      ],
+      "standard_ids": [],
+      "suppress_if_mastered": [
+        "OE-02",
+        "PERF-01"
+      ]
+    },
+    {
+      "id": "REC-CRS-EX-AWARD",
+      "recommendation_type": "course",
+      "target_id": "CRS-EX-AWARD",
+      "title": {
+        "en": "Excellence Award and Recognition Preparation",
+        "ar": "الاستعداد لجوائز التميز والاعتراف به"
+      },
+      "competencies": [
+        "OE-01",
+        "OE-02",
+        "LDR-01",
+        "PERF-02"
+      ],
+      "domains": [
+        "LDR",
+        "OE",
+        "PERF"
+      ],
+      "roles": [],
+      "level": 3,
+      "estimated_effort": "8 h",
+      "prerequisites": [
+        {
+          "target_id": "CRS-EX-SA",
+          "required": true
+        }
+      ],
+      "interest_keywords": [
+        "excellence",
+        "efqm",
+        "تميز",
+        "التميز",
+        "self-assessment",
+        "تقييم ذاتي",
+        "award",
+        "جائزة",
+        "kaqa"
+      ],
+      "certification_keywords": [
+        "EFQM",
+        "award",
+        "KAQA",
+        "King Abdulaziz"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-CRS-EX-SUSTAIN",
+      "recommendation_type": "course",
+      "target_id": "CRS-EX-SUSTAIN",
+      "title": {
+        "en": "Sustaining Excellence",
+        "ar": "استدامة التميز"
+      },
+      "competencies": [
+        "LDR-01",
+        "LDR-02",
+        "OE-02",
+        "PERF-02",
+        "GOV-01"
+      ],
+      "domains": [
+        "GOV",
+        "LDR",
+        "OE",
+        "PERF"
+      ],
+      "roles": [],
+      "level": 3,
+      "estimated_effort": "6.5 h",
+      "prerequisites": [],
+      "interest_keywords": [
+        "excellence",
+        "efqm",
+        "تميز",
+        "التميز",
+        "self-assessment",
+        "تقييم ذاتي"
+      ],
+      "certification_keywords": [
+        "EFQM",
+        "excellence"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-READY-EX-001",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-READY-EX-001",
+      "title": {
+        "en": "Excellence readiness diagnostic",
+        "ar": "التقييم التشخيصي لجاهزية التميز"
+      },
+      "competencies": [
+        "GOV-01",
+        "LDR-01",
+        "LDR-02",
+        "OE-01",
+        "OE-02",
+        "PERF-01"
+      ],
+      "domains": [
+        "GOV",
+        "LDR",
+        "OE",
+        "PERF"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "20 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "excellence",
+        "efqm",
+        "تميز",
+        "التميز",
+        "self-assessment",
+        "تقييم ذاتي"
+      ],
+      "certification_keywords": [
+        "EFQM"
+      ],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-EX-FOUND-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-EX-FOUND-DIAG",
+      "title": {
+        "en": "Route diagnostic — Excellence foundations",
+        "ar": "التقييم التشخيصي للمسار — أساسيات التميز"
+      },
+      "competencies": [
+        "OE-01",
+        "PERF-02"
+      ],
+      "domains": [
+        "OE",
+        "PERF"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "excellence",
+        "efqm",
+        "تميز",
+        "التميز",
+        "self-assessment",
+        "تقييم ذاتي"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-EX-SA-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-EX-SA-DIAG",
+      "title": {
+        "en": "Route diagnostic — Self-assessment lead",
+        "ar": "التقييم التشخيصي للمسار — قائد التقييم الذاتي"
+      },
+      "competencies": [
+        "LDR-01",
+        "OE-01"
+      ],
+      "domains": [
+        "LDR",
+        "OE"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "excellence",
+        "efqm",
+        "تميز",
+        "التميز",
+        "self-assessment",
+        "تقييم ذاتي"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-EX-AWARD-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-EX-AWARD-DIAG",
+      "title": {
+        "en": "Route diagnostic — Award and recognition preparation",
+        "ar": "التقييم التشخيصي للمسار — الاستعداد للجوائز والاعتراف"
+      },
+      "competencies": [
+        "OE-01",
+        "PERF-02"
+      ],
+      "domains": [
+        "OE",
+        "PERF"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "excellence",
+        "efqm",
+        "تميز",
+        "التميز",
+        "self-assessment",
+        "تقييم ذاتي"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
+      "id": "REC-ASM-EX-PLAN-DIAG",
+      "recommendation_type": "assessment",
+      "target_id": "ASM-EX-PLAN-DIAG",
+      "title": {
+        "en": "Route diagnostic — Improvement planning",
+        "ar": "التقييم التشخيصي للمسار — تخطيط التحسين"
+      },
+      "competencies": [
+        "LDR-01",
+        "OE-01",
+        "OE-02",
+        "PERF-01"
+      ],
+      "domains": [
+        "LDR",
+        "OE",
+        "PERF"
+      ],
+      "roles": [],
+      "level": 1,
+      "estimated_effort": "15 min",
+      "prerequisites": [],
+      "interest_keywords": [
+        "excellence",
+        "efqm",
+        "تميز",
+        "التميز",
+        "self-assessment",
+        "تقييم ذاتي"
+      ],
+      "certification_keywords": [],
+      "standard_ids": []
+    },
+    {
       "id": "REC-CRS-G-9001",
       "recommendation_type": "course",
       "target_id": "CRS-G-9001",

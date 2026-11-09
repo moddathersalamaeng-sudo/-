@@ -1,5 +1,5 @@
 /**
- * Continual Improvement Academy — bootstrap (Phase 1 foundation, extended through Phase 8).
+ * Continual Improvement Academy — bootstrap (Phase 1 foundation, extended through Phase 10).
  * Mounted at /academy/ beside the live CIA hub (index.html) and its toolkits (modules/).
  * Views are plain functions (ctx, match) → Node; routes are declared once in ROUTES below.
  * © 2026 Modather Salama — Continual Improvement Academy. All rights reserved.
@@ -32,6 +32,7 @@ import { knowledgeIndexView, ecosystemView, articleView, libraryView, libraryIte
 import { guidesIndexView, guideView, guideItemView } from './views/guides.js';
 import { pmiAcademyView, certificationsView, certificationView } from './views/pmi.js';
 import { qualityAcademyView, cmqoeCenterView } from './views/quality.js';
+import { excellenceAcademyView, excellenceLabView, excellenceLabSummaryView } from './views/excellence.js';
 
 const ROUTES = [
   { path: '/', view: homeView, titleKey: 'home.title' },
@@ -54,6 +55,11 @@ const ROUTES = [
   { path: '/academy/quality/certifications', view: (ctx, m) => certificationsView(ctx, m, 'ASQ'), titleKey: 'nav.items.certification' },
   { path: '/academy/quality/certifications/:slug', view: (ctx, m) => certificationView(ctx, m, 'ASQ'), titleKey: 'nav.items.certification' },
   { path: '/academy/quality/cmqoe', view: cmqoeCenterView, titleKey: 'q9.center.eyebrow' },
+  { path: '/academy/excellence', view: excellenceAcademyView, titleKey: 'nav.items.excellenceAcademy' },
+  { path: '/academy/excellence/recognition', view: (ctx, m) => certificationsView(ctx, m, 'EFQM'), titleKey: 'ex10.explorerTitle' },
+  { path: '/academy/excellence/recognition/:slug', view: (ctx, m) => certificationView(ctx, m, 'EFQM'), titleKey: 'ex10.explorerTitle' },
+  { path: '/academy/excellence/lab', view: excellenceLabView, titleKey: 'nav.items.excellenceLab' },
+  { path: '/academy/excellence/lab/summary', view: excellenceLabSummaryView, titleKey: 'ex10.lab.summaryTitle' },
   { path: '/academy/programs', view: programsView, titleKey: 'programs.title' },
   { path: '/recommendations', view: recommendationsView, titleKey: 'recommendations.title' },
   { path: '/learning-path', view: learningPathView, titleKey: 'learningPath.title' },
@@ -133,6 +139,9 @@ async function boot() {
       figures: new ContentRepository({ adapter: content, collection: 'figures' }),
       lessonFigures: new CollectionRepository({ adapter: content, collection: 'lesson-figures' }),
       programs: new ContentRepository({ adapter: content, collection: 'programs' }),
+      /* Phase 10: the EFQM Assessment Lab definition and regional-award facts (governed), and the learner's own Lab (cia:v1:*). */
+      excellence: new ContentRepository({ adapter: content, collection: 'excellence-lab' }),
+      excellenceLab: new CollectionRepository({ adapter: userAdapter, collection: 'excellence_lab' }),
       competencies: new ContentRepository({ adapter: competencyContent, collection: 'competencies' }),
       targetRoles: new ContentRepository({ adapter: competencyContent, collection: 'target-roles' }),
       domains: new ContentRepository({ adapter: competencyContent, collection: 'domains' }),

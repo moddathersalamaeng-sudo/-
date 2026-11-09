@@ -33,7 +33,8 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 SEED = ROOT / "data" / "seed"
 ALLOWED = {"courses", "assessments", "questions", "iso-standards", "learning-paths", "competency/competencies",
            "competency/target-roles", "competency/domains", "ecosystems", "programs", "sources", "certifications",  # Phase 8: certification explorer
-           "figures"}  # Phase 9: explanatory figures
+           "figures",  # Phase 9: explanatory figures
+           "excellence-lab"}  # Phase 10: EFQM Assessment Lab definition and KAQA facts
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 

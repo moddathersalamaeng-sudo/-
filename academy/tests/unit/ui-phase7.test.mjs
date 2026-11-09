@@ -67,9 +67,19 @@ function sandbox() {
   const dir = mkdtempSync(join(tmpdir(), 'cia-review-'));
   cpSync(join(ROOT, 'data'), join(dir, 'data'), { recursive: true });
   cpSync(join(ROOT, 'tools'), join(dir, 'tools'), { recursive: true });
+  /* Since Phase 10 every course is published. Inside this throw-away sandbox only, CRS-EFQM-101 and Q-EFQM-001 are put back to
+     their draft state so the review workflow is still exercised on a course and on a question; the real seed is untouched. */
+  /* Rewritten with Python, not JSON.stringify: JavaScript would turn 7.0 into 7 and change other records' content hashes. */
+  const py = `import json, sys
+for coll, rid in (("courses", "CRS-EFQM-101"), ("questions", "Q-EFQM-001")):
+    p = sys.argv[1] + "/data/seed/" + coll + ".json"; d = json.load(open(p, encoding="utf-8"))
+    r = next(x for x in d["items"] if x["id"] == rid)
+    r["governance"] = {"content_status": "needs_review", "content_source": "ai_draft", "version": r["governance"]["version"], "reviewer": None, "review_date": None, "change_note": "sandbox draft"}
+    open(p, "w", encoding="utf-8").write(json.dumps(d, ensure_ascii=False, indent=2) + "\\n")`;
+  execFileSync('python3', ['-I', '-c', py, dir]);
   return dir;
 }
-/* After Phase 9 the Quality courses are published too; the Phase 10 shell and the remaining Phase 5 demo items are still drafts, so the workflow is exercised on them. */
+/* The workflow is exercised on a course and a question reset to drafts in the sandbox, and on the remaining Phase 5 demo items (still drafts). */
 const decision = (o) => ({ collection: 'courses', record_id: 'CRS-EFQM-101', version: DRAFT_VERSION, decision: 'approve', comment: '', checklist: [], reviewer: 'Dr. Example Reviewer', reviewer_role: 'Lead Auditor', review_date: '2026-10-26', ...o });
 const DRAFT_VERSION = json('data/seed/courses.json').items.find(x => x.id === 'CRS-EFQM-101').governance.version;
 const EFQM_Q_VERSION = json('data/seed/questions.json').items.find(x => x.id === 'Q-EFQM-001').governance.version;

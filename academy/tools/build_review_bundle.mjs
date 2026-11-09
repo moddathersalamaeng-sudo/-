@@ -8,7 +8,7 @@
  *
  *   node tools/build_review_bundle.mjs [out.html] [--fragment]
  * --fragment writes the page without <!DOCTYPE>/<html>/<head>/<body> (for hosts that wrap the page in their own skeleton).
- * Requires network access to npm once (esbuild 0.24.2 via npx). Default output: ../../deliverables/phase-09/CIA_ACADEMY_REVIEW_BUILD.html
+ * Requires network access to npm once (esbuild 0.24.2 via npx). Default output: ../../deliverables/phase-10/CIA_ACADEMY_REVIEW_BUILD.html
  */
 import { execFileSync } from 'node:child_process';
 import { readFileSync, writeFileSync, readdirSync, mkdirSync } from 'node:fs';
@@ -18,7 +18,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const ARGS = process.argv.slice(2);
 const FRAGMENT = ARGS.includes('--fragment');
-const OUT = resolve(ARGS.find(a => !a.startsWith('--')) || join(ROOT, '..', '..', 'deliverables', 'phase-09', 'CIA_ACADEMY_REVIEW_BUILD.html'));
+const OUT = resolve(ARGS.find(a => !a.startsWith('--')) || join(ROOT, '..', '..', 'deliverables', 'phase-10', 'CIA_ACADEMY_REVIEW_BUILD.html'));
 const LIVE = 'https://moddathersalamaeng-sudo.github.io/-/';
 const read = p => readFileSync(join(ROOT, p), 'utf8');
 

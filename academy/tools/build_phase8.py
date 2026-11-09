@@ -357,7 +357,7 @@ save("relationships", rel_doc)
 # ------------------------------------------------------------------ build status
 bs = load("build-status")
 for p in bs["phases"]:
-    if str(p.get("id")) == "8":
+    if str(p.get("id")) == "8" and p.get("status") != "complete":  # a published phase stays complete on rebuild
         p.pop("fraction", None)
         p.update({"status": "in_progress", "partial": None,
                   "note": "PMI / PMO / P3O Academy built (3 Nov 2026): 4 practice guides, 14 courses, explorer of 8 PMI certifications, 5 routes. Content awaits review / owner approval."})

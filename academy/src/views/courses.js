@@ -76,8 +76,8 @@ function linkedPanel(ctx, c, content) {
   const guides = (c.related_guides || []).map(slug => (content.guides || []).find(g => g.slug === slug)).filter(Boolean);
   if (!certs.length && !guides.length) return null;
   return isec('c-links', 'link', t('p8.course.linked'),
-    certs.length ? h('div', null, h('h3', null, icon('award'), ' ', t('p8.course.certs')), h('p', { class: 'note' }, t(c.professional_body_reference === 'ASQ' ? (c.status_label === 'EXAM PREPARATION COURSE' ? 'q9.courseCertsNotePrep' : 'q9.courseCertsNote') : c.status_label === 'EXAM PREPARATION COURSE' ? 'p8.course.certsNotePrep' : 'p8.course.certsNote')),
-      h('ul', { class: 'chips' }, certs.map(x => h('li', null, h('a', { href: `#/academy/${x.body === 'ASQ' ? 'quality' : 'pmi'}/certifications/${x.slug}` }, x.code, ' ', L(ctx, x.name)))))) : null,
+    certs.length ? h('div', null, h('h3', null, icon('award'), ' ', t('p8.course.certs')), h('p', { class: 'note' }, t(c.professional_body_reference === 'EFQM' ? 'ex10.courseCertsNote' : c.professional_body_reference === 'ASQ' ? (c.status_label === 'EXAM PREPARATION COURSE' ? 'q9.courseCertsNotePrep' : 'q9.courseCertsNote') : c.status_label === 'EXAM PREPARATION COURSE' ? 'p8.course.certsNotePrep' : 'p8.course.certsNote')),
+      h('ul', { class: 'chips' }, certs.map(x => h('li', null, h('a', { href: (x.body === 'EFQM' ? `#/academy/excellence/recognition/${x.slug}` : `#/academy/${x.body === 'ASQ' ? 'quality' : 'pmi'}/certifications/${x.slug}`) }, x.code, ' ', L(ctx, x.name)))))) : null,
     guides.length ? h('div', null, h('h3', null, icon('ladder'), ' ', t('p8.course.guides')), h('p', { class: 'note' }, t('p8.course.guidesNote')),
       h('ul', { class: 'chips' }, guides.map(g => h('li', null, h('a', { href: guideHref(g.slug) }, L(ctx, g.title)))))) : null);
 }

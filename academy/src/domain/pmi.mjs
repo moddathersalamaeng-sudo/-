@@ -89,7 +89,7 @@ export function certFactState(cert) {
 export const showsFacts = state => state === 'verified' || state === 'secondary';
 
 /** Official site of each professional body (certification records must point there). */
-export const BODY_SITES = { PMI: /^https:\/\/(www\.)?pmi\.org\//, ASQ: /^https:\/\/(www\.)?asq\.org\// };
+export const BODY_SITES = { PMI: /^https:\/\/(www\.)?pmi\.org\//, ASQ: /^https:\/\/(www\.)?asq\.org\//, EFQM: /^https:\/\/(www\.|shop\.)?efqm\.org\// };
 /** Renewal in plain numbers, whatever the body calls the unit (PDUs for PMI, RUs for ASQ), or lifetime. */
 export const renewalUnits = r => (r?.lifetime ? 0 : (r?.pdus ?? r?.units ?? null));
 
@@ -103,11 +103,14 @@ export function validateCertification(c) {
   if (!c?.source_ids?.length) e.push('missing_sources');
   const st = certFactState(c);
   if (st.eligibility === 'verified' && !c.eligibility?.length) e.push('verified_without_eligibility');
-  if (st.exam === 'verified' && !(c.exam?.questions > 0 && c.exam?.minutes > 0)) e.push('verified_without_exam');
+  /* EFQM records (Phase 10) describe how the assessment works as label/value rows instead of an exam. */
+  const rowsOk = x => Array.isArray(x?.rows) && x.rows.length > 0 && x.rows.every(r => r.label?.en && r.label?.ar && r.value?.en && r.value?.ar);
+  if (st.exam === 'verified' && !(body === 'EFQM' ? rowsOk(c.exam) : (c.exam?.questions > 0 && c.exam?.minutes > 0))) e.push('verified_without_exam');
   if (st.fee === 'verified' && !(c.fee?.member > 0 && c.fee?.non_member > 0)) e.push('verified_without_fee');
-  if (st.renewal === 'verified' && !(c.renewal?.lifetime === true || (renewalUnits(c.renewal) > 0 && c.renewal?.years > 0))) e.push('verified_without_renewal');
+  if (st.renewal === 'verified' && !(c.renewal?.lifetime === true || (renewalUnits(c.renewal) > 0 && c.renewal?.years > 0) || c.renewal?.validity_years > 0)) e.push('verified_without_renewal');
   if (showsFacts(st.domains)) {
     if (!c.domains?.length) e.push('domains_missing');
+    else if (c.domain_unit === 'names') { if (c.domains.some(d => !d.name?.en || !d.name?.ar)) e.push('domain_name_missing'); }
     else if (c.domain_unit === 'questions') {
       const q = c.domains.reduce((a, d) => a + (d.questions || 0), 0);
       if (st.exam === 'verified' && c.exam?.scored && q !== c.exam.scored) e.push('domain_questions_not_scored:' + q);

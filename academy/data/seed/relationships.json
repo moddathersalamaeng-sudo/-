@@ -10042,6 +10042,1430 @@
       "toId": "ROUTE-Q-CMQOE"
     },
     {
+      "id": "rel-5289b0afb94a",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-e9ba6a27db78",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-45e234a52fcc",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "PERF-02"
+    },
+    {
+      "id": "rel-524406e7a01a",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-019"
+    },
+    {
+      "id": "rel-db471876a0b3",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-020"
+    },
+    {
+      "id": "rel-b8e2cd48183a",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-209006ebe938",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "kaqa"
+    },
+    {
+      "id": "rel-a0db9c2ddf34",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "str"
+    },
+    {
+      "id": "rel-aac0b30b0ad0",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "oec"
+    },
+    {
+      "id": "rel-53a6d1cc594e",
+      "fromType": "assessment",
+      "fromId": "ASM-EFQM-101-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EFQM-101"
+    },
+    {
+      "id": "rel-afce065a17b4",
+      "fromType": "assessment",
+      "fromId": "ASM-EFQM-101-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EFQM-101"
+    },
+    {
+      "id": "rel-543b84107dc7",
+      "fromType": "assessment",
+      "fromId": "ASM-EFQM-101-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EFQM-101"
+    },
+    {
+      "id": "rel-711845ee6df4",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-22bae34341e7",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "PERF-01"
+    },
+    {
+      "id": "rel-be96545dd03c",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "PERF-02"
+    },
+    {
+      "id": "rel-6cb66130aca7",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-021"
+    },
+    {
+      "id": "rel-5339b28c137e",
+      "fromType": "article",
+      "fromId": "KA-021",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EX-RADAR"
+    },
+    {
+      "id": "rel-1b35ba219755",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-020"
+    },
+    {
+      "id": "rel-e4d51aec2e45",
+      "fromType": "article",
+      "fromId": "KA-020",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EX-RADAR"
+    },
+    {
+      "id": "rel-3e9629869822",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-65f3658940ca",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "kaqa"
+    },
+    {
+      "id": "rel-2b66d80e8103",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "str"
+    },
+    {
+      "id": "rel-bf152036ff92",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-EX-RADAR"
+    },
+    {
+      "id": "rel-edd8ecb3fcd7",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-RADAR-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-RADAR"
+    },
+    {
+      "id": "rel-d02a0993ea52",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-RADAR-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-RADAR"
+    },
+    {
+      "id": "rel-f421a62a8ea4",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-RADAR-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-RADAR"
+    },
+    {
+      "id": "rel-6449f6fb5502",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-01aa840a1f66",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-978e12e764e2",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "PERF-02"
+    },
+    {
+      "id": "rel-edbf4724ad1c",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-021"
+    },
+    {
+      "id": "rel-7638fbc22a20",
+      "fromType": "article",
+      "fromId": "KA-021",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EX-EVID"
+    },
+    {
+      "id": "rel-11337950d41c",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-e8a5d1878c96",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "kaqa"
+    },
+    {
+      "id": "rel-956f560d58e4",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "oec"
+    },
+    {
+      "id": "rel-4e4d47a83507",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-EX-EVID"
+    },
+    {
+      "id": "rel-54615fa8ecf8",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-EVID-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-EVID"
+    },
+    {
+      "id": "rel-547e39e3804c",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-EVID-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-EVID"
+    },
+    {
+      "id": "rel-07c2bfc51708",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-EVID-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-EVID"
+    },
+    {
+      "id": "rel-9ca5e8d2b1ab",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-01939a081865",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-8f6ac8767c61",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-445ad2d5464a",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "GOV-01"
+    },
+    {
+      "id": "rel-fed233bf1631",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-021"
+    },
+    {
+      "id": "rel-f532625dc149",
+      "fromType": "article",
+      "fromId": "KA-021",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EX-SA"
+    },
+    {
+      "id": "rel-f587b7a58b9b",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-020"
+    },
+    {
+      "id": "rel-8376e648c0db",
+      "fromType": "article",
+      "fromId": "KA-020",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EX-SA"
+    },
+    {
+      "id": "rel-d0ac761f9aa5",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-8adebd3b9c15",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "kaqa"
+    },
+    {
+      "id": "rel-917541c8b904",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "str"
+    },
+    {
+      "id": "rel-cd5659fed184",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-EX-SA"
+    },
+    {
+      "id": "rel-11a41dc8eb0c",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-SA-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-SA"
+    },
+    {
+      "id": "rel-9e1e577f6471",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-SA-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-SA"
+    },
+    {
+      "id": "rel-987908840aa1",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-SA-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-SA"
+    },
+    {
+      "id": "rel-648813f1bfa5",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-a2c6cad3f98b",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "PERF-01"
+    },
+    {
+      "id": "rel-84ac19a25651",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "GOV-01"
+    },
+    {
+      "id": "rel-af6e4ca6f582",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-1f366d56b63a",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-021"
+    },
+    {
+      "id": "rel-76a244508150",
+      "fromType": "article",
+      "fromId": "KA-021",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EX-PLAN"
+    },
+    {
+      "id": "rel-e463dc6db1e8",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-020"
+    },
+    {
+      "id": "rel-c031ce6b1aeb",
+      "fromType": "article",
+      "fromId": "KA-020",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EX-PLAN"
+    },
+    {
+      "id": "rel-8b3014d29c4f",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "str"
+    },
+    {
+      "id": "rel-6cee3e6b979d",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-72f76bbf26cf",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pdca"
+    },
+    {
+      "id": "rel-f7c1c0889cad",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "a3"
+    },
+    {
+      "id": "rel-7d60f29448d0",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-EX-PLAN"
+    },
+    {
+      "id": "rel-2198236e9255",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-PLAN-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-PLAN"
+    },
+    {
+      "id": "rel-3083d74dad1b",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-PLAN-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-PLAN"
+    },
+    {
+      "id": "rel-29f15fc5aece",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-PLAN-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-PLAN"
+    },
+    {
+      "id": "rel-ce3918524107",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-2d19698d2297",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-0ce50ed69bed",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-60a92adfe379",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "PERF-02"
+    },
+    {
+      "id": "rel-5172dfd30652",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-019"
+    },
+    {
+      "id": "rel-a96b689dc310",
+      "fromType": "article",
+      "fromId": "KA-019",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EX-AWARD"
+    },
+    {
+      "id": "rel-3b25fc877de3",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-021"
+    },
+    {
+      "id": "rel-8dd9bd03c047",
+      "fromType": "article",
+      "fromId": "KA-021",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EX-AWARD"
+    },
+    {
+      "id": "rel-94deb09720b7",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "kaqa"
+    },
+    {
+      "id": "rel-10679a83f19c",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-222e8934e064",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "str"
+    },
+    {
+      "id": "rel-b932ae37d22b",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-EX-AWARD"
+    },
+    {
+      "id": "rel-8f3ed33651e7",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-AWARD-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-AWARD"
+    },
+    {
+      "id": "rel-14eb76432307",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-AWARD-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-AWARD"
+    },
+    {
+      "id": "rel-21f7a9fbca8d",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-AWARD-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-AWARD"
+    },
+    {
+      "id": "rel-db6dc14878e7",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "prepares_for",
+      "toType": "certification",
+      "toId": "CERT-EFQM-ADV"
+    },
+    {
+      "id": "rel-9f85956d6a0b",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-6faa3e1b21d8",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-72453d153f9a",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-93d9086b77ef",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "PERF-02"
+    },
+    {
+      "id": "rel-279f2d2e6b7f",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "GOV-01"
+    },
+    {
+      "id": "rel-7729676abb67",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-020"
+    },
+    {
+      "id": "rel-74731096bfbe",
+      "fromType": "article",
+      "fromId": "KA-020",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EX-SUSTAIN"
+    },
+    {
+      "id": "rel-9a74474278e9",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "references",
+      "toType": "article",
+      "toId": "KA-021"
+    },
+    {
+      "id": "rel-dc4be629f14f",
+      "fromType": "article",
+      "fromId": "KA-021",
+      "relation": "leads_to_course",
+      "toType": "course",
+      "toId": "CRS-EX-SUSTAIN"
+    },
+    {
+      "id": "rel-f593cfc20171",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "str"
+    },
+    {
+      "id": "rel-d9d68b07ecde",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "oec"
+    },
+    {
+      "id": "rel-890ad0eee067",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-2e0d943d3fdc",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "lessons"
+    },
+    {
+      "id": "rel-8e639263cbb2",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "prerequisite_of",
+      "toType": "course",
+      "toId": "CRS-EX-SUSTAIN"
+    },
+    {
+      "id": "rel-55f21c2f5b9e",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-SUSTAIN-QUIZ",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-SUSTAIN"
+    },
+    {
+      "id": "rel-d8a05dab803c",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-SUSTAIN-FINAL",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-SUSTAIN"
+    },
+    {
+      "id": "rel-b6f564a6ff80",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-SUSTAIN-PRACT",
+      "relation": "part_of",
+      "toType": "course",
+      "toId": "CRS-EX-SUSTAIN"
+    },
+    {
+      "id": "rel-b3e09b7f420c",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-RAPID"
+    },
+    {
+      "id": "rel-343ecf0bb1b4",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-RAPID"
+    },
+    {
+      "id": "rel-96f5fe2bd8a6",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-RAPID"
+    },
+    {
+      "id": "rel-40a43c1f9a98",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-RAPID",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-545efe5147c3",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-RAPID",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-f85a4849e58b",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-RAPID",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-91acb6b3368d",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-ADV"
+    },
+    {
+      "id": "rel-47db28101217",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-ADV"
+    },
+    {
+      "id": "rel-6eac36a726a4",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-ADV"
+    },
+    {
+      "id": "rel-d3ff56f724b3",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-ADV"
+    },
+    {
+      "id": "rel-121cdfee1c06",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-ADV",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-696247b33098",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-ADV",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-6ad14dad7ea3",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-ADV",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-57a469f2a33f",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-ADV",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "PERF-02"
+    },
+    {
+      "id": "rel-5febd524560b",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-ADV",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-a885dbd5d0cf",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-ADV",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "kaqa"
+    },
+    {
+      "id": "rel-2f583d667e74",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-GA"
+    },
+    {
+      "id": "rel-6e652e95c9d6",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-GA"
+    },
+    {
+      "id": "rel-5cec8c930849",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-GA",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-4c2ee6e0ed66",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-GA",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-b542eef688a5",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-GA",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-a37d774e0712",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-GA",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-72406e4d4962",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-GA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-869329605a78",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-VALID"
+    },
+    {
+      "id": "rel-fd12879f535b",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-VALID"
+    },
+    {
+      "id": "rel-5f9821dfe7dd",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-VALID",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-67a28bdf9213",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-VALID",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-b27b5f25dd21",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-VALID",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-14d0b704b082",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-ASSESSOR"
+    },
+    {
+      "id": "rel-625a29d84690",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-ASSESSOR"
+    },
+    {
+      "id": "rel-61f074a97f43",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "related_to",
+      "toType": "certification",
+      "toId": "CERT-EFQM-ASSESSOR"
+    },
+    {
+      "id": "rel-a9b0f29bed86",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-ASSESSOR",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-e8f59351da61",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-ASSESSOR",
+      "relation": "related_to",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-9fdd94fc9498",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-ASSESSOR",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "exc"
+    },
+    {
+      "id": "rel-030f4002024c",
+      "fromType": "certification",
+      "fromId": "CERT-EFQM-ASSESSOR",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "kaqa"
+    },
+    {
+      "id": "rel-226af63eeb31",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-EX-001",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "GOV-01"
+    },
+    {
+      "id": "rel-7c198359120a",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-EX-001",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-2f623ff8451a",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-EX-001",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-02"
+    },
+    {
+      "id": "rel-0e26c55449d4",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-EX-001",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-9bc8f4a30391",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-EX-001",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-49ca129c29f4",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-EX-001",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "PERF-01"
+    },
+    {
+      "id": "rel-e1613e2db9f0",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-FOUND-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-ccfd9e41264d",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-FOUND-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "PERF-02"
+    },
+    {
+      "id": "rel-a84e694fb797",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-SA-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-77081db96996",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-SA-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-4e7583fa2b61",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-AWARD-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-2a46b420c244",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-AWARD-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "PERF-02"
+    },
+    {
+      "id": "rel-5fb44a585a1b",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-PLAN-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "LDR-01"
+    },
+    {
+      "id": "rel-eb7dc5ef72ea",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-PLAN-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-01"
+    },
+    {
+      "id": "rel-0faa1f34debf",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-PLAN-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "OE-02"
+    },
+    {
+      "id": "rel-40554789204c",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-PLAN-DIAG",
+      "relation": "assesses",
+      "toType": "competency",
+      "toId": "PERF-01"
+    },
+    {
+      "id": "rel-31669a15a4f5",
+      "fromType": "article",
+      "fromId": "KA-019",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-FOUND"
+    },
+    {
+      "id": "rel-f207e5c3f164",
+      "fromType": "assessment",
+      "fromId": "ASM-READY-EX-001",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-FOUND"
+    },
+    {
+      "id": "rel-c97542a81a4a",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-FOUND"
+    },
+    {
+      "id": "rel-9ac2ef5d4c57",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-FOUND"
+    },
+    {
+      "id": "rel-94b8cc62ca25",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-FOUND"
+    },
+    {
+      "id": "rel-dbf82b64b07e",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-EVID-FINAL",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-FOUND"
+    },
+    {
+      "id": "rel-37c84e4cd1fe",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-SA-DIAG",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-SA"
+    },
+    {
+      "id": "rel-ccaee502dc12",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-SA"
+    },
+    {
+      "id": "rel-12d078c9e56e",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-SA"
+    },
+    {
+      "id": "rel-032417d2d79d",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-SA"
+    },
+    {
+      "id": "rel-0c350d7ce02a",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-SA"
+    },
+    {
+      "id": "rel-e8bc015c4e16",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-SA"
+    },
+    {
+      "id": "rel-ed54fc041779",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-SA-PRACT",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-SA"
+    },
+    {
+      "id": "rel-83efaa820498",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-AWARD-DIAG",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-AWARD"
+    },
+    {
+      "id": "rel-9802baceb8be",
+      "fromType": "course",
+      "fromId": "CRS-EFQM-101",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-AWARD"
+    },
+    {
+      "id": "rel-1c603262c491",
+      "fromType": "course",
+      "fromId": "CRS-EX-RADAR",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-AWARD"
+    },
+    {
+      "id": "rel-51a2eef27b5b",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-AWARD"
+    },
+    {
+      "id": "rel-efc51aacf3b7",
+      "fromType": "course",
+      "fromId": "CRS-EX-SA",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-AWARD"
+    },
+    {
+      "id": "rel-4c49ac9232e6",
+      "fromType": "course",
+      "fromId": "CRS-EX-AWARD",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-AWARD"
+    },
+    {
+      "id": "rel-0994d9d12253",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-AWARD-FINAL",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-AWARD"
+    },
+    {
+      "id": "rel-20f076892d0f",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-PLAN-DIAG",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-PLAN"
+    },
+    {
+      "id": "rel-ee13abd29152",
+      "fromType": "course",
+      "fromId": "CRS-EX-EVID",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-PLAN"
+    },
+    {
+      "id": "rel-8b99fd57db6a",
+      "fromType": "course",
+      "fromId": "CRS-EX-PLAN",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-PLAN"
+    },
+    {
+      "id": "rel-4c22bb1bf27c",
+      "fromType": "course",
+      "fromId": "CRS-EX-SUSTAIN",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-PLAN"
+    },
+    {
+      "id": "rel-041072b20a9a",
+      "fromType": "assessment",
+      "fromId": "ASM-EX-PLAN-FINAL",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-PLAN"
+    },
+    {
       "id": "rel-3c7afb779231",
       "fromType": "course",
       "fromId": "CRS-G-9001",
@@ -12704,6 +14128,14 @@
       "relation": "part_of",
       "toType": "learning_path",
       "toId": "ROUTE-Q-SSGB"
+    },
+    {
+      "id": "rel-526868c5703e",
+      "fromType": "course",
+      "fromId": "CRS-M-A3",
+      "relation": "part_of",
+      "toType": "learning_path",
+      "toId": "ROUTE-EX-PLAN"
     }
   ]
 }

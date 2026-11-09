@@ -6726,6 +6726,1397 @@
       }
     },
     {
+      "id": "ASM-EFQM-101-QUIZ",
+      "slug": "excellence-foundations-quiz",
+      "title": {
+        "en": "Organisational Excellence Foundations — knowledge checks",
+        "ar": "أساسيات التميز المؤسسي — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-EFQM-101",
+      "question_ids": [
+        "Q-EFQM-101-L01",
+        "Q-EFQM-101-L02",
+        "Q-EFQM-101-L03",
+        "Q-EFQM-101-L04"
+      ],
+      "competencies": [
+        "OE-01"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "040491be394851e54b72a0e2573c2863770f1c2e9603ea2b6513661e66c9c9d3"
+      }
+    },
+    {
+      "id": "ASM-EFQM-101-FINAL",
+      "slug": "excellence-foundations-final",
+      "title": {
+        "en": "Organisational Excellence Foundations — final assessment",
+        "ar": "أساسيات التميز المؤسسي — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-EFQM-101",
+      "question_ids": [
+        "Q-EFQM-101-SCN",
+        "Q-EFQM-101-L01",
+        "Q-EFQM-101-L02",
+        "Q-EFQM-101-L03",
+        "Q-EFQM-101-L04"
+      ],
+      "competencies": [
+        "OE-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not EFQM material). 70% completes the course; completion is a CIA certificate of completion, not an EFQM recognition or assessor qualification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست مادة من EFQM). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس اعترافًا من EFQM ولا تأهيلًا كمقيّم."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ceb364f77075e9584131fa65fe9498e7fcd0a5d9548bf0d61ab87d28f1baecfc"
+      }
+    },
+    {
+      "id": "ASM-EFQM-101-PRACT",
+      "slug": "excellence-foundations-practical",
+      "title": {
+        "en": "Organisational Excellence Foundations — practical task",
+        "ar": "أساسيات التميز المؤسسي — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-EFQM-101",
+      "question_ids": [
+        "Q-EFQM-101-PT"
+      ],
+      "competencies": [
+        "OE-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 90,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "5fbb1abd170453416a4a38fed72ba050782b8dc143ef65ce5a3ed79087d60d69"
+      }
+    },
+    {
+      "id": "ASM-EX-RADAR-QUIZ",
+      "slug": "radar-logic-quiz",
+      "title": {
+        "en": "RADAR Logic: Judging Approaches, Deployment and Results — knowledge checks",
+        "ar": "منطق RADAR: الحكم على الأساليب والتطبيق والنتائج — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-EX-RADAR",
+      "question_ids": [
+        "Q-EX-RADAR-L01",
+        "Q-EX-RADAR-L02",
+        "Q-EX-RADAR-L03",
+        "Q-EX-RADAR-L04"
+      ],
+      "competencies": [
+        "OE-01",
+        "PERF-01"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "d148600a8c1e2e0db2eb0bd28bedf53890b1d8549db3dd7b673c6fa5709e54e0"
+      }
+    },
+    {
+      "id": "ASM-EX-RADAR-FINAL",
+      "slug": "radar-logic-final",
+      "title": {
+        "en": "RADAR Logic: Judging Approaches, Deployment and Results — final assessment",
+        "ar": "منطق RADAR: الحكم على الأساليب والتطبيق والنتائج — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-EX-RADAR",
+      "question_ids": [
+        "Q-EX-RADAR-SCN",
+        "Q-EX-RADAR-L01",
+        "Q-EX-RADAR-L02",
+        "Q-EX-RADAR-L03",
+        "Q-EX-RADAR-L04"
+      ],
+      "competencies": [
+        "OE-01",
+        "PERF-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not EFQM material). 70% completes the course; completion is a CIA certificate of completion, not an EFQM recognition or assessor qualification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست مادة من EFQM). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس اعترافًا من EFQM ولا تأهيلًا كمقيّم."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "74f8290d5cc66c2cdc103ea08166f6dba7f3b56e8b54ee4de602f3a56dcbd6ba"
+      }
+    },
+    {
+      "id": "ASM-EX-RADAR-PRACT",
+      "slug": "radar-logic-practical",
+      "title": {
+        "en": "RADAR Logic: Judging Approaches, Deployment and Results — practical task",
+        "ar": "منطق RADAR: الحكم على الأساليب والتطبيق والنتائج — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-EX-RADAR",
+      "question_ids": [
+        "Q-EX-RADAR-PT"
+      ],
+      "competencies": [
+        "OE-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "10dc8828fe702febbf47e15af76526a17af6653a5bd74183d2ff135064dd3eba"
+      }
+    },
+    {
+      "id": "ASM-EX-EVID-QUIZ",
+      "slug": "evidence-and-findings-quiz",
+      "title": {
+        "en": "Evidence, Maturity, Strengths and Areas for Improvement — knowledge checks",
+        "ar": "الأدلة والنضج ونقاط القوة ومجالات التحسين — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-EX-EVID",
+      "question_ids": [
+        "Q-EX-EVID-L01",
+        "Q-EX-EVID-L02",
+        "Q-EX-EVID-L03",
+        "Q-EX-EVID-L04"
+      ],
+      "competencies": [
+        "OE-01"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "18853c76d87ba3c7b62ed8ed3040b912175d2725543f1219ab56246d98d3ed89"
+      }
+    },
+    {
+      "id": "ASM-EX-EVID-FINAL",
+      "slug": "evidence-and-findings-final",
+      "title": {
+        "en": "Evidence, Maturity, Strengths and Areas for Improvement — final assessment",
+        "ar": "الأدلة والنضج ونقاط القوة ومجالات التحسين — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-EX-EVID",
+      "question_ids": [
+        "Q-EX-EVID-SCN",
+        "Q-EX-EVID-L01",
+        "Q-EX-EVID-L02",
+        "Q-EX-EVID-L03",
+        "Q-EX-EVID-L04"
+      ],
+      "competencies": [
+        "OE-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not EFQM material). 70% completes the course; completion is a CIA certificate of completion, not an EFQM recognition or assessor qualification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست مادة من EFQM). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس اعترافًا من EFQM ولا تأهيلًا كمقيّم."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "458b84d0a536104bbd41143516a001f14fa4a5a0b2a99c5b2c8d8f6f747ebe17"
+      }
+    },
+    {
+      "id": "ASM-EX-EVID-PRACT",
+      "slug": "evidence-and-findings-practical",
+      "title": {
+        "en": "Evidence, Maturity, Strengths and Areas for Improvement — practical task",
+        "ar": "الأدلة والنضج ونقاط القوة ومجالات التحسين — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-EX-EVID",
+      "question_ids": [
+        "Q-EX-EVID-PT"
+      ],
+      "competencies": [
+        "OE-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "3a5099e81d1a7c5626fe24b0ce1b2ba2f81b0066b0b03fce40be847a6d603e10"
+      }
+    },
+    {
+      "id": "ASM-EX-SA-QUIZ",
+      "slug": "self-assessment-facilitation-quiz",
+      "title": {
+        "en": "Facilitating an Organisational Self-Assessment — knowledge checks",
+        "ar": "تيسير التقييم الذاتي المؤسسي — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-EX-SA",
+      "question_ids": [
+        "Q-EX-SA-L01",
+        "Q-EX-SA-L02",
+        "Q-EX-SA-L03",
+        "Q-EX-SA-L04"
+      ],
+      "competencies": [
+        "OE-01",
+        "OE-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ca736e105dfc4cef59eb848009995a0551cbadf3f7a5e22f94f3476cd21e4c7d"
+      }
+    },
+    {
+      "id": "ASM-EX-SA-FINAL",
+      "slug": "self-assessment-facilitation-final",
+      "title": {
+        "en": "Facilitating an Organisational Self-Assessment — final assessment",
+        "ar": "تيسير التقييم الذاتي المؤسسي — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-EX-SA",
+      "question_ids": [
+        "Q-EX-SA-SCN",
+        "Q-EX-SA-L01",
+        "Q-EX-SA-L02",
+        "Q-EX-SA-L03",
+        "Q-EX-SA-L04"
+      ],
+      "competencies": [
+        "LDR-01",
+        "OE-01",
+        "OE-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not EFQM material). 70% completes the course; completion is a CIA certificate of completion, not an EFQM recognition or assessor qualification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست مادة من EFQM). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس اعترافًا من EFQM ولا تأهيلًا كمقيّم."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "20fc49f86eaf8b60ec90609f159f33d8a26b42499e30c187bb49226a17d9f4e2"
+      }
+    },
+    {
+      "id": "ASM-EX-SA-PRACT",
+      "slug": "self-assessment-facilitation-practical",
+      "title": {
+        "en": "Facilitating an Organisational Self-Assessment — practical task",
+        "ar": "تيسير التقييم الذاتي المؤسسي — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-EX-SA",
+      "question_ids": [
+        "Q-EX-SA-PT"
+      ],
+      "competencies": [
+        "OE-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 150,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "c8b04f0de68eb29bcde1550b884354a93e9d7bba6769b37927aaa80779dc52a4"
+      }
+    },
+    {
+      "id": "ASM-EX-PLAN-QUIZ",
+      "slug": "improvement-planning-quiz",
+      "title": {
+        "en": "Improvement Planning and Prioritisation — knowledge checks",
+        "ar": "تخطيط التحسين وترتيب الأولويات — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-EX-PLAN",
+      "question_ids": [
+        "Q-EX-PLAN-L01",
+        "Q-EX-PLAN-L02",
+        "Q-EX-PLAN-L03",
+        "Q-EX-PLAN-L04"
+      ],
+      "competencies": [
+        "OE-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "8eef205b485b30f4bca42b48325e1074476f7b5ae33ab5d39a4070e13b744c34"
+      }
+    },
+    {
+      "id": "ASM-EX-PLAN-FINAL",
+      "slug": "improvement-planning-final",
+      "title": {
+        "en": "Improvement Planning and Prioritisation — final assessment",
+        "ar": "تخطيط التحسين وترتيب الأولويات — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-EX-PLAN",
+      "question_ids": [
+        "Q-EX-PLAN-SCN",
+        "Q-EX-PLAN-L01",
+        "Q-EX-PLAN-L02",
+        "Q-EX-PLAN-L03",
+        "Q-EX-PLAN-L04"
+      ],
+      "competencies": [
+        "OE-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not EFQM material). 70% completes the course; completion is a CIA certificate of completion, not an EFQM recognition or assessor qualification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست مادة من EFQM). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس اعترافًا من EFQM ولا تأهيلًا كمقيّم."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ec0e508580d0e6d2b416e1f4cc77915ae67fe25d358896e64a1a7259074cc0b3"
+      }
+    },
+    {
+      "id": "ASM-EX-PLAN-PRACT",
+      "slug": "improvement-planning-practical",
+      "title": {
+        "en": "Improvement Planning and Prioritisation — practical task",
+        "ar": "تخطيط التحسين وترتيب الأولويات — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-EX-PLAN",
+      "question_ids": [
+        "Q-EX-PLAN-PT"
+      ],
+      "competencies": [
+        "OE-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 150,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "68f29726f4a97b4614cc71508c95c3308ebf228887f2ccf0a8c49fefb2d8e90f"
+      }
+    },
+    {
+      "id": "ASM-EX-AWARD-QUIZ",
+      "slug": "excellence-award-preparation-quiz",
+      "title": {
+        "en": "Excellence Award and Recognition Preparation — knowledge checks",
+        "ar": "الاستعداد لجوائز التميز والاعتراف به — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-EX-AWARD",
+      "question_ids": [
+        "Q-EX-AWARD-L01",
+        "Q-EX-AWARD-L02",
+        "Q-EX-AWARD-L03",
+        "Q-EX-AWARD-L04"
+      ],
+      "competencies": [
+        "LDR-01",
+        "OE-01",
+        "OE-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "25c6873b5c7c5c3494cc02951e0237fb354b5e85a268e511b284ee72d16c72e2"
+      }
+    },
+    {
+      "id": "ASM-EX-AWARD-FINAL",
+      "slug": "excellence-award-preparation-final",
+      "title": {
+        "en": "Excellence Award and Recognition Preparation — final assessment",
+        "ar": "الاستعداد لجوائز التميز والاعتراف به — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-EX-AWARD",
+      "question_ids": [
+        "Q-EX-AWARD-SCN",
+        "Q-EX-AWARD-L01",
+        "Q-EX-AWARD-L02",
+        "Q-EX-AWARD-L03",
+        "Q-EX-AWARD-L04"
+      ],
+      "competencies": [
+        "LDR-01",
+        "OE-01",
+        "OE-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not EFQM material). 70% completes the course; completion is a CIA certificate of completion, not an EFQM recognition or assessor qualification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست مادة من EFQM). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس اعترافًا من EFQM ولا تأهيلًا كمقيّم."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "1652c238015df7c27e21d093cbf1e3e0fc7756937899c8fcb71fc53d430b264a"
+      }
+    },
+    {
+      "id": "ASM-EX-AWARD-PRACT",
+      "slug": "excellence-award-preparation-practical",
+      "title": {
+        "en": "Excellence Award and Recognition Preparation — practical task",
+        "ar": "الاستعداد لجوائز التميز والاعتراف به — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-EX-AWARD",
+      "question_ids": [
+        "Q-EX-AWARD-PT"
+      ],
+      "competencies": [
+        "OE-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 180,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "54b931499b8a8e0ee8fd289d505ad54a6f6bbd210444a526ee3def01d13898c0"
+      }
+    },
+    {
+      "id": "ASM-EX-SUSTAIN-QUIZ",
+      "slug": "sustaining-excellence-quiz",
+      "title": {
+        "en": "Sustaining Excellence — knowledge checks",
+        "ar": "استدامة التميز — الاختبارات المعرفية"
+      },
+      "kind": "knowledge_quiz",
+      "course_id": "CRS-EX-SUSTAIN",
+      "question_ids": [
+        "Q-EX-SUSTAIN-L01",
+        "Q-EX-SUSTAIN-L02",
+        "Q-EX-SUSTAIN-L03",
+        "Q-EX-SUSTAIN-L04"
+      ],
+      "competencies": [
+        "LDR-01",
+        "OE-02",
+        "PERF-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "The lesson checks of this course in one place, with explanations after each answer.",
+        "ar": "الاختبارات القصيرة لدروس هذه الدورة في مكان واحد، مع شرح بعد كل إجابة."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "c7344ec80c540666adf962b5adae3549bb224fb416de919c56f255a0a40afb75"
+      }
+    },
+    {
+      "id": "ASM-EX-SUSTAIN-FINAL",
+      "slug": "sustaining-excellence-final",
+      "title": {
+        "en": "Sustaining Excellence — final assessment",
+        "ar": "استدامة التميز — التقييم الختامي"
+      },
+      "kind": "final",
+      "course_id": "CRS-EX-SUSTAIN",
+      "question_ids": [
+        "Q-EX-SUSTAIN-SCN",
+        "Q-EX-SUSTAIN-L01",
+        "Q-EX-SUSTAIN-L02",
+        "Q-EX-SUSTAIN-L03",
+        "Q-EX-SUSTAIN-L04"
+      ],
+      "competencies": [
+        "LDR-01",
+        "LDR-02",
+        "OE-02",
+        "PERF-02"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 30,
+      "description": {
+        "en": "Objective and scenario items written by CIA (not EFQM material). 70% completes the course; completion is a CIA certificate of completion, not an EFQM recognition or assessor qualification.",
+        "ar": "أسئلة موضوعية وسيناريو كتبتها CIA (وليست مادة من EFQM). يلزم 70% لإكمال الدورة؛ والإكمال شهادة إكمال من CIA وليس اعترافًا من EFQM ولا تأهيلًا كمقيّم."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "eb8fbb7f650d95f46f64eaccdfe4caa84e9505d921fc50d65d4951a3e089338d"
+      }
+    },
+    {
+      "id": "ASM-EX-SUSTAIN-PRACT",
+      "slug": "sustaining-excellence-practical",
+      "title": {
+        "en": "Sustaining Excellence — practical task",
+        "ar": "استدامة التميز — المهمة العملية"
+      },
+      "kind": "practical",
+      "course_id": "CRS-EX-SUSTAIN",
+      "question_ids": [
+        "Q-EX-SUSTAIN-PT"
+      ],
+      "competencies": [
+        "LDR-01"
+      ],
+      "allow_unknown": false,
+      "estimated_minutes": 120,
+      "description": {
+        "en": "Submit your work here. A named human reviewer scores it against the rubric; no automatic or AI marking is applied.",
+        "ar": "سلّم عملك هنا. يقيّمه مراجع بشري مسمّى وفق معيار التقييم، دون أي تصحيح آلي أو بالذكاء الاصطناعي."
+      },
+      "scoring": {
+        "passing_score": 60,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e27775e66fdd33fc9d914ab37ce219a329afe5a5ceefa7659bf7007bb8442aa3"
+      }
+    },
+    {
+      "id": "ASM-READY-EX-001",
+      "slug": "excellence-readiness",
+      "title": {
+        "en": "Excellence readiness diagnostic",
+        "ar": "التقييم التشخيصي لجاهزية التميز"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-EX-RD-01",
+        "Q-EX-RD-02",
+        "Q-EX-RD-03",
+        "Q-EX-RD-04",
+        "Q-EX-RD-05",
+        "Q-EX-RD-06",
+        "Q-EX-RD-07",
+        "Q-EX-RD-08",
+        "Q-EX-RD-09",
+        "Q-EX-RD-10",
+        "Q-EX-RD-11",
+        "Q-EX-RD-12"
+      ],
+      "competencies": [
+        "GOV-01",
+        "LDR-01",
+        "LDR-02",
+        "OE-01",
+        "OE-02",
+        "PERF-01"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 20,
+      "description": {
+        "en": "Twelve original CIA items on excellence logic, evidence, RADAR, findings, prioritisation, leadership and measurement. Choose “I don't know” rather than guessing — it makes your starting point more accurate. The result is not a professional qualification, not an EFQM assessment, and years of experience are not used as evidence.",
+        "ar": "اثنا عشر سؤالًا أصليًا من CIA في منطق التميز والأدلة وRADAR والملاحظات والترتيب والقيادة والقياس. اختر «لا أعرف» بدل التخمين لتكون نقطة بدايتك أدق. والنتيجة ليست مؤهلًا مهنيًا ولا تقييمًا من EFQM، ولا تُستخدم سنوات الخبرة دليلًا."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "203d2d735e64ae1175812d1199a80a2535c413abd71da9723e5bb698b83b2bb8"
+      }
+    },
+    {
+      "id": "ASM-EX-FOUND-DIAG",
+      "slug": "excellence-route-found-diagnostic",
+      "title": {
+        "en": "Route diagnostic — Excellence foundations",
+        "ar": "التقييم التشخيصي للمسار — أساسيات التميز"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-EX-RF-01",
+        "Q-EX-RF-02",
+        "Q-EFQM-101-L01",
+        "Q-EFQM-101-L03",
+        "Q-EX-RADAR-L01",
+        "Q-EX-RADAR-L03",
+        "Q-EX-EVID-L01",
+        "Q-EX-EVID-L03"
+      ],
+      "competencies": [
+        "OE-01",
+        "PERF-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "04b9295422eb376d2b541b430c8ac2a2e3f9178ac84bb5b16f0489fd2ce5026d"
+      }
+    },
+    {
+      "id": "ASM-EX-SA-DIAG",
+      "slug": "excellence-route-sa-diagnostic",
+      "title": {
+        "en": "Route diagnostic — Self-assessment lead",
+        "ar": "التقييم التشخيصي للمسار — قائد التقييم الذاتي"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-EX-RS-01",
+        "Q-EX-RS-02",
+        "Q-EFQM-101-L01",
+        "Q-EFQM-101-L03",
+        "Q-EX-RADAR-L01",
+        "Q-EX-RADAR-L03",
+        "Q-EX-EVID-L01",
+        "Q-EX-EVID-L03",
+        "Q-EX-SA-L01",
+        "Q-EX-SA-L03"
+      ],
+      "competencies": [
+        "LDR-01",
+        "OE-01"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "2e7202b93c3cb05e45b00bc07fd4ba203c465bf19b9592b15d19f3b271d82e24"
+      }
+    },
+    {
+      "id": "ASM-EX-AWARD-DIAG",
+      "slug": "excellence-route-award-diagnostic",
+      "title": {
+        "en": "Route diagnostic — Award and recognition preparation",
+        "ar": "التقييم التشخيصي للمسار — الاستعداد للجوائز والاعتراف"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-EX-RA-01",
+        "Q-EX-RA-02",
+        "Q-EFQM-101-L01",
+        "Q-EFQM-101-L03",
+        "Q-EX-RADAR-L01",
+        "Q-EX-RADAR-L03",
+        "Q-EX-EVID-L01",
+        "Q-EX-EVID-L03",
+        "Q-EX-SA-L01",
+        "Q-EX-SA-L03"
+      ],
+      "competencies": [
+        "OE-01",
+        "PERF-02"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "cd7e1b85ab5b13813ea8a19a156aca19e03e2354a19adc789b2dc500456098d5"
+      }
+    },
+    {
+      "id": "ASM-EX-PLAN-DIAG",
+      "slug": "excellence-route-plan-diagnostic",
+      "title": {
+        "en": "Route diagnostic — Improvement planning",
+        "ar": "التقييم التشخيصي للمسار — تخطيط التحسين"
+      },
+      "kind": "diagnostic",
+      "course_id": null,
+      "question_ids": [
+        "Q-EX-RP-01",
+        "Q-EX-RP-02",
+        "Q-EX-EVID-L01",
+        "Q-EX-EVID-L03",
+        "Q-EX-PLAN-L01",
+        "Q-EX-PLAN-L03",
+        "Q-EX-SUSTAIN-L01",
+        "Q-EX-SUSTAIN-L03"
+      ],
+      "competencies": [
+        "LDR-01",
+        "OE-01",
+        "OE-02",
+        "PERF-01"
+      ],
+      "allow_unknown": true,
+      "estimated_minutes": 15,
+      "description": {
+        "en": "Applied diagnostic for this route. “I don't know” is allowed and is treated as not yet demonstrated; what you demonstrate here lets the route skip content.",
+        "ar": "تقييم تطبيقي لهذا المسار. يُسمح باختيار «لا أعرف» ويُعامل على أنه لم يُثبت بعد؛ وما تثبته هنا يتيح للمسار تجاوز المحتوى."
+      },
+      "scoring": {
+        "passing_score": 70,
+        "method": "weighted_points",
+        "manual_review_required_for_subjective": true
+      },
+      "integrity": {
+        "randomize_questions": true,
+        "randomize_options": false,
+        "attempt_limit": null,
+        "time_limit_minutes": null,
+        "show_answers": "after_submission"
+      },
+      "feedback": {
+        "show_domain_breakdown": true,
+        "show_explanations": true
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "5a25ce19ea9c3bd14f51203b5b46acc2db35ef3ebfeaafebef6e87836b813c16"
+      }
+    },
+    {
       "id": "ASM-G-9001-QUIZ",
       "slug": "iso-9001-requirements-quiz",
       "title": {

@@ -1101,6 +1101,222 @@
       "figures": [
         "FIG-PMP-REASON"
       ]
+    },
+    {
+      "id": "CRS-EFQM-101-L01",
+      "figures": [
+        "FIG-EX-LENS"
+      ]
+    },
+    {
+      "id": "CRS-EFQM-101-L02",
+      "figures": [
+        "FIG-EX-STAKE"
+      ]
+    },
+    {
+      "id": "CRS-EFQM-101-L03",
+      "figures": [
+        "FIG-EX-DER"
+      ]
+    },
+    {
+      "id": "CRS-EFQM-101-L04",
+      "figures": [
+        "FIG-EX-MODEL"
+      ]
+    },
+    {
+      "id": "course:CRS-EFQM-101",
+      "figures": [
+        "FIG-EX-MODEL"
+      ]
+    },
+    {
+      "id": "CRS-EX-RADAR-L01",
+      "figures": [
+        "FIG-EX-RADAR"
+      ]
+    },
+    {
+      "id": "course:CRS-EX-RADAR",
+      "figures": [
+        "FIG-EX-RADAR"
+      ]
+    },
+    {
+      "id": "CRS-EX-RADAR-L02",
+      "figures": [
+        "FIG-EX-APPROACH"
+      ]
+    },
+    {
+      "id": "CRS-EX-RADAR-L03",
+      "figures": [
+        "FIG-EX-DEPLOY"
+      ]
+    },
+    {
+      "id": "CRS-EX-RADAR-L04",
+      "figures": [
+        "FIG-EX-RESULTS"
+      ]
+    },
+    {
+      "id": "CRS-EX-EVID-L01",
+      "figures": [
+        "FIG-EX-LADDER"
+      ]
+    },
+    {
+      "id": "course:CRS-EX-EVID",
+      "figures": [
+        "FIG-EX-LADDER"
+      ]
+    },
+    {
+      "id": "CRS-EX-EVID-L02",
+      "figures": [
+        "FIG-EX-MATURITY"
+      ]
+    },
+    {
+      "id": "CRS-EX-EVID-L03",
+      "figures": [
+        "FIG-EX-STRENGTH"
+      ]
+    },
+    {
+      "id": "CRS-EX-EVID-L04",
+      "figures": [
+        "FIG-EX-AFI"
+      ]
+    },
+    {
+      "id": "CRS-EX-SA-L01",
+      "figures": [
+        "FIG-EX-SAMODES"
+      ]
+    },
+    {
+      "id": "course:CRS-EX-SA",
+      "figures": [
+        "FIG-EX-SAMODES"
+      ]
+    },
+    {
+      "id": "CRS-EX-SA-L02",
+      "figures": [
+        "FIG-EX-SAPLAN"
+      ]
+    },
+    {
+      "id": "CRS-EX-SA-L03",
+      "figures": [
+        "FIG-EX-CONSENSUS"
+      ]
+    },
+    {
+      "id": "CRS-EX-SA-L04",
+      "figures": [
+        "FIG-EX-REPORT"
+      ]
+    },
+    {
+      "id": "CRS-EX-PLAN-L01",
+      "figures": [
+        "FIG-EX-CLUSTER"
+      ]
+    },
+    {
+      "id": "course:CRS-EX-PLAN",
+      "figures": [
+        "FIG-EX-CLUSTER"
+      ]
+    },
+    {
+      "id": "CRS-EX-PLAN-L02",
+      "figures": [
+        "FIG-EX-PRIORITY"
+      ]
+    },
+    {
+      "id": "CRS-EX-PLAN-L03",
+      "figures": [
+        "FIG-EX-CHARTER"
+      ]
+    },
+    {
+      "id": "CRS-EX-PLAN-L04",
+      "figures": [
+        "FIG-EX-ROADMAP"
+      ]
+    },
+    {
+      "id": "CRS-EX-AWARD-L01",
+      "figures": [
+        "FIG-EX-PATHWAYS"
+      ]
+    },
+    {
+      "id": "course:CRS-EX-AWARD",
+      "figures": [
+        "FIG-EX-PATHWAYS"
+      ]
+    },
+    {
+      "id": "CRS-EX-AWARD-L02",
+      "figures": [
+        "FIG-EX-READY"
+      ]
+    },
+    {
+      "id": "CRS-EX-AWARD-L03",
+      "figures": [
+        "FIG-EX-DOC"
+      ]
+    },
+    {
+      "id": "CRS-EX-AWARD-L04",
+      "figures": [
+        "FIG-EX-VISIT"
+      ]
+    },
+    {
+      "id": "CRS-EX-SUSTAIN-L01",
+      "figures": [
+        "FIG-EX-ANNUAL"
+      ]
+    },
+    {
+      "id": "course:CRS-EX-SUSTAIN",
+      "figures": [
+        "FIG-EX-ANNUAL"
+      ]
+    },
+    {
+      "id": "CRS-EX-SUSTAIN-L02",
+      "figures": [
+        "FIG-EX-BENCH"
+      ]
+    },
+    {
+      "id": "CRS-EX-SUSTAIN-L03",
+      "figures": [
+        "FIG-EX-CULTURE"
+      ]
+    },
+    {
+      "id": "CRS-EX-SUSTAIN-L04",
+      "figures": [
+        "FIG-EX-CHASE"
+      ]
+    },
+    {
+      "id": "lab:efqm",
+      "figures": [
+        "FIG-EX-LABFLOW"
+      ]
     }
   ]
 }

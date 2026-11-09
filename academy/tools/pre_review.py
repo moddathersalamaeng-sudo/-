@@ -19,6 +19,9 @@ Blocking checks (a record that fails one is NOT a candidate):
                    verification, existing sources; a "pending" group carries no figures; "secondary" only for BoK counts, with a labelled
                    provider source; PMI weights add up to 100, ASQ question counts add up to the scored items; no partner / PDU / RU claim
   B9 figures (Phase 9): known template, bilingual caption and "how to read it", labels in both languages; illustrative numbers say so
+  B10 excellence (Phase 10): no "EFQM-approved", "licensed assessor" or "EFQM recognised" claim unless negated; EFQM records point to
+                   efqm.org and carry the CIA claims text; the EFQM Assessment Lab definition is labelled "not an EFQM assessment" and
+                   uses criterion names only (no guidance longer than CIA's own one-line questions); KAQA facts cite official .gov.sa pages
 Advisory checks (reported, not blocking): duplicate prompts, very long options, answer-key position balance.
 """
 import json
@@ -29,7 +32,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SEED = ROOT / "data" / "seed"
-OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-09" / "review"
+OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-10" / "review"
 load = lambda n: json.loads((SEED / f"{n}.json").read_text(encoding="utf-8"))["items"]  # noqa: E731
 guides = {g["slug"]: json.loads((ROOT / "data" / "guides" / f"{g['slug']}.json").read_text(encoding="utf-8"))["guide"]
           for g in json.loads((ROOT / "data" / "guides" / "index.json").read_text(encoding="utf-8"))["items"]}
@@ -37,10 +40,10 @@ guides = {g["slug"]: json.loads((ROOT / "data" / "guides" / f"{g['slug']}.json")
 COLL = {"courses": "courses", "questions": "questions", "assessments": "assessments", "iso-standards": "iso-standards", "learning-paths": "learning-paths",
         "ecosystems": "ecosystems", "programs": "programs", "sources": "sources", "competency/competencies": "competency/competencies",
         "competency/target-roles": "competency/target-roles", "competency/domains": "competency/domains", "certifications": "certifications",
-        "figures": "figures"}
+        "figures": "figures", "excellence-lab": "excellence-lab"}
 data = {k: load(v) for k, v in COLL.items()}
-FUTURE_COURSES = {"CRS-EFQM-101"}  # CRS-QMS-201 is a Phase 9 course since 4 Nov 2026  # CRS-PM-101 and CRS-P3O-101 are Phase 8 courses since 3 Nov 2026
-FUTURE_Q = {"Q-PM-001", "Q-RISK-001", "Q-PMO-001", "Q-EFQM-001", "Q-GOV-001", "Q-AI-001"}
+FUTURE_COURSES = set()  # CRS-EFQM-101 is a Phase 10 course since 6 Nov 2026  # CRS-QMS-201 is a Phase 9 course since 4 Nov 2026  # CRS-PM-101 and CRS-P3O-101 are Phase 8 courses since 3 Nov 2026
+FUTURE_Q = {"Q-PM-001", "Q-RISK-001", "Q-PMO-001", "Q-GOV-001", "Q-AI-001"}  # Q-EFQM-001 reworked in Phase 10
 FUTURE_A = {"ASM-DIAG-001", "ASM-QUIZ-001", "ASM-SCEN-001", "ASM-PRACT-001"}
 FUTURE_PROGRAMS = set()  # PRG-CIA-FOUNDATIONS completed in Phase 9 (QMS-201 stage added)
 
@@ -69,7 +72,8 @@ def texts(o, path=""):
 
 CLAIM_EN = re.compile(r"\b(accredit\w*|CPD|PDUs?|CEUs?|IRCA[- ]approved|Exemplar Global|certified (?:by|course)|approved (?:by|course)|official(?:ly)? (?:recogni[sz]ed|certified)"
                       r"|ATP|Authori[sz]ed Training Partner|PMI[- ](?:approved|endorsed|accredited)|Registered Education Provider|contact[- ]hours? certificate"
-                      r"|ASQ[- ](?:approved|endorsed|accredited|partner)|certified by ASQ|RUs?|recertification units?)\b", re.I)
+                      r"|ASQ[- ](?:approved|endorsed|accredited|partner)|certified by ASQ|RUs?|recertification units?"
+                      r"|EFQM[- ](?:approved|endorsed|accredited|recogni[sz]ed|licensed|partner)|licen[sc]ed (?:EFQM )?assessors?|certified EFQM assessor)\b", re.I)
 CLAIM_AR = re.compile(r"(وحدات? إعادة (?:ال)?اعتماد|معتمدة? من|اعتماد(?:ها)? من|ساعات التطوير المهني|شهادة معتمدة|معترف بها رسميًا|شريك تدريب معتمد|وحدات? PDU|شهادة ساعات)")
 NEG = re.compile(r"(not|no|never|without|nor|isn't|does not|doesn't|cannot|غير|لا |ليس|ليست|دون|لم |بلا)", re.I)
 QUOTE = re.compile(r"[“\"«]([^”\"»]{120,})[”\"»]")
@@ -226,7 +230,7 @@ for q in data["questions"]:
             flag("questions", q["id"], "B6", f"practice distractor {o['id']} shares “{', '.join(sorted(words(o['text']['en']) & own))}” with the practice")
 
 # ------------------------------------------------------------------ B8 certification facts (Phase 8, ASQ in Phase 9)
-SITE = {"PMI": r"^https://(www\.)?pmi\.org/", "ASQ": r"^https://(www\.)?asq\.org/"}
+SITE = {"PMI": r"^https://(www\.)?pmi\.org/", "ASQ": r"^https://(www\.)?asq\.org/", "EFQM": r"^https://(www\.|shop\.)?efqm\.org/"}
 src_by = {x["id"]: x for x in data["sources"]}
 for c in data.get("certifications", []):
     st = c.get("facts_status", {}); body = c.get("body", "PMI")
@@ -244,6 +248,8 @@ for c in data.get("certifications", []):
         if c.get("domain_unit") == "questions":
             if (c.get("exam") or {}).get("scored") and sum(d["questions"] for d in c["domains"]) != c["exam"]["scored"]:
                 flag("certifications", c["id"], "B8", "BoK question counts do not add up to the scored items")
+        elif c.get("domain_unit") == "names":
+            if any(not d.get("name", {}).get("en") or not d.get("name", {}).get("ar") for d in c["domains"]): flag("certifications", c["id"], "B8", "a domain name is missing in one language")
         elif sum(d["weight"] for d in c["domains"]) != 100:
             flag("certifications", c["id"], "B8", "domain weights do not add up to 100")
 
@@ -254,8 +260,27 @@ for f in data.get("figures", []):
     for k in ("caption", "read"):
         if not (f.get(k) or {}).get("en") or not (f.get(k) or {}).get("ar"): flag("figures", f["id"], "B9", f"{k} missing in one language")
     if f.get("template") in ("pareto", "histogram", "control", "scatter", "scurve", "bars") and "lesson example" not in f["read"]["en"].lower() and "illustrative" not in f["read"]["en"].lower() \
-            and "lesson example" not in json.dumps(f.get("xLabel", {})).lower() and not re.search(r"\b(PMI|ASQ)\b", f["read"]["en"] + f["caption"]["en"]):
+            and "lesson example" not in json.dumps(f.get("xLabel", {})).lower() and not re.search(r"\b(PMI|ASQ|efqm\.org)\b", f["read"]["en"] + f["caption"]["en"]):
         flag("figures", f["id"], "B9", "chart numbers are not marked as illustrative, a lesson example or a sourced fact")
+
+# ------------------------------------------------------------------ B10 excellence (Phase 10)
+for c in data.get("certifications", []):
+    if c.get("body") != "EFQM": continue
+    if "not an EFQM partner" not in c.get("claims", {}).get("en", "") or "not an EFQM assessment" not in c.get("claims", {}).get("en", ""):
+        flag("certifications", c["id"], "B10", "EFQM record without the CIA claims text")
+    for s_ in c.get("source_ids", []):
+        if not re.search(r"efqm\.org", src_by.get(s_, {}).get("official_url", "")): flag("certifications", c["id"], "B10", f"source {s_} is not an EFQM page")
+for x in data.get("excellence-lab", []):
+    if x["id"] == "LAB-EFQM":
+        if "not an EFQM assessment" not in x.get("label", {}).get("en", ""): flag("excellence-lab", x["id"], "B10", "Lab not labelled as a self-assessment aid")
+        for c in x.get("criteria", []):
+            if len(c.get("prompt", {}).get("en", "").split()) > 30: flag("excellence-lab", x["id"], "B10", f"{c['id']}: guidance longer than a one-line CIA question")
+    if x["id"] == "REG-KAQA":
+        for f in x.get("facts", []):
+            if not re.search(r"\.gov\.sa/", src_by.get(f["source"], {}).get("official_url", "")): flag("excellence-lab", x["id"], "B10", f"KAQA fact source {f['source']} is not an official .gov.sa page")
+for f in data.get("figures", []):
+    if f.get("owner_phase") == 10 and f.get("template") in ("scurve", "bars", "pareto", "histogram", "control", "scatter") and not re.search(r"illustrative|lesson example", f["read"]["en"], re.I):
+        flag("figures", f["id"], "B10", "Phase 10 chart numbers are not marked as illustrative")
 
 # ------------------------------------------------------------------ advisory
 prompts = Counter(q["prompt"]["en"].strip().lower() for q in data["questions"])
@@ -314,6 +339,14 @@ REVIEWED = {
     ("courses:CRS-LSS-GB", "B2"): "The quoted text is CIA's own model answer (a rewritten problem statement), not a quotation from a source.",
     ("certifications:CERT-PGMP", "B1"): "PMI's own eligibility wording (GAC-accredited degree programme), rechecked on PMI's page on 4 Nov 2026; the record states CIA is not a PMI partner and awards no PDUs.",
     ("figures:FIG-ISO-CHAIN", "B1"): "The figure explains what accreditation is (the accreditation body checks the certification body), as the published ISO foundations lesson does; it claims nothing for CIA.",
+    # Phase 10 (6 Nov 2026) — each finding below was read in the record and judged a false positive:
+    ("courses:CRS-EFQM-101", "B2"): "The quoted text is CIA's own model answer (a three-sentence reply to a CEO), not a quotation from a source.",
+    ("courses:CRS-EX-EVID", "B2"): "The quoted texts are CIA's own worked examples and model answers (follow-up requests to a manager, rewritten strengths and areas for improvement); no source is quoted.",
+    ("courses:CRS-EX-SA", "B2"): "The quoted text is CIA's own model answer (a two-sentence reply to a director).",
+    ("courses:CRS-EX-AWARD", "B2"): "The quoted texts are CIA's own worked example (before/after submission wording with invented figures) and a model staff-briefing note.",
+    ("courses:CRS-EX-SUSTAIN", "B2"): "The quoted text is CIA's own model objective written for the exercise.",
+    ("certifications:CERT-EFQM-ADV", "B1"): "EFQM's own description on efqm.org/assess (checked 6 Nov 2026): Advanced Assessments can be delivered through accredited partner organisations. It describes EFQM's network, not CIA; the record states CIA is not an EFQM partner.",
+    ("certifications:CERT-EFQM-ASSESSOR", "B1"): "Names EFQM's own training product («تدريب المقيّم المعتمد من EFQM» = EFQM Certified Assessor Training) to identify it; the same record states CIA courses are not EFQM assessor training and lead to no certification or licence.",
 }
 cleared = defaultdict(list)
 for key, fs in list(findings.items()):
@@ -330,7 +363,7 @@ for coll, r in drafts:
     key = f"{coll}:{r['id']}"
     (blocked if findings.get(key) else candidates)[coll].append(r["id"])
 OUT.mkdir(parents=True, exist_ok=True)
-result = {"schema": "cia.pre-review.v1", "date": "2026-11-04", "drafts": len(drafts), "generated_questions_checked": gen_checked,
+result = {"schema": "cia.pre-review.v1", "date": "2026-11-06", "drafts": len(drafts), "generated_questions_checked": gen_checked,
           "candidates": candidates, "blocked": {k: {i: findings[f"{k}:{i}"] for i in v} for k, v in blocked.items()},
           "cleared_after_reading": {k: v for k, v in cleared.items() if v}, "advisory": advisory}
 (OUT / "pre-review-findings.json").write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")

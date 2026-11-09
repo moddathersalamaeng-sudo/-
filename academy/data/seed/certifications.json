@@ -3404,6 +3404,894 @@
         "approval_basis": "owner_approval_after_ai_prereview",
         "approved_hash": "be4cfb9b49cb6006c2ed4d8722fe2e51276f22e202f69dc84ed484741ea0cef9"
       }
+    },
+    {
+      "id": "CERT-EFQM-RAPID",
+      "slug": "rapid-recognised",
+      "code": "Rapid",
+      "body": "EFQM",
+      "name": {
+        "en": "Rapid Recognised by EFQM (Rapid Assessment)",
+        "ar": "الاعتراف السريع من EFQM (التقييم السريع)"
+      },
+      "stage": "entry",
+      "area": "recognition",
+      "summary": {
+        "en": "EFQM's short external assessment: a condensed version of the model, a diagnostic workshop, leadership interviews and focus groups, a feedback report and a 1- or 2-star recognition.",
+        "ar": "التقييم الخارجي القصير لدى EFQM: نسخة مختصرة من النموذج، وورشة تشخيصية، ومقابلات مع القيادة، ومجموعات تركيز، وتقرير تغذية راجعة، واعتراف بنجمة أو نجمتين."
+      },
+      "who": {
+        "en": "Organisations starting their excellence journey, or with limited time and resources, that want a first independent view.",
+        "ar": "المنظمات التي تبدأ مسيرة التميز، أو ذات الوقت والموارد المحدودة، والتي تريد أول نظرة مستقلة."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Who can apply",
+            "ar": "من يحق له التقدم"
+          },
+          "items": [
+            {
+              "en": "Businesses, public bodies, education institutions and non-profits of any size, sector or location",
+              "ar": "الشركات والجهات العامة ومؤسسات التعليم والمنظمات غير الربحية من أي حجم أو قطاع أو موقع"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Suits",
+            "ar": "يناسب"
+          },
+          "items": [
+            {
+              "en": "Organisations starting their excellence journey",
+              "ar": "المنظمات التي تبدأ مسيرة التميز"
+            },
+            {
+              "en": "Limited time and resources; no advance preparation required",
+              "ar": "الوقت والموارد المحدودة؛ ولا يلزم إعداد مسبق"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "rows": [
+          {
+            "label": {
+              "en": "Pathway",
+              "ar": "المسار"
+            },
+            "value": {
+              "en": "Rapid Assessment (condensed model)",
+              "ar": "التقييم السريع (نموذج مختصر)"
+            }
+          },
+          {
+            "label": {
+              "en": "Duration",
+              "ar": "المدة"
+            },
+            "value": {
+              "en": "Full results in 5 working days",
+              "ar": "النتائج كاملة خلال 5 أيام عمل"
+            }
+          },
+          {
+            "label": {
+              "en": "Process",
+              "ar": "الإجراءات"
+            },
+            "value": {
+              "en": "Rapid diagnostic workshop; leadership interviews and focus groups; feedback report",
+              "ar": "ورشة تشخيصية سريعة؛ ومقابلات القيادة ومجموعات تركيز؛ وتقرير تغذية راجعة"
+            }
+          },
+          {
+            "label": {
+              "en": "Outcome",
+              "ar": "المُخرَج"
+            },
+            "value": {
+              "en": "Rapid Recognised by EFQM at 1 or 2 stars",
+              "ar": "الاعتراف السريع من EFQM بنجمة أو نجمتين"
+            }
+          },
+          {
+            "label": {
+              "en": "Analysis",
+              "ar": "التحليل"
+            },
+            "value": {
+              "en": "Direction, Execution and Results, with RADAR logic",
+              "ar": "التوجه والتنفيذ والنتائج، بمنطق RADAR"
+            }
+          }
+        ],
+        "note": {
+          "en": "EFQM's pages differ on the points scale of the Rapid review (100 on the assessment page, 200 on the Global Award page), so no scale is shown here — check EFQM.",
+          "ar": "تختلف صفحات EFQM في مقياس نقاط التقييم السريع (100 في صفحة التقييم، و200 في صفحة الجائزة العالمية)، لذا لا يُعرض مقياس هنا — تحقق لدى EFQM."
+        }
+      },
+      "fee": null,
+      "renewal": null,
+      "domains": [
+        {
+          "name": {
+            "en": "Direction",
+            "ar": "التوجه"
+          }
+        },
+        {
+          "name": {
+            "en": "Execution",
+            "ar": "التنفيذ"
+          }
+        },
+        {
+          "name": {
+            "en": "Results",
+            "ar": "النتائج"
+          }
+        }
+      ],
+      "domain_unit": "names",
+      "bok_version": null,
+      "languages": null,
+      "extra": [],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "pending",
+        "renewal": "pending",
+        "domains": "verified"
+      },
+      "verified_date": "2026-11-06",
+      "source_ids": [
+        "SRC-EFQM-RAPID",
+        "SRC-EFQM-ASSESS"
+      ],
+      "official_url": "https://efqm.org/rapid/",
+      "cia_routes": [
+        "ROUTE-EX-AWARD",
+        "ROUTE-EX-FOUND"
+      ],
+      "cia_courses": [
+        "CRS-EFQM-101",
+        "CRS-EX-RADAR",
+        "CRS-EX-AWARD"
+      ],
+      "competencies": [
+        "OE-01",
+        "OE-02"
+      ],
+      "toolkits": [
+        "exc"
+      ],
+      "next": [
+        "CERT-EFQM-ADV"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Self-assess first",
+            "ar": "قيّم نفسك أولًا"
+          },
+          "text": {
+            "en": "Run at least one honest self-assessment (the EFQM Assessment Lab helps you organise evidence) so the external feedback adds something new.",
+            "ar": "أجرِ تقييمًا ذاتيًا صادقًا واحدًا على الأقل (ويساعدك مختبر تقييم EFQM على تنظيم الأدلة) لتضيف التغذية الراجعة الخارجية شيئًا جديدًا."
+          }
+        },
+        {
+          "title": {
+            "en": "Prepare your leaders",
+            "ar": "أعدّ قادتك"
+          },
+          "text": {
+            "en": "Leaders should be able to explain purpose, strategy and the main approaches in their own words — the review relies on interviews.",
+            "ar": "ينبغي أن يستطيع القادة شرح الغاية والاستراتيجية والأساليب الرئيسية بكلماتهم — فالتقييم يعتمد على المقابلات."
+          }
+        },
+        {
+          "title": {
+            "en": "Use the feedback",
+            "ar": "استفد من التغذية الراجعة"
+          },
+          "text": {
+            "en": "Feed the report's findings into your improvement plan; that is where the value lies.",
+            "ar": "أدخل ملاحظات التقرير في خطة التحسين؛ ففيها القيمة."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an EFQM partner and its courses and tools are not EFQM-approved. CIA does not train, certify or license EFQM assessors, does not carry out EFQM assessments and gives no recognition, star, diamond or award result. Self-ratings in the EFQM Assessment Lab are an internal self-assessment aid, not an EFQM assessment or score. Always confirm the current scheme on EFQM's site.",
+        "ar": "CIA ليست شريكًا لـ EFQM، ودوراتها وأدواتها ليست معتمدة من EFQM. ولا تدرّب CIA مقيّمي EFQM ولا تعتمدهم ولا ترخّص لهم، ولا تجري تقييمات EFQM، ولا تمنح أي اعتراف أو نجوم أو ماسات أو نتيجة جائزة. والتقديرات الذاتية في مختبر تقييم EFQM أداة مساعدة داخلية للتقييم الذاتي، وليست تقييمًا ولا درجة من EFQM. تحقق دائمًا من المخطط الحالي على موقع EFQM."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "6659aa2f477f6f3a29662873c0e9e5ac9e3e0cdd53906dc79aad797cf99e81b3"
+      }
+    },
+    {
+      "id": "CERT-EFQM-ADV",
+      "slug": "advanced-recognised",
+      "code": "Advanced",
+      "body": "EFQM",
+      "name": {
+        "en": "Recognised by EFQM (Advanced Assessment)",
+        "ar": "الاعتراف من EFQM (التقييم المتقدم)"
+      },
+      "stage": "advanced",
+      "area": "recognition",
+      "summary": {
+        "en": "EFQM's full external assessment on the whole model: a submission document prepared in advance, an on-site team of independent assessors, a score out of 1,000 points and a star rating.",
+        "ar": "التقييم الخارجي الكامل لدى EFQM على النموذج كله: وثيقة مشاركة تُعدّ مسبقًا، وفريق مقيّمين مستقلين في الموقع، ودرجة من 1000 نقطة، وتصنيف بالنجوم."
+      },
+      "who": {
+        "en": "Organisations with a mature management system that want deep strategic feedback and a recognised level.",
+        "ar": "المنظمات ذات نظام الإدارة الناضج التي تريد تغذية راجعة استراتيجية عميقة ومستوى معترفًا به."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Who can apply",
+            "ar": "من يحق له التقدم"
+          },
+          "items": [
+            {
+              "en": "Businesses, public bodies, education institutions and non-profits of any size, sector or location",
+              "ar": "الشركات والجهات العامة ومؤسسات التعليم والمنظمات غير الربحية من أي حجم أو قطاع أو موقع"
+            }
+          ]
+        },
+        {
+          "label": {
+            "en": "Suits",
+            "ar": "يناسب"
+          },
+          "items": [
+            {
+              "en": "Organisations seeking deep strategic insight and a recognised mark of performance",
+              "ar": "المنظمات الساعية إلى رؤية استراتيجية عميقة وعلامة أداء معترف بها"
+            },
+            {
+              "en": "Can be delivered through accredited partner organisations in a region and language",
+              "ar": "يمكن تقديمه عبر منظمات شريكة معتمدة في منطقة ولغة محددتين"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "rows": [
+          {
+            "label": {
+              "en": "Pathway",
+              "ar": "المسار"
+            },
+            "value": {
+              "en": "Advanced Assessment (full model, 29 criterion-parts)",
+              "ar": "التقييم المتقدم (النموذج كاملًا، 29 جزءًا من أجزاء المعايير)"
+            }
+          },
+          {
+            "label": {
+              "en": "Preparation",
+              "ar": "الإعداد"
+            },
+            "value": {
+              "en": "Submission document prepared in advance",
+              "ar": "وثيقة مشاركة تُعدّ مسبقًا"
+            }
+          },
+          {
+            "label": {
+              "en": "Assessment",
+              "ar": "التقييم"
+            },
+            "value": {
+              "en": "On-site team of independent, internationally certified assessors",
+              "ar": "فريق في الموقع من مقيّمين مستقلين معتمدين دوليًا"
+            }
+          },
+          {
+            "label": {
+              "en": "Duration",
+              "ar": "المدة"
+            },
+            "value": {
+              "en": "A 4–6 month process",
+              "ar": "عملية من 4 إلى 6 أشهر"
+            }
+          },
+          {
+            "label": {
+              "en": "Score",
+              "ar": "الدرجة"
+            },
+            "value": {
+              "en": "Out of 1,000 points",
+              "ar": "من 1000 نقطة"
+            }
+          },
+          {
+            "label": {
+              "en": "Outcome",
+              "ar": "المُخرَج"
+            },
+            "value": {
+              "en": "Star rating (3–8 stars on EFQM's assessment page); above 7 stars = world-leading and Global Award eligibility",
+              "ar": "تصنيف بالنجوم (3 إلى 8 نجوم في صفحة التقييم لدى EFQM)؛ وما فوق 7 نجوم = أداء رائد عالميًا وأهلية للجائزة العالمية"
+            }
+          }
+        ],
+        "note": {
+          "en": "Score bands per star level are not published on these pages.",
+          "ar": "حدود الدرجات لكل مستوى من النجوم غير منشورة في هذه الصفحات."
+        }
+      },
+      "fee": null,
+      "renewal": null,
+      "domains": [
+        {
+          "name": {
+            "en": "Purpose, Vision & Strategy",
+            "ar": "الغاية والرؤية والاستراتيجية"
+          },
+          "group": "direction"
+        },
+        {
+          "name": {
+            "en": "Organisational Culture & Leadership",
+            "ar": "الثقافة المؤسسية والقيادة"
+          },
+          "group": "direction"
+        },
+        {
+          "name": {
+            "en": "Engaging Stakeholders",
+            "ar": "إشراك أصحاب المصلحة"
+          },
+          "group": "execution"
+        },
+        {
+          "name": {
+            "en": "Creating Sustainable Value",
+            "ar": "صنع قيمة مستدامة"
+          },
+          "group": "execution"
+        },
+        {
+          "name": {
+            "en": "Driving Performance & Transformation",
+            "ar": "قيادة الأداء والتحول"
+          },
+          "group": "execution"
+        },
+        {
+          "name": {
+            "en": "Stakeholder Perceptions",
+            "ar": "تصورات أصحاب المصلحة"
+          },
+          "group": "results"
+        },
+        {
+          "name": {
+            "en": "Strategic & Operational Performance",
+            "ar": "الأداء الاستراتيجي والتشغيلي"
+          },
+          "group": "results"
+        }
+      ],
+      "domain_unit": "names",
+      "bok_version": null,
+      "languages": null,
+      "extra": [
+        {
+          "en": "EFQM's recognition page also names a “7 star Recognised by EFQM” level.",
+          "ar": "تذكر صفحة الاعتراف لدى EFQM أيضًا مستوى «الاعتراف من EFQM بسبع نجوم»."
+        }
+      ],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "pending",
+        "renewal": "pending",
+        "domains": "verified"
+      },
+      "verified_date": "2026-11-06",
+      "source_ids": [
+        "SRC-EFQM-ASSESS",
+        "SRC-EFQM-RECOG",
+        "SRC-EFQM-MODEL2025"
+      ],
+      "official_url": "https://efqm.org/assess/",
+      "cia_routes": [
+        "ROUTE-EX-AWARD",
+        "ROUTE-EX-SA"
+      ],
+      "cia_courses": [
+        "CRS-EX-RADAR",
+        "CRS-EX-EVID",
+        "CRS-EX-SA",
+        "CRS-EX-AWARD"
+      ],
+      "competencies": [
+        "OE-01",
+        "OE-02",
+        "LDR-01",
+        "PERF-02"
+      ],
+      "toolkits": [
+        "exc",
+        "kaqa"
+      ],
+      "next": [
+        "CERT-EFQM-GA"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Check readiness honestly",
+            "ar": "افحص الجاهزية بصدق"
+          },
+          "text": {
+            "en": "Key results should have trends over several years, targets and comparisons; key approaches should be deployed across the scope.",
+            "ar": "ينبغي أن تكون للنتائج الرئيسية اتجاهات عبر سنوات عدة ومستهدفات ومقارنات؛ وأن تكون الأساليب الرئيسية مطبقة عبر النطاق."
+          }
+        },
+        {
+          "title": {
+            "en": "Write an evidence-led document",
+            "ar": "اكتب وثيقة قائمة على الأدلة"
+          },
+          "text": {
+            "en": "Facts, dates and results, in your own words, that assessors can verify on site (CRS-EX-AWARD).",
+            "ar": "وقائع وتواريخ ونتائج بكلماتك يستطيع المقيّمون التحقق منها في الموقع (CRS-EX-AWARD)."
+          }
+        },
+        {
+          "title": {
+            "en": "Plan the time",
+            "ar": "خطط للوقت"
+          },
+          "text": {
+            "en": "Allow for a 4–6 month process alongside normal work; agree the scope and partner with EFQM early.",
+            "ar": "خصص وقتًا لعملية من 4 إلى 6 أشهر إلى جانب العمل المعتاد؛ واتفق على النطاق والشريك مع EFQM مبكرًا."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an EFQM partner and its courses and tools are not EFQM-approved. CIA does not train, certify or license EFQM assessors, does not carry out EFQM assessments and gives no recognition, star, diamond or award result. Self-ratings in the EFQM Assessment Lab are an internal self-assessment aid, not an EFQM assessment or score. Always confirm the current scheme on EFQM's site.",
+        "ar": "CIA ليست شريكًا لـ EFQM، ودوراتها وأدواتها ليست معتمدة من EFQM. ولا تدرّب CIA مقيّمي EFQM ولا تعتمدهم ولا ترخّص لهم، ولا تجري تقييمات EFQM، ولا تمنح أي اعتراف أو نجوم أو ماسات أو نتيجة جائزة. والتقديرات الذاتية في مختبر تقييم EFQM أداة مساعدة داخلية للتقييم الذاتي، وليست تقييمًا ولا درجة من EFQM. تحقق دائمًا من المخطط الحالي على موقع EFQM."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "4a23a868b4ecade37792f7ecf90d6df3f3d756fa6573c8aeb19b833471d98306"
+      }
+    },
+    {
+      "id": "CERT-EFQM-GA",
+      "slug": "global-award",
+      "code": "Global Award",
+      "body": "EFQM",
+      "name": {
+        "en": "EFQM Global Award (2027 cycle)",
+        "ar": "جائزة EFQM العالمية (دورة 2027)"
+      },
+      "stage": "top",
+      "area": "award",
+      "summary": {
+        "en": "EFQM's highest recognition: a week-long on-site assessment with a feedback report, a Diamond rating by score, and selection of winners by an independent jury.",
+        "ar": "أعلى اعتراف لدى EFQM: تقييم ميداني لمدة أسبوع مع تقرير تغذية راجعة، وتصنيف بالماسات حسب الدرجة، واختيار الفائزين من لجنة تحكيم مستقلة."
+      },
+      "who": {
+        "en": "Organisations with world-leading performance; EFQM describes the Advanced Assessment as the natural pathway to it.",
+        "ar": "المنظمات ذات الأداء الرائد عالميًا؛ وتصف EFQM التقييم المتقدم بأنه المسار الطبيعي إليها."
+      },
+      "eligibility": [
+        {
+          "label": {
+            "en": "Who can apply",
+            "ar": "من يحق له التقدم"
+          },
+          "items": [
+            {
+              "en": "Global and local, public and private, educational and charitable organisations",
+              "ar": "المنظمات العالمية والمحلية، العامة والخاصة، التعليمية والخيرية"
+            },
+            {
+              "en": "Eligibility is discussed with EFQM in a meeting before applying",
+              "ar": "تُناقش الأهلية مع EFQM في اجتماع قبل التقدم"
+            }
+          ]
+        }
+      ],
+      "exam": {
+        "rows": [
+          {
+            "label": {
+              "en": "Applications",
+              "ar": "التقدم"
+            },
+            "value": {
+              "en": "November 2025 – September 2026",
+              "ar": "نوفمبر 2025 – سبتمبر 2026"
+            }
+          },
+          {
+            "label": {
+              "en": "On-site assessments",
+              "ar": "التقييمات الميدانية"
+            },
+            "value": {
+              "en": "January 2026 – February 2027 (one week on site)",
+              "ar": "يناير 2026 – فبراير 2027 (أسبوع في الموقع)"
+            }
+          },
+          {
+            "label": {
+              "en": "Jury",
+              "ar": "لجنة التحكيم"
+            },
+            "value": {
+              "en": "Independent jury review, April 2027",
+              "ar": "مراجعة لجنة تحكيم مستقلة، أبريل 2027"
+            }
+          },
+          {
+            "label": {
+              "en": "Gala",
+              "ar": "الحفل"
+            },
+            "value": {
+              "en": "June 2027",
+              "ar": "يونيو 2027"
+            }
+          },
+          {
+            "label": {
+              "en": "Ratings",
+              "ar": "التصنيفات"
+            },
+            "value": {
+              "en": "5 to 7 Diamonds by score out of 1,000 (7 Diamonds: over 701 points)",
+              "ar": "من 5 إلى 7 ماسات حسب الدرجة من 1000 (7 ماسات: أكثر من 701 نقطة)"
+            }
+          },
+          {
+            "label": {
+              "en": "Awards",
+              "ar": "الجوائز"
+            },
+            "value": {
+              "en": "Global Award Winner(s) chosen by the jury from 7 Diamond recipients; Outstanding Achievement in a specific area",
+              "ar": "الفائز (أو الفائزون) بالجائزة العالمية تختارهم لجنة التحكيم من حاملي 7 ماسات؛ وإنجاز متميز في مجال محدد"
+            }
+          }
+        ],
+        "note": {
+          "en": "EFQM's award page rates in Diamonds while its assessment page rates in stars; read the current applicant guide for how the two relate.",
+          "ar": "تصنّف صفحة الجائزة لدى EFQM بالماسات بينما تصنّف صفحة التقييم بالنجوم؛ فاقرأ دليل المتقدمين الحالي لمعرفة العلاقة بينهما."
+        }
+      },
+      "fee": null,
+      "renewal": null,
+      "domains": [],
+      "domain_unit": "names",
+      "bok_version": null,
+      "languages": null,
+      "extra": [
+        {
+          "en": "The 2025 cycle recognised 14 organisations (EFQM award page).",
+          "ar": "كرّمت دورة 2025 أربع عشرة منظمة (صفحة الجائزة لدى EFQM)."
+        }
+      ],
+      "facts_status": {
+        "eligibility": "verified",
+        "exam": "verified",
+        "fee": "pending",
+        "renewal": "pending",
+        "domains": "pending"
+      },
+      "verified_date": "2026-11-06",
+      "source_ids": [
+        "SRC-EFQM-GA2027",
+        "SRC-EFQM-ASSESS"
+      ],
+      "official_url": "https://efqm.org/globalaward/",
+      "cia_routes": [
+        "ROUTE-EX-AWARD"
+      ],
+      "cia_courses": [
+        "CRS-EX-AWARD",
+        "CRS-EX-SUSTAIN"
+      ],
+      "competencies": [
+        "OE-01",
+        "OE-02",
+        "LDR-01",
+        "LDR-02"
+      ],
+      "toolkits": [
+        "exc"
+      ],
+      "next": [],
+      "prepare": [
+        {
+          "title": {
+            "en": "Build on Advanced Assessment results",
+            "ar": "ابنِ على نتائج التقييم المتقدم"
+          },
+          "text": {
+            "en": "Use recent feedback and sustained results; an award application is the end of a long journey, not its start.",
+            "ar": "استخدم التغذية الراجعة الحديثة والنتائج المستدامة؛ فطلب الجائزة نهاية رحلة طويلة لا بدايتها."
+          }
+        },
+        {
+          "title": {
+            "en": "Book the eligibility meeting",
+            "ar": "احجز اجتماع الأهلية"
+          },
+          "text": {
+            "en": "Discuss eligibility and timing with EFQM well before the application window closes.",
+            "ar": "ناقش الأهلية والتوقيت مع EFQM قبل إغلاق نافذة التقدم بوقت كافٍ."
+          }
+        },
+        {
+          "title": {
+            "en": "Keep the learning",
+            "ar": "حافظ على التعلم"
+          },
+          "text": {
+            "en": "Whatever the rating, the feedback report should drive the next improvement cycle (CRS-EX-SUSTAIN).",
+            "ar": "أيًا كان التصنيف، ينبغي أن يقود تقرير التغذية الراجعة دورة التحسين التالية (CRS-EX-SUSTAIN)."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an EFQM partner and its courses and tools are not EFQM-approved. CIA does not train, certify or license EFQM assessors, does not carry out EFQM assessments and gives no recognition, star, diamond or award result. Self-ratings in the EFQM Assessment Lab are an internal self-assessment aid, not an EFQM assessment or score. Always confirm the current scheme on EFQM's site.",
+        "ar": "CIA ليست شريكًا لـ EFQM، ودوراتها وأدواتها ليست معتمدة من EFQM. ولا تدرّب CIA مقيّمي EFQM ولا تعتمدهم ولا ترخّص لهم، ولا تجري تقييمات EFQM، ولا تمنح أي اعتراف أو نجوم أو ماسات أو نتيجة جائزة. والتقديرات الذاتية في مختبر تقييم EFQM أداة مساعدة داخلية للتقييم الذاتي، وليست تقييمًا ولا درجة من EFQM. تحقق دائمًا من المخطط الحالي على موقع EFQM."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "725f529f60c44e4b3e420aa69e6dc598c9312bb0f919c0a00a637667205bb8bd"
+      }
+    },
+    {
+      "id": "CERT-EFQM-VALID",
+      "slug": "validated-by-efqm",
+      "code": "Validated",
+      "body": "EFQM",
+      "name": {
+        "en": "Validated by EFQM",
+        "ar": "التحقق من EFQM"
+      },
+      "stage": "entry",
+      "area": "recognition",
+      "summary": {
+        "en": "Named on EFQM's recognition page as its entry-level recognition. The current process is not described on EFQM's pages opened today.",
+        "ar": "تذكرها صفحة الاعتراف لدى EFQM بوصفها مستوى الاعتراف المبتدئ. ولا تصف صفحات EFQM التي اطُّلع عليها اليوم الإجراءات الحالية."
+      },
+      "who": {
+        "en": "Organisations just starting to improve their approach.",
+        "ar": "المنظمات التي بدأت للتو تحسين أسلوبها."
+      },
+      "eligibility": [],
+      "exam": null,
+      "fee": null,
+      "renewal": null,
+      "domains": [],
+      "domain_unit": "names",
+      "bok_version": null,
+      "languages": null,
+      "extra": [
+        {
+          "en": "Dated note — EFQM's recognition brochure (© 2021) described this level as a self-assessment, three improvement projects and a one-day validator visit, with recognitions valid for three years. These details are not confirmed on EFQM's current pages: check EFQM before relying on them.",
+          "ar": "ملاحظة مؤرخة — وصف كتيب الاعتراف لدى EFQM (© 2021) هذا المستوى بتقييم ذاتي وثلاثة مشاريع تحسين وزيارة تحقق ليوم واحد، مع صلاحية الاعتراف ثلاث سنوات. وهذه التفاصيل غير مؤكدة في صفحات EFQM الحالية: تحقق لدى EFQM قبل الاعتماد عليها."
+        }
+      ],
+      "facts_status": {
+        "eligibility": "pending",
+        "exam": "pending",
+        "fee": "pending",
+        "renewal": "pending",
+        "domains": "pending"
+      },
+      "verified_date": "2026-11-06",
+      "source_ids": [
+        "SRC-EFQM-RECOG",
+        "SRC-EFQM-BROCHURE"
+      ],
+      "official_url": "https://efqm.org/recognition/",
+      "cia_routes": [
+        "ROUTE-EX-PLAN"
+      ],
+      "cia_courses": [
+        "CRS-EX-EVID",
+        "CRS-EX-PLAN"
+      ],
+      "competencies": [
+        "OE-01",
+        "OE-02"
+      ],
+      "toolkits": [
+        "exc"
+      ],
+      "next": [
+        "CERT-EFQM-RAPID"
+      ],
+      "prepare": [
+        {
+          "title": {
+            "en": "Start with a self-assessment",
+            "ar": "ابدأ بتقييم ذاتي"
+          },
+          "text": {
+            "en": "Identify and prioritise improvement opportunities with the EFQM Assessment Lab and CRS-EX-PLAN.",
+            "ar": "حدد فرص التحسين ورتّبها بمختبر تقييم EFQM ودورة CRS-EX-PLAN."
+          }
+        },
+        {
+          "title": {
+            "en": "Confirm the current scheme",
+            "ar": "تأكد من المخطط الحالي"
+          },
+          "text": {
+            "en": "Ask EFQM which entry-level option fits you today.",
+            "ar": "اسأل EFQM أي خيار مبتدئ يناسبك اليوم."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an EFQM partner and its courses and tools are not EFQM-approved. CIA does not train, certify or license EFQM assessors, does not carry out EFQM assessments and gives no recognition, star, diamond or award result. Self-ratings in the EFQM Assessment Lab are an internal self-assessment aid, not an EFQM assessment or score. Always confirm the current scheme on EFQM's site.",
+        "ar": "CIA ليست شريكًا لـ EFQM، ودوراتها وأدواتها ليست معتمدة من EFQM. ولا تدرّب CIA مقيّمي EFQM ولا تعتمدهم ولا ترخّص لهم، ولا تجري تقييمات EFQM، ولا تمنح أي اعتراف أو نجوم أو ماسات أو نتيجة جائزة. والتقديرات الذاتية في مختبر تقييم EFQM أداة مساعدة داخلية للتقييم الذاتي، وليست تقييمًا ولا درجة من EFQM. تحقق دائمًا من المخطط الحالي على موقع EFQM."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "d9b707cd927ca51a36648f3fe1d07de25f37d1ec4dfc9879081f5bc89b9416f6"
+      }
+    },
+    {
+      "id": "CERT-EFQM-ASSESSOR",
+      "slug": "efqm-assessor-training",
+      "code": "Assessor",
+      "body": "EFQM",
+      "name": {
+        "en": "EFQM assessor training",
+        "ar": "تدريب مقيّمي EFQM"
+      },
+      "stage": "professional",
+      "area": "assessor",
+      "summary": {
+        "en": "EFQM lists assessor trainings in its webshop — for example “EFQM Assessor Training”, “EFQM Certified Assessor Training” and a one-day upgrade to the 2025 model. Their pages could not be read in this session, so content, duration, fees and the rules for becoming a certified assessor must be checked on EFQM.",
+        "ar": "تدرج EFQM تدريبات للمقيّمين في متجرها الإلكتروني — مثل «تدريب مقيّمي EFQM» و«تدريب المقيّم المعتمد من EFQM» وترقية ليوم واحد إلى نموذج 2025. وتعذّرت قراءة صفحاتها في هذه الجلسة، لذا يجب التحقق لدى EFQM من المحتوى والمدة والرسوم وقواعد أن تصبح مقيّمًا معتمدًا."
+      },
+      "who": {
+        "en": "Professionals who want to assess for EFQM recognition or national award schemes.",
+        "ar": "المهنيون الذين يريدون العمل مقيّمين لاعتراف EFQM أو لمخططات الجوائز الوطنية."
+      },
+      "eligibility": [],
+      "exam": null,
+      "fee": null,
+      "renewal": null,
+      "domains": [],
+      "domain_unit": "names",
+      "bok_version": null,
+      "languages": null,
+      "extra": [
+        {
+          "en": "CIA's courses build self-assessment skills; they are not EFQM assessor training and do not lead to EFQM assessor certification or a licence.",
+          "ar": "تبني دورات CIA مهارات التقييم الذاتي؛ وليست تدريبًا لمقيّمي EFQM ولا تؤدي إلى اعتماد مقيّم من EFQM ولا إلى ترخيص."
+        }
+      ],
+      "facts_status": {
+        "eligibility": "pending",
+        "exam": "pending",
+        "fee": "pending",
+        "renewal": "pending",
+        "domains": "pending"
+      },
+      "verified_date": "2026-11-06",
+      "source_ids": [
+        "SRC-EFQM-TRAINING"
+      ],
+      "official_url": "https://shop.efqm.org/trainings/efqm-assessor-training/",
+      "cia_routes": [
+        "ROUTE-EX-SA"
+      ],
+      "cia_courses": [
+        "CRS-EX-RADAR",
+        "CRS-EX-EVID",
+        "CRS-EX-SA"
+      ],
+      "competencies": [
+        "OE-01",
+        "LDR-01"
+      ],
+      "toolkits": [
+        "exc",
+        "kaqa"
+      ],
+      "next": [],
+      "prepare": [
+        {
+          "title": {
+            "en": "Practise the logic",
+            "ar": "مارس المنطق"
+          },
+          "text": {
+            "en": "RADAR, evidence and findings (CRS-EX-RADAR, CRS-EX-EVID) are the core skills any assessor uses.",
+            "ar": "منطق RADAR والأدلة والملاحظات (CRS-EX-RADAR وCRS-EX-EVID) هي المهارات الأساسية التي يستخدمها كل مقيّم."
+          }
+        },
+        {
+          "title": {
+            "en": "Gain internal experience",
+            "ar": "اكتسب خبرة داخلية"
+          },
+          "text": {
+            "en": "Lead a criterion team in your organisation's self-assessment (CRS-EX-SA).",
+            "ar": "قُد فريق معيار في التقييم الذاتي لمنظمتك (CRS-EX-SA)."
+          }
+        },
+        {
+          "title": {
+            "en": "Check EFQM's training rules",
+            "ar": "تحقق من قواعد التدريب لدى EFQM"
+          },
+          "text": {
+            "en": "Read EFQM's current training pages for prerequisites and certification steps.",
+            "ar": "اقرأ صفحات التدريب الحالية لدى EFQM لمعرفة المتطلبات المسبقة وخطوات الاعتماد."
+          }
+        }
+      ],
+      "study_plan": null,
+      "claims": {
+        "en": "CIA is not an EFQM partner and its courses and tools are not EFQM-approved. CIA does not train, certify or license EFQM assessors, does not carry out EFQM assessments and gives no recognition, star, diamond or award result. Self-ratings in the EFQM Assessment Lab are an internal self-assessment aid, not an EFQM assessment or score. Always confirm the current scheme on EFQM's site.",
+        "ar": "CIA ليست شريكًا لـ EFQM، ودوراتها وأدواتها ليست معتمدة من EFQM. ولا تدرّب CIA مقيّمي EFQM ولا تعتمدهم ولا ترخّص لهم، ولا تجري تقييمات EFQM، ولا تمنح أي اعتراف أو نجوم أو ماسات أو نتيجة جائزة. والتقديرات الذاتية في مختبر تقييم EFQM أداة مساعدة داخلية للتقييم الذاتي، وليست تقييمًا ولا درجة من EFQM. تحقق دائمًا من المخطط الحالي على موقع EFQM."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "7b7204ed97a77032f4a78ad94f0c0bbb57edf71bca3b08603e7e2d0ce31aed4e"
+      }
     }
   ]
 }

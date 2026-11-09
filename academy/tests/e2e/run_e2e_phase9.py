@@ -169,7 +169,7 @@ try:
            cards.count() >= 60 and cv == cards.count() and len(motifs) >= 8 and page.locator('article.ccard .chip-level').count() == cards.count(), f'{cards.count()} {cv} {len(motifs)}')
     go(page, '/')
     tiles = page.locator('.acad-tiles .acad-tile').count(); qtile = page.locator('.acad-tiles a[href="#/academy/quality"]').count()
-    record('home: four illustrated academy tiles including the Quality Academy', tiles == 4 and qtile == 1 and page.locator('.acad-tiles svg.banner-art').count() == 4, f'{tiles} {qtile}')
+    record('home: illustrated academy tiles (four since Phase 9, five since Phase 10) including the Quality Academy', tiles >= 4 and qtile == 1 and page.locator('.acad-tiles svg.banner-art').count() == tiles, f'{tiles} {qtile}')
 
     keys = page.evaluate('() => Object.keys(localStorage)')
     record('storage: the Academy writes only cia:v1:* and cia-lang', all(k.startswith('cia:v1:') or k == 'cia-lang' for k in keys), keys)

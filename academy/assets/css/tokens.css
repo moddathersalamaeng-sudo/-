@@ -25,7 +25,7 @@
   --s-1: .25rem; --s-2: .5rem; --s-3: .75rem; --s-4: 1rem; --s-5: 1.5rem; --s-6: 2rem; --s-7: 3rem; --s-8: 4rem;
   --r-sm: 6px; --r-md: 10px; --r-lg: 16px; --r-pill: 999px;
   --shadow-pop: 0 12px 32px rgba(11, 30, 61, .18);
-  --measure: 68ch; --page: 76rem; --header-h: 64px;
+  --measure: 72ch; --page: 100%; --gutter: clamp(1rem, 2.6vw, 3rem); --header-h: 64px; /* Phase 10: full-width layout (owner request), gutters scale with the window */
   color-scheme: light;
   box-sizing: border-box;
   padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);

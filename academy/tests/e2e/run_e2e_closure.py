@@ -73,9 +73,9 @@ with sync_playwright() as p:
     roles = page.evaluate('() => { try { return JSON.parse(localStorage.getItem("cia:v1:session") || "{}").roles || ["learner"]; } catch (e) { return ["learner"]; } }')
     go(page, '/academy/courses')
     n_courses = page.locator('#course-list [data-course]').count()
-    hidden = all(page.locator(f'#course-list [data-course="{cid}"]').count() == 0 for cid in ('CRS-EFQM-101',))
+    hidden = all(page.locator(f'#course-list [data-course="{cid}"]').count() == 0 for cid, c in COURSES.items() if c['governance']['content_status'] != 'published')
     n_pub = sum(1 for c in COURSES.values() if c['governance']['content_status'] == 'published')
-    record(f'learner (roles {roles}) sees the {n_courses} published courses; the future-phase shell (Phase 10) stays hidden', roles == ['learner'] and n_courses == n_pub == 61 and hidden, f'{roles} {n_courses} {hidden}')
+    record(f'learner (roles {roles}) sees the {n_courses} published courses (68 since Phase 10) and no draft course', roles == ['learner'] and n_courses == n_pub >= 61 and hidden, f'{roles} {n_courses} {hidden}')
 
     go(page, '/academy/courses/read-iso-standards')
     facts = page.inner_text('section[aria-label] dl.facts') if page.locator('section[aria-label] dl.facts').count() else ''
@@ -136,9 +136,9 @@ with sync_playwright() as p:
     record('learner sees the published competency framework (gap view is no longer empty)', page.locator('main .state.empty').count() == 0 and rows > 0, rows)
 
     # future-phase draft stays unavailable even by direct link
-    slug = COURSES['CRS-EFQM-101']['slug']
-    go(page, f'/academy/courses/{slug}')
-    record('a future-phase draft is not reachable by direct link (honest "not available" page)', page.locator('[data-unavailable]').count() == 1, slug)
+    slug = next(a['slug'] for a in json.loads((ACADEMY / 'data' / 'seed' / 'assessments.json').read_text(encoding='utf-8'))['items'] if a['id'] == 'ASM-DIAG-001')
+    go(page, f'/assessments/{slug}')
+    record('a future-phase draft (Phase 5 demo assessment) is not reachable by direct link (honest "not available" page)', page.locator('[data-unavailable]').count() == 1, slug)
     keys = page.evaluate('Object.keys(localStorage)')
     record('storage: the Academy writes only cia:v1:* keys (plus the shared cia-lang)', all(k.startswith('cia:v1:') or k == 'cia-lang' for k in keys), keys)
     record('no console errors in the learner journey', not logs, logs[:3])

@@ -38,11 +38,10 @@ test('Phase 8 hand-authored courses: ten, each meets the Phase 7 completeness co
   }
 });
 
-test('replaced shells: CRS-PM-101, CRS-P3O-101 and (Phase 9) CRS-QMS-201 are full courses; CRS-EFQM-101 waits for Phase 10', () => {
-  for (const id of ['CRS-PM-101', 'CRS-P3O-101', 'CRS-QMS-201']) assert.ok(byId(courses, id).modules.flatMap(m => m.lessons).every(l => l.content_blocks?.length === 5), id);
-  assert.equal(byId(courses, 'CRS-QMS-201').planned_phase, undefined);
-  assert.equal(byId(courses, 'CRS-EFQM-101').planned_phase, 10);
-  assert.equal(isVisible(byId(courses, 'CRS-EFQM-101'), ['learner']), false);
+test('replaced shells: CRS-PM-101, CRS-P3O-101, (Phase 9) CRS-QMS-201 and (Phase 10) CRS-EFQM-101 are full courses', () => {
+  for (const id of ['CRS-PM-101', 'CRS-P3O-101', 'CRS-QMS-201', 'CRS-EFQM-101']) assert.ok(byId(courses, id).modules.flatMap(m => m.lessons).every(l => l.content_blocks?.length === 5), id);
+  for (const id of ['CRS-QMS-201', 'CRS-EFQM-101']) assert.equal(byId(courses, id).planned_phase, undefined, id);
+  assert.equal(byId(courses, 'CRS-EFQM-101').ecosystem, 'efqm');
 });
 
 test('labels and claims: internal or exam-prep label only, nothing claimed, completion is not a credential', () => {

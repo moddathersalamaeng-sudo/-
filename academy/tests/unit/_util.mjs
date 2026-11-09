@@ -29,8 +29,8 @@ export class MockStorage {
  * and a change note that it is not an independent expert review. Future-phase records stay drafts.
  */
 export const OWNER = 'مدثر سلامه';
-export const FUTURE_DRAFTS = new Set(['CRS-EFQM-101', 'Q-PM-001', 'Q-RISK-001', 'Q-PMO-001',
-  'Q-EFQM-001', 'Q-GOV-001', 'Q-AI-001', 'ASM-DIAG-001', 'ASM-QUIZ-001', 'ASM-SCEN-001', 'ASM-PRACT-001']);
+export const FUTURE_DRAFTS = new Set(['Q-PM-001', 'Q-RISK-001', 'Q-PMO-001',
+  'Q-GOV-001', 'Q-AI-001', 'ASM-DIAG-001', 'ASM-QUIZ-001', 'ASM-SCEN-001', 'ASM-PRACT-001']);
 /*
  * Phase 8 (PMI / PMO / P3O): records are drafts (needs_review, no reviewer) until a person approves them through
  * tools/apply_review_decisions.py — then they must carry the full approval record. CRS-PM-101 and CRS-P3O-101 left the
@@ -42,7 +42,12 @@ export const PHASE8_ID = /^(CRS-(P|PM|PMO|PFM|P3O|PMP)-|Q-(P|PM|PMO|PFM|P3O|PMP|
  * Q-QMS-001 and PRG-CIA-FOUNDATIONS left the future-draft set: they are Phase 9 records now. Figures (FIG-) are governed too.
  */
 export const PHASE9_ID = /^(CRS-(Q|LSS|CMQOE)-|CRS-QMS-201$|Q-(Q|LSS|CMQOE|QMS-201|QF|QE|QA|QS|CMQ)-|Q-QMS-001$|ASM-(Q|LSS|CMQOE|QMS-201)-|ASM-READY-Q-|ROUTE-Q-|ROLE-CIS$|SRC-ASQ-|SRC-QG-|SRC-CIA-Q$|FIG-|PRG-CIA-FOUNDATIONS$)/;
-export const isPhase8 = r => (PHASE8_ID.test(r.id) || PHASE9_ID.test(r.id)) && !FUTURE_DRAFTS.has(r.id);
+/*
+ * Phase 10 (Excellence, EFQM-informed): same rule — draft until approved, then a full approval record. CRS-EFQM-101 and
+ * Q-EFQM-001 left the future-draft set: they are Phase 10 records now. LAB-EFQM is the governed EFQM Assessment Lab definition.
+ */
+export const PHASE10_ID = /^(CRS-(EFQM|EX)-|Q-(EFQM-101|EX)-|Q-EFQM-001$|ASM-(EFQM-101|EX)-|ASM-READY-EX-|ROUTE-EX-|ROLE-OEL$|SRC-EFQM-|SRC-KAQA-|SRC-CIA-EX$|LAB-EFQM$|REG-KAQA$)/;
+export const isPhase8 = r => (PHASE8_ID.test(r.id) || PHASE9_ID.test(r.id) || PHASE10_ID.test(r.id)) && !FUTURE_DRAFTS.has(r.id);
 export function governedPhase8(assert, r, draftedBy) {
   const g = r.governance;
   if (g.content_status === 'published') { ownerOrExpertApproved(assert, r, draftedBy); return; }

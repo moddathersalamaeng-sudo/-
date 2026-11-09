@@ -309,17 +309,25 @@ ids = [f["id"] for f in figures9.FIGS]
 assert len(ids) == len(set(ids)), "duplicate figure id"
 fig_path = SEED / "figures.json"
 fig_doc = json.loads(fig_path.read_text(encoding="utf-8")) if fig_path.exists() else {"schema": "cia.figure.v1", "items": []}
-fig_doc["items"] = [x for x in fig_doc["items"] if x["id"] in set(ids)]
+# Phase 9 owns the figures without an owner_phase tag; figures of later phases (owner_phase 10, …) are kept untouched (D-38).
+other = lambda x: x.get("owner_phase") not in (None, 9)  # noqa: E731
+fig_doc["items"] = [x for x in fig_doc["items"] if x["id"] in set(ids) or other(x)]
 upsert(fig_doc["items"], figures9.FIGS)
 save("figures", fig_doc)
+other_ids = {x["id"] for x in fig_doc["items"] if other(x)}
 lesson_ids = {l["id"] for c in courses_doc["items"] for m in c.get("modules", []) for l in m.get("lessons", [])}
 guide_slugs = {c.get("guide") for c in courses_doc["items"] if c.get("guide")}
 for key in figures9.PLACEMENT:
     kind, _, k = key.partition(":") if ":" in key else ("lesson", "", key)
     ok = (k in lesson_ids) if kind == "lesson" else (k in course_by_id) if kind == "course" else (k in guide_slugs)
     assert ok, f"figure placement points at unknown {kind}: {key}"
-(SEED / "lesson-figures.json").write_text(json.dumps({"schema": "cia.lesson-figures.v1", "items": [{"id": k, "figures": v} for k, v in figures9.PLACEMENT.items()]},
-                                                     ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+lf_path = SEED / "lesson-figures.json"
+lf_old = json.loads(lf_path.read_text(encoding="utf-8")).get("items", []) if lf_path.exists() else []
+placed = {e["id"]: [f for f in e.get("figures", []) if f in other_ids] for e in lf_old}  # keep later phases' placements
+for k, v in figures9.PLACEMENT.items():
+    placed[k] = list(dict.fromkeys(v + placed.get(k, [])))
+lf_path.write_text(json.dumps({"schema": "cia.lesson-figures.v1", "items": [{"id": k, "figures": v} for k, v in placed.items() if v]},
+                              ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 # ------------------------------------------------------------------ relationships
 rel_doc = load("relationships")
@@ -368,7 +376,7 @@ save("relationships", rel_doc)
 # ------------------------------------------------------------------ build status
 bs = load("build-status")
 for p in bs["phases"]:
-    if str(p.get("id")) == "9":
+    if str(p.get("id")) == "9" and p.get("status") != "complete":  # a published phase stays complete on rebuild
         p.pop("fraction", None)
         p.update({"status": "in_progress", "partial": None,
                   "note": "Quality (ASQ-informed) Academy built (4 Nov 2026): 9 courses, explorer of 9 ASQ certifications, CMQ/OE Center, 5 routes; explanatory figures and course covers for the whole Academy. Content awaits review / owner approval."})

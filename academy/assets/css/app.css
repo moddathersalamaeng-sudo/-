@@ -21,7 +21,7 @@ img, svg { max-width: 100%; }
 /* ---------- shell ---------- */
 .app { min-height: 100vh; display: flex; flex-direction: column; }
 .hdr { position: sticky; inset-block-start: 0; z-index: 40; background: var(--navy); color: var(--on-navy); border-block-end: 2px solid var(--gold); padding-block-start: env(safe-area-inset-top, 0px); --focus: var(--gold); }
-.hdr-in { max-inline-size: var(--page); margin-inline: auto; min-block-size: var(--header-h); display: flex; align-items: center; gap: var(--s-4); padding-inline: var(--s-4); }
+.hdr-in { max-inline-size: var(--page); margin-inline: auto; min-block-size: var(--header-h); display: flex; align-items: center; gap: var(--s-4); padding-inline: var(--gutter); }
 .brand { display: flex; align-items: center; gap: var(--s-3); text-decoration: none; color: inherit; min-inline-size: 0; }
 .brand-mark { inline-size: 36px; block-size: 36px; flex: none; }
 .brand-name { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -37,7 +37,7 @@ img, svg { max-width: 100%; }
 .menubtn { display: none; }
 .drawer { background: var(--deep); color: var(--on-navy); border-block-end: 1px solid rgba(198,161,91,.4); --focus: var(--gold); }
 .drawer[hidden] { display: none; }
-.drawer-in { max-inline-size: var(--page); margin-inline: auto; padding: var(--s-5) var(--s-4); display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--s-5); }
+.drawer-in { max-inline-size: var(--page); margin-inline: auto; padding: var(--s-5) var(--gutter); display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--s-5); }
 .drawer h2 { font-family: var(--font-body); font-size: var(--fs-sm); color: var(--gold); font-weight: 600; margin-block-end: var(--s-2); }
 .drawer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
 .navlink { display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); padding: var(--s-2) var(--s-2); border-radius: var(--r-sm); color: var(--on-navy); text-decoration: none; font-size: var(--fs-sm); }
@@ -47,13 +47,13 @@ a.navlink[aria-current="page"] { background: rgba(198,161,91,.16); }
 .navlink .ph { font-size: var(--fs-xs); border: 1px solid rgba(201,207,219,.35); border-radius: var(--r-pill); padding: 0 var(--s-2); white-space: nowrap; }
 .tip { position: absolute; inset-block-start: 100%; inset-inline-start: 0; z-index: 5; background: var(--paper); color: var(--navy); font-size: var(--fs-xs); padding: var(--s-1) var(--s-2); border-radius: var(--r-sm); box-shadow: var(--shadow-pop); white-space: nowrap; opacity: 0; pointer-events: none; }
 .navlink.coming:hover .tip, .navlink.coming:focus .tip { opacity: 1; }
-.crumbs { max-inline-size: var(--page); margin-inline: auto; padding: var(--s-3) var(--s-4) 0; font-size: var(--fs-sm); color: var(--muted); }
+.crumbs { max-inline-size: var(--page); margin-inline: auto; padding: var(--s-3) var(--gutter) 0; font-size: var(--fs-sm); color: var(--muted); }
 .crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: var(--s-2); margin: 0; padding: 0; align-items: center; }
 .crumbs li { display: inline-flex; align-items: center; gap: var(--s-2); }
-.main { flex: 1; inline-size: 100%; max-inline-size: var(--page); margin-inline: auto; padding: var(--s-5) var(--s-4) var(--s-8); }
+.main { flex: 1; inline-size: 100%; max-inline-size: var(--page); margin-inline: auto; padding: var(--s-5) var(--gutter) var(--s-8); }
 .main:focus { outline: none; }
 .ftr { border-block-start: 1px solid var(--line); background: var(--surface); color: var(--muted); font-size: var(--fs-sm); }
-.ftr-in { max-inline-size: var(--page); margin-inline: auto; padding: var(--s-5) var(--s-4); display: flex; flex-wrap: wrap; gap: var(--s-3) var(--s-5); align-items: center; justify-content: space-between; }
+.ftr-in { max-inline-size: var(--page); margin-inline: auto; padding: var(--s-5) var(--gutter); display: flex; flex-wrap: wrap; gap: var(--s-3) var(--s-5); align-items: center; justify-content: space-between; }
 .ftr nav { display: flex; flex-wrap: wrap; gap: var(--s-4); }
 .ftr p { margin: 0; }
 

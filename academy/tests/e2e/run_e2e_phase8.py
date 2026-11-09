@@ -77,7 +77,7 @@ try:
     as_role(page, 'reviewer')
     go(page, '/academy/pmi')
     stats = page.locator('.pmi-hero .stat').count()
-    drafts = any(not PUBLISHED(c) for c in COURSES.values() if c.get('ecosystem') in ('pmi', 'pmo', 'p3o')) or any(not PUBLISHED(c) for c in CERTS)
+    drafts = any(not PUBLISHED(c) for c in COURSES.values() if c.get('ecosystem') in ('pmi', 'pmo', 'p3o')) or any(not PUBLISHED(c) for c in CERTS if (c.get('body') or 'PMI') == 'PMI')
     record('PMI landing: hero with four live counts, a preview banner only while drafts remain, starting point "explore" without a profile',
            stats == 4 and page.locator('[data-preview]').count() == (1 if drafts else 0) and page.get_attribute('[data-start]', 'data-start') == 'explore', f'{stats} drafts={drafts}')
     n_routes = page.locator('[data-route^="ROUTE-"]').count(); n_certs = page.locator('#pm-certs ~ * [data-cert], section[aria-labelledby=pm-certs] [data-cert]').count()

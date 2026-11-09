@@ -128,6 +128,24 @@
       "route": "/academy/quality"
     },
     {
+      "id": "excellenceAcademy",
+      "labelKey": "nav.items.excellenceAcademy",
+      "group": "learn",
+      "kind": "route",
+      "phase": 10,
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "route": "/academy/excellence"
+    },
+    {
       "id": "academy",
       "labelKey": "nav.items.academy",
       "group": "learn",

@@ -1,0 +1,424 @@
+{
+  "schema": "cia.excellence-lab.v1",
+  "items": [
+    {
+      "id": "LAB-EFQM",
+      "slug": "efqm-assessment-lab",
+      "title": {
+        "en": "EFQM Assessment Lab",
+        "ar": "مختبر تقييم EFQM"
+      },
+      "model": {
+        "en": "Structured with the seven criterion names of the EFQM Model 2025",
+        "ar": "مبني على أسماء المعايير السبعة لنموذج EFQM 2025"
+      },
+      "label": {
+        "en": "Self-assessment aid — not an EFQM assessment",
+        "ar": "أداة مساعدة للتقييم الذاتي — وليست تقييمًا من EFQM"
+      },
+      "disclaimer": {
+        "en": "This Lab helps you organise and analyse your own evidence. It is not an EFQM assessment, gives no EFQM score, star, diamond or recognition, and is not reviewed by EFQM or by CIA. Your records stay in this browser unless you export them.",
+        "ar": "يساعدك هذا المختبر على تنظيم أدلتك وتحليلها. وليس تقييمًا من EFQM، ولا يمنح درجة أو نجومًا أو ماسات أو اعترافًا من EFQM، ولا تراجعه EFQM ولا CIA. وتبقى سجلاتك في هذا المتصفح ما لم تصدّرها."
+      },
+      "groups": [
+        {
+          "id": "direction",
+          "name": {
+            "en": "Direction",
+            "ar": "التوجه"
+          }
+        },
+        {
+          "id": "execution",
+          "name": {
+            "en": "Execution",
+            "ar": "التنفيذ"
+          }
+        },
+        {
+          "id": "results",
+          "name": {
+            "en": "Results",
+            "ar": "النتائج"
+          }
+        }
+      ],
+      "criteria": [
+        {
+          "id": "C1",
+          "no": 1,
+          "group": "direction",
+          "name": {
+            "en": "Purpose, Vision & Strategy",
+            "ar": "الغاية والرؤية والاستراتيجية"
+          },
+          "prompt": {
+            "en": "Do we know why we exist, for whom, and where we are going — and is the strategy built from evidence about stakeholders and the environment?",
+            "ar": "هل نعرف لماذا نوجد ولمن وإلى أين نتجه — وهل بُنيت الاستراتيجية على أدلة عن أصحاب المصلحة والبيئة؟"
+          },
+          "kind": "enabler"
+        },
+        {
+          "id": "C2",
+          "no": 2,
+          "group": "direction",
+          "name": {
+            "en": "Organisational Culture & Leadership",
+            "ar": "الثقافة المؤسسية والقيادة"
+          },
+          "prompt": {
+            "en": "Do our culture and leadership behaviours make the strategy happen, and do leaders role-model, involve and empower people?",
+            "ar": "هل تجعل ثقافتنا وسلوكيات قيادتنا الاستراتيجية تتحقق، وهل يكون القادة قدوة ويُشركون الناس ويمكّنونهم؟"
+          },
+          "kind": "enabler"
+        },
+        {
+          "id": "C3",
+          "no": 3,
+          "group": "execution",
+          "name": {
+            "en": "Engaging Stakeholders",
+            "ar": "إشراك أصحاب المصلحة"
+          },
+          "prompt": {
+            "en": "Do we understand the needs of customers, people, partners, owners and society, and involve them in what we do?",
+            "ar": "هل نفهم احتياجات العملاء والموظفين والشركاء والملاك والمجتمع، ونُشركهم فيما نفعل؟"
+          },
+          "kind": "enabler"
+        },
+        {
+          "id": "C4",
+          "no": 4,
+          "group": "execution",
+          "name": {
+            "en": "Creating Sustainable Value",
+            "ar": "صنع قيمة مستدامة"
+          },
+          "prompt": {
+            "en": "Do we design, deliver and communicate value that stakeholders want, sustainably?",
+            "ar": "هل نصمم القيمة التي يريدها أصحاب المصلحة ونقدمها ونتواصل بشأنها باستدامة؟"
+          },
+          "kind": "enabler"
+        },
+        {
+          "id": "C5",
+          "no": 5,
+          "group": "execution",
+          "name": {
+            "en": "Driving Performance & Transformation",
+            "ar": "قيادة الأداء والتحول"
+          },
+          "prompt": {
+            "en": "Do we run today's operations well while managing risk, using data and technology, and transforming for the future?",
+            "ar": "هل ندير عمليات اليوم جيدًا مع إدارة المخاطر واستخدام البيانات والتقنية والتحول للمستقبل؟"
+          },
+          "kind": "enabler"
+        },
+        {
+          "id": "C6",
+          "no": 6,
+          "group": "results",
+          "name": {
+            "en": "Stakeholder Perceptions",
+            "ar": "تصورات أصحاب المصلحة"
+          },
+          "prompt": {
+            "en": "What do our key stakeholders say about us — and do we act on it?",
+            "ar": "ماذا يقول أصحاب المصلحة الرئيسيون عنا — وهل نتصرف بناءً عليه؟"
+          },
+          "kind": "results"
+        },
+        {
+          "id": "C7",
+          "no": 7,
+          "group": "results",
+          "name": {
+            "en": "Strategic & Operational Performance",
+            "ar": "الأداء الاستراتيجي والتشغيلي"
+          },
+          "prompt": {
+            "en": "What do our own strategic and operational measures show over time?",
+            "ar": "ماذا تُظهر مقاييسنا الاستراتيجية والتشغيلية عبر الزمن؟"
+          },
+          "kind": "results"
+        }
+      ],
+      "elements": {
+        "enabler": [
+          {
+            "id": "approach",
+            "name": {
+              "en": "Approach",
+              "ar": "الأسلوب"
+            },
+            "ask": {
+              "en": "Is there a clear reason for the way we do this, a defined design, and links to strategy and other approaches?",
+              "ar": "هل لطريقة عملنا سبب واضح وتصميم معرَّف وصلات بالاستراتيجية والأساليب الأخرى؟"
+            },
+            "bands": [
+              {
+                "en": "No defined approach; things happen when someone pushes.",
+                "ar": "لا أسلوب معرَّف؛ تحدث الأمور حين يدفع بها أحد."
+              },
+              {
+                "en": "Some approaches exist but the rationale or design is unclear.",
+                "ar": "توجد بعض الأساليب لكن المبرر أو التصميم غير واضح."
+              },
+              {
+                "en": "Defined approaches with a rationale for most of the criterion.",
+                "ar": "أساليب معرَّفة بمبرر لمعظم المعيار."
+              },
+              {
+                "en": "Clear rationale, defined design and links to strategy and other approaches.",
+                "ar": "مبرر واضح وتصميم معرَّف وصلات بالاستراتيجية والأساليب الأخرى."
+              },
+              {
+                "en": "Approaches others learn from, fully integrated and focused on stakeholder needs.",
+                "ar": "أساليب يتعلم منها الآخرون، متكاملة تمامًا ومركزة على احتياجات أصحاب المصلحة."
+              }
+            ]
+          },
+          {
+            "id": "deployment",
+            "name": {
+              "en": "Deployment",
+              "ar": "التطبيق"
+            },
+            "ask": {
+              "en": "Is it used systematically where it should be, on time, and can we show it unit by unit?",
+              "ar": "هل يُستخدم بمنهجية حيث ينبغي وفي وقته، وهل نستطيع إظهاره وحدةً وحدة؟"
+            },
+            "bands": [
+              {
+                "en": "Not used, or no evidence of use.",
+                "ar": "غير مستخدم أو لا دليل على استخدامه."
+              },
+              {
+                "en": "Used in a few places (pilots, showcases).",
+                "ar": "مستخدم في مواضع قليلة (تجارب، نماذج استعراضية)."
+              },
+              {
+                "en": "Used in most relevant areas, with records.",
+                "ar": "مستخدم في معظم المجالات ذات الصلة، بسجلات."
+              },
+              {
+                "en": "Used systematically across the scope, with a deployment matrix.",
+                "ar": "مستخدم بمنهجية عبر النطاق، بمصفوفة تطبيق."
+              },
+              {
+                "en": "Fully deployed, timely and adapted to each area's needs.",
+                "ar": "مطبق كليًا وفي وقته ومكيَّف لاحتياجات كل مجال."
+              }
+            ]
+          },
+          {
+            "id": "refinement",
+            "name": {
+              "en": "Assessment & refinement",
+              "ar": "التقييم والتحسين"
+            },
+            "ask": {
+              "en": "Do we measure whether it works, learn from others and change it for reasons — with dated examples?",
+              "ar": "هل نقيس هل يعمل، ونتعلم من الآخرين، ونغيّره لأسباب — بأمثلة مؤرخة؟"
+            },
+            "bands": [
+              {
+                "en": "No measurement or review.",
+                "ar": "لا قياس ولا مراجعة."
+              },
+              {
+                "en": "Occasional review; few changes made.",
+                "ar": "مراجعة متقطعة؛ وتغييرات قليلة."
+              },
+              {
+                "en": "Regular measurement and some changes made as a result.",
+                "ar": "قياس منتظم وبعض التغييرات نتيجة لذلك."
+              },
+              {
+                "en": "Measured, benchmarked and improved, with a dated change log.",
+                "ar": "مقاس ومقارَن ومحسَّن، بسجل تغييرات مؤرخ."
+              },
+              {
+                "en": "Continuous learning and innovation that others adopt.",
+                "ar": "تعلم وابتكار مستمران يتبناهما الآخرون."
+              }
+            ]
+          }
+        ],
+        "results": [
+          {
+            "id": "relevance",
+            "name": {
+              "en": "Relevance & usability",
+              "ar": "الصلة وقابلية الاستخدام"
+            },
+            "ask": {
+              "en": "Do the measures cover what matters to strategy and stakeholders, segmented usefully, with reliable data?",
+              "ar": "هل تغطي المقاييس ما يهم الاستراتيجية وأصحاب المصلحة، بتجزئة مفيدة وبيانات موثوقة؟"
+            },
+            "bands": [
+              {
+                "en": "No relevant measures.",
+                "ar": "لا مقاييس ذات صلة."
+              },
+              {
+                "en": "A few measures; relevance or reliability unclear.",
+                "ar": "مقاييس قليلة؛ والصلة أو الموثوقية غير واضحة."
+              },
+              {
+                "en": "Relevant measures for most key areas.",
+                "ar": "مقاييس ذات صلة لمعظم المجالات الرئيسية."
+              },
+              {
+                "en": "A balanced, segmented set with defined, reliable data.",
+                "ar": "مجموعة متوازنة ومجزأة ببيانات معرَّفة وموثوقة."
+              },
+              {
+                "en": "A comprehensive set used to predict and steer performance.",
+                "ar": "مجموعة شاملة تُستخدم للتنبؤ بالأداء وتوجيهه."
+              }
+            ]
+          },
+          {
+            "id": "performance",
+            "name": {
+              "en": "Performance",
+              "ar": "الأداء"
+            },
+            "ask": {
+              "en": "Do results show positive trends, met targets, good comparisons and explained causes?",
+              "ar": "هل تُظهر النتائج اتجاهات إيجابية ومستهدفات محققة ومقارنات جيدة وأسبابًا مفسَّرة؟"
+            },
+            "bands": [
+              {
+                "en": "No results, or results worsening.",
+                "ar": "لا نتائج، أو نتائج تتدهور."
+              },
+              {
+                "en": "Some positive trends or met targets.",
+                "ar": "بعض الاتجاهات الإيجابية أو المستهدفات المحققة."
+              },
+              {
+                "en": "Positive trends and targets met in many areas.",
+                "ar": "اتجاهات إيجابية ومستهدفات محققة في مجالات كثيرة."
+              },
+              {
+                "en": "Sustained trends, targets met, favourable comparisons, causes understood.",
+                "ar": "اتجاهات مستدامة ومستهدفات محققة ومقارنات إيجابية وأسباب مفهومة."
+              },
+              {
+                "en": "Leading results sustained over years, with clear cause and effect.",
+                "ar": "نتائج رائدة مستدامة لسنوات بسبب وأثر واضحين."
+              }
+            ]
+          }
+        ]
+      },
+      "scale": [
+        {
+          "value": 0,
+          "label": {
+            "en": "No evidence",
+            "ar": "لا دليل"
+          }
+        },
+        {
+          "value": 25,
+          "label": {
+            "en": "Some evidence",
+            "ar": "بعض الأدلة"
+          }
+        },
+        {
+          "value": 50,
+          "label": {
+            "en": "Evident",
+            "ar": "واضح"
+          }
+        },
+        {
+          "value": 75,
+          "label": {
+            "en": "Clear and broad",
+            "ar": "واضح وواسع"
+          }
+        },
+        {
+          "value": 100,
+          "label": {
+            "en": "Comprehensive",
+            "ar": "شامل"
+          }
+        }
+      ],
+      "courses": [
+        "CRS-EX-RADAR",
+        "CRS-EX-EVID",
+        "CRS-EX-SA",
+        "CRS-EX-PLAN"
+      ],
+      "source_ids": [
+        "SRC-EFQM-MODEL2025",
+        "SRC-CIA-EX"
+      ],
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.10.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "bd577cfc766287004c5294502a8e237e341454fdad5be27bf333e8f8fab4f980"
+      }
+    },
+    {
+      "id": "REG-KAQA",
+      "kind": "regional_award",
+      "name": {
+        "en": "King Abdulaziz Quality Award",
+        "ar": "جائزة الملك عبدالعزيز للجودة"
+      },
+      "checked": "2026-11-06",
+      "facts": [
+        {
+          "text": {
+            "en": "Seventh edition: 63 establishments honoured at gold, silver and bronze levels in Riyadh, June 2025.",
+            "ar": "الدورة السابعة: تكريم 63 منشأة بالمستويات الذهبي والفضي والبرونزي في الرياض، يونيو 2025."
+          },
+          "source": "SRC-KAQA-SPA-2025"
+        },
+        {
+          "text": {
+            "en": "Sixth edition: more than 300 governmental, private and non-profit organisations competed.",
+            "ar": "الدورة السادسة: تنافست أكثر من 300 منظمة حكومية وخاصة وغير ربحية."
+          },
+          "source": "SRC-KAQA-SIDF-2023"
+        },
+        {
+          "text": {
+            "en": "Approved in 2000; a unified excellence model was issued by SASO in 2015 (later editions may differ).",
+            "ar": "أُقرّت في عام 2000؛ وأصدرت الهيئة السعودية للمواصفات والمقاييس والجودة نموذجًا موحدًا للتميز في 2015 (وقد تختلف الإصدارات اللاحقة)."
+          },
+          "source": "SRC-KAQA-SASO-2015"
+        }
+      ],
+      "note": {
+        "en": "Application rules, categories and the current model edition are not confirmed here — check the award's official channels before planning.",
+        "ar": "قواعد التقدم والفئات وإصدار النموذج الحالي غير مؤكدة هنا — تحقق من القنوات الرسمية للجائزة قبل التخطيط."
+      },
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "1.0.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-09",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-09) after the AI-assisted pre-review; not an independent expert review. Drafted by: external_public. Review file cia-review-decisions-2026-11-09-owner-approval.json — Pre-review: deliverables/phase-10/review/pre-review-findings.json",
+        "drafted_by": "external_public",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "88f1faa6896906eabdfe73357aa4d192fefe2281945bfd73d0574056e73b6a33"
+      }
+    }
+  ]
+}

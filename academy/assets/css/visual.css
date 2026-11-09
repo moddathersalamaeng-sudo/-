@@ -167,3 +167,10 @@
 @media (max-width: 40rem) { .iso-hero > .banner-art { opacity: .6; } }
 .ring-empty { display: grid; place-items: center; inline-size: 72px; block-size: 72px; border-radius: 50%; border: 3px dashed var(--line-strong); color: var(--muted); }
 .ring-empty .ico { inline-size: 2rem; block-size: 2rem; }
+
+/* Phase 10 — full-width layout: keep hero text clear of the banner illustration, mirror the art for right-to-left reading,
+   and keep figures at a readable size on wide screens. */
+@media (min-width: 64rem) { .iso-hero > :not(.banner-art) { max-inline-size: 68%; } }
+html[dir="rtl"] .iso-hero > .banner-art, html[dir="rtl"] .abanner .banner-art { transform: scaleX(-1); }
+.fig-svg { max-inline-size: 64rem; margin-inline: auto; }
+.fig-compact .fig-svg { max-block-size: 15rem; }
