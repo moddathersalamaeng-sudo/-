@@ -1317,6 +1317,84 @@
       "figures": [
         "FIG-EX-LABFLOW"
       ]
+    },
+    {
+      "id": "lab:audit-simulator",
+      "figures": [
+        "FIG-LAB-AUDITTRAIL"
+      ]
+    },
+    {
+      "id": "lab:nonconformity-writing",
+      "figures": [
+        "FIG-LAB-NCPARTS"
+      ]
+    },
+    {
+      "id": "lab:evidence-review",
+      "figures": [
+        "FIG-LAB-EVLADDER"
+      ]
+    },
+    {
+      "id": "lab:risk-assessment",
+      "figures": [
+        "FIG-LAB-RISKMATRIX"
+      ]
+    },
+    {
+      "id": "lab:capa",
+      "figures": [
+        "FIG-LAB-CAPAFLOW"
+      ]
+    },
+    {
+      "id": "lab:root-cause-analysis",
+      "figures": [
+        "FIG-LAB-WHYCHAIN"
+      ]
+    },
+    {
+      "id": "lab:fmea",
+      "figures": [
+        "FIG-LAB-FMEARPN"
+      ]
+    },
+    {
+      "id": "lab:project-risk",
+      "figures": [
+        "FIG-LAB-EMV"
+      ]
+    },
+    {
+      "id": "lab:audit-planning",
+      "figures": [
+        "FIG-LAB-AUDPLAN"
+      ]
+    },
+    {
+      "id": "lab:supplier-audit",
+      "figures": [
+        "FIG-LAB-SUPPLIER"
+      ]
+    },
+    {
+      "id": "lab:management-review",
+      "figures": [
+        "FIG-LAB-MREVIEW"
+      ]
+    },
+    {
+      "id": "lab:pmo-design",
+      "figures": [
+        "FIG-LAB-PMOTYPES"
+      ]
+    },
+    {
+      "id": "lab:kpi-builder",
+      "figures": [
+        "FIG-LAB-KPICARD"
+      ]
     }
   ]
 }

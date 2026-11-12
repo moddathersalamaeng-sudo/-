@@ -14136,6 +14136,798 @@
       "relation": "part_of",
       "toType": "learning_path",
       "toId": "ROUTE-EX-PLAN"
+    },
+    {
+      "id": "rel-638caa1ac8b0",
+      "fromType": "lab",
+      "fromId": "LAB-AUDIT-SIM",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-a8797d9b1e5b",
+      "fromType": "lab",
+      "fromId": "LAB-AUDIT-SIM",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-d23d881c9c2c",
+      "fromType": "lab",
+      "fromId": "LAB-AUDIT-SIM",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-55642d4dcf4d",
+      "fromType": "lab",
+      "fromId": "LAB-AUDIT-SIM",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-4ee8bbb15358",
+      "fromType": "lab",
+      "fromId": "LAB-AUDIT-SIM",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-2e90c1cb4493",
+      "fromType": "lab",
+      "fromId": "LAB-AUDIT-SIM",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-Q-AUDIT"
+    },
+    {
+      "id": "rel-8313c3666cbb",
+      "fromType": "lab",
+      "fromId": "LAB-AUDIT-SIM",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-4a11b73837b1",
+      "fromType": "lab",
+      "fromId": "LAB-AUDIT-SIM",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-4b2cb8345287",
+      "fromType": "lab",
+      "fromId": "LAB-NC-WRITE",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-b87dfb6566f0",
+      "fromType": "lab",
+      "fromId": "LAB-NC-WRITE",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-e8c884bc960a",
+      "fromType": "lab",
+      "fromId": "LAB-NC-WRITE",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-4c3de93f6a2f",
+      "fromType": "lab",
+      "fromId": "LAB-NC-WRITE",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-ISO-NC"
+    },
+    {
+      "id": "rel-db8fac632198",
+      "fromType": "lab",
+      "fromId": "LAB-NC-WRITE",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-d4db36a200b8",
+      "fromType": "lab",
+      "fromId": "LAB-NC-WRITE",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-3366fa16e49b",
+      "fromType": "lab",
+      "fromId": "LAB-NC-WRITE",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "capa"
+    },
+    {
+      "id": "rel-84b471ee2c3e",
+      "fromType": "lab",
+      "fromId": "LAB-EVIDENCE",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-8b77bd0f3ee1",
+      "fromType": "lab",
+      "fromId": "LAB-EVIDENCE",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-706272fe15c0",
+      "fromType": "lab",
+      "fromId": "LAB-EVIDENCE",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-9729edc34327",
+      "fromType": "lab",
+      "fromId": "LAB-EVIDENCE",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-Q-AUDIT"
+    },
+    {
+      "id": "rel-c1555df345be",
+      "fromType": "lab",
+      "fromId": "LAB-EVIDENCE",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-EX-EVID"
+    },
+    {
+      "id": "rel-d6a87f72b458",
+      "fromType": "lab",
+      "fromId": "LAB-EVIDENCE",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-a228dba28545",
+      "fromType": "lab",
+      "fromId": "LAB-RISK",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-863e2959b12a",
+      "fromType": "lab",
+      "fromId": "LAB-RISK",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-c843a168b3f5",
+      "fromType": "lab",
+      "fromId": "LAB-RISK",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-ISO-RISK"
+    },
+    {
+      "id": "rel-84a2557f8709",
+      "fromType": "lab",
+      "fromId": "LAB-RISK",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-G-31000"
+    },
+    {
+      "id": "rel-feebc1e74d3c",
+      "fromType": "lab",
+      "fromId": "LAB-RISK",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-PM-RISK"
+    },
+    {
+      "id": "rel-b163d6406bbc",
+      "fromType": "lab",
+      "fromId": "LAB-RISK",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso31000"
+    },
+    {
+      "id": "rel-f66ee225e9c4",
+      "fromType": "lab",
+      "fromId": "LAB-CAPA",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-b0ddced1ab04",
+      "fromType": "lab",
+      "fromId": "LAB-CAPA",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-Q-CAPA"
+    },
+    {
+      "id": "rel-66909ed1fa72",
+      "fromType": "lab",
+      "fromId": "LAB-CAPA",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-ISO-NC"
+    },
+    {
+      "id": "rel-3556cbcb883c",
+      "fromType": "lab",
+      "fromId": "LAB-CAPA",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-M-CAPA"
+    },
+    {
+      "id": "rel-816346ba73eb",
+      "fromType": "lab",
+      "fromId": "LAB-CAPA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "capa"
+    },
+    {
+      "id": "rel-2eb2dbb52fd3",
+      "fromType": "lab",
+      "fromId": "LAB-RCA",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-f60525b6f56c",
+      "fromType": "lab",
+      "fromId": "LAB-RCA",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-2b505a7e2cd6",
+      "fromType": "lab",
+      "fromId": "LAB-RCA",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-Q-CAPA"
+    },
+    {
+      "id": "rel-fd772b7d6f54",
+      "fromType": "lab",
+      "fromId": "LAB-RCA",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-M-RCA"
+    },
+    {
+      "id": "rel-010dbc965ae3",
+      "fromType": "lab",
+      "fromId": "LAB-RCA",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-M-WHY5"
+    },
+    {
+      "id": "rel-da2a6f045875",
+      "fromType": "lab",
+      "fromId": "LAB-RCA",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-ISO-NC"
+    },
+    {
+      "id": "rel-48d3c62fe78d",
+      "fromType": "lab",
+      "fromId": "LAB-RCA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "rca"
+    },
+    {
+      "id": "rel-9c3c871ddc02",
+      "fromType": "lab",
+      "fromId": "LAB-RCA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "why5"
+    },
+    {
+      "id": "rel-462462fbdbb1",
+      "fromType": "lab",
+      "fromId": "LAB-RCA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "fish"
+    },
+    {
+      "id": "rel-fa03767a1645",
+      "fromType": "lab",
+      "fromId": "LAB-FMEA",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "QM-02"
+    },
+    {
+      "id": "rel-40c0ad288b2d",
+      "fromType": "lab",
+      "fromId": "LAB-FMEA",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-b40b773f026a",
+      "fromType": "lab",
+      "fromId": "LAB-FMEA",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-M-FMEA"
+    },
+    {
+      "id": "rel-562fdadfbd82",
+      "fromType": "lab",
+      "fromId": "LAB-FMEA",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "fmea"
+    },
+    {
+      "id": "rel-0c284bd26af3",
+      "fromType": "lab",
+      "fromId": "LAB-PROJECT-RISK",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-331a3198657b",
+      "fromType": "lab",
+      "fromId": "LAB-PROJECT-RISK",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-947521d696f8",
+      "fromType": "lab",
+      "fromId": "LAB-PROJECT-RISK",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "PM-01"
+    },
+    {
+      "id": "rel-86177a998f99",
+      "fromType": "lab",
+      "fromId": "LAB-PROJECT-RISK",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-PM-RISK"
+    },
+    {
+      "id": "rel-9c58671a4d6a",
+      "fromType": "lab",
+      "fromId": "LAB-PROJECT-RISK",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso21500"
+    },
+    {
+      "id": "rel-1b501f55856b",
+      "fromType": "lab",
+      "fromId": "LAB-PROJECT-RISK",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso31000"
+    },
+    {
+      "id": "rel-c65f5ad2b64f",
+      "fromType": "lab",
+      "fromId": "LAB-AUDIT-PLAN",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-4bb7474c594e",
+      "fromType": "lab",
+      "fromId": "LAB-AUDIT-PLAN",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-ISO-AUD"
+    },
+    {
+      "id": "rel-b784d73336d0",
+      "fromType": "lab",
+      "fromId": "LAB-AUDIT-PLAN",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-ffbccd167a95",
+      "fromType": "lab",
+      "fromId": "LAB-AUDIT-PLAN",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-888185b9cee2",
+      "fromType": "lab",
+      "fromId": "LAB-SUPPLIER-AUDIT",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "QM-04"
+    },
+    {
+      "id": "rel-065ad1193f79",
+      "fromType": "lab",
+      "fromId": "LAB-SUPPLIER-AUDIT",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-83cd8e6df39e",
+      "fromType": "lab",
+      "fromId": "LAB-SUPPLIER-AUDIT",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-Q-SUPPLIER"
+    },
+    {
+      "id": "rel-d37b7dcb64df",
+      "fromType": "lab",
+      "fromId": "LAB-SUPPLIER-AUDIT",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "aud"
+    },
+    {
+      "id": "rel-e5edf18bddab",
+      "fromType": "lab",
+      "fromId": "LAB-MGMT-REVIEW",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "PERF-02"
+    },
+    {
+      "id": "rel-60e92c2e44bf",
+      "fromType": "lab",
+      "fromId": "LAB-MGMT-REVIEW",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "ISO-01"
+    },
+    {
+      "id": "rel-00af5e736db4",
+      "fromType": "lab",
+      "fromId": "LAB-MGMT-REVIEW",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-ISO-9001-AUD"
+    },
+    {
+      "id": "rel-d43ab38dd80e",
+      "fromType": "lab",
+      "fromId": "LAB-MGMT-REVIEW",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "iso9001"
+    },
+    {
+      "id": "rel-d894852032aa",
+      "fromType": "lab",
+      "fromId": "LAB-MGMT-REVIEW",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "str"
+    },
+    {
+      "id": "rel-3f5da8030b8e",
+      "fromType": "lab",
+      "fromId": "LAB-PMO-DESIGN",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "PMO-01"
+    },
+    {
+      "id": "rel-896f18f23700",
+      "fromType": "lab",
+      "fromId": "LAB-PMO-DESIGN",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "PMO-02"
+    },
+    {
+      "id": "rel-c86f43df9a68",
+      "fromType": "lab",
+      "fromId": "LAB-PMO-DESIGN",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-PMO-DESIGN"
+    },
+    {
+      "id": "rel-20d689b224fb",
+      "fromType": "lab",
+      "fromId": "LAB-PMO-DESIGN",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-PMO-KPI"
+    },
+    {
+      "id": "rel-5a184a45f858",
+      "fromType": "lab",
+      "fromId": "LAB-PMO-DESIGN",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pmo"
+    },
+    {
+      "id": "rel-cf3b1716cce9",
+      "fromType": "lab",
+      "fromId": "LAB-PMO-DESIGN",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "pmoexc"
+    },
+    {
+      "id": "rel-7bb5087aa6f5",
+      "fromType": "lab",
+      "fromId": "LAB-PMO-DESIGN",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "p3o"
+    },
+    {
+      "id": "rel-74de325c5f64",
+      "fromType": "lab",
+      "fromId": "LAB-KPI-BUILDER",
+      "relation": "practices",
+      "toType": "competency",
+      "toId": "PERF-01"
+    },
+    {
+      "id": "rel-6eccf36e3598",
+      "fromType": "lab",
+      "fromId": "LAB-KPI-BUILDER",
+      "relation": "related_to",
+      "toType": "course",
+      "toId": "CRS-PMO-KPI"
+    },
+    {
+      "id": "rel-8042526c4e4e",
+      "fromType": "lab",
+      "fromId": "LAB-KPI-BUILDER",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "str"
+    },
+    {
+      "id": "rel-aebee897e151",
+      "fromType": "lab",
+      "fromId": "LAB-KPI-BUILDER",
+      "relation": "links_to_tool",
+      "toType": "platform_module",
+      "toId": "oec"
+    },
+    {
+      "id": "rel-a9521eb60327",
+      "fromType": "template",
+      "fromId": "TPL-RISK-REGISTER",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-RISK"
+    },
+    {
+      "id": "rel-3719d65ecce5",
+      "fromType": "template",
+      "fromId": "TPL-RISK-REGISTER",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-PROJECT-RISK"
+    },
+    {
+      "id": "rel-daec24ea096d",
+      "fromType": "template",
+      "fromId": "TPL-RISK-REGISTER",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-FMEA"
+    },
+    {
+      "id": "rel-5c81ccb1af7f",
+      "fromType": "template",
+      "fromId": "TPL-RISK-REGISTER",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-01"
+    },
+    {
+      "id": "rel-4aed3517f3dd",
+      "fromType": "template",
+      "fromId": "TPL-RISK-REGISTER",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "RSK-02"
+    },
+    {
+      "id": "rel-b51126fd1572",
+      "fromType": "template",
+      "fromId": "TPL-AUDIT-CHECKLIST",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-AUDIT-SIM"
+    },
+    {
+      "id": "rel-fac035bd63e7",
+      "fromType": "template",
+      "fromId": "TPL-AUDIT-CHECKLIST",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-EVIDENCE"
+    },
+    {
+      "id": "rel-f07aa96235f9",
+      "fromType": "template",
+      "fromId": "TPL-AUDIT-CHECKLIST",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-AUDIT-PLAN"
+    },
+    {
+      "id": "rel-ea88ad84ae45",
+      "fromType": "template",
+      "fromId": "TPL-AUDIT-CHECKLIST",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-01"
+    },
+    {
+      "id": "rel-21b78bc8b5bd",
+      "fromType": "template",
+      "fromId": "TPL-AUDIT-CHECKLIST",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-02"
+    },
+    {
+      "id": "rel-541ae7b0108c",
+      "fromType": "template",
+      "fromId": "TPL-NCR",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-NC-WRITE"
+    },
+    {
+      "id": "rel-80b2a9a908fc",
+      "fromType": "template",
+      "fromId": "TPL-NCR",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-AUDIT-SIM"
+    },
+    {
+      "id": "rel-d427dfd103db",
+      "fromType": "template",
+      "fromId": "TPL-NCR",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-CAPA"
+    },
+    {
+      "id": "rel-52e683f6a07b",
+      "fromType": "template",
+      "fromId": "TPL-NCR",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "AUD-03"
+    },
+    {
+      "id": "rel-80f48812e47d",
+      "fromType": "template",
+      "fromId": "TPL-NCR",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-eb11c097998e",
+      "fromType": "template",
+      "fromId": "TPL-CAPA",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-CAPA"
+    },
+    {
+      "id": "rel-db4730a9ac74",
+      "fromType": "template",
+      "fromId": "TPL-CAPA",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-RCA"
+    },
+    {
+      "id": "rel-4a5b6a7d2a0c",
+      "fromType": "template",
+      "fromId": "TPL-CAPA",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-03"
+    },
+    {
+      "id": "rel-2a7ce8e45f79",
+      "fromType": "template",
+      "fromId": "TPL-QUALITY-PLAN",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-FMEA"
+    },
+    {
+      "id": "rel-55659639601a",
+      "fromType": "template",
+      "fromId": "TPL-QUALITY-PLAN",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "QM-01"
+    },
+    {
+      "id": "rel-813bead7c4da",
+      "fromType": "template",
+      "fromId": "TPL-QUALITY-PLAN",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-2ee7276d5be9",
+      "fromType": "template",
+      "fromId": "TPL-TRAINING-MATRIX",
+      "relation": "related_to",
+      "toType": "lab",
+      "toId": "LAB-EVIDENCE"
+    },
+    {
+      "id": "rel-9c32dacdb0ae",
+      "fromType": "template",
+      "fromId": "TPL-TRAINING-MATRIX",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "ISO-02"
+    },
+    {
+      "id": "rel-fa65e5e3c21a",
+      "fromType": "template",
+      "fromId": "TPL-TRAINING-MATRIX",
+      "relation": "develops",
+      "toType": "competency",
+      "toId": "LDR-01"
     }
   ]
 }

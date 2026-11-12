@@ -19,6 +19,7 @@ import { L, notAvailable, previewBanner, linkBtn, section, facts, hours, isRevie
 import { courseCard, sourceList } from './courses.js';
 import { effortMinutes } from './iso.js';
 import { academyBanner } from '../ui/art.js';
+import { labsToolPanel } from './labs.js';
 import { academyLanding, toolPanel, orderCourses } from '../ui/landing.js';
 
 const STAGE_ICON = { entry: 'flag', practitioner: 'briefcase', specialist: 'target', senior: 'award', advanced: 'star', top: 'crown', professional: 'users' };
@@ -130,6 +131,8 @@ export function pmiAcademyView(ctx) {
       certs: { title: t('pmi.certs'), body: certs.length ? h('div', null, h('div', { class: 'cards' }, certs.map(c => certCard(ctx, c))), h('p', null, linkBtn('#/academy/pmi/certifications', t('pmi.compareCerts'))))
         : EmptyState({ title: t('pmi.certsPending'), body: t('p7.pendingBody'), iconName: 'lock', level: 3 }) },
       tools: { title: t('x10a.landing.tools'), items: [
+        /* Phase 11: practice labs of this academy (loads itself). */
+        labsToolPanel(ctx, 'pmi'),
         toolPanel(t('p7.iso.useTitle'), 'grid', t('pmi.useBody'), tools.length ? h('ul', { class: 'tools-mini' }, tools.map(m => h('li', null, toolLink(ctx, m)))) : h('p', { class: 'note' }, t('p7.none'))),
         guides.length ? toolPanel(t('gd.practices'), 'ladder', t('pmi.guidesNote'), h('ul', { class: 'plain' }, guides.map(g => {
           const gc = guideCourses.find(c => c.guide === g.slug);

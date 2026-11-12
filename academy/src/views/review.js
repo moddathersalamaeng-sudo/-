@@ -18,7 +18,9 @@ const CHECKS = ['facts', 'noCopy', 'noClaims', 'bilingual', 'answers'];
 const COLLECTIONS = [
   ['courses', 'courses'], ['assessments', 'assessments'], ['questions', 'questions'], ['iso-standards', 'isoStandards'],
   ['learning-paths', 'learningPaths'], ['competency/competencies', 'competencies'], ['competency/target-roles', 'targetRoles'],
-  ['competency/domains', 'domains'], ['ecosystems', 'ecosystems'], ['programs', 'programs'], ['sources', 'sources']
+  ['competency/domains', 'domains'], ['ecosystems', 'ecosystems'], ['programs', 'programs'], ['sources', 'sources'],
+  /* Phase 11: full lab definitions (all academy shards) and the smart templates. */
+  ['labs', 'labs'], ['smart-templates', 'smartTemplates']
 ];
 const today = () => new Date().toISOString().slice(0, 10);
 const title = (ctx, r) => L(ctx, r.title || r.name || r.prompt) || r.title || r.id;

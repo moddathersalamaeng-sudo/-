@@ -84,6 +84,18 @@
       "approved": 148,
       "changes_requested": 0,
       "skipped": 0
+    },
+    {
+      "applied_at": "2026-11-12T05:51:28+00:00",
+      "file": "cia-review-decisions-2026-11-12-owner-approval.json",
+      "sha256": "38b821e1bfbd0ace6082b55230351ae59a4714b7b908c2ebdfd426d70eb774dc",
+      "reviewer": {
+        "name": "مدثر سلامه",
+        "role": "Platform owner"
+      },
+      "approved": 22,
+      "changes_requested": 0,
+      "skipped": 0
     }
   ]
 }

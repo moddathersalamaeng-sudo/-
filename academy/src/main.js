@@ -41,6 +41,9 @@ import { mySpaceView } from './views/myspace.js';
 import { libraryHubView } from './views/library-hub.js';
 import { searchView } from './views/search.js';
 import { toolsView } from './views/tools.js';
+import { labsIndexView, labView } from './views/labs.js';
+import { templateView, templatePrintView } from './views/templates.js';
+import { certificateView } from './views/certificate.js';
 
 const ROUTES = [
   { path: '/', view: homeView, titleKey: 'home.title' },
@@ -51,6 +54,12 @@ const ROUTES = [
   { path: '/library', view: libraryHubView, titleKey: 'nav.items.library' },
   { path: '/search', view: searchView, titleKey: 'x10a.search.title' },
   { path: '/tools', view: toolsView, titleKey: 'x10a.tools.title' },
+  /* Phase 11: practice labs and smart templates (no new top-level item — reached from each academy's Tools & labs and the Library). */
+  { path: '/labs', view: labsIndexView, titleKey: 'lab11.indexTitle' },
+  { path: '/labs/:slug', view: labView, titleKey: 'lab11.pageTitle', parent: ['/labs', 'lab11.indexTitle'] },
+  { path: '/templates/:slug', view: templateView, titleKey: 'tpl11.pageTitle', parent: ['/library?tab=templates', 'nav.items.library'] },
+  { path: '/certificate/:slug', view: certificateView, titleKey: 'cert11.title', parent: ['/academy/courses', 'courses.title'] },
+  { path: '/templates/:slug/print', view: templatePrintView, titleKey: 'tpl11.printTitle', parent: ['/library?tab=templates', 'nav.items.library'] },
   { path: '/me', view: meView, titleKey: 'me.title' },
   { path: '/settings', view: settingsView, titleKey: 'settings.title' },
   { path: '/about-governance', view: governanceView, titleKey: 'x10a.about.title' },
@@ -162,6 +171,15 @@ async function boot() {
       /* Phase 10: the EFQM Assessment Lab definition and regional-award facts (governed), and the learner's own Lab (cia:v1:*). */
       excellence: new ContentRepository({ adapter: content, collection: 'excellence-lab' }),
       excellenceLab: new CollectionRepository({ adapter: userAdapter, collection: 'excellence_lab' }),
+      /* Phase 11: lab definitions (governed, split per academy), smart templates (governed) and the learner's own attempts, drafts and documents. */
+      labsIndex: new ContentRepository({ adapter: split, collection: 'labs-index' }),
+      labs: new ContentRepository({ adapter: split, collection: 'labs' }),
+      labAttempts: new CollectionRepository({ adapter: userAdapter, collection: 'lab_attempts' }),
+      labDrafts: new CollectionRepository({ adapter: userAdapter, collection: 'lab_drafts' }),
+      smartTemplates: new ContentRepository({ adapter: content, collection: 'smart-templates' }),
+      smartDocs: new CollectionRepository({ adapter: userAdapter, collection: 'smart_documents' }),
+      /* D-10A-1: certificates of completion the learner printed (own data). */
+      certificates: new CollectionRepository({ adapter: userAdapter, collection: 'certificates' }),
       competencies: new ContentRepository({ adapter: competencyContent, collection: 'competencies' }),
       targetRoles: new ContentRepository({ adapter: competencyContent, collection: 'target-roles' }),
       domains: new ContentRepository({ adapter: competencyContent, collection: 'domains' }),
@@ -212,7 +230,16 @@ async function boot() {
       i18n.setLocale(l);
     },
     setPref: async (k, v) => { prefs = { ...prefs, [k]: v }; await prefsRepo.save(prefs); applyPrefs(); },
-    reloadPrefs: async () => { prefs = await loadPrefs(); applyPrefs(); }
+    reloadPrefs: async () => { prefs = await loadPrefs(); applyPrefs(); },
+    /** Phase 11: a view that learns its place after loading (lab → academy) replaces the middle of the breadcrumb and the page title. */
+    setTrail: (middle = [], last = null) => {
+      const ol = root.querySelector('nav.crumbs ol');
+      if (!ol) return;
+      const items = [{ label: i18n.t('home.title'), href: '#/' }, ...middle];
+      const cur = last ?? ol.lastElementChild?.textContent ?? '';
+      ol.replaceChildren(...items.map(c => h('li', null, h('a', { href: c.href }, c.label))), h('li', null, h('span', { 'aria-current': 'page' }, cur)));
+      if (last) document.title = i18n.t('app.docTitle', { page: last });
+    }
   };
 
   function applyPrefs() {

@@ -22,6 +22,12 @@ Blocking checks (a record that fails one is NOT a candidate):
   B10 excellence (Phase 10): no "EFQM-approved", "licensed assessor" or "EFQM recognised" claim unless negated; EFQM records point to
                    efqm.org and carry the CIA claims text; the EFQM Assessment Lab definition is labelled "not an EFQM assessment" and
                    uses criterion names only (no guidance longer than CIA's own one-line questions); KAQA facts cite official .gov.sa pages
+  B11 labs and smart templates (Phase 11): every task has a bilingual model answer and reasoning; automatically scored tasks
+                   have a complete key (options with rationales, categories, order, numeric answer and tolerance); written tasks are
+                   human-reviewed with a rubric of at least two criteria; every lab is labelled "practice evidence, not a certification",
+                   has a cover and a figure; clause references resolve in the owner's guides; no audit-certification, CPD, PDU, RU or
+                   EFQM-assessment claim; governed draft labs (`draft: true`) stay drafts. Templates: questions and columns bilingual,
+                   computed columns use the safe operations only.
 Advisory checks (reported, not blocking): duplicate prompts, very long options, answer-key position balance.
 """
 import json
@@ -32,7 +38,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SEED = ROOT / "data" / "seed"
-OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-10" / "review"
+OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-11" / "review"
 load = lambda n: json.loads((SEED / f"{n}.json").read_text(encoding="utf-8"))["items"]  # noqa: E731
 guides = {g["slug"]: json.loads((ROOT / "data" / "guides" / f"{g['slug']}.json").read_text(encoding="utf-8"))["guide"]
           for g in json.loads((ROOT / "data" / "guides" / "index.json").read_text(encoding="utf-8"))["items"]}
@@ -40,7 +46,7 @@ guides = {g["slug"]: json.loads((ROOT / "data" / "guides" / f"{g['slug']}.json")
 COLL = {"courses": "courses", "questions": "questions", "assessments": "assessments", "iso-standards": "iso-standards", "learning-paths": "learning-paths",
         "ecosystems": "ecosystems", "programs": "programs", "sources": "sources", "competency/competencies": "competency/competencies",
         "competency/target-roles": "competency/target-roles", "competency/domains": "competency/domains", "certifications": "certifications",
-        "figures": "figures", "excellence-lab": "excellence-lab"}
+        "figures": "figures", "excellence-lab": "excellence-lab", "labs": "labs", "smart-templates": "smart-templates"}
 data = {k: load(v) for k, v in COLL.items()}
 FUTURE_COURSES = set()  # CRS-EFQM-101 is a Phase 10 course since 6 Nov 2026  # CRS-QMS-201 is a Phase 9 course since 4 Nov 2026  # CRS-PM-101 and CRS-P3O-101 are Phase 8 courses since 3 Nov 2026
 FUTURE_Q = {"Q-PM-001", "Q-RISK-001", "Q-PMO-001", "Q-GOV-001", "Q-AI-001"}  # Q-EFQM-001 reworked in Phase 10
@@ -95,12 +101,17 @@ def guide_refs(slug):
     return refs | tops | pref
 
 
+DRAFT_LAB_FIGS = {f for x in data.get("labs", []) if x.get("draft") for f in x.get("figures", [])}
+
+
 def scope_of(coll, r):
     rid = r["id"]
     if coll == "courses" and rid in FUTURE_COURSES: return "future"
     if coll == "questions" and rid in FUTURE_Q: return "future"
     if coll == "assessments" and rid in FUTURE_A: return "future"
     if coll == "programs" and rid in FUTURE_PROGRAMS: return "future"
+    if coll == "labs" and r.get("draft"): return "future"  # Phase 11 governed draft labs (spec §19 labs 4, 9, 10, 12, 13)
+    if coll == "figures" and rid in DRAFT_LAB_FIGS: return "future"  # figures shown only on a governed draft lab stay drafts with it
     return "now"
 
 
@@ -282,6 +293,39 @@ for f in data.get("figures", []):
     if f.get("owner_phase") == 10 and f.get("template") in ("scurve", "bars", "pareto", "histogram", "control", "scatter") and not re.search(r"illustrative|lesson example", f["read"]["en"], re.I):
         flag("figures", f["id"], "B10", "Phase 10 chart numbers are not marked as illustrative")
 
+# ------------------------------------------------------------------ B11 labs and smart templates (Phase 11)
+LAB_CLAIM = re.compile(r"(certified auditor|lead auditor certificat|audit certification|CPD|PDU|\bRU\b|EFQM assessment|accredited)", re.I)
+for x in data.get("labs", []):
+    if x["governance"]["content_status"] == "published" or x.get("draft"):
+        continue
+    rid = x["id"]
+    if "not a certification" not in x.get("label", {}).get("en", ""): flag("labs", rid, "B11", "lab not labelled as practice evidence, not a certification")
+    if not x.get("cover") or not x.get("figures"): flag("labs", rid, "B11", "lab without cover or figure")
+    for r_ in x.get("refs", []):
+        if r_["ref"] not in guide_refs(r_["guide"]): flag("labs", rid, "B11", f"clause {r_['guide']}#{r_['ref']} not in the owner's guide")
+    for t_ in x.get("tasks", []):
+        tid = t_["id"]
+        for k in ("model_answer", "reasoning", "prompt"):
+            if not (t_.get(k, {}).get("en") and t_.get(k, {}).get("ar")): flag("labs", rid, "B11", f"{tid}: {k} missing in a language")
+        ty = t_["type"]
+        if ty == "single_choice" and (t_.get("correct") not in {o["id"] for o in t_.get("options", [])} or any(not o.get("why", {}).get("ar") for o in t_["options"])): flag("labs", rid, "B11", f"{tid}: key or rationale missing")
+        if ty == "multi_select" and (not any(o.get("correct") for o in t_["options"]) or any(not isinstance(o.get("correct"), bool) or not o.get("why", {}).get("ar") for o in t_["options"])): flag("labs", rid, "B11", f"{tid}: key or rationale missing")
+        if ty == "classify" and any(i_["category"] not in {c["id"] for c in t_["categories"]} or not i_.get("why", {}).get("ar") for i_ in t_["items"]): flag("labs", rid, "B11", f"{tid}: classification key incomplete")
+        if ty == "ordering" and len(t_.get("items", [])) < 3: flag("labs", rid, "B11", f"{tid}: too few items to order")
+        if ty == "numeric" and not (isinstance(t_.get("answer"), (int, float)) and isinstance(t_.get("tolerance"), (int, float))): flag("labs", rid, "B11", f"{tid}: numeric key missing")
+        if ty == "free_text" and (t_.get("review") != "human" or len(t_.get("rubric", [])) < 2): flag("labs", rid, "B11", f"{tid}: written task without a human-review rubric")
+    for path, v in texts(x):
+        for m in LAB_CLAIM.finditer(v["en"]):
+            window = v["en"][max(0, m.start() - 60):m.end() + 20]
+            if not NEG.search(window): flag("labs", rid, "B11", f"{path}: possible claim “{window.strip()}”")
+for x in data.get("smart-templates", []):
+    if x["governance"]["content_status"] == "published":
+        continue
+    for c in x["table"]["columns"]:
+        if c["type"] == "computed" and c.get("compute", {}).get("op") not in ("product", "sum", "gap", "band"): flag("smart-templates", x["id"], "B11", f"column {c['id']}: unsafe computation")
+    for q_ in x["questions"]:
+        if not (q_["label"].get("en") and q_["label"].get("ar")): flag("smart-templates", x["id"], "B11", f"question {q_['id']} not bilingual")
+
 # ------------------------------------------------------------------ advisory
 prompts = Counter(q["prompt"]["en"].strip().lower() for q in data["questions"])
 for p_, n in prompts.items():
@@ -347,6 +391,14 @@ REVIEWED = {
     ("courses:CRS-EX-SUSTAIN", "B2"): "The quoted text is CIA's own model objective written for the exercise.",
     ("certifications:CERT-EFQM-ADV", "B1"): "EFQM's own description on efqm.org/assess (checked 6 Nov 2026): Advanced Assessments can be delivered through accredited partner organisations. It describes EFQM's network, not CIA; the record states CIA is not an EFQM partner.",
     ("certifications:CERT-EFQM-ASSESSOR", "B1"): "Names EFQM's own training product («تدريب المقيّم المعتمد من EFQM» = EFQM Certified Assessor Training) to identify it; the same record states CIA courses are not EFQM assessor training and lead to no certification or licence.",
+    # Phase 11 (12 Nov 2026) — each finding below was read in the record and judged a false positive:
+    ("labs:LAB-NC-WRITE", "B2"): "The quoted text is CIA's own model nonconformity statement for a fictional warehouse (procedure WH-03 is invented), not a quotation.",
+    ("labs:LAB-EVIDENCE", "B2"): "The quoted text is CIA's own model audit-trail note for a fictional laboratory (procedure HR-07 is invented).",
+    ("labs:LAB-RISK", "B1"): "“approved by the operations director” is the fictional organisation's own risk-acceptance authority in its risk criteria — governance approval, not an accreditation claim.",
+    ("labs:LAB-RISK", "B2"): "The quoted text is CIA's own model treatment plan for the fictional cold-chain case.",
+    ("labs:LAB-RCA", "B2"): "The quoted text is CIA's own model causal-chain paragraph for the fictional bottling line.",
+    ("labs:LAB-FMEA", "B2"): "The quoted text is CIA's own model FMEA action plan for the fictional crimping step.",
+    ("labs:LAB-PROJECT-RISK", "B2"): "The quoted text is CIA's own model risk-register entry for the fictional fit-out project.",
 }
 cleared = defaultdict(list)
 for key, fs in list(findings.items()):
@@ -363,7 +415,7 @@ for coll, r in drafts:
     key = f"{coll}:{r['id']}"
     (blocked if findings.get(key) else candidates)[coll].append(r["id"])
 OUT.mkdir(parents=True, exist_ok=True)
-result = {"schema": "cia.pre-review.v1", "date": "2026-11-06", "drafts": len(drafts), "generated_questions_checked": gen_checked,
+result = {"schema": "cia.pre-review.v1", "date": "2026-11-12", "drafts": len(drafts), "generated_questions_checked": gen_checked,
           "candidates": candidates, "blocked": {k: {i: findings[f"{k}:{i}"] for i in v} for k, v in blocked.items()},
           "cleared_after_reading": {k: v for k, v in cleared.items() if v}, "advisory": advisory}
 (OUT / "pre-review-findings.json").write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -8827,6 +8827,825 @@
         "approval_basis": "owner_approval_after_ai_prereview",
         "approved_hash": "6247e8d0dc7d4d062d8b2ff7dac04ad7aff640af8aa9d4e76b40904d35b1ba2a"
       }
+    },
+    {
+      "id": "FIG-LAB-AUDITTRAIL",
+      "template": "flow",
+      "caption": {
+        "en": "Following an audit trail",
+        "ar": "تتبّع مسار التدقيق"
+      },
+      "read": {
+        "en": "Start from what you see and follow it to what it affects: confirm the status in records, check whether it was used, find the extent, then compare with the criteria before writing anything.",
+        "ar": "ابدأ مما تراه وتتبّعه إلى ما يؤثر فيه: أكّد الحالة من السجلات، وتحقق هل استُخدم، وحدّد المدى، ثم قارن بالمعايير قبل أن تكتب شيئًا."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Observe",
+            "ar": "الملاحظة"
+          }
+        },
+        {
+          "t": {
+            "en": "Confirm status",
+            "ar": "تأكيد الحالة"
+          }
+        },
+        {
+          "t": {
+            "en": "Check use",
+            "ar": "التحقق من الاستخدام"
+          }
+        },
+        {
+          "t": {
+            "en": "Find extent",
+            "ar": "تحديد المدى"
+          }
+        },
+        {
+          "t": {
+            "en": "Compare with criteria",
+            "ar": "المقارنة بالمعايير"
+          }
+        }
+      ],
+      "highlight": 3,
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e7c6a67652dd870c6b3d1f205fec34068155dc60be40b8a056beaf0f98a6bd39"
+      }
+    },
+    {
+      "id": "FIG-LAB-NCPARTS",
+      "template": "ladder",
+      "caption": {
+        "en": "The three parts of a nonconformity",
+        "ar": "الأجزاء الثلاثة لعدم المطابقة"
+      },
+      "read": {
+        "en": "A finding the auditee can act on rests on the requirement, is proved by objective evidence and ends in a clear statement of the gap.",
+        "ar": "الملاحظة التي يستطيع المُدقَّق عليه التصرف بناءً عليها ترتكز على المتطلب، ويثبتها الدليل الموضوعي، وتنتهي ببيان واضح للفجوة."
+      },
+      "levels": [
+        {
+          "t": {
+            "en": "Statement of the gap",
+            "ar": "بيان الفجوة"
+          },
+          "d": {
+            "en": "What is missing",
+            "ar": "ما الناقص"
+          }
+        },
+        {
+          "t": {
+            "en": "Objective evidence",
+            "ar": "الدليل الموضوعي"
+          },
+          "d": {
+            "en": "Where, when, how many",
+            "ar": "أين ومتى وكم"
+          }
+        },
+        {
+          "t": {
+            "en": "Requirement",
+            "ar": "المتطلب"
+          },
+          "d": {
+            "en": "What should be",
+            "ar": "ما ينبغي أن يكون"
+          }
+        }
+      ],
+      "highlight": 1,
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ac9580ac35208a1cd9f2aa32bde5a6d84e10267bd160de3843563f372dcd7887"
+      }
+    },
+    {
+      "id": "FIG-LAB-EVLADDER",
+      "template": "ladder",
+      "caption": {
+        "en": "How much can you trust a piece of evidence?",
+        "ar": "إلى أي حد تثق بالدليل؟"
+      },
+      "read": {
+        "en": "Evidence grows stronger as you climb: a statement is a lead, a document shows intent, a record shows it happened, and corroboration from another source confirms it.",
+        "ar": "يقوى الدليل كلما صعدت: الإفادة دليل مبدئي، والوثيقة تُظهر النية، والسجل يُظهر أنه حدث، والتعزيز من مصدر آخر يؤكده."
+      },
+      "levels": [
+        {
+          "t": {
+            "en": "Corroborated",
+            "ar": "مُعزَّز"
+          },
+          "d": {
+            "en": "Two sources agree",
+            "ar": "مصدران يتفقان"
+          }
+        },
+        {
+          "t": {
+            "en": "Record",
+            "ar": "سجل"
+          },
+          "d": {
+            "en": "It happened",
+            "ar": "حدث فعلًا"
+          }
+        },
+        {
+          "t": {
+            "en": "Document",
+            "ar": "وثيقة"
+          },
+          "d": {
+            "en": "It is planned",
+            "ar": "مخطط له"
+          }
+        },
+        {
+          "t": {
+            "en": "Statement",
+            "ar": "إفادة"
+          },
+          "d": {
+            "en": "Someone says so",
+            "ar": "أحدهم يقول ذلك"
+          }
+        }
+      ],
+      "highlight": 0,
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "a1841b9ce785b2b5e26aa2733e01b89ef8a6944188d009887b3356e3967521e8"
+      }
+    },
+    {
+      "id": "FIG-LAB-RISKMATRIX",
+      "template": "matrix",
+      "caption": {
+        "en": "How risk bands rise across a matrix (simplified 3 × 3 view)",
+        "ar": "كيف ترتفع نطاقات الخطر عبر المصفوفة (عرض مبسّط 3 × 3)"
+      },
+      "read": {
+        "en": "Likelihood rises up the side and consequence along the bottom; the score is their product. The lab uses a full 5 × 5 scale whose bands run from Low (1–4) through Medium (5–9) and High (10–16) to Very high (17–25); this view groups it into three steps each way.",
+        "ar": "يرتفع الاحتمال على الجانب وتزداد العاقبة على القاعدة؛ والدرجة حاصل ضربهما. ويستخدم المختبر مقياسًا كاملًا 5 × 5 تتدرج نطاقاته من منخفض (1–4) إلى متوسط (5–9) ومرتفع (10–16) ثم مرتفع جدًا (17–25)؛ وهذا العرض يجمعه في ثلاث درجات لكل اتجاه."
+      },
+      "rows": 3,
+      "cols": 3,
+      "cells": [
+        [
+          {
+            "en": "Medium",
+            "ar": "متوسط"
+          },
+          {
+            "en": "High",
+            "ar": "مرتفع"
+          },
+          {
+            "en": "Very high",
+            "ar": "مرتفع جدًا"
+          }
+        ],
+        [
+          {
+            "en": "Low",
+            "ar": "منخفض"
+          },
+          {
+            "en": "Medium",
+            "ar": "متوسط"
+          },
+          {
+            "en": "High",
+            "ar": "مرتفع"
+          }
+        ],
+        [
+          {
+            "en": "Low",
+            "ar": "منخفض"
+          },
+          {
+            "en": "Low",
+            "ar": "منخفض"
+          },
+          {
+            "en": "Medium",
+            "ar": "متوسط"
+          }
+        ]
+      ],
+      "highlight": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "yLabel": {
+        "en": "Likelihood ↑",
+        "ar": "الاحتمال ↑"
+      },
+      "xLabel": {
+        "en": "Consequence →",
+        "ar": "العاقبة ←"
+      },
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "9d2ce468970f2da0674b9a0ee8c1ca0e3a0a6b18ed475301714805c01dd03c8c"
+      }
+    },
+    {
+      "id": "FIG-LAB-CAPAFLOW",
+      "template": "flow",
+      "caption": {
+        "en": "From complaint to closed CAPA",
+        "ar": "من الشكوى إلى إغلاق الإجراء التصحيحي"
+      },
+      "read": {
+        "en": "React first, then find and verify the cause, act on it (and on similar cases), and close only when the effectiveness check shows the problem has gone.",
+        "ar": "تفاعل أولًا، ثم حدّد السبب وتحقق منه، وعالجه (وعالج الحالات المماثلة)، ولا تُغلق إلا عندما يُظهر فحص الفعالية أن المشكلة زالت."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Contain",
+            "ar": "الاحتواء"
+          }
+        },
+        {
+          "t": {
+            "en": "Find cause",
+            "ar": "تحديد السبب"
+          }
+        },
+        {
+          "t": {
+            "en": "Verify cause",
+            "ar": "التحقق من السبب"
+          }
+        },
+        {
+          "t": {
+            "en": "Act",
+            "ar": "التنفيذ"
+          }
+        },
+        {
+          "t": {
+            "en": "Check effect",
+            "ar": "فحص الفعالية"
+          }
+        }
+      ],
+      "highlight": 4,
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ed02e798327a36c3891e7c2ac13079bc1ded0967a940dfc65086b5bc6ee31f4d"
+      }
+    },
+    {
+      "id": "FIG-LAB-WHYCHAIN",
+      "template": "ladder",
+      "caption": {
+        "en": "The 5 Whys chain on bottling line 2",
+        "ar": "سلسلة «لماذا الخمس» على خط التعبئة 2"
+      },
+      "read": {
+        "en": "Read from the bottom: the symptom leads to a direct cause, which leads to the method and finally to the system cause — the one to remove.",
+        "ar": "اقرأ من الأسفل: يقود العَرَض إلى سبب مباشر، فإلى الأسلوب، وأخيرًا إلى السبب النظامي — وهو ما يجب إزالته."
+      },
+      "levels": [
+        {
+          "t": {
+            "en": "Change not controlled",
+            "ar": "تغيير غير مضبوط"
+          },
+          "d": {
+            "en": "Root cause",
+            "ar": "السبب الجذري"
+          }
+        },
+        {
+          "t": {
+            "en": "Checklist out of date",
+            "ar": "قائمة قديمة"
+          },
+          "d": {
+            "en": "Why?",
+            "ar": "لماذا؟"
+          }
+        },
+        {
+          "t": {
+            "en": "4-hour cleaning",
+            "ar": "تنظيف كل 4 ساعات"
+          },
+          "d": {
+            "en": "Why?",
+            "ar": "لماذا؟"
+          }
+        },
+        {
+          "t": {
+            "en": "Clogged nozzles",
+            "ar": "فوهات مسدودة"
+          },
+          "d": {
+            "en": "Why?",
+            "ar": "لماذا؟"
+          }
+        },
+        {
+          "t": {
+            "en": "Underfilled bottles",
+            "ar": "زجاجات ناقصة"
+          },
+          "d": {
+            "en": "Symptom",
+            "ar": "العَرَض"
+          }
+        }
+      ],
+      "highlight": 0,
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "f2b67020550cea1a4cd5feef6918ea1afb52e5e4fc4f842b30c39f1642a83069"
+      }
+    },
+    {
+      "id": "FIG-LAB-FMEARPN",
+      "template": "bars",
+      "caption": {
+        "en": "RPN before and after action (illustrative lab figures)",
+        "ar": "رقم الأولوية قبل الإجراء وبعده (أرقام توضيحية من المختبر)"
+      },
+      "read": {
+        "en": "Illustrative lab figures. FM1 falls from 240 to 80 after crimp-force monitoring. FM2 has a low RPN of 54 but a severity of 9, so it is acted on anyway.",
+        "ar": "أرقام توضيحية من المختبر. ينخفض FM1 من 240 إلى 80 بعد مراقبة قوة الكبس. ولـ FM2 رقم أولوية منخفض 54 لكن خطورته 9، فيُتصرَّف فيه على أي حال."
+      },
+      "bars": [
+        {
+          "t": {
+            "en": "FM1 before",
+            "ar": "FM1 قبل"
+          },
+          "v": 240,
+          "vLabel": {
+            "en": "240",
+            "ar": "240"
+          }
+        },
+        {
+          "t": {
+            "en": "FM1 after",
+            "ar": "FM1 بعد"
+          },
+          "v": 80,
+          "vLabel": {
+            "en": "80",
+            "ar": "80"
+          }
+        },
+        {
+          "t": {
+            "en": "FM2 (S 9)",
+            "ar": "FM2 (S 9)"
+          },
+          "v": 54,
+          "vLabel": {
+            "en": "54",
+            "ar": "54"
+          }
+        }
+      ],
+      "highlight": 2,
+      "yLabel": {
+        "en": "RPN",
+        "ar": "رقم الأولوية"
+      },
+      "xLabel": {
+        "en": "Failure modes",
+        "ar": "أنماط الفشل"
+      },
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "e42fb8288708a226ac81910b3702b77f137981f4c0a679bc0912da94901bad60"
+      }
+    },
+    {
+      "id": "FIG-LAB-EMV",
+      "template": "bars",
+      "caption": {
+        "en": "Expected monetary value of three risks (lab figures, SAR)",
+        "ar": "القيمة النقدية المتوقعة لثلاثة مخاطر (أرقام المختبر، بالريال)"
+      },
+      "read": {
+        "en": "Illustrative lab figures. Steel delay 60,000 and server room 20,000 add cost; the furniture discount saves 20,000. The contingency reserve for these identified risks is 60,000.",
+        "ar": "أرقام توضيحية من المختبر. تأخر الحديد 60,000 وغرفة الخوادم 20,000 يضيفان تكلفة؛ وخصم الأثاث يوفر 20,000. واحتياطي الطوارئ لهذه المخاطر المحددة 60,000."
+      },
+      "bars": [
+        {
+          "t": {
+            "en": "Steel delay",
+            "ar": "تأخر الحديد"
+          },
+          "v": 60,
+          "vLabel": {
+            "en": "60k",
+            "ar": "60 ألفًا"
+          }
+        },
+        {
+          "t": {
+            "en": "Server room",
+            "ar": "غرفة الخوادم"
+          },
+          "v": 20,
+          "vLabel": {
+            "en": "20k",
+            "ar": "20 ألفًا"
+          }
+        },
+        {
+          "t": {
+            "en": "Discount",
+            "ar": "الخصم"
+          },
+          "v": 20,
+          "vLabel": {
+            "en": "−20k",
+            "ar": "−20 ألفًا"
+          }
+        },
+        {
+          "t": {
+            "en": "Reserve",
+            "ar": "الاحتياطي"
+          },
+          "v": 60,
+          "vLabel": {
+            "en": "60k",
+            "ar": "60 ألفًا"
+          }
+        }
+      ],
+      "highlight": 3,
+      "yLabel": {
+        "en": "SAR thousand",
+        "ar": "ألف ريال"
+      },
+      "xLabel": {
+        "en": "Risk",
+        "ar": "الخطر"
+      },
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "fe42cc3de2361beae40c331811bfebaeb55ace19bee8c299f20cc9ce7897ee7a"
+      }
+    },
+    {
+      "id": "FIG-LAB-AUDPLAN",
+      "template": "flow",
+      "caption": {
+        "en": "A risk-based audit day",
+        "ar": "يوم تدقيق مبني على المخاطر"
+      },
+      "read": {
+        "en": "Open, audit the highest-risk process first, cover the rest and the second shift, then close with findings.",
+        "ar": "افتتح، ودقق العملية الأعلى خطرًا أولًا، ثم غطِّ البقية والمناوبة الثانية، واختتم بالملاحظات."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Opening",
+            "ar": "الافتتاح"
+          }
+        },
+        {
+          "t": {
+            "en": "Highest risk",
+            "ar": "الخطر الأعلى"
+          }
+        },
+        {
+          "t": {
+            "en": "Other processes",
+            "ar": "العمليات الأخرى"
+          }
+        },
+        {
+          "t": {
+            "en": "Second shift",
+            "ar": "المناوبة الثانية"
+          }
+        },
+        {
+          "t": {
+            "en": "Closing",
+            "ar": "الختام"
+          }
+        }
+      ],
+      "highlight": 1,
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.11.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 11 explanatory figure (original CIA diagram, data-driven SVG; lab scenario numbers); awaiting review."
+      }
+    },
+    {
+      "id": "FIG-LAB-SUPPLIER",
+      "template": "flow",
+      "caption": {
+        "en": "How a requirement reaches the supplier's machine",
+        "ar": "كيف يصل المتطلب إلى آلة المورّد"
+      },
+      "read": {
+        "en": "A requirement travels from the specification to the purchase order, the supplier's documents and finally the operator. A break anywhere shows up as defects.",
+        "ar": "ينتقل المتطلب من المواصفة إلى أمر الشراء، فوثائق المورّد، وأخيرًا إلى المشغل. وأي انقطاع في أي موضع يظهر عيوبًا."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Specification",
+            "ar": "المواصفة"
+          }
+        },
+        {
+          "t": {
+            "en": "Purchase order",
+            "ar": "أمر الشراء"
+          }
+        },
+        {
+          "t": {
+            "en": "Supplier documents",
+            "ar": "وثائق المورّد"
+          }
+        },
+        {
+          "t": {
+            "en": "Operator",
+            "ar": "المشغل"
+          }
+        }
+      ],
+      "highlight": 2,
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.11.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 11 explanatory figure (original CIA diagram, data-driven SVG; lab scenario numbers); awaiting review."
+      }
+    },
+    {
+      "id": "FIG-LAB-MREVIEW",
+      "template": "flow",
+      "caption": {
+        "en": "Management review: from inputs to decisions",
+        "ar": "مراجعة الإدارة: من المُدخلات إلى القرارات"
+      },
+      "read": {
+        "en": "Good inputs lead to analysis and then to decisions with owners, dates and resources — the record that matters.",
+        "ar": "تقود المُدخلات الجيدة إلى التحليل ثم إلى قرارات بمالكين ومواعيد وموارد — وهذا هو السجل المهم."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Inputs",
+            "ar": "المُدخلات"
+          }
+        },
+        {
+          "t": {
+            "en": "Analysis",
+            "ar": "التحليل"
+          }
+        },
+        {
+          "t": {
+            "en": "Decisions",
+            "ar": "القرارات"
+          }
+        },
+        {
+          "t": {
+            "en": "Owners and dates",
+            "ar": "المالكون والمواعيد"
+          }
+        }
+      ],
+      "highlight": 2,
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.11.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 11 explanatory figure (original CIA diagram, data-driven SVG; lab scenario numbers); awaiting review."
+      }
+    },
+    {
+      "id": "FIG-LAB-PMOTYPES",
+      "template": "ladder",
+      "caption": {
+        "en": "PMO roles from support to direction",
+        "ar": "أدوار مكتب إدارة المشاريع من الدعم إلى التوجيه"
+      },
+      "read": {
+        "en": "PMOs range from supportive (templates, advice) through controlling (standards, reporting) to directive (managing projects). Start where the problems are.",
+        "ar": "تتدرج مكاتب إدارة المشاريع من الداعم (قوالب، مشورة) إلى الرقابي (معايير، تقارير) إلى التوجيهي (إدارة المشاريع). ابدأ حيث المشكلات."
+      },
+      "levels": [
+        {
+          "t": {
+            "en": "Directive",
+            "ar": "توجيهي"
+          },
+          "d": {
+            "en": "Runs projects",
+            "ar": "يدير المشاريع"
+          }
+        },
+        {
+          "t": {
+            "en": "Controlling",
+            "ar": "رقابي"
+          },
+          "d": {
+            "en": "Standards, reporting",
+            "ar": "معايير وتقارير"
+          }
+        },
+        {
+          "t": {
+            "en": "Supportive",
+            "ar": "داعم"
+          },
+          "d": {
+            "en": "Templates, advice",
+            "ar": "قوالب ومشورة"
+          }
+        }
+      ],
+      "highlight": 1,
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.11.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 11 explanatory figure (original CIA diagram, data-driven SVG; lab scenario numbers); awaiting review."
+      }
+    },
+    {
+      "id": "FIG-LAB-KPICARD",
+      "template": "tiles",
+      "caption": {
+        "en": "What a KPI card needs",
+        "ar": "ما تحتاجه بطاقة المؤشر"
+      },
+      "read": {
+        "en": "A KPI people can trust has a definition, a formula, a data source, a baseline, a target and an owner.",
+        "ar": "المؤشر الذي يثق به الناس له تعريف، ومعادلة، ومصدر بيانات، وخط أساس، ومستهدف، ومالك."
+      },
+      "items": [
+        {
+          "icon": "book",
+          "t": {
+            "en": "Definition",
+            "ar": "التعريف"
+          }
+        },
+        {
+          "icon": "sigma",
+          "t": {
+            "en": "Formula",
+            "ar": "المعادلة"
+          }
+        },
+        {
+          "icon": "layers",
+          "t": {
+            "en": "Data source",
+            "ar": "مصدر البيانات"
+          }
+        },
+        {
+          "icon": "flag",
+          "t": {
+            "en": "Baseline",
+            "ar": "خط الأساس"
+          }
+        },
+        {
+          "icon": "target",
+          "t": {
+            "en": "Target",
+            "ar": "المستهدف"
+          }
+        },
+        {
+          "icon": "user",
+          "t": {
+            "en": "Owner",
+            "ar": "المالك"
+          }
+        }
+      ],
+      "owner_phase": 11,
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.11.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 11 explanatory figure (original CIA diagram, data-driven SVG; lab scenario numbers); awaiting review."
+      }
     }
   ]
 }

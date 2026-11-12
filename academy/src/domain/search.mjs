@@ -7,9 +7,9 @@
  * © 2026 Modather Salama — Continual Improvement Academy.
  */
 export const SEARCH_SCHEMA = 'cia.search-index.v1';
-export const SEARCH_TYPES = ['course', 'lesson', 'guide', 'guide_item', 'certification', 'article', 'template', 'standard'];
+export const SEARCH_TYPES = ['course', 'lesson', 'guide', 'guide_item', 'certification', 'article', 'template', 'standard', 'lab'];
 /** Higher = shown first when scores tie. */
-const TYPE_WEIGHT = { course: 6, certification: 5, guide: 5, standard: 4, guide_item: 3, article: 3, lesson: 2, template: 2 };
+const TYPE_WEIGHT = { course: 6, certification: 5, guide: 5, lab: 4, standard: 4, guide_item: 3, article: 3, lesson: 2, template: 2 };
 
 const AR_DIGITS = '٠١٢٣٤٥٦٧٨٩', FA_DIGITS = '۰۱۲۳۴۵۶۷۸۹';
 
@@ -83,7 +83,7 @@ export function searchIndex(entries, query, { types = null, limit = 50, academy 
 
 /** Results grouped by type, in a fixed order, for the results page. */
 export function groupResults(results) {
-  const order = ['course', 'certification', 'guide', 'guide_item', 'standard', 'lesson', 'article', 'template'];
+  const order = ['course', 'lab', 'certification', 'guide', 'guide_item', 'standard', 'lesson', 'article', 'template'];
   const g = new Map(order.map(t => [t, []]));
   for (const r of results) (g.get(r.t) || g.set(r.t, []).get(r.t)).push(r);
   return [...g.entries()].filter(([, xs]) => xs.length);

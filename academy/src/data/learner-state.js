@@ -11,11 +11,12 @@
  */
 import { isVisible, validateGovernance } from './governance.js';
 import { assessmentEvidence, masteredCompetencies, completedTargets } from '../domain/learner-model.mjs';
+import { labEvidenceRows } from '../domain/labs.mjs';
 
 export async function loadContent(ctx) {
   const roles = ctx.session.roles;
   const r = ctx.repos;
-  const [courses, assessments, questions, articles, standards, library, tools, ecosystems, competencies, rolesAll, domains, pathsRaw, catalog, sources, programs, guides, lessonMap, certifications, figures, lessonFigures] = await Promise.all([
+  const [courses, assessments, questions, articles, standards, library, tools, ecosystems, competencies, rolesAll, domains, pathsRaw, catalog, sources, programs, guides, lessonMap, certifications, figures, lessonFigures, labs] = await Promise.all([
     /* Phase 10A: lists use the light course index; full course records and questions are loaded on demand
        (loadFullCourse, loadQuestions) — see src/data/adapters/split-json.js. */
     (r.coursesIndex || r.courses).listVisible(roles), r.assessments.listVisible(roles), Promise.resolve([]), r.articles.listVisible(roles),
@@ -27,12 +28,14 @@ export async function loadContent(ctx) {
     /* Phase 8: the certification explorer is enrichment too. */
     r.certifications ? r.certifications.listVisible(roles).catch(() => []) : [],
     /* Phase 9: figures and their placement map are enrichment as well. */
-    r.figures ? r.figures.listVisible(roles).catch(() => []) : [], r.lessonFigures ? r.lessonFigures.list().catch(() => []) : []
+    r.figures ? r.figures.listVisible(roles).catch(() => []) : [], r.lessonFigures ? r.lessonFigures.list().catch(() => []) : [],
+    /* Phase 11: the light lab index (enrichment — course and lesson pages link to the lab that practises them). */
+    r.labsIndex ? r.labsIndex.listVisible(roles).catch(() => []) : []
   ]);
   const paths = pathsRaw.filter(p => !p.governance || isVisible(p, roles));
   const visibleIds = new Set([...courses, ...assessments, ...articles, ...library].map(x => x.id));
   return {
-    courses, assessments, questions, articles, standards, library, tools, ecosystems, competencies, domains, paths, catalog, sources, programs, guides, lessonMap, certifications, figures, lessonFigures,
+    courses, assessments, questions, articles, standards, library, tools, ecosystems, competencies, domains, paths, catalog, sources, programs, guides, lessonMap, certifications, figures, lessonFigures, labs,
     rolesAll, roles: rolesAll.filter(x => isVisible(x, roles)), visibleIds,
     byId: (list, id) => list.find(x => x.id === id) || null
   };
@@ -40,13 +43,15 @@ export async function loadContent(ctx) {
 
 export async function loadLearner(ctx, content) {
   const r = ctx.repos;
-  const [profile, selfRows, attempts, progress, bookmarks] = await Promise.all([
-    r.profile.get('me'), r.selfLevels.list(), r.assessmentAttempts.list(), r.courseProgress.list(), r.bookmarks ? r.bookmarks.list().catch(() => []) : []
+  const [profile, selfRows, attempts, progress, bookmarks, labAttempts] = await Promise.all([
+    r.profile.get('me'), r.selfLevels.list(), r.assessmentAttempts.list(), r.courseProgress.list(), r.bookmarks ? r.bookmarks.list().catch(() => []) : [],
+    r.labAttempts ? r.labAttempts.list().catch(() => []) : []
   ]);
   const selfLevels = Object.fromEntries(selfRows.filter(x => Number.isInteger(x.level) && x.level >= 1 && x.level <= 5).map(x => [x.id, x.level]));
-  const evidence = assessmentEvidence(attempts);
+  /* Phase 11: lab attempts enter the same evidence model (latest per competency wins; items awaiting human review never count). */
+  const evidence = assessmentEvidence([...attempts, ...labEvidenceRows(labAttempts)]);
   return {
-    profile, selfLevels, attempts, progress, evidence, bookmarks,
+    profile, selfLevels, attempts, progress, evidence, bookmarks, labAttempts,
     mastered: masteredCompetencies(evidence),
     completed: completedTargets({ courses: content?.courses || [], progress, attempts })
   };

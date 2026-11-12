@@ -1,0 +1,248 @@
+"""Phase 11 — Quality Academy labs (CAPA, Root Cause Analysis, FMEA) and the PMI & PMO Academy Project Risk Lab.
+Original CIA scenarios (fictitious organisations). Author: مدثر سلامه."""
+from lib11 import T, single, multi, order, classify, numeric, written, lab
+
+# ====================================================================== 5. CAPA Lab
+CAPA = lab(
+    "LAB-CAPA", "capa", "quality", "analysis", "CAPA-LAB",
+    T("CAPA Lab: the mislabelled cartons", "مختبر الإجراءات التصحيحية: الكراتين ذات الملصقات الخاطئة"),
+    T("A customer received 300 cartons with the wrong product label. Separate correction from corrective action, sequence the CAPA, choose an effectiveness check that proves something, and write the plan.",
+      "استلم عميل 300 كرتونة بملصق منتج خاطئ. افصل التصحيح عن الإجراء التصحيحي، ورتّب خطوات الإجراء التصحيحي، واختر فحص فعالية يثبت شيئًا، واكتب الخطة."),
+    30, 2, ["QM-03"],
+    {"title": T("Customer complaint CC-118 — wrong labels", "شكوى العميل CC-118 — ملصقات خاطئة"),
+     "context": [
+         T("A food manufacturer shipped 300 cartons of low-sugar biscuits labelled as the regular product. The customer, a supermarket chain, found it at goods-in. Another 420 cartons from the same shift are in the warehouse.",
+           "شحنت شركة أغذية 300 كرتونة من البسكويت قليل السكر بملصق المنتج العادي. واكتشف العميل، وهو سلسلة متاجر، ذلك عند الاستلام. وتوجد 420 كرتونة أخرى من المناوبة نفسها في المستودع."),
+         T("Investigation so far: the labelling operator selects the label file manually from a list of 40 similar names; there is no check that the label matches the product on the line. The same manual step exists on lines 2 and 4.",
+           "ما توصّل إليه التحقيق حتى الآن: يختار مشغل الملصقات ملف الملصق يدويًا من قائمة تضم 40 اسمًا متشابهًا؛ ولا يوجد فحص لمطابقة الملصق للمنتج على الخط. والخطوة اليدوية نفسها موجودة على الخطين 2 و4.")],
+     "facts": [{"label": T("Shipped", "المشحون"), "value": T("300 cartons", "300 كرتونة")}, {"label": T("In stock, same shift", "في المخزون، المناوبة نفسها"), "value": T("420 cartons", "420 كرتونة")}],
+     "exhibits": []},
+    [
+        classify("T1", "QM-03", T("Classify each action.", "صنّف كل إجراء."),
+                 [("corr", "Correction (deal with this nonconformity)", "تصحيح (معالجة عدم المطابقة هذه)"), ("ca", "Corrective action (remove the cause)", "إجراء تصحيحي (إزالة السبب)"),
+                  ("risk", "Action on similar potential cases", "إجراء على حالات مماثلة محتملة")], [
+            ("a1", "Relabel the 300 returned cartons", "إعادة لصق ملصقات الكراتين الـ300 المرتجعة", "corr", "Fixes the nonconforming product itself.", "يعالج المنتج غير المطابق نفسه."),
+            ("a2", "Hold and check the 420 cartons in the warehouse", "حجز الكراتين الـ420 في المستودع وفحصها", "corr", "Containment of the same nonconformity.", "احتواء لعدم المطابقة نفسها."),
+            ("a3", "Add a scan that blocks printing unless the label matches the product order", "إضافة مسح يمنع الطباعة ما لم يطابق الملصق أمر المنتج", "ca", "Removes the cause: a manual choice with no check.", "يزيل السبب: اختيار يدوي بلا فحص."),
+            ("a4", "Apply the same scan check on lines 2 and 4", "تطبيق فحص المسح نفسه على الخطين 2 و4", "risk", "The same cause exists elsewhere; act before it happens.", "السبب نفسه موجود في مكان آخر؛ تصرّف قبل أن يحدث."),
+            ("a5", "Credit the customer for the returned cartons", "تعويض العميل عن الكراتين المرتجعة", "corr", "Deals with the consequences of this case.", "يعالج عواقب هذه الحالة.")],
+            T("Corrections: a1, a2, a5 · Corrective action: a3 · Similar potential cases: a4.", "التصحيحات: a1، a2، a5 · الإجراء التصحيحي: a3 · الحالات المماثلة المحتملة: a4."),
+            T("Correction fixes the output; corrective action removes the cause so it does not recur; checking for similar cases extends the fix.", "التصحيح يعالج المُخرَج؛ والإجراء التصحيحي يزيل السبب كي لا يتكرر؛ والتحقق من الحالات المماثلة يوسّع المعالجة.")),
+        order("T2", "QM-03", T("Put the CAPA steps in order.", "رتّب خطوات الإجراء التصحيحي."), [
+            ("s1", "React: control and correct, deal with the consequences", "التفاعل: الضبط والتصحيح ومعالجة العواقب"),
+            ("s2", "Review the nonconformity and determine its causes", "مراجعة عدم المطابقة وتحديد أسبابها"),
+            ("s3", "Check whether similar nonconformities exist or could occur", "التحقق من وجود حالات مماثلة أو إمكان حدوثها"),
+            ("s4", "Implement the action needed", "تنفيذ الإجراء اللازم"),
+            ("s5", "Review the effectiveness of the action", "مراجعة فعالية الإجراء"),
+            ("s6", "Update risks and the management system if needed", "تحديث المخاطر ونظام الإدارة إن لزم")],
+            T("React → causes → similar cases → implement → effectiveness → update risks and system.", "التفاعل ← الأسباب ← الحالات المماثلة ← التنفيذ ← الفعالية ← تحديث المخاطر والنظام."),
+            T("This mirrors the sequence in ISO 9001 10.2.1, expressed in CIA's words.", "يعكس هذا التسلسل الوارد في ISO 9001 البند 10.2.1، بصياغة الأكاديمية.")),
+        single("T3", "QM-03", T("Which effectiveness check actually proves the corrective action worked?", "أي فحص فعالية يثبت فعلًا أن الإجراء التصحيحي نجح؟"), [
+            ("a", "The operator signs a training attendance sheet", "يوقّع المشغل كشف حضور تدريب", "Attendance shows training happened, not that labels are now right.", "الحضور يُظهر أن التدريب حدث، لا أن الملصقات صحيحة الآن."),
+            ("b", "The scan is installed and the work order is closed", "يُركَّب المسح ويُغلق أمر العمل", "Implementation is not effectiveness.", "التنفيذ ليس فعالية."),
+            ("c", "No label mismatch in 3 months of shipments, plus a check of scan-block logs showing the scan stopped wrong labels", "لا عدم تطابق في الملصقات خلال 3 أشهر من الشحنات، مع فحص سجلات حظر المسح التي تُظهر أن المسح أوقف ملصقات خاطئة",
+             "Right: outcome data over a defined period, plus evidence the control works.", "صحيح: بيانات نتائج على فترة محددة، مع دليل على أن الضابط يعمل."),
+            ("d", "The quality manager says the problem is solved", "يقول مدير الجودة إن المشكلة حُلّت", "An opinion, not evidence.", "رأي، لا دليل.")],
+            "c", T("Option c — defined criteria, a defined period and data.", "الخيار ج — معايير محددة وفترة محددة وبيانات."),
+            T("Set the effectiveness criterion when you plan the action, not when you close it.", "حدّد معيار الفعالية عند تخطيط الإجراء، لا عند إغلاقه.")),
+        multi("T4", "QM-03", T("What belongs in a good CAPA record? Choose all that apply.", "ما الذي ينتمي إلى سجل إجراء تصحيحي جيد؟ اختر كل ما ينطبق."), [
+            ("a", "The verified root cause and the evidence for it", "السبب الجذري المتحقق منه ودليله", True, "Actions must be built on a confirmed cause.", "يجب أن تُبنى الإجراءات على سبب مؤكد."),
+            ("b", "Each action with an owner and a due date", "كل إجراء بمالك وموعد", True, "Ownership makes it happen.", "الملكية تجعله يحدث."),
+            ("c", "The effectiveness criterion, set in advance", "معيار الفعالية، محددًا مسبقًا", True, "So closure is a decision on evidence.", "كي يكون الإغلاق قرارًا مبنيًا على الدليل."),
+            ("d", "A link to the complaint and to the affected product", "ربط بالشكوى وبالمنتج المتأثر", True, "Traceability from problem to solution.", "إمكانية التتبع من المشكلة إلى الحل."),
+            ("e", "The name of the operator who made the mistake, as the cause", "اسم المشغل الذي أخطأ، بوصفه السبب", False, "Naming a person as the cause hides the system weakness.", "تسمية شخص سببًا تخفي ضعف النظام."),
+            ("f", "Closure as soon as the action is implemented", "الإغلاق بمجرد تنفيذ الإجراء", False, "Close after effectiveness is shown.", "أغلق بعد إثبات الفعالية.")],
+            T("a, b, c and d.", "أ وب وج ود."), T("A CAPA record is evidence that the problem was understood and removed.", "سجل الإجراء التصحيحي دليل على أن المشكلة فُهمت وأُزيلت.")),
+        single("T5", "QM-03", T("The supervisor writes “root cause: operator error”. What do you do?", "يكتب المشرف «السبب الجذري: خطأ المشغل». ماذا تفعل؟"), [
+            ("a", "Accept it — the operator did pick the wrong file", "أقبله — فالمشغل اختار الملف الخطأ فعلًا", "That is what happened, not why the process allowed it.", "هذا ما حدث، لا سبب سماح العملية به."),
+            ("b", "Ask why the process allowed the error: 40 similar names, manual choice, no check", "أسأل لماذا سمحت العملية بالخطأ: 40 اسمًا متشابهًا، واختيار يدوي، وبلا فحص",
+             "Right: keep asking until you reach a cause the system can remove.", "صحيح: واصل السؤال حتى تصل إلى سبب يستطيع النظام إزالته."),
+            ("c", "Replace the operator", "أستبدل المشغل", "The next operator meets the same trap.", "سيقع المشغل التالي في الفخ نفسه."),
+            ("d", "Close the CAPA with retraining", "أغلق الإجراء التصحيحي بإعادة التدريب", "Retraining alone rarely removes a design weakness.", "إعادة التدريب وحدها نادرًا ما تزيل ضعفًا في التصميم.")],
+            "b", T("Ask why the process allowed the error; the cause is the unchecked manual selection.", "اسأل لماذا سمحت العملية بالخطأ؛ والسبب هو الاختيار اليدوي غير المفحوص."),
+            T("“Human error” is where the investigation starts, not where it ends.", "«الخطأ البشري» هو بداية التحقيق، لا نهايته.")),
+        written("T6", "QM-03", T("Write the CAPA plan for CC-118: correction, root cause, corrective action, owner and date, effectiveness criterion.", "اكتب خطة الإجراء التصحيحي للشكوى CC-118: التصحيح، والسبب الجذري، والإجراء التصحيحي، والمالك والموعد، ومعيار الفعالية."), [
+            ("Correction and containment cover both the shipped and the stored cartons", "يغطي التصحيح والاحتواء الكراتين المشحونة والمخزنة", 1),
+            ("Root cause is a process cause, not a person", "السبب الجذري سبب في العملية، لا شخص", 1),
+            ("Corrective action removes that cause and is extended to lines 2 and 4", "الإجراء التصحيحي يزيل ذلك السبب ويُمدَّد إلى الخطين 2 و4", 1),
+            ("Owner, date and a measurable effectiveness criterion", "مالك وموعد ومعيار فعالية قابل للقياس", 1)],
+            T("Model: correction — relabel 300 cartons, hold and check 420; root cause — manual label selection with no product-match check; corrective action — scan-to-print interlock on line 1, then lines 2 and 4 (engineering lead, 15 July); effectiveness — zero mismatches in 3 months and scan-block logs reviewed monthly.",
+              "نموذج: التصحيح — إعادة لصق 300 كرتونة، وحجز 420 وفحصها؛ السبب الجذري — اختيار يدوي للملصق بلا فحص مطابقة للمنتج؛ الإجراء التصحيحي — قفل «مسح قبل الطباعة» على الخط 1 ثم الخطين 2 و4 (قائد الهندسة، 15 يوليو)؛ الفعالية — صفر عدم تطابق خلال 3 أشهر ومراجعة سجلات حظر المسح شهريًا."),
+            T("Scored by a person against the rubric before it counts.", "يقيّمها شخص وفق المعايير قبل أن تُحسب."), min_chars=120)],
+    courses=["CRS-Q-CAPA", "CRS-ISO-NC", "CRS-M-CAPA"], lessons=["CRS-Q-CAPA-L03", "CRS-Q-CAPA-L04", "CRS-ISO-NC-L01", "CRS-ISO-NC-L04"], toolkits=["capa"],
+    templates=["TPL-CAPA", "TPL-NCR"], refs=[("iso-9001", "10.2.1"), ("iso-9001", "10.2.2"), ("iso-9001", "8.7.1")], figures=["FIG-LAB-CAPAFLOW"], cover={"motif": "loop", "icon": "refresh"},
+    objectives=[T("Separate correction, corrective action and action on similar cases", "الفصل بين التصحيح والإجراء التصحيحي والإجراء على الحالات المماثلة"), T("Plan a CAPA with a provable effectiveness check", "تخطيط إجراء تصحيحي بفحص فعالية قابل للإثبات")])
+
+# ====================================================================== 6. Root Cause Analysis Lab
+RCA = lab(
+    "LAB-RCA", "root-cause-analysis", "quality", "analysis", "RCA-LAB",
+    T("Root Cause Analysis Lab: underfilled bottles", "مختبر تحليل السبب الجذري: زجاجات ناقصة التعبئة"),
+    T("Underfilled bottles jumped from 0.2 % to 1.8 % on a water-bottling line. Sort possible causes on a fishbone, build the 5 Whys chain, separate symptom from root cause, and prove the cause before acting.",
+      "قفزت نسبة الزجاجات ناقصة التعبئة من 0.2 % إلى 1.8 % على خط تعبئة مياه. صنّف الأسباب المحتملة على مخطط عظم السمكة، وابنِ سلسلة «لماذا الخمس»، وافصل العَرَض عن السبب الجذري، وأثبت السبب قبل التصرف."),
+    30, 2, ["QM-03", "QM-02"],
+    {"title": T("Bottling line 2 — fill-volume rejects", "خط التعبئة 2 — مرفوضات حجم التعبئة"),
+     "context": [
+         T("Since the new nozzle type was fitted six weeks ago, underfill rejects rose to 1.8 %, mostly on the night shift. Day-shift operators clean the filler nozzles every 4 hours, as the shift handover checklist says; the checklist was written for the old nozzles.",
+           "منذ تركيب نوع الفوهات الجديد قبل ستة أسابيع، ارتفعت مرفوضات نقص التعبئة إلى 1.8 %، ومعظمها في المناوبة الليلية. ويُنظّف مشغلو المناوبة النهارية فوهات التعبئة كل 4 ساعات كما تقول قائمة تسليم المناوبة؛ وقد كُتبت القائمة للفوهات القديمة."),
+         T("The new nozzles have a finer mesh. The supplier's manual recommends cleaning every 2 hours. The night shift runs with one fewer operator.",
+           "للفوهات الجديدة شبكة أدق. ويوصي دليل المورّد بالتنظيف كل ساعتين. وتعمل المناوبة الليلية بمشغل واحد أقل.")],
+     "facts": [{"label": T("Underfill rate", "معدل نقص التعبئة"), "value": T("0.2 % → 1.8 %", "0.2 % ← 1.8 %")}, {"label": T("Change", "التغيير"), "value": T("new nozzle type, six weeks ago", "نوع فوهات جديد، قبل ستة أسابيع")}],
+     "exhibits": []},
+    [
+        classify("T1", "QM-02", T("Place each possible cause on the fishbone.", "ضع كل سبب محتمل على مخطط عظم السمكة."),
+                 [("method", "Method", "الأسلوب"), ("machine", "Machine", "الآلة"), ("people", "People", "الأفراد"), ("material", "Material", "المادة"), ("measure", "Measurement", "القياس")], [
+            ("c1", "Cleaning interval written for the old nozzles", "فترة التنظيف مكتوبة للفوهات القديمة", "method", "A procedure — a method.", "إجراء — أي أسلوب."),
+            ("c2", "Finer nozzle mesh clogs faster", "الشبكة الأدق للفوهات تنسد أسرع", "machine", "Equipment design.", "تصميم المعدة."),
+            ("c3", "One fewer operator on nights", "مشغل واحد أقل ليلًا", "people", "Staffing.", "التوظيف."),
+            ("c4", "Mineral content of this source water", "المحتوى المعدني لمياه هذا المصدر", "material", "Input material.", "مادة المُدخَل."),
+            ("c5", "Check-weigher not verified since the change", "ميزان الفحص لم يُتحقق منه منذ التغيير", "measure", "How we detect underfill.", "كيف نكشف نقص التعبئة.")],
+            T("c1 method · c2 machine · c3 people · c4 material · c5 measurement.", "c1 الأسلوب · c2 الآلة · c3 الأفراد · c4 المادة · c5 القياس."),
+            T("A fishbone organises possible causes; it does not tell you which is true. That needs data.", "مخطط عظم السمكة ينظم الأسباب المحتملة؛ ولا يخبرك أيها صحيح. فذلك يحتاج بيانات.")),
+        order("T2", "QM-03", T("Build the 5 Whys chain from the problem down to the root cause.", "ابنِ سلسلة «لماذا الخمس» من المشكلة نزولًا إلى السبب الجذري."), [
+            ("w1", "Bottles are underfilled", "الزجاجات ناقصة التعبئة"), ("w2", "Filler nozzles are partly clogged", "فوهات التعبئة مسدودة جزئيًا"),
+            ("w3", "Nozzles are cleaned every 4 hours, not every 2", "تُنظَّف الفوهات كل 4 ساعات لا كل ساعتين"), ("w4", "The handover checklist still states the old interval", "قائمة التسليم لا تزال تذكر الفترة القديمة"),
+            ("w5", "The nozzle change was not run through change control, so documents were not updated", "لم يمر تغيير الفوهات عبر ضبط التغيير، فلم تُحدَّث الوثائق")],
+            T("Underfill → clogged nozzles → 4-hour cleaning → outdated checklist → change not controlled.", "نقص التعبئة ← فوهات مسدودة ← تنظيف كل 4 ساعات ← قائمة قديمة ← تغيير غير مضبوط."),
+            T("Each 'why' must be supported by evidence; the chain stops at a cause the system can remove.", "يجب أن يدعم الدليل كل «لماذا»؛ وتتوقف السلسلة عند سبب يستطيع النظام إزالته.")),
+        single("T3", "QM-03", T("Which is the root cause?", "أيها السبب الجذري؟"), [
+            ("a", "Underfilled bottles", "الزجاجات ناقصة التعبئة", "That is the symptom.", "هذا هو العَرَض."),
+            ("b", "Clogged nozzles", "الفوهات المسدودة", "A direct cause, but not why it keeps happening.", "سبب مباشر، لكنه ليس سبب استمرار حدوثه."),
+            ("c", "The night-shift operator did not clean often enough", "مشغل المناوبة الليلية لم ينظّف بما يكفي", "He followed the checklist; blaming him misses the system cause.", "اتبع القائمة؛ ولومه يُغفل السبب النظامي."),
+            ("d", "The nozzle change bypassed change control, leaving the cleaning interval out of date", "تجاوز تغيير الفوهات ضبطَ التغيير، فبقيت فترة التنظيف قديمة",
+             "Right: a system cause; fixing it prevents this and similar problems.", "صحيح: سبب نظامي؛ ومعالجته تمنع هذه المشكلة والمشكلات المماثلة.")],
+            "d", T("The uncontrolled change (option d).", "التغيير غير المضبوط (الخيار د)."), T("A root cause explains why the direct cause was able to happen.", "السبب الجذري يفسر لماذا أمكن حدوث السبب المباشر.")),
+        multi("T4", "QM-03", T("How would you verify the root cause before acting? Choose all that apply.", "كيف تتحقق من السبب الجذري قبل التصرف؟ اختر كل ما ينطبق."), [
+            ("a", "Run a trial with 2-hourly cleaning and compare the underfill rate", "إجراء تجربة بالتنظيف كل ساعتين ومقارنة معدل نقص التعبئة", True, "Switch the cause off and see if the effect goes.", "أوقف السبب وانظر هل يزول الأثر."),
+            ("b", "Compare underfill by hours since last cleaning", "مقارنة نقص التعبئة حسب الساعات منذ آخر تنظيف", True, "Data pattern that fits the cause.", "نمط بيانات يتسق مع السبب."),
+            ("c", "Check the change record for the nozzle installation", "فحص سجل التغيير الخاص بتركيب الفوهات", True, "Confirms whether change control was used.", "يؤكد هل استُخدم ضبط التغيير."),
+            ("d", "Take a team vote on the most likely cause", "أخذ تصويت الفريق على السبب الأرجح", False, "Agreement is not proof.", "الاتفاق ليس إثباتًا."),
+            ("e", "Ask the plant manager which cause he prefers", "سؤال مدير المصنع أي سبب يفضّل", False, "Opinion is not verification.", "الرأي ليس تحققًا.")],
+            T("Trial, data pattern and the change record.", "التجربة، ونمط البيانات، وسجل التغيير."), T("A verified root cause is one you have tested.", "السبب الجذري المتحقق منه هو الذي اختبرته.")),
+        written("T5", "QM-03", T("Explain your causal chain and the evidence that confirms it, in a short paragraph for the CAPA record.", "اشرح سلسلتك السببية والدليل الذي يؤكدها، في فقرة قصيرة لسجل الإجراء التصحيحي."), [
+            ("States the problem with data (rates, period, line)", "يذكر المشكلة بالبيانات (المعدلات، والفترة، والخط)", 1),
+            ("Gives a chain where each link is supported by evidence", "يقدم سلسلة يدعم الدليل كل حلقة فيها", 1),
+            ("Ends at a system cause, not a person", "ينتهي عند سبب نظامي، لا عند شخص", 1),
+            ("Describes how the cause was verified", "يصف كيف تُحقق من السبب", 1)],
+            T("Model: “Underfill on line 2 rose from 0.2 % to 1.8 % after new nozzles were fitted. Nozzles clog within 3 hours (inspection); cleaning runs every 4 hours per the handover checklist, which was not updated because the change bypassed change control. A one-week trial at 2-hourly cleaning brought underfill to 0.3 %.”",
+              "نموذج: «ارتفع نقص التعبئة على الخط 2 من 0.2 % إلى 1.8 % بعد تركيب فوهات جديدة. تنسد الفوهات خلال 3 ساعات (بالفحص)؛ ويجري التنظيف كل 4 ساعات وفق قائمة التسليم التي لم تُحدَّث لأن التغيير تجاوز ضبط التغيير. وخفّضت تجربة لمدة أسبوع بالتنظيف كل ساعتين نقص التعبئة إلى 0.3 %.»"),
+            T("Scored by a person against the rubric before it counts.", "يقيّمها شخص وفق المعايير قبل أن تُحسب."), min_chars=120)],
+    courses=["CRS-Q-CAPA", "CRS-M-RCA", "CRS-M-WHY5", "CRS-ISO-NC"], lessons=["CRS-Q-CAPA-L02", "CRS-ISO-NC-L03", "CRS-M-RCA-L05", "CRS-M-RCA-L07", "CRS-M-WHY5-L06"],
+    toolkits=["rca", "why5", "fish"], templates=["TPL-CAPA"], refs=[("iso-9001", "10.2.1"), ("iso-9001", "8.5.6")], figures=["FIG-LAB-WHYCHAIN"], cover={"motif": "loop", "icon": "fish"},
+    objectives=[T("Organise possible causes and build an evidence-based causal chain", "تنظيم الأسباب المحتملة وبناء سلسلة سببية مبنية على الدليل"), T("Verify a root cause before acting", "التحقق من السبب الجذري قبل التصرف")])
+
+# ====================================================================== 7. FMEA Lab
+FMEA = lab(
+    "LAB-FMEA", "fmea", "quality", "analysis", "FMEA-LAB",
+    T("FMEA Lab: a manual crimping step", "مختبر تحليل أنماط الفشل وآثارها: خطوة كبس يدوية"),
+    T("Run part of a process FMEA: calculate risk priority numbers, see why severity matters more than the product, match actions to what they change, and re-rate after action with evidence.",
+      "نفّذ جزءًا من تحليل أنماط الفشل وآثارها لعملية: احسب أرقام أولوية الخطر، وافهم لماذا تهم الخطورة أكثر من حاصل الضرب، وطابِق الإجراءات مع ما تغيّره، وأعد التقدير بعد الإجراء بالدليل."),
+    30, 2, ["QM-02", "RSK-01"],
+    {"title": T("Wire-harness assembly — terminal crimping", "تجميع حزم الأسلاك — كبس الأطراف"),
+     "context": [
+         T("A team analyses the manual crimping of terminals onto pump-motor cables. Ratings use 1–10 scales for severity (S), occurrence (O) and detection (D); RPN = S × O × D. The team's rule: act on any RPN above 120 and on any severity of 9 or 10 regardless of RPN.",
+           "يحلل فريق عملية الكبس اليدوي للأطراف على كابلات محركات المضخات. وتستخدم التقديرات مقاييس 1–10 للخطورة (S) والحدوث (O) والكشف (D)؛ ورقم أولوية الخطر = S × O × D. وقاعدة الفريق: التصرف في أي رقم أولوية أعلى من 120 وفي أي خطورة 9 أو 10 مهما كان الرقم."),
+         T("Failure mode FM1: under-crimped terminal → intermittent motor stop (S 8, O 5, D 6). Failure mode FM2: wrong terminal fitted → short circuit, fire risk (S 9, O 2, D 3).",
+           "نمط الفشل FM1: طرف غير مكبوس كفاية ← توقف متقطع للمحرك (S 8، O 5، D 6). ونمط الفشل FM2: تركيب طرف خاطئ ← دائرة قصر وخطر حريق (S 9، O 2، D 3).")],
+     "facts": [{"label": T("Scales", "المقاييس"), "value": T("S, O, D 1–10 · RPN = S × O × D", "S وO وD من 1 إلى 10 · رقم الأولوية = S × O × D")},
+               {"label": T("Team rule", "قاعدة الفريق"), "value": T("RPN > 120, or S ≥ 9", "رقم الأولوية > 120، أو S ≥ 9")}],
+     "exhibits": []},
+    [
+        numeric("T1", "QM-02", T("What is the RPN of FM1 (S 8, O 5, D 6)?", "ما رقم أولوية الخطر لـ FM1 (S 8، O 5، D 6)؟"), 240, 0, T("RPN", "رقم الأولوية"),
+                T("8 × 5 × 6 = 240.", "8 × 5 × 6 = 240."), T("The RPN multiplies the three ratings.", "رقم الأولوية يضرب التقديرات الثلاثة.")),
+        numeric("T2", "QM-02", T("What is the RPN of FM2 (S 9, O 2, D 3)?", "ما رقم أولوية الخطر لـ FM2 (S 9، O 2، D 3)؟"), 54, 0, T("RPN", "رقم الأولوية"),
+                T("9 × 2 × 3 = 54.", "9 × 2 × 3 = 54."), T("A low RPN can hide a severe effect.", "قد يخفي رقم أولوية منخفض أثرًا جسيمًا.")),
+        single("T3", "RSK-01", T("Under the team's rule, which failure modes need action?", "وفق قاعدة الفريق، أي أنماط الفشل تحتاج إجراءً؟"), [
+            ("a", "FM1 only — it has the highest RPN", "FM1 فقط — لأن رقم أولويته الأعلى", "This ignores the severity rule.", "هذا يتجاهل قاعدة الخطورة."),
+            ("b", "Both: FM1 for its RPN (240 > 120) and FM2 because severity is 9", "كلاهما: FM1 لرقم أولويته (240 > 120) وFM2 لأن الخطورة 9", "Right: severity 9–10 is acted on whatever the RPN.", "صحيح: يُتصرَّف في الخطورة 9–10 مهما كان رقم الأولوية."),
+            ("c", "FM2 only — fire is worse than a motor stop", "FM2 فقط — الحريق أسوأ من توقف المحرك", "FM1 also exceeds the RPN threshold.", "FM1 أيضًا يتجاوز عتبة رقم الأولوية."),
+            ("d", "Neither — both are already known", "لا هذا ولا ذاك — كلاهما معروف مسبقًا", "Known is not the same as controlled.", "المعروف ليس هو المضبوط.")],
+            "b", T("Both.", "كلاهما."), T("RPN alone can rank a fire risk below a nuisance. Many FMEA methods prioritise by severity first, and some use an action-priority table instead of RPN; this lab uses the team's RPN rule for practice.",
+                                         "قد يُرتّب رقم الأولوية وحده خطر الحريق تحت إزعاج بسيط. وكثير من طرق التحليل تُقدّم الخطورة أولًا، وبعضها يستخدم جدول أولوية الإجراء بدل رقم الأولوية؛ ويستخدم هذا المختبر قاعدة الفريق للتدريب.")),
+        classify("T4", "QM-02", T("Which rating does each action mainly change?", "أي تقدير يغيّره كل إجراء أساسًا؟"),
+                 [("occ", "Occurrence", "الحدوث"), ("det", "Detection", "الكشف"), ("sev", "Severity", "الخطورة")], [
+            ("a1", "Use a crimp die that only fits the correct terminal size", "استخدام قالب كبس لا يناسب إلا مقاس الطرف الصحيح", "occ", "Prevents the wrong terminal being used at all.", "يمنع استخدام الطرف الخاطئ أصلًا."),
+            ("a2", "Pull-test every 10th crimp", "اختبار الشد لكل كبسة عاشرة", "det", "Finds bad crimps after they are made.", "يكشف الكبسات السيئة بعد حدوثها."),
+            ("a3", "Planned maintenance to replace worn dies", "صيانة مخططة لاستبدال القوالب البالية", "occ", "Worn dies cause under-crimps; maintenance makes them rarer.", "القوالب البالية تسبب نقص الكبس؛ والصيانة تجعلها أندر."),
+            ("a4", "Add a fuse so a short circuit cannot start a fire", "إضافة منصهر كي لا تبدأ دائرة القصر حريقًا", "sev", "The failure may still happen, but its effect is less severe.", "قد يحدث الفشل، لكن أثره أقل خطورة."),
+            ("a5", "Crimp-force monitoring that flags every out-of-range crimp", "مراقبة قوة الكبس التي تنبّه إلى كل كبسة خارج النطاق", "det", "Detects each bad crimp at the station.", "تكشف كل كبسة سيئة عند المحطة.")],
+            T("a1, a3 occurrence · a2, a5 detection · a4 severity.", "a1، a3 الحدوث · a2، a5 الكشف · a4 الخطورة."),
+            T("Prevention (occurrence) usually beats detection; severity changes only when the design or effect changes.", "الوقاية (الحدوث) تتفوق عادة على الكشف؛ ولا تتغير الخطورة إلا عندما يتغير التصميم أو الأثر.")),
+        numeric("T5", "QM-02", T("After crimp-force monitoring, the team re-rates FM1 detection from 6 to 2, with trial evidence. What is the new RPN?", "بعد مراقبة قوة الكبس، يعيد الفريق تقدير كشف FM1 من 6 إلى 2، بدليل من التجربة. ما رقم الأولوية الجديد؟"),
+                80, 0, T("RPN", "رقم الأولوية"), T("8 × 5 × 2 = 80.", "8 × 5 × 2 = 80."), T("Re-rate only on evidence that the action works.", "أعد التقدير فقط بناءً على دليل أن الإجراء يعمل.")),
+        multi("T6", "RSK-01", T("Which are good FMEA practice? Choose all that apply.", "أي مما يلي ممارسة جيدة في تحليل أنماط الفشل؟ اختر كل ما ينطبق."), [
+            ("a", "A cross-functional team with someone who does the job", "فريق متعدد التخصصات يضم من يؤدي العمل", True, "Different views find more failure modes.", "وجهات النظر المختلفة تكشف أنماط فشل أكثر."),
+            ("b", "Ratings taken from defined scales", "تقديرات مأخوذة من مقاييس محددة", True, "Consistent ratings across teams.", "تقديرات متسقة بين الفرق."),
+            ("c", "Review the FMEA after changes and after failures", "مراجعة التحليل بعد التغييرات وبعد حالات الفشل", True, "It is a living document.", "إنه وثيقة حية."),
+            ("d", "Lower the occurrence rating to get under the threshold", "خفض تقدير الحدوث للوصول تحت العتبة", False, "Ratings change with evidence, not to pass a rule.", "تتغير التقديرات بالدليل، لا لاجتياز قاعدة."),
+            ("e", "One engineer completes it alone to save time", "يكمله مهندس واحد بمفرده لتوفير الوقت", False, "A solo FMEA misses failure modes.", "التحليل الفردي يُغفل أنماط فشل.")],
+            T("a, b and c.", "أ وب وج."), T("An FMEA is only as good as the team and the honesty of its ratings.", "جودة التحليل بقدر جودة الفريق وصدق تقديراته.")),
+        written("T7", "QM-02", T("Recommend actions for FM2 (wrong terminal, fire risk) and say what each changes and how you will confirm it.", "أوصِ بإجراءات لـ FM2 (طرف خاطئ، خطر حريق) واذكر ما يغيّره كل منها وكيف ستتأكد."), [
+            ("Proposes prevention of the wrong terminal (occurrence)", "يقترح منع الطرف الخاطئ (الحدوث)", 1),
+            ("Considers reducing the effect (severity) or detection", "يتناول تخفيف الأثر (الخطورة) أو الكشف", 1),
+            ("Names an owner and a date", "يسمّي مالكًا وموعدًا", 1),
+            ("Says how effectiveness will be confirmed before re-rating", "يذكر كيف ستُؤكد الفعالية قبل إعادة التقدير", 1)],
+            T("Model: “Fit a size-keyed die so only the correct terminal fits (O 2 → 1; process engineer, 30 June) and colour-code terminal bins. Add a fuse on the pump circuit (design change request, S 9 → 6 after design review). Confirm with a 500-part trial and a design-review record before re-rating.”",
+              "نموذج: «تركيب قالب بمفتاح مقاس كي لا يناسب إلا الطرف الصحيح (O من 2 إلى 1؛ مهندس العملية، 30 يونيو) وتمييز صناديق الأطراف بالألوان. وإضافة منصهر على دائرة المضخة (طلب تغيير تصميم، S من 9 إلى 6 بعد مراجعة التصميم). والتأكد بتجربة على 500 قطعة وسجل مراجعة تصميم قبل إعادة التقدير.»"),
+            T("Scored by a person against the rubric before it counts.", "يقيّمها شخص وفق المعايير قبل أن تُحسب."), min_chars=100)],
+    courses=["CRS-M-FMEA"], lessons=["CRS-M-FMEA-L05", "CRS-M-FMEA-L13", "CRS-M-FMEA-L17"], toolkits=["fmea"],
+    templates=["TPL-RISK-REGISTER", "TPL-QUALITY-PLAN"], refs=[("iso-9001", "6.1.2"), ("iso-9001", "8.5.1")], figures=["FIG-LAB-FMEARPN"], cover={"motif": "matrix", "icon": "gauge"},
+    objectives=[T("Calculate and interpret RPN", "حساب رقم أولوية الخطر وتفسيره"), T("Prioritise by severity and match actions to ratings", "الترتيب حسب الخطورة ومطابقة الإجراءات مع التقديرات")])
+
+# ====================================================================== 8. Project Risk Lab
+PRISK = lab(
+    "LAB-PROJECT-RISK", "project-risk", "pmi", "analysis", "PRJ-RISK",
+    T("Project Risk Lab: an office fit-out", "مختبر مخاطر المشاريع: تجهيز مكاتب"),
+    T("Tell risks from issues, quantify threats and an opportunity with expected monetary value, size a contingency reserve, choose response strategies, give each risk an owner and write two register entries.",
+      "ميّز المخاطر من المشكلات، واحسب القيمة النقدية المتوقعة للتهديدات وللفرصة، وقدّر احتياطي الطوارئ، واختر استراتيجيات الاستجابة، وأسند لكل خطر مالكًا، واكتب قيدين في السجل."),
+    30, 2, ["RSK-01", "RSK-02", "PM-01"],
+    {"title": T("Head-office fit-out, budget SAR 2.4 million", "تجهيز المقر الرئيسي، بميزانية 2.4 مليون ريال"),
+     "context": [
+         T("You manage the fit-out of a three-floor head office: 26 weeks, budget SAR 2.4 million. Steel for the mezzanine comes through a congested port. The main contractor has already missed milestone 2 by one week.",
+           "تدير تجهيز مقر رئيسي من ثلاثة طوابق: 26 أسبوعًا، بميزانية 2.4 مليون ريال. ويصل الحديد اللازم للطابق الوسيط عبر ميناء مزدحم. وقد تأخر المقاول الرئيسي فعلًا أسبوعًا عن المرحلة 2."),
+         T("Risk workshop estimates: steel delay — 30 % chance, cost impact SAR 200,000; client adds a server room late — 25 % chance, SAR 80,000; early furniture order discount — 40 % chance, saving SAR 50,000.",
+           "تقديرات ورشة المخاطر: تأخر الحديد — احتمال 30 %، وأثر تكلفة 200,000 ريال؛ وإضافة العميل غرفة خوادم متأخرًا — احتمال 25 %، و80,000 ريال؛ وخصم الطلب المبكر للأثاث — احتمال 40 %، وتوفير 50,000 ريال.")],
+     "facts": [{"label": T("Duration", "المدة"), "value": T("26 weeks", "26 أسبوعًا")}, {"label": T("Budget", "الميزانية"), "value": T("SAR 2.4 million", "2.4 مليون ريال")}],
+     "exhibits": []},
+    [
+        classify("T1", "RSK-01", T("Is each item a threat, an opportunity or an issue?", "هل كل بند تهديد أم فرصة أم مشكلة؟"),
+                 [("threat", "Threat (uncertain, negative)", "تهديد (غير مؤكد، سلبي)"), ("opp", "Opportunity (uncertain, positive)", "فرصة (غير مؤكدة، إيجابية)"), ("issue", "Issue (already happening)", "مشكلة (تحدث فعلًا)")], [
+            ("i1", "Steel may be delayed by port congestion", "قد يتأخر الحديد بسبب ازدحام الميناء", "threat", "Uncertain and harmful.", "غير مؤكد وضار."),
+            ("i2", "The contractor has missed milestone 2", "تأخر المقاول عن المرحلة 2", "issue", "It has happened — manage it as an issue.", "لقد حدث — أدِره بوصفه مشكلة."),
+            ("i3", "A bulk discount may be available if furniture is ordered early", "قد يتوفر خصم كمية إذا طُلب الأثاث مبكرًا", "opp", "Uncertain and beneficial.", "غير مؤكد ومفيد."),
+            ("i4", "The client may add a server room late in design", "قد يضيف العميل غرفة خوادم في وقت متأخر من التصميم", "threat", "Uncertain scope change with cost impact.", "تغيير نطاق غير مؤكد ذو أثر في التكلفة.")],
+            T("Threats: i1, i4 · Opportunity: i3 · Issue: i2.", "التهديدات: i1، i4 · الفرصة: i3 · المشكلة: i2."),
+            T("A risk is uncertain; once it happens it becomes an issue with its own log and actions.", "الخطر غير مؤكد؛ فإذا حدث صار مشكلة لها سجلها وإجراءاتها.")),
+        numeric("T2", "RSK-01", T("Expected monetary value of the steel delay: 30 % × SAR 200,000 = ? (enter the cost as a positive number)", "القيمة النقدية المتوقعة لتأخر الحديد: 30 % × 200,000 ريال = ؟ (أدخل التكلفة رقمًا موجبًا)"),
+                60000, 1, T("SAR", "ريال"), T("0.30 × 200,000 = 60,000.", "0.30 × 200,000 = 60,000."), T("EMV = probability × impact.", "القيمة النقدية المتوقعة = الاحتمال × الأثر.")),
+        numeric("T3", "PM-01", T("Contingency reserve for these three identified risks using EMV: threats count as cost, the opportunity as a saving. What reserve do you hold?", "احتياطي الطوارئ لهذه المخاطر الثلاثة المحددة باستخدام القيمة النقدية المتوقعة: تُحسب التهديدات تكلفة، والفرصة توفيرًا. ما الاحتياطي الذي تحتفظ به؟"),
+                60000, 1, T("SAR", "ريال"), T("60,000 + (0.25 × 80,000 = 20,000) − (0.40 × 50,000 = 20,000) = 60,000.", "60,000 + (0.25 × 80,000 = 20,000) − (0.40 × 50,000 = 20,000) = 60,000."),
+                T("EMV sums threats and opportunities with their signs. The reserve covers identified risks only; unknown risks are covered by a management reserve.", "تجمع القيمة النقدية المتوقعة التهديدات والفرص بإشاراتها. ويغطي الاحتياطي المخاطر المحددة فقط؛ أما المخاطر غير المعروفة فيغطيها احتياطي الإدارة."),
+                weight=2, hint=T("Work out each EMV first, then add the threats and subtract the opportunity.", "احسب كل قيمة متوقعة أولًا، ثم اجمع التهديدات واطرح الفرصة.")),
+        classify("T4", "RSK-02", T("Which response strategy is each action?", "ما استراتيجية الاستجابة لكل إجراء؟"),
+                 [("avoid", "Avoid", "التجنب"), ("transfer", "Transfer", "النقل"), ("mitigate", "Mitigate", "التخفيف"), ("accept", "Accept", "القبول"), ("exploit", "Exploit", "الاستغلال")], [
+            ("a1", "Pay a premium so the steel supplier carries delay penalties", "دفع علاوة كي يتحمل مورّد الحديد غرامات التأخير", "transfer", "The financial impact moves to another party.", "ينتقل الأثر المالي إلى طرف آخر."),
+            ("a2", "Buy steel early from a local stockist", "شراء الحديد مبكرًا من مخزّن محلي", "mitigate", "Lowers the probability of a delay.", "يخفض احتمال التأخير."),
+            ("a3", "Redesign without the mezzanine, so no imported steel is needed", "إعادة التصميم دون الطابق الوسيط، فلا حاجة إلى حديد مستورد", "avoid", "Removes the cause of the threat.", "يزيل سبب التهديد."),
+            ("a4", "Note the server-room risk and keep the reserve", "تسجيل خطر غرفة الخوادم والإبقاء على الاحتياطي", "accept", "Active acceptance with a reserve.", "قبول فعّال مع احتياطي."),
+            ("a5", "Sign the furniture order now to secure the discount", "توقيع طلب الأثاث الآن لضمان الخصم", "exploit", "Makes the opportunity certain.", "يجعل الفرصة مؤكدة.")],
+            T("a1 transfer · a2 mitigate · a3 avoid · a4 accept · a5 exploit.", "a1 النقل · a2 التخفيف · a3 التجنب · a4 القبول · a5 الاستغلال."),
+            T("Threat and opportunity strategies mirror each other: avoid/exploit, transfer/share, mitigate/enhance, accept/accept.", "تتقابل استراتيجيات التهديد والفرصة: التجنب/الاستغلال، والنقل/المشاركة، والتخفيف/التعزيز، والقبول/القبول.")),
+        single("T5", "RSK-02", T("Who should own the steel-delay risk?", "من ينبغي أن يملك خطر تأخر الحديد؟"), [
+            ("a", "The whole project team", "فريق المشروع كله", "Shared ownership means no owner.", "الملكية المشتركة تعني عدم وجود مالك."),
+            ("b", "The procurement lead, who controls the order and the supplier", "قائد المشتريات، الذي يتحكم في الطلب والمورّد", "Right: the person best placed to manage the response.", "صحيح: الشخص الأقدر على إدارة الاستجابة."),
+            ("c", "The client", "العميل", "The client does not manage the supply chain.", "العميل لا يدير سلسلة التوريد."),
+            ("d", "The risk register itself", "سجل المخاطر نفسه", "A register records owners; it cannot be one.", "السجل يسجّل المالكين؛ ولا يمكن أن يكون مالكًا.")],
+            "b", T("The procurement lead.", "قائد المشتريات."), T("Each risk needs one named owner who can act on it.", "يحتاج كل خطر مالكًا واحدًا مسمّى يستطيع التصرف فيه.")),
+        written("T6", "RSK-01", T("Write two register entries (steel delay and server room): cause–event–effect, probability, impact, EMV, response, owner, trigger.", "اكتب قيدين في السجل (تأخر الحديد وغرفة الخوادم): السبب–الحدث–الأثر، والاحتمال، والأثر، والقيمة المتوقعة، والاستجابة، والمالك، والمؤشر المنبّه."), [
+            ("Each risk written as cause → event → effect", "كل خطر مكتوب: سبب ← حدث ← أثر", 1),
+            ("Probability, impact and EMV are consistent with the workshop", "الاحتمال والأثر والقيمة المتوقعة متسقة مع الورشة", 1),
+            ("A specific response with a named owner", "استجابة محددة بمالك مسمّى", 1),
+            ("A trigger or warning sign to watch", "مؤشر منبّه أو علامة إنذار للمراقبة", 1)],
+            T("Model: “Because mezzanine steel is imported through a congested port, delivery may slip by 3+ weeks, delaying the structure and costing SAR 200,000. P 30 %, EMV SAR 60,000. Mitigate: buy locally stocked steel by week 4 (procurement lead). Trigger: no shipping confirmation by week 3.”",
+              "نموذج: «لأن حديد الطابق الوسيط يُستورد عبر ميناء مزدحم، قد يتأخر التسليم 3 أسابيع أو أكثر، فيتأخر الهيكل وتبلغ التكلفة 200,000 ريال. الاحتمال 30 %، والقيمة المتوقعة 60,000 ريال. التخفيف: شراء حديد من مخزون محلي بحلول الأسبوع 4 (قائد المشتريات). المؤشر المنبّه: عدم تأكيد الشحن بحلول الأسبوع 3.»"),
+            T("Scored by a person against the rubric before it counts.", "يقيّمها شخص وفق المعايير قبل أن تُحسب."), min_chars=120)],
+    courses=["CRS-PM-RISK"], lessons=["CRS-PM-RISK-L01", "CRS-PM-RISK-L02", "CRS-PM-RISK-L04"], toolkits=["iso21500", "iso31000"],
+    templates=["TPL-RISK-REGISTER"], refs=[("iso-31000", "6.4.3"), ("iso-31000", "6.5.2")], figures=["FIG-LAB-EMV"], cover={"motif": "gantt", "icon": "target"},
+    objectives=[T("Tell risks from issues and quantify them with EMV", "تمييز المخاطر من المشكلات وقياسها بالقيمة النقدية المتوقعة"), T("Choose responses and owners", "اختيار الاستجابات والمالكين")])
+
+LABS = [CAPA, RCA, FMEA, PRISK]

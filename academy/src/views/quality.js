@@ -19,6 +19,7 @@ import { L, previewBanner, linkBtn, section, isReviewer, govBadge, toolLink } fr
 import { courseCard } from './courses.js';
 import { certCard, certsOf, routeCard, stat, studyPlan, certHref } from './pmi.js';
 import { academyBanner } from '../ui/art.js';
+import { labsToolPanel } from './labs.js';
 import { academyLanding, toolPanel, orderCourses } from '../ui/landing.js';
 
 const isQCourse = c => c.ecosystem === 'quality' && !c.guide;
@@ -81,6 +82,8 @@ export function qualityAcademyView(ctx) {
       certs: { title: t('q9.certs'), body: certs.length ? h('div', null, h('div', { class: 'cards' }, certs.map(c => certCard(ctx, c))), h('p', null, linkBtn('#/academy/quality/certifications', t('q9.compareCerts'))))
         : EmptyState({ title: t('q9.certsPending'), body: t('p7.pendingBody'), iconName: 'lock', level: 3 }) },
       tools: { title: t('x10a.landing.tools'), items: [
+        /* Phase 11: practice labs of this academy (loads itself). */
+        labsToolPanel(ctx, 'quality'),
         toolPanel(t('q9.center.eyebrow'), 'gauge', t('x10a.landing.cmqoeBody'), linkBtn('#/academy/quality/cmqoe', t('q9.openCenter'), 'primary', { 'data-action': 'open-center' })),
         toolPanel(t('p7.iso.useTitle'), 'grid', t('q9.useBody'), tools.length ? h('ul', { class: 'tools-mini' }, tools.map(m => h('li', null, toolLink(ctx, m)))) : h('p', { class: 'note' }, t('p7.none'))),
         guides.length ? toolPanel(t('q9.methods'), 'steps', t('q9.methodsNote'), h('ul', { class: 'chips' }, guides.map(g => h('li', { dataset: { guide: g.slug } }, h('a', { href: `#/guides/${g.slug}` }, L(ctx, g.title))))),

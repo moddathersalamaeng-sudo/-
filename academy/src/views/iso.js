@@ -16,6 +16,7 @@ import { courseStatus } from '../domain/learner-model.mjs';
 import { loadAll } from '../data/learner-state.js';
 import { L, notAvailable, pageHead, previewBanner, linkBtn, section, facts, hours, platformHref, isReviewer, govBadge, toolLink } from '../ui/academy.js';
 import { courseCard, sourceList } from './courses.js';
+import { labsToolPanel } from './labs.js';
 import { academyLanding, toolPanel, orderCourses } from '../ui/landing.js';
 import { stat } from './pmi.js';
 
@@ -132,6 +133,8 @@ export function isoAcademyView(ctx) {
         std.length > 6 ? h('details', { class: 'more' }, h('summary', null, t('x10a.landing.moreStandards', { n: i18n.number(std.length - 6) })), h('div', { class: 'cards' }, std.slice(6).map(x => standardCard(ctx, x)))) : null)
         : EmptyState({ title: t('p7.iso.standardsPending'), body: t('p7.pendingBody'), iconName: 'lock', level: 3 }) },
       tools: { title: t('x10a.landing.tools'), items: [
+        /* Phase 11: practice labs of this academy (loads itself). */
+        labsToolPanel(ctx, 'iso'),
         toolPanel(t('p7.iso.useTitle'), 'grid', t('p7.iso.useBody'), toolList(ctx, isoTools)),
         gs.length ? toolPanel(t('gd.isoGuides'), 'ladder', t('gd.isoGuidesNote'), h('ul', { class: 'chips' }, gs.map(g => h('li', { dataset: { guide: g.slug } }, h('a', { href: `#/guides/${g.slug}` }, 'ISO ', g.code)))),
           h('p', null, h('a', { href: '#/library?tab=guides' }, t('gd.allGuides')))) : null,

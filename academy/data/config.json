@@ -1,6 +1,6 @@
 {
   "app": "cia-academy",
-  "version": "1.10.2-phase10a",
+  "version": "1.11.0-phase11",
   "platformBase": "../",
   "defaultLocale": "ar",
   "locales": [

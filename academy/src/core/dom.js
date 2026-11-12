@@ -102,6 +102,8 @@ const ICONS = {
   user: 'M12 12a4 4 0 100-8 4 4 0 000 8zm-7 9c0-3.9 3.1-7 7-7s7 3.1 7 7',
   bookmark: 'M6 3h12v18l-6-4-6 4z',
   caret: 'M7 10l5 5 5-5',
+  /* Phase 11: practice labs. */
+  flask: 'M9 3h6M10 3v6l-5 9a2 2 0 002 3h10a2 2 0 002-3l-5-9V3M7.5 15h9',
   more: 'M5 12h.01M12 12h.01M19 12h.01'
 };
 export const ICON_NAMES = () => Object.keys(ICONS);

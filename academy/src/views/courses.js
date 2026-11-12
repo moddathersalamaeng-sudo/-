@@ -10,6 +10,7 @@
  * Progress records (`course_progress`, id = course id): { completed_lessons[], exercise_notes{}, updated_at }.
  * Reading progress is never presented as a professional certification.
  */
+import { practiceLinks } from './labs.js';
 import { h, icon } from '../core/dom.js';
 import { dataRegion, EmptyState, Badge, Button, StatusLabel, ProgressBar, toast, Table } from '../ui/components.js';
 import { searchCourses, prerequisiteState, flatLessons, LESSON_BLOCKS } from '../domain/courses.mjs';
@@ -350,6 +351,8 @@ function courseDetail(ctx, c, content, learner, region, guides = {}) {
     h('h2', { id: 'cp-h' }, t('courses.progress')),
     lessons.length ? ProgressBar({ value: st.done, max: st.total, label: t('courses.progress'), valueText: t('p7.course.lessonsDone', { done: i18n.number(st.done), total: i18n.number(st.total) }) }) : null,
     h('p', null, st.state === 'completed' ? t('p7.course.completedNote') : st.lessonsDone && !st.finalPassed ? t('p7.course.finalPending') : t('p7.course.completionRule')),
+    /* Phase 11 (D-10A-1): printable certificate of completion — not a professional certification. */
+    st.state === 'completed' ? h('p', null, linkBtn(`#/certificate/${c.slug}`, t('cert11.open'), 'secondary', { 'data-action': 'open-certificate' })) : null,
     h('p', { class: 'note' }, t('p7.readingNotCert')),
     !prereq.eligible ? h('p', { class: 'banner banner-warn', role: 'note' }, t('p7.course.prereqMissing')) : null);
 
@@ -400,7 +403,9 @@ function courseDetail(ctx, c, content, learner, region, guides = {}) {
     c.practical_task ? isec('c-pt', 'clipboard', t('p7.course.practical'),
       h('p', null, L(ctx, c.practical_task.brief)),
       facts([[t('p7.course.deliverable'), L(ctx, c.practical_task.deliverable)], [t('p7.course.time'), minutes(ctx, c.practical_task.minutes)], [t('p7.course.reviewedBy'), t('p7.course.humanReview')]]),
-      c.practical_task.rubric?.length ? rubricTable(ctx, c.practical_task.rubric, t('p7.course.rubric')) : null) : null,
+      c.practical_task.rubric?.length ? rubricTable(ctx, c.practical_task.rubric, t('p7.course.rubric')) : null,
+      /* Phase 11: the practice lab for this course's practical work. */
+      practiceLinks(ctx, content.labs || [], { courseId: c.id })) : null,
     /* Below: everything else about the course, collapsed (same content as before, one click away). */
     h('details', { class: 'more-about', dataset: { more: 'course' } }, h('summary', null, h('h2', { class: 'h-sm' }, icon('info'), ' ', t('x10a.course.more'))),
       valueStrip(ctx, c),
@@ -544,6 +549,7 @@ function lessonPlayer(ctx, c, lessons, i, content, learner, guides = {}) {
     srcGuide && srcItem ? h('p', { class: 'note' }, t('gd.lessonSource'), ' ', h('a', { href: guideHref(srcGuide.slug, srcItem.ref) }, L(ctx, srcGuide.title))) : null,
     guidePanel,
     exercise,
+    practiceLinks(ctx, content.labs || [], { courseId: c.id, lessonId: l.id }),
     check ? h('section', { class: 'panel check', 'aria-labelledby': 'kc-h' }, h('h2', { id: 'kc-h' }, t('p7.lesson.check')), h('p', { class: 'note' }, t('p7.lesson.checkNote')), check) : null,
     resources.length ? section('l-res', t('p7.lesson.resources'), h('ul', { class: 'plain' }, resources.map(x => h('li', null,
       h('a', { href: x.slug && x.ecosystem ? `#/knowledge/${x.ecosystem}/${x.slug}` : `#/library/${x.id}` }, L(ctx, x.title)))))) : null,

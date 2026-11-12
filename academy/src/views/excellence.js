@@ -81,7 +81,7 @@ export function excellenceAcademyView(ctx) {
     const labPanel = def ? h('div', { class: 'panel feature lab-feature tool-panel', dataset: { lab: 'feature' } },
       h('div', null, h('p', { class: 'eyebrow' }, icon('clipboard'), ' ', t('ex10.labLabel')), h('h3', { id: 'exlab-h' }, t('ex10.labTitle')), h('p', null, t('ex10.labBody')),
         withEv ? h('p', { class: 'note' }, icon('check'), ' ', t('ex10.lab.progress', { done: i18n.number(withEv), n: i18n.number(def.criteria.length), s: i18n.number(sum.strengths), a: i18n.number(sum.afis) })) : null,
-        h('div', { class: 'btnrow' }, linkBtn('#/academy/excellence/lab', t('ex10.labCta'), 'primary', { 'data-action': 'open-lab' }))),
+        h('div', { class: 'btnrow' }, linkBtn('#/academy/excellence/lab', t('ex10.labCta'), 'primary', { 'data-action': 'open-lab' }), linkBtn('#/labs', t('lab11.allLabs'), 'secondary', { 'data-action': 'all-labs' }))),
       labFig ? Figure(ctx, labFig, { compact: true }) : null) : null;
     const kaqaBlock = kaqa ? h('div', { class: 'panel', dataset: { kaqa: 'true' } }, h('h3', { id: 'ex-kaqa' }, t('ex10.kaqaTitle')), h('ul', { class: 'checks' }, kaqa.facts.map(f => {
       const s = content.sources.find(x => x.id === f.source);

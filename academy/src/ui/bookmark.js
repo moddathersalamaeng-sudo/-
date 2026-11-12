@@ -1,5 +1,5 @@
 /**
- * Phase 10A — bookmarks across courses, lessons, guides, guide items, certifications, templates and articles.
+ * Phase 10A — bookmarks across courses, lessons, guides, guide items, certifications, templates and articles (Phase 11: labs and smart templates).
  * Stored in the learner's own `cia:v1:*` collection `bookmarks` (id = "<type>:<id>"); the older Professional Library
  * favourites (`library_favorites`) keep working and are listed alongside.
  */

@@ -34,7 +34,8 @@ SEED = ROOT / "data" / "seed"
 ALLOWED = {"courses", "assessments", "questions", "iso-standards", "learning-paths", "competency/competencies",
            "competency/target-roles", "competency/domains", "ecosystems", "programs", "sources", "certifications",  # Phase 8: certification explorer
            "figures",  # Phase 9: explanatory figures
-           "excellence-lab"}  # Phase 10: EFQM Assessment Lab definition and KAQA facts
+           "excellence-lab",  # Phase 10: EFQM Assessment Lab definition and KAQA facts
+           "labs", "smart-templates"}  # Phase 11: practice labs and smart templates (run build_phase10a.mjs afterwards: it re-splits labs.json)
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 

@@ -11,6 +11,7 @@ import { embed } from '../ui/bookmark.js';
 import { searchIndex, groupResults } from '../domain/search.mjs';
 import { knowledgeIndexView, libraryView } from './knowledge.js';
 import { guidesIndexView } from './guides.js';
+import { smartTemplatesBlock } from './templates.js';
 
 export const LIBRARY_TABS = ['articles', 'guides', 'templates'];
 export const LIBRARY_TYPES = ['article', 'guide', 'guide_item', 'template', 'standard'];
@@ -41,7 +42,8 @@ export function libraryHubView(ctx, match) {
     tabs: [
       { key: 'articles', label: t('x10a.lib.tabs.articles'), content: () => embed(knowledgeIndexView(ctx, sub)) },
       { key: 'guides', label: t('x10a.lib.tabs.guides'), content: () => embed(guidesIndexView(ctx, sub)) },
-      { key: 'templates', label: t('x10a.lib.tabs.templates'), content: () => embed(libraryView(ctx, { ...sub, query: { kind: query.kind || '' } })) }
+      /* Phase 11: the six smart guided templates first, then the Professional Library templates. */
+      { key: 'templates', label: t('x10a.lib.tabs.templates'), content: () => h('div', null, smartTemplatesBlock(ctx), embed(libraryView(ctx, { ...sub, query: { kind: query.kind || '' } }))) }
     ],
     onSelect: i => { state.tab = LIBRARY_TABS[i]; setHashQuery('/library', { tab: state.tab, q: state.q }); } });
   const status = h('p', { class: 'note', role: 'status', 'aria-live': 'polite' });

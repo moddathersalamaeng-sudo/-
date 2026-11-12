@@ -1,13 +1,13 @@
 {
   "name": "cia-academy",
-  "version": "1.10.2-phase10a",
+  "version": "1.11.0-phase11",
   "private": true,
-  "description": "Continual Improvement Academy \u2014 Academy module (Phases 1\u201310 and 10A built, integrated with the hub toolkits). \u00a9 2026 Modather Salama.",
+  "description": "Continual Improvement Academy — Academy module (Phases 1–11 built (10A inserted), integrated with the hub toolkits). © 2026 Modather Salama.",
   "type": "module",
   "scripts": {
     "serve": "cd .. && python3 -m http.server 8765",
     "test": "node --test tests/unit/*.test.mjs",
-    "test:e2e": "python3 tests/e2e/run_e2e.py && python3 tests/e2e/run_e2e_phase7.py && python3 tests/e2e/run_e2e_guides.py && python3 tests/e2e/run_e2e_closure.py && python3 tests/e2e/run_e2e_phase8.py && python3 tests/e2e/run_e2e_phase9.py && python3 tests/e2e/run_e2e_phase10.py && python3 tests/e2e/run_e2e_phase10a.py",
+    "test:e2e": "python3 tests/e2e/run_e2e.py && python3 tests/e2e/run_e2e_phase7.py && python3 tests/e2e/run_e2e_guides.py && python3 tests/e2e/run_e2e_closure.py && python3 tests/e2e/run_e2e_phase8.py && python3 tests/e2e/run_e2e_phase9.py && python3 tests/e2e/run_e2e_phase10.py && python3 tests/e2e/run_e2e_phase10a.py && python3 tests/e2e/run_e2e_phase11.py",
     "build:phase9": "python3 tools/build_phase9.py",
     "sync:modules": "python3 tools/sync_platform_modules.py",
     "build:content": "python3 tools/build_phase7.py",
@@ -19,7 +19,8 @@
     "build:phase8": "python3 tools/build_phase8.py",
     "build:phase10": "python3 tools/build_phase10.py",
     "build:phase10a": "node tools/build_phase10a.mjs",
-    "measure": "python3 tests/e2e/measure_phase10a.py --label after"
+    "measure": "python3 tests/e2e/measure_phase10a.py --label after",
+    "build:phase11": "python3 tools/build_phase11.py"
   },
   "engines": {
     "node": ">=20"

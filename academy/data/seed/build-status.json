@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-06",
+  "updated": "2026-11-12",
   "method": "Weighted by estimated phase effort (weights below, total 112). Complete = 100 %, in progress = 50 %, otherwise 0 %.",
   "phases": [
     {
@@ -69,7 +69,9 @@
     {
       "id": "11",
       "weight": 10,
-      "status": "planned"
+      "status": "in_progress",
+      "partial": null,
+      "note": "Practice Labs & smart templates built (12 Nov 2026): 8 labs + 5 governed drafts, 6 smart templates, 13 figures. Content awaits review / owner approval."
     },
     {
       "id": "12",

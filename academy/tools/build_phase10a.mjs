@@ -8,6 +8,7 @@
  *       courses-<academy>.json      full course records of one academy (same records as courses.json)
  *       questions-<academy>.json    question records grouped by the academy of their course / assessment
  *       manifest.json               shard files, question → shard map, and sha256 of the master files (sync check)
+ *     Phase 11: labs.json is split the same way — labs-index.json (no tasks or keys) and labs-<academy>.json (full records).
  *  2. Search index (plan §4): data/search-index.json — published courses, lessons, guides, guide items, certifications,
  *     ISO standards, articles and library items, normalised with src/domain/search.mjs (the same code the browser uses).
  *
@@ -21,6 +22,7 @@ import { fileURLToPath } from 'node:url';
 import { validateGovernance } from '../src/data/governance.js';
 import { academyOfCourse, academyOfAssessment, ACADEMY_KEYS } from '../src/domain/academies.mjs';
 import { makeEntry, SEARCH_SCHEMA } from '../src/domain/search.mjs';
+import { labIndexRecord } from '../src/domain/labs.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SEED = join(ROOT, 'data', 'seed');
@@ -52,6 +54,10 @@ export function courseIndexRecord(c) {
 
 export function build({ check = false } = {}) {
   const courses = items('data/seed/courses.json');
+  const hasLabs = existsSync(join(SEED, 'labs.json'));
+  const labs = hasLabs ? items('data/seed/labs.json') : [];
+  const shardsL = Object.fromEntries(ACADEMY_KEYS.map(k => [k, []]));
+  for (const l of labs) (shardsL[l.academy] || shardsL.iso).push(l);
   const questions = items('data/seed/questions.json');
   const assessments = items('data/seed/assessments.json');
   const byCourse = new Map(courses.map(c => [c.id, c]));
@@ -68,10 +74,11 @@ export function build({ check = false } = {}) {
   }
   const manifest = {
     schema: 'cia.split.v1', built_by: 'tools/build_phase10a.mjs',
-    source: { 'courses.json': sha('data/seed/courses.json'), 'questions.json': sha('data/seed/questions.json') },
+    source: { 'courses.json': sha('data/seed/courses.json'), 'questions.json': sha('data/seed/questions.json'), ...(hasLabs ? { 'labs.json': sha('data/seed/labs.json') } : {}) },
     collections: {
       courses: { index: 'courses-index.json', shards: Object.fromEntries(ACADEMY_KEYS.map(k => [k, `courses-${k}.json`])), count: courses.length },
-      questions: { shards: Object.fromEntries(Object.keys(shardsQ).map(k => [k, `questions-${k}.json`])), ids: Object.fromEntries(Object.entries(shardsQ).map(([k, xs]) => [k, xs.map(q => q.id)])), count: questions.length }
+      questions: { shards: Object.fromEntries(Object.keys(shardsQ).map(k => [k, `questions-${k}.json`])), ids: Object.fromEntries(Object.entries(shardsQ).map(([k, xs]) => [k, xs.map(q => q.id)])), count: questions.length },
+      ...(hasLabs ? { labs: { index: 'labs-index.json', shards: Object.fromEntries(ACADEMY_KEYS.map(k => [k, `labs-${k}.json`])), count: labs.length } } : {})
     }
   };
 
@@ -112,21 +119,32 @@ export function build({ check = false } = {}) {
     entries.push(makeEntry({ type: 'article', id: a.id, href: `#/knowledge/${a.ecosystem}/${a.slug}`, title: a.title, sub: snip(a.content?.[0]?.text), extra: [a.topic, a.domain].filter(x => typeof x === 'string') }));
   for (const x of items('data/seed/library-items.json').filter(published))
     entries.push(makeEntry({ type: 'template', id: x.id, href: `#/library/${x.id}`, title: x.title, sub: snip(x.description), extra: [x.kind, x.standard_reference].filter(x => typeof x === 'string') }));
+  /* Phase 11: published practice labs, the EFQM Assessment Lab (Phase 10) and the smart templates. */
+  for (const l of labs.filter(published))
+    entries.push(makeEntry({ type: 'lab', id: l.id, href: `#/labs/${l.slug}`, title: l.title, sub: snip(l.summary), academy: l.academy, extra: [l.code, 'lab مختبر practice تطبيق', ...(l.competencies || [])] }));
+  if (existsSync(join(SEED, 'excellence-lab.json'))) for (const x of items('data/seed/excellence-lab.json').filter(r => r.id === 'LAB-EFQM' && published(r)))
+    entries.push(makeEntry({ type: 'lab', id: x.id, href: '#/academy/excellence/lab', title: { en: 'EFQM Assessment Lab', ar: 'مختبر تقييم EFQM' }, sub: x.label, academy: 'excellence', extra: ['EFQM', 'lab مختبر', 'self-assessment تقييم ذاتي'] }));
+  if (existsSync(join(SEED, 'smart-templates.json'))) for (const x of items('data/seed/smart-templates.json').filter(published))
+    entries.push(makeEntry({ type: 'template', id: x.id, href: `#/templates/${x.slug}`, title: x.title, sub: snip(x.summary), academy: x.academy, extra: ['template قالب smart ذكي', x.slug] }));
   const searchDoc = { schema: SEARCH_SCHEMA, built_by: 'tools/build_phase10a.mjs', note: 'Published records only. Built at build time; rebuild after any content change.', count: entries.length, items: entries };
 
-  if (check) return { manifest, shardsC, shardsQ, searchDoc };
+  if (check) return { manifest, shardsC, shardsQ, shardsL, labs, searchDoc };
   mkdirSync(SPLIT, { recursive: true });
   for (const f of readdirSync(SPLIT)) if (f.endsWith('.json')) unlinkSync(join(SPLIT, f));
   write(join(SPLIT, 'courses-index.json'), { schema: 'cia.courses-index.v1', items: courses.map(courseIndexRecord) });
   for (const [k, xs] of Object.entries(shardsC)) write(join(SPLIT, `courses-${k}.json`), { schema: 'cia.split.v1', academy: k, items: xs });
   for (const [k, xs] of Object.entries(shardsQ)) write(join(SPLIT, `questions-${k}.json`), { schema: 'cia.split.v1', academy: k, items: xs });
+  if (hasLabs) {
+    write(join(SPLIT, 'labs-index.json'), { schema: 'cia.labs-index.v1', items: labs.map(labIndexRecord) });
+    for (const [k, xs] of Object.entries(shardsL)) write(join(SPLIT, `labs-${k}.json`), { schema: 'cia.split.v1', academy: k, items: xs });
+  }
   write(join(SPLIT, 'manifest.json'), manifest);
   write(join(ROOT, 'data', 'search-index.json'), searchDoc);
-  return { manifest, shardsC, shardsQ, searchDoc };
+  return { manifest, shardsC, shardsQ, shardsL, labs, searchDoc };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const r = build({ check: process.argv.includes('--check') });
   const n = o => Object.entries(o).map(([k, v]) => `${k}:${v.length}`).join(' ');
-  console.log(`courses ${n(r.shardsC)} · questions ${n(r.shardsQ)} · search entries ${r.searchDoc.count}`);
+  console.log(`courses ${n(r.shardsC)} · questions ${n(r.shardsQ)} · labs ${n(r.shardsL)} · search entries ${r.searchDoc.count}`);
 }

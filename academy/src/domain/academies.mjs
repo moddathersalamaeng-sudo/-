@@ -121,7 +121,7 @@ export function dashboardSummary(courses = [], progress = [], attempts = [], boo
 
 /* ------------------------------------------------------------------ bookmarks */
 
-export const BOOKMARK_TYPES = ['course', 'lesson', 'guide', 'guide_item', 'certification', 'template', 'article'];
+export const BOOKMARK_TYPES = ['course', 'lesson', 'guide', 'guide_item', 'certification', 'template', 'article', 'lab'];
 export const bookmarkId = (type, id) => `${type}:${id}`;
 export function makeBookmark({ type, id, href, title }, now = new Date().toISOString()) {
   if (!BOOKMARK_TYPES.includes(type)) throw new Error('Unknown bookmark type: ' + type);

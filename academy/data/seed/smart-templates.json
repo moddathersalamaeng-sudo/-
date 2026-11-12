@@ -1,0 +1,1872 @@
+{
+  "schema": "cia.smart-template.v1",
+  "items": [
+    {
+      "id": "TPL-RISK-REGISTER",
+      "slug": "risk-register",
+      "academy": "iso",
+      "title": {
+        "en": "Risk Register",
+        "ar": "سجل المخاطر"
+      },
+      "summary": {
+        "en": "Answer a few questions about your context and criteria, then list risks with likelihood and consequence; the score and rating are calculated for you.",
+        "ar": "أجب عن أسئلة قليلة عن سياقك ومعاييرك، ثم سجّل المخاطر بالاحتمال والعاقبة؛ وتُحسب الدرجة والتصنيف تلقائيًا."
+      },
+      "doc_title": {
+        "en": "Risk register",
+        "ar": "سجل المخاطر"
+      },
+      "sections": [
+        {
+          "id": "ctx",
+          "title": {
+            "en": "Context",
+            "ar": "السياق"
+          }
+        },
+        {
+          "id": "crit",
+          "title": {
+            "en": "Risk criteria",
+            "ar": "معايير المخاطر"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "org",
+          "section": "ctx",
+          "type": "text",
+          "label": {
+            "en": "Organisation, project or process",
+            "ar": "المنظمة أو المشروع أو العملية"
+          },
+          "required": true
+        },
+        {
+          "id": "scope",
+          "section": "ctx",
+          "type": "textarea",
+          "label": {
+            "en": "Scope of this register",
+            "ar": "نطاق هذا السجل"
+          },
+          "required": true,
+          "hint": {
+            "en": "What is in and out — sites, activities, period.",
+            "ar": "ما الداخل وما الخارج — المواقع والأنشطة والفترة."
+          }
+        },
+        {
+          "id": "owner",
+          "section": "ctx",
+          "type": "text",
+          "label": {
+            "en": "Register owner",
+            "ar": "مالك السجل"
+          },
+          "required": true
+        },
+        {
+          "id": "date",
+          "section": "ctx",
+          "type": "date",
+          "label": {
+            "en": "Date prepared",
+            "ar": "تاريخ الإعداد"
+          },
+          "required": true
+        },
+        {
+          "id": "appetite",
+          "section": "crit",
+          "type": "select",
+          "label": {
+            "en": "What level of risk needs a treatment plan?",
+            "ar": "أي مستوى من الخطر يحتاج خطة معالجة؟"
+          },
+          "required": true,
+          "options": [
+            {
+              "value": "high",
+              "label": {
+                "en": "High and above (score 10+)",
+                "ar": "مرتفع فأعلى (الدرجة 10+)"
+              }
+            },
+            {
+              "value": "medium",
+              "label": {
+                "en": "Medium and above (score 5+)",
+                "ar": "متوسط فأعلى (الدرجة 5+)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "review",
+          "section": "crit",
+          "type": "select",
+          "label": {
+            "en": "How often is the register reviewed?",
+            "ar": "كم مرة يُراجَع السجل؟"
+          },
+          "required": true,
+          "options": [
+            {
+              "value": "monthly",
+              "label": {
+                "en": "Monthly",
+                "ar": "شهريًا"
+              }
+            },
+            {
+              "value": "quarterly",
+              "label": {
+                "en": "Quarterly",
+                "ar": "ربع سنوي"
+              }
+            },
+            {
+              "value": "change",
+              "label": {
+                "en": "At each significant change",
+                "ar": "عند كل تغيير مهم"
+              }
+            }
+          ]
+        }
+      ],
+      "table": {
+        "title": {
+          "en": "Risks",
+          "ar": "المخاطر"
+        },
+        "min_rows": 1,
+        "columns": [
+          {
+            "id": "ref",
+            "type": "text",
+            "label": {
+              "en": "Ref",
+              "ar": "المرجع"
+            },
+            "required": true,
+            "max_length": 20
+          },
+          {
+            "id": "risk",
+            "type": "textarea",
+            "label": {
+              "en": "Risk (cause → event → consequence)",
+              "ar": "الخطر (سبب ← حدث ← عاقبة)"
+            },
+            "required": true
+          },
+          {
+            "id": "owner",
+            "type": "text",
+            "label": {
+              "en": "Owner",
+              "ar": "المالك"
+            },
+            "required": true
+          },
+          {
+            "id": "l",
+            "type": "select",
+            "label": {
+              "en": "Likelihood (1–5)",
+              "ar": "الاحتمال (1–5)"
+            },
+            "required": true,
+            "options": [
+              {
+                "value": "1",
+                "label": {
+                  "en": "1",
+                  "ar": "1"
+                }
+              },
+              {
+                "value": "2",
+                "label": {
+                  "en": "2",
+                  "ar": "2"
+                }
+              },
+              {
+                "value": "3",
+                "label": {
+                  "en": "3",
+                  "ar": "3"
+                }
+              },
+              {
+                "value": "4",
+                "label": {
+                  "en": "4",
+                  "ar": "4"
+                }
+              },
+              {
+                "value": "5",
+                "label": {
+                  "en": "5",
+                  "ar": "5"
+                }
+              }
+            ]
+          },
+          {
+            "id": "c",
+            "type": "select",
+            "label": {
+              "en": "Consequence (1–5)",
+              "ar": "العاقبة (1–5)"
+            },
+            "required": true,
+            "options": [
+              {
+                "value": "1",
+                "label": {
+                  "en": "1",
+                  "ar": "1"
+                }
+              },
+              {
+                "value": "2",
+                "label": {
+                  "en": "2",
+                  "ar": "2"
+                }
+              },
+              {
+                "value": "3",
+                "label": {
+                  "en": "3",
+                  "ar": "3"
+                }
+              },
+              {
+                "value": "4",
+                "label": {
+                  "en": "4",
+                  "ar": "4"
+                }
+              },
+              {
+                "value": "5",
+                "label": {
+                  "en": "5",
+                  "ar": "5"
+                }
+              }
+            ]
+          },
+          {
+            "id": "score",
+            "type": "computed",
+            "label": {
+              "en": "Score",
+              "ar": "الدرجة"
+            },
+            "required": false,
+            "compute": {
+              "op": "product",
+              "of": [
+                "l",
+                "c"
+              ]
+            }
+          },
+          {
+            "id": "rating",
+            "type": "computed",
+            "label": {
+              "en": "Rating",
+              "ar": "التصنيف"
+            },
+            "required": false,
+            "compute": {
+              "op": "band",
+              "of": "score",
+              "bands": [
+                {
+                  "max": 4,
+                  "label": {
+                    "en": "Low",
+                    "ar": "منخفض"
+                  }
+                },
+                {
+                  "max": 9,
+                  "label": {
+                    "en": "Medium",
+                    "ar": "متوسط"
+                  }
+                },
+                {
+                  "max": 16,
+                  "label": {
+                    "en": "High",
+                    "ar": "مرتفع"
+                  }
+                },
+                {
+                  "max": 25,
+                  "label": {
+                    "en": "Very high",
+                    "ar": "مرتفع جدًا"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "treat",
+            "type": "select",
+            "label": {
+              "en": "Treatment option",
+              "ar": "خيار المعالجة"
+            },
+            "required": false,
+            "options": [
+              {
+                "value": "avoid",
+                "label": {
+                  "en": "Avoid",
+                  "ar": "تجنب"
+                }
+              },
+              {
+                "value": "likelihood",
+                "label": {
+                  "en": "Change likelihood",
+                  "ar": "تغيير الاحتمال"
+                }
+              },
+              {
+                "value": "consequence",
+                "label": {
+                  "en": "Change consequence",
+                  "ar": "تغيير العاقبة"
+                }
+              },
+              {
+                "value": "share",
+                "label": {
+                  "en": "Share",
+                  "ar": "مشاركة"
+                }
+              },
+              {
+                "value": "retain",
+                "label": {
+                  "en": "Retain",
+                  "ar": "احتفاظ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "action",
+            "type": "textarea",
+            "label": {
+              "en": "Action",
+              "ar": "الإجراء"
+            },
+            "required": false
+          },
+          {
+            "id": "due",
+            "type": "date",
+            "label": {
+              "en": "Due date",
+              "ar": "الموعد"
+            },
+            "required": false
+          },
+          {
+            "id": "status",
+            "type": "select",
+            "label": {
+              "en": "Status",
+              "ar": "الحالة"
+            },
+            "required": false,
+            "options": [
+              {
+                "value": "open",
+                "label": {
+                  "en": "Open",
+                  "ar": "مفتوح"
+                }
+              },
+              {
+                "value": "doing",
+                "label": {
+                  "en": "In progress",
+                  "ar": "قيد التنفيذ"
+                }
+              },
+              {
+                "value": "done",
+                "label": {
+                  "en": "Done",
+                  "ar": "منجز"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "exports": [
+        "csv",
+        "xls",
+        "doc",
+        "print",
+        "json"
+      ],
+      "competencies": [
+        "RSK-01",
+        "RSK-02"
+      ],
+      "labs": [
+        "LAB-RISK",
+        "LAB-PROJECT-RISK",
+        "LAB-FMEA"
+      ],
+      "courses": [
+        "CRS-ISO-RISK",
+        "CRS-G-31000",
+        "CRS-PM-RISK"
+      ],
+      "toolkits": [
+        "iso31000"
+      ],
+      "guidance": [
+        {
+          "en": "Write each risk as cause → event → consequence.",
+          "ar": "اكتب كل خطر: سبب ← حدث ← عاقبة."
+        },
+        {
+          "en": "Score = likelihood × consequence on 1–5 scales; bands 1–4, 5–9, 10–16, 17–25.",
+          "ar": "الدرجة = الاحتمال × العاقبة على مقياس 1–5؛ والنطاقات 1–4، 5–9، 10–16، 17–25."
+        }
+      ],
+      "cover": {
+        "motif": "matrix",
+        "icon": "shield"
+      },
+      "version": "0.11.0",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "d2251fbc2aa9f532ee26410245115a91b567b2715b2dc56f06a3c04e13ce510d"
+      }
+    },
+    {
+      "id": "TPL-AUDIT-CHECKLIST",
+      "slug": "audit-checklist",
+      "academy": "iso",
+      "title": {
+        "en": "Audit Checklist",
+        "ar": "قائمة تحقق التدقيق"
+      },
+      "summary": {
+        "en": "Set the audit's objective, scope and criteria, then build the questions with the evidence to look for; record results during the audit.",
+        "ar": "حدّد هدف التدقيق ونطاقه ومعاييره، ثم ابنِ الأسئلة مع الأدلة المطلوب البحث عنها؛ وسجّل النتائج أثناء التدقيق."
+      },
+      "doc_title": {
+        "en": "Audit checklist",
+        "ar": "قائمة تحقق التدقيق"
+      },
+      "sections": [
+        {
+          "id": "plan",
+          "title": {
+            "en": "Audit plan",
+            "ar": "خطة التدقيق"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "title",
+          "section": "plan",
+          "type": "text",
+          "label": {
+            "en": "Audit title",
+            "ar": "عنوان التدقيق"
+          },
+          "required": true
+        },
+        {
+          "id": "criteria",
+          "section": "plan",
+          "type": "text",
+          "label": {
+            "en": "Audit criteria (standard, procedures)",
+            "ar": "معايير التدقيق (المعيار، الإجراءات)"
+          },
+          "required": true,
+          "hint": {
+            "en": "Cite standards by number only, for example “ISO 9001 · procedure WH-03”.",
+            "ar": "استشهد بالمعايير بالرقم فقط، مثل «ISO 9001 · الإجراء WH-03»."
+          }
+        },
+        {
+          "id": "objective",
+          "section": "plan",
+          "type": "textarea",
+          "label": {
+            "en": "Objective",
+            "ar": "الهدف"
+          },
+          "required": true
+        },
+        {
+          "id": "scope",
+          "section": "plan",
+          "type": "textarea",
+          "label": {
+            "en": "Scope (processes, sites, shifts)",
+            "ar": "النطاق (العمليات، المواقع، المناوبات)"
+          },
+          "required": true
+        },
+        {
+          "id": "auditor",
+          "section": "plan",
+          "type": "text",
+          "label": {
+            "en": "Auditor(s)",
+            "ar": "المدقق/المدققون"
+          },
+          "required": true
+        },
+        {
+          "id": "date",
+          "section": "plan",
+          "type": "date",
+          "label": {
+            "en": "Audit date",
+            "ar": "تاريخ التدقيق"
+          },
+          "required": true
+        }
+      ],
+      "table": {
+        "title": {
+          "en": "Checklist",
+          "ar": "قائمة التحقق"
+        },
+        "min_rows": 1,
+        "columns": [
+          {
+            "id": "ref",
+            "type": "text",
+            "label": {
+              "en": "Clause / ref",
+              "ar": "البند / المرجع"
+            },
+            "required": true,
+            "max_length": 30
+          },
+          {
+            "id": "question",
+            "type": "textarea",
+            "label": {
+              "en": "Question to ask",
+              "ar": "السؤال"
+            },
+            "required": true
+          },
+          {
+            "id": "evidence",
+            "type": "textarea",
+            "label": {
+              "en": "Evidence to look for",
+              "ar": "الأدلة المطلوب البحث عنها"
+            },
+            "required": true
+          },
+          {
+            "id": "result",
+            "type": "select",
+            "label": {
+              "en": "Result",
+              "ar": "النتيجة"
+            },
+            "required": false,
+            "options": [
+              {
+                "value": "c",
+                "label": {
+                  "en": "Conforming",
+                  "ar": "مطابق"
+                }
+              },
+              {
+                "value": "nc",
+                "label": {
+                  "en": "Nonconformity",
+                  "ar": "عدم مطابقة"
+                }
+              },
+              {
+                "value": "obs",
+                "label": {
+                  "en": "Observation",
+                  "ar": "ملاحظة"
+                }
+              },
+              {
+                "value": "na",
+                "label": {
+                  "en": "Not audited",
+                  "ar": "لم يُدقَّق"
+                }
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "type": "textarea",
+            "label": {
+              "en": "Notes and record references",
+              "ar": "ملاحظات ومراجع السجلات"
+            },
+            "required": false
+          }
+        ]
+      },
+      "exports": [
+        "csv",
+        "xls",
+        "doc",
+        "print",
+        "json"
+      ],
+      "competencies": [
+        "AUD-01",
+        "AUD-02"
+      ],
+      "labs": [
+        "LAB-AUDIT-SIM",
+        "LAB-EVIDENCE",
+        "LAB-AUDIT-PLAN"
+      ],
+      "courses": [
+        "CRS-ISO-AUD",
+        "CRS-ISO-9001-AUD",
+        "CRS-Q-AUDIT"
+      ],
+      "toolkits": [
+        "aud"
+      ],
+      "guidance": [
+        {
+          "en": "One question per line; say what evidence would answer it.",
+          "ar": "سؤال واحد لكل سطر؛ واذكر الدليل الذي يجيب عنه."
+        },
+        {
+          "en": "Record the record IDs you saw in the notes.",
+          "ar": "سجّل مُعرِّفات السجلات التي رأيتها في الملاحظات."
+        }
+      ],
+      "cover": {
+        "motif": "rings",
+        "icon": "clipboard"
+      },
+      "version": "0.11.0",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "f5dc343b9021e3fe6a1e5bbab7dc01cfaa59e670709a18e06d0192abcdb4b2a0"
+      }
+    },
+    {
+      "id": "TPL-NCR",
+      "slug": "ncr",
+      "academy": "iso",
+      "title": {
+        "en": "Nonconformity Report (NCR)",
+        "ar": "تقرير عدم المطابقة"
+      },
+      "summary": {
+        "en": "Record a nonconformity the way an auditor would: requirement, evidence, statement and extent — then the correction and actions.",
+        "ar": "سجّل عدم المطابقة كما يفعل المدقق: المتطلب والدليل والبيان والمدى — ثم التصحيح والإجراءات."
+      },
+      "doc_title": {
+        "en": "Nonconformity report",
+        "ar": "تقرير عدم المطابقة"
+      },
+      "sections": [
+        {
+          "id": "id",
+          "title": {
+            "en": "Identification",
+            "ar": "التعريف"
+          }
+        },
+        {
+          "id": "nc",
+          "title": {
+            "en": "The nonconformity",
+            "ar": "عدم المطابقة"
+          }
+        },
+        {
+          "id": "react",
+          "title": {
+            "en": "Immediate reaction",
+            "ar": "التفاعل الفوري"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "number",
+          "section": "id",
+          "type": "text",
+          "label": {
+            "en": "NCR number",
+            "ar": "رقم التقرير"
+          },
+          "required": true,
+          "max_length": 30
+        },
+        {
+          "id": "date",
+          "section": "id",
+          "type": "date",
+          "label": {
+            "en": "Date raised",
+            "ar": "تاريخ الإصدار"
+          },
+          "required": true
+        },
+        {
+          "id": "area",
+          "section": "id",
+          "type": "text",
+          "label": {
+            "en": "Process or area",
+            "ar": "العملية أو المنطقة"
+          },
+          "required": true
+        },
+        {
+          "id": "source",
+          "section": "id",
+          "type": "select",
+          "label": {
+            "en": "Source",
+            "ar": "المصدر"
+          },
+          "required": true,
+          "options": [
+            {
+              "value": "audit",
+              "label": {
+                "en": "Internal audit",
+                "ar": "تدقيق داخلي"
+              }
+            },
+            {
+              "value": "customer",
+              "label": {
+                "en": "Customer complaint",
+                "ar": "شكوى عميل"
+              }
+            },
+            {
+              "value": "inspection",
+              "label": {
+                "en": "Inspection or test",
+                "ar": "فحص أو اختبار"
+              }
+            },
+            {
+              "value": "supplier",
+              "label": {
+                "en": "Supplier",
+                "ar": "مورّد"
+              }
+            },
+            {
+              "value": "other",
+              "label": {
+                "en": "Other",
+                "ar": "أخرى"
+              }
+            }
+          ]
+        },
+        {
+          "id": "requirement",
+          "section": "nc",
+          "type": "textarea",
+          "label": {
+            "en": "Requirement (what should be)",
+            "ar": "المتطلب (ما ينبغي أن يكون)"
+          },
+          "required": true
+        },
+        {
+          "id": "evidence",
+          "section": "nc",
+          "type": "textarea",
+          "label": {
+            "en": "Objective evidence (what was found, where, when, how many)",
+            "ar": "الدليل الموضوعي (ما وُجد، وأين، ومتى، وكم)"
+          },
+          "required": true
+        },
+        {
+          "id": "statement",
+          "section": "nc",
+          "type": "textarea",
+          "label": {
+            "en": "Statement of the nonconformity",
+            "ar": "بيان عدم المطابقة"
+          },
+          "required": true
+        },
+        {
+          "id": "grade",
+          "section": "nc",
+          "type": "select",
+          "label": {
+            "en": "Grade",
+            "ar": "التصنيف"
+          },
+          "required": false,
+          "options": [
+            {
+              "value": "none",
+              "label": {
+                "en": "Not graded (programme does not grade)",
+                "ar": "غير مصنّف (البرنامج لا يصنّف)"
+              }
+            },
+            {
+              "value": "scheme_major",
+              "label": {
+                "en": "Major — under the scheme in use",
+                "ar": "رئيسية — وفق المخطط المعمول به"
+              }
+            },
+            {
+              "value": "scheme_minor",
+              "label": {
+                "en": "Minor — under the scheme in use",
+                "ar": "ثانوية — وفق المخطط المعمول به"
+              }
+            }
+          ]
+        },
+        {
+          "id": "correction",
+          "section": "react",
+          "type": "textarea",
+          "label": {
+            "en": "Immediate correction and containment",
+            "ar": "التصحيح والاحتواء الفوري"
+          },
+          "required": false
+        },
+        {
+          "id": "owner",
+          "section": "react",
+          "type": "text",
+          "label": {
+            "en": "Action owner",
+            "ar": "مالك الإجراء"
+          },
+          "required": true
+        }
+      ],
+      "table": {
+        "title": {
+          "en": "Actions",
+          "ar": "الإجراءات"
+        },
+        "min_rows": 1,
+        "columns": [
+          {
+            "id": "action",
+            "type": "textarea",
+            "label": {
+              "en": "Action",
+              "ar": "الإجراء"
+            },
+            "required": true
+          },
+          {
+            "id": "type",
+            "type": "select",
+            "label": {
+              "en": "Type",
+              "ar": "النوع"
+            },
+            "required": true,
+            "options": [
+              {
+                "value": "correction",
+                "label": {
+                  "en": "Correction",
+                  "ar": "تصحيح"
+                }
+              },
+              {
+                "value": "corrective",
+                "label": {
+                  "en": "Corrective action",
+                  "ar": "إجراء تصحيحي"
+                }
+              }
+            ]
+          },
+          {
+            "id": "owner",
+            "type": "text",
+            "label": {
+              "en": "Owner",
+              "ar": "المالك"
+            },
+            "required": true
+          },
+          {
+            "id": "due",
+            "type": "date",
+            "label": {
+              "en": "Due",
+              "ar": "الموعد"
+            },
+            "required": true
+          },
+          {
+            "id": "status",
+            "type": "select",
+            "label": {
+              "en": "Status",
+              "ar": "الحالة"
+            },
+            "required": false,
+            "options": [
+              {
+                "value": "open",
+                "label": {
+                  "en": "Open",
+                  "ar": "مفتوح"
+                }
+              },
+              {
+                "value": "doing",
+                "label": {
+                  "en": "In progress",
+                  "ar": "قيد التنفيذ"
+                }
+              },
+              {
+                "value": "done",
+                "label": {
+                  "en": "Done",
+                  "ar": "منجز"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "exports": [
+        "csv",
+        "xls",
+        "doc",
+        "print",
+        "json"
+      ],
+      "competencies": [
+        "AUD-03",
+        "QM-03"
+      ],
+      "labs": [
+        "LAB-NC-WRITE",
+        "LAB-AUDIT-SIM",
+        "LAB-CAPA"
+      ],
+      "courses": [
+        "CRS-ISO-NC",
+        "CRS-ISO-AUD"
+      ],
+      "toolkits": [
+        "capa",
+        "aud"
+      ],
+      "guidance": [
+        {
+          "en": "One requirement per NCR.",
+          "ar": "متطلب واحد لكل تقرير."
+        },
+        {
+          "en": "Grade only if your programme or scheme defines grades.",
+          "ar": "صنّف فقط إذا كان برنامجك أو مخططك يعرّف درجات."
+        }
+      ],
+      "cover": {
+        "motif": "lines",
+        "icon": "alert"
+      },
+      "version": "0.11.0",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "117fcee06a76b68ac998e1097f468b082ff9a2f08e6db5620a370723f45e6da9"
+      }
+    },
+    {
+      "id": "TPL-CAPA",
+      "slug": "capa",
+      "academy": "quality",
+      "title": {
+        "en": "CAPA Plan",
+        "ar": "خطة الإجراء التصحيحي"
+      },
+      "summary": {
+        "en": "Plan a corrective action from problem to proof: containment, verified root cause, actions with owners, and an effectiveness criterion set in advance.",
+        "ar": "خطط إجراءً تصحيحيًا من المشكلة إلى الإثبات: الاحتواء، والسبب الجذري المتحقق منه، والإجراءات بمالكيها، ومعيار فعالية محدد مسبقًا."
+      },
+      "doc_title": {
+        "en": "Corrective action plan",
+        "ar": "خطة الإجراء التصحيحي"
+      },
+      "sections": [
+        {
+          "id": "prob",
+          "title": {
+            "en": "Problem",
+            "ar": "المشكلة"
+          }
+        },
+        {
+          "id": "cause",
+          "title": {
+            "en": "Root cause",
+            "ar": "السبب الجذري"
+          }
+        },
+        {
+          "id": "eff",
+          "title": {
+            "en": "Effectiveness",
+            "ar": "الفعالية"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "number",
+          "section": "prob",
+          "type": "text",
+          "label": {
+            "en": "CAPA number",
+            "ar": "رقم الإجراء"
+          },
+          "required": true,
+          "max_length": 30
+        },
+        {
+          "id": "link",
+          "section": "prob",
+          "type": "text",
+          "label": {
+            "en": "Linked NCR or complaint",
+            "ar": "تقرير عدم المطابقة أو الشكوى المرتبطة"
+          },
+          "required": true
+        },
+        {
+          "id": "problem",
+          "section": "prob",
+          "type": "textarea",
+          "label": {
+            "en": "Problem description (with data)",
+            "ar": "وصف المشكلة (بالبيانات)"
+          },
+          "required": true
+        },
+        {
+          "id": "containment",
+          "section": "prob",
+          "type": "textarea",
+          "label": {
+            "en": "Containment and correction",
+            "ar": "الاحتواء والتصحيح"
+          },
+          "required": true
+        },
+        {
+          "id": "method",
+          "section": "cause",
+          "type": "select",
+          "label": {
+            "en": "Analysis method",
+            "ar": "طريقة التحليل"
+          },
+          "required": true,
+          "options": [
+            {
+              "value": "why5",
+              "label": {
+                "en": "5 Whys",
+                "ar": "لماذا الخمس"
+              }
+            },
+            {
+              "value": "fish",
+              "label": {
+                "en": "Fishbone",
+                "ar": "عظم السمكة"
+              }
+            },
+            {
+              "value": "rca",
+              "label": {
+                "en": "Investigation",
+                "ar": "التحقيق"
+              }
+            },
+            {
+              "value": "other",
+              "label": {
+                "en": "Other",
+                "ar": "أخرى"
+              }
+            }
+          ]
+        },
+        {
+          "id": "root",
+          "section": "cause",
+          "type": "textarea",
+          "label": {
+            "en": "Root cause",
+            "ar": "السبب الجذري"
+          },
+          "required": true
+        },
+        {
+          "id": "verified",
+          "section": "cause",
+          "type": "textarea",
+          "label": {
+            "en": "How the root cause was verified",
+            "ar": "كيف تُحقق من السبب الجذري"
+          },
+          "required": true
+        },
+        {
+          "id": "criterion",
+          "section": "eff",
+          "type": "textarea",
+          "label": {
+            "en": "Effectiveness criterion (set now)",
+            "ar": "معيار الفعالية (يُحدد الآن)"
+          },
+          "required": true
+        },
+        {
+          "id": "check_date",
+          "section": "eff",
+          "type": "date",
+          "label": {
+            "en": "Effectiveness check date",
+            "ar": "تاريخ فحص الفعالية"
+          },
+          "required": true
+        }
+      ],
+      "table": {
+        "title": {
+          "en": "Actions",
+          "ar": "الإجراءات"
+        },
+        "min_rows": 1,
+        "columns": [
+          {
+            "id": "action",
+            "type": "textarea",
+            "label": {
+              "en": "Action",
+              "ar": "الإجراء"
+            },
+            "required": true
+          },
+          {
+            "id": "owner",
+            "type": "text",
+            "label": {
+              "en": "Owner",
+              "ar": "المالك"
+            },
+            "required": true
+          },
+          {
+            "id": "due",
+            "type": "date",
+            "label": {
+              "en": "Due",
+              "ar": "الموعد"
+            },
+            "required": true
+          },
+          {
+            "id": "status",
+            "type": "select",
+            "label": {
+              "en": "Status",
+              "ar": "الحالة"
+            },
+            "required": false,
+            "options": [
+              {
+                "value": "open",
+                "label": {
+                  "en": "Open",
+                  "ar": "مفتوح"
+                }
+              },
+              {
+                "value": "doing",
+                "label": {
+                  "en": "In progress",
+                  "ar": "قيد التنفيذ"
+                }
+              },
+              {
+                "value": "done",
+                "label": {
+                  "en": "Done",
+                  "ar": "منجز"
+                }
+              }
+            ]
+          },
+          {
+            "id": "proof",
+            "type": "textarea",
+            "label": {
+              "en": "Evidence of completion",
+              "ar": "دليل الإنجاز"
+            },
+            "required": false
+          }
+        ]
+      },
+      "exports": [
+        "csv",
+        "xls",
+        "doc",
+        "print",
+        "json"
+      ],
+      "competencies": [
+        "QM-03"
+      ],
+      "labs": [
+        "LAB-CAPA",
+        "LAB-RCA"
+      ],
+      "courses": [
+        "CRS-Q-CAPA",
+        "CRS-M-CAPA",
+        "CRS-ISO-NC"
+      ],
+      "toolkits": [
+        "capa",
+        "why5",
+        "fish"
+      ],
+      "guidance": [
+        {
+          "en": "No “human error” as a root cause — ask why the process allowed it.",
+          "ar": "لا «خطأ بشري» سببًا جذريًا — اسأل لماذا سمحت العملية به."
+        },
+        {
+          "en": "Close only when the effectiveness criterion is met.",
+          "ar": "لا تُغلق إلا عند استيفاء معيار الفعالية."
+        }
+      ],
+      "cover": {
+        "motif": "loop",
+        "icon": "refresh"
+      },
+      "version": "0.11.0",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "5dc7f3f422acd2569c4d82ca2bb7df9a1bbdaf1c5cf468d83dd3fec925e87aac"
+      }
+    },
+    {
+      "id": "TPL-QUALITY-PLAN",
+      "slug": "quality-plan",
+      "academy": "quality",
+      "title": {
+        "en": "Quality Plan",
+        "ar": "خطة الجودة"
+      },
+      "summary": {
+        "en": "Describe how quality will be achieved for one product, project or contract: objectives, requirements, responsibilities, and the checks at each step.",
+        "ar": "صِف كيف تتحقق الجودة لمنتج أو مشروع أو عقد واحد: الأهداف، والمتطلبات، والمسؤوليات، والفحوصات في كل خطوة."
+      },
+      "doc_title": {
+        "en": "Quality plan",
+        "ar": "خطة الجودة"
+      },
+      "sections": [
+        {
+          "id": "scope",
+          "title": {
+            "en": "Scope",
+            "ar": "النطاق"
+          }
+        },
+        {
+          "id": "manage",
+          "title": {
+            "en": "Management",
+            "ar": "الإدارة"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "subject",
+          "section": "scope",
+          "type": "text",
+          "label": {
+            "en": "Product, project or contract",
+            "ar": "المنتج أو المشروع أو العقد"
+          },
+          "required": true
+        },
+        {
+          "id": "customer",
+          "section": "scope",
+          "type": "text",
+          "label": {
+            "en": "Customer",
+            "ar": "العميل"
+          },
+          "required": true
+        },
+        {
+          "id": "requirements",
+          "section": "scope",
+          "type": "textarea",
+          "label": {
+            "en": "Applicable requirements (contract, standards, regulations)",
+            "ar": "المتطلبات المنطبقة (العقد، المعايير، الأنظمة)"
+          },
+          "required": true
+        },
+        {
+          "id": "objectives",
+          "section": "scope",
+          "type": "textarea",
+          "label": {
+            "en": "Quality objectives for this plan",
+            "ar": "أهداف الجودة لهذه الخطة"
+          },
+          "required": true
+        },
+        {
+          "id": "responsible",
+          "section": "manage",
+          "type": "text",
+          "label": {
+            "en": "Who is responsible for quality",
+            "ar": "من المسؤول عن الجودة"
+          },
+          "required": true
+        },
+        {
+          "id": "documents",
+          "section": "manage",
+          "type": "textarea",
+          "label": {
+            "en": "How documents and records are controlled",
+            "ar": "كيف تُضبط الوثائق والسجلات"
+          },
+          "required": false
+        },
+        {
+          "id": "changes",
+          "section": "manage",
+          "type": "textarea",
+          "label": {
+            "en": "How changes are controlled",
+            "ar": "كيف تُضبط التغييرات"
+          },
+          "required": false
+        },
+        {
+          "id": "date",
+          "section": "manage",
+          "type": "date",
+          "label": {
+            "en": "Date issued",
+            "ar": "تاريخ الإصدار"
+          },
+          "required": true
+        }
+      ],
+      "table": {
+        "title": {
+          "en": "Inspection and test plan",
+          "ar": "خطة الفحص والاختبار"
+        },
+        "min_rows": 1,
+        "columns": [
+          {
+            "id": "step",
+            "type": "text",
+            "label": {
+              "en": "Process step",
+              "ar": "خطوة العملية"
+            },
+            "required": true
+          },
+          {
+            "id": "criteria",
+            "type": "textarea",
+            "label": {
+              "en": "Acceptance criteria",
+              "ar": "معايير القبول"
+            },
+            "required": true
+          },
+          {
+            "id": "method",
+            "type": "text",
+            "label": {
+              "en": "Check method",
+              "ar": "طريقة الفحص"
+            },
+            "required": true
+          },
+          {
+            "id": "frequency",
+            "type": "text",
+            "label": {
+              "en": "Frequency",
+              "ar": "التكرار"
+            },
+            "required": true
+          },
+          {
+            "id": "who",
+            "type": "text",
+            "label": {
+              "en": "Responsibility",
+              "ar": "المسؤولية"
+            },
+            "required": true
+          },
+          {
+            "id": "record",
+            "type": "text",
+            "label": {
+              "en": "Record",
+              "ar": "السجل"
+            },
+            "required": false
+          }
+        ]
+      },
+      "exports": [
+        "csv",
+        "xls",
+        "doc",
+        "print",
+        "json"
+      ],
+      "competencies": [
+        "QM-01",
+        "ISO-02"
+      ],
+      "labs": [
+        "LAB-FMEA"
+      ],
+      "courses": [
+        "CRS-Q-CAPA"
+      ],
+      "toolkits": [
+        "iso9001"
+      ],
+      "guidance": [
+        {
+          "en": "Each check has acceptance criteria, a method and a record.",
+          "ar": "لكل فحص معايير قبول وطريقة وسجل."
+        },
+        {
+          "en": "Plan checks where the risk of failure is highest.",
+          "ar": "خطط الفحوصات حيث يكون خطر الفشل أعلى."
+        }
+      ],
+      "cover": {
+        "motif": "steps",
+        "icon": "layers"
+      },
+      "version": "0.11.0",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "7806f5bf2970e48e82627630eeaa51767802b5cd39946c6c6bc12baf9a0c2cc0"
+      }
+    },
+    {
+      "id": "TPL-TRAINING-MATRIX",
+      "slug": "training-matrix",
+      "academy": "iso",
+      "title": {
+        "en": "Training Matrix",
+        "ar": "مصفوفة التدريب"
+      },
+      "summary": {
+        "en": "List people, the competences their role needs and their current level; the gap is calculated and you plan training against it.",
+        "ar": "سجّل الأشخاص والكفاءات التي يحتاجها دورهم ومستواهم الحالي؛ وتُحسب الفجوة وتخطط التدريب مقابلها."
+      },
+      "doc_title": {
+        "en": "Training matrix",
+        "ar": "مصفوفة التدريب"
+      },
+      "sections": [
+        {
+          "id": "about",
+          "title": {
+            "en": "About this matrix",
+            "ar": "عن هذه المصفوفة"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "dept",
+          "section": "about",
+          "type": "text",
+          "label": {
+            "en": "Department or team",
+            "ar": "القسم أو الفريق"
+          },
+          "required": true
+        },
+        {
+          "id": "prepared",
+          "section": "about",
+          "type": "text",
+          "label": {
+            "en": "Prepared by",
+            "ar": "أعدّه"
+          },
+          "required": true
+        },
+        {
+          "id": "date",
+          "section": "about",
+          "type": "date",
+          "label": {
+            "en": "Date",
+            "ar": "التاريخ"
+          },
+          "required": true
+        },
+        {
+          "id": "review",
+          "section": "about",
+          "type": "select",
+          "label": {
+            "en": "Review frequency",
+            "ar": "تكرار المراجعة"
+          },
+          "required": true,
+          "options": [
+            {
+              "value": "6m",
+              "label": {
+                "en": "Every 6 months",
+                "ar": "كل 6 أشهر"
+              }
+            },
+            {
+              "value": "12m",
+              "label": {
+                "en": "Every 12 months",
+                "ar": "كل 12 شهرًا"
+              }
+            },
+            {
+              "value": "change",
+              "label": {
+                "en": "When roles change",
+                "ar": "عند تغيّر الأدوار"
+              }
+            }
+          ]
+        }
+      ],
+      "table": {
+        "title": {
+          "en": "Competences",
+          "ar": "الكفاءات"
+        },
+        "min_rows": 1,
+        "columns": [
+          {
+            "id": "person",
+            "type": "text",
+            "label": {
+              "en": "Person",
+              "ar": "الشخص"
+            },
+            "required": true
+          },
+          {
+            "id": "role",
+            "type": "text",
+            "label": {
+              "en": "Role",
+              "ar": "الدور"
+            },
+            "required": true
+          },
+          {
+            "id": "skill",
+            "type": "text",
+            "label": {
+              "en": "Competence",
+              "ar": "الكفاءة"
+            },
+            "required": true
+          },
+          {
+            "id": "req",
+            "type": "select",
+            "label": {
+              "en": "Required level",
+              "ar": "المستوى المطلوب"
+            },
+            "required": true,
+            "options": [
+              {
+                "value": "0",
+                "label": {
+                  "en": "0 — not yet",
+                  "ar": "0 — ليس بعد"
+                }
+              },
+              {
+                "value": "1",
+                "label": {
+                  "en": "1 — under supervision",
+                  "ar": "1 — تحت الإشراف"
+                }
+              },
+              {
+                "value": "2",
+                "label": {
+                  "en": "2 — independent",
+                  "ar": "2 — مستقل"
+                }
+              },
+              {
+                "value": "3",
+                "label": {
+                  "en": "3 — can train others",
+                  "ar": "3 — يستطيع تدريب الآخرين"
+                }
+              },
+              {
+                "value": "4",
+                "label": {
+                  "en": "4 — expert",
+                  "ar": "4 — خبير"
+                }
+              }
+            ]
+          },
+          {
+            "id": "cur",
+            "type": "select",
+            "label": {
+              "en": "Current level",
+              "ar": "المستوى الحالي"
+            },
+            "required": true,
+            "options": [
+              {
+                "value": "0",
+                "label": {
+                  "en": "0 — not yet",
+                  "ar": "0 — ليس بعد"
+                }
+              },
+              {
+                "value": "1",
+                "label": {
+                  "en": "1 — under supervision",
+                  "ar": "1 — تحت الإشراف"
+                }
+              },
+              {
+                "value": "2",
+                "label": {
+                  "en": "2 — independent",
+                  "ar": "2 — مستقل"
+                }
+              },
+              {
+                "value": "3",
+                "label": {
+                  "en": "3 — can train others",
+                  "ar": "3 — يستطيع تدريب الآخرين"
+                }
+              },
+              {
+                "value": "4",
+                "label": {
+                  "en": "4 — expert",
+                  "ar": "4 — خبير"
+                }
+              }
+            ]
+          },
+          {
+            "id": "gap",
+            "type": "computed",
+            "label": {
+              "en": "Gap",
+              "ar": "الفجوة"
+            },
+            "required": false,
+            "compute": {
+              "op": "gap",
+              "of": [
+                "req",
+                "cur"
+              ]
+            }
+          },
+          {
+            "id": "plan",
+            "type": "text",
+            "label": {
+              "en": "Planned training or action",
+              "ar": "التدريب أو الإجراء المخطط"
+            },
+            "required": false
+          },
+          {
+            "id": "due",
+            "type": "date",
+            "label": {
+              "en": "Due",
+              "ar": "الموعد"
+            },
+            "required": false
+          },
+          {
+            "id": "evidence",
+            "type": "text",
+            "label": {
+              "en": "Evidence of competence",
+              "ar": "دليل الكفاءة"
+            },
+            "required": false
+          }
+        ]
+      },
+      "exports": [
+        "csv",
+        "xls",
+        "doc",
+        "print",
+        "json"
+      ],
+      "competencies": [
+        "ISO-02",
+        "LDR-01"
+      ],
+      "labs": [
+        "LAB-EVIDENCE"
+      ],
+      "courses": [
+        "CRS-ISO-9001-AUD"
+      ],
+      "toolkits": [
+        "iso9001"
+      ],
+      "guidance": [
+        {
+          "en": "Levels: 0 not yet · 1 under supervision · 2 independent · 3 can train others · 4 expert.",
+          "ar": "المستويات: 0 ليس بعد · 1 تحت الإشراف · 2 مستقل · 3 يستطيع تدريب الآخرين · 4 خبير."
+        },
+        {
+          "en": "Record evidence of competence, not just attendance.",
+          "ar": "سجّل دليل الكفاءة، لا الحضور فقط."
+        }
+      ],
+      "cover": {
+        "motif": "grid",
+        "icon": "users"
+      },
+      "version": "0.11.0",
+      "governance": {
+        "content_status": "published",
+        "content_source": "owner",
+        "version": "0.11.0",
+        "reviewer": "مدثر سلامه",
+        "review_date": "2026-11-12",
+        "change_note": "Published on the platform owner's approval (مدثر سلامه (Platform owner), 2026-11-12) after the AI-assisted pre-review; not an independent expert review. Drafted by: ai_draft. Review file cia-review-decisions-2026-11-12-owner-approval.json — Pre-review: deliverables/phase-11/review/pre-review-findings.json",
+        "drafted_by": "ai_draft",
+        "approval_basis": "owner_approval_after_ai_prereview",
+        "approved_hash": "ce1a679095013174404244adda5709fdcc4cbb3ccd921b6f0324410102ec89a1"
+      }
+    }
+  ]
+}

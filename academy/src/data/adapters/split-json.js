@@ -42,7 +42,8 @@ export class SplitJsonAdapter {
     return def;
   }
   async read(collection) {
-    if (collection === 'courses-index') return structuredClone(await this.file('courses-index.json'));
+    /* courses-index, labs-index (Phase 11): one light file each. */
+    if (/^[a-z]+-index$/.test(collection)) return structuredClone(await this.file(`${collection}.json`));
     const def = await this.collectionDef(collection);
     return this.readShards(collection, Object.keys(def.shards));
   }

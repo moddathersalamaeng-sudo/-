@@ -13,6 +13,8 @@ import { continueList, dashboardSummary, cardProgress, ACADEMIES, goalAcademy, a
 import { courseStatus } from '../domain/learner-model.mjs';
 import { starterCourse, lessonHref, progressLine } from './home.js';
 import { profileView, myCompetenciesView } from './profile.js';
+import { labProgress } from '../domain/labs.mjs';
+import { docProgress } from '../domain/templates.mjs';
 import { recommendationsView, learningPathView } from './recommendations.js';
 
 export const MY_TABS = ['progress', 'path', 'recommendations', 'competencies', 'profile'];
@@ -42,7 +44,10 @@ function starters(ctx, content, learner) {
 
 function progressTab(ctx) {
   const { t, i18n } = ctx;
-  const r = dataRegion({ t, load: async () => ({ ...(await loadLight(ctx)), favs: await ctx.repos.libraryFavorites.list().catch(() => []), library: await ctx.repos.library.listVisible(ctx.session.roles).catch(() => []) }), render: ({ content, learner, favs, library }) => {
+  const r = dataRegion({ t, load: async () => ({ ...(await loadLight(ctx)), favs: await ctx.repos.libraryFavorites.list().catch(() => []), library: await ctx.repos.library.listVisible(ctx.session.roles).catch(() => []),
+    /* Phase 11: practice-lab attempts and smart-template documents (the learner's own records). */
+    labs: await ctx.repos.labsIndex.listVisible(ctx.session.roles).catch(() => []), tpls: await ctx.repos.smartTemplates.listVisible(ctx.session.roles).catch(() => []),
+    docs: await ctx.repos.smartDocs.list().catch(() => []) }), render: ({ content, learner, favs, library, labs, tpls, docs }) => {
     const s = dashboardSummary(content.courses, learner.progress, learner.attempts, learner.bookmarks);
     const stats = h('ul', { class: 'stats my-stats', 'aria-label': t('x10a.my.statsLabel') },
       [['play', s.inProgress, 'inProgress'], ['check', s.finished, 'finished'], ['book', s.lessons, 'lessons'], ['clock', Math.round(s.minutes), 'minutes'], ['award', s.passed, 'passed'], ['bookmark', s.bookmarks + favs.length, 'saved']]
@@ -55,7 +60,7 @@ function progressTab(ctx) {
         ProgressBar({ value: p.done, max: p.total, label: t('courses.progress'), valueText: progressLine(ctx, p) }),
         p.next ? linkBtn(lessonHref(c, p.next), t('p7.course.continue'), 'primary', { 'data-action': 'continue-lesson' }) : null)))) : starters(ctx, content, learner);
     const doneSec = done.length ? h('section', { class: 'section', 'aria-labelledby': 'md-h' }, h('h2', { id: 'md-h' }, t('me.tabs.completed')),
-      h('ul', { class: 'plain' }, done.map(c => h('li', null, icon('check'), ' ', h('a', { href: `#/academy/courses/${c.slug}` }, L(ctx, c.title))))), h('p', { class: 'note' }, t('p7.readingNotCert'))) : null;
+      h('ul', { class: 'plain' }, done.map(c => h('li', null, icon('check'), ' ', h('a', { href: `#/academy/courses/${c.slug}` }, L(ctx, c.title)), ' · ', h('a', { class: 'note', href: `#/certificate/${c.slug}`, dataset: { action: 'open-certificate' } }, t('cert11.open'))))), h('p', { class: 'note' }, t('p7.readingNotCert'))) : null;
     const libs = favs.map(f => library.find(x => x.id === f.id)).filter(Boolean);
     const saved = h('section', { class: 'section', 'aria-labelledby': 'ms-h', id: 'saved', dataset: { saved: String(learner.bookmarks.length + libs.length) } }, h('h2', { id: 'ms-h' }, icon('bookmark'), ' ', t('x10a.my.saved')),
       learner.bookmarks.length || libs.length ? h('ul', { class: 'plain bm-list' },
@@ -65,7 +70,20 @@ function progressTab(ctx) {
             onClick: async () => { await ctx.repos.bookmarks.remove(b.id); toast(t('x10a.bm.removed')); r.refresh(); } }))),
         libs.map(x => h('li', null, h('span', { class: 'badge badge-neutral' }, t('x10a.bm.type.template')), ' ', h('a', { href: `#/library/${x.id}` }, L(ctx, x.title)))))
         : h('p', { class: 'note' }, t('x10a.my.savedEmpty')));
-    return h('div', null, stats, contSec, doneSec, saved,
+    const lp = labProgress(labs, learner.labAttempts || []);
+    const labSec = h('section', { class: 'section', 'aria-labelledby': 'ml-h', dataset: { labAttempts: String(lp.length) } }, h('h2', { id: 'ml-h' }, icon('flask'), ' ', t('lab11.myLabs')),
+      lp.length ? h('ul', { class: 'plain my-labs' }, lp.map(x => h('li', { dataset: { lab: x.lab.id } }, h('a', { href: `#/labs/${x.lab.slug}?attempt=${x.last.attempt_no}` }, L(ctx, x.lab.title)), ' ',
+        h('span', { class: 'note' }, t('lab11.myLabLine', { n: i18n.number(x.attempts), last: i18n.number(x.last.score), best: i18n.number(x.best) })), ' ',
+        x.awaiting ? h('span', { class: 'badge badge-info' }, t('lab11.awaitingShort')) : x.passed ? h('span', { class: 'badge badge-ok' }, t('lab11.metMark')) : null)))
+        : h('p', { class: 'note' }, t('lab11.myLabsEmpty'), ' ', h('a', { href: '#/labs', dataset: { action: 'all-labs' } }, t('lab11.allLabs'))),
+      h('p', { class: 'note' }, t('lab11.practiceNote')));
+    const myDocs = docs.map(d => ({ d, tpl: tpls.find(x => x.id === d.template_id) })).filter(x => x.tpl).sort((a, b) => String(b.d.updated_at).localeCompare(String(a.d.updated_at)));
+    const docSec = h('section', { class: 'section', 'aria-labelledby': 'mdoc-h', dataset: { myDocs: String(myDocs.length) } }, h('h2', { id: 'mdoc-h' }, icon('doc'), ' ', t('tpl11.myDocsAll')),
+      myDocs.length ? h('ul', { class: 'plain my-docs' }, myDocs.map(({ d, tpl }) => h('li', { dataset: { doc: d.id } }, h('span', { class: 'badge badge-neutral' }, L(ctx, tpl.title)), ' ',
+        h('a', { href: `#/templates/${tpl.slug}?doc=${encodeURIComponent(d.id)}` }, d.title || L(ctx, tpl.doc_title)), ' ', h('span', { class: 'note' }, d.version ? t('tpl11.versionN', { n: i18n.number(d.version) }) : t('tpl11.unsaved'),
+          ' · ', t('tpl11.progressLine', { a: i18n.number(docProgress(tpl, d).answered), q: i18n.number(tpl.questions.length), r: i18n.number(docProgress(tpl, d).rows) })))))
+        : h('p', { class: 'note' }, t('tpl11.myDocsEmpty'), ' ', h('a', { href: '#/library?tab=templates' }, t('tpl11.blockTitle'))));
+    return h('div', null, stats, contSec, doneSec, labSec, docSec, saved,
       h('p', null, h('a', { href: '#/assessments/history' }, icon('chart'), ' ', t('assessments.history'))),
       h('p', { class: 'note' }, t('me.storageNote')));
   } });
