@@ -69,9 +69,9 @@
     {
       "id": "11",
       "weight": 10,
-      "status": "in_progress",
+      "status": "complete",
       "partial": null,
-      "note": "Practice Labs & smart templates built (12 Nov 2026): 8 labs + 5 governed drafts, 6 smart templates, 13 figures. Content awaits review / owner approval."
+      "note": "Practice Labs & smart templates published on owner approval after AI pre-review (12 Nov 2026): 8 labs (+5 governed drafts), 6 smart templates with export and version history, certificate of completion, 8 figures."
     },
     {
       "id": "12",
