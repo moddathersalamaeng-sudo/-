@@ -44,6 +44,7 @@ import { toolsView } from './views/tools.js';
 import { labsIndexView, labView } from './views/labs.js';
 import { templateView, templatePrintView } from './views/templates.js';
 import { certificateView } from './views/certificate.js';
+import { passportPrintView, passportCvView, evidenceReviewView } from './views/passport.js';
 
 const ROUTES = [
   { path: '/', view: homeView, titleKey: 'home.title' },
@@ -60,6 +61,10 @@ const ROUTES = [
   { path: '/templates/:slug', view: templateView, titleKey: 'tpl11.pageTitle', parent: ['/library?tab=templates', 'nav.items.library'] },
   { path: '/certificate/:slug', view: certificateView, titleKey: 'cert11.title', parent: ['/academy/courses', 'courses.title'] },
   { path: '/templates/:slug/print', view: templatePrintView, titleKey: 'tpl11.printTitle', parent: ['/library?tab=templates', 'nav.items.library'] },
+  /* Phase 12: the passport lives in My space (#/my?tab=passport); its printable summary and the reviewer's evidence screen. */
+  { path: '/passport/print', view: passportPrintView, titleKey: 'pp12.printTitle', parent: ['/my?tab=passport', 'nav.items.mySpace'] },
+  { path: '/passport/cv', view: passportCvView, titleKey: 'pp12.cv.title', parent: ['/my?tab=passport&p=cv', 'nav.items.mySpace'] },
+  { path: '/review/evidence', view: evidenceReviewView, titleKey: 'pp12.review.title', roles: ['reviewer', 'admin'], parent: ['/review', 'p7.review.title'] },
   { path: '/me', view: meView, titleKey: 'me.title' },
   { path: '/settings', view: settingsView, titleKey: 'settings.title' },
   { path: '/about-governance', view: governanceView, titleKey: 'x10a.about.title' },
@@ -180,6 +185,14 @@ async function boot() {
       smartDocs: new CollectionRepository({ adapter: userAdapter, collection: 'smart_documents' }),
       /* D-10A-1: certificates of completion the learner printed (own data). */
       certificates: new CollectionRepository({ adapter: userAdapter, collection: 'certificates' }),
+      /* Phase 12: Professional Passport records (own data, cia:v1:<user>:*). Verifications are made by a named reviewer on this device. */
+      cpd: new CollectionRepository({ adapter: userAdapter, collection: 'cpd' }),
+      credentials: new CollectionRepository({ adapter: userAdapter, collection: 'credentials' }),
+      practiceLogs: new CollectionRepository({ adapter: userAdapter, collection: 'practice_logs' }),
+      verifications: new CollectionRepository({ adapter: userAdapter, collection: 'passport_verifications' }),
+      careerPlan: new CollectionRepository({ adapter: userAdapter, collection: 'career_plan' }),
+      passportPrefs: new CollectionRepository({ adapter: userAdapter, collection: 'passport_prefs' }),
+      cv: new CollectionRepository({ adapter: userAdapter, collection: 'cv' }),
       competencies: new ContentRepository({ adapter: competencyContent, collection: 'competencies' }),
       targetRoles: new ContentRepository({ adapter: competencyContent, collection: 'target-roles' }),
       domains: new ContentRepository({ adapter: competencyContent, collection: 'domains' }),

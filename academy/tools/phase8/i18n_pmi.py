@@ -1,7 +1,7 @@
 """Phase 8 UI strings — PMI Academy, certification explorer, course-page enrichment, home. Merged by tools/build_phase8.py."""
 
 EN = {
- "nav": {"items": {"pmiAcademy": "PMI / PMO Academy", "certification": "Certification Explorer"}},
+ "nav": {"items": {"pmiAcademy": "PMI / PMO Academy", "certification": "PMI certifications"}},
  "pmi": {
   "eyebrow": "PMI · PMO · P3O Academy", "title": "Project, programme, portfolio and PMO learning",
   "lede": "Start from what you can already show, follow a route that skips what you have demonstrated, read every practice of the ISO 21500, P3O, P3M3 and PMO Excellence guides, and plan your PMI certification with facts checked on PMI's own pages.",
@@ -69,7 +69,7 @@ EN = {
 }
 
 AR = {
- "nav": {"items": {"pmiAcademy": "أكاديمية PMI ومكاتب المشاريع", "certification": "مستكشف الشهادات"}},
+ "nav": {"items": {"pmiAcademy": "أكاديمية PMI ومكاتب المشاريع", "certification": "شهادات PMI"}},
  "pmi": {
   "eyebrow": "أكاديمية PMI · مكاتب المشاريع · P3O", "title": "تعلم المشاريع والبرامج والمحافظ ومكاتب المشاريع",
   "lede": "ابدأ مما تستطيع إثباته، واتبع مسارًا يتجاوز ما أثبتّه، واقرأ كل ممارسة في أدلة ISO 21500 وP3O وP3M3 وتميّز مكاتب المشاريع، وخطط لشهادتك من PMI بحقائق تم التحقق منها في صفحات PMI نفسها.",

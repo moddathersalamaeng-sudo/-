@@ -40,7 +40,9 @@ export function reviewView(ctx, match) {
   const head = pageHead(ctx, { eyebrow: t('p7.review.eyebrow'), title: t('p7.review.title'), lede: t('p7.review.lede') });
   const filter = { collection: match.query?.collection || 'courses', state: match.query?.state || 'pending', q: '' };
   const region = dataRegion({ t, load: () => loadQueue(ctx), render: data => queue(ctx, data, filter, region) });
-  return h('div', null, head, h('div', { class: 'banner banner-info', role: 'note' }, t('p7.review.howItWorks')), region);
+  return h('div', null, head, h('div', { class: 'banner banner-info', role: 'note' }, t('p7.review.howItWorks')),
+    /* Phase 12: learner evidence (written lab tasks, passport entries) is reviewed on its own screen. */
+    h('p', null, h('a', { class: 'btn btn-secondary', href: '#/review/evidence', dataset: { action: 'open-evidence-review' } }, t('pp12.review.title'))), region);
 }
 
 function queue(ctx, { items, decisions, session }, filter, region) {

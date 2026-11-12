@@ -1,0 +1,82 @@
+/* Continual Improvement Academy — Phase 12: Professional Passport, CPD log, wallet, practice logs, career roadmap,
+   passport print view and the evidence-review screen. Shared tokens only (light + dark). © 2026 Modather Salama. */
+
+.passport { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-4); min-inline-size: 0; }
+.pp-hero { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-4); padding: var(--s-4); background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r-lg); border-block-start: 3px solid var(--gold); }
+.pp-hero-art { border-radius: var(--r-md); overflow: hidden; aspect-ratio: 4 / 1; background: var(--navy); }
+.pp-hero-art .banner-art { display: block; inline-size: 100%; block-size: 100%; }
+[dir="rtl"] .pp-hero-art .banner-art { transform: scaleX(-1); }
+.pp-hero-text > * { margin-block: 0 var(--s-2); }
+.pp-hero-text h2 { font-size: var(--fs-xl); }
+@media (min-width: 64rem) { .pp-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); align-items: center; } .pp-hero-art { aspect-ratio: 16 / 9; } }
+
+.pp-counts { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); }
+.pp-counts li { display: inline-flex; align-items: center; gap: var(--s-1); }
+.ev-badge .ico { inline-size: 1em; block-size: 1em; vertical-align: -0.12em; }
+.pp-badges .badge { margin-inline-end: var(--s-1); }
+
+.pp-filters { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) var(--s-3); margin-block: var(--s-2) var(--s-3); }
+.pp-entries, .pp-list, .pp-sugg, .pp-milestones { display: grid; gap: var(--s-3); grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); }
+.pp-entry, .pp-list > .card, .pp-sugg > .card, .pp-milestone { gap: var(--s-2); min-inline-size: 0; }
+.pp-entry > *, .pp-list > .card > *, .pp-sugg > .card > *, .pp-milestone > * { margin: 0; }
+.pp-entry-head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-1) var(--s-2); }
+.pp-entry h3, .pp-list h3 { overflow-wrap: anywhere; }
+.pp-verified { color: var(--ok-ink, var(--ink)); }
+.pp-due { color: var(--warn-ink, var(--ink)); font-weight: 600; }
+
+.pp-rules { margin-block: var(--s-3); padding: var(--s-3) var(--s-4); background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--r-md); }
+.pp-rules summary { cursor: pointer; font-weight: 600; }
+.pp-statuses { display: grid; gap: var(--s-2); margin-block: var(--s-3); }
+.pp-statuses > div { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-1); }
+@media (min-width: 48rem) { .pp-statuses > div { grid-template-columns: 14rem minmax(0, 1fr); align-items: start; } }
+.pp-statuses dd { margin: 0; }
+.pp-start { grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); }
+.pp-start .card p .ico { inline-size: 1.75rem; block-size: 1.75rem; color: var(--gold); }
+
+.pp-form .field-wide { grid-column: 1 / -1; }
+.pp-form textarea { inline-size: 100%; }
+.req { color: var(--bad); }
+.pp-logform summary { cursor: pointer; font-weight: 600; }
+.pp-logform h3 { font-size: var(--fs-md); margin-block: var(--s-3) var(--s-2); }
+.pp-trail { margin: var(--s-2) 0 0; padding-inline-start: var(--s-5); font-size: var(--fs-sm); }
+
+.pp-route { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-3); align-items: center; margin-block: var(--s-3); }
+.pp-route .panel { margin: 0; }
+.pp-route .panel > * { margin-block: 0 var(--s-1); }
+.pp-role { font-size: var(--fs-lg); font-weight: 700; }
+.pp-arrow { justify-self: center; color: var(--gold); transform: rotate(90deg); }
+.pp-arrow .ico { inline-size: 2rem; block-size: 2rem; }
+@media (min-width: 48rem) { .pp-route { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); } .pp-arrow { transform: none; } [dir="rtl"] .pp-arrow { transform: scaleX(-1); } }
+.pp-milestone.is-done { border-style: dashed; background: var(--surface-2); }
+.pp-actions { display: grid; gap: var(--s-1); }
+
+.pp-review { gap: var(--s-3); }
+.pp-review-task { border-block-start: 1px dashed var(--line); padding-block-start: var(--s-3); display: grid; gap: var(--s-2); }
+.pp-review-task > * { margin: 0; }
+.pp-answer { margin: 0; padding: var(--s-3); background: var(--surface-2); border-inline-start: 3px solid var(--gold); border-radius: var(--r-sm); white-space: pre-wrap; overflow-wrap: anywhere; }
+
+.pp-print .table { font-size: var(--fs-sm); }
+@media print {
+  .hdr, .ftr, .crumbs, .tabbar, .pp-print .phead .btnrow { display: none !important; }
+  .pp-print .section { break-inside: avoid-page; }
+  .pp-print .badge { border: 1px solid currentColor; }
+}
+.tablewrap { max-inline-size: 100%; min-inline-size: 0; }
+.pp-reviewer .tbl select { min-inline-size: 6rem; }
+
+/* ---------- CV builder (ADD-12) */
+.cv-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-4); align-items: start; }
+@media (min-width: 72rem) { .cv-grid { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); } }
+.cv-sheet { background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: var(--r-md); padding: var(--s-5); min-inline-size: 0; overflow-wrap: anywhere; }
+.cv-head { border-block-end: 2px solid var(--gold); padding-block-end: var(--s-3); margin-block-end: var(--s-3); }
+.cv-head > p { margin: 0 0 var(--s-1); }
+.cv-name { font-family: Georgia, 'Times New Roman', serif; font-size: var(--fs-2xl); font-weight: 700; line-height: 1.2; }
+.cv-headline { font-weight: 600; }
+.cv-contact { color: var(--ink-soft); font-size: var(--fs-sm); }
+.cv-sec .cv-h { font-family: Georgia, 'Times New Roman', serif; font-size: var(--fs-md); border-block-end: 1px solid var(--line); padding-block-end: var(--s-1); margin-block: var(--s-4) var(--s-2); }
+.cv-sec ul { margin: 0; padding-inline-start: var(--s-5); display: grid; gap: var(--s-2); }
+.cv-item { display: block; font-weight: 600; }
+.cv-sub { display: block; color: var(--ink-soft); font-size: var(--fs-sm); }
+@media print { .cv-print .phead .btnrow, .cv-print .banner { display: none !important; } .cv-sheet { border: 0; padding: 0; } }
+.pp-reviewer .tbl-wrap, .pp-print .tbl-wrap { position: relative; }

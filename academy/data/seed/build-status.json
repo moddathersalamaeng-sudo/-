@@ -76,7 +76,9 @@
     {
       "id": "12",
       "weight": 7,
-      "status": "planned"
+      "status": "in_progress",
+      "partial": null,
+      "note": "Professional Passport, CPD log, credential wallet, practice logs and career roadmap built (12 Nov 2026) in My space → Passport; 4 figures await review / owner approval."
     },
     {
       "id": "12A",

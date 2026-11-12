@@ -9646,6 +9646,261 @@
         "review_date": null,
         "change_note": "Phase 11 explanatory figure (original CIA diagram, data-driven SVG; lab scenario numbers); awaiting review."
       }
+    },
+    {
+      "id": "FIG-PP-EVIDENCE",
+      "template": "ladder",
+      "caption": {
+        "en": "How strong is the basis of a passport entry?",
+        "ar": "ما مدى قوة الأساس الذي يقوم عليه إدخال الجواز؟"
+      },
+      "read": {
+        "en": "Read from the bottom. Each step needs its own rule: you record it, a course or the platform scores it, a named reviewer checks it, or an external issuer certifies it. Nothing climbs a step without its rule.",
+        "ar": "اقرأ من الأسفل. لكل درجة قاعدتها: أنت تسجّله، أو تقيّمه دورة أو المنصة، أو يتحقق منه مراجع مُسمّى، أو تعتمده جهة مانحة خارجية. ولا يصعد شيء درجة دون قاعدتها."
+      },
+      "levels": [
+        {
+          "t": {
+            "en": "Externally certified",
+            "ar": "معتمد من جهة خارجية"
+          },
+          "d": {
+            "en": "The issuer certifies it",
+            "ar": "الجهة المانحة تعتمده"
+          }
+        },
+        {
+          "t": {
+            "en": "Reviewer-verified",
+            "ar": "تحقق منه مراجع"
+          },
+          "d": {
+            "en": "Named reviewer, method, date",
+            "ar": "مراجع مُسمّى وطريقة وتاريخ"
+          }
+        },
+        {
+          "t": {
+            "en": "Platform-assessed",
+            "ar": "مُقيَّم من المنصة"
+          },
+          "d": {
+            "en": "Scored automatically",
+            "ar": "يُصحَّح آليًا"
+          }
+        },
+        {
+          "t": {
+            "en": "Course-assessed",
+            "ar": "مُقيَّم ضمن دورة"
+          },
+          "d": {
+            "en": "Final assessment passed",
+            "ar": "اجتياز التقييم النهائي"
+          }
+        },
+        {
+          "t": {
+            "en": "Self-declared",
+            "ar": "مُصرَّح به ذاتيًا"
+          },
+          "d": {
+            "en": "You recorded it",
+            "ar": "أنت سجّلته"
+          }
+        }
+      ],
+      "highlight": 1,
+      "owner_phase": 12,
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.12.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 12 explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
+      }
+    },
+    {
+      "id": "FIG-PP-FLOW",
+      "template": "flow",
+      "caption": {
+        "en": "How your work reaches the passport",
+        "ar": "كيف يصل عملك إلى الجواز"
+      },
+      "read": {
+        "en": "Learning and practice create evidence; assessment and review give it a status; the passport keeps it with its date, so the roadmap can tell you what to do next.",
+        "ar": "يُنتج التعلم والممارسة الأدلة، ويمنحها التقييم والمراجعة حالتها، ويحفظها الجواز مع تاريخها، لتخبرك الخارطة بما تفعله بعد ذلك."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Learn",
+            "ar": "التعلم"
+          }
+        },
+        {
+          "t": {
+            "en": "Practise",
+            "ar": "الممارسة"
+          }
+        },
+        {
+          "t": {
+            "en": "Assess",
+            "ar": "التقييم"
+          }
+        },
+        {
+          "t": {
+            "en": "Verify",
+            "ar": "التحقق"
+          }
+        },
+        {
+          "t": {
+            "en": "Record",
+            "ar": "التسجيل"
+          }
+        },
+        {
+          "t": {
+            "en": "Plan next",
+            "ar": "تخطيط الخطوة التالية"
+          }
+        }
+      ],
+      "highlight": 3,
+      "owner_phase": 12,
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.12.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 12 explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
+      }
+    },
+    {
+      "id": "FIG-PP-ROADMAP",
+      "template": "flow",
+      "caption": {
+        "en": "From your current role to your target role",
+        "ar": "من دورك الحالي إلى دورك المستهدف"
+      },
+      "read": {
+        "en": "Start from your current evidence, compare it with what the target role needs, close the gaps in milestones of a few competencies each, and show the result with new evidence. It is one route, not the only one.",
+        "ar": "ابدأ من أدلتك الحالية، وقارنها بما يحتاجه الدور المستهدف، وأغلق الفجوات على مراحل تضم كل منها بضع كفاءات، ثم أظهر النتيجة بأدلة جديدة. وهذا مسار واحد، وليس الوحيد."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Current role",
+            "ar": "الدور الحالي"
+          }
+        },
+        {
+          "t": {
+            "en": "Role gaps",
+            "ar": "فجوات الدور"
+          }
+        },
+        {
+          "t": {
+            "en": "Milestones",
+            "ar": "المراحل"
+          }
+        },
+        {
+          "t": {
+            "en": "New evidence",
+            "ar": "أدلة جديدة"
+          }
+        },
+        {
+          "t": {
+            "en": "Target role",
+            "ar": "الدور المستهدف"
+          }
+        }
+      ],
+      "highlight": 2,
+      "owner_phase": 12,
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.12.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 12 explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
+      }
+    },
+    {
+      "id": "FIG-PP-CPD",
+      "template": "cycle",
+      "caption": {
+        "en": "A CPD cycle you can keep",
+        "ar": "دورة تطوير مهني يمكنك المداومة عليها"
+      },
+      "read": {
+        "en": "Plan from your gaps, do the activity, reflect on what changed in your practice, and record the hours with their evidence. CIA records the hours; your professional body decides what it accepts.",
+        "ar": "خطّط انطلاقًا من فجواتك، ونفّذ النشاط، وتأمل ما تغيّر في ممارستك، وسجّل الساعات مع أدلتها. تسجّل الأكاديمية الساعات، وجهتك المهنية تقرر ما تقبله."
+      },
+      "center": {
+        "en": "Your practice",
+        "ar": "ممارستك"
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Plan",
+            "ar": "التخطيط"
+          },
+          "d": {
+            "en": "From the gaps",
+            "ar": "من الفجوات"
+          }
+        },
+        {
+          "t": {
+            "en": "Do",
+            "ar": "التنفيذ"
+          },
+          "d": {
+            "en": "Course, lab, work",
+            "ar": "دورة أو مختبر أو عمل"
+          }
+        },
+        {
+          "t": {
+            "en": "Reflect",
+            "ar": "التأمل"
+          },
+          "d": {
+            "en": "What changed",
+            "ar": "ما الذي تغيّر"
+          }
+        },
+        {
+          "t": {
+            "en": "Record",
+            "ar": "التسجيل"
+          },
+          "d": {
+            "en": "Hours and evidence",
+            "ar": "الساعات والأدلة"
+          }
+        }
+      ],
+      "owner_phase": 12,
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.12.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 12 explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
+      }
     }
   ]
 }

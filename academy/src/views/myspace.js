@@ -16,8 +16,10 @@ import { profileView, myCompetenciesView } from './profile.js';
 import { labProgress } from '../domain/labs.mjs';
 import { docProgress } from '../domain/templates.mjs';
 import { recommendationsView, learningPathView } from './recommendations.js';
+import { passportPanel } from './passport.js';
 
-export const MY_TABS = ['progress', 'path', 'recommendations', 'competencies', 'profile'];
+/* Phase 12: the Professional Passport is a My space tab (no new top-level item). */
+export const MY_TABS = ['progress', 'passport', 'path', 'recommendations', 'competencies', 'profile'];
 
 function onboardingCard(ctx) {
   const { t } = ctx;
@@ -84,7 +86,7 @@ function progressTab(ctx) {
           ' · ', t('tpl11.progressLine', { a: i18n.number(docProgress(tpl, d).answered), q: i18n.number(tpl.questions.length), r: i18n.number(docProgress(tpl, d).rows) })))))
         : h('p', { class: 'note' }, t('tpl11.myDocsEmpty'), ' ', h('a', { href: '#/library?tab=templates' }, t('tpl11.blockTitle'))));
     return h('div', null, stats, contSec, doneSec, labSec, docSec, saved,
-      h('p', null, h('a', { href: '#/assessments/history' }, icon('chart'), ' ', t('assessments.history'))),
+      h('p', null, h('a', { href: '#/assessments/history' }, icon('chart'), ' ', t('assessments.history')), ' · ', h('a', { href: '#/my?tab=passport', dataset: { action: 'open-passport' } }, icon('award'), ' ', t('pp12.openFromProgress'))),
       h('p', { class: 'note' }, t('me.storageNote')));
   } });
   return r;
@@ -155,6 +157,7 @@ export function mySpaceView(ctx, match) {
   const sub = { ...match, path: '/my' };
   const tabs = {
     progress: () => progressTab(ctx),
+    passport: () => passportPanel(ctx, match),
     path: () => h('div', null, planPanel(ctx), embed(learningPathView(ctx, sub))),
     recommendations: () => embed(recommendationsView(ctx, sub)),
     competencies: () => embed(myCompetenciesView(ctx, sub)),

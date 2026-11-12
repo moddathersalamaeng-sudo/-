@@ -1395,6 +1395,25 @@
       "figures": [
         "FIG-LAB-KPICARD"
       ]
+    },
+    {
+      "id": "passport:main",
+      "figures": [
+        "FIG-PP-EVIDENCE",
+        "FIG-PP-FLOW"
+      ]
+    },
+    {
+      "id": "passport:roadmap",
+      "figures": [
+        "FIG-PP-ROADMAP"
+      ]
+    },
+    {
+      "id": "passport:cpd",
+      "figures": [
+        "FIG-PP-CPD"
+      ]
     }
   ]
 }

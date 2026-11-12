@@ -28,6 +28,11 @@ Blocking checks (a record that fails one is NOT a candidate):
                    has a cover and a figure; clause references resolve in the owner's guides; no audit-certification, CPD, PDU, RU or
                    EFQM-assessment claim; governed draft labs (`draft: true`) stay drafts. Templates: questions and columns bilingual,
                    computed columns use the safe operations only.
+  B12 passport (Phase 12): Phase 12 figures use a known template with bilingual caption, "how to read it" and labels, and carry
+                   no numbers or claims; the "pp12" interface strings exist in both languages for every key, explain all five evidence
+                   statuses and every credential status, and contain no accreditation, PDU, RU, recognised-CPD, CPD-provider,
+                   "verified by CIA", EFQM-assessment or audit-certification claim unless explicitly negated; badge names never use
+                   "certificate" or "certified".
 Advisory checks (reported, not blocking): duplicate prompts, very long options, answer-key position balance.
 """
 import json
@@ -38,7 +43,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SEED = ROOT / "data" / "seed"
-OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-11" / "review"
+OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-12" / "review"
 load = lambda n: json.loads((SEED / f"{n}.json").read_text(encoding="utf-8"))["items"]  # noqa: E731
 guides = {g["slug"]: json.loads((ROOT / "data" / "guides" / f"{g['slug']}.json").read_text(encoding="utf-8"))["guide"]
           for g in json.loads((ROOT / "data" / "guides" / "index.json").read_text(encoding="utf-8"))["items"]}
@@ -326,6 +331,37 @@ for x in data.get("smart-templates", []):
     for q_ in x["questions"]:
         if not (q_["label"].get("en") and q_["label"].get("ar")): flag("smart-templates", x["id"], "B11", f"question {q_['id']} not bilingual")
 
+# ------------------------------------------------------------------ B12 passport (Phase 12)
+PP_CLAIM = re.compile(r"(accredited|accreditation|\bPDU\b|\bRU\b|recognised CPD|CPD provider|verified by CIA|CIA[- ]verified|certified by CIA|EFQM assessment|audit certification)", re.I)
+PP_NEG = re.compile(r"\b(not|no|never|nor|without|does not|doesn't|isn't)\b", re.I)
+for f_ in data["figures"]:
+    if f_.get("owner_phase") != 12 or f_["governance"]["content_status"] == "published":
+        continue
+    if f_.get("template") not in ("cycle", "flow", "ladder", "bars", "matrix"): flag("figures", f_["id"], "B12", "unknown template")
+    for k in ("caption", "read"):
+        if not (f_.get(k, {}).get("en") and f_.get(k, {}).get("ar")): flag("figures", f_["id"], "B12", f"{k} not bilingual")
+    for path, v in texts(f_):
+        if re.search(r"\d", v["en"]) and not path.startswith("read") and "ISO" not in v["en"]: flag("figures", f_["id"], "B12", f"{path}: number in a passport figure")
+        for m in PP_CLAIM.finditer(v["en"]):
+            if not PP_NEG.search(v["en"][max(0, m.start() - 80):m.end()]): flag("figures", f_["id"], "B12", f"{path}: possible claim")
+PP_I18N = {lang: json.loads((ROOT / "data" / "i18n" / f"{lang}.json").read_text(encoding="utf-8")).get("pp12", {}) for lang in ("en", "ar")}
+def _flat(o, p=""):
+    return [x for k, v in o.items() for x in (_flat(v, p + k + ".") if isinstance(v, dict) else [(p + k, v)])]
+pp_en, pp_ar = dict(_flat(PP_I18N["en"])), dict(_flat(PP_I18N["ar"]))
+PP_FINDINGS = []
+if set(pp_en) != set(pp_ar): PP_FINDINGS.append(f"keys differ between languages: {sorted(set(pp_en) ^ set(pp_ar))[:8]}")
+for s_ in ("self_declared", "course_assessed", "platform_assessed", "reviewer_verified", "externally_certified"):
+    if not (pp_en.get("statusWhy." + s_) and pp_ar.get("statusWhy." + s_)): PP_FINDINGS.append(f"status {s_} not explained in both languages")
+for s_ in ("self_declared", "evidence_uploaded", "pending_verification", "verified", "expired", "rejected"):
+    if not (pp_en.get("cred.stateWhy." + s_) and pp_ar.get("cred.stateWhy." + s_)): PP_FINDINGS.append(f"credential status {s_} not explained")
+for k_, v_ in pp_en.items():
+    for m in PP_CLAIM.finditer(str(v_)):
+        if not PP_NEG.search(str(v_)[max(0, m.start() - 80):m.end()]): PP_FINDINGS.append(f"pp12.{k_}: possible claim “{str(v_)[max(0, m.start() - 40):m.end() + 10]}”")
+    if k_.startswith("badges.") and k_ not in ("badges.title", "badges.notCert") and re.search(r"certif", str(v_), re.I): PP_FINDINGS.append(f"pp12.{k_}: badge named like a certificate")
+for k_, v_ in pp_ar.items():
+    if not str(v_).strip(): PP_FINDINGS.append(f"pp12.{k_}: empty Arabic text")
+advisory.append(f"B12 interface strings (pp12): {len(pp_en)} keys per language, {len(PP_FINDINGS)} finding(s)" + ("" if not PP_FINDINGS else ": " + "; ".join(PP_FINDINGS[:5])))
+
 # ------------------------------------------------------------------ advisory
 prompts = Counter(q["prompt"]["en"].strip().lower() for q in data["questions"])
 for p_, n in prompts.items():
@@ -399,6 +435,9 @@ REVIEWED = {
     ("labs:LAB-RCA", "B2"): "The quoted text is CIA's own model causal-chain paragraph for the fictional bottling line.",
     ("labs:LAB-FMEA", "B2"): "The quoted text is CIA's own model FMEA action plan for the fictional crimping step.",
     ("labs:LAB-PROJECT-RISK", "B2"): "The quoted text is CIA's own model risk-register entry for the fictional fit-out project.",
+    # Phase 12 (12 Nov 2026), read during the pre-review:
+    ("figures:FIG-PP-EVIDENCE", "B1"): "Names the evidence status \u201cexternally certified\u201d and says the issuer certifies it; the figure makes no claim that CIA certifies or accredits anything.",
+    ("figures:FIG-PP-CPD", "B1"): "Describes the learner's own CPD cycle; its explanation states that CIA only records hours and the professional body decides what it accepts \u2014 no CPD award claim."
 }
 cleared = defaultdict(list)
 for key, fs in list(findings.items()):
@@ -415,7 +454,7 @@ for coll, r in drafts:
     key = f"{coll}:{r['id']}"
     (blocked if findings.get(key) else candidates)[coll].append(r["id"])
 OUT.mkdir(parents=True, exist_ok=True)
-result = {"schema": "cia.pre-review.v1", "date": "2026-11-12", "drafts": len(drafts), "generated_questions_checked": gen_checked,
+result = {"schema": "cia.pre-review.v1", "date": "2026-11-12", "interface_strings_b12": PP_FINDINGS, "drafts": len(drafts), "generated_questions_checked": gen_checked,
           "candidates": candidates, "blocked": {k: {i: findings[f"{k}:{i}"] for i in v} for k, v in blocked.items()},
           "cleared_after_reading": {k: v for k, v in cleared.items() if v}, "advisory": advisory}
 (OUT / "pre-review-findings.json").write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")
