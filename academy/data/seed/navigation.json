@@ -17,7 +17,31 @@
       ],
       "requiredTier": "free",
       "primary": true,
-      "route": "/"
+      "route": "/",
+      "placement": "top",
+      "icon": "home",
+      "order": 1
+    },
+    {
+      "group": "learn",
+      "kind": "route",
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": true,
+      "id": "academies",
+      "labelKey": "nav.items.academies",
+      "phase": 10,
+      "route": "/academies",
+      "placement": "top",
+      "icon": "grid",
+      "order": 2
     },
     {
       "id": "knowledge",
@@ -34,8 +58,10 @@
         "company_admin"
       ],
       "requiredTier": "free",
-      "primary": true,
-      "route": "/knowledge"
+      "primary": false,
+      "route": "/knowledge",
+      "placement": "hidden",
+      "mergedInto": "library"
     },
     {
       "id": "guides",
@@ -52,8 +78,10 @@
         "company_admin"
       ],
       "requiredTier": "free",
-      "primary": true,
-      "route": "/guides"
+      "primary": false,
+      "route": "/guides",
+      "placement": "hidden",
+      "mergedInto": "library"
     },
     {
       "id": "library",
@@ -70,8 +98,32 @@
         "company_admin"
       ],
       "requiredTier": "free",
-      "primary": false,
-      "route": "/library"
+      "primary": true,
+      "route": "/library",
+      "placement": "top",
+      "icon": "layers",
+      "order": 4
+    },
+    {
+      "group": "grow",
+      "kind": "route",
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": true,
+      "id": "mySpace",
+      "labelKey": "nav.items.mySpace",
+      "phase": 10,
+      "route": "/my",
+      "placement": "top",
+      "icon": "user",
+      "order": 5
     },
     {
       "id": "isoAcademy",
@@ -89,7 +141,8 @@
       ],
       "requiredTier": "free",
       "primary": false,
-      "route": "/academy/iso"
+      "route": "/academy/iso",
+      "placement": "panel"
     },
     {
       "id": "pmiAcademy",
@@ -107,7 +160,8 @@
       ],
       "requiredTier": "free",
       "primary": false,
-      "route": "/academy/pmi"
+      "route": "/academy/pmi",
+      "placement": "panel"
     },
     {
       "id": "qualityAcademy",
@@ -125,7 +179,8 @@
       ],
       "requiredTier": "free",
       "primary": false,
-      "route": "/academy/quality"
+      "route": "/academy/quality",
+      "placement": "panel"
     },
     {
       "id": "excellenceAcademy",
@@ -143,7 +198,8 @@
       ],
       "requiredTier": "free",
       "primary": false,
-      "route": "/academy/excellence"
+      "route": "/academy/excellence",
+      "placement": "panel"
     },
     {
       "id": "academy",
@@ -161,7 +217,10 @@
       ],
       "requiredTier": "free",
       "primary": true,
-      "route": "/academy/courses"
+      "route": "/academy/courses",
+      "placement": "top",
+      "icon": "book",
+      "order": 3
     },
     {
       "id": "certification",
@@ -179,7 +238,84 @@
       ],
       "requiredTier": "free",
       "primary": false,
-      "route": "/academy/pmi/certifications"
+      "route": "/academy/pmi/certifications",
+      "placement": "menu"
+    },
+    {
+      "group": "learn",
+      "kind": "route",
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "id": "qualityCerts",
+      "labelKey": "nav.items.qualityCerts",
+      "phase": 9,
+      "route": "/academy/quality/certifications",
+      "placement": "menu"
+    },
+    {
+      "group": "learn",
+      "kind": "route",
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "id": "efqmRecognition",
+      "labelKey": "nav.items.efqmRecognition",
+      "phase": 10,
+      "route": "/academy/excellence/recognition",
+      "placement": "menu"
+    },
+    {
+      "group": "learn",
+      "kind": "route",
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "id": "cmqoeCenter",
+      "labelKey": "nav.items.cmqoeCenter",
+      "phase": 9,
+      "route": "/academy/quality/cmqoe",
+      "placement": "menu"
+    },
+    {
+      "group": "learn",
+      "kind": "route",
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "id": "excellenceLab",
+      "labelKey": "nav.items.excellenceLab",
+      "phase": 10,
+      "route": "/academy/excellence/lab",
+      "placement": "menu"
     },
     {
       "id": "assessments",
@@ -197,7 +333,27 @@
       ],
       "requiredTier": "free",
       "primary": false,
-      "route": "/assessments"
+      "route": "/assessments",
+      "placement": "menu"
+    },
+    {
+      "group": "utility",
+      "kind": "route",
+      "status": "active",
+      "roles": [
+        "learner",
+        "instructor",
+        "reviewer",
+        "admin",
+        "company_admin"
+      ],
+      "requiredTier": "free",
+      "primary": false,
+      "id": "assessmentHistory",
+      "labelKey": "nav.items.assessmentHistory",
+      "phase": 5,
+      "route": "/assessments/history",
+      "placement": "user"
     },
     {
       "id": "labs",
@@ -214,7 +370,8 @@
         "company_admin"
       ],
       "requiredTier": "professional",
-      "primary": false
+      "primary": false,
+      "placement": "plan"
     },
     {
       "group": "grow",
@@ -232,7 +389,9 @@
       "primary": false,
       "id": "recommendations",
       "labelKey": "nav.items.recommendations",
-      "route": "/recommendations"
+      "route": "/recommendations",
+      "placement": "hidden",
+      "mergedInto": "mySpace"
     },
     {
       "group": "grow",
@@ -250,7 +409,9 @@
       "primary": false,
       "id": "learningPath",
       "labelKey": "nav.items.learningPath",
-      "route": "/learning-path"
+      "route": "/learning-path",
+      "placement": "hidden",
+      "mergedInto": "mySpace"
     },
     {
       "id": "me",
@@ -267,8 +428,10 @@
         "company_admin"
       ],
       "requiredTier": "free",
-      "primary": true,
-      "route": "/me"
+      "primary": false,
+      "route": "/me",
+      "placement": "hidden",
+      "mergedInto": "mySpace"
     },
     {
       "id": "profile",
@@ -286,7 +449,9 @@
       ],
       "requiredTier": "free",
       "primary": false,
-      "route": "/profile"
+      "route": "/profile",
+      "placement": "hidden",
+      "mergedInto": "mySpace"
     },
     {
       "id": "career",
@@ -303,7 +468,8 @@
         "company_admin"
       ],
       "requiredTier": "professional",
-      "primary": false
+      "primary": false,
+      "placement": "plan"
     },
     {
       "id": "passport",
@@ -320,7 +486,8 @@
         "company_admin"
       ],
       "requiredTier": "professional",
-      "primary": false
+      "primary": false,
+      "placement": "plan"
     },
     {
       "id": "cpd",
@@ -337,7 +504,8 @@
         "company_admin"
       ],
       "requiredTier": "professional",
-      "primary": false
+      "primary": false,
+      "placement": "plan"
     },
     {
       "id": "coach",
@@ -354,7 +522,8 @@
         "company_admin"
       ],
       "requiredTier": "professional",
-      "primary": false
+      "primary": false,
+      "placement": "plan"
     },
     {
       "id": "standards",
@@ -371,14 +540,15 @@
         "company_admin"
       ],
       "requiredTier": "free",
-      "primary": true,
-      "href": "../#systems"
+      "primary": false,
+      "href": "../#systems",
+      "placement": "menu"
     },
     {
       "id": "tools",
       "labelKey": "nav.items.tools",
       "group": "platform",
-      "kind": "platform",
+      "kind": "route",
       "phase": 0,
       "status": "active",
       "roles": [
@@ -390,7 +560,8 @@
       ],
       "requiredTier": "free",
       "primary": false,
-      "href": "../#tools"
+      "placement": "button",
+      "route": "/tools"
     },
     {
       "id": "resources",
@@ -407,7 +578,8 @@
         "company_admin"
       ],
       "requiredTier": "free",
-      "primary": false
+      "primary": false,
+      "placement": "plan"
     },
     {
       "id": "review",
@@ -422,7 +594,8 @@
       ],
       "requiredTier": "free",
       "primary": false,
-      "route": "/review"
+      "route": "/review",
+      "placement": "user"
     },
     {
       "id": "admin",
@@ -435,7 +608,8 @@
         "admin"
       ],
       "requiredTier": "free",
-      "primary": false
+      "primary": false,
+      "placement": "plan"
     },
     {
       "id": "company",
@@ -449,7 +623,8 @@
         "admin"
       ],
       "requiredTier": "corporate",
-      "primary": false
+      "primary": false,
+      "placement": "plan"
     },
     {
       "id": "settings",
@@ -467,7 +642,8 @@
       ],
       "requiredTier": "free",
       "primary": false,
-      "route": "/settings"
+      "route": "/settings",
+      "placement": "user"
     },
     {
       "id": "governance",
@@ -485,7 +661,8 @@
       ],
       "requiredTier": "free",
       "primary": false,
-      "route": "/about-governance"
+      "route": "/about-governance",
+      "placement": "footer"
     },
     {
       "id": "components",
@@ -499,7 +676,9 @@
       ],
       "requiredTier": "free",
       "primary": false,
-      "route": "/dev/components"
+      "route": "/dev/components",
+      "placement": "user"
     }
-  ]
+  ],
+  "note": "Phase 10A: placement decides where an entry appears — top (5 items), panel (Academies panel), menu (More, ≤ 12), user (account menu), footer, button (header Tools), hidden (merged page, still routable and redirected), plan (future phase: listed only on the build plan for reviewers and admins)."
 }

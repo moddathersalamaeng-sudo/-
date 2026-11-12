@@ -135,7 +135,7 @@ export function learningPathView(ctx, match) {
   const region = dataRegion({ t, load: () => buildRecommendationModel(ctx, routeId), render: m => {
     if (!m.pathChoices.length) return EmptyState({ title: t('phase6.noPath'), body: t('p7.pendingBody'), iconName: 'lock', action: linkBtn('#/knowledge', t('knowledge.title')) });
     const picker = h('div', { class: 'field picker' }, h('label', { for: 'route-pick' }, t('p7.path.choose')),
-      h('select', { class: 'select', id: 'route-pick', onchange: e => { routeId = e.target.value; setHashQuery('/learning-path', { route: routeId }); region.refresh().then(() => document.getElementById('route-pick')?.focus()); } },
+      h('select', { class: 'select', id: 'route-pick', onchange: e => { routeId = e.target.value; setHashQuery(match.path === '/my' ? '/my' : '/learning-path', match.path === '/my' ? { tab: 'path', route: routeId } : { route: routeId }); region.refresh().then(() => document.getElementById('route-pick')?.focus()); } },
         !m.path ? h('option', { value: '' }, t('pf.choose')) : null,
         m.pathChoices.map(p => h('option', { value: p.id, selected: m.path?.id === p.id }, L(ctx, p.title)))));
     if (!m.path) return h('div', null, picker, EmptyState({ title: t('phase6.noPath'), body: t('phase6.noPathBody'), action: linkBtn('#/profile', t('phase6.profile')) }));

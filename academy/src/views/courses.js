@@ -15,7 +15,7 @@ import { dataRegion, EmptyState, Badge, Button, StatusLabel, ProgressBar, toast,
 import { searchCourses, prerequisiteState, flatLessons, LESSON_BLOCKS } from '../domain/courses.mjs';
 import { courseStatus } from '../domain/learner-model.mjs';
 import { optionFeedback, UNKNOWN } from '../domain/assessments.mjs';
-import { loadAll, loadGuides } from '../data/learner-state.js';
+import { loadAll, loadGuides, withFullCourses, loadQuestions } from '../data/learner-state.js';
 import { L, srHeading, notAvailable, pageHead, govBadge, previewBanner, linkBtn, section, facts, chips, hours, minutes, setHashQuery, platformHref, targetHref, isReviewer, toolLink } from '../ui/academy.js';
 import { lessonGuideRefs, findItem } from '../domain/guides.mjs';
 import { guideItemBody, guideApply, guideRefsPanel, guideHref } from './guides.js';
@@ -24,6 +24,8 @@ import { studyWeeks } from '../domain/pmi.mjs';
 import { courseCover, familyOf } from '../ui/art.js';
 import { Figure } from '../ui/figures.js';
 import { courseFigures, lessonFigures } from '../domain/figures.mjs';
+import { academyOfCourse, cardProgress, ACADEMIES, academyByKey } from '../domain/academies.mjs';
+import { BookmarkButton } from '../ui/bookmark.js';
 
 const STATUS_KEY = { 'CIA INTERNAL COURSE': 'cia_internal', 'EXAM PREPARATION COURSE': 'exam_prep', 'EXTERNAL ACCREDITATION PENDING': 'accreditation_pending', 'EXTERNALLY ACCREDITED': 'externally_accredited', 'OFFICIAL PARTNER COURSE': 'official_partner' };
 export const courseStatusLabel = (ctx, c) => {
@@ -100,7 +102,8 @@ export function courseCard(ctx, c, learner) {
         h('li', null, icon('clipboard'), ' ', t(c.practical_task ? 'p9.card.practical' : 'p9.card.checks')),
         c.related_certification || c.status_label === 'EXAM PREPARATION COURSE' ? h('li', null, icon('award'), ' ', t('p9.card.examPrep')) : null),
       h('div', { class: 'badges' }, courseStatusLabel(ctx, c), stateBadge(ctx, st), isReviewer(ctx) ? govBadge(ctx, c) : null),
-      st.percent ? ProgressBar({ value: st.done, max: st.total, label: t('courses.progress'), valueText: t('p7.course.lessonsDone', { done: i18n.number(st.done), total: i18n.number(st.total) }) }) : null));
+      st.percent ? (() => { const cp = cardProgress(c, learner.progress); return ProgressBar({ value: st.done, max: st.total, label: t('courses.progress'),
+        valueText: t('x10a.card.progress', { done: i18n.number(cp.done), total: i18n.number(cp.total), left: minutes(ctx, cp.minutesLeft) }) }); })() : null));
 }
 
 /** Marketing hero of a course page: title, promise, actions and the cover, with the key facts (Phase 9). */
@@ -133,39 +136,69 @@ function valueStrip(ctx, c) {
 const OUT_ICONS = ['target', 'bulb', 'chart', 'shield', 'users', 'award', 'cycle', 'magnify'];
 const AUD_ICONS = ['users', 'briefcase', 'hardhat', 'crown', 'magnify', 'cog'];
 
+/** Hours bands for the catalogue filter (Phase 10A). */
+export const HOURS_BANDS = { short: [0, 8], medium: [8, 20], long: [20, Infinity] };
+const inBand = (c, b) => { const r = HOURS_BANDS[b]; const n = Number(c.training_hours) || 0; return !r || (n > r[0] || (r[0] === 0 && n >= 0)) && n <= r[1]; };
+
+/**
+ * Filters (?q=&academy=&level=&hours=&cert=&programme=&standard=&route=&delivery=) kept in the URL. Phase 10A: academy,
+ * hours, certification and programme filters; the former Programmes page is the programme filter (?programme=all lists them).
+ */
 export function courseCatalogView(ctx, match) {
-  const { t } = ctx;
-  const q = { q: '', level: '', standard: '', route: '', delivery: '', ...(match.query || {}) };
-  const head = pageHead(ctx, { eyebrow: t('courses.eyebrow'), title: t('courses.title'), lede: t('courses.intro'), actions: [linkBtn('#/academy/programs', t('programs.title')), linkBtn('#/academy/iso', t('nav.items.isoAcademy'))] });
+  const { t, i18n } = ctx;
+  const KEYS = ['q', 'academy', 'level', 'hours', 'cert', 'programme', 'standard', 'route', 'delivery'];
+  const q = { ...Object.fromEntries(KEYS.map(k => [k, ''])), ...(match.query || {}) };
+  const head = pageHead(ctx, { eyebrow: t('courses.eyebrow'), title: t('courses.title'), lede: t('x10a.cat.lede') });
   const region = dataRegion({ t, load: () => loadAll(ctx), render: ({ content, learner }) => {
-    if (!content.courses.length) return EmptyState({ title: t('courses.empty'), body: t('p7.course.pendingBody'), iconName: 'lock', action: linkBtn('#/knowledge', t('knowledge.title')) });
+    if (!content.courses.length) return EmptyState({ title: t('courses.empty'), body: t('p7.course.pendingBody'), iconName: 'lock', action: linkBtn('#/library', t('nav.items.library')) });
     const standards = [...new Set(content.courses.flatMap(c => c.standard_ids || []))].map(id => content.standards.find(s => s.id === id) || { id, name: id });
-    const routes = content.paths.filter(p => p.kind === 'iso_route' || p.kind === 'pm_route');
+    const routes = content.paths.filter(p => ['iso_route', 'pm_route', 'quality_route', 'excellence_route'].includes(p.kind));
     const levels = [...new Set(content.courses.map(c => c.level))].sort();
     const deliveries = [...new Set(content.courses.flatMap(c => c.delivery_modes || []))];
+    const certs = (content.certifications || []).filter(x => content.courses.some(c => c.related_certification === x.id || (x.cia_courses || []).includes(c.id)));
+    const certCourses = id => { const x = certs.find(y => y.id === id); return new Set(content.courses.filter(c => c.related_certification === id || (x?.cia_courses || []).includes(c.id)).map(c => c.id)); };
+    const programs = content.programs || [];
     const list = h('div', { class: 'cards', id: 'course-list' });
     const count = h('p', { class: 'note', role: 'status', 'aria-live': 'polite' });
+    const progBox = h('div', { class: 'prog-box' });
+    const programCard = p => h('article', { class: 'card program', dataset: { program: p.id } },
+      h('p', { class: 'eyebrow' }, icon('layers'), ' ', t('programs.title')), h('h3', null, L(ctx, p.title)), h('p', null, L(ctx, p.description)),
+      h('p', { class: 'note' }, t('labels.certificateType.' + p.certificate_type)),
+      h('ol', null, (p.stages || []).map(st => { const c = content.byId(content.courses, st.course_id); return h('li', null, c ? h('a', { href: `#/academy/courses/${c.slug}` }, L(ctx, c.title)) : st.course_id, ' ', st.mandatory ? Badge({ label: t('p7.programs.mandatory'), tone: 'neutral' }) : null); })));
     const paint = () => {
-      const xs = searchCourses(content.courses, q.q, { level: q.level, delivery: q.delivery })
+      let xs = searchCourses(content.courses, q.q, { level: q.level, delivery: q.delivery })
+        .filter(c => !q.academy || academyOfCourse(c) === q.academy)
+        .filter(c => !q.hours || inBand(c, q.hours))
         .filter(c => !q.standard || (c.standard_ids || []).includes(q.standard))
         .filter(c => !q.route || (c.route_ids || []).includes(q.route));
-      count.textContent = t('p7.course.count', { n: ctx.i18n.number(xs.length) });
+      if (q.cert) { const ids = certCourses(q.cert); xs = xs.filter(c => ids.has(c.id)); }
+      const prog = programs.find(p => p.id === q.programme);
+      if (prog) { const order = (prog.stages || []).map(s => s.course_id); xs = xs.filter(c => order.includes(c.id)).sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id)); }
+      progBox.replaceChildren(...(q.programme === 'all' ? (programs.length ? programs.map(programCard) : [EmptyState({ title: t('programs.empty'), body: t('programs.emptyBody'), iconName: 'lock', level: 3 })]) : prog ? [programCard(prog)] : []));
+      count.textContent = t('p7.course.count', { n: i18n.number(xs.length) });
       list.replaceChildren(...(xs.length ? xs.map(c => courseCard(ctx, c, learner)) : [EmptyState({ title: t('p7.course.noMatch'), body: t('p7.course.noMatchBody') })]));
       setHashQuery('/academy/courses', q);
     };
-    const sel = (name, label, options) => h('div', { class: 'field' }, h('label', { for: 'cf-' + name }, label),
+    const sel = (name, label, options, anyKey = 'p7.course.any') => h('div', { class: 'field' }, h('label', { for: 'cf-' + name }, label),
       h('select', { class: 'select', id: 'cf-' + name, name, onchange: e => { q[name] = e.target.value; paint(); } },
-        h('option', { value: '' }, t('p7.course.any')), options.map(o => h('option', { value: o.value, selected: String(q[name]) === String(o.value) }, o.label))));
+        h('option', { value: '' }, t(anyKey)), options.map(o => h('option', { value: o.value, selected: String(q[name]) === String(o.value) }, o.label))));
+    const more = h('details', { class: 'more-filters', open: Boolean(q.standard || q.route || q.delivery) || null }, h('summary', null, t('x10a.cat.moreFilters')),
+      h('div', { class: 'filters-in' },
+        sel('standard', t('p7.course.standard'), standards.map(s => ({ value: s.id, label: L(ctx, s.name) }))),
+        routes.length ? sel('route', t('p7.course.route'), routes.map(r => ({ value: r.id, label: L(ctx, r.title) }))) : null,
+        sel('delivery', t('p7.course.delivery'), deliveries.map(v => ({ value: v, label: t('p7.delivery.' + v) })))));
     const filters = h('form', { class: 'filters', role: 'search', 'aria-label': t('p7.course.filters'), onsubmit: e => e.preventDefault() },
       h('div', { class: 'field' }, h('label', { for: 'cf-q' }, t('p7.course.search')),
         h('input', { class: 'input', id: 'cf-q', type: 'search', name: 'q', value: q.q, oninput: e => { q.q = e.target.value; paint(); } })),
-      sel('level', t('p7.course.level'), levels.map(v => ({ value: v, label: t('p7.level', { n: ctx.i18n.digitize(v) }) }))),
-      sel('standard', t('p7.course.standard'), standards.map(s => ({ value: s.id, label: L(ctx, s.name) }))),
-      routes.length ? sel('route', t('p7.course.route'), routes.map(r => ({ value: r.id, label: L(ctx, r.title) }))) : null,
-      sel('delivery', t('p7.course.delivery'), deliveries.map(v => ({ value: v, label: t('p7.delivery.' + v) }))),
-      Button({ label: t('p7.course.clear'), variant: 'quiet', onClick: () => { Object.assign(q, { q: '', level: '', standard: '', route: '', delivery: '' }); filters.reset(); filters.querySelectorAll('select').forEach(s => { s.value = ''; }); paint(); } }));
+      sel('academy', t('x10a.cat.academy'), ACADEMIES.map(a => ({ value: a.key, label: t('nav.items.' + a.navId) }))),
+      sel('level', t('p7.course.level'), levels.map(v => ({ value: v, label: t('p7.level', { n: i18n.digitize(v) }) }))),
+      sel('hours', t('x10a.cat.hours'), Object.keys(HOURS_BANDS).map(k => ({ value: k, label: t('x10a.cat.hoursBand.' + k) }))),
+      certs.length ? sel('cert', t('x10a.cat.cert'), certs.map(x => ({ value: x.id, label: [x.code, L(ctx, x.name)].filter(Boolean).join(' — ') }))) : null,
+      programs.length ? sel('programme', t('x10a.cat.programme'), [{ value: 'all', label: t('x10a.cat.allProgrammes') }, ...programs.map(p => ({ value: p.id, label: L(ctx, p.title) }))]) : null,
+      more,
+      Button({ label: t('p7.course.clear'), variant: 'quiet', onClick: () => { KEYS.forEach(k => { q[k] = ''; }); filters.reset(); filters.querySelectorAll('select').forEach(x => { x.value = ''; }); filters.querySelector('#cf-q').value = ''; paint(); } }));
     paint();
-    return h('div', null, previewBanner(ctx, content.courses), filters, count, srHeading(t('p7.course.results')), list);
+    return h('div', null, previewBanner(ctx, [...content.courses, ...programs]), filters, progBox, count, srHeading(t('p7.course.results')), list);
   } });
   return h('div', null, head, region);
 }
@@ -253,9 +286,17 @@ function courseGuideRefs(c, lessonMap, lessonId) {
   return [...new Map(refs.map(r => [r.guide + '#' + r.ref, r])).values()];
 }
 async function loadWithGuides(ctx, slug, lessonParam) {
-  const { content, learner } = await loadAll(ctx);
-  const c = content.courses.find(x => x.slug === slug);
-  if (!c) return { content, learner, guides: {} };
+  const all = await loadAll(ctx);
+  const learner = all.learner;
+  const light = all.content.courses.find(x => x.slug === slug);
+  if (!light) return { content: all.content, learner, guides: {} };
+  /* Phase 10A: the page needs the full record (lesson text, day plan, rubric) — loaded from its academy shard only. */
+  const content = await withFullCourses(ctx, all.content, [light.id]);
+  const c = content.courses.find(x => x.id === light.id);
+  if (lessonParam) {
+    const l = flatLessons(c).find(x => lessonKey(c, x) === lessonParam || x.id === lessonParam);
+    content.questions = l?.check_question_id ? await loadQuestions(ctx, [l.check_question_id]).catch(() => []) : [];
+  }
   const lesson = lessonParam ? flatLessons(c).find(l => lessonKey(c, l) === lessonParam || l.id === lessonParam) : null;
   const slugs = c.guide && !lessonParam ? [] : courseGuideRefs(c, content.lessonMap, lesson?.id).map(r => r.guide);
   return { content, learner, guides: await loadGuides(ctx, content, slugs) };
@@ -293,8 +334,14 @@ function courseDetail(ctx, c, content, learner, region, guides = {}) {
   const actions = [
     nextLesson ? linkBtn(lessonHref(c, nextLesson), st.done ? t('p7.course.continue') : t('p7.course.start'), 'primary', { 'data-action': 'start-course' }) : null,
     final ? linkBtn(`#/assessments/${final.slug}`, t('p7.course.takeFinal')) : null,
-    c.guide && content.guides.some(g => g.slug === c.guide) ? linkBtn(guideHref(c.guide), t('gd.readGuide')) : null
+    c.guide && content.guides.some(g => g.slug === c.guide) ? linkBtn(guideHref(c.guide), t('gd.readGuide')) : null,
+    BookmarkButton(ctx, { type: 'course', id: c.id, href: `#/academy/courses/${c.slug}`, title: c.title })
   ].filter(Boolean);
+  /* Phase 10A (plan §3.6): a sticky Start / Continue bar that stays in reach while the page scrolls. */
+  const cp = cardProgress(c, learner.progress);
+  const sticky = nextLesson ? h('div', { class: 'stickybar', role: 'region', 'aria-label': t('x10a.course.sticky'), dataset: { sticky: 'course' } },
+    h('div', { class: 'sb-text' }, h('strong', null, L(ctx, c.title)), h('span', { class: 'note' }, cp.done ? t('x10a.card.progress', { done: i18n.number(cp.done), total: i18n.number(cp.total), left: minutes(ctx, cp.minutesLeft) }) : t('x10a.card.fresh', { total: i18n.number(cp.total), mins: minutes(ctx, cp.minutesTotal) }))),
+    linkBtn(lessonHref(c, nextLesson), st.done ? t('p7.course.continue') : t('p7.course.start'), 'primary', { 'data-action': 'sticky-start' })) : null;
 
   const head = courseHero(ctx, c, st, lessons, actions);
   const figs = courseFigures(c, content.figures, content.lessonFigures);
@@ -317,14 +364,20 @@ function courseDetail(ctx, c, content, learner, region, guides = {}) {
     reviewFact(ctx, c)
   ]);
 
-  const curriculum = h('ol', { class: 'modules' }, (c.modules || []).map(m => h('li', { class: 'card module', dataset: { module: m.id } },
-    h('h3', null, L(ctx, m.title)), m.summary ? h('p', { class: 'note' }, L(ctx, m.summary)) : null,
-    h('ol', { class: 'lessons' }, (m.lessons || []).map(l => {
-      const done = saved?.completed_lessons?.includes(l.id);
-      return h('li', { class: done ? 'done' : null },
-        done ? icon('check', t('p7.lesson.completed')) : h('span', { class: 'ico-spacer', 'aria-hidden': 'true' }),
-        h('a', { href: lessonHref(c, l) }, L(ctx, l.title)), ' ', h('span', { class: 'note' }, minutes(ctx, l.estimated_minutes || 0)));
-    })))));
+  /* Phase 10A: modules as an accordion — the module holding the next lesson is open. */
+  const openModule = (c.modules || []).find(m => (m.lessons || []).some(l => l.id === nextLesson?.id))?.id || c.modules?.[0]?.id;
+  const curriculum = h('ol', { class: 'modules' }, (c.modules || []).map(m => {
+    const n = (m.lessons || []).filter(l => saved?.completed_lessons?.includes(l.id)).length;
+    return h('li', { class: 'card module', dataset: { module: m.id } }, h('details', { open: m.id === openModule || null },
+      h('summary', null, h('h3', null, L(ctx, m.title)), h('span', { class: 'note' }, t('p7.course.lessonsDone', { done: i18n.number(n), total: i18n.number((m.lessons || []).length) }))),
+      m.summary ? h('p', { class: 'note' }, L(ctx, m.summary)) : null,
+      h('ol', { class: 'lessons' }, (m.lessons || []).map(l => {
+        const done = saved?.completed_lessons?.includes(l.id);
+        return h('li', { class: done ? 'done' : null },
+          done ? icon('check', t('p7.lesson.completed')) : h('span', { class: 'ico-spacer', 'aria-hidden': 'true' }),
+          h('a', { href: lessonHref(c, l) }, L(ctx, l.title)), ' ', h('span', { class: 'note' }, minutes(ctx, l.estimated_minutes || 0)));
+      }))));
+  }));
 
   const comps = (c.competency_mappings || []).map(m => {
     const comp = content.byId(content.competencies, m.competency);
@@ -332,41 +385,47 @@ function courseDetail(ctx, c, content, learner, region, guides = {}) {
       LevelMeter({ level: m.target_level, label: t('p7.course.targetLevel', { n: i18n.digitize(m.target_level) }) }));
   });
 
+  const outcomes3 = (c.learning_outcomes || []).slice(0, 3);
   return h('article', { class: 'course', dataset: { course: c.id } },
     previewBanner(ctx, [c]),
     head,
-    valueStrip(ctx, c),
+    /* Above the fold: three things you will be able to do. */
+    outcomes3.length ? isec('c-out3', 'target', t('x10a.course.able'), h('ul', { class: 'able' }, outcomes3.map((o, i) => h('li', null, icon(OUT_ICONS[i]), L(ctx, o))))) : null,
     glance(ctx, c, lessons),
     h('div', { class: 'split' }, progressPanel, h('section', { class: 'panel', 'aria-label': t('p7.course.summary') }, summary)),
-    c.why_it_matters ? isec('c-why', 'bulb', t('p7.course.why'), h('p', null, L(ctx, c.why_it_matters)), c.professional_relevance ? h('p', { class: 'note' }, L(ctx, c.professional_relevance)) : null) : null,
-    isec('c-aud', 'users', t('p7.course.audience'), h('ul', { class: 'personas' }, (c.target_audience || []).map((a, i) => h('li', null, h('span', { class: 'pav' }, icon(AUD_ICONS[i % AUD_ICONS.length])), h('span', null, L(ctx, a)))))),
-    isec('c-pre', 'flag', t('p7.course.prerequisites'), prereqList(ctx, c, content, learner.completed)),
-    isec('c-out', 'target', t('p7.course.outcomes'), h('ol', { class: 'outcards' }, (c.learning_outcomes || []).map((o, i) => h('li', null, icon(OUT_ICONS[i % OUT_ICONS.length]), L(ctx, o))))),
-    figs.length ? isec('c-vis', 'image', t('p9.fig.courseTitle'), h('p', { class: 'note' }, t('p9.fig.courseNote', { n: i18n.number(figs.length) })),
-      h('div', { class: 'vis-strip' }, figs.slice(0, 8).map(f => Figure(ctx, f, { compact: true })))) : null,
-    comps.length ? isec('c-comp', 'gauge', t('p7.course.competencies'), h('ul', { class: 'plain comps' }, comps)) : null,
-    studyPanel(ctx, c, learner),
-    linkedPanel(ctx, c, content),
     isec('c-cur', 'layers', t('p7.course.curriculum'), curriculum),
-    isec('c-day', 'calendar', t('p7.course.dayPlan'), h('p', { class: 'note' }, t('p7.course.dayPlanNote')), dayPlan(ctx, c)),
+    isec('c-pre', 'flag', t('p7.course.prerequisites'), prereqList(ctx, c, content, learner.completed)),
     isec('c-asm', 'question', t('p7.course.assessments'), c.assessment_methodology ? h('p', null, L(ctx, c.assessment_methodology)) : null, assessmentRows(ctx, c, content, learner),
       c.passing_criteria ? h('p', { class: 'note' }, L(ctx, c.passing_criteria)) : null),
     c.practical_task ? isec('c-pt', 'clipboard', t('p7.course.practical'),
       h('p', null, L(ctx, c.practical_task.brief)),
       facts([[t('p7.course.deliverable'), L(ctx, c.practical_task.deliverable)], [t('p7.course.time'), minutes(ctx, c.practical_task.minutes)], [t('p7.course.reviewedBy'), t('p7.course.humanReview')]]),
       c.practical_task.rubric?.length ? rubricTable(ctx, c.practical_task.rubric, t('p7.course.rubric')) : null) : null,
-    isec('c-res', 'book', t('p7.course.resources'),
-      h('div', { class: 'split' },
-        h('div', null, h('h3', null, t('p7.course.knowledge')), articles.length ? h('ul', { class: 'plain' }, articles.map(a => h('li', null, h('a', { href: `#/knowledge/${a.ecosystem}/${a.slug}` }, L(ctx, a.title))))) : h('p', { class: 'note' }, t('p7.none'))),
-        h('div', null, h('h3', null, t('p7.course.tools')), tools.length ? h('ul', { class: 'tools-mini' }, tools.map(m => h('li', null, toolLink(ctx, m)))) : h('p', { class: 'note' }, t('p7.none')),
-          sims.length ? h('ul', { class: 'plain' }, sims.map(x => h('li', null, h('a', { href: `#/library/${x.id}` }, L(ctx, x.title))))) : null,
-          templates.length ? h('ul', { class: 'plain' }, templates.map(x => h('li', null, h('a', { href: `#/library/${x.id}` }, L(ctx, x.title))))) : null))),
-    guideCoverage(ctx, c, content, guides),
+    /* Below: everything else about the course, collapsed (same content as before, one click away). */
+    h('details', { class: 'more-about', dataset: { more: 'course' } }, h('summary', null, h('h2', { class: 'h-sm' }, icon('info'), ' ', t('x10a.course.more'))),
+      valueStrip(ctx, c),
+      c.why_it_matters ? isec('c-why', 'bulb', t('p7.course.why'), h('p', null, L(ctx, c.why_it_matters)), c.professional_relevance ? h('p', { class: 'note' }, L(ctx, c.professional_relevance)) : null) : null,
+      isec('c-aud', 'users', t('p7.course.audience'), h('ul', { class: 'personas' }, (c.target_audience || []).map((a, i) => h('li', null, h('span', { class: 'pav' }, icon(AUD_ICONS[i % AUD_ICONS.length])), h('span', null, L(ctx, a)))))),
+      isec('c-out', 'target', t('p7.course.outcomes'), h('ol', { class: 'outcards' }, (c.learning_outcomes || []).map((o, i) => h('li', null, icon(OUT_ICONS[i % OUT_ICONS.length]), L(ctx, o))))),
+      figs.length ? isec('c-vis', 'image', t('p9.fig.courseTitle'), h('p', { class: 'note' }, t('p9.fig.courseNote', { n: i18n.number(figs.length) })),
+        h('div', { class: 'vis-strip' }, figs.slice(0, 8).map(f => Figure(ctx, f, { compact: true })))) : null,
+      comps.length ? isec('c-comp', 'gauge', t('p7.course.competencies'), h('ul', { class: 'plain comps' }, comps)) : null,
+      studyPanel(ctx, c, learner),
+      linkedPanel(ctx, c, content),
+      isec('c-day', 'calendar', t('p7.course.dayPlan'), h('p', { class: 'note' }, t('p7.course.dayPlanNote')), dayPlan(ctx, c)),
+      isec('c-res', 'book', t('p7.course.resources'),
+        h('div', { class: 'split' },
+          h('div', null, h('h3', null, t('p7.course.knowledge')), articles.length ? h('ul', { class: 'plain' }, articles.map(a => h('li', null, h('a', { href: `#/knowledge/${a.ecosystem}/${a.slug}` }, L(ctx, a.title))))) : h('p', { class: 'note' }, t('p7.none'))),
+          h('div', null, h('h3', null, t('p7.course.tools')), tools.length ? h('ul', { class: 'tools-mini' }, tools.map(m => h('li', null, toolLink(ctx, m)))) : h('p', { class: 'note' }, t('p7.none')),
+            sims.length ? h('ul', { class: 'plain' }, sims.map(x => h('li', null, h('a', { href: `#/library/${x.id}` }, L(ctx, x.title))))) : null,
+            templates.length ? h('ul', { class: 'plain' }, templates.map(x => h('li', null, h('a', { href: `#/library/${x.id}` }, L(ctx, x.title))))) : null))),
+      guideCoverage(ctx, c, content, guides),
+      isec('c-team', 'users', t('gd.requestTitle'), h('p', null, t('gd.requestBody')),
+        h('a', { class: 'btn btn-secondary', href: platformHref(ctx, '../#request'), 'aria-describedby': 'ext-note', 'data-action': 'request-course' }, t('gd.requestCta'), ' ', icon('external')))),
     isec('c-src', 'doc', t('p7.sources.title'), sourceList(ctx, c.source_references, content), h('p', { class: 'note' }, t('p7.sources.noCopy'))),
     nextCourse ? isec('c-next', 'chevron', t('p7.course.next'), courseCard(ctx, nextCourse, learner)) : null,
-    isec('c-team', 'users', t('gd.requestTitle'), h('p', null, t('gd.requestBody')),
-      h('a', { class: 'btn btn-secondary', href: platformHref(ctx, '../#request'), 'aria-describedby': 'ext-note', 'data-action': 'request-course' }, t('gd.requestCta'), ' ', icon('external'))),
-    isReviewer(ctx) ? governanceFooter(ctx, c) : null);
+    isReviewer(ctx) ? governanceFooter(ctx, c) : null,
+    sticky);
 }
 
 /** How this record came to be published, in plain words, for every viewer (learners included). */
@@ -479,6 +538,7 @@ function lessonPlayer(ctx, c, lessons, i, content, learner, guides = {}) {
     h('header', { class: 'phead' },
       h('p', { class: 'eyebrow' }, t('p7.lesson.position', { n: i18n.number(i + 1), total: i18n.number(lessons.length) }), ' · ', minutes(ctx, l.estimated_minutes || 0)),
       h('h1', null, L(ctx, l.title)),
+      h('div', { class: 'btnrow' }, BookmarkButton(ctx, { type: 'lesson', id: l.id, href: lessonHref(c, l), title: l.title })),
       l.objectives?.length ? h('div', null, h('h2', { class: 'h-sm' }, t('p7.lesson.objectives')), h('ul', null, l.objectives.map(o => h('li', null, L(ctx, o))))) : null),
     blockEls,
     srcGuide && srcItem ? h('p', { class: 'note' }, t('gd.lessonSource'), ' ', h('a', { href: guideHref(srcGuide.slug, srcItem.ref) }, L(ctx, srcGuide.title))) : null,

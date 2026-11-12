@@ -96,7 +96,13 @@ const ICONS = {
   image: 'M4 5h16v14H4zM4 16l5-5 4 4 3-3 4 4M15 9a1 1 0 100-2 1 1 0 000 2z',
   pie: 'M12 3v9h9a9 9 0 11-9-9zm3-.5A9 9 0 0121.5 9H15z',
   scale: 'M12 3v18M7 21h10M4 7h16M6 7l-3 7h6zM18 7l-3 7h6z',
-  handshake: 'M2 11l4-4 4 2 4-2 4 2 4 2-3 3M9 9l-3 3 3 3 2-2 2 2 2-2 2 2M2 11l4 4'
+  handshake: 'M2 11l4-4 4 2 4-2 4 2 4 2-3 3M9 9l-3 3 3 3 2-2 2 2 2-2 2 2M2 11l4 4',
+  /* Phase 10A — navigation and personal-space icons (original line drawings, 24×24 grid). */
+  home: 'M3 11l9-7 9 7M5 9.5V20h5v-6h4v6h5V9.5',
+  user: 'M12 12a4 4 0 100-8 4 4 0 000 8zm-7 9c0-3.9 3.1-7 7-7s7 3.1 7 7',
+  bookmark: 'M6 3h12v18l-6-4-6 4z',
+  caret: 'M7 10l5 5 5-5',
+  more: 'M5 12h.01M12 12h.01M19 12h.01'
 };
 export const ICON_NAMES = () => Object.keys(ICONS);
 export const iconPath = name => ICONS[name] || ICONS.info;

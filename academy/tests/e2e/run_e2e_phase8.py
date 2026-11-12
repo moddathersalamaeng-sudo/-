@@ -81,10 +81,12 @@ try:
     record('PMI landing: hero with four live counts, a preview banner only while drafts remain, starting point "explore" without a profile',
            stats == 4 and page.locator('[data-preview]').count() == (1 if drafts else 0) and page.get_attribute('[data-start]', 'data-start') == 'explore', f'{stats} drafts={drafts}')
     n_routes = page.locator('[data-route^="ROUTE-"]').count(); n_certs = page.locator('#pm-certs ~ * [data-cert], section[aria-labelledby=pm-certs] [data-cert]').count()
-    n_courses = page.locator('section[aria-labelledby=pm-courses] [data-course]').count(); n_guides = page.locator('section[aria-labelledby=pm-guides] [data-guide]').count()
-    tools = page.locator('section[aria-labelledby=pm-learnuse] [data-module]')
+    # Phase 10A (academy template, plan §3.4): courses show 6 + "see all" (the catalogue filtered by academy); guides and toolkits moved to "Tools and labs".
+    n_courses = page.locator('section[aria-labelledby=pm-courses] [data-course]').count(); n_guides = page.locator('section[aria-labelledby=pm-tools] [data-guide]').count()
+    see_all = page.get_attribute('section[aria-labelledby=pm-courses] [data-action=see-all-courses]', 'href') or ''
+    tools = page.locator('section[aria-labelledby=pm-tools] [data-module]')
     record('PMI landing lists 5 routes, 8 certifications, 10 courses, 4 practice guides and the PMO toolkits with their access rule',
-           n_routes == 5 and n_certs == 8 and n_courses == 10 and n_guides == 4 and tools.count() == 4 and all(tools.nth(i).get_attribute('data-access') == 'account' for i in range(tools.count())),
+           n_routes == 5 and n_certs == 8 and n_courses == 6 and see_all.endswith('academy=pmi') and n_guides == 4 and tools.count() == 4 and all(tools.nth(i).get_attribute('data-access') == 'account' for i in range(tools.count())),
            f'{n_routes} {n_certs} {n_courses} {n_guides} {tools.count()}')
 
     # explorer
@@ -189,8 +191,10 @@ try:
     go(page, '/academy/pmi')
     pub_courses = [c for c in COURSES.values() if c.get('ecosystem') in ('pmi', 'pmo', 'p3o') and PUBLISHED(c)]
     shown = page.locator('section[aria-labelledby=pm-courses] [data-course]').count()
+    # Phase 10A (academy template, plan §3.4): courses show 6 + "see all" (the catalogue filtered by academy); guides and toolkits moved to "Tools and labs".
+    shown_ok = shown == min(6, len([c for c in pub_courses if not c.get('guide')]))
     record(f'learner: the PMI landing shows only published courses ({len(pub_courses)}) and honest empty states otherwise; one h1, no preview banner',
-           shown == len([c for c in pub_courses if not c.get('guide')]) and layout(page)['h1'] == 1 and page.locator('[data-preview]').count() == 0, f'{shown}')
+           shown_ok and layout(page)['h1'] == 1 and page.locator('[data-preview]').count() == 0, f'{shown}')
     go(page, '/academy/pmi/certifications')
     pub_certs = [c for c in CERTS if PUBLISHED(c) and c.get('body', 'PMI') == 'PMI']
     record('learner: the explorer shows published certifications only, with one h1', page.locator('#cert-list [data-cert]').count() == len(pub_certs) and layout(page)['h1'] == 1)

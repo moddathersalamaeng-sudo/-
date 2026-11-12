@@ -16,6 +16,8 @@ import { courseStatus } from '../domain/learner-model.mjs';
 import { loadAll } from '../data/learner-state.js';
 import { L, notAvailable, pageHead, previewBanner, linkBtn, section, facts, hours, platformHref, isReviewer, govBadge, toolLink } from '../ui/academy.js';
 import { courseCard, sourceList } from './courses.js';
+import { academyLanding, toolPanel, orderCourses } from '../ui/landing.js';
+import { stat } from './pmi.js';
 
 /** "9 h" / "20 min" / "6.5 h" → minutes. */
 export function effortMinutes(s) {
@@ -47,9 +49,9 @@ function startingPointCard(ctx, content, learner) {
     h('p', null, L(ctx, sp.reason)),
     sp.factors.length ? h('details', null, h('summary', null, t('p7.iso.whyThis')), h('ul', null, sp.factors.map(f => h('li', null, factorText(ctx, f, content))))) : null,
     visible
-      ? h('div', { class: 'btnrow' }, linkBtn(sp.href, t('p7.iso.startCta'), 'primary', { 'data-action': 'start-point' }), learner.profile ? null : linkBtn('#/profile', t('phase6.completeProfile')))
+      ? h('div', { class: 'btnrow' }, linkBtn(sp.href, t('p7.iso.startCta'), 'primary', { 'data-action': 'start-point' }), learner.profile ? null : linkBtn('#/welcome', t('phase6.completeProfile')))
       : h('div', null, h('p', { class: 'banner banner-info', role: 'note' }, t('p7.iso.startPending')),
-        h('div', { class: 'btnrow' }, linkBtn('#/knowledge/iso', t('p7.iso.readFundamentals'), 'primary'), learner.profile ? null : linkBtn('#/profile', t('phase6.completeProfile')))),
+        h('div', { class: 'btnrow' }, linkBtn('#/knowledge/iso', t('p7.iso.readFundamentals'), 'primary'), learner.profile ? null : linkBtn('#/welcome', t('phase6.completeProfile')))),
     h('p', { class: 'note' }, t('p7.iso.yearsNote')));
 }
 
@@ -103,34 +105,42 @@ function isoGame(ctx, content) {
 }
 
 export function isoAcademyView(ctx) {
-  const { t } = ctx;
+  const { t, i18n } = ctx;
   const region = dataRegion({ t, load: () => loadAll(ctx), render: ({ content, learner }) => {
     const ready = content.byId(content.assessments, 'ASM-READY-ISO-001');
-    const hero = h('header', { class: 'iso-hero' }, academyBanner('iso', 'shield'),
-      h('p', { class: 'eyebrow' }, t('p7.iso.eyebrow')), h('h1', null, t('p7.iso.title')), h('p', null, t('p7.iso.lede')),
-      h('div', { class: 'btnrow' }, linkBtn('#/knowledge/iso', t('p7.iso.readFundamentals'), 'primary'), ready ? linkBtn(`#/assessments/${ready.slug}`, t('p7.iso.takeReadiness')) : null));
     const routes = content.paths.filter(p => p.kind === 'iso_route');
     const isoArticles = content.articles.filter(a => a.ecosystem === 'iso');
     const isoTools = content.tools.filter(m => m.system === 'iso');
     const isoCourses = content.courses.filter(c => c.ecosystem === 'iso' || c.category === 'iso');
-    const inProgress = isoCourses.filter(c => courseStatus(c, learner.progress, learner.attempts).state === 'in_progress');
-    return h('div', null,
-      hero,
-      previewBanner(ctx, [...content.standards, ...isoCourses, ...routes]),
-      startingPointCard(ctx, content, learner),
-      inProgress.length ? section('iso-cont', t('p7.iso.continue'), h('div', { class: 'cards' }, inProgress.map(c => courseCard(ctx, c, learner)))) : null,
-      section('iso-routes', t('p7.iso.routes'), h('p', { class: 'note' }, t('p7.iso.routesNote')),
-        routes.length ? h('div', { class: 'cards' }, routes.map(p => routeCard(ctx, p, content, learner))) : EmptyState({ title: t('p7.iso.routesPending'), body: t('p7.pendingBody'), iconName: 'lock' })),
-      section('iso-std', t('p7.iso.standards'),
-        content.standards.length ? h('div', { class: 'cards' }, content.standards.map(s => standardCard(ctx, s))) : EmptyState({ title: t('p7.iso.standardsPending'), body: t('p7.pendingBody'), iconName: 'lock' })),
-      isoGuides(ctx, content),
-      isoGame(ctx, content),
-      section('iso-found', t('p7.iso.fundamentals'), h('p', { class: 'note' }, t('p7.iso.fundamentalsNote')),
-        isoArticles.length ? h('ul', { class: 'cards cards-tight' }, isoArticles.map(a => h('li', { class: 'card' }, h('a', { href: `#/knowledge/${a.ecosystem}/${a.slug}` }, L(ctx, a.title)), h('span', { class: 'note block' }, t('p7.minutesRead', { n: ctx.i18n.number(a.estimated_minutes || 0) }))))) : EmptyState({ title: t('states.emptyTitle'), body: t('states.emptyBody') })),
-      section('iso-learnuse', t('p7.iso.learnVsUse'), h('div', { class: 'split' },
-        h('div', { class: 'panel' }, h('h3', null, t('p7.iso.learnTitle')), h('p', null, t('p7.iso.learnBody')), linkBtn('#/academy/courses', t('courses.title'))),
-        h('div', { class: 'panel' }, h('h3', null, t('p7.iso.useTitle')), h('p', null, t('p7.iso.useBody')), toolList(ctx, isoTools)))),
-      h('p', { class: 'note' }, t('p7.iso.honesty')));
+    const gs = (content.guides || []).filter(g => g.kind === 'standard');
+    const sims = content.library.filter(x => x.kind === 'simulation');
+    const std = content.standards;
+    /* Phase 10A: the shared academy template (src/ui/landing.js). */
+    return academyLanding(ctx, {
+      key: 'iso', prefix: 'iso', cls: 'iso-landing', family: 'iso', iconName: 'shield',
+      eyebrow: t('p7.iso.eyebrow'), title: t('p7.iso.title'), lede: t('p7.iso.lede'),
+      statsLabel: t('pmi.statsLabel'),
+      stats: [stat('book', i18n.number(isoCourses.length), t('pmi.statCourses')), stat('shield', i18n.number(std.length), t('p7.iso.standards')), stat('ladder', i18n.number(gs.length), t('gd.title')), stat('route', i18n.number(routes.length), t('pmi.statRoutes'))],
+      primary: ready ? { href: `#/assessments/${ready.slug}`, label: t('p7.iso.takeReadiness'), action: 'take-readiness' } : { href: '#/knowledge/iso', label: t('p7.iso.readFundamentals') },
+      secondary: { href: '#/knowledge/iso', label: t('p7.iso.readFundamentals') },
+      preview: previewBanner(ctx, [...std, ...isoCourses, ...routes]),
+      next: startingPointCard(ctx, content, learner),
+      routes: { items: routes, title: t('p7.iso.routes'), mineId: ROLE_ROUTE[learner.profile?.target_role], card: p => routeCard(ctx, p, content, learner), pendingTitle: t('p7.iso.routesPending') },
+      courses: { items: orderCourses(isoCourses, learner), title: t('x10a.landing.courses'), seeAll: '#/academy/courses?academy=iso', card: c => courseCard(ctx, c, learner), pendingTitle: t('courses.empty') },
+      certs: { title: t('p7.iso.standards'), body: std.length ? h('div', null,
+        h('div', { class: 'cards' }, std.slice(0, 6).map(x => standardCard(ctx, x))),
+        std.length > 6 ? h('details', { class: 'more' }, h('summary', null, t('x10a.landing.moreStandards', { n: i18n.number(std.length - 6) })), h('div', { class: 'cards' }, std.slice(6).map(x => standardCard(ctx, x)))) : null)
+        : EmptyState({ title: t('p7.iso.standardsPending'), body: t('p7.pendingBody'), iconName: 'lock', level: 3 }) },
+      tools: { title: t('x10a.landing.tools'), items: [
+        toolPanel(t('p7.iso.useTitle'), 'grid', t('p7.iso.useBody'), toolList(ctx, isoTools)),
+        gs.length ? toolPanel(t('gd.isoGuides'), 'ladder', t('gd.isoGuidesNote'), h('ul', { class: 'chips' }, gs.map(g => h('li', { dataset: { guide: g.slug } }, h('a', { href: `#/guides/${g.slug}` }, 'ISO ', g.code)))),
+          h('p', null, h('a', { href: '#/library?tab=guides' }, t('gd.allGuides')))) : null,
+        sims.length ? toolPanel(t('gd.gameTitle'), 'play', t('gd.gameBody'), h('ul', { class: 'tools-mini' }, sims.map(x => h('li', null, h('a', { class: 'tlink', href: platformHref(ctx, x.link), 'aria-describedby': 'ext-note', dataset: { library: x.id } },
+          h('span', { class: 'n' }, L(ctx, x.title)), icon('external')))))) : null,
+        isoArticles.length ? toolPanel(t('p7.iso.fundamentals'), 'book', t('p7.iso.fundamentalsNote'), h('ul', { class: 'plain' }, isoArticles.slice(0, 5).map(a => h('li', null, h('a', { href: `#/knowledge/${a.ecosystem}/${a.slug}` }, L(ctx, a.title))))),
+          h('p', null, h('a', { href: '#/knowledge/iso' }, t('x10a.landing.allArticles')))) : null] },
+      about: [t('p7.iso.honesty'), t('p7.iso.learnBody')]
+    });
   } });
   return h('div', { class: 'iso' }, region);
 }

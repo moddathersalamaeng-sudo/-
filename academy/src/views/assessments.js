@@ -10,13 +10,17 @@
  * "I don't know" is a first-class answer (UNKNOWN): it scores zero and is reported separately, so learners are not
  * pushed to guess. Items that need human review are excluded from competency evidence until reviewed.
  */
-import { h } from '../core/dom.js';
+import { h, icon } from '../core/dom.js';
 import { dataRegion, EmptyState, Badge, Button, Table } from '../ui/components.js';
 import { deterministicOrder, scoreAttempt, domainBreakdown, competencyBreakdown, optionFeedback, assessmentIntegrity, AUTO_TYPES, UNKNOWN } from '../domain/assessments.mjs';
 import { MASTERY_THRESHOLD, WEAK_THRESHOLD } from '../domain/learner-model.mjs';
-import { loadAll } from '../data/learner-state.js';
+import { loadAll, loadQuestions } from '../data/learner-state.js';
 import { L, notAvailable, pageHead, govBadge, previewBanner, linkBtn, section, facts, minutes, isReviewer } from '../ui/academy.js';
 import { rubricTable } from './courses.js';
+import { starterCourse, lessonHref } from './home.js';
+import { academyByKey, ACADEMIES, academyOfAssessment, ASSESSMENT_TYPE } from '../domain/academies.mjs';
+import { Tabs } from '../ui/components.js';
+import { setHashQuery } from '../ui/academy.js';
 
 const latest = (attempts, id) => attempts.filter(x => x.assessment_id === id).sort((a, b) => String(b.submitted_at).localeCompare(String(a.submitted_at)))[0] || null;
 const resultBadge = (ctx, at) => !at ? Badge({ label: ctx.t('p7.asm.notTaken'), tone: 'neutral' })
@@ -37,27 +41,66 @@ function assessmentCard(ctx, a, learner) {
     h('div', { class: 'badges' }, resultBadge(ctx, at), a.allow_unknown ? Badge({ label: t('p7.asm.unknownAllowed'), tone: 'neutral' }) : null, isReviewer(ctx) ? govBadge(ctx, a) : null));
 }
 
-export function assessmentsView(ctx) {
-  const { t } = ctx;
-  const head = pageHead(ctx, { eyebrow: t('assessments.eyebrow'), title: t('assessments.title'), lede: t('assessments.intro'), actions: [linkBtn('#/assessments/history', t('assessments.history'))] });
+/**
+ * Phase 10A (plan §3.5): tabs by academy; inside each, diagnostics and readiness checks first, then the course finals
+ * and practical tasks by course. Lesson quizzes are reached from inside their course and are not listed here.
+ * The chosen academy and type are kept in the URL (?academy=&type=).
+ */
+export function assessmentsView(ctx, match = {}) {
+  const { t, i18n } = ctx;
+  const head = pageHead(ctx, { eyebrow: t('assessments.eyebrow'), title: t('assessments.title'), lede: t('x10a.asm.lede'), actions: [linkBtn('#/assessments/history', t('assessments.history'))] });
+  const q = { academy: match.query?.academy || '', type: match.query?.type === 'course' ? 'course' : 'diagnostic' };
   const region = dataRegion({ t, load: () => loadAll(ctx), render: ({ content, learner }) => {
     const xs = content.assessments;
-    if (!xs.length) return EmptyState({ title: t('assessments.empty'), body: t('p7.asm.pendingBody'), iconName: 'lock', action: linkBtn('#/knowledge', t('knowledge.title')) });
-    const diag = xs.filter(a => ['diagnostic', 'readiness'].includes(a.kind));
-    const byCourse = new Map();
-    for (const a of xs.filter(x => !diag.includes(x))) {
-      const key = a.course_id && content.byId(content.courses, a.course_id) ? a.course_id : '_other';
-      if (!byCourse.has(key)) byCourse.set(key, []);
-      byCourse.get(key).push(a);
+    if (!xs.length) return EmptyState({ title: t('assessments.empty'), body: t('p7.asm.pendingBody'), iconName: 'lock', action: linkBtn('#/library', t('nav.items.library')) });
+    const courseById = id => content.byId(content.courses, id);
+    const keys = [...ACADEMIES.map(a => a.key), 'general'];
+    const groups = Object.fromEntries(keys.map(k => [k, { diagnostic: [], course: [] }]));
+    for (const a of xs) {
+      const type = ASSESSMENT_TYPE(a);
+      if (type === 'quiz') continue;
+      const k = academyOfAssessment(a, courseById);
+      (groups[k] || groups.general)[type].push(a);
     }
-    const order = { knowledge_quiz: 1, scenario: 2, final: 3, practical: 4 };
+    const tabsKeys = keys.filter(k => groups[k].diagnostic.length || groups[k].course.length);
+    const initial = Math.max(0, tabsKeys.indexOf(q.academy));
+    const order = { final: 1, practical: 2 };
+    const panel = k => () => {
+      const g = groups[k];
+      const box = h('div', { class: 'asm-panel', dataset: { academy: k } });
+      const typePick = h('div', { class: 'seg', role: 'radiogroup', 'aria-label': t('x10a.asm.type') }, ['diagnostic', 'course'].map(ty => h('label', { class: 'seg-opt' },
+        h('input', { type: 'radio', name: 'asm-type-' + k, value: ty, checked: q.type === ty, onchange: () => { q.type = ty; paint(); setHashQuery('/assessments', { academy: k, type: ty }); } }),
+        h('span', null, t('x10a.asm.types.' + ty), ' ', h('span', { class: 'note' }, '(', i18n.number(g[ty].length), ')')))));
+      const list = h('div', { class: 'asm-list' });
+      let paint = () => {
+        if (q.type === 'diagnostic') {
+          list.replaceChildren(g.diagnostic.length ? h('div', { class: 'cards' }, g.diagnostic.sort((a, b) => (a.kind === 'readiness' ? -1 : 0) - (b.kind === 'readiness' ? -1 : 0)).map(a => assessmentCard(ctx, a, learner)))
+            : EmptyState({ title: t('x10a.asm.noneDiag'), body: t('x10a.asm.noneDiagBody'), level: 3 }));
+        } else {
+          const byCourse = new Map();
+          for (const a of g.course) { const c = courseById(a.course_id); const key = c ? c.id : '_other'; if (!byCourse.has(key)) byCourse.set(key, []); byCourse.get(key).push(a); }
+          list.replaceChildren(byCourse.size ? h('ul', { class: 'asm-rows' }, [...byCourse.entries()].map(([cid, as]) => {
+            const c = courseById(cid);
+            return h('li', { dataset: { course: cid } }, h('strong', null, c ? h('a', { href: `#/academy/courses/${c.slug}` }, L(ctx, c.title)) : t('p7.asm.other')),
+              h('span', { class: 'asm-links' }, as.sort((a, b) => (order[a.kind] || 9) - (order[b.kind] || 9)).map(a => {
+                const at = latest(learner.attempts, a.id);
+                return h('a', { href: `#/assessments/${a.slug}`, dataset: { assessment: a.id } }, t('p7.asmKind.' + a.kind), at ? [' · ', at.pending_review ? t('assessments.pendingReview') : i18n.number(at.score) + '%'] : null);
+              })));
+          })) : EmptyState({ title: t('x10a.asm.noneCourse'), body: t('x10a.asm.noneCourseBody'), level: 3 }));
+        }
+      };
+      paint();
+      const typeHead = h('h2', { class: 'h-sm' });
+      const paintHead = () => { typeHead.textContent = t('x10a.asm.types.' + q.type); };
+      const repaint = paint; paint = () => { paintHead(); repaint(); };
+      paintHead();
+      box.append(typePick, typeHead, list, h('p', { class: 'note' }, icon('info'), ' ', t('x10a.asm.quizNote')));
+      return box;
+    };
+    const label = k => k === 'general' ? t('x10a.asm.general') : t('nav.items.' + academyByKey(k).navId);
     return h('div', null, previewBanner(ctx, xs),
-      diag.length ? section('as-diag', t('p7.asm.diagnostics'), h('p', { class: 'note' }, t('p7.asm.diagnosticsNote')), h('div', { class: 'cards' }, diag.map(a => assessmentCard(ctx, a, learner)))) : null,
-      [...byCourse.entries()].map(([cid, list]) => {
-        const c = content.byId(content.courses, cid);
-        return section('as-' + cid, c ? L(ctx, c.title) : t('p7.asm.other'),
-          h('div', { class: 'cards' }, list.sort((a, b) => (order[a.kind] || 9) - (order[b.kind] || 9)).map(a => assessmentCard(ctx, a, learner))));
-      }));
+      Tabs({ label: t('x10a.asm.byAcademy'), initial, lazy: true, tabs: tabsKeys.map(k => ({ key: k, label: label(k), content: panel(k) })),
+        onSelect: i => { q.academy = tabsKeys[i]; setHashQuery('/assessments', q); } }));
   } });
   return h('div', null, head, region);
 }
@@ -113,10 +156,24 @@ const answered = (q, v) => {
 
 export function assessmentDetailView(ctx, match) {
   const { t } = ctx;
-  const region = dataRegion({ t, load: () => loadAll(ctx), render: ({ content, learner }) => {
+  const region = dataRegion({ t, load: async () => {
+    const all = await loadAll(ctx);
+    const a = all.content.assessments.find(x => x.slug === match.params.slug);
+    /* Phase 10A: only this assessment's questions are fetched (from the shards that hold them). */
+    if (a) all.content.questions = await loadQuestions(ctx, a.question_ids || []);
+    return all;
+  }, render: ({ content, learner }) => {
     const a = content.assessments.find(x => x.slug === match.params.slug);
     if (!a) return notAvailable(ctx, { title: t('p7.asm.notFound'), body: t('p7.asm.pendingBody'), action: linkBtn('#/assessments', t('assessments.title')) });
-    return takeAssessment(ctx, a, content, learner, region);
+    /* Phase 10A: arriving from onboarding — the profile is saved; offer the first lesson straight away (one click). */
+    const ac = match.query?.from === 'welcome' ? academyByKey(match.query.academy) : null;
+    const sc = ac ? starterCourse(content.courses, ac.key) : null;
+    const first = sc?.modules?.[0]?.lessons?.[0];
+    const welcome = ac ? h('div', { class: 'banner banner-ok welcome-next', role: 'status', dataset: { welcome: ac.key } },
+      h('p', null, h('strong', null, t('x10a.welcome.doneTitle')), ' ', t('x10a.welcome.doneBody')),
+      h('div', { class: 'btnrow' }, first ? linkBtn(lessonHref(sc, first), t('x10a.welcome.startNow', { course: L(ctx, sc.title) }), 'secondary', { 'data-action': 'welcome-first-lesson' }) : null,
+        linkBtn('#' + ac.route, t('nav.items.' + ac.navId), 'quiet'))) : null;
+    return h('div', null, welcome, takeAssessment(ctx, a, content, learner, region));
   } });
   return h('div', null, region);
 }

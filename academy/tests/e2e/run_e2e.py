@@ -116,9 +116,14 @@ with sync_playwright() as p:
 
     # 5. Coming entries: not links, aria-disabled, focusable tooltip; every entry present
     page.click('[data-action=menu]')
-    coming = page.eval_on_selector_all('#nav-drawer [data-nav].coming', 'els => els.map(e => ({id: e.dataset.nav, tag: e.tagName, dis: e.getAttribute("aria-disabled"), tip: !!document.getElementById(e.getAttribute("aria-describedby")), href: e.getAttribute("href")}))')
-    ok = coming and all(c['tag'] == 'SPAN' and c['dis'] == 'true' and c['tip'] and c['href'] is None for c in coming)
-    record(f'navigation: {len(coming)} future-phase entries are disabled, labelled with their phase, never dead links', ok, str(coming[:2]))
+    # Phase 10A (navigation layout, plan §2.1/§3.1): future-phase entries are no longer shown to learners at all (they are listed on the
+    # build plan for reviewers and admins — see test 10); the menu holds at most 12 entries and repeats nothing from the top bar.
+    coming = page.locator('#nav-drawer .coming, .hdr [data-phase]').count()
+    drawer_links = page.eval_on_selector_all('#nav-drawer a[data-nav]:not([data-nav$="-m"])', 'els => els.filter(e => e.offsetParent).map(e => e.getAttribute("href"))')
+    top_links = page.eval_on_selector_all('.hdr .pnav a', 'els => els.map(e => e.getAttribute("href"))')
+    phase_text = page.evaluate('/(Phase|المرحلة)\\s*[0-9]/.test(document.querySelector("#nav-drawer").innerText)')
+    record(f'navigation: no future-phase entries for learners, {len(drawer_links)} menu entries (≤ 12) with no duplicate of the five top items, no "Phase N" wording',
+           coming == 0 and 0 < len(drawer_links) <= 12 and not (set(drawer_links) & set(top_links)) and len(top_links) == 4 and not phase_text, f'{coming} {drawer_links} {top_links} {phase_text}')
     learner_ids = page.eval_on_selector_all('#nav-drawer [data-nav]', 'els => els.map(e => e.dataset.nav)')
     record('role-aware nav: learner does not see Admin / Company Portal / Component library', not {'admin', 'company', 'components'} & set(learner_ids), str(learner_ids))
     ctx.close()
@@ -157,7 +162,7 @@ with sync_playwright() as p:
     page.evaluate('localStorage.setItem("cia-lang","ar")'); open_route(page, '/')
     back = page.evaluate('document.documentElement.dir')
     record('persistence: theme + digits survive reload; language choice is shared with the hub both ways', theme == 'dark' and dig == 'arab' and shared == 'en' and dir_now == 'ltr' and hub_lang == 'en' and back == 'rtl', f'{theme} {dig} {shared} {dir_now} {hub_lang} {back}')
-    digits_ok = re.search('[٠-٩]', page.inner_text('.journey')) and not re.search('[0-9]', page.inner_text('.journey'))
+    digits_ok = re.search('[٠-٩]', page.inner_text('.how-steps')) and not re.search('[0-9]', page.inner_text('.how-steps'))  # Phase 10A: the journey rail became "How it works"
     record('Eastern Arabic digit preference applied to rendered numbers', bool(digits_ok))
 
     # 8. Export / clear / import round-trip + invalid import
@@ -200,8 +205,10 @@ with sync_playwright() as p:
     page.check('input[name=dev-role][value=admin]'); page.click('[data-action=apply-roles]'); page.wait_for_timeout(200)
     open_route(page, '/dev/components', 'en')
     allowed = page.is_visible('[data-showcase=c-form]')
-    page.click('[data-action=menu]'); admin_nav = page.eval_on_selector_all('#nav-drawer [data-nav]', 'els => els.map(e => e.dataset.nav)')
+    page.click('[data-action=menu]'); admin_nav = page.eval_on_selector_all('#nav-drawer [data-nav], #user-menu [data-nav]', 'els => els.map(e => e.dataset.nav)')
+    # Phase 10A: future-phase entries (Admin, Company Portal …) are listed on the build plan of "About our content" for admins.
     open_route(page, '/about-governance', 'en'); registry_rows = page.locator('section[aria-labelledby=rg-h] tbody tr').count()
+    admin_nav += page.eval_on_selector_all('[data-plan=nav] [data-nav]', 'els => els.map(e => e.dataset.nav)')
     open_route(page, '/settings', 'en', '&dev=0'); prod_switcher = page.locator('[data-dev=roles]').count()
     open_route(page, '/dev/components', 'en', '&dev=0'); prod_forbidden = page.evaluate('document.querySelector("[data-status]")?.dataset.status')
     record('role guard: learner gets 403 on component library; dev admin gets it + admin nav + review register; production has no role switcher', forbidden == '403' and allowed and 'admin' in admin_nav and 'company' in admin_nav and registry_rows == 14 and prod_switcher == 0 and prod_forbidden == '403',
@@ -252,19 +259,20 @@ with sync_playwright() as p:
             else: route.continue_()
         page.route(pattern, h)
     failing_once('**/data/seed/platform-modules.json*')
-    page.goto(BASE + '/academy/?lang=en&dev=0&t=1#/'); page.wait_for_selector('html[data-ready]'); page.wait_for_timeout(300)
+    page.goto(BASE + '/academy/?lang=en&dev=0&t=1#/tools'); page.wait_for_selector('html[data-ready]'); page.wait_for_timeout(300)  # Phase 10A: the tool list moved to #/tools
     booted = page.evaluate('document.documentElement.dataset.ready') == 'true'
     tools_err = page.locator('section[aria-labelledby=tools-h] .state.error').count() == 1
     page.locator('section[aria-labelledby=tools-h]').get_by_role('button', name='Try again').click(); page.wait_for_timeout(400)
     n_tools = len(json.loads((ACADEMY / 'data/seed/platform-modules.json').read_text())['items'])
     tools_ok = page.locator('section[aria-labelledby=tools-h] a.tlink').count() == n_tools
     record(f'tool list failure does not block the Academy; retry recovers all {n_tools} tools', booted and tools_err and tools_ok, f'{booted} {tools_err} {tools_ok}')
-    failing_once('**/data/seed/build-status.json*')
+    # Phase 10A: the build plan is shown to reviewers and admins only, so the learner check uses the reference-register region.
+    failing_once('**/data/seed/ecosystems.json*')
     page.goto(BASE + '/academy/?lang=en&dev=0&t=2#/about-governance'); page.wait_for_selector('html[data-ready]'); page.wait_for_timeout(300)
-    had_err = page.locator('.state.error').count() == 1
-    page.get_by_role('button', name='Try again').click(); page.wait_for_timeout(300)
-    recovered = page.locator('[data-metric=build-completion]').count() == 1 and page.locator('.state.error').count() == 0
-    record('governance data region: error state with working retry', had_err and recovered, f'{had_err} {recovered}')
+    had_err = page.locator('section[aria-labelledby=rg-h] .state.error').count() == 1
+    page.locator('section[aria-labelledby=rg-h]').get_by_role('button', name='Try again').click(); page.wait_for_timeout(300)
+    recovered = page.locator('section[aria-labelledby=rg-h] .state.error').count() == 0 and page.locator('section[aria-labelledby=rg-h] p').count() >= 1 and page.locator('[data-metric=build-completion]').count() == 0
+    record('About our content: data region error state with working retry; no build plan for learners', had_err and recovered, f'{had_err} {recovered}')
     page.route('**/data/i18n/ar.json*', lambda r: r.fulfill(status=500, body='x'))
     page.goto(BASE + '/academy/?lang=ar&dev=0&t=3#/'); page.wait_for_selector('html[data-ready]'); page.wait_for_timeout(200)
     record('critical boot failure shows a bilingual reload message instead of a blank page', page.evaluate('document.documentElement.dataset.ready') == 'error' and page.locator('main .state.error button').count() == 1)

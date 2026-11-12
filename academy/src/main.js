@@ -7,6 +7,8 @@
 import { h, clear } from './core/dom.js';
 import { I18n, resolveInitialLocale, SHARED_LANG_KEY, LOCALES } from './core/i18n.js';
 import { Router, canAccess } from './core/router.js';
+import { redirectFor, hashFor } from './nav/redirects.js';
+import { SplitJsonAdapter } from './data/adapters/split-json.js';
 import { StaticJsonAdapter } from './data/adapters/static-json.js';
 import { LocalStorageAdapter } from './data/adapters/local-storage.js';
 import { MemoryAdapter } from './data/adapters/memory.js';
@@ -33,19 +35,32 @@ import { guidesIndexView, guideView, guideItemView } from './views/guides.js';
 import { pmiAcademyView, certificationsView, certificationView } from './views/pmi.js';
 import { qualityAcademyView, cmqoeCenterView } from './views/quality.js';
 import { excellenceAcademyView, excellenceLabView, excellenceLabSummaryView } from './views/excellence.js';
+import { academiesView } from './views/academies.js';
+import { welcomeView } from './views/welcome.js';
+import { mySpaceView } from './views/myspace.js';
+import { libraryHubView } from './views/library-hub.js';
+import { searchView } from './views/search.js';
+import { toolsView } from './views/tools.js';
 
 const ROUTES = [
   { path: '/', view: homeView, titleKey: 'home.title' },
+  /* Phase 10A: the five-item structure. Old addresses (/me, /profile, /knowledge, /guides …) redirect — src/nav/redirects.js. */
+  { path: '/academies', view: academiesView, titleKey: 'nav.items.academies' },
+  { path: '/welcome', view: welcomeView, titleKey: 'x10a.welcome.title' },
+  { path: '/my', view: mySpaceView, titleKey: 'nav.items.mySpace' },
+  { path: '/library', view: libraryHubView, titleKey: 'nav.items.library' },
+  { path: '/search', view: searchView, titleKey: 'x10a.search.title' },
+  { path: '/tools', view: toolsView, titleKey: 'x10a.tools.title' },
   { path: '/me', view: meView, titleKey: 'me.title' },
   { path: '/settings', view: settingsView, titleKey: 'settings.title' },
-  { path: '/about-governance', view: governanceView, titleKey: 'governance.title' },
+  { path: '/about-governance', view: governanceView, titleKey: 'x10a.about.title' },
   { path: '/profile', view: profileView, titleKey: 'profile.title' },
   { path: '/profile/competencies', view: myCompetenciesView, titleKey: 'profile.competencies' },
   { path: '/competencies', view: frameworkView, titleKey: 'profile.framework' },
   { path: '/competencies/roles', view: rolesView, titleKey: 'profile.roles' },
   { path: '/academy/courses', view: courseCatalogView, titleKey: 'courses.title' },
-  { path: '/academy/courses/:slug', view: courseDetailView, titleKey: 'courses.title' },
-  { path: '/academy/courses/:slug/:lesson', view: lessonView, titleKey: 'p7.lesson.title' },
+  { path: '/academy/courses/:slug', view: courseDetailView, titleKey: 'courses.title' , parent: ['/academy/courses', 'courses.title'] },
+  { path: '/academy/courses/:slug/:lesson', view: lessonView, titleKey: 'p7.lesson.title' , parent: ['/academy/courses', 'courses.title'] },
   { path: '/academy/iso', view: isoAcademyView, titleKey: 'nav.items.isoAcademy' },
   { path: '/academy/iso/:slug', view: isoStandardView, titleKey: 'nav.items.isoAcademy' },
   { path: '/academy/pmi', view: pmiAcademyView, titleKey: 'nav.items.pmiAcademy' },
@@ -64,16 +79,15 @@ const ROUTES = [
   { path: '/recommendations', view: recommendationsView, titleKey: 'recommendations.title' },
   { path: '/learning-path', view: learningPathView, titleKey: 'learningPath.title' },
   { path: '/assessments', view: assessmentsView, titleKey: 'assessments.title' },
-  { path: '/assessments/history', view: assessmentHistoryView, titleKey: 'assessments.history' },
-  { path: '/assessments/:slug', view: assessmentDetailView, titleKey: 'assessments.title' },
+  { path: '/assessments/history', view: assessmentHistoryView, titleKey: 'assessments.history' , parent: ['/assessments', 'assessments.title'] },
+  { path: '/assessments/:slug', view: assessmentDetailView, titleKey: 'assessments.title' , parent: ['/assessments', 'assessments.title'] },
   { path: '/knowledge', view: knowledgeIndexView, titleKey: 'knowledge.title' },
-  { path: '/knowledge/:ecosystem', view: ecosystemView, titleKey: 'knowledge.title' },
-  { path: '/knowledge/:ecosystem/:slug', view: articleView, titleKey: 'knowledge.title' },
+  { path: '/knowledge/:ecosystem', view: ecosystemView, titleKey: 'knowledge.title' , parent: ['/library', 'nav.items.library'] },
+  { path: '/knowledge/:ecosystem/:slug', view: articleView, titleKey: 'knowledge.title' , parent: ['/library', 'nav.items.library'] },
   { path: '/guides', view: guidesIndexView, titleKey: 'gd.title' },
-  { path: '/guides/:slug', view: guideView, titleKey: 'gd.title' },
-  { path: '/guides/:slug/:ref', view: guideItemView, titleKey: 'gd.title' },
-  { path: '/library', view: libraryView, titleKey: 'library.title' },
-  { path: '/library/:id', view: libraryItemView, titleKey: 'library.title' },
+  { path: '/guides/:slug', view: guideView, titleKey: 'gd.title' , parent: ['/library', 'nav.items.library'] },
+  { path: '/guides/:slug/:ref', view: guideItemView, titleKey: 'gd.title' , parent: ['/library', 'nav.items.library'] },
+  { path: '/library/:id', view: libraryItemView, titleKey: 'library.title' , parent: ['/library', 'nav.items.library'] },
   { path: '/my-library', view: myLibraryView, titleKey: 'library.my' },
   { path: '/review', view: reviewView, titleKey: 'p7.review.title', roles: ['reviewer', 'admin'] },
   { path: '/dev/components', view: componentsView, titleKey: 'components.title', roles: ['admin'] }
@@ -109,6 +123,9 @@ async function boot() {
   const content = new StaticJsonAdapter({ base: './data/seed' });
   const competencyContent = new StaticJsonAdapter({ base: './data/seed/competency' });
   const guideContent = new StaticJsonAdapter({ base: './data/guides' });
+  /* Phase 10A: courses and questions are split per academy and fetched on demand (data/seed/split/, D-49). */
+  const split = new SplitJsonAdapter({ base: './data/seed/split' });
+  let searchIndexP = null;
   const guideFiles = new Map();
 
   const locale = resolveInitialLocale({ search: location.search, storage });
@@ -119,7 +136,7 @@ async function boot() {
   const i18n = new I18n({ dictionaries: { ar, en }, locale, digits: prefs.digits, onMissing: (k, l) => console.warn(`[i18n] missing ${l}:${k}`) });
 
   const ctx = {
-    config, i18n, session, taxonomies, userAdapter, nav: navDoc.items,
+    config, i18n, session, taxonomies, userAdapter, nav: navDoc.items, split,
     platformSystems: {},
     relationships: new RelationshipIndex(relDoc.items),
     t: (k, p) => i18n.t(k, p),
@@ -130,7 +147,10 @@ async function boot() {
       sources: new CollectionRepository({ adapter: content, collection: 'sources' }),
       ecosystems: new ContentRepository({ adapter: content, collection: 'ecosystems' }),
       articles: new ContentRepository({ adapter: content, collection: 'knowledge-articles' }),
-      courses: new ContentRepository({ adapter: content, collection: 'courses' }),
+      courses: new ContentRepository({ adapter: split, collection: 'courses' }),
+      coursesIndex: new ContentRepository({ adapter: split, collection: 'courses-index' }),
+      bookmarks: new CollectionRepository({ adapter: userAdapter, collection: 'bookmarks' }),
+      studyPlan: new CollectionRepository({ adapter: userAdapter, collection: 'study_plan' }),
       guides: new ContentRepository({ adapter: guideContent, collection: 'index' }),
       lessonGuideMap: new CollectionRepository({ adapter: content, collection: 'lesson-guide-map' }),
       isoStandards: new ContentRepository({ adapter: content, collection: 'iso-standards' }),
@@ -150,7 +170,7 @@ async function boot() {
       recCatalog: new CollectionRepository({ adapter: content, collection: 'recommendation-catalog' }),
       reviewDecisions: new CollectionRepository({ adapter: userAdapter, collection: 'review_decisions' }),
       reviewSession: new CollectionRepository({ adapter: userAdapter, collection: 'review_session' }),
-      questions: new ContentRepository({ adapter: content, collection: 'questions' }),
+      questions: new ContentRepository({ adapter: split, collection: 'questions' }),
       assessments: new ContentRepository({ adapter: content, collection: 'assessments' }),
       recommendations: new CollectionRepository({ adapter: userAdapter, collection: 'recommendations' }),
       recommendationFeedback: new CollectionRepository({ adapter: userAdapter, collection: 'recommendation_feedback' }),
@@ -176,6 +196,9 @@ async function boot() {
       }
     },
     loadSeed: name => getJson(`./data/seed/${name}.json`),
+    /** The build-time search index (data/search-index.json), fetched the first time someone searches. */
+    loadSearchIndex: () => (searchIndexP ||= getJson('./data/search-index.json').then(d => d.items).catch(err => { searchIndexP = null; throw err; })),
+    navigate: (path) => { location.hash = '#' + path; },
     loadCompetency: name => getJson(`./data/seed/competency/${name}.json`),
     /** One guide file (data/guides/<slug>.json), cached. Callers check the guide's index record is visible first. */
     loadGuide: slug => {
@@ -211,7 +234,7 @@ async function boot() {
     else { view = route.view; titleKey = route.titleKey; }
     const title = i18n.t(titleKey);
     document.title = i18n.t('app.docTitle', { page: title });
-    const crumbs = path === '/' ? [] : [{ label: i18n.t('home.title'), href: '#/' }, { label: title }];
+    const crumbs = path === '/' ? [] : [{ label: i18n.t('home.title'), href: '#/' }, ...(route?.parent && i18n.t(route.parent[1]) !== title ? [{ label: i18n.t(route.parent[1]), href: '#' + route.parent[0] }] : []), { label: title }];
     const shell = renderShell(ctx, { currentPath: route ? path : null, crumbs });
     const main = h('main', { id: 'main', class: 'main', tabindex: '-1', dataset: { route: route ? route.path : '404' } });
     try { main.append(view(ctx, match)); }
@@ -221,12 +244,12 @@ async function boot() {
     }
     const banner = storage ? null : h('p', { class: 'errsum', role: 'status' }, i18n.t('states.storageBlocked'));
     clear(root).append(h('a', { class: 'skip', href: '#main', onclick: (e) => { e.preventDefault(); main.focus(); } }, i18n.t('a11y.skip')),
-      h('div', { class: 'app' }, shell.header, shell.crumbNav, banner, main, shell.footer));
+      h('div', { class: 'app' }, shell.header, shell.crumbNav, banner, main, shell.footer, shell.tabbar));
     if (!firstRender) { main.focus({ preventScroll: true }); window.scrollTo(0, 0); }
     firstRender = false;
   }
 
-  const router = new Router({ routes: ROUTES, render });
+  const router = new Router({ routes: ROUTES, render, redirect: redirectFor, hashFor });
   i18n.on('change', () => render(current || router.current()));
   session.on('change', () => render(router.current()));
   window.addEventListener('storage', (e) => { if (e.key === SHARED_LANG_KEY && e.newValue in LOCALES) i18n.setLocale(e.newValue); });

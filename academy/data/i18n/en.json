@@ -32,12 +32,12 @@
       "home": "Home",
       "standards": "Standards",
       "knowledge": "Knowledge Hub",
-      "library": "Professional Library",
+      "library": "Library",
       "academy": "Courses",
-      "certification": "Certification Explorer",
+      "certification": "PMI certifications",
       "assessments": "Assessments",
       "labs": "Practice Labs",
-      "tools": "Tools & Templates",
+      "tools": "Tools",
       "career": "Career Roadmap",
       "passport": "Professional Passport",
       "cpd": "CPD Tracker",
@@ -48,7 +48,7 @@
       "admin": "Admin",
       "company": "Company Portal",
       "settings": "Settings",
-      "governance": "Governance & build plan",
+      "governance": "About our content",
       "components": "Component library",
       "recommendations": "Recommendations",
       "learningPath": "Learning Path",
@@ -58,11 +58,17 @@
       "pmiAcademy": "PMI / PMO Academy",
       "qualityAcademy": "Quality Academy",
       "excellenceAcademy": "Excellence Academy",
-      "excellenceLab": "EFQM Assessment Lab"
+      "excellenceLab": "EFQM Assessment Lab",
+      "academies": "Academies",
+      "mySpace": "My space",
+      "qualityCerts": "ASQ certifications",
+      "efqmRecognition": "EFQM recognition",
+      "cmqoeCenter": "CMQ/OE Center",
+      "assessmentHistory": "Assessment history"
     },
     "phase": "Phase {phase}",
     "backToHub": "Back to the platform hub",
-    "menu": "Menu"
+    "menu": "More"
   },
   "home": {
     "title": "Home",
@@ -2166,6 +2172,274 @@
   "p10": {
     "home": {
       "excellenceBody": "Excellence logic, RADAR, self-assessment, improvement planning and recognition — with the EFQM Assessment Lab for your own evidence."
+    }
+  },
+  "x10a": {
+    "about": {
+      "title": "About our content",
+      "lede": "How Academy content is written, reviewed, labelled and sourced — and what the labels on courses and certificates mean.",
+      "planNav": "Build plan: sections coming in later phases",
+      "planNavNote": "Visible to reviewers and admins only. Learners do not see these entries anywhere in the Academy."
+    },
+    "acad": {
+      "all": "All academies",
+      "lede": "Four academies, one way of working: find your level, follow a route, learn and practise, and use the live toolkits.",
+      "open": "Open the academy",
+      "yours": "Matches your goal",
+      "iso": {
+        "line": "Management-system standards, auditing and integrated systems",
+        "long": "Understand and implement ISO management-system standards (9001, 14001, 45001, 27001 and more), audit them, and integrate them — with the requirement guides and toolkits."
+      },
+      "pmi": {
+        "line": "Projects, PMOs, programmes and PMI certifications",
+        "long": "Project, programme and portfolio management and PMO design, with original courses, practice guides and a certification explorer for PMI exams."
+      },
+      "quality": {
+        "line": "Quality engineering, auditing, Six Sigma and ASQ certifications",
+        "long": "Quality tools and methods, auditing, Lean Six Sigma and quality leadership, with the CMQ/OE Center and a certification explorer for ASQ exams."
+      },
+      "excellence": {
+        "line": "Organisational excellence, EFQM-informed self-assessment",
+        "long": "Organisational excellence and EFQM-informed self-assessment: courses, recognition facts and the EFQM Assessment Lab, a self-assessment aid."
+      }
+    },
+    "asm": {
+      "lede": "Start with a readiness check to find your level. Each course's own quizzes are inside the course.",
+      "byAcademy": "Assessments by academy",
+      "general": "General",
+      "type": "Type",
+      "types": {
+        "diagnostic": "Readiness and diagnostics",
+        "course": "Course finals and practical tasks"
+      },
+      "noneDiag": "No readiness check here yet",
+      "noneDiagBody": "This academy's starting checks are not published yet.",
+      "noneCourse": "No course assessments here yet",
+      "noneCourseBody": "Course finals appear here once their courses are published.",
+      "quizNote": "Lesson quizzes and knowledge checks are part of each course — open the course to take them."
+    },
+    "bm": {
+      "save": "Save",
+      "saved": "Saved",
+      "added": "Saved to My space",
+      "removed": "Removed from your saved items",
+      "remove": "Remove",
+      "removeNamed": "Remove {name} from saved items",
+      "type": {
+        "course": "Course",
+        "lesson": "Lesson",
+        "guide": "Guide",
+        "guide_item": "Guide item",
+        "certification": "Certification",
+        "template": "Template",
+        "article": "Article"
+      }
+    },
+    "card": {
+      "progress": "{done} of {total} lessons · {left} left",
+      "fresh": "{total} lessons · {mins}"
+    },
+    "cat": {
+      "lede": "Every published course in one place. Filter by academy, level, length, certification or programme.",
+      "academy": "Academy",
+      "hours": "Length",
+      "hoursBand": {
+        "short": "Up to 8 hours",
+        "medium": "8–20 hours",
+        "long": "More than 20 hours"
+      },
+      "cert": "Certification",
+      "programme": "Programme",
+      "allProgrammes": "All programmes",
+      "moreFilters": "More filters"
+    },
+    "course": {
+      "able": "What you will be able to do",
+      "more": "More about this course",
+      "sticky": "Start or continue this course"
+    },
+    "goal": {
+      "open": "Open",
+      "start": "Start here",
+      "standard": {
+        "t": "Learn a standard",
+        "d": "Understand and apply ISO 9001, 14001, 45001, 27001 and more"
+      },
+      "certification": {
+        "t": "Prepare for a certification",
+        "d": "PMP, CMQ/OE, Six Sigma and more — facts from the official bodies"
+      },
+      "improve": {
+        "t": "Lead improvement in my organisation",
+        "d": "Excellence, self-assessment and improvement methods"
+      },
+      "team": {
+        "t": "Develop my team",
+        "d": "Routes, competencies and courses for the roles you lead"
+      }
+    },
+    "home": {
+      "question": "What do you want to achieve?",
+      "lede": "Choose a goal. We will open the right academy and your starting point.",
+      "continue": "Continue where you left off",
+      "continueCta": "Continue: {lesson}",
+      "featured": "Start with one of these courses",
+      "allCourses": "All courses",
+      "startLesson": "Start lesson 1"
+    },
+    "how": {
+      "title": "How it works",
+      "find": {
+        "t": "Find your level",
+        "d": "Answer three questions and take a short readiness check."
+      },
+      "learn": {
+        "t": "Learn and practise",
+        "d": "Short lessons with examples, an exercise and a check — then the live toolkit."
+      },
+      "show": {
+        "t": "Show your progress",
+        "d": "Track lessons, assessments and competencies in My space."
+      }
+    },
+    "landing": {
+      "courses": "Courses",
+      "seeAll": "See all {n} courses",
+      "moreRoutes": "{n} more routes",
+      "moreStandards": "{n} more standards",
+      "tools": "Tools and labs",
+      "about": "About this content",
+      "allArticles": "All articles in the Library",
+      "cmqoeBody": "Diagnostic, readiness index, weak areas and a study plan for the CMQ/OE body of knowledge."
+    },
+    "lib": {
+      "lede": "Articles, requirement and method guides, and templates — in one place, with one search.",
+      "search": "Search the Library",
+      "searchPh": "e.g. ISO 9001 7.2, FMEA, root cause",
+      "searchAll": "Search the whole Academy",
+      "tabs": {
+        "articles": "Articles",
+        "guides": "Requirement & method guides",
+        "templates": "Templates"
+      }
+    },
+    "my": {
+      "eyebrow": "Your learning",
+      "lede": "Your progress, path, recommendations, competencies and profile — saved on this device only.",
+      "obTitle": "Set up your space in 60 seconds",
+      "obBody": "Three questions — your role, your goal and your weekly hours — and the Academy picks your starting point.",
+      "obCta": "Answer three questions",
+      "statsLabel": "Your numbers",
+      "stat": {
+        "inProgress": "courses in progress",
+        "finished": "courses read in full",
+        "lessons": "lessons done",
+        "minutes": "minutes of reading",
+        "passed": "assessments passed",
+        "saved": "saved items"
+      },
+      "startHere": "Start here",
+      "startHereBody": "A first course in each academy — your goal's academy first.",
+      "saved": "Saved items",
+      "savedEmpty": "Nothing saved yet. Use “Save” on a course, lesson, guide or certification.",
+      "tabs": {
+        "progress": "Progress",
+        "path": "My path",
+        "recommendations": "Recommendations",
+        "competencies": "Competencies",
+        "profile": "Profile"
+      }
+    },
+    "plan": {
+      "title": "Weekly study plan",
+      "body": "Your next lessons, spread over the days you choose. Courses: {courses}.",
+      "days": "Study days",
+      "time": "Start time",
+      "err": {
+        "days": "Choose at least one day.",
+        "hours": "Enter weekly hours from 1 to 40."
+      },
+      "summary": "{n} sessions over {weeks} weeks, about {mins} each.",
+      "unplanned": "{n} more lessons are beyond 12 weeks — they will appear as you progress.",
+      "more": "…and {n} more sessions in the calendar file.",
+      "save": "Save plan",
+      "saved": "Plan saved on this device",
+      "ics": "Add to calendar (.ics)",
+      "downloaded": "Calendar file downloaded",
+      "note": "The calendar file opens in Google Calendar, Outlook or Apple Calendar. Times are local to your device."
+    },
+    "search": {
+      "title": "Search",
+      "lede": "Courses, lessons, guides clause by clause, certifications, standards, articles and templates.",
+      "label": "Search the Academy",
+      "open": "Open search",
+      "placeholder": "e.g. ISO 9001 clause 7.2, FMEA, PMP",
+      "go": "Search",
+      "hint": "Arabic and English. Spelling variants (أ إ آ ا · ة ه · ى ي) are treated as the same.",
+      "count": "{n} results",
+      "noneBody": "Try fewer words, another spelling, or a clause number such as 7.2.",
+      "examples": "Try: ISO 9001 clause 7.2 · FMEA · PMP · إدارة المخاطر",
+      "type": "Show",
+      "allTypes": "Everything",
+      "types": {
+        "course": "Courses",
+        "lesson": "Lessons",
+        "guide": "Guides",
+        "guide_item": "Guide items and clauses",
+        "certification": "Certifications",
+        "article": "Articles",
+        "template": "Templates and tools",
+        "standard": "ISO standards"
+      }
+    },
+    "tab": {
+      "academies": "Academies"
+    },
+    "tabbar": "Main sections",
+    "tools": {
+      "button": "Tools",
+      "title": "Tools",
+      "lede": "The live toolkits of the platform — gap assessments, registers, checklists and plans. Each one opens on the platform in your language.",
+      "openHub": "Open the tools on the platform",
+      "guides": "Read the requirement & method guides"
+    },
+    "user": {
+      "label": "Account",
+      "open": "Open the account menu"
+    },
+    "welcome": {
+      "eyebrow": "60 seconds",
+      "title": "Find your starting point",
+      "lede": "Three questions. Your answers stay on this device and can be changed any time in My space → Profile.",
+      "stepOf": "{n} of {total}",
+      "q1": "Your role",
+      "roleHint": "In your own words, e.g. Quality Engineer.",
+      "q2": "Your goal",
+      "q3": "Your time",
+      "hoursLabel": "Hours per week for learning",
+      "hoursHint": "1 to 40. Used for your weekly plan.",
+      "hoursQuick": "Quick choices",
+      "hoursN": "{n} h",
+      "privacy": "Saved only on this device. Nothing is sent anywhere.",
+      "submit": "Save and find my level",
+      "skip": "Skip for now",
+      "saved": "Profile saved",
+      "doneTitle": "Your profile is saved.",
+      "doneBody": "This short check finds your level so the starting point fits you. Prefer to begin straight away?",
+      "startNow": "Start “{course}” now",
+      "err": {
+        "required": "Required.",
+        "short": "Use at least 2 characters.",
+        "long": "Use 120 characters or fewer.",
+        "role": "Choose a role from the list.",
+        "range": "Enter a whole number from 1 to 40."
+      },
+      "field": {
+        "current_role": "Current role",
+        "target_role": "Role you are aiming at",
+        "goal": "Your goal",
+        "weekly_hours": "Hours per week"
+      }
     }
   }
 }

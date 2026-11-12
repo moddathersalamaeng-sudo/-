@@ -98,10 +98,12 @@ try:
     n_courses = page.locator('section[aria-labelledby=ex-courses] [data-course]').count()
     covers = page.locator('section[aria-labelledby=ex-courses] [data-course] .cover svg.cover-art').count()
     n_certs = page.locator('section[aria-labelledby=ex-certs] [data-cert]').count()
-    kaqa = page.locator('section[aria-labelledby=ex-kaqa] li').count(); kaqa_links = page.locator('section[aria-labelledby=ex-kaqa] a[href*=".gov.sa/"]').count()
-    tools = page.locator('section[aria-labelledby=ex-learnuse] [data-module]').count()
+    # Phase 10A (academy template, plan §3.4): courses show 6 + "see all" (the catalogue filtered by academy); guides and toolkits moved to "Tools and labs". KAQA facts sit in the recognition section.
+    see_all = page.get_attribute('section[aria-labelledby=ex-courses] [data-action=see-all-courses]', 'href') or ''
+    kaqa = page.locator('[data-kaqa] li').count(); kaqa_links = page.locator('[data-kaqa] a[href*=".gov.sa/"]').count()
+    tools = page.locator('section[aria-labelledby=ex-tools] [data-module]').count()
     record('Excellence landing lists 4 routes, 7 courses each with a cover, 5 EFQM recognition options, 3 dated KAQA facts linked to gov.sa pages and the 4 excellence toolkits',
-           n_routes == 4 and n_courses == 7 and covers == 7 and n_certs == 5 and kaqa == 3 and kaqa_links == 3 and tools == 4, f'{n_routes} {n_courses} {covers} {n_certs} {kaqa} {kaqa_links} {tools}')
+           n_routes == 4 and n_courses == 6 and covers == 6 and see_all.endswith('academy=excellence') and n_certs == 5 and kaqa == 3 and kaqa_links == 3 and tools == 4, f'{n_routes} {n_courses} {covers} {n_certs} {kaqa} {kaqa_links} {tools}')
 
     go(page, '/academy/excellence/recognition')
     page.select_option('#pf-area', 'award'); page.wait_for_timeout(200)
@@ -224,8 +226,9 @@ try:
            hdr_hidden and kept_after_cancel and cleared and restored and rejected, f'{hdr_hidden} {kept_after_cancel} {cleared} {restored} {rejected}')
 
     go(page, '/')
+    # Phase 10A (home, plan §3.2): the four academy tiles; the guides moved to the Library.
     tiles = page.locator('.acad-tiles .acad-tile').count(); xtile = page.locator('.acad-tiles a[href="#/academy/excellence"]').count()
-    record('home: five illustrated academy tiles including the Excellence Academy', tiles == 5 and xtile == 1 and page.locator('.acad-tiles svg.banner-art').count() == 5, f'{tiles} {xtile}')
+    record('home: four illustrated academy tiles including the Excellence Academy', tiles == 4 and xtile == 1 and page.locator('.acad-tiles svg.banner-art').count() == 4, f'{tiles} {xtile}')
     keys = page.evaluate('() => Object.keys(localStorage)')
     record('storage: the Academy writes only cia:v1:* and cia-lang (the Lab record included)', all(k.startswith('cia:v1:') or k == 'cia-lang' for k in keys) and any(k.endswith(':excellence_lab') for k in keys), keys)
     record('no console errors or warnings in the reviewer and Lab journeys', not logs, logs[:5])
@@ -266,7 +269,7 @@ try:
     pub = [c for c in XC if PUBLISHED(c)]
     shown = page.locator('section[aria-labelledby=ex-courses] [data-course]').count()
     record(f'learner: the Excellence landing shows only published courses ({len(pub)}) with honest empty states otherwise; one h1; no preview banner',
-           shown == len(pub) and layout(page)['h1'] == 1 and page.locator('[data-preview]').count() == 0, f'{shown}')
+           shown == min(6, len(pub)) and layout(page)['h1'] == 1 and page.locator('[data-preview]').count() == 0, f'{shown}')  # Phase 10A: 6 + "see all"
     go(page, '/academy/excellence/recognition')
     pub_c = [c for c in CERTS if PUBLISHED(c)]
     record('learner: the EFQM explorer shows published options only, with one h1', page.locator('#cert-list [data-cert]').count() == len(pub_c) and layout(page)['h1'] == 1)

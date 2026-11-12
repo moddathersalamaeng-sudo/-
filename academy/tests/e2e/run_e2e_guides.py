@@ -63,9 +63,10 @@ with sync_playwright() as p:
     # ---------- A. Learner: guides are open to everyone ----------
     ctx = b.new_context(viewport={'width': 1280, 'height': 900}); page = ctx.new_page(); logs = watch(page)
     go(page, '/')
-    nav_ok = page.locator('a[href="#/guides"]').count() >= 1
-    home_teaser = page.locator('.gteaser a[href="#/guides"]').count() == 1
+    # Phase 10A (navigation layout): the guides are a tab of the merged Library (top bar "Library"); #/guides redirects there.
+    nav_ok = page.locator('.pnav a[href="#/library"]').count() == 1
     go(page, '/guides')
+    home_teaser = page.evaluate('location.hash').startswith('#/library?') and 'tab=guides' in page.evaluate('location.hash')
     cards = page.locator('[data-guide]').count()
     std = page.locator('#gd-std ~ .cards [data-guide], section[aria-labelledby=gd-std] [data-guide]').count()
     record('learner: Guides in the navigation and on home; the index lists all 27 published guides (9 standards + 4 practice guides + 14 methods; Phase 8 added the practice guides)', nav_ok and home_teaser and cards == 27 and std == 9, f'{nav_ok} {home_teaser} {cards} {std}')
@@ -118,8 +119,9 @@ with sync_playwright() as p:
     record('unknown guide or item: honest "not available" page with one h1 and a way back', bad1 and bad2, f'{bad1} {bad2}')
 
     go(page, '/academy/iso')
-    iso_guides = page.locator('section[aria-labelledby=iso-guides] [data-guide]').count()
-    game = page.locator('section[aria-labelledby=iso-game] a[data-library]').count()
+    # Phase 10A (academy template): guides and the game now sit in the landing's "Tools and labs" section.
+    iso_guides = page.locator('section[aria-labelledby=iso-tools] [data-guide]').count()
+    game = page.locator('section[aria-labelledby=iso-tools] a[data-library]').count()
     record('ISO Academy shows learners the 9 requirement guides and the Quality Mission game', iso_guides == 9 and game == 2, f'{iso_guides} {game}')
 
     go(page, '/library/LIB-SIM-02')

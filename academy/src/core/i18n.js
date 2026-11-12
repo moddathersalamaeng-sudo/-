@@ -66,10 +66,16 @@ export class I18n extends Emitter {
   /** Render any Western digits inside a string with the chosen digit system (e.g. "12A"). */
   digitize(s) { return this.digits === 'arab' ? String(s).replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]) : String(s); }
   percent(ratio) { return this.number(ratio, { style: 'percent', maximumFractionDigits: 0 }); }
+  /**
+   * A calendar date ("2026-11-06") is a day, not an instant: it is read as UTC midnight and formatted in UTC, so it shows
+   * the same day in every time zone (Phase 10A fix — west of UTC it used to show one day earlier). Timestamps keep the
+   * viewer's local time zone.
+   */
   date(value, opts = { year: 'numeric', month: 'long', day: 'numeric' }) {
-    const d = value instanceof Date ? value : new Date(value);
+    const dayOnly = typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value);
+    const d = value instanceof Date ? value : new Date(dayOnly ? value + 'T00:00:00Z' : value);
     if (Number.isNaN(d.getTime())) return '';
-    return new Intl.DateTimeFormat(intlTag(this.locale, this.digits), opts).format(d);
+    return new Intl.DateTimeFormat(intlTag(this.locale, this.digits), dayOnly ? { ...opts, timeZone: 'UTC' } : opts).format(d);
   }
 }
 

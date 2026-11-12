@@ -33,14 +33,30 @@ export function canAccess(route, roles) {
   return route.roles.some(r => roles.includes(r));
 }
 
+/**
+ * Phase 10A: `redirect(path, query)` → `{ path, query }` | null. A redirected address is replaced in the history
+ * (replaceState: no extra Back step) and the new place is rendered; `match.redirectedFrom` records the old path.
+ */
+export function resolveWithRedirect(routes, hash, redirect, hashFor) {
+  const m = resolve(routes, hash);
+  const r = redirect ? redirect(m.path, m.query) : null;
+  if (!r) return { match: m, hash: null };
+  const next = hashFor(r);
+  return { match: { ...resolve(routes, next), redirectedFrom: m.path }, hash: next };
+}
+
 export class Router {
-  constructor({ routes, render, win = window }) {
-    this.routes = routes; this.render = render; this.win = win;
+  constructor({ routes, render, win = window, redirect = null, hashFor = null }) {
+    this.routes = routes; this.render = render; this.win = win; this.redirect = redirect; this.hashFor = hashFor;
     this.onHash = () => this.dispatch();
   }
   start() { this.win.addEventListener('hashchange', this.onHash); this.dispatch(); }
   stop() { this.win.removeEventListener('hashchange', this.onHash); }
-  current() { return resolve(this.routes, this.win.location.hash); }
+  current() {
+    const { match, hash } = resolveWithRedirect(this.routes, this.win.location.hash, this.redirect, this.hashFor);
+    if (hash) { try { this.win.history.replaceState(null, '', hash); } catch { /* sandboxed */ } }
+    return match;
+  }
   navigate(path) { this.win.location.hash = '#' + path; }
   dispatch() { this.render(this.current()); }
 }

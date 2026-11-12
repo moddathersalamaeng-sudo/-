@@ -9,6 +9,7 @@
  * Ecosystem *names* are used as labels even while the ecosystem records are under review; articles themselves
  * are always filtered by the governance gate.
  */
+import { BookmarkButton } from '../ui/bookmark.js';
 import { h, icon } from '../core/dom.js';
 import { dataRegion, EmptyState, Badge, Button, Table, toast } from '../ui/components.js';
 import { searchRecords, csvFor } from '../domain/knowledge.mjs';
@@ -40,8 +41,8 @@ export function knowledgeIndexView(ctx, match) {
       h('h3', null, h('a', { href: `#/knowledge/${id}` }, ecoName(ctx, content, id))),
       h('p', { class: 'note' }, t('p7.knowledge.count', { n: i18n.number(arts.filter(a => a.ecosystem === id).length) })))));
     const paint = () => {
-      setHashQuery('/knowledge', q);
-      if (!q.q.trim()) { status.textContent = ''; results.replaceChildren(section('k-browse', t('p7.knowledge.browse'), browse), guidesTeaser); return; }
+      if (match.path !== '/library') setHashQuery('/knowledge', q);
+      if (!q.q.trim() || match.path === '/library') { status.textContent = ''; results.replaceChildren(section('k-browse', t('p7.knowledge.browse'), browse), match.path === '/library' ? null : guidesTeaser); return; }
       const hits = searchRecords(arts, q.q, i18n.locale);
       status.textContent = t('p7.knowledge.results', { n: i18n.number(hits.length) });
       results.replaceChildren(hits.length ? h('div', null, srHeading(t('p7.course.results')), h('div', { class: 'cards' }, hits.map(a => articleCard(ctx, a)))) : EmptyState({ title: t('p7.course.noMatch'), body: t('p7.knowledge.noMatchBody') }));
@@ -49,7 +50,8 @@ export function knowledgeIndexView(ctx, match) {
     const search = h('form', { class: 'filters', role: 'search', onsubmit: e => e.preventDefault() },
       h('div', { class: 'field' }, h('label', { for: 'k-q' }, t('p7.knowledge.search')), h('input', { class: 'input', id: 'k-q', type: 'search', value: q.q, oninput: e => { q.q = e.target.value; paint(); } })));
     paint();
-    return h('div', null, search, status, results);
+    /* Phase 10A: inside the Library the page-level search is the one search; this tab only browses. */
+    return match.path === '/library' ? h('div', null, results) : h('div', null, search, status, results);
   } });
   return h('div', null, head, region);
 }
@@ -102,7 +104,7 @@ export function articleView(ctx, match) {
       next.competencies.length ? h('div', null, h('h3', null, t('p7.course.competencies')), h('ul', { class: 'plain' }, next.competencies.map(c => h('li', null, L(ctx, c.name))))) : null,
       a.ecosystem === 'iso' ? linkBtn('#/academy/iso', t('nav.items.isoAcademy'), 'primary') : linkBtn(`#/knowledge/${a.ecosystem}`, ecoName(ctx, content, a.ecosystem)));
     return h('article', { class: 'article', dataset: { article: a.id } },
-      pageHead(ctx, { eyebrow: `${ecoName(ctx, content, a.ecosystem)} · ${t('p7.minutesRead', { n: ctx.i18n.number(a.estimated_minutes || 0) })}`, title: L(ctx, a.title) }),
+      pageHead(ctx, { eyebrow: `${ecoName(ctx, content, a.ecosystem)} · ${t('p7.minutesRead', { n: ctx.i18n.number(a.estimated_minutes || 0) })}`, title: L(ctx, a.title), actions: [BookmarkButton(ctx, { type: 'article', id: a.id, href: articleHref(a), title: a.title })] }),
       a.learning_objectives?.length ? h('section', { class: 'panel' }, h('h2', { class: 'h-sm' }, t('p7.lesson.objectives')), h('ul', null, a.learning_objectives.map(o => h('li', null, L(ctx, o))))) : null,
       h('div', { class: 'article-grid' },
         h('div', null, a.content.map(b => h('section', { class: 'lblock', dataset: { block: b.type } }, h('h2', null, L(ctx, b.title)),
@@ -131,7 +133,7 @@ export function libraryView(ctx, match) {
     const kinds = [...new Set(xs.map(x => x.kind))];
     const list = h('div', { class: 'cards' });
     const status = h('p', { class: 'note', role: 'status', 'aria-live': 'polite' });
-    const paint = () => { const ys = xs.filter(x => !f.kind || x.kind === f.kind); status.textContent = t('p7.knowledge.results', { n: i18n.number(ys.length) }); list.replaceChildren(...ys.map(x => libCard(ctx, x))); setHashQuery('/library', f); };
+    const paint = () => { const ys = xs.filter(x => !f.kind || x.kind === f.kind); status.textContent = t('p7.knowledge.results', { n: i18n.number(ys.length) }); list.replaceChildren(...ys.map(x => libCard(ctx, x))); setHashQuery('/library', match.path === '/library' ? { tab: 'templates', ...f } : f); };
     const filters = h('div', { class: 'filters' }, h('div', { class: 'field' }, h('label', { for: 'lib-kind' }, t('p7.library.kind')),
       h('select', { class: 'select', id: 'lib-kind', onchange: e => { f.kind = e.target.value; paint(); } }, h('option', { value: '' }, t('p7.course.any')), kinds.map(k => h('option', { value: k, selected: f.kind === k }, t('p7.libKind.' + k))))));
     paint();

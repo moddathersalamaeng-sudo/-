@@ -93,10 +93,12 @@ try:
     n_courses = page.locator('section[aria-labelledby=q-courses] [data-course]').count()
     covers = page.locator('section[aria-labelledby=q-courses] [data-course] .cover svg.cover-art').count()
     n_certs = page.locator('section[aria-labelledby=q-certs] [data-cert]').count()
-    n_methods = page.locator('section[aria-labelledby=q-methods] [data-course]').count()
-    tools = page.locator('section[aria-labelledby=q-learnuse] [data-module]').count()
+    # Phase 10A (academy template, plan §3.4): courses show 6 + "see all" (the catalogue filtered by academy); guides and toolkits moved to "Tools and labs".
+    n_methods = page.locator('section[aria-labelledby=q-tools] [data-guide]').count()
+    see_all = page.get_attribute('section[aria-labelledby=q-courses] [data-action=see-all-courses]', 'href') or ''
+    tools = page.locator('section[aria-labelledby=q-tools] [data-module]').count()
     record('Quality landing lists 5 routes, 9 courses each with a cover, 9 ASQ certifications, the method-guide courses and the quality toolkits',
-           n_routes == 5 and n_courses == 9 and covers == 9 and n_certs == 9 and n_methods >= 12 and tools >= 10, f'{n_routes} {n_courses} {covers} {n_certs} {n_methods} {tools}')
+           n_routes == 5 and n_courses == 6 and covers == 6 and see_all.endswith('academy=quality') and n_certs == 9 and n_methods >= 12 and tools >= 10, f'{n_routes} {n_courses} {covers} {n_certs} {n_methods} {tools}')
 
     go(page, '/academy/quality/certifications')
     page.select_option('#pf-area', 'improvement'); page.wait_for_timeout(200)
@@ -204,7 +206,7 @@ try:
     pub = [c for c in QC if PUBLISHED(c)]
     shown = page.locator('section[aria-labelledby=q-courses] [data-course]').count()
     record(f'learner: the Quality landing shows only published courses ({len(pub)}) with honest empty states otherwise; one h1; no preview banner',
-           shown == len(pub) and layout(page)['h1'] == 1 and page.locator('[data-preview]').count() == 0, f'{shown}')
+           shown == min(6, len(pub)) and layout(page)['h1'] == 1 and page.locator('[data-preview]').count() == 0, f'{shown}')  # Phase 10A (academy template, plan §3.4): courses show 6 + "see all" (the catalogue filtered by academy); guides and toolkits moved to "Tools and labs".
     go(page, '/academy/quality/certifications')
     pub_c = [c for c in CERTS if PUBLISHED(c)]
     record('learner: the ASQ explorer shows published certifications only, with one h1', page.locator('#cert-list [data-cert]').count() == len(pub_c) and layout(page)['h1'] == 1)

@@ -127,18 +127,24 @@ export function ProgressRing({ ratio, label, valueText, size = 72 }) {
 }
 
 /** Accessible tabs (WAI-ARIA APG): arrow keys, Home/End, roving tabindex; RTL-aware arrows. */
-export function Tabs({ label, tabs, initial = 0 }) {
+export function Tabs({ label, tabs, initial = 0, lazy = false, onSelect = null }) {
   const base = nextId('tabs');
   const list = h('div', { role: 'tablist', 'aria-label': label });
   const panels = [];
+  const filled = new Set();
+  const fill = i => { if (!filled.has(i)) { filled.add(i); panels[i].append(tabs[i].content()); } };
   const buttons = tabs.map((t, i) => {
-    const b = h('button', { role: 'tab', id: `${base}-t${i}`, 'aria-controls': `${base}-p${i}`, 'aria-selected': String(i === initial), tabindex: i === initial ? '0' : '-1', type: 'button' }, t.label);
-    panels.push(h('div', { role: 'tabpanel', id: `${base}-p${i}`, 'aria-labelledby': `${base}-t${i}`, tabindex: '0', hidden: i !== initial }, t.content()));
+    const b = h('button', { role: 'tab', id: `${base}-t${i}`, 'aria-controls': `${base}-p${i}`, 'aria-selected': String(i === initial), tabindex: i === initial ? '0' : '-1', type: 'button', dataset: t.key ? { tab: t.key } : null }, t.label);
+    panels.push(h('div', { role: 'tabpanel', id: `${base}-p${i}`, 'aria-labelledby': `${base}-t${i}`, tabindex: '0', hidden: i !== initial, dataset: t.key ? { panel: t.key } : null }));
+    if (!lazy || i === initial) fill(i);
     return b;
   });
+  /* Phase 10A: `lazy` builds a panel only when it is first shown; `onSelect(i)` lets a page keep the tab in its URL. */
   const select = (i, focus = true) => {
+    fill(i);
     buttons.forEach((b, j) => { b.setAttribute('aria-selected', String(i === j)); b.tabIndex = i === j ? 0 : -1; panels[j].hidden = i !== j; });
     if (focus) buttons[i].focus();
+    onSelect?.(i);
   };
   buttons.forEach((b, i) => {
     b.addEventListener('click', () => select(i));

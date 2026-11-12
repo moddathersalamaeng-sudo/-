@@ -19,6 +19,7 @@ import { L, previewBanner, linkBtn, section, isReviewer, govBadge, toolLink } fr
 import { courseCard } from './courses.js';
 import { certCard, certsOf, routeCard, stat, studyPlan, certHref } from './pmi.js';
 import { academyBanner } from '../ui/art.js';
+import { academyLanding, toolPanel, orderCourses } from '../ui/landing.js';
 
 const isQCourse = c => c.ecosystem === 'quality' && !c.guide;
 const isQGuideCourse = c => c.guide && (c.category === 'quality' || c.ecosystem === 'quality' || c.id.startsWith('CRS-M-'));
@@ -40,9 +41,9 @@ function startingPoint(ctx, content, learner) {
     h('p', null, L(ctx, sp.reason)),
     sp.factors.length ? h('details', null, h('summary', null, t('p7.iso.whyThis')), h('ul', null, sp.factors.map(f => h('li', null, factorText(ctx, f, content))))) : null,
     visible
-      ? h('div', { class: 'btnrow' }, linkBtn(sp.href, t('p7.iso.startCta'), 'primary', { 'data-action': 'q-start' }), learner.profile ? null : linkBtn('#/profile', t('phase6.completeProfile')))
+      ? h('div', { class: 'btnrow' }, linkBtn(sp.href, t('p7.iso.startCta'), 'primary', { 'data-action': 'q-start' }), learner.profile ? null : linkBtn('#/welcome', t('phase6.completeProfile')))
       : h('div', null, h('p', { class: 'banner banner-info', role: 'note' }, t('q9.startPending')),
-        h('div', { class: 'btnrow' }, linkBtn('#/guides', t('q9.readFundamentals'), 'primary'), learner.profile ? null : linkBtn('#/profile', t('phase6.completeProfile')))),
+        h('div', { class: 'btnrow' }, linkBtn('#/guides', t('q9.readFundamentals'), 'primary'), learner.profile ? null : linkBtn('#/welcome', t('phase6.completeProfile')))),
     h('p', { class: 'note' }, t('p7.iso.yearsNote')));
 }
 
@@ -64,33 +65,28 @@ export function qualityAcademyView(ctx) {
     const tools = content.tools.filter(m => m.system === 'aud' && m.id !== 'aud' && m.id !== 'oec');
     const ready = content.byId(content.assessments, 'ASM-READY-Q-001');
     const figN = (content.figures || []).filter(f => f.id.startsWith('FIG-Q-') || f.id.startsWith('FIG-M-')).length;
-    const inProgress = courses.filter(c => courseStatus(c, learner.progress, learner.attempts).state === 'in_progress');
-    const hero = bannerHero('q-landing', 'quality', 'award',
-      h('p', { class: 'eyebrow' }, icon('award'), ' ', t('q9.eyebrow')), h('h1', null, t('q9.title')), h('p', null, t('q9.lede')),
-      h('ul', { class: 'stats', 'aria-label': t('q9.statsLabel') },
-        stat('book', i18n.number(courses.length), t('q9.statCourses')), stat('image', i18n.number(figN), t('q9.statFigures')),
-        stat('award', i18n.number(certs.length), t('q9.statCerts')), stat('route', i18n.number(routes.length), t('q9.statRoutes'))),
-      h('div', { class: 'btnrow' }, ready ? linkBtn(`#/assessments/${ready.slug}`, t('q9.takeReadiness'), 'primary') : linkBtn('#/guides', t('q9.readFundamentals'), 'primary'),
-        linkBtn('#/academy/quality/certifications', t('q9.exploreCerts')), linkBtn('#/academy/quality/cmqoe', t('q9.openCenter'))));
-    return h('div', null,
-      hero,
-      previewBanner(ctx, [...courses, ...routes, ...certs]),
-      startingPoint(ctx, content, learner),
-      inProgress.length ? section('q-cont', t('p7.iso.continue'), h('div', { class: 'cards' }, inProgress.map(c => courseCard(ctx, c, learner)))) : null,
-      section('q-routes', t('q9.routes'), h('p', { class: 'note' }, t('q9.routesNote')),
-        routes.length ? h('div', { class: 'cards' }, routes.map(p => routeCard(ctx, p, content, learner, Q_ROLE_ROUTE))) : EmptyState({ title: t('q9.routesPending'), body: t('p7.pendingBody'), iconName: 'lock' })),
-      section('q-courses', t('q9.courses'), h('p', { class: 'note' }, t('q9.coursesNote')),
-        courses.length ? h('div', { class: 'cards' }, courses.map(c => courseCard(ctx, c, learner))) : EmptyState({ title: t('q9.coursesPending'), body: t('p7.pendingBody'), iconName: 'lock' })),
-      section('q-certs', t('q9.certs'), h('p', { class: 'note' }, t('q9.certsNote')),
-        certs.length ? h('div', { class: 'cards' }, certs.map(c => certCard(ctx, c))) : EmptyState({ title: t('q9.certsPending'), body: t('p7.pendingBody'), iconName: 'lock' }),
-        certs.length ? h('p', null, linkBtn('#/academy/quality/certifications', t('q9.compareCerts'))) : null),
-      guides.length ? section('q-methods', t('q9.methods'), h('p', { class: 'note' }, t('q9.methodsNote')),
-        h('div', { class: 'cards' }, guideCourses.filter(c => guides.some(g => g.slug === c.guide)).map(c => courseCard(ctx, c, learner)))) : null,
-      section('q-learnuse', t('p7.iso.learnVsUse'), h('div', { class: 'split' },
-        h('div', { class: 'panel' }, h('h3', null, icon('book'), ' ', t('p7.iso.learnTitle')), h('p', null, t('q9.learnBody')), linkBtn('#/academy/courses?q=', t('courses.title'))),
-        h('div', { class: 'panel' }, h('h3', null, icon('grid'), ' ', t('p7.iso.useTitle')), h('p', null, t('q9.useBody')),
-          tools.length ? h('ul', { class: 'tools-mini' }, tools.map(m => h('li', null, toolLink(ctx, m)))) : h('p', { class: 'note' }, t('p7.none'))))),
-      h('p', { class: 'note' }, icon('info'), ' ', t('q9.honesty')));
+    const methodCourses = guideCourses.filter(c => guides.some(g => g.slug === c.guide));
+    /* Phase 10A: the shared academy template (src/ui/landing.js). Method-guide courses follow the academy's own courses. */
+    return academyLanding(ctx, {
+      key: 'quality', prefix: 'q', heroCls: ['q-hero', 'q-landing'], cls: 'q-landing', family: 'quality', iconName: 'award',
+      eyebrow: t('q9.eyebrow'), title: t('q9.title'), lede: t('q9.lede'), statsLabel: t('q9.statsLabel'),
+      stats: [stat('book', i18n.number(courses.length), t('q9.statCourses')), stat('image', i18n.number(figN), t('q9.statFigures')),
+        stat('award', i18n.number(certs.length), t('q9.statCerts')), stat('route', i18n.number(routes.length), t('q9.statRoutes'))],
+      primary: ready ? { href: `#/assessments/${ready.slug}`, label: t('q9.takeReadiness'), action: 'take-readiness' } : { href: '#/library?tab=guides', label: t('q9.readFundamentals') },
+      secondary: { href: '#/academy/quality/certifications', label: t('q9.exploreCerts') },
+      preview: previewBanner(ctx, [...courses, ...routes, ...certs]),
+      next: startingPoint(ctx, content, learner),
+      routes: { items: routes, title: t('q9.routes'), mineId: Q_ROLE_ROUTE[learner.profile?.target_role], card: p => routeCard(ctx, p, content, learner, Q_ROLE_ROUTE), pendingTitle: t('q9.routesPending') },
+      courses: { items: [...orderCourses(courses, learner), ...methodCourses], title: t('q9.courses'), seeAll: '#/academy/courses?academy=quality', card: c => courseCard(ctx, c, learner), pendingTitle: t('q9.coursesPending') },
+      certs: { title: t('q9.certs'), body: certs.length ? h('div', null, h('div', { class: 'cards' }, certs.map(c => certCard(ctx, c))), h('p', null, linkBtn('#/academy/quality/certifications', t('q9.compareCerts'))))
+        : EmptyState({ title: t('q9.certsPending'), body: t('p7.pendingBody'), iconName: 'lock', level: 3 }) },
+      tools: { title: t('x10a.landing.tools'), items: [
+        toolPanel(t('q9.center.eyebrow'), 'gauge', t('x10a.landing.cmqoeBody'), linkBtn('#/academy/quality/cmqoe', t('q9.openCenter'), 'primary', { 'data-action': 'open-center' })),
+        toolPanel(t('p7.iso.useTitle'), 'grid', t('q9.useBody'), tools.length ? h('ul', { class: 'tools-mini' }, tools.map(m => h('li', null, toolLink(ctx, m)))) : h('p', { class: 'note' }, t('p7.none'))),
+        guides.length ? toolPanel(t('q9.methods'), 'steps', t('q9.methodsNote'), h('ul', { class: 'chips' }, guides.map(g => h('li', { dataset: { guide: g.slug } }, h('a', { href: `#/guides/${g.slug}` }, L(ctx, g.title))))),
+          h('p', null, h('a', { href: '#/library?tab=guides' }, t('gd.allGuides')))) : null] },
+      about: [t('q9.honesty'), t('q9.certsNote')]
+    });
   } });
   return h('div', { class: 'iso quality' }, region);
 }

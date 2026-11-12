@@ -10,6 +10,7 @@
  * it explains requirements in independent wording and never reproduces standard text. The same renderer
  * (guideItemBody) is used by the lesson player, so a course built from a guide and the guide never drift apart.
  */
+import { BookmarkButton } from '../ui/bookmark.js';
 import { h, icon } from '../core/dom.js';
 import { dataRegion, EmptyState, Badge, Table } from '../ui/components.js';
 import { guideItems, findItem, itemNeighbours, searchItems, guideTabs, lessonsForItem, ladderRung } from '../domain/guides.mjs';
@@ -99,7 +100,8 @@ function guideHeader(ctx, rec, guide, content) {
   const head = pageHead(ctx, {
     eyebrow: t(rec.kind === 'standard' ? 'gd.kindStandard' : rec.kind === 'practice' ? 'gd.kindPractice' : 'gd.kindMethod') + (L(ctx, guide.subtitle) ? ' · ' + L(ctx, guide.subtitle) : ''),
     title: L(ctx, guide.title), lede: L(ctx, guide.lede),
-    actions: [tool ? toolLink(ctx, tool, { asButton: true, label: t('gd.useTool') }) : null, course ? linkBtn(`#/academy/courses/${course.slug}`, t('gd.course'), 'primary') : null, linkBtn('#/guides', t('gd.back'))].filter(Boolean)
+    actions: [tool ? toolLink(ctx, tool, { asButton: true, label: t('gd.useTool') }) : null, course ? linkBtn(`#/academy/courses/${course.slug}`, t('gd.course'), 'primary') : null, linkBtn('#/library?tab=guides', t('gd.back')),
+      BookmarkButton(ctx, { type: 'guide', id: rec.slug, href: `#/guides/${rec.slug}`, title: guide.title })].filter(Boolean)
   });
   head.append(h('p', { class: 'note' }, t('gd.by', { name: guide.author || '—' })));
   if (tool?.access === 'account') head.append(h('p', { class: 'note' }, icon('lock'), ' ', t('gd.accountNote')));
@@ -329,11 +331,12 @@ export function guideItemView(ctx, match) {
     };
     return h('article', { class: 'guide-item lesson', dataset: { guide: slug, ref } },
       h('nav', { class: 'lesson-nav', 'aria-label': t('gd.crumbs') },
-        h('a', { href: '#/guides' }, t('gd.title')), ' › ', h('a', { href: guideHref(slug) }, L(ctx, guide.title)), ' › ', h('span', null, L(ctx, item.section.title))),
+        h('a', { href: '#/library?tab=guides' }, t('gd.title')), ' › ', h('a', { href: guideHref(slug) }, L(ctx, guide.title)), ' › ', h('span', null, L(ctx, item.section.title))),
       h('header', { class: 'phead' },
         h('p', { class: 'eyebrow' }, icon(KIND_ICON[guide.kind] || 'book'), ' ', guide.kind === 'standard' ? t('gd.clause', { n: item.ref }) + ' · ' : guide.kind === 'practice' ? L(ctx, item.section.short || item.section.title) + ' · ' : '',
           t('gd.position', { n: i18n.number(nb.index + 1), total: i18n.number(nb.total) }), ' ', statusBadge(ctx, item.status)),
-        h('h1', null, guide.kind === 'standard' ? item.ref + ' ' : '', L(ctx, item.title))),
+        h('h1', null, guide.kind === 'standard' ? item.ref + ' ' : '', L(ctx, item.title)),
+        h('div', { class: 'btnrow' }, BookmarkButton(ctx, { type: 'guide_item', id: `${slug}#${ref}`, href: guideHref(slug, ref), title: { ar: (guide.kind === 'standard' ? item.ref + ' ' : '') + (item.title?.ar || ''), en: (guide.kind === 'standard' ? item.ref + ' ' : '') + (item.title?.en || '') } }))),
       howToRead(ctx, guide.kind),
       guideItemBody(ctx, guide, item, { guides: content.guides }),
       section('gi-learn', t('gd.learnIt'), lessons.length ? h('ul', { class: 'plain' }, lessons.slice(0, 8).map(lessonLink)) : h('p', { class: 'note' }, t('gd.noLessons'))),

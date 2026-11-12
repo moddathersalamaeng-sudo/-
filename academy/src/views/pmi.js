@@ -9,6 +9,7 @@
  * Facts come only from PMI's official pages, each group marked verified (date) or pending (go to PMI). The Academy never claims to be
  * a PMI Authorized Training Partner and never awards PDUs; it does not reproduce PMBOK® Guide text or PMI exam questions.
  */
+import { BookmarkButton } from '../ui/bookmark.js';
 import { h, icon } from '../core/dom.js';
 import { dataRegion, EmptyState, Badge, Table } from '../ui/components.js';
 import { pmiStartingPoint, PM_ROLE_ROUTE, certFactState, domainHours, FACT_GROUPS, showsFacts, renewalUnits } from '../domain/pmi.mjs';
@@ -18,6 +19,7 @@ import { L, notAvailable, previewBanner, linkBtn, section, facts, hours, isRevie
 import { courseCard, sourceList } from './courses.js';
 import { effortMinutes } from './iso.js';
 import { academyBanner } from '../ui/art.js';
+import { academyLanding, toolPanel, orderCourses } from '../ui/landing.js';
 
 const STAGE_ICON = { entry: 'flag', practitioner: 'briefcase', specialist: 'target', senior: 'award', advanced: 'star', top: 'crown', professional: 'users' };
 const AREA_ICON = { project: 'briefcase', agile: 'refresh', risk: 'shield', pmo: 'grid', programme: 'layers', portfolio: 'chart', analysis: 'search',
@@ -59,9 +61,9 @@ function startingPoint(ctx, content, learner) {
     h('p', null, L(ctx, sp.reason)),
     sp.factors.length ? h('details', null, h('summary', null, t('p7.iso.whyThis')), h('ul', null, sp.factors.map(f => h('li', null, factorText(ctx, f, content))))) : null,
     visible
-      ? h('div', { class: 'btnrow' }, linkBtn(sp.href, t('p7.iso.startCta'), 'primary', { 'data-action': 'pm-start' }), learner.profile ? null : linkBtn('#/profile', t('phase6.completeProfile')))
+      ? h('div', { class: 'btnrow' }, linkBtn(sp.href, t('p7.iso.startCta'), 'primary', { 'data-action': 'pm-start' }), learner.profile ? null : linkBtn('#/welcome', t('phase6.completeProfile')))
       : h('div', null, h('p', { class: 'banner banner-info', role: 'note' }, t('pmi.startPending')),
-        h('div', { class: 'btnrow' }, linkBtn('#/knowledge/pmi', t('pmi.readFundamentals'), 'primary'), learner.profile ? null : linkBtn('#/profile', t('phase6.completeProfile')))),
+        h('div', { class: 'btnrow' }, linkBtn('#/knowledge/pmi', t('pmi.readFundamentals'), 'primary'), learner.profile ? null : linkBtn('#/welcome', t('phase6.completeProfile')))),
     h('p', { class: 'note' }, t('p7.iso.yearsNote')));
 }
 
@@ -107,45 +109,34 @@ export function pmiAcademyView(ctx) {
   const region = dataRegion({ t, load: () => loadAll(ctx), render: ({ content, learner }) => {
     const routes = content.paths.filter(p => p.kind === 'pm_route');
     const courses = content.courses.filter(isPmCourse);
-    const handCourses = courses.filter(c => !c.guide);
     const guideCourses = courses.filter(c => c.guide);
     const guides = (content.guides || []).filter(g => g.kind === 'practice');
     const tools = content.tools.filter(m => m.system === 'pmo');
     const ready = content.byId(content.assessments, 'ASM-READY-PM-001');
-    const inProgress = courses.filter(c => courseStatus(c, learner.progress, learner.attempts).state === 'in_progress');
     const practices = guides.reduce((a, g) => a + (g.counts?.items || 0), 0);
     const certs = certsOf(content, 'PMI');
-    const hero = h('header', { class: 'iso-hero pmi-hero' }, academyBanner('pmi', 'briefcase'),
-      h('p', { class: 'eyebrow' }, icon('briefcase'), ' ', t('pmi.eyebrow')), h('h1', null, t('pmi.title')), h('p', null, t('pmi.lede')),
-      h('ul', { class: 'stats', 'aria-label': t('pmi.statsLabel') },
-        stat('book', i18n.number(courses.length), t('pmi.statCourses')), stat('ladder', i18n.number(practices), t('pmi.statPractices')),
-        stat('award', i18n.number(certs.length), t('pmi.statCerts')), stat('route', i18n.number(routes.length), t('pmi.statRoutes'))),
-      h('div', { class: 'btnrow' }, ready ? linkBtn(`#/assessments/${ready.slug}`, t('pmi.takeReadiness'), 'primary') : linkBtn('#/knowledge/pmi', t('pmi.readFundamentals'), 'primary'),
-        linkBtn('#/academy/pmi/certifications', t('pmi.exploreCerts')), linkBtn('#/guides', t('gd.allGuides'))));
-    return h('div', null,
-      hero,
-      previewBanner(ctx, [...courses, ...routes, ...certs]),
-      startingPoint(ctx, content, learner),
-      inProgress.length ? section('pm-cont', t('p7.iso.continue'), h('div', { class: 'cards' }, inProgress.map(c => courseCard(ctx, c, learner)))) : null,
-      section('pm-routes', t('pmi.routes'), h('p', { class: 'note' }, t('pmi.routesNote')),
-        routes.length ? h('div', { class: 'cards' }, routes.map(p => routeCard(ctx, p, content, learner))) : EmptyState({ title: t('pmi.routesPending'), body: t('p7.pendingBody'), iconName: 'lock' })),
-      section('pm-certs', t('pmi.certs'), h('p', { class: 'note' }, t('pmi.certsNote')),
-        certs.length ? h('div', { class: 'cards' }, certs.map(c => certCard(ctx, c))) : EmptyState({ title: t('pmi.certsPending'), body: t('p7.pendingBody'), iconName: 'lock' }),
-        certs.length ? h('p', null, linkBtn('#/academy/pmi/certifications', t('pmi.compareCerts'))) : null),
-      section('pm-courses', t('pmi.courses'), h('p', { class: 'note' }, t('pmi.coursesNote')),
-        handCourses.length ? h('div', { class: 'cards' }, handCourses.map(c => courseCard(ctx, c, learner))) : EmptyState({ title: t('pmi.coursesPending'), body: t('p7.pendingBody'), iconName: 'lock' })),
-      guides.length ? section('pm-guides', t('gd.practices'), h('p', { class: 'note' }, t('pmi.guidesNote')),
-        h('ul', { class: 'cards cards-tight' }, guides.map(g => {
+    /* Phase 10A: the shared academy template (src/ui/landing.js). */
+    return academyLanding(ctx, {
+      key: 'pmi', prefix: 'pm', cls: 'pmi-hero', family: 'pmi', iconName: 'briefcase',
+      eyebrow: t('pmi.eyebrow'), title: t('pmi.title'), lede: t('pmi.lede'), statsLabel: t('pmi.statsLabel'),
+      stats: [stat('book', i18n.number(courses.length), t('pmi.statCourses')), stat('ladder', i18n.number(practices), t('pmi.statPractices')),
+        stat('award', i18n.number(certs.length), t('pmi.statCerts')), stat('route', i18n.number(routes.length), t('pmi.statRoutes'))],
+      primary: ready ? { href: `#/assessments/${ready.slug}`, label: t('pmi.takeReadiness'), action: 'take-readiness' } : { href: '#/knowledge/pmi', label: t('pmi.readFundamentals') },
+      secondary: { href: '#/academy/pmi/certifications', label: t('pmi.exploreCerts') },
+      preview: previewBanner(ctx, [...courses, ...routes, ...certs]),
+      next: startingPoint(ctx, content, learner),
+      routes: { items: routes, title: t('pmi.routes'), mineId: PM_ROLE_ROUTE[learner.profile?.target_role], card: p => routeCard(ctx, p, content, learner), pendingTitle: t('pmi.routesPending') },
+      courses: { items: orderCourses(courses, learner), title: t('pmi.courses'), seeAll: '#/academy/courses?academy=pmi', card: c => courseCard(ctx, c, learner), pendingTitle: t('pmi.coursesPending') },
+      certs: { title: t('pmi.certs'), body: certs.length ? h('div', null, h('div', { class: 'cards' }, certs.map(c => certCard(ctx, c))), h('p', null, linkBtn('#/academy/pmi/certifications', t('pmi.compareCerts'))))
+        : EmptyState({ title: t('pmi.certsPending'), body: t('p7.pendingBody'), iconName: 'lock', level: 3 }) },
+      tools: { title: t('x10a.landing.tools'), items: [
+        toolPanel(t('p7.iso.useTitle'), 'grid', t('pmi.useBody'), tools.length ? h('ul', { class: 'tools-mini' }, tools.map(m => h('li', null, toolLink(ctx, m)))) : h('p', { class: 'note' }, t('p7.none'))),
+        guides.length ? toolPanel(t('gd.practices'), 'ladder', t('pmi.guidesNote'), h('ul', { class: 'plain' }, guides.map(g => {
           const gc = guideCourses.find(c => c.guide === g.slug);
-          return h('li', { class: 'card', dataset: { guide: g.slug } }, h('a', { href: `#/guides/${g.slug}` }, icon('ladder'), ' ', L(ctx, g.title)),
-            h('span', { class: 'note block' }, t('gd.countsPractice', { sections: i18n.number(g.counts.sections), items: i18n.number(g.counts.items) })),
-            gc ? h('a', { class: 'note block', href: `#/academy/courses/${gc.slug}` }, t('gd.course')) : null);
-        }))) : null,
-      section('pm-learnuse', t('p7.iso.learnVsUse'), h('div', { class: 'split' },
-        h('div', { class: 'panel' }, h('h3', null, icon('book'), ' ', t('p7.iso.learnTitle')), h('p', null, t('pmi.learnBody')), linkBtn('#/academy/courses?q=', t('courses.title'))),
-        h('div', { class: 'panel' }, h('h3', null, icon('grid'), ' ', t('p7.iso.useTitle')), h('p', null, t('pmi.useBody')),
-          tools.length ? h('ul', { class: 'tools-mini' }, tools.map(m => h('li', null, toolLink(ctx, m)))) : h('p', { class: 'note' }, t('p7.none'))))),
-      h('p', { class: 'note' }, icon('info'), ' ', t('pmi.honesty')));
+          return h('li', { dataset: { guide: g.slug } }, h('a', { href: `#/guides/${g.slug}` }, L(ctx, g.title)), gc ? [' · ', h('a', { class: 'note', href: `#/academy/courses/${gc.slug}` }, t('gd.course'))] : null);
+        }))) : null] },
+      about: [t('pmi.honesty'), t('pmi.certsNote')]
+    });
   } });
   return h('div', { class: 'iso pmi' }, region);
 }
@@ -282,7 +273,8 @@ function certPage(ctx, c, content, learner) {
     h('p', null, L(ctx, c.summary)),
     h('p', { class: 'note' }, icon('users'), ' ', h('strong', null, tk(ctx, B, 'whoFor')), ' ', L(ctx, c.who)),
     h('div', { class: 'btnrow' }, h('a', { class: 'btn btn-primary', href: c.official_url, target: '_blank', rel: 'noopener' }, tk(ctx, B, 'openPmi'), ' ', icon('external')),
-      center, routes[0] ? linkBtn(`#/learning-path?route=${routes[0].id}`, tk(ctx, B, 'followRoute')) : null, linkBtn('#' + B.base, tk(ctx, B, 'explorerTitle'))));
+      center, routes[0] ? linkBtn(`#/learning-path?route=${routes[0].id}`, tk(ctx, B, 'followRoute')) : null, linkBtn('#' + B.base, tk(ctx, B, 'explorerTitle')),
+      BookmarkButton(ctx, { type: 'certification', id: c.id, href: certHref(c), title: { ar: `${c.code || ''} ${c.name?.ar || ''}`.trim(), en: `${c.code || ''} ${c.name?.en || ''}`.trim() } })));
   const exam = () => B.rows ? h('div', null, facts((c.exam.rows || []).map(r => [L(ctx, r.label), L(ctx, r.value)])), c.exam.note ? h('p', { class: 'note' }, L(ctx, c.exam.note)) : null) : h('div', null, facts([[tk(ctx, B, 'col.questions'), i18n.number(c.exam.questions) + (c.exam.scored ? ' ' + tk(ctx, B, 'scored', { n: i18n.number(c.exam.scored) }) : '')],
     [tk(ctx, B, 'col.minutes'), t('p7.minutes', { n: i18n.number(c.exam.minutes) })]]), c.exam.note ? h('p', { class: 'note' }, L(ctx, c.exam.note)) : null,
   c.languages ? h('p', { class: 'note' }, icon('globe'), ' ', L(ctx, c.languages)) : null);

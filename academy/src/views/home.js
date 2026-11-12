@@ -1,123 +1,94 @@
-/** Academy home / dashboard shell. No fake data: every widget shows a real empty state. */
-import { academyBanner } from '../ui/art.js';
+/**
+ * Home (rebuilt in Phase 10A, plan §3.2): start from the visitor's goal.
+ *  1. «ماذا تريد أن تحقق؟» — four goal cards; each opens the right academy (or the 60-second onboarding first).
+ *  2. "Continue where you left off" — only when the learner has started a course; one click to the next lesson.
+ *  3. How it works in three steps.  4. The four academies.  5. One row of featured courses (one per academy).
+ * Loads only the light course index and the learner's own records (src/data/learner-state.js → loadLight).
+ */
 import { h, icon } from '../core/dom.js';
-import { EmptyState, ProgressBar, Button, dataRegion } from '../ui/components.js';
-import { loadAll } from '../data/learner-state.js';
-import { courseStatus } from '../domain/learner-model.mjs';
-import { isoStartingPoint } from '../domain/iso.mjs';
-import { L, linkBtn } from '../ui/academy.js';
+import { dataRegion, ProgressBar } from '../ui/components.js';
+import { academyBanner, courseCover, familyOf } from '../ui/art.js';
+import { loadLight } from '../data/learner-state.js';
+import { ACADEMIES, GOALS, goalAcademy, academyOfCourse, cardProgress, continueList, academyByKey } from '../domain/academies.mjs';
+import { L, linkBtn, minutes, hours } from '../ui/academy.js';
 
-/** Build phase the platform has reached; journey stages up to it are live (see data/seed/build-status.json). */
-export const CURRENT_PHASE = 7;
-/** Where each live journey stage takes the learner. */
-const STAGE_HREF = { explore: '#/knowledge', understand: '#/knowledge', profile: '#/profile', assess: '#/assessments', gaps: '#/profile/competencies', recommend: '#/recommendations', learn: '#/academy/courses', test: '#/assessments' };
+const GOAL_ICON = { standard: 'shield', certification: 'award', improve: 'trend', team: 'users' };
+const lessonKey = (c, l) => (l.id.startsWith(c.id + '-') ? l.id.slice(c.id.length + 1) : l.id);
+export const lessonHref = (c, l) => `#/academy/courses/${c.slug}/${encodeURIComponent(lessonKey(c, l))}`;
 
-/** Spec §1 core journey, with the phase in which each stage opens. */
-export const JOURNEY = [
-  ['explore', 0], ['understand', 3], ['profile', 2], ['assess', 5], ['gaps', 6], ['recommend', 6], ['learn', 4],
-  ['practice', 11], ['simulate', 11], ['test', 5], ['verify', 12], ['record', 12], ['develop', 12]
-];
+/** Where a goal card goes: straight to the academy when the learner has a profile, else to onboarding with the goal chosen. */
+export function goalHref(goal, profile) {
+  if (profile?.target_role) return '#' + academyByKey(goalAcademy(goal, profile.target_role)).route;
+  return `#/welcome?goal=${goal}`;
+}
+
+/** The first course a newcomer should open in an academy: lowest level, own lessons (not a guide course), catalogue order. */
+export function starterCourse(courses, key) {
+  const xs = courses.filter(c => academyOfCourse(c) === key && !c.guide && (c.modules || []).some(m => (m.lessons || []).length));
+  return xs.sort((a, b) => (a.level || 9) - (b.level || 9))[0] || courses.find(c => academyOfCourse(c) === key) || null;
+}
+
+export function progressLine(ctx, p) {
+  const { t, i18n } = ctx;
+  return p.done ? t('x10a.card.progress', { done: i18n.number(p.done), total: i18n.number(p.total), left: minutes(ctx, p.minutesLeft) })
+    : t('x10a.card.fresh', { total: i18n.number(p.total), mins: minutes(ctx, p.minutesTotal) });
+}
 
 export function homeView(ctx) {
-  const { t, i18n, repos, config } = ctx;
-  const toolsHeadingId = 'tools-h';
-  const goTools = () => { const el = document.getElementById(toolsHeadingId); el?.scrollIntoView({ block: 'start' }); el?.focus(); };
+  const { t, i18n } = ctx;
+  const data = loadLight(ctx);
 
-  const rail = h('section', { class: 'journey', 'aria-labelledby': 'jr-h' },
-    h('h2', { id: 'jr-h' }, t('home.journeyTitle')),
-    h('ol', { class: 'rail' }, JOURNEY.map(([k, phase]) => {
-      const now = phase <= CURRENT_PHASE;
-      const href = now ? STAGE_HREF[k] : null;
-      const label = h('span', { class: 'nm' }, t('home.steps.' + k));
-      return h('li', { class: ['stop', now && 'now'] },
-        h('span', { class: 'dot', 'aria-hidden': 'true' }),
-        href ? h('a', { href }, label) : label,
-        h('span', { class: 'when' }, now ? t('home.journeyNow') : t('home.journeySoon', { phase: i18n.digitize(phase) })));
-    })));
+  const goals = h('section', { class: 'home-hero', 'aria-labelledby': 'goal-h' },
+    h('p', { class: 'eyebrow' }, t('app.name')),
+    h('h1', { id: 'goal-h' }, t('x10a.home.question')),
+    h('p', { class: 'lede' }, t('x10a.home.lede')),
+    dataRegion({ t, load: () => data, render: ({ learner }) => h('ul', { class: 'goal-cards' }, GOALS.map(g => h('li', null,
+      h('a', { class: 'goal-card', href: goalHref(g, learner.profile), dataset: { goal: g } },
+        h('span', { class: 'gi' }, icon(GOAL_ICON[g])),
+        h('strong', null, t('x10a.goal.' + g + '.t')),
+        h('span', null, t('x10a.goal.' + g + '.d')),
+        h('span', { class: 'go' }, t(learner.profile?.target_role ? 'x10a.goal.open' : 'x10a.goal.start'), ' ', icon('chevron')))))) }));
 
-  // The tool list loads first and on its own: if it fails, only that region shows an error (non-critical).
-  const tools = h('section', { class: 'section', 'aria-labelledby': toolsHeadingId },
-    h('h2', { id: toolsHeadingId, tabindex: '-1' }, t('home.toolsTitle')),
-    dataRegion({ t, skeleton: true, load: () => repos.platformModules.listVisible(ctx.session.roles).then(items => ({ items, systems: ctx.platformSystems })),
-      render: ({ items, systems }) => {
-        const bySystem = {};
-        for (const m of items) (bySystem[m.system] ||= []).push(m);
-        return h('div', null,
-          h('p', { class: 'note' }, t('home.toolsSub', { n: i18n.number(items.length) })),
-          h('div', { class: 'tools' }, Object.entries(bySystem).map(([sid, mods]) => h('div', { class: 'tgroup' },
-            h('h3', null, systems[sid]?.[i18n.locale] || sid),
-            h('ul', null, mods.map(m => h('li', null,
-              h('a', { class: 'tlink', href: m.href.replace(/^\.\.\//, config.platformBase), dataset: { module: m.id, access: m.access || 'open' }, 'aria-label': t('home.openTool', { name: m.name[i18n.locale] }) + (m.access === 'account' ? ' — ' + t('gd.account') : '') },
-                h('span', { class: 'n' }, m.name[i18n.locale], m.access === 'account' ? h('span', { class: 'acc', 'aria-hidden': 'true' }, t('gd.accountShort')) : null),
-                h('span', { class: 'd' }, m.note[i18n.locale]),
-                icon('external')))))))));
-      } }));
+  const cont = dataRegion({ t, load: () => data, render: ({ content, learner }) => {
+    const xs = continueList(content.courses, learner.progress).slice(0, 3);
+    if (!xs.length) return h('span', { hidden: true, dataset: { continue: 'none' } });
+    return h('section', { class: 'section continue', 'aria-labelledby': 'cont-h', dataset: { continue: String(xs.length) } },
+      h('h2', { id: 'cont-h' }, icon('play'), ' ', t('x10a.home.continue')),
+      h('ul', { class: 'cont-list' }, xs.map(({ c, p }) => h('li', { class: 'card cont-card', dataset: { course: c.id } },
+        h('h3', null, h('a', { href: `#/academy/courses/${c.slug}` }, L(ctx, c.title))),
+        ProgressBar({ value: p.done, max: p.total, label: t('courses.progress'), valueText: progressLine(ctx, p) }),
+        p.next ? linkBtn(lessonHref(c, p.next), t('x10a.home.continueCta', { lesson: L(ctx, p.next.title) }), 'primary', { 'data-action': 'continue-lesson' }) : null))));
+  } });
 
+  const how = h('section', { class: 'section how', 'aria-labelledby': 'how-h' },
+    h('h2', { id: 'how-h' }, t('x10a.how.title')),
+    h('ol', { class: 'how-steps' }, [['find', 'gauge'], ['learn', 'book'], ['show', 'chart']].map(([k, ic], i) => h('li', { dataset: { step: k } },
+      h('span', { class: 'num', 'aria-hidden': 'true' }, i18n.number(i + 1)), icon(ic),
+      h('strong', null, t('x10a.how.' + k + '.t')), h('span', null, t('x10a.how.' + k + '.d'))))));
 
-  // One load feeds the three dashboard panels (courses in progress, next step, recent activity).
-  let pending = null;
-  const learnerData = () => (pending ||= loadAll(ctx).catch(err => { pending = null; throw err; }));
-  const progress = h('section', { class: 'panel feature', 'aria-labelledby': 'pg-h' },
-    h('h2', { id: 'pg-h' }, t('home.progressTitle')),
-    dataRegion({ t, skeleton: true, load: learnerData, render: ({ content, learner }) => {
-      const started = content.courses.map(c => ({ c, st: courseStatus(c, learner.progress, learner.attempts) })).filter(x => x.st.done > 0);
-      if (!started.length) return EmptyState({ title: t('home.progressEmptyTitle'), body: t('p7.home.progressEmptyBody'), iconName: 'book', action: linkBtn('#/academy/courses', t('courses.title')) });
-      return h('ul', { class: 'plain' }, started.slice(0, 4).map(({ c, st }) => h('li', null,
-        ProgressBar({ value: st.done, max: st.total, label: L(ctx, c.title), valueText: t('home.progressSummary', { done: i18n.number(st.done), total: i18n.number(st.total) }) }),
-        h('a', { href: `#/academy/courses/${c.slug}` }, t('p7.course.continue')))));
-    } }));
-
-  const next = h('section', { class: 'panel', 'aria-labelledby': 'nx-h' },
-    h('h2', { id: 'nx-h' }, t('home.nextTitle')),
-    dataRegion({ t, load: learnerData, render: ({ content, learner }) => {
-      const sp = isoStartingPoint({ profile: learner.profile, evidence: learner.evidence, completed: learner.completed, standards: content.standards });
-      const visible = content.visibleIds.has(sp.target_id);
-      return h('div', { class: 'state' }, h('h3', { class: 'state-title' }, L(ctx, sp.title)), h('p', null, L(ctx, sp.reason)),
-        h('div', { class: 'btnrow' }, visible ? linkBtn(sp.href, t('p7.iso.startCta'), 'primary') : linkBtn('#/academy/iso', t('nav.items.isoAcademy'), 'primary'),
-          Button({ label: t('home.nextAction'), variant: 'quiet', onClick: goTools, attrs: { 'data-action': 'go-tools' } })));
-    } }));
-
-  const activity = h('section', { class: 'panel', 'aria-labelledby': 'ac-h' },
-    h('h2', { id: 'ac-h' }, t('home.activityTitle')),
-    dataRegion({ t, load: learnerData, render: ({ content, learner }) => {
-      const items = [...learner.attempts].sort((a, b) => String(b.submitted_at).localeCompare(String(a.submitted_at))).slice(0, 5);
-      return items.length
-        ? h('ul', { class: 'plain' }, items.map(a => { const x = content.byId(content.assessments, a.assessment_id); return h('li', null, x ? h('a', { href: `#/assessments/${x.slug}` }, L(ctx, x.title)) : a.assessment_id, ' — ', h('span', { class: 'note' }, a.pending_review ? t('assessments.pendingReview') : i18n.number(a.score) + '%')); }))
-        : EmptyState({ title: t('home.activityEmptyTitle'), body: t('home.activityEmptyBody') });
-    } }));
-
-  // Guides: the toolkits' requirement and method explanations, readable inside the Academy (non-critical region).
-  const guides = h('section', { class: 'panel feature gteaser', 'aria-labelledby': 'gd-h' },
-    h('h2', { id: 'gd-h' }, t('gd.homeTitle')),
-    dataRegion({ t, load: learnerData, render: ({ content }) => {
-      const gs = content.guides || [];
-      if (!gs.length) return h('p', { class: 'note' }, t('gd.emptyBody'));
-      const items = gs.reduce((a, g) => a + g.counts.items, 0);
-      return h('div', null, h('p', null, t('gd.homeBody', { n: i18n.number(gs.length), items: i18n.number(items) })),
-        h('div', { class: 'btnrow' }, linkBtn('#/guides', t('gd.openAll'), 'primary'), linkBtn('#/guides/iso-9001', 'ISO 9001')));
-    } }));
-
-  // Phase 8: the academies (ISO, PMI / PMO / P3O) as entry points, with live counts of what a learner can open.
   const academies = h('section', { class: 'section', 'aria-labelledby': 'acad-h' },
     h('h2', { id: 'acad-h' }, t('p8.home.academies')),
-    dataRegion({ t, load: learnerData, render: ({ content }) => {
-      const n = eco => content.courses.filter(c => eco.includes(c.ecosystem) || eco.includes(c.category)).length;
-      const card = (href, fam, iconName, title, body, count) => h('article', { class: 'acad-tile acad-card', dataset: { family: fam } },
-        h('div', { class: 'cover' }, academyBanner(fam, iconName, href)),
-        h('div', { class: 'acad-body' }, h('h3', null, icon(iconName), ' ', h('a', { href }, title)), h('p', null, body), h('p', { class: 'meta' }, icon('book'), ' ', count)));
-      return h('div', { class: 'acad-tiles' },
-        card('#/academy/iso', 'iso', 'shield', t('nav.items.isoAcademy'), t('p8.home.isoBody'), t('p8.home.courses', { n: i18n.number(n(['iso'])) })),
-        card('#/academy/pmi', 'pmi', 'briefcase', t('nav.items.pmiAcademy'), t('p8.home.pmiBody'), t('p8.home.courses', { n: i18n.number(n(['pmi', 'pmo', 'p3o'])) })),
-        card('#/academy/quality', 'quality', 'award', t('nav.items.qualityAcademy'), t('p9.home.qualityBody'), t('p8.home.courses', { n: i18n.number(content.courses.filter(c => c.ecosystem === 'quality' && !c.guide).length) })),
-        card('#/academy/excellence', 'excellence', 'star', t('nav.items.excellenceAcademy'), t('p10.home.excellenceBody'), t('p8.home.courses', { n: i18n.number(content.courses.filter(c => c.ecosystem === 'efqm' && !c.guide).length) })),
-        card('#/guides', 'method', 'ladder', t('gd.title'), t('p8.home.guidesBody'), t('p8.home.guides', { n: i18n.number((content.guides || []).length) })));
-    } }));
+    dataRegion({ t, load: () => data, render: ({ content }) => h('div', { class: 'acad-tiles acad-tiles-4' }, ACADEMIES.map(a => {
+      const n = content.courses.filter(c => academyOfCourse(c) === a.key).length;
+      return h('article', { class: 'acad-tile acad-card', dataset: { family: a.family, academy: a.key } },
+        h('div', { class: 'cover' }, academyBanner(a.family, a.icon, '#' + a.route)),
+        h('div', { class: 'acad-body' }, h('h3', null, icon(a.icon), ' ', h('a', { href: '#' + a.route }, t('nav.items.' + a.navId))),
+          h('p', null, t('x10a.acad.' + a.key + '.line')), h('p', { class: 'meta' }, icon('book'), ' ', t('p8.home.courses', { n: i18n.number(n) }))));
+    })) }));
 
-  return h('div', null,
-    h('div', { class: 'phead' }, h('h1', null, t('home.greeting')), h('p', null, t('home.lede'))),
-    rail,
-    h('div', { class: 'dash' }, progress, next, activity),
-    academies,
-    guides,
-    tools);
+  const featured = h('section', { class: 'section', 'aria-labelledby': 'feat-h' },
+    h('div', { class: 'sec-head' }, h('h2', { id: 'feat-h' }, t('x10a.home.featured')), h('a', { href: '#/academy/courses', class: 'more-link' }, t('x10a.home.allCourses'), ' ', icon('chevron'))),
+    dataRegion({ t, load: () => data, render: ({ content, learner }) => h('ul', { class: 'feat-row' }, ACADEMIES.map(a => starterCourse(content.courses, a.key)).filter(Boolean).map(c => {
+      const p = cardProgress(c, learner.progress);
+      const first = p.next || (c.modules?.[0]?.lessons?.[0]);
+      return h('li', { class: 'card feat-card', dataset: { course: c.id, family: familyOf(c) } },
+        h('div', { class: 'cover' }, courseCover(c)),
+        h('div', { class: 'ccard-body' },
+          h('p', { class: 'eyebrow' }, t('nav.items.' + academyByKey(academyOfCourse(c)).navId), ' · ', hours(ctx, c.training_hours)),
+          h('h3', null, h('a', { href: `#/academy/courses/${c.slug}` }, L(ctx, c.title))),
+          h('p', { class: 'note' }, progressLine(ctx, p)),
+          first ? linkBtn(lessonHref(c, first), t(p.done ? 'p7.course.continue' : 'x10a.home.startLesson'), 'primary', { 'data-action': 'start-lesson' }) : null));
+    })) }));
+
+  return h('div', { class: 'home' }, goals, cont, how, academies, featured);
 }

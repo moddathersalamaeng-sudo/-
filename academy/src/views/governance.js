@@ -2,6 +2,7 @@
 import { h } from '../core/dom.js';
 import { StatusLabel, Table, ProgressRing, EmptyState, dataRegion, Badge } from '../ui/components.js';
 import { buildCompletion } from '../data/progress.js';
+import { planEntries } from '../nav/registry.js';
 
 const TONE = { complete: 'ok', in_progress: 'info', next: 'gold', planned: 'neutral', pending_decision: 'warn', open: 'warn', resolved: 'ok' };
 
@@ -53,7 +54,12 @@ export function governanceView(ctx) {
       ? Table({ caption: t('governance.sourcesTable'), columns: [{ key: 'title', label: t('governance.sourcesTitle') }], rows: items })
       : EmptyState({ title: t('governance.sourcesEmptyTitle'), body: t('governance.sourcesEmpty'), iconName: 'info' }) }));
 
+  /* Phase 10A: "About our content" for learners; the build plan (phases, future navigation entries) only for reviewers and admins. */
+  const plan = canReview ? h('section', { class: 'section', 'aria-labelledby': 'np-h', dataset: { plan: 'nav' } },
+    h('h2', { id: 'np-h' }, t('x10a.about.planNav')), h('p', { class: 'note' }, t('x10a.about.planNavNote')),
+    h('ul', { class: 'plain' }, planEntries(ctx.nav, session.roles).map(e => h('li', { dataset: { nav: e.id, phase: String(e.phase) } },
+      Badge({ label: t('nav.phase', { phase: i18n.digitize(e.phase) }), tone: 'neutral' }), ' ', t(e.labelKey))))) : null;
   return h('div', null,
-    h('div', { class: 'phead' }, h('h1', null, t('governance.title')), h('p', null, t('governance.lede'))),
-    principles, labels, build, registry, sources);
+    h('div', { class: 'phead' }, h('h1', null, t('x10a.about.title')), h('p', null, t('x10a.about.lede'))),
+    principles, labels, registry, sources, canReview ? build : null, plan);
 }

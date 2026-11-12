@@ -22,6 +22,7 @@ import { courseCard } from './courses.js';
 import { certCard, certsOf, routeCard, stat } from './pmi.js';
 import { academyBanner } from '../ui/art.js';
 import { Figure } from '../ui/figures.js';
+import { academyLanding, toolPanel, orderCourses } from '../ui/landing.js';
 
 const isExCourse = c => c.ecosystem === 'efqm' && !c.guide;
 const LAB_ID = 'LAB-EFQM';
@@ -57,9 +58,9 @@ function startingPoint(ctx, content, learner, labWithEvidence) {
     h('p', null, L(ctx, sp.reason)),
     sp.factors.length ? h('details', null, h('summary', null, t('p7.iso.whyThis')), h('ul', null, sp.factors.map(f => h('li', null, factorText(ctx, f, content))))) : null,
     visible
-      ? h('div', { class: 'btnrow' }, linkBtn(sp.href, t('p7.iso.startCta'), 'primary', { 'data-action': 'ex-start' }), learner.profile ? null : linkBtn('#/profile', t('phase6.completeProfile')))
+      ? h('div', { class: 'btnrow' }, linkBtn(sp.href, t('p7.iso.startCta'), 'primary', { 'data-action': 'ex-start' }), learner.profile ? null : linkBtn('#/welcome', t('phase6.completeProfile')))
       : h('div', null, h('p', { class: 'banner banner-info', role: 'note' }, t('ex10.startPending')),
-        h('div', { class: 'btnrow' }, linkBtn('#/knowledge/efqm', t('ex10.readFundamentals'), 'primary'), learner.profile ? null : linkBtn('#/profile', t('phase6.completeProfile')))),
+        h('div', { class: 'btnrow' }, linkBtn('#/knowledge/efqm', t('ex10.readFundamentals'), 'primary'), learner.profile ? null : linkBtn('#/welcome', t('phase6.completeProfile')))),
     h('p', { class: 'note' }, t('p7.iso.yearsNote')));
 }
 
@@ -74,45 +75,37 @@ export function excellenceAcademyView(ctx) {
     const tools = content.tools.filter(m => ['exc', 'kaqa', 'str', 'oec'].includes(m.id));
     const ready = content.byId(content.assessments, 'ASM-READY-EX-001');
     const figN = (content.figures || []).filter(f => f.id.startsWith('FIG-EX-')).length;
-    const inProgress = courses.filter(c => courseStatus(c, learner.progress, learner.attempts).state === 'in_progress');
-    const withEv = def ? labSummary(lab, def).withEvidence : 0;
+    const sum = def ? labSummary(lab, def) : null;
+    const withEv = sum ? sum.withEvidence : 0;
     const labFig = (content.figures || []).find(f => f.id === 'FIG-EX-LABFLOW');
-    const top = hero('ex-landing', 'star',
-      h('p', { class: 'eyebrow' }, icon('star'), ' ', t('ex10.eyebrow')), h('h1', null, t('ex10.title')), h('p', null, t('ex10.lede')),
-      h('ul', { class: 'stats', 'aria-label': t('ex10.statsLabel') },
-        stat('book', i18n.number(courses.length), t('ex10.statCourses')), stat('image', i18n.number(figN), t('ex10.statFigures')),
-        stat('award', i18n.number(certs.length), t('ex10.statCerts')), stat('route', i18n.number(routes.length), t('ex10.statRoutes'))),
-      h('div', { class: 'btnrow' }, ready ? linkBtn(`#/assessments/${ready.slug}`, t('ex10.takeReadiness'), 'primary') : linkBtn('#/knowledge/efqm', t('ex10.readFundamentals'), 'primary'),
-        def ? linkBtn('#/academy/excellence/lab', t('ex10.openLab'), 'secondary', { 'data-action': 'open-lab' }) : null,
-        certs.length ? linkBtn('#/academy/excellence/recognition', t('ex10.exploreCerts')) : null));
-    const labPanel = def ? h('section', { class: 'panel feature lab-feature', 'aria-labelledby': 'exlab-h', dataset: { lab: 'feature' } },
-      h('div', null, h('p', { class: 'eyebrow' }, icon('clipboard'), ' ', t('ex10.labLabel')), h('h2', { id: 'exlab-h' }, t('ex10.labTitle')), h('p', null, t('ex10.labBody')),
-        withEv ? h('p', { class: 'note' }, icon('check'), ' ', t('ex10.lab.progress', { done: i18n.number(withEv), n: i18n.number(def.criteria.length), s: i18n.number(labSummary(lab, def).strengths), a: i18n.number(labSummary(lab, def).afis) })) : null,
-        h('div', { class: 'btnrow' }, linkBtn('#/academy/excellence/lab', t('ex10.labCta'), 'primary'))),
+    const labPanel = def ? h('div', { class: 'panel feature lab-feature tool-panel', dataset: { lab: 'feature' } },
+      h('div', null, h('p', { class: 'eyebrow' }, icon('clipboard'), ' ', t('ex10.labLabel')), h('h3', { id: 'exlab-h' }, t('ex10.labTitle')), h('p', null, t('ex10.labBody')),
+        withEv ? h('p', { class: 'note' }, icon('check'), ' ', t('ex10.lab.progress', { done: i18n.number(withEv), n: i18n.number(def.criteria.length), s: i18n.number(sum.strengths), a: i18n.number(sum.afis) })) : null,
+        h('div', { class: 'btnrow' }, linkBtn('#/academy/excellence/lab', t('ex10.labCta'), 'primary', { 'data-action': 'open-lab' }))),
       labFig ? Figure(ctx, labFig, { compact: true }) : null) : null;
-    const kaqaPanel = kaqa ? section('ex-kaqa', t('ex10.kaqaTitle'), h('ul', { class: 'checks' }, kaqa.facts.map(f => {
+    const kaqaBlock = kaqa ? h('div', { class: 'panel', dataset: { kaqa: 'true' } }, h('h3', { id: 'ex-kaqa' }, t('ex10.kaqaTitle')), h('ul', { class: 'checks' }, kaqa.facts.map(f => {
       const s = content.sources.find(x => x.id === f.source);
       return h('li', null, icon('check'), ' ', L(ctx, f.text), ' ', s?.official_url ? h('a', { href: s.official_url, target: '_blank', rel: 'noopener', class: 'note' }, '(', s.organization, ') ', icon('external')) : null);
     })), h('p', { class: 'note' }, icon('info'), ' ', t('ex10.kaqaChecked', { date: i18n.date(kaqa.checked) }), ' ', L(ctx, kaqa.note))) : null;
-    return h('div', null,
-      top,
-      previewBanner(ctx, [...courses, ...routes, ...certs, def].filter(Boolean)),
-      startingPoint(ctx, content, learner, withEv),
-      inProgress.length ? section('ex-cont', t('p7.iso.continue'), h('div', { class: 'cards' }, inProgress.map(c => courseCard(ctx, c, learner)))) : null,
-      labPanel,
-      section('ex-routes', t('ex10.routes'), h('p', { class: 'note' }, t('ex10.routesNote')),
-        routes.length ? h('div', { class: 'cards' }, routes.map(p => routeCard(ctx, p, content, learner, EX_ROLE_ROUTE))) : EmptyState({ title: t('ex10.routesPending'), body: t('p7.pendingBody'), iconName: 'lock' })),
-      section('ex-courses', t('ex10.courses'), h('p', { class: 'note' }, t('ex10.coursesNote')),
-        courses.length ? h('div', { class: 'cards' }, courses.map(c => courseCard(ctx, c, learner))) : EmptyState({ title: t('ex10.coursesPending'), body: t('p7.pendingBody'), iconName: 'lock' })),
-      section('ex-certs', t('ex10.certs'), h('p', { class: 'note' }, t('ex10.certsNote')),
-        certs.length ? h('div', { class: 'cards' }, certs.map(c => certCard(ctx, c))) : EmptyState({ title: t('ex10.certsPending'), body: t('p7.pendingBody'), iconName: 'lock' }),
-        certs.length ? h('p', null, linkBtn('#/academy/excellence/recognition', t('ex10.compareCerts'))) : null),
-      kaqaPanel,
-      section('ex-learnuse', t('p7.iso.learnVsUse'), h('div', { class: 'split' },
-        h('div', { class: 'panel' }, h('h3', null, icon('book'), ' ', t('p7.iso.learnTitle')), h('p', null, t('ex10.learnBody')), linkBtn('#/academy/courses?q=', t('courses.title'))),
-        h('div', { class: 'panel' }, h('h3', null, icon('grid'), ' ', t('p7.iso.useTitle')), h('p', null, t('ex10.useBody')),
-          tools.length ? h('ul', { class: 'tools-mini' }, tools.map(m => h('li', null, toolLink(ctx, m)))) : h('p', { class: 'note' }, t('p7.none'))))),
-      h('p', { class: 'note' }, icon('info'), ' ', t('ex10.honesty')));
+    /* Phase 10A: the shared academy template (src/ui/landing.js); the Lab sits under Tools & labs, KAQA under recognition. */
+    return academyLanding(ctx, {
+      key: 'excellence', prefix: 'ex', heroCls: ['ex-hero', 'ex-landing'], cls: 'ex-landing', family: 'excellence', iconName: 'star',
+      eyebrow: t('ex10.eyebrow'), title: t('ex10.title'), lede: t('ex10.lede'), statsLabel: t('ex10.statsLabel'),
+      stats: [stat('book', i18n.number(courses.length), t('ex10.statCourses')), stat('image', i18n.number(figN), t('ex10.statFigures')),
+        stat('award', i18n.number(certs.length), t('ex10.statCerts')), stat('route', i18n.number(routes.length), t('ex10.statRoutes'))],
+      primary: ready ? { href: `#/assessments/${ready.slug}`, label: t('ex10.takeReadiness'), action: 'take-readiness' } : { href: '#/knowledge/efqm', label: t('ex10.readFundamentals') },
+      secondary: certs.length ? { href: '#/academy/excellence/recognition', label: t('ex10.exploreCerts') } : (def ? { href: '#/academy/excellence/lab', label: t('ex10.openLab') } : null),
+      preview: previewBanner(ctx, [...courses, ...routes, ...certs, def].filter(Boolean)),
+      next: startingPoint(ctx, content, learner, withEv),
+      routes: { items: routes, title: t('ex10.routes'), mineId: EX_ROLE_ROUTE[learner.profile?.target_role], card: p => routeCard(ctx, p, content, learner, EX_ROLE_ROUTE), pendingTitle: t('ex10.routesPending') },
+      courses: { items: orderCourses(courses, learner), title: t('ex10.courses'), seeAll: '#/academy/courses?academy=excellence', card: c => courseCard(ctx, c, learner), pendingTitle: t('ex10.coursesPending') },
+      certs: { title: t('ex10.certs'), body: h('div', null,
+        certs.length ? h('div', { class: 'cards' }, certs.map(c => certCard(ctx, c))) : EmptyState({ title: t('ex10.certsPending'), body: t('p7.pendingBody'), iconName: 'lock', level: 3 }),
+        certs.length ? h('p', null, linkBtn('#/academy/excellence/recognition', t('ex10.compareCerts'))) : null, kaqaBlock) },
+      tools: { title: t('x10a.landing.tools'), items: [labPanel,
+        toolPanel(t('p7.iso.useTitle'), 'grid', t('ex10.useBody'), tools.length ? h('ul', { class: 'tools-mini' }, tools.map(m => h('li', null, toolLink(ctx, m)))) : h('p', { class: 'note' }, t('p7.none')))] },
+      about: [t('ex10.honesty'), t('ex10.certsNote')]
+    });
   } });
   return h('div', { class: 'iso excellence' }, region);
 }
