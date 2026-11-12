@@ -11,6 +11,7 @@ import { academyBanner, courseCover, familyOf } from '../ui/art.js';
 import { loadLight } from '../data/learner-state.js';
 import { ACADEMIES, GOALS, goalAcademy, academyOfCourse, cardProgress, continueList, academyByKey } from '../domain/academies.mjs';
 import { L, linkBtn, minutes, hours } from '../ui/academy.js';
+import { academyEmblem } from '../ui/emblem.js';
 
 const GOAL_ICON = { standard: 'shield', certification: 'award', improve: 'trend', team: 'users' };
 const lessonKey = (c, l) => (l.id.startsWith(c.id + '-') ? l.id.slice(c.id.length + 1) : l.id);
@@ -39,9 +40,12 @@ export function homeView(ctx) {
   const data = loadLight(ctx);
 
   const goals = h('section', { class: 'home-hero', 'aria-labelledby': 'goal-h' },
-    h('p', { class: 'eyebrow' }, t('app.name')),
-    h('h1', { id: 'goal-h' }, t('x10a.home.question')),
-    h('p', { class: 'lede' }, t('x10a.home.lede')),
+    h('div', { class: 'hero-top' },
+      h('div', null,
+        h('p', { class: 'eyebrow' }, t('app.name')),
+        h('h1', { id: 'goal-h' }, t('x10a.home.question')),
+        h('p', { class: 'lede' }, t('x10a.home.lede'))),
+      academyEmblem({ motto: t('app.motto'), size: 150, cls: 'hero-emblem', label: t('x10a.emblem') })),
     dataRegion({ t, load: () => data, render: ({ learner }) => h('ul', { class: 'goal-cards' }, GOALS.map(g => h('li', null,
       h('a', { class: 'goal-card', href: goalHref(g, learner.profile), dataset: { goal: g } },
         h('span', { class: 'gi' }, icon(GOAL_ICON[g])),

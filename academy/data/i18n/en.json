@@ -4,7 +4,8 @@
     "nameEn": "Continual Improvement Academy",
     "tagline": "Professional development and competency ecosystem",
     "docTitle": "{page} — Continual Improvement Academy",
-    "nameShort": "CIA Academy"
+    "nameShort": "CIA Academy",
+    "motto": "علمًا نافعًا"
   },
   "a11y": {
     "skip": "Skip to content",
@@ -2440,6 +2441,7 @@
         "goal": "Your goal",
         "weekly_hours": "Hours per week"
       }
-    }
+    },
+    "emblem": "Training platform emblem — Continual Improvement Academy: «علمًا نافعًا» (beneficial knowledge)"
   }
 }

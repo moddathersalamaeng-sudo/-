@@ -7,22 +7,12 @@
 import { h, icon, nextId } from '../core/dom.js';
 import { shellEntries } from '../nav/registry.js';
 import { ACADEMIES } from '../domain/academies.mjs';
+import { academyEmblem } from './emblem.js';
 
 const GROUP_ORDER = ['learn', 'grow', 'platform', 'manage', 'utility'];
 
-function brandMark() {
-  const ns = 'http://www.w3.org/2000/svg';
-  const svg = document.createElementNS(ns, 'svg');
-  svg.setAttribute('viewBox', '0 0 36 36'); svg.setAttribute('class', 'brand-mark'); svg.setAttribute('aria-hidden', 'true');
-  const parts = [
-    ['rect', { x: 1, y: 1, width: 34, height: 34, rx: 8, fill: 'none', stroke: '#C6A15B', 'stroke-width': 1.5 }],
-    ['path', { d: 'M25.5 12.5A9 9 0 1 0 27 18', fill: 'none', stroke: '#C6A15B', 'stroke-width': 2.4, 'stroke-linecap': 'round' }],
-    ['path', { d: 'M22.5 11.5l3.4 1.2-.9 3.5', fill: 'none', stroke: '#C6A15B', 'stroke-width': 2.4, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }],
-    ['path', { d: 'M13.5 21.5l3-3 2.5 2 4-4.5', fill: 'none', stroke: '#F7F5F0', 'stroke-width': 1.8, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }]
-  ];
-  for (const [tag, attrs] of parts) { const el = document.createElementNS(ns, tag); for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v); svg.appendChild(el); }
-  return svg;
-}
+/** Brand: the training-platform emblem — the platform logo framed by «علمًا نافعًا» (src/ui/emblem.js). */
+const brandMark = t => academyEmblem({ motto: t('app.motto'), size: 56, cls: 'brand-mark' });
 
 export function entryHref(e, platformBase) {
   if (e.status !== 'active') return null;
@@ -148,7 +138,7 @@ export function renderShell(ctx, { currentPath, crumbs }) {
 
   const header = h('header', { class: 'hdr' },
     h('div', { class: 'hdr-in' },
-      h('a', { class: 'brand', href: '#/', 'aria-label': t('app.name') }, brandMark(),
+      h('a', { class: 'brand', href: '#/', 'aria-label': t('app.name') }, brandMark(t),
         h('span', { class: 'brand-name' }, h('span', { class: 'bn-full' }, t('app.name')), h('span', { class: 'bn-short', 'aria-hidden': 'true' }, t('app.nameShort')), h('span', { class: 'brand-sub' }, t('app.tagline')))),
       pnav,
       h('div', { class: 'hdr-tools' }, searchBtn, toolsBtn, langBtn, userBtn, menuBtn)),

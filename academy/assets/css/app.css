@@ -23,7 +23,7 @@ img, svg { max-width: 100%; }
 .hdr { position: sticky; inset-block-start: 0; z-index: 40; background: var(--navy); color: var(--on-navy); border-block-end: 2px solid var(--gold); padding-block-start: env(safe-area-inset-top, 0px); --focus: var(--gold); }
 .hdr-in { max-inline-size: var(--page); margin-inline: auto; min-block-size: var(--header-h); display: flex; align-items: center; gap: var(--s-4); padding-inline: var(--gutter); }
 .brand { display: flex; align-items: center; gap: var(--s-3); text-decoration: none; color: inherit; min-inline-size: 0; }
-.brand-mark { inline-size: 36px; block-size: 36px; flex: none; }
+.brand-mark { inline-size: 56px; block-size: 56px; flex: none; }
 .brand-name { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bn-short { display: none; }
 .brand-sub { display: block; font-family: var(--font-body); font-weight: 400; font-size: var(--fs-xs); color: var(--on-navy-soft); }

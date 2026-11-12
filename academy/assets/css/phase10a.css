@@ -193,3 +193,8 @@ details.more-filters > .filters-in { display: grid; grid-template-columns: repea
 .my-stats .stat { background: var(--surface); border: 1px solid var(--line); color: var(--ink); }
 .my-stats .stat span { opacity: 1; color: var(--ink-soft); }
 .my-stats .stat .ico { color: var(--accent-ink); }
+/* Training-platform emblem (owner request, 12 Nov 2026) */
+.hero-top { display: flex; align-items: center; justify-content: space-between; gap: var(--s-5); }
+.hero-emblem { flex: none; inline-size: 150px; block-size: 150px; filter: drop-shadow(0 6px 14px rgba(11, 30, 61, .18)); }
+@media (max-width: 600px) { .hero-emblem { inline-size: 92px; block-size: 92px; } .hero-top { gap: var(--s-3); } }
+@media (max-width: 420px) { .brand-mark { inline-size: 48px; block-size: 48px; } }
