@@ -45,6 +45,7 @@ import { labsIndexView, labView } from './views/labs.js';
 import { templateView, templatePrintView } from './views/templates.js';
 import { certificateView } from './views/certificate.js';
 import { passportPrintView, passportCvView, evidenceReviewView } from './views/passport.js';
+import { companyView, companyPlanPrintView } from './views/company.js';
 
 const ROUTES = [
   { path: '/', view: homeView, titleKey: 'home.title' },
@@ -65,6 +66,9 @@ const ROUTES = [
   { path: '/passport/print', view: passportPrintView, titleKey: 'pp12.printTitle', parent: ['/my?tab=passport', 'nav.items.mySpace'] },
   { path: '/passport/cv', view: passportCvView, titleKey: 'pp12.cv.title', parent: ['/my?tab=passport&p=cv', 'nav.items.mySpace'] },
   { path: '/review/evidence', view: evidenceReviewView, titleKey: 'pp12.review.title', roles: ['reviewer', 'admin'], parent: ['/review', 'p7.review.title'] },
+  /* Phase 12A: the company workspace (account menu, company_admin / admin — no new top-level item) and its printable plan. */
+  { path: '/company', view: companyView, titleKey: 'co12a.title', roles: ['company_admin', 'admin'] },
+  { path: '/company/plan', view: companyPlanPrintView, titleKey: 'co12a.plan.printTitle', roles: ['company_admin', 'admin'], parent: ['/company?tab=plan', 'co12a.title'] },
   { path: '/me', view: meView, titleKey: 'me.title' },
   { path: '/settings', view: settingsView, titleKey: 'settings.title' },
   { path: '/about-governance', view: governanceView, titleKey: 'x10a.about.title' },
@@ -130,9 +134,9 @@ async function boot() {
   const storage = storageOrNull();
   const params = new URLSearchParams(location.search);
   /* A review build (config.reviewBuild) is a single-file preview for the content owner: it starts in the
-     reviewer role and keeps the role switcher. Production builds never set it. */
+     reviewer and company-administrator roles and keeps the role switcher. Production builds never set it. */
   const devMode = (config.reviewBuild === true || config.devHosts.includes(location.hostname)) && params.get('dev') !== '0';
-  const session = new LocalSession({ storage: storage || { getItem: () => null, setItem() {} }, devMode, defaultRoles: config.reviewBuild ? ['reviewer'] : null });
+  const session = new LocalSession({ storage: storage || { getItem: () => null, setItem() {} }, devMode, defaultRoles: config.reviewBuild ? ['reviewer', 'company_admin'] : null });
   const userAdapter = storage ? new LocalStorageAdapter({ storage, userId: session.user.id }) : new MemoryAdapter();
   const content = new StaticJsonAdapter({ base: './data/seed' });
   const competencyContent = new StaticJsonAdapter({ base: './data/seed/competency' });
@@ -193,6 +197,17 @@ async function boot() {
       careerPlan: new CollectionRepository({ adapter: userAdapter, collection: 'career_plan' }),
       passportPrefs: new CollectionRepository({ adapter: userAdapter, collection: 'passport_prefs' }),
       cv: new CollectionRepository({ adapter: userAdapter, collection: 'cv' }),
+      /* Phase 12A: the employee's own share log and company assignments, and the administrator's own workspace
+         (cia:v1:<user>:company_*). Nothing here is sent anywhere: files are downloaded and handed over by the person. */
+      passportShares: new CollectionRepository({ adapter: userAdapter, collection: 'passport_shares' }),
+      assignmentsInbox: new CollectionRepository({ adapter: userAdapter, collection: 'assignments_inbox' }),
+      companyProfile: new CollectionRepository({ adapter: userAdapter, collection: 'company_profile' }),
+      companyDepartments: new CollectionRepository({ adapter: userAdapter, collection: 'company_departments' }),
+      companyRoles: new CollectionRepository({ adapter: userAdapter, collection: 'company_roles' }),
+      companyPeople: new CollectionRepository({ adapter: userAdapter, collection: 'company_people' }),
+      companyShares: new CollectionRepository({ adapter: userAdapter, collection: 'company_shares' }),
+      companyAssignments: new CollectionRepository({ adapter: userAdapter, collection: 'company_assignments' }),
+      companyPlan: new CollectionRepository({ adapter: userAdapter, collection: 'company_plan' }),
       competencies: new ContentRepository({ adapter: competencyContent, collection: 'competencies' }),
       targetRoles: new ContentRepository({ adapter: competencyContent, collection: 'target-roles' }),
       domains: new ContentRepository({ adapter: competencyContent, collection: 'domains' }),

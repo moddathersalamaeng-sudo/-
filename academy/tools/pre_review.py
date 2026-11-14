@@ -33,6 +33,13 @@ Blocking checks (a record that fails one is NOT a candidate):
                    statuses and every credential status, and contain no accreditation, PDU, RU, recognised-CPD, CPD-provider,
                    "verified by CIA", EFQM-assessment or audit-certification claim unless explicitly negated; badge names never use
                    "certificate" or "certified".
+  B13 company portal (Phase 12A): Phase 12A figures use a known template with bilingual caption, "how to read it" and labels, and
+                   carry no numbers or claims; the "co12a" interface strings exist in both languages for every key with the same
+                   placeholders; no string claims that CIA certifies an employee or a company, and none claims accreditation, PDU, RU,
+                   recognised CPD or a CPD award unless explicitly negated; the consent text is explicit in English and Arabic (who
+                   shares, what, that nothing else leaves the device, and how to withdraw); every share part, level source and
+                   assignment state is named; the workspace label says "planning aid", "not a performance appraisal" and
+                   "not a hiring decision" in both languages.
 Advisory checks (reported, not blocking): duplicate prompts, very long options, answer-key position balance.
 """
 import json
@@ -43,7 +50,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SEED = ROOT / "data" / "seed"
-OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-12" / "review"
+OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-12a" / "review"
 load = lambda n: json.loads((SEED / f"{n}.json").read_text(encoding="utf-8"))["items"]  # noqa: E731
 guides = {g["slug"]: json.loads((ROOT / "data" / "guides" / f"{g['slug']}.json").read_text(encoding="utf-8"))["guide"]
           for g in json.loads((ROOT / "data" / "guides" / "index.json").read_text(encoding="utf-8"))["items"]}
@@ -362,6 +369,48 @@ for k_, v_ in pp_ar.items():
     if not str(v_).strip(): PP_FINDINGS.append(f"pp12.{k_}: empty Arabic text")
 advisory.append(f"B12 interface strings (pp12): {len(pp_en)} keys per language, {len(PP_FINDINGS)} finding(s)" + ("" if not PP_FINDINGS else ": " + "; ".join(PP_FINDINGS[:5])))
 
+# ------------------------------------------------------------------ B13 company portal (Phase 12A)
+CO_CLAIM = re.compile(r"(accredited|accreditation|\bPDU\b|\bRU\b|recognised CPD|CPD provider|CPD award|awards? CPD|verified by CIA|CIA[- ]verified|certified by CIA|certif(?:y|ies|ied) (?:employees|companies|your|the company|staff)|EFQM assessment|audit certification)", re.I)
+CO_NEG = re.compile(r"\b(not|no|never|nor|neither|without|does not|doesn't|isn't)\b", re.I)
+for f_ in data["figures"]:
+    if f_.get("owner_phase") != "12A" or f_["governance"]["content_status"] == "published":
+        continue
+    if f_.get("template") not in ("cycle", "flow", "ladder", "bars", "matrix"): flag("figures", f_["id"], "B13", "unknown template")
+    for k in ("caption", "read"):
+        if not (f_.get(k, {}).get("en") and f_.get(k, {}).get("ar")): flag("figures", f_["id"], "B13", f"{k} not bilingual")
+    for path, v in texts(f_):
+        if re.search(r"\d", v["en"]) and not path.startswith("read"): flag("figures", f_["id"], "B13", f"{path}: number in a company figure")
+        for m in CO_CLAIM.finditer(v["en"]):
+            if not CO_NEG.search(v["en"][max(0, m.start() - 90):m.end()]): flag("figures", f_["id"], "B13", f"{path}: possible claim")
+CO_I18N = {lang: json.loads((ROOT / "data" / "i18n" / f"{lang}.json").read_text(encoding="utf-8")).get("co12a", {}) for lang in ("en", "ar")}
+co_en, co_ar = dict(_flat(CO_I18N["en"])), dict(_flat(CO_I18N["ar"]))
+CO_FINDINGS = []
+if set(co_en) != set(co_ar): CO_FINDINGS.append(f"keys differ between languages: {sorted(set(co_en) ^ set(co_ar))[:8]}")
+_ph = lambda t_: sorted(re.findall(r"\{(\w+)\}", str(t_)))  # noqa: E731
+for k_, v_ in co_en.items():
+    if not str(co_ar.get(k_, "")).strip(): CO_FINDINGS.append(f"co12a.{k_}: empty Arabic text")
+    elif _ph(v_) != _ph(co_ar[k_]): CO_FINDINGS.append(f"co12a.{k_}: placeholders differ")
+    for m in CO_CLAIM.finditer(str(v_)):
+        if not CO_NEG.search(str(v_)[max(0, m.start() - 90):m.end()]): CO_FINDINGS.append(f"co12a.{k_}: possible claim “{str(v_)[max(0, m.start() - 40):m.end() + 10]}”")
+    if re.search(r"\bPhase\b", str(v_)): CO_FINDINGS.append(f"co12a.{k_}: build wording shown to people")
+for part_ in ("competencies", "verified", "cpd", "credentials", "roadmap", "assignments"):
+    if not (co_en.get("share.part." + part_) and co_ar.get("share.part." + part_)): CO_FINDINGS.append(f"share part {part_} not named in both languages")
+for s_ in ("verified", "assessment", "self", "none"):
+    if not (co_en.get("srcLong." + s_) and co_ar.get("srcLong." + s_)): CO_FINDINGS.append(f"level source {s_} not explained")
+for s_ in ("not_started", "in_progress", "completed"):
+    if not co_en.get("asg.state." + s_): CO_FINDINGS.append(f"assignment state {s_} not named")
+_src = (ROOT / "src" / "domain" / "company.mjs").read_text(encoding="utf-8")
+_m = re.search(r"CONSENT_TEXT = \{\s*en: '([^']+)',\s*ar: '([^']+)'", _src)
+if not _m: CO_FINDINGS.append("consent text not found in src/domain/company.mjs")
+else:
+    c_en, c_ar = _m.group(1), _m.group(2)
+    for need_, where_ in (("I choose to share", c_en), ("listed in this file", c_en), ("Nothing else leaves my device", c_en), ("delete this file at any time", c_en), ("أختار مشاركة", c_ar), ("لا يغادر جهازي أي شيء آخر", c_ar), ("حذف هذا الملف في أي وقت", c_ar)):
+        if need_ not in where_: CO_FINDINGS.append(f"consent text lacks “{need_}”")
+_lab = re.search(r"COMPANY_LABEL = \{\s*en: '([^']+)',\s*ar: '([^']+)'", _src)
+if not _lab or not all(x in _lab.group(1) for x in ("planning aid", "not a performance appraisal", "not a hiring decision", "does not certify employees or companies")) or not all(x in _lab.group(2) for x in ("أداة تخطيط", "ليست تقييم أداء", "ولا قرار توظيف")):
+    CO_FINDINGS.append("workspace label incomplete in a language")
+advisory.append(f"B13 interface strings (co12a): {len(co_en)} keys per language, {len(CO_FINDINGS)} finding(s)" + ("" if not CO_FINDINGS else ": " + "; ".join(CO_FINDINGS[:5])))
+
 # ------------------------------------------------------------------ advisory
 prompts = Counter(q["prompt"]["en"].strip().lower() for q in data["questions"])
 for p_, n in prompts.items():
@@ -454,7 +503,7 @@ for coll, r in drafts:
     key = f"{coll}:{r['id']}"
     (blocked if findings.get(key) else candidates)[coll].append(r["id"])
 OUT.mkdir(parents=True, exist_ok=True)
-result = {"schema": "cia.pre-review.v1", "date": "2026-11-12", "interface_strings_b12": PP_FINDINGS, "drafts": len(drafts), "generated_questions_checked": gen_checked,
+result = {"schema": "cia.pre-review.v1", "date": "2026-11-12", "interface_strings_b12": PP_FINDINGS, "interface_strings_b13": CO_FINDINGS, "drafts": len(drafts), "generated_questions_checked": gen_checked,
           "candidates": candidates, "blocked": {k: {i: findings[f"{k}:{i}"] for i in v} for k, v in blocked.items()},
           "cleared_after_reading": {k: v for k, v in cleared.items() if v}, "advisory": advisory}
 (OUT / "pre-review-findings.json").write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")

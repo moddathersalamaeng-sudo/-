@@ -17,6 +17,7 @@ import { labProgress } from '../domain/labs.mjs';
 import { docProgress } from '../domain/templates.mjs';
 import { recommendationsView, learningPathView } from './recommendations.js';
 import { passportPanel } from './passport.js';
+import { myAssignmentsBlock, assignedCoursesFirst } from './company-share.js';
 
 /* Phase 12: the Professional Passport is a My space tab (no new top-level item). */
 export const MY_TABS = ['progress', 'passport', 'path', 'recommendations', 'competencies', 'profile'];
@@ -85,7 +86,7 @@ function progressTab(ctx) {
         h('a', { href: `#/templates/${tpl.slug}?doc=${encodeURIComponent(d.id)}` }, d.title || L(ctx, tpl.doc_title)), ' ', h('span', { class: 'note' }, d.version ? t('tpl11.versionN', { n: i18n.number(d.version) }) : t('tpl11.unsaved'),
           ' · ', t('tpl11.progressLine', { a: i18n.number(docProgress(tpl, d).answered), q: i18n.number(tpl.questions.length), r: i18n.number(docProgress(tpl, d).rows) })))))
         : h('p', { class: 'note' }, t('tpl11.myDocsEmpty'), ' ', h('a', { href: '#/library?tab=templates' }, t('tpl11.blockTitle'))));
-    return h('div', null, stats, contSec, doneSec, labSec, docSec, saved,
+    return h('div', null, stats, myAssignmentsBlock(ctx), contSec, doneSec, labSec, docSec, saved,
       h('p', null, h('a', { href: '#/assessments/history' }, icon('chart'), ' ', t('assessments.history')), ' · ', h('a', { href: '#/my?tab=passport', dataset: { action: 'open-passport' } }, icon('award'), ' ', t('pp12.openFromProgress'))),
       h('p', { class: 'note' }, t('me.storageNote')));
   } });
@@ -96,8 +97,10 @@ function progressTab(ctx) {
 
 function planPanel(ctx) {
   const { t, i18n } = ctx;
-  return dataRegion({ t, load: async () => ({ ...(await loadLight(ctx)), saved: await ctx.repos.studyPlan.get('me').catch(() => null) }), render: ({ content, learner, saved }) => {
-    const inProg = continueList(content.courses, learner.progress).map(x => x.c);
+  return dataRegion({ t, load: async () => { const x = await loadLight(ctx); return { ...x, saved: await ctx.repos.studyPlan.get('me').catch(() => null), company: await assignedCoursesFirst(ctx, x.content.courses) }; }, render: ({ content, learner, saved, company }) => {
+    /* Phase 12A: courses the company assigned lead the plan, soonest due date first; then the courses in progress. */
+    const openAssigned = company.assigned.filter(c => courseStatus(c, learner.progress, learner.attempts).state !== 'completed');
+    const inProg = [...openAssigned, ...continueList(content.courses, learner.progress).map(x => x.c).filter(c => !openAssigned.includes(c))];
     const goalKey = learner.profile?.goal ? goalAcademy(learner.profile.goal, learner.profile.target_role) : 'iso';
     const courses = inProg.length ? inProg.slice(0, 3) : [starterCourse(content.courses, goalKey)].filter(Boolean);
     const st = { days: saved?.days || ['SU', 'TU', 'TH'], time: saved?.time || '19:00', hours: saved?.weekly_hours || learner.profile?.weekly_hours || '4' };
@@ -137,6 +140,7 @@ function planPanel(ctx) {
     return h('section', { class: 'panel feature study-plan', 'aria-labelledby': 'sp-h', dataset: { plan: 'weekly' } },
       h('h2', { id: 'sp-h' }, icon('calendar'), ' ', t('x10a.plan.title')),
       h('p', null, t('x10a.plan.body', { courses: courses.map(c => L(ctx, c.title)).join(' · ') || '—' })),
+      openAssigned.length ? h('p', { class: 'banner banner-info', role: 'note', dataset: { planAssigned: String(openAssigned.length) } }, icon('briefcase'), ' ', t('co12a.my.planNote', { n: i18n.number(openAssigned.length), list: openAssigned.map(c => `${L(ctx, c.title)} (${i18n.date(company.due.get(c.id))})`).join(' · ') })) : null,
       h('div', { class: 'formgrid' },
         h('div', { class: 'field' }, h('label', { for: 'sp-hours' }, t('x10a.welcome.hoursLabel')), hoursIn),
         h('div', { class: 'field' }, h('label', { for: 'sp-time' }, t('x10a.plan.time')), timeIn)),
@@ -165,7 +169,10 @@ export function mySpaceView(ctx, match) {
   };
   /* A newcomer sees the 60-second onboarding above every tab (no empty dead ends). */
   const ob = dataRegion({ t, load: () => ctx.repos.profile.get('me'), render: p => p ? h('span', { hidden: true }) : onboardingCard(ctx) });
-  const node = h('div', { class: 'myspace' }, head, ob,
+  /* Phase 12A: a company administrator gets a door to the company workspace here (the workspace itself is in the account menu). */
+  const co = ctx.session.roles.some(r => r === 'company_admin' || r === 'admin') ? h('p', { class: 'banner banner-info co-door', role: 'note', dataset: { companyDoor: 'true' } }, icon('briefcase'), ' ', t('co12a.door'), ' ',
+    h('a', { href: '#/company', dataset: { action: 'open-company' } }, t('co12a.title'))) : null;
+  const node = h('div', { class: 'myspace' }, head, co, ob,
     Tabs({ label: t('nav.items.mySpace'), initial, lazy: true, tabs: MY_TABS.map(k => ({ key: k, label: t('x10a.my.tabs.' + k), content: tabs[k] })),
       onSelect: i => setHashQuery('/my', { tab: MY_TABS[i] }) }));
   if (q.saved === '1') setTimeout(() => document.getElementById('saved')?.scrollIntoView({ block: 'start' }), 600);

@@ -617,14 +617,15 @@
       "group": "manage",
       "kind": "route",
       "phase": "12A",
-      "status": "coming",
+      "status": "active",
       "roles": [
         "company_admin",
         "admin"
       ],
       "requiredTier": "corporate",
       "primary": false,
-      "placement": "plan"
+      "placement": "user",
+      "route": "/company"
     },
     {
       "id": "settings",

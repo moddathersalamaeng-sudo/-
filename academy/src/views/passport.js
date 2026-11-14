@@ -22,8 +22,10 @@ import { loadFullLab, loadLabsIndex } from './labs.js';
 import { starterCourse } from './home.js';
 import * as P from '../domain/passport.mjs';
 import { cvPanel, cvPrintView } from './cv.js';
+import { companySharePanel } from './company-share.js';
 
-export const PASSPORT_TABS = ['overview', 'competencies', 'cpd', 'wallet', 'logs', 'career', 'cv', 'export'];
+/* Phase 12A adds "My company": consent-gated sharing and company assignments (src/views/company-share.js). */
+export const PASSPORT_TABS = ['overview', 'competencies', 'cpd', 'wallet', 'logs', 'career', 'cv', 'company', 'export'];
 const STATUS_TONE = { self_declared: 'neutral', course_assessed: 'info', platform_assessed: 'info', reviewer_verified: 'ok', externally_certified: 'gold' };
 const STATUS_ICON = { self_declared: 'user', course_assessed: 'book', platform_assessed: 'gauge', reviewer_verified: 'check', externally_certified: 'award' };
 const CRED_TONE = { self_declared: 'neutral', evidence_uploaded: 'info', pending_verification: 'warn', verified: 'ok', expired: 'bad', rejected: 'bad' };
@@ -116,11 +118,12 @@ export function passportPanel(ctx, match) {
       logs: () => logsPanel(ctx, d, region),
       career: () => careerPanel(ctx, d),
       cv: () => cvPanel(ctx, d),
+      company: () => companySharePanel(ctx, d),
       export: () => exportPanel(ctx, d, region)
     };
     return h('div', { class: 'passport', dataset: { passport: 'root', entries: String(d.entries.length) } },
       passportHero(ctx, d),
-      Tabs({ label: t('pp12.title'), initial: Math.max(0, PASSPORT_TABS.indexOf(region.tab || q.p)), lazy: true, tabs: PASSPORT_TABS.map(k => ({ key: 'pp-' + k, label: t('pp12.tabs.' + k), content: tabs[k] })),
+      Tabs({ label: t('pp12.title'), initial: Math.max(0, PASSPORT_TABS.indexOf(region.tab || q.p)), lazy: true, tabs: PASSPORT_TABS.map(k => ({ key: 'pp-' + k, label: t(k === 'company' ? 'co12a.share.tab' : 'pp12.tabs.' + k), content: tabs[k] })),
         onSelect: i => { region.tab = PASSPORT_TABS[i]; go(PASSPORT_TABS[i]); } }));
   } });
   region.tab = PASSPORT_TABS[initial];

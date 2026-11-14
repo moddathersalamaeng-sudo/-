@@ -39,7 +39,12 @@ test('registry: valid, five top items in order, learner menu ≤ 12, no future-p
   assert.ok(shellEntries(nav, ['learner'], 'menu').length <= MAX_MENU);
   assert.deepEqual(shellEntries(nav, ['learner'], 'panel').map(e => e.id), ACADEMIES.map(a => a.navId));
   assert.equal(planEntries(nav, ['learner']).filter(e => e.status !== 'coming').length, 0);
-  assert.ok(planEntries(nav, ['admin']).some(e => e.id === 'admin') && planEntries(nav, ['admin']).some(e => e.id === 'company'));
+  assert.ok(planEntries(nav, ['admin']).some(e => e.id === 'admin'));
+  /* Phase 12A (layout assertion updated, 12 Nov 2026): the Company Portal is built, so its entry left the build plan and is an
+     active account-menu entry for company_admin / admin only — still not a top item and never shown to learners. */
+  assert.ok(!planEntries(nav, ['admin']).some(e => e.id === 'company'));
+  assert.deepEqual(shellEntries(nav, ['company_admin'], 'user').filter(e => e.id === 'company').map(e => e.route), ['/company']);
+  assert.ok(!shellEntries(nav, ['learner'], 'user').some(e => e.id === 'company'));
 });
 
 test('registry: no link appears twice in the shell; merged pages are hidden and point to their new home', () => {

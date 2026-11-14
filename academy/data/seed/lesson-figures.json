@@ -1414,6 +1414,30 @@
       "figures": [
         "FIG-PP-CPD"
       ]
+    },
+    {
+      "id": "company:main",
+      "figures": [
+        "FIG-CO-CYCLE"
+      ]
+    },
+    {
+      "id": "company:share",
+      "figures": [
+        "FIG-CO-CONSENT"
+      ]
+    },
+    {
+      "id": "company:matrix",
+      "figures": [
+        "FIG-CO-SOURCE"
+      ]
+    },
+    {
+      "id": "company:tna",
+      "figures": [
+        "FIG-CO-TNA"
+      ]
     }
   ]
 }

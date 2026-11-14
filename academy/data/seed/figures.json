@@ -9901,6 +9901,255 @@
         "review_date": null,
         "change_note": "Phase 12 explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
       }
+    },
+    {
+      "id": "FIG-CO-CONSENT",
+      "template": "flow",
+      "caption": {
+        "en": "A share happens only when the employee decides",
+        "ar": "لا تتم المشاركة إلا بقرار الموظف"
+      },
+      "read": {
+        "en": "Read from the start. The employee chooses the parts, checks the list, gives consent and hands the file over; only then can the company import it. Deleting the file ends the share.",
+        "ar": "اقرأ من البداية. يختار الموظف الأجزاء، ويراجع القائمة، ويوافق، ويسلّم الملف؛ وعندها فقط تستطيع الشركة استيراده. وحذف الملف يُنهي المشاركة."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Choose the parts",
+            "ar": "اختيار الأجزاء"
+          }
+        },
+        {
+          "t": {
+            "en": "Check the list",
+            "ar": "مراجعة القائمة"
+          }
+        },
+        {
+          "t": {
+            "en": "Give consent",
+            "ar": "الموافقة"
+          }
+        },
+        {
+          "t": {
+            "en": "Hand over the file",
+            "ar": "تسليم الملف"
+          }
+        },
+        {
+          "t": {
+            "en": "Company imports",
+            "ar": "استيراد الشركة"
+          }
+        }
+      ],
+      "highlight": 2,
+      "owner_phase": "12A",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.12.1",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 12A explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
+      }
+    },
+    {
+      "id": "FIG-CO-CYCLE",
+      "template": "cycle",
+      "caption": {
+        "en": "The company learning cycle",
+        "ar": "دورة التعلّم في الشركة"
+      },
+      "read": {
+        "en": "Shares show where people stand, the matrix shows the gaps, the analysis turns gaps into needs, the plan and the assignments act on them, and the next share shows what changed.",
+        "ar": "تُظهر المشاركات أين يقف الأفراد، وتُظهر المصفوفة الفجوات، ويحوّل التحليل الفجوات إلى احتياجات، وتعالجها الخطة والتكليفات، ثم تُظهر المشاركة التالية ما تغيّر."
+      },
+      "center": {
+        "en": "Team competence",
+        "ar": "كفاءة الفريق"
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Share",
+            "ar": "المشاركة"
+          },
+          "d": {
+            "en": "By consent",
+            "ar": "بالموافقة"
+          }
+        },
+        {
+          "t": {
+            "en": "Matrix",
+            "ar": "المصفوفة"
+          },
+          "d": {
+            "en": "Levels and gaps",
+            "ar": "المستويات والفجوات"
+          }
+        },
+        {
+          "t": {
+            "en": "Needs",
+            "ar": "الاحتياجات"
+          },
+          "d": {
+            "en": "Required minus current",
+            "ar": "المطلوب ناقص الحالي"
+          }
+        },
+        {
+          "t": {
+            "en": "Plan and assign",
+            "ar": "الخطة والتكليف"
+          },
+          "d": {
+            "en": "Courses and labs",
+            "ar": "دورات ومختبرات"
+          }
+        },
+        {
+          "t": {
+            "en": "Learn",
+            "ar": "التعلّم"
+          },
+          "d": {
+            "en": "Evidence grows",
+            "ar": "تنمو الأدلة"
+          }
+        }
+      ],
+      "owner_phase": "12A",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.12.1",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 12A explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
+      }
+    },
+    {
+      "id": "FIG-CO-SOURCE",
+      "template": "ladder",
+      "caption": {
+        "en": "How strong is the level in a matrix cell?",
+        "ar": "ما مدى قوة المستوى في خلية المصفوفة؟"
+      },
+      "read": {
+        "en": "Read from the bottom. A cell with nothing shared tells you nothing; a self-rating is the person's own view; an assessed level was scored by the Academy; a verified level was checked by a named reviewer. Importing a share never moves a level up this ladder.",
+        "ar": "اقرأ من الأسفل. الخلية التي لم يُشارَك فيها شيء لا تخبرك بشيء؛ والتقييم الذاتي رأي الفرد نفسه؛ والمستوى المُقيَّم صحّحته الأكاديمية؛ والمستوى المتحقق منه راجعه مراجع مُسمّى. واستيراد المشاركة لا يرفع مستوى على هذا السلّم أبدًا."
+      },
+      "levels": [
+        {
+          "t": {
+            "en": "Verified",
+            "ar": "متحقق منه"
+          },
+          "d": {
+            "en": "Named reviewer",
+            "ar": "مراجع مُسمّى"
+          }
+        },
+        {
+          "t": {
+            "en": "Assessed",
+            "ar": "مُقيَّم"
+          },
+          "d": {
+            "en": "Scored by the Academy",
+            "ar": "صحّحته الأكاديمية"
+          }
+        },
+        {
+          "t": {
+            "en": "Self-rated",
+            "ar": "تقييم ذاتي"
+          },
+          "d": {
+            "en": "The person's own view",
+            "ar": "رأي الفرد نفسه"
+          }
+        },
+        {
+          "t": {
+            "en": "Nothing shared",
+            "ar": "لم يُشارَك شيء"
+          },
+          "d": {
+            "en": "No information",
+            "ar": "لا معلومات"
+          }
+        }
+      ],
+      "highlight": 1,
+      "owner_phase": "12A",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.12.1",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 12A explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
+      }
+    },
+    {
+      "id": "FIG-CO-TNA",
+      "template": "flow",
+      "caption": {
+        "en": "From a gap to a line in the annual plan",
+        "ar": "من الفجوة إلى سطر في الخطة السنوية"
+      },
+      "read": {
+        "en": "The role sets the required level; the share gives the current level; the difference is the development need. Needs are added up per department and for the company, put in priority order and matched with learning.",
+        "ar": "يحدد الدور المستوى المطلوب، وتعطي المشاركة المستوى الحالي، والفرق هو الاحتياج التطويري. تُجمع الاحتياجات لكل إدارة وللشركة، وتُرتَّب حسب الأولوية، وتُربط بالتعلّم."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Required level",
+            "ar": "المستوى المطلوب"
+          }
+        },
+        {
+          "t": {
+            "en": "Current level",
+            "ar": "المستوى الحالي"
+          }
+        },
+        {
+          "t": {
+            "en": "Development need",
+            "ar": "الاحتياج التطويري"
+          }
+        },
+        {
+          "t": {
+            "en": "Priority",
+            "ar": "الأولوية"
+          }
+        },
+        {
+          "t": {
+            "en": "Plan line",
+            "ar": "سطر الخطة"
+          }
+        }
+      ],
+      "highlight": 2,
+      "owner_phase": "12A",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.12.1",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 12A explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
+      }
     }
   ]
 }

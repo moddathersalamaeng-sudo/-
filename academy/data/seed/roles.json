@@ -24,7 +24,7 @@
     {
       "id": "company_admin",
       "labelKey": "roles.company_admin",
-      "placeholder": true
+      "placeholder": false
     }
   ]
 }

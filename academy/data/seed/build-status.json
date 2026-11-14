@@ -83,7 +83,9 @@
     {
       "id": "12A",
       "weight": 5,
-      "status": "planned"
+      "status": "in_progress",
+      "partial": null,
+      "note": "Company workspace built (12 Nov 2026): consent-gated passport shares, competency matrix, training needs analysis, annual plan exports and assignments, as files on the device; 4 figures await review / owner approval; accounts arrive with Phase 14."
     },
     {
       "id": "13",

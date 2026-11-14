@@ -62,7 +62,7 @@ export function settingsView(ctx) {
   let dev = null;
   if (session.devMode) {
     const boxes = ROLES.map(r => h('label', { class: 'choice' }, h('input', { type: 'checkbox', name: 'dev-role', value: r, checked: session.hasRole(r) }),
-      t('roles.' + r), r === 'company_admin' ? h('span', { class: 'badge badge-neutral' }, t('roles.placeholder')) : null));
+      t('roles.' + r)));
     dev = h('section', { class: 'panel', 'aria-labelledby': 'dv-h', dataset: { dev: 'roles' } },
       h('h2', { id: 'dv-h' }, t('settings.dev.title')), h('p', { class: 'note' }, t('settings.dev.body')),
       h('fieldset', { class: 'fs' }, h('legend', null, t('settings.dev.roles')), boxes),
