@@ -23,6 +23,7 @@ import { certCard, certsOf, routeCard, stat } from './pmi.js';
 import { academyBanner } from '../ui/art.js';
 import { Figure } from '../ui/figures.js';
 import { academyLanding, toolPanel, orderCourses } from '../ui/landing.js';
+import { readinessBand } from '../ui/readiness.js';
 
 const isExCourse = c => c.ecosystem === 'efqm' && !c.guide;
 const LAB_ID = 'LAB-EFQM';
@@ -89,6 +90,7 @@ export function excellenceAcademyView(ctx) {
     })), h('p', { class: 'note' }, icon('info'), ' ', t('ex10.kaqaChecked', { date: i18n.date(kaqa.checked) }), ' ', L(ctx, kaqa.note))) : null;
     /* Phase 10A: the shared academy template (src/ui/landing.js); the Lab sits under Tools & labs, KAQA under recognition. */
     return academyLanding(ctx, {
+      ready: readinessBand(ctx, content, 'excellence'),
       key: 'excellence', prefix: 'ex', heroCls: ['ex-hero', 'ex-landing'], cls: 'ex-landing', family: 'excellence', iconName: 'star',
       eyebrow: t('ex10.eyebrow'), title: t('ex10.title'), lede: t('ex10.lede'), statsLabel: t('ex10.statsLabel'),
       stats: [stat('book', i18n.number(courses.length), t('ex10.statCourses')), stat('image', i18n.number(figN), t('ex10.statFigures')),

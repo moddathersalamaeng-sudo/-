@@ -27,6 +27,8 @@ import { Figure } from '../ui/figures.js';
 import { courseFigures, lessonFigures } from '../domain/figures.mjs';
 import { academyOfCourse, cardProgress, ACADEMIES, academyByKey } from '../domain/academies.mjs';
 import { BookmarkButton } from '../ui/bookmark.js';
+import { groupByAcademy, firstSentence } from '../domain/guided.mjs';
+import { numberedCards, flipCard, clamp } from '../ui/guided.js';
 
 const STATUS_KEY = { 'CIA INTERNAL COURSE': 'cia_internal', 'EXAM PREPARATION COURSE': 'exam_prep', 'EXTERNAL ACCREDITATION PENDING': 'accreditation_pending', 'EXTERNALLY ACCREDITED': 'externally_accredited', 'OFFICIAL PARTNER COURSE': 'official_partner' };
 export const courseStatusLabel = (ctx, c) => {
@@ -116,13 +118,17 @@ function courseHero(ctx, c, st, lessons, actions) {
       h('div', { class: 'badges' }, courseStatusLabel(ctx, c), stateBadge(ctx, st), isReviewer(ctx) ? govBadge(ctx, c) : null),
       h('p', { class: 'eyebrow' }, t('p9.family.' + fam), ' · ', t('courses.eyebrow')),
       h('h1', null, L(ctx, c.title)),
-      h('p', { class: 'lede' }, L(ctx, c.overview)),
+      /* Phase 12B (L-B6): a long overview folds to three lines with "Read more". */
+      clamp(ctx, L(ctx, c.overview), { cls: 'lede', words: 45 }),
       actions.length ? h('div', { class: 'btnrow' }, actions) : null,
       h('ul', { class: 'hero-facts' },
         h('li', null, icon('clock'), ' ', h('strong', null, hours(ctx, c.training_hours))),
         h('li', null, icon('book'), ' ', h('strong', null, i18n.number(lessons.length)), ' ', t('p8.course.lessons')),
         h('li', null, icon('gauge'), ' ', h('strong', null, t('p8.course.levelName.' + Math.min(5, Math.max(1, c.level || 1))))),
-        h('li', null, icon('globe'), ' ', (c.languages || []).map(l => langName(ctx, l)).join(' · ')))),
+        h('li', null, icon('globe'), ' ', (c.languages || []).map(l => langName(ctx, l)).join(' · ')),
+        /* Phase 12B (L-B3): delivery and certificate in the same quick-facts line. */
+        (c.delivery_modes || []).length ? h('li', null, icon('users'), ' ', c.delivery_modes.map(v => t('p7.delivery.' + v)).join(' · ')) : null,
+        c.certificate_type ? h('li', null, icon('award'), ' ', t('labels.certificateType.' + c.certificate_type)) : null)),
     h('div', { class: 'cover' }, courseCover(c)));
 }
 
@@ -145,6 +151,9 @@ const inBand = (c, b) => { const r = HOURS_BANDS[b]; const n = Number(c.training
  * Filters (?q=&academy=&level=&hours=&cert=&programme=&standard=&route=&delivery=) kept in the URL. Phase 10A: academy,
  * hours, certification and programme filters; the former Programmes page is the programme filter (?programme=all lists them).
  */
+/** Phase 12B (L-B2): courses shown per academy group before "Show all" — one full row on a wide screen. */
+export const CAT_PER_GROUP = 4;
+
 export function courseCatalogView(ctx, match) {
   const { t, i18n } = ctx;
   const KEYS = ['q', 'academy', 'level', 'hours', 'cert', 'programme', 'standard', 'route', 'delivery'];
@@ -177,7 +186,24 @@ export function courseCatalogView(ctx, match) {
       if (prog) { const order = (prog.stages || []).map(s => s.course_id); xs = xs.filter(c => order.includes(c.id)).sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id)); }
       progBox.replaceChildren(...(q.programme === 'all' ? (programs.length ? programs.map(programCard) : [EmptyState({ title: t('programs.empty'), body: t('programs.emptyBody'), iconName: 'lock', level: 3 })]) : prog ? [programCard(prog)] : []));
       count.textContent = t('p7.course.count', { n: i18n.number(xs.length) });
-      list.replaceChildren(...(xs.length ? xs.map(c => courseCard(ctx, c, learner)) : [EmptyState({ title: t('p7.course.noMatch'), body: t('p7.course.noMatchBody') })]));
+      /* Phase 12B (L-B2): with no filter or search, the catalogue is grouped by academy — four courses each and
+         "Show all n"; every card stays in the page (hidden) so counts and search are unchanged. */
+      const grouped = !KEYS.some(k => q[k]) && xs.length > 12;
+      list.className = grouped ? 'gx-cat' : 'cards';
+      if (!xs.length) list.replaceChildren(EmptyState({ title: t('p7.course.noMatch'), body: t('p7.course.noMatchBody') }));
+      else if (!grouped) list.replaceChildren(...xs.map(c => courseCard(ctx, c, learner)));
+      else list.replaceChildren(...groupByAcademy(xs, academyOfCourse, ACADEMIES.map(a => a.key), CAT_PER_GROUP).map(g => {
+        const ac = academyByKey(g.key);
+        const name = ac ? t('nav.items.' + ac.navId) : t('g12b.cat.other');
+        const cards = h('div', { class: 'cards' }, g.items.map((c, i) => { const el = courseCard(ctx, c, learner); if (i >= CAT_PER_GROUP) el.hidden = true; return el; }));
+        const more = g.hidden ? h('button', { type: 'button', class: 'btn btn-secondary gx-cat-more', 'aria-expanded': 'false', dataset: { action: 'cat-more', academy: g.key },
+          onclick: () => { const open = more.getAttribute('aria-expanded') !== 'true'; more.setAttribute('aria-expanded', String(open)); [...cards.children].forEach((el, i) => { if (i >= CAT_PER_GROUP) el.hidden = !open; });
+            more.textContent = open ? t('g12b.cat.less') : t('g12b.cat.more', { n: i18n.number(g.items.length) }); if (open) cards.children[CAT_PER_GROUP]?.querySelector('a')?.focus(); } }, t('g12b.cat.more', { n: i18n.number(g.items.length) })) : null;
+        return h('section', { class: 'gx-cat-group', dataset: { academy: g.key }, 'aria-labelledby': 'cat-g-' + g.key },
+          h('div', { class: 'gx-cat-head' }, h('h3', { id: 'cat-g-' + g.key }, name, ' ', h('span', { class: 'note' }, '(', i18n.number(g.items.length), ')')),
+            ac ? h('a', { href: '#' + ac.route }, t('g12b.cat.visit')) : null),
+          cards, more);
+      }));
       setHashQuery('/academy/courses', q);
     };
     const sel = (name, label, options, anyKey = 'p7.course.any') => h('div', { class: 'field' }, h('label', { for: 'cf-' + name }, label),
@@ -191,12 +217,16 @@ export function courseCatalogView(ctx, match) {
     const filters = h('form', { class: 'filters', role: 'search', 'aria-label': t('p7.course.filters'), onsubmit: e => e.preventDefault() },
       h('div', { class: 'field' }, h('label', { for: 'cf-q' }, t('p7.course.search')),
         h('input', { class: 'input', id: 'cf-q', type: 'search', name: 'q', value: q.q, oninput: e => { q.q = e.target.value; paint(); } })),
+      /* Phase 12B: on a phone the filters fold under one "Filters" control (open when a filter is in use). */
+      h('details', { class: 'gx-filtfold', open: (typeof matchMedia !== 'function' || !matchMedia('(max-width: 700px)').matches || KEYS.some(k => k !== 'q' && q[k])) || null },
+        h('summary', null, icon('funnel'), ' ', t('g12b.cat.filters')),
+        h('div', { class: 'gx-filtin' },
       sel('academy', t('x10a.cat.academy'), ACADEMIES.map(a => ({ value: a.key, label: t('nav.items.' + a.navId) }))),
       sel('level', t('p7.course.level'), levels.map(v => ({ value: v, label: t('p7.level', { n: i18n.digitize(v) }) }))),
       sel('hours', t('x10a.cat.hours'), Object.keys(HOURS_BANDS).map(k => ({ value: k, label: t('x10a.cat.hoursBand.' + k) }))),
       certs.length ? sel('cert', t('x10a.cat.cert'), certs.map(x => ({ value: x.id, label: [x.code, L(ctx, x.name)].filter(Boolean).join(' — ') }))) : null,
       programs.length ? sel('programme', t('x10a.cat.programme'), [{ value: 'all', label: t('x10a.cat.allProgrammes') }, ...programs.map(p => ({ value: p.id, label: L(ctx, p.title) }))]) : null,
-      more,
+      more)),
       Button({ label: t('p7.course.clear'), variant: 'quiet', onClick: () => { KEYS.forEach(k => { q[k] = ''; }); filters.reset(); filters.querySelectorAll('select').forEach(x => { x.value = ''; }); filters.querySelector('#cf-q').value = ''; paint(); } }));
     paint();
     return h('div', null, previewBanner(ctx, [...content.courses, ...programs]), filters, progBox, count, srHeading(t('p7.course.results')), list);
@@ -393,7 +423,8 @@ function courseDetail(ctx, c, content, learner, region, guides = {}) {
     previewBanner(ctx, [c]),
     head,
     /* Above the fold: three things you will be able to do. */
-    outcomes3.length ? isec('c-out3', 'target', t('x10a.course.able'), h('ul', { class: 'able' }, outcomes3.map((o, i) => h('li', null, icon(OUT_ICONS[i]), L(ctx, o))))) : null,
+    /* Phase 12B (L-B3): numbered outcome cards (01, 02, 03). */
+    outcomes3.length ? isec('c-out3', 'target', t('x10a.course.able'), numberedCards(ctx, outcomes3.map(o => L(ctx, o)), { cls: 'able' })) : null,
     glance(ctx, c, lessons),
     h('div', { class: 'split' }, progressPanel, h('section', { class: 'panel', 'aria-label': t('p7.course.summary') }, summary)),
     isec('c-cur', 'layers', t('p7.course.curriculum'), curriculum),
@@ -411,7 +442,7 @@ function courseDetail(ctx, c, content, learner, region, guides = {}) {
       valueStrip(ctx, c),
       c.why_it_matters ? isec('c-why', 'bulb', t('p7.course.why'), h('p', null, L(ctx, c.why_it_matters)), c.professional_relevance ? h('p', { class: 'note' }, L(ctx, c.professional_relevance)) : null) : null,
       isec('c-aud', 'users', t('p7.course.audience'), h('ul', { class: 'personas' }, (c.target_audience || []).map((a, i) => h('li', null, h('span', { class: 'pav' }, icon(AUD_ICONS[i % AUD_ICONS.length])), h('span', null, L(ctx, a)))))),
-      isec('c-out', 'target', t('p7.course.outcomes'), h('ol', { class: 'outcards' }, (c.learning_outcomes || []).map((o, i) => h('li', null, icon(OUT_ICONS[i % OUT_ICONS.length]), L(ctx, o))))),
+      isec('c-out', 'target', t('p7.course.outcomes'), numberedCards(ctx, (c.learning_outcomes || []).map(o => L(ctx, o)), { cls: 'outcards' })),
       figs.length ? isec('c-vis', 'image', t('p9.fig.courseTitle'), h('p', { class: 'note' }, t('p9.fig.courseNote', { n: i18n.number(figs.length) })),
         h('div', { class: 'vis-strip' }, figs.slice(0, 8).map(f => Figure(ctx, f, { compact: true })))) : null,
       comps.length ? isec('c-comp', 'gauge', t('p7.course.competencies'), h('ul', { class: 'plain comps' }, comps)) : null,
@@ -506,6 +537,13 @@ function lessonPlayer(ctx, c, lessons, i, content, learner, guides = {}) {
     const figEls = lfigs.map((f, j) => Figure(ctx, f, { number: j + 1 }));
     if (Array.isArray(blockEls)) blockEls.splice(Math.min(1, blockEls.length), 0, ...figEls);
   }
+  /* Phase 12B (L-B4): the key ideas at a glance (added after the figures are placed, so figures stay after the concept) — three flip cards (idea, common mistake, evidence) before the full text. */
+  const keyTypes = ['concept', 'common_mistake', 'evidence'];
+  const keyBlocks = l.source ? [] : keyTypes.map(k => blocks.find(b => b.type === k)).filter(b => b && L(ctx, b.text));
+  if (keyBlocks.length >= 2 && Array.isArray(blockEls)) blockEls.unshift(h('section', { class: 'gx-keyideas', 'aria-labelledby': 'gx-key-h', dataset: { keyideas: String(keyBlocks.length) } },
+    h('h2', { id: 'gx-key-h', class: 'h-sm' }, icon('bulb'), ' ', t('g12b.lesson.keyTitle')),
+    h('div', { class: 'gx-flips' }, keyBlocks.map(b => flipCard(ctx, { id: b.type, kicker: t('g12b.lesson.kicker.' + b.type), term: t('p7.block.' + b.type), detail: firstSentence(L(ctx, b.text)) }))),
+    h('p', { class: 'note' }, t('g12b.lesson.keyNote'))));
   const apply = srcItem ? guideApply(ctx, srcGuide, srcItem) : null;
   const exPrompt = apply ? apply.prompt : L(ctx, l.exercise?.prompt);
   const exModel = apply ? apply.model : h('p', null, L(ctx, l.exercise?.model_answer));

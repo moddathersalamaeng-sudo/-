@@ -249,7 +249,7 @@ try:
     page.click('[data-action=save-profile]'); page.wait_for_timeout(300)
     go(page, '/academy/excellence')
     s0 = page.get_attribute('[data-start]', 'data-start'); h0 = page.get_attribute('[data-action=ex-start]', 'href')
-    go(page, '/assessments/excellence-readiness')
+    go(page, '/assessments/excellence-readiness?view=all')
     answer(page, 'ASM-READY-EX-001')
     go(page, '/academy/excellence')
     s1 = page.get_attribute('[data-start]', 'data-start'); t1 = page.get_attribute('[data-start]', 'data-target')

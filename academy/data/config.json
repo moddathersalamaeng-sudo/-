@@ -1,1 +1,1 @@
-{"app": "cia-academy", "version": "1.12.1-phase12a", "platformBase": "../", "defaultLocale": "ar", "locales": ["ar", "en"], "defaultDigits": {"ar": "latn", "en": "latn"}, "devHosts": ["localhost", "127.0.0.1"]}
+{"app": "cia-academy", "version": "1.12.2-phase12b", "platformBase": "../", "defaultLocale": "ar", "locales": ["ar", "en"], "defaultDigits": {"ar": "latn", "en": "latn"}, "devHosts": ["localhost", "127.0.0.1"]}

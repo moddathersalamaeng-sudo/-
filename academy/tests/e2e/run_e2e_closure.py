@@ -90,7 +90,7 @@ with sync_playwright() as p:
     go(page, '/academy/iso')
     sp0 = page.get_attribute('[data-start]', 'data-start'); href0 = page.get_attribute('[data-action=start-point]', 'href')
     record('learner with a profile and no evidence: starting point "assess" now links to the published readiness check', sp0 == 'assess' and href0 == '#/assessments/iso-readiness', f'{sp0} {href0}')
-    go(page, '/assessments/iso-readiness')
+    go(page, '/assessments/iso-readiness?view=all')
     for qid in READY['question_ids']:
         q = QUESTIONS[qid]
         if q['competency'] in ('ISO-01', 'ISO-02') and q['type'] in ('single_choice', 'true_false'): answer(page, qid)
@@ -112,7 +112,7 @@ with sync_playwright() as p:
     go(page, '/academy/courses/read-iso-standards/L04')
     panel = page.locator('.gfrom details').count()
     final = ASSESS[c['assessments']['final']]
-    go(page, f'/assessments/{final["slug"]}')
+    go(page, f'/assessments/{final["slug"]}?view=all')
     for qid in final['question_ids']: answer(page, qid)
     page.click('[data-action=submit-assessment]'); page.wait_for_timeout(500)
     att = [a for a in store(page, 'assessment_attempts') if a['assessment_id'] == final['id']]
@@ -137,7 +137,7 @@ with sync_playwright() as p:
 
     # future-phase draft stays unavailable even by direct link
     slug = next(a['slug'] for a in json.loads((ACADEMY / 'data' / 'seed' / 'assessments.json').read_text(encoding='utf-8'))['items'] if a['id'] == 'ASM-DIAG-001')
-    go(page, f'/assessments/{slug}')
+    go(page, f'/assessments/{slug}?view=all')
     record('a future-phase draft (Phase 5 demo assessment) is not reachable by direct link (honest "not available" page)', page.locator('[data-unavailable]').count() == 1, slug)
     keys = page.evaluate('Object.keys(localStorage)')
     record('storage: the Academy writes only cia:v1:* keys (plus the shared cia-lang)', all(k.startswith('cia:v1:') or k == 'cia-lang' for k in keys), keys)

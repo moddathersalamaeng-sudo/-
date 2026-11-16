@@ -114,7 +114,7 @@ with sync_playwright() as p:
     record('reviewer: no preview banner where everything is published, a preview banner on a future-phase draft; starting point "assess" links to the readiness check', sp == 'assess' and href == '#/assessments/iso-readiness' and no_banner and banner, f'{sp} {href} {no_banner} {banner}')
 
     # Readiness assessment with "I don't know"
-    go(page, '/assessments/iso-readiness')
+    go(page, '/assessments/iso-readiness?view=all')
     page.click('[data-action=submit-assessment]'); page.wait_for_timeout(150)
     unanswered = page.locator('.asm-form .errsum li').count(); sum_focus = page.evaluate('document.activeElement.classList.contains("errsum")')
     for qid in READY['question_ids']:

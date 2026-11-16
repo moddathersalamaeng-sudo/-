@@ -106,7 +106,7 @@ try:
 
     # ---------- 3. Audit Simulator through the real controls ----------
     lab = next(l for l in LABS if l['id'] == 'LAB-AUDIT-SIM'); key = perfect(lab)
-    go(page, '/labs/audit-simulator')
+    go(page, '/labs/audit-simulator?view=all')
     page.click('[data-action=submit-lab]'); page.wait_for_timeout(200)
     errs = int(page.get_attribute('.errsum', 'data-errors') or 0); focus_sum = page.evaluate('document.activeElement.classList.contains("errsum")')
     invalid = page.locator('.lab-task[aria-invalid=true]').count()
@@ -152,7 +152,7 @@ try:
     # ---------- 4. Every other published lab end to end (answers seeded as a draft, then submitted through the page) ----------
     e2e = []
     for l in [x for x in PUB_LABS if x['id'] != 'LAB-AUDIT-SIM']:
-        go(page, f'/labs/{l["slug"]}')
+        go(page, f'/labs/{l["slug"]}?view=all')
         page.click('[data-action=submit-lab]'); page.wait_for_timeout(150)
         bad = int(page.get_attribute('.errsum', 'data-errors') or 0) == len(l['tasks'])
         num = next((t for t in l['tasks'] if t['type'] == 'numeric'), None)
@@ -287,7 +287,7 @@ try:
             for r in routes + ['/academy/iso', '/my']:
                 go(pg, r, lang); v = axe(pg)
                 if v: ax.append(f'{scheme}/{w}/{lang}{r}: ' + json.dumps(v, ensure_ascii=False))
-            go(pg, '/labs/risk-assessment', lang); pg.click('[data-action=submit-lab]'); pg.wait_for_timeout(200); v = axe(pg)
+            go(pg, '/labs/risk-assessment?view=all', lang); pg.click('[data-action=submit-lab]'); pg.wait_for_timeout(200); v = axe(pg)
             if v: ax.append(f'{scheme}/{w}/{lang} lab errors: ' + json.dumps(v, ensure_ascii=False))
             l = next(x for x in LABS if x['id'] == 'LAB-RISK')
             put(pg, 'lab_drafts', [{'id': l['id'], 'answers': perfect(l), 'self_check': {}, 'updated_at': '2026-11-12T08:00:00Z'}]); pg.reload(); settle(pg)

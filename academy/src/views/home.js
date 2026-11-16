@@ -12,6 +12,7 @@ import { loadLight } from '../data/learner-state.js';
 import { ACADEMIES, GOALS, goalAcademy, academyOfCourse, cardProgress, continueList, academyByKey } from '../domain/academies.mjs';
 import { L, linkBtn, minutes, hours } from '../ui/academy.js';
 import { academyEmblem } from '../ui/emblem.js';
+import { readinessBand } from '../ui/readiness.js';
 
 const GOAL_ICON = { standard: 'shield', certification: 'award', improve: 'trend', team: 'users' };
 const lessonKey = (c, l) => (l.id.startsWith(c.id + '-') ? l.id.slice(c.id.length + 1) : l.id);
@@ -94,5 +95,8 @@ export function homeView(ctx) {
           first ? linkBtn(lessonHref(c, first), t(p.done ? 'p7.course.continue' : 'x10a.home.startLesson'), 'primary', { 'data-action': 'start-lesson' }) : null));
     })) }));
 
-  return h('div', { class: 'home' }, goals, cont, how, academies, featured);
+  /* Phase 12B (L-B5): the readiness band — its own region, so the rest of the page never waits for the assessment list. */
+  const band = dataRegion({ t, load: async () => { const d = await data; const assessments = await ctx.repos.assessments.listVisible(ctx.session.roles).catch(() => []); return { ...d, assessments }; },
+    render: ({ content, assessments }) => readinessBand(ctx, { courses: content.courses, assessments }, null) || h('span', { hidden: true }) });
+  return h('div', { class: 'home' }, goals, cont, how, band, academies, featured);
 }

@@ -18,6 +18,7 @@ import { L, notAvailable, pageHead, previewBanner, linkBtn, section, facts, hour
 import { courseCard, sourceList } from './courses.js';
 import { labsToolPanel } from './labs.js';
 import { academyLanding, toolPanel, orderCourses } from '../ui/landing.js';
+import { readinessBand } from '../ui/readiness.js';
 import { stat } from './pmi.js';
 
 /** "9 h" / "20 min" / "6.5 h" → minutes. */
@@ -118,6 +119,7 @@ export function isoAcademyView(ctx) {
     const std = content.standards;
     /* Phase 10A: the shared academy template (src/ui/landing.js). */
     return academyLanding(ctx, {
+      ready: readinessBand(ctx, content, 'iso'),
       key: 'iso', prefix: 'iso', cls: 'iso-landing', family: 'iso', iconName: 'shield',
       eyebrow: t('p7.iso.eyebrow'), title: t('p7.iso.title'), lede: t('p7.iso.lede'),
       statsLabel: t('pmi.statsLabel'),

@@ -21,6 +21,7 @@ import { certCard, certsOf, routeCard, stat, studyPlan, certHref } from './pmi.j
 import { academyBanner } from '../ui/art.js';
 import { labsToolPanel } from './labs.js';
 import { academyLanding, toolPanel, orderCourses } from '../ui/landing.js';
+import { readinessBand as readinessBandUi } from '../ui/readiness.js';
 
 const isQCourse = c => c.ecosystem === 'quality' && !c.guide;
 const isQGuideCourse = c => c.guide && (c.category === 'quality' || c.ecosystem === 'quality' || c.id.startsWith('CRS-M-'));
@@ -69,6 +70,7 @@ export function qualityAcademyView(ctx) {
     const methodCourses = guideCourses.filter(c => guides.some(g => g.slug === c.guide));
     /* Phase 10A: the shared academy template (src/ui/landing.js). Method-guide courses follow the academy's own courses. */
     return academyLanding(ctx, {
+      ready: readinessBandUi(ctx, content, 'quality'),
       key: 'quality', prefix: 'q', heroCls: ['q-hero', 'q-landing'], cls: 'q-landing', family: 'quality', iconName: 'award',
       eyebrow: t('q9.eyebrow'), title: t('q9.title'), lede: t('q9.lede'), statsLabel: t('q9.statsLabel'),
       stats: [stat('book', i18n.number(courses.length), t('q9.statCourses')), stat('image', i18n.number(figN), t('q9.statFigures')),

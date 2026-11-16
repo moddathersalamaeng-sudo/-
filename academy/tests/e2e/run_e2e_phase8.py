@@ -165,7 +165,7 @@ try:
     page.click('[data-action=save-profile]'); page.wait_for_timeout(300)
     go(page, '/academy/pmi')
     sp0 = page.get_attribute('[data-start]', 'data-start'); href0 = page.get_attribute('[data-action=pm-start]', 'href')
-    go(page, '/assessments/pm-readiness')
+    go(page, '/assessments/pm-readiness?view=all')
     unknown_ok = page.locator('[data-unknown]').count() == len(ASSESS['ASM-READY-PM-001']['question_ids'])
     for qid in ASSESS['ASM-READY-PM-001']['question_ids']:  # demonstrate the foundations; say "I don't know" on PMO design
         if QUESTIONS[qid]['competency'] == 'PMO-01': page.check(f'[data-unknown="{qid}"]')

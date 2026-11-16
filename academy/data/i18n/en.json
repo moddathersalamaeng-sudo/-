@@ -3820,5 +3820,126 @@
       "due_invalid": "Enter a valid date.",
       "due_past": "The due date cannot be in the past."
     }
+  },
+  "g12b": {
+    "flip": {
+      "hint": "Press for details",
+      "sr": "Flip card: {term}"
+    },
+    "readMore": "Read more",
+    "readLess": "Show less",
+    "step": {
+      "done": "complete",
+      "current": "current stage",
+      "todo": "not started"
+    },
+    "asm": {
+      "introTitle": "Before you start",
+      "details": "Assessment details and instructions",
+      "cQuestions": "questions",
+      "cMinutes": "minutes approx.",
+      "cPass": "pass mark",
+      "cStages": "stages",
+      "how1": "Questions come in stages, one competency per stage.",
+      "how2": "Your answers are saved on this device as you go; leave and come back whenever you like.",
+      "how3": "Review your answers before submitting, then see your result straight away with an action plan.",
+      "honest": "A learning aid inside the Academy, not a professional certificate. Your answers stay on this device.",
+      "start": "Start the assessment",
+      "resume": "Continue where you stopped ({n} of {total})",
+      "restart": "Start again",
+      "viewAll": "Show all questions on one page",
+      "viewGuided": "Show in stages",
+      "stageN": "Stage {n}",
+      "stageOf": "Stage {n} of {total}",
+      "stageHead": "Stage {n} of {total}: {name}",
+      "progress": "Progress",
+      "answeredOf": "{n} of {total} answered",
+      "rail": "Assessment stages",
+      "review": "Review",
+      "reviewTitle": "Review your answers before submitting",
+      "reviewReady": "Every question is answered. Change any answer or submit now.",
+      "reviewOpen": "{n} still unanswered. Choose “Edit” to go back to it.",
+      "state": {
+        "answered": "Answered",
+        "unknown": "I don't know",
+        "open": "Unanswered"
+      },
+      "edit": "Edit",
+      "back": "Back",
+      "next": "Next",
+      "toReview": "Review your answers",
+      "saved": "Your answers are saved on this device.",
+      "saveFailed": "Could not save on this device; keep this page open until you submit.",
+      "restored": "Your saved answers are back."
+    },
+    "res": {
+      "ringLabel": "Score {pct}%",
+      "counts": "Answer summary",
+      "cCorrect": "correct",
+      "cIncorrect": "incorrect",
+      "cUnknown": "“I don't know”",
+      "cPending": "awaiting review",
+      "unknownN": "“I don't know” {n}",
+      "asTable": "Show the result as a table",
+      "methodTitle": "How we calculated this",
+      "m1": "Each question shows its points; the score is points earned ÷ the points of the automatically scored questions.",
+      "m2": "“I don't know” scores zero and is reported on its own, because it is more honest than a guess.",
+      "m3": "Written answers do not count until a reviewer has scored them against the rubric.",
+      "m4": "Each competency is scored from its own questions only: mastered ≥ {mastery}%, developing {weak}% to below {mastery}%, gap below {weak}%.",
+      "m5": "The pass mark for this assessment is {pass}%.",
+      "m6": "The reading and the plan are built by fixed rules from these same numbers, not by AI.",
+      "readingTitle": "Reading your result",
+      "strengths": "Your strengths:",
+      "gaps": "Your priorities (gaps):",
+      "developing": "Developing:",
+      "noGaps": "No gaps in this assessment. Keep your level with practice.",
+      "planTitle": "Your 30 / 60 / 90-day plan",
+      "planLede": "Built from your priorities above; every item links to published Academy content.",
+      "window": {
+        "30": "Days 1–30",
+        "60": "Days 31–60",
+        "90": "Days 61–90"
+      },
+      "planFor": "for {name}",
+      "planRetake": "Retake this assessment to measure your progress.",
+      "toPath": "My learning path",
+      "print": "Print the result",
+      "sep": ", "
+    },
+    "lab": {
+      "scenario": "Show the scenario",
+      "viewAll": "Show all tasks on one page",
+      "taskOf": "Task {n} of {total}",
+      "doneOf": "{n} of {total} done",
+      "taskShort": "Task {n}",
+      "rail": "Lab tasks"
+    },
+    "cat": {
+      "other": "Other courses",
+      "more": "Show all courses ({n})",
+      "less": "Show fewer",
+      "visit": "Academy page",
+      "filters": "Filters"
+    },
+    "lesson": {
+      "keyTitle": "The key ideas in a minute",
+      "keyNote": "The cards show the first sentence only; the full explanation is below.",
+      "kicker": {
+        "concept": "Understand",
+        "common_mistake": "Avoid",
+        "evidence": "Check"
+      }
+    },
+    "band": {
+      "eyebrow": "Readiness check",
+      "title": "Is your knowledge ready?",
+      "lede": "Find your starting point in minutes: answer, then see your result straight away with a 30 / 60 / 90-day plan.",
+      "ledeAcademy": "Check your knowledge in this academy before you choose a course, and get an action plan straight away.",
+      "cta": "Start the readiness check",
+      "cChecks": "readiness checks and diagnostics",
+      "cQuestions": "questions",
+      "cComp": "competencies the courses develop",
+      "ctaChoose": "Choose a readiness check"
+    }
   }
 }

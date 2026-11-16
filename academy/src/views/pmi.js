@@ -21,6 +21,7 @@ import { effortMinutes } from './iso.js';
 import { academyBanner } from '../ui/art.js';
 import { labsToolPanel } from './labs.js';
 import { academyLanding, toolPanel, orderCourses } from '../ui/landing.js';
+import { readinessBand } from '../ui/readiness.js';
 
 const STAGE_ICON = { entry: 'flag', practitioner: 'briefcase', specialist: 'target', senior: 'award', advanced: 'star', top: 'crown', professional: 'users' };
 const AREA_ICON = { project: 'briefcase', agile: 'refresh', risk: 'shield', pmo: 'grid', programme: 'layers', portfolio: 'chart', analysis: 'search',
@@ -118,6 +119,7 @@ export function pmiAcademyView(ctx) {
     const certs = certsOf(content, 'PMI');
     /* Phase 10A: the shared academy template (src/ui/landing.js). */
     return academyLanding(ctx, {
+      ready: readinessBand(ctx, content, 'pmi'),
       key: 'pmi', prefix: 'pm', cls: 'pmi-hero', family: 'pmi', iconName: 'briefcase',
       eyebrow: t('pmi.eyebrow'), title: t('pmi.title'), lede: t('pmi.lede'), statsLabel: t('pmi.statsLabel'),
       stats: [stat('book', i18n.number(courses.length), t('pmi.statCourses')), stat('ladder', i18n.number(practices), t('pmi.statPractices')),

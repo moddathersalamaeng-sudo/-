@@ -61,7 +61,8 @@ export function academyLanding(ctx, o) {
     h('details', { class: 'about' }, h('summary', null, h('h2', { id: `${p}-about`, class: 'h-sm' }, icon('info'), ' ', t('x10a.landing.about'))),
       o.about.filter(Boolean).map(x => h('p', null, x))));
 
-  return h('div', { class: 'landing', dataset: { landing: o.key } }, hero, o.preview, next, routesSec, coursesSec, certsSec, toolsSec, about);
+  /* Phase 12B (L-B5): the readiness band follows "your next step" (no data-tpl: the tested template order is unchanged). */
+  return h('div', { class: 'landing', dataset: { landing: o.key } }, hero, o.preview, next, o.ready || null, routesSec, coursesSec, certsSec, toolsSec, about);
 }
 
 /** A small panel inside "Tools & labs". */

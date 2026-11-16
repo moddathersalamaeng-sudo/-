@@ -17,6 +17,8 @@ import { courseCover } from '../ui/art.js';
 import { Figure } from '../ui/figures.js';
 import { isVisible, validateGovernance } from '../data/governance.js';
 import { ACADEMIES, academyByKey } from '../domain/academies.mjs';
+import { stepRail, counterStrip } from '../ui/guided.js';
+import { ProgressBar } from '../ui/components.js';
 import { LAB_UNKNOWN, LAB_AUTO_TYPES, validateResponses, makeLabAttempt, attemptsFor, nextAttemptNo, shuffledIds, moveItem, exportAttempt, labProgress, gradeTask, verdictOf } from '../domain/labs.mjs';
 
 const VERDICT_TONE = { correct: 'ok', reviewed: 'ok', partial: 'warn', incorrect: 'bad', unknown: 'neutral', pending: 'info' };
@@ -192,7 +194,7 @@ function labPage(ctx, d, match) {
     work.replaceChildren(resultView(ctx, lab, at, { onRetry: () => { setHashQuery(`/labs/${lab.slug}`, {}); showForm(true); }, history: attemptsFor(state.attempts, lab.id), onOpen: showAttempt }));
   };
   const showForm = (focus = false) => {
-    work.replaceChildren(formView(ctx, lab, { draft: d.draft, attemptNo: nextAttemptNo(state.attempts, lab.id), history: attemptsFor(state.attempts, lab.id), onOpen: showAttempt,
+    work.replaceChildren(formView(ctx, lab, { view: match.query?.view === 'all' ? 'all' : 'guided', draft: d.draft, attemptNo: nextAttemptNo(state.attempts, lab.id), history: attemptsFor(state.attempts, lab.id), onOpen: showAttempt,
       onSubmit: async (attempt) => {
         await ctx.repos.labAttempts.save(attempt);
         await ctx.repos.labDrafts.remove(lab.id).catch(() => {});
@@ -212,7 +214,7 @@ function labPage(ctx, d, match) {
 
 /* ------------------------------------------------------------------ the task form */
 
-function formView(ctx, lab, { draft, attemptNo, history, onOpen, onSubmit }) {
+function formView(ctx, lab, { draft, attemptNo, history, onOpen, onSubmit, view = 'guided' }) {
   const { t, i18n } = ctx;
   const answers = { ...(draft?.answers || {}) };
   const selfCheck = { ...(draft?.self_check || {}) };
@@ -223,7 +225,7 @@ function formView(ctx, lab, { draft, attemptNo, history, onOpen, onSubmit }) {
     try { await ctx.repos.labDrafts.save({ id: lab.id, answers, self_check: selfCheck, updated_at: new Date().toISOString() }); status.dataset.saved = 'ok'; status.textContent = t('lab11.draftSaved'); }
     catch { status.dataset.saved = 'error'; status.textContent = t('lab11.draftFailed'); }
   }, 300); };
-  const set = (id, v) => { answers[id] = v; persist(); const fs = form.querySelector(`[data-task="${id}"]`); if (fs) { fs.removeAttribute('aria-invalid'); fs.querySelector('.field-error')?.setAttribute('hidden', ''); } };
+  const set = (id, v) => { answers[id] = v; persist(); const fs = form.querySelector(`[data-task="${id}"]`); if (fs) { fs.removeAttribute('aria-invalid'); fs.querySelector('.field-error')?.setAttribute('hidden', ''); } guide?.refresh(); };
 
   const unknownBox = (task, onToggle) => {
     const id = `lt-${task.id}-unknown`;
@@ -308,7 +310,9 @@ function formView(ctx, lab, { draft, attemptNo, history, onOpen, onSubmit }) {
     h('p', { class: 'field-error', id: `lt-${task.id}-err`, role: 'alert', hidden: true }));
 
   const errBox = h('div', { class: 'errsum', tabindex: '-1', hidden: true, dataset: { errors: '0' } });
-  const form = h('form', { class: 'lab-form-main', novalidate: true, 'aria-labelledby': 'lab-tasks-h', onsubmit: e => {
+  const taskEls = lab.tasks.map(taskBlock);
+  let guide = null;
+  const form = h('form', { class: 'lab-form-main', novalidate: true, dataset: { view }, 'aria-labelledby': 'lab-tasks-h', onsubmit: e => {
     e.preventDefault();
     const problems = validateResponses(lab, answers);
     form.querySelectorAll('.lab-task').forEach(fs => { fs.removeAttribute('aria-invalid'); fs.querySelector('.field-error').hidden = true; });
@@ -317,8 +321,9 @@ function formView(ctx, lab, { draft, attemptNo, history, onOpen, onSubmit }) {
       errBox.hidden = false; errBox.dataset.errors = String(problems.length);
       errBox.replaceChildren(h('p', null, h('strong', null, t('lab11.errTitle', { n: i18n.number(problems.length) }))),
         h('ul', null, problems.map(p => { const i = lab.tasks.findIndex(x => x.id === p.task_id);
-          return h('li', null, h('a', { href: `#task-${p.task_id}`, onclick: ev => { ev.preventDefault(); const fs = form.querySelector(`[data-task="${p.task_id}"]`); fs.scrollIntoView({ block: 'center' }); fs.querySelector('input,select,textarea,button')?.focus(); } },
+          return h('li', null, h('a', { href: `#task-${p.task_id}`, onclick: ev => { ev.preventDefault(); if (guide?.isGuided()) guide.goToTask(p.task_id, false); const fs = form.querySelector(`[data-task="${p.task_id}"]`); fs.scrollIntoView({ block: 'center' }); fs.querySelector('input,select,textarea,button')?.focus(); } },
             t('lab11.taskN', { n: i18n.number(i + 1), total: i18n.number(lab.tasks.length) }), ' — ', t('lab11.err.' + p.code))); })));
+      if (guide?.isGuided()) guide.goToTask(problems[0].task_id, false);
       errBox.focus();
       return;
     }
@@ -327,11 +332,70 @@ function formView(ctx, lab, { draft, attemptNo, history, onOpen, onSubmit }) {
   } },
     h('h2', { id: 'lab-tasks-h' }, icon('clipboard'), ' ', t('lab11.yourTasks'), ' ', h('span', { class: 'note' }, t('lab11.attemptNo', { n: i18n.number(attemptNo) }))),
     h('p', { class: 'note' }, t('lab11.formNote')), status, errBox,
-    lab.tasks.map(taskBlock),
+    taskEls,
     h('div', { class: 'btnrow lab-submit' }, h('button', { type: 'submit', class: 'btn btn-primary', dataset: { action: 'submit-lab' } }, icon('check'), ' ', t('lab11.submit')),
       Button({ label: t('lab11.clear'), variant: 'quiet', attrs: { 'data-action': 'clear-lab' }, onClick: async () => { await ctx.repos.labDrafts.remove(lab.id).catch(() => {}); Object.keys(answers).forEach(k => delete answers[k]); Object.keys(selfCheck).forEach(k => delete selfCheck[k]);
-        const fresh = formView(ctx, lab, { draft: null, attemptNo, history, onOpen, onSubmit }); form.closest('.lab-work')?.replaceChildren(fresh); toast(t('lab11.cleared')); } })));
+        const fresh = formView(ctx, lab, { draft: null, attemptNo, history, onOpen, onSubmit, view: form.dataset.view }); form.closest('.lab-work')?.replaceChildren(fresh); toast(t('lab11.cleared')); } })));
+  guide = guideLab(ctx, lab, form, taskEls, answers, view);
   return h('div', null, form, historyBlock(ctx, lab, history, onOpen));
+}
+
+/**
+ * Phase 12B (L-B1): step through a lab's tasks — one task at a time, a rail and a progress bar, Back / Next, the
+ * scenario one click away, "Check my answers" on the last step. The draft saving above is reused unchanged.
+ * `?view=all` (or the switch) shows every task on one page as before.
+ */
+function guideLab(ctx, lab, form, taskEls, answers, view) {
+  const { t, i18n } = ctx;
+  const n = lab.tasks.length;
+  const isDone = id => { const v = answers[id]; if (v === undefined || v === null || v === '') return false; if (Array.isArray(v)) return v.length > 0; if (typeof v === 'object') return Object.keys(v).length > 0; return true; };
+  const firstOpen = lab.tasks.findIndex(x => !isDone(x.id));
+  const st = { view, i: firstOpen < 0 ? Math.max(0, n - 1) : firstOpen, visited: new Set() };
+  for (let k = 0; k <= st.i; k++) st.visited.add(k);
+  const top = h('div', { class: 'gx-formtop' });
+  const rail = h('div', { class: 'gx-railbox' });
+  const toggle = h('button', { type: 'button', class: 'linkish', dataset: { action: 'lab-view' }, onclick: () => { st.view = st.view === 'all' ? 'guided' : 'all'; paint(); } });
+  const back = Button({ label: t('g12b.asm.back'), variant: 'quiet', onClick: () => go(st.i - 1), attrs: { 'data-action': 'lab-back' } });
+  const next = Button({ label: t('g12b.asm.next'), variant: 'primary', onClick: () => advance(), attrs: { 'data-action': 'lab-next' } });
+  const scen = h('button', { type: 'button', class: 'linkish', dataset: { action: 'lab-scenario' }, onclick: () => { const s = document.querySelector('.lab-scenario'); s?.scrollIntoView({ block: 'start' }); s?.querySelector('h2')?.setAttribute('tabindex', '-1'); s?.querySelector('h2')?.focus({ preventScroll: true }); } }, icon('book'), ' ', t('g12b.lab.scenario'));
+  const nav = h('div', { class: 'btnrow gx-labnav' }, back, scen, next);
+  const submitRow = form.querySelector('.lab-submit');
+  submitRow.before(nav);
+  form.querySelector('.errsum').after(top, rail);
+
+  function paint() {
+    const guided = st.view === 'guided';
+    form.dataset.view = st.view;
+    toggle.textContent = guided ? t('g12b.lab.viewAll') : t('g12b.asm.viewGuided');
+    const done = lab.tasks.filter(x => isDone(x.id)).length;
+    top.replaceChildren(h('div', { class: 'gx-progress' }, ProgressBar({ value: done, max: n || 1, label: guided ? t('g12b.lab.taskOf', { n: i18n.number(st.i + 1), total: i18n.number(n) }) : t('g12b.asm.progress'),
+      valueText: t('g12b.lab.doneOf', { n: i18n.number(done), total: i18n.number(n) }) })), toggle);
+    rail.hidden = !guided || n < 2;
+    rail.replaceChildren(n >= 2 ? stepRail(ctx, lab.tasks.map((x, k) => ({ label: t('g12b.lab.taskShort', { n: i18n.number(k + 1) }), state: k === st.i ? 'current' : isDone(x.id) ? 'done' : 'todo', visited: st.visited.has(k) })), { label: t('g12b.lab.rail'), onGo: k => go(k) }) : '');
+    taskEls.forEach((el, k) => { el.hidden = guided && k !== st.i; });
+    nav.hidden = !guided;
+    back.hidden = st.i === 0;
+    next.hidden = st.i >= n - 1;
+    submitRow.hidden = guided && st.i < n - 1;
+  }
+  function go(k, focus = true) {
+    if (k < 0 || k >= n) return;
+    st.i = k; st.visited.add(k); paint();
+    if (focus) { form.scrollIntoView({ block: 'start' }); taskEls[k].querySelector('input:not([disabled]),select,textarea,button')?.focus({ preventScroll: true }); }
+  }
+  function advance() {
+    const task = lab.tasks[st.i];
+    const probs = validateResponses({ ...lab, tasks: [task] }, answers);
+    const fs = taskEls[st.i];
+    if (probs.length) { fs.setAttribute('aria-invalid', 'true'); const er = fs.querySelector('.field-error'); er.hidden = false; er.textContent = t('lab11.err.' + probs[0].code); fs.querySelector('input:not([disabled]),select,textarea,button')?.focus(); return; }
+    go(st.i + 1);
+  }
+  paint();
+  return {
+    isGuided: () => st.view === 'guided',
+    goToTask: (id, focus = true) => { const k = lab.tasks.findIndex(x => x.id === id); if (k >= 0) go(k, focus); },
+    refresh: () => { if (st.view === 'guided') { const done = lab.tasks.filter(x => isDone(x.id)).length; const bar = top.querySelector('[role=progressbar]'); bar?.setAttribute('aria-valuenow', String(done)); const fill = top.querySelector('.pbar-fill'); if (fill) fill.style.inlineSize = (n ? done / n * 100 : 0).toFixed(1) + '%'; const meta = top.querySelector('.pbar-meta span[aria-hidden]'); if (meta) meta.textContent = t('g12b.lab.doneOf', { n: i18n.number(done), total: i18n.number(n) }); rail.querySelectorAll('.gx-step').forEach((el, k) => { el.className = 'gx-step is-' + (k === st.i ? 'current' : isDone(lab.tasks[k].id) ? 'done' : 'todo'); }); } }
+  };
 }
 
 /* ------------------------------------------------------------------ feedback */

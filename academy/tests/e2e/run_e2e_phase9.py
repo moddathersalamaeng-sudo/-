@@ -130,7 +130,7 @@ try:
     # CMQ/OE Center: before and after the diagnostic
     go(page, '/academy/quality/cmqoe')
     before = page.get_attribute('[data-attempt]', 'data-attempt') == 'none' and page.get_attribute('[data-readiness]', 'data-readiness') == 'none' and page.locator('.bok-grid li[data-state=none]').count() == 7
-    go(page, '/assessments/cmqoe-center-diagnostic')
+    go(page, '/assessments/cmqoe-center-diagnostic?view=all')
     unk = page.locator('[data-unknown]').count() == 14
     area = ASSESS['ASM-CMQOE-DIAG']['bok_areas']
     answer(page, 'ASM-CMQOE-DIAG', unknown=lambda q: area.get(q['id']) == 5)   # "I don't know" on Supply Chain Management
@@ -186,7 +186,7 @@ try:
     page.click('[data-action=save-profile]'); page.wait_for_timeout(300)
     go(page, '/academy/quality')
     s0 = page.get_attribute('[data-start]', 'data-start'); h0 = page.get_attribute('[data-action=q-start]', 'href')
-    go(page, '/assessments/quality-readiness')
+    go(page, '/assessments/quality-readiness?view=all')
     answer(page, 'ASM-READY-Q-001')
     go(page, '/academy/quality')
     s1 = page.get_attribute('[data-start]', 'data-start'); t1 = page.get_attribute('[data-start]', 'data-target')

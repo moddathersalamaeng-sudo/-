@@ -222,6 +222,8 @@ async function boot() {
       recommendationFeedback: new CollectionRepository({ adapter: userAdapter, collection: 'recommendation_feedback' }),
       userLearningPaths: new CollectionRepository({ adapter: userAdapter, collection: 'user_learning_paths' }),
       assessmentAttempts: new CollectionRepository({ adapter: userAdapter, collection: 'assessment_attempts' }),
+      /* Phase 12B (D-89): one autosaved draft per assessment (own data, cia:v1:<user>:assessment_drafts). */
+      assessmentDrafts: new CollectionRepository({ adapter: userAdapter, collection: 'assessment_drafts' }),
       courseProgress: new CollectionRepository({ adapter: userAdapter, collection: 'course_progress' }),
       library: new ContentRepository({ adapter: content, collection: 'library-items' }),
       profile: new CollectionRepository({ adapter: userAdapter, collection: 'profile' }),
