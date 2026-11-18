@@ -258,7 +258,7 @@ test('CSP: index.html has a strict policy, no inline script, and the language sc
 
 test('config: backend off by default; no secret or service key in any client file', () => {
   const cfg = json('data/config.json');
-  assert.equal(cfg.backend.apiBase, ''); assert.equal(cfg.version, '2.0.0-rc.1');
+  assert.equal(cfg.backend.apiBase, ''); assert.match(cfg.version, /^2\./);
   const walk = d => readdirSync(d).flatMap(f => { const p = path.join(d, f); return statSync(p).isDirectory() ? walk(p) : [p]; });
   const files = [...walk(path.join(ROOT, 'src')), path.join(ROOT, 'index.html'), path.join(ROOT, 'data', 'config.json')];
   for (const f of files) {

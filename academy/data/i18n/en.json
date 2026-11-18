@@ -4680,5 +4680,39 @@
         "assignments": "Open company assignments"
       }
     }
+  },
+  "sl15": {
+    "title": "This lesson in slides",
+    "carousel": "slide deck",
+    "slide": "slide",
+    "stage": "Slides — use the arrow keys to turn the page",
+    "of": "Slide {n} of {total}",
+    "goTo": "Go to slide {n}",
+    "jump": "Choose a slide",
+    "prev": "Previous",
+    "next": "Next",
+    "present": "Present",
+    "before": "Not like this",
+    "after": "Like this",
+    "avoid": "Avoid",
+    "show": "Show instead",
+    "askYourself": "What would you do? Think, then read the lesson below.",
+    "modelNote": "Simplified illustration of the model's standard steps (CIA drawing).",
+    "figureNote": "Figure from this lesson — its explanation is in the lesson below.",
+    "compareNote": "Both wordings are quoted from the lesson's example.",
+    "fullBelow": "The full lesson, the exercise and the check question are below.",
+    "k": {
+      "cover": "Lesson",
+      "goals": "What you will be able to do",
+      "idea": "The key idea",
+      "steps": "How, step by step",
+      "example": "An example",
+      "compare": "Example: say it right",
+      "scenario": "Situation",
+      "avoid": "Avoid this — show this",
+      "evidence": "What proves it",
+      "tips": "Tips and checks",
+      "summary": "Remember"
+    }
   }
 }

@@ -29,6 +29,7 @@ import { academyOfCourse, cardProgress, ACADEMIES, academyByKey } from '../domai
 import { BookmarkButton } from '../ui/bookmark.js';
 import { groupByAcademy, firstSentence } from '../domain/guided.mjs';
 import { numberedCards, flipCard, clamp } from '../ui/guided.js';
+import { LessonDeck } from '../ui/deck.js';
 import { lessonCoachPanel, courseCoachPanel } from '../ui/coach.js';
 
 const STATUS_KEY = { 'CIA INTERNAL COURSE': 'cia_internal', 'EXAM PREPARATION COURSE': 'exam_prep', 'EXTERNAL ACCREDITATION PENDING': 'accreditation_pending', 'EXTERNALLY ACCREDITED': 'externally_accredited', 'OFFICIAL PARTNER COURSE': 'official_partner' };
@@ -586,6 +587,8 @@ function lessonPlayer(ctx, c, lessons, i, content, learner, guides = {}) {
       h('h1', null, L(ctx, l.title)),
       h('div', { class: 'btnrow' }, BookmarkButton(ctx, { type: 'lesson', id: l.id, href: lessonHref(c, l), title: l.title })),
       l.objectives?.length ? h('div', null, h('h2', { class: 'h-sm' }, t('p7.lesson.objectives')), h('ul', null, l.objectives.map(o => h('li', null, L(ctx, o))))) : null),
+    /* Phase 15 (D-122): the lesson as slides that turn like pages — built from this lesson's own text; the full text follows. */
+    LessonDeck(ctx, { lesson: l, item: srcItem, course: c, figures: lfigs }),
     blockEls,
     /* Phase 13: the lesson coach — folded, after the key-idea cards and the lesson text (D-95 keeps the page calm). */
     lessonCoachPanel(ctx, { course: c, lesson: l, content, learner, href: lessonHref(c, l) }),

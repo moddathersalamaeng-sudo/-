@@ -8,7 +8,7 @@ Also checks honesty labels (review basis on course pages), that future-phase dra
 Usage: python3 tests/e2e/run_e2e_closure.py [--evidence DIR]
 Results: <evidence>/e2e-closure-results.json (only executed checks are recorded).
 """
-import json, sys, time, socket, subprocess, pathlib, urllib.request
+import os, json, sys, time, socket, subprocess, pathlib, urllib.request
 from playwright.sync_api import sync_playwright
 
 ACADEMY = pathlib.Path(__file__).resolve().parents[2]
@@ -157,6 +157,8 @@ with sync_playwright() as p:
         get = lambda u: page.evaluate('u => fetch(u).then(r => r.text())', u)
         first = (get('./sw-probe.txt'), get('./academy/sw-probe.txt'))
         hub_probe.write_text('v2'); aca_probe.write_text('v2')
+        # move the mtime forward so a same-second rewrite is never answered 304 Not Modified (flaky before Phase 15)
+        for f in (hub_probe, aca_probe): os.utime(f, (time.time() + 5, time.time() + 5))
         second = (get('./sw-probe.txt'), get('./academy/sw-probe.txt'))
         ctx.set_offline(True)
         offline = get('./academy/sw-probe.txt')

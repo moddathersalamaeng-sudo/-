@@ -1,13 +1,13 @@
 {
   "name": "cia-academy",
-  "version": "2.0.0-rc.1",
+  "version": "2.1.0",
   "private": true,
   "description": "Continual Improvement Academy — Academy module (Phases 1–14 built; 10A and 12B inserted), integrated with the hub toolkits; accounts and administration through server/ (off until configured). © 2026 Modather Salama.",
   "type": "module",
   "scripts": {
     "serve": "cd .. && python3 -m http.server 8765",
     "test": "node --test tests/unit/*.test.mjs",
-    "test:e2e": "python3 tests/e2e/run_e2e.py && python3 tests/e2e/run_e2e_phase7.py && python3 tests/e2e/run_e2e_guides.py && python3 tests/e2e/run_e2e_closure.py && python3 tests/e2e/run_e2e_phase8.py && python3 tests/e2e/run_e2e_phase9.py && python3 tests/e2e/run_e2e_phase10.py && python3 tests/e2e/run_e2e_phase10a.py && python3 tests/e2e/run_e2e_phase11.py && python3 tests/e2e/run_e2e_phase12.py && python3 tests/e2e/run_e2e_phase12a.py && python3 tests/e2e/run_e2e_phase12b.py && python3 tests/e2e/run_e2e_phase13.py && python3 tests/e2e/run_e2e_phase14.py",
+    "test:e2e": "python3 tests/e2e/run_e2e.py && python3 tests/e2e/run_e2e_phase7.py && python3 tests/e2e/run_e2e_guides.py && python3 tests/e2e/run_e2e_closure.py && python3 tests/e2e/run_e2e_phase8.py && python3 tests/e2e/run_e2e_phase9.py && python3 tests/e2e/run_e2e_phase10.py && python3 tests/e2e/run_e2e_phase10a.py && python3 tests/e2e/run_e2e_phase11.py && python3 tests/e2e/run_e2e_phase12.py && python3 tests/e2e/run_e2e_phase12a.py && python3 tests/e2e/run_e2e_phase12b.py && python3 tests/e2e/run_e2e_phase13.py && python3 tests/e2e/run_e2e_phase14.py && python3 tests/e2e/run_e2e_phase15.py",
     "build:phase9": "python3 tools/build_phase9.py",
     "sync:modules": "python3 tools/sync_platform_modules.py",
     "build:content": "python3 tools/build_phase7.py",
@@ -28,7 +28,8 @@
     "test:server": "node --test --test-concurrency=1 tests/server/*.test.mjs",
     "server:install": "cd server && npm ci --omit=dev",
     "configure:backend": "node tools/configure_backend.mjs",
-    "cms:publish": "python3 tools/cms_publish.py"
+    "cms:publish": "python3 tools/cms_publish.py",
+    "build:phase15": "python3 tools/build_phase15.py"
   },
   "engines": {
     "node": ">=20"
