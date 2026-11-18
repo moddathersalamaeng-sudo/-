@@ -10150,6 +10150,181 @@
         "review_date": null,
         "change_note": "Phase 12A explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
       }
+    },
+    {
+      "id": "FIG-COACH-FLOW",
+      "template": "flow",
+      "caption": {
+        "en": "How the coach builds an answer",
+        "ar": "كيف يبني المدرب الإجابة"
+      },
+      "read": {
+        "en": "Read from the start. The coach reads your own records on this device, looks only in approved Academy content, labels every part by its source, checks the answer against its rules and only then shows it.",
+        "ar": "اقرأ من البداية. يقرأ المدرب سجلاتك على هذا الجهاز، ويبحث في محتوى الأكاديمية المعتمد فقط، ويضع على كل جزء وسم مصدره، ويفحص الإجابة وفق قواعده، ثم يعرضها."
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Your context",
+            "ar": "سياقك"
+          }
+        },
+        {
+          "t": {
+            "en": "Approved content",
+            "ar": "المحتوى المعتمد"
+          }
+        },
+        {
+          "t": {
+            "en": "Labelled parts",
+            "ar": "أجزاء موسومة"
+          }
+        },
+        {
+          "t": {
+            "en": "Rule check",
+            "ar": "فحص القواعد"
+          }
+        },
+        {
+          "t": {
+            "en": "Answer",
+            "ar": "الإجابة"
+          }
+        }
+      ],
+      "highlight": 2,
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
+      }
+    },
+    {
+      "id": "FIG-COACH-LABELS",
+      "template": "ladder",
+      "caption": {
+        "en": "What each source label means",
+        "ar": "ماذا يعني كل وسم مصدر"
+      },
+      "read": {
+        "en": "Read from the top. Academy content was reviewed and published; an external reference is someone else's official page; your own records are what you entered or answered; an interpretation is the coach's wording and may be wrong.",
+        "ar": "اقرأ من الأعلى. محتوى الأكاديمية رُوجع ونُشر؛ والمرجع الخارجي صفحة رسمية لجهة أخرى؛ وسجلاتك هي ما أدخلته أو أجبت به؛ والتفسير صياغة المدرب وقد يخطئ."
+      },
+      "levels": [
+        {
+          "t": {
+            "en": "Academy content",
+            "ar": "محتوى الأكاديمية"
+          },
+          "d": {
+            "en": "Reviewed and published",
+            "ar": "رُوجع ونُشر"
+          }
+        },
+        {
+          "t": {
+            "en": "External reference",
+            "ar": "مرجع خارجي"
+          },
+          "d": {
+            "en": "The official source",
+            "ar": "المصدر الرسمي"
+          }
+        },
+        {
+          "t": {
+            "en": "Your records",
+            "ar": "سجلاتك"
+          },
+          "d": {
+            "en": "Your answers and entries",
+            "ar": "إجاباتك ومدخلاتك"
+          }
+        },
+        {
+          "t": {
+            "en": "Interpretation",
+            "ar": "تفسير"
+          },
+          "d": {
+            "en": "May be wrong",
+            "ar": "قد يخطئ"
+          }
+        }
+      ],
+      "highlight": 3,
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
+      }
+    },
+    {
+      "id": "FIG-COACH-INTERVIEW",
+      "template": "cycle",
+      "caption": {
+        "en": "An interview practice session",
+        "ar": "جلسة تدريب على المقابلة"
+      },
+      "read": {
+        "en": "Choose a role, answer the questions in your own words, read the feedback against the key points, note the weak topics and study them before the next session. It is practice: it gives no hiring decision.",
+        "ar": "اختر دورًا، وأجب عن الأسئلة بكلماتك، واقرأ الملاحظات مقابل النقاط الأساسية، ودوّن المواضيع الضعيفة وادرسها قبل الجلسة التالية. إنها تدريب: لا تعطي قرار توظيف."
+      },
+      "center": {
+        "en": "Practice",
+        "ar": "تدريب"
+      },
+      "steps": [
+        {
+          "t": {
+            "en": "Choose a role",
+            "ar": "اختر دورًا"
+          }
+        },
+        {
+          "t": {
+            "en": "Answer",
+            "ar": "أجب"
+          }
+        },
+        {
+          "t": {
+            "en": "Read the feedback",
+            "ar": "اقرأ الملاحظات"
+          }
+        },
+        {
+          "t": {
+            "en": "Weak topics",
+            "ar": "المواضيع الضعيفة"
+          }
+        },
+        {
+          "t": {
+            "en": "Study",
+            "ar": "ادرس"
+          }
+        }
+      ],
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 explanatory figure (original CIA diagram, data-driven SVG; no figures or claims); awaiting review."
+      }
     }
   ]
 }

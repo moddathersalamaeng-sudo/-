@@ -7,6 +7,7 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'; worker-src 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <meta name="description" content="أكاديمية التحسين المستمر — منظومة التطوير المهني والكفاءة">
@@ -21,15 +22,9 @@
 <link rel="stylesheet" href="./assets/css/passport.css">
 <link rel="stylesheet" href="./assets/css/company.css">
 <link rel="stylesheet" href="./assets/css/guided.css">
-<script>
-  /* Apply the platform-wide language (shared `cia-lang` key) before first paint. */
-  (function () {
-    var l = new URLSearchParams(location.search).get('lang');
-    try { if (l !== 'ar' && l !== 'en') l = localStorage.getItem('cia-lang'); } catch (e) {}
-    if (l !== 'ar' && l !== 'en') l = 'ar';
-    document.documentElement.lang = l; document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
-  })();
-</script>
+<link rel="stylesheet" href="./assets/css/coach.css">
+<link rel="stylesheet" href="./assets/css/admin.css">
+<script src="./src/boot-lang.js"></script>
 <script type="module" src="./src/main.js"></script>
 </head>
 <body>

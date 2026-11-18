@@ -15,6 +15,7 @@ import { dataRegion, EmptyState, Badge, Button, Table, ProgressBar } from '../ui
 import { deterministicOrder, scoreAttempt, domainBreakdown, competencyBreakdown, optionFeedback, assessmentIntegrity, AUTO_TYPES, UNKNOWN } from '../domain/assessments.mjs';
 import { MASTERY_THRESHOLD, WEAK_THRESHOLD, completedTargets } from '../domain/learner-model.mjs';
 import { buildStages, stageProgress, sanitizeDraft, resultInsights } from '../domain/guided.mjs';
+import { mistakesBlock } from '../ui/coach.js';
 import { counterStrip, stepRail, competencyBars, scoreRing } from '../ui/guided.js';
 import { loadAll, loadQuestions } from '../data/learner-state.js';
 import { L, notAvailable, pageHead, govBadge, previewBanner, linkBtn, section, facts, minutes, hours, isReviewer } from '../ui/academy.js';
@@ -514,6 +515,8 @@ function renderResult(ctx, a, questions, at, content, learner, isPrevious) {
     compTable ? h('details', { class: 'gx-tableview' }, h('summary', null, t('g12b.res.asTable')), compTable) : null,
     method,
     reading, plan,
+    /* Phase 13: explain my mistakes — beside the reading and the plan, folded until asked; from the stored rationales only. */
+    mistakesBlock(ctx, { attempt: at, questions, compName }),
     h('p', { class: 'note' }, t('p7.asm.evidenceNote')),
     h('details', { open: false }, h('summary', null, t('p7.asm.reviewAnswers')), h('ol', { class: 'plain review' }, review)),
     h('div', { class: 'btnrow no-print' }, linkBtn('#/my?tab=path', t('g12b.res.toPath'), 'primary'), linkBtn('#/recommendations', t('nav.items.recommendations')),

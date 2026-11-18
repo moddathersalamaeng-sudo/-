@@ -71,7 +71,7 @@ export function cvPanel(ctx, d) {
             Button({ label: t('pp12.cv.word'), variant: 'secondary', iconName: 'download', attrs: { 'data-action': 'cv-word' }, onClick: async () => { const m = await model(); if (m) { download('cia-cv.doc', cvWordHtml(m, { lang: i18n.locale }), 'application/msword'); toast(t('pp12.cv.downloaded')); } } }),
             Button({ label: t('pp12.cv.text'), variant: 'secondary', iconName: 'download', attrs: { 'data-action': 'cv-text' }, onClick: async () => { const m = await model(); if (m) { download('cia-cv.txt', '﻿' + cvText(m), 'text/plain;charset=utf-8'); toast(t('pp12.cv.downloaded')); } } }),
             linkBtn('#/passport/cv', t('pp12.cv.print'), 'secondary', { 'data-action': 'cv-print' })),
-          h('p', { class: 'note' }, t('pp12.cv.noPublic')), h('p', { class: 'note' }, t('pp12.cv.interviewLater'))),
+          h('p', { class: 'note' }, t('pp12.cv.noPublic')), h('p', { class: 'note' }, h('a', { href: '#/coach/interview', dataset: { action: 'open-interview' } }, t('coach13.interview.cvLink')), ' — ', t('coach13.interview.cvNote'))),
         h('section', { class: 'section', 'aria-labelledby': 'cv-p-h' }, h('h2', { id: 'cv-p-h' }, t('pp12.cv.preview')), preview)));
   } });
   return region;

@@ -10,6 +10,7 @@
  * a PMI Authorized Training Partner and never awards PDUs; it does not reproduce PMBOK® Guide text or PMI exam questions.
  */
 import { BookmarkButton } from '../ui/bookmark.js';
+import { statusLine } from '../domain/production.mjs';
 import { h, icon } from '../core/dom.js';
 import { dataRegion, EmptyState, Badge, Table } from '../ui/components.js';
 import { pmiStartingPoint, PM_ROLE_ROUTE, certFactState, domainHours, FACT_GROUPS, showsFacts, renewalUnits } from '../domain/pmi.mjs';
@@ -289,6 +290,7 @@ function certPage(ctx, c, content, learner) {
   return h('article', { class: 'cert', dataset: { cert: c.id, body: c.body || 'PMI' } },
     previewBanner(ctx, [c]), hero,
     h('p', { class: 'banner banner-warn', role: 'note', dataset: { claims: 'true' } }, icon('shield'), ' ', L(ctx, c.claims)),
+    verificationSlot(ctx, c),
     h('div', { class: 'facts-grid' },
       factBlock(ctx, c, 'eligibility', tk(ctx, B, 'eligibility'), 'clipboard', () => h('div', { class: 'cards cards-tight' }, c.eligibility.map(o => h('div', { class: 'card' },
         h('h3', null, L(ctx, o.label)), h('ul', { class: 'checks' }, o.items.map(x => h('li', null, icon('check'), ' ', L(ctx, x)))))))),
@@ -310,3 +312,25 @@ function certPage(ctx, c, content, learner) {
     section('cert-src', t('p7.sources.title'), sourceList(ctx, c.source_ids, content), h('p', { class: 'note' }, tk(ctx, B, 'sourcesNote'))),
     isReviewer(ctx) ? h('p', { class: 'note' }, govBadge(ctx, c)) : null);
 }
+
+/* ------------------------------------------------------------------ Phase 14: live verification line (D-117) */
+let verificationsP = null;
+/**
+ * The verification center's line for this certification (status, last verified, verifier, next review) when the backend
+ * is configured; nothing otherwise. The dated facts above stay the governed content; a fact change goes through review.
+ */
+function verificationSlot(ctx, c) {
+  if (!ctx.api) return null;
+  const { t, i18n } = ctx;
+  const slot = h('p', { class: 'note', dataset: { verificationLine: 'loading' } });
+  (verificationsP ||= ctx.api.get('/verifications').then(d => d.verifications).catch(() => { verificationsP = null; return []; })).then(list => {
+    const v = statusLine(list.find(x => x.cert_id === c.id), new Date().toISOString().slice(0, 10));
+    if (!v) { slot.remove(); return; }
+    slot.dataset.verificationLine = v.status;
+    slot.append(icon(v.status === 'verified' ? 'check' : 'clock'), ' ', h('strong', null, t('p14.ver.line.' + v.status)),
+      v.last_verified ? ' · ' + t('p14.ver.line.last', { d: i18n.date(v.last_verified), who: v.verifier || '—' }) : '',
+      v.next_review ? ' · ' + t(v.overdue ? 'p14.ver.line.overdue' : 'p14.ver.line.next', { d: i18n.date(v.next_review) }) : '');
+  });
+  return slot;
+}
+

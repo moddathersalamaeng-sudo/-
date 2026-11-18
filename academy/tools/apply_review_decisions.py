@@ -35,7 +35,8 @@ ALLOWED = {"courses", "assessments", "questions", "iso-standards", "learning-pat
            "competency/target-roles", "competency/domains", "ecosystems", "programs", "sources", "certifications",  # Phase 8: certification explorer
            "figures",  # Phase 9: explanatory figures
            "excellence-lab",  # Phase 10: EFQM Assessment Lab definition and KAQA facts
-           "labs", "smart-templates"}  # Phase 11: practice labs and smart templates (run build_phase10a.mjs afterwards: it re-splits labs.json)
+           "labs", "smart-templates",
+           "coach"}  # Phase 11: practice labs and smart templates (run build_phase10a.mjs afterwards: it re-splits labs.json); Phase 13: coach templates
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 

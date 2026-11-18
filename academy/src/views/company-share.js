@@ -101,12 +101,14 @@ export function companySharePanel(ctx, d) {
   const { t, i18n } = ctx;
   const region = dataRegion({ t, load: async () => {
     const r = ctx.repos;
-    const [log, prefs, cv, mine, model] = await Promise.all([r.passportShares.list().catch(() => []), r.passportPrefs.get('company').catch(() => null), r.cv.get('me').catch(() => null),
-      loadMyAssignments(ctx), buildRecommendationModel(ctx).catch(() => null)]);
-    return { log, prefs, cv, mine, model };
+    const [log, prefs, cv, mine, model, account] = await Promise.all([r.passportShares.list().catch(() => []), r.passportPrefs.get('company').catch(() => null), r.cv.get('me').catch(() => null),
+      loadMyAssignments(ctx), buildRecommendationModel(ctx).catch(() => null),
+      /* Phase 14 (D-114): signed in, the same share can go to an organisation as a consent record; never fatal. */
+      ctx.backend && ctx.session.signedIn ? ctx.api.get('/me/consents').catch(() => null) : null]);
+    return { log, prefs, cv, mine, model, account };
   }, render: x => render(x) });
 
-  function render({ log, prefs, cv, mine, model }) {
+  function render({ log, prefs, cv, mine, model, account }) {
     const { content, learner } = d;
     const today = d.today;
     /* ---- what each part would contain, right now */
@@ -237,6 +239,9 @@ export function companySharePanel(ctx, d) {
       h('div', { class: 'panel' }, h('div', { class: 'field' }, h('label', { for: 'cs-asg-file' }, t('co12a.my.importLabel')), h('span', { class: 'hint note', id: 'cs-asg-hint' }, t('co12a.my.importHint')), file), asgResult),
       mine.rows.length ? h('ul', { class: 'co-asg-list plain' }, mine.rows.map(r => assignmentCard(ctx, { ...r, today: mine.today }, { onRemove: removeAsg }))) : h('p', { class: 'note' }, t('co12a.my.asgEmpty')));
 
+    /* ---- Phase 14: share through the account (consent record, live, withdrawal effective at once) */
+    const acctSec = account ? accountShares(ctx, { account, prefs, available, picked, fileFor, nameIn, jobIn, noIn, consentBox, errs, region }) : null;
+
     const figs = d.figsFor('company:share');
     return h('div', { class: 'co-share', dataset: { companyShare: 'root' } },
       h('section', { class: 'section', 'aria-labelledby': 'cs-h' }, h('h2', { id: 'cs-h' }, icon('handshake'), ' ', t('co12a.share.title')),
@@ -257,7 +262,55 @@ export function companySharePanel(ctx, d) {
           h('div', { class: 'btnrow' }, h('button', { class: 'btn btn-primary', type: 'submit', dataset: { action: 'download-share' } }, icon('download'), t('co12a.share.download'))),
           h('p', { class: 'note' }, t('co12a.share.afterNote'))),
         result),
-      logSec, asgSec);
+      acctSec, logSec, asgSec);
   }
   return region;
+}
+
+/**
+ * Phase 14 — the consent block for a signed-in employee (D-114). The share is built with the same builder and checked with
+ * the same rules as the file; the server validates it again (readShare) and keeps a "verified" level only with a server
+ * verification. Active consents are refreshed whenever this panel opens, so the company sees the current state.
+ */
+function accountShares(ctx, { account, prefs, available, picked, fileFor, nameIn, jobIn, noIn, consentBox, errs, region }) {
+  const { t, i18n } = ctx;
+  const orgs = (ctx.session.orgs || []);
+  const active = account.consents.filter(c => !c.withdrawn_at);
+  const result = h('div', { 'aria-live': 'polite', dataset: { consentResult: '' } });
+  const fileNow = parts => fileFor(parts, prefs?.employee_key || newId('EMP'), newId('SHR'), new Date().toISOString());
+  /* Refresh active consents with the current state, under the name the person consented with (never an empty name). */
+  if (!nameIn.value.trim()) { const n = active.find(c => c.display_name)?.display_name; if (n) nameIn.value = n; }
+  if (nameIn.value.trim().length >= 3) for (const c of active) ctx.api.put(`/me/consents/${c.id}`, { share: fileNow(c.parts) }).catch(() => {});
+  const grant = async org => {
+    const parts = picked();
+    const v = C.validateShareInput({ name: nameIn.value, job_title: jobIn.value, employee_no: noIn.value, parts, consent: consentBox.checked }, available);
+    errs.name.textContent = v.errors.name ? t('co12a.err.name_' + v.errors.name) : '';
+    errs.parts.textContent = v.errors.parts ? t('co12a.err.parts') : '';
+    errs.consent.textContent = v.errors.consent ? t('co12a.err.consent') : '';
+    if (!v.value) { (v.errors.name ? nameIn : consentBox).focus(); return; }
+    try {
+      await ctx.api.post('/me/consents', { org_id: org.org_id, parts: v.value.parts, accepted: true, share: fileNow(v.value.parts) });
+      await ctx.repos.passportPrefs.save({ ...(prefs || {}), id: 'company', employee_key: prefs?.employee_key || newId('EMP'), name: v.value.name, job_title: v.value.job_title, employee_no: v.value.employee_no, parts: v.value.parts, updated_at: new Date().toISOString() });
+      ctx.track?.('consent_grant');
+      toast(t('p14.consent.granted', { org: org.name || '' }));
+      await region.refresh();
+    } catch (e) { put(result, h('p', { class: 'errsum', role: 'alert' }, t('p14.err.' + (e?.code === 'exists' ? 'consentExists' : 'generic')))); }
+  };
+  const withdraw = c => openDialog({ title: t('p14.consent.withdrawTitle'), body: t('p14.consent.withdrawBody', { org: c.org_name }), actions: [
+    { label: t('settings.data.cancel'), variant: 'secondary' },
+    { label: t('p14.consent.withdraw'), variant: 'danger', onClick: async () => { await ctx.api.post(`/me/consents/${c.id}/withdraw`, {}); ctx.track?.('consent_withdraw'); toast(t('p14.consent.withdrawn')); region.refresh(); } }] });
+  const orgName = id => orgs.find(o => o.org_id === id)?.name || account.consents.find(c => c.org_id === id)?.org_name || '';
+  return h('section', { class: 'section', 'aria-labelledby': 'cs-acct-h', dataset: { accountShares: String(active.length) } },
+    h('h2', { id: 'cs-acct-h' }, icon('lock'), ' ', t('p14.consent.title')),
+    h('p', null, t('p14.consent.lede')),
+    h('p', { class: 'banner banner-info', role: 'note' }, t('p14.consent.pilot')),
+    orgs.length ? h('div', { class: 'btnrow' }, orgs.filter(o => !active.some(c => c.org_id === o.org_id)).map(o =>
+      Button({ label: t('p14.consent.grant', { org: o.name || orgName(o.org_id) }), variant: 'primary', iconName: 'handshake', onClick: () => grant(o), attrs: { 'data-action': 'grant-consent', 'data-org': o.org_id } })))
+      : h('p', { class: 'note' }, t('p14.consent.noOrg')),
+    result,
+    active.length ? h('ul', { class: 'co-log plain' }, active.map(c => h('li', { class: 'card', dataset: { consent: c.id } },
+      h('p', null, h('strong', null, c.org_name), ' · ', t('p14.consent.since', { d: i18n.date(String(c.granted_at).slice(0, 10)) })),
+      h('ul', { class: 'chips' }, c.parts.map(p => h('li', null, t('co12a.share.part.' + p)))),
+      h('div', { class: 'btnrow' }, Button({ label: t('p14.consent.withdraw'), variant: 'quiet', onClick: () => withdraw(c), attrs: { 'data-action': 'withdraw-consent' } })))))
+      : h('p', { class: 'note' }, t('p14.consent.none')));
 }

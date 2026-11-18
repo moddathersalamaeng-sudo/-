@@ -46,6 +46,13 @@ import { templateView, templatePrintView } from './views/templates.js';
 import { certificateView } from './views/certificate.js';
 import { passportPrintView, passportCvView, evidenceReviewView } from './views/passport.js';
 import { companyView, companyPlanPrintView } from './views/company.js';
+import { interviewView } from './views/coach.js';
+/* Phase 14: accounts, server records, administration (active only when config.backend.apiBase is set). */
+import { ApiClient, ServerAdapter, SyncedAdapter } from './data/adapters/server.js';
+import { AccountSession } from './session/account-session.js';
+import { accountView, moveRecordsView, companyLiveView } from './views/account.js';
+import { adminView } from './views/admin.js';
+import { eventsFromChange, AnalyticsQueue } from './ui/analytics.js';
 
 const ROUTES = [
   { path: '/', view: homeView, titleKey: 'home.title' },
@@ -69,6 +76,13 @@ const ROUTES = [
   /* Phase 12A: the company workspace (account menu, company_admin / admin — no new top-level item) and its printable plan. */
   { path: '/company', view: companyView, titleKey: 'co12a.title', roles: ['company_admin', 'admin'] },
   { path: '/company/plan', view: companyPlanPrintView, titleKey: 'co12a.plan.printTitle', roles: ['company_admin', 'admin'], parent: ['/company?tab=plan', 'co12a.title'] },
+  /* Phase 13: interview practice (no new top-level item — opened from the coach tab in My space). */
+  { path: '/coach/interview', view: interviewView, titleKey: 'coach13.interview.title', parent: ['/my?tab=coach&p=interview', 'nav.items.mySpace'] },
+  /* Phase 14: account, move-to-account, administration (account menu, no new top-level item), company workspace on accounts. */
+  { path: '/account', view: accountView, titleKey: 'p14.account.title' },
+  { path: '/account/move', view: moveRecordsView, titleKey: 'p14.move.title', parent: ['/account', 'p14.account.title'] },
+  { path: '/admin', view: adminView, titleKey: 'p14.admin.title', roles: ['admin', 'reviewer'] },
+  { path: '/company/live', view: companyLiveView, titleKey: 'p14.live.title', roles: ['company_admin'], parent: ['/company', 'co12a.title'] },
   { path: '/me', view: meView, titleKey: 'me.title' },
   { path: '/settings', view: settingsView, titleKey: 'settings.title' },
   { path: '/about-governance', view: governanceView, titleKey: 'x10a.about.title' },
@@ -136,8 +150,19 @@ async function boot() {
   /* A review build (config.reviewBuild) is a single-file preview for the content owner: it starts in the
      reviewer and company-administrator roles and keeps the role switcher. Production builds never set it. */
   const devMode = (config.reviewBuild === true || config.devHosts.includes(location.hostname)) && params.get('dev') !== '0';
-  const session = new LocalSession({ storage: storage || { getItem: () => null, setItem() {} }, devMode, defaultRoles: config.reviewBuild ? ['reviewer', 'company_admin'] : null });
-  const userAdapter = storage ? new LocalStorageAdapter({ storage, userId: session.user.id }) : new MemoryAdapter();
+  /* Phase 14 (D-04, D-112): with a configured backend the session is an account; signed out it is the same single local
+     learner as before. Signed in, the device copy for the account id is the working copy and changes sync to the account. */
+  const backendBase = !config.reviewBuild && typeof config.backend?.apiBase === 'string' && config.backend.apiBase ? config.backend.apiBase : null;
+  const api = backendBase ? new ApiClient({ base: backendBase }) : null;
+  const memStore = { getItem: () => null, setItem() {}, removeItem() {} };
+  const session = api ? new AccountSession({ storage: storage || memStore, api })
+    : new LocalSession({ storage: storage || memStore, devMode, defaultRoles: config.reviewBuild ? ['reviewer', 'company_admin'] : null });
+  const analytics = api && config.backend?.analytics !== false ? new AnalyticsQueue({ api, enabled: () => session.signedIn }) : null;
+  const synced = api && session.signedIn && storage ? new SyncedAdapter({
+    local: new LocalStorageAdapter({ storage, userId: session.user.id }), server: new ServerAdapter({ api }),
+    onChange: analytics ? (c, before, after) => analytics.push(eventsFromChange(c, before, after)) : null,
+    onStatus: s => { document.documentElement.dataset.sync = s; } }) : null;
+  const userAdapter = synced || (storage ? new LocalStorageAdapter({ storage, userId: session.user.id }) : new MemoryAdapter());
   const content = new StaticJsonAdapter({ base: './data/seed' });
   const competencyContent = new StaticJsonAdapter({ base: './data/seed/competency' });
   const guideContent = new StaticJsonAdapter({ base: './data/guides' });
@@ -155,6 +180,10 @@ async function boot() {
 
   const ctx = {
     config, i18n, session, taxonomies, userAdapter, nav: navDoc.items, split,
+    /* Phase 14: the API client (null without a backend), the synced adapter (null signed out), the device's signed-out records. */
+    api, synced, analytics, backend: !!api,
+    deviceAdapter: storage ? new LocalStorageAdapter({ storage, userId: 'local' }) : null,
+    track: (name, dim) => analytics?.push([{ name, dim }]),
     platformSystems: {},
     relationships: new RelationshipIndex(relDoc.items),
     t: (k, p) => i18n.t(k, p),
@@ -208,6 +237,12 @@ async function boot() {
       companyShares: new CollectionRepository({ adapter: userAdapter, collection: 'company_shares' }),
       companyAssignments: new CollectionRepository({ adapter: userAdapter, collection: 'company_assignments' }),
       companyPlan: new CollectionRepository({ adapter: userAdapter, collection: 'company_plan' }),
+      /* Phase 13: governed coach content (scenario templates, interview questions) and the learner's own interview
+         sessions and coach preferences (cia:v1:<user>:*). Nothing is sent anywhere unless the owner configured the
+         optional model adapter and the learner opted in (D-98). */
+      coach: new ContentRepository({ adapter: content, collection: 'coach' }),
+      interviewSessions: new CollectionRepository({ adapter: userAdapter, collection: 'interview_sessions' }),
+      coachPrefs: new CollectionRepository({ adapter: userAdapter, collection: 'coach_prefs' }),
       competencies: new ContentRepository({ adapter: competencyContent, collection: 'competencies' }),
       targetRoles: new ContentRepository({ adapter: competencyContent, collection: 'target-roles' }),
       domains: new ContentRepository({ adapter: competencyContent, collection: 'domains' }),
@@ -294,6 +329,7 @@ async function boot() {
     const crumbs = path === '/' ? [] : [{ label: i18n.t('home.title'), href: '#/' }, ...(route?.parent && i18n.t(route.parent[1]) !== title ? [{ label: i18n.t(route.parent[1]), href: '#' + route.parent[0] }] : []), { label: title }];
     const shell = renderShell(ctx, { currentPath: route ? path : null, crumbs });
     const main = h('main', { id: 'main', class: 'main', tabindex: '-1', dataset: { route: route ? route.path : '404' } });
+    if (analytics && route) analytics.push([{ name: 'page_view', dim: route.path }]);
     try { main.append(view(ctx, match)); }
     catch (err) {
       console.warn('[cia] view failed:', err);
@@ -309,6 +345,14 @@ async function boot() {
   const router = new Router({ routes: ROUTES, render, redirect: redirectFor, hashFor });
   i18n.on('change', () => render(current || router.current()));
   session.on('change', () => render(router.current()));
+  /* Phase 14: a session that ends on the server (expired, revoked) returns to the signed-out Academy. */
+  session.on('signedout', () => { location.hash = '#/account'; location.reload(); });
+  if (synced) {
+    synced.pull().then(n => { if (n) render(router.current()); });
+    window.addEventListener('online', () => synced.flush());
+    session.refresh();
+  }
+  window.addEventListener('pagehide', () => analytics?.flush(true));
   window.addEventListener('storage', (e) => { if (e.key === SHARED_LANG_KEY && e.newValue in LOCALES) i18n.setLocale(e.newValue); });
   applyPrefs();
   router.start();

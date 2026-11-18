@@ -1,13 +1,13 @@
 {
   "name": "cia-academy",
-  "version": "1.12.2-phase12b",
+  "version": "2.0.0-rc.1",
   "private": true,
-  "description": "Continual Improvement Academy — Academy module (Phases 1–12B built (10A and 12B inserted), integrated with the hub toolkits). © 2026 Modather Salama.",
+  "description": "Continual Improvement Academy — Academy module (Phases 1–14 built; 10A and 12B inserted), integrated with the hub toolkits; accounts and administration through server/ (off until configured). © 2026 Modather Salama.",
   "type": "module",
   "scripts": {
     "serve": "cd .. && python3 -m http.server 8765",
     "test": "node --test tests/unit/*.test.mjs",
-    "test:e2e": "python3 tests/e2e/run_e2e.py && python3 tests/e2e/run_e2e_phase7.py && python3 tests/e2e/run_e2e_guides.py && python3 tests/e2e/run_e2e_closure.py && python3 tests/e2e/run_e2e_phase8.py && python3 tests/e2e/run_e2e_phase9.py && python3 tests/e2e/run_e2e_phase10.py && python3 tests/e2e/run_e2e_phase10a.py && python3 tests/e2e/run_e2e_phase11.py && python3 tests/e2e/run_e2e_phase12.py && python3 tests/e2e/run_e2e_phase12a.py && python3 tests/e2e/run_e2e_phase12b.py",
+    "test:e2e": "python3 tests/e2e/run_e2e.py && python3 tests/e2e/run_e2e_phase7.py && python3 tests/e2e/run_e2e_guides.py && python3 tests/e2e/run_e2e_closure.py && python3 tests/e2e/run_e2e_phase8.py && python3 tests/e2e/run_e2e_phase9.py && python3 tests/e2e/run_e2e_phase10.py && python3 tests/e2e/run_e2e_phase10a.py && python3 tests/e2e/run_e2e_phase11.py && python3 tests/e2e/run_e2e_phase12.py && python3 tests/e2e/run_e2e_phase12a.py && python3 tests/e2e/run_e2e_phase12b.py && python3 tests/e2e/run_e2e_phase13.py && python3 tests/e2e/run_e2e_phase14.py",
     "build:phase9": "python3 tools/build_phase9.py",
     "sync:modules": "python3 tools/sync_platform_modules.py",
     "build:content": "python3 tools/build_phase7.py",
@@ -22,7 +22,13 @@
     "measure": "python3 tests/e2e/measure_phase10a.py --label after",
     "build:phase11": "python3 tools/build_phase11.py",
     "build:phase12": "python3 tools/build_phase12.py",
-    "build:phase12a": "python3 tools/build_phase12a.py"
+    "build:phase12a": "python3 tools/build_phase12a.py",
+    "build:phase13": "python3 tools/build_phase13.py",
+    "build:phase14": "python3 tools/build_phase14.py",
+    "test:server": "node --test --test-concurrency=1 tests/server/*.test.mjs",
+    "server:install": "cd server && npm ci --omit=dev",
+    "configure:backend": "node tools/configure_backend.mjs",
+    "cms:publish": "python3 tools/cms_publish.py"
   },
   "engines": {
     "node": ">=20"

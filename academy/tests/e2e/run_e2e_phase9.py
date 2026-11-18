@@ -65,7 +65,9 @@ def as_role(page, role):
     page.evaluate('r => localStorage.setItem("cia:v1:session", JSON.stringify({ roles: [r] }))', role)
 
 def axe(page):
-    page.add_script_tag(content=AXE)
+    # Phase 14: Academy pages carry a Content-Security-Policy (script-src 'self'), so axe is loaded from the site's own origin there;
+    # other pages (hub, review build) still get it inline. The assertions are unchanged.
+    page.add_script_tag(url=BASE + '/academy/tests/vendor/axe.min.js') if page.url.startswith(BASE + '/academy/') else page.add_script_tag(content=AXE)
     return page.evaluate("async () => { const r = await axe.run(document, { runOnly: ['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice'] }); return r.violations.map(v => ({id: v.id, impact: v.impact, n: v.nodes.length, t: v.nodes.slice(0,2).map(n => n.target.join(' '))})); }")
 
 def layout(page):

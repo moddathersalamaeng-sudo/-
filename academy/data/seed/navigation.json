@@ -513,7 +513,7 @@
       "group": "grow",
       "kind": "route",
       "phase": 13,
-      "status": "coming",
+      "status": "active",
       "roles": [
         "learner",
         "instructor",
@@ -521,9 +521,11 @@
         "admin",
         "company_admin"
       ],
-      "requiredTier": "professional",
+      "requiredTier": "free",
       "primary": false,
-      "placement": "plan"
+      "placement": "hidden",
+      "route": "/my?tab=coach",
+      "mergedInto": "mySpace"
     },
     {
       "id": "standards",
@@ -603,13 +605,15 @@
       "group": "manage",
       "kind": "route",
       "phase": 14,
-      "status": "coming",
+      "status": "active",
       "roles": [
+        "reviewer",
         "admin"
       ],
       "requiredTier": "free",
       "primary": false,
-      "placement": "plan"
+      "placement": "user",
+      "route": "/admin"
     },
     {
       "id": "company",

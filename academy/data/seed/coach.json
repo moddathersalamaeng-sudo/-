@@ -1,0 +1,4410 @@
+{
+  "schema": "cia.coach.v1",
+  "note": "Governed coach content. kind: scenario | interview_question. Practice only: never an exam question, never evidence, never a hiring decision.",
+  "items": [
+    {
+      "id": "SCN-NC-WRITE",
+      "academy": "iso",
+      "competencies": [
+        "AUD-03",
+        "ISO-01"
+      ],
+      "title": {
+        "en": "Write the finding",
+        "ar": "اكتب الملاحظة"
+      },
+      "slots": {
+        "industry": [
+          {
+            "en": "a valve manufacturing plant",
+            "ar": "مصنع لتصنيع الصمامات"
+          },
+          {
+            "en": "a hospital laboratory",
+            "ar": "مختبر في مستشفى"
+          },
+          {
+            "en": "an electrical contracting company",
+            "ar": "شركة مقاولات كهربائية"
+          },
+          {
+            "en": "a food packaging site",
+            "ar": "موقع لتعبئة الأغذية"
+          },
+          {
+            "en": "a logistics warehouse",
+            "ar": "مستودع خدمات لوجستية"
+          }
+        ],
+        "process": [
+          {
+            "en": "final inspection",
+            "ar": "الفحص النهائي"
+          },
+          {
+            "en": "purchasing",
+            "ar": "المشتريات"
+          },
+          {
+            "en": "training and competence",
+            "ar": "التدريب والكفاءة"
+          },
+          {
+            "en": "maintenance",
+            "ar": "الصيانة"
+          },
+          {
+            "en": "document control",
+            "ar": "ضبط الوثائق"
+          }
+        ],
+        "gap": [
+          {
+            "en": "three of ten sampled records have no approval signature",
+            "ar": "ثلاثة من عشرة سجلات في العينة بلا توقيع اعتماد"
+          },
+          {
+            "en": "the procedure in use at the workstation is an older issue than the one in the document register",
+            "ar": "الإجراء المستخدم في موقع العمل إصدار أقدم من المسجّل في سجل الوثائق"
+          },
+          {
+            "en": "two operators perform a task for which no competence record exists",
+            "ar": "عاملان ينفّذان مهمة لا يوجد لها سجل كفاءة"
+          },
+          {
+            "en": "the planned monthly check was not recorded for the last two months",
+            "ar": "الفحص الشهري المخطط لم يُسجَّل في الشهرين الأخيرين"
+          }
+        ]
+      },
+      "text": {
+        "en": "You are auditing {process} at {industry}. The organisation's own procedure sets the rule. During sampling you observe that {gap}. The process owner says it has never caused a problem.",
+        "ar": "تدقّق عملية {process} في {industry}. وإجراء المنظمة نفسه هو الذي يحدد القاعدة. وأثناء أخذ العينة تلاحظ أن {gap}. ويقول مالك العملية إن ذلك لم يسبب مشكلة قط."
+      },
+      "task": {
+        "en": "Write the finding in three or four sentences so that the auditee can act on it without asking you what you meant.",
+        "ar": "اكتب الملاحظة في ثلاث أو أربع جمل بحيث يستطيع المُدقَّق عليه التصرف دون أن يسألك عمّا تقصد."
+      },
+      "rubric": [
+        {
+          "id": "req",
+          "criterion": {
+            "en": "States the requirement",
+            "ar": "تذكر المتطلب"
+          },
+          "hint": {
+            "en": "Name the rule that was not met (the procedure or the criterion).",
+            "ar": "اذكر القاعدة التي لم تُستوفَ (الإجراء أو المعيار)."
+          },
+          "terms": {
+            "en": [
+              "procedure",
+              "requirement",
+              "requires",
+              "criterion",
+              "criteria",
+              "shall"
+            ],
+            "ar": [
+              "إجراء",
+              "متطلب",
+              "يتطلب",
+              "معيار",
+              "ينص"
+            ]
+          }
+        },
+        {
+          "id": "evid",
+          "criterion": {
+            "en": "Gives objective evidence",
+            "ar": "تقدّم دليلًا موضوعيًا"
+          },
+          "hint": {
+            "en": "Say what you saw: which records, how many, where.",
+            "ar": "اذكر ما رأيته: أي سجلات، وكم عددها، وأين."
+          },
+          "terms": {
+            "en": [
+              "record",
+              "sample",
+              "observed",
+              "evidence",
+              "of ten",
+              "two",
+              "three"
+            ],
+            "ar": [
+              "سجل",
+              "عين",
+              "لوحظ",
+              "دليل",
+              "ثلاث",
+              "عامل",
+              "شهر"
+            ]
+          }
+        },
+        {
+          "id": "extent",
+          "criterion": {
+            "en": "Shows the extent",
+            "ar": "تبيّن المدى"
+          },
+          "hint": {
+            "en": "How far does it go: one case, a pattern, a period?",
+            "ar": "إلى أي حد يمتد: حالة واحدة، نمط، فترة؟"
+          },
+          "terms": {
+            "en": [
+              "of",
+              "out of",
+              "months",
+              "all",
+              "extent",
+              "period",
+              "since"
+            ],
+            "ar": [
+              "من أصل",
+              "من",
+              "شهر",
+              "جميع",
+              "مدى",
+              "فترة",
+              "منذ"
+            ]
+          }
+        },
+        {
+          "id": "neutral",
+          "criterion": {
+            "en": "Stays factual: no blame, no solution",
+            "ar": "تبقى واقعية: بلا لوم ولا حل"
+          },
+          "hint": {
+            "en": "Leave the cause and the fix to the auditee.",
+            "ar": "اترك السبب والحل للمُدقَّق عليه."
+          },
+          "terms": {
+            "en": [],
+            "ar": []
+          }
+        }
+      ],
+      "avoid": {
+        "en": [
+          "must be retrained",
+          "careless",
+          "negligent",
+          "should be fired",
+          "fault of"
+        ],
+        "ar": [
+          "يجب إعادة تدريب",
+          "مهمل",
+          "إهمال",
+          "خطأ الموظف",
+          "يجب فصل"
+        ]
+      },
+      "kind": "scenario",
+      "owner_phase": "13",
+      "label": "generated_practice",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 practice-scenario template (original CIA wording; generated practice, never an exam question); awaiting review."
+      }
+    },
+    {
+      "id": "SCN-EVIDENCE",
+      "academy": "iso",
+      "competencies": [
+        "AUD-02"
+      ],
+      "title": {
+        "en": "Plan the evidence",
+        "ar": "خطّط للأدلة"
+      },
+      "slots": {
+        "industry": [
+          {
+            "en": "a valve manufacturing plant",
+            "ar": "مصنع لتصنيع الصمامات"
+          },
+          {
+            "en": "a hospital laboratory",
+            "ar": "مختبر في مستشفى"
+          },
+          {
+            "en": "an electrical contracting company",
+            "ar": "شركة مقاولات كهربائية"
+          },
+          {
+            "en": "a food packaging site",
+            "ar": "موقع لتعبئة الأغذية"
+          },
+          {
+            "en": "a logistics warehouse",
+            "ar": "مستودع خدمات لوجستية"
+          }
+        ],
+        "process": [
+          {
+            "en": "final inspection",
+            "ar": "الفحص النهائي"
+          },
+          {
+            "en": "purchasing",
+            "ar": "المشتريات"
+          },
+          {
+            "en": "training and competence",
+            "ar": "التدريب والكفاءة"
+          },
+          {
+            "en": "maintenance",
+            "ar": "الصيانة"
+          },
+          {
+            "en": "document control",
+            "ar": "ضبط الوثائق"
+          }
+        ],
+        "claim": [
+          {
+            "en": "everyone is trained",
+            "ar": "الجميع مدرَّبون"
+          },
+          {
+            "en": "we always check before release",
+            "ar": "نفحص دائمًا قبل الإجازة"
+          },
+          {
+            "en": "suppliers are evaluated every year",
+            "ar": "يُقيَّم الموردون كل عام"
+          },
+          {
+            "en": "nothing has changed since the last audit",
+            "ar": "لم يتغير شيء منذ التدقيق الماضي"
+          }
+        ]
+      },
+      "text": {
+        "en": "At {industry} the manager of {process} tells you: “{claim}.” You have forty minutes in this area.",
+        "ar": "في {industry} يقول لك مدير {process}: «{claim}». ولديك أربعون دقيقة في هذه المنطقة."
+      },
+      "task": {
+        "en": "List the evidence you would ask for, how you would choose the sample, and what would make you look further.",
+        "ar": "اذكر الأدلة التي ستطلبها، وكيف ستختار العينة، وما الذي سيدفعك إلى التوسّع في البحث."
+      },
+      "rubric": [
+        {
+          "id": "records",
+          "criterion": {
+            "en": "Asks for records, not statements",
+            "ar": "تطلب سجلات لا أقوالًا"
+          },
+          "hint": {
+            "en": "A claim is not evidence until a record, an observation or a second source supports it.",
+            "ar": "القول ليس دليلًا حتى يدعمه سجل أو مشاهدة أو مصدر ثانٍ."
+          },
+          "terms": {
+            "en": [
+              "record",
+              "register",
+              "log",
+              "certificate",
+              "report",
+              "list"
+            ],
+            "ar": [
+              "سجل",
+              "قائمة",
+              "شهاد",
+              "تقرير",
+              "كشف"
+            ]
+          }
+        },
+        {
+          "id": "sample",
+          "criterion": {
+            "en": "Explains the sample",
+            "ar": "تشرح العينة"
+          },
+          "hint": {
+            "en": "Who chooses the items, how many, from which period?",
+            "ar": "من يختار العناصر، وكم عددها، ومن أي فترة؟"
+          },
+          "terms": {
+            "en": [
+              "sample",
+              "select",
+              "random",
+              "period",
+              "recent",
+              "choose"
+            ],
+            "ar": [
+              "عين",
+              "اختيار",
+              "أختار",
+              "عشوائ",
+              "فترة",
+              "حديث"
+            ]
+          }
+        },
+        {
+          "id": "corroborate",
+          "criterion": {
+            "en": "Corroborates with a second source",
+            "ar": "تؤكد بمصدر ثانٍ"
+          },
+          "hint": {
+            "en": "Interview, observation and records should tell the same story.",
+            "ar": "المقابلة والمشاهدة والسجلات ينبغي أن تروي القصة نفسها."
+          },
+          "terms": {
+            "en": [
+              "interview",
+              "observe",
+              "ask",
+              "cross-check",
+              "compare",
+              "trail"
+            ],
+            "ar": [
+              "مقابل",
+              "مشاهد",
+              "أسأل",
+              "أقارن",
+              "مطابق",
+              "تتبع"
+            ]
+          }
+        },
+        {
+          "id": "trigger",
+          "criterion": {
+            "en": "Names what would widen the search",
+            "ar": "تسمّي ما يوسّع البحث"
+          },
+          "hint": {
+            "en": "One gap in a small sample is a reason to look further, not a conclusion.",
+            "ar": "فجوة واحدة في عينة صغيرة سبب للتوسّع لا نتيجة نهائية."
+          },
+          "terms": {
+            "en": [
+              "if",
+              "further",
+              "extend",
+              "more",
+              "widen",
+              "another"
+            ],
+            "ar": [
+              "إذا",
+              "أوسّع",
+              "توسيع",
+              "أكثر",
+              "إضاف",
+              "أخرى"
+            ]
+          }
+        }
+      ],
+      "kind": "scenario",
+      "owner_phase": "13",
+      "label": "generated_practice",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 practice-scenario template (original CIA wording; generated practice, never an exam question); awaiting review."
+      }
+    },
+    {
+      "id": "SCN-CAPA",
+      "academy": "quality",
+      "competencies": [
+        "QM-03"
+      ],
+      "title": {
+        "en": "Correction or corrective action?",
+        "ar": "تصحيح أم إجراء تصحيحي؟"
+      },
+      "slots": {
+        "industry": [
+          {
+            "en": "a valve manufacturing plant",
+            "ar": "مصنع لتصنيع الصمامات"
+          },
+          {
+            "en": "a hospital laboratory",
+            "ar": "مختبر في مستشفى"
+          },
+          {
+            "en": "an electrical contracting company",
+            "ar": "شركة مقاولات كهربائية"
+          },
+          {
+            "en": "a food packaging site",
+            "ar": "موقع لتعبئة الأغذية"
+          },
+          {
+            "en": "a logistics warehouse",
+            "ar": "مستودع خدمات لوجستية"
+          }
+        ],
+        "problem": [
+          {
+            "en": "a batch was shipped with the wrong label",
+            "ar": "شُحنت دفعة بملصق خاطئ"
+          },
+          {
+            "en": "a customer received a report with last month's data",
+            "ar": "استلم عميل تقريرًا ببيانات الشهر الماضي"
+          },
+          {
+            "en": "an instrument was used after its calibration date",
+            "ar": "استُخدم جهاز بعد موعد معايرته"
+          },
+          {
+            "en": "a purchase order was placed with a supplier that is not on the approved list",
+            "ar": "صدر أمر شراء لمورد غير مدرج في القائمة المعتمدة"
+          }
+        ],
+        "fix": [
+          {
+            "en": "the team replaced the item the same day",
+            "ar": "استبدل الفريق العنصر في اليوم نفسه"
+          },
+          {
+            "en": "the supervisor reminded everyone by email",
+            "ar": "ذكّر المشرف الجميع بالبريد الإلكتروني"
+          },
+          {
+            "en": "the record was corrected and re-issued",
+            "ar": "صُحِّح السجل وأُعيد إصداره"
+          }
+        ]
+      },
+      "text": {
+        "en": "At {industry}, {problem}. In response, {fix}. The action record is now marked “closed”.",
+        "ar": "في {industry}، {problem}. واستجابةً لذلك، {fix}. وسجل الإجراء مُعلَّم الآن بأنه «مغلق»."
+      },
+      "task": {
+        "en": "Explain what has been done and what is still missing before this can be called a corrective action, and how you would check that it worked.",
+        "ar": "اشرح ما تم وما الذي ما زال ناقصًا قبل أن يُسمّى هذا إجراءً تصحيحيًا، وكيف ستتحقق من نجاحه."
+      },
+      "rubric": [
+        {
+          "id": "distinguish",
+          "criterion": {
+            "en": "Separates correction from corrective action",
+            "ar": "تفصل التصحيح عن الإجراء التصحيحي"
+          },
+          "hint": {
+            "en": "Correction fixes this case; corrective action removes the cause so it does not come back.",
+            "ar": "التصحيح يعالج هذه الحالة؛ والإجراء التصحيحي يزيل السبب كي لا تتكرر."
+          },
+          "terms": {
+            "en": [
+              "correction",
+              "corrective",
+              "cause",
+              "recur",
+              "again"
+            ],
+            "ar": [
+              "تصحيح",
+              "تصحيحي",
+              "سبب",
+              "تكرار",
+              "تتكرر"
+            ]
+          }
+        },
+        {
+          "id": "cause",
+          "criterion": {
+            "en": "Asks for the cause",
+            "ar": "تطلب السبب"
+          },
+          "hint": {
+            "en": "Which analysis would find why it happened?",
+            "ar": "أي تحليل سيكشف سبب حدوثها؟"
+          },
+          "terms": {
+            "en": [
+              "root cause",
+              "why",
+              "analysis",
+              "fishbone",
+              "cause"
+            ],
+            "ar": [
+              "السبب الجذري",
+              "لماذا",
+              "تحليل",
+              "عظم السمكة",
+              "سبب"
+            ]
+          }
+        },
+        {
+          "id": "similar",
+          "criterion": {
+            "en": "Looks for similar cases",
+            "ar": "تبحث عن حالات مشابهة"
+          },
+          "hint": {
+            "en": "Could the same thing happen elsewhere?",
+            "ar": "هل يمكن أن يحدث الأمر نفسه في مكان آخر؟"
+          },
+          "terms": {
+            "en": [
+              "similar",
+              "other",
+              "elsewhere",
+              "extent",
+              "also"
+            ],
+            "ar": [
+              "مشابه",
+              "أخرى",
+              "مماثل",
+              "مدى",
+              "أيضًا"
+            ]
+          }
+        },
+        {
+          "id": "effective",
+          "criterion": {
+            "en": "Verifies effectiveness",
+            "ar": "تتحقق من الفاعلية"
+          },
+          "hint": {
+            "en": "What evidence, after what period, shows the problem did not return?",
+            "ar": "أي دليل، وبعد أي فترة، يبيّن أن المشكلة لم تعد؟"
+          },
+          "terms": {
+            "en": [
+              "effective",
+              "verify",
+              "follow-up",
+              "evidence",
+              "after",
+              "monitor"
+            ],
+            "ar": [
+              "فاعلي",
+              "فعالي",
+              "تحقق",
+              "متابع",
+              "دليل",
+              "بعد",
+              "رصد"
+            ]
+          }
+        }
+      ],
+      "kind": "scenario",
+      "owner_phase": "13",
+      "label": "generated_practice",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 practice-scenario template (original CIA wording; generated practice, never an exam question); awaiting review."
+      }
+    },
+    {
+      "id": "SCN-RCA",
+      "academy": "quality",
+      "competencies": [
+        "QM-03",
+        "QM-02"
+      ],
+      "title": {
+        "en": "Find the cause, not the culprit",
+        "ar": "ابحث عن السبب لا عن المذنب"
+      },
+      "slots": {
+        "industry": [
+          {
+            "en": "a valve manufacturing plant",
+            "ar": "مصنع لتصنيع الصمامات"
+          },
+          {
+            "en": "a hospital laboratory",
+            "ar": "مختبر في مستشفى"
+          },
+          {
+            "en": "an electrical contracting company",
+            "ar": "شركة مقاولات كهربائية"
+          },
+          {
+            "en": "a food packaging site",
+            "ar": "موقع لتعبئة الأغذية"
+          },
+          {
+            "en": "a logistics warehouse",
+            "ar": "مستودع خدمات لوجستية"
+          }
+        ],
+        "problem": [
+          {
+            "en": "rework on one line doubled in a month",
+            "ar": "تضاعفت إعادة العمل في أحد الخطوط خلال شهر"
+          },
+          {
+            "en": "the same complaint arrived from three customers",
+            "ar": "وردت الشكوى نفسها من ثلاثة عملاء"
+          },
+          {
+            "en": "a routine check was missed twice",
+            "ar": "فات فحص دوري مرتين"
+          },
+          {
+            "en": "deliveries from one supplier were late four times",
+            "ar": "تأخرت توريدات أحد الموردين أربع مرات"
+          }
+        ],
+        "first": [
+          {
+            "en": "“the operator made a mistake”",
+            "ar": "«أخطأ العامل»"
+          },
+          {
+            "en": "“people are not careful”",
+            "ar": "«الناس لا ينتبهون»"
+          },
+          {
+            "en": "“the supplier is unreliable”",
+            "ar": "«المورد غير موثوق»"
+          }
+        ]
+      },
+      "text": {
+        "en": "At {industry}, {problem}. The first explanation offered in the meeting is {first}.",
+        "ar": "في {industry}، {problem}. وأول تفسير طُرح في الاجتماع هو {first}."
+      },
+      "task": {
+        "en": "Show how you would take the analysis further: the questions you would ask, the data you would look at and the kind of cause you are looking for.",
+        "ar": "بيّن كيف ستتعمق في التحليل: الأسئلة التي ستطرحها، والبيانات التي ستنظر فيها، ونوع السبب الذي تبحث عنه."
+      },
+      "rubric": [
+        {
+          "id": "why",
+          "criterion": {
+            "en": "Keeps asking why",
+            "ar": "تواصل السؤال: لماذا"
+          },
+          "hint": {
+            "en": "A person's mistake is where the analysis starts, not where it ends.",
+            "ar": "خطأ الشخص هو بداية التحليل لا نهايته."
+          },
+          "terms": {
+            "en": [
+              "why",
+              "5 why",
+              "five why",
+              "ask"
+            ],
+            "ar": [
+              "لماذا",
+              "خمس",
+              "أسأل"
+            ]
+          }
+        },
+        {
+          "id": "data",
+          "criterion": {
+            "en": "Uses data",
+            "ar": "تستخدم البيانات"
+          },
+          "hint": {
+            "en": "When, where, which product, which shift: what does the pattern say?",
+            "ar": "متى، أين، أي منتج، أي وردية: ماذا يقول النمط؟"
+          },
+          "terms": {
+            "en": [
+              "data",
+              "pareto",
+              "trend",
+              "pattern",
+              "when",
+              "where",
+              "chart"
+            ],
+            "ar": [
+              "بيانات",
+              "باريتو",
+              "اتجاه",
+              "نمط",
+              "متى",
+              "أين",
+              "مخطط"
+            ]
+          }
+        },
+        {
+          "id": "system",
+          "criterion": {
+            "en": "Looks for a system cause",
+            "ar": "تبحث عن سبب في النظام"
+          },
+          "hint": {
+            "en": "Method, training, tools, planning, information: what allowed it?",
+            "ar": "الطريقة، التدريب، الأدوات، التخطيط، المعلومات: ما الذي سمح بذلك؟"
+          },
+          "terms": {
+            "en": [
+              "process",
+              "method",
+              "system",
+              "training",
+              "procedure",
+              "design",
+              "planning"
+            ],
+            "ar": [
+              "عملي",
+              "طريق",
+              "نظام",
+              "تدريب",
+              "إجراء",
+              "تصميم",
+              "تخطيط"
+            ]
+          }
+        },
+        {
+          "id": "verify",
+          "criterion": {
+            "en": "Checks the cause before acting",
+            "ar": "تتحقق من السبب قبل التصرف"
+          },
+          "hint": {
+            "en": "How would you confirm the cause is real?",
+            "ar": "كيف ستتأكد من أن السبب حقيقي؟"
+          },
+          "terms": {
+            "en": [
+              "verify",
+              "confirm",
+              "test",
+              "check",
+              "evidence"
+            ],
+            "ar": [
+              "تحقق",
+              "أتأكد",
+              "تأكيد",
+              "اختبار",
+              "دليل"
+            ]
+          }
+        }
+      ],
+      "kind": "scenario",
+      "owner_phase": "13",
+      "label": "generated_practice",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 practice-scenario template (original CIA wording; generated practice, never an exam question); awaiting review."
+      }
+    },
+    {
+      "id": "SCN-RISK",
+      "academy": "iso",
+      "competencies": [
+        "RSK-01",
+        "RSK-02"
+      ],
+      "title": {
+        "en": "Describe the risk properly",
+        "ar": "صِف الخطر كما ينبغي"
+      },
+      "slots": {
+        "industry": [
+          {
+            "en": "a valve manufacturing plant",
+            "ar": "مصنع لتصنيع الصمامات"
+          },
+          {
+            "en": "a hospital laboratory",
+            "ar": "مختبر في مستشفى"
+          },
+          {
+            "en": "an electrical contracting company",
+            "ar": "شركة مقاولات كهربائية"
+          },
+          {
+            "en": "a food packaging site",
+            "ar": "موقع لتعبئة الأغذية"
+          },
+          {
+            "en": "a logistics warehouse",
+            "ar": "مستودع خدمات لوجستية"
+          }
+        ],
+        "concern": [
+          {
+            "en": "“our only qualified welder may leave”",
+            "ar": "«قد يغادر اللحّام المؤهل الوحيد لدينا»"
+          },
+          {
+            "en": "“the main supplier is in one country”",
+            "ar": "«المورد الرئيسي في بلد واحد»"
+          },
+          {
+            "en": "“the server room has no backup power”",
+            "ar": "«غرفة الخوادم بلا طاقة احتياطية»"
+          },
+          {
+            "en": "“the new regulation may apply to us”",
+            "ar": "«قد تنطبق علينا اللائحة الجديدة»"
+          }
+        ]
+      },
+      "text": {
+        "en": "In a risk workshop at {industry}, a manager writes on the board: {concern}. The team wants to score it straight away.",
+        "ar": "في ورشة مخاطر في {industry}، يكتب أحد المديرين على اللوح: {concern}. ويريد الفريق تقييمه فورًا."
+      },
+      "task": {
+        "en": "Rewrite it as a risk statement, say how you would assess it, and propose one treatment with an owner and a way to monitor it.",
+        "ar": "أعد صياغته في بيان خطر، واذكر كيف ستقيّمه، واقترح معالجة واحدة مع مالك وطريقة للمتابعة."
+      },
+      "rubric": [
+        {
+          "id": "statement",
+          "criterion": {
+            "en": "Cause, event and consequence",
+            "ar": "السبب والحدث والأثر"
+          },
+          "hint": {
+            "en": "A concern becomes a risk when it says what may happen, why, and what it would affect.",
+            "ar": "يصبح القلق خطرًا حين يذكر ما قد يحدث، ولماذا، وفيمَ سيؤثر."
+          },
+          "terms": {
+            "en": [
+              "cause",
+              "because",
+              "event",
+              "consequence",
+              "impact",
+              "objective",
+              "result"
+            ],
+            "ar": [
+              "سبب",
+              "بسبب",
+              "حدث",
+              "أثر",
+              "نتيج",
+              "هدف",
+              "يؤدي"
+            ]
+          }
+        },
+        {
+          "id": "assess",
+          "criterion": {
+            "en": "Assesses with agreed criteria",
+            "ar": "تقيّم بمعايير متفق عليها"
+          },
+          "hint": {
+            "en": "Likelihood and consequence against the organisation's own scale.",
+            "ar": "الاحتمال والأثر وفق مقياس المنظمة نفسها."
+          },
+          "terms": {
+            "en": [
+              "likelihood",
+              "probability",
+              "consequence",
+              "impact",
+              "criteria",
+              "matrix",
+              "scale"
+            ],
+            "ar": [
+              "احتمال",
+              "أثر",
+              "معايير",
+              "مصفوف",
+              "مقياس"
+            ]
+          }
+        },
+        {
+          "id": "treat",
+          "criterion": {
+            "en": "Proposes a treatment with an owner",
+            "ar": "تقترح معالجة لها مالك"
+          },
+          "hint": {
+            "en": "Avoid, reduce, share or accept: who does what by when?",
+            "ar": "تجنّب أو تقليل أو مشاركة أو قبول: من يفعل ماذا ومتى؟"
+          },
+          "terms": {
+            "en": [
+              "owner",
+              "treatment",
+              "reduce",
+              "avoid",
+              "share",
+              "accept",
+              "action",
+              "control"
+            ],
+            "ar": [
+              "مالك",
+              "معالج",
+              "تقليل",
+              "تجنب",
+              "مشارك",
+              "قبول",
+              "إجراء",
+              "ضابط"
+            ]
+          }
+        },
+        {
+          "id": "monitor",
+          "criterion": {
+            "en": "Says how it is monitored",
+            "ar": "تذكر كيف يُتابَع"
+          },
+          "hint": {
+            "en": "Which indicator or review tells you the risk is changing?",
+            "ar": "أي مؤشر أو مراجعة يخبرك بأن الخطر يتغير؟"
+          },
+          "terms": {
+            "en": [
+              "monitor",
+              "indicator",
+              "review",
+              "track",
+              "trigger"
+            ],
+            "ar": [
+              "متابع",
+              "مؤشر",
+              "مراجع",
+              "رصد",
+              "محفز"
+            ]
+          }
+        }
+      ],
+      "kind": "scenario",
+      "owner_phase": "13",
+      "label": "generated_practice",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 practice-scenario template (original CIA wording; generated practice, never an exam question); awaiting review."
+      }
+    },
+    {
+      "id": "SCN-PM-CHANGE",
+      "academy": "pmi",
+      "competencies": [
+        "PM-01",
+        "PM-02"
+      ],
+      "title": {
+        "en": "The request that arrives late",
+        "ar": "الطلب الذي يأتي متأخرًا"
+      },
+      "slots": {
+        "project": [
+          {
+            "en": "a substation upgrade",
+            "ar": "ترقية محطة فرعية"
+          },
+          {
+            "en": "an ERP roll-out",
+            "ar": "تطبيق نظام لتخطيط موارد المؤسسة"
+          },
+          {
+            "en": "a new training centre",
+            "ar": "مركز تدريب جديد"
+          },
+          {
+            "en": "a warehouse relocation",
+            "ar": "نقل مستودع"
+          }
+        ],
+        "request": [
+          {
+            "en": "add one more site to the scope",
+            "ar": "إضافة موقع آخر إلى النطاق"
+          },
+          {
+            "en": "bring the finish date forward by a month",
+            "ar": "تقديم موعد الانتهاء شهرًا"
+          },
+          {
+            "en": "add a reporting dashboard that was not in the plan",
+            "ar": "إضافة لوحة تقارير لم تكن في الخطة"
+          },
+          {
+            "en": "change the main supplier",
+            "ar": "تغيير المورد الرئيسي"
+          }
+        ],
+        "who": [
+          {
+            "en": "the sponsor",
+            "ar": "راعي المشروع"
+          },
+          {
+            "en": "a senior user",
+            "ar": "أحد كبار المستخدمين"
+          },
+          {
+            "en": "the client's new manager",
+            "ar": "المدير الجديد لدى العميل"
+          }
+        ]
+      },
+      "text": {
+        "en": "You manage {project}. Two thirds of the way through, {who} asks you to {request} and adds: “It is a small thing, just do it.”",
+        "ar": "تدير مشروع {project}. وبعد إنجاز ثلثيه يطلب منك {who} {request} ويضيف: «أمر بسيط، نفّذه فحسب»."
+      },
+      "task": {
+        "en": "Describe what you do next, what you assess, who decides and what you tell the people affected.",
+        "ar": "صِف ما ستفعله بعد ذلك، وما الذي ستقيّمه، ومن يقرر، وماذا ستقول للمتأثرين."
+      },
+      "rubric": [
+        {
+          "id": "impact",
+          "criterion": {
+            "en": "Assesses the impact on scope, schedule and cost",
+            "ar": "تقيّم الأثر في النطاق والجدول والتكلفة"
+          },
+          "hint": {
+            "en": "No change is small until its effect is known.",
+            "ar": "لا تغيير صغير قبل معرفة أثره."
+          },
+          "terms": {
+            "en": [
+              "impact",
+              "scope",
+              "schedule",
+              "cost",
+              "risk",
+              "baseline"
+            ],
+            "ar": [
+              "أثر",
+              "نطاق",
+              "جدول",
+              "تكلف",
+              "مخاطر",
+              "خط الأساس"
+            ]
+          }
+        },
+        {
+          "id": "control",
+          "criterion": {
+            "en": "Uses the agreed change control",
+            "ar": "تستخدم ضبط التغيير المتفق عليه"
+          },
+          "hint": {
+            "en": "A request is recorded, assessed and decided by whoever has the authority.",
+            "ar": "يُسجَّل الطلب ويُقيَّم ويقرره صاحب الصلاحية."
+          },
+          "terms": {
+            "en": [
+              "change request",
+              "change control",
+              "approve",
+              "authority",
+              "decision",
+              "board",
+              "log"
+            ],
+            "ar": [
+              "طلب تغيير",
+              "ضبط التغيير",
+              "اعتماد",
+              "صلاحي",
+              "قرار",
+              "لجن",
+              "سجل"
+            ]
+          }
+        },
+        {
+          "id": "options",
+          "criterion": {
+            "en": "Offers options",
+            "ar": "تقدّم بدائل"
+          },
+          "hint": {
+            "en": "Do it now, do it later, do less, or do not do it: each with its consequence.",
+            "ar": "نفّذه الآن، أو لاحقًا، أو جزئيًا، أو لا تنفّذه: ولكل خيار نتيجته."
+          },
+          "terms": {
+            "en": [
+              "option",
+              "alternative",
+              "trade-off",
+              "later",
+              "phase",
+              "instead"
+            ],
+            "ar": [
+              "بديل",
+              "خيار",
+              "بدائل",
+              "لاحق",
+              "مرحل",
+              "مفاضل"
+            ]
+          }
+        },
+        {
+          "id": "communicate",
+          "criterion": {
+            "en": "Communicates the decision",
+            "ar": "تبلّغ القرار"
+          },
+          "hint": {
+            "en": "Who needs to know, and what changes for them?",
+            "ar": "من يحتاج أن يعلم، وما الذي يتغير لديه؟"
+          },
+          "terms": {
+            "en": [
+              "communicate",
+              "inform",
+              "stakeholder",
+              "team",
+              "update",
+              "tell"
+            ],
+            "ar": [
+              "تواصل",
+              "إبلاغ",
+              "أبلغ",
+              "أصحاب المصلحة",
+              "فريق",
+              "تحديث"
+            ]
+          }
+        }
+      ],
+      "kind": "scenario",
+      "owner_phase": "13",
+      "label": "generated_practice",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 practice-scenario template (original CIA wording; generated practice, never an exam question); awaiting review."
+      }
+    },
+    {
+      "id": "SCN-KPI",
+      "academy": "quality",
+      "competencies": [
+        "PERF-01"
+      ],
+      "title": {
+        "en": "Turn a wish into a measure",
+        "ar": "حوّل الأمنية إلى مقياس"
+      },
+      "slots": {
+        "industry": [
+          {
+            "en": "a valve manufacturing plant",
+            "ar": "مصنع لتصنيع الصمامات"
+          },
+          {
+            "en": "a hospital laboratory",
+            "ar": "مختبر في مستشفى"
+          },
+          {
+            "en": "an electrical contracting company",
+            "ar": "شركة مقاولات كهربائية"
+          },
+          {
+            "en": "a food packaging site",
+            "ar": "موقع لتعبئة الأغذية"
+          },
+          {
+            "en": "a logistics warehouse",
+            "ar": "مستودع خدمات لوجستية"
+          }
+        ],
+        "wish": [
+          {
+            "en": "“improve customer satisfaction”",
+            "ar": "«تحسين رضا العملاء»"
+          },
+          {
+            "en": "“reduce delays”",
+            "ar": "«تقليل التأخير»"
+          },
+          {
+            "en": "“raise quality awareness”",
+            "ar": "«رفع الوعي بالجودة»"
+          },
+          {
+            "en": "“be safer”",
+            "ar": "«أن نكون أكثر أمانًا»"
+          }
+        ]
+      },
+      "text": {
+        "en": "The management team at {industry} has agreed an objective for next year: {wish}. Nobody has said how it will be measured.",
+        "ar": "اتفق فريق الإدارة في {industry} على هدف للعام القادم: {wish}. ولم يذكر أحد كيف سيُقاس."
+      },
+      "task": {
+        "en": "Define one indicator for it: what exactly is counted, the formula, the data source, how often, who owns it and how the target is set.",
+        "ar": "عرّف مؤشرًا واحدًا له: ما الذي يُعدّ بالضبط، والمعادلة، ومصدر البيانات، والدورية، والمالك، وكيف يُحدَّد المستهدف."
+      },
+      "rubric": [
+        {
+          "id": "definition",
+          "criterion": {
+            "en": "Defines what is measured and the formula",
+            "ar": "تعرّف المقيس والمعادلة"
+          },
+          "hint": {
+            "en": "Two people should calculate the same number from the same data.",
+            "ar": "ينبغي أن يحسب شخصان الرقم نفسه من البيانات نفسها."
+          },
+          "terms": {
+            "en": [
+              "formula",
+              "divided",
+              "number of",
+              "percentage",
+              "ratio",
+              "count",
+              "per"
+            ],
+            "ar": [
+              "معادل",
+              "مقسوم",
+              "عدد",
+              "نسب",
+              "لكل"
+            ]
+          }
+        },
+        {
+          "id": "source",
+          "criterion": {
+            "en": "Names the data source and frequency",
+            "ar": "تسمّي مصدر البيانات والدورية"
+          },
+          "hint": {
+            "en": "Where does the number come from and how often is it reported?",
+            "ar": "من أين يأتي الرقم وكم مرة يُرفع؟"
+          },
+          "terms": {
+            "en": [
+              "source",
+              "system",
+              "monthly",
+              "weekly",
+              "quarterly",
+              "frequency",
+              "report"
+            ],
+            "ar": [
+              "مصدر",
+              "نظام",
+              "شهري",
+              "أسبوعي",
+              "ربع",
+              "دوري",
+              "تقرير"
+            ]
+          }
+        },
+        {
+          "id": "owner",
+          "criterion": {
+            "en": "Gives it an owner",
+            "ar": "تحدد المالك"
+          },
+          "hint": {
+            "en": "One named role answers for the number.",
+            "ar": "دور واحد مُسمّى مسؤول عن الرقم."
+          },
+          "terms": {
+            "en": [
+              "owner",
+              "responsible",
+              "manager",
+              "accountable"
+            ],
+            "ar": [
+              "مالك",
+              "مسؤول",
+              "مدير"
+            ]
+          }
+        },
+        {
+          "id": "target",
+          "criterion": {
+            "en": "Sets the target from a baseline",
+            "ar": "تحدد المستهدف من خط أساس"
+          },
+          "hint": {
+            "en": "A target without a baseline is a guess.",
+            "ar": "المستهدف بلا خط أساس تخمين."
+          },
+          "terms": {
+            "en": [
+              "baseline",
+              "target",
+              "current",
+              "from",
+              "to",
+              "trend"
+            ],
+            "ar": [
+              "خط الأساس",
+              "مستهدف",
+              "الحالي",
+              "من",
+              "إلى",
+              "اتجاه"
+            ]
+          }
+        }
+      ],
+      "kind": "scenario",
+      "owner_phase": "13",
+      "label": "generated_practice",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 practice-scenario template (original CIA wording; generated practice, never an exam question); awaiting review."
+      }
+    },
+    {
+      "id": "SCN-EX-EVIDENCE",
+      "academy": "excellence",
+      "competencies": [
+        "OE-01",
+        "OE-02"
+      ],
+      "title": {
+        "en": "From evidence to a strength and an opportunity",
+        "ar": "من الدليل إلى نقطة قوة وفرصة تحسين"
+      },
+      "slots": {
+        "org": [
+          {
+            "en": "a regional utility",
+            "ar": "شركة مرافق إقليمية"
+          },
+          {
+            "en": "a private hospital",
+            "ar": "مستشفى خاص"
+          },
+          {
+            "en": "a government service centre",
+            "ar": "مركز خدمات حكومي"
+          },
+          {
+            "en": "an engineering contractor",
+            "ar": "مقاول هندسي"
+          }
+        ],
+        "evidence": [
+          {
+            "en": "customer feedback is collected every quarter, but results are shown for one year only and are not compared with anyone",
+            "ar": "تُجمع آراء العملاء كل ربع سنة، لكن النتائج معروضة لسنة واحدة فقط ولا تُقارن بأي جهة"
+          },
+          {
+            "en": "there is a strategy document, and two departments can show how their plans follow from it; the others cannot",
+            "ar": "توجد وثيقة استراتيجية، وإدارتان تستطيعان بيان كيف تنبثق خططهما منها؛ والبقية لا تستطيع"
+          },
+          {
+            "en": "improvement ideas are welcomed and many are implemented, but nobody reviews whether the approach itself works",
+            "ar": "تُرحَّب بأفكار التحسين ويُنفَّذ كثير منها، لكن لا أحد يراجع هل الأسلوب نفسه ناجح"
+          }
+        ]
+      },
+      "text": {
+        "en": "You are preparing a self-assessment for {org}. In the interviews and documents you find this: {evidence}.",
+        "ar": "تُعدّ تقييمًا ذاتيًا لـ{org}. وفي المقابلات والوثائق تجد ما يلي: {evidence}."
+      },
+      "task": {
+        "en": "Write one strength and one opportunity for improvement from this evidence, and say which you would put first in an improvement plan and why.",
+        "ar": "اكتب نقطة قوة واحدة وفرصة تحسين واحدة من هذا الدليل، واذكر أيهما ستقدّم في خطة التحسين ولماذا."
+      },
+      "rubric": [
+        {
+          "id": "strength",
+          "criterion": {
+            "en": "A strength tied to evidence",
+            "ar": "نقطة قوة مرتبطة بالدليل"
+          },
+          "hint": {
+            "en": "Say what is done well and what shows it.",
+            "ar": "اذكر ما يُنفَّذ جيدًا وما الذي يبيّنه."
+          },
+          "terms": {
+            "en": [
+              "strength",
+              "evidence",
+              "shows",
+              "collected",
+              "implemented",
+              "systematic"
+            ],
+            "ar": [
+              "قوة",
+              "دليل",
+              "يبيّن",
+              "تُجمع",
+              "منفّذ",
+              "منهج"
+            ]
+          }
+        },
+        {
+          "id": "ofi",
+          "criterion": {
+            "en": "An opportunity that says what is missing",
+            "ar": "فرصة تحسين تذكر الناقص"
+          },
+          "hint": {
+            "en": "Name the gap: trend, comparison, deployment or review.",
+            "ar": "سمِّ الفجوة: اتجاه، مقارنة، تطبيق أو مراجعة."
+          },
+          "terms": {
+            "en": [
+              "opportunity",
+              "trend",
+              "comparison",
+              "benchmark",
+              "deploy",
+              "review",
+              "all departments",
+              "not"
+            ],
+            "ar": [
+              "فرصة",
+              "اتجاه",
+              "مقارن",
+              "تطبيق",
+              "نشر",
+              "مراجع",
+              "جميع الإدارات",
+              "لا"
+            ]
+          }
+        },
+        {
+          "id": "priority",
+          "criterion": {
+            "en": "A reason for the priority",
+            "ar": "سبب للأولوية"
+          },
+          "hint": {
+            "en": "Impact on the organisation's objectives and the effort needed.",
+            "ar": "الأثر في أهداف المنظمة والجهد المطلوب."
+          },
+          "terms": {
+            "en": [
+              "priority",
+              "impact",
+              "first",
+              "because",
+              "effort",
+              "strategic"
+            ],
+            "ar": [
+              "أولوي",
+              "أثر",
+              "أولًا",
+              "لأن",
+              "جهد",
+              "استراتيج"
+            ]
+          }
+        }
+      ],
+      "kind": "scenario",
+      "owner_phase": "13",
+      "label": "generated_practice",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 practice-scenario template (original CIA wording; generated practice, never an exam question); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-QM-01",
+      "competency": "QM-01",
+      "prompt": {
+        "en": "Tell me about a quality objective you set or helped to set. How did you make it measurable, and how was it planned?",
+        "ar": "حدّثني عن هدف جودة وضعته أو شاركت في وضعه. كيف جعلته قابلًا للقياس، وكيف خُطِّط له؟"
+      },
+      "follow_up": {
+        "en": "How did you know the target was realistic, and what did you do when progress fell behind?",
+        "ar": "كيف عرفت أن المستهدف واقعي، وماذا فعلت حين تأخر التقدم؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Linked the objective to a customer or organisational requirement",
+            "ar": "ربط الهدف بمتطلب للعميل أو المنظمة"
+          },
+          "terms": {
+            "en": [
+              "customer",
+              "requirement",
+              "strategy",
+              "policy"
+            ],
+            "ar": [
+              "عميل",
+              "متطلب",
+              "استراتيج",
+              "سياس"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Made it measurable: indicator, baseline, target, date",
+            "ar": "جعله قابلًا للقياس: مؤشر، خط أساس، مستهدف، تاريخ"
+          },
+          "terms": {
+            "en": [
+              "measur",
+              "indicator",
+              "baseline",
+              "target",
+              "kpi"
+            ],
+            "ar": [
+              "قياس",
+              "مؤشر",
+              "خط الأساس",
+              "مستهدف"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Planned who does what, with which resources, and how results are reviewed",
+            "ar": "خطّط من يفعل ماذا، وبأي موارد، وكيف تُراجع النتائج"
+          },
+          "terms": {
+            "en": [
+              "plan",
+              "resource",
+              "responsib",
+              "review",
+              "owner"
+            ],
+            "ar": [
+              "خط",
+              "موارد",
+              "مسؤول",
+              "مراجع",
+              "مالك"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-QM-02",
+      "competency": "QM-02",
+      "prompt": {
+        "en": "Describe a time you used data to understand a quality problem. Which tool did you choose and why?",
+        "ar": "صِف موقفًا استخدمت فيه البيانات لفهم مشكلة جودة. أي أداة اخترت ولماذا؟"
+      },
+      "follow_up": {
+        "en": "What did the data not tell you, and how did you deal with that?",
+        "ar": "ما الذي لم تخبرك به البيانات، وكيف تعاملت مع ذلك؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Chose a tool that fits the question (Pareto, histogram, control chart, scatter …)",
+            "ar": "اختار أداة تناسب السؤال (باريتو، مدرج تكراري، خريطة ضبط، انتشار …)"
+          },
+          "terms": {
+            "en": [
+              "pareto",
+              "histogram",
+              "control chart",
+              "scatter",
+              "check sheet",
+              "tool"
+            ],
+            "ar": [
+              "باريتو",
+              "مدرج",
+              "خريطة ضبط",
+              "انتشار",
+              "أداة"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Checked the data: source, sample, period, definitions",
+            "ar": "تحقق من البيانات: المصدر، العينة، الفترة، التعريفات"
+          },
+          "terms": {
+            "en": [
+              "sample",
+              "source",
+              "period",
+              "definition",
+              "valid",
+              "collect"
+            ],
+            "ar": [
+              "عين",
+              "مصدر",
+              "فترة",
+              "تعريف",
+              "جمع"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Turned the reading into a decision or an action",
+            "ar": "حوّل القراءة إلى قرار أو إجراء"
+          },
+          "terms": {
+            "en": [
+              "decision",
+              "action",
+              "result",
+              "prior",
+              "conclu"
+            ],
+            "ar": [
+              "قرار",
+              "إجراء",
+              "نتيج",
+              "أولوي",
+              "استنتاج"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-QM-03",
+      "competency": "QM-03",
+      "prompt": {
+        "en": "Walk me through a nonconformity or problem you handled from the first report to closure.",
+        "ar": "اشرح لي حالة عدم مطابقة أو مشكلة عالجتها من أول بلاغ حتى الإغلاق."
+      },
+      "follow_up": {
+        "en": "How did you separate the correction from the corrective action, and how did you prove the action worked?",
+        "ar": "كيف فصلت التصحيح عن الإجراء التصحيحي، وكيف أثبتّ نجاح الإجراء؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Contained the problem and corrected the case",
+            "ar": "احتوى المشكلة وصحّح الحالة"
+          },
+          "terms": {
+            "en": [
+              "contain",
+              "correction",
+              "immediate",
+              "segregat",
+              "fix"
+            ],
+            "ar": [
+              "احتو",
+              "تصحيح",
+              "فوري",
+              "عزل"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Found the root cause with a method, not a guess",
+            "ar": "وصل إلى السبب الجذري بمنهج لا بتخمين"
+          },
+          "terms": {
+            "en": [
+              "root cause",
+              "why",
+              "fishbone",
+              "analysis",
+              "cause"
+            ],
+            "ar": [
+              "السبب الجذري",
+              "لماذا",
+              "عظم السمكة",
+              "تحليل",
+              "سبب"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Verified effectiveness with evidence after a period",
+            "ar": "تحقق من الفاعلية بدليل بعد فترة"
+          },
+          "terms": {
+            "en": [
+              "effective",
+              "verif",
+              "follow",
+              "evidence",
+              "recur"
+            ],
+            "ar": [
+              "فاعلي",
+              "فعالي",
+              "تحقق",
+              "متابع",
+              "دليل",
+              "تكرار"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-QM-04",
+      "competency": "QM-04",
+      "prompt": {
+        "en": "How have you evaluated a supplier or handled a serious customer complaint? Take one real case.",
+        "ar": "كيف قيّمت موردًا أو عالجت شكوى عميل جدية؟ خذ حالة واقعية واحدة."
+      },
+      "follow_up": {
+        "en": "What changed in the relationship afterwards, and how do you know?",
+        "ar": "ما الذي تغيّر في العلاقة بعد ذلك، وكيف تعرف؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Used defined criteria rather than impressions",
+            "ar": "استخدم معايير محددة لا انطباعات"
+          },
+          "terms": {
+            "en": [
+              "criteria",
+              "evaluat",
+              "score",
+              "requirement",
+              "specification"
+            ],
+            "ar": [
+              "معايير",
+              "تقييم",
+              "درج",
+              "متطلب",
+              "مواصف"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Responded to the customer and protected them first",
+            "ar": "استجاب للعميل وحماه أولًا"
+          },
+          "terms": {
+            "en": [
+              "customer",
+              "respon",
+              "contain",
+              "communicat",
+              "complaint"
+            ],
+            "ar": [
+              "عميل",
+              "استجاب",
+              "احتو",
+              "تواصل",
+              "شكو"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Followed up with data: performance, re-evaluation, trend",
+            "ar": "تابع بالبيانات: الأداء، إعادة التقييم، الاتجاه"
+          },
+          "terms": {
+            "en": [
+              "follow",
+              "performance",
+              "re-evaluat",
+              "trend",
+              "monitor"
+            ],
+            "ar": [
+              "متابع",
+              "أداء",
+              "إعادة تقييم",
+              "اتجاه",
+              "رصد"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-ISO-01",
+      "competency": "ISO-01",
+      "prompt": {
+        "en": "Pick a management-system requirement you had to interpret for your organisation. How did you decide what it meant in practice?",
+        "ar": "اختر متطلبًا في نظام إدارة احتجت إلى تفسيره لمنظمتك. كيف قررت ما يعنيه عمليًا؟"
+      },
+      "follow_up": {
+        "en": "What evidence would show an auditor that the requirement is met?",
+        "ar": "أي دليل يبيّن للمدقق أن المتطلب مستوفى؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Read the exact wording and its verbal form (requirement, recommendation, permission)",
+            "ar": "قرأ النص بدقة وصيغته (متطلب، توصية، إذن)"
+          },
+          "terms": {
+            "en": [
+              "shall",
+              "should",
+              "wording",
+              "requirement",
+              "clause",
+              "text"
+            ],
+            "ar": [
+              "نص",
+              "متطلب",
+              "بند",
+              "صيغ",
+              "توصي"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Related it to the organisation's context and processes",
+            "ar": "ربطه بسياق المنظمة وعملياتها"
+          },
+          "terms": {
+            "en": [
+              "context",
+              "process",
+              "scope",
+              "organi",
+              "apply"
+            ],
+            "ar": [
+              "سياق",
+              "عملي",
+              "نطاق",
+              "منظم",
+              "تطبيق"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Defined the evidence that demonstrates conformity",
+            "ar": "حدد الدليل الذي يثبت المطابقة"
+          },
+          "terms": {
+            "en": [
+              "evidence",
+              "record",
+              "demonstrat",
+              "conform",
+              "document"
+            ],
+            "ar": [
+              "دليل",
+              "سجل",
+              "إثبات",
+              "مطابق",
+              "وثيق"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-ISO-02",
+      "competency": "ISO-02",
+      "prompt": {
+        "en": "Describe how you implemented or improved a process and its documented information.",
+        "ar": "صِف كيف طبّقت أو حسّنت عملية ومعلوماتها الموثقة."
+      },
+      "follow_up": {
+        "en": "How did you keep the documents useful rather than bureaucratic?",
+        "ar": "كيف أبقيت الوثائق مفيدة لا بيروقراطية؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Mapped the process: inputs, outputs, owner, interactions",
+            "ar": "رسم العملية: المدخلات، المخرجات، المالك، التفاعلات"
+          },
+          "terms": {
+            "en": [
+              "map",
+              "input",
+              "output",
+              "owner",
+              "interact",
+              "sipoc",
+              "flow"
+            ],
+            "ar": [
+              "رسم",
+              "مدخل",
+              "مخرج",
+              "مالك",
+              "تفاعل",
+              "مخطط"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Controlled documents and records: approval, version, access, retention",
+            "ar": "ضبط الوثائق والسجلات: الاعتماد، الإصدار، الوصول، الحفظ"
+          },
+          "terms": {
+            "en": [
+              "version",
+              "approv",
+              "control",
+              "retention",
+              "access",
+              "record"
+            ],
+            "ar": [
+              "إصدار",
+              "اعتماد",
+              "ضبط",
+              "حفظ",
+              "وصول",
+              "سجل"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Planned the roll-out: training, timing, checking it is used",
+            "ar": "خطّط التطبيق: التدريب، التوقيت، التحقق من الاستخدام"
+          },
+          "terms": {
+            "en": [
+              "train",
+              "plan",
+              "roll",
+              "implement",
+              "check",
+              "communicat"
+            ],
+            "ar": [
+              "تدريب",
+              "خط",
+              "تطبيق",
+              "تحقق",
+              "تواصل"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-ISO-03",
+      "competency": "ISO-03",
+      "prompt": {
+        "en": "If you had to integrate two management systems, where would you start and what would you keep separate?",
+        "ar": "لو كان عليك دمج نظامَي إدارة، من أين تبدأ وما الذي تبقيه منفصلًا؟"
+      },
+      "follow_up": {
+        "en": "What is the risk of integrating too much, too fast?",
+        "ar": "ما خطر الدمج المفرط أو السريع؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Started from the common structure: context, leadership, planning, support, evaluation, improvement",
+            "ar": "بدأ من البنية المشتركة: السياق، القيادة، التخطيط، الدعم، التقييم، التحسين"
+          },
+          "terms": {
+            "en": [
+              "common",
+              "structure",
+              "harmoni",
+              "leadership",
+              "shared"
+            ],
+            "ar": [
+              "مشترك",
+              "بني",
+              "منسق",
+              "قياد"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Integrated shared processes: document control, audit, management review, corrective action",
+            "ar": "دمج العمليات المشتركة: ضبط الوثائق، التدقيق، مراجعة الإدارة، الإجراءات التصحيحية"
+          },
+          "terms": {
+            "en": [
+              "audit",
+              "management review",
+              "document",
+              "corrective",
+              "integrat"
+            ],
+            "ar": [
+              "تدقيق",
+              "مراجعة الإدارة",
+              "وثائق",
+              "تصحيح",
+              "دمج"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Kept discipline-specific requirements and competence visible",
+            "ar": "أبقى المتطلبات والكفاءات الخاصة بكل تخصص واضحة"
+          },
+          "terms": {
+            "en": [
+              "specific",
+              "separate",
+              "legal",
+              "technical",
+              "competen",
+              "risk"
+            ],
+            "ar": [
+              "خاص",
+              "منفصل",
+              "قانون",
+              "فني",
+              "كفاء",
+              "مخاطر"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-AUD-01",
+      "competency": "AUD-01",
+      "prompt": {
+        "en": "How do you plan an audit? Use one audit you prepared as the example.",
+        "ar": "كيف تخطط لتدقيق؟ استخدم تدقيقًا أعددته مثالًا."
+      },
+      "follow_up": {
+        "en": "How did risk change where you spent your time?",
+        "ar": "كيف غيّرت المخاطر توزيع وقتك؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Agreed objectives, scope and criteria",
+            "ar": "اتفق على الأهداف والنطاق والمعايير"
+          },
+          "terms": {
+            "en": [
+              "objective",
+              "scope",
+              "criteria"
+            ],
+            "ar": [
+              "هدف",
+              "أهداف",
+              "نطاق",
+              "معايير"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Used risk and previous results to decide depth and time",
+            "ar": "استخدم المخاطر والنتائج السابقة لتحديد العمق والوقت"
+          },
+          "terms": {
+            "en": [
+              "risk",
+              "previous",
+              "priorit",
+              "importance",
+              "result"
+            ],
+            "ar": [
+              "مخاطر",
+              "سابق",
+              "أولوي",
+              "أهمي",
+              "نتائج"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Prepared a plan and working documents shared with the auditee",
+            "ar": "أعدّ خطة ووثائق عمل وشاركها مع المُدقَّق عليه"
+          },
+          "terms": {
+            "en": [
+              "plan",
+              "checklist",
+              "schedule",
+              "agenda",
+              "team"
+            ],
+            "ar": [
+              "خط",
+              "قائمة",
+              "جدول",
+              "فريق"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-AUD-02",
+      "competency": "AUD-02",
+      "prompt": {
+        "en": "Tell me how you collect evidence during an audit, and how you choose your samples.",
+        "ar": "حدّثني كيف تجمع الأدلة أثناء التدقيق، وكيف تختار عيناتك."
+      },
+      "follow_up": {
+        "en": "What do you do when what people say and what the records show do not match?",
+        "ar": "ماذا تفعل حين يختلف ما يقوله الناس عمّا تُظهره السجلات؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Combined interview, observation and records",
+            "ar": "جمع بين المقابلة والمشاهدة والسجلات"
+          },
+          "terms": {
+            "en": [
+              "interview",
+              "observ",
+              "record",
+              "document"
+            ],
+            "ar": [
+              "مقابل",
+              "مشاهد",
+              "ملاحظ",
+              "سجل",
+              "وثيق"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Chose the sample himself/herself and could explain it",
+            "ar": "اختار العينة بنفسه ويستطيع شرحها"
+          },
+          "terms": {
+            "en": [
+              "sample",
+              "select",
+              "random",
+              "represent"
+            ],
+            "ar": [
+              "عين",
+              "اختيار",
+              "عشوائ",
+              "ممثل"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Followed the audit trail and verified before concluding",
+            "ar": "تتبّع مسار التدقيق وتحقق قبل الاستنتاج"
+          },
+          "terms": {
+            "en": [
+              "trail",
+              "verif",
+              "corrobor",
+              "cross",
+              "follow"
+            ],
+            "ar": [
+              "مسار",
+              "تتبع",
+              "تحقق",
+              "تأكيد",
+              "مطابق"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-AUD-03",
+      "competency": "AUD-03",
+      "prompt": {
+        "en": "Give me an example of a finding you wrote. What made it clear enough to act on?",
+        "ar": "أعطني مثالًا على ملاحظة كتبتها. ما الذي جعلها واضحة بما يكفي للتصرف؟"
+      },
+      "follow_up": {
+        "en": "How did you follow up, and what did you accept as proof?",
+        "ar": "كيف تابعت، وما الذي قبلته دليلًا؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Requirement, evidence and extent in the statement",
+            "ar": "المتطلب والدليل والمدى في نص الملاحظة"
+          },
+          "terms": {
+            "en": [
+              "requirement",
+              "evidence",
+              "extent",
+              "criterion",
+              "criteria"
+            ],
+            "ar": [
+              "متطلب",
+              "دليل",
+              "مدى",
+              "معيار"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Factual wording without blame or prescribed solutions",
+            "ar": "صياغة واقعية بلا لوم ولا حلول مفروضة"
+          },
+          "terms": {
+            "en": [
+              "fact",
+              "objective",
+              "blame",
+              "neutral",
+              "solution"
+            ],
+            "ar": [
+              "واقع",
+              "موضوع",
+              "لوم",
+              "محايد",
+              "حل"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Followed up and verified the action",
+            "ar": "تابع وتحقق من الإجراء"
+          },
+          "terms": {
+            "en": [
+              "follow",
+              "verif",
+              "close",
+              "effective"
+            ],
+            "ar": [
+              "متابع",
+              "تحقق",
+              "إغلاق",
+              "فاعلي",
+              "فعالي"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-PM-01",
+      "competency": "PM-01",
+      "prompt": {
+        "en": "Describe how you planned the scope, schedule and cost of a project you led or supported.",
+        "ar": "صِف كيف خطّطت نطاق مشروع قدته أو دعمته وجدوله وتكلفته."
+      },
+      "follow_up": {
+        "en": "Which estimate turned out wrong, and what did you change?",
+        "ar": "أي تقدير تبيّن خطؤه، وماذا غيّرت؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Defined scope and broke the work down",
+            "ar": "حدد النطاق وجزّأ العمل"
+          },
+          "terms": {
+            "en": [
+              "scope",
+              "wbs",
+              "breakdown",
+              "deliverable",
+              "exclusion"
+            ],
+            "ar": [
+              "نطاق",
+              "تجزئ",
+              "هيكل",
+              "مخرج",
+              "استثناء"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Built a schedule from activities, dependencies and durations",
+            "ar": "بنى الجدول من الأنشطة والاعتماديات والمدد"
+          },
+          "terms": {
+            "en": [
+              "schedule",
+              "dependenc",
+              "critical path",
+              "duration",
+              "milestone"
+            ],
+            "ar": [
+              "جدول",
+              "اعتمادي",
+              "المسار الحرج",
+              "مدة",
+              "معلم"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Estimated cost with a basis and kept a baseline",
+            "ar": "قدّر التكلفة على أساس واضح واحتفظ بخط أساس"
+          },
+          "terms": {
+            "en": [
+              "cost",
+              "estimat",
+              "budget",
+              "baseline",
+              "contingen"
+            ],
+            "ar": [
+              "تكلف",
+              "تقدير",
+              "ميزاني",
+              "خط الأساس",
+              "احتياط"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-PM-02",
+      "competency": "PM-02",
+      "prompt": {
+        "en": "Tell me about a difficult stakeholder. How did you find out what they needed and keep them engaged?",
+        "ar": "حدّثني عن صاحب مصلحة صعب. كيف عرفت ما يحتاجه وأبقيته مشاركًا؟"
+      },
+      "follow_up": {
+        "en": "What would you do differently next time?",
+        "ar": "ما الذي ستفعله بشكل مختلف في المرة القادمة؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Analysed stakeholders: interest, influence, expectations",
+            "ar": "حلّل أصحاب المصلحة: الاهتمام، التأثير، التوقعات"
+          },
+          "terms": {
+            "en": [
+              "interest",
+              "influence",
+              "power",
+              "expect",
+              "analys",
+              "map"
+            ],
+            "ar": [
+              "اهتمام",
+              "تأثير",
+              "نفوذ",
+              "توقع",
+              "تحليل"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Planned communication: what, to whom, how often, by which channel",
+            "ar": "خطّط التواصل: ماذا، لمن، كم مرة، بأي قناة"
+          },
+          "terms": {
+            "en": [
+              "communicat",
+              "channel",
+              "frequen",
+              "report",
+              "meeting"
+            ],
+            "ar": [
+              "تواصل",
+              "قنا",
+              "دوري",
+              "تقرير",
+              "اجتماع"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Listened and adjusted, and recorded agreements",
+            "ar": "استمع وعدّل ووثّق الاتفاقات"
+          },
+          "terms": {
+            "en": [
+              "listen",
+              "agree",
+              "adjust",
+              "feedback",
+              "record"
+            ],
+            "ar": [
+              "استمع",
+              "اتفاق",
+              "عدّل",
+              "تعديل",
+              "وثّق"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-PM-03",
+      "competency": "PM-03",
+      "prompt": {
+        "en": "How do you decide between a predictive, an agile or a hybrid way of delivering a project?",
+        "ar": "كيف تختار بين أسلوب تنبؤي أو رشيق أو هجين لتسليم مشروع؟"
+      },
+      "follow_up": {
+        "en": "Give one example where the first choice had to change.",
+        "ar": "أعطِ مثالًا واحدًا اضطررتَ فيه إلى تغيير الاختيار الأول."
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Looked at how stable the requirements are and how often delivery is needed",
+            "ar": "نظر في مدى ثبات المتطلبات وتكرار الحاجة إلى التسليم"
+          },
+          "terms": {
+            "en": [
+              "requirement",
+              "uncertain",
+              "stable",
+              "change",
+              "increment"
+            ],
+            "ar": [
+              "متطلب",
+              "عدم اليقين",
+              "ثبات",
+              "تغيير",
+              "تزايد"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Considered the team, the customer's availability and the organisation's rules",
+            "ar": "راعى الفريق وتوفّر العميل وقواعد المنظمة"
+          },
+          "terms": {
+            "en": [
+              "team",
+              "customer",
+              "culture",
+              "governance",
+              "organi"
+            ],
+            "ar": [
+              "فريق",
+              "عميل",
+              "ثقاف",
+              "حوكم",
+              "منظم"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Tailored the approach and reviewed the choice",
+            "ar": "كيّف الأسلوب وراجع الاختيار"
+          },
+          "terms": {
+            "en": [
+              "tailor",
+              "hybrid",
+              "adapt",
+              "review",
+              "retrospect"
+            ],
+            "ar": [
+              "تكييف",
+              "كيّف",
+              "هجين",
+              "مراجع"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-RSK-01",
+      "competency": "RSK-01",
+      "prompt": {
+        "en": "Describe a risk assessment you ran or took part in. How were risks identified and rated?",
+        "ar": "صِف تقييم مخاطر أدرته أو شاركت فيه. كيف حُدِّدت المخاطر وقُيِّمت؟"
+      },
+      "follow_up": {
+        "en": "How did you handle disagreement about a rating, and did you look at opportunities too?",
+        "ar": "كيف تعاملت مع الخلاف على تقييم، وهل نظرتم في الفرص أيضًا؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Identified risks with the people who know the work, in cause–event–consequence form",
+            "ar": "حدد المخاطر مع العارفين بالعمل، بصيغة سبب–حدث–أثر"
+          },
+          "terms": {
+            "en": [
+              "cause",
+              "event",
+              "consequence",
+              "workshop",
+              "identif"
+            ],
+            "ar": [
+              "سبب",
+              "حدث",
+              "أثر",
+              "ورش",
+              "تحديد"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Used agreed criteria for likelihood and consequence",
+            "ar": "استخدم معايير متفقًا عليها للاحتمال والأثر"
+          },
+          "terms": {
+            "en": [
+              "criteria",
+              "likelihood",
+              "probab",
+              "matrix",
+              "scale",
+              "consequence"
+            ],
+            "ar": [
+              "معايير",
+              "احتمال",
+              "مصفوف",
+              "مقياس",
+              "أثر"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Considered existing controls and opportunities",
+            "ar": "راعى الضوابط القائمة والفرص"
+          },
+          "terms": {
+            "en": [
+              "control",
+              "existing",
+              "opportunit",
+              "residual"
+            ],
+            "ar": [
+              "ضوابط",
+              "ضابط",
+              "قائم",
+              "فرص",
+              "متبق"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-RSK-02",
+      "competency": "RSK-02",
+      "prompt": {
+        "en": "Take one significant risk you treated. What did you do, and how did you know the treatment was working?",
+        "ar": "خذ خطرًا مهمًا عالجته. ماذا فعلت، وكيف عرفت أن المعالجة ناجحة؟"
+      },
+      "follow_up": {
+        "en": "When would you have accepted the risk instead?",
+        "ar": "متى كنت ستقبل الخطر بدلًا من ذلك؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Chose a treatment option deliberately (avoid, reduce, share, accept)",
+            "ar": "اختار خيار المعالجة عن قصد (تجنب، تقليل، مشاركة، قبول)"
+          },
+          "terms": {
+            "en": [
+              "avoid",
+              "reduce",
+              "mitigat",
+              "share",
+              "transfer",
+              "accept"
+            ],
+            "ar": [
+              "تجنب",
+              "تقليل",
+              "تخفيف",
+              "مشارك",
+              "نقل",
+              "قبول"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Assigned an owner, an action and a date",
+            "ar": "عيّن مالكًا وإجراءً وتاريخًا"
+          },
+          "terms": {
+            "en": [
+              "owner",
+              "action",
+              "date",
+              "responsib",
+              "plan"
+            ],
+            "ar": [
+              "مالك",
+              "إجراء",
+              "تاريخ",
+              "مسؤول",
+              "خط"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Monitored with indicators and reviewed the residual risk",
+            "ar": "تابع بمؤشرات وراجع الخطر المتبقي"
+          },
+          "terms": {
+            "en": [
+              "monitor",
+              "indicator",
+              "review",
+              "residual",
+              "report"
+            ],
+            "ar": [
+              "متابع",
+              "مؤشر",
+              "مراجع",
+              "متبق",
+              "تقرير"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-PMO-01",
+      "competency": "PMO-01",
+      "prompt": {
+        "en": "If you were asked to set up or reshape a PMO, how would you decide which services it should offer?",
+        "ar": "لو طُلب منك إنشاء مكتب إدارة مشاريع أو إعادة تشكيله، كيف تقرر الخدمات التي يقدمها؟"
+      },
+      "follow_up": {
+        "en": "How would you show its value after six months?",
+        "ar": "كيف ستبيّن قيمته بعد ستة أشهر؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Started from the organisation's needs and sponsors' expectations",
+            "ar": "بدأ من احتياجات المنظمة وتوقعات الرعاة"
+          },
+          "terms": {
+            "en": [
+              "need",
+              "sponsor",
+              "expect",
+              "stakeholder",
+              "problem"
+            ],
+            "ar": [
+              "احتياج",
+              "راع",
+              "توقع",
+              "أصحاب المصلحة",
+              "مشكل"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Chose a type and services that match maturity",
+            "ar": "اختار نوعًا وخدمات تناسب النضج"
+          },
+          "terms": {
+            "en": [
+              "support",
+              "control",
+              "directive",
+              "service",
+              "maturity",
+              "type"
+            ],
+            "ar": [
+              "داعم",
+              "ضابط",
+              "توجيه",
+              "خدم",
+              "نضج",
+              "نوع"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Defined an operating model and measures of value",
+            "ar": "حدد نموذج تشغيل ومقاييس للقيمة"
+          },
+          "terms": {
+            "en": [
+              "operating model",
+              "role",
+              "process",
+              "measure",
+              "value",
+              "kpi"
+            ],
+            "ar": [
+              "نموذج تشغيل",
+              "أدوار",
+              "عملي",
+              "مقياس",
+              "قيم",
+              "مؤشر"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-PMO-02",
+      "competency": "PMO-02",
+      "prompt": {
+        "en": "How do you prepare a portfolio or status report that helps leaders decide?",
+        "ar": "كيف تُعدّ تقرير محفظة أو تقرير حالة يساعد القادة على القرار؟"
+      },
+      "follow_up": {
+        "en": "How do you deal with a project manager who always reports green?",
+        "ar": "كيف تتعامل مع مدير مشروع يرفع دائمًا حالة خضراء؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Used consistent definitions for status and thresholds",
+            "ar": "استخدم تعريفات موحدة للحالة والحدود"
+          },
+          "terms": {
+            "en": [
+              "definition",
+              "threshold",
+              "status",
+              "criteria",
+              "consistent",
+              "rag"
+            ],
+            "ar": [
+              "تعريف",
+              "حدود",
+              "حال",
+              "معايير",
+              "موحد"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Showed exceptions, trends and decisions needed",
+            "ar": "أبرز الاستثناءات والاتجاهات والقرارات المطلوبة"
+          },
+          "terms": {
+            "en": [
+              "exception",
+              "trend",
+              "decision",
+              "escalat",
+              "priorit"
+            ],
+            "ar": [
+              "استثناء",
+              "اتجاه",
+              "قرار",
+              "تصعيد",
+              "أولوي"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Checked the data behind the report",
+            "ar": "تحقق من البيانات التي خلف التقرير"
+          },
+          "terms": {
+            "en": [
+              "verif",
+              "data",
+              "evidence",
+              "assur",
+              "check"
+            ],
+            "ar": [
+              "تحقق",
+              "بيانات",
+              "دليل",
+              "تأكيد"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-OE-01",
+      "competency": "OE-01",
+      "prompt": {
+        "en": "Describe a self-assessment you contributed to. How did you move from evidence to conclusions?",
+        "ar": "صِف تقييمًا ذاتيًا شاركت فيه. كيف انتقلت من الأدلة إلى الاستنتاجات؟"
+      },
+      "follow_up": {
+        "en": "How did you handle a strength the team wanted to claim without evidence?",
+        "ar": "كيف تعاملت مع نقطة قوة أراد الفريق ادعاءها بلا دليل؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Gathered evidence from documents, results and interviews",
+            "ar": "جمع الأدلة من الوثائق والنتائج والمقابلات"
+          },
+          "terms": {
+            "en": [
+              "evidence",
+              "document",
+              "interview",
+              "result",
+              "gather"
+            ],
+            "ar": [
+              "دليل",
+              "أدل",
+              "وثائق",
+              "مقابل",
+              "نتائج",
+              "جمع"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Wrote strengths and opportunities that cite the evidence",
+            "ar": "كتب نقاط قوة وفرص تحسين تستشهد بالدليل"
+          },
+          "terms": {
+            "en": [
+              "strength",
+              "opportunit",
+              "improvement",
+              "cite"
+            ],
+            "ar": [
+              "قوة",
+              "فرص",
+              "تحسين"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Used a structured logic and reached consensus",
+            "ar": "استخدم منطقًا منظمًا ووصل إلى توافق"
+          },
+          "terms": {
+            "en": [
+              "structur",
+              "approach",
+              "deploy",
+              "consensus",
+              "logic",
+              "criteria"
+            ],
+            "ar": [
+              "منظم",
+              "منهج",
+              "تطبيق",
+              "توافق",
+              "منطق",
+              "معايير"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-OE-02",
+      "competency": "OE-02",
+      "prompt": {
+        "en": "After an assessment produces a long list of improvements, how do you decide what to do first?",
+        "ar": "بعد أن يُنتج التقييم قائمة طويلة من التحسينات، كيف تقرر ما يُنفَّذ أولًا؟"
+      },
+      "follow_up": {
+        "en": "How do you keep the plan alive after the first three months?",
+        "ar": "كيف تُبقي الخطة حيّة بعد الأشهر الثلاثة الأولى؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Prioritised by impact on strategy and results, and by effort",
+            "ar": "رتّب الأولويات حسب الأثر في الاستراتيجية والنتائج وحسب الجهد"
+          },
+          "terms": {
+            "en": [
+              "impact",
+              "effort",
+              "strateg",
+              "priorit",
+              "matrix"
+            ],
+            "ar": [
+              "أثر",
+              "جهد",
+              "استراتيج",
+              "أولوي",
+              "مصفوف"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Turned priorities into owned actions with measures",
+            "ar": "حوّل الأولويات إلى إجراءات لها ملاك ومقاييس"
+          },
+          "terms": {
+            "en": [
+              "owner",
+              "action",
+              "measure",
+              "plan",
+              "date"
+            ],
+            "ar": [
+              "مالك",
+              "ملاك",
+              "إجراء",
+              "مقياس",
+              "خط",
+              "تاريخ"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Reviewed progress with leaders",
+            "ar": "راجع التقدم مع القادة"
+          },
+          "terms": {
+            "en": [
+              "review",
+              "progress",
+              "leader",
+              "govern",
+              "report"
+            ],
+            "ar": [
+              "مراجع",
+              "تقدم",
+              "قاد",
+              "قياد",
+              "حوكم",
+              "تقرير"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-LDR-01",
+      "competency": "LDR-01",
+      "prompt": {
+        "en": "Tell me about a change you led that people did not welcome at first.",
+        "ar": "حدّثني عن تغيير قدته ولم يرحّب به الناس في البداية."
+      },
+      "follow_up": {
+        "en": "How did you support the person who struggled most?",
+        "ar": "كيف دعمت أكثر شخص واجه صعوبة؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Explained why, and listened to concerns",
+            "ar": "شرح السبب واستمع إلى المخاوف"
+          },
+          "terms": {
+            "en": [
+              "why",
+              "listen",
+              "concern",
+              "communicat",
+              "explain"
+            ],
+            "ar": [
+              "لماذا",
+              "استمع",
+              "مخاوف",
+              "تواصل",
+              "شرح"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Involved people and developed them: coaching, feedback, training",
+            "ar": "أشرك الناس وطوّرهم: توجيه، تغذية راجعة، تدريب"
+          },
+          "terms": {
+            "en": [
+              "involve",
+              "coach",
+              "feedback",
+              "train",
+              "develop",
+              "particip"
+            ],
+            "ar": [
+              "أشرك",
+              "إشراك",
+              "توجيه",
+              "تغذية راجعة",
+              "تدريب",
+              "تطوير"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Showed results and reinforced the new way",
+            "ar": "أظهر النتائج ورسّخ الأسلوب الجديد"
+          },
+          "terms": {
+            "en": [
+              "result",
+              "reinforc",
+              "sustain",
+              "recogni",
+              "quick win"
+            ],
+            "ar": [
+              "نتائج",
+              "ترسيخ",
+              "رسّخ",
+              "استدام",
+              "تقدير"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-LDR-02",
+      "competency": "LDR-02",
+      "prompt": {
+        "en": "Describe an important decision you made with incomplete information.",
+        "ar": "صِف قرارًا مهمًا اتخذته بمعلومات ناقصة."
+      },
+      "follow_up": {
+        "en": "How did it fit the organisation's strategy, and what did you learn?",
+        "ar": "كيف انسجم مع استراتيجية المنظمة، وماذا تعلمت؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Framed the decision and its link to strategy",
+            "ar": "حدد إطار القرار وصلته بالاستراتيجية"
+          },
+          "terms": {
+            "en": [
+              "strateg",
+              "objective",
+              "align",
+              "goal",
+              "frame"
+            ],
+            "ar": [
+              "استراتيج",
+              "هدف",
+              "مواءم",
+              "إطار"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Compared options with criteria, risks and data",
+            "ar": "قارن البدائل بمعايير ومخاطر وبيانات"
+          },
+          "terms": {
+            "en": [
+              "option",
+              "criteria",
+              "risk",
+              "data",
+              "alternative",
+              "analys"
+            ],
+            "ar": [
+              "بدائل",
+              "بديل",
+              "خيار",
+              "معايير",
+              "مخاطر",
+              "بيانات",
+              "تحليل"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Decided, communicated and reviewed the outcome",
+            "ar": "قرّر وبلّغ وراجع النتيجة"
+          },
+          "terms": {
+            "en": [
+              "decid",
+              "communicat",
+              "review",
+              "outcome",
+              "learn"
+            ],
+            "ar": [
+              "قرّر",
+              "قرار",
+              "بلّغ",
+              "تواصل",
+              "مراجع",
+              "نتيج",
+              "تعلّم"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-GOV-01",
+      "competency": "GOV-01",
+      "prompt": {
+        "en": "How would you check whether roles, authorities and delegations in an organisation are clear?",
+        "ar": "كيف تتحقق من وضوح الأدوار والصلاحيات والتفويضات في منظمة؟"
+      },
+      "follow_up": {
+        "en": "What would you do if a committee decided outside its authority?",
+        "ar": "ماذا تفعل لو قررت لجنة خارج صلاحيتها؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Looked for documented roles, authorities and delegation limits",
+            "ar": "بحث عن أدوار وصلاحيات وحدود تفويض موثقة"
+          },
+          "terms": {
+            "en": [
+              "role",
+              "authorit",
+              "delegat",
+              "matrix",
+              "document",
+              "limit"
+            ],
+            "ar": [
+              "أدوار",
+              "دور",
+              "صلاحي",
+              "تفويض",
+              "مصفوف",
+              "حدود"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Tested them in practice with real decisions",
+            "ar": "اختبرها عمليًا بقرارات حقيقية"
+          },
+          "terms": {
+            "en": [
+              "decision",
+              "sample",
+              "practice",
+              "test",
+              "evidence",
+              "minutes"
+            ],
+            "ar": [
+              "قرار",
+              "عين",
+              "عملي",
+              "اختبار",
+              "دليل",
+              "محاضر"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Checked oversight bodies: terms of reference, reporting, independence",
+            "ar": "تحقق من جهات الرقابة: الاختصاصات، التقارير، الاستقلال"
+          },
+          "terms": {
+            "en": [
+              "committee",
+              "terms of reference",
+              "oversight",
+              "report",
+              "independen",
+              "board"
+            ],
+            "ar": [
+              "لجن",
+              "اختصاص",
+              "رقاب",
+              "تقرير",
+              "استقلال",
+              "مجلس"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-GOV-02",
+      "competency": "GOV-02",
+      "prompt": {
+        "en": "Tell me about a policy you wrote or revised. How did you make sure it was followed?",
+        "ar": "حدّثني عن سياسة كتبتها أو راجعتها. كيف تأكدت من الالتزام بها؟"
+      },
+      "follow_up": {
+        "en": "How do you know when a policy should be withdrawn?",
+        "ar": "كيف تعرف متى ينبغي سحب سياسة؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Clear purpose, scope, rules and owner",
+            "ar": "غرض ونطاق وقواعد ومالك واضحون"
+          },
+          "terms": {
+            "en": [
+              "purpose",
+              "scope",
+              "owner",
+              "rule",
+              "clear",
+              "principle"
+            ],
+            "ar": [
+              "غرض",
+              "نطاق",
+              "مالك",
+              "قواعد",
+              "واضح",
+              "مبادئ"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Consulted, approved at the right level and communicated",
+            "ar": "استشار واعتمد في المستوى المناسب وبلّغ"
+          },
+          "terms": {
+            "en": [
+              "consult",
+              "approv",
+              "communicat",
+              "train",
+              "publish"
+            ],
+            "ar": [
+              "استشار",
+              "اعتماد",
+              "اعتمد",
+              "تواصل",
+              "بلّغ",
+              "تدريب",
+              "نشر"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Monitored compliance and reviewed periodically",
+            "ar": "تابع الالتزام وراجع دوريًا"
+          },
+          "terms": {
+            "en": [
+              "monitor",
+              "complian",
+              "review",
+              "audit",
+              "indicator"
+            ],
+            "ar": [
+              "متابع",
+              "رصد",
+              "التزام",
+              "مراجع",
+              "تدقيق",
+              "مؤشر"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-CMP-01",
+      "competency": "CMP-01",
+      "prompt": {
+        "en": "How do you keep track of the legal and other obligations that apply to your organisation?",
+        "ar": "كيف تتابع الالتزامات القانونية وغيرها مما ينطبق على منظمتك؟"
+      },
+      "follow_up": {
+        "en": "What do you do when a new obligation appears in the middle of the year?",
+        "ar": "ماذا تفعل حين يظهر التزام جديد في منتصف العام؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Maintained a register with source, requirement, owner",
+            "ar": "حافظ على سجل فيه المصدر والمتطلب والمالك"
+          },
+          "terms": {
+            "en": [
+              "register",
+              "source",
+              "owner",
+              "obligation",
+              "list"
+            ],
+            "ar": [
+              "سجل",
+              "مصدر",
+              "مالك",
+              "التزام",
+              "قائم"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Monitored changes and assessed their effect",
+            "ar": "رصد التغييرات وقيّم أثرها"
+          },
+          "terms": {
+            "en": [
+              "change",
+              "update",
+              "monitor",
+              "impact",
+              "new"
+            ],
+            "ar": [
+              "تغيير",
+              "تحديث",
+              "رصد",
+              "متابع",
+              "أثر",
+              "جديد"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Evaluated compliance periodically with evidence",
+            "ar": "قيّم الالتزام دوريًا بالدليل"
+          },
+          "terms": {
+            "en": [
+              "evaluat",
+              "complian",
+              "evidence",
+              "periodic",
+              "audit"
+            ],
+            "ar": [
+              "تقييم",
+              "قيّم",
+              "التزام",
+              "دليل",
+              "دوري",
+              "تدقيق"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-CMP-02",
+      "competency": "CMP-02",
+      "prompt": {
+        "en": "A supplier offers your team a generous gift just before a contract decision. What do you do and why?",
+        "ar": "يعرض مورد على فريقك هدية سخية قبيل قرار تعاقدي. ماذا تفعل ولماذا؟"
+      },
+      "follow_up": {
+        "en": "How would you check a new business partner before working with them?",
+        "ar": "كيف تتحقق من شريك أعمال جديد قبل التعامل معه؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Applied the gifts and hospitality rules: decline or declare",
+            "ar": "طبّق قواعد الهدايا والضيافة: الرفض أو الإفصاح"
+          },
+          "terms": {
+            "en": [
+              "declin",
+              "declare",
+              "policy",
+              "register",
+              "refus",
+              "gift"
+            ],
+            "ar": [
+              "رفض",
+              "إفصاح",
+              "أفصح",
+              "سياس",
+              "سجل",
+              "هدي"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Recognised the conflict of interest and its timing",
+            "ar": "أدرك تعارض المصالح وتوقيته"
+          },
+          "terms": {
+            "en": [
+              "conflict of interest",
+              "influence",
+              "timing",
+              "decision",
+              "independen"
+            ],
+            "ar": [
+              "تعارض المصالح",
+              "تأثير",
+              "توقيت",
+              "قرار",
+              "استقلال"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Used due diligence in proportion to the risk",
+            "ar": "استخدم العناية الواجبة بما يتناسب مع الخطر"
+          },
+          "terms": {
+            "en": [
+              "due diligence",
+              "risk",
+              "check",
+              "screen",
+              "background"
+            ],
+            "ar": [
+              "العناية الواجبة",
+              "مخاطر",
+              "خطر",
+              "تحقق",
+              "فحص"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-BC-01",
+      "competency": "BC-01",
+      "prompt": {
+        "en": "How would you find out which activities your organisation must recover first after a disruption?",
+        "ar": "كيف تعرف أي الأنشطة يجب أن تستعيدها منظمتك أولًا بعد انقطاع؟"
+      },
+      "follow_up": {
+        "en": "How did you choose between continuity strategies?",
+        "ar": "كيف اخترت بين استراتيجيات الاستمرارية؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Ran a business impact analysis with the process owners",
+            "ar": "أجرى تحليل الأثر على الأعمال مع ملاك العمليات"
+          },
+          "terms": {
+            "en": [
+              "impact analysis",
+              "bia",
+              "process owner",
+              "interview",
+              "critical"
+            ],
+            "ar": [
+              "تحليل الأثر",
+              "ملاك",
+              "مالك",
+              "مقابل",
+              "حرج"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Set time-based priorities and dependencies",
+            "ar": "حدد أولويات زمنية واعتماديات"
+          },
+          "terms": {
+            "en": [
+              "time",
+              "priorit",
+              "dependenc",
+              "recovery",
+              "tolerable",
+              "objective"
+            ],
+            "ar": [
+              "زمن",
+              "وقت",
+              "أولوي",
+              "اعتمادي",
+              "استعاد",
+              "تعاف"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Compared strategies by cost, time and risk",
+            "ar": "قارن الاستراتيجيات بالتكلفة والوقت والمخاطر"
+          },
+          "terms": {
+            "en": [
+              "strateg",
+              "cost",
+              "option",
+              "alternative",
+              "resource"
+            ],
+            "ar": [
+              "استراتيج",
+              "تكلف",
+              "بدائل",
+              "خيار",
+              "موارد"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-BC-02",
+      "competency": "BC-02",
+      "prompt": {
+        "en": "Describe a continuity or emergency exercise you ran or took part in. What did it reveal?",
+        "ar": "صِف تمرين استمرارية أو طوارئ أدرته أو شاركت فيه. ماذا كشف؟"
+      },
+      "follow_up": {
+        "en": "What changed in the plan afterwards?",
+        "ar": "ما الذي تغيّر في الخطة بعد ذلك؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Had a plan with roles, contacts and steps people can follow",
+            "ar": "وجدت خطة بأدوار وجهات اتصال وخطوات قابلة للتنفيذ"
+          },
+          "terms": {
+            "en": [
+              "plan",
+              "role",
+              "contact",
+              "step",
+              "procedure"
+            ],
+            "ar": [
+              "خط",
+              "أدوار",
+              "اتصال",
+              "خطوات",
+              "إجراء"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Exercised with objectives and a realistic scenario",
+            "ar": "نُفِّذ التمرين بأهداف وسيناريو واقعي"
+          },
+          "terms": {
+            "en": [
+              "exercise",
+              "scenario",
+              "objective",
+              "test",
+              "drill"
+            ],
+            "ar": [
+              "تمرين",
+              "سيناريو",
+              "هدف",
+              "أهداف",
+              "اختبار"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Recorded lessons and updated the plan",
+            "ar": "وثّق الدروس وحدّث الخطة"
+          },
+          "terms": {
+            "en": [
+              "lesson",
+              "update",
+              "improv",
+              "report",
+              "action"
+            ],
+            "ar": [
+              "دروس",
+              "تحديث",
+              "حدّث",
+              "تحسين",
+              "تقرير",
+              "إجراء"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-ISA-01",
+      "competency": "ISA-01",
+      "prompt": {
+        "en": "Explain confidentiality, integrity and availability with one example of each from your own work.",
+        "ar": "اشرح السرية والسلامة والتوافر بمثال واحد لكل منها من عملك."
+      },
+      "follow_up": {
+        "en": "Which threat worries you most in your area, and which control addresses it?",
+        "ar": "أي تهديد يقلقك أكثر في مجالك، وأي ضابط يعالجه؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Explained the three properties correctly",
+            "ar": "شرح الخصائص الثلاث شرحًا صحيحًا"
+          },
+          "terms": {
+            "en": [
+              "confidential",
+              "integrity",
+              "availab"
+            ],
+            "ar": [
+              "سري",
+              "سلام",
+              "تكامل",
+              "توافر",
+              "تواف"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Named realistic threats",
+            "ar": "سمّى تهديدات واقعية"
+          },
+          "terms": {
+            "en": [
+              "phishing",
+              "malware",
+              "ransom",
+              "loss",
+              "unauthori",
+              "threat",
+              "leak"
+            ],
+            "ar": [
+              "تصيّد",
+              "تصيد",
+              "برمجيات",
+              "فدي",
+              "فقد",
+              "غير مصرح",
+              "تهديد",
+              "تسريب"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Linked a control to the risk it treats",
+            "ar": "ربط الضابط بالخطر الذي يعالجه"
+          },
+          "terms": {
+            "en": [
+              "control",
+              "access",
+              "backup",
+              "encrypt",
+              "password",
+              "risk"
+            ],
+            "ar": [
+              "ضابط",
+              "ضوابط",
+              "وصول",
+              "نسخ احتياط",
+              "تشفير",
+              "كلمة المرور",
+              "خطر"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-ISA-02",
+      "competency": "ISA-02",
+      "prompt": {
+        "en": "You receive an urgent email asking you to confirm your password through a link. Talk me through what you do.",
+        "ar": "تصلك رسالة عاجلة تطلب تأكيد كلمة المرور عبر رابط. اشرح لي ما تفعله."
+      },
+      "follow_up": {
+        "en": "A colleague already clicked. What now?",
+        "ar": "زميل لك ضغط الرابط بالفعل. ماذا الآن؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Recognised the signs: urgency, link, request for credentials",
+            "ar": "أدرك العلامات: الاستعجال، الرابط، طلب بيانات الدخول"
+          },
+          "terms": {
+            "en": [
+              "urgen",
+              "link",
+              "sender",
+              "suspicious",
+              "phishing",
+              "credential"
+            ],
+            "ar": [
+              "استعجال",
+              "عاجل",
+              "رابط",
+              "مرسل",
+              "مشبوه",
+              "تصيد",
+              "تصيّد"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Did not click; verified through another channel",
+            "ar": "لم يضغط؛ وتحقق عبر قناة أخرى"
+          },
+          "terms": {
+            "en": [
+              "not click",
+              "verif",
+              "another channel",
+              "call",
+              "check"
+            ],
+            "ar": [
+              "لا أضغط",
+              "لم أضغط",
+              "تحقق",
+              "قناة أخرى",
+              "اتصل"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Reported promptly through the defined route",
+            "ar": "أبلغ فورًا عبر القناة المحددة"
+          },
+          "terms": {
+            "en": [
+              "report",
+              "incident",
+              "security team",
+              "helpdesk",
+              "immediately"
+            ],
+            "ar": [
+              "إبلاغ",
+              "أبلغ",
+              "حادث",
+              "فريق الأمن",
+              "فور"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-PERF-01",
+      "competency": "PERF-01",
+      "prompt": {
+        "en": "Take a KPI you designed or inherited. How is it defined, and how do you know it drives the right behaviour?",
+        "ar": "خذ مؤشر أداء صممته أو ورثته. كيف يُعرَّف، وكيف تعرف أنه يدفع إلى السلوك الصحيح؟"
+      },
+      "follow_up": {
+        "en": "Give me a leading indicator for the same objective.",
+        "ar": "أعطني مؤشرًا استباقيًا للهدف نفسه."
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "A definition card: formula, source, frequency, owner",
+            "ar": "بطاقة تعريف: المعادلة، المصدر، الدورية، المالك"
+          },
+          "terms": {
+            "en": [
+              "formula",
+              "source",
+              "frequen",
+              "owner",
+              "definition"
+            ],
+            "ar": [
+              "معادل",
+              "مصدر",
+              "دوري",
+              "مالك",
+              "تعريف"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Balanced leading and lagging indicators",
+            "ar": "وازن بين المؤشرات الاستباقية واللاحقة"
+          },
+          "terms": {
+            "en": [
+              "leading",
+              "lagging",
+              "balance",
+              "outcome",
+              "driver"
+            ],
+            "ar": [
+              "استباق",
+              "لاحق",
+              "تواز",
+              "نتيج"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Set targets from a baseline and watched for side effects",
+            "ar": "حدد المستهدفات من خط أساس وراقب الآثار الجانبية"
+          },
+          "terms": {
+            "en": [
+              "baseline",
+              "target",
+              "behaviour",
+              "behavior",
+              "side effect",
+              "gaming"
+            ],
+            "ar": [
+              "خط الأساس",
+              "مستهدف",
+              "سلوك",
+              "آثار جانبية",
+              "تلاعب"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    },
+    {
+      "id": "IQ-PERF-02",
+      "competency": "PERF-02",
+      "prompt": {
+        "en": "How do you prepare a performance or management review so that it ends with decisions?",
+        "ar": "كيف تُعدّ مراجعة أداء أو مراجعة إدارة بحيث تنتهي بقرارات؟"
+      },
+      "follow_up": {
+        "en": "What do you do with a variance nobody can explain?",
+        "ar": "ماذا تفعل بانحراف لا يستطيع أحد تفسيره؟"
+      },
+      "key_points": [
+        {
+          "t": {
+            "en": "Analysed variances and trends before the meeting",
+            "ar": "حلّل الانحرافات والاتجاهات قبل الاجتماع"
+          },
+          "terms": {
+            "en": [
+              "variance",
+              "trend",
+              "analys",
+              "compar",
+              "target"
+            ],
+            "ar": [
+              "انحراف",
+              "اتجاه",
+              "تحليل",
+              "مقارن",
+              "مستهدف"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Brought the required inputs and proposed options",
+            "ar": "أحضر المدخلات المطلوبة واقترح بدائل"
+          },
+          "terms": {
+            "en": [
+              "input",
+              "option",
+              "proposal",
+              "agenda",
+              "data"
+            ],
+            "ar": [
+              "مدخل",
+              "بدائل",
+              "خيار",
+              "مقترح",
+              "جدول الأعمال",
+              "بيانات"
+            ]
+          }
+        },
+        {
+          "t": {
+            "en": "Recorded decisions, owners and follow-up",
+            "ar": "وثّق القرارات والملاك والمتابعة"
+          },
+          "terms": {
+            "en": [
+              "decision",
+              "action",
+              "owner",
+              "follow",
+              "minute"
+            ],
+            "ar": [
+              "قرار",
+              "إجراء",
+              "مالك",
+              "ملاك",
+              "متابع",
+              "محضر"
+            ]
+          }
+        }
+      ],
+      "kind": "interview_question",
+      "owner_phase": "13",
+      "governance": {
+        "content_status": "needs_review",
+        "content_source": "ai_draft",
+        "version": "0.13.0",
+        "reviewer": null,
+        "review_date": null,
+        "change_note": "Phase 13 interview practice question (original CIA wording; practice feedback only, no hiring decision); awaiting review."
+      }
+    }
+  ]
+}

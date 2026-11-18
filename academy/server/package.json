@@ -1,0 +1,15 @@
+{
+  "name": "cia-academy-server",
+  "version": "2.0.0-rc.1",
+  "private": true,
+  "description": "Continual Improvement Academy — accounts, server records and administration API (Phase 14). © 2026 Modather Salama.",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs",
+    "migrate": "node scripts/migrate.mjs",
+    "audit": "npm audit --omit=dev"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": { "pg": "8.16.3" }
+}

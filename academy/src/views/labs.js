@@ -18,6 +18,7 @@ import { Figure } from '../ui/figures.js';
 import { isVisible, validateGovernance } from '../data/governance.js';
 import { ACADEMIES, academyByKey } from '../domain/academies.mjs';
 import { stepRail, counterStrip } from '../ui/guided.js';
+import { labMistakesBlock } from '../ui/coach.js';
 import { ProgressBar } from '../ui/components.js';
 import { LAB_UNKNOWN, LAB_AUTO_TYPES, validateResponses, makeLabAttempt, attemptsFor, nextAttemptNo, shuffledIds, moveItem, exportAttempt, labProgress, gradeTask, verdictOf } from '../domain/labs.mjs';
 
@@ -465,6 +466,8 @@ function resultView(ctx, lab, at, { onRetry, history, onOpen }) {
     h('p', { class: at.pending_review ? 'banner banner-info' : at.passed ? 'oksum' : 'errsum', role: 'status', dataset: { headline: 'true', markMet: String(!!at.mark_met) } }, headline),
     h('p', { class: 'note' }, t('lab11.submittedAt', { d: i18n.date(new Date(at.submitted_at), { dateStyle: 'medium', timeStyle: 'short' }) }), ' · ', t('lab11.practiceNote')),
     evidence,
+    /* Phase 13: explain my mistakes — auto-scored tasks not right, each with its stored model answer and reasoning. */
+    labMistakesBlock(ctx, { lab, attempt: at }),
     h('div', { class: 'btnrow no-print' }, Button({ label: t('lab11.retry'), variant: 'primary', iconName: 'refresh', onClick: onRetry, attrs: { 'data-action': 'retry-lab' } }),
       Button({ label: t('lab11.export'), variant: 'secondary', iconName: 'download', onClick: download, attrs: { 'data-action': 'export-attempt' } }),
       Button({ label: t('lab11.print'), variant: 'quiet', onClick: () => window.print(), attrs: { 'data-action': 'print-attempt' } })),

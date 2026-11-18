@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-12",
+  "updated": "2026-11-17",
   "method": "Weighted by estimated phase effort (weights below, total 112). Complete = 100 %, in progress = 50 %, otherwise 0 %.",
   "phases": [
     {
@@ -90,7 +90,9 @@
     {
       "id": "13",
       "weight": 6,
-      "status": "planned"
+      "status": "in_progress",
+      "partial": null,
+      "note": "Learning coach built (17 Nov 2026): grounded answers with source labels, mistake explanation, weak-area practice, practice scenarios, plan my week and interview practice, all on the device; 39 coach templates and 3 figures await review / owner approval; the optional model adapter stays off (owner decision D-13-1)."
     },
     {
       "id": "14",

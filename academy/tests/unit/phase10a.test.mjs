@@ -39,7 +39,11 @@ test('registry: valid, five top items in order, learner menu ≤ 12, no future-p
   assert.ok(shellEntries(nav, ['learner'], 'menu').length <= MAX_MENU);
   assert.deepEqual(shellEntries(nav, ['learner'], 'panel').map(e => e.id), ACADEMIES.map(a => a.navId));
   assert.equal(planEntries(nav, ['learner']).filter(e => e.status !== 'coming').length, 0);
-  assert.ok(planEntries(nav, ['admin']).some(e => e.id === 'admin'));
+  /* Phase 14 (layout assertion updated, 18 Nov 2026): Administration is built, so its entry left the build plan and is an active
+     account-menu entry for reviewers and administrators only — not a top item, never shown to learners or company administrators. */
+  assert.ok(!planEntries(nav, ['admin']).some(e => e.id === 'admin'));
+  assert.deepEqual(shellEntries(nav, ['admin'], 'user').filter(e => e.id === 'admin').map(e => e.route), ['/admin']);
+  assert.ok(!shellEntries(nav, ['learner'], 'user').some(e => e.id === 'admin') && !shellEntries(nav, ['company_admin'], 'user').some(e => e.id === 'admin'));
   /* Phase 12A (layout assertion updated, 12 Nov 2026): the Company Portal is built, so its entry left the build plan and is an
      active account-menu entry for company_admin / admin only — still not a top item and never shown to learners. */
   assert.ok(!planEntries(nav, ['admin']).some(e => e.id === 'company'));

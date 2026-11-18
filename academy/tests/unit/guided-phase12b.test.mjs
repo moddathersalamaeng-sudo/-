@@ -121,6 +121,8 @@ test('strings: g12b present in Arabic and English with the same keys and placeho
 
 test('the guided stylesheet is linked in the app and the review bundle; [hidden] beats display rules in the player', () => {
   assert.match(read('index.html'), /assets\/css\/guided\.css/);
-  assert.match(read('tools/build_review_bundle.mjs'), /'guided\.css'/);
+  /* Phase 13 (17 Nov 2026): the review bundle now reads its stylesheet list from index.html instead of a hand-kept list
+     (the list had missed coach.css), so linking guided.css in index.html is what puts it in the bundle. */
+  assert.match(read('tools/build_review_bundle.mjs'), /read\('index\.html'\)\.matchAll/);
   assert.match(read('assets/css/guided.css'), /\.asm \[hidden\][^{]*\{ display: none !important; \}/);
 });

@@ -29,6 +29,7 @@ import { academyOfCourse, cardProgress, ACADEMIES, academyByKey } from '../domai
 import { BookmarkButton } from '../ui/bookmark.js';
 import { groupByAcademy, firstSentence } from '../domain/guided.mjs';
 import { numberedCards, flipCard, clamp } from '../ui/guided.js';
+import { lessonCoachPanel, courseCoachPanel } from '../ui/coach.js';
 
 const STATUS_KEY = { 'CIA INTERNAL COURSE': 'cia_internal', 'EXAM PREPARATION COURSE': 'exam_prep', 'EXTERNAL ACCREDITATION PENDING': 'accreditation_pending', 'EXTERNALLY ACCREDITED': 'externally_accredited', 'OFFICIAL PARTNER COURSE': 'official_partner' };
 export const courseStatusLabel = (ctx, c) => {
@@ -428,6 +429,8 @@ function courseDetail(ctx, c, content, learner, region, guides = {}) {
     glance(ctx, c, lessons),
     h('div', { class: 'split' }, progressPanel, h('section', { class: 'panel', 'aria-label': t('p7.course.summary') }, summary)),
     isec('c-cur', 'layers', t('p7.course.curriculum'), curriculum),
+    /* Phase 13: the course coach (folded) — what to review first from the learner's own wrong answers, and ask. */
+    courseCoachPanel(ctx, { course: c, content, learner }),
     isec('c-pre', 'flag', t('p7.course.prerequisites'), prereqList(ctx, c, content, learner.completed)),
     isec('c-asm', 'question', t('p7.course.assessments'), c.assessment_methodology ? h('p', null, L(ctx, c.assessment_methodology)) : null, assessmentRows(ctx, c, content, learner),
       c.passing_criteria ? h('p', { class: 'note' }, L(ctx, c.passing_criteria)) : null),
@@ -584,6 +587,8 @@ function lessonPlayer(ctx, c, lessons, i, content, learner, guides = {}) {
       h('div', { class: 'btnrow' }, BookmarkButton(ctx, { type: 'lesson', id: l.id, href: lessonHref(c, l), title: l.title })),
       l.objectives?.length ? h('div', null, h('h2', { class: 'h-sm' }, t('p7.lesson.objectives')), h('ul', null, l.objectives.map(o => h('li', null, L(ctx, o))))) : null),
     blockEls,
+    /* Phase 13: the lesson coach — folded, after the key-idea cards and the lesson text (D-95 keeps the page calm). */
+    lessonCoachPanel(ctx, { course: c, lesson: l, content, learner, href: lessonHref(c, l) }),
     srcGuide && srcItem ? h('p', { class: 'note' }, t('gd.lessonSource'), ' ', h('a', { href: guideHref(srcGuide.slug, srcItem.ref) }, L(ctx, srcGuide.title))) : null,
     guidePanel,
     exercise,

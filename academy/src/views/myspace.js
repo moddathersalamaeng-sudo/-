@@ -17,10 +17,12 @@ import { labProgress } from '../domain/labs.mjs';
 import { docProgress } from '../domain/templates.mjs';
 import { recommendationsView, learningPathView } from './recommendations.js';
 import { passportPanel } from './passport.js';
+import { coachPanel } from './coach.js';
 import { myAssignmentsBlock, assignedCoursesFirst } from './company-share.js';
 
 /* Phase 12: the Professional Passport is a My space tab (no new top-level item). */
-export const MY_TABS = ['progress', 'passport', 'path', 'recommendations', 'competencies', 'profile'];
+/* Phase 13: the coach is the last tab, so the existing tab addresses and indexes are unchanged. */
+export const MY_TABS = ['progress', 'passport', 'path', 'recommendations', 'competencies', 'profile', 'coach'];
 
 function onboardingCard(ctx) {
   const { t } = ctx;
@@ -87,7 +89,8 @@ function progressTab(ctx) {
           ' · ', t('tpl11.progressLine', { a: i18n.number(docProgress(tpl, d).answered), q: i18n.number(tpl.questions.length), r: i18n.number(docProgress(tpl, d).rows) })))))
         : h('p', { class: 'note' }, t('tpl11.myDocsEmpty'), ' ', h('a', { href: '#/library?tab=templates' }, t('tpl11.blockTitle'))));
     return h('div', null, stats, myAssignmentsBlock(ctx), contSec, doneSec, labSec, docSec, saved,
-      h('p', null, h('a', { href: '#/assessments/history' }, icon('chart'), ' ', t('assessments.history')), ' · ', h('a', { href: '#/my?tab=passport', dataset: { action: 'open-passport' } }, icon('award'), ' ', t('pp12.openFromProgress'))),
+      h('p', null, h('a', { href: '#/assessments/history' }, icon('chart'), ' ', t('assessments.history')), ' · ', h('a', { href: '#/my?tab=passport', dataset: { action: 'open-passport' } }, icon('award'), ' ', t('pp12.openFromProgress')),
+        ' · ', h('a', { href: '#/my?tab=coach', dataset: { action: 'open-coach' } }, icon('spark'), ' ', t('coach13.openCoach'))),
       h('p', { class: 'note' }, t('me.storageNote')));
   } });
   return r;
@@ -165,7 +168,8 @@ export function mySpaceView(ctx, match) {
     path: () => h('div', null, planPanel(ctx), embed(learningPathView(ctx, sub))),
     recommendations: () => embed(recommendationsView(ctx, sub)),
     competencies: () => embed(myCompetenciesView(ctx, sub)),
-    profile: () => embed(profileView(ctx, sub))
+    profile: () => embed(profileView(ctx, sub)),
+    coach: () => coachPanel(ctx, match)
   };
   /* A newcomer sees the 60-second onboarding above every tab (no empty dead ends). */
   const ob = dataRegion({ t, load: () => ctx.repos.profile.get('me'), render: p => p ? h('span', { hidden: true }) : onboardingCard(ctx) });

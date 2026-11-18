@@ -102,6 +102,9 @@ export function renderShell(ctx, { currentPath, crumbs }) {
   const userPanel = h('div', { class: 'pop pop-user', id: userId, hidden: true },
     h('nav', { 'aria-label': t('x10a.user.label') }, h('ul', null,
       h('li', null, h('a', { href: '#/my', dataset: { nav: 'user-my' } }, icon('user'), ' ', t('nav.items.mySpace'))),
+      /* Phase 14: the account entry exists only when the owner configured a backend (signed-out mode is unchanged otherwise). */
+      ctx.backend ? h('li', null, h('a', { href: '#/account', dataset: { nav: 'account' }, 'aria-current': currentPath === '/account' ? 'page' : null }, icon('lock'), ' ',
+        session.signedIn ? t('p14.account.menuSignedIn', { name: session.user.display_name || session.user.email }) : t('p14.account.menuSignIn'))) : null,
       user.map(e => h('li', null, navLink(e, ctx, currentPath, ''))))));
   popover({ btn: userBtn, panel: userPanel });
 
@@ -121,6 +124,7 @@ export function renderShell(ctx, { currentPath, crumbs }) {
       /* Phones: the Tools button and the account menu do not fit in the header, so they live here (hidden on wider screens). */
       h('section', { class: 'phone-only', 'aria-labelledby': 'grp-acc' }, h('h2', { id: 'grp-acc' }, t('x10a.user.label')),
         h('ul', null, toolsEntry ? h('li', null, h('a', { class: 'navlink', href: '#' + toolsEntry.route, dataset: { nav: 'tools-m' } }, h('span', null, t('x10a.tools.button')))) : null,
+          ctx.backend ? h('li', null, h('a', { class: 'navlink', href: '#/account', dataset: { nav: 'account-m' } }, h('span', null, session.signedIn ? t('p14.account.title') : t('p14.account.menuSignIn')))) : null,
           user.map(e => h('li', null, h('a', { class: 'navlink', href: entryHref(e, ctx.config.platformBase), dataset: { nav: e.id + '-m' } }, h('span', null, t(e.labelKey)))))))));
   const menuBtn = h('button', { class: 'iconbtn', type: 'button', 'aria-expanded': 'false', 'aria-controls': drawerId, dataset: { action: 'menu' }, 'aria-label': t('a11y.menuOpen') },
     icon('menu'), h('span', { class: 'lbl' }, t('nav.menu')));

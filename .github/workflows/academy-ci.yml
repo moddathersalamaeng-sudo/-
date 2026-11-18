@@ -1,0 +1,59 @@
+# Continual Improvement Academy — tests on every push (closes CI-01). Phase 14.
+# Deploy rule: GitHub Pages publishes `main`; protect `main` so a pull request can merge only when this workflow is green
+# (Settings → Branches → require status check "academy-tests"). The workflow itself never deploys and holds no secret.
+name: academy-tests
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: academy-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  academy-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    services:
+      postgres:
+        image: postgres:16
+        env: { POSTGRES_PASSWORD: ci-only-password }
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      CIA_TEST_PG: postgres://postgres:ci-only-password@localhost:5432/postgres
+    defaults:
+      run:
+        working-directory: academy
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Install browser test tools
+        run: pip install playwright==1.48.0 && python -m playwright install --with-deps chromium
+      - name: Install the API dependencies (pg driver only)
+        run: npm run server:install
+      - name: Dependency audit (API)
+        run: cd server && npm audit --omit=dev --audit-level=high
+      - name: Unit tests
+        run: npm test
+      - name: Server tests (PostgreSQL, row-level security probes)
+        run: npm run test:server
+      - name: Pre-review (B1 … B14)
+        run: python3 tools/pre_review.py --out /tmp/pre-review
+      - name: End-to-end suites (each on its own)
+        run: |
+          set +e; fail=0
+          for s in run_e2e run_e2e_phase7 run_e2e_guides run_e2e_closure run_e2e_phase8 run_e2e_phase9 run_e2e_phase10 run_e2e_phase10a run_e2e_phase11 run_e2e_phase12 run_e2e_phase12a run_e2e_phase12b run_e2e_phase13 run_e2e_phase14; do
+            python3 tests/e2e/$s.py --evidence /tmp/e2e-out > /tmp/e2e-out-$s.txt 2>&1; rc=$?
+            echo "$s: $(tail -1 /tmp/e2e-out-$s.txt)"; [ $rc -ne 0 ] && fail=1
+          done
+          exit $fail
+      - name: Plan §5 measurements
+        run: python3 tests/e2e/measure_phase10a.py --label ci
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: academy-test-evidence, path: /tmp/e2e-out*, retention-days: 14 }

@@ -171,7 +171,11 @@ export function openDialog({ title, body, actions, closeLabel }) {
   dlg.append(h('div', { class: 'dlg-in' },
     h('h2', { id: titleId }, title),
     typeof body === 'string' ? h('p', null, body) : body,
-    h('div', { class: 'btnrow' }, actions.map(a => Button({ label: a.label, variant: a.variant || 'secondary', onClick: () => { a.onClick?.(); close(a.value); } })))));
+    /* `keepOpen` (Phase 14): the dialog stays open while the action runs and when it returns false (e.g. a wrong password). */
+    h('div', { class: 'btnrow' }, actions.map(a => Button({ label: a.label, variant: a.variant || 'secondary', onClick: () => {
+      if (a.keepOpen) { Promise.resolve(a.onClick?.()).then(r => { if (r !== false) close(a.value); }); return; }
+      a.onClick?.(); close(a.value);
+    } })))));
   dlg.setAttribute('aria-describedby', titleId);
   if (closeLabel) dlg.dataset.closeLabel = closeLabel;
   document.body.appendChild(dlg);

@@ -4,7 +4,7 @@
 This is NOT an expert review and never changes governance. It runs mechanical checks a reviewer would otherwise do by
 hand, writes findings, and lists the records that pass every blocking check (the candidates the owner may approve).
 
-  python3 tools/pre_review.py [--out DIR]          default DIR: ../../deliverables/phase-08/review
+  python3 tools/pre_review.py [--out DIR]          default DIR: ../../deliverables/phase-13/review
 
 Blocking checks (a record that fails one is NOT a candidate):
   B1 claims        no accreditation / certification / CPD / PDU / "approved by" claim unless explicitly negated
@@ -40,6 +40,13 @@ Blocking checks (a record that fails one is NOT a candidate):
                    shares, what, that nothing else leaves the device, and how to withdraw); every share part, level source and
                    assignment state is named; the workspace label says "planning aid", "not a performance appraisal" and
                    "not a hiring decision" in both languages.
+  B14 coach (Phase 13): scenario templates and interview questions are bilingual, their slots match in both languages, every
+                   rubric criterion has a hint and key terms in both languages (or an avoid list), every interview question has a
+                   follow-up and three key points and names a framework competency, interview prompts carry no numbers, and no coach
+                   record or figure claims accreditation, a real exam question, a guaranteed pass or a hiring outcome unless
+                   explicitly negated; Phase 13 figures use a known template with bilingual caption, "how to read it" and labels;
+                   the "coach13" interface strings exist in both languages with the same placeholders, explain all four source labels,
+                   give a refusal for every guarded request type, and state "practice" and "no hiring decision" in both languages.
 Advisory checks (reported, not blocking): duplicate prompts, very long options, answer-key position balance.
 """
 import json
@@ -50,7 +57,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SEED = ROOT / "data" / "seed"
-OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-12a" / "review"
+OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT.parent.parent / "deliverables" / "phase-13" / "review"
 load = lambda n: json.loads((SEED / f"{n}.json").read_text(encoding="utf-8"))["items"]  # noqa: E731
 guides = {g["slug"]: json.loads((ROOT / "data" / "guides" / f"{g['slug']}.json").read_text(encoding="utf-8"))["guide"]
           for g in json.loads((ROOT / "data" / "guides" / "index.json").read_text(encoding="utf-8"))["items"]}
@@ -58,7 +65,8 @@ guides = {g["slug"]: json.loads((ROOT / "data" / "guides" / f"{g['slug']}.json")
 COLL = {"courses": "courses", "questions": "questions", "assessments": "assessments", "iso-standards": "iso-standards", "learning-paths": "learning-paths",
         "ecosystems": "ecosystems", "programs": "programs", "sources": "sources", "competency/competencies": "competency/competencies",
         "competency/target-roles": "competency/target-roles", "competency/domains": "competency/domains", "certifications": "certifications",
-        "figures": "figures", "excellence-lab": "excellence-lab", "labs": "labs", "smart-templates": "smart-templates"}
+        "figures": "figures", "excellence-lab": "excellence-lab", "labs": "labs", "smart-templates": "smart-templates",
+        "coach": "coach"}  # Phase 13: practice-scenario templates and interview questions
 data = {k: load(v) for k, v in COLL.items()}
 FUTURE_COURSES = set()  # CRS-EFQM-101 is a Phase 10 course since 6 Nov 2026  # CRS-QMS-201 is a Phase 9 course since 4 Nov 2026  # CRS-PM-101 and CRS-P3O-101 are Phase 8 courses since 3 Nov 2026
 FUTURE_Q = {"Q-PM-001", "Q-RISK-001", "Q-PMO-001", "Q-GOV-001", "Q-AI-001"}  # Q-EFQM-001 reworked in Phase 10
@@ -411,6 +419,72 @@ if not _lab or not all(x in _lab.group(1) for x in ("planning aid", "not a perfo
     CO_FINDINGS.append("workspace label incomplete in a language")
 advisory.append(f"B13 interface strings (co12a): {len(co_en)} keys per language, {len(CO_FINDINGS)} finding(s)" + ("" if not CO_FINDINGS else ": " + "; ".join(CO_FINDINGS[:5])))
 
+# ------------------------------------------------------------------ B14 coach (Phase 13)
+COACH_CLAIM = re.compile(r"\b(accredit\w*|real exam|actual exam|exam questions?|guarantee[sd]?|pass the exam|will be hired|hire you|hiring decision|certified by)\b|معتمد من|نضمن|سؤال اختبار حقيقي|سيتم توظيفك|قرار توظيف", re.I)
+COACH_NEG = re.compile(r"\b(no|not|never|without|nor|isn't|does not|doesn't|cannot|can't|won't)\b|لا |ليس|ليست|دون|لم |بلا|ولا", re.I)
+COMP_IDS = {c["id"] for c in data["competency/competencies"]}
+def _coach_claims(coll, rid, rec):
+    for path, v in texts(rec):
+        for lang in ("en", "ar"):
+            for m in COACH_CLAIM.finditer(v[lang]):
+                if not COACH_NEG.search(v[lang][max(0, m.start() - 90):m.end()]): flag(coll, rid, "B14", f"{path}: possible claim “{v[lang][max(0, m.start() - 40):m.end() + 10]}”")
+n_scn = n_int = 0
+for x in data["coach"]:
+    rid = x["id"]
+    if x.get("kind") == "scenario":
+        n_scn += 1
+        for k in ("title", "text", "task"):
+            if not ((x.get(k) or {}).get("en") and (x.get(k) or {}).get("ar")): flag("coach", rid, "B14", f"{k} not bilingual")
+        for lang in ("en", "ar"):
+            if sorted(set(re.findall(r"\{(\w+)\}", (x.get("text") or {}).get(lang, "")))) != sorted(x.get("slots", {})): flag("coach", rid, "B14", f"slots do not match the {lang} text")
+        if not set(x.get("competencies") or []) <= COMP_IDS or not x.get("competencies"): flag("coach", rid, "B14", "competency not in the framework")
+        if len(x.get("rubric") or []) < 3: flag("coach", rid, "B14", "fewer than three rubric criteria")
+        for r in x.get("rubric") or []:
+            if not (r.get("criterion", {}).get("en") and r.get("criterion", {}).get("ar") and r.get("hint", {}).get("en") and r.get("hint", {}).get("ar")): flag("coach", rid, "B14", f"rubric {r.get('id')} criterion/hint not bilingual")
+            te, ta = (r.get("terms") or {}).get("en") or [], (r.get("terms") or {}).get("ar") or []
+            if bool(te) != bool(ta): flag("coach", rid, "B14", f"rubric {r.get('id')} key terms in one language only")
+            if not te and not ((x.get("avoid") or {}).get("en") and (x.get("avoid") or {}).get("ar")): flag("coach", rid, "B14", f"rubric {r.get('id')} has neither key terms nor an avoid list")
+    elif x.get("kind") == "interview_question":
+        n_int += 1
+        for k in ("prompt", "follow_up"):
+            if not ((x.get(k) or {}).get("en") and (x.get(k) or {}).get("ar")): flag("coach", rid, "B14", f"{k} not bilingual")
+        if x.get("competency") not in COMP_IDS: flag("coach", rid, "B14", "competency not in the framework")
+        kp = x.get("key_points") or []
+        if len(kp) != 3 or not all(p.get("t", {}).get("en") and p.get("t", {}).get("ar") and p.get("terms", {}).get("en") and p.get("terms", {}).get("ar") for p in kp): flag("coach", rid, "B14", "three bilingual key points with terms required")
+        if re.search(r"\d", x.get("prompt", {}).get("en", "") + x.get("follow_up", {}).get("en", "")): flag("coach", rid, "B14", "number in an interview question")
+    else:
+        flag("coach", rid, "B14", f"unknown kind {x.get('kind')}")
+    if x.get("owner_phase") != "13": flag("coach", rid, "B14", "owner_phase is not 13")
+    _coach_claims("coach", rid, x)
+for f_ in data["figures"]:
+    if f_.get("owner_phase") != "13": continue
+    if f_.get("template") not in ("cycle", "flow", "ladder", "bars", "matrix"): flag("figures", f_["id"], "B14", "unknown template")
+    for k in ("caption", "read"):
+        if not (f_.get(k, {}).get("en") and f_.get(k, {}).get("ar")): flag("figures", f_["id"], "B14", f"{k} not bilingual")
+    for path, v in texts(f_):
+        if re.search(r"\d", v["en"]) and not path.startswith("read"): flag("figures", f_["id"], "B14", f"{path}: number in a coach figure")
+    _coach_claims("figures", f_["id"], f_)
+CH_I18N = {lang: json.loads((ROOT / "data" / "i18n" / f"{lang}.json").read_text(encoding="utf-8")).get("coach13", {}) for lang in ("en", "ar")}
+ch_en, ch_ar = dict(_flat(CH_I18N["en"])), dict(_flat(CH_I18N["ar"]))
+CH_FINDINGS = []
+if not ch_en: CH_FINDINGS.append("coach13 strings missing")
+if set(ch_en) != set(ch_ar): CH_FINDINGS.append(f"keys differ between languages: {sorted(set(ch_en) ^ set(ch_ar))[:8]}")
+# refuse.* are the refusals themselves; about.rule* sit under the heading "What the coach will not do" (negated by the heading).
+for k_, v_ in ch_en.items():
+    if not str(ch_ar.get(k_, "")).strip(): CH_FINDINGS.append(f"coach13.{k_}: empty Arabic text")
+    elif _ph(v_) != _ph(ch_ar[k_]): CH_FINDINGS.append(f"coach13.{k_}: placeholders differ")
+    for m in COACH_CLAIM.finditer(str(v_)):
+        if not COACH_NEG.search(str(v_)[max(0, m.start() - 90):m.end()]) and not k_.startswith("refuse.") and not k_.startswith("about.rule"): CH_FINDINGS.append(f"coach13.{k_}: possible claim “{str(v_)[max(0, m.start() - 40):m.end() + 10]}”")
+    if re.search(r"\bPhase\b", str(v_)): CH_FINDINGS.append(f"coach13.{k_}: build wording shown to people")
+for l_ in ("platform", "external", "user", "ai"):
+    if not (ch_en.get("label." + l_) and ch_ar.get("label." + l_) and ch_en.get("labelLong." + l_) and ch_ar.get("labelLong." + l_)): CH_FINDINGS.append(f"source label {l_} not named and explained in both languages")
+for r_ in ("official_requirement", "exam_content", "authority_claim", "hiring_verdict", "grade_request"):
+    if not (ch_en.get("refuse." + r_) and ch_ar.get("refuse." + r_)): CH_FINDINGS.append(f"no refusal text for {r_}")
+if "practice" not in str(ch_en.get("practiceOnly", "")).lower() or not ch_ar.get("practiceOnly"): CH_FINDINGS.append("practice-only statement missing")
+if "not do" not in str(ch_en.get("about.rulesTitle", "")): CH_FINDINGS.append("the rules list is not headed as what the coach will not do")
+if not any("hiring decision" in str(v) for v in ch_en.values()) or not any("توظيف" in str(v) for v in ch_ar.values()): CH_FINDINGS.append("no-hiring-decision statement missing in a language")
+advisory.append(f"B14 coach content: {n_scn} scenario templates, {n_int} interview questions; interface strings (coach13): {len(ch_en)} keys per language, {len(CH_FINDINGS)} finding(s)" + ("" if not CH_FINDINGS else ": " + "; ".join(CH_FINDINGS[:5])))
+
 # ------------------------------------------------------------------ advisory
 prompts = Counter(q["prompt"]["en"].strip().lower() for q in data["questions"])
 for p_, n in prompts.items():
@@ -503,7 +577,7 @@ for coll, r in drafts:
     key = f"{coll}:{r['id']}"
     (blocked if findings.get(key) else candidates)[coll].append(r["id"])
 OUT.mkdir(parents=True, exist_ok=True)
-result = {"schema": "cia.pre-review.v1", "date": "2026-11-12", "interface_strings_b12": PP_FINDINGS, "interface_strings_b13": CO_FINDINGS, "drafts": len(drafts), "generated_questions_checked": gen_checked,
+result = {"schema": "cia.pre-review.v1", "date": "2026-11-17", "interface_strings_b12": PP_FINDINGS, "interface_strings_b13": CO_FINDINGS, "interface_strings_b14": CH_FINDINGS, "drafts": len(drafts), "generated_questions_checked": gen_checked,
           "candidates": candidates, "blocked": {k: {i: findings[f"{k}:{i}"] for i in v} for k, v in blocked.items()},
           "cleared_after_reading": {k: v for k, v in cleared.items() if v}, "advisory": advisory}
 (OUT / "pre-review-findings.json").write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")

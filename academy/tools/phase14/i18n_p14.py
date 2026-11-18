@@ -1,0 +1,236 @@
+# -*- coding: utf-8 -*-
+"""Phase 14 interface strings ("p14"): accounts, move-to-account, consents, administration, verification center, analytics.
+Every key exists in English and Arabic with the same placeholders (checked by build_phase14.py and a unit test).
+No string claims accreditation, CPD awards, PDUs, RUs, EFQM assessment, audit certification or that CIA certifies anyone."""
+
+def B(en, ar):
+    return {"en": en, "ar": ar}
+
+S = {
+  "account": {
+    "title": B("Account", "الحساب"),
+    "menuSignIn": B("Sign in", "تسجيل الدخول"),
+    "menuSignedIn": B("Account: {name}", "الحساب: {name}"),
+    "lede": B("An account keeps your records on the server so you find them on any device. Without an account the Academy works exactly as before, on this device only.",
+              "يحفظ الحساب سجلاتك على الخادم لتجدها على أي جهاز. ومن دون حساب تعمل الأكاديمية كما كانت تمامًا، على هذا الجهاز وحده."),
+    "promise": {
+      "device": B("Signed out, your records stay on this device and nothing is sent.", "عند الخروج تبقى سجلاتك على هذا الجهاز ولا يُرسل شيء."),
+      "move": B("After signing in you choose whether to move this device's records to your account — with a preview first.", "بعد الدخول تختار أنت نقل سجلات هذا الجهاز إلى حسابك — مع معاينة أولًا."),
+      "nothing": B("No company, reviewer or administrator sees your records without a basis you can see: your consent, or a review you requested.", "لا ترى شركة ولا مراجع ولا مسؤول سجلاتك إلا بسبب تراه أنت: موافقتك، أو مراجعة طلبتها.")
+    },
+    "signIn": B("Sign in", "تسجيل الدخول"), "signInGo": B("Sign in", "دخول"),
+    "signUp": B("Create an account", "إنشاء حساب"), "signUpGo": B("Create account", "أنشئ الحساب"),
+    "signUpNote": B("Your name appears on reviews you give and on shares you consent to. Your e-mail is never shown to companies or reviewers.",
+                    "يظهر اسمك على المراجعات التي تجريها وعلى ما توافق على مشاركته. ولا يظهر بريدك الإلكتروني لأي شركة أو مراجع."),
+    "name": B("Name", "الاسم"), "email": B("E-mail", "البريد الإلكتروني"), "password": B("Password", "كلمة المرور"), "newPassword": B("New password", "كلمة المرور الجديدة"),
+    "passwordHint": B("At least 10 characters. A short sentence is easier to remember.", "عشرة أحرف على الأقل. الجملة القصيرة أسهل في التذكر."),
+    "forgot": B("Forgot your password?", "نسيت كلمة المرور؟"), "forgotGo": B("Send a reset link", "أرسل رابط إعادة التعيين"),
+    "forgotNote": B("If an account uses this e-mail, a link valid for 60 minutes is sent to it. The answer is the same either way.",
+                    "إذا كان هناك حساب بهذا البريد يُرسل إليه رابط صالح لمدة 60 دقيقة. والرد واحد في الحالتين."),
+    "forgotSent": B("If the e-mail belongs to an account, a reset link is on its way.", "إذا كان البريد لحساب قائم فرابط إعادة التعيين في الطريق."),
+    "resetTitle": B("Choose a new password", "اختر كلمة مرور جديدة"), "resetGo": B("Save new password", "احفظ كلمة المرور"),
+    "resetDone": B("Password changed. Sign in with the new password; other devices were signed out.", "تغيّرت كلمة المرور. ادخل بالكلمة الجديدة؛ وخرجت الأجهزة الأخرى."),
+    "offTitle": B("Accounts are not switched on for this Academy yet", "الحسابات غير مفعّلة في هذه الأكاديمية بعد"),
+    "offBody": B("Your records stay on this device. You can export them from Settings and import them on another device.",
+                 "تبقى سجلاتك على هذا الجهاز. ويمكنك تصديرها من الإعدادات واستيرادها على جهاز آخر."),
+    "offExport": B("Open Settings", "افتح الإعدادات"),
+    "inviteWaiting": B("You opened an invitation. Sign in or create an account with the invited e-mail to join the organisation.",
+                       "فتحت دعوة. ادخل أو أنشئ حسابًا بالبريد المدعو للانضمام إلى المؤسسة."),
+    "inviteJoined": B("You joined the organisation. Nothing is shared until you consent in your passport.", "انضممت إلى المؤسسة. ولا يُشارك شيء حتى توافق في جوازك."),
+    "inviteFailed": B("The invitation could not be used: it may have expired, been used, or be for another e-mail.", "تعذّر استخدام الدعوة: ربما انتهت أو استُخدمت أو هي لبريد آخر."),
+    "saveName": B("Save name", "احفظ الاسم"), "export": B("Export everything (JSON)", "صدّر كل شيء (JSON)"),
+    "exported": B("Your account export is downloaded.", "نُزّل ملف تصدير حسابك."),
+    "signOut": B("Sign out", "تسجيل الخروج"), "delete": B("Delete my account", "احذف حسابي"),
+    "deleteTitle": B("Delete your account?", "حذف حسابك؟"),
+    "deleteBody": B("Every record, consent, review request and membership of this account is deleted at once and cannot be restored. Records still on this device stay on it.",
+                    "تُحذف فورًا كل السجلات والموافقات وطلبات المراجعة والعضويات في هذا الحساب ولا يمكن استعادتها. أما السجلات الباقية على هذا الجهاز فتبقى عليه."),
+    "deleteGo": B("Delete permanently", "احذف نهائيًا"), "deleted": B("Your account was deleted.", "حُذف حسابك."),
+    "orgs": B("My organisations", "مؤسساتي"), "noOrgs": B("You are not a member of an organisation.", "لست عضوًا في أي مؤسسة."),
+    "shareWhere": B("Sharing with an organisation is chosen part by part in your passport:", "تُختار المشاركة مع المؤسسة جزءًا جزءًا من جوازك:"),
+    "shareLink": B("Passport → Company", "الجواز ← الشركة")
+  },
+  "sync": {"synced": B("All changes are saved to your account.", "حُفظت كل التغييرات في حسابك."), "syncing": B("Saving changes to your account…", "يجري حفظ التغييرات في حسابك…"),
+           "offline": B("Offline: changes are kept on this device and sent when you are back online.", "دون اتصال: تُحفظ التغييرات على هذا الجهاز وتُرسل عند عودة الاتصال."),
+           "error": B("Some changes could not be saved yet; they stay on this device and are retried.", "تعذّر حفظ بعض التغييرات حتى الآن؛ تبقى على هذا الجهاز وتُعاد المحاولة."),
+           "idle": B("Waiting to sync.", "بانتظار المزامنة.")},
+  "role": {"learner": B("Learner", "متعلم"), "instructor": B("Instructor", "مدرّب"), "reviewer": B("Reviewer", "مراجع"), "admin": B("Administrator", "مسؤول"),
+           "company_admin": B("Company administrator", "مسؤول الشركة"), "employee": B("Employee", "موظف")},
+  "move": {
+    "title": B("Move my device records to my account", "انقل سجلات جهازي إلى حسابي"),
+    "offer": B("This device holds records from before you signed in ({n} collections).", "على هذا الجهاز سجلات من قبل دخولك ({n} مجموعة)."),
+    "open": B("Preview the move", "عاين النقل"),
+    "lede": B("This is what would move. Check it, then confirm.", "هذا ما سيُنقل. راجعه ثم أكّد."),
+    "rule": {"overwrite": B("Nothing in your account is overwritten: a record already there is kept as it is.", "لا يُستبدل شيء في حسابك: السجل الموجود يبقى كما هو."),
+             "upgrade": B("No status goes up: reviewer verifications are not moved, and lab attempts are scored again without same-device reviews.", "لا ترتفع أي حالة: لا تُنقل توثيقات المراجعين، وتُصحَّح محاولات المختبر من جديد دون مراجعات الجهاز نفسه."),
+             "twice": B("Running it twice changes nothing the second time.", "تكرار النقل لا يغيّر شيئًا في المرة الثانية."),
+             "device": B("The records stay on this device too, until you clear them in Settings.", "تبقى السجلات على هذا الجهاز أيضًا حتى تمسحها من الإعدادات.")},
+    "preview": B("Move preview", "معاينة النقل"),
+    "col": {"collection": B("Collection", "المجموعة"), "add": B("Will be added", "ستُضاف"), "kept": B("Already in account (kept)", "موجودة في الحساب (تبقى)"), "invalid": B("Cannot be read", "تعذّرت قراءتها")},
+    "skipped": B("Not moved: {list} (device-only screens and verifications).", "لا تُنقل: {list} (شاشات خاصة بالجهاز وتوثيقات)."),
+    "reviewsNotMoved": B("{n} same-device reviews are not moved. Send those lab attempts to the shared review queue from your account page.",
+                         "لا تُنقل {n} مراجعة أُجريت على الجهاز نفسه. أرسل محاولات المختبر هذه إلى قائمة المراجعة المشتركة من صفحة حسابك."),
+    "apply": B("Move {n} records", "انقل {n} سجلًا"),
+    "done": B("Moved {n} records; {k} were already in your account and were kept.", "نُقل {n} سجلًا؛ و{k} كانت في حسابك وبقيت كما هي."),
+    "deviceKept": B("The device copy was not deleted.", "لم تُحذف نسخة الجهاز."), "continue": B("Go to My space", "اذهب إلى مساحتي"),
+    "nothing": B("Nothing to move", "لا شيء للنقل"), "nothingBody": B("This device holds no records that are missing from your account.", "لا يحمل هذا الجهاز سجلات غير موجودة في حسابك."),
+    "allThere": B("Everything on this device is already in your account ({k} records kept as they are).", "كل ما على هذا الجهاز موجود في حسابك ({k} سجلًا بقيت كما هي)."),
+    "signInFirst": B("Sign in first", "ادخل أولًا")
+  },
+  "consent": {
+    "title": B("Share through my account (live)", "المشاركة عبر حسابي (مباشرة)"),
+    "lede": B("Instead of a file, the same parts can go to your organisation as a consent record. It shows your latest state, and withdrawing takes effect at once.",
+              "بدل الملف، يمكن إرسال الأجزاء نفسها إلى مؤسستك سجلَّ موافقة. يعرض حالتك الأحدث، ويسري السحب فورًا."),
+    "pilot": B("Pilot: the consent text is still under legal review before real company use.", "تجربة: نص الموافقة ما زال قيد المراجعة القانونية قبل الاستخدام الفعلي مع الشركات."),
+    "grant": B("Share with {org}", "شارك مع {org}"), "granted": B("Shared with {org}.", "تمت المشاركة مع {org}."),
+    "noOrg": B("You are not a member of an organisation, so there is nobody to share with through the account.", "لست عضوًا في مؤسسة، فلا جهة للمشاركة معها عبر الحساب."),
+    "since": B("since {d}", "منذ {d}"), "none": B("No active consent.", "لا توجد موافقة سارية."),
+    "withdraw": B("Withdraw", "اسحب الموافقة"), "withdrawTitle": B("Withdraw this consent?", "سحب هذه الموافقة؟"),
+    "withdrawBody": B("{org} stops seeing your shared parts immediately.", "تتوقف {org} عن رؤية الأجزاء المشاركة فورًا."),
+    "withdrawn": B("Consent withdrawn.", "سُحبت الموافقة.")
+  },
+  "asg": {"title": B("Assignments from my organisation", "التكليفات من مؤسستي"), "what": B("What", "المطلوب"), "org": B("Organisation", "المؤسسة"), "due": B("Due", "الموعد"),
+          "state": B("Progress", "التقدم"), "none": B("No assignments.", "لا توجد تكليفات."),
+          "not_started": B("Not started", "لم يبدأ"), "in_progress": B("In progress", "قيد التنفيذ"), "completed": B("Completed", "مكتمل")},
+  "rev": {"mine": B("My review requests", "طلبات المراجعة"), "mineLede": B("Written lab tasks count only after a named reviewer scores them. Reviewers see the written tasks and your answers, never your name or e-mail.",
+                                                                  "لا تُحتسب مهام المختبر المكتوبة إلا بعد أن يقيّمها مراجع مُسمّى. يرى المراجعون المهام المكتوبة وإجاباتك فقط، لا اسمك ولا بريدك."),
+          "none": B("No requests yet.", "لا طلبات بعد."), "nothingWaiting": B("No lab attempt is waiting for a review.", "لا توجد محاولة مختبر بانتظار المراجعة."),
+          "tasksWaiting": B("{n} written tasks waiting", "{n} مهمة مكتوبة بالانتظار"), "send": B("Send for review", "أرسل للمراجعة"),
+          "sent": B("Sent to the shared review queue.", "أُرسلت إلى قائمة المراجعة المشتركة."), "by": B("reviewer: {who}", "المراجع: {who}"),
+          "st": {"open": B("Waiting for a reviewer", "بانتظار مراجع"), "assigned": B("With a reviewer", "لدى مراجع"), "completed": B("Reviewed", "رُوجعت"), "withdrawn": B("Withdrawn", "مسحوبة")}},
+  "live": {
+    "title": B("Company workspace (accounts)", "مساحة الشركة (الحسابات)"),
+    "lede": B("{org}: people who joined by invitation and the parts each one consented to share — read live; a withdrawn consent disappears at once.",
+              "{org}: من انضموا بالدعوة والأجزاء التي وافق كل منهم على مشاركتها — تُقرأ مباشرة؛ والموافقة المسحوبة تختفي فورًا."),
+    "noOrg": B("You do not administer an organisation.", "أنت لا تدير أي مؤسسة."),
+    "shares": B("Consented shares ({n})", "المشاركات بالموافقة ({n})"),
+    "sharesNote": B("Only the parts each person chose. Levels marked verified need a verification recorded on the server; others are shown as assessed or self-rated.",
+                    "الأجزاء التي اختارها كل شخص فقط. المستويات الموثقة تحتاج توثيقًا مسجلًا على الخادم؛ وغيرها تظهر مقيّمة أو ذاتية."),
+    "noShares": B("No one has shared yet.", "لم يشارك أحد بعد."), "person": B("Person", "الشخص"), "parts": B("Parts", "الأجزاء"), "comp": B("Competencies", "الكفاءات"), "cpd": B("CPD hours", "ساعات التطوير"),
+    "last": B("Last activity", "آخر نشاط"), "people": B("People ({n})", "الأشخاص ({n})"), "role": B("Role", "الدور"), "invite": B("Invite", "ادعُ"),
+    "invited": B("Invitation created for {email}.", "أُنشئت دعوة لـ {email}."),
+    "inviteLink": B("Send this link to the person yourself (until the owner chooses an e-mail service). It works once and expires in 14 days.",
+                    "أرسل هذا الرابط إلى الشخص بنفسك (إلى أن يختار المالك خدمة بريد). يعمل مرة واحدة وينتهي بعد 14 يومًا."),
+    "invitations": B("{n} invitations not yet accepted.", "{n} دعوة لم تُقبل بعد."),
+    "assignments": B("Assignments ({n})", "التكليفات ({n})"), "type": B("Type", "النوع"), "target": B("Course, lab or assessment address name", "اسم عنوان الدورة أو المختبر أو التقييم"),
+    "targetHint": B("The last part of its address, e.g. iso-9001-foundations.", "الجزء الأخير من عنوانه، مثل iso-9001-foundations."),
+    "assign": B("Assign", "كلّف"), "assigned": B("Assignment created; the person sees it in their account.", "أُنشئ التكليف؛ ويراه الشخص في حسابه."),
+    "filesStill": B("The file-based workspace is still available for exports:", "مساحة العمل المعتمدة على الملفات ما زالت متاحة للتصدير:")
+  },
+  "admin": {
+    "title": B("Administration", "الإدارة"),
+    "lede": B("Manage content drafts, decisions, reviews, verification and people. Every action is checked again on the server and recorded.",
+              "إدارة مسودات المحتوى والقرارات والمراجعات والتحقق والأشخاص. تُفحص كل عملية مجددًا على الخادم وتُسجَّل."),
+    "offTitle": B("Administration needs an administrator or reviewer account", "تتطلب الإدارة حساب مسؤول أو مراجع"),
+    "offBody": B("Sign in with an account that holds the administrator or reviewer role. Roles are granted on the server, never switched in the browser.",
+                 "ادخل بحساب يحمل دور المسؤول أو المراجع. تُمنح الأدوار على الخادم ولا تُبدَّل في المتصفح."),
+    "tab": {"content": B("Content", "المحتوى"), "decisions": B("Decisions", "القرارات"), "evidence": B("Evidence reviews", "مراجعة الأدلة"), "verification": B("Verification center", "مركز التحقق"),
+            "users": B("Users and roles", "المستخدمون والأدوار"), "analytics": B("Usage", "الاستخدام"), "settings": B("Tiers and settings", "الباقات والإعدادات"), "export": B("Publish export", "تصدير النشر"), "audit": B("Audit trail", "سجل التدقيق")}
+  },
+  "cms": {
+    "lede": B("Pick a collection, open a record and save a draft. Each save is a new version with its history; you can restore any earlier version.",
+              "اختر مجموعة وافتح سجلًا واحفظ مسودة. كل حفظ نسخة جديدة لها تاريخها؛ ويمكنك استعادة أي نسخة سابقة."),
+    "honest": B("Saving never publishes. A draft reaches learners only after a named reviewer (or the owner's recorded approval) decides, the pre-review passes, and the publishing script is run.",
+                "الحفظ لا ينشر أبدًا. لا تصل المسودة إلى المتعلمين إلا بعد قرار مراجع مُسمّى (أو موافقة المالك المسجلة)، واجتياز المراجعة المسبقة، وتشغيل أداة النشر."),
+    "collection": B("Collection", "المجموعة"), "filter": B("Filter by id or title", "تصفية بالمعرّف أو العنوان"),
+    "group": {"learning": B("learning", "تعلّم"), "assessment": B("assessment", "تقييم"), "reference": B("reference", "مرجع"), "framework": B("framework", "إطار الكفاءات"), "media": B("figures", "رسوم"), "practice": B("practice", "تطبيق")},
+    "openDrafts": B("Open drafts ({n})", "مسودات مفتوحة ({n})"), "records": B("Records", "السجلات"), "titleCol": B("Title", "العنوان"), "statusCol": B("Status", "الحالة"), "versionCol": B("Version", "النسخة"),
+    "edit": B("Edit", "عدّل"), "actions": B("Actions", "الإجراءات"), "more": B("{n} more — use the filter.", "{n} غيرها — استخدم التصفية."), "newRecord": B("New record", "سجل جديد"),
+    "editing": B("Editing {id}", "تعديل {id}"), "json": B("Record (JSON)", "السجل (JSON)"), "preview": B("Preview", "معاينة"), "note": B("Change note", "ملاحظة التغيير"), "notePh": B("What changed and why", "ما الذي تغيّر ولماذا"),
+    "save": B("Save", "احفظ"), "saved": B("Saved as version {v}.", "حُفظت نسخةً رقم {v}."), "badJson": B("This is not valid JSON.", "هذا ليس JSON صالحًا."),
+    "submit": B("Submit for review", "أرسل للمراجعة"), "submitted": B("Submitted to the decisions queue.", "أُرسلت إلى قائمة القرارات."),
+    "by": B("by {who}", "بواسطة {who}"), "history": B("Version history", "تاريخ النسخ"), "restore": B("Restore version {v}", "استعد النسخة {v}"), "restored": B("Restored as a new version.", "استُعيدت نسخةً جديدة."),
+    "decisions": B("Decisions", "القرارات"),
+    "st": {"draft": B("Draft", "مسودة"), "submitted": B("Submitted", "مُرسلة"), "changes_requested": B("Changes requested", "مطلوب تعديل"), "approved": B("Approved (not yet published)", "معتمدة (لم تُنشر بعد)"), "exported": B("Exported", "صُدّرت")}
+  },
+  "gov": {"draft": B("Draft", "مسودة"), "needs_review": B("Needs review", "تحتاج مراجعة"), "in_review": B("In review", "قيد المراجعة"), "approved": B("Approved", "معتمد"), "published": B("Published", "منشور"), "archived": B("Archived", "مؤرشف")},
+  "dec": {"none": B("No submitted drafts are waiting.", "لا توجد مسودات مُرسلة بالانتظار."), "reviewer": B("Your name as reviewer", "اسمك مراجعًا"), "comment": B("Comment", "تعليق"),
+          "ownDraft": B("You wrote this draft. You cannot review it yourself, except as the owner's recorded approval.", "أنت كاتب هذه المسودة. لا يمكنك مراجعتها بنفسك إلا بصفتها موافقة المالك المسجلة."),
+          "ownerBasis": B("Owner approval after the pre-review (not an independent expert review)", "موافقة المالك بعد المراجعة المسبقة (ليست مراجعة خبير مستقل)"),
+          "approve": B("Approve", "اعتمد"), "changes": B("Request changes", "اطلب تعديلًا"), "changes_requested": B("Changes requested", "طُلب تعديل"), "saved": B("Decision recorded.", "سُجّل القرار."),
+          "prereview": B("Approval is recorded here; the publishing script runs the pre-review (B1–B14) and refuses a record with a blocking finding.", "يُسجَّل الاعتماد هنا؛ وتشغّل أداة النشر المراجعة المسبقة (B1–B14) وترفض أي سجل فيه ملاحظة مانعة.")},
+  "basis": {"expert_review": B("expert review", "مراجعة خبير"), "owner_approval": B("owner approval", "موافقة المالك")},
+  "ev": {"lede": B("Written lab tasks from other learners. You see the task, the rubric and the answer — never who wrote it. You can never be given your own work.",
+                   "مهام مختبر مكتوبة من متعلمين آخرين. ترى المهمة والمعايير والإجابة — دون كاتبها. ولا يمكن أن تُسند إليك أعمالك أنت."),
+         "slaNotSet": B("Service level not set (owner decision; addendum text B-04 pending). The age of each request is shown.", "مستوى الخدمة غير محدد (قرار المالك؛ نص الملحق B-04 معلّق). يظهر عمر كل طلب."),
+         "sla": B("Service level: {n} hours.", "مستوى الخدمة: {n} ساعة."), "age": B("{h} h old", "عمره {h} ساعة"),
+         "sla_not_set": B("no target", "دون هدف"), "sla_ok": B("on time", "في الوقت"), "sla_due_soon": B("due soon", "يقترب الموعد"), "sla_overdue": B("overdue", "متأخر"),
+         "claim": B("Take this review", "تولَّ هذه المراجعة"), "claimed": B("The review is yours.", "صارت المراجعة لك."),
+         "score": B("Score (0–{max})", "الدرجة (0–{max})"), "noScores": B("Enter at least one score.", "أدخل درجة واحدة على الأقل."),
+         "rule": B("The learner's attempt is scored again with the published lab and your scores; its status changes only by the existing rule.", "تُصحَّح محاولة المتعلم من جديد بالمختبر المنشور ودرجاتك؛ ولا تتغير حالتها إلا بالقاعدة القائمة."),
+         "submit": B("Submit scores", "أرسل الدرجات"), "done": B("Scores saved; the learner's attempt was updated.", "حُفظت الدرجات وحُدّثت محاولة المتعلم."), "none": B("No reviews are waiting.", "لا مراجعات بالانتظار.")},
+  "ver": {"lede": B("One line per certification: official source, facts, when and by whom they were last checked, and when to check again.", "سطر لكل شهادة: المصدر الرسمي والحقائق ومتى ومن تحقّق منها آخر مرة وموعد التحقق التالي."),
+          "honest": B("A record is marked verified only by a named person who checked the issuer's own page. The dated facts on certification pages still change only through review.",
+                      "لا يُوسم السجل بأنه مُتحقَّق إلا من شخص مُسمّى راجع صفحة الجهة المانحة نفسها. وتبقى الحقائق المؤرخة في صفحات الشهادات لا تتغير إلا عبر المراجعة."),
+          "reminders": B("Due for review ({n})", "مستحقة للمراجعة ({n})"), "noReminders": B("Nothing is due in the next 30 days.", "لا شيء مستحق خلال 30 يومًا."),
+          "noDate": B("no next review date", "دون موعد مراجعة"), "overdue": B("overdue since", "متأخرة منذ"), "due": B("due", "مستحقة في"),
+          "last": B("Last verified", "آخر تحقق"), "who": B("Verifier", "المتحقِّق"), "next": B("Next review", "المراجعة التالية"), "saved": B("Verification record saved.", "حُفظ سجل التحقق."),
+          "inContent": B("In published content: verified {d}, facts status {s}.", "في المحتوى المنشور: تحقق في {d}، وحالة الحقائق {s}."),
+          "st": {"verified": B("Verified", "مُتحقَّق"), "pending": B("Pending", "معلّق"), "changed": B("Changed at the issuer", "تغيّر لدى الجهة")},
+          "f": {"source_url": B("Official source (https)", "المصدر الرسمي (https)"), "last_verified": B("Last verified", "آخر تحقق"), "verifier": B("Verifier name", "اسم المتحقِّق"),
+                "next_review": B("Next review", "المراجعة التالية"), "notes": B("Notes", "ملاحظات"), "facts": B("Facts (JSON)", "الحقائق (JSON)")},
+          "line": {"verified": B("Verification center: checked at the issuer", "مركز التحقق: رُوجعت لدى الجهة"), "pending": B("Verification center: check pending", "مركز التحقق: التحقق معلّق"),
+                   "changed": B("Verification center: the issuer changed something — check the official page", "مركز التحقق: غيّرت الجهة شيئًا — راجع الصفحة الرسمية"),
+                   "last": B("last checked {d} by {who}", "آخر تحقق {d} بواسطة {who}"), "next": B("next check {d}", "التحقق التالي {d}"), "overdue": B("review overdue since {d}", "المراجعة متأخرة منذ {d}")}},
+  "users": {"lede": B("Grant or remove the reviewer, instructor and administrator roles. Every change is in the audit trail. Company administrators are chosen by their organisation, not here.",
+                      "امنح أدوار المراجع والمدرّب والمسؤول أو أزلها. كل تغيير في سجل التدقيق. أما مسؤولو الشركات فتختارهم مؤسساتهم لا هذه الصفحة."),
+            "since": B("Since", "منذ"), "roles": B("Roles", "الأدوار")},
+  "an": {"lede": B("{from} – {to}. Counts only: no person, address or free text is stored.", "{from} – {to}. أعداد فقط: لا يُخزَّن شخص ولا عنوان ولا نص حر."),
+         "honest": B("Measured from signed-in use only. Any public statement about usage must come from these figures.", "مقيسة من الاستخدام بعد الدخول فقط. وأي تصريح علني عن الاستخدام يجب أن يأتي من هذه الأرقام."),
+         "active": B("Active learners (sum of daily counts)", "المتعلمون النشطون (مجموع الأعداد اليومية)"), "starts": B("Course starts", "بدء الدورات"), "completions": B("Course completions", "إكمال الدورات"),
+         "labs": B("Lab attempts", "محاولات المختبر"), "outcomes": B("Assessment outcomes by competency (low · mid · high)", "نتائج التقييم حسب الكفاءة (منخفض · متوسط · مرتفع)"),
+         "coach": B("Coach use by feature", "استخدام المدرّب حسب الميزة"), "noResult": B("Searches with no result", "عمليات بحث بلا نتيجة"), "needsReview": B("Content needing review", "محتوى يحتاج مراجعة"),
+         "fewer": B("fewer than 5", "أقل من 5"), "empty": B("Nothing measured yet.", "لم يُقَس شيء بعد."),
+         "small": B("Counts under 5 are hidden so no single person can be picked out.", "تُخفى الأعداد الأقل من 5 حتى لا يُعرف شخص بعينه.")},
+  "tier": {"title": B("Tiers (ADD-16)", "الباقات (ADD-16)"), "feature": B("Feature", "الميزة"), "free": B("Free", "مجانية"), "professional": B("Professional", "احترافية"), "corporate": B("Corporate", "مؤسسية"),
+           "off": B("Tier enforcement is off: every feature stays open. Switching it on is an owner decision on pricing (D-14-2); no payment is handled.", "فرض الباقات متوقف: تبقى كل الميزات مفتوحة. وتفعيله قرار للمالك بشأن التسعير (D-14-2)؛ ولا تُعالج أي مدفوعات."),
+           "on": B("Tier enforcement is on.", "فرض الباقات مفعّل."),
+           "f": {"knowledge": B("Knowledge Center", "مركز المعرفة"), "courses_selected": B("Selected courses", "دورات مختارة"), "assessment_basic": B("Basic assessment", "تقييم أساسي"), "profile_basic": B("Basic profile", "ملف أساسي"),
+                 "programs_full": B("Full programs", "البرامج كاملة"), "practice_labs": B("Practice labs", "مختبرات التطبيق"), "coach": B("Learning coach", "مدرّب التعلم"), "assessment_advanced": B("Advanced assessments", "تقييمات متقدمة"),
+                 "passport": B("Professional Passport", "الجواز المهني"), "career_tools": B("Career tools", "أدوات المسار المهني"), "company_portal": B("Company portal", "بوابة الشركات")}},
+  "set": {"sla": B("Review service level", "مستوى خدمة المراجعة"), "slaNote": B("Hours from a request to a review. Empty means not set — the addendum text (B-04) was not supplied, so no number is assumed.",
+                                                                              "الساعات من الطلب إلى المراجعة. الفراغ يعني غير محدد — لم يُقدَّم نص الملحق (B-04)، فلا يُفترض رقم."),
+          "slaHours": B("Hours", "ساعات"), "company": B("Company accounts: {v} (pilot until the consent text passes legal review, C-12A).", "حسابات الشركات: {v} (تجربة حتى يجتاز نص الموافقة المراجعة القانونية، C-12A).")},
+  "ex": {"lede": B("Approved drafts are published by the existing script, so content hashes and approval records stay as they are.", "تُنشر المسودات المعتمدة بالأداة القائمة، فتبقى بصمات المحتوى وسجلات الاعتماد كما هي."),
+         "step": {"download": B("Download the two files below.", "نزّل الملفين أدناه."),
+                  "run": B("Run the publishing script: it writes the drafts as 'needs review', runs the pre-review and applies only the decisions that pass.", "شغّل أداة النشر: تكتب المسودات بحالة «تحتاج مراجعة» وتشغّل المراجعة المسبقة وتطبّق القرارات الناجحة فقط."),
+                  "build": B("Rebuild (npm run build:phase10a) and run the tests.", "أعد البناء (npm run build:phase10a) وشغّل الاختبارات."),
+                  "deploy": B("Commit and deploy as usual; then mark the drafts exported.", "اعتمد التغييرات وانشر كالمعتاد؛ ثم علّم المسودات بأنها صُدّرت.")},
+         "download": B("Download {n} approved drafts", "نزّل {n} مسودة معتمدة"), "downloaded": B("Files downloaded.", "نُزّل الملفان."),
+         "mark": B("Mark as exported", "علّمها مصدَّرة"), "marked": B("Marked as exported.", "عُلّمت مصدَّرة."), "none": B("No approved drafts to export.", "لا مسودات معتمدة للتصدير.")},
+  "org": {"title": B("Organisations (pilot)", "المؤسسات (تجربة)"),
+          "note": B("Create an organisation and invite its first company administrator. You do not become a member and you never see its consented shares.",
+                    "أنشئ مؤسسة وادعُ أول مسؤول لها. لا تصبح عضوًا فيها ولا ترى أبدًا ما يُشارك معها بالموافقة."),
+          "name": B("Organisation name", "اسم المؤسسة"), "firstAdmin": B("First company administrator (e-mail)", "أول مسؤول للشركة (البريد)"),
+          "create": B("Create and invite", "أنشئ وادعُ"), "created": B("{org} created. Send the invitation link below.", "أُنشئت {org}. أرسل رابط الدعوة أدناه.")},
+  "audit": {"at": B("When (UTC)", "الوقت (UTC)"), "action": B("Action", "الإجراء"), "target": B("Target", "الهدف")},
+  "err": {"generic": B("Something went wrong. Try again.", "حدث خطأ. حاول مرة أخرى."), "credentials": B("E-mail or password is not right.", "البريد أو كلمة المرور غير صحيحة."),
+          "emailTaken": B("An account already uses this e-mail. Sign in instead.", "هناك حساب بهذا البريد. سجّل الدخول بدلًا من ذلك."),
+          "password": B("The password needs at least 10 characters.", "تحتاج كلمة المرور إلى عشرة أحرف على الأقل."), "email": B("Enter a valid e-mail.", "أدخل بريدًا صحيحًا."),
+          "name": B("Enter a name of at least 3 characters.", "أدخل اسمًا من ثلاثة أحرف على الأقل."), "offline": B("You are offline. Try again when connected.", "أنت دون اتصال. حاول عند عودة الاتصال."),
+          "rateLimited": B("Too many attempts. Wait a few minutes.", "محاولات كثيرة. انتظر بضع دقائق."), "token": B("This link is not valid any more.", "هذا الرابط لم يعد صالحًا."),
+          "forbidden": B("This is not allowed for your account.", "هذا غير مسموح لحسابك."), "invalid": B("Some values are not valid.", "بعض القيم غير صالحة."),
+          "exists": B("That already exists.", "هذا موجود بالفعل."), "consentExists": B("You already share with this organisation.", "أنت تشارك هذه المؤسسة بالفعل."),
+          "state": B("This item changed meanwhile. Reload and try again.", "تغيّر هذا العنصر في الأثناء. أعد التحميل وحاول."), "notFound": B("Not found.", "غير موجود."),
+          "draft": B("The draft does not pass the checks", "المسودة لا تجتاز الفحوص"), "scores": B("A score is outside the task's range.", "إحدى الدرجات خارج نطاق المهمة.")}
+}
+
+
+def flatten(d, prefix=""):
+    for k, v in d.items():
+        key = f"{prefix}.{k}" if prefix else k
+        if isinstance(v, dict) and set(v.keys()) == {"en", "ar"} and all(isinstance(x, str) for x in v.values()):
+            yield key, v
+        else:
+            yield from flatten(v, key)
+
+
+def tree(lang):
+    def walk(d):
+        out = {}
+        for k, v in d.items():
+            if isinstance(v, dict) and set(v.keys()) == {"en", "ar"} and all(isinstance(x, str) for x in v.values()):
+                out[k] = v[lang]
+            else:
+                out[k] = walk(v)
+        return out
+    return walk(S)

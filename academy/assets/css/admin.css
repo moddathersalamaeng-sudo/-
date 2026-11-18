@@ -1,0 +1,18 @@
+/* Phase 14 — account, administration and live company pages. Uses the design tokens only. */
+.admin .tabs, .acct .region, .admin .region { min-width: 0; max-width: 100%; }
+.admin .tabs [role="tablist"] { flex-wrap: wrap; }
+.admin .tbl-wrap, .acct .tbl-wrap { max-width: 100%; position: relative; }   /* keeps the screen-reader-only header inside the table (same rule as company.css) */
+.admin code, .acct code, .admin bdi { overflow-wrap: anywhere; }
+.admin textarea.code, .admin pre.code { width: 100%; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .85rem; }
+.admin pre.code { white-space: pre-wrap; padding: var(--s-2); background: var(--surface-2, transparent); border: 1px solid var(--line); border-radius: var(--r-2, 8px); }
+.admin .kv { display: grid; grid-template-columns: max-content 1fr; gap: var(--s-1) var(--s-2); margin: 0; }
+.admin .kv dt { font-weight: 600; }
+.admin .kv dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.admin .card.stat .big { font-size: 1.6rem; font-weight: 700; margin: 0; }
+.admin .answer { margin: var(--s-1) 0; padding: var(--s-2); border-inline-start: 3px solid var(--line); white-space: pre-wrap; }
+.admin .cms-history li { margin-block: var(--s-1); }
+.admin .linklike { background: none; border: 0; padding: 0; color: var(--link, inherit); text-decoration: underline; cursor: pointer; font: inherit; }
+.acct-grid { align-items: start; }
+.acct-form .field .input { width: 100%; }
+[data-invite-link], [data-org-invite] { width: 100%; }
+@media (max-width: 480px) { .admin .kv { grid-template-columns: 1fr; } }

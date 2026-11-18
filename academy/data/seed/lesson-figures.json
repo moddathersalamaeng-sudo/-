@@ -1438,6 +1438,24 @@
       "figures": [
         "FIG-CO-TNA"
       ]
+    },
+    {
+      "id": "coach:main",
+      "figures": [
+        "FIG-COACH-FLOW"
+      ]
+    },
+    {
+      "id": "coach:labels",
+      "figures": [
+        "FIG-COACH-LABELS"
+      ]
+    },
+    {
+      "id": "coach:interview",
+      "figures": [
+        "FIG-COACH-INTERVIEW"
+      ]
     }
   ]
 }

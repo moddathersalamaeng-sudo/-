@@ -23,6 +23,7 @@ import { starterCourse } from './home.js';
 import * as P from '../domain/passport.mjs';
 import { cvPanel, cvPrintView } from './cv.js';
 import { companySharePanel } from './company-share.js';
+import { interviewSummary } from '../domain/coach.mjs';
 
 /* Phase 12A adds "My company": consent-gated sharing and company assignments (src/views/company-share.js). */
 export const PASSPORT_TABS = ['overview', 'competencies', 'cpd', 'wallet', 'logs', 'career', 'cv', 'company', 'export'];
@@ -56,11 +57,13 @@ export async function loadPassport(ctx) {
     safe(r.smartDocs.list()), safe(r.smartTemplates.listVisible(roles)), safe(r.certificates.list()), safe(r.cpd.list()), safe(r.credentials.list()),
     safe(r.practiceLogs.list()), safe(r.verifications.list()), r.careerPlan.get('me').catch(() => null), r.passportPrefs.get('cpd').catch(() => null),
     r.studyPlan.get('me').catch(() => null), safe(r.figures.listVisible(roles)), safe(r.lessonFigures.list())]);
+  /* Phase 13: interview practice sessions (own records) are listed as self-declared practice — never an evidence entry. */
+  const interview = interviewSummary(await (r.interviewSessions ? safe(r.interviewSessions.list()) : []));
   const today = localToday();
   const entries = P.buildEntries({ courses: content.courses, assessments: content.assessments, labs: content.labs, templates: tpls, progress: learner.progress, attempts: learner.attempts,
     labAttempts: learner.labAttempts, docs, certificates, credentials, cpd, logs, verifications, today });
   const figsFor = key => (lessonFigures.find(x => x.id === key)?.figures || []).map(id => figures.find(f => f.id === id)).filter(Boolean);
-  return { content, learner, docs, tpls, certificates, cpd, credentials, logs, verifications, career, dismissed: prefs?.dismissed || [], studyPlan, entries, today, figsFor };
+  return { content, learner, docs, tpls, certificates, cpd, credentials, logs, verifications, career, dismissed: prefs?.dismissed || [], studyPlan, entries, today, figsFor, interview };
 }
 
 /* ------------------------------------------------------------------ small form kit (labels, hints, errors, aria) */
@@ -150,6 +153,18 @@ function passportHero(ctx, d) {
 
 /* ---------- overview: every entry with its status */
 
+/** Phase 13: one line for interview practice — self-declared practice, not evidence, not an assessment. */
+function interviewLine(ctx, d) {
+  const iv = d.interview;
+  if (!iv?.count) return null;
+  const { t } = ctx;
+  return h('section', { class: 'panel pp-interview', 'aria-labelledby': 'pp-iv-h', dataset: { interviewPractice: String(iv.count), evidence: 'false' } },
+    h('h2', { id: 'pp-iv-h', class: 'h-sm' }, icon('users'), ' ', t('coach13.interview.passportTitle')),
+    h('p', null, statusBadge(ctx, 'self_declared'), ' ', t('coach13.interview.passportLine', { n: num(ctx, iv.count), date: fmtDate(ctx, iv.last) }), ' ',
+      h('a', { href: '#/my?tab=coach&p=interview', dataset: { action: 'open-interview-sessions' } }, t('coach13.interview.open'))),
+    h('p', { class: 'note' }, t('coach13.interview.passportNote')));
+}
+
 function overviewPanel(ctx, d) {
   const { t } = ctx;
   const figs = d.figsFor('passport:main');
@@ -166,7 +181,7 @@ function overviewPanel(ctx, d) {
           ['clock', t('pp12.empty.cpd'), '#/my?tab=passport&p=cpd', 'add-cpd'],
           ['award', t('pp12.empty.credential'), '#/my?tab=passport&p=wallet', 'add-credential']
         ].filter(Boolean).map(([ic, label, href, act], i) => h('li', { class: 'card' }, h('p', null, icon(ic)), h('h3', null, label), linkBtn(href, t('pp12.empty.go'), i ? 'secondary' : 'primary', { 'data-action': act }))))),
-      rules);
+      interviewLine(ctx, d), rules);
   }
   let fStatus = '', fKind = '';
   const list = h('ul', { class: 'plain pp-entries' });
@@ -183,6 +198,7 @@ function overviewPanel(ctx, d) {
     h('section', { class: 'section', 'aria-labelledby': 'pp-entries-h' }, h('h2', { id: 'pp-entries-h' }, t('pp12.entriesTitle', { n: num(ctx, d.entries.length) })),
       h('div', { class: 'filters pp-filters' }, h('label', { for: 'pp-f-status' }, t('pp12.filter.status')), sSel, h('label', { for: 'pp-f-kind' }, t('pp12.filter.kind')), kSel),
       list, h('p', { class: 'note' }, t('pp12.deviceNote'))),
+    interviewLine(ctx, d),
     rules,
     h('div', { class: 'btnrow' }, linkBtn('#/passport/print', t('pp12.print'), 'secondary', { 'data-action': 'passport-print' }), isReviewer(ctx) ? linkBtn('#/review/evidence', t('pp12.review.title'), 'secondary', { 'data-action': 'open-evidence-review' }) : null));
 }
