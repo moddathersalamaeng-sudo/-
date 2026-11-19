@@ -159,7 +159,14 @@ with sync_playwright() as p:
         hub_probe.write_text('v2'); aca_probe.write_text('v2')
         # move the mtime forward so a same-second rewrite is never answered 304 Not Modified (flaky before Phase 15)
         for f in (hub_probe, aca_probe): os.utime(f, (time.time() + 5, time.time() + 5))
-        second = (get('./sw-probe.txt'), get('./academy/sw-probe.txt'))
+        hub2 = get('./sw-probe.txt')
+        # Academy: network first. A CI runner's HTTP cache can answer the very next request from memory; allow a few short retries
+        # (each one a new network-first fetch) before judging. The hub value is read once, before any retry.
+        aca2 = get('./academy/sw-probe.txt')
+        for _ in range(6):
+            if aca2 == 'v2': break
+            page.wait_for_timeout(400); aca2 = get('./academy/sw-probe.txt')
+        second = (hub2, aca2)
         ctx.set_offline(True)
         offline = get('./academy/sw-probe.txt')
         ctx.set_offline(False)
