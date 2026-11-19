@@ -14,7 +14,8 @@ for lang in ("en", "ar"):
     p = ROOT / "data" / "i18n" / f"{lang}.json"; raw = p.read_text(encoding="utf-8"); d = json.loads(raw)
     d["sl15"] = S.tree(lang)
     p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n" if "\n" in raw.strip() else json.dumps(d, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-cfg = ROOT / "data" / "config.json"; c = json.loads(cfg.read_text(encoding="utf-8")); c["version"] = VERSION
+cfg = ROOT / "data" / "config.json"; c = json.loads(cfg.read_text(encoding="utf-8"))
+if tuple(map(int, str(c.get("version", "0")).split("-")[0].split("."))) < tuple(map(int, VERSION.split("."))): c["version"] = VERSION  # never lowers a later build
 cfg.write_text(json.dumps(c, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 idx = ROOT / "index.html"; html = idx.read_text(encoding="utf-8")
 if "assets/css/slides.css" not in html:

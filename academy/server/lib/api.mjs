@@ -17,8 +17,10 @@ import { planMigration, applyMigration, mergeCollection, SAFE_COLLECTION, SERVER
 import { makeLabAttempt } from '../../src/domain/labs.mjs';
 import { reviewLabAttempt } from '../../src/domain/passport.mjs';
 import { readShare, SHARE_PARTS, CONSENT_TEXT } from '../../src/domain/company.mjs';
+import { issueCertificate, validateCertName } from '../../src/domain/certificates.mjs';
+import { serialState } from '../../src/domain/credential.mjs';
 
-export const API_VERSION = '2.0.0-rc.1';
+export const API_VERSION = '2.2.0';
 export const CONSENT_TEXT_VERSION = 'co12a-2026-11-12';
 const today = () => new Date().toISOString().slice(0, 10);
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
@@ -751,6 +753,60 @@ export function buildApi({ db, content, config = {} }) {
       const n = await c.query('update cia.settings set value = $1, updated_by = $2, updated_at = now() where key = $3', [JSON.stringify(v), ctx.user.uid, key]);
       if (!n.rowCount) throw notFound();
       await audit(c, ctx.user.uid, 'settings.update', key, { value: v });
+      return { ok: true };
+    });
+  });
+
+  /* ------------------------------------------------------------ certificate register (Phase 16, D-123) */
+  const certOut = x => ({ serial: x.serial, course_id: x.course_id, name: x.name, date: typeof x.issued_on === 'string' ? x.issued_on : iso(x.issued_on), issued_at: (typeof x.issued_on === 'string' ? x.issued_on : iso(x.issued_on)) + 'T00:00:00.000Z',
+    hours: x.hours == null ? null : Number(x.hours), score: x.score, seal: x.seal, status: x.status, registered_at: x.registered_at instanceof Date ? x.registered_at.toISOString() : x.registered_at });
+  /** Issue (or return) the caller's certificate for a course. Completion is checked against the account's own records with the site's rule. */
+  route('POST', '/api/v1/certificates', { limit: 'write' }, async (ctx) => {
+    await need('certificate.issue')(ctx);
+    const b = ctx.body || {};
+    const name = str(b.name, 100).replace(/\s+/g, ' ');
+    if (validateCertName(name)) throw bad('name');
+    const course = await content.course(str(b.course_id, 80));
+    if (!course) throw notFound();
+    const uid = ctx.user.uid;
+    return db.asUser(uid, async c => {
+      const coll = async k => (await c.query('select data from cia.records where user_id = $1 and collection = $2', [uid, k])).rows.map(x => x.data);
+      const [progress, attempts] = await Promise.all([coll('course_progress'), coll('assessment_attempts')]);
+      const prev = (await c.query('select * from cia.certificates where user_id = $1 and course_id = $2', [uid, course.id])).rows[0];
+      if (prev && prev.status !== 'valid') throw new HttpError(409, 'revoked');
+      let rec;
+      try { rec = issueCertificate({ course, progress, attempts, name, userId: uid, existing: prev ? { number: prev.serial, issued_at: certOut(prev).issued_at } : null }); }
+      catch (e) { if (e.message === 'not_complete') throw new HttpError(409, 'not_complete'); throw bad('name'); }
+      const day = rec.issued_at.slice(0, 10);
+      if (!prev) await c.query('insert into cia.certificates (serial, user_id, course_id, name, issued_on, hours, score, seal) values ($1, $2, $3, $4, $5, $6, $7, $8)',
+        [rec.number, uid, course.id, rec.name, day, rec.hours, rec.score, rec.seal]);
+      const changed = !!prev && (prev.name !== rec.name || prev.seal !== rec.seal);
+      if (changed) await c.query('update cia.certificates set name = $2, hours = $3, score = $4, seal = $5, updated_at = now() where serial = $1', [rec.number, rec.name, rec.hours, rec.score, rec.seal]);
+      const row = (await c.query('select * from cia.certificates where serial = $1', [rec.number])).rows[0];
+      if (!prev || changed) await audit(c, uid, prev ? 'certificate.update' : 'certificate.issue', rec.number, { course: course.id });
+      return { status: prev ? 200 : 201, body: { certificate: certOut(row) } };
+    });
+  });
+  route('GET', '/api/v1/certificates/mine', {}, async (ctx) => {
+    await need('records.own')(ctx);
+    return db.asUser(ctx.user.uid, async c => ({ certificates: (await c.query('select * from cia.certificates where user_id = $1 order by registered_at', [ctx.user.uid])).rows.map(certOut) }));
+  });
+  /** Public: what the QR code's page asks. Returns only what is printed on the certificate, plus its status. */
+  route('GET', '/api/v1/certificates/verify/:serial', { public: true, limit: 'read' }, async (ctx) => {
+    const s = str(ctx.params.serial, 40).toUpperCase();
+    if (serialState(s) !== 'ok') throw bad('serial');
+    const row = await db.asAnon(async c => (await c.query('select * from cia.verify_certificate($1)', [s])).rows[0]);
+    if (!row) throw notFound();
+    return { certificate: certOut(row) };
+  });
+  route('POST', '/api/v1/admin/certificates/:serial/revoke', { limit: 'write' }, async (ctx) => {
+    await need('certificate.revoke')(ctx);
+    const s = str(ctx.params.serial, 40).toUpperCase();
+    const reason = str(ctx.body?.reason, 300);
+    if (!reason) throw bad('reason');
+    return db.asUser(ctx.user.uid, async c => {
+      await c.query('select cia.revoke_certificate($1, $2)', [s, reason]);
+      await audit(c, ctx.user.uid, 'certificate.revoke', s, { reason });
       return { ok: true };
     });
   });

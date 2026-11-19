@@ -35,6 +35,8 @@ export const CAN = {
   'cms.decide':           ['reviewer', 'admin'],
   'cms.export':           ['admin'],
   'verification.write':   ['admin'],
+  'certificate.issue':    ['learner', 'instructor', 'reviewer', 'company_admin', 'admin'],
+  'certificate.revoke':   ['admin'],
   'users.manage':         ['admin'],
   'analytics.read':       ['admin'],
   'settings.write':       ['admin']

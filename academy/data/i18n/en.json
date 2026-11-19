@@ -4714,5 +4714,92 @@
       "tips": "Tips and checks",
       "summary": "Remember"
     }
+  },
+  "cx16": {
+    "kind": "Certificate of Completion",
+    "presented": "This is to record that",
+    "completed": "has completed every lesson and passed the final assessment of the course",
+    "completedLessons": "has completed every lesson of the course",
+    "covered": "What the course covered",
+    "score": "Final assessment",
+    "signatory": "Modather Salama",
+    "signRole": "Founder, Continual Improvement Academy",
+    "sealLabel": "Course seal {code}",
+    "qrLabel": "QR code: open the verification page for this certificate",
+    "scan": "Scan to verify",
+    "sealCode": "Seal code",
+    "sheetLabel": "Certificate of completion",
+    "lede": "Type your name as it should appear. Each course has its own certificate design; yours carries a serial, a seal code and a QR code anyone can scan to check it.",
+    "empty": "Your certificate appears here once you type your name and press Make certificate.",
+    "update": "Update certificate",
+    "copyLink": "Copy verification link",
+    "copied": "Verification link copied.",
+    "openVerify": "Open the verification page",
+    "registered": "Recorded in the Academy register on {date}. The verification page confirms the Academy issued it.",
+    "signInToRegister": "Sign in with your Academy account and press Update certificate to record it in the Academy register.",
+    "deviceOnly": "Kept on this device. Its QR code proves the details were not changed after it was made; confirming the issuer needs the Academy register (accounts).",
+    "howVerify": "Anyone can check this certificate: scan the QR code or open the verification page and type the serial.",
+    "v": {
+      "eyebrow": "Certificate verification",
+      "title": "Verify a certificate",
+      "lede": "Scan the QR code on the certificate, or type its serial number.",
+      "formNote": "A serial alone can be checked only against the Academy register. The QR code also carries the certificate's details and seal.",
+      "otherSerial": "Check another serial",
+      "details": "Certificate details",
+      "checks": "What was checked",
+      "name": "Name",
+      "course": "Course",
+      "academy": "Academy",
+      "form": {
+        "label": "Serial number",
+        "go": "Verify",
+        "malformed": "This is not a CIA serial. It looks like CIA-C-ISO101-2611-QZBJWHV.",
+        "typo": "The last character does not match — please check the serial for a typing mistake."
+      },
+      "verdict": {
+        "registered": "Issued by the Academy",
+        "intact": "Details intact",
+        "revoked": "Withdrawn by the Academy",
+        "differs": "Details differ from the register",
+        "altered": "Changed after it was made",
+        "mismatch": "Details belong to another serial",
+        "typo": "Serial has a typing mistake",
+        "malformed": "Not a CIA certificate link",
+        "missing": "Serial only — no details to check",
+        "unknown": "Not found in the Academy register",
+        "legacy": "Older certificate number"
+      },
+      "body": {
+        "registered": "The Academy register holds this serial for the name, course and date below, and it is valid.",
+        "intact": "The details below match their seal and serial, so they were not edited after the certificate was made. This page cannot confirm who issued it: the Academy register is not switched on for this site.",
+        "revoked": "The Academy register holds this serial but marks it as withdrawn. Do not rely on this certificate.",
+        "differs": "The register holds this serial, but the name, course or date on the certificate are different. Ask the holder for the original.",
+        "altered": "At least one detail (name, course, date, hours or score) no longer matches the seal. Do not rely on this certificate.",
+        "mismatch": "The QR details were made for a different serial than the one in the address.",
+        "typo": "The serial's check character does not match. Re-type it from the certificate.",
+        "malformed": "The link is incomplete or not from this Academy. Scan the QR code again.",
+        "missing": "Without the QR details there is nothing to compare here, and the Academy register is not switched on for this site. Scan the certificate's QR code instead.",
+        "unknown": "The Academy register has no certificate with this serial.",
+        "legacy": "This number uses the format from before November 2026 and carries no seal. Ask the holder to open the certificate again to get a new one with a QR code."
+      },
+      "check": {
+        "seal": {
+          "intact": "Seal check: name, course, date, hours and score match the seal.",
+          "altered": "Seal check: the details do not match the seal.",
+          "mismatch": "Seal check: the details belong to another serial.",
+          "missing": "Seal check: not run — the link carries no details.",
+          "typo": "Seal check: not run — the serial has a typing mistake.",
+          "malformed": "Seal check: the details could not be read."
+        },
+        "reg": {
+          "valid": "Academy register: issued on {date}, valid.",
+          "revoked": "Academy register: withdrawn.",
+          "none": "Academy register: no certificate with this serial.",
+          "error": "Academy register: could not be reached — try again later.",
+          "off": "Academy register: not switched on for this site, so the issuer cannot be confirmed here."
+        },
+        "device": "This certificate was made on this device."
+      }
+    }
   }
 }

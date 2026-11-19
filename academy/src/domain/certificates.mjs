@@ -6,15 +6,15 @@
  * © 2026 Modather Salama — Continual Improvement Academy.
  */
 import { courseStatus } from './learner-model.mjs';
+import { makeSerial, sealOf, credentialData, designFor, CRED_VERSION } from './credential.mjs';
 
 export const CERT_TYPE = 'completion';
-export const CERT_SCHEMA = 'cia.completion-certificate.v1';
+export const CERT_SCHEMA = 'cia.completion-certificate.v2';
 export const CERT_DISCLAIMER = {
   en: 'Certificate of completion of a CIA internal course. It is not a professional certification, is not accredited, carries no CPD, PDU or RU credit and is not verified by any external body.',
   ar: 'شهادة إتمام لدورة داخلية من الأكاديمية. وهي ليست شهادة مهنية، وغير معتمدة، ولا تمنح ساعات تطوير مهني مستمر ولا وحدات PDU أو RU، ولا تتحقق منها أي جهة خارجية.'
 };
 
-const hash = s => { let h = 2166136261; for (const c of String(s)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return (h >>> 0).toString(36).toUpperCase().padStart(7, '0'); };
 
 /** A learner's name for the certificate: trimmed, 2–80 characters, letters (any script), spaces, dots, hyphens and apostrophes. */
 export function validateCertName(name) {
@@ -41,11 +41,20 @@ export function issueCertificate({ course, progress = [], attempts = [], name, u
   const err = validateCertName(name);
   if (err) throw new Error('name_' + err);
   const issued = existing?.issued_at || now;
-  return {
-    id: course.id, schema: CERT_SCHEMA, certificate_type: CERT_TYPE, course_id: course.id, course_code: course.code || course.id,
-    course_title: { en: course.title?.en || '', ar: course.title?.ar || '' }, hours: course.training_hours ?? null,
+  /* Phase 16: best passed final score (whole per cent) and the first module titles — what this course actually covered. */
+  const finals = attempts.filter(a => a.assessment_id === course.assessments?.final && a.passed && Number.isFinite(a.score ?? a.percent));
+  const score = finals.length ? Math.round(Math.max(...finals.map(a => a.score ?? a.percent))) : null;
+  const rec = {
+    id: course.id, schema: CERT_SCHEMA, version: CRED_VERSION, certificate_type: CERT_TYPE, course_id: course.id, course_code: course.code || course.id,
+    course_title: { en: course.title?.en || '', ar: course.title?.ar || '' }, hours: course.training_hours ?? null, score,
+    academy: designFor(course).academy,
+    highlights: (course.modules || []).slice(0, 4).map(m => ({ en: m.title?.en || '', ar: m.title?.ar || '' })).filter(x => x.en || x.ar),
     name: String(name).trim().replace(/\s+/g, ' '), issued_at: issued, updated_at: now,
-    number: `CIA-C-${String(course.code || course.id).replace(/[^A-Z0-9]/gi, '').slice(0, 10).toUpperCase()}-${hash(userId + '|' + course.id + '|' + issued)}`,
+    /* The serial never changes once issued (a Phase 11 number is kept as it is); the seal follows the details. */
+    number: existing?.number || makeSerial({ course, userId, issuedAt: issued }),
+    registered: existing?.registered && existing?.name === String(name).trim().replace(/\s+/g, ' ') ? existing.registered : null,
     disclaimer: CERT_DISCLAIMER
   };
+  rec.seal = sealOf(credentialData(rec));
+  return rec;
 }

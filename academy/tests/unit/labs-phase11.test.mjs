@@ -287,7 +287,7 @@ test('certificate of completion: only for completed courses, validated name, det
   for (const [n, code] of [['', 'required'], ['A', 'short'], ['x'.repeat(81), 'long'], ['<b>Ali</b>', 'chars']]) assert.equal(validateCertName(n), code, n);
   assert.equal(validateCertName('مدثر سلامه'), ''); assert.equal(validateCertName("Anne-Marie O'Neil"), '');
   const a = issueCertificate({ course: c, progress, attempts, name: '  مدثر   سلامه ', userId: 'local', now: '2026-11-12T08:00:00Z' });
-  assert.equal(a.name, 'مدثر سلامه'); assert.equal(a.certificate_type, 'completion'); assert.match(a.number, /^CIA-C-[A-Z0-9]+-[0-9A-Z]{7}$/);
+  assert.equal(a.name, 'مدثر سلامه'); assert.equal(a.certificate_type, 'completion'); assert.match(a.number, /^CIA-C-[A-Z0-9]+-\d{4}-[0-9A-Z]{7}$/); /* Phase 16 serial */
   const b = issueCertificate({ course: c, progress, attempts, name: 'X Y', userId: 'local', existing: a, now: '2026-12-01T08:00:00Z' });
   assert.equal(b.number, a.number); assert.equal(b.issued_at, a.issued_at);
   assert.match(CERT_DISCLAIMER.en, /not a professional certification/); assert.match(CERT_DISCLAIMER.ar, /ليست شهادة مهنية/);

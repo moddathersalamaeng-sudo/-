@@ -44,6 +44,7 @@ import { toolsView } from './views/tools.js';
 import { labsIndexView, labView } from './views/labs.js';
 import { templateView, templatePrintView } from './views/templates.js';
 import { certificateView } from './views/certificate.js';
+import { verifyView } from './views/verify.js';
 import { passportPrintView, passportCvView, evidenceReviewView } from './views/passport.js';
 import { companyView, companyPlanPrintView } from './views/company.js';
 import { interviewView } from './views/coach.js';
@@ -68,6 +69,9 @@ const ROUTES = [
   { path: '/labs/:slug', view: labView, titleKey: 'lab11.pageTitle', parent: ['/labs', 'lab11.indexTitle'] },
   { path: '/templates/:slug', view: templateView, titleKey: 'tpl11.pageTitle', parent: ['/library?tab=templates', 'nav.items.library'] },
   { path: '/certificate/:slug', view: certificateView, titleKey: 'cert11.title', parent: ['/academy/courses', 'courses.title'] },
+  /* Phase 16 (D-123): certificate verification — what the QR code opens; public, stores nothing. */
+  { path: '/verify', view: verifyView, titleKey: 'cx16.v.title' },
+  { path: '/verify/:serial', view: verifyView, titleKey: 'cx16.v.title', parent: ['/verify', 'cx16.v.title'] },
   { path: '/templates/:slug/print', view: templatePrintView, titleKey: 'tpl11.printTitle', parent: ['/library?tab=templates', 'nav.items.library'] },
   /* Phase 12: the passport lives in My space (#/my?tab=passport); its printable summary and the reviewer's evidence screen. */
   { path: '/passport/print', view: passportPrintView, titleKey: 'pp12.printTitle', parent: ['/my?tab=passport', 'nav.items.mySpace'] },

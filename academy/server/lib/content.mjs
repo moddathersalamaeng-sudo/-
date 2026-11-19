@@ -14,11 +14,13 @@ export function createContent(dataDir) {
   const items = async rel => { try { const d = await readJson(rel); return Array.isArray(d) ? d : (d.items || []); } catch { return []; } };
 
   async function load() {
-    const [labs, competencies, certifications] = await Promise.all([items('seed/labs.json'), items('seed/competency/competencies.json'), items('seed/certifications.json')]);
+    const [labs, competencies, certifications, courses] = await Promise.all([items('seed/labs.json'), items('seed/competency/competencies.json'), items('seed/certifications.json'), items('seed/courses.json')]);
     cache = {
       labs: new Map(labs.filter(l => validateGovernance(l).length === 0).map(l => [l.id, l])),
       competencyIds: competencies.filter(c => validateGovernance(c).length === 0 && c.governance.content_status === 'published').map(c => c.id),
-      certifications: certifications.filter(c => validateGovernance(c).length === 0)
+      certifications: certifications.filter(c => validateGovernance(c).length === 0),
+      /* Phase 16: published courses, for issuing certificates (completion is checked with the site's own rule). */
+      courses: new Map(courses.filter(c => validateGovernance(c).length === 0 && c.governance.content_status === 'published').map(c => [c.id, c]))
     };
     return cache;
   }
@@ -29,6 +31,7 @@ export function createContent(dataDir) {
     async lab(id) { return (await get()).labs.get(id) || null; },
     async competencyIds() { return (await get()).competencyIds; },
     async certifications() { return (await get()).certifications; },
+    async course(id) { return (await get()).courses.get(id) || null; },
     /** A CMS listing of one collection: id, title, status, version (never the whole file to the browser). */
     async list(collection) {
       if (!CMS_COLLECTIONS.includes(collection)) return null;
