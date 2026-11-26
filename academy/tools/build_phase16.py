@@ -15,7 +15,8 @@ for lang in ("en", "ar"):
     p = ROOT / "data" / "i18n" / f"{lang}.json"; raw = p.read_text(encoding="utf-8"); d = json.loads(raw)
     d["cx16"] = S.tree(lang)
     p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n" if "\n" in raw.strip() else json.dumps(d, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-cfg = ROOT / "data" / "config.json"; c = json.loads(cfg.read_text(encoding="utf-8")); c["version"] = VERSION; c["publicBase"] = PUBLIC_BASE
+cfg = ROOT / "data" / "config.json"; c = json.loads(cfg.read_text(encoding="utf-8")); c["publicBase"] = PUBLIC_BASE
+if tuple(map(int, c["version"].split("-")[0].split("."))) < tuple(map(int, VERSION.split("."))): c["version"] = VERSION
 cfg.write_text(json.dumps(c, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 idx = ROOT / "index.html"; html = idx.read_text(encoding="utf-8")
 if "assets/css/certificate.css" not in html:

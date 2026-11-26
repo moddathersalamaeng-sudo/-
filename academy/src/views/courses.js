@@ -30,6 +30,7 @@ import { BookmarkButton } from '../ui/bookmark.js';
 import { groupByAcademy, firstSentence } from '../domain/guided.mjs';
 import { numberedCards, flipCard, clamp } from '../ui/guided.js';
 import { LessonDeck } from '../ui/deck.js';
+import { noteLessonMiss } from './flashcards.js';
 import { lessonCoachPanel, courseCoachPanel } from '../ui/coach.js';
 
 const STATUS_KEY = { 'CIA INTERNAL COURSE': 'cia_internal', 'EXAM PREPARATION COURSE': 'exam_prep', 'EXTERNAL ACCREDITATION PENDING': 'accreditation_pending', 'EXTERNALLY ACCREDITED': 'externally_accredited', 'OFFICIAL PARTNER COURSE': 'official_partner' };
@@ -574,7 +575,7 @@ function lessonPlayer(ctx, c, lessons, i, content, learner, guides = {}) {
 
   // --- knowledge check (practice only: not stored as assessment evidence)
   const q = content.byId(content.questions, l.check_question_id);
-  const check = q ? knowledgeCheck(ctx, q) : (l.check_question_id ? h('p', { class: 'note' }, t('p7.pendingShort')) : null);
+  const check = q ? knowledgeCheck(ctx, q, l.id) : (l.check_question_id ? h('p', { class: 'note' }, t('p7.pendingShort')) : null);
 
   const resources = (l.resources || []).map(id => content.byId(content.articles, id) || content.byId(content.library, id)).filter(Boolean);
 
@@ -608,7 +609,7 @@ function lessonPlayer(ctx, c, lessons, i, content, learner, guides = {}) {
 }
 
 /** One question with immediate, explained feedback. Used by the lesson player. */
-export function knowledgeCheck(ctx, q) {
+export function knowledgeCheck(ctx, q, lessonId = null) {
   const { t } = ctx;
   const name = 'kc-' + q.id;
   let answer = null;
@@ -625,6 +626,8 @@ export function knowledgeCheck(ctx, q) {
       f?.chosen && !ok ? h('p', null, h('strong', null, t('p7.asm.yourChoice')), ' ', L(ctx, f.chosen.why)) : null,
       f?.correct ? h('p', null, h('strong', null, t('p7.asm.correctAnswer')), ' ', L(ctx, f.correct.text), ' — ', L(ctx, f.correct.why)) : null,
       q.explanation ? h('p', { class: 'note' }, L(ctx, q.explanation)) : null].filter(Boolean));
+    /* Phase 17 (D-124): a missed check becomes a daily review card (practice only; never assessment evidence). */
+    if (!ok && lessonId) noteLessonMiss(ctx, q, lessonId).then(added => { if (added) fb.append(h('p', { class: 'note', dataset: { rvAdded: 'true' } }, icon('layers'), ' ', t('rv17.lessonAdded'), ' ', h('a', { href: '#/my?tab=review' }, t('rv17.open')))); });
   } });
   return h('div', { class: 'kc', dataset: { question: q.id } },
     h('fieldset', { class: 'fs' }, h('legend', null, L(ctx, q.prompt)), opts, q.options?.length ? unknown : null),

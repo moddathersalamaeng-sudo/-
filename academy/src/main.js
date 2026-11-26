@@ -222,6 +222,9 @@ async function boot() {
       smartDocs: new CollectionRepository({ adapter: userAdapter, collection: 'smart_documents' }),
       /* D-10A-1: certificates of completion the learner printed (own data). */
       certificates: new CollectionRepository({ adapter: userAdapter, collection: 'certificates' }),
+      /* Phase 17 (D-124): daily review cards and the day log (own data; practice only). */
+      reviewCards: new CollectionRepository({ adapter: userAdapter, collection: 'review_cards' }),
+      reviewLog: new CollectionRepository({ adapter: userAdapter, collection: 'review_log' }),
       /* Phase 12: Professional Passport records (own data, cia:v1:<user>:*). Verifications are made by a named reviewer on this device. */
       cpd: new CollectionRepository({ adapter: userAdapter, collection: 'cpd' }),
       credentials: new CollectionRepository({ adapter: userAdapter, collection: 'credentials' }),

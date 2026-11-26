@@ -107,8 +107,8 @@ try:
         empty = page.locator('[data-empty=weak]').count() == 1 and page.locator('[data-action=coach-take-check]').get_attribute('href').startswith('#/assessments') and page.locator('[data-action=coach-open-labs]').count() >= 1
         kpis = page.eval_on_selector_all('.coach-hero .gx-cval', 'els => els.map(e => e.textContent.trim())')
         honesty = 'not a certifying body' in page.inner_text('[data-coach-honesty]')
-        record('coach tab from an empty state: seventh My space tab, honesty line, three zero counters, weak areas offer a readiness check and the labs (no dead end)',
-               tabs[-1] == 'coach' and len(tabs) == 7 and empty and kpis == ['0', '0', '0'] and honesty, [tabs, kpis, empty, honesty])
+        record('coach tab from an empty state: last My space tab (8 since the daily review, Phase 17), honesty line, three zero counters, weak areas offer a readiness check and the labs (no dead end)',
+               tabs[-1] == 'coach' and len(tabs) == 8 and empty and kpis == ['0', '0', '0'] and honesty, [tabs, kpis, empty, honesty])
         coach_tab(page, 'week'); week_empty = page.locator('[data-empty=week] [data-action=coach-choose-course]').count() == 1
         coach_tab(page, 'scenario')
         sc_state = (page.locator('[data-empty=scenario] a[href="#/labs"]').count() == 1) if not any(x['kind'] == 'scenario' for x in COACH_PUBLISHED) else page.locator('[data-action=coach-scenario-new]').count() == 1

@@ -2354,7 +2354,8 @@
         "competencies": "Competencies",
         "profile": "Profile",
         "passport": "Passport",
-        "coach": "Coach"
+        "coach": "Coach",
+        "review": "Daily review"
       }
     },
     "plan": {
@@ -4801,5 +4802,61 @@
         "device": "This certificate was made on this device."
       }
     }
+  },
+  "rv17": {
+    "title": "Daily review",
+    "open": "Daily review",
+    "stat": {
+      "due": "Due today",
+      "streak": "Day streak",
+      "learning": "Learning",
+      "mastered": "Mastered"
+    },
+    "emptyTitle": "No review cards yet",
+    "emptyBody": "Questions you miss in an assessment or a lesson check come here by themselves. You can also add a practice set below.",
+    "dueTitle": "{n} cards to review today",
+    "dueBody": "About a minute per card. Each right answer pushes the card further out; a wrong one brings it back tomorrow.",
+    "start": "Start today's review ({n})",
+    "clearTitle": "All done for today",
+    "nextReview": "Next cards are due on {date}.",
+    "boxesLabel": "Cards by box",
+    "boxShort": "Box {n} · {d} d",
+    "last14": "Last 14 days",
+    "dayLine": "{date}: {n} cards reviewed",
+    "box": "Box {n}",
+    "mastered": "Mastered",
+    "src": {
+      "assessment": "From an assessment",
+      "lesson": "From a lesson check",
+      "practice": "Practice set"
+    },
+    "check": "Check",
+    "next": "Next card",
+    "finish": "Finish",
+    "unknownBack": "Here is the answer — this card comes back tomorrow.",
+    "nextOn": "Next review: {date} (box {n})",
+    "nextMastered": "Mastered — checked again on {date}",
+    "study": "Study this topic",
+    "sessionTitle": "Today's review",
+    "progress": "Session progress",
+    "progressText": "Card {n} of {total}",
+    "doneTitle": "Review complete",
+    "doneLine": "{right} of {total} right",
+    "doneBody": "The cards you missed come back tomorrow; the others wait longer. See you tomorrow.",
+    "backToDeck": "Back to my cards",
+    "addTitle": "Add a practice set",
+    "addLabel": "Academy",
+    "addSet": "Add {n} questions",
+    "addNote": "Published questions from the academy's bank that are not in your cards yet. Useful before a certification exam.",
+    "added": "{n} cards added — they are due today.",
+    "addedNone": "Every question of this academy is already in your cards.",
+    "deckTitle": "All my cards ({n})",
+    "dueOn": "due {date}",
+    "remove": "Remove",
+    "removeNamed": "Remove card {id}",
+    "removed": "Card removed.",
+    "honest": "Review answers are practice: they never change an assessment score, a competency level or your passport.",
+    "lessonAdded": "Added to your daily review.",
+    "dueBadge": "{n} review cards due today"
   }
 }
