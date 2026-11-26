@@ -1,0 +1,48 @@
+/* ---------- Phase 18 — videos (D-125) */
+.vd-player { margin: 0 0 var(--s-5); }
+.vd-frame { position: relative; border-radius: 16px; overflow: hidden; background: #0E2A47; box-shadow: 0 14px 40px rgba(14, 42, 71, .22); border: 2px solid #C6A15B; }
+.vd-video { display: block; inline-size: 100%; max-block-size: 72vh; aspect-ratio: 16 / 9; background: #0E2A47; object-fit: contain; }
+.vd-cap { padding-block-start: var(--s-3); }
+.vd-title { font-family: var(--font-display); font-size: var(--fs-lg); margin: 0 0 var(--s-1); }
+.vd-meta { color: var(--muted); font-size: var(--fs-sm); display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin: 0; }
+.vd-series { font-weight: 600; color: var(--accent-ink, #8A6A2F); }
+.vd-extras { margin-block: var(--s-2) 0; }
+.vd-err { color: #B42318; font-weight: 600; margin-block: var(--s-2); }
+.vd-trbox { margin-block-start: var(--s-2); }
+.vd-trbox summary { cursor: pointer; font-weight: 600; }
+.vd-tr { max-block-size: 18rem; overflow: auto; padding: var(--s-3); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; font-size: var(--fs-sm); }
+.vd-tr p { margin: 0 0 6px; }
+.vd-lesson { margin-block: var(--s-4) var(--s-5); padding: var(--s-4); border-radius: 18px; background: linear-gradient(135deg, rgba(14, 42, 71, .05), rgba(198, 161, 91, .10)); border: 1px solid var(--line); }
+.vd-lesson > h2 { font-size: var(--fs-lg); display: flex; gap: 8px; align-items: center; margin-block: 0 var(--s-3); }
+.vd-lesson > h2 .ico, .vd-course > h2 .ico { color: #C6A15B; }
+/* cards */
+.vd-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: var(--s-4); }
+.vd-card .vd-cardlink { display: grid; gap: 6px; text-decoration: none; color: inherit; border-radius: 14px; padding: 6px; }
+.vd-card .vd-cardlink:hover .vd-thumb img { transform: scale(1.03); }
+.vd-card .vd-cardlink:focus-visible { outline: 3px solid var(--focus, #2563eb); outline-offset: 2px; }
+.vd-thumb { position: relative; display: block; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; background: #0E2A47; border: 1px solid var(--line); }
+.vd-thumb img { inline-size: 100%; block-size: 100%; object-fit: cover; transition: transform .25s ease; display: block; }
+.vd-play { position: absolute; inset: 0; margin: auto; inline-size: 52px; block-size: 52px; border-radius: 50%; background: rgba(14, 42, 71, .82); display: grid; place-items: center; border: 2px solid #C6A15B; }
+.vd-play .ico { color: #fff; inline-size: 22px; block-size: 22px; }
+.vd-dur { position: absolute; inset-block-end: 6px; inset-inline-end: 6px; background: rgba(0, 0, 0, .75); color: #fff; font-size: var(--fs-xs); padding: 1px 6px; border-radius: 6px; direction: ltr; }
+.vd-tick { position: absolute; inset-block-start: 6px; inset-inline-start: 6px; background: #2E8B57; color: #fff; inline-size: 24px; block-size: 24px; border-radius: 50%; display: grid; place-items: center; }
+.vd-tick .ico { inline-size: 14px; block-size: 14px; }
+.vd-ctitle { font-weight: 700; line-height: 1.4; }
+.vd-cmeta { color: var(--muted); font-size: var(--fs-sm); }
+.vd-card.is-watched .vd-thumb img { opacity: .78; }
+/* library */
+.vd-total { font-weight: 600; color: var(--ink); display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.vd-filters { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: var(--s-3); margin-block: var(--s-3) var(--s-5); }
+.vd-group { margin-block-end: var(--s-6); }
+.vd-ghead h2 { font-family: var(--font-display); margin-block-end: 2px; }
+.vd-ghead { border-block-end: 3px solid #C6A15B; padding-block-end: var(--s-2); margin-block-end: var(--s-4); }
+.vd-pn { margin-block: var(--s-3) var(--s-5); justify-content: space-between; }
+.vd-used ul li { margin-block: 6px; }
+.vd-door { display: flex; gap: var(--s-3); align-items: center; padding: var(--s-4); margin-block: var(--s-3) var(--s-4); border-radius: 16px; text-decoration: none;
+  background: linear-gradient(135deg, #0E2A47, #17406B); color: #fff; }
+.vd-door strong { display: block; font-size: var(--fs-lg); color: #fff; } .vd-door-sub { color: #E8EEF6; font-size: var(--fs-sm); }
+.vd-door-ic { inline-size: 48px; block-size: 48px; border-radius: 50%; display: grid; place-items: center; background: #C6A15B; flex: none; }
+.vd-door-ic .ico { color: #0E2A47; }
+.vd-door:focus-visible { outline: 3px solid #C6A15B; outline-offset: 3px; }
+@media (max-width: 640px) { .vd-filters { grid-template-columns: 1fr; } .vd-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); } .vd-lesson { padding: var(--s-3); } }
+@media print { .vd-lesson, .vd-player { display: none; } }

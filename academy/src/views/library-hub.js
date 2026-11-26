@@ -66,5 +66,9 @@ export function libraryHubView(ctx, match) {
   };
   const box = searchBox(ctx, { id: 'lib-q', label: t('x10a.lib.search'), value: state.q, placeholder: t('x10a.lib.searchPh'), onInput: v => { state.q = v; clearTimeout(timer); timer = setTimeout(run, 180); } });
   if (state.q) setTimeout(run, 0);
-  return h('div', { class: 'libhub' }, head, box, status, results, tabs);
+  /* Phase 18 (D-125): door to the video library. */
+  const vcard = h('a', { class: 'vd-door', href: '#/videos', dataset: { action: 'open-videos' } }, h('span', { class: 'vd-door-ic', 'aria-hidden': 'true' }, icon('play')),
+    h('span', null, h('strong', null, t('vd18.libraryCard')), h('span', { class: 'vd-door-sub' }, '')));
+  ctx.repos.videos?.listVisible(ctx.session.roles).then(xs => { vcard.querySelector('.vd-door-sub').textContent = t('vd18.libraryCardBody', { n: ctx.i18n.number(xs.length) }); }).catch(() => {});
+  return h('div', { class: 'libhub' }, head, vcard, box, status, results, tabs);
 }

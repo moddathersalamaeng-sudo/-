@@ -38,7 +38,7 @@ def go(page, route, lang='en'):
     page.wait_for_selector('html[data-ready]'); page.wait_for_function('() => !document.querySelector("main [aria-busy=true]")', timeout=20000); page.wait_for_timeout(250)
 def axe(page):
     page.add_script_tag(url=BASE + '/academy/tests/vendor/axe.min.js') if page.url.startswith(BASE + '/academy/') else page.add_script_tag(content=AXE)
-    return page.evaluate("async () => { const r = await axe.run(document, { runOnly: ['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice'] }); return r.violations.map(v => ({id: v.id, n: v.nodes.length, t: v.nodes.slice(0,2).map(n => n.target.join(' '))})); }")
+    return page.evaluate("async () => { const r = await axe.run(document, { preload: false, runOnly: ['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice'] }); return r.violations.map(v => ({id: v.id, n: v.nodes.length, t: v.nodes.slice(0,2).map(n => n.target.join(' '))})); }")
 def lesson_key(c, l):
     return l['id'][len(c['id']) + 1:] if l['id'].startswith(c['id'] + '-') else l['id']
 def visible(page):

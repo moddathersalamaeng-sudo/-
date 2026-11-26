@@ -45,6 +45,7 @@ import { labsIndexView, labView } from './views/labs.js';
 import { templateView, templatePrintView } from './views/templates.js';
 import { certificateView } from './views/certificate.js';
 import { verifyView } from './views/verify.js';
+import { videosView, videoView } from './views/videos.js';
 import { passportPrintView, passportCvView, evidenceReviewView } from './views/passport.js';
 import { companyView, companyPlanPrintView } from './views/company.js';
 import { interviewView } from './views/coach.js';
@@ -71,6 +72,9 @@ const ROUTES = [
   { path: '/certificate/:slug', view: certificateView, titleKey: 'cert11.title', parent: ['/academy/courses', 'courses.title'] },
   /* Phase 16 (D-123): certificate verification — what the QR code opens; public, stores nothing. */
   { path: '/verify', view: verifyView, titleKey: 'cx16.v.title' },
+  /* Phase 18 (D-125): video library and one video's page. */
+  { path: '/videos', view: videosView, titleKey: 'vd18.title', parent: ['/library', 'nav.items.library'] },
+  { path: '/videos/:id', view: videoView, titleKey: 'vd18.title', parent: ['/videos', 'vd18.title'] },
   { path: '/verify/:serial', view: verifyView, titleKey: 'cx16.v.title', parent: ['/verify', 'cx16.v.title'] },
   { path: '/templates/:slug/print', view: templatePrintView, titleKey: 'tpl11.printTitle', parent: ['/library?tab=templates', 'nav.items.library'] },
   /* Phase 12: the passport lives in My space (#/my?tab=passport); its printable summary and the reviewer's evidence screen. */
@@ -268,6 +272,9 @@ async function boot() {
       assessmentDrafts: new CollectionRepository({ adapter: userAdapter, collection: 'assessment_drafts' }),
       courseProgress: new CollectionRepository({ adapter: userAdapter, collection: 'course_progress' }),
       library: new ContentRepository({ adapter: content, collection: 'library-items' }),
+      /* Phase 18 (D-125): the owner's videos (catalogue + placements) and the learner's viewing progress. */
+      videos: new ContentRepository({ adapter: content, collection: 'videos' }),
+      videoProgress: new CollectionRepository({ adapter: userAdapter, collection: 'video_progress' }),
       profile: new CollectionRepository({ adapter: userAdapter, collection: 'profile' }),
       selfLevels: new CollectionRepository({ adapter: userAdapter, collection: 'self_levels' }),
       competencyReview: new CollectionRepository({ adapter: userAdapter, collection: 'competency_review' }),

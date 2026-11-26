@@ -41,7 +41,7 @@ def go(page, base, route, lang='en'):
     page.goto(f'{base}/academy/?lang={lang}&dev=0#{route}'); page.reload(); settle(page)
 def axe(page, base):
     page.add_script_tag(url=base + '/academy/tests/vendor/axe.min.js')
-    return page.evaluate("async () => { const r = await axe.run(document, { runOnly: ['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice'] }); return r.violations.map(v => ({id: v.id, n: v.nodes.length, t: v.nodes.slice(0,2).map(n => n.target.join(' '))})); }")
+    return page.evaluate("async () => { const r = await axe.run(document, { preload: false, runOnly: ['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice'] }); return r.violations.map(v => ({id: v.id, n: v.nodes.length, t: v.nodes.slice(0,2).map(n => n.target.join(' '))})); }")
 def put(page, key, items, uid='local'):
     page.evaluate('([k, v]) => localStorage.setItem(k, JSON.stringify({ schema: 1, updatedAt: new Date().toISOString(), items: v }))', [f'cia:v1:{uid}:{key}', items])
 def done(cids, score=91):

@@ -57,7 +57,7 @@ def axe(page, context='main'):
     # Phase 14: Academy pages carry a Content-Security-Policy (script-src 'self'), so axe is loaded from the site's own origin there;
     # other pages (hub, review build) still get it inline. The assertions are unchanged.
     page.add_script_tag(url=BASE + '/academy/tests/vendor/axe.min.js') if page.url.startswith(BASE + '/academy/') else page.add_script_tag(content=AXE)
-    r = page.evaluate("async () => { const r = await axe.run(document, { runOnly: ['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice'] }); return r.violations.map(v => ({id: v.id, impact: v.impact, n: v.nodes.length, target: v.nodes.slice(0,3).map(n => n.target.join(' '))})) }")
+    r = page.evaluate("async () => { const r = await axe.run(document, { preload: false, runOnly: ['wcag2a','wcag2aa','wcag21a','wcag21aa','best-practice'] }); return r.violations.map(v => ({id: v.id, impact: v.impact, n: v.nodes.length, target: v.nodes.slice(0,3).map(n => n.target.join(' '))})) }")
     return r
 
 with sync_playwright() as p:

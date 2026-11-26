@@ -47,7 +47,8 @@ jobs:
       - name: End-to-end suites (each on its own)
         run: |
           set +e; fail=0
-          for s in run_e2e run_e2e_phase7 run_e2e_guides run_e2e_closure run_e2e_phase8 run_e2e_phase9 run_e2e_phase10 run_e2e_phase10a run_e2e_phase11 run_e2e_phase12 run_e2e_phase12a run_e2e_phase12b run_e2e_phase13 run_e2e_phase14 run_e2e_phase15 run_e2e_phase16 run_e2e_phase17; do
+          python3 tests/e2e/video_fixture.py
+          for s in run_e2e run_e2e_phase7 run_e2e_guides run_e2e_closure run_e2e_phase8 run_e2e_phase9 run_e2e_phase10 run_e2e_phase10a run_e2e_phase11 run_e2e_phase12 run_e2e_phase12a run_e2e_phase12b run_e2e_phase13 run_e2e_phase14 run_e2e_phase15 run_e2e_phase16 run_e2e_phase17 run_e2e_phase18; do
             python3 tests/e2e/$s.py --evidence /tmp/e2e-out > /tmp/e2e-out-$s.txt 2>&1; rc=$?
             echo "$s: $(tail -1 /tmp/e2e-out-$s.txt)"
             if [ $rc -ne 0 ]; then fail=1; echo "::group::$s output (last 60 lines)"; tail -60 /tmp/e2e-out-$s.txt; echo "::endgroup::"; fi

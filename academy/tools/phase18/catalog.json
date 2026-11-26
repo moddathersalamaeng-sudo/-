@@ -1,0 +1,951 @@
+[
+ {
+  "id": "iso-ep01",
+  "series": "iso9001-start",
+  "order": "01",
+  "title": {
+   "ar": "ما نظام إدارة الجودة؟",
+   "en": "What is a quality management system?"
+  },
+  "clause": null,
+  "duration": 361.8,
+  "sheet": false,
+  "transcript": "en"
+ },
+ {
+  "id": "iso-ep02",
+  "series": "iso9001-start",
+  "order": "02",
+  "title": {
+   "ar": "كيف تقرأ البند؟",
+   "en": "How to read a clause"
+  },
+  "clause": null,
+  "duration": 309.4,
+  "sheet": false,
+  "transcript": "en"
+ },
+ {
+  "id": "iso-ep03",
+  "series": "iso9001-start",
+  "order": "03",
+  "title": {
+   "ar": "رحلة الطلب ودورة التحسين",
+   "en": "The order journey and the improvement cycle"
+  },
+  "clause": null,
+  "duration": 254.6,
+  "sheet": false,
+  "transcript": "en"
+ },
+ {
+  "id": "iso-overview",
+  "series": "iso9001-2026",
+  "order": "0.1",
+  "title": {
+   "ar": "خريطة ISO 9001: البنود والكلمات المفتاحية ودورة PDCA",
+   "en": "ISO 9001 map: clauses, key words and the PDCA cycle"
+  },
+  "clause": null,
+  "duration": 403.9,
+  "sheet": false,
+  "transcript": "en"
+ },
+ {
+  "id": "iso-practical",
+  "series": "iso9001-2026",
+  "order": "0.2",
+  "title": {
+   "ar": "المطلوب تطبيقه في ISO 9001:2026",
+   "en": "What ISO 9001:2026 asks you to apply"
+  },
+  "clause": null,
+  "duration": 432.2,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-4-1",
+  "series": "iso9001-2026",
+  "order": "4.1",
+  "title": {
+   "ar": "4.1 — SWOT وPESTEL: من التحليل إلى القرار",
+   "en": "Clause 4.1 — Context of the organization"
+  },
+  "clause": "4.1",
+  "duration": 283.5,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-4-2",
+  "series": "iso9001-2026",
+  "order": "4.2",
+  "title": {
+   "ar": "4.2 — الأطراف المعنية — من المتطلب إلى التنفيذ",
+   "en": "Clause 4.2 — Interested parties"
+  },
+  "clause": "4.2",
+  "duration": 277.7,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-4-3",
+  "series": "iso9001-2026",
+  "order": "4.3",
+  "title": {
+   "ar": "4.3 — حدود واضحة… ومسؤولية كاملة",
+   "en": "Clause 4.3 — Scope of the QMS"
+  },
+  "clause": "4.3",
+  "duration": 269.7,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-4-4",
+  "series": "iso9001-2026",
+  "order": "4.4",
+  "title": {
+   "ar": "4.4 — من إدارات منفصلة إلى نتيجة واحدة",
+   "en": "Clause 4.4 — The QMS and its processes"
+  },
+  "clause": "4.4",
+  "duration": 283.0,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-5-1",
+  "series": "iso9001-2026",
+  "order": "5.1",
+  "title": {
+   "ar": "5.1 — القيادة التي تحمي الجودة وقت الضغط",
+   "en": "Clause 5.1 — Leadership and commitment"
+  },
+  "clause": "5.1",
+  "duration": 290.3,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-5-2",
+  "series": "iso9001-2026",
+  "order": "5.2",
+  "title": {
+   "ar": "5.2 — سياسة الجودة التي توجّه القرار",
+   "en": "Clause 5.2 — Quality policy"
+  },
+  "clause": "5.2",
+  "duration": 284.9,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-5-3",
+  "series": "iso9001-2026",
+  "order": "5.3",
+  "title": {
+   "ar": "5.3 — الأدوار والمسؤوليات والصلاحيات",
+   "en": "Clause 5.3 — Roles, responsibilities and authorities"
+  },
+  "clause": "5.3",
+  "duration": 298.0,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-6-1",
+  "series": "iso9001-2026",
+  "order": "6.1",
+  "title": {
+   "ar": "6.1 — المخاطر والفرص: من الواقع إلى نتائج",
+   "en": "Clause 6.1 — Risks and opportunities"
+  },
+  "clause": "6.1",
+  "duration": 337.5,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-6-2",
+  "series": "iso9001-2026",
+  "order": "6.2",
+  "title": {
+   "ar": "6.2 — أهداف الجودة وKPIs وSMART",
+   "en": "Clause 6.2 — Quality objectives"
+  },
+  "clause": "6.2",
+  "duration": 327.6,
+  "sheet": false,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-6-3",
+  "series": "iso9001-2026",
+  "order": "6.3",
+  "title": {
+   "ar": "6.3 — التخطيط للتغيير دون تعطيل الخدمة",
+   "en": "Clause 6.3 — Planning of changes"
+  },
+  "clause": "6.3",
+  "duration": 317.2,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-7-1",
+  "series": "iso9001-2026",
+  "order": "7.1",
+  "title": {
+   "ar": "7.1 — الموارد",
+   "en": "Clause 7.1 — Resources"
+  },
+  "clause": "7.1",
+  "duration": 335.5,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-7-2",
+  "series": "iso9001-2026",
+  "order": "7.2",
+  "title": {
+   "ar": "7.2 — الكفاءة",
+   "en": "Clause 7.2 — Competence"
+  },
+  "clause": "7.2",
+  "duration": 313.2,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-7-3",
+  "series": "iso9001-2026",
+  "order": "7.3",
+  "title": {
+   "ar": "7.3 — الوعي",
+   "en": "Clause 7.3 — Awareness"
+  },
+  "clause": "7.3",
+  "duration": 310.4,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-7-4",
+  "series": "iso9001-2026",
+  "order": "7.4",
+  "title": {
+   "ar": "7.4 — التواصل",
+   "en": "Clause 7.4 — Communication"
+  },
+  "clause": "7.4",
+  "duration": 309.2,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-7-5",
+  "series": "iso9001-2026",
+  "order": "7.5",
+  "title": {
+   "ar": "7.5 — المعلومات الموثقة",
+   "en": "Clause 7.5 — Documented information"
+  },
+  "clause": "7.5",
+  "duration": 325.2,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-8-1",
+  "series": "iso9001-2026",
+  "order": "8.1",
+  "title": {
+   "ar": "8.1 — التخطيط والتحكم التشغيلي",
+   "en": "Clause 8.1 — Operational planning and control"
+  },
+  "clause": "8.1",
+  "duration": 303.8,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-8-2",
+  "series": "iso9001-2026",
+  "order": "8.2",
+  "title": {
+   "ar": "8.2 — متطلبات المنتجات والخدمات",
+   "en": "Clause 8.2 — Requirements for products and services"
+  },
+  "clause": "8.2",
+  "duration": 364.6,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-8-3",
+  "series": "iso9001-2026",
+  "order": "8.3",
+  "title": {
+   "ar": "8.3 — التصميم والتطوير",
+   "en": "Clause 8.3 — Design and development"
+  },
+  "clause": "8.3",
+  "duration": 392.8,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-8-4",
+  "series": "iso9001-2026",
+  "order": "8.4",
+  "title": {
+   "ar": "8.4 — ضبط المقدم خارجيًا",
+   "en": "Clause 8.4 — Control of externally provided processes, products and services"
+  },
+  "clause": "8.4",
+  "duration": 360.7,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-8-5-1",
+  "series": "iso9001-2026",
+  "order": "8.5.1",
+  "title": {
+   "ar": "8.5.1 — ضبط الإنتاج وتقديم الخدمة",
+   "en": "Clause 8.5.1 — Control of production and service provision"
+  },
+  "clause": "8.5.1",
+  "duration": 333.3,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-8-5-2",
+  "series": "iso9001-2026",
+  "order": "8.5.2",
+  "title": {
+   "ar": "8.5.2 — التحديد والتتبع",
+   "en": "Clause 8.5.2 — Identification and traceability"
+  },
+  "clause": "8.5.2",
+  "duration": 274.4,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-8-5-3",
+  "series": "iso9001-2026",
+  "order": "8.5.3",
+  "title": {
+   "ar": "8.5.3 — ممتلكات العملاء أو المقدمين الخارجيين",
+   "en": "Clause 8.5.3 — Property of customers or external providers"
+  },
+  "clause": "8.5.3",
+  "duration": 242.7,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-8-5-4",
+  "series": "iso9001-2026",
+  "order": "8.5.4",
+  "title": {
+   "ar": "8.5.4 — المحافظة على المخرجات",
+   "en": "Clause 8.5.4 — Preservation"
+  },
+  "clause": "8.5.4",
+  "duration": 206.7,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-8-5-5",
+  "series": "iso9001-2026",
+  "order": "8.5.5",
+  "title": {
+   "ar": "8.5.5 — أنشطة ما بعد التسليم",
+   "en": "Clause 8.5.5 — Post-delivery activities"
+  },
+  "clause": "8.5.5",
+  "duration": 216.5,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-8-5-6",
+  "series": "iso9001-2026",
+  "order": "8.5.6",
+  "title": {
+   "ar": "8.5.6 — ضبط التغييرات",
+   "en": "Clause 8.5.6 — Control of changes"
+  },
+  "clause": "8.5.6",
+  "duration": 214.0,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-8-6",
+  "series": "iso9001-2026",
+  "order": "8.6",
+  "title": {
+   "ar": "8.6 — الإفراج عن المنتجات والخدمات",
+   "en": "Clause 8.6 — Release of products and services"
+  },
+  "clause": "8.6",
+  "duration": 208.6,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-8-7",
+  "series": "iso9001-2026",
+  "order": "8.7",
+  "title": {
+   "ar": "8.7 — ضبط المخرجات غير المطابقة",
+   "en": "Clause 8.7 — Control of nonconforming outputs"
+  },
+  "clause": "8.7",
+  "duration": 208.3,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-9-1-1",
+  "series": "iso9001-2026",
+  "order": "9.1.1",
+  "title": {
+   "ar": "9.1.1 — ماذا وراء كلمة «مغلق»؟ الرصد والقياس",
+   "en": "Clause 9.1.1 — Monitoring and measurement"
+  },
+  "clause": "9.1.1",
+  "duration": 286.3,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-9-1-2",
+  "series": "iso9001-2026",
+  "order": "9.1.2",
+  "title": {
+   "ar": "9.1.2 — رضا العميل",
+   "en": "Clause 9.1.2 — Customer satisfaction"
+  },
+  "clause": "9.1.2",
+  "duration": 223.8,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-9-1-3",
+  "series": "iso9001-2026",
+  "order": "9.1.3",
+  "title": {
+   "ar": "9.1.3 — التحليل والتقييم",
+   "en": "Clause 9.1.3 — Analysis and evaluation"
+  },
+  "clause": "9.1.3",
+  "duration": 213.3,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-9-2",
+  "series": "iso9001-2026",
+  "order": "9.2",
+  "title": {
+   "ar": "9.2 — التدقيق الداخلي",
+   "en": "Clause 9.2 — Internal audit"
+  },
+  "clause": "9.2",
+  "duration": 219.3,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-9-3",
+  "series": "iso9001-2026",
+  "order": "9.3",
+  "title": {
+   "ar": "9.3 — مراجعة الإدارة",
+   "en": "Clause 9.3 — Management review"
+  },
+  "clause": "9.3",
+  "duration": 288.7,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-10-1",
+  "series": "iso9001-2026",
+  "order": "10.1",
+  "title": {
+   "ar": "10.1 — التحسين المستمر",
+   "en": "Clause 10.1 — Improvement"
+  },
+  "clause": "10.1",
+  "duration": 254.9,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso26-10-2",
+  "series": "iso9001-2026",
+  "order": "10.2",
+  "title": {
+   "ar": "10.2 — عدم المطابقة والإجراء التصحيحي",
+   "en": "Clause 10.2 — Nonconformity and corrective action"
+  },
+  "clause": "10.2",
+  "duration": 261.8,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "iso-system",
+  "series": "iso9001-2026",
+  "order": "11.0",
+  "title": {
+   "ar": "تطبيق شامل: من السياق إلى التحسين",
+   "en": "The whole system in practice: from context to improvement"
+  },
+  "clause": null,
+  "duration": 269.0,
+  "sheet": true,
+  "transcript": "en"
+ },
+ {
+  "id": "joda-ep00",
+  "series": "joda",
+  "order": "00",
+  "title": {
+   "ar": "حكاية الجودة",
+   "en": "The story of quality (trailer)"
+  },
+  "clause": null,
+  "duration": 35.6,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep01",
+  "series": "joda",
+  "order": "01",
+  "title": {
+   "ar": "خريطة التحكم",
+   "en": "The control chart"
+  },
+  "clause": null,
+  "duration": 88.7,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep02",
+  "series": "joda",
+  "order": "02",
+  "title": {
+   "ar": "دورة PDCA",
+   "en": "The PDCA cycle"
+  },
+  "clause": null,
+  "duration": 82.4,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep03",
+  "series": "joda",
+  "order": "03",
+  "title": {
+   "ar": "مبادئ ديمنج الـ 14",
+   "en": "Deming's 14 points"
+  },
+  "clause": null,
+  "duration": 71.6,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep04",
+  "series": "joda",
+  "order": "04",
+  "title": {
+   "ar": "ثلاثية جوران",
+   "en": "The Juran trilogy"
+  },
+  "clause": null,
+  "duration": 67.6,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep05",
+  "series": "joda",
+  "order": "05",
+  "title": {
+   "ar": "قاعدة باريتو 80/20",
+   "en": "The Pareto 80/20 rule"
+  },
+  "clause": null,
+  "duration": 75.0,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep06",
+  "series": "joda",
+  "order": "06",
+  "title": {
+   "ar": "تكلفة الجودة",
+   "en": "Cost of quality"
+  },
+  "clause": null,
+  "duration": 75.9,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep08",
+  "series": "joda",
+  "order": "08",
+  "title": {
+   "ar": "عظم السمكة",
+   "en": "The fishbone diagram"
+  },
+  "clause": null,
+  "duration": 79.5,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep09",
+  "series": "joda",
+  "order": "09",
+  "title": {
+   "ar": "حلقات الجودة",
+   "en": "Quality circles"
+  },
+  "clause": null,
+  "duration": 96.5,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep10",
+  "series": "joda",
+  "order": "10",
+  "title": {
+   "ar": "العيوب الصفرية",
+   "en": "Zero defects"
+  },
+  "clause": null,
+  "duration": 132.7,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep11",
+  "series": "joda",
+  "order": "11",
+  "title": {
+   "ar": "بوكا يوكا",
+   "en": "Poka-yoke"
+  },
+  "clause": null,
+  "duration": 97.3,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep12",
+  "series": "joda",
+  "order": "12",
+  "title": {
+   "ar": "الـ 5 Whys",
+   "en": "The 5 Whys"
+  },
+  "clause": null,
+  "duration": 95.3,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep13",
+  "series": "joda",
+  "order": "13",
+  "title": {
+   "ar": "Lean والهدر السبعة",
+   "en": "Lean and the seven wastes"
+  },
+  "clause": null,
+  "duration": 97.8,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "joda-ep14",
+  "series": "joda",
+  "order": "14",
+  "title": {
+   "ar": "كايزن",
+   "en": "Kaizen"
+  },
+  "clause": null,
+  "duration": 95.4,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep01",
+  "series": "masaa",
+  "order": "01",
+  "title": {
+   "ar": "سرّ الـ1% (التحسين المستمر / كايزن)",
+   "en": "The 1 Percent Secret"
+  },
+  "clause": null,
+  "duration": 61.3,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep02",
+  "series": "masaa",
+  "order": "02",
+  "title": {
+   "ar": "الجودة ولا التميّز؟",
+   "en": "Quality vs. Excellence"
+  },
+  "clause": null,
+  "duration": 68.5,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep03",
+  "series": "masaa",
+  "order": "03",
+  "title": {
+   "ar": "يعني إيه حوكمة ببساطة؟",
+   "en": "Governance Simply"
+  },
+  "clause": null,
+  "duration": 54.2,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep04",
+  "series": "masaa",
+  "order": "04",
+  "title": {
+   "ar": "الرؤية والرسالة والأهداف",
+   "en": "Vision Mission Objectives"
+  },
+  "clause": null,
+  "duration": 61.6,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep05",
+  "series": "masaa",
+  "order": "05",
+  "title": {
+   "ar": "مصفوفة أيزنهاور",
+   "en": "Eisenhower Matrix"
+  },
+  "clause": null,
+  "duration": 56.0,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep06",
+  "series": "masaa",
+  "order": "06",
+  "title": {
+   "ar": "تكلفة الجودة الرديئة",
+   "en": "Cost of Poor Quality"
+  },
+  "clause": null,
+  "duration": 60.7,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep07",
+  "series": "masaa",
+  "order": "07",
+  "title": {
+   "ar": "نموذج EFQM في دقيقة",
+   "en": "EFQM in a Minute"
+  },
+  "clause": null,
+  "duration": 62.3,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep08",
+  "series": "masaa",
+  "order": "08",
+  "title": {
+   "ar": "مجلس الإدارة ولا الإدارة التنفيذية؟",
+   "en": "Board vs. Management"
+  },
+  "clause": null,
+  "duration": 58.5,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep09",
+  "series": "masaa",
+  "order": "09",
+  "title": {
+   "ar": "تحليل SWOT صح (TOWS)",
+   "en": "SWOT Done Right"
+  },
+  "clause": null,
+  "duration": 60.0,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep10",
+  "series": "masaa",
+  "order": "10",
+  "title": {
+   "ar": "الاجتماع الفعّال",
+   "en": "Effective Meeting"
+  },
+  "clause": null,
+  "duration": 58.6,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep11",
+  "series": "masaa",
+  "order": "11",
+  "title": {
+   "ar": "الإجراء على الورق ولا على الأرض؟",
+   "en": "Procedure Paper vs. Floor"
+  },
+  "clause": null,
+  "duration": 95.1,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep12",
+  "series": "masaa",
+  "order": "12",
+  "title": {
+   "ar": "منطق RADAR",
+   "en": "RADAR Logic"
+  },
+  "clause": null,
+  "duration": 104.7,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep13",
+  "series": "masaa",
+  "order": "13",
+  "title": {
+   "ar": "مين يعمل إيه… ومين يعتمد؟ (RACI + مصفوفة الصلاحيات)",
+   "en": "RACI Authority Matrix"
+  },
+  "clause": null,
+  "duration": 93.3,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep14",
+  "series": "masaa",
+  "order": "14",
+  "title": {
+   "ar": "بطاقة الأداء المتوازن (BSC)",
+   "en": "Balanced Scorecard"
+  },
+  "clause": null,
+  "duration": 94.6,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep15",
+  "series": "masaa",
+  "order": "15",
+  "title": {
+   "ar": "التفويض الذكي",
+   "en": "Smart Delegation"
+  },
+  "clause": null,
+  "duration": 94.4,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "masaa-ep16",
+  "series": "masaa",
+  "order": "16",
+  "title": {
+   "ar": "الشكوى هدية",
+   "en": "Complaints Are A Gift"
+  },
+  "clause": null,
+  "duration": 105.1,
+  "sheet": false,
+  "transcript": "ar"
+ },
+ {
+  "id": "short-hazard-risk",
+  "series": "shorts",
+  "order": "short-hazard-risk",
+  "title": {
+   "ar": "الخطر والمخاطر في 45 ثانية",
+   "en": "Hazard and risk in 45 seconds"
+  },
+  "clause": null,
+  "duration": 45.0,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "short-qa-qc",
+  "series": "shorts",
+  "order": "short-qa-qc",
+  "title": {
+   "ar": "QA أم QC؟",
+   "en": "QA or QC?"
+  },
+  "clause": null,
+  "duration": 75.0,
+  "sheet": false,
+  "transcript": null
+ },
+ {
+  "id": "short-root-cause",
+  "series": "shorts",
+  "order": "short-root-cause",
+  "title": {
+   "ar": "قفلت الملاحظة… ليه المشكلة رجعت؟",
+   "en": "Finding closed… why did the problem come back?"
+  },
+  "clause": null,
+  "duration": 75.0,
+  "sheet": false,
+  "transcript": null
+ }
+]

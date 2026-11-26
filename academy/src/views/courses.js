@@ -31,6 +31,8 @@ import { groupByAcademy, firstSentence } from '../domain/guided.mjs';
 import { numberedCards, flipCard, clamp } from '../ui/guided.js';
 import { LessonDeck } from '../ui/deck.js';
 import { noteLessonMiss } from './flashcards.js';
+import { lessonVideos, courseVideos } from '../ui/video.js';
+import { forLesson, forCourse } from '../domain/videos.mjs';
 import { lessonCoachPanel, courseCoachPanel } from '../ui/coach.js';
 
 const STATUS_KEY = { 'CIA INTERNAL COURSE': 'cia_internal', 'EXAM PREPARATION COURSE': 'exam_prep', 'EXTERNAL ACCREDITATION PENDING': 'accreditation_pending', 'EXTERNALLY ACCREDITED': 'externally_accredited', 'OFFICIAL PARTNER COURSE': 'official_partner' };
@@ -431,6 +433,8 @@ function courseDetail(ctx, c, content, learner, region, guides = {}) {
     glance(ctx, c, lessons),
     h('div', { class: 'split' }, progressPanel, h('section', { class: 'panel', 'aria-label': t('p7.course.summary') }, summary)),
     isec('c-cur', 'layers', t('p7.course.curriculum'), curriculum),
+    /* Phase 18 (D-125): the owner's videos placed in this course. */
+    courseVideos(ctx, c.id, { forCourse }),
     /* Phase 13: the course coach (folded) — what to review first from the learner's own wrong answers, and ask. */
     courseCoachPanel(ctx, { course: c, content, learner }),
     isec('c-pre', 'flag', t('p7.course.prerequisites'), prereqList(ctx, c, content, learner.completed)),
@@ -589,6 +593,8 @@ function lessonPlayer(ctx, c, lessons, i, content, learner, guides = {}) {
       h('div', { class: 'btnrow' }, BookmarkButton(ctx, { type: 'lesson', id: l.id, href: lessonHref(c, l), title: l.title })),
       l.objectives?.length ? h('div', null, h('h2', { class: 'h-sm' }, t('p7.lesson.objectives')), h('ul', null, l.objectives.map(o => h('li', null, L(ctx, o))))) : null),
     /* Phase 15 (D-122): the lesson as slides that turn like pages — built from this lesson's own text; the full text follows. */
+    /* Phase 18 (D-125): the owner's video for this lesson, above the slide deck. */
+    lessonVideos(ctx, l.id, { forLesson }),
     LessonDeck(ctx, { lesson: l, item: srcItem, course: c, figures: lfigs }),
     blockEls,
     /* Phase 13: the lesson coach — folded, after the key-idea cards and the lesson text (D-95 keeps the page calm). */
