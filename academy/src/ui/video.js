@@ -7,6 +7,25 @@ import { h, icon } from '../core/dom.js';
 import { L } from './academy.js';
 import { fmtTime, progressAfter, resumeAt } from '../domain/videos.mjs';
 
+/**
+ * D-126: the platform's service worker used to route video requests through its cache, which cannot hold partial (206)
+ * answers, so videos failed. The fixed worker lets media go straight to the network. A device that still runs the old worker
+ * is moved to the new one here (update + skipWaiting, the hub's own message), once per page load, before the first video plays.
+ */
+let workerChecked = null;
+export function freshWorker() {
+  if (workerChecked || typeof navigator === 'undefined' || !navigator.serviceWorker?.getRegistration) return workerChecked || Promise.resolve(false);
+  workerChecked = navigator.serviceWorker.getRegistration().then(async reg => {
+    if (!reg) return false;
+    const promote = w => { if (w && navigator.serviceWorker.controller) w.postMessage('skipWaiting'); };
+    reg.addEventListener('updatefound', () => { const w = reg.installing; w?.addEventListener('statechange', () => { if (w.state === 'installed') promote(w); }); });
+    try { await reg.update(); } catch { /* offline: keep the current worker */ }
+    promote(reg.waiting);
+    return true;
+  }).catch(() => false);
+  return workerChecked;
+}
+
 export const videoBase = ctx => new URL(ctx.config?.videoBase || '../../cia-videos/', location.href).href;
 export const videoUrl = (ctx, kind, v) => videoBase(ctx) + ({ v: `v/${v.id}.mp4`, p: `p/${v.id}.jpg`, s: `s/${v.id}.html`, t: `t/${v.id}.txt` })[kind];
 export const durLabel = (ctx, v) => v.duration >= 90 ? ctx.t('vd18.minutes', { n: ctx.i18n.number(Math.round(v.duration / 60)) }) : ctx.t('vd18.seconds', { n: ctx.i18n.number(Math.round(v.duration)) });
@@ -17,6 +36,7 @@ export function VideoPlayer(ctx, v, { progress = null, headingLevel = 3, showTit
   const err = h('p', { class: 'vd-err', role: 'alert', hidden: true }, icon('alert'), ' ', t('vd18.loadFail'));
   const video = h('video', { class: 'vd-video', controls: true, preload: 'none', playsinline: true, poster: videoUrl(ctx, 'p', v), 'aria-label': L(ctx, v.title), dataset: { video: v.id } },
     h('source', { src: videoUrl(ctx, 'v', v), type: 'video/mp4' }));
+  freshWorker();
   const start = resumeAt(saved, v.duration);
   if (start) video.addEventListener('loadedmetadata', () => { try { video.currentTime = start; } catch { /* ignore */ } }, { once: true });
   const badge = h('span', { class: 'vd-watched badge badge-ok', hidden: !saved?.watched }, icon('check'), ' ', t('vd18.watched'));
@@ -33,8 +53,18 @@ export function VideoPlayer(ctx, v, { progress = null, headingLevel = 3, showTit
   video.addEventListener('timeupdate', () => save(false));
   video.addEventListener('pause', () => save(false));
   video.addEventListener('ended', () => save(true));
-  video.addEventListener('error', () => { err.hidden = false; }, true);
-  video.querySelector('source').addEventListener('error', () => { err.hidden = false; });
+  let retried = false;
+  const failed = () => {
+    if (!retried && navigator.serviceWorker?.controller) {           // an old worker may have blocked it: wait for the new one, try once more
+      retried = true;
+      navigator.serviceWorker.addEventListener('controllerchange', () => video.load(), { once: true });
+      setTimeout(() => { if (video.readyState === 0) err.hidden = false; }, 6000);
+      return;
+    }
+    err.hidden = false;
+  };
+  video.addEventListener('error', failed, true);
+  video.querySelector('source').addEventListener('error', failed);
   const H = 'h' + headingLevel;
   const extras = [];
   if (v.sheet) extras.push(h('a', { class: 'btn btn-secondary btn-sm', href: videoUrl(ctx, 's', v), target: '_blank', rel: 'noopener', dataset: { action: 'vd-sheet' }, 'aria-describedby': `vd-sn-${v.id}` },

@@ -136,6 +136,21 @@ try:
         go(page, '/videos/nope', 'en'); nf = page.locator('[data-unavailable]').count() == 1
         go(page, '/videos?show=unwatched', 'en'); unw = page.locator('[data-video-card]').count()
         record('unknown video → honest "not found" page; "not watched yet" filter hides the watched video', nf and unw == 72, [nf, unw])
+        # ---------- D-126: installed users run the platform's service worker; videos must still play through it
+        sctx = b.new_context(viewport={'width': 1280, 'height': 900}); sp = sctx.new_page(); slogs = []; watch(sp, slogs)
+        sp.goto(BASE + '/'); sp.wait_for_function('() => navigator.serviceWorker && navigator.serviceWorker.ready.then(() => true)', timeout=15000)
+        sp.reload(); sp.wait_for_function('() => !!navigator.serviceWorker.controller', timeout=15000)
+        slogs.clear()   # the hub page itself is outside this check (it asks for web fonts the test machine may refuse)
+        sp.goto(f'{BASE}/academy/?lang=en&dev=0#/academy/courses/{G["slug"]}/{lkey(G["id"], L17["id"])}'); settle(sp); sp.wait_for_selector('.vd-lesson:not([hidden])')
+        ctrl = sp.evaluate('!!navigator.serviceWorker.controller')
+        sp.evaluate('(() => { const v = document.querySelector(".vd-video"); v.muted = true; return v.play(); })()'); sp.wait_for_timeout(3000)
+        st = sp.evaluate('(() => { const v = document.querySelector(".vd-video"); return [v.currentTime, v.readyState, !document.querySelector(".vd-err").hidden]; })()')
+        sp.evaluate('(() => { const v = document.querySelector(".vd-video"); v.currentTime = 20; })()'); sp.wait_for_timeout(1500)
+        seek = sp.evaluate('document.querySelector(".vd-video").currentTime')
+        cached = sp.evaluate('caches.keys().then(async ks => { let n = 0; for (const k of ks) { const c = await caches.open(k); n += (await c.keys()).filter(r => r.url.includes("/cia-videos/")).length; } return n; })')
+        record('with the platform\'s service worker controlling the page (as on an installed or returning device), the video plays and seeks, and no video is put in the cache',
+               ctrl and st[0] > 0.5 and not st[2] and abs(seek - 20) < 2 and cached == 0 and not slogs, [ctrl, st, seek, cached, slogs[:2]])
+        sctx.close()
         # ---------- responsive, axe, console, CSP
         over, ax = [], []
         for w in (390, 768, 1280, 1920):

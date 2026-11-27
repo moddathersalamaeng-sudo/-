@@ -311,12 +311,19 @@ if base.exists():
         if cur != h: changed.append(f)
     # Owner-approved hub changes: index.html (D-08, one line) and sw.js (D-22, network-first for /academy/). Each must match its patch exactly.
     patched = {}
-    for f, patch in (('index.html', 'hub-training-url.patch'), ('sw.js', 'sw-academy-network-first.patch')):
+    # D-126 (Phase 18): sw.js also lets media bypass the cache. The patches are undone newest first on a copy; the result must be the baseline file.
+    import tempfile, shutil
+    want = dict(reversed(l.split(maxsplit=1)) for l in base.read_text().splitlines())
+    for f, patches in (('index.html', ['hub-training-url.patch']), ('sw.js', ['sw-media-bypass.patch', 'sw-academy-network-first.patch'])):
         if f in changed:
-            r = subprocess.run(['patch', '-R', '--dry-run', '-p1', '-s', '-i', str(PLATFORM.parent / 'patches' / patch)], cwd=PLATFORM, capture_output=True, text=True)
-            patched[f] = r.returncode == 0
+            tmp = pathlib.Path(tempfile.mkdtemp()); shutil.copy(PLATFORM / f, tmp / f); ok = True
+            for patch in patches:
+                r = subprocess.run(['patch', '-R', '-p1', '-s', '-i', str(PLATFORM.parent / 'patches' / patch)], cwd=tmp, capture_output=True, text=True)
+                ok = ok and r.returncode == 0
+            patched[f] = ok and hashlib.sha256((tmp / f).read_bytes()).hexdigest() == want[f]
+            shutil.rmtree(tmp, ignore_errors=True)
     others = [f for f in changed if f not in ('index.html', 'sw.js')]
-    record(f'integrity: all {sum(1 for _ in base.read_text().splitlines()) - 2} other baseline toolkit/asset files byte-identical; hub changes are exactly the D-08 and D-22 patches',
+    record(f'integrity: all {sum(1 for _ in base.read_text().splitlines()) - 2} other baseline toolkit/asset files byte-identical; hub changes are exactly the D-08, D-22 and D-126 patches',
            not others and set(changed) == {'index.html', 'sw.js'} and all(patched.values()), f'changed={changed} patch_ok={patched}')
 
 passed = sum(r['ok'] for r in results)

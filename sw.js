@@ -79,7 +79,7 @@ async function staleWhileRevalidate(event) {
   const network = (async () => {
     const pre = event.preloadResponse ? await event.preloadResponse : null;
     const res = pre || await fetch(request);
-    if (res && res.ok && res.type === "basic") await cache.put(key, res.clone());
+    if (res && res.status === 200 && res.type === "basic") await cache.put(key, res.clone());
     return res;
   })();
   if (cached) { event.waitUntil(network.catch(() => {})); return cached; }
@@ -106,7 +106,7 @@ async function networkFirst(event) {
   try {
     const pre = event.preloadResponse ? await event.preloadResponse : null;
     const res = pre || await fetch(request);
-    if (res && res.ok && res.type === "basic") await cache.put(key, res.clone());
+    if (res && res.status === 200 && res.type === "basic") await cache.put(key, res.clone());
     return res;
   } catch (e) {
     const hit = (await cache.match(key)) || (await (await caches.open(PREV)).match(key));
@@ -128,6 +128,9 @@ self.addEventListener("fetch", event => {
   const { request } = event;
   if (request.method !== "GET") return;
   const url = new URL(request.url);
+  /* D-126: media (the Academy's videos, any range request) goes straight to the network — never through the cache.
+     A partial (206) answer cannot be cached, and trying to made every video fail to play. */
+  if (request.headers.has("range") || request.destination === "video" || request.destination === "audio" || url.pathname.includes("/cia-videos/")) return;
   if (isAcademy(url)) { event.respondWith(networkFirst(event)); return; }
   if (sameOrigin(url)) { event.respondWith(staleWhileRevalidate(event)); return; }
   if (isFont(url)) event.respondWith(fontCacheFirst(request));
